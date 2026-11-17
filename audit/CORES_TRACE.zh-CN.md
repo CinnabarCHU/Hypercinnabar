@@ -122,6 +122,27 @@ GUIDE 基线到当前的细分：
 
 对 Harness，最先建立的应是“功能 + 模式 + 数值约定 → 当前桌面实际实现”的映射。不要按 `acycle` 前缀自动优先选新 core。PDA/DYNOT、Spectral Moments 和 rho 模拟特别需要明确路径。对已经独立、结果约定明确的旧函数可以保留，只提取外层数据准备／参数解析／步骤组织；新增 core 也可作为另一种明确标记的实现保留。
 
+## 补充：3.X 是否删除了 guicode 外的代码
+
+是，但应区分旧路径消失、改名／改写、开发过程中新增后又删除，以及原文件内计算被替换。以下仍以用户指定的 `b52ea9f` 为起点、`dcba427` 为终点。
+
+生产 `.m` 的四个净消失路径全部位于 `code/corrcoef/`，发生于 2026-06-22 的 [`f70c87a`](https://github.com/mingsongli/acycle/commit/f70c87a7f945991350aff28c5cfe1ea2b48b327f)，早于 08-11 的 analysis cores 提交：
+
+| 消失的旧路径 | 历史与当前对应情况 |
+|---|---|
+| `corrcoefslices_rank.m` | Git 在该次变化中识别为改名并改写到 `corrcoefslices_rankNew.m`（R055）。它不是整项功能消失；旧入口名也没有作为兼容文件留下。 |
+| `cyclecorrsig.m` | 删除，同时加入 `cyclecorrsigNew.m`；新函数签名和内部处理变化，不能视为原样改名。 |
+| `freq2target.m` | 删除，同时加入 `freq2targetNew.m`；旧函数把目标频率展开为 Gaussian 谱峰，新实现走构造时间序列并计算 periodogram 等步骤，不能视为同义入口。 |
+| `period2spectrumB.m` | B 变体删除；`period2spectrum.m` 仍存在。旧 B 文件的函数声明本来就名为 `period2spectrum`，但其分频段振幅配置与保留文件不同，不能宣布旧变体完全保留。 |
+
+此前的“删除四个文件”是**同路径净差异**，应按此表理解，而不是“四项算法已被删掉”。`885c742` 本身没有删除文件，但多个保留下来的旧文件内部已替换为新 core 调用。
+
+开发历史中还有净比较看不见的删除：2026-08-14 的 [`4d62d54`](https://github.com/mingsongli/acycle/commit/4d62d54cc3288cef9f6ebd004191fac2d3b599d0) 删除了 `guicode` 外 6 个 `.bak` 备份、36 个测试／验证相关文件（31 个 `.m`、4 个 `.py`、1 个 JSON schema）。例如 `test_public_filtering`、`test_public_spectral_windows`、`test_public_timeseries_transforms`、`test_pdan_legacy_band_union`、谱分析与 GUI 回归测试。这些文件在 2.X 基线时尚不存在，所以不出现在“基线 → 当前”的删除清单中。
+
+它们可以从清理前的 [`aee22a7` 源码树](https://github.com/mingsongli/acycle/tree/aee22a76a6261c95fdf3f6c9f8c97853270d0188/code) 恢复。本轮没有恢复或执行这些测试，也不据此声称仓库完全没有其他测试。另有旧用户指南、bispectral 文档、临时文件等清理；它们与生产算法删除分别计数。
+
+对维护的判断：发行包可以不携带测试，但开发仓库保留可运行测试更有利于追踪科学行为。仅靠 Git 历史找回旧测试，不能替代当前版本的自动回归。
+
 ## 复现与验证边界
 
 ```bash
