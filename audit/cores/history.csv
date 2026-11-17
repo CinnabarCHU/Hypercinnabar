@@ -1,0 +1,38 @@
+path,commit,date,subject
+code/misc/circularspec.m,885c742de1d582c4b56afc6aab083f412f8bd373,2026-08-11,Add reusable desktop analysis cores
+code/misc/dynamic_filter.m,885c742de1d582c4b56afc6aab083f412f8bd373,2026-08-11,Add reusable desktop analysis cores
+code/misc/dynamic_filter_lang.m,885c742de1d582c4b56afc6aab083f412f8bd373,2026-08-11,Add reusable desktop analysis cores
+code/misc/dynamic_filter_lang.m,cecc6be3d0365d0b05fed8aee0621cfa573ebdf7,2026-07-30,Merge dev-codex into master
+code/misc/dynamic_filter_lang.m,fccd6eb1c1ddfbc8d88eff7c768707d52c55d085,2026-07-30,Add Acycle 3.0.1 interface settings and fixes
+code/misc/dynamic_filter_lang.m,da97dc93a60154baaa7629b1daa97b4410fff168,2026-07-17,Update GUI workflows and eCOCO visualization
+code/misc/dynamic_filter_lang.m,f70c87a7f945991350aff28c5cfe1ea2b48b327f,2026-06-22,update COCO
+code/misc/update_filter_axes.m,885c742de1d582c4b56afc6aab083f412f8bd373,2026-08-11,Add reusable desktop analysis cores
+code/seriesanalysis/acycleAmplitudeModulation.m,885c742de1d582c4b56afc6aab083f412f8bd373,2026-08-11,Add reusable desktop analysis cores
+code/seriesanalysis/acycleBandpassFilter.m,885c742de1d582c4b56afc6aab083f412f8bd373,2026-08-11,Add reusable desktop analysis cores
+code/seriesanalysis/acycleCircularSpectrum.m,885c742de1d582c4b56afc6aab083f412f8bd373,2026-08-11,Add reusable desktop analysis cores
+code/seriesanalysis/acycleCoherencePhase.m,885c742de1d582c4b56afc6aab083f412f8bd373,2026-08-11,Add reusable desktop analysis cores
+code/seriesanalysis/acycleDynamicFilter.m,885c742de1d582c4b56afc6aab083f412f8bd373,2026-08-11,Add reusable desktop analysis cores
+code/seriesanalysis/acycleEmpiricalModeDecomposition.m,c67146e0af699164ab378cad5ecb0a261e221f6c,2026-08-12,Release Acycle 3.1.1
+code/seriesanalysis/acycleEvolutionaryRho1.m,885c742de1d582c4b56afc6aab083f412f8bd373,2026-08-11,Add reusable desktop analysis cores
+code/seriesanalysis/acycleFixedBandwidthSummary.m,885c742de1d582c4b56afc6aab083f412f8bd373,2026-08-11,Add reusable desktop analysis cores
+code/seriesanalysis/acycleFixedCountMovingSummary.m,885c742de1d582c4b56afc6aab083f412f8bd373,2026-08-11,Add reusable desktop analysis cores
+code/seriesanalysis/acycleGaussianMovingAverage.m,885c742de1d582c4b56afc6aab083f412f8bd373,2026-08-11,Add reusable desktop analysis cores
+code/seriesanalysis/acycleInterpolateSeries.m,885c742de1d582c4b56afc6aab083f412f8bd373,2026-08-11,Add reusable desktop analysis cores
+code/seriesanalysis/acycleLeadLagRmse.m,885c742de1d582c4b56afc6aab083f412f8bd373,2026-08-11,Add reusable desktop analysis cores
+code/seriesanalysis/acycleMtmTaperCount.m,f7eda0724ce100f45c2e53311650f77d4b3ddd7b,2026-08-14,"Fix spectral, DYNOT, and evolutionary analysis regressions"
+code/seriesanalysis/acyclePowerDecomposition.m,885c742de1d582c4b56afc6aab083f412f8bd373,2026-08-11,Add reusable desktop analysis cores
+code/seriesanalysis/acyclePrewhitenSeries.m,885c742de1d582c4b56afc6aab083f412f8bd373,2026-08-11,Add reusable desktop analysis cores
+code/seriesanalysis/acycleSamplingIsUneven.m,cf479dd1833ed359d91594aae861283d3425f531,2026-08-04,Unify sampling checks across analysis tools
+code/seriesanalysis/acycleSedimentationRateAgeModel.m,885c742de1d582c4b56afc6aab083f412f8bd373,2026-08-11,Add reusable desktop analysis cores
+code/seriesanalysis/acycleSpectralMoments.m,885c742de1d582c4b56afc6aab083f412f8bd373,2026-08-11,Add reusable desktop analysis cores
+code/seriesanalysis/eemd.m,c67146e0af699164ab378cad5ecb0a261e221f6c,2026-08-12,Release Acycle 3.1.1
+code/seriesanalysis/emdNL.m,c67146e0af699164ab378cad5ecb0a261e221f6c,2026-08-12,Release Acycle 3.1.1
+code/seriesanalysis/gaussfilter.m,885c742de1d582c4b56afc6aab083f412f8bd373,2026-08-11,Add reusable desktop analysis cores
+code/seriesanalysis/minirhos0.m,b95b8e33fe1ff6994ef023b297461e4a2653fb9c,2026-07-17,Update COCO analysis and validation
+code/seriesanalysis/moveMedian.m,b95b8e33fe1ff6994ef023b297461e4a2653fb9c,2026-07-17,Update COCO analysis and validation
+code/seriesanalysis/movemean.m,885c742de1d582c4b56afc6aab083f412f8bd373,2026-08-11,Add reusable desktop analysis cores
+code/seriesanalysis/movmeanfbw.m,885c742de1d582c4b56afc6aab083f412f8bd373,2026-08-11,Add reusable desktop analysis cores
+code/seriesanalysis/pda.m,885c742de1d582c4b56afc6aab083f412f8bd373,2026-08-11,Add reusable desktop analysis cores
+code/seriesanalysis/pdan.m,f7eda0724ce100f45c2e53311650f77d4b3ddd7b,2026-08-14,"Fix spectral, DYNOT, and evolutionary analysis regressions"
+code/seriesanalysis/pdan.m,885c742de1d582c4b56afc6aab083f412f8bd373,2026-08-11,Add reusable desktop analysis cores
+code/seriesanalysis/tanerhilbertML.m,885c742de1d582c4b56afc6aab083f412f8bd373,2026-08-11,Add reusable desktop analysis cores

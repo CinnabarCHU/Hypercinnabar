@@ -10,6 +10,7 @@
 - [人工判断与入口集合](audit/decisions.json) · [上游源码](upstream/acycle)
 - [审查交接、完成边界与后续起点](audit/HANDOFF.zh-CN.md)
 - [GUIDE 迁移后的耦合评估与公共 API 建议（2026-11-18）](audit/COUPLING_AND_API.zh-CN.md)
+- [Analysis cores：修改规模、旧函数直接依赖与 GUI 实际路径（2026-11-18）](audit/CORES_TRACE.zh-CN.md)
 
 本次公开分支交付的是审计工具、清单和上游源码指针；Harness 的运行代码迁移和完整 MATLAB 回归不属于这次审计的完成声明。
 
@@ -22,6 +23,7 @@ git -C upstream/acycle fetch origin '+refs/heads/*:refs/remotes/origin/*'
 python -m pip install -r audit/requirements.txt
 python -m unittest discover -s audit/tests -v
 python audit/tools/verify_audit.py --regenerate
+python audit/tools/track_analysis_cores.py
 python audit/tools/query_graph.py code/seriesanalysis/acycleBandpassFilter.m --direction callers
 ```
 
@@ -32,3 +34,5 @@ python audit/tools/query_graph.py code/seriesanalysis/acycleBandpassFilter.m --d
 上游更新时，先取回全部分支并检查差异，再更新 submodule 和 `decisions.json` 的 `source_commit`，复核人工结论和行号，重新生成清单并提交差异。源提交不匹配、解析失败或人工条目指向不存在的文件／函数时，生成器拒绝交付不完整清单。`query_graph.py --transitive` 可查文件间依赖，但它汇总文件内所有函数，不能替代以入口为起点的可达性集合。
 
 各 CSV 保存的是静态“可能调用”关系。未进入入口集合不等于可以删除；具体证据类型和分析边界见报告。上游及其第三方组件保留各自许可与署名；本仓库原有 LICENSE 保持不变。
+
+`audit/cores/` 是固定历史快照的后续追踪，保留原审计报告；其 `graph_supplement.csv` 补充旧采集器遗漏的二元表达式左侧调用。当前 cores 的依赖与调用点以该目录和对应报告为准。

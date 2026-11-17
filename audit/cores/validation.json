@@ -1,0 +1,23 @@
+{
+  "passed": true,
+  "parsed_versions": 448,
+  "parse_failures": [],
+  "upstream_commit": "dcba4279168745b563e0535b954297023dd62fc7",
+  "tracked_source_unchanged": true,
+  "script_sha256": "2280d64b9c9a2c6b3d014e453cf16836c9ef202d41d2b80062a9f2079c6ab0de",
+  "dependency_script_sha256": {
+    "audit_acycle.py": "8e8a3bc3dc7d6d2006bb02cc956f20cba9f112d837adbf654db0b192b1e05fe6",
+    "compare_guide_coupling.py": "d865d5ad98a18c3a77f24c65437d28c11addf40ec1d1f0723e94dd9cb0e58881"
+  },
+  "report_sha256": {
+    "non_guicode_changes.csv": "4fefcbd7dae8b872a2da18a54ecfcb55ac177996ff4a66ce219cd536b79f3722",
+    "function_changes.csv": "5ca43bd46ece3d14c413cebec9b0b2537180f51762e784f58befc53c1279a725",
+    "core_inventory.csv": "6258553575c7c905027fb10771f0958887e3f4587d79714dff816d14e759f1df",
+    "direct_dependencies.csv": "9ec9fcf67729dd4ef9b6f47eef3ac4dcd0d78ff7746da51e93f2c87b592f28c2",
+    "core_callers.csv": "2d07c3008a2b612ddac5f573c1b9a832adce64e470142add3d6706200be97077",
+    "external_references.csv": "f2ad410c59b4d1eca6d172e4e5081159b348ca4ff2ce024195cc255252f106fa",
+    "history.csv": "5c1ae01aa39bd305900f4ddb778ecc1bc7d3b87f1abdffcaa425661d2c7bde6f",
+    "graph_supplement.csv": "cf7a9a57e96b385fe36737f6d8fdd103cfb793756f2c94683a99bae2f5bac783",
+    "summary.json": "2280ec597dfb8ff8b54a95004d1512ee401da97dda8cbb22225298b48cbcf2df"
+  }
+}

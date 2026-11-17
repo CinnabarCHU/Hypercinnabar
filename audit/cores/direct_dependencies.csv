@@ -1,0 +1,10 @@
+core,source_function,line,target,kind,target_is_core,existed_in_guide,same_as_guide,modified_in_core_commit
+acycleAmplitudeModulation,acycleAmplitudeModulation,75,code/seriesanalysis/acycleInterpolateSeries.m,call_or_index,True,False,False,True
+acycleAmplitudeModulation,acycleAmplitudeModulation,72,code/seriesanalysis/acycleSamplingIsUneven.m,call_or_index,True,False,False,False
+acycleEmpiricalModeDecomposition,runEemd,439,code/seriesanalysis/emdNL.m,call_or_index,False,True,False,False
+acycleEmpiricalModeDecomposition,runEemd,442,code/seriesanalysis/emdNL.m,call_or_index,False,True,False,False
+acycleEmpiricalModeDecomposition,validateData,387,code/seriesanalysis/acycleSamplingIsUneven.m,call_or_index,True,False,False,False
+acycleEvolutionaryRho1,acycleEvolutionaryRho1,85,code/seriesanalysis/acycleInterpolateSeries.m,call_or_index,True,False,False,True
+acyclePrewhitenSeries,acyclePrewhitenSeries,40,code/seriesanalysis/rhoAR1ML.m,call_or_index,False,True,True,False
+acyclePrewhitenSeries,robustRho,288,code/seriesanalysis/minirhos0.m,call_or_index,False,True,False,False
+acyclePrewhitenSeries,robustRho,278,code/seriesanalysis/moveMedian.m,call_or_index,False,True,False,False

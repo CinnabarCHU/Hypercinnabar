@@ -1,0 +1,179 @@
+{
+  "snapshots": {
+    "guide": "b52ea9f510f3be00bde9a0238b9898a1e2315b74",
+    "release_3_0": "083c949e5635fefb6a2227273c49329a0891147a",
+    "before_cores": "1ed99c8142753fce1bd2deb4f73ae150407757cb",
+    "core_commit": "885c742de1d582c4b56afc6aab083f412f8bd373",
+    "current": "dcba4279168745b563e0535b954297023dd62fc7"
+  },
+  "scope": "Production code/**/*.m excluding code/guicode and test/tests directories",
+  "comparisons": {
+    "guide..current": {
+      "counts": {
+        "added": 93,
+        "lines_added": 38137,
+        "lines_deleted": 2846,
+        "unchanged": 141,
+        "modified": 58,
+        "removed": 4
+      },
+      "groups": {
+        "corrcoef": {
+          "added": 47,
+          "unchanged": 21,
+          "modified": 8,
+          "removed": 4
+        },
+        "misc": {
+          "modified": 12,
+          "unchanged": 35,
+          "added": 8
+        },
+        "package": {
+          "unchanged": 61,
+          "added": 18,
+          "modified": 15
+        },
+        "seriesanalysis": {
+          "unchanged": 24,
+          "added": 20,
+          "modified": 23
+        }
+      },
+      "declarations": {
+        "added": 1064,
+        "unchanged": 268,
+        "modified": 46,
+        "removed": 10
+      }
+    },
+    "release_3_0..current": {
+      "counts": {
+        "added": 38,
+        "lines_added": 16677,
+        "lines_deleted": 1670,
+        "modified": 66,
+        "unchanged": 188
+      },
+      "groups": {
+        "corrcoef": {
+          "added": 1,
+          "modified": 29,
+          "unchanged": 46
+        },
+        "misc": {
+          "modified": 12,
+          "unchanged": 40,
+          "added": 3
+        },
+        "package": {
+          "unchanged": 72,
+          "added": 16,
+          "modified": 6
+        },
+        "seriesanalysis": {
+          "unchanged": 30,
+          "added": 18,
+          "modified": 19
+        }
+      },
+      "declarations": {
+        "added": 398,
+        "unchanged": 857,
+        "modified": 123,
+        "removed": 5
+      }
+    },
+    "before_cores..core_commit": {
+      "counts": {
+        "unchanged": 265,
+        "lines_added": 6036,
+        "lines_deleted": 971,
+        "modified": 10,
+        "added": 15
+      },
+      "groups": {
+        "corrcoef": {
+          "unchanged": 76
+        },
+        "misc": {
+          "unchanged": 51,
+          "modified": 4
+        },
+        "package": {
+          "unchanged": 94
+        },
+        "seriesanalysis": {
+          "unchanged": 44,
+          "added": 15,
+          "modified": 6
+        }
+      },
+      "declarations": {
+        "unchanged": 1220,
+        "modified": 9,
+        "added": 111,
+        "removed": 4
+      }
+    },
+    "core_commit..current": {
+      "counts": {
+        "unchanged": 248,
+        "lines_added": 1761,
+        "lines_deleted": 552,
+        "modified": 42,
+        "added": 2
+      },
+      "groups": {
+        "corrcoef": {
+          "unchanged": 51,
+          "modified": 25
+        },
+        "misc": {
+          "unchanged": 55
+        },
+        "package": {
+          "unchanged": 90,
+          "modified": 4
+        },
+        "seriesanalysis": {
+          "unchanged": 52,
+          "added": 2,
+          "modified": 13
+        }
+      },
+      "declarations": {
+        "unchanged": 1245,
+        "modified": 94,
+        "added": 39,
+        "removed": 1
+      }
+    }
+  },
+  "core_files": 18,
+  "initial_core_files": 15,
+  "core_lines": 6250,
+  "core_declarations": 123,
+  "direct_legacy_dependencies": [
+    "code/seriesanalysis/emdNL.m",
+    "code/seriesanalysis/minirhos0.m",
+    "code/seriesanalysis/moveMedian.m",
+    "code/seriesanalysis/rhoAR1ML.m"
+  ],
+  "core_files_without_repository_dependencies": 14,
+  "core_files_without_legacy_dependencies": 16,
+  "direct_gui_core_files": 14,
+  "desktop_possible_core_files": 17,
+  "supplemented_edges": 53,
+  "limitations": [
+    "Syntactic possible calls; no runtime path, MATLAB execution, toolbox or numerical parity validation.",
+    "Old function means a separate repository MATLAB file, excluding MATLAB/toolbox functions and local helpers.",
+    "Initial batch means precisely commit 885c742, not every change during the 3.X migration.",
+    "Outside guicode includes UI helpers and package GUIs; it is not a pure numerical-code category.",
+    "Line changes include comments and validation; declarations include local/nested helpers and methods.",
+    "Declaration matching uses lexical names; renames count as removal/addition and parent blocks overlap nested functions.",
+    "Source history cannot establish authorship of AI prompts or numerical equivalence.",
+    "Original graph retained; additional calls fix binary-expression LHS omissions without rewriting archived reports.",
+    "External references are unresolved by repository lookup, not an exhaustive certified MATLAB toolbox manifest."
+  ]
+}
