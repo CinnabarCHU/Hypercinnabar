@@ -1,0 +1,21 @@
+{
+  "date": "2026-11-18",
+  "passed": true,
+  "snapshots": 4,
+  "parsed_file_instances": 1124,
+  "unique_matlab_blobs": 535,
+  "selected_call_sites": 4199,
+  "git_file_and_blob_coverage": "exact",
+  "call_site_ranges": "valid",
+  "initial_migration_seriesanalysis_corrcoef_diff": "empty",
+  "matlab_execution": "not_run",
+  "api_implementation": "proposal_only",
+  "source_modifications": 0,
+  "script_sha256": "d865d5ad98a18c3a77f24c65437d28c11addf40ec1d1f0723e94dd9cb0e58881",
+  "files_sha256": {
+    "comparison.json": "7b924f3c7ca0c2c4f29f3052dd430bae9a4486a4c7c8fd608c8528d8b4bdc167",
+    "file_indicators.csv": "95f20f7bbdcdfcbd568e108802492070285fd4756279d030bb59fdf44c6922a2",
+    "selected_call_evidence.csv": "dae40103a335b1a9dabfcfad9c3ec053795a083fd03051bd81e53b9c69993944",
+    "same_path_changes.csv": "b65e5f1517d5a9d872842942564a08036e8c9cf832246ab64d7e45e068a586f7"
+  }
+}

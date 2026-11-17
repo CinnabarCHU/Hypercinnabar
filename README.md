@@ -9,6 +9,7 @@
 - [文件调用关系](audit/reports/file_edges.csv) · [主菜单绑定](audit/reports/menus.csv) · [待复核代码块](audit/reports/block_candidates.csv)
 - [人工判断与入口集合](audit/decisions.json) · [上游源码](upstream/acycle)
 - [审查交接、完成边界与后续起点](audit/HANDOFF.zh-CN.md)
+- [GUIDE 迁移后的耦合评估与公共 API 建议（2026-11-18）](audit/COUPLING_AND_API.zh-CN.md)
 
 本次公开分支交付的是审计工具、清单和上游源码指针；Harness 的运行代码迁移和完整 MATLAB 回归不属于这次审计的完成声明。
 
