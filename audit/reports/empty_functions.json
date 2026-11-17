@@ -1,0 +1,1061 @@
+[
+  {
+    "id": "code/corrcoef/ac_protect_coco_result_figures.m::blockCloseRequest@32",
+    "path": "code/corrcoef/ac_protect_coco_result_figures.m",
+    "name": "blockCloseRequest",
+    "parent": "code/corrcoef/ac_protect_coco_result_figures.m::<file>",
+    "kind": "function",
+    "line": 32,
+    "end_line": 34,
+    "inputs": [
+      "~",
+      "~"
+    ],
+    "outputs": [],
+    "empty": true,
+    "desktop_possible": true,
+    "api_possible": false,
+    "incoming_count": 1
+  },
+  {
+    "id": "code/guicode/AC.m::menu_file_CreateFcn@2441",
+    "path": "code/guicode/AC.m",
+    "name": "menu_file_CreateFcn",
+    "parent": "code/guicode/AC.m::<file>",
+    "kind": "function",
+    "line": 2441,
+    "end_line": 2441,
+    "inputs": [
+      "hObject",
+      "eventdata",
+      "handles"
+    ],
+    "outputs": [],
+    "empty": true,
+    "desktop_possible": false,
+    "api_possible": false,
+    "incoming_count": 0
+  },
+  {
+    "id": "code/guicode/AC.m::menu_file_Callback@2447",
+    "path": "code/guicode/AC.m",
+    "name": "menu_file_Callback",
+    "parent": "code/guicode/AC.m::<file>",
+    "kind": "function",
+    "line": 2447,
+    "end_line": 2447,
+    "inputs": [
+      "hObject",
+      "eventdata",
+      "handles"
+    ],
+    "outputs": [],
+    "empty": true,
+    "desktop_possible": false,
+    "api_possible": false,
+    "incoming_count": 0
+  },
+  {
+    "id": "code/guicode/AC.m::menu_edit_CreateFcn@2454",
+    "path": "code/guicode/AC.m",
+    "name": "menu_edit_CreateFcn",
+    "parent": "code/guicode/AC.m::<file>",
+    "kind": "function",
+    "line": 2454,
+    "end_line": 2454,
+    "inputs": [
+      "hObject",
+      "eventdata",
+      "handles"
+    ],
+    "outputs": [],
+    "empty": true,
+    "desktop_possible": false,
+    "api_possible": false,
+    "incoming_count": 0
+  },
+  {
+    "id": "code/guicode/AC.m::menu_edit_Callback@2460",
+    "path": "code/guicode/AC.m",
+    "name": "menu_edit_Callback",
+    "parent": "code/guicode/AC.m::<file>",
+    "kind": "function",
+    "line": 2460,
+    "end_line": 2460,
+    "inputs": [
+      "hObject",
+      "eventdata",
+      "handles"
+    ],
+    "outputs": [],
+    "empty": true,
+    "desktop_possible": false,
+    "api_possible": false,
+    "incoming_count": 0
+  },
+  {
+    "id": "code/guicode/AC.m::menu_plotall_CreateFcn@2467",
+    "path": "code/guicode/AC.m",
+    "name": "menu_plotall_CreateFcn",
+    "parent": "code/guicode/AC.m::<file>",
+    "kind": "function",
+    "line": 2467,
+    "end_line": 2467,
+    "inputs": [
+      "hObject",
+      "eventdata",
+      "handles"
+    ],
+    "outputs": [],
+    "empty": true,
+    "desktop_possible": false,
+    "api_possible": false,
+    "incoming_count": 0
+  },
+  {
+    "id": "code/guicode/AC.m::menu_plotall_Callback@2472",
+    "path": "code/guicode/AC.m",
+    "name": "menu_plotall_Callback",
+    "parent": "code/guicode/AC.m::<file>",
+    "kind": "function",
+    "line": 2472,
+    "end_line": 2472,
+    "inputs": [
+      "hObject",
+      "eventdata",
+      "handles"
+    ],
+    "outputs": [],
+    "empty": true,
+    "desktop_possible": false,
+    "api_possible": false,
+    "incoming_count": 0
+  },
+  {
+    "id": "code/guicode/AC.m::menu_basic_CreateFcn@2854",
+    "path": "code/guicode/AC.m",
+    "name": "menu_basic_CreateFcn",
+    "parent": "code/guicode/AC.m::<file>",
+    "kind": "function",
+    "line": 2854,
+    "end_line": 2854,
+    "inputs": [
+      "hObject",
+      "eventdata",
+      "handles"
+    ],
+    "outputs": [],
+    "empty": true,
+    "desktop_possible": false,
+    "api_possible": false,
+    "incoming_count": 0
+  },
+  {
+    "id": "code/guicode/AC.m::menu_basic_Callback@2860",
+    "path": "code/guicode/AC.m",
+    "name": "menu_basic_Callback",
+    "parent": "code/guicode/AC.m::<file>",
+    "kind": "function",
+    "line": 2860,
+    "end_line": 2860,
+    "inputs": [
+      "hObject",
+      "eventdata",
+      "handles"
+    ],
+    "outputs": [],
+    "empty": true,
+    "desktop_possible": false,
+    "api_possible": false,
+    "incoming_count": 0
+  },
+  {
+    "id": "code/guicode/AC.m::menu_math_CreateFcn@2867",
+    "path": "code/guicode/AC.m",
+    "name": "menu_math_CreateFcn",
+    "parent": "code/guicode/AC.m::<file>",
+    "kind": "function",
+    "line": 2867,
+    "end_line": 2867,
+    "inputs": [
+      "hObject",
+      "eventdata",
+      "handles"
+    ],
+    "outputs": [],
+    "empty": true,
+    "desktop_possible": false,
+    "api_possible": false,
+    "incoming_count": 0
+  },
+  {
+    "id": "code/guicode/AC.m::menu_math_Callback@2873",
+    "path": "code/guicode/AC.m",
+    "name": "menu_math_Callback",
+    "parent": "code/guicode/AC.m::<file>",
+    "kind": "function",
+    "line": 2873,
+    "end_line": 2873,
+    "inputs": [
+      "hObject",
+      "eventdata",
+      "handles"
+    ],
+    "outputs": [],
+    "empty": true,
+    "desktop_possible": false,
+    "api_possible": false,
+    "incoming_count": 0
+  },
+  {
+    "id": "code/guicode/AC.m::menu_help_CreateFcn@2879",
+    "path": "code/guicode/AC.m",
+    "name": "menu_help_CreateFcn",
+    "parent": "code/guicode/AC.m::<file>",
+    "kind": "function",
+    "line": 2879,
+    "end_line": 2879,
+    "inputs": [
+      "hObject",
+      "eventdata",
+      "handles"
+    ],
+    "outputs": [],
+    "empty": true,
+    "desktop_possible": false,
+    "api_possible": false,
+    "incoming_count": 0
+  },
+  {
+    "id": "code/guicode/AC.m::menu_help_Callback@2885",
+    "path": "code/guicode/AC.m",
+    "name": "menu_help_Callback",
+    "parent": "code/guicode/AC.m::<file>",
+    "kind": "function",
+    "line": 2885,
+    "end_line": 2885,
+    "inputs": [
+      "hObject",
+      "eventdata",
+      "handles"
+    ],
+    "outputs": [],
+    "empty": true,
+    "desktop_possible": false,
+    "api_possible": false,
+    "incoming_count": 0
+  },
+  {
+    "id": "code/guicode/AC.m::menu_interp_CreateFcn@3174",
+    "path": "code/guicode/AC.m",
+    "name": "menu_interp_CreateFcn",
+    "parent": "code/guicode/AC.m::<file>",
+    "kind": "function",
+    "line": 3174,
+    "end_line": 3174,
+    "inputs": [
+      "hObject",
+      "eventdata",
+      "handles"
+    ],
+    "outputs": [],
+    "empty": true,
+    "desktop_possible": false,
+    "api_possible": false,
+    "incoming_count": 0
+  },
+  {
+    "id": "code/guicode/AC.m::menu_period_CreateFcn@3718",
+    "path": "code/guicode/AC.m",
+    "name": "menu_period_CreateFcn",
+    "parent": "code/guicode/AC.m::<file>",
+    "kind": "function",
+    "line": 3718,
+    "end_line": 3718,
+    "inputs": [
+      "hObject",
+      "eventdata",
+      "handles"
+    ],
+    "outputs": [],
+    "empty": true,
+    "desktop_possible": false,
+    "api_possible": false,
+    "incoming_count": 0
+  },
+  {
+    "id": "code/guicode/AC.m::menu_power_CreateFcn@3753",
+    "path": "code/guicode/AC.m",
+    "name": "menu_power_CreateFcn",
+    "parent": "code/guicode/AC.m::<file>",
+    "kind": "function",
+    "line": 3753,
+    "end_line": 3753,
+    "inputs": [
+      "hObject",
+      "eventdata",
+      "handles"
+    ],
+    "outputs": [],
+    "empty": true,
+    "desktop_possible": false,
+    "api_possible": false,
+    "incoming_count": 0
+  },
+  {
+    "id": "code/guicode/AC.m::menu_filter_CreateFcn@3850",
+    "path": "code/guicode/AC.m",
+    "name": "menu_filter_CreateFcn",
+    "parent": "code/guicode/AC.m::<file>",
+    "kind": "function",
+    "line": 3850,
+    "end_line": 3850,
+    "inputs": [
+      "hObject",
+      "eventdata",
+      "handles"
+    ],
+    "outputs": [],
+    "empty": true,
+    "desktop_possible": false,
+    "api_possible": false,
+    "incoming_count": 0
+  },
+  {
+    "id": "code/guicode/AC.m::menu_laskar_CreateFcn@4044",
+    "path": "code/guicode/AC.m",
+    "name": "menu_laskar_CreateFcn",
+    "parent": "code/guicode/AC.m::<file>",
+    "kind": "function",
+    "line": 4044,
+    "end_line": 4044,
+    "inputs": [
+      "hObject",
+      "eventdata",
+      "handles"
+    ],
+    "outputs": [],
+    "empty": true,
+    "desktop_possible": false,
+    "api_possible": false,
+    "incoming_count": 0
+  },
+  {
+    "id": "code/guicode/AC.m::menu_LR04_CreateFcn@4061",
+    "path": "code/guicode/AC.m",
+    "name": "menu_LR04_CreateFcn",
+    "parent": "code/guicode/AC.m::<file>",
+    "kind": "function",
+    "line": 4061,
+    "end_line": 4061,
+    "inputs": [
+      "hObject",
+      "eventdata",
+      "handles"
+    ],
+    "outputs": [],
+    "empty": true,
+    "desktop_possible": false,
+    "api_possible": false,
+    "incoming_count": 0
+  },
+  {
+    "id": "code/guicode/AC.m::Untitled_4_Callback@4356",
+    "path": "code/guicode/AC.m",
+    "name": "Untitled_4_Callback",
+    "parent": "code/guicode/AC.m::<file>",
+    "kind": "function",
+    "line": 4356,
+    "end_line": 4356,
+    "inputs": [
+      "hObject",
+      "eventdata",
+      "handles"
+    ],
+    "outputs": [],
+    "empty": true,
+    "desktop_possible": false,
+    "api_possible": false,
+    "incoming_count": 0
+  },
+  {
+    "id": "code/guicode/AC.m::menuac_CreateFcn@4503",
+    "path": "code/guicode/AC.m",
+    "name": "menuac_CreateFcn",
+    "parent": "code/guicode/AC.m::<file>",
+    "kind": "function",
+    "line": 4503,
+    "end_line": 4503,
+    "inputs": [
+      "hObject",
+      "eventdata",
+      "handles"
+    ],
+    "outputs": [],
+    "empty": true,
+    "desktop_possible": false,
+    "api_possible": false,
+    "incoming_count": 0
+  },
+  {
+    "id": "code/guicode/AC.m::menuac_Callback@4509",
+    "path": "code/guicode/AC.m",
+    "name": "menuac_Callback",
+    "parent": "code/guicode/AC.m::<file>",
+    "kind": "function",
+    "line": 4509,
+    "end_line": 4509,
+    "inputs": [
+      "hObject",
+      "eventdata",
+      "handles"
+    ],
+    "outputs": [],
+    "empty": true,
+    "desktop_possible": false,
+    "api_possible": false,
+    "incoming_count": 0
+  },
+  {
+    "id": "code/guicode/AC.m::menu_prewhiten_CreateFcn@4516",
+    "path": "code/guicode/AC.m",
+    "name": "menu_prewhiten_CreateFcn",
+    "parent": "code/guicode/AC.m::<file>",
+    "kind": "function",
+    "line": 4516,
+    "end_line": 4516,
+    "inputs": [
+      "hObject",
+      "eventdata",
+      "handles"
+    ],
+    "outputs": [],
+    "empty": true,
+    "desktop_possible": false,
+    "api_possible": false,
+    "incoming_count": 0
+  },
+  {
+    "id": "code/guicode/AC.m::menu_cut_CreateFcn@5450",
+    "path": "code/guicode/AC.m",
+    "name": "menu_cut_CreateFcn",
+    "parent": "code/guicode/AC.m::<file>",
+    "kind": "function",
+    "line": 5450,
+    "end_line": 5450,
+    "inputs": [
+      "hObject",
+      "eventdata",
+      "handles"
+    ],
+    "outputs": [],
+    "empty": true,
+    "desktop_possible": false,
+    "api_possible": false,
+    "incoming_count": 0
+  },
+  {
+    "id": "code/guicode/AC.m::menu_copy_CreateFcn@5485",
+    "path": "code/guicode/AC.m",
+    "name": "menu_copy_CreateFcn",
+    "parent": "code/guicode/AC.m::<file>",
+    "kind": "function",
+    "line": 5485,
+    "end_line": 5485,
+    "inputs": [
+      "hObject",
+      "eventdata",
+      "handles"
+    ],
+    "outputs": [],
+    "empty": true,
+    "desktop_possible": false,
+    "api_possible": false,
+    "incoming_count": 0
+  },
+  {
+    "id": "code/guicode/AC.m::menu_paste_CreateFcn@5521",
+    "path": "code/guicode/AC.m",
+    "name": "menu_paste_CreateFcn",
+    "parent": "code/guicode/AC.m::<file>",
+    "kind": "function",
+    "line": 5521,
+    "end_line": 5521,
+    "inputs": [
+      "hObject",
+      "eventdata",
+      "handles"
+    ],
+    "outputs": [],
+    "empty": true,
+    "desktop_possible": false,
+    "api_possible": false,
+    "incoming_count": 0
+  },
+  {
+    "id": "code/guicode/AC.m::menu_sort_CreateFcn@5844",
+    "path": "code/guicode/AC.m",
+    "name": "menu_sort_CreateFcn",
+    "parent": "code/guicode/AC.m::<file>",
+    "kind": "function",
+    "line": 5844,
+    "end_line": 5844,
+    "inputs": [
+      "hObject",
+      "eventdata",
+      "handles"
+    ],
+    "outputs": [],
+    "empty": true,
+    "desktop_possible": false,
+    "api_possible": false,
+    "incoming_count": 0
+  },
+  {
+    "id": "code/guicode/AC.m::menu_insol_CreateFcn@7584",
+    "path": "code/guicode/AC.m",
+    "name": "menu_insol_CreateFcn",
+    "parent": "code/guicode/AC.m::<file>",
+    "kind": "function",
+    "line": 7584,
+    "end_line": 7584,
+    "inputs": [
+      "hObject",
+      "eventdata",
+      "handles"
+    ],
+    "outputs": [],
+    "empty": true,
+    "desktop_possible": false,
+    "api_possible": false,
+    "incoming_count": 0
+  },
+  {
+    "id": "code/guicode/AC.m::Official_Callback@7600",
+    "path": "code/guicode/AC.m",
+    "name": "Official_Callback",
+    "parent": "code/guicode/AC.m::<file>",
+    "kind": "function",
+    "line": 7600,
+    "end_line": 7600,
+    "inputs": [
+      "hObject",
+      "eventdata",
+      "handles"
+    ],
+    "outputs": [],
+    "empty": true,
+    "desktop_possible": false,
+    "api_possible": false,
+    "incoming_count": 0
+  },
+  {
+    "id": "code/guicode/AC.m::github_Callback@7606",
+    "path": "code/guicode/AC.m",
+    "name": "github_Callback",
+    "parent": "code/guicode/AC.m::<file>",
+    "kind": "function",
+    "line": 7606,
+    "end_line": 7606,
+    "inputs": [
+      "hObject",
+      "eventdata",
+      "handles"
+    ],
+    "outputs": [],
+    "empty": true,
+    "desktop_possible": false,
+    "api_possible": false,
+    "incoming_count": 0
+  },
+  {
+    "id": "code/guicode/AC.m::menu_newtxt_CreateFcn@7612",
+    "path": "code/guicode/AC.m",
+    "name": "menu_newtxt_CreateFcn",
+    "parent": "code/guicode/AC.m::<file>",
+    "kind": "function",
+    "line": 7612,
+    "end_line": 7612,
+    "inputs": [
+      "hObject",
+      "eventdata",
+      "handles"
+    ],
+    "outputs": [],
+    "empty": true,
+    "desktop_possible": false,
+    "api_possible": false,
+    "incoming_count": 0
+  },
+  {
+    "id": "code/guicode/AC.m::menu_refreshlist_CreateFcn@7719",
+    "path": "code/guicode/AC.m",
+    "name": "menu_refreshlist_CreateFcn",
+    "parent": "code/guicode/AC.m::<file>",
+    "kind": "function",
+    "line": 7719,
+    "end_line": 7719,
+    "inputs": [
+      "hObject",
+      "eventdata",
+      "handles"
+    ],
+    "outputs": [],
+    "empty": true,
+    "desktop_possible": false,
+    "api_possible": false,
+    "incoming_count": 0
+  },
+  {
+    "id": "code/guicode/AC.m::menu_opendir_CreateFcn@7737",
+    "path": "code/guicode/AC.m",
+    "name": "menu_opendir_CreateFcn",
+    "parent": "code/guicode/AC.m::<file>",
+    "kind": "function",
+    "line": 7737,
+    "end_line": 7737,
+    "inputs": [
+      "hObject",
+      "eventdata",
+      "handles"
+    ],
+    "outputs": [],
+    "empty": true,
+    "desktop_possible": false,
+    "api_possible": false,
+    "incoming_count": 0
+  },
+  {
+    "id": "code/guicode/AC.m::menu_smooth1_Callback@8120",
+    "path": "code/guicode/AC.m",
+    "name": "menu_smooth1_Callback",
+    "parent": "code/guicode/AC.m::<file>",
+    "kind": "function",
+    "line": 8120,
+    "end_line": 8120,
+    "inputs": [
+      "hObject",
+      "eventdata",
+      "handles"
+    ],
+    "outputs": [],
+    "empty": true,
+    "desktop_possible": true,
+    "api_possible": false,
+    "incoming_count": 1
+  },
+  {
+    "id": "code/guicode/AC.m::menu_image_Callback@8126",
+    "path": "code/guicode/AC.m",
+    "name": "menu_image_Callback",
+    "parent": "code/guicode/AC.m::<file>",
+    "kind": "function",
+    "line": 8126,
+    "end_line": 8126,
+    "inputs": [
+      "hObject",
+      "eventdata",
+      "handles"
+    ],
+    "outputs": [],
+    "empty": true,
+    "desktop_possible": true,
+    "api_possible": false,
+    "incoming_count": 1
+  },
+  {
+    "id": "code/guicode/AC.m::menu_menu_utilities_Callback@8133",
+    "path": "code/guicode/AC.m",
+    "name": "menu_menu_utilities_Callback",
+    "parent": "code/guicode/AC.m::<file>",
+    "kind": "function",
+    "line": 8133,
+    "end_line": 8133,
+    "inputs": [
+      "hObject",
+      "eventdata",
+      "handles"
+    ],
+    "outputs": [],
+    "empty": true,
+    "desktop_possible": false,
+    "api_possible": false,
+    "incoming_count": 0
+  },
+  {
+    "id": "code/guicode/AC.m::menu_sednoise_Callback@8168",
+    "path": "code/guicode/AC.m",
+    "name": "menu_sednoise_Callback",
+    "parent": "code/guicode/AC.m::<file>",
+    "kind": "function",
+    "line": 8168,
+    "end_line": 8168,
+    "inputs": [
+      "hObject",
+      "eventdata",
+      "handles"
+    ],
+    "outputs": [],
+    "empty": true,
+    "desktop_possible": true,
+    "api_possible": false,
+    "incoming_count": 1
+  },
+  {
+    "id": "code/guicode/AC.m::menu_smooth_option_Callback@8419",
+    "path": "code/guicode/AC.m",
+    "name": "menu_smooth_option_Callback",
+    "parent": "code/guicode/AC.m::<file>",
+    "kind": "function",
+    "line": 8419,
+    "end_line": 8419,
+    "inputs": [
+      "hObject",
+      "eventdata",
+      "handles"
+    ],
+    "outputs": [],
+    "empty": true,
+    "desktop_possible": true,
+    "api_possible": false,
+    "incoming_count": 1
+  },
+  {
+    "id": "code/guicode/AC.m::menu_movmedian_option_Callback@8425",
+    "path": "code/guicode/AC.m",
+    "name": "menu_movmedian_option_Callback",
+    "parent": "code/guicode/AC.m::<file>",
+    "kind": "function",
+    "line": 8425,
+    "end_line": 8425,
+    "inputs": [
+      "hObject",
+      "eventdata",
+      "handles"
+    ],
+    "outputs": [],
+    "empty": true,
+    "desktop_possible": true,
+    "api_possible": false,
+    "incoming_count": 1
+  },
+  {
+    "id": "code/guicode/AC.m::menu_examples_Callback@8785",
+    "path": "code/guicode/AC.m",
+    "name": "menu_examples_Callback",
+    "parent": "code/guicode/AC.m::<file>",
+    "kind": "function",
+    "line": 8785,
+    "end_line": 8785,
+    "inputs": [
+      "hObject",
+      "eventdata",
+      "handles"
+    ],
+    "outputs": [],
+    "empty": true,
+    "desktop_possible": true,
+    "api_possible": false,
+    "incoming_count": 1
+  },
+  {
+    "id": "code/guicode/AC.m::menu_univariate_Callback@9824",
+    "path": "code/guicode/AC.m",
+    "name": "menu_univariate_Callback",
+    "parent": "code/guicode/AC.m::<file>",
+    "kind": "function",
+    "line": 9824,
+    "end_line": 9824,
+    "inputs": [
+      "hObject",
+      "eventdata",
+      "handles"
+    ],
+    "outputs": [],
+    "empty": true,
+    "desktop_possible": false,
+    "api_possible": false,
+    "incoming_count": 0
+  },
+  {
+    "id": "code/guicode/AC.m::menu_bivariate_Callback@9831",
+    "path": "code/guicode/AC.m",
+    "name": "menu_bivariate_Callback",
+    "parent": "code/guicode/AC.m::<file>",
+    "kind": "function",
+    "line": 9831,
+    "end_line": 9831,
+    "inputs": [
+      "hObject",
+      "eventdata",
+      "handles"
+    ],
+    "outputs": [],
+    "empty": true,
+    "desktop_possible": false,
+    "api_possible": false,
+    "incoming_count": 0
+  },
+  {
+    "id": "code/guicode/AC.m::menu_multivariate1_Callback@9838",
+    "path": "code/guicode/AC.m",
+    "name": "menu_multivariate1_Callback",
+    "parent": "code/guicode/AC.m::<file>",
+    "kind": "function",
+    "line": 9838,
+    "end_line": 9838,
+    "inputs": [
+      "hObject",
+      "eventdata",
+      "handles"
+    ],
+    "outputs": [],
+    "empty": true,
+    "desktop_possible": false,
+    "api_possible": false,
+    "incoming_count": 0
+  },
+  {
+    "id": "code/guicode/AC.m::Menu_EMDmenu_Callback@10158",
+    "path": "code/guicode/AC.m",
+    "name": "Menu_EMDmenu_Callback",
+    "parent": "code/guicode/AC.m::<file>",
+    "kind": "function",
+    "line": 10158,
+    "end_line": 10158,
+    "inputs": [
+      "~",
+      "~",
+      "~"
+    ],
+    "outputs": [],
+    "empty": true,
+    "desktop_possible": false,
+    "api_possible": false,
+    "incoming_count": 0
+  },
+  {
+    "id": "code/guicode/AC.m::menu_memd_Callback@10607",
+    "path": "code/guicode/AC.m",
+    "name": "menu_memd_Callback",
+    "parent": "code/guicode/AC.m::<file>",
+    "kind": "function",
+    "line": 10607,
+    "end_line": 10607,
+    "inputs": [
+      "~",
+      "~",
+      "~"
+    ],
+    "outputs": [],
+    "empty": true,
+    "desktop_possible": false,
+    "api_possible": false,
+    "incoming_count": 0
+  },
+  {
+    "id": "code/guicode/spectrum.m::onLogFreqChanged@355",
+    "path": "code/guicode/spectrum.m",
+    "name": "onLogFreqChanged",
+    "parent": "code/guicode/spectrum.m::buildUI@14",
+    "kind": "nested",
+    "line": 355,
+    "end_line": 357,
+    "inputs": [],
+    "outputs": [],
+    "empty": true,
+    "desktop_possible": true,
+    "api_possible": false,
+    "incoming_count": 1
+  },
+  {
+    "id": "code/guicode/spectrumBKUP.m::edit_nsimulation_Callback@3586",
+    "path": "code/guicode/spectrumBKUP.m",
+    "name": "edit_nsimulation_Callback",
+    "parent": "code/guicode/spectrumBKUP.m::<file>",
+    "kind": "function",
+    "line": 3586,
+    "end_line": 3586,
+    "inputs": [
+      "hObject",
+      "eventdata",
+      "handles"
+    ],
+    "outputs": [],
+    "empty": true,
+    "desktop_possible": false,
+    "api_possible": false,
+    "incoming_count": 0
+  },
+  {
+    "id": "code/guicode/spectrumBKUP.m::edit3_Callback@3609",
+    "path": "code/guicode/spectrumBKUP.m",
+    "name": "edit3_Callback",
+    "parent": "code/guicode/spectrumBKUP.m::<file>",
+    "kind": "function",
+    "line": 3609,
+    "end_line": 3609,
+    "inputs": [
+      "hObject",
+      "eventdata",
+      "handles"
+    ],
+    "outputs": [],
+    "empty": true,
+    "desktop_possible": false,
+    "api_possible": false,
+    "incoming_count": 0
+  },
+  {
+    "id": "code/guicode/spectrumBKUP.m::edit4_Callback@3704",
+    "path": "code/guicode/spectrumBKUP.m",
+    "name": "edit4_Callback",
+    "parent": "code/guicode/spectrumBKUP.m::<file>",
+    "kind": "function",
+    "line": 3704,
+    "end_line": 3704,
+    "inputs": [
+      "hObject",
+      "eventdata",
+      "handles"
+    ],
+    "outputs": [],
+    "empty": true,
+    "desktop_possible": false,
+    "api_possible": false,
+    "incoming_count": 0
+  },
+  {
+    "id": "code/guicode/spectrumBKUP.m::checkboxSWA_Callback@3989",
+    "path": "code/guicode/spectrumBKUP.m",
+    "name": "checkboxSWA_Callback",
+    "parent": "code/guicode/spectrumBKUP.m::<file>",
+    "kind": "function",
+    "line": 3989,
+    "end_line": 3989,
+    "inputs": [
+      "hObject",
+      "eventdata",
+      "handles"
+    ],
+    "outputs": [],
+    "empty": true,
+    "desktop_possible": false,
+    "api_possible": false,
+    "incoming_count": 0
+  },
+  {
+    "id": "code/guicode/spectrumBKUP.m::edit8_Callback@3998",
+    "path": "code/guicode/spectrumBKUP.m",
+    "name": "edit8_Callback",
+    "parent": "code/guicode/spectrumBKUP.m::<file>",
+    "kind": "function",
+    "line": 3998,
+    "end_line": 3998,
+    "inputs": [
+      "hObject",
+      "eventdata",
+      "handles"
+    ],
+    "outputs": [],
+    "empty": true,
+    "desktop_possible": false,
+    "api_possible": false,
+    "incoming_count": 0
+  },
+  {
+    "id": "code/package/undatable/undatableGUI.m::specnsim_Callback@174",
+    "path": "code/package/undatable/undatableGUI.m",
+    "name": "specnsim_Callback",
+    "parent": "code/package/undatable/undatableGUI.m::<file>",
+    "kind": "function",
+    "line": 174,
+    "end_line": 174,
+    "inputs": [
+      "hObject",
+      "eventdata",
+      "handles"
+    ],
+    "outputs": [],
+    "empty": true,
+    "desktop_possible": true,
+    "api_possible": false,
+    "incoming_count": 1
+  },
+  {
+    "id": "code/package/undatable/undatableGUI.m::specxfactor_Callback@197",
+    "path": "code/package/undatable/undatableGUI.m",
+    "name": "specxfactor_Callback",
+    "parent": "code/package/undatable/undatableGUI.m::<file>",
+    "kind": "function",
+    "line": 197,
+    "end_line": 197,
+    "inputs": [
+      "hObject",
+      "eventdata",
+      "handles"
+    ],
+    "outputs": [],
+    "empty": true,
+    "desktop_possible": true,
+    "api_possible": false,
+    "incoming_count": 1
+  },
+  {
+    "id": "code/package/undatable/undatableGUI.m::specbootpc_Callback@220",
+    "path": "code/package/undatable/undatableGUI.m",
+    "name": "specbootpc_Callback",
+    "parent": "code/package/undatable/undatableGUI.m::<file>",
+    "kind": "function",
+    "line": 220,
+    "end_line": 220,
+    "inputs": [
+      "hObject",
+      "eventdata",
+      "handles"
+    ],
+    "outputs": [],
+    "empty": true,
+    "desktop_possible": true,
+    "api_possible": false,
+    "incoming_count": 1
+  },
+  {
+    "id": "code/package/undatable/undatableGUI.m::speccombine_Callback@531",
+    "path": "code/package/undatable/undatableGUI.m",
+    "name": "speccombine_Callback",
+    "parent": "code/package/undatable/undatableGUI.m::<file>",
+    "kind": "function",
+    "line": 531,
+    "end_line": 531,
+    "inputs": [
+      "hObject",
+      "eventdata",
+      "handles"
+    ],
+    "outputs": [],
+    "empty": true,
+    "desktop_possible": true,
+    "api_possible": false,
+    "incoming_count": 1
+  },
+  {
+    "id": "code/package/undatable/undatableGUI.m::specmatfile_Callback@558",
+    "path": "code/package/undatable/undatableGUI.m",
+    "name": "specmatfile_Callback",
+    "parent": "code/package/undatable/undatableGUI.m::<file>",
+    "kind": "function",
+    "line": 558,
+    "end_line": 558,
+    "inputs": [
+      "hObject",
+      "eventdata",
+      "handles"
+    ],
+    "outputs": [],
+    "empty": true,
+    "desktop_possible": true,
+    "api_possible": false,
+    "incoming_count": 1
+  }
+]

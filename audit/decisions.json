@@ -1,0 +1,643 @@
+{
+  "audit_date": "2026-11-17",
+  "desktop_roots": [
+    "ac.m"
+  ],
+  "api_roots": [
+    "code/seriesanalysis/acycleAmplitudeModulation.m",
+    "code/seriesanalysis/acycleBandpassFilter.m",
+    "code/seriesanalysis/acycleCircularSpectrum.m",
+    "code/seriesanalysis/acycleCoherencePhase.m",
+    "code/seriesanalysis/acycleDynamicFilter.m",
+    "code/seriesanalysis/acycleEmpiricalModeDecomposition.m",
+    "code/seriesanalysis/acycleEvolutionaryRho1.m",
+    "code/seriesanalysis/acycleFixedBandwidthSummary.m",
+    "code/seriesanalysis/acycleFixedCountMovingSummary.m",
+    "code/seriesanalysis/acycleGaussianMovingAverage.m",
+    "code/seriesanalysis/acycleInterpolateSeries.m",
+    "code/seriesanalysis/acycleLeadLagRmse.m",
+    "code/seriesanalysis/acycleMtmTaperCount.m",
+    "code/seriesanalysis/acyclePowerDecomposition.m",
+    "code/seriesanalysis/acyclePrewhitenSeries.m",
+    "code/seriesanalysis/acycleSamplingIsUneven.m",
+    "code/seriesanalysis/acycleSedimentationRateAgeModel.m",
+    "code/seriesanalysis/acycleSpectralMoments.m",
+    "code/package/bispectral/bispectralAnalyze.m"
+  ],
+  "dynamic_edges": [
+    {
+      "path": "code/guicode/AC.m",
+      "source": "AC_buildCodeUI",
+      "targets": [
+        "menu_log10_Callback",
+        "menu_norm_Callback"
+      ],
+      "line": 421,
+      "evidence": "names={menu_log10,menu_norm,menu_utilities}; cbName=[key,'_Callback']; hidden menu callback registration; menu_utilities_Callback is missing (recorded separately as a dangling binding)."
+    }
+  ],
+  "file_decisions": {
+    "code/corrcoef/cvcoco2.m": {
+      "category": "compatibility_entry",
+      "decision": "retain_compatibility",
+      "evidence": "Header explicitly declares a compatibility wrapper/alias; external saved scripts are outside this repository graph."
+    },
+    "code/corrcoef/cvcoco9.m": {
+      "category": "compatibility_entry",
+      "decision": "retain_compatibility",
+      "evidence": "Header explicitly declares a compatibility wrapper/alias; external saved scripts are outside this repository graph."
+    },
+    "code/misc/dynamic_filter.m": {
+      "category": "compatibility_entry",
+      "decision": "retain_compatibility",
+      "evidence": "Header explicitly declares a compatibility wrapper/alias; external saved scripts are outside this repository graph."
+    },
+    "code/seriesanalysis/pda.m": {
+      "category": "compatibility_entry",
+      "decision": "retain_compatibility",
+      "evidence": "Header explicitly declares a compatibility wrapper/alias; external saved scripts are outside this repository graph."
+    },
+    "code/seriesanalysis/gaussfilter.m": {
+      "category": "compatibility_entry",
+      "decision": "retain_compatibility",
+      "evidence": "Header explicitly declares a compatibility wrapper/alias; external saved scripts are outside this repository graph."
+    },
+    "code/seriesanalysis/tanerhilbertML.m": {
+      "category": "compatibility_entry",
+      "decision": "retain_compatibility",
+      "evidence": "Header explicitly declares a compatibility wrapper/alias; external saved scripts are outside this repository graph."
+    },
+    "code/corrcoef/runCocoEightMethodExperiment.m": {
+      "category": "batch_or_publication_entry",
+      "decision": "retain_optional_batch",
+      "evidence": "Standalone non-GUI publication/batch entry point. Absence of a desktop caller is expected; I/O and dataset assumptions need a separate adapter."
+    },
+    "code/corrcoef/runCocoPublicationValidation.m": {
+      "category": "batch_or_publication_entry",
+      "decision": "retain_optional_batch",
+      "evidence": "Standalone non-GUI publication/batch entry point. Absence of a desktop caller is expected; I/O and dataset assumptions need a separate adapter."
+    },
+    "code/corrcoef/runEcocoTwoMethodExperiment.m": {
+      "category": "batch_or_publication_entry",
+      "decision": "retain_optional_batch",
+      "evidence": "Standalone non-GUI publication/batch entry point. Absence of a desktop caller is expected; I/O and dataset assumptions need a separate adapter."
+    },
+    "code/corrcoef/runInterleavedCvCocoComparison.m": {
+      "category": "batch_or_publication_entry",
+      "decision": "retain_optional_batch",
+      "evidence": "Standalone non-GUI publication/batch entry point. Absence of a desktop caller is expected; I/O and dataset assumptions need a separate adapter."
+    },
+    "code/corrcoef/runSyn3FourMethodPublicationStudy.m": {
+      "category": "batch_or_publication_entry",
+      "decision": "retain_optional_batch",
+      "evidence": "Standalone non-GUI publication/batch entry point. Absence of a desktop caller is expected; I/O and dataset assumptions need a separate adapter."
+    },
+    "code/corrcoef/reexportCocoPublicationPdfs.m": {
+      "category": "batch_or_publication_entry",
+      "decision": "retain_optional_batch",
+      "evidence": "Standalone non-GUI publication/batch entry point. Absence of a desktop caller is expected; I/O and dataset assumptions need a separate adapter."
+    },
+    "code/corrcoef/validateCocoPublicationValidation.m": {
+      "category": "batch_or_publication_entry",
+      "decision": "retain_optional_batch",
+      "evidence": "Standalone non-GUI publication/batch entry point. Absence of a desktop caller is expected; I/O and dataset assumptions need a separate adapter."
+    },
+    "code/corrcoef/plotAdaptiveCocoPublication.m": {
+      "category": "batch_or_publication_entry",
+      "decision": "retain_optional_batch",
+      "evidence": "Standalone non-GUI publication/batch entry point. Absence of a desktop caller is expected; I/O and dataset assumptions need a separate adapter."
+    },
+    "code/package/bispectral/bispectralLocalDataValidation.m": {
+      "category": "validation_entry",
+      "decision": "retain_validation",
+      "evidence": "Self-test / example validation entry point; keep separate from production MATLAB path and scientific API."
+    },
+    "code/package/bispectral/bispectralSelfTest.m": {
+      "category": "validation_entry",
+      "decision": "retain_validation",
+      "evidence": "Self-test / example validation entry point; keep separate from production MATLAB path and scientific API."
+    },
+    "code/package/bispectral/bispectralValidateExamples.m": {
+      "category": "validation_entry",
+      "decision": "retain_validation",
+      "evidence": "Self-test / example validation entry point; keep separate from production MATLAB path and scientific API."
+    },
+    "code/guicode/spectrumBKUP.m": {
+      "category": "legacy_backup",
+      "decision": "archive_exclude_runtime",
+      "evidence": "Primary declaration is spectrum, but filename is spectrumBKUP. Current AC menu calls spectrum.m. Old GUIDE code expects spectrum.fig, absent from tracked tree. Not safe as a normal runtime API."
+    },
+    "code/guicode/SWA_refreshplot_CL_GUI.m": {
+      "category": "legacy_gui_dependency",
+      "decision": "defer_legacy_gui",
+      "evidence": "All incoming tracked executable references are in spectrumBKUP.m; current spectrum.m has its own rendering path."
+    },
+    "code/misc/update_spectral_x_period_mtm.m": {
+      "category": "legacy_gui_dependency",
+      "decision": "defer_legacy_gui",
+      "evidence": "All incoming tracked executable references are in spectrumBKUP.m; current spectrum.m has its own rendering path."
+    },
+    "code/guicode/ACUpdate.m": {
+      "category": "legacy_update_chain",
+      "decision": "defer_legacy_gui",
+      "evidence": "Disconnected update chain. Current AC menu_findupdates_Callback opens the upstream release/update page directly (AC.m:2962)."
+    },
+    "code/misc/ac_check_update.m": {
+      "category": "legacy_update_chain",
+      "decision": "defer_legacy_gui",
+      "evidence": "Disconnected update chain. Current AC menu_findupdates_Callback opens the upstream release/update page directly (AC.m:2962)."
+    },
+    "code/misc/ac_check_opendate.m": {
+      "category": "legacy_update_chain",
+      "decision": "defer_legacy_gui",
+      "evidence": "Disconnected update chain. Current AC menu_findupdates_Callback opens the upstream release/update page directly (AC.m:2962)."
+    },
+    "code/guicode/About.m": {
+      "category": "unwired_gui",
+      "decision": "defer_review",
+      "evidence": "No tracked incoming call; current AC copyright menu calls copyright(handles), not About. Retain history until external usage is checked."
+    },
+    "code/misc/coherence_update.m": {
+      "category": "legacy_analysis_path",
+      "decision": "defer_compare_contracts",
+      "evidence": "Legacy coherence script/helper chain has no current desktop caller; coherenceGUI uses acycleCoherencePhase. Numerical/output equivalence is not assumed."
+    },
+    "code/misc/cohac.m": {
+      "category": "legacy_analysis_path",
+      "decision": "defer_compare_contracts",
+      "evidence": "Legacy coherence script/helper chain has no current desktop caller; coherenceGUI uses acycleCoherencePhase. Numerical/output equivalence is not assumed."
+    },
+    "code/misc/update_recplot.m": {
+      "category": "legacy_analysis_path",
+      "decision": "defer_compare_contracts",
+      "evidence": "Legacy recurrence rendering path; current RecPlotGUI builds results in its class implementation. Check external users before removal."
+    },
+    "code/package/recurrence/recplot.m": {
+      "category": "legacy_analysis_path",
+      "decision": "defer_compare_contracts",
+      "evidence": "Legacy recurrence rendering path; current RecPlotGUI builds results in its class implementation. Check external users before removal."
+    },
+    "code/misc/update_detrend_plot_fig.m": {
+      "category": "unwired_workspace_script",
+      "decision": "defer_compare_contracts",
+      "evidence": "Caller-workspace helper without a discovered current invocation. Record variable/handles contract before considering removal."
+    },
+    "code/misc/update_filter_axes.m": {
+      "category": "unwired_workspace_script",
+      "decision": "defer_compare_contracts",
+      "evidence": "Caller-workspace helper without a discovered current invocation. Record variable/handles contract before considering removal."
+    },
+    "code/misc/update_filter_axes4.m": {
+      "category": "unwired_workspace_script",
+      "decision": "defer_compare_contracts",
+      "evidence": "Caller-workspace helper without a discovered current invocation. Record variable/handles contract before considering removal."
+    },
+    "code/misc/update_interpolationGUI.m": {
+      "category": "unwired_workspace_script",
+      "decision": "defer_compare_contracts",
+      "evidence": "Caller-workspace helper without a discovered current invocation. Record variable/handles contract before considering removal."
+    },
+    "code/misc/plotpro_plot_done.m": {
+      "category": "unwired_workspace_script",
+      "decision": "defer_compare_contracts",
+      "evidence": "Caller-workspace helper without a discovered current invocation. Record variable/handles contract before considering removal."
+    },
+    "code/misc/check_acycle_toolboxes.m": {
+      "category": "developer_utility",
+      "decision": "retain_developer_optional",
+      "evidence": "Standalone toolbox inventory script; not a runtime numerical operation."
+    },
+    "doc/ac_acknowledgment.m": {
+      "category": "runtime_documentation",
+      "decision": "retain_attribution",
+      "evidence": "ac.m:94 displays this script through help; documentation dependency, not a numerical entry point."
+    },
+    "data/La10b.mat": {
+      "category": "scientific_resource",
+      "decision": "retain_owner_bundle",
+      "evidence": "Astronomical solution, calibration table or owner-scoped native dependency. Resource selection may be dynamic; do not prune by literal references."
+    },
+    "data/La10a.mat": {
+      "category": "scientific_resource",
+      "decision": "retain_owner_bundle",
+      "evidence": "Astronomical solution, calibration table or owner-scoped native dependency. Resource selection may be dynamic; do not prune by literal references."
+    },
+    "data/ZB18a.dat": {
+      "category": "scientific_resource",
+      "decision": "retain_owner_bundle",
+      "evidence": "Astronomical solution, calibration table or owner-scoped native dependency. Resource selection may be dynamic; do not prune by literal references."
+    },
+    "data/La10c.mat": {
+      "category": "scientific_resource",
+      "decision": "retain_owner_bundle",
+      "evidence": "Astronomical solution, calibration table or owner-scoped native dependency. Resource selection may be dynamic; do not prune by literal references."
+    },
+    "data/Berger1989Periods.txt": {
+      "category": "scientific_resource",
+      "decision": "retain_owner_bundle",
+      "evidence": "Astronomical solution, calibration table or owner-scoped native dependency. Resource selection may be dynamic; do not prune by literal references."
+    },
+    "data/La04.mat": {
+      "category": "scientific_resource",
+      "decision": "retain_owner_bundle",
+      "evidence": "Astronomical solution, calibration table or owner-scoped native dependency. Resource selection may be dynamic; do not prune by literal references."
+    },
+    "data/La10d.mat": {
+      "category": "scientific_resource",
+      "decision": "retain_owner_bundle",
+      "evidence": "Astronomical solution, calibration table or owner-scoped native dependency. Resource selection may be dynamic; do not prune by literal references."
+    },
+    "code/icons/default_logo.png": {
+      "category": "gui_resource",
+      "decision": "retain_gui_bundle",
+      "evidence": "GUI assets/configuration, including the remaining Undatable GUIDE figure."
+    },
+    "code/icons/acycle_logo.jpg": {
+      "category": "gui_resource",
+      "decision": "retain_gui_bundle",
+      "evidence": "GUI assets/configuration, including the remaining Undatable GUIDE figure."
+    },
+    "code/icons/acycle_logo.png": {
+      "category": "gui_resource",
+      "decision": "retain_gui_bundle",
+      "evidence": "GUI assets/configuration, including the remaining Undatable GUIDE figure."
+    },
+    "code/icons/menu_refresh.jpg": {
+      "category": "gui_resource",
+      "decision": "retain_gui_bundle",
+      "evidence": "GUI assets/configuration, including the remaining Undatable GUIDE figure."
+    },
+    "code/icons/menu_robot.jpg": {
+      "category": "gui_resource",
+      "decision": "retain_gui_bundle",
+      "evidence": "GUI assets/configuration, including the remaining Undatable GUIDE figure."
+    },
+    "code/icons/menu_open.jpg": {
+      "category": "gui_resource",
+      "decision": "retain_gui_bundle",
+      "evidence": "GUI assets/configuration, including the remaining Undatable GUIDE figure."
+    },
+    "code/icons/menu_up.jpg": {
+      "category": "gui_resource",
+      "decision": "retain_gui_bundle",
+      "evidence": "GUI assets/configuration, including the remaining Undatable GUIDE figure."
+    },
+    "code/icons/menu_folder.jpg": {
+      "category": "gui_resource",
+      "decision": "retain_gui_bundle",
+      "evidence": "GUI assets/configuration, including the remaining Undatable GUIDE figure."
+    },
+    "code/icons/menu_plot.jpg": {
+      "category": "gui_resource",
+      "decision": "retain_gui_bundle",
+      "evidence": "GUI assets/configuration, including the remaining Undatable GUIDE figure."
+    },
+    "code/bin/langdict.xlsx": {
+      "category": "gui_resource",
+      "decision": "retain_gui_bundle",
+      "evidence": "GUI assets/configuration, including the remaining Undatable GUIDE figure."
+    },
+    "code/bin/PlotAdvSettingSeed.xlsx": {
+      "category": "gui_resource",
+      "decision": "retain_gui_bundle",
+      "evidence": "GUI assets/configuration, including the remaining Undatable GUIDE figure."
+    },
+    "code/misc/axesTheme.mat": {
+      "category": "gui_resource",
+      "decision": "retain_gui_bundle",
+      "evidence": "GUI assets/configuration, including the remaining Undatable GUIDE figure."
+    },
+    "code/package/undatable/undatableGUI.fig": {
+      "category": "gui_resource",
+      "decision": "retain_gui_bundle",
+      "evidence": "GUI assets/configuration, including the remaining Undatable GUIDE figure."
+    },
+    "code/package/secular_periods/La04gisi.csv": {
+      "category": "scientific_resource",
+      "decision": "retain_owner_bundle",
+      "evidence": "Astronomical solution, calibration table or owner-scoped native dependency. Resource selection may be dynamic; do not prune by literal references."
+    },
+    "code/package/secular_periods/AstroGeo22.txt": {
+      "category": "scientific_resource",
+      "decision": "retain_owner_bundle",
+      "evidence": "Astronomical solution, calibration table or owner-scoped native dependency. Resource selection may be dynamic; do not prune by literal references."
+    },
+    "code/package/undatable/private/IntCal13.14c": {
+      "category": "scientific_resource",
+      "decision": "retain_owner_bundle",
+      "evidence": "Astronomical solution, calibration table or owner-scoped native dependency. Resource selection may be dynamic; do not prune by literal references."
+    },
+    "code/package/undatable/private/nakeinterp1.mexmaci64": {
+      "category": "scientific_resource",
+      "decision": "retain_owner_bundle",
+      "evidence": "Astronomical solution, calibration table or owner-scoped native dependency. Resource selection may be dynamic; do not prune by literal references."
+    },
+    "code/package/undatable/private/IntCal20 raw data.txt": {
+      "category": "scientific_resource",
+      "decision": "retain_owner_bundle",
+      "evidence": "Astronomical solution, calibration table or owner-scoped native dependency. Resource selection may be dynamic; do not prune by literal references."
+    },
+    "code/package/undatable/private/nakeinterp1.mexw64": {
+      "category": "scientific_resource",
+      "decision": "retain_owner_bundle",
+      "evidence": "Astronomical solution, calibration table or owner-scoped native dependency. Resource selection may be dynamic; do not prune by literal references."
+    },
+    "code/package/undatable/private/IntCal20.14c": {
+      "category": "scientific_resource",
+      "decision": "retain_owner_bundle",
+      "evidence": "Astronomical solution, calibration table or owner-scoped native dependency. Resource selection may be dynamic; do not prune by literal references."
+    },
+    "code/package/undatable/private/nakeinterp1.mexa64": {
+      "category": "scientific_resource",
+      "decision": "retain_owner_bundle",
+      "evidence": "Astronomical solution, calibration table or owner-scoped native dependency. Resource selection may be dynamic; do not prune by literal references."
+    },
+    "code/package/undatable/private/Marine98.14c": {
+      "category": "scientific_resource",
+      "decision": "retain_owner_bundle",
+      "evidence": "Astronomical solution, calibration table or owner-scoped native dependency. Resource selection may be dynamic; do not prune by literal references."
+    },
+    "code/package/undatable/private/Marine20.14c": {
+      "category": "scientific_resource",
+      "decision": "retain_owner_bundle",
+      "evidence": "Astronomical solution, calibration table or owner-scoped native dependency. Resource selection may be dynamic; do not prune by literal references."
+    },
+    "code/package/undatable/private/Marine04.14c": {
+      "category": "scientific_resource",
+      "decision": "retain_owner_bundle",
+      "evidence": "Astronomical solution, calibration table or owner-scoped native dependency. Resource selection may be dynamic; do not prune by literal references."
+    },
+    "code/package/undatable/private/IntCal13 raw data.txt": {
+      "category": "scientific_resource",
+      "decision": "retain_owner_bundle",
+      "evidence": "Astronomical solution, calibration table or owner-scoped native dependency. Resource selection may be dynamic; do not prune by literal references."
+    },
+    "code/package/undatable/private/IntCal98.14c": {
+      "category": "scientific_resource",
+      "decision": "retain_owner_bundle",
+      "evidence": "Astronomical solution, calibration table or owner-scoped native dependency. Resource selection may be dynamic; do not prune by literal references."
+    },
+    "code/package/undatable/private/SHCal20.14c": {
+      "category": "scientific_resource",
+      "decision": "retain_owner_bundle",
+      "evidence": "Astronomical solution, calibration table or owner-scoped native dependency. Resource selection may be dynamic; do not prune by literal references."
+    },
+    "code/package/undatable/private/nakeinterp1.c": {
+      "category": "scientific_resource",
+      "decision": "retain_owner_bundle",
+      "evidence": "Astronomical solution, calibration table or owner-scoped native dependency. Resource selection may be dynamic; do not prune by literal references."
+    },
+    "code/package/undatable/private/IntCal09.14c": {
+      "category": "scientific_resource",
+      "decision": "retain_owner_bundle",
+      "evidence": "Astronomical solution, calibration table or owner-scoped native dependency. Resource selection may be dynamic; do not prune by literal references."
+    },
+    "code/package/undatable/private/Marine09.14c": {
+      "category": "scientific_resource",
+      "decision": "retain_owner_bundle",
+      "evidence": "Astronomical solution, calibration table or owner-scoped native dependency. Resource selection may be dynamic; do not prune by literal references."
+    },
+    "code/package/undatable/private/IntCal04.14c": {
+      "category": "scientific_resource",
+      "decision": "retain_owner_bundle",
+      "evidence": "Astronomical solution, calibration table or owner-scoped native dependency. Resource selection may be dynamic; do not prune by literal references."
+    },
+    "code/package/undatable/private/SHCal04.14c": {
+      "category": "scientific_resource",
+      "decision": "retain_owner_bundle",
+      "evidence": "Astronomical solution, calibration table or owner-scoped native dependency. Resource selection may be dynamic; do not prune by literal references."
+    },
+    "code/package/undatable/private/SHCal13.14c": {
+      "category": "scientific_resource",
+      "decision": "retain_owner_bundle",
+      "evidence": "Astronomical solution, calibration table or owner-scoped native dependency. Resource selection may be dynamic; do not prune by literal references."
+    },
+    "code/package/undatable/private/interp1qr_license.txt": {
+      "category": "scientific_resource",
+      "decision": "retain_owner_bundle",
+      "evidence": "Astronomical solution, calibration table or owner-scoped native dependency. Resource selection may be dynamic; do not prune by literal references."
+    },
+    "code/package/undatable/private/Marine13.14c": {
+      "category": "scientific_resource",
+      "decision": "retain_owner_bundle",
+      "evidence": "Astronomical solution, calibration table or owner-scoped native dependency. Resource selection may be dynamic; do not prune by literal references."
+    },
+    "data/Examples/Example-LateTriassicNewarkDepthRank.txt": {
+      "category": "example_data",
+      "decision": "retain_examples_optional",
+      "evidence": "Demo/validation input; not algorithm source."
+    },
+    "data/Examples/Example-WayaoCarnianGR0.txt": {
+      "category": "example_data",
+      "decision": "retain_examples_optional",
+      "evidence": "Demo/validation input; not algorithm source."
+    },
+    "data/Examples/Example-PlotDigitizer.jpg": {
+      "category": "example_data",
+      "decision": "retain_examples_optional",
+      "evidence": "Demo/validation input; not algorithm source."
+    },
+    "data/Examples/LR04stack5320ka.txt": {
+      "category": "example_data",
+      "decision": "retain_examples_optional",
+      "evidence": "Demo/validation input; not algorithm source."
+    },
+    "data/Examples/Example-Sphalerite.jpg": {
+      "category": "example_data",
+      "decision": "retain_examples_optional",
+      "evidence": "Demo/validation input; not algorithm source."
+    },
+    "data/Examples/Example-HiRISE-PSP_002733_1880_RED.jpg": {
+      "category": "example_data",
+      "decision": "retain_examples_optional",
+      "evidence": "Demo/validation input; not algorithm source."
+    },
+    "data/Examples/Example-Guandao2AnisianGR.txt": {
+      "category": "example_data",
+      "decision": "retain_examples_optional",
+      "evidence": "Demo/validation input; not algorithm source."
+    },
+    "data/Examples/SecularFreqLa04Tab3.txt": {
+      "category": "example_data",
+      "decision": "retain_examples_optional",
+      "evidence": "Demo/validation input; not algorithm source."
+    },
+    "data/Examples/Example-LaunaLoa-Hawaii-CO2-monthly-mean.txt": {
+      "category": "example_data",
+      "decision": "retain_examples_optional",
+      "evidence": "Demo/validation input; not algorithm source."
+    },
+    "data/Examples/Example-cenogrid-d13c.txt": {
+      "category": "example_data",
+      "decision": "retain_examples_optional",
+      "evidence": "Demo/validation input; not algorithm source."
+    },
+    "data/Examples/Example-Insol-t-0-2000ka-day-80-lat-65-meandaily-La04.txt": {
+      "category": "example_data",
+      "decision": "retain_examples_optional",
+      "evidence": "Demo/validation input; not algorithm source."
+    },
+    "data/Examples/Example-CSA-extinction.txt": {
+      "category": "example_data",
+      "decision": "retain_examples_optional",
+      "evidence": "Demo/validation input; not algorithm source."
+    },
+    "data/Examples/Example-Rednoise0.7-2000.txt": {
+      "category": "example_data",
+      "decision": "retain_examples_optional",
+      "evidence": "Demo/validation input; not algorithm source."
+    },
+    "data/Examples/extinction.mat": {
+      "category": "example_data",
+      "decision": "retain_examples_optional",
+      "evidence": "Demo/validation input; not algorithm source."
+    },
+    "data/Examples/Example-SvalbardPETM-logFe.txt": {
+      "category": "example_data",
+      "decision": "retain_examples_optional",
+      "evidence": "Demo/validation input; not algorithm source."
+    },
+    "data/Examples/Example-cenogrid-d18o.txt": {
+      "category": "example_data",
+      "decision": "retain_examples_optional",
+      "evidence": "Demo/validation input; not algorithm source."
+    },
+    "data/Examples/event260.mat": {
+      "category": "example_data",
+      "decision": "retain_examples_optional",
+      "evidence": "Demo/validation input; not algorithm source."
+    },
+    "data/Examples/Example-La2004-1E.5T-1P-0-2000.txt": {
+      "category": "example_data",
+      "decision": "retain_examples_optional",
+      "evidence": "Demo/validation input; not algorithm source."
+    },
+    "code/bin/ac_pwd.txt": {
+      "category": "runtime_state_seed",
+      "decision": "replace_with_per_job_state_later",
+      "evidence": "Mutable GUI state currently read/written through path lookup. Keep source snapshot intact; Harness should provide job-local state rather than share values."
+    },
+    "code/bin/ac_lang.txt": {
+      "category": "runtime_state_seed",
+      "decision": "replace_with_per_job_state_later",
+      "evidence": "Mutable GUI state currently read/written through path lookup. Keep source snapshot intact; Harness should provide job-local state rather than share values."
+    },
+    "code/bin/ac_opendate.txt": {
+      "category": "runtime_state_seed",
+      "decision": "replace_with_per_job_state_later",
+      "evidence": "Mutable GUI state currently read/written through path lookup. Keep source snapshot intact; Harness should provide job-local state rather than share values."
+    },
+    "code/bin/ac_datenow.txt": {
+      "category": "runtime_state_seed",
+      "decision": "replace_with_per_job_state_later",
+      "evidence": "Mutable GUI state currently read/written through path lookup. Keep source snapshot intact; Harness should provide job-local state rather than share values."
+    },
+    "code/seriesanalysis/acyclePowerDecomposition.m": {
+      "category": "core_not_desktop_wired",
+      "decision": "retain_distinct_api_contract",
+      "evidence": "Reusable exact-boundary PSD integration API. Desktop/DYNOT still uses pdan (legacy proportional bin mapping, documented in pdan.m:1-14). Do not silently substitute one for the other."
+    }
+  },
+  "d_exponent_parser_adapters": [
+    "code/package/swa/ctaper.m",
+    "code/package/swa/period.m",
+    "code/package/swa/specbayes.m",
+    "code/package/swa/specswafdr.m"
+  ],
+  "optional_roots": [
+    "code/corrcoef/cvcoco2.m",
+    "code/corrcoef/cvcoco9.m",
+    "code/corrcoef/plotAdaptiveCocoPublication.m",
+    "code/corrcoef/reexportCocoPublicationPdfs.m",
+    "code/corrcoef/runCocoEightMethodExperiment.m",
+    "code/corrcoef/runCocoPublicationValidation.m",
+    "code/corrcoef/runEcocoTwoMethodExperiment.m",
+    "code/corrcoef/runInterleavedCvCocoComparison.m",
+    "code/corrcoef/runSyn3FourMethodPublicationStudy.m",
+    "code/corrcoef/validateCocoPublicationValidation.m",
+    "code/misc/dynamic_filter.m",
+    "code/package/bispectral/bispectralLocalDataValidation.m",
+    "code/package/bispectral/bispectralSelfTest.m",
+    "code/package/bispectral/bispectralValidateExamples.m",
+    "code/seriesanalysis/gaussfilter.m",
+    "code/seriesanalysis/pda.m",
+    "code/seriesanalysis/tanerhilbertML.m"
+  ],
+  "dynamic_menus": [
+    {
+      "line": 429,
+      "handle": "handles.menu_log10",
+      "parent": "handles.menu_math",
+      "label": "menu_log10",
+      "tag": "menu_log10",
+      "own_visible": "off",
+      "callback": "menu_log10_Callback"
+    },
+    {
+      "line": 429,
+      "handle": "handles.menu_norm",
+      "parent": "handles.menu_math",
+      "label": "menu_norm",
+      "tag": "menu_norm",
+      "own_visible": "off",
+      "callback": "menu_norm_Callback"
+    },
+    {
+      "line": 429,
+      "handle": "handles.menu_utilities",
+      "parent": "handles.menu_math",
+      "label": "menu_utilities",
+      "tag": "menu_utilities",
+      "own_visible": "off",
+      "callback": "menu_utilities_Callback"
+    }
+  ],
+  "block_decisions": {
+    "code/guicode/AC.m::menu_memd_Callback": {
+      "decision": "exclude_empty_placeholder",
+      "evidence": "Empty body at AC.m:10607; no menu registration. There is no MEMD implementation to wrap."
+    },
+    "code/guicode/AC.m::menu_lyapunov_Callback": {
+      "decision": "defer_missing_dependency",
+      "evidence": "No menu binding; calls lyapunov_timeseries at 11211 and 11355. Dependency absent; code/package/lyapunov ignored in .gitignore:9."
+    },
+    "code/guicode/AC.m::menu_rhov2_Callback": {
+      "decision": "defer_legacy_alternative",
+      "evidence": "Unregistered alternative spanning 10614-11010; active menu_rho_Callback uses acycleEvolutionaryRho1. Compare scientific contract before removal."
+    },
+    "code/guicode/AC.m::menu_dynot_v2_Callback": {
+      "decision": "defer_duplicate_launcher",
+      "evidence": "Unregistered second launcher for DYNOS; active menu_dynos_Callback at 3977 also launches DYNOS at 4000."
+    },
+    "code/guicode/AC.m::menu_menu_utilities_Callback": {
+      "decision": "exclude_empty_placeholder",
+      "evidence": "Empty body with duplicated menu_ prefix; generated hidden menu dispatches menu_utilities_Callback, which does not exist."
+    },
+    "code/guicode/AC.m::AC_OutputFcn": {
+      "decision": "defer_guide_compatibility",
+      "evidence": "Old GUIDE lifecycle callback; current AC_buildCodeUI constructs controls directly. AC string dispatch remains externally callable."
+    },
+    "code/guicode/AC.m::listbox_acmain_CreateFcn": {
+      "decision": "defer_guide_compatibility",
+      "evidence": "Old GUIDE lifecycle callback; current AC_buildCodeUI constructs controls directly. AC string dispatch remains externally callable."
+    },
+    "code/guicode/AC.m::edit_acfigmain_dir_CreateFcn": {
+      "decision": "defer_guide_compatibility",
+      "evidence": "Old GUIDE lifecycle callback; current AC_buildCodeUI constructs controls directly. AC string dispatch remains externally callable."
+    },
+    "code/guicode/AC.m::popupmenu1_CreateFcn": {
+      "decision": "defer_guide_compatibility",
+      "evidence": "Old GUIDE lifecycle callback; current AC_buildCodeUI constructs controls directly. AC string dispatch remains externally callable."
+    },
+    "code/guicode/AC.m::popupmenu2_CreateFcn": {
+      "decision": "defer_guide_compatibility",
+      "evidence": "Old GUIDE lifecycle callback; current AC_buildCodeUI constructs controls directly. AC string dispatch remains externally callable."
+    },
+    "code/guicode/DYNOS.m::onDataReady": {
+      "decision": "defer_unwired_handler",
+      "evidence": "No registration/reference found; current GUI initialization invokes loadDataReady directly."
+    }
+  },
+  "cleanup_commit": "4d62d54cc3288cef9f6ebd004191fac2d3b599d0",
+  "source_commit": "dcba4279168745b563e0535b954297023dd62fc7"
+}

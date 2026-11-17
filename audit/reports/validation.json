@@ -1,0 +1,52 @@
+{
+  "date": "2026-11-17",
+  "upstream_commit": "dcba4279168745b563e0535b954297023dd62fc7",
+  "python_version": "3.12.14",
+  "unit_tests": {
+    "passed": 12,
+    "failed": 0,
+    "command": "python -m unittest discover -s audit/tests -v"
+  },
+  "regeneration": {
+    "byte_identical_reports": 15,
+    "passed": true,
+    "comparison": "Complete current-generator regeneration versus reviewed reports; graph was also regenerated independently before the symbolic HEAD metadata correction."
+  },
+  "invariants": {
+    "tracked_files_exactly_covered": 412,
+    "source_hashes_match": true,
+    "source_clean": true,
+    "graph_endpoints_valid": true,
+    "branches_same_tree": true,
+    "actual_remote_branches": 2,
+    "fig_callbacks_resolved": 14,
+    "hidden_dangling_menu_binding_recorded": true
+  },
+  "scope": {
+    "matlab_execution": "not_run",
+    "scientific_parity": "not_tested",
+    "gui_execution": "not_run",
+    "mex_execution": "not_run",
+    "github_actions": "not_run",
+    "upstream_source_modifications": 0
+  },
+  "report_sha256": {
+    "block_candidates.csv": "cb754f730c802c5e9cba2f61f5ff3f071beafeb4bf7791bbcd326f6b737e5f57",
+    "constant_conditions.json": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+    "edges.csv": "43c4e5a1971ce6a07c8bdee01ed45610bf2512308c7ff6db2af3010ed642d20a",
+    "empty_functions.json": "424928840db736183a480140099a27f4157c8fd060c735350ce0ddd13a1b13f4",
+    "fig_callbacks.json": "a98ba2386548cec8972cfb897ed4edffffa0a22cff068a5269af0f8cbc4a33ca",
+    "file_edges.csv": "e5122eb08e25458089e9c9ed2945e96f489aabacd830fb55047f1a4050a9b580",
+    "manifest.json": "f9f6d48331bfc3185da420a9e7a185e23fdd61e28783e1483e558d6268331389",
+    "menus.csv": "8fc3f1d949e977af545e2fca5bfc553c3d809a67fec08ea09bb4d2fab5bf9c21",
+    "migration_inventory.csv": "aac085d22e7c394fa8b9d4ef502f1c69d929fe8d265897d9e1045b73c6b82357",
+    "native_dependencies.csv": "37c2d0557902b3b82c21d897a4009451b139506d73814ff8a9f04d3db6f3c0ad",
+    "release_cleanup.json": "d8cd1a95996455b7843f12fab9fb85683d2e2514585b1f1d1a012df85a685105",
+    "resource_references.csv": "c41676aabeec871dcbba9939f863b0f776496213b3cac66d369df59430500820",
+    "summary.json": "ebbf70f26c5bacf70099b95298bd26568df937cb99235a4d3d390a5e92120f40",
+    "symbols.csv": "47a43999e467c004ffbe80cbe524061af28fa4d7c6c328a969bb9e0b3865dc6e",
+    "unresolved_dynamic.csv": "d1b234cc47634aa021c7604e9c71b2b0c615f561df819dbc8f6a654f3f1f9f98"
+  },
+  "auditor_sha256": "8e8a3bc3dc7d6d2006bb02cc956f20cba9f112d837adbf654db0b192b1e05fe6",
+  "decisions_sha256": "af8d49cb2932a36f58ba84da63bc76a26be7025b587571235b505288ff60ef19"
+}

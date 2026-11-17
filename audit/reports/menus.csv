@@ -1,0 +1,129 @@
+line,handle,parent,label,tag,own_visible,ancestor_hidden,callback,resolved
+123,handles.menu_file,hFig,File,menu_file,on,False,,
+124,handles.menu_edit,hFig,Edit,menu_edit,on,False,,
+125,handles.menu_plotall,hFig,Plot,menu_plotall,on,False,,
+126,handles.menu_basic,hFig,Basic Series,menu_basic,on,False,,
+127,handles.menu_math,hFig,Math,menu_math,on,False,,
+130,handles.menu_univariate,hFig,Univariate,menu_univariate,on,False,,
+131,handles.menu_bivariate,hFig,Bivariate,menu_bivariate,on,False,,
+132,handles.menu_multivariate1,hFig,Multivariate,menu_multivariate1,off,False,,
+133,handles.menuac,hFig,Timeseries,menuac,on,False,,
+134,handles.menu_help,hFig,Help,menu_help,on,False,,
+137,handles.menu_statsummary,handles.menu_univariate,Stat Summary,menu_statsummary,on,False,menu_statsummary_Callback,True
+139,handles.menu_ttest,handles.menu_univariate,t-Test,menu_ttest,on,False,menu_ttest_Callback,True
+143,handles.menu_uni2SamTest,handles.menu_bivariate,1-2 Sample Test,menu_uni2SamTest,on,False,menu_uni2SamTest_Callback,True
+145,handles.menu_anova,handles.menu_bivariate,ANOVA,menu_anova,on,False,menu_anova_Callback,True
+147,handles.menu_normaltest,handles.menu_bivariate,Normality Test,menu_normaltest,on,False,menu_normaltest_Callback,True
+149,handles.menu_chi2gof,handles.menu_bivariate,Chi-square GOF,menu_chi2gof,on,False,menu_chi2gof_Callback,True
+151,handles.menu_corr,handles.menu_bivariate,Correlation,menu_corr,on,False,menu_corr_Callback,True
+153,handles.menu_covariance,handles.menu_bivariate,Covariance,menu_covariance,on,False,menu_covariance_Callback,True
+155,handles.menu_linearReg,handles.menu_bivariate,Linear Regression,menu_linearReg,on,False,menu_linearReg_Callback,True
+159,handles.menu_folder,handles.menu_file,New Folder,menu_folder,on,False,menu_folder_Callback,True
+161,handles.menu_newtxt,handles.menu_file,New Text File,menu_newtxt,on,False,menu_newtxt_Callback,True
+163,handles.menu_NewDataTable,handles.menu_file,Create Data Table,menu_NewDataTable,on,False,menu_NewDataTable_Callback,True
+165,handles.menu_savefig,handles.menu_file,Save *.AC.fig,menu_savefig,on,False,menu_savefig_Callback,True
+167,handles.menu_extract,handles.menu_file,Extract Data,menu_extract,on,False,menu_extract_Callback,True
+169,handles.menu_opendir,handles.menu_file,Open Directory,menu_opendir,off,False,menu_opendir_Callback,True
+173,handles.menu_refreshlist,handles.menu_edit,Refresh,menu_refreshlist,on,False,menu_refreshlist_Callback,True
+175,handles.menu_rename,handles.menu_edit,Rename,menu_rename,on,False,menu_rename_Callback,True
+177,handles.menu_cut,handles.menu_edit,Cut,menu_cut,on,False,menu_cut_Callback,True
+179,handles.menu_copy,handles.menu_edit,Copy,menu_copy,on,False,menu_copy_Callback,True
+181,handles.menu_paste,handles.menu_edit,Paste,menu_paste,on,False,menu_paste_Callback,True
+183,handles.menu_delete,handles.menu_edit,Delete,menu_delete,on,False,menu_delete_Callback,True
+187,handles.menu_plot,handles.menu_plotall,Plot,menu_plot,on,False,menu_plot_Callback,True
+189,handles.menu_plotpro_2d,handles.menu_plotall,Plot Pro,menu_plotpro_2d,on,False,menu_plotpro_2d_Callback,True
+191,handles.menu_plotadv,handles.menu_plotall,Plot Adv,menu_plotadv,on,False,menu_plotadv_Callback,True
+193,handles.menu_plotn,handles.menu_plotall,Plot Standardized,menu_plotn,on,False,menu_plotn_Callback,True
+195,handles.menu_plotn2,handles.menu_plotall,Plot Standardized + 2,menu_plotn2,on,False,menu_plotn2_Callback,True
+197,handles.menu_samplerate,handles.menu_plotall,Sampling Rate,menu_samplerate,on,False,menu_samplerate_Callback,True
+199,handles.menu_datadistri,handles.menu_plotall,Data Distribution,menu_datadistri,on,False,menu_datadistri_Callback,True
+201,handles.menu_sound,handles.menu_plotall,Convert to sound,menu_sound,on,False,menu_sound_Callback,True
+205,handles.menu_insol,handles.menu_basic,Insolation,menu_insol,on,False,menu_insol_Callback,True
+207,handles.menu_laskar,handles.menu_basic,Astronomical Solution,menu_laskar,on,False,menu_laskar_Callback,True
+209,handles.menu_LOD,handles.menu_basic,Milankovitch Calculator,menu_LOD,on,False,menu_LOD_Callback,True
+211,handles.linegenerator,handles.menu_basic,Signal/Noise Generator,linegenerator,on,False,linegenerator_Callback,True
+213,handles.menu_LR04,handles.menu_basic,LR04 Stack,menu_LR04,on,False,menu_LR04_Callback,True
+215,handles.menu_cenogrid,handles.menu_basic,CENOGRID,menu_cenogrid,on,False,menu_cenogrid_Callback,True
+217,handles.menu_examples,handles.menu_basic,Examples,menu_examples,on,False,menu_examples_Callback,True
+219,handles.menu_example_hawaiiCO2,handles.menu_examples,Mauna Loa CO2 monthly mean,menu_example_hawaiiCO2,on,False,menu_example_hawaiiCO2_Callback,True
+221,handles.menu_example_inso2Ma,handles.menu_examples,Insolation 0-2Ma 65N Jun22,menu_example_inso2Ma,on,False,menu_example_inso2Ma_Callback,True
+223,handles.menu_example_la04etp,handles.menu_examples,La2004 0-2Ma ETP,menu_example_la04etp,on,False,menu_example_la04etp_Callback,True
+225,handles.menu_example_redp7,handles.menu_examples,Red Noise rho=0.7 2000 points,menu_example_redp7,on,False,menu_example_redp7_Callback,True
+227,handles.menu_example_PETM,handles.menu_examples,PETM Svalbard logFe,menu_example_PETM,on,False,menu_example_PETM_Callback,True
+229,handles.menu_example_Newark,handles.menu_examples,Late Triassic Newark Depth Rank,menu_example_Newark,on,False,menu_example_Newark_Callback,True
+231,handles.menu_example_wayao,handles.menu_examples,Late Triassic Wayao gamma ray,menu_example_wayao,on,False,menu_example_wayao_Callback,True
+233,handles.menu_example_GD2GR,handles.menu_examples,Middle Triassic Guandao2 gamma ray,menu_example_GD2GR,on,False,menu_example_GD2GR_Callback,True
+235,handles.menu_example_marsimage,handles.menu_examples,Image from Mars'' HiRISE camera,menu_example_marsimage,on,False,menu_example_marsimage_Callback,True
+237,handles.menu_example_sphalerite,handles.menu_examples,Image Sphalerite,menu_example_sphalerite,on,False,menu_example_sphalerite_Callback,True
+239,handles.menu_example_plotdigitizer,handles.menu_examples,Image for Plot Digitizer,menu_example_plotdigitizer,on,False,menu_example_plotdigitizer_Callback,True
+241,handles.menu_extinction_CSA,handles.menu_examples,Example extinction,menu_extinction_CSA,on,False,menu_extinction_CSA_Callback,True
+245,handles.menu_sort,handles.menu_math,Sort/Unique/Delete-empty,menu_sort,on,False,menu_sort_Callback,True
+247,handles.menu_interp,handles.menu_math,Interpolation,menu_interp,on,False,menu_interp_Callback,True
+249,handles.menu_interpolationGUI,handles.menu_math,Interpolation Pro,menu_interpolationGUI,on,False,menu_interpolationGUI_Callback,True
+251,handles.menu_interpseries,handles.menu_math,Interpolate Series,menu_interpseries,on,False,menu_interpseries_Callback,True
+253,handles.menu_selectinterval,handles.menu_math,Select Parts,menu_selectinterval,on,False,menu_selectinterval_Callback,True
+255,handles.menu_desection,handles.menu_math,Remove Parts,menu_desection,on,False,menu_desection_Callback,True
+257,handles.menu_gap,handles.menu_math,Add Gaps,menu_gap,on,False,menu_gap_Callback,True
+259,handles.menu_depeaks,handles.menu_math,Remove Peaks,menu_depeaks,on,False,menu_depeaks_Callback,True
+261,handles.menu_clip,handles.menu_math,Clipping,menu_clip,on,False,menu_clip_Callback,True
+263,handles.menu_colman,handles.menu_math,Column Manipulate,menu_colman,on,False,menu_colman_Callback,True
+265,handles.menu_add,handles.menu_math,Merge Series,menu_add,on,False,menu_add_Callback,True
+267,handles.menu_multiply,handles.menu_math,Multiply Series,menu_multiply,on,False,menu_multiply_Callback,True
+269,handles.menu_datatransf,handles.menu_math,Data Transformations,menu_datatransf,on,False,menu_datatransf_Callback,True
+271,handles.menu_function,handles.menu_math,Simple Function,menu_function,on,False,menu_function_Callback,True
+273,handles.menu_derivative,handles.menu_math,Derivative,menu_derivative,on,False,menu_derivative_Callback,True
+275,handles.menu_maxmin,handles.menu_math,Find Max/Min,menu_maxmin,on,False,menu_maxmin_Callback,True
+277,handles.menu_cpt,handles.menu_math,Changepoint,menu_cpt,on,False,menu_cpt_Callback,True
+279,handles.menu_pca,handles.menu_math,Principal Component,menu_pca,on,False,menu_pca_Callback,True
+281,handles.menu_image,handles.menu_math,Image,menu_image,on,False,menu_image_Callback,True
+283,handles.menu_imshow,handles.menu_image,Show Image,menu_imshow,on,False,menu_imshow_Callback,True
+285,handles.menu_rgb2gray,handles.menu_image,RGB to Grayscale,menu_rgb2gray,on,False,menu_rgb2gray_Callback,True
+287,handles.menu_rgb2lab,handles.menu_image,RGB to CIE Lab,menu_rgb2lab,on,False,menu_rgb2lab_Callback,True
+289,handles.menu_improfile,handles.menu_image,Image Profile,menu_improfile,on,False,menu_improfile_Callback,True
+291,handles.menu_digitizer,handles.menu_math,Plot Digitizer,menu_digitizer,on,False,menu_digitizer_Callback,True
+295,handles.menu_prewhiten,handles.menuac,Detrending | Curve Fitting,menu_prewhiten,on,False,menu_prewhiten_Callback,True
+297,handles.menu_smooth1,handles.menuac,Smoothing,menu_smooth1,on,False,menu_smooth1_Callback,True
+299,handles.menu_bootstrap,handles.menu_smooth1,Bootstrap,menu_bootstrap,on,False,menu_bootstrap_Callback,True
+301,handles.menu_smooth_option,handles.menu_smooth1,Moving Average,menu_smooth_option,on,False,menu_smooth_option_Callback,True
+303,handles.menu_movmeanfbw,handles.menu_smooth_option,Fixed Bandwidth,menu_movmeanfbw,on,False,menu_movmeanfbw_Callback,True
+305,handles.menu_smooth,handles.menu_smooth_option,Fixed Count (K-point),menu_smooth,on,False,menu_smooth_Callback,True
+307,handles.menu_movmedian_option,handles.menu_smooth1,Moving Median,menu_movmedian_option,on,False,menu_movmedian_option_Callback,True
+309,handles.menu_movmedianfbw,handles.menu_movmedian_option,Fixed Bandwidth,menu_movmedianfbw,on,False,menu_movmedianfbw_Callback,True
+311,handles.menu_movmedian,handles.menu_movmedian_option,Fixed Count (K-point),menu_movmedian,on,False,menu_movmedian_Callback,True
+313,handles.menu_movGauss,handles.menu_smooth1,Moving Gaussian,menu_movGauss,on,False,menu_movGauss_Callback,True
+315,handles.menu_whiten,handles.menuac,Pre-whitening,menu_whiten,on,False,menu_whiten_Callback,True
+317,handles.menu_power,handles.menuac,Spectral Analysis,menu_power,on,False,menu_power_Callback,True
+319,handles.menu_swa,handles.menuac,Spectral Analysis (SWA),menu_swa,on,False,menu_swa_Callback,True
+321,handles.menu_period,handles.menuac,Evolutionary Spectral Analysis,menu_period,on,False,menu_period_Callback,True
+323,handles.menu_waveletGUI,handles.menuac,Wavelet,menu_waveletGUI,on,False,menu_waveletGUI_Callback,True
+325,handles.menu_CSA,handles.menuac,Circular Spectral Analysis,menu_CSA,on,False,menu_CSA_Callback,True
+327,handles.menu_bispectral,handles.menuac,Bispectral Analysis,menu_bispectral,on,False,menu_bispectral_Callback,True
+329,handles.menu_recplot,handles.menuac,Recurrence Plot,menu_recplot,on,False,menu_recplot_Callback,True
+331,handles.menu_coh,handles.menuac,Coherence & Phase,menu_coh,on,False,menu_coh_Callback,True
+333,handles.menu_leadlag,handles.menuac,Lead-lag Relationship,menu_leadlag,on,False,menu_leadlag_Callback,True
+335,handles.menu_filter,handles.menuac,Filtering,menu_filter,on,False,menu_filter_Callback,True
+337,handles.menu_dynfilter,handles.menuac,Dynamic Filtering,menu_dynfilter,on,False,menu_dynfilter_Callback,True
+339,handles.Menu_EMDmenu,handles.menuac,Empirical Mode Decomposition,Menu_EMDmenu,on,False,,
+340,handles.menu_emd,handles.Menu_EMDmenu,Empirical Mode Decomposition (EMD),menu_emd,on,False,menu_emd_Callback,True
+342,handles.menu_eemd,handles.Menu_EMDmenu,Ensemble Empirical Mode Decomposition (EEMD),menu_eemd,on,False,menu_eemd_Callback,True
+344,handles.menu_AM,handles.menuac,Amplitude Modulation,menu_AM,on,False,menu_AM_Callback,True
+346,handles.menu_agebuild,handles.menuac,Build Age Model,menu_agebuild,on,False,menu_agebuild_Callback,True
+348,handles.menu_sr2age,handles.menuac,Sed. Rate to Age Model,menu_sr2age,on,False,menu_sr2age_Callback,True
+350,handles.menu_undatable,handles.menuac,Undatable,menu_undatable,on,False,menu_undatable_Callback,True
+352,handles.menu_age,handles.menuac,Age Scale | Tuning,menu_age,on,False,menu_age_Callback,True
+354,handles.menu_correlation,handles.menuac,Stratigraphic Correlation,menu_correlation,on,False,menu_correlation_Callback,True
+356,handles.menu_pda,handles.menuac,Power Decomposition Analysis,menu_pda,on,False,menu_pda_Callback,True
+358,handles.menu_sednoise,handles.menuac,Sedimentary Noise Model,menu_sednoise,on,False,menu_sednoise_Callback,True
+360,handles.menu_dynos,handles.menu_sednoise,Dynamic noise after orbital tuning (DYNOT),menu_dynos,on,False,menu_dynos_Callback,True
+362,handles.menu_rho,handles.menu_sednoise,Lag-1 autocorrelation coefficient (\rho1),menu_rho,on,False,menu_rho_Callback,True
+364,handles.menu_ecoco,handles.menuac,Correlation Coefficient (COCO/eCOCO),menu_ecoco,on,False,menu_ecoco_Callback,True
+366,handles.menu_specmoments,handles.menuac,Spectral Moments,menu_specmoments,on,False,menu_specmoments_Callback,True
+370,handles.menu_settings,handles.menu_help,Setting...,menu_settings,on,False,menu_settings_Callback,True
+372,handles.menu_read,handles.menu_help,What''s New,menu_read,on,False,menu_read_Callback,True
+374,handles.menu_manuals,handles.menu_help,Manual,menu_manuals,on,False,menu_manuals_Callback,True
+376,handles.menu_findupdates,handles.menu_help,Find Updates,menu_findupdates,on,False,menu_findupdates_Callback,True
+378,handles.menu_contact,handles.menu_help,Copyright,menu_contact,on,False,menu_contact_Callback,True
+380,handles.menu_email,handles.menu_help,Contact,menu_email,on,False,menu_email_Callback,True
+429,handles.menu_log10,handles.menu_math,menu_log10,menu_log10,off,False,menu_log10_Callback,True
+429,handles.menu_norm,handles.menu_math,menu_norm,menu_norm,off,False,menu_norm_Callback,True
+429,handles.menu_utilities,handles.menu_math,menu_utilities,menu_utilities,off,False,menu_utilities_Callback,False

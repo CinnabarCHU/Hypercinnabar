@@ -1,0 +1,59 @@
+path,name,line,end_line,empty,incoming_count,decision,evidence
+code/corrcoef/saveCocoGuiFigures.m,isBlack,431,434,False,0,review_external_or_legacy_dispatch,Not in conservative desktop closure; external dispatch remains possible.
+code/guicode/AC.m,AC_OutputFcn,1424,1431,False,0,defer_guide_compatibility,Old GUIDE lifecycle callback; current AC_buildCodeUI constructs controls directly. AC string dispatch remains externally callable.
+code/guicode/AC.m,listbox_acmain_CreateFcn,2383,2391,False,0,defer_guide_compatibility,Old GUIDE lifecycle callback; current AC_buildCodeUI constructs controls directly. AC string dispatch remains externally callable.
+code/guicode/AC.m,edit_acfigmain_dir_CreateFcn,2428,2436,False,0,defer_guide_compatibility,Old GUIDE lifecycle callback; current AC_buildCodeUI constructs controls directly. AC string dispatch remains externally callable.
+code/guicode/AC.m,menu_file_CreateFcn,2441,2441,True,0,review_external_or_legacy_dispatch,Not in conservative desktop closure; external dispatch remains possible.
+code/guicode/AC.m,menu_file_Callback,2447,2447,True,0,review_external_or_legacy_dispatch,Not in conservative desktop closure; external dispatch remains possible.
+code/guicode/AC.m,menu_edit_CreateFcn,2454,2454,True,0,review_external_or_legacy_dispatch,Not in conservative desktop closure; external dispatch remains possible.
+code/guicode/AC.m,menu_edit_Callback,2460,2460,True,0,review_external_or_legacy_dispatch,Not in conservative desktop closure; external dispatch remains possible.
+code/guicode/AC.m,menu_plotall_CreateFcn,2467,2467,True,0,review_external_or_legacy_dispatch,Not in conservative desktop closure; external dispatch remains possible.
+code/guicode/AC.m,menu_plotall_Callback,2472,2472,True,0,review_external_or_legacy_dispatch,Not in conservative desktop closure; external dispatch remains possible.
+code/guicode/AC.m,menu_basic_CreateFcn,2854,2854,True,0,review_external_or_legacy_dispatch,Not in conservative desktop closure; external dispatch remains possible.
+code/guicode/AC.m,menu_basic_Callback,2860,2860,True,0,review_external_or_legacy_dispatch,Not in conservative desktop closure; external dispatch remains possible.
+code/guicode/AC.m,menu_math_CreateFcn,2867,2867,True,0,review_external_or_legacy_dispatch,Not in conservative desktop closure; external dispatch remains possible.
+code/guicode/AC.m,menu_math_Callback,2873,2873,True,0,review_external_or_legacy_dispatch,Not in conservative desktop closure; external dispatch remains possible.
+code/guicode/AC.m,menu_help_CreateFcn,2879,2879,True,0,review_external_or_legacy_dispatch,Not in conservative desktop closure; external dispatch remains possible.
+code/guicode/AC.m,menu_help_Callback,2885,2885,True,0,review_external_or_legacy_dispatch,Not in conservative desktop closure; external dispatch remains possible.
+code/guicode/AC.m,popupmenu1_CreateFcn,2917,2925,False,0,defer_guide_compatibility,Old GUIDE lifecycle callback; current AC_buildCodeUI constructs controls directly. AC string dispatch remains externally callable.
+code/guicode/AC.m,menu_interp_CreateFcn,3174,3174,True,0,review_external_or_legacy_dispatch,Not in conservative desktop closure; external dispatch remains possible.
+code/guicode/AC.m,menu_period_CreateFcn,3718,3718,True,0,review_external_or_legacy_dispatch,Not in conservative desktop closure; external dispatch remains possible.
+code/guicode/AC.m,menu_power_CreateFcn,3753,3753,True,0,review_external_or_legacy_dispatch,Not in conservative desktop closure; external dispatch remains possible.
+code/guicode/AC.m,menu_filter_CreateFcn,3850,3850,True,0,review_external_or_legacy_dispatch,Not in conservative desktop closure; external dispatch remains possible.
+code/guicode/AC.m,menu_laskar_CreateFcn,4044,4044,True,0,review_external_or_legacy_dispatch,Not in conservative desktop closure; external dispatch remains possible.
+code/guicode/AC.m,menu_LR04_CreateFcn,4061,4061,True,0,review_external_or_legacy_dispatch,Not in conservative desktop closure; external dispatch remains possible.
+code/guicode/AC.m,Untitled_4_Callback,4356,4356,True,0,review_external_or_legacy_dispatch,Not in conservative desktop closure; external dispatch remains possible.
+code/guicode/AC.m,menu_import_Callback,4363,4405,False,0,review_external_or_legacy_dispatch,Not in conservative desktop closure; external dispatch remains possible.
+code/guicode/AC.m,menuac_CreateFcn,4503,4503,True,0,review_external_or_legacy_dispatch,Not in conservative desktop closure; external dispatch remains possible.
+code/guicode/AC.m,menuac_Callback,4509,4509,True,0,review_external_or_legacy_dispatch,Not in conservative desktop closure; external dispatch remains possible.
+code/guicode/AC.m,menu_prewhiten_CreateFcn,4516,4516,True,0,review_external_or_legacy_dispatch,Not in conservative desktop closure; external dispatch remains possible.
+code/guicode/AC.m,menu_cut_CreateFcn,5450,5450,True,0,review_external_or_legacy_dispatch,Not in conservative desktop closure; external dispatch remains possible.
+code/guicode/AC.m,menu_copy_CreateFcn,5485,5485,True,0,review_external_or_legacy_dispatch,Not in conservative desktop closure; external dispatch remains possible.
+code/guicode/AC.m,menu_paste_CreateFcn,5521,5521,True,0,review_external_or_legacy_dispatch,Not in conservative desktop closure; external dispatch remains possible.
+code/guicode/AC.m,menu_sort_CreateFcn,5844,5844,True,0,review_external_or_legacy_dispatch,Not in conservative desktop closure; external dispatch remains possible.
+code/guicode/AC.m,menu_insol_CreateFcn,7584,7584,True,0,review_external_or_legacy_dispatch,Not in conservative desktop closure; external dispatch remains possible.
+code/guicode/AC.m,Official_Callback,7600,7600,True,0,review_external_or_legacy_dispatch,Not in conservative desktop closure; external dispatch remains possible.
+code/guicode/AC.m,github_Callback,7606,7606,True,0,review_external_or_legacy_dispatch,Not in conservative desktop closure; external dispatch remains possible.
+code/guicode/AC.m,menu_newtxt_CreateFcn,7612,7612,True,0,review_external_or_legacy_dispatch,Not in conservative desktop closure; external dispatch remains possible.
+code/guicode/AC.m,menu_refreshlist_CreateFcn,7719,7719,True,0,review_external_or_legacy_dispatch,Not in conservative desktop closure; external dispatch remains possible.
+code/guicode/AC.m,menu_opendir_CreateFcn,7737,7737,True,0,review_external_or_legacy_dispatch,Not in conservative desktop closure; external dispatch remains possible.
+code/guicode/AC.m,axes_plot_ButtonDownFcn,7760,7804,False,0,review_external_or_legacy_dispatch,Not in conservative desktop closure; external dispatch remains possible.
+code/guicode/AC.m,menu_menu_utilities_Callback,8133,8133,True,0,exclude_empty_placeholder,"Empty body with duplicated menu_ prefix; generated hidden menu dispatches menu_utilities_Callback, which does not exist."
+code/guicode/AC.m,popupmenu2_CreateFcn,9473,9481,False,0,defer_guide_compatibility,Old GUIDE lifecycle callback; current AC_buildCodeUI constructs controls directly. AC string dispatch remains externally callable.
+code/guicode/AC.m,menu_univariate_Callback,9824,9824,True,0,review_external_or_legacy_dispatch,Not in conservative desktop closure; external dispatch remains possible.
+code/guicode/AC.m,menu_bivariate_Callback,9831,9831,True,0,review_external_or_legacy_dispatch,Not in conservative desktop closure; external dispatch remains possible.
+code/guicode/AC.m,menu_multivariate1_Callback,9838,9838,True,0,review_external_or_legacy_dispatch,Not in conservative desktop closure; external dispatch remains possible.
+code/guicode/AC.m,Menu_EMDmenu_Callback,10158,10158,True,0,review_external_or_legacy_dispatch,Not in conservative desktop closure; external dispatch remains possible.
+code/guicode/AC.m,menu_memd_Callback,10607,10607,True,0,exclude_empty_placeholder,Empty body at AC.m:10607; no menu registration. There is no MEMD implementation to wrap.
+code/guicode/AC.m,menu_rhov2_Callback,10614,11010,False,0,defer_legacy_alternative,Unregistered alternative spanning 10614-11010; active menu_rho_Callback uses acycleEvolutionaryRho1. Compare scientific contract before removal.
+code/guicode/AC.m,menu_dynot_v2_Callback,11015,11042,False,0,defer_duplicate_launcher,Unregistered second launcher for DYNOS; active menu_dynos_Callback at 3977 also launches DYNOS at 4000.
+code/guicode/AC.m,menu_lyapunov_Callback,11046,11469,False,0,defer_missing_dependency,No menu binding; calls lyapunov_timeseries at 11211 and 11355. Dependency absent; code/package/lyapunov ignored in .gitignore:9.
+code/guicode/DYNOS.m,onDataReady,318,322,False,0,defer_unwired_handler,No registration/reference found; current GUI initialization invokes loadDataReady directly.
+code/guicode/column_manipulateGUI.m,updateColumnWidth,193,199,False,0,review_external_or_legacy_dispatch,Not in conservative desktop closure; external dispatch remains possible.
+code/misc/MilankovitchCal.m,setAge,321,333,False,0,review_external_or_legacy_dispatch,Not in conservative desktop closure; external dispatch remains possible.
+code/misc/findjobj.m,resizeImg,1568,1583,False,0,review_external_or_legacy_dispatch,Not in conservative desktop closure; external dispatch remains possible.
+code/misc/findjobj.m,restoreDbstopError,1595,1599,False,0,review_external_or_legacy_dispatch,Not in conservative desktop closure; external dispatch remains possible.
+code/misc/findjobj.m,iff,2016,2026,False,0,review_external_or_legacy_dispatch,Not in conservative desktop closure; external dispatch remains possible.
+code/misc/findjobj.m,menuRemoveItem,3051,3053,False,0,review_external_or_legacy_dispatch,Not in conservative desktop closure; external dispatch remains possible.
+code/package/bispectral/bispectralEstimate.m,isFiniteIntegerScalar,363,366,False,0,review_external_or_legacy_dispatch,Not in conservative desktop closure; external dispatch remains possible.
+code/package/bispectral/bispectralSignificance.m,isFiniteIntegerScalar,436,439,False,0,review_external_or_legacy_dispatch,Not in conservative desktop closure; external dispatch remains possible.

@@ -1,0 +1,7 @@
+source,resource,line,kind
+code/package/undatable/private/udsummary.m::udsummary@1,code/package/undatable/private/nakeinterp1.mexa64,23,platform_dependent_mex
+code/package/undatable/private/udsummary.m::udsummary@1,code/package/undatable/private/nakeinterp1.mexmaci64,23,platform_dependent_mex
+code/package/undatable/private/udsummary.m::udsummary@1,code/package/undatable/private/nakeinterp1.mexw64,23,platform_dependent_mex
+code/package/undatable/private/udsummary.m::udsummary@1,code/package/undatable/private/nakeinterp1.mexa64,48,platform_dependent_mex
+code/package/undatable/private/udsummary.m::udsummary@1,code/package/undatable/private/nakeinterp1.mexmaci64,48,platform_dependent_mex
+code/package/undatable/private/udsummary.m::udsummary@1,code/package/undatable/private/nakeinterp1.mexw64,48,platform_dependent_mex

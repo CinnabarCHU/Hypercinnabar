@@ -1,0 +1,319 @@
+{
+  "cleanup_commit": "4d62d54cc3288cef9f6ebd004191fac2d3b599d0",
+  "parent_commit": "aee22a76a6261c95fdf3f6c9f8c97853270d0188",
+  "counts": {
+    "production_edit": 2,
+    "backup_archive": 6,
+    "historical_validation": 36
+  },
+  "files": [
+    {
+      "path": ".gitignore",
+      "change": "M",
+      "category": "production_edit",
+      "recover_from": "",
+      "source_url": "https://github.com/mingsongli/acycle/blob/aee22a76a6261c95fdf3f6c9f8c97853270d0188/.gitignore"
+    },
+    {
+      "path": "ac.m",
+      "change": "M",
+      "category": "production_edit",
+      "recover_from": "",
+      "source_url": "https://github.com/mingsongli/acycle/blob/aee22a76a6261c95fdf3f6c9f8c97853270d0188/ac.m"
+    },
+    {
+      "path": "code/corrcoef/backups/coco-power-20260622/cocoGetPower.m.bak",
+      "change": "D",
+      "category": "backup_archive",
+      "recover_from": "aee22a76a6261c95fdf3f6c9f8c97853270d0188",
+      "source_url": "https://github.com/mingsongli/acycle/blob/aee22a76a6261c95fdf3f6c9f8c97853270d0188/code/corrcoef/backups/coco-power-20260622/cocoGetPower.m.bak"
+    },
+    {
+      "path": "code/corrcoef/backups/coco-power-20260622/cyclecorrNew.m.bak",
+      "change": "D",
+      "category": "backup_archive",
+      "recover_from": "aee22a76a6261c95fdf3f6c9f8c97853270d0188",
+      "source_url": "https://github.com/mingsongli/acycle/blob/aee22a76a6261c95fdf3f6c9f8c97853270d0188/code/corrcoef/backups/coco-power-20260622/cyclecorrNew.m.bak"
+    },
+    {
+      "path": "code/corrcoef/backups/coco-power-20260622/cyclecorrsigNew.m.bak",
+      "change": "D",
+      "category": "backup_archive",
+      "recover_from": "aee22a76a6261c95fdf3f6c9f8c97853270d0188",
+      "source_url": "https://github.com/mingsongli/acycle/blob/aee22a76a6261c95fdf3f6c9f8c97853270d0188/code/corrcoef/backups/coco-power-20260622/cyclecorrsigNew.m.bak"
+    },
+    {
+      "path": "code/corrcoef/backups/coco-power-20260622/freq2targetNew.m.bak",
+      "change": "D",
+      "category": "backup_archive",
+      "recover_from": "aee22a76a6261c95fdf3f6c9f8c97853270d0188",
+      "source_url": "https://github.com/mingsongli/acycle/blob/aee22a76a6261c95fdf3f6c9f8c97853270d0188/code/corrcoef/backups/coco-power-20260622/freq2targetNew.m.bak"
+    },
+    {
+      "path": "code/corrcoef/backups/pcoco-plot-20260622/corrcoefslices_rankNew.after-variance-plot.m.bak",
+      "change": "D",
+      "category": "backup_archive",
+      "recover_from": "aee22a76a6261c95fdf3f6c9f8c97853270d0188",
+      "source_url": "https://github.com/mingsongli/acycle/blob/aee22a76a6261c95fdf3f6c9f8c97853270d0188/code/corrcoef/backups/pcoco-plot-20260622/corrcoefslices_rankNew.after-variance-plot.m.bak"
+    },
+    {
+      "path": "code/corrcoef/backups/pcoco-plot-20260622/corrcoefslices_rankNew.m.bak",
+      "change": "D",
+      "category": "backup_archive",
+      "recover_from": "aee22a76a6261c95fdf3f6c9f8c97853270d0188",
+      "source_url": "https://github.com/mingsongli/acycle/blob/aee22a76a6261c95fdf3f6c9f8c97853270d0188/code/corrcoef/backups/pcoco-plot-20260622/corrcoefslices_rankNew.m.bak"
+    },
+    {
+      "path": "code/package/bispectral/tests/run_bispectral_gui_graphics_stress.m",
+      "change": "D",
+      "category": "historical_validation",
+      "recover_from": "aee22a76a6261c95fdf3f6c9f8c97853270d0188",
+      "source_url": "https://github.com/mingsongli/acycle/blob/aee22a76a6261c95fdf3f6c9f8c97853270d0188/code/package/bispectral/tests/run_bispectral_gui_graphics_stress.m"
+    },
+    {
+      "path": "code/package/bispectral/tests/run_bispectral_gui_parameter_alert_stress.m",
+      "change": "D",
+      "category": "historical_validation",
+      "recover_from": "aee22a76a6261c95fdf3f6c9f8c97853270d0188",
+      "source_url": "https://github.com/mingsongli/acycle/blob/aee22a76a6261c95fdf3f6c9f8c97853270d0188/code/package/bispectral/tests/run_bispectral_gui_parameter_alert_stress.m"
+    },
+    {
+      "path": "code/package/bispectral/tests/test_bispectral_io.m",
+      "change": "D",
+      "category": "historical_validation",
+      "recover_from": "aee22a76a6261c95fdf3f6c9f8c97853270d0188",
+      "source_url": "https://github.com/mingsongli/acycle/blob/aee22a76a6261c95fdf3f6c9f8c97853270d0188/code/package/bispectral/tests/test_bispectral_io.m"
+    },
+    {
+      "path": "code/package/bispectral/tests/test_bispectral_plot.m",
+      "change": "D",
+      "category": "historical_validation",
+      "recover_from": "aee22a76a6261c95fdf3f6c9f8c97853270d0188",
+      "source_url": "https://github.com/mingsongli/acycle/blob/aee22a76a6261c95fdf3f6c9f8c97853270d0188/code/package/bispectral/tests/test_bispectral_plot.m"
+    },
+    {
+      "path": "code/seriesanalysis/tests/test_dynos_gui_migration.m",
+      "change": "D",
+      "category": "historical_validation",
+      "recover_from": "aee22a76a6261c95fdf3f6c9f8c97853270d0188",
+      "source_url": "https://github.com/mingsongli/acycle/blob/aee22a76a6261c95fdf3f6c9f8c97853270d0188/code/seriesanalysis/tests/test_dynos_gui_migration.m"
+    },
+    {
+      "path": "code/seriesanalysis/tests/test_evofft_gui_display_regressions.m",
+      "change": "D",
+      "category": "historical_validation",
+      "recover_from": "aee22a76a6261c95fdf3f6c9f8c97853270d0188",
+      "source_url": "https://github.com/mingsongli/acycle/blob/aee22a76a6261c95fdf3f6c9f8c97853270d0188/code/seriesanalysis/tests/test_evofft_gui_display_regressions.m"
+    },
+    {
+      "path": "code/seriesanalysis/tests/test_pdan_legacy_band_union.m",
+      "change": "D",
+      "category": "historical_validation",
+      "recover_from": "aee22a76a6261c95fdf3f6c9f8c97853270d0188",
+      "source_url": "https://github.com/mingsongli/acycle/blob/aee22a76a6261c95fdf3f6c9f8c97853270d0188/code/seriesanalysis/tests/test_pdan_legacy_band_union.m"
+    },
+    {
+      "path": "code/seriesanalysis/tests/test_public_filtering.m",
+      "change": "D",
+      "category": "historical_validation",
+      "recover_from": "aee22a76a6261c95fdf3f6c9f8c97853270d0188",
+      "source_url": "https://github.com/mingsongli/acycle/blob/aee22a76a6261c95fdf3f6c9f8c97853270d0188/code/seriesanalysis/tests/test_public_filtering.m"
+    },
+    {
+      "path": "code/seriesanalysis/tests/test_public_spectral_windows.m",
+      "change": "D",
+      "category": "historical_validation",
+      "recover_from": "aee22a76a6261c95fdf3f6c9f8c97853270d0188",
+      "source_url": "https://github.com/mingsongli/acycle/blob/aee22a76a6261c95fdf3f6c9f8c97853270d0188/code/seriesanalysis/tests/test_public_spectral_windows.m"
+    },
+    {
+      "path": "code/seriesanalysis/tests/test_public_timeseries_transforms.m",
+      "change": "D",
+      "category": "historical_validation",
+      "recover_from": "aee22a76a6261c95fdf3f6c9f8c97853270d0188",
+      "source_url": "https://github.com/mingsongli/acycle/blob/aee22a76a6261c95fdf3f6c9f8c97853270d0188/code/seriesanalysis/tests/test_public_timeseries_transforms.m"
+    },
+    {
+      "path": "code/seriesanalysis/tests/test_redconf_physical_nyquist.m",
+      "change": "D",
+      "category": "historical_validation",
+      "recover_from": "aee22a76a6261c95fdf3f6c9f8c97853270d0188",
+      "source_url": "https://github.com/mingsongli/acycle/blob/aee22a76a6261c95fdf3f6c9f8c97853270d0188/code/seriesanalysis/tests/test_redconf_physical_nyquist.m"
+    },
+    {
+      "path": "code/seriesanalysis/tests/test_spectrum_sampling.m",
+      "change": "D",
+      "category": "historical_validation",
+      "recover_from": "aee22a76a6261c95fdf3f6c9f8c97853270d0188",
+      "source_url": "https://github.com/mingsongli/acycle/blob/aee22a76a6261c95fdf3f6c9f8c97853270d0188/code/seriesanalysis/tests/test_spectrum_sampling.m"
+    },
+    {
+      "path": "code/test/annotate_coco_publication_cases.py",
+      "change": "D",
+      "category": "historical_validation",
+      "recover_from": "aee22a76a6261c95fdf3f6c9f8c97853270d0188",
+      "source_url": "https://github.com/mingsongli/acycle/blob/aee22a76a6261c95fdf3f6c9f8c97853270d0188/code/test/annotate_coco_publication_cases.py"
+    },
+    {
+      "path": "code/test/build_coco_publication_reports.py",
+      "change": "D",
+      "category": "historical_validation",
+      "recover_from": "aee22a76a6261c95fdf3f6c9f8c97853270d0188",
+      "source_url": "https://github.com/mingsongli/acycle/blob/aee22a76a6261c95fdf3f6c9f8c97853270d0188/code/test/build_coco_publication_reports.py"
+    },
+    {
+      "path": "code/test/coco_publication_report_manifest.schema.json",
+      "change": "D",
+      "category": "historical_validation",
+      "recover_from": "aee22a76a6261c95fdf3f6c9f8c97853270d0188",
+      "source_url": "https://github.com/mingsongli/acycle/blob/aee22a76a6261c95fdf3f6c9f8c97853270d0188/code/test/coco_publication_report_manifest.schema.json"
+    },
+    {
+      "path": "code/test/refresh_coco_artifact_inventory.py",
+      "change": "D",
+      "category": "historical_validation",
+      "recover_from": "aee22a76a6261c95fdf3f6c9f8c97853270d0188",
+      "source_url": "https://github.com/mingsongli/acycle/blob/aee22a76a6261c95fdf3f6c9f8c97853270d0188/code/test/refresh_coco_artifact_inventory.py"
+    },
+    {
+      "path": "code/test/test_ac_address_bar.m",
+      "change": "D",
+      "category": "historical_validation",
+      "recover_from": "aee22a76a6261c95fdf3f6c9f8c97853270d0188",
+      "source_url": "https://github.com/mingsongli/acycle/blob/aee22a76a6261c95fdf3f6c9f8c97853270d0188/code/test/test_ac_address_bar.m"
+    },
+    {
+      "path": "code/test/test_ac_main_list.m",
+      "change": "D",
+      "category": "historical_validation",
+      "recover_from": "aee22a76a6261c95fdf3f6c9f8c97853270d0188",
+      "source_url": "https://github.com/mingsongli/acycle/blob/aee22a76a6261c95fdf3f6c9f8c97853270d0188/code/test/test_ac_main_list.m"
+    },
+    {
+      "path": "code/test/test_ac_settings.m",
+      "change": "D",
+      "category": "historical_validation",
+      "recover_from": "aee22a76a6261c95fdf3f6c9f8c97853270d0188",
+      "source_url": "https://github.com/mingsongli/acycle/blob/aee22a76a6261c95fdf3f6c9f8c97853270d0188/code/test/test_ac_settings.m"
+    },
+    {
+      "path": "code/test/test_coco9_targets.m",
+      "change": "D",
+      "category": "historical_validation",
+      "recover_from": "aee22a76a6261c95fdf3f6c9f8c97853270d0188",
+      "source_url": "https://github.com/mingsongli/acycle/blob/aee22a76a6261c95fdf3f6c9f8c97853270d0188/code/test/test_coco9_targets.m"
+    },
+    {
+      "path": "code/test/test_coco_nonfatal_resolution_policy.m",
+      "change": "D",
+      "category": "historical_validation",
+      "recover_from": "aee22a76a6261c95fdf3f6c9f8c97853270d0188",
+      "source_url": "https://github.com/mingsongli/acycle/blob/aee22a76a6261c95fdf3f6c9f8c97853270d0188/code/test/test_coco_nonfatal_resolution_policy.m"
+    },
+    {
+      "path": "code/test/test_coco_progress_callbacks.m",
+      "change": "D",
+      "category": "historical_validation",
+      "recover_from": "aee22a76a6261c95fdf3f6c9f8c97853270d0188",
+      "source_url": "https://github.com/mingsongli/acycle/blob/aee22a76a6261c95fdf3f6c9f8c97853270d0188/code/test/test_coco_progress_callbacks.m"
+    },
+    {
+      "path": "code/test/test_coco_publication_preflight.m",
+      "change": "D",
+      "category": "historical_validation",
+      "recover_from": "aee22a76a6261c95fdf3f6c9f8c97853270d0188",
+      "source_url": "https://github.com/mingsongli/acycle/blob/aee22a76a6261c95fdf3f6c9f8c97853270d0188/code/test/test_coco_publication_preflight.m"
+    },
+    {
+      "path": "code/test/test_coco_rate_reliability_shading.m",
+      "change": "D",
+      "category": "historical_validation",
+      "recover_from": "aee22a76a6261c95fdf3f6c9f8c97853270d0188",
+      "source_url": "https://github.com/mingsongli/acycle/blob/aee22a76a6261c95fdf3f6c9f8c97853270d0188/code/test/test_coco_rate_reliability_shading.m"
+    },
+    {
+      "path": "code/test/test_coco_shared_preprocessing.m",
+      "change": "D",
+      "category": "historical_validation",
+      "recover_from": "aee22a76a6261c95fdf3f6c9f8c97853270d0188",
+      "source_url": "https://github.com/mingsongli/acycle/blob/aee22a76a6261c95fdf3f6c9f8c97853270d0188/code/test/test_coco_shared_preprocessing.m"
+    },
+    {
+      "path": "code/test/test_ecoco_crossfit_core.m",
+      "change": "D",
+      "category": "historical_validation",
+      "recover_from": "aee22a76a6261c95fdf3f6c9f8c97853270d0188",
+      "source_url": "https://github.com/mingsongli/acycle/blob/aee22a76a6261c95fdf3f6c9f8c97853270d0188/code/test/test_ecoco_crossfit_core.m"
+    },
+    {
+      "path": "code/test/test_ecoco_interleaved_core.m",
+      "change": "D",
+      "category": "historical_validation",
+      "recover_from": "aee22a76a6261c95fdf3f6c9f8c97853270d0188",
+      "source_url": "https://github.com/mingsongli/acycle/blob/aee22a76a6261c95fdf3f6c9f8c97853270d0188/code/test/test_ecoco_interleaved_core.m"
+    },
+    {
+      "path": "code/test/test_ecoco_progress_callbacks.m",
+      "change": "D",
+      "category": "historical_validation",
+      "recover_from": "aee22a76a6261c95fdf3f6c9f8c97853270d0188",
+      "source_url": "https://github.com/mingsongli/acycle/blob/aee22a76a6261c95fdf3f6c9f8c97853270d0188/code/test/test_ecoco_progress_callbacks.m"
+    },
+    {
+      "path": "code/test/test_ecocoplot_adaptive_graphics.m",
+      "change": "D",
+      "category": "historical_validation",
+      "recover_from": "aee22a76a6261c95fdf3f6c9f8c97853270d0188",
+      "source_url": "https://github.com/mingsongli/acycle/blob/aee22a76a6261c95fdf3f6c9f8c97853270d0188/code/test/test_ecocoplot_adaptive_graphics.m"
+    },
+    {
+      "path": "code/test/test_gui_output_saving.m",
+      "change": "D",
+      "category": "historical_validation",
+      "recover_from": "aee22a76a6261c95fdf3f6c9f8c97853270d0188",
+      "source_url": "https://github.com/mingsongli/acycle/blob/aee22a76a6261c95fdf3f6c9f8c97853270d0188/code/test/test_gui_output_saving.m"
+    },
+    {
+      "path": "code/test/test_interleaved_cvcoco.m",
+      "change": "D",
+      "category": "historical_validation",
+      "recover_from": "aee22a76a6261c95fdf3f6c9f8c97853270d0188",
+      "source_url": "https://github.com/mingsongli/acycle/blob/aee22a76a6261c95fdf3f6c9f8c97853270d0188/code/test/test_interleaved_cvcoco.m"
+    },
+    {
+      "path": "code/test/test_run_coco_eight_method_experiment.m",
+      "change": "D",
+      "category": "historical_validation",
+      "recover_from": "aee22a76a6261c95fdf3f6c9f8c97853270d0188",
+      "source_url": "https://github.com/mingsongli/acycle/blob/aee22a76a6261c95fdf3f6c9f8c97853270d0188/code/test/test_run_coco_eight_method_experiment.m"
+    },
+    {
+      "path": "code/test/test_run_ecoco_two_method_experiment.m",
+      "change": "D",
+      "category": "historical_validation",
+      "recover_from": "aee22a76a6261c95fdf3f6c9f8c97853270d0188",
+      "source_url": "https://github.com/mingsongli/acycle/blob/aee22a76a6261c95fdf3f6c9f8c97853270d0188/code/test/test_run_ecoco_two_method_experiment.m"
+    },
+    {
+      "path": "code/test/test_run_interleaved_cvcoco_comparison.m",
+      "change": "D",
+      "category": "historical_validation",
+      "recover_from": "aee22a76a6261c95fdf3f6c9f8c97853270d0188",
+      "source_url": "https://github.com/mingsongli/acycle/blob/aee22a76a6261c95fdf3f6c9f8c97853270d0188/code/test/test_run_interleaved_cvcoco_comparison.m"
+    },
+    {
+      "path": "code/test/test_unittest_gui.m",
+      "change": "D",
+      "category": "historical_validation",
+      "recover_from": "aee22a76a6261c95fdf3f6c9f8c97853270d0188",
+      "source_url": "https://github.com/mingsongli/acycle/blob/aee22a76a6261c95fdf3f6c9f8c97853270d0188/code/test/test_unittest_gui.m"
+    },
+    {
+      "path": "code/test/validate_coco_publication_artifacts.py",
+      "change": "D",
+      "category": "historical_validation",
+      "recover_from": "aee22a76a6261c95fdf3f6c9f8c97853270d0188",
+      "source_url": "https://github.com/mingsongli/acycle/blob/aee22a76a6261c95fdf3f6c9f8c97853270d0188/code/test/validate_coco_publication_artifacts.py"
+    }
+  ]
+}

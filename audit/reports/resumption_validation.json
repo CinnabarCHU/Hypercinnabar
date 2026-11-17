@@ -1,0 +1,25 @@
+{
+  "passed": true,
+  "upstream_commit": "dcba4279168745b563e0535b954297023dd62fc7",
+  "source_files_checked": 412,
+  "report_hashes_checked": 15,
+  "graph_symbols_checked": 2836,
+  "graph_edges_checked": 7767,
+  "regeneration_checked": true,
+  "errors": [],
+  "scope": "Static audit only; no MATLAB, GUI, MEX or scientific parity execution.",
+  "date": "2026-11-17",
+  "timezone": "Asia/Shanghai",
+  "unit_tests": {
+    "passed": 12,
+    "failed": 0,
+    "command": "python -m unittest discover -s audit/tests -v"
+  },
+  "corrupted_report_rejected": true,
+  "remote_branch_heads": {
+    "master": "dcba4279168745b563e0535b954297023dd62fc7",
+    "dev-codex": "4d62d54cc3288cef9f6ebd004191fac2d3b599d0"
+  },
+  "github_actions": "not_run",
+  "verifier_sha256": "a00e45e8d2ccc1fca89050e3a4ce49575475cbf06d1592742bf265004d1f99a9"
+}

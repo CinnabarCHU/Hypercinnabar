@@ -1,0 +1,3 @@
+[submodule "upstream/acycle"]
+	path = upstream/acycle
+	url = https://github.com/mingsongli/acycle.git
