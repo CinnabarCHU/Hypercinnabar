@@ -6,17 +6,34 @@ permissions:
   contents: read
 jobs:
   spectrum:
+    name: Recheck (${{ matrix.label }})
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - label: current
+            ref: dcba4279168745b563e0535b954297023dd62fc7
+          - label: april
+            ref: 1f66b1859478842ad73d1211f1fd50789ab56c00
     runs-on: ubuntu-latest
     timeout-minutes: 55
     steps:
       - uses: actions/checkout@v4
         with:
           repository: mingsongli/acycle
-          ref: dcba4279168745b563e0535b954297023dd62fc7
+          ref: ${{ matrix.ref }}
           path: upstream
           sparse-checkout: |
             code/package/swa
+            code/package/wavelet
             code/seriesanalysis
+            data/Examples
+      - uses: actions/checkout@v4
+        with:
+          repository: mingsongli/acycle
+          ref: dcba4279168745b563e0535b954297023dd62fc7
+          path: reference
+          sparse-checkout: |
             data/Examples
       - uses: matlab-actions/setup-matlab@v2
         with:
@@ -27,11 +44,13 @@ jobs:
         run: |
           cat > check_examples.m <<'MATLAB'
           upstream = fullfile(pwd,'upstream');
+          sourceData = fullfile(pwd,'reference','data');
           addpath(fullfile(upstream,'code','seriesanalysis'));
+          addpath(fullfile(upstream,'code','package','wavelet'));
           addpath(fullfile(upstream,'code','package','swa'));
           fprintf('MATLAB %s; Acycle core %s\n',version,which('spectralswafdr'));
           for isotope = ["d13c","d18o"]
-              src = fullfile(upstream,'data','Examples',"Example-cenogrid-"+isotope+".txt");
+              src = fullfile(sourceData,'Examples',"Example-cenogrid-"+isotope+".txt");
               raw = readmatrix(src,'Delimiter',',');
               dat = raw(raw(:,1)>=40000 & raw(:,1)<=65000,:);
               dat = interpolate(dat,3.413);
@@ -58,6 +77,39 @@ jobs:
                       fprintf('CHECK %s case=%d band=%d periodMyr=%.7f power=%.8f chi95=%.8f fdr5=%.8f powerOverFdr=%.8f\n',isotope,trial,band,0.001/sp(k,1),sp(k,2),sp(k,5),sp(k,10),sp(k,2)/sp(k,10));
                   end
                   if trial==1
+                      % Individual local peaks inside the predefined broad band.
+                      loc=find(islocalmax(sp(:,2)) & sp(:,1)>=bands(1,1) & sp(:,1)<=bands(1,2));
+                      for k=loc(:)'
+                          fprintf('LOCAL %s periodMyr=%.7f power=%.8f background=%.8f fdr5=%.8f ratio=%.8f\n',isotope,0.001/sp(k,1),sp(k,2),sp(k,3),sp(k,10),sp(k,2)/sp(k,10));
+                      end
+                      tan = tanerhilbertML(input,0.00105,0.00030,0.00180,1e20);
+                      fprintf('FILTER %s first=%.8f middle=%.8f last=%.8f\n',isotope,tan(1,2),tan(3333,2),tan(end,2));
+                      for win=[3000,4500,6000]
+                          dt=mean(diff(t)); padded=zeropad2(tan(:,1:2),win,1);
+                          [spec,fx,centres]=evofft(padded,win,50,dt,0,1/(2*dt),1);
+                          bandIds=find(fx>=0.00030 & fx<=0.00085);
+                          [~,kk]=max(spec(:,bandIds),[],2);
+                          for age=[46600,46800,49000,51600]
+                              [~,row]=min(abs(centres-age));
+                              fprintf('WINDOW %s window=%d age=%.5f dominantCyclesPerMyr=%.6f\n',isotope,win,centres(row)/1000,1000*fx(bandIds(kk(row))));
+                          end
+                      end
+                      fid=fopen(fullfile(sourceData,'ZB18a.dat'),'rt');
+                      z=textscan(fid,'%f%f%f','CommentStyle','%','CollectOutput',true);
+                      fclose(fid);
+                      z=z{1}; z=z(z(:,1)>=40000 & z(:,1)<=65000,:);
+                      orb=interp1(z(:,1),detrend(z(:,2)),t);
+                      dt=median(diff(t)); s0=2*dt; dj=1/12; J=round(log2(5000/s0)/dj);
+                      [wx,pr]=wavelet(orb,dt,1,dj,s0,J,'Morlet',6);
+                      wy=wavelet(y,dt,1,dj,s0,J,'Morlet',6);
+                      for per=[405,1500,2000]
+                          [~,k]=min(abs(pr-per));
+                          for point=[46500,47500,51500,52500]
+                              [~,j]=min(abs(t-point));
+                              angleDeg=angle(wx(k,j)*conj(wy(k,j)))*180/pi;
+                              fprintf('PHASE %s positiveBP_axis rawIsotope sign=+1 age=%.5f periodKyr=%.4f phaseDeg=%.2f\n',isotope,t(j)/1000,pr(k),angleDeg);
+                          end
+                      end
                       outfile = "example-spectrum-"+isotope+".csv";
                       writematrix(sp(:,[1,2,3,5,10]),outfile)
                   end
@@ -71,5 +123,5 @@ jobs:
       - name: Keep numeric spectra
         uses: actions/upload-artifact@v4
         with:
-          name: example-spectra
+          name: example-spectra-${{ matrix.label }}
           path: example-spectrum-*.csv
