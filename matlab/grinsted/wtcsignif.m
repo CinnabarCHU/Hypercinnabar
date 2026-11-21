@@ -44,7 +44,8 @@ function wtcsig=wtcsignif(mccount,ar1,dt,n,pad,dj,s0,j1,mother,cutoff)
 
 %cachedir=fileparts(mfilename('fullpath'));
 %cachedir=fullfile(cachedir,'.cache');
-cachedir=tempdir;
+cachedir=getenv('ACYCLE_WTC_CACHE');
+if isempty(cachedir),cachedir=tempdir;end
 
 
 %we don't need to do the monte carlo if we have a cached

@@ -2,7 +2,7 @@ name: Draw and reopen MATLAB figures
 on:
   push:
     branches: [cenogrid-figure-reproduction]
-    paths: ['matlab/render_figure.m','ci/prepare_render.py','main.py','python/**','.github/workflows/render.yml','data/*.mat','data/*.xz']
+    paths: ['matlab/render_figure.m','ci/prepare_render.py','python/**','.github/workflows/render.yml','data/*.mat','data/*.xz']
   workflow_dispatch:
 permissions: {contents: read}
 jobs:

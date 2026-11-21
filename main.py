@@ -55,6 +55,7 @@ def run():
     p.add_argument('figure',choices=ALL)
     p.add_argument('--version',choices=sorted(set(CONFIG)|set(EQUIVALENTS)))
     p.add_argument('--cached',action='store_true',help='Use the distributed, MATLAB-calculated numerical fields.')
+    p.add_argument('--batch-file',type=Path,help='Write a MATLAB job and its inputs for an external licensed runner')
     p.add_argument('--matlab',default='matlab')
     p.add_argument('--output',type=Path,help='Target directory for the FIG and SVG pair')
     a=p.parse_args();fid=a.figure
@@ -67,7 +68,17 @@ def run():
     out=(a.output or ROOT/'figures'/profile/fid).resolve()
     out.mkdir(parents=True,exist_ok=True)
     # A reproduction cannot replace the distributed fields of another run.
-    scope=nullcontext(str(ROOT)) if a.cached else tempfile.TemporaryDirectory(prefix='acycle-figure-')
+    if a.batch_file:
+        a.batch_file=a.batch_file.resolve()
+        a.batch_file.parent.mkdir(parents=True,exist_ok=True)
+    if a.cached:
+        scope=nullcontext(str(ROOT))
+    elif a.batch_file:
+        job_dir=a.batch_file.parent/(a.batch_file.stem+'_inputs')
+        job_dir.mkdir(exist_ok=True)
+        scope=nullcontext(str(job_dir))
+    else:
+        scope=tempfile.TemporaryDirectory(prefix='acycle-figure-')
     with scope as scratch:
         work=Path(scratch)
         fields=work/'fields'
@@ -78,7 +89,7 @@ def run():
             if not a.cached or not (fields/'orbits.mat').exists():
                 prepare_orbits(fields)
             if fid=='F8' and not a.cached:
-                (work/'data').mkdir()
+                (work/'data').mkdir(exist_ok=True)
                 for data in (ROOT/'data').glob('*'):
                     if data.suffix in {'.mat','.csv'}:
                         shutil.copy2(data,work/'data'/data.name)
@@ -89,8 +100,14 @@ def run():
             if fid in COHERENCE:
                 import os
                 for k in range(1,6):
+                    call=f'compute_wtc({k},{ml(core)},{ml(ref)},{ml(fields/"wtc")});'
+                    if a.batch_file:
+                        cache=work/f'MC_{k}'
+                        cache.mkdir(exist_ok=True)
+                        commands.extend([f"setenv('ACYCLE_WTC_CACHE',{ml(cache)});",call])
+                        continue
                     with tempfile.TemporaryDirectory() as tmp:
-                        expr=commands[0]+f'compute_wtc({k},{ml(core)},{ml(ref)},{ml(fields/"wtc")});'
+                        expr=commands[0]+call
                         env=dict(os.environ,TMPDIR=tmp,TEMP=tmp,TMP=tmp)
                         subprocess.run([a.matlab,'-batch',expr],check=True,env=env)
             else:
@@ -103,6 +120,9 @@ def run():
                 if profile.endswith('archiveband'):
                     commands.append('pda_alternate('+','.join(map(ml,[core,ref,work]))+');')
         commands.append('render_figure('+','.join(map(ml,[fid,draw,work,out]))+');')
+        if a.batch_file:
+            a.batch_file.write_text('\n'.join(commands)+'\n')
+            return
         subprocess.run([a.matlab,'-batch',' '.join(commands)],check=True)
     from python.size_svg import set_paper_size
     set_paper_size(out/'plot.svg',fid)
