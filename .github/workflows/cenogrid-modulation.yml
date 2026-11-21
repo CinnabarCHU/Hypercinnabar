@@ -1,0 +1,52 @@
+name: CENOGRID modulation diagnostics
+on:
+  push:
+    branches: [acycle-cenogrid-modulation]
+permissions:
+  contents: read
+jobs:
+  diagnostic:
+    strategy:
+      fail-fast: false
+      matrix:
+        task: [d13c, d18o, orbit]
+    runs-on: ubuntu-latest
+    timeout-minutes: 50
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/checkout@v4
+        with:
+          repository: mingsongli/acycle
+          ref: dcba4279168745b563e0535b954297023dd62fc7
+          path: upstream
+          sparse-checkout: |
+            code/seriesanalysis
+            code/package/wavelet
+            code/package/swa
+            data/Examples
+      - name: Retrieve published orbital elements and spin solution
+        if: matrix.task == 'orbit'
+        shell: bash
+        run: |
+          mkdir -p orbital-inputs
+          curl -fsSL --retry 3 https://ssp.imcce.fr/insola/earth/online/earth/La2010/La2010c_alkhqp3.dat -o orbital-inputs/La2010c.dat &
+          la=$!
+          curl -fsSL --retry 3 https://www.soest.hawaii.edu/oceanography/faculty/zeebe_files/Astro/PrecTilt/OS/ZB18a/ems-plan3.dat -o orbital-inputs/ems-plan3.dat &
+          zb=$!
+          curl -fsSL --retry 3 https://www.soest.hawaii.edu/oceanography/faculty/zeebe_files/Astro/PrecTilt/ZB18a/asc/PT.De1.0000Td1.0000.dat -o orbital-inputs/PT.dat &
+          pt=$!
+          wait "$la" && wait "$zb" && wait "$pt"
+          sha256sum orbital-inputs/*
+      - uses: matlab-actions/setup-matlab@v2
+        with:
+          release: R2024b
+          products: Signal_Processing_Toolbox Statistics_and_Machine_Learning_Toolbox Curve_Fitting_Toolbox
+      - uses: matlab-actions/run-command@v2
+        with:
+          command: addpath('checks'); modulation_check('${{ matrix.task }}')
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: modulation-${{ matrix.task }}
+          path: results/
+          if-no-files-found: warn
