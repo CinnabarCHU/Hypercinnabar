@@ -1,0 +1,75 @@
+name: Acycle example spectral check
+on:
+  push:
+    branches: [acycle-example-spectral-check]
+permissions:
+  contents: read
+jobs:
+  spectrum:
+    runs-on: ubuntu-latest
+    timeout-minutes: 55
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          repository: mingsongli/acycle
+          ref: dcba4279168745b563e0535b954297023dd62fc7
+          path: upstream
+          sparse-checkout: |
+            code/package/swa
+            code/seriesanalysis
+            data/Examples
+      - uses: matlab-actions/setup-matlab@v2
+        with:
+          release: R2024b
+          products: Signal_Processing_Toolbox Statistics_and_Machine_Learning_Toolbox Curve_Fitting_Toolbox
+      - name: Prepare example driver
+        shell: bash
+        run: |
+          cat > check_examples.m <<'MATLAB'
+          upstream = fullfile(pwd,'upstream');
+          addpath(fullfile(upstream,'code','seriesanalysis'));
+          addpath(fullfile(upstream,'code','package','swa'));
+          fprintf('MATLAB %s; Acycle core %s\n',version,which('spectralswafdr'));
+          for isotope = ["d13c","d18o"]
+              src = fullfile(upstream,'data','Examples',"Example-cenogrid-"+isotope+".txt");
+              raw = readmatrix(src,'Delimiter',',');
+              dat = raw(raw(:,1)>=40000 & raw(:,1)<=65000,:);
+              dat = interpolate(dat,3.413);
+              t = dat(:,1);
+              bounds = [55761.340,55925.164];
+              bands = [0.000380,0.000550;0.000665,0.000785];
+              if isotope=="d18o"
+                  bounds(1) = 55819.361;
+                  bands = [0.000385,0.000605;0.000700,0.000910];
+              end
+              for trial = 1:3
+                  span = 4000;
+                  if trial==3, span=6000; end
+                  y = dat(:,2)-smooth(t,dat(:,2),span/(t(end)-t(1)),'lowess');
+                  mask = t>=bounds(1)-1e-5 & t<=bounds(2)+1e-5;
+                  if trial~=2, y(mask)=-0.5; end
+                  fprintf('INPUT %s case=%d span=%d uncenteredMean=%.9f n=%d nEvent=%d\n',isotope,trial,span,mean(y),length(y),sum(mask));
+                  % The Acycle spectrum interface centers the processed series.
+                  input = [t,y-mean(y)];
+                  evalc('sp=spectralswafdr(input,''mtm'',2,5,0);');
+                  for band=1:size(bands,1)
+                      ids=find(sp(:,1)>=bands(band,1) & sp(:,1)<=bands(band,2));
+                      [~,j]=max(sp(ids,2)); k=ids(j);
+                      fprintf('CHECK %s case=%d band=%d periodMyr=%.7f power=%.8f chi95=%.8f fdr5=%.8f powerOverFdr=%.8f\n',isotope,trial,band,0.001/sp(k,1),sp(k,2),sp(k,5),sp(k,10),sp(k,2)/sp(k,10));
+                  end
+                  if trial==1
+                      outfile = "example-spectrum-"+isotope+".csv";
+                      writematrix(sp(:,[1,2,3,5,10]),outfile)
+                  end
+              end
+          end
+          MATLAB
+      - name: Compute example spectra in MATLAB
+        uses: matlab-actions/run-command@v2
+        with:
+          command: check_examples
+      - name: Keep numeric spectra
+        uses: actions/upload-artifact@v4
+        with:
+          name: example-spectra
+          path: example-spectrum-*.csv
