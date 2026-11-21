@@ -127,7 +127,7 @@ case 'S3'
         a=q{k}; ax=panel([.13 .50-(k-1)*.137 .80 .089]);if ~isfield(a,'pda'),axis(ax,'off');text(ax,.4,.5,'Window count exceeds revision limit','Units','normalized');continue,end;plot(ax,a.pda(:,1)/1000,a.pda(:,2),'Color',c(k,:));hold(ax,'on');
         [pk,tx]=findpeaks(a.pda(:,2),a.pda(:,1)/1000,'MinPeakDistance',.9,'MinPeakProminence',.055);
         plot(ax,tx,pk,'.','Color',c(k,:));for j=2:numel(tx),text(ax,mean(tx(j-1:j)),max(pk)*1.03,sprintf('%.1f',diff(tx(j-1:j))),'FontSize',5.5,'HorizontalAlignment','center');end
-        xlim(ax,[40 65]);ylim(ax,[0 max(pk)*1.31]);ylabel(ax,name(k));if k==4,xlabel(ax,'Age (Ma)');end
+        xlim(ax,[40 65]);ylim(ax,[0 max(max(a.pda(:,2))*1.31,eps)]);ylabel(ax,name(k));if k==4,xlabel(ax,'Age (Ma)');end
     end
 case 'S4'
     header('Taner filters and evolutionary FFT');
