@@ -1,0 +1,56 @@
+name: CENOGRID carrier timing and single-site comparisons
+on:
+  push:
+    branches: [acycle-cenogrid-modulation]
+    paths: ['checks/modulation_timing.m', '.github/workflows/cenogrid-carrier-timing.yml']
+permissions:
+  contents: read
+  actions: read
+jobs:
+  compare:
+    runs-on: ubuntu-latest
+    timeout-minutes: 35
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/checkout@v4
+        with:
+          repository: mingsongli/acycle
+          ref: dcba4279168745b563e0535b954297023dd62fc7
+          path: upstream
+          sparse-checkout: |
+            code/seriesanalysis
+      - uses: actions/download-artifact@v4
+        with:
+          run-id: 44953449635
+          github-token: ${{ github.token }}
+          pattern: modulation-*
+          path: inputs
+          merge-multiple: true
+      - name: Read original public single-site measurements on published ages
+        shell: bash
+        run: |
+          curl -fsSL --retry 3 'https://doi.pangaea.de/10.1594/PANGAEA.893894?format=textfile' -o inputs/1263.tab
+          curl -fsSL --retry 3 'https://doi.pangaea.de/10.1594/PANGAEA.883334?format=textfile' -o inputs/1209.tab
+          python - <<'PY'
+          import csv
+          from pathlib import Path
+          for site, fields in [('1263',[6,7,8]),('1209',[3,4,5])]:
+              raw = Path('inputs',site+'.tab').read_text(encoding='utf-8-sig')
+              header, *rows = csv.reader(raw.split('*/',1)[1].strip().splitlines(), delimiter='\t')
+              print(site, [header[i] for i in fields])
+              with Path('inputs',site+'.csv').open('w') as f:
+                  out = csv.writer(f)
+                  out.writerows([row[i] for i in fields] for row in rows if all(row[i] for i in fields))
+          PY
+      - uses: matlab-actions/setup-matlab@v2
+        with:
+          release: R2024b
+          products: Signal_Processing_Toolbox Statistics_and_Machine_Learning_Toolbox
+      - uses: matlab-actions/run-command@v2
+        with:
+          command: addpath('checks'); modulation_timing
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: carrier-timing-and-sites
+          path: timing/

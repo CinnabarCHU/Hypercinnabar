@@ -2,6 +2,7 @@ name: CENOGRID modulation diagnostics
 on:
   push:
     branches: [acycle-cenogrid-modulation]
+    paths: ['checks/modulation_check.m']
 permissions:
   contents: read
 jobs:
