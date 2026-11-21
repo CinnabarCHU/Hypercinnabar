@@ -7,7 +7,7 @@ def prepare(group):
     calls=["addpath("+ml(ROOT/'matlab')+");"]
     groups={
         'common':['common','common-negative','common-bulk','common-records'],
-        'baseline':['april','april-caption'], 'frequency':['april-archiveband'],
+        'baseline':['april','april-caption'], 'frequency':['april-archiveband'],'gaussian':['april-demean'],
         'older':['v27','v270','v2701','jan','v28','v28-caption'],
         'july':['v302','v302-caption'],
         'august':['v303','v303-caption'],
@@ -15,6 +15,7 @@ def prepare(group):
         'current':['current','current-caption','current-native']}
     if group=='common':prepare_orbits(ROOT/'fields')
     if group=='frequency':calls.append('pda_alternate('+','.join(map(ml,[ROOT/'upstream',ROOT/'reference',ROOT]))+');')
+    if group=='gaussian':calls.append('gaussian_center('+','.join(map(ml,[ROOT/'upstream',ROOT]))+');')
     if group=='older':calls.append('compute_fields('+','.join(map(ml,['v27',ROOT/'oldcore',ROOT/'reference',ROOT/'fields/v2701']))+');')
     wrap="""from pathlib import Path
 import subprocess

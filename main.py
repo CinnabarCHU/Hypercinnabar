@@ -17,7 +17,7 @@ COHERENCE={'F7','S7'}
 CONFIG={
  'common':['F1','F2h','F7','F8','S6','S7'], 'common-negative':['F7','S7'],'common-bulk':['F8'],'common-records':['F8'],
  'april':['F2iso','F3','F4','F5','F6','S1','S2','S3','S4','S5'],
- 'april-caption':['F5','S4'],'april-archiveband':['F2iso','F4','S3'],
+ 'april-caption':['F5','S4'],'april-demean':['F2iso','S3'],'april-archiveband':['F2iso','F4','S3'],
  'v2701':['F3','S2'],'v27':['F3','S2'],'v270':['F3','S2'],'jan':['F3','S2'],
  'v28':['F2iso','F3','F4','F5','S2','S3','S4'],'v28-caption':['F5','S4'],
  'v302':['F2iso','F3','F4','F5','S2','S3','S4'],'v302-caption':['F5','S4'],
@@ -59,6 +59,7 @@ def run():
     p.add_argument('--output',type=Path,help='Target directory for the FIG and SVG pair')
     a=p.parse_args();fid=a.figure
     default='common' if fid in ORBIT|COHERENCE else ('v28' if fid in {'F3','S2'} else 'april')
+    if fid in {'F2iso','S3'}:default='april-demean'
     profile=a.version or default
     cached_profile=EQUIVALENTS.get(profile,{}).get(fid,profile)
     if fid not in CONFIG.get(cached_profile,[]):
@@ -97,6 +98,8 @@ def run():
                 if mode in {'v27','v270','jan'}:mode='full-'+base
                 # compute_fields uses this existing short mode for spectra only.
                 commands.append('compute_fields('+','.join(map(ml,['v27' if mode=='spectra' else mode,core,ref,fields/base]))+');')
+                if profile.endswith('demean'):
+                    commands.append('gaussian_center('+','.join(map(ml,[core,work]))+');')
                 if profile.endswith('archiveband'):
                     commands.append('pda_alternate('+','.join(map(ml,[core,ref,work]))+');')
         commands.append('render_figure('+','.join(map(ml,[fid,draw,work,out]))+');')

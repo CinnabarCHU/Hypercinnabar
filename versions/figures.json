@@ -33,6 +33,10 @@
     "F5",
     "S4"
   ],
+  "april-demean": [
+    "F2iso",
+    "S3"
+  ],
   "april-archiveband": [
     "F2iso",
     "F4",

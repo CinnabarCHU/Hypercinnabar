@@ -10,13 +10,13 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        group: ${{ fromJSON(contains(github.event.head_commit.message, '[frequency]') && '["frequency"]' || contains(github.event.head_commit.message, '[common]') && '["common"]' || '["common","baseline","older","july","august","pretag","current","frequency"]') }}
+        group: ${{ fromJSON(contains(github.event.head_commit.message, '[gaussian]') && '["gaussian"]' || contains(github.event.head_commit.message, '[frequency]') && '["frequency"]' || contains(github.event.head_commit.message, '[common]') && '["common"]' || '["common","baseline","older","july","august","pretag","current","frequency","gaussian"]') }}
     runs-on: ubuntu-latest
     timeout-minutes: 75
     steps:
       - uses: actions/checkout@v4
         with: {persist-credentials: false}
-      - if: matrix.group == 'frequency'
+      - if: matrix.group == 'frequency' || matrix.group == 'gaussian'
         uses: actions/checkout@v4
         with:
           persist-credentials: false
@@ -61,6 +61,7 @@ jobs:
           while read -r p; do
             if [ -d "figures/$p" ]; then cp -R "figures/$p" stage/figures/; fi
           done < group_profiles.txt
+          if [ -d fields/april-demean ]; then cp -R fields/april-demean stage/fields/; fi
           if [ -d fields/v2701 ]; then cp -R fields/v2701 stage/fields/; fi
           if [ -d fields/april-archiveband ]; then cp -R fields/april-archiveband stage/fields/; fi
           if [ -f fields/orbits.mat ]; then cp fields/orbits.mat stage/fields/; fi
