@@ -52,6 +52,15 @@ def prepare(kt_workbook,cache,output):
     np.savetxt(output/'w2018_1209.csv',sorted(obs),delimiter=',',fmt='%.8f',
                header='age_Ma,Nuttallides_scale_carbon_permil',comments='')
 
+    # The chronologically consistent Atlantic isotope compilations in W17.
+    # Do not extrapolate the composite into unsampled ages.
+    sites=[]
+    for site,doi,agecol,carboncol in [(1258,871384,4,5),(1262,871385,4,5),(1263,871386,3,4)]:
+        data=numeric(table(doi,cache),[agecol,carboncol])
+        sites.extend(np.c_[np.full(len(data),site),data[:,0]/1000,data[:,1]])
+    np.savetxt(output/'w2017_atlantic.csv',sites,delimiter=',',fmt=['%d','%.8f','%.5f'],
+               header='ODP_site,age_Ma,d13C_permil',comments='')
+
 if __name__=='__main__':
     parser=argparse.ArgumentParser()
     parser.add_argument('kirtland_supplementary_table',type=Path)

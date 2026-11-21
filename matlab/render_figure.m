@@ -106,6 +106,7 @@ case 'F8'
     l=load(fullfile(root,'data','figure8_sources.mat')); l.kt_primary=readmatrix(fullfile(root,'data','kt2014_panel1c.csv')); if endsWith(profile,'records')
         l.raw_kt=readmatrix(fullfile(root,'data','kt2014_observations.csv'));
         l.raw_pac=readmatrix(fullfile(root,'data','w2018_1209.csv'));
+        l.raw_atl=readmatrix(fullfile(root,'data','w2017_atlantic.csv'));
     end
     composite8(orbit,l,endsWith(profile,'bulk'));
 case 'S1'
@@ -336,13 +337,20 @@ for j=1:2
 end
 if isfield(l,'raw_pac')
     % Direct observations from DS01 and an explicit Gaussian display choice.
-    d=l.raw_pac;scatter(ax,d(:,1),d(:,2),2,[.61 .71 .76],'filled');
-    [ages,~,ix]=unique(d(:,1));values=accumarray(ix,d(:,2),[],@mean);
-    grid=ceil(ages(1)*500)/500:.002:floor(ages(end)*500)/500;
-    v=interp1(ages,values,grid);support=-500:500;kernel=exp(-.5*(support*.002/.20).^2);
-    plot(ax,grid,conv(v,kernel,'same')./conv(ones(size(v)),kernel,'same'),'Color',[0 .30 .46],'LineWidth',1.15);
+    records={l.raw_pac,l.raw_atl(:,2:3)};
+    tones=[.10 .28 .50;.65 .17 .08];
+    for j=1:2
+        d=records{j};scatter(ax,d(:,1),d(:,2),1.5,light(tones(j,:),.52),'filled');
+        [ages,~,ix]=unique(d(:,1));values=accumarray(ix,d(:,2),[],@mean);
+        grid=ceil(ages(1)*500)/500:.002:floor(ages(end)*500)/500;
+        v=interp1(ages,values,grid);support=-500:500;kernel=exp(-.5*(support*.002/.20).^2);
+        sm=conv(v,kernel,'same')./conv(ones(size(v)),kernel,'same');
+        plot(ax,grid,sm,'Color',tones(j,:),'LineWidth',1.15);
+    end
 end
-plot(ax,w(:,1),w(:,6),'r','LineWidth',1.35);plot(ax,w(:,1),w(:,7),'k','LineWidth',1.35);
+if ~isfield(l,'raw_pac')
+    plot(ax,w(:,1),w(:,6),'r','LineWidth',1.35);plot(ax,w(:,1),w(:,7),'k','LineWidth',1.35);
+end
 xlim(ax,[45 60]);ylim(ax,[-1.3 2.85]);ax.YAxisLocation='right';ax.XTick=[];ylabel(ax,'\delta^{13}C (‰)');letter(ax,'c');
 ax=panel([.224 .105 .658 .115]);if bulk,xy=l.kt1258(:,[1 5]);else,xy=l.kt_primary;end
 hold(ax,'on');

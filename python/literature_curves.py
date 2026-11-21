@@ -15,12 +15,20 @@ def profile_from_filled_stroke(d, positions):
     # at each abscissa enclose the visible ink of this series alone.
     hits=defaultdict(list)
     for item in d['items']:
-        if item[0]!='l': continue
-        a,b=item[1:];lo,hi=sorted((a.x,b.x))
-        i0,i1=np.searchsorted(positions,[lo,hi])
-        if a.x==b.x: continue
-        for i in range(i0,i1):
-            hits[i].append(a.y+(positions[i]-a.x)*(b.y-a.y)/(b.x-a.x))
+        if item[0]=='l':
+            points=np.array([tuple(point) for point in item[1:]])
+        elif item[0]=='c':
+            controls=np.array([tuple(point) for point in item[1:]])
+            n=max(12,int(np.ceil(np.sum(np.linalg.norm(np.diff(controls,axis=0),axis=1))/.08)))
+            u=np.linspace(0,1,n+1)[:,None]
+            points=(1-u)**3*controls[0]+3*(1-u)**2*u*controls[1]+3*(1-u)*u**2*controls[2]+u**3*controls[3]
+        else:
+            continue
+        for a,b in zip(points[:-1],points[1:]):
+            lo,hi=sorted((a[0],b[0]));i0,i1=np.searchsorted(positions,[lo,hi])
+            if a[0]==b[0]:continue
+            for i in range(i0,i1):
+                hits[i].append(a[1]+(positions[i]-a[0])*(b[1]-a[1])/(b[0]-a[0]))
     return np.array([[min(hits[i]),max(hits[i])] if hits[i] else [np.nan,np.nan] for i in range(len(positions))])
 
 def extract(w18,kt,table,out):
