@@ -10,7 +10,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        group: ${{ fromJSON(contains(github.event.head_commit.message, '[frequency]') && '["frequency"]' || '["common","baseline","older","july","august","pretag","current","frequency"]') }}
+        group: ${{ fromJSON(contains(github.event.head_commit.message, '[frequency]') && '["frequency"]' || contains(github.event.head_commit.message, '[common]') && '["common"]' || '["common","baseline","older","july","august","pretag","current","frequency"]') }}
     runs-on: ubuntu-latest
     timeout-minutes: 75
     steps:

@@ -6,7 +6,7 @@ from main import ROOT,CONFIG,ORBIT,REFS,prepare_orbits,ml
 def prepare(group):
     calls=["addpath("+ml(ROOT/'matlab')+");"]
     groups={
-        'common':['common','common-negative','common-bulk'],
+        'common':['common','common-negative','common-bulk','common-records'],
         'baseline':['april','april-caption'], 'frequency':['april-archiveband'],
         'older':['v27','v270','v2701','jan','v28','v28-caption'],
         'july':['v302','v302-caption'],

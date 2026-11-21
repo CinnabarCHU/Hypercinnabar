@@ -103,7 +103,11 @@ case {'F7','S7'}
         ax=panel([.575 .063 .36 .20]); legendphase(ax); letter(ax,'f');
     end
 case 'F8'
-    l=load(fullfile(root,'data','figure8_sources.mat')); l.kt_primary=readmatrix(fullfile(root,'data','kt2014_panel1c.csv')); composite8(orbit,l,endsWith(profile,'bulk'));
+    l=load(fullfile(root,'data','figure8_sources.mat')); l.kt_primary=readmatrix(fullfile(root,'data','kt2014_panel1c.csv')); if endsWith(profile,'records')
+        l.raw_kt=readmatrix(fullfile(root,'data','kt2014_observations.csv'));
+        l.raw_pac=readmatrix(fullfile(root,'data','w2018_1209.csv'));
+    end
+    composite8(orbit,l,endsWith(profile,'bulk'));
 case 'S1'
     header('Sampling and preprocessing');
     for k=1:2
@@ -330,12 +334,34 @@ for j=1:2
     ids=[2 3]+2*(j-1);ok=w(:,1)>=45&w(:,1)<=60&all(isfinite(w(:,ids)),2);
     x=w(ok,1);a=w(ok,ids);fill(ax,[x;flipud(x)],[a(:,1);flipud(a(:,2))],pick(j,[1 .78 .78],[.72 .72 .72]),'EdgeColor','none');
 end
+if isfield(l,'raw_pac')
+    % Direct observations from DS01 and an explicit Gaussian display choice.
+    d=l.raw_pac;scatter(ax,d(:,1),d(:,2),2,[.61 .71 .76],'filled');
+    [ages,~,ix]=unique(d(:,1));values=accumarray(ix,d(:,2),[],@mean);
+    grid=ceil(ages(1)*500)/500:.002:floor(ages(end)*500)/500;
+    v=interp1(ages,values,grid);support=-500:500;kernel=exp(-.5*(support*.002/.20).^2);
+    plot(ax,grid,conv(v,kernel,'same')./conv(ones(size(v)),kernel,'same'),'Color',[0 .30 .46],'LineWidth',1.15);
+end
 plot(ax,w(:,1),w(:,6),'r','LineWidth',1.35);plot(ax,w(:,1),w(:,7),'k','LineWidth',1.35);
 xlim(ax,[45 60]);ylim(ax,[-1.3 2.85]);ax.YAxisLocation='right';ax.XTick=[];ylabel(ax,'\delta^{13}C (‰)');letter(ax,'c');
 ax=panel([.224 .105 .658 .115]);if bulk,xy=l.kt1258(:,[1 5]);else,xy=l.kt_primary;end
 hold(ax,'on');
 for w0=zones',patch(ax,w0([1 2 2 1]),[-1 -1 0 0],[.89 .89 .89],'EdgeColor','none');end
-plot(ax,xy(:,1),xy(:,2),'Color',[.31 .31 .31],'LineWidth',.75);ylim(ax,[-1 0]);ax.YDir='reverse';xlim(ax,[45 60]);ylabel(ax,'\delta^{13}C (‰)');xlabel(ax,'Age (Ma)');letter(ax,'d');
+if isfield(l,'raw_kt')
+    d=l.raw_kt;cols=[.18 .38 .50;.05 .46 .33;.45 .26 .18];
+    for site=1:3
+        z=d(d(:,1)==site,:);t=z(:,2);y=z(:,3);
+        % Constant inter-site isotope offsets cancel in the detrending.
+        avg=arrayfun(@(at)mean(y(abs(t-at)<=1)),t);res=y-avg;
+        valid=true(size(t));if site==3,valid=t<55.33|t>55.53;end
+        cutoff=mean(res(valid))-std(res(valid)); e=min(res-cutoff,0);
+        % Retain all available sites, including their overlap.
+        plot(ax,t,e,'Color',cols(site,:),'LineWidth',.6);
+    end
+else
+    plot(ax,xy(:,1),xy(:,2),'Color',[.31 .31 .31],'LineWidth',.75);
+end
+ylim(ax,[-1 0]);ax.YDir='reverse';xlim(ax,[45 60]);ylabel(ax,'\delta^{13}C (‰)');xlabel(ax,'Age (Ma)');letter(ax,'d');
 ax=panel([.224 .055 .658 .015]);hold(ax,'on');
 pol=[46.24 47.85;48.99 49.76;50.81 50.96;51.06 51.79;52.63 52.97;53.08 53.19;53.42 53.94;57.09 57.64;58.93 59.25];
 for b=pol',rectangle(ax,'Position',[b(1) 0 diff(b) 1],'FaceColor','k');end

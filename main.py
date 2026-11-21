@@ -11,7 +11,7 @@ ALL=['F1','F2h','F2iso','F3','F4','F5','F6','F7','F8','S1','S2','S3','S4','S5','
 ORBIT={'F1','F2h','F8','S6'}
 COHERENCE={'F7','S7'}
 CONFIG={
- 'common':['F1','F2h','F7','F8','S6','S7'], 'common-negative':['F7','S7'],'common-bulk':['F8'],
+ 'common':['F1','F2h','F7','F8','S6','S7'], 'common-negative':['F7','S7'],'common-bulk':['F8'],'common-records':['F8'],
  'april':['F2iso','F3','F4','F5','F6','S1','S2','S3','S4','S5'],
  'april-caption':['F5','S4'],'april-archiveband':['F2iso','F4','S3'],
  'v2701':['F3','S2'],'v27':['F3','S2'],'v270':['F3','S2'],'jan':['F3','S2'],
