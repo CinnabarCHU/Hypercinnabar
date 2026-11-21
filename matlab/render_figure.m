@@ -207,6 +207,9 @@ legend(ax,{'5% FDR','99% \chi^2','95% \chi^2','SWA background','Power'},'Locatio
 bands=[.00038 .00055;.000665 .000785;.00235 .00258];if k==2,bands(1:2,:)=[.000385 .000605;.0007 .00091];end
 for i=1:3
  ix=find(s(:,1)>=bands(i,1)&s(:,1)<=bands(i,2));if isempty(ix),continue,end
+ if ~supp && k==2 && i==1
+     candidates=ix(islocalmax(s(ix,2)));[~,near]=min(abs(1./s(candidates,1)-2200));ix=candidates(near);
+ end
  [v,ii]=max(s(ix,2));p=1/s(ix(ii),1);if supp,tx=sprintf('%.0f kyr',p);else,tags={'~2.2 Myr',pick(k,'~1.4 Myr','~1.3 Myr'),'405 kyr'};tx=tags{i};end
  text(ax,s(ix(ii),1)*1000,v*1.04,tx,'FontSize',7,'HorizontalAlignment','center','VerticalAlignment','bottom');
 end
@@ -249,19 +252,30 @@ end
 end
 function isotope_wave(ax,axg,w,k,col,supp)
 v=double(w.color);y=log2(w.period);x=w.t/1000;
-% The GUI offers both a logarithmic and a linear power display.
-% Use its fixed log range for the coloured image; contours use physical power.
-z=log2(max(v,realmin));imagesc(ax,x,y,z);set(ax,'YDir','normal');colormap(ax,parula(160));
-clim(ax,[-16 0]);hold(ax,'on');
+% The main graphic has a normalized colour bar. The two linear transforms
+% of GUI log2 power are calibrated to the colour-bar positions in its artwork.
+z=log2(max(v,realmin));
+if supp
+    imagesc(ax,x,y,z);clim(ax,[-16 0]);
+else
+    offset=[.97887 .96468];slope=[.018870 .024777];
+    u=max(0,min(1,offset(k)+slope(k)*z));cm=parula(256);
+    idx=1+round(255*u);rgb=reshape(cm(idx(:),:),[size(u) 3]);
+    exterior=w.period(:)>w.coi(:)';rgb=rgb.*(1-.33*exterior)+.33*exterior;
+    image(ax,[x(1) x(end)],[y(1) y(end)],rgb);clim(ax,[0 1]);
+end
+set(ax,'YDir','normal');colormap(ax,parula(256));hold(ax,'on');
 contour(ax,x,y,double(w.signif),[1 1],'k','LineWidth',.8);
 plot(ax,x,log2(max(w.coi,eps)),'Color',[.22 .22 .22],'LineWidth',.75);
 yt=[95 125 405 1200 2400];set(ax,'YTick',log2(yt),'YTickLabel',string(yt),'YLim',log2([64 5000]),'XLim',[40 65]);
 xlabel(ax,'Age (Ma)');ylabel(ax,'Period (kyr)');title(ax,name(k));
-plot(axg,w.global_power,y,'Color',col,'LineWidth',1);axg.YLim=ax.YLim;axg.YTick=[];xlabel(axg,'Global power');
+if supp,fac=1;else,fac=pick(k,1e4,1e5);end
+plot(axg,fac*w.global_power,y,'Color',col,'LineWidth',1);axg.YLim=ax.YLim;axg.YTick=[];
+if supp,xlabel(axg,'Global power');else,xlabel(axg,pick(k,'Power (10^{-4})','Power (10^{-5})'));end
 if ~supp
  for p=[2200, pick(k,1400,1300)],yline(ax,log2(p),'--','Color',[.65 .65 .65]);text(ax,46.3,log2(p)-.12,sprintf('~%.1f Myr',p/1000),'FontSize',7);end
 end
-cb=colorbar(ax,'Position',[.947 ax.Position(2) .011 ax.Position(4)]);cb.FontSize=6;cb.Ticks=-16:4:0;
+cb=colorbar(ax,'Position',[.947 ax.Position(2) .011 ax.Position(4)]);cb.FontSize=6;if supp,cb.Ticks=-16:4:0;else,cb.Ticks=0:.2:1;end
 end
 function coherent(ax,a,k,neg,compact)
 x=a.t(:)'/1000;y=log2(a.period(:));v=double(a.r2); cmap=parula(128);

@@ -14,7 +14,7 @@ CONFIG={
  'common':['F1','F2h','F7','F8','S6','S7'], 'common-negative':['F7','S7'],'common-bulk':['F8'],
  'april':['F2iso','F3','F4','F5','F6','S1','S2','S3','S4','S5'],
  'april-caption':['F5','S4'],'april-archiveband':['F2iso','F4','S3'],
- 'v27':['F3','S2'],'v270':['F3','S2'],'jan':['F3','S2'],
+ 'v2701':['F3','S2'],'v27':['F3','S2'],'v270':['F3','S2'],'jan':['F3','S2'],
  'v28':['F2iso','F3','F4','F5','S2','S3','S4'],'v28-caption':['F5','S4'],
  'v302':['F2iso','F3','F4','F5','S2','S3','S4'],'v302-caption':['F5','S4'],
  'v303':['F2iso','F3','F4','F5','S2','S3','S4'],'v303-caption':['F5','S4'],
@@ -74,9 +74,11 @@ def run():
                     env=dict(os.environ,TMPDIR=tmp,TEMP=tmp,TMP=tmp)
                     subprocess.run([a.matlab,'-batch',expr],check=True,env=env)
         else:
-            commands.append('compute_fields('+','.join(map(ml,[base,core,ref,fields/base]))+');')
+            commands.append('compute_fields('+','.join(map(ml,['v27' if base=='v2701' else base,core,ref,fields/base]))+');')
             if profile.endswith('archiveband'):commands.append('pda_alternate('+','.join(map(ml,[core,ref,ROOT]))+');')
     commands.append('render_figure('+','.join(map(ml,[fid,profile,ROOT,out]))+');')
     subprocess.run([a.matlab,'-batch',' '.join(commands)],check=True)
+    from python.size_svg import set_paper_size
+    set_paper_size(out/'plot.svg',fid)
 
 if __name__=='__main__':run()

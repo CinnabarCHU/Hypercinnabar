@@ -1,0 +1,11 @@
+{
+  "CENOGRID": {"doi": "10.1594/PANGAEA.917503", "input": "Acycle Example-cenogrid-d13c/d18o.txt; C and O on the published age grid"},
+  "ZB18a": {"doi": "10.1126/science.aax0612", "input": "ZB18a.dat and ems-plan3.dat"},
+  "ZB20a_ZB20b": {"doi": "10.1016/j.epsl.2022.117595", "input": "eccentricity"},
+  "La2004": {"doi": "10.1051/0004-6361:20041335", "input": "Acycle La04.mat"},
+  "La2010": {"doi": "10.1051/0004-6361/201116836", "source": "https://ssp.imcce.fr/insola/earth/online/earth/La2010/"},
+  "Westerhold2018": {"doi": "10.1029/2017PA003306", "figure": "7", "file": "figure8_sources.mat", "series": "westerhold", "columns": ["age_Ma","Atlantic_ink_lower","Atlantic_ink_upper","Pacific_ink_lower","Pacific_ink_upper","Atlantic_smoothed","Pacific_smoothed"]},
+  "KirtlandTurner2014": {"doi": "10.1038/ngeo2240", "source_panel": "1c", "file": "kt2014_panel1c.csv", "columns": ["age_Ma_original_scale","negative_carbon_excess_permil"], "independent_input": "Supplementary Table 1, Site 1258 bulk"},
+  "Acycle": "https://github.com/mingsongli/acycle",
+  "wavelet_coherence": "https://github.com/grinsted/wavelet-coherence"
+}

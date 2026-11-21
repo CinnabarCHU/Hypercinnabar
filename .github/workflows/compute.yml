@@ -1,8 +1,5 @@
 name: Compute time series and wavelet fields
 on:
-  push:
-    branches: [cenogrid-figure-reproduction]
-    paths: ['matlab/compute*.m', 'matlab/grinsted/**', 'matlab/legacy/**', '.github/workflows/compute.yml']
   workflow_dispatch:
 permissions:
   contents: read
@@ -30,14 +27,17 @@ jobs:
     timeout-minutes: 120
     steps:
       - uses: actions/checkout@v4
+        with: {persist-credentials: false}
       - uses: actions/checkout@v4
         with:
+          persist-credentials: false
           repository: mingsongli/acycle
           ref: ${{ matrix.ref }}
           path: upstream
           sparse-checkout: code
       - uses: actions/checkout@v4
         with:
+          persist-credentials: false
           repository: mingsongli/acycle
           ref: dcba4279168745b563e0535b954297023dd62fc7
           path: reference
@@ -56,25 +56,3 @@ jobs:
           name: fields-${{ matrix.label }}
           path: fields
           if-no-files-found: error
-  collect:
-    needs: fields
-    if: always() && !cancelled()
-    permissions: {contents: write}
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-        with:
-          ref: cenogrid-figure-reproduction
-      - uses: actions/download-artifact@v4
-        with:
-          pattern: fields-*
-          path: fields
-          merge-multiple: true
-      - run: |
-          git config user.name 'github-actions[bot]'
-          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add fields
-          git diff --cached --quiet && exit 0
-          git commit -m 'Record calculated numerical fields'
-          git pull --rebase origin cenogrid-figure-reproduction
-          git push origin HEAD:cenogrid-figure-reproduction

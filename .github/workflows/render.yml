@@ -24,7 +24,15 @@ jobs:
           ref: 1f66b1859478842ad73d1211f1fd50789ab56c00
           path: upstream
           sparse-checkout: code
-      - if: matrix.group == 'frequency'
+      - if: matrix.group == 'older'
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+          repository: mingsongli/acycle
+          ref: 7792bcc48ed8db1c12fbe99e82e4e1fce531e0e5
+          path: oldcore
+          sparse-checkout: code
+      - if: matrix.group == 'frequency' || matrix.group == 'older'
         uses: actions/checkout@v4
         with:
           persist-credentials: false
@@ -48,7 +56,12 @@ jobs:
         if: always()
         run: |
           mkdir -p stage/fields
-          if [ -d figures ]; then cp -R figures stage/; fi
+          python python/size_svg.py figures
+          mkdir -p stage/figures
+          while read -r p; do
+            if [ -d "figures/$p" ]; then cp -R "figures/$p" stage/figures/; fi
+          done < group_profiles.txt
+          if [ -d fields/v2701 ]; then cp -R fields/v2701 stage/fields/; fi
           if [ -d fields/april-archiveband ]; then cp -R fields/april-archiveband stage/fields/; fi
           if [ -f fields/orbits.mat ]; then cp fields/orbits.mat stage/fields/; fi
       - uses: actions/upload-artifact@v4
