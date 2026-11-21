@@ -26,6 +26,13 @@ jobs:
           pattern: modulation-*
           path: inputs
           merge-multiple: true
+      - uses: actions/download-artifact@v4
+        with:
+          run-id: 44954655265
+          github-token: ${{ github.token }}
+          pattern: pda-bands-*
+          path: inputs
+          merge-multiple: true
       - name: Download the published axial tilt and Site 1209 benthic isotopes
         run: |
           curl -fsSL --retry 3 'https://www.soest.hawaii.edu/oceanography/faculty/zeebe_files/Astro/PrecTilt/ZB18a/asc/PT.De1.0000Td1.0000.dat' -o inputs/PT.dat
@@ -47,7 +54,7 @@ jobs:
           products: Signal_Processing_Toolbox Statistics_and_Machine_Learning_Toolbox
       - uses: matlab-actions/run-command@v2
         with:
-          command: addpath('checks'); paired_carriers
+          command: addpath('checks'); paired_carriers; paired_carriers('additional')
       - uses: actions/upload-artifact@v4
         if: always()
         with:
