@@ -68,7 +68,7 @@ function sampleSpectra(t,y,label)
     selected=[1,410,825,1466,2346,3401,4001,4801,6001];
     ii=1; audit=zeros(2*7*numel(selected),2+2501);
     for offset=[0,1]
-        for nw=[1,1.5,2,2.5,3,3.5,4]
+        for nw=[1.25,1.5,2,2.5,3,3.5,4]
             for ix=selected
                 first=ix+offset;
                 v=detrend(padded(first:first+n-1,2)');
