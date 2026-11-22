@@ -5,6 +5,8 @@ AR1Prewhitening	helper	dat	3	code/guicode/prewhitenGUI.m
 AR1Prewhitening	plotter	datp xlabel_text ylabel_text	2	code/guicode/prewhitenGUI.m
 AddGaps	analyzer	dat sec	2	code/guicode/AC.m
 AgeScale	analyzer	data tiepoints	1	code/guicode/agescale.m
+AgeScale	helper	data tiepoints	0	code/guicode/agescale.m
+AgeScale	plotter	data tiepoints result view unit filename	12	code/guicode/agescale.m
 AmplitudeModulation	analyzer	data	2	code/guicode/AC.m
 AmplitudeModulation	helper	data	2	code/guicode/AC.m
 AnDarksamtest	analyzer	X alpha	0	code/package/univariate/AnDarksamtest.m
@@ -194,6 +196,8 @@ SpectralPowerLaw	analyzer	datax fd1 po method nw(MTM)	2	code/guicode/spectrum.m
 SpectralPowerLaw	plotter	fd1 po pl red90 red95 red99 red90global red95global red99global plot_x_period fmin fmax unit logfreq linlogY	7	code/guicode/spectrum.m
 Standardize	analyzer	data	1	code/guicode/AC.m
 StratigraphicCorrelation	analyzer	tiepoints1 tiepoints2 data1	1	code/guicode/CorrelationGUI.m
+StratigraphicCorrelation	helper	reference series tiepoints1 tiepoints2	0	code/guicode/CorrelationGUI.m
+StratigraphicCorrelation	plotter	reference data1 tiepoints1 tiepoints2 refxmin refxmax serxmin serxmax result	14	code/guicode/CorrelationGUI.m
 SummaryStatistics	analyzer	data	1	code/package/univariate/UniStatisticSum.m
 TimeOpt	analyzer	dat sedmin sedmax numsed nsim linLog fit fl fh roll targetE targetP detrend cormethod mc_scope (when nsim > 1)	12	code/guicode/timeOptGUI.m | mingsongli/acycle@f4027a865e22cf64500e7145aef592b944df3f98 code/package/timeOpt/timeOptAc.m
 TimeOpt	helper	dat (depth in cm)	4	code/guicode/timeOptGUI.m
@@ -265,6 +269,7 @@ ecocoplot	plotter	prt_sr out_depth out_ecc out_ep out_eci out_ecoco out_ecocorb 
 ecocoplots	plotter	prt_sr out_depth out_ecc out_ep out_eci out_ecoco out_ecocorb	0	code/corrcoef/ecocoplots.m
 ecocos	analyzer	data target window dt step delinear red pad sr1 sr2 srstep adjust	0	code/corrcoef/ecocos.m
 ecocotrack	analyzer	locatcc out_ecc out_eci out_ecoco out_norbit out_depth sr1 sr2 srstep srsh srslice sig ci sh_norb	0	code/corrcoef/ecocotrack.m
+ecocotrack	plotter	result out_depth sr1 sr2 srstep	1	code/corrcoef/ecocotrack.m
 ecocotrackn	analyzer	locat srsh iniloc srn method	0	code/corrcoef/ecocotrackn.m
 eemd	analyzer	y goal ens nos	5	code/seriesanalysis/eemd.m
 ellipse_s	analyzer	e npts	0	code/misc/ellipse_s.m
@@ -286,6 +291,7 @@ formatts	analyzer	d	0	code/package/wavelet/formatts.m
 freq2target	analyzer	f p fx fray	0	code/corrcoef/freq2target.m
 ftestmtm	analyzer	t y NW dof npad	0	code/seriesanalysis/ftestmtm.m
 ftestmtmML	analyzer	data NW npad	0	code/seriesanalysis/ftestmtmML.m
+ftestmtmML	plotter	result NW fnyq	1	code/seriesanalysis/ftestmtmML.m
 gammcf	analyzer	a x	0	code/package/swa/gammcf.m
 gammln	analyzer	xx	0	code/package/swa/gammln.m
 gammp	analyzer	a x	0	code/package/swa/gammp.m
@@ -330,6 +336,7 @@ period2spectrumB	analyzer	orbit7 t1 t2 sr f1 f2 method pad	0	code/corrcoef/perio
 pick_k1	analyzer	k	0	code/package/bayes_changepoint/pick_k1.m
 plomb_robustar1	analyzer	datax timex fmax smoothwin	0	code/seriesanalysis/plomb_robustar1.m
 plomb_robustar1	helper	datax timex fmax smoothwin plotn	1	code/seriesanalysis/plomb_robustar1.m
+plomb_robustar1	plotter	result smoothwin fmax	1	code/seriesanalysis/plomb_robustar1.m
 prewhitening	analyzer	data rho	0	code/seriesanalysis/prewhitening.m
 randspec_sin	analyzer	f n dat_ray	0	code/corrcoef/randspec_sin.m
 recplot	analyzer	x threshold t labelx labely	0	code/package/recurrence/recplot.m
@@ -337,6 +344,7 @@ recplot	helper	x threshold t plotn labelx labely	1	code/package/recurrence/recpl
 recplot	plotter	plotn S threshold t x labelx labely	5	code/package/recurrence/recplot.m
 redconfML	analyzer	x dt nw nfft linlog smoothwin fmax	0	code/seriesanalysis/redconfML.m
 redconfML	helper	x dt nw nfft linlog smoothwin fmax plotn	1	code/seriesanalysis/redconfML.m
+redconfML	plotter	result smoothwin	1	code/seriesanalysis/redconfML.m
 redconf_any	analyzer	f pxx dt smoothwin linlog	0	code/seriesanalysis/redconf_any.m
 redconfchi2	analyzer	datax nw dt pad method	0	code/seriesanalysis/redconfchi2.m
 redconftabtchi	analyzer	datax nw dt pad method	0	code/seriesanalysis/redconftabtchi.m
@@ -347,7 +355,8 @@ rho	analyzer	x nData varx	0	code/package/swa/rho.m
 rhoAR1	analyzer	datax	0	code/seriesanalysis/rhoAR1.m
 rhoAR1ML	analyzer	datax	0	code/seriesanalysis/rhoAR1ML.m
 rmse4leadlag	analyzer	target series ll step timedir	0	code/seriesanalysis/rmse4leadlag.m
-rmse4leadlag	helper	target series ll step timedir plotn	1	code/seriesanalysis/rmse4leadlag.m
+rmse4leadlag	helper	target series ll step timedir plotn	3	code/guicode/leadlagGUI.m | code/seriesanalysis/rmse4leadlag.m
+rmse4leadlag	plotter	result target series timedir	4	code/guicode/leadlagGUI.m | code/seriesanalysis/rmse4leadlag.m
 select_interval	analyzer	data t1 t2	0	code/seriesanalysis/select_interval.m
 select_interval	helper	data	2	code/guicode/AC.m
 smoothbestSpan	analyzer	t y method alpha beta	0	code/seriesanalysis/smoothbestSpan.m

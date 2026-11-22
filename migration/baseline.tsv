@@ -19,7 +19,7 @@ code/corrcoef/ecoco.m	ecoco.analyzer
 code/corrcoef/ecocoplot.m	ecocoplot.plotter
 code/corrcoef/ecocoplots.m	ecocoplots.plotter
 code/corrcoef/ecocos.m	ecocos.analyzer
-code/corrcoef/ecocotrack.m	ecocotrack.analyzer
+code/corrcoef/ecocotrack.m	ecocotrack.analyzer | ecocotrack.plotter
 code/corrcoef/ecocotrackn.m	DigitizeTrace.analyzer | ecocotrackn.analyzer
 code/corrcoef/findperct.m	findperct.analyzer
 code/corrcoef/freq2target.m	freq2target.analyzer
@@ -39,7 +39,7 @@ code/guicode/ACUpdate.m
 code/guicode/About.fig	
 code/guicode/About.m	
 code/guicode/CorrelationGUI.fig	
-code/guicode/CorrelationGUI.m	StratigraphicCorrelation.analyzer
+code/guicode/CorrelationGUI.m	StratigraphicCorrelation.analyzer | StratigraphicCorrelation.helper | StratigraphicCorrelation.plotter
 code/guicode/DYNOS.fig	
 code/guicode/DYNOS.m	DYNOT.analyzer | DYNOT.helper | DYNOT.plotter
 code/guicode/DataExtractML.fig	
@@ -66,7 +66,7 @@ code/guicode/SmoothBootGUI.m	BootstrapSmooth.analyzer | BootstrapSmooth.helper
 code/guicode/SpectralMomentsGUI.fig	
 code/guicode/SpectralMomentsGUI.m	spectralmoments.plotter
 code/guicode/agescale.fig	
-code/guicode/agescale.m	AgeScale.analyzer
+code/guicode/agescale.m	AgeScale.analyzer | AgeScale.helper | AgeScale.plotter
 code/guicode/basicseries.fig	
 code/guicode/basicseries.m	AstronomicalSolution.analyzer | AstronomicalSolution.helper | AstronomicalSolution.plotter
 code/guicode/circularspecGUI.fig	CircularSpectrum.helper
@@ -92,7 +92,7 @@ code/guicode/interpolationGUI.m	InterpolationPro.helper
 code/guicode/languageGUI.fig	
 code/guicode/languageGUI.m	
 code/guicode/leadlagGUI.fig	
-code/guicode/leadlagGUI.m	
+code/guicode/leadlagGUI.m	rmse4leadlag.helper | rmse4leadlag.plotter
 code/guicode/linegenerator.fig	SeriesGenerator.helper
 code/guicode/linegenerator.m	SeriesGenerator.analyzer | SeriesGenerator.helper | SeriesGenerator.plotter
 code/guicode/prewhiten.fig	
@@ -247,7 +247,7 @@ code/seriesanalysis/evopmtmML.m	evopmtmML.analyzer | evopmtmML.plotter
 code/seriesanalysis/find_extrema.m	find_extrema.analyzer
 code/seriesanalysis/findduplicate.m	findduplicate.analyzer
 code/seriesanalysis/ftestmtm.m	ftestmtm.analyzer
-code/seriesanalysis/ftestmtmML.m	PowerSpectrum.plotter | ftestmtmML.analyzer
+code/seriesanalysis/ftestmtmML.m	PowerSpectrum.plotter | ftestmtmML.analyzer | ftestmtmML.plotter
 code/seriesanalysis/gaussfilter.m	gaussfilter.analyzer
 code/seriesanalysis/getpks.m	getpks.analyzer
 code/seriesanalysis/interpolate.m	interpolate.analyzer
@@ -260,16 +260,16 @@ code/seriesanalysis/movmeanfbw.m	FixedMovingMean.analyzer | FixedMovingMean.help
 code/seriesanalysis/mtmdofs.m	mtmdofs.analyzer
 code/seriesanalysis/pda.m	pda.analyzer
 code/seriesanalysis/pdan.m	pdan.analyzer | pdan.helper
-code/seriesanalysis/plomb_robustar1.m	PowerSpectrum.plotter | plomb_robustar1.analyzer | plomb_robustar1.helper
+code/seriesanalysis/plomb_robustar1.m	PowerSpectrum.plotter | plomb_robustar1.analyzer | plomb_robustar1.helper | plomb_robustar1.plotter
 code/seriesanalysis/prewhitening.m	prewhitening.analyzer
-code/seriesanalysis/redconfML.m	redconfML.analyzer | redconfML.helper
+code/seriesanalysis/redconfML.m	redconfML.analyzer | redconfML.helper | redconfML.plotter
 code/seriesanalysis/redconf_any.m	redconf_any.analyzer
 code/seriesanalysis/redconfchi2.m	redconfchi2.analyzer
 code/seriesanalysis/redconftabtchi.m	redconftabtchi.analyzer
 code/seriesanalysis/redmark.m	redmark.analyzer
 code/seriesanalysis/rhoAR1.m	rhoAR1.analyzer
 code/seriesanalysis/rhoAR1ML.m	rhoAR1ML.analyzer
-code/seriesanalysis/rmse4leadlag.m	rmse4leadlag.analyzer | rmse4leadlag.helper
+code/seriesanalysis/rmse4leadlag.m	rmse4leadlag.analyzer | rmse4leadlag.helper | rmse4leadlag.plotter
 code/seriesanalysis/select_interval.m	select_interval.analyzer
 code/seriesanalysis/smoothbestSpan.m	smoothbestSpan.analyzer
 code/seriesanalysis/smoothci.m	smoothci.analyzer

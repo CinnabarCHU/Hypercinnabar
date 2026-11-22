@@ -24,6 +24,7 @@ q.result=acmethods.MatlabWaveletCoherence.analyzer(q); acmethods.MatlabWaveletCo
 q=acmethods.WaveletCoherence.helper(struct('dat1',d,'dat2',second)); q.MonteCarloCount=0;
 q.result=acmethods.WaveletCoherence.analyzer(q); acmethods.WaveletCoherence.plotter(q);
 assert(~isempty(findall(groot,'type','figure','name','Acycle: Cross-wavelet')));
+testTuningViews(d);
 testSpectra(d);
 testUndatable(root,journal);
 testEcoco();
@@ -32,6 +33,24 @@ end
 function q=withResult(q,r)
 names=fieldnames(r);
 for i=1:numel(names), q.(names{i})=r.(names{i}); end
+end
+
+function testTuningViews(d)
+t=d(:,1); tie=[0,10;60,25;160,46;255,80];
+q=acmethods.AgeScale.helper(struct('data',d,'tiepoints',tie)); q.unit='m'; q.filename='synthetic';
+q.result=acmethods.AgeScale.analyzer(q);
+[reference,sr]=depthtotime(t,tie); assert(isequaln(q.result.time,reference) && isequaln(q.result.sr,sr));
+for view={'series','model','age-axis','depth-axis'}
+    q.view=view{1}; acmethods.AgeScale.plotter(q);
+end
+ref=[reference,d(:,2)]; idx=[1;61;161;256];
+a=[ref(idx,:),[1;2;3;4]]; b=[d(idx,:),[1;2;3;4]];
+q=acmethods.StratigraphicCorrelation.helper(struct('reference',ref,'series',d,'tiepoints1',a,'tiepoints2',b));
+q.result=acmethods.StratigraphicCorrelation.analyzer(q);
+assert(isequaln(q.result.data1t(:,1),reference)); acmethods.StratigraphicCorrelation.plotter(q);
+q=acmethods.rmse4leadlag.helper(struct('target',d,'series',d)); q.ll=12; q.step=1;
+q.result=acmethods.rmse4leadlag.analyzer(q); assert(q.result.RMSE(q.result.llgrid==0)<1e-12);
+acmethods.rmse4leadlag.plotter(q);
 end
 
 function testSpectra(d)
