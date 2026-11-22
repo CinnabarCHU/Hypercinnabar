@@ -76,5 +76,5 @@ python migration/export_method.py --revision master Bandpass Bispectral --output
 
 原版桌面可分别从固定提交的 `ac.m` 启动。桌面有跨调用存活的图形句柄，建议把两代原 GUI 放在各自的 MATLAB 会话中。运行 3.1.1 桌面时，可向会话加入迁移目录的 `matlab/`，通过 `acmaster.Desktop.plotter(struct('tag','menu_settings'))` 触发实际菜单。此日志记录所触发的入口；用户随后在原生窗口内作出的选择仍由原窗口处理。需要自动重放的分析可直接调用相应方法，并传入选定参数。原 GUI 的鼠标序列、不同操作系统的窗口外观，以及所有工具箱和参数组合尚未逐项回归。
 
-基线的两处历史来源限制继续适用。回归使用发行包中的 `fitlm` 副本，无法确认它就是 `b52ea9f` 部署时的同一文件。旧数字化器的私有 `getPKS(image,2)` 和 `trackline` 仍未找全，历史接口和已标记的替代路径一并保留。新版数字化器使用当前 Git 树中可以核验的追踪实现。[历史补回说明](../README.zh-CN.md)
+基线回归使用 3.1.1 MATLAB 发行包中的 `fitlm` 副本，尚无法确认 `b52ea9f` 部署时的同一文件。旧数字化器的双参数 `getPKS(image,2)` 和四参数 `trackline` 仍缺定义，历史接口和已标记的替代路径一并保留。单独核对 v2.8 与 v3.0.3 的发布源码后，可以确认新版回归和数字化器在 v3.0.3 已与当前固定 master 逐字节相同，v2.8 则能确认五个 TimeOpt 原文件。[两个发布包的逐项核对](../README.zh-CN.md#v28-与-v303-的发布包核对)
 

@@ -18,6 +18,20 @@
 
 TimeOpt 和 Lyapunov 在 GUIDE 移除前已从 Git 树删除。十个原文件按删除前的公开 Git 版本恢复。额外的回归候选采用发行包的完整文件作为核对依据。每份文件列有来源、成员路径和 SHA-256。2.7.1 参照包的版本文件日期为 2023-10-16，归档 SHA-256 为 `6155b4d57bddf6b3609e46e861900db933d45d559fb4efaebe8e7e3dfef6b4f9`。[删除提交](https://github.com/mingsongli/acycle/commit/79190165843a9530368bb9815c2c80a4aff46503) · [恢复源文件清单](recovered.tsv)
 
+## v2.8 与 v3.0.3 的发布包核对
+
+两个 GitHub Release 各提供同一份源码的 ZIP 和 tar.gz。GitHub Release API 在两版均返回 `assets: []`，发布者未另传安装包。实际下载的 v2.8 ZIP 有 345 个文件（234 个 `.m`），v3.0.3 ZIP 有 402 个文件（316 个 `.m`）。去掉归档根目录后，已逐文件核对内容与各自标签的 Git blob，并在所有 MATLAB 源文件中检查了函数定义与调用。[v2.8 · e3553eb](https://github.com/mingsongli/acycle/releases/tag/v2.8) · [v3.0.3 · 8eea944](https://github.com/mingsongli/acycle/releases/tag/v3.0.3)
+
+| 待查代码 | v2.8 | v3.0.3 | 对迁移的意义 |
+| --- | --- | --- | --- |
+| TimeOpt / eTimeOpt | `code/package/timeOpt/` 内的 `timeOptAc.m`、`timeOptSimAc.m`、`eTimeOpt.m`、`fitItls.m`、`harm1ML.m` 齐全 | 五个文件均缺 | 五个原件与本分支从 `f4027a8` 补回的文件逐字节相同。[v2.8 源码](https://github.com/mingsongli/acycle/tree/e3553eb00b4890c0071ef64b213df34db5670de5/code/package/timeOpt) |
+| 旧图线追踪 | `DataExtractML.m` 与 GUIDE 基线逐字节相同。第 781 行调用 `getPKS(Ig01,2)`，第 810 行调用四参数 `trackline`。标签只提供单参数序列求峰函数 `getpks(data)` | 仍只提供单参数 `getpks`。新窗口用 `traceSeedCurve` 从种子连通分量追踪，其 `plotdigitizer.m` 与固定的 3.1.1 master 字节相同 | 两个标签中均未找到旧图像函数定义。保留外接旧引擎、标明来源的替代引擎，以及独立的新版追踪入口。[旧调用](https://github.com/mingsongli/acycle/blob/e3553eb00b4890c0071ef64b213df34db5670de5/code/guicode/DataExtractML.m#L781-L810) · [单参数函数](https://github.com/mingsongli/acycle/blob/e3553eb00b4890c0071ef64b213df34db5670de5/code/seriesanalysis/getpks.m#L1) · [新版追踪](https://github.com/mingsongli/acycle/blob/8eea94423759e872a353b6a67987a58ccb0cddf8/code/guicode/plotdigitizer.m#L615-L642) |
+| 线性回归 `BivLinearRegUI` | 无该函数或调用 | `code/package/univariate/BivLinearRegUI.m` 对有限数据用 `polyfit(x,y,1)` 拟合；整个文件与固定的 3.1.1 master 字节相同 | 能确定新版回归的来源。GUIDE 基线的 `AC.m` 只有调用；采用的 `fitlm` 副本出自 3.1.1 MATLAB 发行包的 `code/test/`，两个标签都无法确认基线部署时用的是哪一份。[v3.0.3 回归](https://github.com/mingsongli/acycle/blob/8eea94423759e872a353b6a67987a58ccb0cddf8/code/package/univariate/BivLinearRegUI.m#L14-L44) · [发行包原件与哈希](recovered.tsv) |
+| Lyapunov | 未收录补回的五个内核 | 仍保留两处对 `lyapunov_timeseries` 的调用，未收录这五个内核 | 原件可从两个标签之间的 2025 年提交 `f4027a8` 获取。[五个原文件](https://github.com/mingsongli/acycle/tree/f4027a865e22cf64500e7145aef592b944df3f98/code/package/lyapunov) · [v3.0.3 的调用](https://github.com/mingsongli/acycle/blob/8eea94423759e872a353b6a67987a58ccb0cddf8/code/guicode/AC.m#L10930) |
+| 从 master 消失的四个旧函数 | 四参数 `freq2target.m`、`cyclecorrsig.m`、`period2spectrumB.m` 与 GUIDE 基线逐字节相同。`corrcoefslices_rank.m` 也在，但文件内容有差异 | 这四个旧文件名均已消失 | 旧 COCO 兼容入口继续用 GUIDE 基线的 `freq2target`；v2.8 提供了可交叉验证的原件。[四参数实现](https://github.com/mingsongli/acycle/blob/e3553eb00b4890c0071ef64b213df34db5670de5/code/corrcoef/freq2target.m) · [兼容选项](master/README.zh-CN.md) |
+
+v2.8 标签内的 `code/bin/ac_version.txt` 仍写作 `2.7.1`，`ac_date.txt` 为 `20231016`。与提供的 `code.zip` 比较，过滤系统元数据后，两套 `code/` 都有相同的 307 个文件路径，其中 304 个文件字节相同。231 个 MATLAB 文件中，唯一的差异位于 `code/package/swa/specswa.m` 的一行，v2.8 把 `revmin == 0` 改成 `revmin <= rev1 && revmin <= rev2`。另外两个差异文件是 `ac_lang.txt` 与 `ac_pwd.txt`。因此这份旧包也能佐证 TimeOpt 和旧数字化调用的来源。[版本标记](https://github.com/mingsongli/acycle/blob/e3553eb00b4890c0071ef64b213df34db5670de5/code/bin/ac_version.txt) · [SWA 条件](https://github.com/mingsongli/acycle/blob/e3553eb00b4890c0071ef64b213df34db5670de5/code/package/swa/specswa.m#L159)
+
 ## 开发与复现
 
 原计算函数能完整传参调用时，模块直接调用，并按原接口关闭内部绘图。原函数总会弹窗、写入工作区或将计算写进回调时，移植文件用 `%% Copied from` 和 `%% End copied source` 标出逐行照录的区段。科研输入与输出由参数结构体传递，交互选点使用坐标等显式数值。每个公开入口都可以单独记录和重放。[源码核对程序](check.py)
