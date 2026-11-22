@@ -33,7 +33,7 @@ To take selected methods to another project, export them from the checkout. The 
 python migration/export_method.py Bandpass TimeOpt Undatable --output ../acycle-methods
 ```
 
-Open the output folder in MATLAB and run `setup_method`. MATLAB toolboxes and optional external orbit data must be available on the destination machine. The exporter follows MATLAB function and script names, quoted lookup names, referenced datasets and package-private files. Additional user-supplied engines for automatic digitization can be installed separately.
+Open the output folder in MATLAB and run `setup_method`. MATLAB toolboxes and optional external orbit data must be available on the destination machine. The exporter follows MATLAB function and script names, quoted lookup names, referenced datasets and package-private files. Use the 3.1.1 `acmaster.DigitizeTrace` package for new automatic plot digitization. Historical GUIDE journals keep their recorded engines. [Digitizer example and standalone export](migration/master/README.zh-CN.md#自动追踪示例)
 
 The journal records `init(op,params)` and `fin(status,retval)`. References point to companion MAT snapshots. `event`, `msg` and `error` contain `logging` and `details`. Replays restore the original random stream, call the recorded operation and create a new journal. Set `ACYCLE_LOG_DIR` to choose the journal directory. Move a call's whole directory to share it.
 

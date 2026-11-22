@@ -11,7 +11,7 @@
 | TimeOpt / eTimeOpt | 获取各沉积速率的拟合、最优调谐序列、Monte Carlo 显著性和滑动窗口结果，并单独绘图 | 恢复公开历史的五个 TimeOpt 文件，全部与 2.7.1 的同路径文件逐字节一致。TimeOpt 把原对话框的选择作为 `mc_scope`，支持 `optimum`、`all`、`cancel`。 |
 | Lyapunov | 单次滑窗估计、替代序列检验、随机窗口与采样率的模拟、百分位数和绘图 | 恢复同一上游提交中的五个 Lyapunov 文件。原相空间函数使用整数样本下标。单次或随机设置产生非整数延迟时，保留原函数报错，调用日志记录失败。 |
 | 二元线性回归 | 返回截距、斜率与各自的 95% 区间、回归线及置信带、统计摘要和 ANOVA | 基线只有 `BivLinearRegUI` 的调用。采用官方 MATLAB 发行包 `code/test/BivLinearRegUI.m` 内的 `fitlm` 实现。该文件与后来的同名 `polyfit` 实现不同，尚无证据证明基线当时运行的确切副本。 |
-| 图线数字化 | 手工像素点的线性 / 对数标定，或给出图像与种子后追踪曲线 | 手工公式来自 GUIDE。`DigitizeTrace` 支持外部原版 `getPKS(image,2)` 与 `trackline`。在本次核对的版本中二者缺失，随分支提供的 `ecocotrackn` 方案使用原图阈值、像素连通段的中点与 Li 的 eCOCO 追踪函数。它的轨迹可能与旧版不同，所选引擎随调用记录。 |
+| 图线数字化 | 手工像素点的线性 / 对数标定，或给出图像与种子后追踪曲线 | 手工公式来自 GUIDE。原图窗禁用 Auto-digitize。新分析使用 [3.1.1 追踪入口](master/README.zh-CN.md#自动追踪示例)。旧日志继续使用记录的外部 `getPKS(image,2)` / `trackline` 或本分支的 `ecocotrackn` 替代算法。 |
 | COCO / eCOCO | 返回窗口逐沉积速率的相关、轨道数、模拟显著性和最优速率 | `nsim <= 1` 时只返回观测量，显著性字段为空且 `fin.status='incomplete'`。这修正了原回调在无模拟时索引空零分布的问题。 |
 | Undatable | 以原始年代数据运行年龄–深度模型，用返回的绘图数据绘制模型、SAR 或输出 PDF | 输入文本字节和模型绘图所需变量进入快照。可在移走原输入后重放。指定非空 `writedir` 可以保留原格式输出。 |
 | 天文解 / Insolation | La04、La10、ZB 系列与相应日照计算 | ZB17 的 11 份表和 Berger–Loutre 数据按下文安装。读取跨机器的外部数据仍需要对应数据文件。 |
@@ -31,6 +31,20 @@ TimeOpt 和 Lyapunov 在 GUIDE 移除前已从 Git 树删除。十个原文件�
 | 从 master 消失的四个旧函数 | 四参数 `freq2target.m`、`cyclecorrsig.m`、`period2spectrumB.m` 与 GUIDE 基线逐字节相同。`corrcoefslices_rank.m` 也在，但文件内容有差异 | 这四个旧文件名均已消失 | 旧 COCO 兼容入口继续用 GUIDE 基线的 `freq2target`；v2.8 提供了可交叉验证的原件。[四参数实现](https://github.com/mingsongli/acycle/blob/e3553eb00b4890c0071ef64b213df34db5670de5/code/corrcoef/freq2target.m) · [兼容选项](master/README.zh-CN.md) |
 
 v2.8 标签内的 `code/bin/ac_version.txt` 仍写作 `2.7.1`，`ac_date.txt` 为 `20231016`。与提供的 `code.zip` 比较，过滤系统元数据后，两套 `code/` 都有相同的 307 个文件路径，其中 304 个文件字节相同。231 个 MATLAB 文件中，唯一的差异位于 `code/package/swa/specswa.m` 的一行，v2.8 把 `revmin == 0` 改成 `revmin <= rev1 && revmin <= rev2`。另外两个差异文件是 `ac_lang.txt` 与 `ac_pwd.txt`。因此这份旧包也能佐证 TimeOpt 和旧数字化调用的来源。[版本标记](https://github.com/mingsongli/acycle/blob/e3553eb00b4890c0071ef64b213df34db5670de5/code/bin/ac_version.txt) · [SWA 条件](https://github.com/mingsongli/acycle/blob/e3553eb00b4890c0071ef64b213df34db5670de5/code/package/swa/specswa.m#L159)
+
+## 旧数字化器的自动追踪
+
+2019 年 2 月 18 日，v0.3.2 首次加入 Plot Digitizer。第一次提交的 `DataExtractML.m` 已调用双参数 `getPKS(Ig01,2)` 和四参数 `trackline`，而同一提交的 `DataExtractML.fig` 已将 `push_auto` 设为 `Enable='off'`。公开历史里这个图窗共有四份不同的 Git blob，四份中的 Auto-digitize 都可见但禁用。v2.8 用户手册第 50–51 页展示了灰色按钮，操作步骤是四点校准后点 Digitize 手工取点。由此可以确认旧回调缺少依赖；公开材料没有显示曾有正式启用的 GUIDE 自动追踪。[首次加入时的回调](https://github.com/mingsongli/acycle/blob/38fda849ff5df5de514c9987a0a8687d95f67446/code/guicode/DataExtractML.m#L525-L565) · [原始图窗](https://github.com/mingsongli/acycle/blob/38fda849ff5df5de514c9987a0a8687d95f67446/code/guicode/DataExtractML.fig) · [GUIDE 基线控件](controls/DataExtractML.tsv#L22) · [手册](https://acycle.org/docs/Acycle_Users_Guide.pdf)
+
+| 核对范围（2026-11-23） | 结果 |
+| --- | --- |
+| 两条公开分支与全部 24 个标签可达的 482 个提交，含 v2.8 以前的 9 个 GitHub Release | 检索了 1,970 份内容各异的 MATLAB 源码及编辑器备份（`.m`、`.asv`）。只找到单参数序列求峰函数 `getpks(data)`，`trackline` 只在 `DataExtractML.m` 中被调用。[上游标签](https://github.com/mingsongli/acycle/tags) · [Release 列表](https://github.com/mingsongli/acycle/releases) |
+| 仓库内嵌 v0.2.0 MATLAB ZIP，及官方历史下载目录中的 v0.3.1、v0.3.3、1.0 MATLAB ZIP | 前两个包尚无这套数字化器。后两个包有相同的调用和禁用按钮，四个包均无所需函数定义。[v0.2.0 ZIP](https://github.com/mingsongli/acycle/blob/6b60951411091cc3e2d3b89b775f24afa41a17f5/acycle_v0.2.0/Acyclev0.2.0.zip) · [v0.3.3 MATLAB ZIP](https://www.dropbox.com/scl/fo/050pwjk3lvtblg8wzyucs/AG_rtvp73L2ZfVLlyPzJYKo/old%20versions/Acycle0.3.3-MatLab.zip?rlkey=ts8ibtwv3ozln18iympq6w2sq&dl=0) · [1.0 MATLAB ZIP](https://www.dropbox.com/scl/fo/050pwjk3lvtblg8wzyucs/AEwlw8AphqlFuQaOav_S01k/old%20versions/Acycle1.0-Matlab.zip?rlkey=ts8ibtwv3ozln18iympq6w2sq&dl=0) |
+| 23 个公开 issue（22 开、1 关）、9 个 PR，及两者合计 23 条讨论评论 | 未找到针对这两个函数或旧自动追踪的报错。#32 有人提到函数签名问题，该 issue 给出的调用栈是小波分析的 `chisquare_inv → fmin`。[上游 issues](https://github.com/mingsongli/acycle/issues?q=is%3Aissue) · [#32 的评论](https://github.com/mingsongli/acycle/issues/32#issuecomment-2676838106) |
+
+新分析使用 3.1.1 的 `acmaster.DigitizeTrace`。可启用的 Auto-digitize 和 `traceSeedCurve` 可以追到 2026 年 2 月的 GUI 改写。GUIDE 的手工标定及已有 `acmethods.DigitizeTrace` 记录沿用原有入口，重放时保留日志中的引擎。[新版按钮和回调](https://github.com/mingsongli/acycle/blob/03a1f80d0bea2ebc765112d1964a33901045c40c/code/guicode/plotdigitizer.m#L178-L186) · [3.1.1 导出与调用示例](master/README.zh-CN.md#自动追踪示例)
+
+同一轮向前追查也核对了回归窗口。旧 Release 中没有 `BivLinearRegUI.m`；该路径在公开 Git 历史中首次加入时已经使用 `polyfit`。GUIDE 基线的 `fitlm` 候选来源仍见上表。[首次公开的回归实现](https://github.com/mingsongli/acycle/blob/389a741f26d15de7aea1484624b52c878510f26a/code/package/univariate/BivLinearRegUI.m#L14-L24)
 
 ## 开发与复现
 

@@ -70,6 +70,28 @@ acmaster.Bispectral.plotter(v);
 python migration/export_method.py --revision master Bandpass Bispectral --output ../acycle-311-methods
 ```
 
+## 自动追踪示例
+
+新 GUI、脚本和 Harness 的自动追踪使用 `acmaster.DigitizeTrace`。在仓库根目录，下面的例子以原图左上数据点为种子，以图上的刻度把像素换为横轴 Value 和纵轴 Time。像素坐标采用 MATLAB 的一基 `[列 行]`。四个校准点依次对应 x 最小、x 最大、y 最小、y 最大。[Acycle 示例原图](https://github.com/mingsongli/acycle/blob/dcba4279168745b563e0535b954297023dd62fc7/data/Examples/Example-PlotDigitizer.jpg) · [GUIDE 历史与旧调用重放](../README.zh-CN.md#旧数字化器的自动追踪)
+
+```matlab
+setup_migration
+img = imread(fullfile('upstream','master','data','Examples','Example-PlotDigitizer.jpg'));
+cal = struct('pixels',[91 1106; 595 1106; 91 1028; 91 94], ...
+    'limits',[-200 1400 0 120],'logX',false,'logY',false);
+p = acmaster.DigitizeTrace.helper(struct('image',img,'seeds',[164 164],'calibration',cal));
+p.mode = 'Loose';  % 'Strict' stops sooner at discontinuities or large pixel jumps
+[r,id] = acmaster.DigitizeTrace.analyzer(p);
+acmaster.DigitizeTrace.plotter(struct('image',img,'result',r));
+assert(isequaln(r,aclog.replay(id)));
+```
+
+`r.pixels` 是追踪路径，`r.data` 是标定后的坐标。这张图的主要走向为纵向，算法沿每一行选一个像素。在 Time 约 61 的尖锐右向折返处，用图上的黑点中心 `[571 553]` 对照，即可检查自动路径错过顶点的距离。需要原始测点时，可用手工 Digitize 点击圆点中心。单独交付新版自动追踪可执行以下命令，在导出目录运行 `setup_method` 后即可使用相同的三个角色。[独立包测试](../../tests/test_master_export.m)
+
+```sh
+python migration/export_method.py --revision master DigitizeTrace --output ../acycle-digitizer
+```
+
 ## 如何核验覆盖范围
 
 `python migration/master/compare.py` 读取两棵固定的 Git 树和原始 `AC.fig`，校验清单、所有 `%% Copied from` 段落、文件路径及角色 ID。新版有 286 个方法包、401 个角色，其中包含 229 个在当前源码重新定位并核对的旧角色。逐菜单表的 `master_related_packages` 列列举相关部件，一个菜单可以由多个部件组成。源码相同和科学结果等价是两种不同的检验，后者需要给定数据、参数和比较指标。[新版测试](../../tests/test_master_migration.m) · [独立导出测试](../../tests/test_master_export.m) · [原生菜单验证](../../tests/test_master_native_menu.m)

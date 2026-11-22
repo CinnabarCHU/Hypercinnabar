@@ -24,7 +24,7 @@ jobs:
       - name: Export standalone methods from the pinned sources
         run: |
           python migration/export_method.py Bandpass TimeOpt Undatable --output "$RUNNER_TEMP/acycle-methods"
-          python migration/export_method.py --revision master Bandpass RegularInterpolation --output "$RUNNER_TEMP/acycle-master-methods"
+          python migration/export_method.py --revision master Bandpass RegularInterpolation DigitizeTrace --output "$RUNNER_TEMP/acycle-master-methods"
           (cd "$RUNNER_TEMP/acycle-master-methods" && sha256sum --check --quiet SHA256SUMS)
           cd "$RUNNER_TEMP/acycle-methods"
           sha256sum --check --quiet SHA256SUMS
