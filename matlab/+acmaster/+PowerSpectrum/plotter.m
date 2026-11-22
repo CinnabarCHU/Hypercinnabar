@@ -64,6 +64,7 @@ if isfield(v.models,'classic')
 %% End copied source
     end
 end
+axh = ax;
 for field={'powerLaw','bendingPowerLaw'}
     name=field{1};
     if isfield(v.models,name)
