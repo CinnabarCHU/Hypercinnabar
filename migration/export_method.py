@@ -113,8 +113,41 @@ def dependencies(methods):
     return sorted(seen)
 
 
-def export(methods, destination):
-    files = dependencies(methods)
+def master_dependencies(methods):
+    source = ROOT / 'upstream' / 'master'
+    if not (source / 'code' / 'seriesanalysis' / 'acycleSamplingIsUneven.m').is_file():
+        raise ValueError('Initialize the upstream/master submodule.')
+    if not (source / 'data' / 'La04.mat').is_file():
+        raise ValueError('Check out the master data directory before exporting.')
+    packages = ROOT / 'matlab' / '+acmaster'
+    index = {p.name[1:]: p for p in packages.glob('+*') if p.is_dir()}
+    selected = set()
+    pending = list(methods)
+    while pending:
+        name = pending.pop()
+        if name not in index:
+            raise ValueError(f'Unknown master method: {name}')
+        if name in selected:
+            continue
+        selected.add(name)
+        for file in index[name].glob('*.m'):
+            body = file.read_text(encoding='utf8')
+            pending.extend(re.findall(r'\bacmaster\.([A-Za-z]\w*)\.', body))
+    files = {f for n in selected for f in files_under(index[n])}
+    for shared in ('+accompat', '+aclog'):
+        files.update(files_under(ROOT / 'matlab' / shared))
+    # The upstream desktop dispatches by callback name and looks up resources at run time.
+    # Keep its original directory layout and licensed dependencies intact in a standalone export.
+    for folder in ('code', 'data'):
+        files.update(files_under(source / folder))
+    files.update([ROOT / 'matlab' / 'logger.m', ROOT / 'LICENSE', source / 'README.md', source / 'ac.m'])
+    if 'Desktop' in selected and (source / 'doc').is_dir():
+        files.update(files_under(source / 'doc'))
+    return sorted(files)
+
+
+def export(methods, destination, revision='guide'):
+    files = master_dependencies(methods) if revision == 'master' else dependencies(methods)
     destination=destination.resolve()
     if destination.exists():
         raise FileExistsError(f'Destination already exists: {destination}')
@@ -138,6 +171,7 @@ def export(methods, destination):
 if __name__ == '__main__':
     parser=argparse.ArgumentParser(description=__doc__)
     parser.add_argument('methods',nargs='+',help='Case-sensitive MATLAB package names')
+    parser.add_argument('--revision', choices=('guide','master'), default='guide')
     parser.add_argument('--output',required=True,type=Path)
     args=parser.parse_args()
-    print(f'Exported {export(args.methods,args.output)} files to {args.output}')
+    print(f'Exported {export(args.methods,args.output,args.revision)} files to {args.output}')

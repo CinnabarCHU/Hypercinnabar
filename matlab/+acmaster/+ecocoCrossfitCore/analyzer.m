@@ -1,0 +1,19 @@
+function [retval,id] = analyzer(params,id)
+% ecocoCrossfitCore.analyzer parameters: data orbit9 window dt step red pad srGrid nsim method maxFrequency seed anchorFraction options(BatchSize,ComputeLocalP,ProgressFcn,MemoryBudgetMiB,WindowMode,StepDepth,CenterLimits,WarnOnPartialTraining).
+% Source: https://github.com/mingsongli/acycle/blob/dcba4279168745b563e0535b954297023dd62fc7/code/corrcoef/ecocoCrossfitCore.m
+if nargin < 2, id = []; end
+[retval,id] = accompat.masterInvoke('ecocoCrossfitCore-v3.1.1+dcba427/analyzer',params,id,@execute);
+end
+
+function r = execute(p)
+accompat.requireFields(p.options,{'BatchSize','ComputeLocalP','ProgressFcn','MemoryBudgetMiB','WindowMode','StepDepth','CenterLimits','WarnOnPartialTraining'});
+[result] = ecocoCrossfitCore( ...
+    p.data, p.orbit9, p.window, p.dt, p.step, p.red, p.pad, p.srGrid, p.nsim, p.method,  ...
+    p.maxFrequency, p.seed, p.anchorFraction, 'BatchSize',p.options.BatchSize,  ...
+    'ComputeLocalP',p.options.ComputeLocalP, 'ProgressFcn',p.options.ProgressFcn,  ...
+    'MemoryBudgetMiB',p.options.MemoryBudgetMiB, 'WindowMode',p.options.WindowMode,  ...
+    'StepDepth',p.options.StepDepth, 'CenterLimits',p.options.CenterLimits,  ...
+    'WarnOnPartialTraining',p.options.WarnOnPartialTraining);
+r = struct();
+r.result = result;
+end

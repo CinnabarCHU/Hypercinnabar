@@ -1,0 +1,400 @@
+package	role	parameters	source_files	implementation
+ANOVA	analyzer	selectedData	code/package/univariate/ANOVAUI.m	source-matched role
+AR1Prewhitening	analyzer	data options	code/seriesanalysis/acyclePrewhitenSeries.m	direct
+AddGaps	analyzer	dat sec	code/guicode/AC.m	source-matched role
+AgeScale	analyzer	data agemodel	code/guicode/agescale.m	copied GUI calculation
+AmplitudeModulation	analyzer	data	code/seriesanalysis/acycleAmplitudeModulation.m	direct
+AnDarksamtest	analyzer	X alpha	code/package/univariate/AnDarksamtest.m	source-matched role
+AstronomicalSolution	analyzer	solution parameter t1 t2; ETP weights	code/guicode/basicseries.m	copied GUI calculation
+Bandpass	analyzer	data options	code/seriesanalysis/acycleBandpassFilter.m	direct
+Bandpass	helper	data	code/guicode/ft.m	copied GUI defaults
+Bandpass	plotter	result data	code/guicode/ft.m	copied GUI plot
+Bispectral	analyzer	data options	code/package/bispectral/bispectralAnalyze.m code/package/bispectral/bispectralDefaults.m	direct
+Bispectral	helper	data, optional options	code/package/bispectral/bispectralDefaults.m code/package/bispectral/bispectralPlot.m	direct defaults
+Bispectral	plotter	result settings (BispectralView.helper)	code/package/bispectral/bispectralPlot.m	direct
+BispectralExport	plotter	result settings outputDirectory baseName	code/package/bispectral/bispectralSave.m code/package/bispectral/bispectralPlot.m	direct file export
+BispectralView	helper	result	code/package/bispectral/bispectralPlot.m	copied defaults
+BootstrapSmooth	analyzer	x y method span bootn	code/guicode/SmoothBootGUI.m	source-matched role
+BootstrapSmooth	helper	data	code/guicode/SmoothBootGUI.m	source-matched role
+BootstrapSmooth	plotter	x y result method span	code/seriesanalysis/smoothciML.m	source-matched role
+BuildAgeModel	analyzer	data period pkstrough	code/guicode/AC.m	source-matched role
+BuildAgeModel	helper	data	code/guicode/AC.m	source-matched role
+BuildAgeModel	plotter	agemodelfull sedrate period plot_filter_s unit	code/guicode/AC.m	source-matched role
+CENOGRID	analyzer	(none)	code/guicode/AC.m	source-matched role
+CENOGRID	plotter	time value time2 value2	code/guicode/AC.m	source-matched role
+CE_NS70	analyzer	data model	code/seriesanalysis/CE_NS70.m	source-matched role
+CircularSpectrum	analyzer	eventCoordinates periodMinimum periodMaximum periodCount gridMode	code/seriesanalysis/acycleCircularSpectrum.m	direct
+Clipping	analyzer	data clip_value clip_high clip_set	code/guicode/AC.m	source-matched role
+Clipping	helper	data	code/guicode/AC.m	source-matched role
+Coherence	analyzer	reference target options	code/seriesanalysis/acycleCoherencePhase.m	direct
+ColumnManipulation	analyzer	dataCell colman1	code/guicode/column_manipulateGUI.m	source-matched role
+ColumnManipulation	plotter	mergedData dataMan	code/guicode/column_manipulateGUI.m	source-matched role
+Columns	analyzer	data c1 c2	code/guicode/AC.m	source-matched role
+Correlation	analyzer	data	code/package/univariate/BivCorrUI.m	source-matched role
+Covariance	analyzer	data n_bootstraps	code/package/univariate/BivCovUI.m	source-matched role
+Covariance	helper	data	code/package/univariate/BivCovUI.m	source-matched role
+DYNOT	analyzer	data nmc nout nw1 nw2 parmhat sampa sampb window1 window2 f fza fzb ftmin ftmax padwin step pad percent_on	code/guicode/DYNOS.m code/guicode/dynotIterationWorker.m code/guicode/dynotPercentilePlan.m	copied GUI calculation + direct worker
+DYNOT	helper	data	code/guicode/DYNOS.m	copied GUI defaults
+DYNOT	plotter	data result	code/guicode/DYNOS.m	copied GUI plot
+DataDistribution	plotter	data_filterout dat_name ext	code/guicode/AC.m	source-matched role
+DataTransform	analyzer	data checkid j	code/guicode/datatransformationsGUI.m	source-matched role
+DataTransform	plotter	data checkid yt j lambda	code/guicode/datatransformationsGUI.m	source-matched role
+Derivative	analyzer	data derivative_n	code/guicode/AC.m	source-matched role
+Derivative	helper	data	code/guicode/AC.m	source-matched role
+Desktop	plotter	tag (active master desktop required)	code/guicode/AC.m code/guicode/ac_gui_dispatch.m	native interactive dispatch
+DetrendSignalPP	analyzer	signal windowsize fs Porder	code/seriesanalysis/DetrendSignalPP.m	source-matched role
+Detrending	analyzer	data method degree(polynomial) span(smoothers)	code/misc/update_detrend_plot_fig.m	source-matched role
+Detrending	plotter	datax datay trend method	code/misc/update_detrend_plot_fig.m	source-matched role
+Digitize	analyzer	pixels calibration	code/guicode/plotdigitizer.m	copied GUI calculation
+DigitizeTrace	analyzer	image seeds calibration mode existingPixels	code/guicode/plotdigitizer.m	copied GUI calculation
+DigitizeTrace	helper	image seeds calibration	code/guicode/plotdigitizer.m	GUI defaults; plotdigitizer:183-185
+DigitizeTrace	plotter	image result	code/guicode/plotdigitizer.m	copied GUI plot
+DistributionTest	analyzer	data val	code/package/univariate/UniChi2GOFUI.m	source-matched role
+DynamicFiltering	analyzer	data lowerControlPoints upperControlPoints options	code/seriesanalysis/acycleDynamicFilter.m	direct
+EMD	analyzer	data options	code/seriesanalysis/acycleEmpiricalModeDecomposition.m	direct
+EMD	helper	data, optional options	code/seriesanalysis/acycleEmpiricalModeDecomposition.m	copied defaults
+EnsembleEMD	analyzer	data options	code/seriesanalysis/acycleEmpiricalModeDecomposition.m	direct
+EnsembleEMD	helper	data, optional options	code/seriesanalysis/acycleEmpiricalModeDecomposition.m	copied defaults
+EvolutionarySpectrum	analyzer	data window step fmin nyquist normal method time_0pad padtype mean_step	code/guicode/evofftGUI.m	copied GUI calculation
+EvolutionaryWorkbook	plotter	outputFile parameters power frequency time redNoise	code/seriesanalysis/saveEvofftWorkbook.m	direct file export
+ExampleDigitizer	analyzer	(none)	code/guicode/AC.m	source-matched role
+ExampleDigitizer	plotter	im_name data_name	code/guicode/AC.m	source-matched role
+ExampleExtinction	analyzer	(none)	code/guicode/AC.m	source-matched role
+ExampleExtinction	plotter	data	code/guicode/AC.m	source-matched role
+ExampleGuandao	analyzer	(none)	code/guicode/AC.m	source-matched role
+ExampleGuandao	plotter	data data_name	code/guicode/AC.m	source-matched role
+ExampleInsolation	analyzer	(none)	code/guicode/AC.m	source-matched role
+ExampleInsolation	plotter	data data_name	code/guicode/AC.m	source-matched role
+ExampleLa2004	analyzer	(none)	code/guicode/AC.m	source-matched role
+ExampleLa2004	plotter	data data_name	code/guicode/AC.m	source-matched role
+ExampleMars	analyzer	(none)	code/guicode/AC.m	source-matched role
+ExampleMars	plotter	im_name data_name	code/guicode/AC.m	source-matched role
+ExampleMaunaLoa	analyzer	(none)	code/guicode/AC.m	source-matched role
+ExampleMaunaLoa	plotter	data data_name	code/guicode/AC.m	source-matched role
+ExampleNewark	analyzer	(none)	code/guicode/AC.m	source-matched role
+ExampleNewark	plotter	data data_name	code/guicode/AC.m	source-matched role
+ExampleRedNoise	analyzer	(none)	code/guicode/AC.m	source-matched role
+ExampleRedNoise	plotter	data data_name	code/guicode/AC.m	source-matched role
+ExampleSphalerite	analyzer	(none)	code/guicode/AC.m	source-matched role
+ExampleSphalerite	plotter	im_name data_name	code/guicode/AC.m	source-matched role
+ExampleSvalbardPETM	analyzer	(none)	code/guicode/AC.m	source-matched role
+ExampleSvalbardPETM	plotter	data data_name	code/guicode/AC.m	source-matched role
+ExampleWayao	analyzer	(none)	code/guicode/AC.m	source-matched role
+ExampleWayao	plotter	data data_name	code/guicode/AC.m	source-matched role
+Extrema	analyzer	data t1 t2 maxmin ind	code/guicode/AC.m	source-matched role
+Extrema	helper	data	code/guicode/AC.m	source-matched role
+FixedMovingMean	analyzer	data options	code/seriesanalysis/acycleFixedBandwidthSummary.m	direct
+FixedMovingMedian	analyzer	data options	code/seriesanalysis/acycleFixedBandwidthSummary.m	direct
+ImageProfile	analyzer	I CursorInfo_value	code/guicode/AC.m	source-matched role
+ImageTransect	analyzer	I CursorInfo_value color_type	code/guicode/AC.m	source-matched role
+ImageTransect	plotter	data color_type dat_name distance_label grayscale_label	code/guicode/AC.m	source-matched role
+InsolLatDayGif	plotter	II t lat day unit_t_r name_insol	code/misc/InsolLatDayGif.m	source-matched role
+InterpolateSeries	analyzer	dat1 dat2	code/guicode/InterplationSeries.m	copied GUI calculation
+InterpolationPro	analyzer	data dt method gap2zero gapdt	code/misc/update_interpolationGUI.m	source-matched role
+InterpolationPro	plotter	data xq vq titlei legendi x1 x2 y1 y2	code/misc/update_interpolationGUI.m	source-matched role
+LR04	analyzer	t1 t2	code/guicode/AC.m	source-matched role
+LR04	helper	(none)	code/guicode/AC.m	source-matched role
+LR04	plotter	LR04stack_s t1 t2	code/guicode/AC.m	source-matched role
+Lag1	analyzer	data samplingInterval windowLength	code/seriesanalysis/acycleEvolutionaryRho1.m	direct
+Lag1MonteCarlo	analyzer	data nsim window1 window2 samprate1 samprate2 nout shiftwin	code/guicode/AC.m	source-matched role
+Lag1MonteCarlo	helper	data	code/guicode/AC.m	source-matched role
+Lag1MonteCarlo	plotter	y_grid powyp y_grid_nan powyad_p_nan npercent npercent2 unit_type unit window1 window2 samprate1 samprate2	code/guicode/AC.m	source-matched role
+LeadLag	analyzer	reference target maximumLag lagStep coordinateDirection	code/seriesanalysis/acycleLeadLagRmse.m	direct
+LinearRegression	analyzer	data	code/package/univariate/BivLinearRegUI.m	copied GUI calculation
+LinearRegression	plotter	result	code/package/univariate/BivLinearRegUI.m	copied GUI plot
+Log10	analyzer	data	code/guicode/AC.m	source-matched role
+MatlabWaveletCoherence	analyzer	dat1 dat2 data_standardize wtcthreshold	code/package/wavelet/wavecoh_readGUI.m	source-matched role
+MatlabWaveletCoherence	plotter	result plot_series plot_swap plot_2d plot_linelog plot_colorgrid plot_colormap plot_flipx plot_flipy plot_phase plot_coi plot_sl plot_log2pow pt1 pt2 Yticks unit unit_type wtcthreshold	code/package/wavelet/wavecoh_readGUI.m code/package/wavelet/wavecoh_update_plots.m	source-matched role
+MergeSeries	analyzer	series	code/guicode/AC.m	source-matched role
+MilankovitchCal	analyzer	age	code/misc/MilankovitchCal.m	source-matched role
+MovingGaussian	analyzer	data windowPoints	code/seriesanalysis/acycleGaussianMovingAverage.m	direct
+MovingMean	analyzer	data windowPoints	code/seriesanalysis/acycleFixedCountMovingSummary.m	direct
+MovingMedian	analyzer	data windowPoints	code/seriesanalysis/acycleFixedCountMovingSummary.m	direct
+MtmTaperCount	analyzer	nw	code/seriesanalysis/acycleMtmTaperCount.m	direct
+MultiplySeries	analyzer	series	code/guicode/AC.m	source-matched role
+Normality	analyzer	data	code/package/univariate/UniNormalityUI.m	source-matched role
+OneSampleT	analyzer	data miu option_cal	code/package/univariate/Unittest.m	copied GUI calculation
+OneSampleT	plotter	result	code/package/univariate/Unittest.m	copied GUI plot
+PCA	analyzer	data_new depthtime	code/guicode/AC.m	source-matched role
+PCA	helper	data_new	code/guicode/AC.m	source-matched role
+PassFilter	analyzer	data passtype filter_s f11 f12(bandstop)	code/misc/update_filter_axes4.m	source-matched role
+PassFilter	plotter	f P1 f11 f12(bandstop) passtype y_1 y_2 x_1 x_2	code/misc/update_filter_axes4.m	source-matched role
+PlotAdv	plotter	series settings	code/misc/plotpro_plot_done.m	source-matched role
+PlotPro	helper	(none)	code/guicode/PlotPro2DLineGUI.m	source-matched role
+PlotPro	plotter	PlotAdvSetting directory figureName	code/misc/UpdatePlotPro2DLinePlot.m	source-matched role
+PowerDecomposition	analyzer	data targetBands options	code/seriesanalysis/acyclePowerDecomposition.m	direct
+PowerSpectrum	analyzer	data method nw nfft	code/guicode/spectrum.m	copied GUI calculation
+PowerSpectrum	helper	data	code/guicode/spectrum.m	copied GUI defaults
+PowerSpectrum	plotter	result fmin fmax usePeriod logFrequency	code/guicode/spectrum.m	copied GUI plot
+RGBToGray	analyzer	im_name	code/guicode/AC.m	source-matched role
+RGBToGray	plotter	I	code/guicode/AC.m	source-matched role
+RGBToLab	analyzer	im_name	code/guicode/AC.m	source-matched role
+RGBToLab	plotter	I	code/guicode/AC.m	source-matched role
+RegularInterpolation	analyzer	data samplingInterval options(MaximumPoints,MaximumElements)	code/seriesanalysis/acycleInterpolateSeries.m	direct
+RegularInterpolation	helper	method inputs; optional options overrides	code/seriesanalysis/acycleInterpolateSeries.m	defaults
+RemoveSections	analyzer	dat sec	code/guicode/AC.m	source-matched role
+SWA	helper	data_r	code/guicode/SWAgui.m	source-matched role
+SWA	plotter	freq power swa clfdr chi2_inv_value freqb pow2 bayesprob curves figure_count log_y log_x period_axis fmin fmax unit filename	code/guicode/SWAgui.m	source-matched role
+SamplingGrid	analyzer	coordinate relativeTolerance	code/seriesanalysis/acycleSamplingIsUneven.m	direct
+SamplingGrid	helper	coordinate	code/seriesanalysis/acycleSamplingIsUneven.m	copied defaults
+SamplingRate	analyzer	data_filterout	code/guicode/AC.m	source-matched role
+SamplingRate	plotter	datasamp dt dat_name ext unit unit_type	code/guicode/AC.m	source-matched role
+SedimentationRateToAge	analyzer	data depthUnit firstAgeKyr	code/seriesanalysis/acycleSedimentationRateAgeModel.m	direct
+SeriesGenerator	analyzer	x kind; polynomial intercept coefficients; harmonic amplitude period phase offset; white distribution mu sigma; red mu sigma alpha	code/guicode/linegenerator.m	copied GUI calculation
+SeriesSound	analyzer	data a b c	code/guicode/AC.m	source-matched role
+SeriesSound	helper	data	code/guicode/AC.m	source-matched role
+ShowImage	plotter	im_name	code/guicode/AC.m	source-matched role
+SimpleFunction	analyzer	data a b c d	code/guicode/AC.m	source-matched role
+SimpleFunction	helper	data	code/guicode/AC.m	source-matched role
+SimplePlot	plotter	series plot_list unit standardized offset	code/guicode/AC.m	source-matched role
+SortUnique	analyzer	data datasort dataunique dataempty	code/guicode/AC.m	source-matched role
+SortUnique	helper	data	code/guicode/AC.m	source-matched role
+SpectralBendingPowerLaw	analyzer	frequency power dof Nf	code/guicode/spectrum.m	copied GUI calculation
+SpectralMoments	analyzer	data options	code/seriesanalysis/acycleSpectralMoments.m	direct
+SpectralPowerLaw	analyzer	frequency power dof Nf	code/guicode/spectrum.m	copied GUI calculation
+Standardize	analyzer	data	code/guicode/AC.m	source-matched role
+StratigraphicCorrelation	analyzer	rawser tiepoints1 tiepoints2	code/guicode/CorrelationGUI.m	copied GUI calculation
+SummaryStatistics	analyzer	data	code/package/univariate/UniStatisticSum.m	copied GUI calculation
+TwoSampleTests	analyzer	selectedData tabIndex	code/package/univariate/UniTwoSampleTestsUI.m	source-matched role
+Undatable	plotter	result plotsar printme vcloud writedir	code/package/undatable/undatable.m code/package/undatable/udplot.m	source-matched role
+WaveletCoherence	analyzer	dat1 dat2 pad dss param MonteCarloCount	code/package/wavelet/wtcML.m	source-matched role
+WaveletCoherence	plotter	result plot_series plot_swap plot_2d plot_linelog plot_colorgrid plot_colormap plot_flipx plot_flipy plot_phase plot_coi plot_sl plot_log2pow pt1 pt2 Yticks unit unit_type	code/package/wavelet/wavecoh_readGUI.m code/package/wavelet/wavecoh_update_plots.m	source-matched role
+WaveletSpectrum	analyzer	data method_sel dss pad mother param pt2 data_standardize	code/package/wavelet/wave_readGUI.m	source-matched role
+WaveletSpectrum	plotter	datax dt period power coi sig95 method_sel variance plot_2d plot_base plot_coi plot_colorgrid plot_colormap plot_flipx plot_flipy plot_linelog plot_log2pow plot_sl plot_z pt1 pt2 Yticks unit unit_type plot_series plot_spectrum plot_swap datay global_ws	code/package/wavelet/wave_update_wavelet.m code/package/wavelet/wave_readGUI.m	source-matched role
+ac_sort_dir_entries	analyzer	entries sortMode	code/misc/ac_sort_dir_entries.m	direct
+ar1nv	analyzer	x	code/package/wavelet/ar1nv.m	source-matched role
+ar1spectrum	analyzer	ar1 period	code/package/wavelet/ar1spectrum.m	source-matched role
+bayes_cpt	analyzer	data k_max d_min k_0 v_0 sig_0 num_samp	code/package/bayes_changepoint/bayes_cpt.m	source-matched role
+bayes_cpt	helper	data k_max d_min k_0 v_0 sig_0 num_samp	code/package/bayes_changepoint/bayes_cpt.m	source-matched role
+bayes_cpt	plotter	x Y model chgpt_loc	code/package/bayes_changepoint/bayes_cpt.m	source-matched role
+bayes_cpt_r2	analyzer	data k_max d_min k_0 v_0 sig_0 num_samp	code/package/bayes_changepoint/bayes_cpt_r2.m	source-matched role
+bayes_cpt_r2	helper	data k_max d_min k_0 v_0 sig_0 num_samp	code/package/bayes_changepoint/bayes_cpt_r2.m	source-matched role
+bayes_cpt_r2	plotter	R_2_all	code/package/bayes_changepoint/bayes_cpt_r2.m	source-matched role
+bispectralEstimate	analyzer	y dt options state	code/package/bispectral/bispectralEstimate.m	direct
+bispectralLocalDataValidation	analyzer	outputParent arguments (cell)	code/package/bispectral/bispectralLocalDataValidation.m	direct
+bispectralPreprocess	analyzer	data options	code/package/bispectral/bispectralPreprocess.m	direct
+bispectralReadDataFile	analyzer	dataPath	code/package/bispectral/bispectralReadDataFile.m	direct
+bispectralSelfTest	analyzer	arguments (cell)	code/package/bispectral/bispectralSelfTest.m	direct
+bispectralSignificance	analyzer	y dt options observed state	code/package/bispectral/bispectralSignificance.m	direct
+bispectralSurrogate	analyzer	y type iterations	code/package/bispectral/bispectralSurrogate.m	direct
+bispectralValidateExamples	analyzer	outputDirectory arguments (cell)	code/package/bispectral/bispectralValidateExamples.m	direct
+boxcoxML	analyzer	y lambda	code/misc/boxcoxML.m	source-matched role
+boxpdf	analyzer	X	code/package/wavelet/boxpdf.m	source-matched role
+calculateRhoM	analyzer	data	code/seriesanalysis/calculateRhoM.m	direct
+calculate_orbit9	analyzer	ageMa	code/package/secular_periods/calculate_orbit9.m	direct
+chisquare_inv	analyzer	P V	code/package/wavelet/chisquare_inv.m	source-matched role
+chisquare_solve	analyzer	XGUESS P V	code/package/wavelet/chisquare_solve.m	source-matched role
+circularspec	analyzer	data p1 p2 pn linlog	code/misc/circularspec.m	direct
+cocoAdaptiveEvaluate	analyzer	dataPower dat pad dataFrequency orbit9 rayleigh srGrid method options(BatchSize,ProgressFcn,RateBounds,MaxFrequency,TargetModel,AmplitudeMode)	code/corrcoef/cocoAdaptiveEvaluate.m	direct
+cocoAdaptiveEvaluate	helper	method inputs; optional options overrides	code/corrcoef/cocoAdaptiveEvaluate.m	defaults
+cocoAdaptivePublicationReport	analyzer	corrCI corrH0 details	code/corrcoef/cocoAdaptivePublicationReport.m	direct
+cocoAllPeriodRateRange	analyzer	periods sampleSpacing sampleCount	code/corrcoef/cocoAllPeriodRateRange.m	direct
+cocoConclusionReport	analyzer	mode arguments (cell)	code/corrcoef/cocoConclusionReport.m	direct
+cocoFixedTargetWeights	analyzer	orbitPeriods	code/corrcoef/cocoFixedTargetWeights.m	direct
+cocoGetPower	analyzer	theoredML96_pow orbit9 sr	code/corrcoef/cocoGetPower.m	direct
+cocoGetPowerNew	analyzer	data_pow orbit9 sr dat	code/corrcoef/cocoGetPowerNew.m	direct
+cocoIsNonfatalResolutionError	analyzer	exception	code/corrcoef/cocoIsNonfatalResolutionError.m	direct
+cocoNonnegativeLeakageSolve	analyzer	mixingMatrix dataEnergy	code/corrcoef/cocoNonnegativeLeakageSolve.m	direct
+cocoOrbitGroups	analyzer	orbitPeriods	code/corrcoef/cocoOrbitGroups.m	direct
+cocoPrepareRegularData	analyzer	rawData label options(MaximumPoints,MinimumPoints,Verbose)	code/corrcoef/cocoPrepareRegularData.m	direct
+cocoPrepareRegularData	helper	method inputs; optional options overrides	code/corrcoef/cocoPrepareRegularData.m	defaults
+cocoPublicationPrepareData	analyzer	rawData label	code/corrcoef/cocoPublicationPrepareData.m	direct
+cocoResolvedDetrendedVariance	analyzer	originalValues detrendedValues	code/corrcoef/cocoResolvedDetrendedVariance.m	direct
+cocoSamplingTolerance	analyzer	depth spacing	code/corrcoef/cocoSamplingTolerance.m	direct
+cocoTargetSpectrum	analyzer	dat pad dataPower orbit9 lax sr_i targetMode	code/corrcoef/cocoTargetSpectrum.m	direct
+cohac	analyzer	x y sr window winsize nooverlap alpha	code/misc/cohac.m	source-matched role
+cohac	helper	x y sr window winsize nooverlap alpha qplot	code/misc/cohac.m	source-matched role
+cohac	plotter	qplot F1 Cxy MSC_critical F2 phase_diff_deg phase_uncertainty_deg	code/misc/cohac.m	source-matched role
+corrcoefsig	analyzer	dat target orbit7 dt pad sr1 sr2 srstep adjust red nsim display	code/corrcoef/corrcoefsig.m	source-matched role
+corrcoefsig	helper	dat target orbit7 dt pad sr1 sr2 srstep adjust red nsim plotn display	code/corrcoef/corrcoefsig.m	source-matched role
+corrcoefslices	analyzer	dat target orbit7 dt pad sr1 sr2 srstep adjust red nsim slices	code/corrcoef/corrcoefslices.m	direct
+corrcoefslices	helper	dat target orbit7 dt pad sr1 sr2 srstep adjust red nsim plotn slices	code/corrcoef/corrcoefslices.m	source-matched role
+corrcoefslices_rankNew	analyzer	dat orbit9 dt pad sr1 sr2 srstep adjust red nsim slices method fmaxdata main_unit_selection targetMode options(MaxFrequency,Seed,ShowPeriodograms,ProgressFcn)	code/corrcoef/corrcoefslices_rankNew.m	direct
+corrcoefslices_rankNew	helper	method inputs; optional options overrides	code/corrcoef/corrcoefslices_rankNew.m	defaults
+corrsig	analyzer	dat target orbit7 dt pad sr1 sr2 srstep adjust red nsim display	code/corrcoef/corrsig.m	source-matched role
+corrsig	helper	dat target orbit7 dt pad sr1 sr2 srstep adjust red nsim plotn display	code/corrcoef/corrsig.m	source-matched role
+crp_core	analyzer	x y m tau e method normFlag	code/package/recurrence/crp_core.m	source-matched role
+crp_core	helper	x y m tau e method normFlag	code/package/recurrence/crp_core.m	source-matched role
+crp_pdist	analyzer	x w ws theiler_window lmin threshold method_use normFlag m tau	code/package/recurrence/crp_pdist.m	source-matched role
+crp_pdist	helper	x w ws theiler_window lmin plotn threshold method_use normFlag m tau	code/package/recurrence/crp_pdist.m	source-matched role
+cvcoco	analyzer	data orbit9 pad sr1 sr2 srstep red nsim method options(BatchSize,Seed,ProgressFcn,TargetModel,MaxFrequency,AnalysisName,SplitMode,InterleavedPhase,Verbose,WarnOnPartialTraining)	code/corrcoef/cvcoco.m	direct
+cvcoco	helper	method inputs; optional options overrides	code/corrcoef/cvcoco.m	defaults
+cvcoco2	analyzer	data orbit9 pad sr1 sr2 srstep red nsim method options(BatchSize,Seed,ProgressFcn,MaxFrequency,AnalysisName,SplitMode,InterleavedPhase,Verbose,WarnOnPartialTraining)	code/corrcoef/cvcoco2.m	direct
+cvcoco2	helper	method inputs; optional options overrides	code/corrcoef/cvcoco2.m	defaults
+cvcoco9	analyzer	data orbit9 pad sr1 sr2 srstep red nsim method options(BatchSize,Seed,ProgressFcn,MaxFrequency,AnalysisName,SplitMode,InterleavedPhase,Verbose,WarnOnPartialTraining)	code/corrcoef/cvcoco9.m	direct
+cvcoco9	helper	method inputs; optional options overrides	code/corrcoef/cvcoco9.m	defaults
+cvcoco9A	analyzer	data orbit9 pad sr1 sr2 srstep red nsim method options(BatchSize,Seed,ProgressFcn,MaxFrequency,AnalysisName,SplitMode,InterleavedPhase,Verbose,WarnOnPartialTraining)	code/corrcoef/cvcoco9A.m	direct
+cvcoco9A	helper	method inputs; optional options overrides	code/corrcoef/cvcoco9A.m	defaults
+cvcoco9B	analyzer	data orbit9 pad sr1 sr2 srstep red nsim method options(BatchSize,Seed,ProgressFcn,MaxFrequency,AnalysisName,SplitMode,InterleavedPhase,Verbose,WarnOnPartialTraining)	code/corrcoef/cvcoco9B.m	direct
+cvcoco9B	helper	method inputs; optional options overrides	code/corrcoef/cvcoco9B.m	defaults
+cvcocoLegacy	analyzer	data orbit9 pad sr1 sr2 srstep red nsim method options(BatchSize,Seed,ProgressFcn,MaxFrequency,AnalysisName,SplitMode,InterleavedPhase,Verbose,WarnOnPartialTraining)	code/corrcoef/cvcocoLegacy.m	direct
+cvcocoLegacy	helper	method inputs; optional options overrides	code/corrcoef/cvcocoLegacy.m	defaults
+cyclecorr	analyzer	data targetf targetp target orbit7 rayleigh sr1 sr2 srstep sr0 adjust method	code/corrcoef/cyclecorr.m	direct
+cyclecorr	helper	data targetf targetp target orbit7 rayleigh sr1 sr2 srstep sr0 adjust method	code/corrcoef/cyclecorr.m	source-matched role
+cyclecorr4	analyzer	data targetf targetp target orbit7 rayleigh sr1 sr2 srstep sr0 adjust	code/corrcoef/cyclecorr4.m	source-matched role
+cyclecorr4sig	analyzer	data targetf targetp target orbit7 rayleigh sr1 sr2 srstep sr0 adjust	code/corrcoef/cyclecorr4sig.m	source-matched role
+cyclecorr5	analyzer	xx yy targetf targetp lax orbit7 rayleigh sr1 sr2 srstep sr0 adjust	code/corrcoef/cyclecorr5.m	source-matched role
+cyclecorrNew	analyzer	data dat pad target orbit9 rayleigh sr1 sr2 srstep sr0 adjust method targetMode	code/corrcoef/cyclecorrNew.m	direct
+cyclecorr_rank	analyzer	data targetf targetp target orbit7 rayleigh sr1 sr2 srstep sr0 adjust	code/corrcoef/cyclecorr_rank.m	source-matched role
+cyclecorrsigNew	analyzer	data dat pad target orbit9 rayleigh sr1 sr2 srstep sr0 adjust method targetMode	code/corrcoef/cyclecorrsigNew.m	direct
+cyclesig_rank	analyzer	data targetf targetp target orbit7 rayleigh sr1 sr2 srstep sr0 adjust	code/corrcoef/cyclesig_rank.m	source-matched role
+data_slices	analyzer	dat slices	code/corrcoef/data_slices.m	source-matched role
+datapreproc	analyzer	target	code/misc/datapreproc.m	direct
+datapreproc	helper	target qwarn	code/misc/datapreproc.m	source-matched role
+depeaks	analyzer	data ymin_cut ymax_cut	code/seriesanalysis/depeaks.m	source-matched role
+depeaks	helper	data	code/guicode/AC.m	source-matched role
+depthtotime	analyzer	depth agemodel	code/seriesanalysis/depthtotime.m	source-matched role
+dl_all	analyzer	x	code/package/recurrence/dl_all.m	source-matched role
+domaintrans	analyzer	x1 t	code/misc/domaintrans.m	source-matched role
+dynamic_filter	analyzer	data window step fmin fmax unit norm padding	code/misc/dynamic_filter.m	direct
+dynamic_filter_lang	analyzer	data window step fmin fmax unit norm padding	code/misc/dynamic_filter_lang.m	direct
+dynotIterationWorker	analyzer	data yGrid sample window nw targetBands options	code/guicode/dynotIterationWorker.m	direct
+dynotPercentilePlan	analyzer	selection	code/guicode/dynotPercentilePlan.m	direct
+ebrief	analyzer	X dim a	code/corrcoef/ebrief.m	source-matched role
+ebrief	helper	X dim a	code/corrcoef/ebrief.m	source-matched role
+eccount	analyzer	srn ecc eci ecoco enorb	code/corrcoef/eccount.m	source-matched role
+eccpeaks	analyzer	X ecc eci norbit corrcoef ci sh_norb n dim a	code/corrcoef/eccpeaks.m	source-matched role
+eccpeaks	helper	X ecc eci norbit corrcoef ci sh_norb n dim a	code/corrcoef/eccpeaks.m	source-matched role
+ecoco	analyzer	data orbit9 window dt step delinear red pad sr1 sr2 srstep nsim adjust method fmaxdata main_unit_selection calcMode maxFrequency seed anchorFraction options(ProgressFcn,SeparateFinalPanel,Verbose,InterleavedWindowMode,InterleavedStepDepth,ECOCOWindowMode,ECOCOStepDepth,ECOCOCenterLimits,BlockedConsensusPolicy,CrossfitConsensus)	code/corrcoef/ecoco.m	direct
+ecoco	helper	method inputs; optional options overrides	code/corrcoef/ecoco.m	defaults
+ecocoAdaptiveCore	analyzer	data orbit9 window dt step red pad srGrid nsim method maxFrequency seed options(BatchSimulations,ProgressFcn,WindowMode,StepDepth,CenterLimits)	code/corrcoef/ecocoAdaptiveCore.m	direct
+ecocoAdaptiveCore	helper	method inputs; optional options overrides	code/corrcoef/ecocoAdaptiveCore.m	defaults
+ecocoCrossfitCore	analyzer	data orbit9 window dt step red pad srGrid nsim method maxFrequency seed anchorFraction options(BatchSize,ComputeLocalP,ProgressFcn,MemoryBudgetMiB,WindowMode,StepDepth,CenterLimits,WarnOnPartialTraining)	code/corrcoef/ecocoCrossfitCore.m	direct
+ecocoCrossfitCore	helper	method inputs; optional options overrides	code/corrcoef/ecocoCrossfitCore.m	defaults
+ecocoEstimateAr1	analyzer	values	code/corrcoef/ecocoEstimateAr1.m	direct
+ecocoInterleavedCore	analyzer	data orbit9 window dt step red pad srGrid nsim method maxFrequency seed options(BatchSize,ProgressFcn,WindowMode,StepDepth,WarnOnPartialTraining)	code/corrcoef/ecocoInterleavedCore.m	direct
+ecocoInterleavedCore	helper	method inputs; optional options overrides	code/corrcoef/ecocoInterleavedCore.m	defaults
+ecocoPhysicalCenters	analyzer	depth window stepDepth centerLimits	code/corrcoef/ecocoPhysicalCenters.m	direct
+ecocoPhysicalWindowValues	analyzer	data window centers nominalDt options(MinimumSourcePoints)	code/corrcoef/ecocoPhysicalWindowValues.m	direct
+ecocoPhysicalWindowValues	helper	method inputs; optional options overrides	code/corrcoef/ecocoPhysicalWindowValues.m	defaults
+ecocoWindowSpectra	analyzer	values dt pad red	code/corrcoef/ecocoWindowSpectra.m	direct
+ecocoplot	plotter	prt_sr out_depth out_ecc out_ep out_eci out_ecoco out_ecocorb out_norbit plotn ecoDetails	code/corrcoef/ecocoplot.m	direct
+ecocoplots	plotter	prt_sr out_depth out_ecc out_ep out_eci out_ecoco out_ecocorb	code/corrcoef/ecocoplots.m	direct
+ecocos	analyzer	data target window dt step delinear red pad sr1 sr2 srstep adjust	code/corrcoef/ecocos.m	source-matched role
+ecocotrack	analyzer	locatcc out_ecc out_eci out_ecoco out_norbit out_depth sr1 sr2 srstep srsh srslice sig ci sh_norb	code/corrcoef/ecocotrack.m	source-matched role
+ecocotrack	plotter	result out_depth sr1 sr2 srstep	code/corrcoef/ecocotrack.m	source-matched role
+ecocotrackn	analyzer	locat srsh iniloc srn method	code/corrcoef/ecocotrackn.m	source-matched role
+eemd	analyzer	y goal ens nos	code/seriesanalysis/eemd.m	direct
+ellipse_s	analyzer	e npts	code/misc/ellipse_s.m	source-matched role
+emdNL	analyzer	y goal pollFcn	code/seriesanalysis/emdNL.m	direct
+erhoAR1	analyzer	data window	code/seriesanalysis/erhoAR1.m	source-matched role
+evofft	analyzer	data window step dt fmin fmax norm	code/seriesanalysis/evofft.m	source-matched role
+evofftML	analyzer	data window step fmin fmax normal	code/seriesanalysis/evofftML.m	direct
+evoperiodogram	analyzer	data window step fmin fmax normal	code/seriesanalysis/evoperiodogram.m	direct
+evoplomb	analyzer	data window step fmin fmax normal	code/seriesanalysis/evoplomb.m	direct
+evopmtm	analyzer	data window step fmin fmax normal	code/seriesanalysis/evopmtm.m	direct
+evopmtmML	plotter	xgrid ratio pow powall dt fmin fmax window nw fterm filename	code/seriesanalysis/evopmtmML.m	source-matched role
+find_extrema	analyzer	y	code/seriesanalysis/find_extrema.m	source-matched role
+findduplicate	analyzer	data	code/seriesanalysis/findduplicate.m	source-matched role
+findnpk	analyzer	dat n o	code/misc/findnpk.m	source-matched role
+findnpk	helper	dat n o	code/misc/findnpk.m	source-matched role
+findperct	analyzer	va m	code/corrcoef/findperct.m	source-matched role
+formatts	analyzer	d	code/package/wavelet/formatts.m	source-matched role
+freq2targetFixed	analyzer	dat pad orbit9 lax sr_i	code/corrcoef/freq2targetFixed.m	direct
+freq2targetNew	analyzer	dat pad data_pow orbit9 lax sr_i	code/corrcoef/freq2targetNew.m	direct
+ftestmtm	analyzer	t y NW dof npad	code/seriesanalysis/ftestmtm.m	direct
+ftestmtmML	analyzer	data NW npad	code/seriesanalysis/ftestmtmML.m	direct
+ftestmtmML	plotter	result NW fnyq	code/seriesanalysis/ftestmtmML.m	source-matched role
+gammcf	analyzer	a x	code/package/swa/gammcf.m	source-matched role
+gammln	analyzer	xx	code/package/swa/gammln.m	source-matched role
+gammp	analyzer	a x	code/package/swa/gammp.m	source-matched role
+gamser	analyzer	a x	code/package/swa/gamser.m	source-matched role
+gaussfilter	analyzer	datax dt fc fl fh	code/seriesanalysis/gaussfilter.m	direct
+gaussmf	analyzer	x params	code/misc/gaussmf.m	source-matched role
+gentarget	analyzer	laskar t1 t2 f1 f2 ne nt np pad method	code/corrcoef/gentarget.m	source-matched role
+getBerger89Period	analyzer	t	code/corrcoef/getBerger89Period.m	source-matched role
+getchi2	analyzer	dof alpha	code/package/swa/getchi2.m	source-matched role
+getpks	analyzer	data	code/seriesanalysis/getpks.m	direct
+hpsort	analyzer	arr	code/package/swa/hpsort.m	source-matched role
+imscrollpanel_ac	plotter	im_name	code/misc/imscrollpanel_ac.m	source-matched role
+insoML	analyzer	t day lat qinso author res L	code/misc/insoML.m	source-matched role
+insoML	helper	t day lat qinso author res L	code/misc/insoML.m	source-matched role
+interleavedcvcoco	analyzer	data orbit9 pad sr1 sr2 srstep red nsim method options(BatchSize,Seed,ProgressFcn,MaxFrequency,AnalysisName,InterleavedPhase,Verbose,WarnOnPartialTraining)	code/corrcoef/interleavedcvcoco.m	direct
+interleavedcvcoco	helper	method inputs; optional options overrides	code/corrcoef/interleavedcvcoco.m	defaults
+interpolate	analyzer	data interpolate_rate	code/seriesanalysis/interpolate.m	source-matched role
+interpolate	helper	data	code/guicode/AC.m	source-matched role
+interpolate_rand	analyzer	data interpolate_rate	code/misc/interpolate_rand.m	source-matched role
+invprctile	analyzer	x xq dim plot_pos	code/misc/invprctile.m	source-matched role
+lodla04	analyzer	T	code/seriesanalysis/lodla04.m	source-matched role
+minirho	analyzer	s0 fn ft pxxsmooth linlog	code/seriesanalysis/minirho.m	source-matched role
+minirho	helper	s0 fn ft pxxsmooth linlog genplot	code/seriesanalysis/minirho.m	source-matched role
+minirhos0	analyzer	s0 fn ft pxxsmooth linlog	code/seriesanalysis/minirhos0.m	direct
+minirhos0	helper	s0 fn ft pxxsmooth linlog genplot	code/seriesanalysis/minirhos0.m	source-matched role
+mmdd2dayi	analyzer	doy	code/misc/mmdd2dayi.m	source-matched role
+monthday2dayi	analyzer	month day	code/misc/monthday2dayi.m	source-matched role
+moveMedian	analyzer	x w	code/seriesanalysis/moveMedian.m	direct
+movemean	analyzer	x w	code/seriesanalysis/movemean.m	direct
+movmeanfbw	analyzer	data window step halfwindow alpha	code/seriesanalysis/movmeanfbw.m	direct
+mtmdofs	analyzer	t y NW npad	code/seriesanalysis/mtmdofs.m	direct
+nCk	analyzer	n k	code/package/bayes_changepoint/nCk.m	source-matched role
+norbits	analyzer	target f power orbit7 rayleigh sr	code/corrcoef/norbits.m	source-matched role
+numorbit	analyzer	orbit7 nyquist rayleigh sr_range mpts	code/corrcoef/numorbit.m	source-matched role
+numorbit	helper	orbit7 nyquist rayleigh sr_range mpts plotn	code/corrcoef/numorbit.m	source-matched role
+partition_fn	analyzer	Py k_max N	code/package/bayes_changepoint/partition_fn.m	source-matched role
+pda	analyzer	data fmin fmax window nw	code/seriesanalysis/pda.m	direct
+pdan	analyzer	data f3 window nw ftmin fterm step pad	code/seriesanalysis/pdan.m	direct
+period	analyzer	x time_ml ndata avex nout xfint varx	code/package/swa/period.m	source-matched role
+period2spectrum	analyzer	orbit7 t1 t2 sr f1 f2 method pad	code/corrcoef/period2spectrum.m	direct
+pick_k1	analyzer	k	code/package/bayes_changepoint/pick_k1.m	source-matched role
+plomb_robustar1	analyzer	datax timex fmax smoothwin	code/seriesanalysis/plomb_robustar1.m	direct
+plomb_robustar1	plotter	result smoothwin fmax	code/seriesanalysis/plomb_robustar1.m	source-matched role
+plotAdaptiveCocoPublication	helper	method inputs; optional options overrides	code/corrcoef/plotAdaptiveCocoPublication.m	defaults
+plotAdaptiveCocoPublication	plotter	corrCI corrH0 details report options(TitlePrefix,Visible)	code/corrcoef/plotAdaptiveCocoPublication.m	direct
+plotcvcoco	helper	method inputs; optional options overrides	code/corrcoef/plotcvcoco.m	defaults
+plotcvcoco	plotter	result options(ShowSpectra,Tabbed)	code/corrcoef/plotcvcoco.m	direct
+prewhitening	analyzer	data rho	code/seriesanalysis/prewhitening.m	source-matched role
+randspec_sin	analyzer	f n dat_ray	code/corrcoef/randspec_sin.m	source-matched role
+recplot	analyzer	x threshold t labelx labely	code/package/recurrence/recplot.m	source-matched role
+recplot	helper	x threshold t plotn labelx labely	code/package/recurrence/recplot.m	source-matched role
+recplot	plotter	plotn S threshold t x labelx labely	code/package/recurrence/recplot.m	source-matched role
+redNoisePeriodogramMC	analyzer	data rhoM mcn red pad options(BatchSize,UseParallel,Slices)	code/corrcoef/redNoisePeriodogramMC.m	direct
+redNoisePeriodogramMC	helper	method inputs; optional options overrides	code/corrcoef/redNoisePeriodogramMC.m	defaults
+redconfML	analyzer	x dt nw nfft linlog smoothwin fmax fitFmax	code/seriesanalysis/redconfML.m	direct
+redconfML	helper	x dt nw nfft linlog smoothwin fmax plotn	code/seriesanalysis/redconfML.m	source-matched role
+redconf_any	analyzer	f pxx dt smoothwin linlog	code/seriesanalysis/redconf_any.m	source-matched role
+redconfchi2	analyzer	datax nw dt pad method	code/seriesanalysis/redconfchi2.m	direct
+redconftabtchi	analyzer	datax nw dt pad method	code/seriesanalysis/redconftabtchi.m	source-matched role
+redmark	analyzer	alfa n	code/seriesanalysis/redmark.m	direct
+rednoise	analyzer	N g a	code/package/wavelet/rednoise.m	source-matched role
+rednoise	helper	N g a	code/package/wavelet/rednoise.m	source-matched role
+reexportCocoPublicationPdfs	analyzer	outputRoot	code/corrcoef/reexportCocoPublicationPdfs.m	direct
+rho	analyzer	x nData varx	code/package/swa/rho.m	source-matched role
+rhoAR1	analyzer	datax	code/seriesanalysis/rhoAR1.m	source-matched role
+rhoAR1ML	analyzer	datax	code/seriesanalysis/rhoAR1ML.m	source-matched role
+rmse4leadlag	analyzer	target series ll step timedir	code/seriesanalysis/rmse4leadlag.m	source-matched role
+rmse4leadlag	plotter	result target series timedir	code/guicode/leadlagGUI.m code/seriesanalysis/rmse4leadlag.m	source-matched role
+runCocoEightMethodExperiment	analyzer	outputRoot options(InputRoot,NSim,Seed,Red,Method,BatchSize,Slices,MaxFrequencyScale,DatasetIDs,MethodIDs,Resume,ContinueOnError,ExportFigures,CloseFigures,Visible,DatasetPlan,ShowProgress)	code/corrcoef/runCocoEightMethodExperiment.m	direct
+runCocoPublicationValidation	analyzer	outputRoot options(InputRoot,NSim,NSimSensitivity,Seed,Red,SensitivityRed,Method,Slices,BatchSize,MaxFrequencyScale,DatasetIDs,Resume,ContinueOnError,RunCV,RunAdaptive,ExportFigures,CloseFigures,Visible,DatasetPlan,FigureWidthCm)	code/corrcoef/runCocoPublicationValidation.m	direct
+runEcocoTwoMethodExperiment	analyzer	outputRoot options(InputRoot,NSim,Seed,Red,Method,AnchorFraction,StepFraction,MaxWindows,MaxFrequencyScale,DatasetIDs,MethodIDs,Resume,ContinueOnError,ExportFigures,CloseFigures,Visible,DatasetPlan,ShowProgress,Verbose)	code/corrcoef/runEcocoTwoMethodExperiment.m	direct
+runInterleavedCvCocoComparison	analyzer	outputRoot options(InputRoot,NSim,Seed,Red,Method,BatchSize,MaxFrequencyScale,Resume,ContinueOnError,ExportFigures,CloseFigures,Visible,ShowProgress,DatasetIDs,DatasetPlan,EnforceGuiPad)	code/corrcoef/runInterleavedCvCocoComparison.m	direct
+runSyn3FourMethodPublicationStudy	analyzer	options(Phase,InputRoot,OutputRoot,CocoNSim,EcocoNSim,Seed,Resume)	code/corrcoef/runSyn3FourMethodPublicationStudy.m	direct
+select_interval	analyzer	data t1 t2	code/seriesanalysis/select_interval.m	source-matched role
+select_interval	helper	data	code/guicode/AC.m	source-matched role
+smoothbestSpan	analyzer	t y method alpha beta	code/seriesanalysis/smoothbestSpan.m	source-matched role
+smoothbestSpanRand	analyzer	t y method num_iterations	code/guicode/smoothbestSpanRand.m	source-matched role
+smoothci	analyzer	xy xs span method	code/seriesanalysis/smoothci.m	source-matched role
+smoothciML	analyzer	X Y method span bootn	code/seriesanalysis/smoothciML.m	source-matched role
+smoothciML	helper	X Y method span bootn	code/seriesanalysis/smoothciML.m	source-matched role
+smoothwavelet	analyzer	wave dt period dj scale	code/package/wavelet/smoothwavelet.m	source-matched role
+solve	analyzer	A B N N1 ZERO	code/package/swa/solve.m	source-matched role
+specswa	analyzer	freq xlogp ndata verbose	code/package/swa/specswa.m	direct
+spectralmoments	analyzer	data window step pad srmean smoothmodel padedge	code/seriesanalysis/spectralmoments.m	source-matched role
+spectralmoments	helper	data window step pad srmean smoothmodel padedge	code/seriesanalysis/spectralmoments.m	source-matched role
+spectralswafdr	analyzer	data method nw padtimes	code/package/swa/spectralswafdr.m	direct
+spectralswafdr	helper	data method nw padtimes plotn	code/package/swa/spectralswafdr.m	source-matched role
+strAssign	analyzer	in1 r1 r2 rhs	code/package/swa/strAssign.m	source-matched role
+strrep2	analyzer	filename pre post	code/misc/strrep2.m	direct
+swtest	analyzer	x alpha	code/package/univariate/swtest.m	source-matched role
+tanerhilbertML	analyzer	data fc fl fh c	code/seriesanalysis/tanerhilbertML.m	direct
+targetadj_real	analyzer	target f power orbit7 rayleigh sr	code/corrcoef/targetadj_real.m	direct
+targetrebuilt	analyzer	target	code/corrcoef/targetrebuilt.m	direct
+theoredar1ML	analyzer	datax f meanp dt	code/corrcoef/theoredar1ML.m	source-matched role
+validateCocoPublicationValidation	analyzer	outputRoot	code/corrcoef/validateCocoPublicationValidation.m	direct
+wave_bases	analyzer	mother k scale param	code/package/wavelet/wave_bases.m	source-matched role
+wave_signif	analyzer	Y dt scale1 sigtest lag1 siglvl dof mother param	code/package/wavelet/wave_signif.m	source-matched role
+wave_signif	helper	Y dt scale1 sigtest lag1 siglvl dof mother param	code/package/wavelet/wave_signif.m	source-matched role
+wavelet	analyzer	Y dt pad dj s0 J1 mother param	code/package/wavelet/wavelet.m	source-matched role
+wavelet	helper	Y dt pad dj s0 J1 mother param	code/package/wavelet/wavelet.m	source-matched role
+wtcsignif	analyzer	mccount ar1 dt n pad dj s0 j1 mother cutoff	code/package/wavelet/wtcsignif.m code/package/wavelet/wavelet.m	source-matched role
+zeropad2	analyzer	data win padding ensureHalfWindowCoverage	code/seriesanalysis/zeropad2.m	direct
+zeropad2	helper	data win padding	code/seriesanalysis/zeropad2.m	source-matched role

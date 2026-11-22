@@ -6,9 +6,10 @@ entry = jsondecode(records{1});
 if ~strcmp(entry.attr,'init')
     error('Acycle:Replay:MissingInit','The journal has no invocation record.');
 end
-parts = regexp(entry.info.op, '^([A-Za-z]\w*)-v1\.0/(helper|analyzer|plotter)$', 'tokens', 'once');
+parts = regexp(entry.info.op, '^([A-Za-z]\w*)-(v1\.0|v3\.1\.1\+dcba427)/(helper|analyzer|plotter)$', 'tokens', 'once');
 if isempty(parts), error('Acycle:Replay:Operation','Unrecognized method or version.'); end
-name = ['acmethods.',parts{1},'.',parts{2}];
+if strcmp(parts{2},'v1.0'), namespace = 'acmethods'; else, namespace = 'acmaster'; end
+name = [namespace,'.',parts{1},'.',parts{3}];
 if isempty(which(name)), error('Acycle:Replay:Unavailable','Missing method %s.',name); end
 params = aclog.read(id,entry.info.params);
 saved = [id,'.rng.mat'];
