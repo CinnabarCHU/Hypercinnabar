@@ -64,6 +64,7 @@ case {'F3','S2'}
         if isSupp, pos=[.136 .582-(k-1)*.481 .823 .329]; center=[.546 .512];
         else, pos=[.095+(k-1)*.495 .198 .386 .596]; center=[.534 .958]; end
         ax=panel(pos); h=spectrum(ax,q{k},k,isSupp); letter(ax,char(96+k));
+        if isSupp && k==1, xlabel(ax,''); end
         if k==1 && ~isempty(h)
             labels={'$5\%$ FDR','$99\%\,\chi^{2}$','$95\%\,\chi^{2}$','SWA background','Power'};
             if isSupp, labels{end+1}='Exceeds both thresholds'; end
@@ -91,7 +92,7 @@ case {'F5','S4'}
             col=mod(k-1,2); x=.101+col*.483; y=.588-floor((k-1)/2)*.482;
             ht=.321; sw=.072; gap=.012; mw=.274; showAge=col==0;
         else
-            x=.084+(k-1)*.234; y=.157; ht=.681; sw=.039; gap=.008; mw=.169; showAge=k==1;
+            x=.084+(k-1)*.227; y=.157; ht=.681; sw=.039; gap=.008; mw=.166; showAge=k==1;
         end
         side=panel([x y sw ht]); map=panel([x+sw+gap y mw ht]); s=evo_field(q{k},profile);
         evo_panel(map,side,q{k},s,k,c(k,:),~isSupp,endsWith(profile,'-native'),showAge);
@@ -102,7 +103,8 @@ case {'F5','S4'}
 case {'F6','S5'}
     for k=1:2
         y=.579-(k-1)*.482;
-        ax=panel([.129 y .593 .344]); axg=panel([.758 y .113 .344]);
+        mapWidth=pick(1+isSupp,.534,.593);
+        ax=panel([.129 y mapWidth .344]); axg=panel([.758 y .113 .344]);
         isotope_wave(ax,axg,q{k}.cwt,k,c(k,:),isSupp); letter(ax,char(96+k));
     end
 case {'F7','S7'}
@@ -131,9 +133,11 @@ case 'S1'
     for k=1:2
         a=q{k}; x=.118+(k-1)*.494; width=.343;
         ax=panel([x .727 width .185]); ax.Tag=sprintf('sampling-%d',k);
-        dt=diff(a.raw(:,1)); histogram(ax,dt,'BinEdges',[0:.5:10 12 15 20 30 50 100 250], ...
+        dt=diff(a.raw(:,1)); histogram(ax,dt,'BinEdges',[0:.5:10 12 15 20 25 30 50 100 250], ...
             'FaceColor',c(k,:),'EdgeColor','none'); xlim(ax,[0 25]);
         xline(ax,median(dt),'--','Color',[.15 .15 .15],'LineWidth',.9);
+        text(ax,.966,.89,{sprintf('Median %.3f kyr',median(dt)),sprintf('%d longer than 25 kyr',nnz(dt>25))}, ...
+            'Units','normalized','HorizontalAlignment','right','VerticalAlignment','top','FontSize',6.8,'Tag','sampling-summary');
         xlabel(ax,'Sampling interval (kyr)'); ylabel(ax,'Count');
         title(ax,[iso(k) ' sampling']); letter(ax,char(96+k));
         ax=panel([x .412 width .182]); ax.Tag=sprintf('trend-%d',k);
@@ -150,8 +154,8 @@ case 'S1'
         xlim(ax,[55.75 56.012]); ax.XTick=[55.8 55.9 56.0]; ax.XTickLabel={'55.8','55.9','56.0'};
         inView=dx>=55.75 & dx<=56.012; vals=[a.residual(inView);a.y(inView)]; lim=[min(vals) max(vals)];
         ylim(ax,lim+[-1 1]*max(.08,diff(lim)*.09)); xlabel(ax,'Age (Ma)'); ylabel(ax,'Residual (‰)');
-        title(ax,sprintf('PETM replacement (%d)',nnz(changed))); letter(ax,char(100+k));
-        key(ax,h,{'Before','After'},[x+width/2 .332],2);
+        title(ax,'PETM replacement'); letter(ax,char(100+k));
+        key(ax,h,{'Before',sprintf('After ($n=%d$)',nnz(changed))},[x+width/2 .332],2);
     end
 case 'S3'
     for k=1:2
@@ -165,7 +169,7 @@ case 'S3'
         if ~isfield(a,'pda'), statusline(ax,'Window count exceeds revision limit'); continue,end
         plot(ax,a.pda(:,1)/1000,a.pda(:,2),'Color',c(k,:)); hold(ax,'on');
         [pk,tx]=findpeaks(a.pda(:,2),a.pda(:,1)/1000,'MinPeakDistance',.9,'MinPeakProminence',.055);
-        plot(ax,tx,pk,'.','Color',c(k,:)); 
+        plot(ax,tx,pk,'.','Color',c(k,:));
         for j=2:numel(tx)
             text(ax,mean(tx(j-1:j)),max(pk)*1.17,sprintf('%.1f',diff(tx(j-1:j))), ...
                 'FontSize',6.3,'HorizontalAlignment','center','Tag','interval');
@@ -180,7 +184,7 @@ case 'S6'
     end
     for j=1:2
         ax=panel([.148 .276-(j-1)*.193 .810 .116]); horbit(ax,orbit.(['h' num2str(j)]),j,false);
-        letter(ax,char(99+j));
+        letter(ax,char(99+j)); if j==1, xlabel(ax,''); end
     end
 end
 apply_interpreters(fig);
@@ -200,7 +204,8 @@ end
 function letter(ax,t)
 % Keep the letter at a fixed physical distance from the frame on wide and narrow axes.
 f=ancestor(ax,'figure'); p=ax.Position; dims=f.PaperSize*10;
-text(ax,-2.6/(dims(1)*p(3)),1+1.5/(dims(2)*p(4)),t,'Units','normalized', ...
+dx=2.6+2.4*strcmp(ax.XAxisLocation,'top');
+text(ax,-dx/(dims(1)*p(3)),1+1.5/(dims(2)*p(4)),t,'Units','normalized', ...
     'HorizontalAlignment','right','VerticalAlignment','bottom','FontName','Arial', ...
     'FontWeight','bold','FontSize',9,'Clipping','off','Tag','panel-letter');
 end
@@ -216,7 +221,7 @@ end
 function lg=key(ax,lines,labels,center,ncols)
 lg=legend(ax,lines,labels,'NumColumns',ncols,'Orientation','horizontal','Box','off', ...
     'AutoUpdate','off','Interpreter',interpreter(labels),'FontSize',7,'Tag','plot-key');
-lg.ItemTokenSize=[12 8]; lg.Units='normalized'; drawnow;
+lg.ItemTokenSize=[18+5*(ncols==2) 8]; lg.Units='normalized'; drawnow;
 p=lg.Position; lg.Position=[center(1)-p(3)/2 center(2)-p(4)/2 p(3) p(4)];
 end
 function t=iso(k)
@@ -263,9 +268,9 @@ titles={'ZB18a','La10c'};title(ax,[titles{k} '   $h=e\sin(\varpi)$']);
 ff=4*pi/(6+sqrt(38));plot(ax,d.t,log2(max(d.coi,eps)),'k','LineWidth',.6);
 if annotated
     for m=1:size(d.arc_age,1),a=d.arc_age(m,:);if mean(a)>48.3 && mean(a)<52,continue,end;plot(ax,a,log2(d.arc_period(m,:)/ff),'k','LineWidth',1.2);end
-    text(ax,42.8,log2(61),'$\approx 2.4$','FontWeight','bold');text(ax,55.1,log2(61),'$\approx 1.5$','FontWeight','bold');
-    if k==2,text(ax,58.3,log2(61),'$\approx 2.0$','FontWeight','bold');end
-    for j=1:4,gt={'$g_{3},\,g_{4}$','$g_{2}$','$g_{1}$','$g_{5}$'};text(ax,38.25,log2(ticks(j)),gt{j},'Color','w','FontSize',7);end
+    text(ax,42.8,log2(61),'$\approx 2.4$','FontWeight','bold');text(ax,54.5,log2(61),'$\approx 1.5$','FontWeight','bold');
+    if k==2,text(ax,59.0,log2(61),'$\approx 2.0$','FontWeight','bold');end
+    for j=1:4,gt={'$g_{3},\,g_{4}$','$g_{2}$','$g_{1}$','$g_{5}$'};text(ax,38.45,log2(ticks(j)),gt{j},'Color',[.10 .10 .10],'FontSize',7);end
 end
 ylim(ax,log2([d.scale(1) d.scale(end)]));
 end
@@ -288,7 +293,7 @@ xlim(ax,[0 5]); ylim(ax,[0 max(max(s(:,2))*1.40,1e-10)]);
 ylabel(ax,'Power'); xlabel(ax,'Frequency (cycles/Myr)');
 bands=[.00038 .00055;.000665 .000785;.00235 .00258];
 if k==2, bands(1:2,:)=[.000385 .000605;.0007 .00091]; end
-labelx=[.32 1.26 2.53]; labely=[.90 .75 .72]*ax.YLim(2);
+labelx=[.61 1.44 2.57]; labely=[.90 .75 .72]*ax.YLim(2);
 for i=1:3
     ix=find(s(:,1)>=bands(i,1)&s(:,1)<=bands(i,2)); if isempty(ix),continue,end
     if ~supp && k==2 && i==1
@@ -365,8 +370,8 @@ if supp,xlabel(axg,'Global power');else,xlabel(axg,pick(k,'Power ($10^{-4}$)','P
 if ~supp
  for p=[2200,pick(k,1400,1300)]
      yline(ax,log2(p),'--','Color',[.52 .52 .52]);
-     text(ax,41.1,log2(p),sprintf('$\\approx %.1f\\,\\mathrm{Myr}$',p/1000),'FontSize',7, ...
-         'VerticalAlignment','middle','BackgroundColor','w','Margin',.65,'Tag','wave-period');
+     text(ax,1.023,(log2(p)-ax.YLim(1))/diff(ax.YLim),sprintf('$\\approx %.1f\\,\\mathrm{Myr}$',p/1000),'FontSize',7, ...
+         'Units','normalized','VerticalAlignment','middle','Clipping','off','Tag','wave-period');
  end
 end
 pos=ax.Position; cb=colorbar(ax,'Position',[.912 pos(2) .014 pos(4)]); ax.Position=pos;cb.FontSize=6;if supp,cb.Ticks=-16:4:0;else,cb.Ticks=0:.2:1;end
