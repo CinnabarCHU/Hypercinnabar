@@ -325,15 +325,18 @@ def produce(owners, all_facts):
                     per_version[version,mod]['declarations'] += 1
                 decls.append([version,mod,path,n[0],n[3],n[4],n[2],tag,
                               (n[1] or '').split('::')[-1],effects_at(per_scope[ident])])
-            for scope, line, name_ref in f['dynamic']:
-                deferred.append([version,module,path,scope.split('::')[1],line,name_ref,'runtime dispatch / workspace'])
+            for group, reason in [('dynamic','runtime dispatch / workspace'),
+                                  ('missing','known in another source tree; missing on native path')]:
+                for scope,line,name_ref in f[group]:
+                    scope_module, attribution = owners.scope(version,path,scope,f)
+                    deferred.append([version,scope_module,path,scope.split('::')[1],line,name_ref,reason,attribution])
             for scope,line,name_ref,targets in f['ambiguous']:
-                deferred.append([version,module,path,scope.split('::')[1],line,name_ref,'ambiguous: '+targets])
-            for scope,line,name_ref in f['missing']:
-                deferred.append([version,module,path,scope.split('::')[1],line,name_ref,'known in another source tree; missing on native path'])
+                scope_module, attribution = owners.scope(version,path,scope,f)
+                deferred.append([version,scope_module,path,scope.split('::')[1],line,name_ref,'ambiguous: '+targets,attribution])
             for mod,attr,src,scope,ln,kind in incoming:
                 if attr in {'workspace-variable','unconfirmed-name'}:
-                    deferred.append([version,mod,src,scope.split('::')[1],ln,name,attr])
+                    _, attribution = owners.scope(version,src,scope,files[src])
+                    deferred.append([version,mod,src,scope.split('::')[1],ln,name,attr,attribution])
             if len(direct_all)<2 and name not in decisions:
                 continue
             choice = decisions.get(name,{})
@@ -385,7 +388,7 @@ def produce(owners, all_facts):
         'declarations': ('revision module source name line end_line kind attribution parent direct_effects_first_lines',decls),
         'shared_functions': ('revision function source owner recommendation scientific_modules_n scientific_modules other_direct_modules reason_zh',uses),
         'shared_call_sites': ('revision function target caller_module attribution caller_file caller_scope evidence_kind lines',cross),
-        'binding_review': ('revision module caller_file scope line symbol reason',deferred),
+        'binding_review': ('revision module caller_file scope line symbol reason attribution',deferred),
         'copied_blocks': ('revision consuming_modules origin source first_line last_line enclosing_scope source_action next_step occurrences old_ops',extraction),
         'assets': ('module path status guide_blob master_blob',assets),
     }
