@@ -112,6 +112,20 @@ function peakAudit(src,t,x)
         end
     end
     writetable(out,fullfile('outputs',src+"_smoothing.csv"));
+    s150=ref; s250=gaussianSmooth(t,x,250); view=t>=45000 & t<=54000;
+    traces=table(t(view)/1000,x(view),s150(view),s250(view), ...
+        'VariableNames',{'age_Ma','PDA_fraction','smooth_150','smooth_250'});
+    writetable(traces,fullfile('outputs',src+"_smoothing_traces.csv"));
+    allPeaks=table();
+    for sigma=[150,250]
+        if sigma==150,y=s150;else,y=s250;end
+        [mag,at,~,prom]=findpeaks(y,t);
+        sel=at>=47000 & at<=52000; n=sum(sel);
+        T=table(repmat(sigma,n,1),at(sel)/1000,mag(sel),prom(sel), ...
+            'VariableNames',{'sigma_kyr','age_Ma','value','prominence'});
+        if isempty(allPeaks),allPeaks=T;else,allPeaks=[allPeaks;T];end
+    end
+    writetable(allPeaks,fullfile('outputs',src+"_all_local_maxima.csv"));
 end
 
 function v=redistribution(p,Y)
