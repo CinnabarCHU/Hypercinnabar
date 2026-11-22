@@ -62,7 +62,7 @@ code/guicode/RecPlotGUI.m	Recurrence.analyzer | Recurrence.helper
 code/guicode/RobotGUI.m	
 code/guicode/SWA_refreshplot_CL_GUI.m	
 code/guicode/SWAgui.m	SWA.analyzer | SWA.helper | SWA.plotter
-code/guicode/SmoothBootGUI.m	BootstrapSmooth.analyzer
+code/guicode/SmoothBootGUI.m	BootstrapSmooth.analyzer | BootstrapSmooth.helper
 code/guicode/SpectralMomentsGUI.fig	
 code/guicode/SpectralMomentsGUI.m	spectralmoments.plotter
 code/guicode/agescale.fig	
@@ -152,7 +152,7 @@ code/misc/update_filter_axes.m	Bandpass.analyzer | Bandpass.plotter
 code/misc/update_filter_axes4.m	PassFilter.analyzer | PassFilter.plotter
 code/misc/update_interpolationGUI.m	InterpolationPro.analyzer | InterpolationPro.plotter
 code/misc/update_recplot.m	Recurrence.analyzer | Recurrence.plotter
-code/misc/update_spectral_x_period_mtm.m	
+code/misc/update_spectral_x_period_mtm.m	PowerSpectrum.plotter
 code/package/bayes_changepoint/bayes_cpt.m	bayes_cpt.analyzer | bayes_cpt.helper | bayes_cpt.plotter
 code/package/bayes_changepoint/bayes_cpt_r2.m	bayes_cpt_r2.analyzer | bayes_cpt_r2.helper | bayes_cpt_r2.plotter
 code/package/bayes_changepoint/nCk.m	nCk.analyzer
@@ -247,7 +247,7 @@ code/seriesanalysis/evopmtmML.m	evopmtmML.analyzer | evopmtmML.plotter
 code/seriesanalysis/find_extrema.m	find_extrema.analyzer
 code/seriesanalysis/findduplicate.m	findduplicate.analyzer
 code/seriesanalysis/ftestmtm.m	ftestmtm.analyzer
-code/seriesanalysis/ftestmtmML.m	ftestmtmML.analyzer
+code/seriesanalysis/ftestmtmML.m	PowerSpectrum.plotter | ftestmtmML.analyzer
 code/seriesanalysis/gaussfilter.m	gaussfilter.analyzer
 code/seriesanalysis/getpks.m	getpks.analyzer
 code/seriesanalysis/interpolate.m	interpolate.analyzer
@@ -260,7 +260,7 @@ code/seriesanalysis/movmeanfbw.m	FixedMovingMean.analyzer | FixedMovingMean.help
 code/seriesanalysis/mtmdofs.m	mtmdofs.analyzer
 code/seriesanalysis/pda.m	pda.analyzer
 code/seriesanalysis/pdan.m	pdan.analyzer | pdan.helper
-code/seriesanalysis/plomb_robustar1.m	plomb_robustar1.analyzer | plomb_robustar1.helper
+code/seriesanalysis/plomb_robustar1.m	PowerSpectrum.plotter | plomb_robustar1.analyzer | plomb_robustar1.helper
 code/seriesanalysis/prewhitening.m	prewhitening.analyzer
 code/seriesanalysis/redconfML.m	redconfML.analyzer | redconfML.helper
 code/seriesanalysis/redconf_any.m	redconf_any.analyzer
@@ -273,7 +273,7 @@ code/seriesanalysis/rmse4leadlag.m	rmse4leadlag.analyzer | rmse4leadlag.helper
 code/seriesanalysis/select_interval.m	select_interval.analyzer
 code/seriesanalysis/smoothbestSpan.m	smoothbestSpan.analyzer
 code/seriesanalysis/smoothci.m	smoothci.analyzer
-code/seriesanalysis/smoothciML.m	smoothciML.analyzer | smoothciML.helper
+code/seriesanalysis/smoothciML.m	BootstrapSmooth.plotter | smoothciML.analyzer | smoothciML.helper
 code/seriesanalysis/spectralmoments.m	spectralmoments.analyzer | spectralmoments.helper
 code/seriesanalysis/tanerhilbertML.m	tanerhilbertML.analyzer | tanerhilbertML.helper
 code/seriesanalysis/zeropad2.m	zeropad2.analyzer | zeropad2.helper

@@ -23,7 +23,7 @@ summarymat=q.summarymat;
 shadingmat=q.shadingmat;
 sarsummarymat=q.sarsummarymat;
 sarshadingmat=q.sarshadingmat;
-debugme=q.debugme;
+debugme=q.debugme; xfactor=q.xfactor; bootpc=q.bootpc;
 if debugme, agedepmat=q.agedepmat; end
 inputfile=p.result.input_name;
 plotsar=p.plotsar; printme=p.printme; vcloud=p.vcloud; writedir=p.writedir;

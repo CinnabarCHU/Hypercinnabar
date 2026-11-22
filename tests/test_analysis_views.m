@@ -24,6 +24,7 @@ q.result=acmethods.MatlabWaveletCoherence.analyzer(q); acmethods.MatlabWaveletCo
 q=acmethods.WaveletCoherence.helper(struct('dat1',d,'dat2',second)); q.MonteCarloCount=0;
 q.result=acmethods.WaveletCoherence.analyzer(q); acmethods.WaveletCoherence.plotter(q);
 assert(~isempty(findall(groot,'type','figure','name','Acycle: Cross-wavelet')));
+testSpectra(d);
 testUndatable(root,journal);
 testEcoco();
 end
@@ -31,6 +32,23 @@ end
 function q=withResult(q,r)
 names=fieldnames(r);
 for i=1:numel(names), q.(names{i})=r.(names{i}); end
+end
+
+function testSpectra(d)
+p=acmethods.PowerSpectrum.helper(struct('data',d)); p.unit='m'; p.nw=2;
+p.noise.classic=true; p.noise.ftest=true; p.noise.swa=true;
+p.noise.biascorr=false; p.noise.powerlaw=true;
+initial=findall(groot,'type','figure');
+r=acmethods.PowerSpectrum.analyzer(p);
+assert(isequal(initial,findall(groot,'type','figure')));
+[f,sp,red,~,c95,~,~]=redconfchi2(p.data(:,2),p.nw,r.dt,p.nzeropad,2);
+assert(isequaln(r.models.classic.fd,f) && isequaln(r.models.classic.po,sp) && isequaln(r.models.classic.theored,red) && isequaln(r.models.classic.tabtchi95,c95));
+assert(isfield(r.models,'swa') && isfield(r.models,'ftest') && isfield(r.models,'powerlaw'));
+p.result=r; acmethods.PowerSpectrum.plotter(p); p.plot_x_period=1; acmethods.PowerSpectrum.plotter(p);
+p=acmethods.BootstrapSmooth.helper(struct('data',d)); p.bootn=9;
+rng(9); initial=findall(groot,'type','figure'); [b,id]=acmethods.BootstrapSmooth.analyzer(p);
+assert(isequaln(b,aclog.replay(id)) && isequal(initial,findall(groot,'type','figure')));
+p.result=b; acmethods.BootstrapSmooth.plotter(p);
 end
 
 function testUndatable(root,folder)

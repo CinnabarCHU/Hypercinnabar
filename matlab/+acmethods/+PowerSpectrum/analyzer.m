@@ -57,4 +57,51 @@ r.po = po;
 r.fd1 = fd1;
 r.dt = dt;
 if exist('pth','var'), r.pth=pth; end
+if isfield(p,'noise')
+    r.models=backgrounds(p,r);
+end
+end
+
+function m=backgrounds(p,r)
+o=p.noise; m=struct();
+data=p.data; datax=data(:,2); timex=data(:,1); dt=r.dt; fd1=r.fd1; po=r.po;
+nw=p.nw; nzeropad=p.nzeropad; smoothwin=o.smoothwin; fmax=p.fmax;
+if strcmp(p.method,'Multi-taper method')
+    if o.classic
+%% Copied from mingsongli/acycle@b52ea9f510f3be00bde9a0238b9898a1e2315b74 code/guicode/spectrum.m:L878-L879
+        [fd,po,theored,tabtchi90,tabtchi95,tabtchi99,tabtchi999]=redconfchi2(datax,nw,dt,nzeropad,2);
+        rho = rhoAR1(datax);
+%% End copied source
+        m.classic=struct('fd',fd,'po',po,'theored',theored,'tabtchi90',tabtchi90, ...
+            'tabtchi95',tabtchi95,'tabtchi99',tabtchi99,'tabtchi999',tabtchi999,'rho',rho);
+    end
+    if o.robust
+        if o.biascorr, valid=p.ValidNyqFreqR; else, valid=p.ValidNyqFreq; end
+        [rhoM,s0M,a,b]=redconfML(datax,dt,nw,nzeropad,o.linlog,smoothwin,valid,0);
+        m.robust=struct('rhoM',rhoM,'s0M',s0M,'redconfAR1',a,'redconfML96',b);
+    end
+    if o.ftest
+        m.ftest=acmethods.ftestmtmML.analyzer(struct('data',data,'NW',nw,'npad',p.padtimes));
+    end
+    if o.swa
+        m.swa=acmethods.spectralswafdr.analyzer(struct('data',data,'method','mtm','nw',nw,'padtimes',p.padtimes));
+    end
+elseif strcmp(p.method,'Lomb-Scargle spectrum')
+    if o.robust
+        [pr,fr,thresholds]=plomb_robustar1(datax,timex,fmax,smoothwin,0);
+        m.robust=struct('po',pr,'f',fr,'pth',thresholds);
+    end
+    if o.classic, m.false_alarm=r.pth; end
+elseif o.classic
+%% Copied from mingsongli/acycle@b52ea9f510f3be00bde9a0238b9898a1e2315b74 code/guicode/spectrum.m:L1567-L1570
+            [theored]=theoredar1ML(datax,fd1,mean(po),dt);
+            tabtchired90 = theored * chi2inv(90/100,2)/2;
+            tabtchired95 = theored * chi2inv(95/100,2)/2;
+            tabtchired99 = theored * chi2inv(99/100,2)/2;
+%% End copied source
+    m.classic=struct('theored',theored,'tabtchired90',tabtchired90,'tabtchired95',tabtchired95,'tabtchired99',tabtchired99);
+end
+q=struct('datax',datax,'fd1',fd1,'po',po,'method',p.method,'nw',nw);
+if o.powerlaw, m.powerlaw=acmethods.SpectralPowerLaw.analyzer(q); end
+if o.bending, m.bending=acmethods.SpectralBendingPowerLaw.analyzer(q); end
 end

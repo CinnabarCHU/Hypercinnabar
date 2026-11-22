@@ -15,6 +15,8 @@ Bandpass	analyzer	data filter flow fhigh taner_c(Taner)	11	code/guicode/ft.m | c
 Bandpass	helper	data	4	code/guicode/ft.m
 Bandpass	plotter	result po2 fd2 x_1 x_2 y_1 y_2 y_3 unit	6	code/guicode/ft.m | code/misc/update_filter_axes.m
 BootstrapSmooth	analyzer	x y method span bootn	1	code/guicode/SmoothBootGUI.m
+BootstrapSmooth	helper	data	1	code/guicode/SmoothBootGUI.m
+BootstrapSmooth	plotter	x y result method span	1	code/seriesanalysis/smoothciML.m
 BuildAgeModel	analyzer	data period pkstrough	1	code/guicode/AC.m
 BuildAgeModel	helper	data	1	code/guicode/AC.m
 BuildAgeModel	plotter	agemodelfull sedrate period plot_filter_s unit	5	code/guicode/AC.m
@@ -158,9 +160,9 @@ PlotPro	plotter	PlotAdvSetting directory figureName	4	code/misc/UpdatePlotPro2DL
 PowerDecomposition	analyzer	data f3 window nw ftmin fterm step pad padtype	5	code/guicode/AC.m
 PowerDecomposition	helper	data	4	code/guicode/AC.m
 PowerDecomposition	plotter	pow	2	code/guicode/AC.m
-PowerSpectrum	analyzer	data method nw(MTM) padtimes(MTM/Periodogram) nzeropad(MTM/Periodogram) pd(Lomb) fmax(Lomb)	4	code/guicode/spectrum.m
-PowerSpectrum	helper	data	9	code/guicode/spectrum.fig | code/guicode/spectrum.m
-PowerSpectrum	plotter	fd1 po fmin fmax unit plot_x_period linlogY logfreq	7	code/guicode/spectrum.m
+PowerSpectrum	analyzer	data method nw(MTM) padtimes(MTM/Periodogram) nzeropad(MTM/Periodogram) pd(Lomb) fmax(Lomb)	6	code/guicode/spectrum.m
+PowerSpectrum	helper	data	10	code/guicode/spectrum.fig | code/guicode/spectrum.m
+PowerSpectrum	plotter	fd1 po fmin fmax unit plot_x_period linlogY logfreq	31	code/guicode/spectrum.m | code/misc/update_spectral_x_period_mtm.m | code/seriesanalysis/ftestmtmML.m | code/seriesanalysis/plomb_robustar1.m
 RGBToGray	analyzer	im_name	1	code/guicode/AC.m
 RGBToGray	plotter	I	1	code/guicode/AC.m
 RGBToLab	analyzer	im_name	1	code/guicode/AC.m
@@ -351,7 +353,7 @@ select_interval	helper	data	2	code/guicode/AC.m
 smoothbestSpan	analyzer	t y method alpha beta	0	code/seriesanalysis/smoothbestSpan.m
 smoothbestSpanRand	analyzer	t y method num_iterations	0	code/guicode/smoothbestSpanRand.m
 smoothci	analyzer	xy xs span method	0	code/seriesanalysis/smoothci.m
-smoothciML	analyzer	X Y method span bootn	0	code/seriesanalysis/smoothciML.m
+smoothciML	analyzer	X Y method span bootn	1	code/seriesanalysis/smoothciML.m
 smoothciML	helper	X Y method span bootn	1	code/seriesanalysis/smoothciML.m
 smoothwavelet	analyzer	wave dt period dj scale	0	code/package/wavelet/smoothwavelet.m
 solve	analyzer	A B N N1 ZERO	0	code/package/swa/solve.m

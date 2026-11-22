@@ -75,4 +75,17 @@ end
 %% End copied source
 r=handles; r.data=data_s; r.nw=handles.timebandwidth; r.fmax=fmax; r.fmin=0;
 r.padtimes=5; r.nzeropad=5*size(data_s,1); r.pd=pd;
+BiasCorr=handles.BiasCorr;
+%% Copied from mingsongli/acycle@b52ea9f510f3be00bde9a0238b9898a1e2315b74 code/guicode/spectrum.m:L447-L451
+        if BiasCorr == 0
+            defaultans = {num2str(0.2),num2str(1),num2str(0)};
+        else
+            defaultans = {num2str(0.2),num2str(1),num2str(1)};
+        end
+%% End copied source
+r.noise=struct('classic',logical(r.checkbox_ar1_v),'robust',logical(r.checkbox_robustAR1_v), ...
+    'smoothwin',str2double(defaultans{1}),'linlog',str2double(defaultans{2}), ...
+    'biascorr',logical(str2double(defaultans{3})),'powerlaw',logical(r.checkPL), ...
+    'bending',logical(r.checkBPL),'ftest',logical(r.check_ftest_value),'swa',false);
+r.plot_x_period=0; r.unit='';
 end

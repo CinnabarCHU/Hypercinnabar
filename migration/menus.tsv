@@ -83,7 +83,7 @@ menu_pca	Multivariate > Principal Component	method	PCA	code/guicode/AC.m:6825
 menuac	Timeseries	heading		code/guicode/AC.m:3466	
 menu_prewhiten	Timeseries > Detrending | Curve Fitting	method	Detrending DetrendSignalPP	code/guicode/AC.m:3479	Raw, mean, linear, quadratic, higher polynomial, LOWESS/LOESS and robust variants, EEMD residual. The serialized Savitzky–Golay control was inactive; bootstrap smoothing has its own menu.
 menu_smooth1	Timeseries > Smoothing	heading		code/guicode/AC.m:7004	
-menu_bootstrap	Timeseries > Smoothing > Bootstrap	method	BootstrapSmooth	code/guicode/AC.m:2472	
+menu_bootstrap	Timeseries > Smoothing > Bootstrap	method	BootstrapSmooth smoothbestSpanRand	code/guicode/AC.m:2472	Four smoothers, GUI span and resampling defaults, statistical outputs, both bootstrap figures, and optional span search.
 menu_smooth_option	Timeseries > Smoothing > Moving Average	heading		code/guicode/AC.m:7413	
 menu_movmeanfbw	Timeseries > Smoothing > Moving Average > Fixed Bandwidth	method	FixedMovingMean	code/guicode/AC.m:7168	
 menu_smooth	Timeseries > Smoothing > Moving Average > K-Nearest Neighbor (KNN)	method	MovingMean	code/guicode/AC.m:7315	
@@ -92,7 +92,7 @@ menu_movmedianfbw	Timeseries > Smoothing > Moving Median > Fixed Bandwidth	metho
 menu_movmedian	Timeseries > Smoothing > Moving Median > K-Nearest Neighbor (KNN)	method	MovingMedian	code/guicode/AC.m:7550	
 menu_movGauss	Timeseries > Smoothing > Moving Gaussian	method	MovingGaussian	code/guicode/AC.m:7660	
 menu_whiten	Timeseries > Pre-whitening	method	AR1Prewhitening	code/guicode/AC.m:7023	
-menu_power	Timeseries > Spectral Analysis	partial	PowerSpectrum redconfML plomb_robustar1 ftestmtmML SWA SpectralPowerLaw SpectralBendingPowerLaw	code/guicode/AC.m:2760	Three spectral estimators, the power-law and bending-power-law fits, SWA, robust noise and F-tests are mapped. Check the original combined figures and all noise options.
+menu_power	Timeseries > Spectral Analysis	method	PowerSpectrum redconfML plomb_robustar1 ftestmtmML SWA SpectralPowerLaw SpectralBendingPowerLaw redconfchi2 spectralswafdr	code/guicode/AC.m:2760	Three spectral estimators, classical and robust noise models, power-law and bending-power-law fits, F-test, and SWA are available as independently selectable options in PowerSpectrum.
 menu_swa	Timeseries > Spectral Analysis (SWA)	method	SWA	code/guicode/AC.m:2787	Original SWA and Bayesian estimators run together. Reports and graphics use the original functions.
 menu_period	Timeseries > Evolutionary Spectral Analysis	method	EvolutionarySpectrum	code/guicode/AC.m:2727	Five numerical estimators and original 2D/3D, series, red-noise, log-scale, color and rotation plots. Returned grids support explicit selection of frequencies.
 menu_waveletGUI	Timeseries > Wavelet	method	WaveletSpectrum WaveletCoherence MatlabWaveletCoherence	code/guicode/AC.m:8485	Original series/global wavelet layouts, MATLAB coherence, Grinsted coherence and cross-wavelet plots with independent controls.

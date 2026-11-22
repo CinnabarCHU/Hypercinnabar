@@ -30,7 +30,7 @@ r.udoutput = udoutput;
 r.shadingmat = shadingmat;
 r.sarsummarymat = sarsummarymat;
 r.sarshadingmat = sarshadingmat;
-fields={'depth', 'depth1', 'depth2', 'age', 'ageerr', 'datetype', 'probtoplot', 'p95_4', 'p68_2', 'medians', 'depthrange', 'summarymat', 'shadingmat', 'sarsummarymat', 'sarshadingmat', 'debugme'};
+fields={'depth', 'depth1', 'depth2', 'age', 'ageerr', 'datetype', 'probtoplot', 'p95_4', 'p68_2', 'medians', 'depthrange', 'summarymat', 'shadingmat', 'sarsummarymat', 'sarshadingmat', 'debugme', 'xfactor', 'bootpc'};
 if p.debug, fields{end+1}='agedepmat'; end
 modelFile=fullfile(folder,[stem,'.mat']);
 r.plotdata=load(modelFile,fields{:}); r.input_name=[stem,extension];
