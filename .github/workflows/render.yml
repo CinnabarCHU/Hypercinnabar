@@ -2,7 +2,7 @@ name: Draw and reopen MATLAB figures
 on:
   push:
     branches: [cenogrid-figure-reproduction]
-    paths: ['matlab/render_figure.m','ci/prepare_render.py','python/**','.github/workflows/render.yml','data/*.mat','data/*.xz']
+    paths: ['matlab/render_figure.m','matlab/layout_metrics.m','ci/prepare_render.py','python/size_svg.py','.github/workflows/render.yml','fields/**']
   workflow_dispatch:
 permissions: {contents: read}
 jobs:
@@ -10,64 +10,26 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        group: ${{ fromJSON(contains(github.event.head_commit.message, '[gaussian]') && '["gaussian"]' || contains(github.event.head_commit.message, '[frequency]') && '["frequency"]' || contains(github.event.head_commit.message, '[common]') && '["common"]' || '["common","baseline","older","july","august","pretag","current","frequency","gaussian"]') }}
+        group: [common, baseline, older, july, august, pretag, current, frequency, gaussian]
     runs-on: ubuntu-latest
-    timeout-minutes: 75
+    timeout-minutes: 50
     steps:
       - uses: actions/checkout@v4
         with: {persist-credentials: false}
-      - if: matrix.group == 'frequency' || matrix.group == 'gaussian'
-        uses: actions/checkout@v4
-        with:
-          persist-credentials: false
-          repository: mingsongli/acycle
-          ref: 1f66b1859478842ad73d1211f1fd50789ab56c00
-          path: upstream
-          sparse-checkout: code
-      - if: matrix.group == 'older'
-        uses: actions/checkout@v4
-        with:
-          persist-credentials: false
-          repository: mingsongli/acycle
-          ref: 7792bcc48ed8db1c12fbe99e82e4e1fce531e0e5
-          path: oldcore
-          sparse-checkout: code
-      - if: matrix.group == 'frequency' || matrix.group == 'older'
-        uses: actions/checkout@v4
-        with:
-          persist-credentials: false
-          repository: mingsongli/acycle
-          ref: dcba4279168745b563e0535b954297023dd62fc7
-          path: reference
-          sparse-checkout: data
       - uses: actions/setup-python@v5
         with: {python-version: '3.12'}
-      - if: matrix.group == 'common'
-        run: pip install numpy scipy
-      - run: python ci/prepare_render.py ${{ matrix.group }}
+      - run: python ci/prepare_render.py ${{ matrix.group }} --output stage
       - uses: matlab-actions/setup-matlab@v2
         with:
           release: R2024b
-          products: Signal_Processing_Toolbox Curve_Fitting_Toolbox
+          products: Signal_Processing_Toolbox
       - uses: matlab-actions/run-command@v2
-        with:
-          command: batch_render
-      - name: Stage generated objects
-        if: always()
-        run: |
-          mkdir -p stage/fields
-          python python/size_svg.py figures
-          mkdir -p stage/figures
-          while read -r p; do
-            if [ -d "figures/$p" ]; then cp -R "figures/$p" stage/figures/; fi
-          done < group_profiles.txt
-          if [ -d fields/april-demean ]; then cp -R fields/april-demean stage/fields/; fi
-          if [ -d fields/v2701 ]; then cp -R fields/v2701 stage/fields/; fi
-          if [ -d fields/april-archiveband ]; then cp -R fields/april-archiveband stage/fields/; fi
-          if [ -f fields/orbits.mat ]; then cp fields/orbits.mat stage/fields/; fi
+        with: {command: batch_render}
+        env: {ACYCLE_LAYOUT_METRICS: '1'}
+      - run: python python/size_svg.py stage
       - uses: actions/upload-artifact@v4
-        if: always()
         with:
           name: drawings-${{ matrix.group }}
           path: stage
+          retention-days: 4
           if-no-files-found: error
