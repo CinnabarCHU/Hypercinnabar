@@ -2,7 +2,7 @@ name: Run the Python entry points
 on:
   push:
     branches: [cenogrid-figure-reproduction]
-    paths: ['.github/workflows/entrypoint.yml','main.py','versions/equivalent.json']
+    paths: ['.github/workflows/entrypoint.yml','main.py','versions/equivalent.json','versions/manuscript.json']
   workflow_dispatch:
 permissions: {contents: read}
 jobs:
@@ -24,15 +24,16 @@ jobs:
           python figures/v28/S2/main.py --output "$RUNNER_TEMP/spectrum" --batch-file cli_spectrum.m
           python main.py F6 --version v28 --cached --output "$RUNNER_TEMP/wavelet" --batch-file cli_wavelet.m
           python main.py F8 --version common-records --output "$RUNNER_TEMP/literature" --batch-file cli_literature.m
+          python figures/manuscript/F7/main.py --cached --output "$RUNNER_TEMP/manuscript-phase" --batch-file cli_manuscript.m
       - uses: matlab-actions/run-command@v2
         with:
-          command: run('cli_spectrum.m'); run('cli_wavelet.m'); run('cli_literature.m')
+          command: run('cli_spectrum.m'); run('cli_wavelet.m'); run('cli_literature.m'); run('cli_manuscript.m')
       - run: |
           python - <<'PY'
           import os, pathlib, xml.etree.ElementTree as ET
           outputs=pathlib.Path(os.environ['RUNNER_TEMP'])
           from python.size_svg import set_paper_size
-          for name,fid in [('spectrum','S2'),('wavelet','F6'),('literature','F8')]:
+          for name,fid in [('spectrum','S2'),('wavelet','F6'),('literature','F8'),('manuscript-phase','F7')]:
               p=outputs/name
               assert (p/'plot.fig').stat().st_size>1000
               set_paper_size(p/'plot.svg',fid)

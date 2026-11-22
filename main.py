@@ -11,6 +11,7 @@ from contextlib import nullcontext
 ROOT=Path(__file__).resolve().parent
 REFS=json.loads((ROOT/'versions/acycle.json').read_text())
 EQUIVALENTS=json.loads((ROOT/'versions/equivalent.json').read_text())
+MANUSCRIPT=json.loads((ROOT/'versions/manuscript.json').read_text())
 ALL=['F1','F2h','F2iso','F3','F4','F5','F6','F7','F8','S1','S2','S3','S4','S5','S6','S7']
 ORBIT={'F1','F2h','F8','S6'}
 COHERENCE={'F7','S7'}
@@ -53,7 +54,7 @@ def render_calls(jobs,base):
 def run():
     p=argparse.ArgumentParser(description=__doc__)
     p.add_argument('figure',choices=ALL)
-    p.add_argument('--version',choices=sorted(set(CONFIG)|set(EQUIVALENTS)))
+    p.add_argument('--version',choices=sorted(set(CONFIG)|set(EQUIVALENTS)|{'manuscript'}))
     p.add_argument('--cached',action='store_true',help='Use the distributed, MATLAB-calculated numerical fields.')
     p.add_argument('--batch-file',type=Path,help='Write a MATLAB job and its inputs for an external licensed runner')
     p.add_argument('--matlab',default='matlab')
@@ -61,11 +62,12 @@ def run():
     a=p.parse_args();fid=a.figure
     default='common' if fid in ORBIT|COHERENCE else ('v28' if fid in {'F3','S2'} else 'april')
     if fid in {'F2iso','S3'}:default='april-demean'
-    profile=a.version or default
+    requested_profile=a.version or default
+    profile=MANUSCRIPT[fid] if requested_profile=='manuscript' else requested_profile
     cached_profile=EQUIVALENTS.get(profile,{}).get(fid,profile)
     if fid not in CONFIG.get(cached_profile,[]):
         p.error(f'{fid} is unavailable for {profile}; see versions/figures.json and equivalent.json')
-    out=(a.output or ROOT/'figures'/profile/fid).resolve()
+    out=(a.output or ROOT/'figures'/requested_profile/fid).resolve()
     out.mkdir(parents=True,exist_ok=True)
     # A reproduction cannot replace the distributed fields of another run.
     if a.batch_file:
