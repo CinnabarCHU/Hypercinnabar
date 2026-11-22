@@ -104,6 +104,7 @@ function obliquity_test()
     end
     writetable(profiles,'tilt-output/endpoint_profiles.csv'); writetable(sensitivity,'tilt-output/band_sensitivity.csv');
     writetable(slides,'tilt-output/moving_profiles.csv'); writetable(env,'tilt-output/amplitude_series.csv');
+    check_event_treatment(age,t,[o(:,2),c(:,2)],windows(1:2,:),ref(1:2,:),f);
     simulate_background(t,realCarrier,sampledTilt,binner(t),mainPlans(1:2),ref(1:2,:),f);
 end
 
@@ -145,9 +146,11 @@ function B=binner(t)
     B=sparse(group,use,1./counts(group),n,numel(t));
 end
 
-function p=make_plan(age,bounds,f)
-    p.use=age>=bounds(1)&age<bounds(2);u=age(p.use)-mean(bounds);
-    p.w=sqrt(hann(numel(u)));[p.q,~]=qr(p.w.*[ones(size(u)),u],0);
+function p=make_plan(age,bounds,f,valid)
+    if nargin<4,valid=true(size(age));end
+    inside=age>=bounds(1)&age<bounds(2);p.use=inside&valid;
+    u=age(p.use)-mean(bounds);w=zeros(size(age));w(inside)=hann(sum(inside));
+    p.w=sqrt(w(p.use));[p.q,~]=qr(p.w.*[ones(size(u)),u],0);
     p.c=zeros(numel(f),numel(u));p.s=p.c;
     for k=1:numel(f)
         D=p.w.*[cos(2*pi*f(k)*u),sin(2*pi*f(k)*u)];
@@ -164,10 +167,11 @@ function i=nearest(f,target)
     [~,i]=min(abs(f-target));
 end
 
-function skill=predict_window(age,e,b,frequency)
+function skill=predict_window(age,e,b,frequency,valid)
 % Hold out each successive Myr. The fit to envelope phase and amplitude is
 % restricted to its own window, with one Myr of guard on each side.
-    use=age>=b(1) & age<b(2); a=age(use);u=a-mean(b);y=e(use);
+    if nargin<5,valid=true(size(age));end
+    use=age>=b(1) & age<b(2) & valid; a=age(use);u=a-mean(b);y=e(use);
     trend=[ones(size(a)),u];X=[trend,cos(2*pi*frequency*u),sin(2*pi*frequency*u)];
     s0=0;s1=0;
     for left=b(1):b(2)-1
@@ -178,6 +182,39 @@ function skill=predict_window(age,e,b,frequency)
     skill=1-s1/s0;
 end
 
+function check_event_treatment(age,t,base,windows,targets,f)
+    records=["d18o","d13c"]; labels=["oxygen","carbon"];B=binner(t);T=table();
+    choices=["original_clip","retain_raw_PETM","bridge_before_filter","mask_in_score"];
+    for j=1:2
+        raw=readmatrix("inputs/"+records(j)+"_raw.txt",'Delimiter',',');
+        raw=raw(raw(:,1)>=40000 & raw(:,1)<=65000,:);
+        v=interpolate(raw,3.413); assert(max(abs(t-v(:,1)))<1e-5);
+        uncut=v(:,2)-smooth(t,v(:,2),4000/range(t),'lowess');
+        for choice=choices
+            x=base(:,j);valid=true(size(age));
+            if choice=="retain_raw_PETM"
+                x=uncut;
+            elseif choice=="bridge_before_filter"
+                x=uncut;cut=t>=55700 & t<=55980;
+                left=median(x(t>=55550 & t<55700));right=median(x(t>55980 & t<=56130));
+                x(cut)=interp1([55700;55980],[left;right],t(cut));
+            elseif choice=="mask_in_score"
+                valid=~(age>=55.15 & age<=56.45);
+            end
+            a=channel(t,x,[1000/45,1000/35]);e=B*a(:,3);
+            for w=1:2
+                b=windows(w,:);p=make_plan(age,b,f,valid);r=profile(p,e);
+                [best,k]=max(r);z=targets(w,1);l=targets(w,2);
+                cvz=predict_window(age,e,b,z,valid); cvl=predict_window(age,e,b,l,valid);
+                T=[T;table(labels(j),choice,b(1),b(2),sum(p.use)/sum(age>=b(1)&age<b(2)),...
+                    1/f(k),best,r(nearest(f,z)),r(nearest(f,l)),cvz,cvl,...
+                    'VariableNames',{'source','treatment','from_Ma','to_Ma','fraction_bins','free_period','free_R2','ZB_R2','La_R2','ZB_skill','La_skill'})]; %#ok<AGROW>
+            end
+        end
+    end
+    writetable(T,'tilt-output/event_sensitivity.csv');
+end
+
 function simulate_background(t,carrier,tilt,bin,plans,targets,f)
 % Randomize the phase of each Fourier bin after normalizing the broad
 % envelope gain. The same random rotation is applied to O and C per bin.
@@ -186,10 +223,10 @@ function simulate_background(t,carrier,tilt,bin,plans,targets,f)
     extended=[flipud(carrier(2:half+1,:));carrier;flipud(carrier(end-half:end-1,:))];
     gain=sqrt(conv2(extended.^2,kernel,'valid'));gain=max(gain,eps);n=numel(t);
     spectrum=fft(carrier./gain);pos=(2:floor((n+1)/2))';
-    lambda=[0,.25,.5,.75,1,1.5,2]; B=599;
+    lambda=[0,.25,.5,.75,1,1.5,2]; B=3999;nInject=599;
     % Injection sizes are RMS ratios of the narrowband carrier over 40-65 Ma.
     tilt=hilbert(tilt)./sqrt(mean(tilt.^2,1));
-    hit=zeros(B,numel(lambda),2,3); tg=zeros(B+1,2,2,3); % ZB, La, frequency-scan maximum
+    hit=zeros(nInject,numel(lambda),2,3); tg=zeros(B+1,2,2,3); % ZB, La, frequency-scan maximum
     for i=0:B
         if i==0
             noise=carrier;
@@ -206,7 +243,7 @@ function simulate_background(t,carrier,tilt,bin,plans,targets,f)
             end
             tg(i+1,:,w,3)=max(r,[],1);
         end
-        if i==0,continue,end
+        if i==0 || i>nInject,continue,end
         % Uniform carrier phase, common to both isotope experiments. The
         % orbital amplitude envelope keeps its geologic age orientation.
         signal=tilt.*sqrt(mean(noise.^2,1))*exp(2i*pi*rand);
@@ -242,10 +279,27 @@ function simulate_background(t,carrier,tilt,bin,plans,targets,f)
         end
         for w=1:3
             groups=["old","young","both"]; n=numel(lambda);rate=squeeze(mean(hit(:,:,j,w),1));
-            sensitivity=[sensitivity;table(repmat(species(j),n,1),repmat(groups(w),n,1),lambda',rate(:),repmat(B,n,1),...
+            sensitivity=[sensitivity;table(repmat(species(j),n,1),repmat(groups(w),n,1),lambda',rate(:),repmat(nInject,n,1),...
                 'VariableNames',{'background','window','injected_over_background_RMS','recovery_fraction','replicates'})]; %#ok<AGROW>
         end
     end
     writetable(stats,'tilt-output/null_summary.csv'); writetable(draws,'tilt-output/null_draws.csv');
     writetable(sensitivity,'tilt-output/injection_recovery.csv');
+    % Calibrate the selection of the stronger of the two named predictions.
+    % For both windows, a single candidate solution must fit both endpoints.
+    T=table();records=["oxygen","carbon","either_isotope"];groups=["old","young","both"];
+    for j=1:3
+        cols=j;if j==3,cols=1:2;end
+        for w=1:3
+            if w<3
+                v=tg(:,cols,w,1:2);
+            else
+                v=sqrt(tg(:,cols,1,1:2).*tg(:,cols,2,1:2));
+            end
+            v=max(reshape(v,B+1,[]),[],2);
+            T=[T;table(records(j),groups(w),v(1),(1+sum(v(2:end)>=v(1)))/(B+1),B,...
+                'VariableNames',{'records','window','best_target_R2','empirical_p','replicates'})]; %#ok<AGROW>
+        end
+    end
+    writetable(T,'tilt-output/candidate_search_null.csv');
 end
