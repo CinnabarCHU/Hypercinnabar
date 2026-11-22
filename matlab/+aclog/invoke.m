@@ -12,6 +12,7 @@ cleanup = onCleanup(@() rmdir(lock));
 entry = dir(id);
 if entry.bytes ~= 0, error('Acycle:Logger:Reuse', 'This id already has an invocation.'); end
 ref = aclog.store(id, 'params', params);
+aclog.store(id, 'rng', rng);
 logger(id, 'init', struct('op', op, 'params', ref));
 try
     if nargout(implementation) == 2
@@ -20,18 +21,18 @@ try
         retval = implementation(params);
         status = 'done';
     end
+    if ~any(strcmp(status, {'incomplete','cancelled','done'}))
+        error('Acycle:Logger:Status', 'Invalid completion status: %s', status);
+    end
+    if isempty(retval)
+        ref = [];
+    else
+        ref = aclog.store(id, 'retval', retval);
+    end
 catch err
     logger(id, 'error', struct('logging', err.message, 'details', struct()));
     logger(id, 'fin', struct('status', 'cancelled', 'retval', []));
     rethrow(err);
-end
-if isempty(retval)
-    ref = [];
-else
-    ref = aclog.store(id, 'retval', retval);
-end
-if ~any(strcmp(status, {'incomplete','cancelled','done'}))
-    error('Acycle:Logger:Status', 'Invalid completion status: %s', status);
 end
 logger(id, 'fin', struct('status', status, 'retval', ref));
 end
