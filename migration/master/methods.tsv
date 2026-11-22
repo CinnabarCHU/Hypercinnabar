@@ -130,6 +130,7 @@ RGBToGray	analyzer	im_name	code/guicode/AC.m	source-matched role
 RGBToGray	plotter	I	code/guicode/AC.m	source-matched role
 RGBToLab	analyzer	im_name	code/guicode/AC.m	source-matched role
 RGBToLab	plotter	I	code/guicode/AC.m	source-matched role
+Recurrence	analyzer	data method_use normFlag threshold showdet w ws theiler_window lmin embed_m embed_tau	code/guicode/RecPlotGUI.m	copied GUI calculation
 RegularInterpolation	analyzer	data samplingInterval options(MaximumPoints,MaximumElements)	code/seriesanalysis/acycleInterpolateSeries.m	direct
 RegularInterpolation	helper	method inputs; optional options overrides	code/seriesanalysis/acycleInterpolateSeries.m	defaults
 RemoveSections	analyzer	dat sec	code/guicode/AC.m	source-matched role
@@ -246,8 +247,8 @@ depeaks	helper	data	code/guicode/AC.m	source-matched role
 depthtotime	analyzer	depth agemodel	code/seriesanalysis/depthtotime.m	source-matched role
 dl_all	analyzer	x	code/package/recurrence/dl_all.m	source-matched role
 domaintrans	analyzer	x1 t	code/misc/domaintrans.m	source-matched role
-dynamic_filter	analyzer	data window step fmin fmax unit norm padding	code/misc/dynamic_filter.m	direct
-dynamic_filter_lang	analyzer	data window step fmin fmax unit norm padding	code/misc/dynamic_filter_lang.m	direct
+dynamic_filter	plotter	data window step fmin fmax unit norm padding	code/misc/dynamic_filter.m	direct
+dynamic_filter_lang	plotter	data window step fmin fmax unit norm padding	code/misc/dynamic_filter_lang.m	direct
 dynotIterationWorker	analyzer	data yGrid sample window nw targetBands options	code/guicode/dynotIterationWorker.m	direct
 dynotPercentilePlan	analyzer	selection	code/guicode/dynotPercentilePlan.m	direct
 ebrief	analyzer	X dim a	code/corrcoef/ebrief.m	source-matched role
