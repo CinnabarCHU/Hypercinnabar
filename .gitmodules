@@ -1,3 +1,6 @@
 [submodule "upstream/acycle"]
 	path = upstream/acycle
 	url = https://github.com/mingsongli/acycle.git
+[submodule "upstream/master"]
+	path = upstream/master
+	url = https://github.com/mingsongli/acycle.git
