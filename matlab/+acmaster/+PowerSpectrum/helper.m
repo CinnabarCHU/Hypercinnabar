@@ -1,11 +1,17 @@
 function [retval,id] = helper(params,id)
-% PowerSpectrum.helper parameters: data; optional method and models.
+% PowerSpectrum.helper parameters: data and optional method/models, or result for plot settings.
 % Source: https://github.com/mingsongli/acycle/blob/dcba4279168745b563e0535b954297023dd62fc7/code/guicode/spectrum.m
 if nargin < 2, id = []; end
 [retval,id] = accompat.masterInvoke('PowerSpectrum-v3.1.1+dcba427/helper',params,id,@execute);
 end
 
 function r = execute(p)
+if isfield(p,'result')
+    v=p.result;
+    r=struct('result',v,'fmin',v.fmin,'fmax',v.fmax,'usePeriod',false, ...
+        'logFrequency',false,'logPower',true,'swaSelection',[1 3:10]);
+    return
+end
 app.data=sortrows(p.data);
 %% Copied from mingsongli/acycle@dcba4279168745b563e0535b954297023dd62fc7 code/guicode/spectrum.m:L27-L37
         app.method = "Multi-taper method";

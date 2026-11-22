@@ -41,6 +41,8 @@ accompat.requireFields(p.models,active);
 %% End copied source
 r=struct('frequency',fFull,'power',pFull,'displayMask',keep,'dof',spectrumConfidenceDegreesOfFreedom(method,nw), ...
     'physicalNyquist',app.nyquist,'nfft',nfft,'models',struct(),'issues',struct());
+r.method=method; r.nw=nw; r.fmin=fmin; r.fmax=fmax;
+if p.models.robust, r.smoothFraction=p.smoothFraction; end
 status='done';
 for k=1:numel(active)
     name=active{k};
@@ -233,6 +235,17 @@ case 'ftest'
                         padtimes = nfft/numel(y);
                         [freq,ftest,fsig,Amp,Faz,Sig,Noi,dof,~] = ...
                             ftestmtmML([x y],nw,padtimes,0);
+%% End copied source
+%% Copied from mingsongli/acycle@dcba4279168745b563e0535b954297023dd62fc7 code/guicode/spectrum.m:L693-L701
+                        freq = freq(:); ftest = ftest(:); fsig = fsig(:);
+                        Amp = Amp(:); Faz = Faz(:); Sig = Sig(:);
+                        Noi = Noi(:); dof = dof(:);
+                        oneSided = isfinite(freq) & freq >= 0 & ...
+                            freq <= app.nyquist;
+                        freq = freq(oneSided); ftest = ftest(oneSided);
+                        fsig = fsig(oneSided); Amp = Amp(oneSided);
+                        Faz = Faz(oneSided); Sig = Sig(oneSided);
+                        Noi = Noi(oneSided); dof = dof(oneSided);
 %% End copied source
     value=struct('frequency',freq,'F',ftest,'significance',fsig,'amplitude',Amp,'phase',Faz,'signal',Sig,'noise',Noi,'dof',dof);
 case 'swa'

@@ -50,7 +50,10 @@ assert(isequal(v.interpolated(:,1),[0;2;4]) && isequaln(aclog.replay(id),v));
 p = acmaster.PowerSpectrum.helper(struct('data',d,'method','Periodogram')); assert(p.nfft==numel(t));
 p.nfft=333; p.models.powerLaw=true;
 v = acmaster.PowerSpectrum.analyzer(p); assert(numel(v.power)==167 && v.dof==2 && isfield(v.models,'powerLaw') && isempty(fieldnames(v.issues)));
-acmaster.PowerSpectrum.plotter(struct('result',v,'fmin',0,'fmax',.49,'usePeriod',true,'logFrequency',true));
+view=acmaster.PowerSpectrum.helper(struct('result',v)); view.fmax=.49; view.usePeriod=true; view.logFrequency=true;
+acmaster.PowerSpectrum.plotter(view);
+assert(~isempty(findall(groot,'Type','Line','DisplayName','Local 95%')));
+assert(~isempty(findall(groot,'Type','axes','XDir','reverse','XScale','log')));
 p=acmaster.PowerSpectrum.helper(struct('data',[t(1:8)+[0;0;0;.02;0;0;0;0],d(1:8,2)]));
 assert(strcmp(p.method,'Lomb-Scargle spectrum'));
 p=acmaster.DigitizeTrace.helper(struct('image',uint8(255*ones(70,100)),'seeds',[44 35], ...

@@ -125,8 +125,8 @@ PlotPro	helper	(none)	code/guicode/PlotPro2DLineGUI.m	source-matched role
 PlotPro	plotter	PlotAdvSetting directory figureName	code/misc/UpdatePlotPro2DLinePlot.m	source-matched role
 PowerDecomposition	analyzer	data targetBands options	code/seriesanalysis/acyclePowerDecomposition.m	direct
 PowerSpectrum	analyzer	data method nw nfft fmin fmax models; robust uses fitModel smoothFraction fitMaximum	code/guicode/spectrum.m	copied spectrum and noise models
-PowerSpectrum	helper	data; optional method and models	code/guicode/spectrum.m	copied GUI defaults
-PowerSpectrum	plotter	result fmin fmax usePeriod logFrequency	code/guicode/spectrum.m	copied GUI plot
+PowerSpectrum	helper	data and optional method/models, or result for plot settings	code/guicode/spectrum.m	copied GUI defaults
+PowerSpectrum	plotter	result fmin fmax usePeriod logFrequency logPower; swaSelection for SWA	code/guicode/spectrum.m	copied GUI plot
 RGBToGray	analyzer	im_name	code/guicode/AC.m	source-matched role
 RGBToGray	plotter	I	code/guicode/AC.m	source-matched role
 RGBToLab	analyzer	im_name	code/guicode/AC.m	source-matched role
