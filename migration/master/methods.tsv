@@ -10,7 +10,7 @@ Bandpass	analyzer	data options	code/seriesanalysis/acycleBandpassFilter.m	direct
 Bandpass	helper	data	code/guicode/ft.m	copied GUI defaults
 Bandpass	plotter	result data	code/guicode/ft.m	copied GUI plot
 Bispectral	analyzer	data options	code/package/bispectral/bispectralAnalyze.m code/package/bispectral/bispectralDefaults.m	direct
-Bispectral	helper	data, optional options	code/package/bispectral/bispectralDefaults.m code/package/bispectral/bispectralPlot.m	direct defaults
+Bispectral	helper	data and optional options, or result for plot settings	code/package/bispectral/bispectralDefaults.m code/package/bispectral/bispectralPlot.m	direct defaults
 Bispectral	plotter	result settings (BispectralView.helper)	code/package/bispectral/bispectralPlot.m	direct
 BispectralExport	plotter	result settings outputDirectory baseName	code/package/bispectral/bispectralSave.m code/package/bispectral/bispectralPlot.m	direct file export
 BispectralView	helper	result	code/package/bispectral/bispectralPlot.m	copied defaults
@@ -56,6 +56,7 @@ EMD	helper	data, optional options	code/seriesanalysis/acycleEmpiricalModeDecompo
 EnsembleEMD	analyzer	data options	code/seriesanalysis/acycleEmpiricalModeDecomposition.m	direct
 EnsembleEMD	helper	data, optional options	code/seriesanalysis/acycleEmpiricalModeDecomposition.m	copied defaults
 EvolutionarySpectrum	analyzer	data window step fmin nyquist normal method time_0pad padtype mean_step	code/guicode/evofftGUI.m	copied GUI calculation
+EvolutionarySpectrum	plotter	result dimension logPower logFrequency reverseY fmin fmax unit	code/guicode/evofftGUI.m	copied GUI plot
 EvolutionaryWorkbook	plotter	outputFile parameters power frequency time redNoise	code/seriesanalysis/saveEvofftWorkbook.m	direct file export
 ExampleDigitizer	analyzer	(none)	code/guicode/AC.m	source-matched role
 ExampleDigitizer	plotter	im_name data_name	code/guicode/AC.m	source-matched role
@@ -123,8 +124,8 @@ PlotAdv	plotter	series settings	code/misc/plotpro_plot_done.m	source-matched rol
 PlotPro	helper	(none)	code/guicode/PlotPro2DLineGUI.m	source-matched role
 PlotPro	plotter	PlotAdvSetting directory figureName	code/misc/UpdatePlotPro2DLinePlot.m	source-matched role
 PowerDecomposition	analyzer	data targetBands options	code/seriesanalysis/acyclePowerDecomposition.m	direct
-PowerSpectrum	analyzer	data method nw nfft	code/guicode/spectrum.m	copied GUI calculation
-PowerSpectrum	helper	data	code/guicode/spectrum.m	copied GUI defaults
+PowerSpectrum	analyzer	data method nw nfft fmin fmax models; robust uses fitModel smoothFraction fitMaximum	code/guicode/spectrum.m	copied spectrum and noise models
+PowerSpectrum	helper	data; optional method and models	code/guicode/spectrum.m	copied GUI defaults
 PowerSpectrum	plotter	result fmin fmax usePeriod logFrequency	code/guicode/spectrum.m	copied GUI plot
 RGBToGray	analyzer	im_name	code/guicode/AC.m	source-matched role
 RGBToGray	plotter	I	code/guicode/AC.m	source-matched role

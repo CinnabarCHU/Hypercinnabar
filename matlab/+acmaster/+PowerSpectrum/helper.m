@@ -1,5 +1,5 @@
 function [retval,id] = helper(params,id)
-% PowerSpectrum.helper parameters: data.
+% PowerSpectrum.helper parameters: data; optional method and models.
 % Source: https://github.com/mingsongli/acycle/blob/dcba4279168745b563e0535b954297023dd62fc7/code/guicode/spectrum.m
 if nargin < 2, id = []; end
 [retval,id] = accompat.masterInvoke('PowerSpectrum-v3.1.1+dcba427/helper',params,id,@execute);
@@ -27,9 +27,22 @@ app.data=sortrows(p.data);
             app.method = "Lomb-Scargle spectrum";
         end
 %% End copied source
+if isfield(p,'method'), defaultMethod = validatestring(p.method, ...
+    {'Multi-taper method','Periodogram','Lomb-Scargle spectrum'}); end
+models = struct('robust',false,'classic',false,'ftest',false,'swa',false,'powerLaw',false,'bendingPowerLaw',false);
+switch defaultMethod
+    case 'Multi-taper method'
+        models.robust = app.mtmNoiseState.Robust; models.swa = app.mtmNoiseState.Swa;
+    case 'Lomb-Scargle spectrum'
+        models.robust = app.lombNoiseState.Robust;
+end
+if isfield(p,'models'), models = accompat.overrideOptions(models,p.models); end
+fitMaximum = app.nyquist;
+if app.biasCorrectionRecommended, fitMaximum = app.biasCorrectionFitMaximum; end
 r=struct('data',app.data,'method',defaultMethod,'nw',2,'nfft',size(app.data,1), ...
+    'fmin',0,'fmax',fitMaximum,'models',models,'fitModel',1, ...
     'physicalNyquist',app.nyquist,'recommendedBiasCorrection',app.biasCorrectionRecommended, ...
-    'fitMaximum',app.biasCorrectionFitMaximum,'smoothFraction',0.2, ...
+    'fitMaximum',fitMaximum,'smoothFraction',0.2, ...
     'mtmNoise',app.mtmNoiseState,'lombNoise',app.lombNoiseState,'periodogramNoise',app.periodogramNoiseState);
 end
 

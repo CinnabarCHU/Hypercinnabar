@@ -47,9 +47,9 @@ assert(isequal(v.plan.percentiles,[5 50 95]) && v.plan.medianIndex==2);
 p = acmaster.RegularInterpolation.helper(struct('data',d(1:6,:),'samplingInterval',2));
 [v,id] = acmaster.RegularInterpolation.analyzer(p);
 assert(isequal(v.interpolated(:,1),[0;2;4]) && isequaln(aclog.replay(id),v));
-p = acmaster.PowerSpectrum.helper(struct('data',d)); assert(p.nfft==numel(t));
-p.method='Periodogram'; p.nfft=333;
-v = acmaster.PowerSpectrum.analyzer(p); assert(numel(v.power)==167 && v.dof==2);
+p = acmaster.PowerSpectrum.helper(struct('data',d,'method','Periodogram')); assert(p.nfft==numel(t));
+p.nfft=333; p.models.powerLaw=true;
+v = acmaster.PowerSpectrum.analyzer(p); assert(numel(v.power)==167 && v.dof==2 && isfield(v.models,'powerLaw') && isempty(fieldnames(v.issues)));
 acmaster.PowerSpectrum.plotter(struct('result',v,'fmin',0,'fmax',.49,'usePeriod',true,'logFrequency',true));
 p=acmaster.PowerSpectrum.helper(struct('data',[t(1:8)+[0;0;0;.02;0;0;0;0],d(1:8,2)]));
 assert(strcmp(p.method,'Lomb-Scargle spectrum'));
@@ -69,8 +69,29 @@ p=acmaster.Bispectral.helper(struct('data',d));
 assert(strcmp(p.options.SignificanceMethod,'none'));
 [v,id]=acmaster.Bispectral.analyzer(p); v2=aclog.replay(id);
 assert(isequaln(v.BicoherenceSquared,v2.BicoherenceSquared) && any(isfinite(v.BicoherenceSquared(:))));
-p=acmaster.BispectralView.helper(struct('result',v)); p.settings.Visible='off';
+p=acmaster.Bispectral.helper(struct('result',v)); p.settings.Visible='off';
 acmaster.Bispectral.plotter(p);
+% The same four-sample input has a documented change of missing-value policy.
+old = acmethods.movemean.analyzer(struct('x',[1;NaN;3;5],'w',3));
+assert(all(isfinite(old.y)));
+failedID=aclog.newId();
+try
+    acmaster.movemean.analyzer(struct('x',[1;NaN;3;5],'w',3),failedID);
+    error('test:ExpectedFailure','Master should reject missing values.');
+catch err
+    assert(~strcmp(err.identifier,'test:ExpectedFailure') && contains(fileread(failedID),'cancelled'));
+end
+% A real same-data blocked and odd/even run, with a small deterministic null.
+t=(0:1023)'*.05;
+raw = [t,sin(2*pi*t/4.05)+.5*cos(2*pi*t/1.02)+.25*cos(2*pi*t/.41)];
+cv = struct('data',raw,'orbit9',[405 130 124 99 95 41 24 22 19], ...
+    'pad',1024,'sr1',.9,'sr2',1.1,'srstep',.1,'red',0,'nsim',2,'method','Pearson', ...
+    'options',struct('Seed',17,'Verbose',false,'WarnOnPartialTraining',false));
+q=acmaster.cvcoco2.helper(cv); [cvb,bid]=acmaster.cvcoco2.analyzer(q);
+q=acmaster.interleavedcvcoco.helper(cv); [cvi,~]=acmaster.interleavedcvcoco.analyzer(q);
+again=aclog.replay(bid); assert(isequaln(cvb.result.srGrid,again.result.srGrid));
+assert(isequaln(cvb.result.srGrid,cvi.result.srGrid) && cvi.result.seed==17);
+assert(~strcmp(cvb.result.publicName,cvi.result.publicName));
 % Verify every concrete role is visible to MATLAB's parser.
 rows=readtable(fullfile(root,'migration','master','methods.tsv'),'FileType','text','Delimiter','tab','TextType','string');
 for k=1:height(rows)

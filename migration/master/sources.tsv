@@ -148,7 +148,7 @@ code/guicode/eCOCOGUI.m	modified	1ca85008929cd03830d1a5ccdda3635985c56795	189743
 code/guicode/eTimeOptGUI.fig	removed	121f96a76519dcc5573db7781a86a8a9986f93fd		
 code/guicode/eTimeOptGUI.m	removed	5b7437618a6828caa66ded2c2606bd435b2331f1		
 code/guicode/evofftGUI.fig	removed	5f7b51452bdca3cb5377edb2e4a143b4cd58d69b		
-code/guicode/evofftGUI.m	modified	6dc407eed591bf18dc8c5047cfb7114f6065b95e	4e4fada599fd499995ca2339eaa4108e98fb198f	EvolutionarySpectrum.analyzer
+code/guicode/evofftGUI.m	modified	6dc407eed591bf18dc8c5047cfb7114f6065b95e	4e4fada599fd499995ca2339eaa4108e98fb198f	EvolutionarySpectrum.analyzer EvolutionarySpectrum.plotter
 code/guicode/ft.fig	removed	e20543959bebd5a383b5f930fbcc682bb453ff0d		
 code/guicode/ft.m	modified	9a1e5e1ed7085ac68860a2984aef480cef848b71	45e762f638936a2e2d1ef905c9cc4408a0a2f16b	Bandpass.helper Bandpass.plotter
 code/guicode/interpolationGUI.fig	removed	dff7ca3322e7ec272897405711316ae1b5701970		

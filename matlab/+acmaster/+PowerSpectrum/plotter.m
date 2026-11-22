@@ -76,3 +76,24 @@ end
             end
         end
 %% End copied source
+
+%% Copied from mingsongli/acycle@dcba4279168745b563e0535b954297023dd62fc7 code/guicode/spectrum.m:L1754-L1761
+        function values = plottedPositiveXData(axisHandle)
+            values = [];
+            plottedLines = findall(axisHandle,'Type','line');
+            for lineIndex = 1:numel(plottedLines)
+                current = plottedLines(lineIndex).XData;
+                values = [values,current(isfinite(current) & current > 0)]; %#ok<AGROW>
+            end
+        end
+%% End copied source
+
+%% Copied from mingsongli/acycle@dcba4279168745b563e0535b954297023dd62fc7 code/guicode/spectrum.m:L1958-L1964
+function v = ternary(tf,a,b)
+if tf
+    v = a;
+else
+    v = b;
+end
+end
+%% End copied source

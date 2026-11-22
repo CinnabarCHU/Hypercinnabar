@@ -1,5 +1,5 @@
 function [retval,id] = helper(params,id)
-% Bispectral.helper parameters: data, optional options.
+% Bispectral.helper parameters: data and optional options, or result for plot settings.
 % Source: https://github.com/mingsongli/acycle/blob/dcba4279168745b563e0535b954297023dd62fc7/code/package/bispectral/bispectralDefaults.m
 % Source: https://github.com/mingsongli/acycle/blob/dcba4279168745b563e0535b954297023dd62fc7/code/package/bispectral/bispectralPlot.m
 if nargin < 2, id = []; end
@@ -7,6 +7,10 @@ if nargin < 2, id = []; end
 end
 
 function r = execute(p)
+if isfield(p,'result')
+    r = acmaster.BispectralView.helper(p);
+    return
+end
 options = bispectralDefaults(p.data);
 if isfield(p,'options'), options = accompat.overrideOptions(options,p.options); end
 r = struct('data',p.data,'options',options);
