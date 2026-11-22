@@ -1,0 +1,10 @@
+tag	type	style	label_or_string	fig_value	fig_enable	callback_properties
+uipanel1	uipanel		Select Reference and Series			
+text2	uicontrol	text	Reference			
+text3	uicontrol	text	Series			ButtonDownFcn
+pushbutton3	uicontrol	pushbutton	Open			Callback
+pushbutton4	uicontrol	pushbutton	Open			Callback,ButtonDownFcn
+edit1	uicontrol	edit	Edit Text			Callback
+edit2	uicontrol	edit	Edit Text			Callback,ButtonDownFcn
+pushbutton1	uicontrol	pushbutton	Plot			Callback
+pushbutton2	uicontrol	pushbutton	Interpolation			Callback,ButtonDownFcn

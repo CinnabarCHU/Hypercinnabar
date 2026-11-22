@@ -1,0 +1,33 @@
+tag	type	style	label_or_string	fig_value	fig_enable	callback_properties
+radiobutton_fmax	uicontrol	radiobutton	Nyquist	1		Callback
+radiobutton_input	uicontrol	radiobutton	Input			Callback
+text_nyquist	uicontrol	text	Nyquist			
+edit_fmax_input	uicontrol	edit				Callback
+checkbox4	uicontrol	checkbox	Linear Y			Callback
+checkbox5	uicontrol	checkbox	Log Y	1		Callback
+checkbox6	uicontrol	checkbox	Linear Y			Callback,ButtonDownFcn
+checkbox8	uicontrol	checkbox	X in period			Callback,ButtonDownFcn
+text8	uicontrol	text	Fmin			ButtonDownFcn
+edit8	uicontrol	edit				Callback,ButtonDownFcn
+uipanel2	uipanel		Method			
+text3	uicontrol	text	Time-bandwidth product			
+popupmenu_tapers	uicontrol	popupmenu	2 | 2.5 | 3 | 3.5 | 4 | 4.5 | 5 | 5.5 | 6 | 6.5 | 7 | 7.5 | 8	1		Callback
+text5	uicontrol	text	Zeropadding			
+radiobutton3	uicontrol	radiobutton		0		Callback
+edit3	uicontrol	edit	5		off	Callback
+radiobutton4	uicontrol	radiobutton		1		Callback,ButtonDownFcn
+edit4	uicontrol	edit	1000		on	Callback,ButtonDownFcn
+text6	uicontrol	text	x			
+radiobutton5	uicontrol	radiobutton		1		Callback,ButtonDownFcn
+edit7	uicontrol	edit	1000		on	Callback,ButtonDownFcn
+uipanel3	uipanel		Red noise			
+checkbox_ar1_check	uicontrol	checkbox	AR(1)			Callback
+checkbox_robust	uicontrol	checkbox	Robust AR(1)	1		Callback
+check_ftest	uicontrol	checkbox	F-test & Ampl.	1		Callback,ButtonDownFcn
+checkbox9	uicontrol	checkbox	P.L.	0	on	Callback,ButtonDownFcn
+checkbox10	uicontrol	checkbox	B.P.L.	0	on	Callback,ButtonDownFcn
+checkboxSWA	uicontrol	checkbox	SWA	0	on	Callback,ButtonDownFcn
+pushbutton3	uicontrol	pushbutton	Run & Save			Callback
+popupmenu2	uicontrol	popupmenu	Multi-taper method | Lomb-Scargle spectrum | Periodogram	1		Callback,ButtonDownFcn
+text7	uicontrol	text	Select method			ButtonDownFcn
+pushbutton17	uicontrol	pushbutton	Run			Callback,ButtonDownFcn

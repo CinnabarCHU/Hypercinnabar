@@ -1,0 +1,49 @@
+tag	type	style	label_or_string	fig_value	fig_enable	callback_properties
+text2	uicontrol	text	Series 1			
+edit1	uicontrol	edit	Edit Text			Callback
+text3	uicontrol	text	Series 2			ButtonDownFcn
+edit2	uicontrol	edit				Callback,ButtonDownFcn
+pushbutton1	uicontrol	pushbutton	switch			Callback
+text4	uicontrol	text	Period Min			
+edit3	uicontrol	edit	Edit Text			Callback
+radiobutton1	uicontrol	radiobutton	linear	0		Callback
+radiobutton2	uicontrol	radiobutton	log2	1		Callback,ButtonDownFcn
+text5	uicontrol	text	Period Max			ButtonDownFcn
+edit4	uicontrol	edit	Edit Text			Callback,ButtonDownFcn
+text6	uicontrol	text	Discrete scale spacing			ButtonDownFcn
+edit5	uicontrol	edit	0.1			Callback,ButtonDownFcn
+checkbox1	uicontrol	checkbox	padding			Callback
+uipanel1	uipanel		Method			
+text7	uicontrol	text	Method			
+popupmenu1	uicontrol	popupmenu	wavelet | wavelet (Torrence & Compo, 1998)	1		Callback
+text8	uicontrol	text	Mother			ButtonDownFcn
+popupmenu2	uicontrol	popupmenu	MORLET | PAUL | DOG	1		Callback,ButtonDownFcn
+text11	uicontrol	text	Parameter			ButtonDownFcn
+edit7	uicontrol	edit	Edit Text			Callback
+text13	uicontrol	text	Monte Carlo #			
+edit11	uicontrol	edit	300			Callback
+uipanel2	uipanel		Plot			
+checkbox2	uicontrol	checkbox	plot series			Callback,ButtonDownFcn
+checkbox3	uicontrol	checkbox	plot spectrum			Callback,ButtonDownFcn
+checkbox4	uicontrol	checkbox	flip depth/time			Callback,ButtonDownFcn
+checkbox5	uicontrol	checkbox	flip period			Callback,ButtonDownFcn
+checkbox6	uicontrol	checkbox	swap x-y			Callback,ButtonDownFcn
+radiobutton3	uicontrol	radiobutton	2D			Callback
+radiobutton4	uicontrol	radiobutton	3D			Callback,ButtonDownFcn
+text9	uicontrol	text	colormap			ButtonDownFcn
+popupmenu3	uicontrol	popupmenu	default | parula | gray | hot | cool | jet | spring | summer | autumn | winter | copper | pink | colorcube | prism	1		Callback,ButtonDownFcn
+text10	uicontrol	text	grid #			ButtonDownFcn
+edit6	uicontrol	edit				Callback
+checkbox8	uicontrol	checkbox	cone of influence			Callback,ButtonDownFcn
+checkbox9	uicontrol	checkbox	p=0.05 sig.lev.			Callback,ButtonDownFcn
+checkbox10	uicontrol	checkbox	power log			Callback,ButtonDownFcn
+text12	uicontrol	text	tick label			ButtonDownFcn
+edit8	uicontrol	edit	10 20 41 100 405			Callback,ButtonDownFcn
+pushbutton3	uicontrol	pushbutton	?			Callback
+edit9	uicontrol	edit	2			Callback
+checkbox12	uicontrol	checkbox	Z level	1		Callback
+edit10	uicontrol	edit	0.7			Callback
+uipanel3	uipanel		Save			
+pushbutton2	uicontrol	pushbutton	OK			Callback
+checkbox7	uicontrol	checkbox	save result			Callback,ButtonDownFcn
+checkbox11	uicontrol	checkbox	standardize			Callback,ButtonDownFcn

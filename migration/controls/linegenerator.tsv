@@ -1,0 +1,67 @@
+tag	type	style	label_or_string	fig_value	fig_enable	callback_properties
+line_axes1	axes					
+text2	uicontrol	text	X axis:			
+text3	uicontrol	text	From			
+text4	uicontrol	text	to			ButtonDownFcn
+text5	uicontrol	text	step			ButtonDownFcn
+edit1	uicontrol	edit	0			Callback
+edit2	uicontrol	edit	1000			Callback,ButtonDownFcn
+edit3	uicontrol	edit	1			Callback,ButtonDownFcn
+popupmenu1	uicontrol	popupmenu	0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8	2		Callback
+text8	uicontrol	text	y =			ButtonDownFcn
+edit5	uicontrol	edit	1			Callback,ButtonDownFcn
+text9	uicontrol	text	+			ButtonDownFcn
+edit6	uicontrol	edit	1		off	Callback,ButtonDownFcn
+text10	uicontrol	text	x			ButtonDownFcn
+text11	uicontrol	text	+			ButtonDownFcn
+edit7	uicontrol	edit	1		off	Callback,ButtonDownFcn
+text12	uicontrol	text	x^2			ButtonDownFcn
+text13	uicontrol	text	+			ButtonDownFcn
+edit8	uicontrol	edit	1		off	Callback,ButtonDownFcn
+text14	uicontrol	text	x^3			ButtonDownFcn
+text15	uicontrol	text	+			ButtonDownFcn
+edit9	uicontrol	edit	1		off	Callback,ButtonDownFcn
+text16	uicontrol	text	x^4			ButtonDownFcn
+text17	uicontrol	text	+			ButtonDownFcn
+edit10	uicontrol	edit	1		off	Callback,ButtonDownFcn
+text18	uicontrol	text	x^5			ButtonDownFcn
+text19	uicontrol	text	+			ButtonDownFcn
+edit11	uicontrol	edit	1		off	Callback,ButtonDownFcn
+text20	uicontrol	text	x^6			ButtonDownFcn
+text21	uicontrol	text	+			ButtonDownFcn
+edit12	uicontrol	edit	1		off	Callback,ButtonDownFcn
+text22	uicontrol	text	x^7			ButtonDownFcn
+text23	uicontrol	text	+			ButtonDownFcn
+edit13	uicontrol	edit	1		off	Callback,ButtonDownFcn
+text24	uicontrol	text	x^8			ButtonDownFcn
+pushbutton1	uicontrol	pushbutton	Save Data			Callback
+radiobutton1	uicontrol	radiobutton	Polynomial	1		Callback
+radiobutton2	uicontrol	radiobutton	Harmonic	0		Callback,ButtonDownFcn
+text26	uicontrol	text	y =			ButtonDownFcn
+edit14	uicontrol	edit	1			Callback,ButtonDownFcn
+text27	uicontrol	text	* sin ( X * 2 * pi /			ButtonDownFcn
+edit15	uicontrol	edit	100			Callback,ButtonDownFcn
+text28	uicontrol	text	+			ButtonDownFcn
+edit16	uicontrol	edit	0			Callback,ButtonDownFcn
+text29	uicontrol	text	) +			ButtonDownFcn
+edit17	uicontrol	edit	0			Callback,ButtonDownFcn
+radiobutton3	uicontrol	radiobutton	White noise	0		Callback,ButtonDownFcn
+radiobutton4	uicontrol	radiobutton	Red noise	0		Callback,ButtonDownFcn
+text30	uicontrol	text	mean			ButtonDownFcn
+edit18	uicontrol	edit	0		off	Callback,ButtonDownFcn
+text31	uicontrol	text	Standard deviation			ButtonDownFcn
+edit19	uicontrol	edit	1		off	Callback,ButtonDownFcn
+text32	uicontrol	text	a =			ButtonDownFcn
+edit20	uicontrol	edit	0.5		off	Callback,ButtonDownFcn
+radiobutton5	uicontrol	radiobutton	Normal distribution	1	off	Callback
+radiobutton6	uicontrol	radiobutton	Random distribution		off	Callback,ButtonDownFcn
+text33	uicontrol	text	x axis = | selected data			
+text34	uicontrol	text	Y axis:			ButtonDownFcn
+uitoolbar1	uitoolbar					
+uitoggletool1	uitoggletool					ClickedCallback
+uitoggletool2	uitoggletool					ClickedCallback
+uitoggletool4	uitoggletool					ClickedCallback
+uitoggletool5	uitoggletool					ClickedCallback
+uitoggletool3	uitoggletool					ClickedCallback
+uitoggletool7	uitoggletool					ClickedCallback
+uitoggletool6	uitoggletool					ClickedCallback

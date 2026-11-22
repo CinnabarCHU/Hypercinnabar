@@ -1,0 +1,22 @@
+tag	type	style	label_or_string	fig_value	fig_enable	callback_properties
+text15	uicontrol	text	Combine age PDFs | with identical depths. | (Recommended)	1		
+text10	uicontrol	text	Bootstrap/don't bootstrap all			ButtonDownFcn
+text9	uicontrol	text	Include/exclude all			
+bigtable	uitable				on	ButtonDownFcn
+loadinput	uicontrol	pushbutton	Load input file			Callback
+specnsim	uicontrol	edit	100,000			Callback
+text2	uicontrol	text	MC iterations:			
+specxfactor	uicontrol	edit	0.1			Callback,ButtonDownFcn
+text3	uicontrol	text	xfactor:			ButtonDownFcn
+specbootpc	uicontrol	edit	30			Callback,ButtonDownFcn
+text4	uicontrol	text	Bootstrap %:			ButtonDownFcn
+runundatable	uicontrol	pushbutton	Run Undatable			Callback,ButtonDownFcn
+text5	uicontrol	text	Undatable settings			
+savebutton	uicontrol	pushbutton	Save to disk			Callback,ButtonDownFcn
+bootall	uicontrol	checkbox				Callback
+incall	uicontrol	checkbox				Callback,ButtonDownFcn
+speccombine	uicontrol	checkbox		1		Callback,ButtonDownFcn
+text16	uicontrol	text	Figure window will be closed. | Will save the following in the | same folder as the loaded input file: | (1) Copy of input dates used. | (2) Copy of age-depth model output. | (3) Copy of age-depth model plot.			
+text17	uicontrol	text	Running may take some time, | depending on number of dates | and MC interations.			
+text18	uicontrol	text	Output a .mat file | containing the Matlab | workspace (for power users)	1		ButtonDownFcn
+specmatfile	uicontrol	checkbox				Callback

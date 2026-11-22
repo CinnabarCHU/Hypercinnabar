@@ -1,0 +1,348 @@
+package	role	parameters	copied_sections	source_files
+ANOVA	analyzer	selectedData	1	code/package/univariate/ANOVAUI.m
+AR1Prewhitening	analyzer	data rho1	1	code/guicode/prewhitenGUI.m
+AR1Prewhitening	helper	dat	3	code/guicode/prewhitenGUI.m
+AR1Prewhitening	plotter	datp xlabel_text ylabel_text	2	code/guicode/prewhitenGUI.m
+AddGaps	analyzer	dat sec	2	code/guicode/AC.m
+AgeScale	analyzer	data tiepoints	1	code/guicode/agescale.m
+AmplitudeModulation	analyzer	data	2	code/guicode/AC.m
+AmplitudeModulation	helper	data	2	code/guicode/AC.m
+AnDarksamtest	analyzer	X alpha	0	code/package/univariate/AnDarksamtest.m
+AstronomicalSolution	analyzer	solution parameter t1 t2 wE/wT/wP(ETP)	7	code/guicode/basicseries.m
+AstronomicalSolution	helper	(none)	1	code/guicode/basicseries.m
+AstronomicalSolution	plotter	dat solution parameter t1 t2	5	code/guicode/basicseries.m
+Bandpass	analyzer	data filter flow fhigh taner_c(Taner)	11	code/guicode/ft.m | code/misc/update_filter_axes.m
+Bandpass	helper	data	4	code/guicode/ft.m
+Bandpass	plotter	result po2 fd2 x_1 x_2 y_1 y_2 y_3 unit	6	code/guicode/ft.m | code/misc/update_filter_axes.m
+BootstrapSmooth	analyzer	x y method span bootn	1	code/guicode/SmoothBootGUI.m
+BuildAgeModel	analyzer	data period pkstrough	1	code/guicode/AC.m
+BuildAgeModel	helper	data	1	code/guicode/AC.m
+BuildAgeModel	plotter	agemodelfull sedrate period plot_filter_s unit	5	code/guicode/AC.m
+CENOGRID	analyzer	(none)	3	code/guicode/AC.m
+CENOGRID	plotter	time value time2 value2	4	code/guicode/AC.m
+CE_NS70	analyzer	data model	0	code/seriesanalysis/CE_NS70.m
+CircularSpectrum	analyzer	data p1 p2 pn linlog clmodel mcn smoothwin(red)	2	code/guicode/circularspecGUI.m
+CircularSpectrum	helper	dat	1	code/guicode/circularspecGUI.fig | code/guicode/circularspecGUI.m
+CircularSpectrum	plotter	result flipx unit	1	code/guicode/circularspecGUI.m
+Clipping	analyzer	data clip_value clip_high clip_set	7	code/guicode/AC.m
+Clipping	helper	data	1	code/guicode/AC.m
+Coherence	analyzer	target data windowsize1 nooverlap1 cohthreshold	6	code/misc/coherence_update.m
+ColumnManipulation	analyzer	dataCell colman1	3	code/guicode/column_manipulateGUI.m
+ColumnManipulation	helper	dataCell	0	code/guicode/column_manipulateGUI.m
+ColumnManipulation	plotter	mergedData dataMan	1	code/guicode/column_manipulateGUI.m
+Columns	analyzer	data c1 c2	2	code/guicode/AC.m
+Correlation	analyzer	data	1	code/package/univariate/BivCorrUI.m
+Covariance	analyzer	data n_bootstraps	2	code/package/univariate/BivCovUI.m
+Covariance	helper	data	1	code/package/univariate/BivCovUI.m
+DYNOT	analyzer	data sampa sampb parmhat window1 window2 nw1 nw2 pad step nout shiftwin padwin f fza fzb ftmin ftmax nmc percent	8	code/guicode/DYNOS.m
+DYNOT	helper	data	5	code/guicode/DYNOS.m
+DYNOT	plotter	y_grid_nan powyad_p_nan npercent npercent2 data	1	code/guicode/DYNOS.m
+DataDistribution	plotter	data_filterout dat_name ext	3	code/guicode/AC.m
+DataTransform	analyzer	data checkid j	8	code/guicode/datatransformationsGUI.m
+Derivative	analyzer	data derivative_n	1	code/guicode/AC.m
+Derivative	helper	data	1	code/guicode/AC.m
+DetrendSignalPP	analyzer	signal windowsize fs Porder	0	code/seriesanalysis/DetrendSignalPP.m
+Detrending	analyzer	data method degree(polynomial) span(smoothers)	10	code/misc/update_detrend_plot_fig.m
+Detrending	plotter	datax datay trend method	10	code/misc/update_detrend_plot_fig.m
+Digitize	analyzer	pixels x00 x01 y02 y03 xmin xmax ymin ymax scale1 scale2	1	code/guicode/DataExtractML.m
+DistributionTest	analyzer	data val	5	code/package/univariate/UniChi2GOFUI.m
+DynamicFiltering	analyzer	data window step fmin fmax norm padding lower upper	8	code/misc/dynamic_filter.m | code/misc/dynamic_filter_lang.m
+DynamicFiltering	helper	data	2	code/guicode/DynamicFilter.m
+DynamicFiltering	plotter	x_grid y_grid s unit window f_min f_max fc	3	code/misc/dynamic_filter.m
+EMD	analyzer	data_filterout goal extrema intp	3	code/guicode/AC.m
+EMD	helper	data_filterout	1	code/guicode/AC.m
+EMD	plotter	imfsn pow fd1	1	code/guicode/AC.m
+EnsembleEMD	analyzer	data_filterout goal ens nos	5	code/guicode/AC.m
+EnsembleEMD	helper	data_filterout	2	code/guicode/AC.m
+EnsembleEMD	plotter	t time_series imfs imfsn fd1 pow	2	code/guicode/AC.m
+EvolutionarySpectrum	analyzer	data window step fmin nyquist norm method time_0pad padtype	2	code/guicode/evofftGUI.m
+EvolutionarySpectrum	helper	data	7	code/guicode/evofftGUI.m
+EvolutionaryTimeOpt	analyzer	dat window step sedmin sedmax numsed linLog fit fl fh roll targetE targetP normal detrend cormethod	1	code/guicode/eTimeOptGUI.m
+ExampleDigitizer	analyzer	(none)	2	code/guicode/AC.m
+ExampleDigitizer	plotter	im_name data_name	1	code/guicode/AC.m
+ExampleExtinction	analyzer	(none)	1	code/guicode/AC.m
+ExampleExtinction	plotter	data	1	code/guicode/AC.m
+ExampleGuandao	analyzer	(none)	2	code/guicode/AC.m
+ExampleGuandao	plotter	data data_name	2	code/guicode/AC.m
+ExampleInsolation	analyzer	(none)	2	code/guicode/AC.m
+ExampleInsolation	plotter	data data_name	2	code/guicode/AC.m
+ExampleLa2004	analyzer	(none)	2	code/guicode/AC.m
+ExampleLa2004	plotter	data data_name	2	code/guicode/AC.m
+ExampleMars	analyzer	(none)	2	code/guicode/AC.m
+ExampleMars	plotter	im_name data_name	1	code/guicode/AC.m
+ExampleMaunaLoa	analyzer	(none)	2	code/guicode/AC.m
+ExampleMaunaLoa	plotter	data data_name	2	code/guicode/AC.m
+ExampleNewark	analyzer	(none)	2	code/guicode/AC.m
+ExampleNewark	plotter	data data_name	2	code/guicode/AC.m
+ExampleRedNoise	analyzer	(none)	2	code/guicode/AC.m
+ExampleRedNoise	plotter	data data_name	2	code/guicode/AC.m
+ExampleSphalerite	analyzer	(none)	2	code/guicode/AC.m
+ExampleSphalerite	plotter	im_name data_name	1	code/guicode/AC.m
+ExampleSvalbardPETM	analyzer	(none)	2	code/guicode/AC.m
+ExampleSvalbardPETM	plotter	data data_name	3	code/guicode/AC.m
+ExampleWayao	analyzer	(none)	2	code/guicode/AC.m
+ExampleWayao	plotter	data data_name	2	code/guicode/AC.m
+Extrema	analyzer	data t1 t2 maxmin ind	1	code/guicode/AC.m
+Extrema	helper	data	1	code/guicode/AC.m
+FixedMovingMean	analyzer	data window step halfwindow alpha	0	code/seriesanalysis/movmeanfbw.m
+FixedMovingMean	helper	data	2	code/guicode/AC.m | code/seriesanalysis/movmeanfbw.m
+FixedMovingMedian	analyzer	data window step halfwindow alpha	0	code/seriesanalysis/movmeanfbw.m
+FixedMovingMedian	helper	data	2	code/guicode/AC.m | code/seriesanalysis/movmeanfbw.m
+ImageProfile	analyzer	I CursorInfo_value	1	code/guicode/AC.m
+InsolLatDayGif	plotter	II t lat day unit_t_r name_insol	0	code/misc/InsolLatDayGif.m
+Insolation	analyzer	t1 t2 dt unit_t type dayi1 dayi2 latrange lat1 lat2 dlat qinso author res L	2	code/guicode/Insolation.m
+InterpolateSeries	analyzer	dat1 dat2	1	code/guicode/InterplationSeries.m
+InterpolateSeries	plotter	dat1 dat2 dat2int xmin xmax unit	4	code/guicode/InterplationSeries.m
+InterpolationPro	analyzer	data dt method gap2zero gapdt	3	code/misc/update_interpolationGUI.m
+InterpolationPro	helper	data	1	code/guicode/interpolationGUI.m
+InterpolationPro	plotter	data xq vq titlei legendi x1 x2 y1 y2	1	code/misc/update_interpolationGUI.m
+LR04	analyzer	t1 t2	1	code/guicode/AC.m
+LR04	helper	(none)	1	code/guicode/AC.m
+LR04	plotter	LR04stack_s t1 t2	3	code/guicode/AC.m
+Lag1	analyzer	data window interpolate_rate	1	code/guicode/AC.m
+Lag1MonteCarlo	analyzer	data nsim window1 window2 samprate1 samprate2 nout shiftwin	4	code/guicode/AC.m
+Lag1MonteCarlo	helper	data	4	code/guicode/AC.m
+Lag1MonteCarlo	plotter	y_grid powyp y_grid_nan powyad_p_nan npercent npercent2 unit_type unit window1 window2 samprate1 samprate2	2	code/guicode/AC.m
+Lag1V2	analyzer	data window interpolate_rate padtype	1	code/guicode/AC.m
+Lag1V2MonteCarlo	analyzer	data nsim window1 window2 samprate1 samprate2 nout padtype	3	code/guicode/AC.m
+Lag1V2MonteCarlo	helper	data	4	code/guicode/AC.m
+Lag1V2MonteCarlo	plotter	y_grid powyp y_grid_nan powyad_p_nan npercent npercent2 unit_type unit window1 window2 samprate1 samprate2	2	code/guicode/AC.m
+Log10	analyzer	data	1	code/guicode/AC.m
+Lyapunov	analyzer	data_even tau window step_size num_surrogates	1	code/guicode/AC.m
+MergeSeries	analyzer	series	2	code/guicode/AC.m
+MilankovitchCal	analyzer	age	0	code/misc/MilankovitchCal.m
+MovingGaussian	analyzer	data window	0	code/guicode/AC.m
+MovingGaussian	helper	data	1	code/guicode/AC.m
+MovingGaussian	plotter	time value data dat_name ext	1	code/guicode/AC.m
+MovingMean	analyzer	data smooth_v	1	code/guicode/AC.m
+MovingMean	helper	data	1	code/guicode/AC.m
+MovingMean	plotter	time value data dat_name ext	1	code/guicode/AC.m
+MovingMedian	analyzer	data smooth_v	0	code/guicode/AC.m
+MovingMedian	helper	data	1	code/guicode/AC.m
+MovingMedian	plotter	time value data dat_name ext	1	code/guicode/AC.m
+MultiplySeries	analyzer	series	2	code/guicode/AC.m
+Normality	analyzer	data	1	code/package/univariate/UniNormalityUI.m
+OneSampleT	analyzer	data miu option_cal	2	code/package/univariate/Unittest.m
+OneSampleT	plotter	miu option_cal dof t_critical ci_left t	1	code/package/univariate/Unittest.m
+PCA	analyzer	data_new depthtime	1	code/guicode/AC.m
+PCA	helper	data_new	1	code/guicode/AC.m
+PassFilter	analyzer	data passtype filter_s f11 f12(bandstop)	10	code/misc/update_filter_axes4.m
+PassFilter	helper	data	0	code/guicode/ft.fig | code/guicode/ft.m
+PassFilter	plotter	f P1 f11 f12(bandstop) passtype y_1 y_2 x_1 x_2	5	code/misc/update_filter_axes4.m
+PlotAdv	helper	series plot_list xlabel ylabel title	3	code/guicode/PlotAdv.fig | code/guicode/PlotAdv.m
+PlotAdv	plotter	series settings	2	code/misc/plotpro_plot_done.m
+PlotPro	helper	(none)	1	code/guicode/PlotPro2DLineGUI.m
+PlotPro	plotter	PlotAdvSetting directory figureName	4	code/misc/UpdatePlotPro2DLinePlot.m
+PowerDecomposition	analyzer	data f3 window nw ftmin fterm step pad padtype	5	code/guicode/AC.m
+PowerDecomposition	helper	data	4	code/guicode/AC.m
+PowerDecomposition	plotter	pow	2	code/guicode/AC.m
+PowerSpectrum	analyzer	data method nw(MTM) padtimes(MTM/Periodogram) nzeropad(MTM/Periodogram) pd(Lomb) fmax(Lomb)	4	code/guicode/spectrum.m
+RGBToGray	analyzer	im_name	1	code/guicode/AC.m
+RGBToGray	plotter	I	1	code/guicode/AC.m
+RGBToLab	analyzer	im_name	1	code/guicode/AC.m
+RGBToLab	plotter	I	1	code/guicode/AC.m
+Recurrence	analyzer	data_s method_use normFlag embed_m embed_tau threshold showdet w ws theiler_window lmin	15	code/guicode/RecPlotGUI.m | code/misc/update_recplot.m
+Recurrence	helper	data_s	7	code/guicode/RecPlotGUI.fig | code/guicode/RecPlotGUI.m
+Recurrence	plotter	t x S eps_plot DETx DETy showseries showdet fliptime flipseries ylabeli unit_type unit	3	code/misc/update_recplot.m
+RemoveSections	analyzer	dat sec	2	code/guicode/AC.m
+SWA	analyzer	data_r	1	code/guicode/SWAgui.m | code/package/swa/specbayes.m | code/package/swa/specswafdr.m
+SWA	helper	data_r	2	code/guicode/SWAgui.m
+SWA	plotter	freq power swa clfdr chi2_inv_value freqb pow2 bayesprob curves figure_count log_y log_x period_axis fmin fmax unit filename	3	code/guicode/SWAgui.m
+SamplingRate	analyzer	data_filterout	2	code/guicode/AC.m
+SamplingRate	plotter	datasamp dt dat_name ext unit unit_type	7	code/guicode/AC.m
+SedimentationRateToAge	analyzer	data	1	code/guicode/AC.m
+SeriesGenerator	analyzer	x kind and explicit parameters for the selected kind	5	code/guicode/linegenerator.m
+SeriesSound	analyzer	data a b c	1	code/guicode/AC.m
+SeriesSound	helper	data	1	code/guicode/AC.m
+ShowImage	plotter	im_name	1	code/guicode/AC.m
+SimpleFunction	analyzer	data a b c d	1	code/guicode/AC.m
+SimpleFunction	helper	data	1	code/guicode/AC.m
+SimplePlot	plotter	series plot_list unit standardized offset	4	code/guicode/AC.m
+SortUnique	analyzer	data datasort dataunique dataempty	4	code/guicode/AC.m
+SortUnique	helper	data	1	code/guicode/AC.m
+SpectralBendingPowerLaw	analyzer	datax fd1 po method nw(MTM)	2	code/guicode/spectrum.m
+SpectralBendingPowerLaw	plotter	fd1 po pl red90 red95 red99 red90global red95global red99global plot_x_period fmin fmax unit logfreq linlogY	7	code/guicode/spectrum.m
+SpectralPowerLaw	analyzer	datax fd1 po method nw(MTM)	2	code/guicode/spectrum.m
+SpectralPowerLaw	plotter	fd1 po pl red90 red95 red99 red90global red95global red99global plot_x_period fmin fmax unit logfreq linlogY	7	code/guicode/spectrum.m
+Standardize	analyzer	data	1	code/guicode/AC.m
+StratigraphicCorrelation	analyzer	tiepoints1 tiepoints2 data1	1	code/guicode/CorrelationGUI.m
+SummaryStatistics	analyzer	data	1	code/package/univariate/UniStatisticSum.m
+TimeOpt	analyzer	dat sedmin sedmax numsed nsim linLog fit fl fh roll targetE targetP detrend cormethod	1	code/guicode/timeOptGUI.m
+TimeOpt	helper	dat (depth in cm)	3	code/guicode/timeOptGUI.m
+TwoSampleTests	analyzer	selectedData tabIndex	1	code/package/univariate/UniTwoSampleTestsUI.m
+Undatable	analyzer	inputfile nsim xfactor bootpc combine printme savemat savebigmat debug writedir allowreversal run1nsim sar vcloud plotsar	0	code/package/undatable/undatable.m
+Undatable	helper	inputfile nsim xfactor bootpc	1	code/package/undatable/undatable.m
+WaveletCoherence	analyzer	dat1 dat2 pad dss param MonteCarloCount	2	code/package/wavelet/wtcML.m
+WaveletSpectrum	analyzer	data method_sel dss pad mother param pt2 data_standardize	3	code/package/wavelet/wave_readGUI.m
+WaveletSpectrum	helper	data	2	code/guicode/waveletGUI.fig | code/guicode/waveletGUI.m
+WaveletSpectrum	plotter	datax dt period power coi sig95 method_sel variance plot_2d plot_base plot_coi plot_colorgrid plot_colormap plot_flipx plot_flipy plot_linelog plot_log2pow plot_sl plot_z pt1 pt2 Yticks unit unit_type	1	code/package/wavelet/wave_readGUI.m | code/package/wavelet/wave_update_wavelet.m
+ar1nv	analyzer	x	0	code/package/wavelet/ar1nv.m
+ar1spectrum	analyzer	ar1 period	0	code/package/wavelet/ar1spectrum.m
+bayes_cpt	analyzer	data k_max d_min k_0 v_0 sig_0 num_samp	2	code/package/bayes_changepoint/bayes_cpt.m
+bayes_cpt	helper	data k_max d_min k_0 v_0 sig_0 num_samp	1	code/package/bayes_changepoint/bayes_cpt.m
+bayes_cpt	plotter	x Y model chgpt_loc	1	code/package/bayes_changepoint/bayes_cpt.m
+bayes_cpt_r2	analyzer	data k_max d_min k_0 v_0 sig_0 num_samp	1	code/package/bayes_changepoint/bayes_cpt_r2.m
+bayes_cpt_r2	helper	data k_max d_min k_0 v_0 sig_0 num_samp	1	code/package/bayes_changepoint/bayes_cpt_r2.m
+bayes_cpt_r2	plotter	R_2_all	1	code/package/bayes_changepoint/bayes_cpt_r2.m
+boxcoxML	analyzer	y lambda	0	code/misc/boxcoxML.m
+boxpdf	analyzer	X	0	code/package/wavelet/boxpdf.m
+chisquare_inv	analyzer	P V	0	code/package/wavelet/chisquare_inv.m
+chisquare_solve	analyzer	XGUESS P V	0	code/package/wavelet/chisquare_solve.m
+circularspec	analyzer	data p1 p2 pn linlog	0	code/misc/circularspec.m
+circularspec	helper	data p1 p2 pn linlog plotn	1	code/misc/circularspec.m
+circularspec	plotter	P R	1	code/misc/circularspec.m
+cohac	analyzer	x y sr window winsize nooverlap alpha	0	code/misc/cohac.m
+cohac	helper	x y sr window winsize nooverlap alpha qplot	1	code/misc/cohac.m
+cohac	plotter	qplot F1 Cxy MSC_critical F2 phase_diff_deg phase_uncertainty_deg	1	code/misc/cohac.m
+corrcoefsig	analyzer	dat target orbit7 dt pad sr1 sr2 srstep adjust red nsim display	0	code/corrcoef/corrcoefsig.m
+corrcoefsig	helper	dat target orbit7 dt pad sr1 sr2 srstep adjust red nsim plotn display	1	code/corrcoef/corrcoefsig.m
+corrcoefslices	analyzer	dat target orbit7 dt pad sr1 sr2 srstep adjust red nsim slices	10	code/corrcoef/corrcoefslices.m
+corrcoefslices	helper	dat target orbit7 dt pad sr1 sr2 srstep adjust red nsim plotn slices	1	code/corrcoef/corrcoefslices.m
+corrcoefslices_rank	analyzer	dat target orbit7 dt pad sr1 sr2 srstep adjust red nsim slices method	10	code/corrcoef/corrcoefslices_rank.m
+corrcoefslices_rank	helper	dat target orbit7 dt pad sr1 sr2 srstep adjust red nsim plotn slices method	1	code/corrcoef/corrcoefslices_rank.m
+corrsig	analyzer	dat target orbit7 dt pad sr1 sr2 srstep adjust red nsim display	0	code/corrcoef/corrsig.m
+corrsig	helper	dat target orbit7 dt pad sr1 sr2 srstep adjust red nsim plotn display	1	code/corrcoef/corrsig.m
+crp_core	analyzer	x y m tau e method normFlag	0	code/package/recurrence/crp_core.m
+crp_core	helper	x y m tau e method normFlag	1	code/package/recurrence/crp_core.m
+crp_pdist	analyzer	x w ws theiler_window lmin threshold method_use normFlag m tau	0	code/package/recurrence/crp_pdist.m
+crp_pdist	helper	x w ws theiler_window lmin plotn threshold method_use normFlag m tau	1	code/package/recurrence/crp_pdist.m
+cyclecorr	analyzer	data targetf targetp target orbit7 rayleigh sr1 sr2 srstep sr0 adjust method	0	code/corrcoef/cyclecorr.m
+cyclecorr	helper	data targetf targetp target orbit7 rayleigh sr1 sr2 srstep sr0 adjust method	1	code/corrcoef/cyclecorr.m
+cyclecorr4	analyzer	data targetf targetp target orbit7 rayleigh sr1 sr2 srstep sr0 adjust	0	code/corrcoef/cyclecorr4.m
+cyclecorr4sig	analyzer	data targetf targetp target orbit7 rayleigh sr1 sr2 srstep sr0 adjust	0	code/corrcoef/cyclecorr4sig.m
+cyclecorr5	analyzer	xx yy targetf targetp lax orbit7 rayleigh sr1 sr2 srstep sr0 adjust	0	code/corrcoef/cyclecorr5.m
+cyclecorr_rank	analyzer	data targetf targetp target orbit7 rayleigh sr1 sr2 srstep sr0 adjust	0	code/corrcoef/cyclecorr_rank.m
+cyclecorrsig	analyzer	data targetf targetp target orbit7 rayleigh sr1 sr2 srstep sr0 adjust method	0	code/corrcoef/cyclecorrsig.m
+cyclecorrsig	helper	data targetf targetp target orbit7 rayleigh sr1 sr2 srstep sr0 adjust method	1	code/corrcoef/cyclecorrsig.m
+cyclesig_rank	analyzer	data targetf targetp target orbit7 rayleigh sr1 sr2 srstep sr0 adjust	0	code/corrcoef/cyclesig_rank.m
+data_slices	analyzer	dat slices	0	code/corrcoef/data_slices.m
+datapreproc	analyzer	target	0	code/misc/datapreproc.m
+datapreproc	helper	target qwarn	1	code/misc/datapreproc.m
+depeaks	analyzer	data ymin_cut ymax_cut	0	code/seriesanalysis/depeaks.m
+depeaks	helper	data	2	code/guicode/AC.m
+depthtotime	analyzer	depth agemodel	0	code/seriesanalysis/depthtotime.m
+dl_all	analyzer	x	0	code/package/recurrence/dl_all.m
+domaintrans	analyzer	x1 t	0	code/misc/domaintrans.m
+ebrief	analyzer	X dim a	0	code/corrcoef/ebrief.m
+ebrief	helper	X dim a	1	code/corrcoef/ebrief.m
+eccount	analyzer	srn ecc eci ecoco enorb	0	code/corrcoef/eccount.m
+eccpeaks	analyzer	X ecc eci norbit corrcoef ci sh_norb n dim a	0	code/corrcoef/eccpeaks.m
+eccpeaks	helper	X ecc eci norbit corrcoef ci sh_norb n dim a	1	code/corrcoef/eccpeaks.m
+ecoco	analyzer	data target orbit7 window dt step delinear red pad sr1 sr2 srstep nsim adjust slices	10	code/corrcoef/ecoco.m
+ecocoplot	plotter	prt_sr out_depth out_ecc out_ep out_eci out_ecoco out_ecocorb out_norbit plotn	0	code/corrcoef/ecocoplot.m
+ecocoplots	plotter	prt_sr out_depth out_ecc out_ep out_eci out_ecoco out_ecocorb	0	code/corrcoef/ecocoplots.m
+ecocos	analyzer	data target window dt step delinear red pad sr1 sr2 srstep adjust	0	code/corrcoef/ecocos.m
+ecocotrack	analyzer	locatcc out_ecc out_eci out_ecoco out_norbit out_depth sr1 sr2 srstep srsh srslice sig ci sh_norb	0	code/corrcoef/ecocotrack.m
+ecocotrackn	analyzer	locat srsh iniloc srn method	0	code/corrcoef/ecocotrackn.m
+eemd	analyzer	y goal ens nos	5	code/seriesanalysis/eemd.m
+ellipse_s	analyzer	e npts	0	code/misc/ellipse_s.m
+emdNL	analyzer	y goal	0	code/seriesanalysis/emdNL.m
+erhoAR1	analyzer	data window	0	code/seriesanalysis/erhoAR1.m
+evofft	analyzer	data window step dt fmin fmax norm	0	code/seriesanalysis/evofft.m
+evofftML	analyzer	data window step fmin fmax normal	0	code/seriesanalysis/evofftML.m
+evoperiodogram	analyzer	data window step fmin fmax normal	0	code/seriesanalysis/evoperiodogram.m
+evoplomb	analyzer	data window step fmin fmax normal	0	code/seriesanalysis/evoplomb.m
+evopmtm	analyzer	data window step fmin fmax normal	0	code/seriesanalysis/evopmtm.m
+evopmtmML	analyzer	dat fmin fmax window fterm nw	2	code/seriesanalysis/evopmtmML.m
+evopmtmML	plotter	xgrid ratio pow powall dt fmin fmax window nw fterm filename	1	code/seriesanalysis/evopmtmML.m
+find_extrema	analyzer	y	0	code/seriesanalysis/find_extrema.m
+findduplicate	analyzer	data	0	code/seriesanalysis/findduplicate.m
+findnpk	analyzer	dat n o	0	code/misc/findnpk.m
+findnpk	helper	dat n o	1	code/misc/findnpk.m
+findperct	analyzer	va m	0	code/corrcoef/findperct.m
+formatts	analyzer	d	0	code/package/wavelet/formatts.m
+freq2target	analyzer	f p fx fray	0	code/corrcoef/freq2target.m
+ftestmtm	analyzer	t y NW dof npad	0	code/seriesanalysis/ftestmtm.m
+ftestmtmML	analyzer	data NW npad	0	code/seriesanalysis/ftestmtmML.m
+gammcf	analyzer	a x	0	code/package/swa/gammcf.m
+gammln	analyzer	xx	0	code/package/swa/gammln.m
+gammp	analyzer	a x	0	code/package/swa/gammp.m
+gamser	analyzer	a x	0	code/package/swa/gamser.m
+gaussfilter	analyzer	datax dt fc fl fh	0	code/seriesanalysis/gaussfilter.m
+gaussmf	analyzer	x params	0	code/misc/gaussmf.m
+gentarget	analyzer	laskar t1 t2 f1 f2 ne nt np pad method	0	code/corrcoef/gentarget.m
+getBerger89Period	analyzer	t	0	code/corrcoef/getBerger89Period.m
+getchi2	analyzer	dof alpha	0	code/package/swa/getchi2.m
+getpks	analyzer	data	0	code/seriesanalysis/getpks.m
+hpsort	analyzer	arr	0	code/package/swa/hpsort.m
+imscrollpanel_ac	plotter	im_name	0	code/misc/imscrollpanel_ac.m
+insoML	analyzer	t day lat qinso author res L	0	code/misc/insoML.m
+insoML	helper	t day lat qinso author res L	1	code/misc/insoML.m
+interpolate	analyzer	data interpolate_rate	0	code/seriesanalysis/interpolate.m
+interpolate	helper	data	1	code/guicode/AC.m
+interpolate_rand	analyzer	data interpolate_rate	0	code/misc/interpolate_rand.m
+invprctile	analyzer	x xq dim plot_pos	0	code/misc/invprctile.m
+lodla04	analyzer	T	0	code/seriesanalysis/lodla04.m
+minirho	analyzer	s0 fn ft pxxsmooth linlog	0	code/seriesanalysis/minirho.m
+minirho	helper	s0 fn ft pxxsmooth linlog genplot	1	code/seriesanalysis/minirho.m
+minirhos0	analyzer	s0 fn ft pxxsmooth linlog	0	code/seriesanalysis/minirhos0.m
+minirhos0	helper	s0 fn ft pxxsmooth linlog genplot	1	code/seriesanalysis/minirhos0.m
+mmdd2dayi	analyzer	doy	0	code/misc/mmdd2dayi.m
+monthday2dayi	analyzer	month day	0	code/misc/monthday2dayi.m
+moveMedian	analyzer	x w	0	code/seriesanalysis/moveMedian.m
+movemean	analyzer	x w	0	code/seriesanalysis/movemean.m
+movmeanfbw	analyzer	data window step halfwindow alpha	0	code/seriesanalysis/movmeanfbw.m
+movmeanfbw	helper	data window step halfwindow alpha plotn	1	code/seriesanalysis/movmeanfbw.m
+mtmdofs	analyzer	t y NW npad	0	code/seriesanalysis/mtmdofs.m
+nCk	analyzer	n k	0	code/package/bayes_changepoint/nCk.m
+norbits	analyzer	target f power orbit7 rayleigh sr	0	code/corrcoef/norbits.m
+numorbit	analyzer	orbit7 nyquist rayleigh sr_range mpts	0	code/corrcoef/numorbit.m
+numorbit	helper	orbit7 nyquist rayleigh sr_range mpts plotn	1	code/corrcoef/numorbit.m
+partition_fn	analyzer	Py k_max N	0	code/package/bayes_changepoint/partition_fn.m
+pda	analyzer	data fmin fmax window nw	0	code/seriesanalysis/pda.m
+pdan	analyzer	data f3 window nw ftmin fterm step pad	0	code/seriesanalysis/pdan.m
+pdan	helper	data f3 window nw ftmin fterm step pad	1	code/seriesanalysis/pdan.m
+period	analyzer	x time_ml ndata avex nout xfint varx	0	code/package/swa/period.m
+period2spectrum	analyzer	orbit7 t1 t2 sr f1 f2 method pad	0	code/corrcoef/period2spectrum.m
+period2spectrumB	analyzer	orbit7 t1 t2 sr f1 f2 method pad	0	code/corrcoef/period2spectrumB.m
+pick_k1	analyzer	k	0	code/package/bayes_changepoint/pick_k1.m
+plomb_robustar1	analyzer	datax timex fmax smoothwin	0	code/seriesanalysis/plomb_robustar1.m
+plomb_robustar1	helper	datax timex fmax smoothwin plotn	1	code/seriesanalysis/plomb_robustar1.m
+prewhitening	analyzer	data rho	0	code/seriesanalysis/prewhitening.m
+randspec_sin	analyzer	f n dat_ray	0	code/corrcoef/randspec_sin.m
+recplot	analyzer	x threshold t labelx labely	0	code/package/recurrence/recplot.m
+recplot	helper	x threshold t plotn labelx labely	1	code/package/recurrence/recplot.m
+recplot	plotter	plotn S threshold t x labelx labely	5	code/package/recurrence/recplot.m
+redconfML	analyzer	x dt nw nfft linlog smoothwin fmax	0	code/seriesanalysis/redconfML.m
+redconfML	helper	x dt nw nfft linlog smoothwin fmax plotn	1	code/seriesanalysis/redconfML.m
+redconf_any	analyzer	f pxx dt smoothwin linlog	0	code/seriesanalysis/redconf_any.m
+redconfchi2	analyzer	datax nw dt pad method	0	code/seriesanalysis/redconfchi2.m
+redconftabtchi	analyzer	datax nw dt pad method	0	code/seriesanalysis/redconftabtchi.m
+redmark	analyzer	alfa n	0	code/seriesanalysis/redmark.m
+rednoise	analyzer	N g a	0	code/package/wavelet/rednoise.m
+rednoise	helper	N g a	1	code/package/wavelet/rednoise.m
+rho	analyzer	x nData varx	0	code/package/swa/rho.m
+rhoAR1	analyzer	datax	0	code/seriesanalysis/rhoAR1.m
+rhoAR1ML	analyzer	datax	0	code/seriesanalysis/rhoAR1ML.m
+rmse4leadlag	analyzer	target series ll step timedir	0	code/seriesanalysis/rmse4leadlag.m
+rmse4leadlag	helper	target series ll step timedir plotn	1	code/seriesanalysis/rmse4leadlag.m
+select_interval	analyzer	data t1 t2	0	code/seriesanalysis/select_interval.m
+select_interval	helper	data	2	code/guicode/AC.m
+smoothbestSpan	analyzer	t y method alpha beta	0	code/seriesanalysis/smoothbestSpan.m
+smoothbestSpanRand	analyzer	t y method num_iterations	0	code/guicode/smoothbestSpanRand.m
+smoothci	analyzer	xy xs span method	0	code/seriesanalysis/smoothci.m
+smoothciML	analyzer	X Y method span bootn	0	code/seriesanalysis/smoothciML.m
+smoothciML	helper	X Y method span bootn	1	code/seriesanalysis/smoothciML.m
+smoothwavelet	analyzer	wave dt period dj scale	0	code/package/wavelet/smoothwavelet.m
+solve	analyzer	A B N N1 ZERO	0	code/package/swa/solve.m
+specswa	analyzer	freq xlogp ndata	0	code/package/swa/specswa.m
+spectralmoments	analyzer	data window step pad srmean smoothmodel padedge	6	code/seriesanalysis/spectralmoments.m
+spectralmoments	helper	data window step pad srmean smoothmodel padedge	1	code/seriesanalysis/spectralmoments.m
+spectralmoments	plotter	depth uf Bw Bwtrend sr unit	2	code/guicode/SpectralMomentsGUI.m
+spectralswafdr	analyzer	data method nw padtimes	0	code/package/swa/spectralswafdr.m
+spectralswafdr	helper	data method nw padtimes plotn	1	code/package/swa/spectralswafdr.m
+strAssign	analyzer	in1 r1 r2 rhs	0	code/package/swa/strAssign.m
+swtest	analyzer	x alpha	0	code/package/univariate/swtest.m
+tanerhilbertML	analyzer	data fc fl fh c	0	code/seriesanalysis/tanerhilbertML.m
+tanerhilbertML	helper	data fc fl fh c	1	code/seriesanalysis/tanerhilbertML.m
+targetadj_real	analyzer	target f power orbit7 rayleigh sr	0	code/corrcoef/targetadj_real.m
+targetrebuilt	analyzer	target	0	code/corrcoef/targetrebuilt.m
+theoredar1ML	analyzer	datax f meanp dt	0	code/corrcoef/theoredar1ML.m
+wave_bases	analyzer	mother k scale param	0	code/package/wavelet/wave_bases.m
+wave_signif	analyzer	Y dt scale1 sigtest lag1 siglvl dof mother param	0	code/package/wavelet/wave_signif.m
+wave_signif	helper	Y dt scale1 sigtest lag1 siglvl dof mother param	1	code/package/wavelet/wave_signif.m
+wavelet	analyzer	Y dt pad dj s0 J1 mother param	0	code/package/wavelet/wavelet.m
+wavelet	helper	Y dt pad dj s0 J1 mother param	1	code/package/wavelet/wavelet.m
+wtcsignif	analyzer	mccount ar1 dt n pad dj s0 j1 mother cutoff	6	code/package/wavelet/wavelet.m | code/package/wavelet/wtcsignif.m
+zeropad2	analyzer	data win padding	0	code/seriesanalysis/zeropad2.m
+zeropad2	helper	data win padding	1	code/seriesanalysis/zeropad2.m

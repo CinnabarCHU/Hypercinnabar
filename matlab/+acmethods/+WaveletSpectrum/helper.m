@@ -27,7 +27,13 @@ param = 6;
 % The opening callback sets the period text fields, which are read back with str2double.
 pt1=str2double(num2str(min(period))); pt2=str2double(num2str(max(coi)));
 method_sel=1; data_standardize=0;
+%% Copied from mingsongli/acycle@b52ea9f510f3be00bde9a0238b9898a1e2315b74 code/guicode/waveletGUI.m:L392-L392
+Yticks_default = 2.^(fix(log2(2*dt)):fix(log2(timelen)));
+%% End copied source
+% checkbox/radio defaults from the GUIDE opening function and figure.
 r = struct();
+r.Yticks=Yticks_default; r.plot_2d=1; r.plot_linelog=0; r.plot_base=2; r.plot_colorgrid=[];
+r.plot_colormap='default'; r.plot_flipx=0; r.plot_flipy=0; r.plot_coi=1; r.plot_sl=1; r.plot_log2pow=1; r.plot_z=0;
 r.data = data;
 r.pt1 = pt1;
 r.pt2 = pt2;

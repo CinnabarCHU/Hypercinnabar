@@ -1,0 +1,23 @@
+tag	type	style	label_or_string	fig_value	fig_enable	callback_properties
+uipanel1	uipanel		Select Reference and Target			ButtonDownFcn
+text2	uicontrol	text	Reference			ButtonDownFcn
+text3	uicontrol	text	Target			ButtonDownFcn
+pushbutton3	uicontrol	pushbutton	Open			Callback,ButtonDownFcn
+pushbutton4	uicontrol	pushbutton	Open			Callback,ButtonDownFcn
+edit1	uicontrol	edit	Edit Text			Callback,ButtonDownFcn
+edit2	uicontrol	edit	Edit Text			Callback,ButtonDownFcn
+uipanel2	uipanel		Set limits			
+text4	uicontrol	text	min			ButtonDownFcn
+edit3	uicontrol	edit	0			Callback,ButtonDownFcn
+text5	uicontrol	text	max			ButtonDownFcn
+edit4	uicontrol	edit	1			Callback,ButtonDownFcn
+text6	uicontrol	text	Reference : X limit			ButtonDownFcn
+text7	uicontrol	text	min			ButtonDownFcn
+edit5	uicontrol	edit	0			Callback,ButtonDownFcn
+text8	uicontrol	text	max			ButtonDownFcn
+edit6	uicontrol	edit	1			Callback,ButtonDownFcn
+text9	uicontrol	text	Series : X limit			ButtonDownFcn
+pushbutton1	uicontrol	pushbutton	OK			Callback,ButtonDownFcn
+checkbox1	uicontrol	checkbox	Save data			Callback,ButtonDownFcn
+pushbutton5	uicontrol	pushbutton	Undo			Callback,ButtonDownFcn
+pushbutton2	uicontrol	pushbutton	Clear	0	on	Callback,ButtonDownFcn

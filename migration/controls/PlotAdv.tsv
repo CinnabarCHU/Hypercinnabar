@@ -1,0 +1,33 @@
+tag	type	style	label_or_string	fig_value	fig_enable	callback_properties
+text2	uicontrol	text	Plot Type:			
+text3	uicontrol	text	Line:			ButtonDownFcn
+text4	uicontrol	text	Marker:			ButtonDownFcn
+pop_type	uicontrol	popupmenu	Line | Stairs | Bar | Stem | Area	1		Callback
+pop_linestyle	uicontrol	popupmenu	- | -- | : | -. | none	1		Callback,ButtonDownFcn
+pop_markerstyle	uicontrol	popupmenu	none | . | o | + | * | x | Square | Diamond | ^ | v | > | < | Pentagram | Hexagram	1		Callback,ButtonDownFcn
+pop_markersize	uicontrol	popupmenu	0.2 | 0.5 | 0.7 | 1.0 | 1.5 | 2.0 | 2.5 | 3.0 | 4.0 | 6.0 | 8.0 | 10.0 | 12.0 | 15.0 | 20.0 | 30.0	1		Callback,ButtonDownFcn
+push_linecolor	uicontrol	pushbutton				Callback
+push_makerface	uicontrol	pushbutton				Callback,ButtonDownFcn
+push_markeredge	uicontrol	pushbutton				Callback,ButtonDownFcn
+text5	uicontrol	text	Data			
+pop_data	uicontrol	popupmenu	data	1		Callback,ButtonDownFcn
+plot_done	uicontrol	pushbutton	Plot			Callback
+pop_linesize	uicontrol	popupmenu	0.2 | 0.5 | 0.7 | 1.0 | 1.5 | 2.0 | 2.5 | 3.0 | 4.0 | 5.0 | 6.0 | 7.0 | 8.0 | 10.0 | 12.0 | 15.0 | 20.0 | 25.0 | 30.0 | 35.0 | 40.0 | 50.0	1	on	Callback,ButtonDownFcn
+text6	uicontrol	text	Color			ButtonDownFcn
+push_face	uicontrol	pushbutton	Face			Callback
+push_edge	uicontrol	pushbutton	none			Callback,ButtonDownFcn
+text9	uicontrol	text	Axis:			ButtonDownFcn
+push_axis	uicontrol	pushbutton	X			Callback
+axis_start	uicontrol	edit	0			Callback
+axis_end	uicontrol	edit	0			Callback,ButtonDownFcn
+push_axis_log	uicontrol	pushbutton	Linear			Callback,ButtonDownFcn
+pushbutton_flipxy	uicontrol	pushbutton	Normal			Callback,ButtonDownFcn
+push_swap	uicontrol	pushbutton	--			Callback,ButtonDownFcn
+edit_basevalue	uicontrol	edit	0			Callback,ButtonDownFcn
+checkbox_basevalue	uicontrol	checkbox	Basevalue			Callback
+edit4	uicontrol	edit	unit			Callback
+text11	uicontrol	text	X label			
+text12	uicontrol	text	Y label			
+edit5	uicontrol	edit	value			Callback
+text13	uicontrol	text	Title			
+edit6	uicontrol	edit				Callback

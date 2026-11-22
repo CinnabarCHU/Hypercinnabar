@@ -1,0 +1,39 @@
+tag	type	style	label_or_string	fig_value	fig_enable	callback_properties
+ft_axes3	axes					
+ft_axes4	axes					
+uitoolbar1	uitoolbar					
+uitoggletool1	uitoggletool					ClickedCallback
+uitoggletool2	uitoggletool					ClickedCallback
+uitoggletool3	uitoggletool					ClickedCallback
+uitoggletool4	uitoggletool					ClickedCallback
+uitoggletool5	uitoggletool					ClickedCallback
+uitoggletool6	uitoggletool					ClickedCallback
+uitoggletool7	uitoggletool					ClickedCallback
+uipushtool1	uipushtool					ClickedCallback
+ft_uipanel2	uipanel		Bandpass filter: frequency			
+edit1	uicontrol	edit	f_low			Callback
+edit2	uicontrol	edit	f high			Callback
+text1	uicontrol	text	f lower			
+text2	uicontrol	text	f upper			
+text3	uicontrol	text	Maximum			
+popupmenu4	uicontrol	popupmenu	-- Select -- | Butter | Cheby1 | Ellip | Gaussian | Taner-Hilbert	1		Callback
+text21	uicontrol	text	Roll-off: 10^			
+edit18	uicontrol	edit	12			Callback
+text10	uicontrol	text	FFT & 2π MTM			
+text12	uicontrol	text	filename			
+uipanel6	uipanel		Power spectra plot			
+edit10	uicontrol	edit	0			Callback
+text15	uicontrol	text	f min			
+edit11	uicontrol	edit	Nyquist			Callback,ButtonDownFcn
+text16	uicontrol	text	f max			ButtonDownFcn
+edit12	uicontrol	edit	0			Callback,ButtonDownFcn
+text17	uicontrol	text	Power min			ButtonDownFcn
+edit13	uicontrol	edit	Y_2			Callback,ButtonDownFcn
+text18	uicontrol	text	Power max			ButtonDownFcn
+radiobutton6	uicontrol	radiobutton	Highpass	1		Callback
+radiobutton7	uicontrol	radiobutton	Lowpass	0		Callback,ButtonDownFcn
+radiobutton8	uicontrol	radiobutton	Bandstop	0		Callback,ButtonDownFcn
+edit16	uicontrol	edit				Callback
+edit17	uicontrol	edit				Callback,ButtonDownFcn
+popupmenu5	uicontrol	popupmenu	-- Select -- | Butter | Ellip	1		Callback,ButtonDownFcn
+pushbutton26	uicontrol	pushbutton	Save Data			Callback

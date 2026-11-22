@@ -1,0 +1,52 @@
+tag	type	style	label_or_string	fig_value	fig_enable	callback_properties
+uipanel1	uipanel		Test sedimentation rate			ButtonDownFcn
+text4	uicontrol	text	Minimum	0	on	ButtonDownFcn
+edit1	uicontrol	edit	1			Callback,ButtonDownFcn
+edit2	uicontrol	edit	30			Callback,ButtonDownFcn
+text5	uicontrol	text	maximum	0	on	ButtonDownFcn
+text6	uicontrol	text	step	0	on	ButtonDownFcn
+edit3	uicontrol	edit	0.1			Callback,ButtonDownFcn
+text7	uicontrol	text	*			ButtonDownFcn
+text19	uicontrol	text	step	0	on	ButtonDownFcn
+text2	uicontrol	text	Data			
+text3	uicontrol	text	data			
+checkbox1	uicontrol	checkbox	0 padding edge	0		Callback,ButtonDownFcn
+popupmenu1	uicontrol	popupmenu	zero | mirror | mean | random	1		Callback,ButtonDownFcn
+checkbox5	uicontrol	checkbox	Flip Depth (y axis)	1		Callback
+checkbox6	uicontrol	checkbox	0 padding	1	inactive	Callback,ButtonDownFcn
+edit12	uicontrol	edit	2500			Callback
+checkbox2	uicontrol	checkbox	Show period.	1	inactive	Callback
+text8	uicontrol	text	Maximum | Frequency			
+edit4	uicontrol	edit	0			Callback
+checkbox4	uicontrol	checkbox	Remove red noise model			Callback
+popupmenu3	uicontrol	popupmenu	classic AR1 (f-fred) | classic AR1 (f./fred-1) | robust AR1	2		Callback
+text18	uicontrol	text	Number | of slices			ButtonDownFcn
+edit13	uicontrol	edit	1			Callback,ButtonDownFcn
+edit5	uicontrol	edit	0			Callback,ButtonDownFcn
+text9	uicontrol	text	Ma			ButtonDownFcn
+radiobutton6	uicontrol	radiobutton	Berger89 solution	1		Callback,ButtonDownFcn
+radiobutton7	uicontrol	radiobutton	Laskar04 Solution			Callback,ButtonDownFcn
+radiobutton8	uicontrol	radiobutton	User-defined period			Callback,ButtonDownFcn
+text10	uicontrol	text	Max frequency			ButtonDownFcn
+edit7	uicontrol	edit	0.06			Callback,ButtonDownFcn
+text11	uicontrol	text	1/kyr			ButtonDownFcn
+edit11	uicontrol	edit	405 125 95 41 22.43 23.75 19.18		on	Callback,ButtonDownFcn
+text20	uicontrol	text	405 125 95 41 22.43 23.75 19.18			
+text21	uicontrol	text	405 125 95 41 22.43 23.75 19.18			ButtonDownFcn
+text22	uicontrol	text	Middle age of data			
+pushbutton4	uicontrol	pushbutton	?Waltham15			Callback
+radiobutton9	uicontrol	radiobutton	Spearman	0		Callback,ButtonDownFcn
+radiobutton10	uicontrol	radiobutton	Pearson	1		Callback,ButtonDownFcn
+edit8	uicontrol	edit	1000			Callback
+text13	uicontrol	text	times			
+edit9	uicontrol	edit	100			Callback
+text14	uicontrol	text	Size			
+edit10	uicontrol	edit	1			Callback,ButtonDownFcn
+text15	uicontrol	text	Step			ButtonDownFcn
+text16	uicontrol	text	unit			
+text17	uicontrol	text	unit			ButtonDownFcn
+pushbuttonOK	uicontrol	pushbutton	OK			Callback,ButtonDownFcn
+pushbutton2	uicontrol	pushbutton	eCOCO plot		off	Callback,ButtonDownFcn
+radiobutton1	uicontrol	radiobutton	COCO	1		Callback
+radiobutton2	uicontrol	radiobutton	eCOCO			Callback
+pushbutton3	uicontrol	pushbutton	Track sed. rates		off	Callback,ButtonDownFcn

@@ -1,0 +1,20 @@
+tag	type	style	label_or_string	fig_value	fig_enable	callback_properties
+radiobutton1	uicontrol	radiobutton	Use Input	0		Callback,ButtonDownFcn
+radiobutton2	uicontrol	radiobutton	Use Nyquist	1	on	Callback,ButtonDownFcn
+text2	uicontrol	text	Nyquist			ButtonDownFcn
+edit1	uicontrol	edit			on	Callback,ButtonDownFcn
+edit2	uicontrol	edit	0			Callback,ButtonDownFcn
+text3	uicontrol	text	Freq. min.			ButtonDownFcn
+uipanel1	uipanel		Step			ButtonDownFcn
+pushbutton1	uicontrol		Tips			Callback,ButtonDownFcn
+edit3	uicontrol	edit	1			Callback,ButtonDownFcn
+edit4	uicontrol	edit	unit			Callback,ButtonDownFcn
+text4	uicontrol	text	Unit			ButtonDownFcn
+uipanel2	uipanel		Sliding Window			ButtonDownFcn
+pushbutton2	uicontrol		Tips			Callback,ButtonDownFcn
+edit5	uicontrol	edit	500			Callback,ButtonDownFcn
+pushbutton4	uicontrol		OK			Callback,ButtonDownFcn
+uipanel3	uipanel		Plot			
+checkbox1	uicontrol	checkbox	Normalize each window	1		Callback,ButtonDownFcn
+checkbox2	uicontrol	text	Padding X	1	on	Callback,ButtonDownFcn
+popupmenu1	uicontrol	popupmenu	zero | mirror | mean | random	1		Callback,ButtonDownFcn

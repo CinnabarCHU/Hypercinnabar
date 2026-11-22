@@ -1,0 +1,280 @@
+source_path	directly_attributed_roles
+ac.m	
+code/corrcoef/corrcoefsig.m	corrcoefsig.analyzer | corrcoefsig.helper
+code/corrcoef/corrcoefslices.m	corrcoefslices.analyzer | corrcoefslices.helper
+code/corrcoef/corrcoefslices_rank.m	corrcoefslices_rank.analyzer | corrcoefslices_rank.helper
+code/corrcoef/corrsig.m	corrsig.analyzer | corrsig.helper
+code/corrcoef/cyclecorr.m	cyclecorr.analyzer | cyclecorr.helper
+code/corrcoef/cyclecorr4.m	cyclecorr4.analyzer
+code/corrcoef/cyclecorr4sig.m	cyclecorr4sig.analyzer
+code/corrcoef/cyclecorr5.m	cyclecorr5.analyzer
+code/corrcoef/cyclecorr_rank.m	cyclecorr_rank.analyzer
+code/corrcoef/cyclecorrsig.m	cyclecorrsig.analyzer | cyclecorrsig.helper
+code/corrcoef/cyclesig_rank.m	cyclesig_rank.analyzer
+code/corrcoef/data_slices.m	data_slices.analyzer
+code/corrcoef/ebrief.m	ebrief.analyzer | ebrief.helper
+code/corrcoef/eccount.m	eccount.analyzer
+code/corrcoef/eccpeaks.m	eccpeaks.analyzer | eccpeaks.helper
+code/corrcoef/ecoco.m	ecoco.analyzer
+code/corrcoef/ecocoplot.m	ecocoplot.plotter
+code/corrcoef/ecocoplots.m	ecocoplots.plotter
+code/corrcoef/ecocos.m	ecocos.analyzer
+code/corrcoef/ecocotrack.m	ecocotrack.analyzer
+code/corrcoef/ecocotrackn.m	ecocotrackn.analyzer
+code/corrcoef/findperct.m	findperct.analyzer
+code/corrcoef/freq2target.m	freq2target.analyzer
+code/corrcoef/gentarget.m	gentarget.analyzer
+code/corrcoef/getBerger89Period.m	getBerger89Period.analyzer
+code/corrcoef/norbits.m	norbits.analyzer
+code/corrcoef/numorbit.m	numorbit.analyzer | numorbit.helper
+code/corrcoef/period2spectrum.m	period2spectrum.analyzer
+code/corrcoef/period2spectrumB.m	period2spectrumB.analyzer
+code/corrcoef/randspec_sin.m	randspec_sin.analyzer
+code/corrcoef/targetadj_real.m	targetadj_real.analyzer
+code/corrcoef/targetrebuilt.m	targetrebuilt.analyzer
+code/corrcoef/theoredar1ML.m	theoredar1ML.analyzer
+code/guicode/AC.fig	
+code/guicode/AC.m	AddGaps.analyzer | AmplitudeModulation.analyzer | AmplitudeModulation.helper | BuildAgeModel.analyzer | BuildAgeModel.helper | BuildAgeModel.plotter | CENOGRID.analyzer | CENOGRID.plotter | Clipping.analyzer | Clipping.helper | Columns.analyzer | DataDistribution.plotter | Derivative.analyzer | Derivative.helper | EMD.analyzer | EMD.helper | EMD.plotter | EnsembleEMD.analyzer | EnsembleEMD.helper | EnsembleEMD.plotter | ExampleDigitizer.analyzer | ExampleDigitizer.plotter | ExampleExtinction.analyzer | ExampleExtinction.plotter | ExampleGuandao.analyzer | ExampleGuandao.plotter | ExampleInsolation.analyzer | ExampleInsolation.plotter | ExampleLa2004.analyzer | ExampleLa2004.plotter | ExampleMars.analyzer | ExampleMars.plotter | ExampleMaunaLoa.analyzer | ExampleMaunaLoa.plotter | ExampleNewark.analyzer | ExampleNewark.plotter | ExampleRedNoise.analyzer | ExampleRedNoise.plotter | ExampleSphalerite.analyzer | ExampleSphalerite.plotter | ExampleSvalbardPETM.analyzer | ExampleSvalbardPETM.plotter | ExampleWayao.analyzer | ExampleWayao.plotter | Extrema.analyzer | Extrema.helper | FixedMovingMean.helper | FixedMovingMedian.helper | ImageProfile.analyzer | LR04.analyzer | LR04.helper | LR04.plotter | Lag1.analyzer | Lag1MonteCarlo.analyzer | Lag1MonteCarlo.helper | Lag1MonteCarlo.plotter | Lag1V2.analyzer | Lag1V2MonteCarlo.analyzer | Lag1V2MonteCarlo.helper | Lag1V2MonteCarlo.plotter | Log10.analyzer | Lyapunov.analyzer | MergeSeries.analyzer | MovingGaussian.analyzer | MovingGaussian.helper | MovingGaussian.plotter | MovingMean.analyzer | MovingMean.helper | MovingMean.plotter | MovingMedian.analyzer | MovingMedian.helper | MovingMedian.plotter | MultiplySeries.analyzer | PCA.analyzer | PCA.helper | PowerDecomposition.analyzer | PowerDecomposition.helper | PowerDecomposition.plotter | RGBToGray.analyzer | RGBToGray.plotter | RGBToLab.analyzer | RGBToLab.plotter | RemoveSections.analyzer | SamplingRate.analyzer | SamplingRate.plotter | SedimentationRateToAge.analyzer | SeriesSound.analyzer | SeriesSound.helper | ShowImage.plotter | SimpleFunction.analyzer | SimpleFunction.helper | SimplePlot.plotter | SortUnique.analyzer | SortUnique.helper | Standardize.analyzer | depeaks.helper | interpolate.helper | select_interval.helper
+code/guicode/ACUpdate.m	
+code/guicode/About.fig	
+code/guicode/About.m	
+code/guicode/CorrelationGUI.fig	
+code/guicode/CorrelationGUI.m	StratigraphicCorrelation.analyzer
+code/guicode/DYNOS.fig	
+code/guicode/DYNOS.m	DYNOT.analyzer | DYNOT.helper | DYNOT.plotter
+code/guicode/DataExtractML.fig	
+code/guicode/DataExtractML.m	Digitize.analyzer
+code/guicode/DataExtractTab.fig	
+code/guicode/DataExtractTab.m	
+code/guicode/DynamicFilter.fig	
+code/guicode/DynamicFilter.m	DynamicFiltering.helper
+code/guicode/Insolation.fig	
+code/guicode/Insolation.m	Insolation.analyzer
+code/guicode/InterplationSeries.fig	
+code/guicode/InterplationSeries.m	InterpolateSeries.analyzer | InterpolateSeries.plotter
+code/guicode/LODGUI.fig	
+code/guicode/LODGUI.m	
+code/guicode/PlotAdv.fig	PlotAdv.helper
+code/guicode/PlotAdv.m	PlotAdv.helper
+code/guicode/PlotPro2DLineGUI.m	PlotPro.helper
+code/guicode/RecPlotGUI.fig	Recurrence.helper
+code/guicode/RecPlotGUI.m	Recurrence.analyzer | Recurrence.helper
+code/guicode/RobotGUI.m	
+code/guicode/SWA_refreshplot_CL_GUI.m	
+code/guicode/SWAgui.m	SWA.analyzer | SWA.helper | SWA.plotter
+code/guicode/SmoothBootGUI.m	BootstrapSmooth.analyzer
+code/guicode/SpectralMomentsGUI.fig	
+code/guicode/SpectralMomentsGUI.m	spectralmoments.plotter
+code/guicode/agescale.fig	
+code/guicode/agescale.m	AgeScale.analyzer
+code/guicode/basicseries.fig	
+code/guicode/basicseries.m	AstronomicalSolution.analyzer | AstronomicalSolution.helper | AstronomicalSolution.plotter
+code/guicode/circularspecGUI.fig	CircularSpectrum.helper
+code/guicode/circularspecGUI.m	CircularSpectrum.analyzer | CircularSpectrum.helper | CircularSpectrum.plotter
+code/guicode/coherenceGUI.fig	
+code/guicode/coherenceGUI.m	
+code/guicode/column_manipulateGUI.m	ColumnManipulation.analyzer | ColumnManipulation.helper | ColumnManipulation.plotter
+code/guicode/copyright.fig	
+code/guicode/copyright.m	
+code/guicode/data_type.fig	
+code/guicode/data_type.m	
+code/guicode/datatransformationsGUI.m	DataTransform.analyzer
+code/guicode/eCOCOGUI.fig	
+code/guicode/eCOCOGUI.m	
+code/guicode/eTimeOptGUI.fig	
+code/guicode/eTimeOptGUI.m	EvolutionaryTimeOpt.analyzer
+code/guicode/evofftGUI.fig	
+code/guicode/evofftGUI.m	EvolutionarySpectrum.analyzer | EvolutionarySpectrum.helper
+code/guicode/ft.fig	PassFilter.helper
+code/guicode/ft.m	Bandpass.analyzer | Bandpass.helper | Bandpass.plotter | PassFilter.helper
+code/guicode/interpolationGUI.fig	
+code/guicode/interpolationGUI.m	InterpolationPro.helper
+code/guicode/languageGUI.fig	
+code/guicode/languageGUI.m	
+code/guicode/leadlagGUI.fig	
+code/guicode/leadlagGUI.m	
+code/guicode/linegenerator.fig	
+code/guicode/linegenerator.m	SeriesGenerator.analyzer
+code/guicode/prewhiten.fig	
+code/guicode/prewhiten.m	
+code/guicode/prewhitenGUI.fig	
+code/guicode/prewhitenGUI.m	AR1Prewhitening.analyzer | AR1Prewhitening.helper | AR1Prewhitening.plotter
+code/guicode/smoothbestSpanRand.m	smoothbestSpanRand.analyzer
+code/guicode/spectrum.fig	
+code/guicode/spectrum.m	PowerSpectrum.analyzer | SpectralBendingPowerLaw.analyzer | SpectralBendingPowerLaw.plotter | SpectralPowerLaw.analyzer | SpectralPowerLaw.plotter
+code/guicode/timeOptGUI.fig	
+code/guicode/timeOptGUI.m	TimeOpt.analyzer | TimeOpt.helper
+code/guicode/waveletGUI.fig	WaveletSpectrum.helper
+code/guicode/waveletGUI.m	WaveletSpectrum.helper
+code/misc/CDac_pwd.m	
+code/misc/GETac_pwd.m	
+code/misc/InsolLatDayGif.m	InsolLatDayGif.plotter
+code/misc/MilankovitchCal.m	MilankovitchCal.analyzer
+code/misc/SplashScreen.m	
+code/misc/UpdatePlotPro2DLineGUI.m	
+code/misc/UpdatePlotPro2DLinePlot.m	PlotPro.plotter
+code/misc/UpdatePlotPro2DLineTable.m	
+code/misc/UpdatePlotPro2DLineTableXYLim.m	
+code/misc/ac_check_opendate.m	
+code/misc/ac_check_update.m	
+code/misc/boxcox.m	
+code/misc/boxcoxML.m	boxcoxML.analyzer
+code/misc/check_acycle_toolboxes.m	
+code/misc/circularspec.m	circularspec.analyzer | circularspec.helper | circularspec.plotter
+code/misc/cmap_default.m	
+code/misc/cohac.m	cohac.analyzer | cohac.helper | cohac.plotter
+code/misc/coherence_update.m	Coherence.analyzer
+code/misc/datapreproc.m	datapreproc.analyzer | datapreproc.helper
+code/misc/domaintrans.m	domaintrans.analyzer
+code/misc/dynamic_filter.m	DynamicFiltering.analyzer | DynamicFiltering.plotter
+code/misc/dynamic_filter_lang.m	DynamicFiltering.analyzer
+code/misc/ellipse_s.m	ellipse_s.analyzer
+code/misc/findjobj.m	
+code/misc/findnpk.m	findnpk.analyzer | findnpk.helper
+code/misc/gaussmf.m	gaussmf.analyzer
+code/misc/getlisti.m	
+code/misc/imscrollpanel_ac.m	imscrollpanel_ac.plotter
+code/misc/imscrollpanel_acDig.m	
+code/misc/insoML.m	insoML.analyzer | insoML.helper
+code/misc/interpolate_rand.m	interpolate_rand.analyzer
+code/misc/invprctile.m	invprctile.analyzer
+code/misc/loaddata4acycle.m	
+code/misc/mmdd2dayi.m	mmdd2dayi.analyzer
+code/misc/monthday2dayi.m	monthday2dayi.analyzer
+code/misc/myginput.m	
+code/misc/openpdf.m	
+code/misc/pAxes18.m	
+code/misc/plotpro_plot_done.m	PlotAdv.plotter
+code/misc/refreshcolor.m	
+code/misc/strrep2.m	
+code/misc/update_detrend_plot_fig.m	Detrending.analyzer | Detrending.plotter
+code/misc/update_filter_axes.m	Bandpass.analyzer | Bandpass.plotter
+code/misc/update_filter_axes4.m	PassFilter.analyzer | PassFilter.plotter
+code/misc/update_interpolationGUI.m	InterpolationPro.analyzer | InterpolationPro.plotter
+code/misc/update_recplot.m	Recurrence.analyzer | Recurrence.plotter
+code/misc/update_spectral_x_period_mtm.m	
+code/package/bayes_changepoint/bayes_cpt.m	bayes_cpt.analyzer | bayes_cpt.helper | bayes_cpt.plotter
+code/package/bayes_changepoint/bayes_cpt_r2.m	bayes_cpt_r2.analyzer | bayes_cpt_r2.helper | bayes_cpt_r2.plotter
+code/package/bayes_changepoint/nCk.m	nCk.analyzer
+code/package/bayes_changepoint/partition_fn.m	partition_fn.analyzer
+code/package/bayes_changepoint/pick_k1.m	pick_k1.analyzer
+code/package/recurrence/crp_core.m	crp_core.analyzer | crp_core.helper
+code/package/recurrence/crp_pdist.m	crp_pdist.analyzer | crp_pdist.helper
+code/package/recurrence/dl.m	
+code/package/recurrence/dl_all.m	dl_all.analyzer
+code/package/recurrence/recplot.m	recplot.analyzer | recplot.helper | recplot.plotter
+code/package/swa/ctaper.m	
+code/package/swa/gammcf.m	gammcf.analyzer
+code/package/swa/gammln.m	gammln.analyzer
+code/package/swa/gammp.m	gammp.analyzer
+code/package/swa/gamser.m	gamser.analyzer
+code/package/swa/getchi2.m	getchi2.analyzer
+code/package/swa/hpsort.m	hpsort.analyzer
+code/package/swa/lfitls.m	
+code/package/swa/period.m	period.analyzer
+code/package/swa/rho.m	rho.analyzer
+code/package/swa/solve.m	solve.analyzer
+code/package/swa/specbayes.m	SWA.analyzer
+code/package/swa/specswa.m	specswa.analyzer
+code/package/swa/specswafdr.m	SWA.analyzer
+code/package/swa/spectralswafdr.m	spectralswafdr.analyzer | spectralswafdr.helper
+code/package/swa/strAssign.m	strAssign.analyzer
+code/package/swa/writeFmt.m	
+code/package/undatable/private/interp1qr.m	
+code/package/undatable/private/plot2raster.m	
+code/package/undatable/private/sbars.m	
+code/package/undatable/private/udanchors.m	
+code/package/undatable/private/udgetdata.m	
+code/package/undatable/private/udmakepdfs.m	
+code/package/undatable/private/udmatcal.m	
+code/package/undatable/private/udrun.m	
+code/package/undatable/private/udsummary.m	
+code/package/undatable/udplot.m	
+code/package/undatable/udplotoptions.m	
+code/package/undatable/undatable.m	Undatable.analyzer | Undatable.helper
+code/package/undatable/undatableGUI.fig	
+code/package/undatable/undatableGUI.m	
+code/package/univariate/ANOVAUI.m	ANOVA.analyzer
+code/package/univariate/AcycleDataTableGUI.m	
+code/package/univariate/AnDarksamtest.m	AnDarksamtest.analyzer
+code/package/univariate/BivCorrUI.m	Correlation.analyzer
+code/package/univariate/BivCovUI.m	Covariance.analyzer | Covariance.helper
+code/package/univariate/UniChi2GOFUI.m	DistributionTest.analyzer
+code/package/univariate/UniNormalityUI.m	Normality.analyzer
+code/package/univariate/UniStatisticSum.m	SummaryStatistics.analyzer
+code/package/univariate/UniTwoSampleTestsUI.m	TwoSampleTests.analyzer
+code/package/univariate/Unittest.m	OneSampleT.analyzer | OneSampleT.plotter
+code/package/univariate/swtest.m	swtest.analyzer
+code/package/wavelet/ar1nv.m	ar1nv.analyzer
+code/package/wavelet/ar1spectrum.m	ar1spectrum.analyzer
+code/package/wavelet/boxpdf.m	boxpdf.analyzer
+code/package/wavelet/chisquare_inv.m	chisquare_inv.analyzer
+code/package/wavelet/chisquare_solve.m	chisquare_solve.analyzer
+code/package/wavelet/formatts.m	formatts.analyzer
+code/package/wavelet/phaseplot.m	
+code/package/wavelet/rednoise.m	rednoise.analyzer | rednoise.helper
+code/package/wavelet/smoothwavelet.m	smoothwavelet.analyzer
+code/package/wavelet/timedwaitbar.m	
+code/package/wavelet/wave_bases.m	wave_bases.analyzer
+code/package/wavelet/wave_readGUI.m	WaveletSpectrum.analyzer | WaveletSpectrum.plotter
+code/package/wavelet/wave_signif.m	wave_signif.analyzer | wave_signif.helper
+code/package/wavelet/wave_update_global.m	
+code/package/wavelet/wave_update_plots.m	
+code/package/wavelet/wave_update_series.m	
+code/package/wavelet/wave_update_wavelet.m	WaveletSpectrum.plotter
+code/package/wavelet/wavecoh_readGUI.m	
+code/package/wavelet/wavecoh_update_plots.m	
+code/package/wavelet/wavecoh_update_wavecoh.m	
+code/package/wavelet/wavecoh_update_wtc.m	
+code/package/wavelet/wavecoh_update_xwt.m	
+code/package/wavelet/wavelet.m	wavelet.analyzer | wavelet.helper | wtcsignif.analyzer
+code/package/wavelet/wtcML.m	WaveletCoherence.analyzer
+code/package/wavelet/wtcsignif.m	wtcsignif.analyzer
+code/seriesanalysis/CE_NS70.m	CE_NS70.analyzer
+code/seriesanalysis/DetrendSignalPP.m	DetrendSignalPP.analyzer
+code/seriesanalysis/depeaks.m	depeaks.analyzer
+code/seriesanalysis/depthtotime.m	depthtotime.analyzer
+code/seriesanalysis/dispstat.m	
+code/seriesanalysis/eemd.m	eemd.analyzer
+code/seriesanalysis/emdNL.m	emdNL.analyzer
+code/seriesanalysis/erhoAR1.m	erhoAR1.analyzer
+code/seriesanalysis/evofft.m	evofft.analyzer
+code/seriesanalysis/evofftML.m	evofftML.analyzer
+code/seriesanalysis/evoperiodogram.m	evoperiodogram.analyzer
+code/seriesanalysis/evoplomb.m	evoplomb.analyzer
+code/seriesanalysis/evopmtm.m	evopmtm.analyzer
+code/seriesanalysis/evopmtmML.m	evopmtmML.analyzer | evopmtmML.plotter
+code/seriesanalysis/find_extrema.m	find_extrema.analyzer
+code/seriesanalysis/findduplicate.m	findduplicate.analyzer
+code/seriesanalysis/ftestmtm.m	ftestmtm.analyzer
+code/seriesanalysis/ftestmtmML.m	ftestmtmML.analyzer
+code/seriesanalysis/gaussfilter.m	gaussfilter.analyzer
+code/seriesanalysis/getpks.m	getpks.analyzer
+code/seriesanalysis/interpolate.m	interpolate.analyzer
+code/seriesanalysis/lodla04.m	lodla04.analyzer
+code/seriesanalysis/minirho.m	minirho.analyzer | minirho.helper
+code/seriesanalysis/minirhos0.m	minirhos0.analyzer | minirhos0.helper
+code/seriesanalysis/moveMedian.m	moveMedian.analyzer
+code/seriesanalysis/movemean.m	movemean.analyzer
+code/seriesanalysis/movmeanfbw.m	FixedMovingMean.analyzer | FixedMovingMean.helper | FixedMovingMedian.analyzer | FixedMovingMedian.helper | movmeanfbw.analyzer | movmeanfbw.helper
+code/seriesanalysis/mtmdofs.m	mtmdofs.analyzer
+code/seriesanalysis/pda.m	pda.analyzer
+code/seriesanalysis/pdan.m	pdan.analyzer | pdan.helper
+code/seriesanalysis/plomb_robustar1.m	plomb_robustar1.analyzer | plomb_robustar1.helper
+code/seriesanalysis/prewhitening.m	prewhitening.analyzer
+code/seriesanalysis/redconfML.m	redconfML.analyzer | redconfML.helper
+code/seriesanalysis/redconf_any.m	redconf_any.analyzer
+code/seriesanalysis/redconfchi2.m	redconfchi2.analyzer
+code/seriesanalysis/redconftabtchi.m	redconftabtchi.analyzer
+code/seriesanalysis/redmark.m	redmark.analyzer
+code/seriesanalysis/rhoAR1.m	rhoAR1.analyzer
+code/seriesanalysis/rhoAR1ML.m	rhoAR1ML.analyzer
+code/seriesanalysis/rmse4leadlag.m	rmse4leadlag.analyzer | rmse4leadlag.helper
+code/seriesanalysis/select_interval.m	select_interval.analyzer
+code/seriesanalysis/smoothbestSpan.m	smoothbestSpan.analyzer
+code/seriesanalysis/smoothci.m	smoothci.analyzer
+code/seriesanalysis/smoothciML.m	smoothciML.analyzer | smoothciML.helper
+code/seriesanalysis/spectralmoments.m	spectralmoments.analyzer | spectralmoments.helper
+code/seriesanalysis/tanerhilbertML.m	tanerhilbertML.analyzer | tanerhilbertML.helper
+code/seriesanalysis/zeropad2.m	zeropad2.analyzer | zeropad2.helper
+doc/ac_acknowledgment.m	

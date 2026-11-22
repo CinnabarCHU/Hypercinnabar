@@ -1,0 +1,90 @@
+tag	type	style	label_or_string	fig_value	fig_enable	callback_properties
+text2	uicontrol	text	DYnamic Noise after Orbital Tuning (DYNOT) sea-level model v2.0		inactive	
+uipanel2	uipanel		Data			
+axes1	axes					
+uipanel3	uipanel		DYNOT			ButtonDownFcn
+axes2	axes					ButtonDownFcn
+uipanel7	uipanel		DYNOT			ButtonDownFcn
+pushbutton5	uicontrol	pushbutton	Let's go		off	Callback,ButtonDownFcn
+uipanel9	uipanel		Monte Carlo Simulation Settings			ButtonDownFcn
+text11	uicontrol	text	Windows from			ButtonDownFcn
+edit6	uicontrol	edit	400	0	on	Callback,ButtonDownFcn
+text13	uicontrol	text	to			ButtonDownFcn
+edit7	uicontrol	edit	500	0	on	Callback,ButtonDownFcn
+text14	uicontrol	text	ka			ButtonDownFcn
+text15	uicontrol	text	Time-halfbandwidth product:			ButtonDownFcn
+edit8	uicontrol	edit	2			Callback,ButtonDownFcn
+text16	uicontrol	text	Step			ButtonDownFcn
+text17	uicontrol	text	to			ButtonDownFcn
+edit9	uicontrol	edit	2			Callback,ButtonDownFcn
+text18	uicontrol	text	Zero-padding			ButtonDownFcn
+edit10	uicontrol	edit	1000	0	on	Callback,ButtonDownFcn
+edit21	uicontrol	edit	5			Callback,ButtonDownFcn
+text40	uicontrol	text	Number of Monte Carlo Simulations			ButtonDownFcn
+edit24	uicontrol	edit	1000			Callback,ButtonDownFcn
+text43	uicontrol	text	ka			ButtonDownFcn
+uipanel10	uipanel		Frequency			ButtonDownFcn
+edit11	uicontrol	edit	405 125 95 40.9 23.6 22.3 19.1		off	Callback,ButtonDownFcn
+edit12	uicontrol	edit	1			Callback,ButtonDownFcn
+text23	uicontrol	text	Frequency ranges: +/-			ButtonDownFcn
+edit13	uicontrol	edit	0.9			Callback,ButtonDownFcn
+text25	uicontrol	text	to			ButtonDownFcn
+edit14	uicontrol	edit	1.2			Callback,ButtonDownFcn
+text26	uicontrol	text	Cutoff frequencies:			ButtonDownFcn
+edit15	uicontrol	edit	0.001			Callback,ButtonDownFcn
+text27	uicontrol	text	x bandwidth			ButtonDownFcn
+text28	uicontrol	text	to			ButtonDownFcn
+text47	uicontrol	text	cycles/kyr			ButtonDownFcn
+radiobutton1	uicontrol	radiobutton	Middle age of data	1		Callback,ButtonDownFcn
+edit29	uicontrol	edit	0.0			Callback
+text49	uicontrol	text	Ma			ButtonDownFcn
+radiobutton2	uicontrol	radiobutton	Type target orbital cycles (space delimited, ka)			Callback,ButtonDownFcn
+uipanel11	uipanel		Plot			ButtonDownFcn
+text30	uicontrol	text	Confidence Intervals			ButtonDownFcn
+checkbox1median	uicontrol	checkbox	Median	1	inactive	Callback
+checkbox50	uicontrol	checkbox	50%	1	inactive	Callback,ButtonDownFcn
+checkbox68	uicontrol	checkbox	68%	1	inactive	Callback,ButtonDownFcn
+checkbox80	uicontrol	checkbox	80%	1	inactive	Callback,ButtonDownFcn
+checkbox90	uicontrol	checkbox	90%	1	inactive	Callback,ButtonDownFcn
+checkbox95	uicontrol	checkbox	95%	1	inactive	Callback,ButtonDownFcn
+text29	uicontrol	text	Interpolation number			ButtonDownFcn
+edit22	uicontrol	edit	1000			Callback,ButtonDownFcn
+text36	uicontrol	text	Half-window padding			ButtonDownFcn
+edit23	uicontrol	edit	1			Callback,ButtonDownFcn
+uipanel6	uipanel		Data			ButtonDownFcn
+pushbutton4	uicontrol	pushbutton	Data ready			Callback,ButtonDownFcn
+uipanel8	uipanel		Interpolation			ButtonDownFcn
+edit_sampb	uicontrol	edit	-	0	on	Callback,ButtonDownFcn
+text10	uicontrol	text	to			ButtonDownFcn
+edit_sampa	uicontrol	edit	-	0	on	Callback,ButtonDownFcn
+text8	uicontrol	text	Sample rate			ButtonDownFcn
+edit25	uicontrol	edit	-	0	on	Callback,ButtonDownFcn
+text44	uicontrol	text	to			ButtonDownFcn
+edit26	uicontrol	edit	-	0	on	Callback,ButtonDownFcn
+text45	uicontrol	text	Cut data			ButtonDownFcn
+pushbutton_cut	uicontrol	pushbutton	Cut		off	Callback
+text46	uicontrol	text	ka			ButtonDownFcn
+uipanel12	uipanel		Process			
+text37	uicontrol	text	The first			
+text41	uicontrol	text	"Press ""CTRL"" + ""X"" to cease the process; | May type the following script to quite the | parallel computing: delete(gcp('nocreate'))"			ButtonDownFcn
+text48	uicontrol	text	Numer of physical core will be used			ButtonDownFcn
+edit27	uicontrol	edit	2	0	off	Callback,ButtonDownFcn
+edit28	uicontrol	edit	50	0	on	Callback,ButtonDownFcn
+text50	uicontrol	text	iterations to estimate process time			
+uitoolbar2	uitoolbar					
+uipushtool4	uipushtool				off	ClickedCallback
+uipushtool6	uipushtool				off	ClickedCallback
+uipushtool5	uipushtool				off	ClickedCallback
+uipushtool7	uipushtool				off	ClickedCallback
+uitoggletool8	uitoggletool					ClickedCallback
+uitoggletool9	uitoggletool					ClickedCallback
+uitoggletool10	uitoggletool					ClickedCallback
+uitoggletool11	uitoggletool					ClickedCallback
+uitoggletool12	uitoggletool					ClickedCallback
+uitoggletool13	uitoggletool					ClickedCallback
+menu_file	uimenu		File			Callback
+file_import	uimenu		Import data (*.csv, *.txt)			Callback
+menu_help	uimenu		Help			Callback
+menu_about	uimenu		About			Callback
+menu_website	uimenu		Website			Callback
+edit30	uicontrol	edit	(Li et al., 2018 Nature Communications, 9: doi: 10.1038/s41467-018-03454-y)			

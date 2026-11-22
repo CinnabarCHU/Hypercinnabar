@@ -1,0 +1,21 @@
+tag	type	style	label_or_string	fig_value	fig_enable	callback_properties
+uipanel1	uipanel		Data			ButtonDownFcn
+text2	uicontrol	text	data	0	on	Callback,ButtonDownFcn
+checkbox1	uicontrol	checkbox	Zero padding edge	0		Callback,ButtonDownFcn
+popupmenu1	uicontrol	popupmenu	zero | mirror | mean | random	1		Callback,ButtonDownFcn
+uipanel2	uipanel		Panel			
+text8	uicontrol	text	Mean sed. rate	0	on	ButtonDownFcn
+text9	uicontrol	text	Smooth model	0	on	ButtonDownFcn
+edit5	uicontrol	edit	2500			Callback,ButtonDownFcn
+popupmenu2	uicontrol	popupmenu	Polynomial | LOWESS | rLOWESS | LOESS | rLOESS	1		Callback
+text11	uicontrol	text	cm/kyr			
+checkbox2	uicontrol	checkbox	Absolute Sedimentation Rate			Callback
+uipanel3	uipanel		Settings			
+text3	uicontrol	text	Window	0	on	Callback,ButtonDownFcn
+edit2	uicontrol	edit	2500			Callback,ButtonDownFcn
+text6	uicontrol	text	step	0	on	ButtonDownFcn
+edit3	uicontrol	edit	2500			Callback,ButtonDownFcn
+text7	uicontrol	text	Zero padding	0	on	ButtonDownFcn
+edit4	uicontrol	edit	2500			Callback,ButtonDownFcn
+pushbutton2	uicontrol	pushbutton	OK			Callback,ButtonDownFcn
+text10	uicontrol	text	Ref: Sinnesael, M., Zivanovic, M., De Vleeschouwer, D., & Claeys, P. (2018). Spectral moments in cyclostratigraphy: Advantages and disadvantages compared to more classic approaches. Paleoceanography and Paleoclimatology, 33, 493–510. doi: 10.1029/2017PA003293			

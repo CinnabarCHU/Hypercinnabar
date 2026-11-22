@@ -1,0 +1,2 @@
+tag	type	style	label_or_string	fig_value	fig_enable	callback_properties
+uitable1	uitable				on	ButtonDownFcn

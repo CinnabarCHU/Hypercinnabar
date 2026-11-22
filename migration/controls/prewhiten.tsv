@@ -1,0 +1,27 @@
+tag	type	style	label_or_string	fig_value	fig_enable	callback_properties
+uipanel6	uipanel		Detrending			ButtonDownFcn
+prewhiten_lowess_checkbox	uicontrol	checkbox	LOWESS			Callback,ButtonDownFcn
+prewhiten_rlowess_checkbox	uicontrol	checkbox	rLOWESS			Callback,ButtonDownFcn
+prewhiten_loess_checkbox	uicontrol	checkbox	LOESS			Callback,ButtonDownFcn
+prewhiten_rloess_checkbox	uicontrol	checkbox	rLOESS			Callback,ButtonDownFcn
+edit10	uicontrol	edit	xxx			Callback,ButtonDownFcn
+prewhiten_pushbutton	uicontrol		Plot		on	Callback,ButtonDownFcn
+edit11	uicontrol	edit	35			Callback,ButtonDownFcn
+text20	uicontrol	text	OR			ButtonDownFcn
+text21	uicontrol	text	Window			ButtonDownFcn
+prewhiten_all_checkbox	uicontrol	checkbox	Select All			Callback,ButtonDownFcn
+prewhiten_clear_pushbutton	uicontrol		Clear All			Callback,ButtonDownFcn
+text23	uicontrol	text	%			ButtonDownFcn
+slider4	uicontrol	slider	Slider			Callback,ButtonDownFcn
+uipanel8	uipanel		Polynomial fit			
+prewhiten_mean_checkbox	uicontrol	checkbox	Mean			Callback
+prewhiten_linear_checkbox	uicontrol	checkbox	1 order (Linear)			Callback,ButtonDownFcn
+checkbox11	uicontrol	checkbox	2 order			Callback,ButtonDownFcn
+checkbox13	uicontrol	checkbox				Callback,ButtonDownFcn
+edit23	uicontrol	edit	3			Callback,ButtonDownFcn
+text25	uicontrol	text	order			ButtonDownFcn
+checkbox34	uicontrol	checkbox	Savitzky-Golay		inactive	
+pushbutton12	uicontrol	pushbutton	best			Callback
+checkboxEMDres	uicontrol	checkbox	EEMD Residual			Callback
+uipanel7	uipanel		Select & Save detrending Model			ButtonDownFcn
+prewhiten_select_popupmenu	uicontrol	popupmenu	Raw	1	on	Callback,ButtonDownFcn

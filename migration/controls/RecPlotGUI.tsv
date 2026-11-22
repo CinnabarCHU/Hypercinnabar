@@ -1,0 +1,22 @@
+tag	type	style	label_or_string	fig_value	fig_enable	callback_properties
+text2	uicontrol	text	Series			
+edit1	uicontrol	edit	file name			Callback
+text3	uicontrol	text	Threshold			ButtonDownFcn
+edit2	uicontrol	edit	0.2			Callback,ButtonDownFcn
+checkbox1	uicontrol	checkbox	Show series			Callback
+checkbox2	uicontrol	checkbox	Show DET			Callback,ButtonDownFcn
+uipanel1	uipanel		Sliding window			
+text4	uicontrol	text	Window size			ButtonDownFcn
+edit3	uicontrol	edit	100			Callback,ButtonDownFcn
+text5	uicontrol	text	Sliding step			ButtonDownFcn
+edit4	uicontrol	edit	1			Callback,ButtonDownFcn
+text6	uicontrol	text	Theiler window			ButtonDownFcn
+edit5	uicontrol	edit	1			Callback,ButtonDownFcn
+text7	uicontrol	text	diagonal line min			ButtonDownFcn
+edit6	uicontrol	edit	2			Callback,ButtonDownFcn
+text9	uicontrol	text	unit			ButtonDownFcn
+text10	uicontrol	text	unit			ButtonDownFcn
+pushbutton1	uicontrol	pushbutton	Save data			Callback
+checkbox3	uicontrol	checkbox	Flip time			Callback,ButtonDownFcn
+edit7	uicontrol	edit	Value			Callback,ButtonDownFcn
+checkbox4	uicontrol	checkbox	Flip Y axis			Callback,ButtonDownFcn

@@ -1,0 +1,20 @@
+tag	type	style	label_or_string	fig_value	fig_enable	callback_properties
+axes1	axes					
+uipanel	uipanel		Interpolation			
+text2	uicontrol	text	data			
+text3	uicontrol	text	Sampling rate			
+edit1	uicontrol	edit	1			Callback
+text4	uicontrol	text	Method			
+popupmenu1	uicontrol	popupmenu	linear | nearest | next | previous | pchip | cubic | v5cubic | makima | spline	1		Callback
+text5	uicontrol	text	X1			
+edit2	uicontrol	edit	0			Callback
+text6	uicontrol	text	X2			
+edit3	uicontrol	edit	1			Callback
+text7	uicontrol	text	Y1			
+edit4	uicontrol	edit	0			Callback
+text8	uicontrol	text	Y2			
+edit5	uicontrol	edit	1			Callback
+pushbutton1	uicontrol	pushbutton	Save			Callback
+checkbox3	uicontrol	checkbox	Set gap (			Callback
+text9	uicontrol	text	X median sampling rate ) = 0			
+edit6	uicontrol	edit	10			Callback,ButtonDownFcn

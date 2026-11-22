@@ -1,0 +1,8 @@
+tag	type	style	label_or_string	fig_value	fig_enable	callback_properties
+radiobutton1	uicontrol	radiobutton	Classic AR1 ρ	0		
+radiobutton2	uicontrol	radiobutton	Robust AR1 ρ	1		Callback,ButtonDownFcn
+radiobutton3	uicontrol	radiobutton	User-defined	0		Callback,ButtonDownFcn
+edit1	uicontrol	edit				Callback
+edit2	uicontrol	edit				Callback,ButtonDownFcn
+edit3	uicontrol	edit	1			Callback,ButtonDownFcn
+pushbutton1	uicontrol	pushbutton	Prewhiten			Callback

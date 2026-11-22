@@ -1,0 +1,19 @@
+tag	type	style	label_or_string	fig_value	fig_enable	callback_properties
+radiobutton1	uicontrol	radiobutton	Single Time	0		Callback
+radiobutton2	uicontrol	radiobutton	Time Series	1		Callback,ButtonDownFcn
+uipanel1	uipanel		Model			
+popupmenu1	uicontrol	popupmenu	Waltham2015 | Laskar2004	1		Callback
+uipanel2	uipanel		Set time			
+text2	uicontrol	text	From			
+edit1	uicontrol	edit	1			Callback
+text3	uicontrol	text	To			ButtonDownFcn
+edit2	uicontrol	edit	250			Callback,ButtonDownFcn
+text4	uicontrol	text	Step			ButtonDownFcn
+edit3	uicontrol	edit	5			Callback,ButtonDownFcn
+text5	uicontrol	text	Ma			ButtonDownFcn
+text6	uicontrol	text	Ma			ButtonDownFcn
+text7	uicontrol	text	Ma			ButtonDownFcn
+text8	uicontrol	text	will calculate length of day and days in a year for -10, 0, 10, ... , 250 Ma			
+pushbutton1	uicontrol	pushbutton	OK			Callback
+uipanel3	uipanel		Reference			
+edit4	uicontrol	edit	Waltham, D., 2015. JSR. doi: 10.2110/jsr.2015.66; Laskar, J., et al., 2004, Astronomy & Astrophysics, 428: 261–285			Callback

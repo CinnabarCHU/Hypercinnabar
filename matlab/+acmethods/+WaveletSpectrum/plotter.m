@@ -1,5 +1,5 @@
 function [retval, id] = plotter(params, id)
-% WaveletSpectrum.plotter parameters: datax dt period power coi sig95 method_sel variance plot_2d plot_base plot_coi plot_colorgrid plot_colormap plot_flipx plot_flipy plot_linelog plot_log2pow plot_sl plot_z pt1 pt2 unit unit_type.
+% WaveletSpectrum.plotter parameters: datax dt period power coi sig95 method_sel variance plot_2d plot_base plot_coi plot_colorgrid plot_colormap plot_flipx plot_flipy plot_linelog plot_log2pow plot_sl plot_z pt1 pt2 Yticks unit unit_type.
 % Source: https://github.com/mingsongli/acycle/blob/b52ea9f510f3be00bde9a0238b9898a1e2315b74/code/package/wavelet/wave_update_wavelet.m#L11
 % Source: https://github.com/mingsongli/acycle/blob/b52ea9f510f3be00bde9a0238b9898a1e2315b74/code/package/wavelet/wave_readGUI.m#L228
 if nargin < 2, id = []; end
@@ -28,6 +28,7 @@ plot_sl = p.plot_sl;
 plot_z = p.plot_z;
 pt1 = p.pt1;
 pt2 = p.pt2;
+Yticks=p.Yticks;
 unit = p.unit;
 unit_type = p.unit_type;
 handles=struct('lang_choice',0,'main_unit_selection',0,'unit',unit,'unit_type',unit_type);

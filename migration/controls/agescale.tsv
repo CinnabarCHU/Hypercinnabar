@@ -1,0 +1,15 @@
+tag	type	style	label_or_string	fig_value	fig_enable	callback_properties
+listbox1	uicontrol	listbox		1		Callback,ButtonDownFcn
+edit1	uicontrol	edit				Callback,ButtonDownFcn
+pushbutton2	uicontrol	pushbutton	<--			Callback,ButtonDownFcn
+pushbutton3	uicontrol	pushbutton	-->			Callback,ButtonDownFcn
+text3	uicontrol	text	Age Model			
+pushbutton4	uicontrol	pushbutton	==>			Callback,ButtonDownFcn
+edit2	uicontrol	edit				Callback
+pushbutton7	uicontrol	pushbutton	==>			Callback,ButtonDownFcn
+listbox2	uicontrol	listbox		1		Callback
+text4	uicontrol	text	Series			ButtonDownFcn
+pushbutton8	uicontrol	pushbutton	Tuning			Callback
+pushbutton11	uicontrol	pushbutton	Show Age Model			Callback,ButtonDownFcn
+pushbutton12	uicontrol	pushbutton	Tuning Preview Time			Callback,ButtonDownFcn
+pushbutton13	uicontrol	pushbutton	Tuning Preview Depth			Callback,ButtonDownFcn

@@ -78,6 +78,10 @@ orbitn = length(orbit7);
  for i = 1:m3
 %% End copied source
     q.dat=[timex(:,i),x(:,i)]; slice=acmethods.corrcoefslices_rank.analyzer(q); corrCI=slice.corrCI;
+%% Copied from mingsongli/acycle@b52ea9f510f3be00bde9a0238b9898a1e2315b74 code/corrcoef/ecoco.m:L122-L123
+     out_ecc(:,i) = corrCI(:,2);  % evolutionary ecorrcoef value
+     out_ep(:,i) = corrCI(:,3);  % evolutionary ecorrcoef p-value
+%% End copied source
 %% Copied from mingsongli/acycle@b52ea9f510f3be00bde9a0238b9898a1e2315b74 code/corrcoef/ecoco.m:L124-L141
      norbit1 = orbitn - corrCI(:,end);
      out_norbit(:,i) = norbit1;

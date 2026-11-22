@@ -1,0 +1,4 @@
+tag	type	style	label_or_string	fig_value	fig_enable	callback_properties
+logo_axes1	axes					
+text5	uicontrol	text	Acycle v2.7 (Oct 10, 2023) | Mingsong Li (Peking University) & Linda A. Hinnov (George Mason) | Website: acycle.org | github.com/mingsongli/acycle			
+edit1	uicontrol	edit	[272 values]			Callback

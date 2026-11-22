@@ -1,0 +1,23 @@
+tag	type	style	label_or_string	fig_value	fig_enable	callback_properties
+text2	uicontrol	text	Data:			ButtonDownFcn
+text3	uicontrol	text	data			ButtonDownFcn
+uipanel1	uipanel		Test period			ButtonDownFcn
+radiobutton1	uicontrol	radiobutton	Linear	1		Callback,ButtonDownFcn
+radiobutton2	uicontrol	radiobutton	Log			Callback,ButtonDownFcn
+text4	uicontrol	text	Minimum	0	on	ButtonDownFcn
+edit1	uicontrol	edit	1			Callback,ButtonDownFcn
+edit2	uicontrol	edit	30			Callback,ButtonDownFcn
+text5	uicontrol	text	maximum	0	on	ButtonDownFcn
+text6	uicontrol	text	Number of steps	0	on	ButtonDownFcn
+edit3	uicontrol	edit	100			Callback,ButtonDownFcn
+text7	uicontrol	text	*			ButtonDownFcn
+uipanel2	uipanel		Sliding Window			ButtonDownFcn
+edit5	uicontrol	edit	10000		on	Callback,ButtonDownFcn
+text8	uicontrol	text	Monte Carlo #			ButtonDownFcn
+radiobutton3	uicontrol	radiobutton	Random distance	1		Callback,ButtonDownFcn
+radiobutton4	uicontrol	radiobutton	Fixed distance			Callback,ButtonDownFcn
+noise_white	uicontrol	radiobutton	White	1		
+noise_red	uicontrol	radiobutton	Red			
+checkbox1	uicontrol	checkbox	Save data	1		Callback,ButtonDownFcn
+checkbox2	uicontrol	checkbox	Flip X-axis	1	on	Callback,ButtonDownFcn
+pushbutton1	uicontrol	pushbutton	OK			Callback,ButtonDownFcn

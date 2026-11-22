@@ -1,0 +1,136 @@
+tag	type	style	label_or_string	fig_value	fig_enable	callback_properties
+menu_file	uimenu		File			Callback
+menu_NewDataTable	uimenu		New Data Table			Callback
+menu_folder	uimenu		New Folder			Callback
+menu_newtxt	uimenu		New Text File		on	Callback
+menu_savefig	uimenu		Save *.AC.fig			Callback
+menu_open	uimenu		Open *.fig File		on	Callback
+menu_opendir	uimenu		Open Working Directory			Callback
+menu_extract	uimenu		Extract Data			Callback
+menu_edit	uimenu		Edit			Callback
+menu_refreshlist	uimenu		Refresh			Callback
+menu_rename	uimenu		Rename			Callback
+menu_cut	uimenu		Cut			Callback
+menu_copy	uimenu		Copy			Callback
+menu_paste	uimenu		Paste			Callback
+menu_delete	uimenu		Delete			Callback
+menu_plotall	uimenu		Plot			Callback
+menu_plot	uimenu		Plot			Callback
+menu_plotpro_2d	uimenu		Plot Pro			Callback
+menu_plotadv	uimenu		Plot Adv			Callback
+menu_plotn	uimenu		Plot Standardized		on	Callback
+menu_plotn2	uimenu		Plot Standardized + 2			Callback
+menu_samplerate	uimenu		Sampling Rate			Callback
+menu_datadistri	uimenu		Data Distribution			Callback
+menu_sound	uimenu		Convert to sound			Callback
+menu_basic	uimenu		Basic Series			Callback
+menu_insol	uimenu		Insolation			Callback
+menu_laskar	uimenu		Astronomical Solution			Callback
+menu_LOD	uimenu		Milankovitch Calculator			Callback
+linegenerator	uimenu		Signal/Noise Generator			Callback
+menu_LR04	uimenu		LR04 Stack			Callback
+menu_cenogrid	uimenu		CENOGRID			Callback
+menu_examples	uimenu		Examples			Callback
+menu_example_hawaiiCO2	uimenu		Mauna Loa CO2 monthly mean			Callback
+menu_example_inso2Ma	uimenu		Insolation 0-2Ma 65N Jun22			Callback
+menu_example_la04etp	uimenu		La2004 0-2Ma ETP			Callback
+menu_example_redp7	uimenu		Red Noise rho=0.7 2000 points			Callback
+menu_example_PETM	uimenu		PETM Svalbard logFe			Callback
+menu_example_Newark	uimenu		Late Triassic Newark Depth Rank			Callback
+menu_example_wayao	uimenu		Late Triassic Wayao gamma ray			Callback
+menu_example_GD2GR	uimenu		Middle Triassic Guandao2 gamma ray			Callback
+menu_example_marsimage	uimenu		Image from Mars' HiRISE camera			Callback
+menu_example_sphalerite	uimenu		Image Sphalerite			Callback
+menu_example_plotdigitizer	uimenu		Image for Plot Digitizer			Callback
+menu_extinction_CSA	uimenu		Example extinction			Callback
+listbox_acmain	uicontrol	listbox		1		Callback,ButtonDownFcn
+edit_acfigmain_dir	uicontrol	edit		0	on	Callback,ButtonDownFcn
+popupmenu1	uicontrol	popupmenu	unit | m | dm | cm | mm | ft | km | ===== | Kyr | Myr | Gyr | a | Ka | Ma | Ga | ===== | second | minute | hour | day | month | year	1		Callback,ButtonDownFcn
+popupmenu2	uicontrol	popupmenu	name a-z | name z-a | date ascend | date descend | size ascend | size descend	4		Callback,ButtonDownFcn
+main_unit_en	uicontrol	checkbox	En/文			Callback
+menu_math	uimenu		Math			Callback
+menu_sort	uimenu		Sort/Unique/Delete-empty		on	Callback
+menu_interp	uimenu		Interpolation			Callback
+menu_interpolationGUI	uimenu		Interpolation Pro			Callback
+menu_interpseries	uimenu		Interpolate Series			Callback
+menu_selectinterval	uimenu		Select Parts			Callback
+menu_desection	uimenu		Remove Parts			Callback
+menu_gap	uimenu		Add Gaps			Callback
+menu_depeaks	uimenu		Remove Peaks			Callback
+menu_clip	uimenu		Clipping			Callback
+menu_colman	uimenu		Column Manipulate			Callback
+menu_add	uimenu		Merge Series			Callback
+menu_multiply	uimenu		Multiply Series			Callback
+menu_datatransf	uimenu		Data Transformations			Callback
+menu_function	uimenu		Simple Function			Callback
+menu_derivative	uimenu		Derivative			Callback
+menu_maxmin	uimenu		Find Max/Min			Callback
+menu_cpt	uimenu		Changepoint			Callback
+menu_image	uimenu		Image			Callback
+menu_imshow	uimenu		Show Image			Callback
+menu_rgb2gray	uimenu		RGB to Grayscale			Callback
+menu_rgb2lab	uimenu		RGB to CIE Lab			Callback
+menu_improfile	uimenu		Image Profile			Callback
+menu_digitizer	uimenu		Plot Digitizer			Callback
+menu_univariate	uimenu		Univariate			Callback
+menu_statsummary	uimenu		Summary Statistics			Callback
+menu_ttest	uimenu		One-sample test (t test)			Callback
+menu_uni2SamTest	uimenu		Two Sample Tests			Callback
+menu_anova	uimenu		ANOVA			Callback
+menu_normaltest	uimenu		Normality Test			Callback
+menu_chi2gof	uimenu		Distribution Test			Callback
+menu_bivariate	uimenu		Bivariate			Callback
+menu_corr	uimenu		Correlation			Callback
+menu_covariance	uimenu		Covariance			Callback
+menu_linearReg	uimenu		Linear Regression			Callback
+menu_multivariate1	uimenu		Multivariate			Callback
+menu_pca	uimenu		Principal Component		on	Callback
+menuac	uimenu		Timeseries			Callback
+menu_prewhiten	uimenu		Detrending | Curve Fitting			Callback
+menu_smooth1	uimenu		Smoothing			Callback
+menu_bootstrap	uimenu		Bootstrap			Callback
+menu_smooth_option	uimenu		Moving Average			Callback
+menu_movmeanfbw	uimenu		Fixed Bandwidth			Callback
+menu_smooth	uimenu		K-Nearest Neighbor (KNN)			Callback
+menu_movmedian_option	uimenu		Moving Median			Callback
+menu_movmedianfbw	uimenu		Fixed Bandwidth			Callback
+menu_movmedian	uimenu		K-Nearest Neighbor (KNN)			Callback
+menu_movGauss	uimenu		Moving Gaussian			Callback
+menu_whiten	uimenu		Pre-whitening			Callback
+menu_power	uimenu		Spectral Analysis			Callback
+menu_swa	uimenu		Spectral Analysis (SWA)			Callback
+menu_period	uimenu		Evolutionary Spectral Analysis			Callback
+menu_waveletGUI	uimenu		Wavelet			Callback
+menu_CSA	uimenu		Circular Spectral Analysis		on	Callback
+menu_recplot	uimenu		Recurrence Plot			Callback
+menu_coh	uimenu		Coherence & Phase			Callback
+menu_leadlag	uimenu		Lead-lag Relationship			Callback
+menu_filter	uimenu		Filtering		on	Callback
+menu_dynfilter	uimenu		Dynamic Filtering			Callback
+Menu_EMDmenu	uimenu		Empirical Mode Decomposition			Callback
+menu_emd	uimenu		Empirical Mode Decomposition (EMD)			Callback
+menu_eemd	uimenu		Ensemble Empirical Mode Decomposition (EEMD)			Callback
+menu_AM	uimenu		Amplitude Modulation		on	Callback
+menu_agebuild	uimenu		Build Age Model			Callback
+menu_sr2age	uimenu		Sed. Rate to Age Model			Callback
+menu_undatable	uimenu		Undatable			Callback
+menu_age	uimenu		Age Scale | Tuning		on	Callback
+menu_correlation	uimenu		Stratigraphic Correlation			Callback
+menu_pda	uimenu		Power Decomposition Analysis			Callback
+menu_sednoise	uimenu		Sedimentary Noise Model			Callback
+menu_dynos	uimenu		Dynamic noise after orbital tuning (DYNOT)			Callback
+menu_rho	uimenu		Lag-1 autocorrelation coefficient (ρ1)			Callback
+menu_dynot_v2	uimenu		Dynamic noise after orbital tuning (DYNOT) v2			Callback
+menu_rhov2	uimenu		Lag-1 autocorrelation coefficient (ρ1) v2			Callback
+menu_lyapunov	uimenu		Lyapunov exponent			Callback
+menu_ecoco	uimenu		Correlation Coefficient (COCO/eCOCO)			Callback
+menu_timeOpt	uimenu		TimeOpt		off	Callback
+menu_eTimeOpt	uimenu		eTimeOpt		off	Callback
+menu_specmoments	uimenu		Spectral Moments			Callback
+menu_help	uimenu		Help			Callback
+menu_lang	uimenu		文A/语言选择(language)			Callback
+menu_read	uimenu		What's New			Callback
+menu_manuals	uimenu		Manual		on	Callback
+menu_findupdates	uimenu		Find Updates			Callback
+menu_contact	uimenu		Copyright			Callback
+menu_email	uimenu		Contact		on	Callback

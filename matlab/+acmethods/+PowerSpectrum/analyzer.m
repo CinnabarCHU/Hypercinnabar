@@ -37,7 +37,9 @@ case 'Multi-taper method'
 %% End copied source
 case 'Lomb-Scargle spectrum'
     fmax=p.fmax; pd=p.pd;
-%% Copied from mingsongli/acycle@b52ea9f510f3be00bde9a0238b9898a1e2315b74 code/guicode/spectrum.m:L1132-L1132
+%% Copied from mingsongli/acycle@b52ea9f510f3be00bde9a0238b9898a1e2315b74 code/guicode/spectrum.m:L1130-L1132
+        timex = timex + abs(min(timex));
+        %[po,fd1,pth] = plomb(datax,timex,fmax,'normalized','Pd',pd);
         [po,fd1,pth] = plomb(datax,timex,fmax,'Pd',pd);
 %% End copied source
 case 'Periodogram'

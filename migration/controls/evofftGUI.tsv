@@ -1,0 +1,36 @@
+tag	type	style	label_or_string	fig_value	fig_enable	callback_properties
+uipanel1	uipanel		Input for Evolutive FFT			
+radiobutton2	uicontrol	radiobutton	Use Input	0		Callback
+evofft_Nyquist_radiobutton	uicontrol	radiobutton	Use Nyquist	1	on	Callback,ButtonDownFcn
+evofft_nyquist_text	uicontrol	text	Nyquist			
+evofft_fmax_edit	uicontrol	edit			on	Callback
+edit7	uicontrol	edit	0			Callback,ButtonDownFcn
+text6	uicontrol	text	Freq. min.			ButtonDownFcn
+uipanel5	uipanel		Step			ButtonDownFcn
+pushbutton8	uicontrol		Tips			Callback,ButtonDownFcn
+edit_step	uicontrol	edit	1			Callback,ButtonDownFcn
+edit8	uicontrol	edit	unit			Callback,ButtonDownFcn
+text7	uicontrol	text	Unit			
+uipanel6	uipanel		Plot-dimension			ButtonDownFcn
+radiobutton_2d	uicontrol	radiobutton	2D	1		Callback
+radiobutton_3d	uicontrol	radiobutton	3D			Callback,ButtonDownFcn
+rotation	uicontrol	checkbox	Rotation			Callback
+uipanel3	uipanel		Sliding Window			
+evofft_tips_win_pushbutton	uicontrol		Tips			Callback
+evofft_win_text	uicontrol	edit	500			Callback
+evofft_ok_pushbutton	uicontrol		OK			Callback
+checkbox2	uicontrol	checkbox	Normalize each window	1		Callback
+checkbox3	uicontrol	checkbox	Flip Y-axis	1		Callback
+checkbox4	uicontrol	checkbox	Log(power)	0		Callback
+checkbox5	uicontrol	checkbox	Log(frequency)	0		Callback
+uipanel10	uipanel		Colormap			
+popupmenu3	uicontrol	popupmenu	default | parula | gray | hot | cool | jet | spring | summer | autumn | winter | copper | pink | colorcube | prism	1		Callback
+text8	uicontrol	text	Grid #			
+edit9	uicontrol	edit				Callback
+checkbox6	uicontrol	checkbox	x padding	1		Callback,ButtonDownFcn
+checkbox7	uicontrol	checkbox	2pi MTM + red			Callback
+checkbox8	uicontrol	checkbox	Plot series	1		Callback,ButtonDownFcn
+popupmenu4	uicontrol	popupmenu	zero | mirror | mean | random	1		Callback
+checkbox9	uicontrol	checkbox	Save data			Callback
+popupmenu2	uicontrol	popupmenu	Fast Fourier transform (LAH) | Fast Fourier transform (MatLab) | Lomb-Scargle periodogram | Multi-taper method	1		Callback
+text5	uicontrol	text	Select method			

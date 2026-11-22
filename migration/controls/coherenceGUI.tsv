@@ -1,0 +1,34 @@
+tag	type	style	label_or_string	fig_value	fig_enable	callback_properties
+listbox1	uicontrol	listbox		1		Callback,ButtonDownFcn
+edit1	uicontrol	edit				Callback,ButtonDownFcn
+text3	uicontrol	text	Reference			ButtonDownFcn
+pushbutton4	uicontrol	pushbutton	==>			Callback,ButtonDownFcn
+edit2	uicontrol	edit				Callback,ButtonDownFcn
+pushbutton7	uicontrol	pushbutton	==>			Callback,ButtonDownFcn
+listbox2	uicontrol	listbox		1		Callback,ButtonDownFcn
+text4	uicontrol	text	Series			ButtonDownFcn
+pushbutton8	uicontrol	pushbutton	Coherence Plot			Callback,ButtonDownFcn
+axes1	axes					
+axes2	axes					ButtonDownFcn
+popupmenu1	uicontrol	popupmenu	Welch	1		Callback
+text1	uicontrol	text	Method			
+text7	uicontrol	text	Window size			
+text8	uicontrol	text	Number of overlap			ButtonDownFcn
+edit5	uicontrol	edit				Callback
+text9	uicontrol	text	unit			
+edit6	uicontrol	edit				Callback,ButtonDownFcn
+text10	uicontrol	text	unit			ButtonDownFcn
+text11	uicontrol	text	Coherence p-value			ButtonDownFcn
+edit7	uicontrol	edit	0.05			Callback,ButtonDownFcn
+radiobutton1	uicontrol	radiobutton	Frequency	1		Callback
+radiobutton2	uicontrol	radiobutton	Period	0		Callback,ButtonDownFcn
+edit8	uicontrol	edit	0			Callback
+edit9	uicontrol	edit	0			Callback,ButtonDownFcn
+text12	uicontrol	text	From			
+text13	uicontrol	text	To			ButtonDownFcn
+checkbox1	uicontrol	checkbox		1		Callback
+checkbox2	uicontrol	checkbox		1		Callback,ButtonDownFcn
+text14	uicontrol	text	Plot Style			
+checkbox3	uicontrol	checkbox	Save Data	1		Callback
+text15	uicontrol	text	Depth/Time			
+popupmenu2	uicontrol	popupmenu	Small=Young | Small=Old	1		Callback

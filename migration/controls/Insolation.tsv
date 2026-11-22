@@ -1,0 +1,41 @@
+tag	type	style	label_or_string	fig_value	fig_enable	callback_properties
+radiobutton1	uicontrol	radiobutton	Daily	1		Callback
+radiobutton2	uicontrol	radiobutton	Mean			Callback
+pop_solutions	uicontrol	popupmenu	Laskar et al. 2004 | Laskar et al. 2010a | Laskar et al. 2010b | Laskar et al. 2010c | Laskar et al. 2010d	1		Callback
+text2	uicontrol	text	Choose the starting and final time:			
+text3	uicontrol	text	from			
+text4	uicontrol	text	to			ButtonDownFcn
+edit1	uicontrol	edit	1			Callback
+edit2	uicontrol	edit	1000			Callback,ButtonDownFcn
+text5	uicontrol	text	step			ButtonDownFcn
+edit3	uicontrol	edit	1			Callback,ButtonDownFcn
+text6	uicontrol	text	time unit			ButtonDownFcn
+pop_unit	uicontrol	popupmenu	kyr | myr | year	1		Callback
+text19	uicontrol	text	The series will have			
+text20	uicontrol	text	1001			
+text21	uicontrol	text	points			
+text8	uicontrol	text	Solar constant			
+edit_solconstant	uicontrol	edit	1365			Callback
+text9	uicontrol	text	W/m^2			ButtonDownFcn
+text11	uicontrol	text	Starting day			ButtonDownFcn
+edit_dayi1	uicontrol	edit	80			Callback,ButtonDownFcn
+text12	uicontrol	text	or date			ButtonDownFcn
+pop_month1	uicontrol	popupmenu	January | February | March | April | May | June | July | August | September | October | November | December	3		Callback,ButtonDownFcn
+pop_days1	uicontrol	popupmenu	1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12 | 13 | 14 | 15 | 16 | 17 | 18 | 19 | 20 | 21 | 22 | 23 | 24 | 25 | 26 | 27 | 28 | 29 | 30 | 31	21		Callback,ButtonDownFcn
+text13	uicontrol	text	Ending day			ButtonDownFcn
+edit_dayi2	uicontrol	edit	266		off	Callback,ButtonDownFcn
+text14	uicontrol	text	or date			ButtonDownFcn
+pop_month2	uicontrol	popupmenu	January | February | March | April | May | June | July | August | September | October | November | December	9	off	Callback,ButtonDownFcn
+pop_days2	uicontrol	popupmenu	1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12 | 13 | 14 | 15 | 16 | 17 | 18 | 19 | 20 | 21 | 22 | 23 | 24 | 25 | 26 | 27 | 28 | 29 | 30 | 31	23	off	Callback,ButtonDownFcn
+radiobutton5	uicontrol	radiobutton	Mean daily	1		Callback
+radiobutton6	uicontrol	radiobutton	Max daily	0		Callback,ButtonDownFcn
+radiobutton3	uicontrol	radiobutton	Single latitude	1		Callback
+radiobutton4	uicontrol	radiobutton	Latitude range	0		Callback,ButtonDownFcn
+edit7	uicontrol	edit	65			Callback,ButtonDownFcn
+text15	uicontrol	text	degree (N>0, S<0)			ButtonDownFcn
+edit8	uicontrol	edit	80		off	Callback,ButtonDownFcn
+edit9	uicontrol	edit	1		off	Callback,ButtonDownFcn
+text16	uicontrol	text	step			ButtonDownFcn
+text17	uicontrol	text	to			ButtonDownFcn
+text18	uicontrol	text	from			ButtonDownFcn
+push_OK	uicontrol	pushbutton	OK			Callback

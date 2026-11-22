@@ -1,0 +1,4 @@
+tag	type	style	label_or_string	fig_value	fig_enable	callback_properties
+text1	uicontrol	text	Select language			
+popupmenu1	uicontrol	popupmenu	English | 中文简体 | 中文繁體 | Deutsch | Español | Français | Italiano | Nederlands | rumuński | Polski | Português | Português do Brasil | Русский | Türk | українська | हिंदी | عربي | やまと | বাংলা | 한국인	1		Callback
+pushbutton1	uicontrol	pushbutton	OK			Callback

@@ -1,0 +1,41 @@
+tag	type	style	label_or_string	fig_value	fig_enable	callback_properties
+text2	uicontrol	text	Data:			
+text3	uicontrol	text	data			
+panel_sedrate	uipanel		Tested sedimentation rate			
+radiobutton1	uicontrol	radiobutton	Linear	1		Callback
+radiobutton2	uicontrol	radiobutton	Log			Callback
+text4	uicontrol	text	Minimum	0	on	Callback,ButtonDownFcn
+edit1	uicontrol	edit	1			Callback
+edit2	uicontrol	edit	30			Callback
+text5	uicontrol	text	maximum	0	on	Callback,ButtonDownFcn
+text6	uicontrol	text	Number	0	on	Callback,ButtonDownFcn
+edit3	uicontrol	edit	200			Callback
+text7	uicontrol	text	*			
+uipanelfreq	uipanel		Frequency			
+radiobutton3	uicontrol	radiobutton	Middle age of data	1		Callback
+edit4	uicontrol	edit	0			Callback
+text8	uicontrol	text	Ma			
+radiobutton4	uicontrol	radiobutton	Eccentricity			Callback
+edit5	uicontrol	edit	405.6795 130.719 123.839 98.8631 94.8767		off	Callback
+text10	uicontrol	text	Precession			ButtonDownFcn
+radiobutton6	uicontrol	radiobutton	short eccentricity modulation			Callback
+radiobutton5	uicontrol	radiobutton	Fit to precession modulation	1		Callback,ButtonDownFcn
+text11	uicontrol	text	Taner bandpass cut-off frequencies			
+text12	uicontrol	text	Low			
+text13	uicontrol	text	High			ButtonDownFcn
+text14	uicontrol	text	Roll-off rate			ButtonDownFcn
+edit7	uicontrol	edit	0.035			Callback
+edit8	uicontrol	edit	0.065			Callback,ButtonDownFcn
+edit9	uicontrol	edit	10^12		on	Callback,ButtonDownFcn
+text15	uicontrol	text	Correlation method			
+radiobutton7	uicontrol	radiobutton	Spearman	1		Callback
+radiobutton8	uicontrol	radiobutton	Pearson			Callback,ButtonDownFcn
+edit6	uicontrol	edit	23.62069 22.31868 19.06768 18.91979	0	off	Callback,ButtonDownFcn
+uipanelMC	uipanel		Monte Carlo Simulation			
+checkbox1	uicontrol	checkbox	number of simulations			Callback
+edit10	uicontrol	edit	2000		off	Callback
+pushbutton1	uicontrol	pushbutton	TimeOpt			Callback,ButtonDownFcn
+checkbox2	uicontrol	checkbox	Detrend	1		Callback
+text16	uicontrol	text	Ref: Meyers, S.R., 2015. Paleoceanography, doi: 10.1002/2015PA002850			
+checkbox3	uicontrol	checkbox	save data			Callback
+checkbox4	uicontrol	checkbox	save plot		off	Callback,ButtonDownFcn

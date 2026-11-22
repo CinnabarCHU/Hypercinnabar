@@ -1,0 +1,22 @@
+tag	type	style	label_or_string	fig_value	fig_enable	callback_properties
+uipanel3	uipanel		X axis			ButtonDownFcn
+radiobutton1	uicontrol	radiobutton	Linear	1		Callback,ButtonDownFcn
+radiobutton2	uicontrol	radiobutton	Logarithmic			Callback,ButtonDownFcn
+text8	uicontrol	text	Start Point			ButtonDownFcn
+text9	uicontrol	text	End Point			ButtonDownFcn
+edit1	uicontrol	edit	0			Callback,ButtonDownFcn
+edit2	uicontrol	edit	1			Callback,ButtonDownFcn
+uipanel2	uipanel		Y axis			ButtonDownFcn
+edit4	uicontrol	edit	1			Callback,ButtonDownFcn
+edit3	uicontrol	edit	0			Callback,ButtonDownFcn
+text7	uicontrol	text	End Point			ButtonDownFcn
+text6	uicontrol	text	Start Point			ButtonDownFcn
+radiobutton4	uicontrol	radiobutton	Logarithmic			Callback,ButtonDownFcn
+radiobutton3	uicontrol	radiobutton	Linear	1		Callback,ButtonDownFcn
+text5	uicontrol	text	Data Extract			
+push_calibrate	uicontrol	pushbutton	Calibrate axis			Callback
+PushDigitize	uicontrol	pushbutton	Digitize			Callback,ButtonDownFcn
+pushsave	uicontrol	pushbutton	Save Data			Callback
+push_undo	uicontrol	pushbutton	Undo			Callback
+push_grid	uicontrol	pushbutton	Grid Line		off	Callback
+push_auto	uicontrol	pushbutton	Auto-digitize		off	Callback

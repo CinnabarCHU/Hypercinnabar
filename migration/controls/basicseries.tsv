@@ -1,0 +1,21 @@
+tag	type	style	label_or_string	fig_value	fig_enable	callback_properties
+popupmenu1	uicontrol	popupmenu	La2004 | La2010a | La2010b | La2010c | La2010d | ZB18a	1		Callback
+edit1	uicontrol	edit	0			Callback
+edit2	uicontrol	edit	1000			Callback
+popupmenu3	uicontrol	popupmenu	ETP | Eccentricity | Obliquity | Precession	1		Callback,ButtonDownFcn
+text2	uicontrol	text	Astronomical solutions			
+text3	uicontrol	text	Astronomical parameters			ButtonDownFcn
+text4	uicontrol	text	Time Interval			ButtonDownFcn
+text5	uicontrol	text	From t1			ButtonDownFcn
+text6	uicontrol	text	To t2			ButtonDownFcn
+text7	uicontrol	text	k.a.			ButtonDownFcn
+pushbutton1	uicontrol	pushbutton	OK			Callback
+text9	uicontrol	text	k.a.			ButtonDownFcn
+textref	uicontrol	text				
+uipanel_ETP	uipanel		ETP weight			
+edit3	uicontrol	edit	1			
+edit4	uicontrol	edit	1			
+edit5	uicontrol	edit	-1			
+text13	uicontrol	text	Eccentricity			
+text14	uicontrol	text	Obliquity			
+text15	uicontrol	text	Precession			
