@@ -5,6 +5,7 @@ function hilbert_audit()
     mkdir('audit-output'); rng(734128,'twister');
     bands=[1000/45,1000/35;7.10,9.00;9.25,11.40];
     synthetic_check(bands);
+    carrierPSD=table(); extraCarriers=cell(1,3);
     age=(40.01:.02:64.99)'; gridF=unique([(.30:.005:1)';2/3]);
     windows=[54,62;41,49;55,61;54,60;46.6,51.6];
     plans=cell(size(windows,1),1);
@@ -42,9 +43,13 @@ function hilbert_audit()
                     ref.(bandNames(k))=F(:,k);ref.(bandNames(k)+"_A")=E(:,k);
                 end
             end
+            if mode=="main_q20" || mode=="retain_PETM" || mode=="bridge_PETM"
+                ind=find(["main_q20","retain_PETM","bridge_PETM"]==mode);
+                extraCarriers{ind}(:,2*j-1:2*j)=F(:,2:3);
+            end
             amp=B*E(:,1); pair=B*(E(:,2:3).^2);
             if mode=="main_q20"
-                baseF=F;
+                baseF=F;carrierPSD=[carrierPSD;tilt_psd(src,t,sig,F(:,1))];
                 nullInput(:,2*j-1:2*j)=F(:,2:3); %#ok<AGROW>
                 baseEnvelope.(src+"_tilt_A")=amp;baseEnvelope.(src+"_slow_A2")=pair(:,1);baseEnvelope.(src+"_fast_A2")=pair(:,2);
                 writetable(ref,"audit-output/"+src+"_native.csv");
@@ -80,8 +85,9 @@ function hilbert_audit()
     writetable(scores,'audit-output/parameter_sensitivity.csv');writetable(tiltres,'audit-output/tilt_sensitivity.csv');
     writetable(quality,'audit-output/carrier_diagnostics.csv');writetable(prof,'audit-output/profiles.csv');
     writetable(baseEnvelope,'audit-output/envelopes.csv');
-    orbit_diagnostic(bands);
+    orbitP=orbit_diagnostic(bands);writetable([carrierPSD;orbitP],'audit-output/tilt_carrier_PSD.csv');
     phase_test(t,B,nullInput,plans{1},gridF);
+    local_variance_test(t,B,age,extraCarriers);
 end
 
 function out=channel(t,x,band,q,padding)
@@ -151,7 +157,7 @@ function synthetic_check(bands)
     writetable(res,'audit-output/synthetic.csv');writetable(gains,'audit-output/response.csv');
 end
 
-function orbit_diagnostic(bands)
+function pp=orbit_diagnostic(bands)
     t=(38000:5:67000)';
     pt=readmatrix('inputs/PT.dat','FileType','text');tilt=interp1(-pt(:,1),pt(:,2),t);
     fid=fopen('inputs/ems-plan3.dat');assert(fid>=0);
@@ -164,7 +170,7 @@ function orbit_diagnostic(bands)
         if k==1,x=tilt;else,x=e;end
         a=channel(t,x,bands(k,:),20,0);O.(names(k))=a(:,2);O.(names(k)+"_A")=a(:,3);
     end
-    writetable(O,'audit-output/ZB18a_native.csv');
+    writetable(O,'audit-output/ZB18a_native.csv');pp=tilt_psd("ZB18a",t,tilt,O.tilt);
 end
 
 function phase_test(t,B,Y,p,f)
@@ -192,4 +198,58 @@ function phase_test(t,B,Y,p,f)
             'VariableNames',{'source','surrogates','J_exact','p_fixed','p_fixed_either_proxy','J_scan','p_scan','p_scan_either_proxy'})]; %#ok<AGROW>
     end
     writetable(out,'audit-output/phase_tests.csv');disp(out);
+end
+
+function out=tilt_psd(src,t,x,filtered)
+    out=table();bounds=[54 62;41 49];
+    for j=1:2
+        b=bounds(j,:); sel=t>=1000*b(1)&t<1000*b(2);w=hann(sum(sel));
+        [pow,f]=periodogram(detrend([x(sel),filtered(sel)]),w,32768,1000/median(diff(t)));
+        keep=f>=20&f<=31;n=sum(keep);
+        out=[out;table(repmat(src,n,1),repmat(b(1),n,1),repmat(b(2),n,1),f(keep),pow(keep,1),pow(keep,2), ...
+            'VariableNames',{'source','from_Ma','to_Ma','frequency','unfiltered_density','filtered_density'})]; %#ok<AGROW>
+    end
+end
+
+function local_variance_test(t,B,age,carriers)
+% Compare a fixed period, frequencies read from ZB18a/La2010c h on the
+% identical window, and an average of J over the approximate prediction.
+    optional=(1/1.6:.005:1/1.4)';optional(end+1)=1/1.4;
+    f=unique([2/3;.6317138671875;.4913330078125;optional]);
+    indexes=ismember(f,optional);p=makeplan(age,[54,62],f);
+    n=numel(t);pos=(2:floor((n+1)/2))';
+    reps=1999; names=["main_q20","retain_PETM","bridge_PETM"]; labs=["d13c","d18o"]; out=table();
+    for v=1:3
+        for width=[0 2000]
+            rng(734128,'twister');Y=carriers{v};gain=ones(size(Y));
+            if width>0
+                h=min(n-1,ceil(4*width/median(diff(t))));
+                w=exp(-.5*((-h:h)'*median(diff(t))/width).^2);w=w/sum(w);
+                padded=[flipud(Y(2:h+1,:));Y;flipud(Y(end-h:end-1,:))];
+                gain=sqrt(conv2(padded.^2,w,'valid'));assert(all(gain>0,'all'));
+            end
+            S=fft(Y./gain);stats=zeros(reps+1,2,4);
+            for k=1:reps+1
+                if k==1,y=Y;else
+                    U=S;U(pos,:)=S(pos,:).*exp(2i*pi*rand(numel(pos),1));U(n-pos+2,:)=conj(U(pos,:));
+                    y=real(ifft(U)).*gain;
+                end
+                R=evaluate(p,B*abs(hilbert(y)).^2);
+                J=[sqrt(prod(R(:,1:2),2)),sqrt(prod(R(:,3:4),2))];
+                stats(k,:,1)=J(f==2/3,:);stats(k,:,2)=J(f==.6317138671875,:);
+                stats(k,:,3)=J(f==.4913330078125,:);
+                stats(k,:,4)=trapz(f(indexes),J(indexes,:))/(max(f(indexes))-min(f(indexes)));
+            end
+            measures=["exact_1p50","ZB_h_1p583","La_h_2p035","mean_1p40_1p60"];
+            for m=1:4
+                for j=1:2
+                    obs=stats(1,j,m);single=(1+sum(stats(2:end,j,m)>=obs))/(reps+1);
+                    both=(1+sum(max(stats(2:end,:,m),[],2)>=obs))/(reps+1);
+                    out=[out;table(labs(j),names(v),width,measures(m),reps,obs,single,both, ...
+                        'VariableNames',{'source','setting','gain_sigma_kyr','test','N_surrogates','joint','p_record','p_either_record'})]; %#ok<AGROW>
+                end
+            end
+        end
+    end
+    writetable(out,'audit-output/variance_nulls.csv');
 end
