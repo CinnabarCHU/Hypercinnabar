@@ -44,7 +44,7 @@ jobs:
           products: Signal_Processing_Toolbox Statistics_and_Machine_Learning_Toolbox
       - uses: matlab-actions/run-command@v2
         with:
-          command: addpath('checks'); compare_modulators
+          command: addpath('checks'); compare_modulators; compare_modulators('sensitivity')
       - uses: actions/upload-artifact@v4
         if: always()
         with:

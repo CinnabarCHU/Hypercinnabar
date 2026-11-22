@@ -1,8 +1,10 @@
-function compare_modulators()
+function compare_modulators(option)
 % Compare extraction of g4-g3 in the amplitudes of short eccentricity.
 % All astronomical/geological inputs are public. Ages are in kyr, frequencies in cycles/Myr.
     addpath(fullfile('upstream','code','seriesanalysis'));
-    mkdir('outputs'); rng(150250,'twister');
+    if ~isfolder('outputs'),mkdir('outputs');end
+    rng(150250,'twister');
+    if nargin && strcmp(option,'sensitivity'),subbandSensitivity();return,end
     tb=(40010:20:64990)';
     main=[54000,62000;41000,49000;55000,61000;41000,47000;47000,52000];
     sliding=(40000:1000:57000)'; bounds=unique([main;sliding,sliding+8000],'rows','stable');
@@ -177,4 +179,54 @@ function syntheticTest()
         if isempty(out),out=T;else,out=[out;T];end
     end
     writetable(out,fullfile('outputs','synthetic_denominator.csv')); disp(out);
+end
+
+
+function subbandSensitivity()
+    % Perturb the same two families of short-eccentricity lines. Evaluate
+    % each variant and one common statistic (median over the 18 variants).
+    bands=[7.10 9.00 9.25 11.40; 7.25 8.75 9.45 11.15; 6.90 9.10 9.15 11.65];
+    windows=[54000 62000 41000 49000;55000 61000 41000 47000;54000 60000 42000 48000];
+    tbin=(40010:20:64990)'; po=cell(3,1);py=po;
+    for w=1:3
+        po{w}=harmonicPlan(tbin,windows(w,1:2));py{w}=harmonicPlan(tbin,windows(w,3:4));
+    end
+    rng(35895,'twister'); B=399;
+    for src=["d13c","d18o"]
+        raw=readmatrix(fullfile('inputs',src+"_baseline_series.csv"));t=raw(:,1);v=raw(:,2);
+        signals=zeros(numel(t),6);
+        for b=1:3
+            c=acycleCarrier(t,v,bands(b,1),bands(b,2));d=acycleCarrier(t,v,bands(b,3),bands(b,4));
+            signals(:,2*b-1:2*b)=[c(:,2),d(:,2)];
+        end
+        spec=fft(signals); n=numel(t);pos=(2:floor((n+1)/2))';
+        out=zeros(B+1,18); ids=zeros(18,3);
+        for j=1:B+1
+            if j==1,y=signals;
+            else
+                u=spec;u(pos,:)=spec(pos,:).*exp(2i*pi*rand(numel(pos),1));
+                u(n-pos+2,:)=conj(u(pos,:));y=real(ifft(u));
+            end
+            A=abs(hilbert(y));both=bin20(t,[A,A.^2]);m=0;
+            for w=1:3
+                old=profile(po{w},both); young=profile(py{w},both);
+                f=po{w}.f; short=f>=1/1.6 & f<=1/1.2;long=f>=1/2.6 & f<=1/2.0;
+                for power=1:2
+                    for b=1:3
+                        idx=(power-1)*6+(2*b-1:2*b);
+                        vo=sqrt(prod(old(:,idx),2));vy=sqrt(prod(young(:,idx),2));
+                        m=m+1;ids(m,:)=[w,power,b];
+                        out(j,m)=log(mean(vo(short))/mean(vo(long)))-log(mean(vy(short))/mean(vy(long)));
+                    end
+                end
+            end
+        end
+        med=median(out,2);obs=out(1,:);p=(1+sum(out(2:end,:)>=obs,1))/(B+1);
+        summary=array2table([windows(ids(:,1),:)/1000,ids(:,2),bands(ids(:,3),:),obs',p'], ...
+          'VariableNames',{'old_start_Ma','old_end_Ma','young_start_Ma','young_end_Ma','envelope_power','slow_low','slow_high','fast_low','fast_high','log_contrast','conditional_p'});
+        writetable(summary,fullfile('outputs',src+"_method_sensitivity.csv"));
+        writematrix(med,fullfile('outputs',src+"_median_surrogates.csv"));
+        fprintf('GRID %s contrast_min_median_max=[%.4f %.4f %.4f] p_median=%.4f individual_p_range=[%.4f %.4f]\n', ...
+            src,min(obs),med(1),max(obs),(1+sum(med(2:end)>=med(1)))/(B+1),min(p),max(p));
+    end
 end
