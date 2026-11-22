@@ -46,7 +46,19 @@ e=journal(i);
 assert(strcmp(e{end}.info.status,'incomplete') && isequal(aclog.read(i,e{end}.info.retval),rv));
 [~, n] = aclog.invoke('test-v1/empty',struct(),[],@(p) []);
 e=journal(n); assert(strcmp(e{end}.info.status,'done') && isempty(e{end}.info.retval));
+[~, loud] = aclog.invoke('test-v1/message',struct(),[],@withMessage);
+e=journal(loud);
+assert(strcmp(e{2}.attr,'msg') && containsText(e{2}.info.logging,'source diagnostic'));
 fprintf('Call journals, recovered parameters, full argument call, original exception and three outcomes passed.\n');
+end
+
+function r=withMessage(~)
+disp('source diagnostic');
+r=1;
+end
+
+function found=containsText(s,text)
+found=~isempty(strfind(s,text));
 end
 
 function [v, s] = partial(~)

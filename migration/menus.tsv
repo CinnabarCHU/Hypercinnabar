@@ -24,10 +24,10 @@ menu_samplerate	Plot > Sampling Rate	method	SamplingRate	code/guicode/AC.m:5744
 menu_datadistri	Plot > Data Distribution	method	DataDistribution	code/guicode/AC.m:5912	
 menu_sound	Plot > Convert to sound	method	SeriesSound	code/guicode/AC.m:8568	Returns the waveform and sample rate. Playback is a front-end action.
 menu_basic	Basic Series	heading		code/guicode/AC.m:1880	
-menu_insol	Basic Series > Insolation	method	Insolation InsolLatDayGif insoML	code/guicode/AC.m:6446	Includes numerical insolations and the latitude–day animation.
-menu_laskar	Basic Series > Astronomical Solution	partial	AstronomicalSolution	code/guicode/AC.m:3007	La04, La10 and ZB18a data are in the checkout. ZB17 variants and BergerLoutre1991.mat require external data.
+menu_insol	Basic Series > Insolation	method	Insolation InsolLatDayGif insoML	code/guicode/AC.m:6446	The Berger–Loutre branch loads NOAA orbit91 data prepared by migration/fetch_orbits.py.
+menu_laskar	Basic Series > Astronomical Solution	method	AstronomicalSolution	code/guicode/AC.m:3007	All GUI solutions including ZB17; download the eleven checksum-pinned ZB17 files using migration/fetch_orbits.py.
 menu_LOD	Basic Series > Milankovitch Calculator	method	MilankovitchCal lodla04 getBerger89Period	code/guicode/AC.m:8364	
-linegenerator	Basic Series > Signal/Noise Generator	partial	SeriesGenerator	code/guicode/AC.m:8287	Numerical generator branches are mapped. Source controls include additional parameter and plotting choices.
+linegenerator	Basic Series > Signal/Noise Generator	method	SeriesGenerator	code/guicode/AC.m:8287	Five GUI signal/noise families, settings and plots.
 menu_LR04	Basic Series > LR04 Stack	method	LR04	code/guicode/AC.m:3023	
 menu_cenogrid	Basic Series > CENOGRID	method	CENOGRID	code/guicode/AC.m:7943	
 menu_examples	Basic Series > Examples	heading		code/guicode/AC.m:7765	
@@ -56,7 +56,7 @@ menu_clip	Math > Clipping	method	Clipping	code/guicode/AC.m:2291
 menu_colman	Math > Column Manipulate	method	ColumnManipulation	code/guicode/AC.m:8752	
 menu_add	Math > Merge Series	method	MergeSeries	code/guicode/AC.m:4649	
 menu_multiply	Math > Multiply Series	method	MultiplySeries	code/guicode/AC.m:4700	
-menu_datatransf	Math > Data Transformations	partial	DataTransform boxcoxML	code/guicode/AC.m:8720	Selected transformation branches are portable. Compare every option and its GUI parameter defaults.
+menu_datatransf	Math > Data Transformations	method	DataTransform boxcoxML	code/guicode/AC.m:8720	Sixteen transform choices including their GUI parameters and data plots.
 menu_function	Math > Simple Function	method	SimpleFunction	code/guicode/AC.m:3665	
 menu_derivative	Math > Derivative	method	Derivative	code/guicode/AC.m:2613	
 menu_maxmin	Math > Find Max/Min	method	Extrema	code/guicode/AC.m:3736	
@@ -65,7 +65,7 @@ menu_image	Math > Image	heading		code/guicode/AC.m:7010
 menu_imshow	Math > Image > Show Image	method	ShowImage	code/guicode/AC.m:3942	
 menu_rgb2gray	Math > Image > RGB to Grayscale	method	RGBToGray	code/guicode/AC.m:4036	
 menu_rgb2lab	Math > Image > RGB to CIE Lab	method	RGBToLab	code/guicode/AC.m:4098	
-menu_improfile	Math > Image > Image Profile	partial	ImageProfile	code/guicode/AC.m:4153	Line-sampled image intensities are available. Interactive acquisition and multi-channel display differ by image type.
+menu_improfile	Math > Image > Image Profile	method	ImageProfile ImageTransect	code/guicode/AC.m:4153	Explicit sampling endpoints replace mouse clicks. Includes RGB, grayscale and color-space profiles.
 menu_digitizer	Math > Plot Digitizer	partial	Digitize	code/guicode/AC.m:8203	Manual linear/log calibration is mapped. Automatic tracing calls trackline, absent from the reference.
 menu_univariate	Univariate	heading		code/guicode/AC.m:8814	
 menu_statsummary	Univariate > Summary Statistics	method	SummaryStatistics	code/guicode/AC.m:8835	
@@ -77,7 +77,7 @@ menu_chi2gof	Univariate > Distribution Test	method	DistributionTest	code/guicode
 menu_bivariate	Bivariate	heading		code/guicode/AC.m:8821	
 menu_corr	Bivariate > Correlation	method	Correlation	code/guicode/AC.m:8925	
 menu_covariance	Bivariate > Covariance	method	Covariance	code/guicode/AC.m:8933	
-menu_linearReg	Bivariate > Linear Regression	source-missing		code/guicode/AC.m:8941	The callback calls BivLinearRegUI. Its implementation is absent from this tree.
+menu_linearReg	Bivariate > Linear Regression	archival	LinearRegression	code/guicode/AC.m:8941	Fit, confidence bands, statistics, ANOVA and plot from the distributed archival code/test/BivLinearRegUI.m. The exact baseline copy is unconfirmed.
 menu_multivariate1	Multivariate	heading		code/guicode/AC.m:8828	
 menu_pca	Multivariate > Principal Component	method	PCA	code/guicode/AC.m:6825	
 menuac	Timeseries	heading		code/guicode/AC.m:3466	
@@ -95,7 +95,7 @@ menu_whiten	Timeseries > Pre-whitening	method	AR1Prewhitening	code/guicode/AC.m:
 menu_power	Timeseries > Spectral Analysis	partial	PowerSpectrum redconfML plomb_robustar1 ftestmtmML SWA SpectralPowerLaw SpectralBendingPowerLaw	code/guicode/AC.m:2760	Three spectral estimators, the power-law and bending-power-law fits, SWA, robust noise and F-tests are mapped. Check the original combined figures and all noise options.
 menu_swa	Timeseries > Spectral Analysis (SWA)	method	SWA	code/guicode/AC.m:2787	Original SWA and Bayesian estimators run together. Reports and graphics use the original functions.
 menu_period	Timeseries > Evolutionary Spectral Analysis	partial	EvolutionarySpectrum	code/guicode/AC.m:2727	Windowed estimators are mapped. The desktop also supports interactive display and extraction of selected frequencies.
-menu_waveletGUI	Timeseries > Wavelet	partial	WaveletSpectrum WaveletCoherence	code/guicode/AC.m:8485	Single-series wavelet and wavelet coherence are mapped. Compare cross-wavelet, coherence and combined multi-panel plot choices independently.
+menu_waveletGUI	Timeseries > Wavelet	partial	WaveletSpectrum WaveletCoherence MatlabWaveletCoherence	code/guicode/AC.m:8485	Single-series wavelet and two coherence methods. Compare the combined figures and interactive options.
 menu_CSA	Timeseries > Circular Spectral Analysis	method	CircularSpectrum	code/guicode/AC.m:8427	
 menu_recplot	Timeseries > Recurrence Plot	method	Recurrence crp_pdist crp_core	code/guicode/AC.m:8638	
 menu_coh	Timeseries > Coherence & Phase	method	Coherence cohac	code/guicode/AC.m:8372	
@@ -117,10 +117,10 @@ menu_dynos	Timeseries > Sedimentary Noise Model > Dynamic noise after orbital tu
 menu_rho	Timeseries > Sedimentary Noise Model > Lag-1 autocorrelation coefficient (ρ1)	method	Lag1 Lag1MonteCarlo	code/guicode/AC.m:5277	
 menu_dynot_v2	Timeseries > Sedimentary Noise Model > Dynamic noise after orbital tuning (DYNOT) v2	method	DYNOT	code/guicode/AC.m:9613	Both menus pass identical inputs to DYNOS(handles); the portable package follows the serial simulation branch.
 menu_rhov2	Timeseries > Sedimentary Noise Model > Lag-1 autocorrelation coefficient (ρ1) v2	method	Lag1V2 Lag1V2MonteCarlo	code/guicode/AC.m:9212	
-menu_lyapunov	Timeseries > Sedimentary Noise Model > Lyapunov exponent	source-missing	Lyapunov	code/guicode/AC.m:9642	The baseline calls lyapunov_timeseries. No .m or .p implementation occurs in this revision.
+menu_lyapunov	Timeseries > Sedimentary Noise Model > Lyapunov exponent	method	Lyapunov LyapunovMonteCarlo	code/guicode/AC.m:9642	Direct historical kernel. Single-run and randomized-window calculations use integer sample delays required by the original implementation.
 menu_ecoco	Timeseries > Correlation Coefficient (COCO/eCOCO)	partial	corrcoefslices corrcoefslices_rank ecoco ecocoplot ecocoplots ecocotrack ecocotrackn	code/guicode/AC.m:2971	COCO/eCOCO calculation and graphics are split. eCOCO retains the original unsupported low-simulation behavior and original early-exit branches.
-menu_timeOpt	Timeseries > TimeOpt	source-missing	TimeOpt	code/guicode/AC.m:7057	The baseline calls timeOptAc. No .m or .p implementation occurs in this revision.
-menu_eTimeOpt	Timeseries > eTimeOpt	source-missing	EvolutionaryTimeOpt	code/guicode/AC.m:7114	The baseline calls eTimeOpt. No .m or .p implementation occurs in this revision.
+menu_timeOpt	Timeseries > TimeOpt	method	TimeOpt	code/guicode/AC.m:7057	Original historical kernel, both Monte Carlo significance choices and original plotting layouts.
+menu_eTimeOpt	Timeseries > eTimeOpt	method	EvolutionaryTimeOpt	code/guicode/AC.m:7114	Historical moving windows and full-argument timeOptAc; normalized/raw fits, optional padding and original 2D/3D figures. Numeric inputs use cm.
 menu_specmoments	Timeseries > Spectral Moments	method	spectralmoments	code/guicode/AC.m:8324	
 menu_help	Help	heading		code/guicode/AC.m:1905	
 menu_lang	Help > 文A/语言选择(language)	desktop		code/guicode/AC.m:8628	Original desktop callback operates on windows, files, clipboard, preferences or help resources.

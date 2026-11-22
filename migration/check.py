@@ -1,6 +1,7 @@
 """Verify source sections, the registered role catalogue and the GUIDE inventory."""
 import argparse
 import csv
+import hashlib
 import io
 from collections import Counter, defaultdict
 from functools import lru_cache
@@ -14,15 +15,28 @@ SOURCE = ROOT / 'upstream' / 'acycle'
 METHODS = ROOT / 'matlab' / '+acmethods'
 PIN = 'b52ea9f510f3be00bde9a0238b9898a1e2315b74'
 LINK = 'https://github.com/mingsongli/acycle/blob/' + PIN + '/'
-MARK = '%% Copied from mingsongli/acycle@' + PIN + ' '
-SECTIONS = re.compile(re.escape(MARK) + r'(.+):L(\d+)-L(\d+)$')
+PIN_ORIGIN = 'mingsongli/acycle@' + PIN
+SECTIONS = re.compile(r'%% Copied from (\S+) (.+):L(\d+)-L(\d+)$')
 SOURCES = re.compile(r'^% Source: ' + re.escape(LINK) + r'([^#]+?)(?:#L(\d+))?$')
 ROLES = {'helper', 'analyzer', 'plotter'}
 
 
 @lru_cache(None)
-def original(path):
-    return (SOURCE / path).read_bytes().decode('utf-8-sig', 'replace').splitlines()
+def recovered_sources():
+    sources = {}
+    for record in rows(MIGRATION / 'recovered.tsv'):
+        key = (record['origin'], record['member'])
+        file = ROOT / record['local_path']
+        assert key not in sources and file.is_file(), key
+        assert hashlib.sha256(file.read_bytes()).hexdigest() == record['sha256'], file
+        sources[key] = file
+    return sources
+
+
+@lru_cache(None)
+def original(path, origin=PIN_ORIGIN):
+    file = SOURCE / path if origin == PIN_ORIGIN else recovered_sources()[origin, path]
+    return file.read_bytes().decode('utf-8-sig', 'replace').splitlines()
 
 
 def check_sections(file, lines, references):
@@ -40,14 +54,14 @@ def check_sections(file, lines, references):
             continue
         match = SECTIONS.fullmatch(line)
         assert match, (file, i + 1, line)
-        path, first, last = match.groups()
-        source = original(path)
+        origin, path, first, last = match.groups()
+        source = original(path, origin)
         first, last = int(first), int(last)
         assert 1 <= first <= last <= len(source), (file, path, first, last)
         length = last - first + 1
         assert lines[i + 1:i + 1 + length] == source[first - 1:last], (file, path, first, last)
         assert lines[i + 1 + length] == '%% End copied source', (file, path, first, last, 'closing marker')
-        references.add(path)
+        references.add(path if origin == PIN_ORIGIN else origin + ' ' + path)
         count += 1
     assert count == lines.count('%% End copied source'), (file, 'unmatched source markers')
     return count
@@ -173,6 +187,7 @@ if __name__ == '__main__':
     args=parser.parse_args()
     actual=subprocess.check_output(['git','-C',str(SOURCE),'rev-parse','HEAD'],text=True).strip()
     assert actual==PIN, (actual,PIN)
+    recovered_sources()
     check_methods(args.write)
     if args.figures:
         check_figures()

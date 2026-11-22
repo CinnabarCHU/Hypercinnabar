@@ -39,6 +39,8 @@ DYNOT	helper	data	5	code/guicode/DYNOS.m
 DYNOT	plotter	y_grid_nan powyad_p_nan npercent npercent2 data	1	code/guicode/DYNOS.m
 DataDistribution	plotter	data_filterout dat_name ext	3	code/guicode/AC.m
 DataTransform	analyzer	data checkid j	8	code/guicode/datatransformationsGUI.m
+DataTransform	helper	data	0	code/guicode/datatransformationsGUI.m
+DataTransform	plotter	data checkid yt j lambda	1	code/guicode/datatransformationsGUI.m
 Derivative	analyzer	data derivative_n	1	code/guicode/AC.m
 Derivative	helper	data	1	code/guicode/AC.m
 DetrendSignalPP	analyzer	signal windowsize fs Porder	0	code/seriesanalysis/DetrendSignalPP.m
@@ -57,7 +59,9 @@ EnsembleEMD	helper	data_filterout	2	code/guicode/AC.m
 EnsembleEMD	plotter	t time_series imfs imfsn fd1 pow	2	code/guicode/AC.m
 EvolutionarySpectrum	analyzer	data window step fmin nyquist norm method time_0pad padtype	2	code/guicode/evofftGUI.m
 EvolutionarySpectrum	helper	data	7	code/guicode/evofftGUI.m
-EvolutionaryTimeOpt	analyzer	dat window step sedmin sedmax numsed linLog fit fl fh roll targetE targetP normal detrend cormethod	1	code/guicode/eTimeOptGUI.m
+EvolutionaryTimeOpt	analyzer	dat window step sedmin sedmax numsed linLog fit fl fh roll targetE targetP normal detrend cormethod time_0pad padtype	4	code/guicode/eTimeOptGUI.m | mingsongli/acycle@f4027a865e22cf64500e7145aef592b944df3f98 code/package/timeOpt/eTimeOpt.m
+EvolutionaryTimeOpt	helper	dat (depth in cm)	5	code/guicode/eTimeOptGUI.m
+EvolutionaryTimeOpt	plotter	result window unit unit_type plot_2d flipy main_unit_selection lang_choice lang_id lang_var	1	code/guicode/eTimeOptGUI.m
 ExampleDigitizer	analyzer	(none)	2	code/guicode/AC.m
 ExampleDigitizer	plotter	im_name data_name	1	code/guicode/AC.m
 ExampleExtinction	analyzer	(none)	1	code/guicode/AC.m
@@ -89,6 +93,8 @@ FixedMovingMean	helper	data	2	code/guicode/AC.m | code/seriesanalysis/movmeanfbw
 FixedMovingMedian	analyzer	data window step halfwindow alpha	0	code/seriesanalysis/movmeanfbw.m
 FixedMovingMedian	helper	data	2	code/guicode/AC.m | code/seriesanalysis/movmeanfbw.m
 ImageProfile	analyzer	I CursorInfo_value	1	code/guicode/AC.m
+ImageTransect	analyzer	I CursorInfo_value color_type	8	code/guicode/AC.m
+ImageTransect	plotter	data color_type dat_name distance_label grayscale_label	4	code/guicode/AC.m
 InsolLatDayGif	plotter	II t lat day unit_t_r name_insol	0	code/misc/InsolLatDayGif.m
 Insolation	analyzer	t1 t2 dt unit_t type dayi1 dayi2 latrange lat1 lat2 dlat qinso author res L	2	code/guicode/Insolation.m
 InterpolateSeries	analyzer	dat1 dat2	1	code/guicode/InterplationSeries.m
@@ -107,8 +113,18 @@ Lag1V2	analyzer	data window interpolate_rate padtype	1	code/guicode/AC.m
 Lag1V2MonteCarlo	analyzer	data nsim window1 window2 samprate1 samprate2 nout padtype	3	code/guicode/AC.m
 Lag1V2MonteCarlo	helper	data	4	code/guicode/AC.m
 Lag1V2MonteCarlo	plotter	y_grid powyp y_grid_nan powyad_p_nan npercent npercent2 unit_type unit window1 window2 samprate1 samprate2	2	code/guicode/AC.m
+LinearRegression	analyzer	selectedData	3	Acycle-MATLAB-distribution@54720f36678812cca5e6286efaf91433b37047589dd2ee994049ea5020ca35dc Acycle_3.1.1/code/test/BivLinearRegUI.m | code/guicode/AC.m
+LinearRegression	helper	selectedData	0	code/guicode/AC.m
+LinearRegression	plotter	result	1	Acycle-MATLAB-distribution@54720f36678812cca5e6286efaf91433b37047589dd2ee994049ea5020ca35dc Acycle_3.1.1/code/test/BivLinearRegUI.m | code/guicode/AC.m
 Log10	analyzer	data	1	code/guicode/AC.m
-Lyapunov	analyzer	data_even tau window step_size num_surrogates	1	code/guicode/AC.m
+Lyapunov	analyzer	data or data_even interpolate_rate padtype tau window step_size num_surrogates	3	code/guicode/AC.m
+Lyapunov	helper	data	4	code/guicode/AC.m
+Lyapunov	plotter	result unit_type unit tau window step_size	3	code/guicode/AC.m
+LyapunovMonteCarlo	analyzer	data nsim tau1 tau2 window1 window2 samprate1 samprate2 nout step_size padtype	6	code/guicode/AC.m
+LyapunovMonteCarlo	helper	data	4	code/guicode/AC.m
+LyapunovMonteCarlo	plotter	result data window1 window2 samprate1 samprate2 unit_type unit	3	code/guicode/AC.m
+MatlabWaveletCoherence	analyzer	dat1 dat2 data_standardize wtcthreshold	2	code/package/wavelet/wavecoh_readGUI.m
+MatlabWaveletCoherence	helper	dat1 dat2	3	code/guicode/waveletGUI.m | code/package/wavelet/wavecoh_readGUI.m
 MergeSeries	analyzer	series	2	code/guicode/AC.m
 MilankovitchCal	analyzer	age	0	code/misc/MilankovitchCal.m
 MovingGaussian	analyzer	data window	0	code/guicode/AC.m
@@ -137,6 +153,8 @@ PowerDecomposition	analyzer	data f3 window nw ftmin fterm step pad padtype	5	cod
 PowerDecomposition	helper	data	4	code/guicode/AC.m
 PowerDecomposition	plotter	pow	2	code/guicode/AC.m
 PowerSpectrum	analyzer	data method nw(MTM) padtimes(MTM/Periodogram) nzeropad(MTM/Periodogram) pd(Lomb) fmax(Lomb)	4	code/guicode/spectrum.m
+PowerSpectrum	helper	data	9	code/guicode/spectrum.fig | code/guicode/spectrum.m
+PowerSpectrum	plotter	fd1 po fmin fmax unit plot_x_period linlogY logfreq	7	code/guicode/spectrum.m
 RGBToGray	analyzer	im_name	1	code/guicode/AC.m
 RGBToGray	plotter	I	1	code/guicode/AC.m
 RGBToLab	analyzer	im_name	1	code/guicode/AC.m
@@ -152,6 +170,8 @@ SamplingRate	analyzer	data_filterout	2	code/guicode/AC.m
 SamplingRate	plotter	datasamp dt dat_name ext unit unit_type	7	code/guicode/AC.m
 SedimentationRateToAge	analyzer	data	1	code/guicode/AC.m
 SeriesGenerator	analyzer	x kind and explicit parameters for the selected kind	5	code/guicode/linegenerator.m
+SeriesGenerator	helper	data(optional)	2	code/guicode/linegenerator.fig | code/guicode/linegenerator.m
+SeriesGenerator	plotter	x y	1	code/guicode/linegenerator.m
 SeriesSound	analyzer	data a b c	1	code/guicode/AC.m
 SeriesSound	helper	data	1	code/guicode/AC.m
 ShowImage	plotter	im_name	1	code/guicode/AC.m
@@ -167,8 +187,9 @@ SpectralPowerLaw	plotter	fd1 po pl red90 red95 red99 red90global red95global red
 Standardize	analyzer	data	1	code/guicode/AC.m
 StratigraphicCorrelation	analyzer	tiepoints1 tiepoints2 data1	1	code/guicode/CorrelationGUI.m
 SummaryStatistics	analyzer	data	1	code/package/univariate/UniStatisticSum.m
-TimeOpt	analyzer	dat sedmin sedmax numsed nsim linLog fit fl fh roll targetE targetP detrend cormethod	1	code/guicode/timeOptGUI.m
-TimeOpt	helper	dat (depth in cm)	3	code/guicode/timeOptGUI.m
+TimeOpt	analyzer	dat sedmin sedmax numsed nsim linLog fit fl fh roll targetE targetP detrend cormethod mc_scope (when nsim > 1)	12	code/guicode/timeOptGUI.m | mingsongli/acycle@f4027a865e22cf64500e7145aef592b944df3f98 code/package/timeOpt/timeOptAc.m
+TimeOpt	helper	dat (depth in cm)	4	code/guicode/timeOptGUI.m
+TimeOpt	plotter	sedmin sedmax fit targetE targetP genplot cormethod nsim result mc_scope	7	code/guicode/timeOptGUI.m | mingsongli/acycle@f4027a865e22cf64500e7145aef592b944df3f98 code/package/timeOpt/fitItls.m | mingsongli/acycle@f4027a865e22cf64500e7145aef592b944df3f98 code/package/timeOpt/timeOptAc.m
 TwoSampleTests	analyzer	selectedData tabIndex	1	code/package/univariate/UniTwoSampleTestsUI.m
 Undatable	analyzer	inputfile nsim xfactor bootpc combine printme savemat savebigmat debug writedir allowreversal run1nsim sar vcloud plotsar	0	code/package/undatable/undatable.m
 Undatable	helper	inputfile nsim xfactor bootpc	1	code/package/undatable/undatable.m

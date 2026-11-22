@@ -40,5 +40,10 @@ handles.roll = 10^12;
 handles.detrend = 1;
 handles.cormethod = 2;
 %% End copied source
+%% Copied from mingsongli/acycle@b52ea9f510f3be00bde9a0238b9898a1e2315b74 code/guicode/timeOptGUI.m:L317-L317
+handles.genplot = 2; % single plot with multi-panels
+%% End copied source
 r=handles; r.dat=dat;
+% Default button in the historical Monte Carlo range dialog.
+r.mc_scope='optimum';
 end

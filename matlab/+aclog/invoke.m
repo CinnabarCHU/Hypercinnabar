@@ -15,12 +15,13 @@ ref = aclog.store(id, 'params', params);
 aclog.store(id, 'rng', rng);
 logger(id, 'init', struct('op', op, 'params', ref));
 try
-    if nargout(implementation) == 2
-        [retval, status] = implementation(params);
-    else
-        retval = implementation(params);
-        status = 'done';
+    % The expression is constant. The method is a function handle, and parameters stay as MATLAB values.
+    transcript = evalc('[retval, status, caught] = runMethod(implementation, params);');
+    if ~isempty(strtrim(transcript))
+        logger(id,'msg',struct('logging',transcript,'details',struct()));
+        fprintf('%s',transcript);
     end
+    if ~isempty(caught), rethrow(caught); end
     if ~any(strcmp(status, {'incomplete','cancelled','done'}))
         error('Acycle:Logger:Status', 'Invalid completion status: %s', status);
     end
@@ -35,4 +36,19 @@ catch err
     rethrow(err);
 end
 logger(id, 'fin', struct('status', status, 'retval', ref));
+end
+
+function [result, status, caught] = runMethod(implementation, params)
+result = [];
+status = 'done';
+caught = [];
+try
+    if nargout(implementation) == 2
+        [result, status] = implementation(params);
+    else
+        result = implementation(params);
+    end
+catch err
+    caught = err;
+end
 end

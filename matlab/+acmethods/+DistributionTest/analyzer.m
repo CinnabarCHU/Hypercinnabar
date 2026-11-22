@@ -18,23 +18,23 @@ val = p.val;
                 pd = fitdist(data,val);
             catch
 %% End copied source
-%% Copied from mingsongli/acycle@b52ea9f510f3be00bde9a0238b9898a1e2315b74 code/package/univariate/UniChi2GOFUI.m:L85-L91
+%% Copied from mingsongli/acycle@b52ea9f510f3be00bde9a0238b9898a1e2315b74 code/package/univariate/UniChi2GOFUI.m:L85-L90
                 data = data + abs(min(data)) + eps;  % ensure data is >= 0
             end
         elseif strcmp(val, "Beta")
             try 
                 pd = fitdist(data,val);
             catch
-                warndlg('Warning: Have to normalize the data to the [0,1] interval')
 %% End copied source
-%% Copied from mingsongli/acycle@b52ea9f510f3be00bde9a0238b9898a1e2315b74 code/package/univariate/UniChi2GOFUI.m:L93-L98
+                disp('Warning: Have to normalize the data to the [0,1] interval')
+%% Copied from mingsongli/acycle@b52ea9f510f3be00bde9a0238b9898a1e2315b74 code/package/univariate/UniChi2GOFUI.m:L93-L97
             end
         elseif ismember(val, ["Exponential", "Gamma", "Poisson"])
             try 
                 pd = fitdist(data,val);
             catch
-                warndlg('Warning: Have to add a constant to make all the data >= 0')
 %% End copied source
+                disp('Warning: Have to add a constant to make all the data >= 0')
 %% Copied from mingsongli/acycle@b52ea9f510f3be00bde9a0238b9898a1e2315b74 code/package/univariate/UniChi2GOFUI.m:L100-L127
             end
         end

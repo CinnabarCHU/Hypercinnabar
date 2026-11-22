@@ -34,7 +34,7 @@ code/corrcoef/targetadj_real.m	targetadj_real.analyzer
 code/corrcoef/targetrebuilt.m	targetrebuilt.analyzer
 code/corrcoef/theoredar1ML.m	theoredar1ML.analyzer
 code/guicode/AC.fig	
-code/guicode/AC.m	AddGaps.analyzer | AmplitudeModulation.analyzer | AmplitudeModulation.helper | BuildAgeModel.analyzer | BuildAgeModel.helper | BuildAgeModel.plotter | CENOGRID.analyzer | CENOGRID.plotter | Clipping.analyzer | Clipping.helper | Columns.analyzer | DataDistribution.plotter | Derivative.analyzer | Derivative.helper | EMD.analyzer | EMD.helper | EMD.plotter | EnsembleEMD.analyzer | EnsembleEMD.helper | EnsembleEMD.plotter | ExampleDigitizer.analyzer | ExampleDigitizer.plotter | ExampleExtinction.analyzer | ExampleExtinction.plotter | ExampleGuandao.analyzer | ExampleGuandao.plotter | ExampleInsolation.analyzer | ExampleInsolation.plotter | ExampleLa2004.analyzer | ExampleLa2004.plotter | ExampleMars.analyzer | ExampleMars.plotter | ExampleMaunaLoa.analyzer | ExampleMaunaLoa.plotter | ExampleNewark.analyzer | ExampleNewark.plotter | ExampleRedNoise.analyzer | ExampleRedNoise.plotter | ExampleSphalerite.analyzer | ExampleSphalerite.plotter | ExampleSvalbardPETM.analyzer | ExampleSvalbardPETM.plotter | ExampleWayao.analyzer | ExampleWayao.plotter | Extrema.analyzer | Extrema.helper | FixedMovingMean.helper | FixedMovingMedian.helper | ImageProfile.analyzer | LR04.analyzer | LR04.helper | LR04.plotter | Lag1.analyzer | Lag1MonteCarlo.analyzer | Lag1MonteCarlo.helper | Lag1MonteCarlo.plotter | Lag1V2.analyzer | Lag1V2MonteCarlo.analyzer | Lag1V2MonteCarlo.helper | Lag1V2MonteCarlo.plotter | Log10.analyzer | Lyapunov.analyzer | MergeSeries.analyzer | MovingGaussian.analyzer | MovingGaussian.helper | MovingGaussian.plotter | MovingMean.analyzer | MovingMean.helper | MovingMean.plotter | MovingMedian.analyzer | MovingMedian.helper | MovingMedian.plotter | MultiplySeries.analyzer | PCA.analyzer | PCA.helper | PowerDecomposition.analyzer | PowerDecomposition.helper | PowerDecomposition.plotter | RGBToGray.analyzer | RGBToGray.plotter | RGBToLab.analyzer | RGBToLab.plotter | RemoveSections.analyzer | SamplingRate.analyzer | SamplingRate.plotter | SedimentationRateToAge.analyzer | SeriesSound.analyzer | SeriesSound.helper | ShowImage.plotter | SimpleFunction.analyzer | SimpleFunction.helper | SimplePlot.plotter | SortUnique.analyzer | SortUnique.helper | Standardize.analyzer | depeaks.helper | interpolate.helper | select_interval.helper
+code/guicode/AC.m	AddGaps.analyzer | AmplitudeModulation.analyzer | AmplitudeModulation.helper | BuildAgeModel.analyzer | BuildAgeModel.helper | BuildAgeModel.plotter | CENOGRID.analyzer | CENOGRID.plotter | Clipping.analyzer | Clipping.helper | Columns.analyzer | DataDistribution.plotter | Derivative.analyzer | Derivative.helper | EMD.analyzer | EMD.helper | EMD.plotter | EnsembleEMD.analyzer | EnsembleEMD.helper | EnsembleEMD.plotter | ExampleDigitizer.analyzer | ExampleDigitizer.plotter | ExampleExtinction.analyzer | ExampleExtinction.plotter | ExampleGuandao.analyzer | ExampleGuandao.plotter | ExampleInsolation.analyzer | ExampleInsolation.plotter | ExampleLa2004.analyzer | ExampleLa2004.plotter | ExampleMars.analyzer | ExampleMars.plotter | ExampleMaunaLoa.analyzer | ExampleMaunaLoa.plotter | ExampleNewark.analyzer | ExampleNewark.plotter | ExampleRedNoise.analyzer | ExampleRedNoise.plotter | ExampleSphalerite.analyzer | ExampleSphalerite.plotter | ExampleSvalbardPETM.analyzer | ExampleSvalbardPETM.plotter | ExampleWayao.analyzer | ExampleWayao.plotter | Extrema.analyzer | Extrema.helper | FixedMovingMean.helper | FixedMovingMedian.helper | ImageProfile.analyzer | ImageTransect.analyzer | ImageTransect.plotter | LR04.analyzer | LR04.helper | LR04.plotter | Lag1.analyzer | Lag1MonteCarlo.analyzer | Lag1MonteCarlo.helper | Lag1MonteCarlo.plotter | Lag1V2.analyzer | Lag1V2MonteCarlo.analyzer | Lag1V2MonteCarlo.helper | Lag1V2MonteCarlo.plotter | LinearRegression.analyzer | LinearRegression.helper | LinearRegression.plotter | Log10.analyzer | Lyapunov.analyzer | Lyapunov.helper | Lyapunov.plotter | LyapunovMonteCarlo.analyzer | LyapunovMonteCarlo.helper | LyapunovMonteCarlo.plotter | MergeSeries.analyzer | MovingGaussian.analyzer | MovingGaussian.helper | MovingGaussian.plotter | MovingMean.analyzer | MovingMean.helper | MovingMean.plotter | MovingMedian.analyzer | MovingMedian.helper | MovingMedian.plotter | MultiplySeries.analyzer | PCA.analyzer | PCA.helper | PowerDecomposition.analyzer | PowerDecomposition.helper | PowerDecomposition.plotter | RGBToGray.analyzer | RGBToGray.plotter | RGBToLab.analyzer | RGBToLab.plotter | RemoveSections.analyzer | SamplingRate.analyzer | SamplingRate.plotter | SedimentationRateToAge.analyzer | SeriesSound.analyzer | SeriesSound.helper | ShowImage.plotter | SimpleFunction.analyzer | SimpleFunction.helper | SimplePlot.plotter | SortUnique.analyzer | SortUnique.helper | Standardize.analyzer | depeaks.helper | interpolate.helper | select_interval.helper
 code/guicode/ACUpdate.m	
 code/guicode/About.fig	
 code/guicode/About.m	
@@ -78,11 +78,11 @@ code/guicode/copyright.fig
 code/guicode/copyright.m	
 code/guicode/data_type.fig	
 code/guicode/data_type.m	
-code/guicode/datatransformationsGUI.m	DataTransform.analyzer
+code/guicode/datatransformationsGUI.m	DataTransform.analyzer | DataTransform.helper | DataTransform.plotter
 code/guicode/eCOCOGUI.fig	
 code/guicode/eCOCOGUI.m	
 code/guicode/eTimeOptGUI.fig	
-code/guicode/eTimeOptGUI.m	EvolutionaryTimeOpt.analyzer
+code/guicode/eTimeOptGUI.m	EvolutionaryTimeOpt.analyzer | EvolutionaryTimeOpt.helper | EvolutionaryTimeOpt.plotter
 code/guicode/evofftGUI.fig	
 code/guicode/evofftGUI.m	EvolutionarySpectrum.analyzer | EvolutionarySpectrum.helper
 code/guicode/ft.fig	PassFilter.helper
@@ -93,19 +93,19 @@ code/guicode/languageGUI.fig
 code/guicode/languageGUI.m	
 code/guicode/leadlagGUI.fig	
 code/guicode/leadlagGUI.m	
-code/guicode/linegenerator.fig	
-code/guicode/linegenerator.m	SeriesGenerator.analyzer
+code/guicode/linegenerator.fig	SeriesGenerator.helper
+code/guicode/linegenerator.m	SeriesGenerator.analyzer | SeriesGenerator.helper | SeriesGenerator.plotter
 code/guicode/prewhiten.fig	
 code/guicode/prewhiten.m	
 code/guicode/prewhitenGUI.fig	
 code/guicode/prewhitenGUI.m	AR1Prewhitening.analyzer | AR1Prewhitening.helper | AR1Prewhitening.plotter
 code/guicode/smoothbestSpanRand.m	smoothbestSpanRand.analyzer
-code/guicode/spectrum.fig	
-code/guicode/spectrum.m	PowerSpectrum.analyzer | SpectralBendingPowerLaw.analyzer | SpectralBendingPowerLaw.plotter | SpectralPowerLaw.analyzer | SpectralPowerLaw.plotter
+code/guicode/spectrum.fig	PowerSpectrum.helper
+code/guicode/spectrum.m	PowerSpectrum.analyzer | PowerSpectrum.helper | PowerSpectrum.plotter | SpectralBendingPowerLaw.analyzer | SpectralBendingPowerLaw.plotter | SpectralPowerLaw.analyzer | SpectralPowerLaw.plotter
 code/guicode/timeOptGUI.fig	
-code/guicode/timeOptGUI.m	TimeOpt.analyzer | TimeOpt.helper
+code/guicode/timeOptGUI.m	TimeOpt.analyzer | TimeOpt.helper | TimeOpt.plotter
 code/guicode/waveletGUI.fig	WaveletSpectrum.helper
-code/guicode/waveletGUI.m	WaveletSpectrum.helper
+code/guicode/waveletGUI.m	MatlabWaveletCoherence.helper | WaveletSpectrum.helper
 code/misc/CDac_pwd.m	
 code/misc/GETac_pwd.m	
 code/misc/InsolLatDayGif.m	InsolLatDayGif.plotter
@@ -222,7 +222,7 @@ code/package/wavelet/wave_update_global.m
 code/package/wavelet/wave_update_plots.m	
 code/package/wavelet/wave_update_series.m	
 code/package/wavelet/wave_update_wavelet.m	WaveletSpectrum.plotter
-code/package/wavelet/wavecoh_readGUI.m	
+code/package/wavelet/wavecoh_readGUI.m	MatlabWaveletCoherence.analyzer | MatlabWaveletCoherence.helper
 code/package/wavelet/wavecoh_update_plots.m	
 code/package/wavelet/wavecoh_update_wavecoh.m	
 code/package/wavelet/wavecoh_update_wtc.m	
