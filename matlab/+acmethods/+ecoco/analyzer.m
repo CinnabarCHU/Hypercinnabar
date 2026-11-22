@@ -6,7 +6,7 @@ if nargin < 2, id = []; end
 [retval, id] = aclog.invoke('ecoco-v1.0/analyzer', params, id, @execute);
 end
 
-function r = execute(p)
+function [r, status] = execute(p)
 data = p.data;
 target = p.target;
 orbit7 = p.orbit7;
@@ -67,7 +67,14 @@ i = 1;
 %% End copied source
 q=struct('dat',[timex(:,i),x(:,i)],'target',target,'orbit7',orbit7,'dt',dt,'pad',pad, ...
     'sr1',sr1,'sr2',sr2,'srstep',srstep,'adjust',adjust,'red',red,'nsim',nsim,'slices',slices);
-simulation=acmethods.corrcoefslices.analyzer(q); corry=simulation.corry;
+hasNull = nsim > 1;
+if hasNull
+    simulation=acmethods.corrcoefslices.analyzer(q);
+    corry=simulation.corry;
+end
+status='done';
+nRates=0;
+nSpectra=0;
 q.nsim=0; q.method='Pearson';
 %% Copied from mingsongli/acycle@b52ea9f510f3be00bde9a0238b9898a1e2315b74 code/corrcoef/ecoco.m:L100-L101
 corrCI =[];
@@ -82,9 +89,13 @@ orbitn = length(orbit7);
      out_ecc(:,i) = corrCI(:,2);  % evolutionary ecorrcoef value
      out_ep(:,i) = corrCI(:,3);  % evolutionary ecorrcoef p-value
 %% End copied source
-%% Copied from mingsongli/acycle@b52ea9f510f3be00bde9a0238b9898a1e2315b74 code/corrcoef/ecoco.m:L124-L141
+%% Copied from mingsongli/acycle@b52ea9f510f3be00bde9a0238b9898a1e2315b74 code/corrcoef/ecoco.m:L124-L125
      norbit1 = orbitn - corrCI(:,end);
      out_norbit(:,i) = norbit1;
+%% End copied source
+     nSpectra=i;
+     if ~hasNull, continue; end
+%% Copied from mingsongli/acycle@b52ea9f510f3be00bde9a0238b9898a1e2315b74 code/corrcoef/ecoco.m:L126-L141
      for j = 1 : nofsr
          %percent_value = findperct(corrCI(j,2),corry(j,:));
          %if percent_value == 0
@@ -102,8 +113,7 @@ orbitn = length(orbit7);
          out_ecocorb(j,i) = out_norbit(j,i) / orbitn * out_ecoco(j,i);
      end
 %% End copied source
-%% Copied from mingsongli/acycle@b52ea9f510f3be00bde9a0238b9898a1e2315b74 code/corrcoef/ecoco.m:L153-L189
-     if nsim > 1
+%% Copied from mingsongli/acycle@b52ea9f510f3be00bde9a0238b9898a1e2315b74 code/corrcoef/ecoco.m:L154-L188
          prt_sr = corrCI(:,1);
          prt_ecc = corrCI(:,2);
          prt_eci = out_eci(:,i);
@@ -139,19 +149,26 @@ orbitn = length(orbit7);
              sr_p(i,4) = prints_eci(1);
              sr_p(i,5) = prints_norbit(1);
              sr_p(i,6) = prints_ecocorb(1);
-     else
 %% End copied source
-%% Copied from mingsongli/acycle@b52ea9f510f3be00bde9a0238b9898a1e2315b74 code/corrcoef/ecoco.m:L190-L190
-         out_ecocorb(:,i) = out_norbit.*out_ecc(:,i);
-%% End copied source
-%% Copied from mingsongli/acycle@b52ea9f510f3be00bde9a0238b9898a1e2315b74 code/corrcoef/ecoco.m:L191-L192
-     end
+     nRates=i;
+%% Copied from mingsongli/acycle@b52ea9f510f3be00bde9a0238b9898a1e2315b74 code/corrcoef/ecoco.m:L192-L192
  end
 %% End copied source
 %% Copied from mingsongli/acycle@b52ea9f510f3be00bde9a0238b9898a1e2315b74 code/corrcoef/ecoco.m:L197-L197
     out_depth = (linspace(data(1,1)+window/2,data(nrow,1)-window/2,m3))';
 %% End copied source
 prt_sr=corrCI(:,1);
+if ~hasNull
+    out_eci=[]; out_ecoco=[]; out_ecocorb=[]; sr_p=[];
+    status='incomplete';
+elseif nRates<m3
+    sr_p=sr_p(1:nRates,:);
+    out_depth=out_depth(1:nSpectra); out_ecc=out_ecc(:,1:nSpectra);
+    out_ep=out_ep(:,1:nSpectra); out_norbit=out_norbit(:,1:nSpectra);
+    out_eci=out_eci(:,1:nSpectra); out_ecoco=out_ecoco(:,1:nSpectra);
+    out_ecocorb=out_ecocorb(:,1:nSpectra);
+    status='incomplete';
+end
 r = struct();
 r.prt_sr = prt_sr;
 r.out_depth = out_depth;

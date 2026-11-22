@@ -45,8 +45,12 @@ Derivative	analyzer	data derivative_n	1	code/guicode/AC.m
 Derivative	helper	data	1	code/guicode/AC.m
 DetrendSignalPP	analyzer	signal windowsize fs Porder	0	code/seriesanalysis/DetrendSignalPP.m
 Detrending	analyzer	data method degree(polynomial) span(smoothers)	10	code/misc/update_detrend_plot_fig.m
+Detrending	helper	data	1	code/guicode/prewhiten.m
 Detrending	plotter	datax datay trend method	10	code/misc/update_detrend_plot_fig.m
 Digitize	analyzer	pixels x00 x01 y02 y03 xmin xmax ymin ymax scale1 scale2	1	code/guicode/DataExtractML.m
+DigitizeTrace	analyzer	image seeds srsh shreshn engine	4	code/corrcoef/ecocotrackn.m | code/guicode/DataExtractML.m
+DigitizeTrace	helper	image seeds	0	code/guicode/DataExtractML.m
+DigitizeTrace	plotter	image result	1	code/guicode/DataExtractML.m
 DistributionTest	analyzer	data val	5	code/package/univariate/UniChi2GOFUI.m
 DynamicFiltering	analyzer	data window step fmin fmax norm padding lower upper	8	code/misc/dynamic_filter.m | code/misc/dynamic_filter_lang.m
 DynamicFiltering	helper	data	2	code/guicode/DynamicFilter.m
@@ -59,6 +63,7 @@ EnsembleEMD	helper	data_filterout	2	code/guicode/AC.m
 EnsembleEMD	plotter	t time_series imfs imfsn fd1 pow	2	code/guicode/AC.m
 EvolutionarySpectrum	analyzer	data window step fmin nyquist norm method time_0pad padtype	2	code/guicode/evofftGUI.m
 EvolutionarySpectrum	helper	data	7	code/guicode/evofftGUI.m
+EvolutionarySpectrum	plotter	result data window step method freq_log MTMred plotseries fmin fmax unit filename plot_2d plot_log flipy rotate unit_type color colorgrid	4	code/guicode/evofftGUI.m
 EvolutionaryTimeOpt	analyzer	dat window step sedmin sedmax numsed linLog fit fl fh roll targetE targetP normal detrend cormethod time_0pad padtype	4	code/guicode/eTimeOptGUI.m | mingsongli/acycle@f4027a865e22cf64500e7145aef592b944df3f98 code/package/timeOpt/eTimeOpt.m
 EvolutionaryTimeOpt	helper	dat (depth in cm)	5	code/guicode/eTimeOptGUI.m
 EvolutionaryTimeOpt	plotter	result window unit unit_type plot_2d flipy main_unit_selection lang_choice lang_id lang_var	1	code/guicode/eTimeOptGUI.m
@@ -124,7 +129,8 @@ LyapunovMonteCarlo	analyzer	data nsim tau1 tau2 window1 window2 samprate1 sampra
 LyapunovMonteCarlo	helper	data	4	code/guicode/AC.m
 LyapunovMonteCarlo	plotter	result data window1 window2 samprate1 samprate2 unit_type unit	3	code/guicode/AC.m
 MatlabWaveletCoherence	analyzer	dat1 dat2 data_standardize wtcthreshold	2	code/package/wavelet/wavecoh_readGUI.m
-MatlabWaveletCoherence	helper	dat1 dat2	3	code/guicode/waveletGUI.m | code/package/wavelet/wavecoh_readGUI.m
+MatlabWaveletCoherence	helper	dat1 dat2	5	code/guicode/waveletGUI.m | code/package/wavelet/wavecoh_readGUI.m
+MatlabWaveletCoherence	plotter	result plot_series plot_swap plot_2d plot_linelog plot_colorgrid plot_colormap plot_flipx plot_flipy plot_phase plot_coi plot_sl plot_log2pow pt1 pt2 Yticks unit unit_type wtcthreshold	1	code/package/wavelet/wavecoh_readGUI.m | code/package/wavelet/wavecoh_update_plots.m
 MergeSeries	analyzer	series	2	code/guicode/AC.m
 MilankovitchCal	analyzer	age	0	code/misc/MilankovitchCal.m
 MovingGaussian	analyzer	data window	0	code/guicode/AC.m
@@ -191,12 +197,15 @@ TimeOpt	analyzer	dat sedmin sedmax numsed nsim linLog fit fl fh roll targetE tar
 TimeOpt	helper	dat (depth in cm)	4	code/guicode/timeOptGUI.m
 TimeOpt	plotter	sedmin sedmax fit targetE targetP genplot cormethod nsim result mc_scope	7	code/guicode/timeOptGUI.m | mingsongli/acycle@f4027a865e22cf64500e7145aef592b944df3f98 code/package/timeOpt/fitItls.m | mingsongli/acycle@f4027a865e22cf64500e7145aef592b944df3f98 code/package/timeOpt/timeOptAc.m
 TwoSampleTests	analyzer	selectedData tabIndex	1	code/package/univariate/UniTwoSampleTestsUI.m
-Undatable	analyzer	inputfile nsim xfactor bootpc combine printme savemat savebigmat debug writedir allowreversal run1nsim sar vcloud plotsar	0	code/package/undatable/undatable.m
+Undatable	analyzer	inputfile input_bytes nsim xfactor bootpc combine savemat savebigmat debug writedir allowreversal run1nsim sar vcloud plotsar	0	code/package/undatable/undatable.m
 Undatable	helper	inputfile nsim xfactor bootpc	1	code/package/undatable/undatable.m
+Undatable	plotter	result plotsar printme vcloud writedir	1	code/package/undatable/udplot.m | code/package/undatable/undatable.m
 WaveletCoherence	analyzer	dat1 dat2 pad dss param MonteCarloCount	2	code/package/wavelet/wtcML.m
+WaveletCoherence	helper	dat1 dat2	5	code/guicode/waveletGUI.m | code/package/wavelet/wavecoh_readGUI.m | code/package/wavelet/wtcML.m
+WaveletCoherence	plotter	result plot_series plot_swap plot_2d plot_linelog plot_colorgrid plot_colormap plot_flipx plot_flipy plot_phase plot_coi plot_sl plot_log2pow pt1 pt2 Yticks unit unit_type	1	code/package/wavelet/wavecoh_readGUI.m | code/package/wavelet/wavecoh_update_plots.m
 WaveletSpectrum	analyzer	data method_sel dss pad mother param pt2 data_standardize	3	code/package/wavelet/wave_readGUI.m
 WaveletSpectrum	helper	data	2	code/guicode/waveletGUI.fig | code/guicode/waveletGUI.m
-WaveletSpectrum	plotter	datax dt period power coi sig95 method_sel variance plot_2d plot_base plot_coi plot_colorgrid plot_colormap plot_flipx plot_flipy plot_linelog plot_log2pow plot_sl plot_z pt1 pt2 Yticks unit unit_type	1	code/package/wavelet/wave_readGUI.m | code/package/wavelet/wave_update_wavelet.m
+WaveletSpectrum	plotter	datax dt period power coi sig95 method_sel variance plot_2d plot_base plot_coi plot_colorgrid plot_colormap plot_flipx plot_flipy plot_linelog plot_log2pow plot_sl plot_z pt1 pt2 Yticks unit unit_type plot_series plot_spectrum plot_swap datay global_ws	1	code/package/wavelet/wave_readGUI.m | code/package/wavelet/wave_update_wavelet.m
 ar1nv	analyzer	x	0	code/package/wavelet/ar1nv.m
 ar1spectrum	analyzer	ar1 period	0	code/package/wavelet/ar1spectrum.m
 bayes_cpt	analyzer	data k_max d_min k_0 v_0 sig_0 num_samp	2	code/package/bayes_changepoint/bayes_cpt.m

@@ -101,6 +101,8 @@ wtcsig=(wtcsig(:,2))*(ones(1,n));
 wtcsig=Rsq./wtcsig;
 %% End copied source
 r = struct();
+r.sigmax=sigmax; r.sigmay=sigmay;
+r.datax=t; r.dat1y=x(ismember(x(:,1),t),2); r.dat2y=y(ismember(y(:,1),t),2);
 r.t = t;
 r.dt = dt;
 r.period = period;

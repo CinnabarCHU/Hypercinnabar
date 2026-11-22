@@ -32,6 +32,7 @@ Yticks_default = 2.^(fix(log2(2*dt)):fix(log2(timelen)));
 %% End copied source
 % checkbox/radio defaults from the GUIDE opening function and figure.
 r = struct();
+r.plot_series=1; r.plot_spectrum=0; r.plot_swap=0;
 r.Yticks=Yticks_default; r.plot_2d=1; r.plot_linelog=0; r.plot_base=2; r.plot_colorgrid=[];
 r.plot_colormap='default'; r.plot_flipx=0; r.plot_flipy=0; r.plot_coi=1; r.plot_sl=1; r.plot_log2pow=1; r.plot_z=0;
 r.data = data;

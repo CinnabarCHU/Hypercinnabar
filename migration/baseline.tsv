@@ -20,7 +20,7 @@ code/corrcoef/ecocoplot.m	ecocoplot.plotter
 code/corrcoef/ecocoplots.m	ecocoplots.plotter
 code/corrcoef/ecocos.m	ecocos.analyzer
 code/corrcoef/ecocotrack.m	ecocotrack.analyzer
-code/corrcoef/ecocotrackn.m	ecocotrackn.analyzer
+code/corrcoef/ecocotrackn.m	DigitizeTrace.analyzer | ecocotrackn.analyzer
 code/corrcoef/findperct.m	findperct.analyzer
 code/corrcoef/freq2target.m	freq2target.analyzer
 code/corrcoef/gentarget.m	gentarget.analyzer
@@ -43,7 +43,7 @@ code/guicode/CorrelationGUI.m	StratigraphicCorrelation.analyzer
 code/guicode/DYNOS.fig	
 code/guicode/DYNOS.m	DYNOT.analyzer | DYNOT.helper | DYNOT.plotter
 code/guicode/DataExtractML.fig	
-code/guicode/DataExtractML.m	Digitize.analyzer
+code/guicode/DataExtractML.m	Digitize.analyzer | DigitizeTrace.analyzer | DigitizeTrace.helper | DigitizeTrace.plotter
 code/guicode/DataExtractTab.fig	
 code/guicode/DataExtractTab.m	
 code/guicode/DynamicFilter.fig	
@@ -84,7 +84,7 @@ code/guicode/eCOCOGUI.m
 code/guicode/eTimeOptGUI.fig	
 code/guicode/eTimeOptGUI.m	EvolutionaryTimeOpt.analyzer | EvolutionaryTimeOpt.helper | EvolutionaryTimeOpt.plotter
 code/guicode/evofftGUI.fig	
-code/guicode/evofftGUI.m	EvolutionarySpectrum.analyzer | EvolutionarySpectrum.helper
+code/guicode/evofftGUI.m	EvolutionarySpectrum.analyzer | EvolutionarySpectrum.helper | EvolutionarySpectrum.plotter
 code/guicode/ft.fig	PassFilter.helper
 code/guicode/ft.m	Bandpass.analyzer | Bandpass.helper | Bandpass.plotter | PassFilter.helper
 code/guicode/interpolationGUI.fig	
@@ -96,7 +96,7 @@ code/guicode/leadlagGUI.m
 code/guicode/linegenerator.fig	SeriesGenerator.helper
 code/guicode/linegenerator.m	SeriesGenerator.analyzer | SeriesGenerator.helper | SeriesGenerator.plotter
 code/guicode/prewhiten.fig	
-code/guicode/prewhiten.m	
+code/guicode/prewhiten.m	Detrending.helper
 code/guicode/prewhitenGUI.fig	
 code/guicode/prewhitenGUI.m	AR1Prewhitening.analyzer | AR1Prewhitening.helper | AR1Prewhitening.plotter
 code/guicode/smoothbestSpanRand.m	smoothbestSpanRand.analyzer
@@ -105,7 +105,7 @@ code/guicode/spectrum.m	PowerSpectrum.analyzer | PowerSpectrum.helper | PowerSpe
 code/guicode/timeOptGUI.fig	
 code/guicode/timeOptGUI.m	TimeOpt.analyzer | TimeOpt.helper | TimeOpt.plotter
 code/guicode/waveletGUI.fig	WaveletSpectrum.helper
-code/guicode/waveletGUI.m	MatlabWaveletCoherence.helper | WaveletSpectrum.helper
+code/guicode/waveletGUI.m	MatlabWaveletCoherence.helper | WaveletCoherence.helper | WaveletSpectrum.helper
 code/misc/CDac_pwd.m	
 code/misc/GETac_pwd.m	
 code/misc/InsolLatDayGif.m	InsolLatDayGif.plotter
@@ -189,9 +189,9 @@ code/package/undatable/private/udmakepdfs.m
 code/package/undatable/private/udmatcal.m	
 code/package/undatable/private/udrun.m	
 code/package/undatable/private/udsummary.m	
-code/package/undatable/udplot.m	
+code/package/undatable/udplot.m	Undatable.plotter
 code/package/undatable/udplotoptions.m	
-code/package/undatable/undatable.m	Undatable.analyzer | Undatable.helper
+code/package/undatable/undatable.m	Undatable.analyzer | Undatable.helper | Undatable.plotter
 code/package/undatable/undatableGUI.fig	
 code/package/undatable/undatableGUI.m	
 code/package/univariate/ANOVAUI.m	ANOVA.analyzer
@@ -222,13 +222,13 @@ code/package/wavelet/wave_update_global.m
 code/package/wavelet/wave_update_plots.m	
 code/package/wavelet/wave_update_series.m	
 code/package/wavelet/wave_update_wavelet.m	WaveletSpectrum.plotter
-code/package/wavelet/wavecoh_readGUI.m	MatlabWaveletCoherence.analyzer | MatlabWaveletCoherence.helper
-code/package/wavelet/wavecoh_update_plots.m	
+code/package/wavelet/wavecoh_readGUI.m	MatlabWaveletCoherence.analyzer | MatlabWaveletCoherence.helper | MatlabWaveletCoherence.plotter | WaveletCoherence.helper | WaveletCoherence.plotter
+code/package/wavelet/wavecoh_update_plots.m	MatlabWaveletCoherence.plotter | WaveletCoherence.plotter
 code/package/wavelet/wavecoh_update_wavecoh.m	
 code/package/wavelet/wavecoh_update_wtc.m	
 code/package/wavelet/wavecoh_update_xwt.m	
 code/package/wavelet/wavelet.m	wavelet.analyzer | wavelet.helper | wtcsignif.analyzer
-code/package/wavelet/wtcML.m	WaveletCoherence.analyzer
+code/package/wavelet/wtcML.m	WaveletCoherence.analyzer | WaveletCoherence.helper
 code/package/wavelet/wtcsignif.m	wtcsignif.analyzer
 code/seriesanalysis/CE_NS70.m	CE_NS70.analyzer
 code/seriesanalysis/DetrendSignalPP.m	DetrendSignalPP.analyzer

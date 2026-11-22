@@ -66,7 +66,7 @@ menu_imshow	Math > Image > Show Image	method	ShowImage	code/guicode/AC.m:3942
 menu_rgb2gray	Math > Image > RGB to Grayscale	method	RGBToGray	code/guicode/AC.m:4036	
 menu_rgb2lab	Math > Image > RGB to CIE Lab	method	RGBToLab	code/guicode/AC.m:4098	
 menu_improfile	Math > Image > Image Profile	method	ImageProfile ImageTransect	code/guicode/AC.m:4153	Explicit sampling endpoints replace mouse clicks. Includes RGB, grayscale and color-space profiles.
-menu_digitizer	Math > Plot Digitizer	partial	Digitize	code/guicode/AC.m:8203	Manual linear/log calibration is mapped. Automatic tracing calls trackline, absent from the reference.
+menu_digitizer	Math > Plot Digitizer	alternative	Digitize DigitizeTrace	code/guicode/AC.m:8203	Manual calibration follows GUIDE. The two-argument getPKS and trackline are missing. Automatic tracing can use a supplied historical pair or the explicitly identified ecocotrackn-based alternative.
 menu_univariate	Univariate	heading		code/guicode/AC.m:8814	
 menu_statsummary	Univariate > Summary Statistics	method	SummaryStatistics	code/guicode/AC.m:8835	
 menu_ttest	Univariate > One-sample test (t test)	method	OneSampleT	code/guicode/AC.m:8844	
@@ -81,7 +81,7 @@ menu_linearReg	Bivariate > Linear Regression	archival	LinearRegression	code/guic
 menu_multivariate1	Multivariate	heading		code/guicode/AC.m:8828	
 menu_pca	Multivariate > Principal Component	method	PCA	code/guicode/AC.m:6825	
 menuac	Timeseries	heading		code/guicode/AC.m:3466	
-menu_prewhiten	Timeseries > Detrending | Curve Fitting	partial	Detrending DetrendSignalPP	code/guicode/AC.m:3479	Trend removal and original smoothing routines are mapped. Compare each fitting and bootstrap choice with the dialog.
+menu_prewhiten	Timeseries > Detrending | Curve Fitting	method	Detrending DetrendSignalPP	code/guicode/AC.m:3479	Raw, mean, linear, quadratic, higher polynomial, LOWESS/LOESS and robust variants, EEMD residual. The serialized Savitzky–Golay control was inactive; bootstrap smoothing has its own menu.
 menu_smooth1	Timeseries > Smoothing	heading		code/guicode/AC.m:7004	
 menu_bootstrap	Timeseries > Smoothing > Bootstrap	method	BootstrapSmooth	code/guicode/AC.m:2472	
 menu_smooth_option	Timeseries > Smoothing > Moving Average	heading		code/guicode/AC.m:7413	
@@ -94,8 +94,8 @@ menu_movGauss	Timeseries > Smoothing > Moving Gaussian	method	MovingGaussian	cod
 menu_whiten	Timeseries > Pre-whitening	method	AR1Prewhitening	code/guicode/AC.m:7023	
 menu_power	Timeseries > Spectral Analysis	partial	PowerSpectrum redconfML plomb_robustar1 ftestmtmML SWA SpectralPowerLaw SpectralBendingPowerLaw	code/guicode/AC.m:2760	Three spectral estimators, the power-law and bending-power-law fits, SWA, robust noise and F-tests are mapped. Check the original combined figures and all noise options.
 menu_swa	Timeseries > Spectral Analysis (SWA)	method	SWA	code/guicode/AC.m:2787	Original SWA and Bayesian estimators run together. Reports and graphics use the original functions.
-menu_period	Timeseries > Evolutionary Spectral Analysis	partial	EvolutionarySpectrum	code/guicode/AC.m:2727	Windowed estimators are mapped. The desktop also supports interactive display and extraction of selected frequencies.
-menu_waveletGUI	Timeseries > Wavelet	partial	WaveletSpectrum WaveletCoherence MatlabWaveletCoherence	code/guicode/AC.m:8485	Single-series wavelet and two coherence methods. Compare the combined figures and interactive options.
+menu_period	Timeseries > Evolutionary Spectral Analysis	method	EvolutionarySpectrum	code/guicode/AC.m:2727	Five numerical estimators and original 2D/3D, series, red-noise, log-scale, color and rotation plots. Returned grids support explicit selection of frequencies.
+menu_waveletGUI	Timeseries > Wavelet	method	WaveletSpectrum WaveletCoherence MatlabWaveletCoherence	code/guicode/AC.m:8485	Original series/global wavelet layouts, MATLAB coherence, Grinsted coherence and cross-wavelet plots with independent controls.
 menu_CSA	Timeseries > Circular Spectral Analysis	method	CircularSpectrum	code/guicode/AC.m:8427	
 menu_recplot	Timeseries > Recurrence Plot	method	Recurrence crp_pdist crp_core	code/guicode/AC.m:8638	
 menu_coh	Timeseries > Coherence & Phase	method	Coherence cohac	code/guicode/AC.m:8372	
@@ -108,7 +108,7 @@ menu_eemd	Timeseries > Empirical Mode Decomposition > Ensemble Empirical Mode De
 menu_AM	Timeseries > Amplitude Modulation	method	AmplitudeModulation	code/guicode/AC.m:2850	
 menu_agebuild	Timeseries > Build Age Model	method	BuildAgeModel	code/guicode/AC.m:3507	Control points are passed explicitly. Interactive picking belongs to the original desktop.
 menu_sr2age	Timeseries > Sed. Rate to Age Model	method	SedimentationRateToAge	code/guicode/AC.m:5027	
-menu_undatable	Timeseries > Undatable	partial	Undatable	code/guicode/AC.m:8691	The numerical entry is mapped. Original Undatable uses files and produces side effects.
+menu_undatable	Timeseries > Undatable	method	Undatable	code/guicode/AC.m:8691	Original package called with explicit settings. Chronology bytes and original plot variables travel in the journal. SAR and PDF/explicit file output are plot options.
 menu_age	Timeseries > Age Scale | Tuning	method	AgeScale	code/guicode/AC.m:2934	
 menu_correlation	Timeseries > Stratigraphic Correlation	method	StratigraphicCorrelation	code/guicode/AC.m:8419	Tie points are passed explicitly. Interactive picking belongs to the original desktop.
 menu_pda	Timeseries > Power Decomposition Analysis	method	PowerDecomposition	code/guicode/AC.m:6004	
@@ -118,7 +118,7 @@ menu_rho	Timeseries > Sedimentary Noise Model > Lag-1 autocorrelation coefficien
 menu_dynot_v2	Timeseries > Sedimentary Noise Model > Dynamic noise after orbital tuning (DYNOT) v2	method	DYNOT	code/guicode/AC.m:9613	Both menus pass identical inputs to DYNOS(handles); the portable package follows the serial simulation branch.
 menu_rhov2	Timeseries > Sedimentary Noise Model > Lag-1 autocorrelation coefficient (ρ1) v2	method	Lag1V2 Lag1V2MonteCarlo	code/guicode/AC.m:9212	
 menu_lyapunov	Timeseries > Sedimentary Noise Model > Lyapunov exponent	method	Lyapunov LyapunovMonteCarlo	code/guicode/AC.m:9642	Direct historical kernel. Single-run and randomized-window calculations use integer sample delays required by the original implementation.
-menu_ecoco	Timeseries > Correlation Coefficient (COCO/eCOCO)	partial	corrcoefslices corrcoefslices_rank ecoco ecocoplot ecocoplots ecocotrack ecocotrackn	code/guicode/AC.m:2971	COCO/eCOCO calculation and graphics are split. eCOCO retains the original unsupported low-simulation behavior and original early-exit branches.
+menu_ecoco	Timeseries > Correlation Coefficient (COCO/eCOCO)	method	corrcoefslices corrcoefslices_rank ecoco ecocoplot ecocoplots ecocotrack ecocotrackn	code/guicode/AC.m:2971	Correlation estimates, windowed maps, null ensemble, graphics and tracking. A run without a null ensemble returns observed results and incomplete status; confidence fields are empty.
 menu_timeOpt	Timeseries > TimeOpt	method	TimeOpt	code/guicode/AC.m:7057	Original historical kernel, both Monte Carlo significance choices and original plotting layouts.
 menu_eTimeOpt	Timeseries > eTimeOpt	method	EvolutionaryTimeOpt	code/guicode/AC.m:7114	Historical moving windows and full-argument timeOptAc; normalized/raw fits, optional padding and original 2D/3D figures. Numeric inputs use cm.
 menu_specmoments	Timeseries > Spectral Moments	method	spectralmoments	code/guicode/AC.m:8324	

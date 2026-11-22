@@ -47,4 +47,8 @@ end
 r=struct('data',handles.current_data,'window',handles.window,'step',handles.step,'fmin',0, ...
     'nyquist',handles.nyquist,'norm',handles.normal,'time_0pad',handles.time_0pad, ...
     'padtype',handles.padtype,'method',handles.method);
+% Opening values and figure controls in evofftGUI.m and evofftGUI.fig.
+r.plot_2d=1; r.plot_log=0; r.flipy=1; r.rotate=0; r.freq_log=0;
+r.MTMred=0; r.plotseries=1; r.color='default'; r.colorgrid=[];
+r.fmax=r.nyquist; r.unit=''; r.unit_type=0; r.filename='';
 end

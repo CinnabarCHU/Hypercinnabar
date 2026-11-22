@@ -1,5 +1,5 @@
 function [retval, id] = plotter(params, id)
-% WaveletSpectrum.plotter parameters: datax dt period power coi sig95 method_sel variance plot_2d plot_base plot_coi plot_colorgrid plot_colormap plot_flipx plot_flipy plot_linelog plot_log2pow plot_sl plot_z pt1 pt2 Yticks unit unit_type.
+% WaveletSpectrum.plotter parameters: datax dt period power coi sig95 method_sel variance plot_2d plot_base plot_coi plot_colorgrid plot_colormap plot_flipx plot_flipy plot_linelog plot_log2pow plot_sl plot_z pt1 pt2 Yticks unit unit_type plot_series plot_spectrum plot_swap datay global_ws.
 % Source: https://github.com/mingsongli/acycle/blob/b52ea9f510f3be00bde9a0238b9898a1e2315b74/code/package/wavelet/wave_update_wavelet.m#L11
 % Source: https://github.com/mingsongli/acycle/blob/b52ea9f510f3be00bde9a0238b9898a1e2315b74/code/package/wavelet/wave_readGUI.m#L228
 if nargin < 2, id = []; end
@@ -32,7 +32,7 @@ Yticks=p.Yticks;
 unit = p.unit;
 unit_type = p.unit_type;
 handles=struct('lang_choice',0,'main_unit_selection',0,'unit',unit,'unit_type',unit_type);
-handles.lang_var={};
+handles.lang_var={}; handles.lang_id={};
 sigma2=variance;
 %% Copied from mingsongli/acycle@b52ea9f510f3be00bde9a0238b9898a1e2315b74 code/package/wavelet/wave_readGUI.m:L228-L241
 if method_sel == 3
@@ -50,7 +50,15 @@ levels = plot_base.^plot_level_vector;
 % plot
 xlim = [min(datax),max(datax)];
 %% End copied source
-figure;
-wave_update_wavelet;
+if isfield(p,'plot_series') && isfield(p,'plot_spectrum') && isfield(p,'plot_swap')
+    plot_series=p.plot_series; plot_spectrum=p.plot_spectrum; plot_swap=p.plot_swap;
+    if plot_series, datay=p.datay; end
+    if plot_spectrum, global_ws=p.global_ws; end
+    handles.figwave=figure('Name','Acycle: Wavelet','Color','white');
+    handles.waveletGUIfig=handles.figwave;
+    wave_update_plots;
+else
+    figure; wave_update_wavelet;
+end
 r=[];
 end

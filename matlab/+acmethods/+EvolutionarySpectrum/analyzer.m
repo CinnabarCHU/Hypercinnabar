@@ -42,6 +42,7 @@ end
 fmingrid = x_grid(2) - x_grid(1);
 %% End copied source
 r = struct();
+r.data=data;
 r.s = s;
 r.x_grid = x_grid;
 r.y_grid = y_grid;
