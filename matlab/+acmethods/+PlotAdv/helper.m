@@ -1,7 +1,7 @@
 function [retval, id] = helper(params, id)
 % PlotAdv.helper parameters: series plot_list xlabel ylabel title.
 % Source: https://github.com/mingsongli/acycle/blob/b52ea9f510f3be00bde9a0238b9898a1e2315b74/code/guicode/PlotAdv.m#L176
-% Source: https://github.com/mingsongli/acycle/blob/b52ea9f510f3be00bde9a0238b9898a1e2315b74/code/guicode/PlotAdv.fig#L1
+% Source: https://github.com/mingsongli/acycle/blob/b52ea9f510f3be00bde9a0238b9898a1e2315b74/code/guicode/PlotAdv.fig
 if nargin < 2, id = []; end
 [retval, id] = aclog.invoke('PlotAdv-v1.0/helper', params, id, @execute);
 end

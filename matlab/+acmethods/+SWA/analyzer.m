@@ -1,0 +1,28 @@
+function [retval, id] = analyzer(params, id)
+% SWA.analyzer parameters: data_r.
+% Source: https://github.com/mingsongli/acycle/blob/b52ea9f510f3be00bde9a0238b9898a1e2315b74/code/guicode/SWAgui.m#L139
+% Source: https://github.com/mingsongli/acycle/blob/b52ea9f510f3be00bde9a0238b9898a1e2315b74/code/package/swa/specswafdr.m#L1
+% Source: https://github.com/mingsongli/acycle/blob/b52ea9f510f3be00bde9a0238b9898a1e2315b74/code/package/swa/specbayes.m#L1
+if nargin < 2, id = []; end
+[retval, id] = aclog.invoke('SWA-v1.0/analyzer', params, id, @execute);
+end
+
+function r = execute(p)
+data_r = p.data_r;
+guard=accompat.swaWorkspace({'PeriodogramBayesProb','VarRatio','alphob','alphsort','bayesprob','chi2invalue','clfdr','freq','nout','pow','pow1','swa'});
+%% Copied from mingsongli/acycle@b52ea9f510f3be00bde9a0238b9898a1e2315b74 code/guicode/SWAgui.m:L139-L140
+[freq, power, swa, alphob, factoball, clfdr, chi2_inv_value] = specswafdr(data_r, 0); % main function SWA
+[freqb, pow2,bayesprob]=specbayes(data_r, 0);  % main function Bays. prob.
+%% End copied source
+r = struct();
+r.freq = freq;
+r.power = power;
+r.swa = swa;
+r.alphob = alphob;
+r.factoball = factoball;
+r.clfdr = clfdr;
+r.chi2_inv_value = chi2_inv_value;
+r.freqb = freqb;
+r.pow2 = pow2;
+r.bayesprob = bayesprob;
+end

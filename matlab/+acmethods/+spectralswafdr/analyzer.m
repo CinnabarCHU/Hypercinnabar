@@ -6,6 +6,7 @@ if nargin < 2, id = []; end
 end
 
 function r = execute(p)
+guard=accompat.swaWorkspace({'PeriodogramBayesProb','VarRatio','alphob','alphsort','bayesprob','chi2invalue','clfdr','freq','nout','pow','pow1','swa'});
 [outputdata] = spectralswafdr(p.data, p.method, p.nw, p.padtimes, 0);
 r = struct();
 r.outputdata = outputdata;

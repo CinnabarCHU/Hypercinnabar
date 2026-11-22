@@ -86,6 +86,8 @@ end
 depth = linspace((x(1)+window/2), (x(end)-window/2), npts_new);
 depth = depth';
 %% End copied source
+Bwtrend=[]; sr=[];
+if srmean > 0
 %% Copied from mingsongli/acycle@b52ea9f510f3be00bde9a0238b9898a1e2315b74 code/seriesanalysis/spectralmoments.m:L176-L186
     if strcmp(smoothmodel, 'poly')
         %windowsize = round(window/dt);
@@ -99,6 +101,7 @@ depth = depth';
     sr = sr - mean(sr);
     sr = sr + srmean;
 %% End copied source
+end
 r = struct();
 r.depth = depth;
 r.uf = uf;
