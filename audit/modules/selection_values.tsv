@@ -1,0 +1,35 @@
+module	legacy_entry	choice_kind	mode	guide_params	master_params	key_inputs_or_caveat_zh
+Interpolation	InterpolationPro	one	linear	method=1	method=1	公开旧接口用编号；原生 3.1.1 窗口按方法名调用。另给 data、dt、gap2zero、gapdt。
+Interpolation	InterpolationPro	one	nearest	method=2	method=2	公开旧接口用编号；原生 3.1.1 窗口按方法名调用。另给 data、dt、gap2zero、gapdt。
+Interpolation	InterpolationPro	one	next	method=3	method=3	公开旧接口用编号；原生 3.1.1 窗口按方法名调用。另给 data、dt、gap2zero、gapdt。
+Interpolation	InterpolationPro	one	previous	method=4	method=4	公开旧接口用编号；原生 3.1.1 窗口按方法名调用。另给 data、dt、gap2zero、gapdt。
+Interpolation	InterpolationPro	one	pchip	method=5	method=5	公开旧接口用编号；原生 3.1.1 窗口按方法名调用。另给 data、dt、gap2zero、gapdt。
+Interpolation	InterpolationPro	one	cubic	method=6	method=6	公开旧接口用编号；原生 3.1.1 窗口按方法名调用。另给 data、dt、gap2zero、gapdt。
+Interpolation	InterpolationPro	one	v5cubic	method=7	method=7	公开旧接口用编号；原生 3.1.1 窗口按方法名调用。另给 data、dt、gap2zero、gapdt。
+Interpolation	InterpolationPro	one	makima	method=8	method=8	公开旧接口用编号；原生 3.1.1 窗口按方法名调用。另给 data、dt、gap2zero、gapdt。
+Interpolation	InterpolationPro	one	spline	method=9	method=9	公开旧接口用编号；原生 3.1.1 窗口按方法名调用。另给 data、dt、gap2zero、gapdt。
+Transform	DataTransform	one	zscore	j=1	j=1	data、checkid
+Transform	DataTransform	one	normalize	j=2	j=2	data、checkid；edit1, edit2
+Transform	DataTransform	one	reciprocal	j=5	j=5	data、checkid
+Transform	DataTransform	one	log-base	j=7	j=7	data、checkid；edit3
+Transform	DataTransform	one	natural-log	j=8	j=8	data、checkid
+Transform	DataTransform	one	exponential	j=9	j=9	data、checkid
+Transform	DataTransform	one	power-base	j=10	j=10	data、checkid；edit4
+Transform	DataTransform	one	square-root	j=11	j=11	data、checkid
+Transform	DataTransform	one	cube-root	j=12	j=12	data、checkid
+Transform	DataTransform	one	estimate-box-cox	j=13	j=13	data、checkid；返回估计的 lambda
+Transform	DataTransform	one	sin	j=21	j=21	data、checkid
+Transform	DataTransform	one	cos	j=22	j=22	data、checkid
+Transform	DataTransform	one	tan	j=23	j=23	data、checkid
+Transform	DataTransform	one	cot	j=24	j=24	data、checkid
+Transform	DataTransform	one	sec	j=25	j=25	data、checkid
+Transform	DataTransform	one	csc	j=26	j=26	data、checkid
+PowerSpectrum	PowerSpectrum	one	MTM	method=Multi-taper method	method=Multi-taper method	使用所选版本的频率范围、NW 与补零参数。
+PowerSpectrum	PowerSpectrum	one	periodogram	method=Periodogram	method=Periodogram	使用所选版本的频率范围、NW 与补零参数。
+PowerSpectrum	PowerSpectrum	one	Lomb–Scargle	method=Lomb-Scargle spectrum	method=Lomb-Scargle spectrum	使用所选版本的频率范围、NW 与补零参数。
+PowerSpectrum	PowerSpectrum	flag	robust AR(1)	noise.robust	models.robust	适用估计器、拟合上限与平滑参数按版本判断。
+PowerSpectrum	PowerSpectrum	flag	classic	noise.classic	models.classic	其含义和返回量依估计器而定。
+PowerSpectrum	PowerSpectrum	flag	F-test	noise.ftest	models.ftest	MTM 诊断。
+PowerSpectrum	PowerSpectrum	flag	SWA background	noise.swa	models.swa	主谱的可选背景，独立 SWA 是另一项完整工作流。
+PowerSpectrum	PowerSpectrum	flag	power law	noise.powerlaw	models.powerLaw	幂律背景。
+PowerSpectrum	PowerSpectrum	flag	bending power law	noise.bending	models.bendingPowerLaw	弯折幂律背景。

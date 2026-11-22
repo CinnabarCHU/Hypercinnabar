@@ -1,0 +1,59 @@
+module	menu_or_script_entries
+Desktop	Desktop
+SeriesGenerator	SeriesGenerator
+Insolation	Insolation InsolLatDayGif
+OrbitSolution	AstronomicalSolution
+OrbitalPeriods	MilankovitchCal
+ReferenceSeries	LR04 CENOGRID
+Examples	ExampleDigitizer ExampleExtinction ExampleGuandao ExampleInsolation ExampleLa2004 ExampleMars ExampleMaunaLoa ExampleNewark ExampleRedNoise ExampleSphalerite ExampleSvalbardPETM ExampleWayao
+SortUnique	SortUnique
+Columns	ColumnManipulation Columns
+Interpolation	interpolate InterpolationPro InterpolateSeries RegularInterpolation
+SeriesEditing	AddGaps RemoveSections Clipping depeaks select_interval
+SeriesArithmetic	MergeSeries MultiplySeries
+Transform	DataTransform SimpleFunction Standardize Log10 boxcoxML
+Derivative	Derivative
+Extrema	Extrema
+Changepoint	bayes_cpt bayes_cpt_r2
+PCA	PCA
+SeriesPlot	SimplePlot PlotAdv PlotPro
+Distribution	DataDistribution
+Sampling	SamplingRate SamplingGrid
+Sound	SeriesSound
+ImageDisplay	ShowImage
+ImageColor	RGBToGray RGBToLab
+ImageProfile	ImageProfile ImageTransect
+Digitizer	Digitize DigitizeTrace
+Detrending	Detrending
+Smoothing	MovingMean MovingMedian FixedMovingMean FixedMovingMedian MovingGaussian BootstrapSmooth
+Prewhitening	AR1Prewhitening
+PowerSpectrum	PowerSpectrum SpectralPowerLaw SpectralBendingPowerLaw
+SWA	SWA
+EvolutionarySpectrum	EvolutionarySpectrum
+Wavelet	WaveletSpectrum
+WaveletCoherence	WaveletCoherence MatlabWaveletCoherence
+CircularSpectrum	CircularSpectrum
+Coherence	Coherence
+Bispectrum	Bispectral BispectralView
+SpectralMoments	SpectralMoments spectralmoments
+Recurrence	Recurrence
+LeadLag	LeadLag rmse4leadlag
+Filtering	Bandpass PassFilter DynamicFiltering
+EMD	EMD EnsembleEMD
+Modulation	AmplitudeModulation
+BuildAgeModel	BuildAgeModel SedimentationRateToAge
+Tuning	AgeScale
+Undatable	Undatable
+StratCorrelation	StratigraphicCorrelation
+PowerDecomposition	PowerDecomposition
+DYNOT	DYNOT
+LagOne	Lag1 Lag1MonteCarlo Lag1V2 Lag1V2MonteCarlo
+Coco	corrcoefsig cvcoco cvcoco2 cvcocoLegacy cvcoco9 cvcoco9A cvcoco9B interleavedcvcoco
+EvolutionaryCoco	ecoco ecocoAdaptiveCore ecocoCrossfitCore ecocoInterleavedCore
+TimeOpt	TimeOpt
+EvolutionaryTimeOpt	EvolutionaryTimeOpt
+Lyapunov	Lyapunov LyapunovMonteCarlo
+SummaryStatistics	SummaryStatistics
+HypothesisTests	OneSampleT TwoSampleTests DistributionTest Normality ANOVA
+Association	Correlation Covariance
+Regression	LinearRegression

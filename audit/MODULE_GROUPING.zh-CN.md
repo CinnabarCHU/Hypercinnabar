@@ -1,5 +1,7 @@
 # Acycle 方法模块归并评审
 
+后续的[完整模块清单与实施约定](MODULE_INVENTORY.zh-CN.md)将本页的案例扩展到两个固定版本的全部源码，给出了共用 `code/private`、全项目唯一的新名字及旧操作标识的对应关系。实施时以完整清单为准。
+
 评审对象是 `acycle-guide-migration` 的 `6a1a00e`，其中 `acmethods` 对应移除 GUIDE 前的 `b52ea9f`，`acmaster` 对应 `dcba427`（Acycle 3.1.1）。以 Li 的 v2.8 User’s Guide 第 4.6、4.7 节识别用户做的分析，再沿每一版实际回调确认数据、参数和产物。[迁移分支快照][review] · [User’s Guide][manual] · [两版菜单与变更](../migration/master/menus.tsv)
 
 **建议以用户想完成的分析组织公开模块，以实际可复用的函数组织实现。** 一个菜单可以选中同一模块的不同参数或视图，一个模块也可以调用几个原函数。`helper`、`analyzer`、`plotter` 适合做参数和返回值适配、找到对应实现、经过一次公共 Logger。算法、绘图面板、以及某个版本独有的处理各有自己的实现位置。

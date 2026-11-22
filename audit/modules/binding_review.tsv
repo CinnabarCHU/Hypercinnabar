@@ -1,0 +1,347 @@
+revision	module	caller_file	scope	line	symbol	reason
+guide	Desktop	ac.m	ac@1	81	eval	runtime dispatch / workspace
+guide	EvolutionaryCoco	code/corrcoef/corrcoefslices.m	corrcoefslices@1	96	evalin	runtime dispatch / workspace
+guide	EvolutionaryCoco	code/corrcoef/corrcoefslices_rank.m	corrcoefslices_rank@1	112	evalin	runtime dispatch / workspace
+guide	EvolutionaryCoco	code/corrcoef/corrcoefslices_rank.m	corrcoefslices_rank@1	162	evalin	runtime dispatch / workspace
+guide	EvolutionaryCoco	code/corrcoef/ecocoplot.m	ecocoplot@1	31	evalin	runtime dispatch / workspace
+guide	EvolutionaryCoco	code/corrcoef/ecocoplots.m	ecocoplots@1	24	evalin	runtime dispatch / workspace
+guide	Desktop	code/guicode/AC.m	AC@1	86	str2func	runtime dispatch / workspace
+guide	Desktop	ac.m	ac@1	122	AC	unconfirmed-name
+guide	SettingsHelp	code/guicode/languageGUI.m	pushbutton1_Callback@137	216	AC	unconfirmed-name
+guide	SettingsHelp	code/guicode/About.m	About@1	36	str2func	runtime dispatch / workspace
+guide	DYNOT	code/guicode/DYNOS.m	menu_about_Callback@1845	1850	About	unconfirmed-name
+guide	StratCorrelation	code/guicode/CorrelationGUI.m	CorrelationGUI@1	36	str2func	runtime dispatch / workspace
+guide	DYNOT	code/guicode/DYNOS.m	DYNOS@1	40	str2func	runtime dispatch / workspace
+guide	DYNOT	code/guicode/DYNOS.m	pushbutton4_Callback@847	865	evalin	runtime dispatch / workspace
+guide	DYNOT	code/guicode/DYNOS.m	pushbutton4_Callback@847	867	evalin	runtime dispatch / workspace
+guide	Columns	code/guicode/DataExtractML.m	DataExtractML@1	36	str2func	runtime dispatch / workspace
+guide	Columns	code/guicode/DataExtractTab.m	DataExtractTab@1	36	str2func	runtime dispatch / workspace
+guide	Columns	code/guicode/DataExtractML.m	PushDigitize_Callback@393	412	DataExtractTab	unconfirmed-name
+guide	Columns	code/guicode/DataExtractML.m	push_calibrate_Callback@231	305	DataExtractTab	unconfirmed-name
+guide	Filtering	code/guicode/DynamicFilter.m	DynamicFilter@1	36	str2func	runtime dispatch / workspace
+guide	Insolation	code/guicode/Insolation.m	Insolation@1	36	str2func	runtime dispatch / workspace
+guide	Interpolation	code/guicode/InterplationSeries.m	InterplationSeries@1	36	str2func	runtime dispatch / workspace
+guide	OrbitalPeriods	code/guicode/LODGUI.m	LODGUI@1	36	str2func	runtime dispatch / workspace
+guide	SeriesPlot	code/guicode/PlotAdv.m	PlotAdv@1	36	str2func	runtime dispatch / workspace
+guide	Recurrence	code/guicode/RecPlotGUI.m	RecPlotGUI@1	36	str2func	runtime dispatch / workspace
+guide	SpectralMoments	code/guicode/SpectralMomentsGUI.m	SpectralMomentsGUI@1	36	str2func	runtime dispatch / workspace
+guide	Tuning	code/guicode/agescale.m	agescale@1	36	str2func	runtime dispatch / workspace
+guide	OrbitSolution	code/guicode/basicseries.m	basicseries@1	36	str2func	runtime dispatch / workspace
+guide	CircularSpectrum	code/guicode/circularspecGUI.m	circularspecGUI@1	36	str2func	runtime dispatch / workspace
+guide	Coherence	code/guicode/coherenceGUI.m	coherenceGUI@1	36	str2func	runtime dispatch / workspace
+guide	SettingsHelp	code/guicode/copyright.m	copyright@1	36	str2func	runtime dispatch / workspace
+guide	Workspace	code/guicode/data_type.m	data_type@1	36	str2func	runtime dispatch / workspace
+guide	DYNOT	code/guicode/DYNOS.m	pushbutton4_Callback@847	953	data_type	unconfirmed-name
+guide	Coco	code/guicode/eCOCOGUI.m	eCOCOGUI@1	36	str2func	runtime dispatch / workspace
+guide	EvolutionaryTimeOpt	code/guicode/eTimeOptGUI.m	eTimeOptGUI@1	36	str2func	runtime dispatch / workspace
+guide	EvolutionarySpectrum	code/guicode/evofftGUI.m	evofftGUI@1	36	str2func	runtime dispatch / workspace
+guide	EvolutionarySpectrum	code/guicode/evofftGUI.m	evofft_open_pushbutton_Callback@1134	1146	evalin	runtime dispatch / workspace
+guide	EvolutionarySpectrum	code/guicode/evofftGUI.m	evofft_open_pushbutton_Callback@1134	1148	evalin	runtime dispatch / workspace
+guide	EvolutionarySpectrum	code/guicode/evofftGUI.m	evofft_open_pushbutton_Callback@1134	1154	evalin	runtime dispatch / workspace
+guide	Filtering	code/guicode/ft.m	ft@1	36	str2func	runtime dispatch / workspace
+guide	Robot	code/guicode/RobotGUI.m	robot_Callback@268	659	ft	unconfirmed-name
+guide	Robot	code/guicode/RobotGUI.m	robot_Callback@268	660	ft	unconfirmed-name
+guide	Robot	code/guicode/RobotGUI.m	robot_Callback@268	661	ft	unconfirmed-name
+guide	Robot	code/guicode/RobotGUI.m	robot_Callback@268	662	ft	unconfirmed-name
+guide	Robot	code/guicode/RobotGUI.m	robot_Callback@268	663	ft	unconfirmed-name
+guide	Interpolation	code/guicode/interpolationGUI.m	interpolationGUI@1	36	str2func	runtime dispatch / workspace
+guide	SettingsHelp	code/guicode/languageGUI.m	languageGUI@1	36	str2func	runtime dispatch / workspace
+guide	LeadLag	code/guicode/leadlagGUI.m	leadlagGUI@1	36	str2func	runtime dispatch / workspace
+guide	SeriesGenerator	code/guicode/linegenerator.m	linegenerator@1	36	str2func	runtime dispatch / workspace
+guide	Detrending	code/guicode/prewhiten.m	prewhiten@1	36	str2func	runtime dispatch / workspace
+guide	Prewhitening	code/guicode/prewhitenGUI.m	prewhitenGUI@1	36	str2func	runtime dispatch / workspace
+guide	PowerSpectrum	code/guicode/spectrum.m	spectrum@1	36	str2func	runtime dispatch / workspace
+guide	TimeOpt	code/guicode/timeOptGUI.m	timeOptGUI@1	36	str2func	runtime dispatch / workspace
+guide	Wavelet	code/guicode/waveletGUI.m	waveletGUI@1	36	str2func	runtime dispatch / workspace
+guide	Desktop	code/misc/findjobj.m	ischar@2967	2969	builtin	runtime dispatch / workspace
+guide	Desktop	code/misc/findjobj.m	nodeSelected@1796	1869	eval	runtime dispatch / workspace
+guide	Desktop	code/misc/findjobj.m	nodeSelected@1796	1984	eval	runtime dispatch / workspace
+guide	Desktop	code/misc/findjobj.m	presentObjectTree@1178	1310	eval	runtime dispatch / workspace
+guide	Desktop	code/misc/findjobj.m	presentObjectTree@1178	1355	eval	runtime dispatch / workspace
+guide	Desktop	code/misc/findjobj.m	presentObjectTree@1178	1361	eval	runtime dispatch / workspace
+guide	Desktop	code/misc/findjobj.m	presentObjectTree@1178	1366	eval	runtime dispatch / workspace
+guide	Desktop	code/misc/findjobj.m	presentObjectTree@1178	1369	eval	runtime dispatch / workspace
+guide	Desktop	code/misc/findjobj.m	requestFocus@3125	3146	feval	runtime dispatch / workspace
+guide	Desktop	code/misc/findjobj.m	restoreDbstopError@1595	1597	eval	runtime dispatch / workspace
+guide	Desktop	code/misc/findjobj.m	setProp@997	998	eval	runtime dispatch / workspace
+guide	Desktop	code/misc/findjobj.m	tbCallbacksChanged@2782	2804	eval	runtime dispatch / workspace
+guide	SeriesPlot	code/misc/pAxes18.m	bt_move_axes@31	33	eval	runtime dispatch / workspace
+guide	SeriesPlot	code/misc/pAxes18.m	setAxesTheme@13	22	eval	runtime dispatch / workspace
+guide	Filtering	code/misc/update_filter_axes.m	<file>	97	evalin	runtime dispatch / workspace
+guide	Recurrence	code/package/recurrence/crp_core.m	crp_core@1	224	eval	runtime dispatch / workspace
+guide	Recurrence	code/package/recurrence/crp_core.m	crp_core@1	230	eval	runtime dispatch / workspace
+guide	Wavelet	code/package/wavelet/wave_update_global.m	<file>	15	period	workspace-variable
+guide	Wavelet	code/package/wavelet/wave_update_global.m	<file>	21	period	workspace-variable
+guide	Wavelet	code/package/wavelet/wave_update_wavelet.m	<file>	16	period	workspace-variable
+guide	Wavelet	code/package/wavelet/wave_update_wavelet.m	<file>	18	period	workspace-variable
+guide	Wavelet	code/package/wavelet/wave_update_wavelet.m	<file>	22	period	workspace-variable
+guide	Wavelet	code/package/wavelet/wave_update_wavelet.m	<file>	25	period	workspace-variable
+guide	Wavelet	code/package/wavelet/wave_update_wavelet.m	<file>	29	period	workspace-variable
+guide	Wavelet	code/package/wavelet/wave_update_wavelet.m	<file>	31	period	workspace-variable
+guide	Wavelet	code/package/wavelet/wave_update_wavelet.m	<file>	37	period	workspace-variable
+guide	Wavelet	code/package/wavelet/wave_update_wavelet.m	<file>	39	period	workspace-variable
+guide	Wavelet	code/package/wavelet/wave_update_wavelet.m	<file>	43	period	workspace-variable
+guide	Wavelet	code/package/wavelet/wave_update_wavelet.m	<file>	46	period	workspace-variable
+guide	Wavelet	code/package/wavelet/wave_update_wavelet.m	<file>	50	period	workspace-variable
+guide	Wavelet	code/package/wavelet/wave_update_wavelet.m	<file>	52	period	workspace-variable
+guide	Wavelet	code/package/wavelet/wave_update_wavelet.m	<file>	60	period	workspace-variable
+guide	Wavelet	code/package/wavelet/wave_update_wavelet.m	<file>	62	period	workspace-variable
+guide	Wavelet	code/package/wavelet/wave_update_wavelet.m	<file>	66	period	workspace-variable
+guide	Wavelet	code/package/wavelet/wave_update_wavelet.m	<file>	69	period	workspace-variable
+guide	Wavelet	code/package/wavelet/wave_update_wavelet.m	<file>	73	period	workspace-variable
+guide	Wavelet	code/package/wavelet/wave_update_wavelet.m	<file>	75	period	workspace-variable
+guide	Wavelet	code/package/wavelet/wave_update_wavelet.m	<file>	81	period	workspace-variable
+guide	Wavelet	code/package/wavelet/wave_update_wavelet.m	<file>	83	period	workspace-variable
+guide	Wavelet	code/package/wavelet/wave_update_wavelet.m	<file>	87	period	workspace-variable
+guide	Wavelet	code/package/wavelet/wave_update_wavelet.m	<file>	90	period	workspace-variable
+guide	Wavelet	code/package/wavelet/wave_update_wavelet.m	<file>	94	period	workspace-variable
+guide	Wavelet	code/package/wavelet/wave_update_wavelet.m	<file>	96	period	workspace-variable
+guide	Wavelet	code/package/wavelet/wave_update_wavelet.m	<file>	109	period	workspace-variable
+guide	Wavelet	code/package/wavelet/wave_update_wavelet.m	<file>	111	period	workspace-variable
+guide	Wavelet	code/package/wavelet/wave_update_wavelet.m	<file>	115	period	workspace-variable
+guide	Wavelet	code/package/wavelet/wave_update_wavelet.m	<file>	118	period	workspace-variable
+guide	Wavelet	code/package/wavelet/wave_update_wavelet.m	<file>	123	period	workspace-variable
+guide	Wavelet	code/package/wavelet/wave_update_wavelet.m	<file>	125	period	workspace-variable
+guide	Wavelet	code/package/wavelet/wave_update_wavelet.m	<file>	131	period	workspace-variable
+guide	Wavelet	code/package/wavelet/wave_update_wavelet.m	<file>	133	period	workspace-variable
+guide	Wavelet	code/package/wavelet/wave_update_wavelet.m	<file>	137	period	workspace-variable
+guide	Wavelet	code/package/wavelet/wave_update_wavelet.m	<file>	140	period	workspace-variable
+guide	Wavelet	code/package/wavelet/wave_update_wavelet.m	<file>	144	period	workspace-variable
+guide	Wavelet	code/package/wavelet/wave_update_wavelet.m	<file>	146	period	workspace-variable
+guide	Wavelet	code/package/wavelet/wave_update_wavelet.m	<file>	154	period	workspace-variable
+guide	Wavelet	code/package/wavelet/wave_update_wavelet.m	<file>	156	period	workspace-variable
+guide	Wavelet	code/package/wavelet/wave_update_wavelet.m	<file>	160	period	workspace-variable
+guide	Wavelet	code/package/wavelet/wave_update_wavelet.m	<file>	163	period	workspace-variable
+guide	Wavelet	code/package/wavelet/wave_update_wavelet.m	<file>	167	period	workspace-variable
+guide	Wavelet	code/package/wavelet/wave_update_wavelet.m	<file>	169	period	workspace-variable
+guide	Wavelet	code/package/wavelet/wave_update_wavelet.m	<file>	175	period	workspace-variable
+guide	Wavelet	code/package/wavelet/wave_update_wavelet.m	<file>	177	period	workspace-variable
+guide	Wavelet	code/package/wavelet/wave_update_wavelet.m	<file>	181	period	workspace-variable
+guide	Wavelet	code/package/wavelet/wave_update_wavelet.m	<file>	184	period	workspace-variable
+guide	Wavelet	code/package/wavelet/wave_update_wavelet.m	<file>	188	period	workspace-variable
+guide	Wavelet	code/package/wavelet/wave_update_wavelet.m	<file>	190	period	workspace-variable
+guide	Wavelet	code/package/wavelet/wave_update_wavelet.m	<file>	260	period	workspace-variable
+guide	Wavelet	code/package/wavelet/wave_update_wavelet.m	<file>	262	period	workspace-variable
+guide	Wavelet	code/package/wavelet/wave_update_wavelet.m	<file>	266	period	workspace-variable
+guide	Wavelet	code/package/wavelet/wave_update_wavelet.m	<file>	268	period	workspace-variable
+guide	Wavelet	code/package/wavelet/wave_update_wavelet.m	<file>	275	period	workspace-variable
+guide	Wavelet	code/package/wavelet/wave_update_wavelet.m	<file>	277	period	workspace-variable
+guide	Wavelet	code/package/wavelet/wave_update_wavelet.m	<file>	279	period	workspace-variable
+guide	Wavelet	code/package/wavelet/wave_update_wavelet.m	<file>	283	period	workspace-variable
+guide	Wavelet	code/package/wavelet/wave_update_wavelet.m	<file>	285	period	workspace-variable
+guide	Wavelet	code/package/wavelet/wave_update_wavelet.m	<file>	287	period	workspace-variable
+guide	Wavelet	code/package/wavelet/wave_update_wavelet.m	<file>	300	period	workspace-variable
+guide	Wavelet	code/package/wavelet/wave_update_wavelet.m	<file>	312	period	workspace-variable
+guide	WaveletCoherence	code/package/wavelet/wavecoh_update_wtc.m	<file>	21	period	workspace-variable
+guide	WaveletCoherence	code/package/wavelet/wavecoh_update_wtc.m	<file>	122	period	workspace-variable
+guide	WaveletCoherence	code/package/wavelet/wavecoh_update_wtc.m	<file>	123	period	workspace-variable
+guide	WaveletCoherence	code/package/wavelet/wavecoh_update_wtc.m	<file>	125	period	workspace-variable
+guide	WaveletCoherence	code/package/wavelet/wavecoh_update_wtc.m	<file>	133	period	workspace-variable
+guide	WaveletCoherence	code/package/wavelet/wavecoh_update_wtc.m	<file>	141	period	workspace-variable
+guide	WaveletCoherence	code/package/wavelet/wavecoh_update_xwt.m	<file>	51	period	workspace-variable
+guide	WaveletCoherence	code/package/wavelet/wavecoh_update_xwt.m	<file>	74	period	workspace-variable
+guide	WaveletCoherence	code/package/wavelet/wavecoh_update_xwt.m	<file>	75	period	workspace-variable
+guide	WaveletCoherence	code/package/wavelet/wavecoh_update_xwt.m	<file>	77	period	workspace-variable
+guide	WaveletCoherence	code/package/wavelet/wavecoh_update_xwt.m	<file>	84	period	workspace-variable
+guide	WaveletCoherence	code/package/wavelet/wavecoh_update_xwt.m	<file>	91	period	workspace-variable
+guide	SWA	code/package/swa/writeFmt.m	writeFmt@1	70	evalin	runtime dispatch / workspace
+guide	SWA	code/package/swa/writeFmt.m	writeFmt@1	71	evalin	runtime dispatch / workspace
+guide	SWA	code/package/swa/writeFmt.m	writeFmt@1	72	evalin	runtime dispatch / workspace
+guide	SWA	code/package/swa/writeFmt.m	writeFmt@1	88	evalin	runtime dispatch / workspace
+guide	SWA	code/package/swa/writeFmt.m	writeFmt@1	89	evalin	runtime dispatch / workspace
+guide	SWA	code/package/swa/writeFmt.m	writeFmt@1	90	evalin	runtime dispatch / workspace
+guide	SWA	code/package/swa/writeFmt.m	writeFmt@1	109	evalin	runtime dispatch / workspace
+guide	SWA	code/package/swa/writeFmt.m	writeFmt@1	113	evalin	runtime dispatch / workspace
+guide	SWA	code/package/swa/writeFmt.m	writeFmt@1	115	evalin	runtime dispatch / workspace
+guide	SWA	code/package/swa/writeFmt.m	writeFmt@1	187	evalin	runtime dispatch / workspace
+guide	SWA	code/package/swa/writeFmt.m	writeFmt@1	191	evalin	runtime dispatch / workspace
+guide	SWA	code/package/swa/writeFmt.m	writeFmt@1	247	evalin	runtime dispatch / workspace
+guide	SWA	code/package/swa/writeFmt.m	writeFmt@1	250	evalin	runtime dispatch / workspace
+guide	SWA	code/package/swa/writeFmt.m	writeFmt@1	253	evalin	runtime dispatch / workspace
+guide	Undatable	code/package/undatable/undatableGUI.m	runundatable_Callback@243	425	run	runtime dispatch / workspace
+guide	Undatable	code/package/undatable/undatableGUI.m	undatableGUI@1	36	str2func	runtime dispatch / workspace
+guide	HypothesisTests	code/guicode/AC.m	menu_anova_Callback@8901	8905	ANOVAUI	unconfirmed-name
+guide	Workspace	code/guicode/AC.m	menu_NewDataTable_Callback@8851	8860	AcycleDataTableGUI	unconfirmed-name
+guide	Workspace	code/guicode/AC.m	menu_NewDataTable_Callback@8851	8870	AcycleDataTableGUI	unconfirmed-name
+guide	Association	code/guicode/AC.m	menu_corr_Callback@8925	8929	BivCorrUI	unconfirmed-name
+guide	Association	code/guicode/AC.m	menu_covariance_Callback@8933	8937	BivCovUI	unconfirmed-name
+guide	HypothesisTests	code/guicode/AC.m	menu_chi2gof_Callback@8917	8921	UniChi2GOFUI	unconfirmed-name
+guide	HypothesisTests	code/guicode/AC.m	menu_normaltest_Callback@8909	8913	UniNormalityUI	unconfirmed-name
+guide	SummaryStatistics	code/guicode/AC.m	menu_statsummary_Callback@8835	8840	UniStatisticSum	unconfirmed-name
+guide	HypothesisTests	code/guicode/AC.m	menu_uni2SamTest_Callback@8893	8897	UniTwoSampleTestsUI	unconfirmed-name
+guide	HypothesisTests	code/guicode/AC.m	menu_ttest_Callback@8844	8848	Unittest	unconfirmed-name
+guide	DYNOT	code/seriesanalysis/dispstat.m	dispstat@1	50	eval	runtime dispatch / workspace
+guide	Regression	code/guicode/AC.m	menu_linearReg_Callback@8941	8945	BivLinearRegUI	unconfirmed-name
+master	Desktop	ac.m	ac@1	100	eval	runtime dispatch / workspace
+master	SettingsHelp	code/guicode/settingsGUI.m	runRestart@239	249	ac	unconfirmed-name
+master	EvolutionaryCoco	code/corrcoef/corrcoefslices.m	get_main_unit_selection@304	307	evalin	runtime dispatch / workspace
+master	Coco	code/corrcoef/cyclecorr.m	cyclecorr@2	55	freq2target	known in another source tree; missing on native path
+master	Coco	code/corrcoef/cyclecorr.m	cyclecorr@2	75	freq2target	known in another source tree; missing on native path
+master	Coco	code/corrcoef/cyclecorr.m	cyclecorr@2	97	freq2target	known in another source tree; missing on native path
+master	Coco	code/corrcoef/cyclecorr.m	cyclecorr@2	120	freq2target	known in another source tree; missing on native path
+master	Coco	code/corrcoef/cyclecorr4.m	cyclecorr4@26	46	freq2target	known in another source tree; missing on native path
+master	Coco	code/corrcoef/cyclecorr4.m	cyclecorr4@26	64	freq2target	known in another source tree; missing on native path
+master	Coco	code/corrcoef/cyclecorr4.m	cyclecorr4@26	83	freq2target	known in another source tree; missing on native path
+master	Coco	code/corrcoef/cyclecorr4.m	cyclecorr4@26	103	freq2target	known in another source tree; missing on native path
+master	Coco	code/corrcoef/cyclecorr4sig.m	cyclecorr4sig@23	37	freq2target	known in another source tree; missing on native path
+master	Coco	code/corrcoef/cyclecorr4sig.m	cyclecorr4sig@23	53	freq2target	known in another source tree; missing on native path
+master	Coco	code/corrcoef/cyclecorr4sig.m	cyclecorr4sig@23	70	freq2target	known in another source tree; missing on native path
+master	Coco	code/corrcoef/cyclecorr4sig.m	cyclecorr4sig@23	86	freq2target	known in another source tree; missing on native path
+master	Coco	code/corrcoef/cyclecorr5.m	cyclecorr5@29	39	freq2target	known in another source tree; missing on native path
+master	Coco	code/corrcoef/cyclecorr5.m	cyclecorr5@29	52	freq2target	known in another source tree; missing on native path
+master	Coco	code/corrcoef/cyclecorr5.m	cyclecorr5@29	66	freq2target	known in another source tree; missing on native path
+master	Coco	code/corrcoef/cyclecorr5.m	cyclecorr5@29	79	freq2target	known in another source tree; missing on native path
+master	Coco	code/corrcoef/cyclecorr_rank.m	cyclecorr_rank@20	38	freq2target	known in another source tree; missing on native path
+master	Coco	code/corrcoef/cyclecorr_rank.m	cyclecorr_rank@20	53	freq2target	known in another source tree; missing on native path
+master	Coco	code/corrcoef/cyclecorr_rank.m	cyclecorr_rank@20	69	freq2target	known in another source tree; missing on native path
+master	Coco	code/corrcoef/cyclecorr_rank.m	cyclecorr_rank@20	86	freq2target	known in another source tree; missing on native path
+master	Coco	code/corrcoef/cyclesig_rank.m	cyclesig_rank@23	38	freq2target	known in another source tree; missing on native path
+master	Coco	code/corrcoef/cyclesig_rank.m	cyclesig_rank@23	51	freq2target	known in another source tree; missing on native path
+master	Coco	code/corrcoef/cyclesig_rank.m	cyclesig_rank@23	65	freq2target	known in another source tree; missing on native path
+master	Coco	code/corrcoef/cyclesig_rank.m	cyclesig_rank@23	78	freq2target	known in another source tree; missing on native path
+master	EvolutionaryCoco	code/corrcoef/ecoco.m	get_main_unit_selection@776	779	evalin	runtime dispatch / workspace
+master	EvolutionaryCoco	code/corrcoef/ecocoplots.m	get_main_unit_selection@104	107	evalin	runtime dispatch / workspace
+master	Desktop	code/guicode/AC.m	AC@1	79	feval	runtime dispatch / workspace
+master	Desktop	code/guicode/AC.m	AC_dispatch@563	580	feval	runtime dispatch / workspace
+master	Desktop	code/guicode/AC.m	AC_dispatch@563	588	feval	runtime dispatch / workspace
+master	Desktop	code/guicode/AC.m	menu_lyapunov_Callback@11046	11211	lyapunov_timeseries	known in another source tree; missing on native path
+master	Desktop	code/guicode/AC.m	menu_lyapunov_Callback@11046	11355	lyapunov_timeseries	known in another source tree; missing on native path
+master	Desktop	ac.m	ac@1	143	AC	unconfirmed-name
+master	SettingsHelp	code/guicode/settingsGUI.m	runRestart@239	251	AC	unconfirmed-name
+master	DYNOT	code/guicode/DYNOS.m	loadDataReady@324	329	data_type	unconfirmed-name
+master	Coco	code/guicode/eCOCOGUI.m	invalidateRunState@1124	1127	evalin	runtime dispatch / workspace
+master	Coco	code/guicode/eCOCOGUI.m	onRun@558	1082	evalin	runtime dispatch / workspace
+master	EvolutionarySpectrum	code/guicode/evofftGUI.m	applyColormap@647	656	feval	runtime dispatch / workspace
+master	EvolutionarySpectrum	code/guicode/evofftGUI.m	onOK@678	928	feval	runtime dispatch / workspace
+master	Robot	code/guicode/RobotGUI.m	robot_Callback@268	585	ft	unconfirmed-name
+master	Robot	code/guicode/RobotGUI.m	robot_Callback@268	586	ft	unconfirmed-name
+master	Robot	code/guicode/RobotGUI.m	robot_Callback@268	587	ft	unconfirmed-name
+master	Robot	code/guicode/RobotGUI.m	robot_Callback@268	588	ft	unconfirmed-name
+master	Robot	code/guicode/RobotGUI.m	robot_Callback@268	589	ft	unconfirmed-name
+master	PowerSpectrum	code/guicode/spectrum.m	alertUser@842	850	feval	runtime dispatch / workspace
+master	PowerSpectrum	code/guicode/spectrum.m	requestRobustSettings@1262	1274	feval	runtime dispatch / workspace
+master	PowerSpectrum	code/guicode/spectrumBKUP.m	spectrum@1	36	str2func	runtime dispatch / workspace
+master	Desktop	code/misc/findjobj.m	ischar@2967	2969	builtin	runtime dispatch / workspace
+master	Desktop	code/misc/findjobj.m	nodeSelected@1796	1869	eval	runtime dispatch / workspace
+master	Desktop	code/misc/findjobj.m	nodeSelected@1796	1984	eval	runtime dispatch / workspace
+master	Desktop	code/misc/findjobj.m	presentObjectTree@1178	1310	eval	runtime dispatch / workspace
+master	Desktop	code/misc/findjobj.m	presentObjectTree@1178	1355	eval	runtime dispatch / workspace
+master	Desktop	code/misc/findjobj.m	presentObjectTree@1178	1361	eval	runtime dispatch / workspace
+master	Desktop	code/misc/findjobj.m	presentObjectTree@1178	1366	eval	runtime dispatch / workspace
+master	Desktop	code/misc/findjobj.m	presentObjectTree@1178	1369	eval	runtime dispatch / workspace
+master	Desktop	code/misc/findjobj.m	requestFocus@3125	3146	feval	runtime dispatch / workspace
+master	Desktop	code/misc/findjobj.m	restoreDbstopError@1595	1597	eval	runtime dispatch / workspace
+master	Desktop	code/misc/findjobj.m	setProp@997	998	eval	runtime dispatch / workspace
+master	Desktop	code/misc/findjobj.m	tbCallbacksChanged@2782	2804	eval	runtime dispatch / workspace
+master	SeriesPlot	code/misc/pAxes18.m	bt_move_axes@31	33	eval	runtime dispatch / workspace
+master	SeriesPlot	code/misc/pAxes18.m	setAxesTheme@13	22	eval	runtime dispatch / workspace
+master	Bispectrum	code/package/bispectral/bispectralAnalyze.m	notify@227	229	feval	runtime dispatch / workspace
+master	Bispectrum	code/package/bispectral/bispectralGUI.m	finalizeParameterCorrections@593	612	feval	runtime dispatch / workspace
+master	Bispectrum	code/package/bispectral/bispectralGUI.m	replaceLatestFigure@856	887	feval	runtime dispatch / workspace
+master	Bispectrum	code/package/bispectral/bispectralGUI.m	runAnalysis@703	761	feval	runtime dispatch / workspace
+master	Bispectrum	code/package/bispectral/bispectralGUI.m	showScientificWarningAlert@1189	1214	feval	runtime dispatch / workspace
+master	Bispectrum	code/package/bispectral/bispectralSignificance.m	notify@429	433	feval	runtime dispatch / workspace
+master	Recurrence	code/package/recurrence/crp_core.m	crp_core@1	224	eval	runtime dispatch / workspace
+master	Recurrence	code/package/recurrence/crp_core.m	crp_core@1	230	eval	runtime dispatch / workspace
+master	Wavelet	code/package/wavelet/wave_update_global.m	<file>	15	period	workspace-variable
+master	Wavelet	code/package/wavelet/wave_update_global.m	<file>	21	period	workspace-variable
+master	Wavelet	code/package/wavelet/wave_update_wavelet.m	<file>	16	period	workspace-variable
+master	Wavelet	code/package/wavelet/wave_update_wavelet.m	<file>	18	period	workspace-variable
+master	Wavelet	code/package/wavelet/wave_update_wavelet.m	<file>	22	period	workspace-variable
+master	Wavelet	code/package/wavelet/wave_update_wavelet.m	<file>	25	period	workspace-variable
+master	Wavelet	code/package/wavelet/wave_update_wavelet.m	<file>	29	period	workspace-variable
+master	Wavelet	code/package/wavelet/wave_update_wavelet.m	<file>	31	period	workspace-variable
+master	Wavelet	code/package/wavelet/wave_update_wavelet.m	<file>	37	period	workspace-variable
+master	Wavelet	code/package/wavelet/wave_update_wavelet.m	<file>	39	period	workspace-variable
+master	Wavelet	code/package/wavelet/wave_update_wavelet.m	<file>	43	period	workspace-variable
+master	Wavelet	code/package/wavelet/wave_update_wavelet.m	<file>	46	period	workspace-variable
+master	Wavelet	code/package/wavelet/wave_update_wavelet.m	<file>	50	period	workspace-variable
+master	Wavelet	code/package/wavelet/wave_update_wavelet.m	<file>	52	period	workspace-variable
+master	Wavelet	code/package/wavelet/wave_update_wavelet.m	<file>	60	period	workspace-variable
+master	Wavelet	code/package/wavelet/wave_update_wavelet.m	<file>	62	period	workspace-variable
+master	Wavelet	code/package/wavelet/wave_update_wavelet.m	<file>	66	period	workspace-variable
+master	Wavelet	code/package/wavelet/wave_update_wavelet.m	<file>	69	period	workspace-variable
+master	Wavelet	code/package/wavelet/wave_update_wavelet.m	<file>	73	period	workspace-variable
+master	Wavelet	code/package/wavelet/wave_update_wavelet.m	<file>	75	period	workspace-variable
+master	Wavelet	code/package/wavelet/wave_update_wavelet.m	<file>	81	period	workspace-variable
+master	Wavelet	code/package/wavelet/wave_update_wavelet.m	<file>	83	period	workspace-variable
+master	Wavelet	code/package/wavelet/wave_update_wavelet.m	<file>	87	period	workspace-variable
+master	Wavelet	code/package/wavelet/wave_update_wavelet.m	<file>	90	period	workspace-variable
+master	Wavelet	code/package/wavelet/wave_update_wavelet.m	<file>	94	period	workspace-variable
+master	Wavelet	code/package/wavelet/wave_update_wavelet.m	<file>	96	period	workspace-variable
+master	Wavelet	code/package/wavelet/wave_update_wavelet.m	<file>	109	period	workspace-variable
+master	Wavelet	code/package/wavelet/wave_update_wavelet.m	<file>	111	period	workspace-variable
+master	Wavelet	code/package/wavelet/wave_update_wavelet.m	<file>	115	period	workspace-variable
+master	Wavelet	code/package/wavelet/wave_update_wavelet.m	<file>	118	period	workspace-variable
+master	Wavelet	code/package/wavelet/wave_update_wavelet.m	<file>	123	period	workspace-variable
+master	Wavelet	code/package/wavelet/wave_update_wavelet.m	<file>	125	period	workspace-variable
+master	Wavelet	code/package/wavelet/wave_update_wavelet.m	<file>	131	period	workspace-variable
+master	Wavelet	code/package/wavelet/wave_update_wavelet.m	<file>	133	period	workspace-variable
+master	Wavelet	code/package/wavelet/wave_update_wavelet.m	<file>	137	period	workspace-variable
+master	Wavelet	code/package/wavelet/wave_update_wavelet.m	<file>	140	period	workspace-variable
+master	Wavelet	code/package/wavelet/wave_update_wavelet.m	<file>	144	period	workspace-variable
+master	Wavelet	code/package/wavelet/wave_update_wavelet.m	<file>	146	period	workspace-variable
+master	Wavelet	code/package/wavelet/wave_update_wavelet.m	<file>	154	period	workspace-variable
+master	Wavelet	code/package/wavelet/wave_update_wavelet.m	<file>	156	period	workspace-variable
+master	Wavelet	code/package/wavelet/wave_update_wavelet.m	<file>	160	period	workspace-variable
+master	Wavelet	code/package/wavelet/wave_update_wavelet.m	<file>	163	period	workspace-variable
+master	Wavelet	code/package/wavelet/wave_update_wavelet.m	<file>	167	period	workspace-variable
+master	Wavelet	code/package/wavelet/wave_update_wavelet.m	<file>	169	period	workspace-variable
+master	Wavelet	code/package/wavelet/wave_update_wavelet.m	<file>	175	period	workspace-variable
+master	Wavelet	code/package/wavelet/wave_update_wavelet.m	<file>	177	period	workspace-variable
+master	Wavelet	code/package/wavelet/wave_update_wavelet.m	<file>	181	period	workspace-variable
+master	Wavelet	code/package/wavelet/wave_update_wavelet.m	<file>	184	period	workspace-variable
+master	Wavelet	code/package/wavelet/wave_update_wavelet.m	<file>	188	period	workspace-variable
+master	Wavelet	code/package/wavelet/wave_update_wavelet.m	<file>	190	period	workspace-variable
+master	Wavelet	code/package/wavelet/wave_update_wavelet.m	<file>	260	period	workspace-variable
+master	Wavelet	code/package/wavelet/wave_update_wavelet.m	<file>	262	period	workspace-variable
+master	Wavelet	code/package/wavelet/wave_update_wavelet.m	<file>	266	period	workspace-variable
+master	Wavelet	code/package/wavelet/wave_update_wavelet.m	<file>	268	period	workspace-variable
+master	Wavelet	code/package/wavelet/wave_update_wavelet.m	<file>	275	period	workspace-variable
+master	Wavelet	code/package/wavelet/wave_update_wavelet.m	<file>	277	period	workspace-variable
+master	Wavelet	code/package/wavelet/wave_update_wavelet.m	<file>	279	period	workspace-variable
+master	Wavelet	code/package/wavelet/wave_update_wavelet.m	<file>	283	period	workspace-variable
+master	Wavelet	code/package/wavelet/wave_update_wavelet.m	<file>	285	period	workspace-variable
+master	Wavelet	code/package/wavelet/wave_update_wavelet.m	<file>	287	period	workspace-variable
+master	Wavelet	code/package/wavelet/wave_update_wavelet.m	<file>	300	period	workspace-variable
+master	Wavelet	code/package/wavelet/wave_update_wavelet.m	<file>	312	period	workspace-variable
+master	WaveletCoherence	code/package/wavelet/wavecoh_update_wtc.m	<file>	21	period	workspace-variable
+master	WaveletCoherence	code/package/wavelet/wavecoh_update_wtc.m	<file>	122	period	workspace-variable
+master	WaveletCoherence	code/package/wavelet/wavecoh_update_wtc.m	<file>	123	period	workspace-variable
+master	WaveletCoherence	code/package/wavelet/wavecoh_update_wtc.m	<file>	125	period	workspace-variable
+master	WaveletCoherence	code/package/wavelet/wavecoh_update_wtc.m	<file>	133	period	workspace-variable
+master	WaveletCoherence	code/package/wavelet/wavecoh_update_wtc.m	<file>	141	period	workspace-variable
+master	WaveletCoherence	code/package/wavelet/wavecoh_update_xwt.m	<file>	57	period	workspace-variable
+master	WaveletCoherence	code/package/wavelet/wavecoh_update_xwt.m	<file>	80	period	workspace-variable
+master	WaveletCoherence	code/package/wavelet/wavecoh_update_xwt.m	<file>	81	period	workspace-variable
+master	WaveletCoherence	code/package/wavelet/wavecoh_update_xwt.m	<file>	83	period	workspace-variable
+master	WaveletCoherence	code/package/wavelet/wavecoh_update_xwt.m	<file>	90	period	workspace-variable
+master	WaveletCoherence	code/package/wavelet/wavecoh_update_xwt.m	<file>	97	period	workspace-variable
+master	SWA	code/package/swa/writeFmt.m	writeFmt@1	70	evalin	runtime dispatch / workspace
+master	SWA	code/package/swa/writeFmt.m	writeFmt@1	71	evalin	runtime dispatch / workspace
+master	SWA	code/package/swa/writeFmt.m	writeFmt@1	72	evalin	runtime dispatch / workspace
+master	SWA	code/package/swa/writeFmt.m	writeFmt@1	88	evalin	runtime dispatch / workspace
+master	SWA	code/package/swa/writeFmt.m	writeFmt@1	89	evalin	runtime dispatch / workspace
+master	SWA	code/package/swa/writeFmt.m	writeFmt@1	90	evalin	runtime dispatch / workspace
+master	SWA	code/package/swa/writeFmt.m	writeFmt@1	109	evalin	runtime dispatch / workspace
+master	SWA	code/package/swa/writeFmt.m	writeFmt@1	113	evalin	runtime dispatch / workspace
+master	SWA	code/package/swa/writeFmt.m	writeFmt@1	115	evalin	runtime dispatch / workspace
+master	SWA	code/package/swa/writeFmt.m	writeFmt@1	187	evalin	runtime dispatch / workspace
+master	SWA	code/package/swa/writeFmt.m	writeFmt@1	191	evalin	runtime dispatch / workspace
+master	SWA	code/package/swa/writeFmt.m	writeFmt@1	247	evalin	runtime dispatch / workspace
+master	SWA	code/package/swa/writeFmt.m	writeFmt@1	250	evalin	runtime dispatch / workspace
+master	SWA	code/package/swa/writeFmt.m	writeFmt@1	253	evalin	runtime dispatch / workspace
+master	Undatable	code/package/undatable/undatableGUI.m	runundatable_Callback@243	425	run	runtime dispatch / workspace
+master	Undatable	code/package/undatable/undatableGUI.m	undatableGUI@1	36	str2func	runtime dispatch / workspace
+master	HypothesisTests	code/guicode/AC.m	menu_anova_Callback@10104	10109	ANOVAUI	unconfirmed-name
+master	Workspace	code/guicode/AC.m	menu_NewDataTable_Callback@10080	10090	AcycleDataTableGUI	unconfirmed-name
+master	Desktop	code/guicode/AC.m	prepareDataTableForStats@9879	9894	AcycleDataTableGUI	unconfirmed-name
+master	Association	code/guicode/AC.m	menu_corr_Callback@10131	10136	BivCorrUI	unconfirmed-name
+master	Association	code/guicode/AC.m	menu_covariance_Callback@10140	10145	BivCovUI	unconfirmed-name
+master	Regression	code/guicode/AC.m	menu_linearReg_Callback@10149	10154	BivLinearRegUI	unconfirmed-name
+master	HypothesisTests	code/guicode/AC.m	menu_chi2gof_Callback@10122	10127	UniChi2GOFUI	unconfirmed-name
+master	HypothesisTests	code/guicode/AC.m	menu_normaltest_Callback@10113	10118	UniNormalityUI	unconfirmed-name
+master	SummaryStatistics	code/guicode/AC.m	menu_statsummary_Callback@9845	9852	UniStatisticSum	unconfirmed-name
+master	HypothesisTests	code/guicode/AC.m	menu_uni2SamTest_Callback@10095	10100	UniTwoSampleTestsUI	unconfirmed-name
+master	HypothesisTests	code/guicode/AC.m	menu_ttest_Callback@9859	9865	Unittest	unconfirmed-name
+master	DYNOT	code/seriesanalysis/dispstat.m	dispstat@1	50	eval	runtime dispatch / workspace

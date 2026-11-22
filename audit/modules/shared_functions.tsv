@@ -1,0 +1,109 @@
+revision	function	source	owner	recommendation	scientific_modules_n	scientific_modules	other_direct_modules	reason_zh
+guide	cyclecorr4	code/corrcoef/cyclecorr4.m	Coco	domain-shared	2	Coco EvolutionaryCoco		保留所属模块；跨模块直接调用原函数。
+guide	cyclecorr4sig	code/corrcoef/cyclecorr4sig.m	Coco	domain-shared	2	Coco EvolutionaryCoco		保留所属模块；跨模块直接调用原函数。
+guide	randspec_sin	code/corrcoef/randspec_sin.m	Coco	domain-shared	2	Coco EvolutionaryCoco		COCO 与 eCOCO 用于随机化目标谱的子程序，依赖频网格和 Rayleigh 分辨率。
+guide	targetrebuilt	code/corrcoef/targetrebuilt.m	Coco	domain-shared	2	Coco EvolutionaryCoco		保留所属模块；跨模块直接调用原函数。
+guide	theoredar1ML	code/corrcoef/theoredar1ML.m	Coco	domain-shared	3	Coco EvolutionaryCoco PowerSpectrum		AR(1) 理论背景依赖谱功率和归一化约定，与基础自相关估计分开。
+guide	PlotPro2DLineGUI	code/guicode/PlotPro2DLineGUI.m	SeriesPlot	domain-shared	2	Interpolation SeriesPlot		保留所属模块；跨模块直接调用原函数。
+guide	smoothbestSpanRand	code/guicode/smoothbestSpanRand.m	Smoothing	domain-shared	2	Detrending Smoothing		去趋势与平滑共享窗宽拟合，两个版本都能显式给 wtb=0 关闭进度窗。
+guide	CDac_pwd	code/misc/CDac_pwd.m	Workspace	workspace-adapter	43	BuildAgeModel Changepoint CircularSpectrum Coherence Columns DYNOT Derivative Detrending EMD EvolutionarySpectrum EvolutionaryTimeOpt Examples Filtering ImageColor ImageProfile Insolation Interpolation LagOne LeadLag Lyapunov Modulation OrbitSolution OrbitalPeriods PCA PowerDecomposition PowerSpectrum Prewhitening Recurrence ReferenceSeries SeriesArithmetic SeriesEditing SeriesGenerator Smoothing SortUnique Sound SpectralMoments StratCorrelation TimeOpt Transform Tuning Undatable Wavelet WaveletCoherence	Workspace	脚本读取状态并切换进程目录。独立方法应传入路径，兼容边界处理 cwd。
+guide	GETac_pwd	code/misc/GETac_pwd.m	Workspace	workspace-adapter	40	BuildAgeModel Changepoint CircularSpectrum Columns DYNOT Derivative Detrending Digitizer Distribution EvolutionarySpectrum EvolutionaryTimeOpt Extrema Filtering ImageColor ImageDisplay ImageProfile Interpolation LagOne LeadLag Lyapunov Modulation PCA PowerDecomposition PowerSpectrum Prewhitening Recurrence SWA Sampling SeriesArithmetic SeriesEditing SeriesGenerator SeriesPlot Smoothing SortUnique Sound SpectralMoments StratCorrelation TimeOpt Transform Undatable	Workspace	脚本读取路径并注入调用者变量。拆出返回路径的普通 IO，保留桌面兼容入口。
+guide	datapreproc	code/misc/datapreproc.m	SortUnique	hold	1	Coherence		含 warndlg，并组合去缺失、排序、去重和插值；当前明确直接使用者集中在相干分析。先拆通知和显式数据策略。
+guide	findnpk	code/misc/findnpk.m	Extrema	domain-shared	2	EvolutionaryTimeOpt TimeOpt		全段与演化 TimeOpt 的旧入口查找排序后的极值和并列位置，保留该规则。
+guide	getlisti	code/misc/getlisti.m	Workspace	desktop-only	2	Insolation SeriesPlot		在字符串列表中取匹配项的索引，未匹配时返回 1。基线的明确跨模块调用用于 GUI 选项。
+guide	imscrollpanel_ac	code/misc/imscrollpanel_ac.m	ImageDisplay	desktop-only	3	ImageDisplay ImageProfile SeriesPlot		创建图像滚动窗口，展示层复用。
+guide	myginput	code/misc/myginput.m	Digitizer	desktop-only	2	Columns StratCorrelation		指针交互给数字化或剖面提供输入。坐标进入 params，日志记录选择。
+guide	refreshcolor	code/misc/refreshcolor.m	Workspace	desktop-only	44	BuildAgeModel Changepoint CircularSpectrum Coherence Columns DYNOT Derivative Detrending EMD EvolutionarySpectrum EvolutionaryTimeOpt Examples Filtering ImageColor ImageProfile Insolation Interpolation LagOne LeadLag Lyapunov Modulation OrbitSolution OrbitalPeriods PCA PowerDecomposition PowerSpectrum Prewhitening Recurrence ReferenceSeries SWA SeriesArithmetic SeriesEditing SeriesGenerator Smoothing SortUnique Sound SpectralMoments StratCorrelation TimeOpt Transform Tuning Undatable Wavelet WaveletCoherence	Workspace	依赖共享 GUI 工作区的脚本，改成桌面函数并显式传入所需状态。
+guide	strrep2	code/misc/strrep2.m	Workspace	desktop-only	38	BuildAgeModel Changepoint CircularSpectrum Columns DYNOT Derivative Detrending Digitizer Distribution EvolutionarySpectrum EvolutionaryTimeOpt Extrema Filtering ImageColor ImageDisplay ImageProfile Interpolation LagOne Lyapunov Modulation PCA PowerDecomposition PowerSpectrum Prewhitening Recurrence SWA Sampling SeriesArithmetic SeriesEditing SeriesGenerator SeriesPlot Smoothing SortUnique Sound SpectralMoments TimeOpt Transform Undatable	Workspace	去除文件列表标签中的 HTML 包装；脚本与 Harness 可以直接传路径。
+guide	specswa	code/package/swa/specswa.m	SWA	domain-shared	1	SWA		独立 SWA 和 COCO 共享的专业谱背景算法。
+guide	ar1nv	code/package/wavelet/ar1nv.m	Wavelet	domain-shared	2	Wavelet WaveletCoherence		小波套件两个工作流共享。返回自相关及噪声幅度，采用 N 与 N−1 的协方差估计，保留第三方契约。
+guide	formatts	code/package/wavelet/formatts.m	WaveletCoherence	domain-shared	2	Wavelet WaveletCoherence		小波套件的两列化和采样判定，容忍阈值是其自有规则。
+guide	wavelet	code/package/wavelet/wavelet.m	Wavelet	domain-shared	2	Wavelet WaveletCoherence		保留所属模块；跨模块直接调用原函数。
+guide	depthtotime	code/seriesanalysis/depthtotime.m	Tuning	domain-shared	2	StratCorrelation Tuning		年龄模型跨调谐与地层对比复用，保留插值、标尺方向及外推边界，由年代模块维护。
+guide	eemd	code/seriesanalysis/eemd.m	EMD	domain-shared	2	Detrending EMD		保留所属模块；跨模块直接调用原函数。
+guide	evofft	code/seriesanalysis/evofft.m	EvolutionarySpectrum	domain-shared	2	EvolutionarySpectrum Robot		保留所属模块；跨模块直接调用原函数。
+guide	evofftML	code/seriesanalysis/evofftML.m	EvolutionarySpectrum	domain-shared	2	EvolutionarySpectrum Filtering		保留所属模块；跨模块直接调用原函数。
+guide	findduplicate	code/seriesanalysis/findduplicate.m	SortUnique	core-series	9	BuildAgeModel Coherence LeadLag Modulation PowerDecomposition Robot SeriesArithmetic SortUnique StratCorrelation		按坐标归并重复行，对各数据列取均值；仅有重复时重建坐标。原有 disp 可由外层捕获。
+guide	interpolate	code/seriesanalysis/interpolate.m	Interpolation	core-series	11	EvolutionarySpectrum Filtering Interpolation LagOne Lyapunov Modulation PowerDecomposition Recurrence Robot SortUnique WaveletCoherence		历史两列线性等距插值；两个版本共用同一原文件。保留与严格多列内核不同的契约。
+guide	minirhos0	code/seriesanalysis/minirhos0.m	PowerSpectrum	domain-shared	2	PowerSpectrum Prewhitening		拟合谱背景的 rho 和 s0。两个版本的 genplot=0 关闭显示。其参数依赖谱归一化。
+guide	moveMedian	code/seriesanalysis/moveMedian.m	Smoothing	core-series	4	CircularSpectrum PowerSpectrum Prewhitening Smoothing		向量移动中位数；窗长、奇偶与端点行为必须按原版本。不要替换为同名的其他窗口算法。
+guide	pdan	code/seriesanalysis/pdan.m	DYNOT	domain-shared	2	DYNOT PowerDecomposition		保留所属模块；跨模块直接调用原函数。
+guide	redconfML	code/seriesanalysis/redconfML.m	PowerSpectrum	domain-shared	3	EvolutionarySpectrum PowerSpectrum Robot		保留所属模块；跨模块直接调用原函数。
+guide	redconfchi2	code/seriesanalysis/redconfchi2.m	PowerSpectrum	domain-shared	2	PowerSpectrum Robot		保留所属模块；跨模块直接调用原函数。
+guide	redmark	code/seriesanalysis/redmark.m	SeriesGenerator	hold	2	Lyapunov SeriesGenerator		生成红噪声看似通用，但两个原文件均用系统时钟重设随机状态。保留原入口和来源，面向重放的适配需接收显式随机状态或保存实际噪声。
+guide	rhoAR1	code/seriesanalysis/rhoAR1.m	LagOne	domain-shared	2	PowerSpectrum TimeOpt		标量历史实现，向量方向与 rhoAR1ML 的逐列约定不同，保留老谱分析和 TimeOpt 的绑定。
+guide	rhoAR1ML	code/seriesanalysis/rhoAR1ML.m	LagOne	core-series	5	Coco LagOne Prewhitening Wavelet WaveletCoherence		等间隔序列的 Lag-1 估计，多处作为标量或逐列基础运算。与 rhoAR1、稳健 AR 拟合分别登记。
+guide	select_interval	code/seriesanalysis/select_interval.m	SeriesEditing	core-series	10	Coco Coherence EvolutionaryCoco Extrema LeadLag OrbitSolution PowerSpectrum ReferenceSeries SeriesEditing WaveletCoherence		按首列在闭区间 [t1,t2] 选择整行，保留其余列及行序。
+guide	tanerhilbertML	code/seriesanalysis/tanerhilbertML.m	Filtering	domain-shared	2	Filtering TimeOpt		保留所属模块；跨模块直接调用原函数。
+guide	zeropad2	code/seriesanalysis/zeropad2.m	EvolutionarySpectrum	core-series	9	DYNOT EvolutionarySpectrum EvolutionaryTimeOpt Filtering LagOne Lyapunov PowerDecomposition Robot SpectralMoments		跨多个滑窗方法的端点延拓。固定版本、模式、窗口、随机状态和新版覆盖选项，保留均值处理差异。
+guide	timeOptAc	upstream/recovered/code/package/timeOpt/timeOptAc.m	TimeOpt	domain-shared	2	EvolutionaryTimeOpt TimeOpt		保留所属模块；跨模块直接调用原函数。
+master	cocoAdaptiveEvaluate	code/corrcoef/cocoAdaptiveEvaluate.m	Coco	domain-shared	2	Coco EvolutionaryCoco		保留所属模块；跨模块直接调用原函数。
+master	cocoAllPeriodRateRange	code/corrcoef/cocoAllPeriodRateRange.m	Coco	domain-shared	2	Coco EvolutionaryCoco		保留所属模块；跨模块直接调用原函数。
+master	cocoConclusionReport	code/corrcoef/cocoConclusionReport.m	Coco	shared-support	1	Coco	MethodValidation	保留所属模块；跨模块直接调用原函数。
+master	cocoFixedTargetWeights	code/corrcoef/cocoFixedTargetWeights.m	Coco	domain-shared	2	Coco EvolutionaryCoco		保留所属模块；跨模块直接调用原函数。
+master	cocoNonnegativeLeakageSolve	code/corrcoef/cocoNonnegativeLeakageSolve.m	Coco	domain-shared	2	Coco EvolutionaryCoco		保留所属模块；跨模块直接调用原函数。
+master	cocoOrbitGroups	code/corrcoef/cocoOrbitGroups.m	Coco	domain-shared	2	Coco EvolutionaryCoco		保留所属模块；跨模块直接调用原函数。
+master	cocoPrepareRegularData	code/corrcoef/cocoPrepareRegularData.m	Coco	domain-shared	2	Coco EvolutionaryCoco		保留所属模块；跨模块直接调用原函数。
+master	cocoResolvedDetrendedVariance	code/corrcoef/cocoResolvedDetrendedVariance.m	Coco	domain-shared	2	Coco EvolutionaryCoco		保留所属模块；跨模块直接调用原函数。
+master	cocoSamplingTolerance	code/corrcoef/cocoSamplingTolerance.m	Coco	domain-shared	2	Coco EvolutionaryCoco	MethodValidation	服务于 COCO 与 eCOCO 的采样约定；不扩展为全 Acycle 的不等距判据。
+master	cocoShadeOutsideAllPeriodRange	code/corrcoef/cocoShadeOutsideAllPeriodRange.m	Coco	domain-shared	2	Coco EvolutionaryCoco		保留所属模块；跨模块直接调用原函数。
+master	cocoTargetSpectrum	code/corrcoef/cocoTargetSpectrum.m	Coco	domain-shared	2	Coco EvolutionaryCoco		保留所属模块；跨模块直接调用原函数。
+master	corrcoefslices_rankNew	code/corrcoef/corrcoefslices_rankNew.m	EvolutionaryCoco	shared-support	1	EvolutionaryCoco	MethodValidation	保留所属模块；跨模块直接调用原函数。
+master	cvcoco	code/corrcoef/cvcoco.m	Coco	shared-support	1	Coco	MethodValidation	保留所属模块；跨模块直接调用原函数。
+master	cvcoco9B	code/corrcoef/cvcoco9B.m	Coco	shared-support	1	Coco	MethodValidation	保留所属模块；跨模块直接调用原函数。
+master	cyclecorr4	code/corrcoef/cyclecorr4.m	Coco	domain-shared	2	Coco EvolutionaryCoco		保留所属模块；跨模块直接调用原函数。
+master	cyclecorr4sig	code/corrcoef/cyclecorr4sig.m	Coco	domain-shared	2	Coco EvolutionaryCoco		保留所属模块；跨模块直接调用原函数。
+master	ecocoplot	code/corrcoef/ecocoplot.m	EvolutionaryCoco	shared-support	1	EvolutionaryCoco	MethodValidation	保留所属模块；跨模块直接调用原函数。
+master	interleavedcvcoco	code/corrcoef/interleavedcvcoco.m	Coco	shared-support	1	EvolutionaryCoco	MethodValidation	保留所属模块；跨模块直接调用原函数。
+master	randspec_sin	code/corrcoef/randspec_sin.m	Coco	domain-shared	2	Coco EvolutionaryCoco		COCO 与 eCOCO 用于随机化目标谱的子程序，依赖频网格和 Rayleigh 分辨率。
+master	targetrebuilt	code/corrcoef/targetrebuilt.m	Coco	domain-shared	2	Coco EvolutionaryCoco		保留所属模块；跨模块直接调用原函数。
+master	theoredar1ML	code/corrcoef/theoredar1ML.m	Coco	domain-shared	2	Coco EvolutionaryCoco		AR(1) 理论背景依赖谱功率和归一化约定，与基础自相关估计分开。
+master	AC	code/guicode/AC.m	Desktop	shared-support	0		Desktop Workspace	保留所属模块；跨模块直接调用原函数。
+master	smoothbestSpanRand	code/guicode/smoothbestSpanRand.m	Smoothing	domain-shared	2	Detrending Smoothing		去趋势与平滑共享窗宽拟合，两个版本都能显式给 wtb=0 关闭进度窗。
+master	CDac_pwd	code/misc/CDac_pwd.m	Workspace	workspace-adapter	34	BuildAgeModel Changepoint CircularSpectrum Coherence Columns DYNOT Derivative Digitizer EvolutionarySpectrum Examples Filtering ImageColor ImageProfile Interpolation LagOne Modulation OrbitSolution PCA PowerDecomposition Prewhitening Recurrence ReferenceSeries SeriesArithmetic SeriesEditing Smoothing SortUnique Sound SpectralMoments StratCorrelation Transform Tuning Undatable Wavelet WaveletCoherence	Workspace	脚本读取状态并切换进程目录。独立方法应传入路径，兼容边界处理 cwd。
+master	GETac_pwd	code/misc/GETac_pwd.m	Workspace	workspace-adapter	36	BuildAgeModel Changepoint CircularSpectrum Columns DYNOT Derivative Detrending Digitizer Distribution EvolutionarySpectrum Extrema Filtering ImageColor ImageDisplay ImageProfile Interpolation LagOne Modulation PCA PowerDecomposition PowerSpectrum Prewhitening Recurrence SWA Sampling SeriesArithmetic SeriesEditing SeriesGenerator SeriesPlot Smoothing SortUnique Sound SpectralMoments StratCorrelation Transform Undatable	Workspace	脚本读取路径并注入调用者变量。拆出返回路径的普通 IO，保留桌面兼容入口。
+master	ac_refresh_main_list	code/misc/ac_refresh_main_list.m	Workspace	desktop-only	30	Bispectrum CircularSpectrum Coherence Columns DYNOT Detrending Digitizer EMD EvolutionarySpectrum Filtering Insolation Interpolation LagOne LeadLag OrbitSolution OrbitalPeriods PowerSpectrum Prewhitening Recurrence Robot SWA SeriesGenerator Smoothing SpectralMoments StratCorrelation Transform Tuning Undatable Wavelet WaveletCoherence	Workspace	刷新主窗口列表，与控件生命周期有关。
+master	ac_save_wave_parameter_table	code/misc/ac_save_wave_parameter_table.m	Wavelet	domain-shared	2	Wavelet WaveletCoherence		保留所属模块；跨模块直接调用原函数。
+master	ac_sort_dir_entries	code/misc/ac_sort_dir_entries.m	Workspace	core-io	26	CircularSpectrum Coherence Columns DYNOT Detrending Digitizer Filtering Insolation Interpolation LeadLag OrbitSolution OrbitalPeriods PowerSpectrum Prewhitening Recurrence Robot SWA SeriesGenerator Smoothing SpectralMoments StratCorrelation Transform Tuning Undatable Wavelet WaveletCoherence	Workspace	目录条目按名称、修改时间或大小排序。输入与输出为普通记录，可供桌面和文件型调用复用。仅 3.1.1。
+master	ac_update_listbox_acmain	code/misc/ac_update_listbox_acmain.m	Workspace	desktop-only	26	CircularSpectrum Coherence Columns DYNOT Detrending Digitizer Filtering Insolation Interpolation LeadLag OrbitSolution OrbitalPeriods PowerSpectrum Prewhitening Recurrence Robot SWA SeriesGenerator Smoothing SpectralMoments StratCorrelation Transform Tuning Undatable Wavelet WaveletCoherence	Workspace	访问 GUI 列表控件，属于桌面显示。
+master	ac_user_settings	code/misc/ac_user_settings.m	SettingsHelp	workspace-adapter	2	EvolutionaryCoco Filtering	SettingsHelp Workspace	每个用户的桌面设置、语言及存储路径，属于偏好与启动适配。
+master	ac_working_directory	code/misc/ac_working_directory.m	Workspace	workspace-adapter	27	Bispectrum CircularSpectrum Coherence Columns DYNOT Detrending Digitizer Filtering Insolation Interpolation LeadLag OrbitSolution OrbitalPeriods PowerSpectrum Prewhitening Recurrence Robot SWA SeriesGenerator Smoothing SpectralMoments StratCorrelation Transform Tuning Undatable Wavelet WaveletCoherence	Workspace	读写桌面的工作目录状态。调用很多，提取普通文件 IO 后仍需显式传入分析的输入、输出位置。
+master	datapreproc	code/misc/datapreproc.m	SortUnique	hold	1	Coherence		含 warndlg，并组合去缺失、排序、去重和插值；当前明确直接使用者集中在相干分析。先拆通知和显式数据策略。
+master	findnpk	code/misc/findnpk.m	Extrema	domain-shared	0			全段与演化 TimeOpt 的旧入口查找排序后的极值和并列位置，保留该规则。
+master	getlisti	code/misc/getlisti.m	Workspace	desktop-only	0			在字符串列表中取匹配项的索引，未匹配时返回 1。基线的明确跨模块调用用于 GUI 选项。
+master	imscrollpanel_ac	code/misc/imscrollpanel_ac.m	ImageDisplay	desktop-only	3	ImageDisplay ImageProfile SeriesPlot		创建图像滚动窗口，展示层复用。
+master	myginput	code/misc/myginput.m	Digitizer	desktop-only	2	Digitizer StratCorrelation		指针交互给数字化或剖面提供输入。坐标进入 params，日志记录选择。
+master	refreshcolor	code/misc/refreshcolor.m	Workspace	desktop-only	19	BuildAgeModel Changepoint Columns Derivative Examples ImageColor ImageProfile Interpolation LagOne Modulation PCA PowerDecomposition ReferenceSeries SeriesArithmetic SeriesEditing Smoothing SortUnique Sound Transform	Workspace	依赖共享 GUI 工作区的脚本，改成桌面函数并显式传入所需状态。
+master	strrep2	code/misc/strrep2.m	Workspace	desktop-only	37	Bispectrum BuildAgeModel Changepoint CircularSpectrum Columns DYNOT Derivative Detrending Digitizer Distribution EMD EvolutionarySpectrum Extrema Filtering ImageColor ImageDisplay ImageProfile Interpolation LagOne Modulation PCA PowerDecomposition PowerSpectrum Prewhitening Recurrence SWA Sampling SeriesArithmetic SeriesEditing SeriesGenerator SeriesPlot Smoothing SortUnique Sound SpectralMoments Transform Undatable	Workspace	去除文件列表标签中的 HTML 包装；脚本与 Harness 可以直接传路径。
+master	bispectralAnalyze	code/package/bispectral/bispectralAnalyze.m	Bispectrum	shared-support	1	Bispectrum	MethodValidation	保留所属模块；跨模块直接调用原函数。
+master	bispectralDefaults	code/package/bispectral/bispectralDefaults.m	Bispectrum	shared-support	1	Bispectrum	MethodValidation	保留所属模块；跨模块直接调用原函数。
+master	bispectralEstimate	code/package/bispectral/bispectralEstimate.m	Bispectrum	shared-support	1	Bispectrum	MethodValidation	保留所属模块；跨模块直接调用原函数。
+master	bispectralExportVectorPDF	code/package/bispectral/bispectralExportVectorPDF.m	Bispectrum	shared-support	1	Bispectrum	MethodValidation	保留所属模块；跨模块直接调用原函数。
+master	bispectralPlot	code/package/bispectral/bispectralPlot.m	Bispectrum	shared-support	1	Bispectrum	MethodValidation	保留所属模块；跨模块直接调用原函数。
+master	bispectralPreprocess	code/package/bispectral/bispectralPreprocess.m	Bispectrum	shared-support	1	Bispectrum	MethodValidation	保留所属模块；跨模块直接调用原函数。
+master	bispectralSignificance	code/package/bispectral/bispectralSignificance.m	Bispectrum	shared-support	1	Bispectrum	MethodValidation	保留所属模块；跨模块直接调用原函数。
+master	bispectralSurrogate	code/package/bispectral/bispectralSurrogate.m	Bispectrum	shared-support	1	Bispectrum	MethodValidation	保留所属模块；跨模块直接调用原函数。
+master	calculate_orbit9	code/package/secular_periods/calculate_orbit9.m	OrbitalPeriods	shared-support	1	DYNOT	MethodValidation	保留所属模块；跨模块直接调用原函数。
+master	specswa	code/package/swa/specswa.m	SWA	domain-shared	3	Coco EvolutionaryCoco SWA		独立 SWA 和 COCO 共享的专业谱背景算法。
+master	ar1nv	code/package/wavelet/ar1nv.m	Wavelet	domain-shared	2	Wavelet WaveletCoherence		小波套件两个工作流共享。返回自相关及噪声幅度，采用 N 与 N−1 的协方差估计，保留第三方契约。
+master	formatts	code/package/wavelet/formatts.m	WaveletCoherence	domain-shared	2	Wavelet WaveletCoherence		小波套件的两列化和采样判定，容忍阈值是其自有规则。
+master	wavelet	code/package/wavelet/wavelet.m	Wavelet	domain-shared	2	Wavelet WaveletCoherence		保留所属模块；跨模块直接调用原函数。
+master	acycleInterpolateSeries	code/seriesanalysis/acycleInterpolateSeries.m	Interpolation	core-series	2	LagOne Modulation		严格递增的有限多列数据、整数网格及短尾元数据；调幅与演化 Lag-1 分别直调。仅 3.1.1。
+master	acycleMtmTaperCount	code/seriesanalysis/acycleMtmTaperCount.m	PowerSpectrum	domain-shared	2	PowerSpectrum SWA		MTM 实际 taper 个数属于谱估计约定，可由功率谱与 SWA 共用。
+master	acycleSamplingIsUneven	code/seriesanalysis/acycleSamplingIsUneven.m	Sampling	core-series	12	EMD EvolutionarySpectrum Filtering Modulation PowerDecomposition PowerSpectrum Prewhitening Recurrence Robot SortUnique SpectralMoments WaveletCoherence		采样间隔判据，外层显式给相对容差；返回判定及诊断。仅 3.1.1。
+master	depthtotime	code/seriesanalysis/depthtotime.m	Tuning	domain-shared	2	StratCorrelation Tuning		年龄模型跨调谐与地层对比复用，保留插值、标尺方向及外推边界，由年代模块维护。
+master	evofft	code/seriesanalysis/evofft.m	EvolutionarySpectrum	domain-shared	2	EvolutionarySpectrum Robot		保留所属模块；跨模块直接调用原函数。
+master	evofftML	code/seriesanalysis/evofftML.m	EvolutionarySpectrum	domain-shared	2	EvolutionarySpectrum Filtering		保留所属模块；跨模块直接调用原函数。
+master	findduplicate	code/seriesanalysis/findduplicate.m	SortUnique	core-series	12	BuildAgeModel Coherence DYNOT Filtering Modulation PowerDecomposition Prewhitening Robot SeriesArithmetic SortUnique SpectralMoments StratCorrelation		按坐标归并重复行，对各数据列取均值；仅有重复时重建坐标。原有 disp 可由外层捕获。
+master	interpolate	code/seriesanalysis/interpolate.m	Interpolation	core-series	11	EvolutionarySpectrum Filtering Interpolation LagOne PowerDecomposition Prewhitening Recurrence Robot SortUnique SpectralMoments WaveletCoherence		历史两列线性等距插值；两个版本共用同一原文件。保留与严格多列内核不同的契约。
+master	minirhos0	code/seriesanalysis/minirhos0.m	PowerSpectrum	domain-shared	3	LagOne PowerSpectrum Prewhitening		拟合谱背景的 rho 和 s0。两个版本的 genplot=0 关闭显示。其参数依赖谱归一化。
+master	moveMedian	code/seriesanalysis/moveMedian.m	Smoothing	core-series	4	CircularSpectrum LagOne PowerSpectrum Prewhitening		向量移动中位数；窗长、奇偶与端点行为必须按原版本。不要替换为同名的其他窗口算法。
+master	pdan	code/seriesanalysis/pdan.m	DYNOT	domain-shared	2	DYNOT PowerDecomposition		保留所属模块；跨模块直接调用原函数。
+master	redconfML	code/seriesanalysis/redconfML.m	PowerSpectrum	domain-shared	3	EvolutionarySpectrum PowerSpectrum Robot		保留所属模块；跨模块直接调用原函数。
+master	redconf_any	code/seriesanalysis/redconf_any.m	PowerSpectrum	domain-shared	2	Coco EvolutionaryCoco		保留所属模块；跨模块直接调用原函数。
+master	redconfchi2	code/seriesanalysis/redconfchi2.m	PowerSpectrum	domain-shared	2	PowerSpectrum Robot		保留所属模块；跨模块直接调用原函数。
+master	redmark	code/seriesanalysis/redmark.m	SeriesGenerator	hold	1	SeriesGenerator		生成红噪声看似通用，但两个原文件均用系统时钟重设随机状态。保留原入口和来源，面向重放的适配需接收显式随机状态或保存实际噪声。
+master	rhoAR1	code/seriesanalysis/rhoAR1.m	LagOne	domain-shared	1	PowerSpectrum		标量历史实现，向量方向与 rhoAR1ML 的逐列约定不同，保留老谱分析和 TimeOpt 的绑定。
+master	rhoAR1ML	code/seriesanalysis/rhoAR1ML.m	LagOne	core-series	5	Coco LagOne Prewhitening Wavelet WaveletCoherence		等间隔序列的 Lag-1 估计，多处作为标量或逐列基础运算。与 rhoAR1、稳健 AR 拟合分别登记。
+master	select_interval	code/seriesanalysis/select_interval.m	SeriesEditing	core-series	9	Coco Coherence EvolutionaryCoco Extrema LeadLag OrbitSolution ReferenceSeries SeriesEditing WaveletCoherence		按首列在闭区间 [t1,t2] 选择整行，保留其余列及行序。
+master	zeropad2	code/seriesanalysis/zeropad2.m	EvolutionarySpectrum	core-series	6	DYNOT EvolutionarySpectrum Filtering PowerDecomposition Robot SpectralMoments		跨多个滑窗方法的端点延拓。固定版本、模式、窗口、随机状态和新版覆盖选项，保留均值处理差异。

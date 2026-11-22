@@ -1,0 +1,19 @@
+source	part	disposition	direct_guide_roles	direct_master_roles	direct_module_ids	responsibility_zh
+matlab/logger.m	Logger	core	0	0		统一写入 init、fin、event、msg、error。
+matlab/+aclog/newId.m	Logger	core	0	0		分配调用 ID 与记录目录。
+matlab/+aclog/invoke.m	Runner	core	388	0	Association BuildAgeModel Changepoint CircularSpectrum Coco Coherence Columns DYNOT Derivative Detrending Digitizer Distribution EMD EvolutionaryCoco EvolutionarySpectrum EvolutionaryTimeOpt Examples Extrema Filtering HypothesisTests ImageColor ImageDisplay ImageProfile Insolation Interpolation LagOne LeadLag Lyapunov Modulation OrbitSolution OrbitalPeriods PCA PowerDecomposition PowerSpectrum Prewhitening Recurrence ReferenceSeries Regression SWA Sampling SeriesArithmetic SeriesEditing SeriesGenerator SeriesPlot Smoothing SortUnique Sound SpectralMoments StratCorrelation SummaryStatistics TimeOpt Transform Tuning Undatable Wavelet WaveletCoherence	为一次公开角色调用安排输入、随机状态、消息与终态记录。
+matlab/+aclog/read.m	IO	core	0	0		按引用读取 MAT 值。
+matlab/+aclog/store.m	IO	core	0	0		持久化 params、retval 或随机状态并返回引用。
+matlab/+aclog/replay.m	Runner	core	0	0		按旧 op 和记录输入重放；目前用正则和两个命名空间分派。
+matlab/+aclog/defaults.m	Helper support	core	34	26	Changepoint CircularSpectrum Coco Coherence DYNOT EvolutionaryCoco EvolutionarySpectrum Extrema Filtering Insolation LeadLag PowerSpectrum Recurrence SWA Smoothing SortUnique SpectralMoments Wavelet	沿旧式位置入参推导推荐值；仅供 Helper 使用。
+matlab/+accompat/masterInvoke.m	Runner	core	0	401	Association Bispectrum BuildAgeModel Changepoint CircularSpectrum Coco Coherence Columns DYNOT Derivative Desktop Detrending Digitizer Distribution EMD EvolutionaryCoco EvolutionarySpectrum Examples Extrema Filtering HypothesisTests ImageColor ImageDisplay ImageProfile Insolation Interpolation LagOne LeadLag MethodValidation Modulation OrbitSolution OrbitalPeriods PCA PowerDecomposition PowerSpectrum Prewhitening Recurrence ReferenceSeries Regression SWA Sampling SeriesArithmetic SeriesEditing SeriesGenerator SeriesPlot Smoothing SortUnique Sound SpectralMoments StratCorrelation SummaryStatistics Transform Tuning Undatable Wavelet WaveletCoherence Workspace	给 3.1.1 的执行绑定固定依赖及相同调用记录。
+matlab/+accompat/masterPath.m	Runner	core	0	0		限定并恢复 3.1.1 搜索路径。
+matlab/+accompat/inputSnapshot.m	IO	core	2	0	Undatable	把文件型入参快照留给回放。
+matlab/+accompat/overrideOptions.m	Helper support	core	0	23	Bispectrum Coco EMD EvolutionaryCoco Interpolation PowerSpectrum	校验字段后将用户覆盖写入建议选项。
+matlab/+accompat/requireFields.m	Parameter validation	core	0	31	Bispectrum Coco EMD EvolutionaryCoco Filtering Interpolation MethodValidation PowerSpectrum	验证所选路径必需的已解析字段。
+matlab/+accompat/cocoTargetPath.m	Coco	domain-adapter	0	10	Coco EvolutionaryCoco	为明确选回旧模型的 COCO 调用限定 freq2target 路径。
+matlab/+accompat/swaWorkspace.m	SWA	domain-adapter	2	1	SWA	隔离 SWA 原有的全局变量、当前目录和报告。
+matlab/+accompat/tanerWorkspace.m	Filtering	domain-adapter	2	0	EvolutionaryTimeOpt TimeOpt	兼容旧 Taner 实现写入的 base-workspace 变量。
+setup_migration.m	Bootstrap	bootstrap	0	0		装入固定上游和恢复文件。
+(proposed register)	Register	proposed	0	0		按版本化 op 和角色找到模块；选择值来自 params，旧别名保留原绑定。
+(proposed code/acPrivateFunctions.m)	Register	proposed	0	0		在 code 父目录用显式句柄表提供全项目共用 private 的合法访问点；模块仍管理自己的选择项。

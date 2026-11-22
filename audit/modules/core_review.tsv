@@ -1,0 +1,35 @@
+function	recommendation	reason_zh
+findduplicate	core-series	按坐标归并重复行，对各数据列取均值；仅有重复时重建坐标。原有 disp 可由外层捕获。
+select_interval	core-series	按首列在闭区间 [t1,t2] 选择整行，保留其余列及行序。
+interpolate	core-series	历史两列线性等距插值；两个版本共用同一原文件。保留与严格多列内核不同的契约。
+acycleInterpolateSeries	core-series	严格递增的有限多列数据、整数网格及短尾元数据；调幅与演化 Lag-1 分别直调。仅 3.1.1。
+acycleSamplingIsUneven	core-series	采样间隔判据，外层显式给相对容差；返回判定及诊断。仅 3.1.1。
+zeropad2	core-series	跨多个滑窗方法的端点延拓。固定版本、模式、窗口、随机状态和新版覆盖选项，保留均值处理差异。
+moveMedian	core-series	向量移动中位数；窗长、奇偶与端点行为必须按原版本。不要替换为同名的其他窗口算法。
+rhoAR1ML	core-series	等间隔序列的 Lag-1 估计，多处作为标量或逐列基础运算。与 rhoAR1、稳健 AR 拟合分别登记。
+ac_sort_dir_entries	core-io	目录条目按名称、修改时间或大小排序。输入与输出为普通记录，可供桌面和文件型调用复用。仅 3.1.1。
+depthtotime	domain-shared	年龄模型跨调谐与地层对比复用，保留插值、标尺方向及外推边界，由年代模块维护。
+acycleMtmTaperCount	domain-shared	MTM 实际 taper 个数属于谱估计约定，可由功率谱与 SWA 共用。
+theoredar1ML	domain-shared	AR(1) 理论背景依赖谱功率和归一化约定，与基础自相关估计分开。
+specswa	domain-shared	独立 SWA 和 COCO 共享的专业谱背景算法。
+cocoSamplingTolerance	domain-shared	服务于 COCO 与 eCOCO 的采样约定；不扩展为全 Acycle 的不等距判据。
+ac_working_directory	workspace-adapter	读写桌面的工作目录状态。调用很多，提取普通文件 IO 后仍需显式传入分析的输入、输出位置。
+ac_user_settings	workspace-adapter	每个用户的桌面设置、语言及存储路径，属于偏好与启动适配。
+strrep2	desktop-only	去除文件列表标签中的 HTML 包装；脚本与 Harness 可以直接传路径。
+ac_refresh_main_list	desktop-only	刷新主窗口列表，与控件生命周期有关。
+ac_update_listbox_acmain	desktop-only	访问 GUI 列表控件，属于桌面显示。
+refreshcolor	desktop-only	依赖共享 GUI 工作区的脚本，改成桌面函数并显式传入所需状态。
+GETac_pwd	workspace-adapter	脚本读取路径并注入调用者变量。拆出返回路径的普通 IO，保留桌面兼容入口。
+CDac_pwd	workspace-adapter	脚本读取状态并切换进程目录。独立方法应传入路径，兼容边界处理 cwd。
+myginput	desktop-only	指针交互给数字化或剖面提供输入。坐标进入 params，日志记录选择。
+getlisti	desktop-only	在字符串列表中取匹配项的索引，未匹配时返回 1。基线的明确跨模块调用用于 GUI 选项。
+imscrollpanel_ac	desktop-only	创建图像滚动窗口，展示层复用。
+datapreproc	hold	含 warndlg，并组合去缺失、排序、去重和插值；当前明确直接使用者集中在相干分析。先拆通知和显式数据策略。
+redmark	hold	生成红噪声看似通用，但两个原文件均用系统时钟重设随机状态。保留原入口和来源，面向重放的适配需接收显式随机状态或保存实际噪声。
+rhoAR1	domain-shared	标量历史实现，向量方向与 rhoAR1ML 的逐列约定不同，保留老谱分析和 TimeOpt 的绑定。
+ar1nv	domain-shared	小波套件两个工作流共享。返回自相关及噪声幅度，采用 N 与 N−1 的协方差估计，保留第三方契约。
+formatts	domain-shared	小波套件的两列化和采样判定，容忍阈值是其自有规则。
+findnpk	domain-shared	全段与演化 TimeOpt 的旧入口查找排序后的极值和并列位置，保留该规则。
+smoothbestSpanRand	domain-shared	去趋势与平滑共享窗宽拟合，两个版本都能显式给 wtb=0 关闭进度窗。
+minirhos0	domain-shared	拟合谱背景的 rho 和 s0。两个版本的 genplot=0 关闭显示。其参数依赖谱归一化。
+randspec_sin	domain-shared	COCO 与 eCOCO 用于随机化目标谱的子程序，依赖频网格和 Rayleigh 分辨率。
