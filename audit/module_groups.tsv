@@ -1,0 +1,136 @@
+menu_tag	kind	candidate_group	entry	guide_initial	master_initial
+Menu_EMDmenu	heading	菜单导航	Empirical Mode Decomposition	visible	visible
+linegenerator	workflow	序列生成	Signal/Noise Generator	visible	visible
+menu_AM	workflow	调幅	Amplitude Modulation	visible	visible
+menu_CSA	workflow	圆形谱	Circular Spectral Analysis	visible	visible
+menu_LOD	workflow	天文周期计算	Milankovitch Calculator	visible	visible
+menu_LR04	resource	参考序列	LR04 Stack	visible	visible
+menu_NewDataTable	desktop	文件与工作目录	Create Data Table	visible	visible
+menu_add	workflow	序列间运算	合并序列	visible	visible
+menu_age	workflow	年龄标尺与调谐	Age Scale | Tuning	visible	visible
+menu_agebuild	workflow	年龄模型构建	用控制点建模	visible	visible
+menu_anova	workflow	假设检验	ANOVA	visible	visible
+menu_basic	heading	菜单导航	Basic Series	visible	visible
+menu_bispectral	workflow	双谱	Bispectral Analysis	absent	visible
+menu_bivariate	heading	菜单导航	Bivariate	visible	visible
+menu_bootstrap	workflow	平滑	Bootstrap 区间	visible	visible
+menu_cenogrid	resource	参考序列	CENOGRID	visible	visible
+menu_chi2gof	workflow	假设检验	Chi-square GOF	visible	visible
+menu_clip	workflow	序列裁剪与修整	Clipping	visible	visible
+menu_coh	workflow	相干与相位	Coherence & Phase	visible	visible
+menu_colman	workflow	列提取与编辑	Column Manipulate	visible	visible
+menu_contact	desktop	帮助与设置	Copyright	visible	visible
+menu_copy	desktop	编辑文件列表	Copy	visible	visible
+menu_corr	workflow	相关与协方差	Correlation	visible	visible
+menu_correlation	workflow	地层对比	Stratigraphic Correlation	visible	visible
+menu_covariance	workflow	相关与协方差	Covariance	visible	visible
+menu_cpt	workflow	变点	Changepoint	visible	visible
+menu_cut	desktop	编辑文件列表	Cut	visible	visible
+menu_datadistri	view	数值分布	Data Distribution	visible	visible
+menu_datatransf	workflow	数值变换	指定列与变换种类	visible	visible
+menu_delete	desktop	编辑文件列表	Delete	visible	visible
+menu_depeaks	workflow	序列裁剪与修整	Remove Peaks	visible	visible
+menu_derivative	workflow	导数	Derivative	visible	visible
+menu_desection	workflow	序列裁剪与修整	Remove Parts	visible	visible
+menu_digitizer	workflow	曲线数字化	Plot Digitizer	visible	visible
+menu_dynfilter	workflow	滤波	随坐标变化的通带	visible	visible
+menu_dynos	workflow	DYNOT	Dynamic noise after orbital tuning (DYNOT)	visible	visible
+menu_dynot_v2	workflow	DYNOT	GUIDE 另一菜单入口，共用 DYNOS	visible	absent
+menu_eTimeOpt	workflow	TimeOpt 与 eTimeOpt	eTimeOpt	visible	absent
+menu_ecoco	workflow	COCO 与 eCOCO	全段与滑窗、及各版本的目标/检验模型	visible	visible
+menu_edit	heading	菜单导航	Edit	visible	visible
+menu_eemd	workflow	经验模态分解	Ensemble Empirical Mode Decomposition (EEMD)	visible	visible
+menu_email	desktop	帮助与设置	Contact	visible	visible
+menu_emd	workflow	经验模态分解	Empirical Mode Decomposition (EMD)	visible	visible
+menu_example_GD2GR	resource	示例数据	Middle Triassic Guandao2 gamma ray	visible	visible
+menu_example_Newark	resource	示例数据	Late Triassic Newark Depth Rank	visible	visible
+menu_example_PETM	resource	示例数据	PETM Svalbard logFe	visible	visible
+menu_example_hawaiiCO2	resource	示例数据	Mauna Loa CO2 monthly mean	visible	visible
+menu_example_inso2Ma	resource	示例数据	Insolation 0-2Ma 65N Jun22	visible	visible
+menu_example_la04etp	resource	示例数据	La2004 0-2Ma ETP	visible	visible
+menu_example_marsimage	resource	示例数据	Image from Mars' HiRISE camera	visible	visible
+menu_example_plotdigitizer	resource	示例数据	Image for Plot Digitizer	visible	visible
+menu_example_redp7	resource	示例数据	Red Noise rho=0.7 2000 points	visible	visible
+menu_example_sphalerite	resource	示例数据	Image Sphalerite	visible	visible
+menu_example_wayao	resource	示例数据	Late Triassic Wayao gamma ray	visible	visible
+menu_examples	heading	菜单导航	Examples	visible	visible
+menu_extinction_CSA	resource	示例数据	Example extinction	visible	visible
+menu_extract	workflow	列提取与编辑	Extract Data	visible	visible
+menu_file	heading	菜单导航	File	visible	visible
+menu_filter	workflow	滤波	固定通带及该窗口内的其他滤波选项	visible	visible
+menu_findupdates	desktop	帮助与设置	Find Updates	visible	visible
+menu_folder	desktop	文件与工作目录	New Folder	visible	visible
+menu_function	workflow	数值变换	X、Y 分别做仿射变换	visible	visible
+menu_gap	workflow	序列裁剪与修整	Add Gaps	visible	visible
+menu_help	heading	菜单导航	Help	visible	visible
+menu_image	heading	菜单导航	Image	visible	visible
+menu_improfile	workflow	图像剖面	Image Profile	visible	visible
+menu_imshow	view	图像显示	Show Image	visible	visible
+menu_insol	workflow	日照量	Insolation	visible	visible
+menu_interp	workflow	插值	基本等距，线性	visible	visible
+menu_interpolationGUI	workflow	插值	Pro 等距，方法和间隙选项	visible	visible
+menu_interpseries	workflow	插值	目标序列对齐参考坐标	visible	visible
+menu_lang	desktop	帮助与设置	文A/语言选择(language)	visible	absent
+menu_laskar	resource	天文解	Astronomical Solution	visible	visible
+menu_leadlag	workflow	先后关系	Lead-lag Relationship	visible	visible
+menu_linearReg	workflow	线性回归	Linear Regression	visible	visible
+menu_log10	compatibility	数值变换	第 2 列取对数	absent	hidden
+menu_lyapunov	workflow	Lyapunov 指数	Lyapunov exponent	visible	absent
+menu_manuals	desktop	帮助与设置	Manual	visible	visible
+menu_math	heading	菜单导航	Math	visible	visible
+menu_maxmin	workflow	极值	Find Max/Min	visible	visible
+menu_movGauss	workflow	平滑	Gaussian 平滑	visible	visible
+menu_movmeanfbw	workflow	平滑	均值，物理窗宽	visible	visible
+menu_movmedian	workflow	平滑	中位数，固定点数	visible	visible
+menu_movmedian_option	heading	菜单导航	Moving Median	visible	visible
+menu_movmedianfbw	workflow	平滑	中位数，物理窗宽	visible	visible
+menu_multiply	workflow	序列间运算	逐序列相乘	visible	visible
+menu_multivariate1	heading	菜单导航	Multivariate	visible	hidden
+menu_newtxt	desktop	文件与工作目录	New Text File	visible	visible
+menu_norm	compatibility	数值变换	第 2 列标准化	absent	hidden
+menu_normaltest	workflow	假设检验	Normality Test	visible	visible
+menu_open	desktop	文件与工作目录	Open *.fig File	hidden	absent
+menu_opendir	desktop	文件与工作目录	Open Directory	visible	hidden
+menu_paste	desktop	编辑文件列表	Paste	visible	visible
+menu_pca	workflow	主成分分析	Principal Component	visible	visible
+menu_pda	workflow	功率分解	Power Decomposition Analysis	visible	visible
+menu_period	workflow	演化谱	滑窗谱矩阵	visible	visible
+menu_plot	view	序列绘图	序列图	visible	visible
+menu_plotadv	view	序列绘图	Plot Adv	visible	visible
+menu_plotall	heading	菜单导航	Plot	visible	visible
+menu_plotn	view	序列绘图	标准化序列图	visible	visible
+menu_plotn2	view	序列绘图	标准化并偏移的序列图	visible	visible
+menu_plotpro_2d	view	序列绘图	Plot Pro	visible	visible
+menu_power	workflow	全序列功率谱	全序列频谱与可选背景模型、诊断	visible	visible
+menu_prewhiten	workflow	去趋势与曲线拟合	去趋势与曲线拟合（保留原 tag）	visible	visible
+menu_read	desktop	帮助与设置	What's New	visible	visible
+menu_recplot	workflow	递归图	Recurrence Plot	visible	visible
+menu_refreshlist	desktop	编辑文件列表	Refresh	visible	visible
+menu_rename	desktop	编辑文件列表	Rename	visible	visible
+menu_rgb2gray	workflow	图像颜色转换	RGB to Grayscale	visible	visible
+menu_rgb2lab	workflow	图像颜色转换	RGB to CIE Lab	visible	visible
+menu_rho	workflow	Lag-1	Lag-1 autocorrelation coefficient (\rho1)	visible	visible
+menu_rhov2	workflow	Lag-1	GUIDE 的 v2 实现	visible	absent
+menu_samplerate	workflow	采样间隔	Sampling Rate	visible	visible
+menu_savefig	desktop	文件与工作目录	Save *.AC.fig	visible	visible
+menu_sednoise	heading	菜单导航	Sedimentary Noise Model	visible	visible
+menu_selectinterval	workflow	序列裁剪与修整	Select Parts	visible	visible
+menu_settings	desktop	帮助与设置	Setting...	absent	visible
+menu_smooth	workflow	平滑	均值，固定点数	visible	visible
+menu_smooth1	heading	菜单导航	Smoothing	visible	visible
+menu_smooth_option	heading	菜单导航	Moving Average	visible	visible
+menu_sort	workflow	行排序与去重	Sort/Unique/Delete-empty	visible	visible
+menu_sound	workflow	序列转音频	Convert to sound	visible	visible
+menu_specmoments	workflow	谱矩	Spectral Moments	visible	visible
+menu_sr2age	workflow	年龄模型构建	从沉积速率积分	visible	visible
+menu_statsummary	workflow	描述统计	Stat Summary	visible	visible
+menu_swa	workflow	SWA	SWA 和 Bayesian probability 联合输出	visible	visible
+menu_timeOpt	workflow	TimeOpt 与 eTimeOpt	TimeOpt	visible	absent
+menu_ttest	workflow	假设检验	单样本 t 检验	visible	visible
+menu_undatable	workflow	Undatable	Undatable	visible	visible
+menu_uni2SamTest	workflow	假设检验	一、二样本检验菜单	visible	visible
+menu_univariate	heading	菜单导航	Univariate	visible	visible
+menu_utilities	compatibility	桌面兼容入口	隐藏兼容标签，具体用途待核	absent	hidden
+menu_waveletGUI	workflow	小波	单序列小波、跨序列小波相干	visible	visible
+menu_whiten	workflow	预白化	AR(1) 预白化	visible	visible
+menuac	heading	菜单导航	Timeseries	visible	visible
