@@ -8,7 +8,11 @@ end
 
 function r = execute(p)
 if isempty(p.outputDirectory) || isempty(p.baseName), error('Acycle:Bispectral:Destination','Supply the destination and result name.'); end
-[fig,~] = bispectralPlot(p.result,p.settings);
+settings = p.settings;
+accompat.requireFields(settings,{'Quantity','KeepStrongestFraction','BispectrumKeepStrongestFraction', ...
+    'BicoherenceKeepStrongestFraction','ColorGrid','FrequencyMinimum','FrequencyMaximum', ...
+    'ReferencePeriods','FrequencyPairs','ShowPeriodAxes','PeakCount','ShowSignificance','Title','Visible'});
+[fig,~] = bispectralPlot(p.result,settings);
 cleanup = onCleanup(@() close(fig));
 r = bispectralSave(p.result,fig,p.outputDirectory,p.baseName);
 end

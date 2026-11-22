@@ -134,6 +134,8 @@ def master_dependencies(methods):
             body = file.read_text(encoding='utf8')
             pending.extend(re.findall(r'\bacmaster\.([A-Za-z]\w*)\.', body))
     files = {f for n in selected for f in files_under(index[n])}
+    if any(f.suffix=='.m' and 'accompat.cocoTargetPath' in f.read_text(encoding='utf8') for f in files):
+        files.add(ROOT/'upstream/compatibility/coco/freq2target.m')
     for shared in ('+accompat', '+aclog'):
         files.update(files_under(ROOT / 'matlab' / shared))
     # The upstream desktop dispatches by callback name and looks up resources at run time.

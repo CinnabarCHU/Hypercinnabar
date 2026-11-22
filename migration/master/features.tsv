@@ -1,6 +1,6 @@
 feature	guide_tags	master_packages	change	evidence
 双谱	menu_bispectral	Bispectral BispectralView BispectralExport	新增双谱、双相位、平方双相干、IAAFT 最大统计量校正和频率对标线。脚本默认不推断，GUI 提供正式推断配置。	code/package/bispectral/bispectralAnalyze.m code/package/bispectral/bispectralDefaults.m code/package/bispectral/bispectralGUI.m
-COCO / eCOCO	menu_ecoco	corrcoefslices_rankNew cvcoco cvcoco2 interleavedcvcoco cvcocoLegacy cvcoco9 cvcoco9A cvcoco9B ecoco ecocoAdaptiveCore ecocoCrossfitCore ecocoInterleavedCore plotcvcoco ecocoplot	同一菜单下新增 Adaptive、Fixed-target、Blocked、Interleaved 工作流。全速率扫描校正与各速率局部 p 值分开。滑窗有物理深度与计数模式，GUI 与部分直接 core 的默认值不同。	code/corrcoef/corrcoefslices_rankNew.m code/corrcoef/cvcoco.m code/corrcoef/ecocoAdaptiveCore.m code/guicode/eCOCOGUI.m
+COCO / eCOCO	menu_ecoco	corrcoefslices_rankNew cvcoco cvcoco2 interleavedcvcoco cvcocoLegacy cvcoco9 cvcoco9A cvcoco9B ecoco ecocoAdaptiveCore ecocoCrossfitCore ecocoInterleavedCore plotcvcoco ecocoplot	同一菜单下新增 Adaptive、Fixed-target、Blocked、Interleaved 工作流。全速率扫描校正与各速率局部 p 值分开。另有六个保留下来的旧核仍调用已删除的 freq2target，可在兼容入口显式选回基线函数。滑窗有物理深度与计数模式，GUI 与部分直接 core 的默认值不同。	code/corrcoef/corrcoefslices_rankNew.m code/corrcoef/cvcoco.m code/corrcoef/ecocoAdaptiveCore.m code/guicode/eCOCOGUI.m
 滤波	menu_filter	Bandpass PassFilter gaussfilter tanerhilbertML	半功率边界和中心频率经过显式校验。GUI 先处理非有限值和重复坐标，严格 core 可单独接收准备好的序列。Taner 函数显式返回频响和瞬时频率中点。	code/guicode/ft.m code/seriesanalysis/acycleBandpassFilter.m code/seriesanalysis/tanerhilbertML.m
 动态滤波	menu_dynfilter	DynamicFiltering dynamic_filter dynamic_filter_lang	新增可传入上下界控制点的滑动高斯计算。桌面绘点、归一化与兼容路径仍在，新 core 在尾端按需追加窗口。	code/guicode/DynamicFilter.m code/misc/dynamic_filter_lang.m code/seriesanalysis/acycleDynamicFilter.m
 功率谱与噪声模型	menu_power menu_swa	PowerSpectrum SpectralPowerLaw SpectralBendingPowerLaw redconfML redconfchi2 plomb_robustar1 specswa spectralswafdr ftestmtmML MtmTaperCount	MTM 置信度取实际 taper 数，区分物理 Nyquist、显示上限和红噪声拟合上限。GUI 默认精确 NFFT 等于行数，稳健 AR(1) 平滑比例默认 20%。弯折幂律改为对数功率空间拟合。	code/guicode/spectrum.m code/seriesanalysis/acycleMtmTaperCount.m code/package/swa/specswa.m
@@ -11,7 +11,7 @@ COCO / eCOCO	menu_ecoco	corrcoefslices_rankNew cvcoco cvcoco2 interleavedcvcoco 
 旧 Lag-1 v2 标签	menu_rhov2		独立 v2 菜单消失，AC.m 仍留有同名回调。GUIDE 的 v2 计算和 Monte Carlo 包单独保留。	code/guicode/AC.m
 TimeOpt / eTimeOpt / Lyapunov	menu_timeOpt menu_eTimeOpt menu_lyapunov		三个旧科学菜单均从主菜单消失。TimeOpt 和 eTimeOpt 的窗口源文件也被移除。Lyapunov 的同名回调仍在 AC.m。旧数值及仿真入口保存在 GUIDE 包。	code/guicode/AC.m
 采样与插值	menu_interpolationGUI menu_interpseries	RegularInterpolation InterpolateSeries SamplingGrid	10 ppm 统一近等距判定用于多个工作流。单序列严格插值使用整数索引生成新网格，尾端不足一步不追加。双序列插值单独将目标投到参比坐标，两者用途不同。	code/seriesanalysis/acycleSamplingIsUneven.m code/seriesanalysis/acycleInterpolateSeries.m code/guicode/InterplationSeries.m
-计数窗与带宽窗	menu_movmeanfbw menu_smooth menu_movmedianfbw menu_movmedian menu_movGauss	FixedMovingMean MovingMean FixedMovingMedian MovingMedian MovingGaussian	计数窗返回贡献样点数，偶数窗多取右侧一点。固定坐标带宽可区分完整窗与部分端点窗，均值和中位数的输出与可用选项不同。	code/seriesanalysis/acycleFixedCountMovingSummary.m code/seriesanalysis/acycleFixedBandwidthSummary.m
+计数窗与带宽窗	menu_movmeanfbw menu_smooth menu_movmedianfbw menu_movmedian menu_movGauss	FixedMovingMean MovingMean FixedMovingMedian MovingMedian MovingGaussian	计数窗返回贡献样点数，偶数窗多取右侧一点。旧 movemean 逐窗忽略 NaN，新函数在入口拒绝非有限序列。固定坐标带宽可区分完整窗与部分端点窗，均值和中位数的输出与可用选项不同。	code/seriesanalysis/acycleFixedCountMovingSummary.m code/seriesanalysis/acycleFixedBandwidthSummary.m
 EMD / EEMD	menu_emd menu_eemd	EMD EnsembleEMD	两端都有可用菜单。3.1.1 恢复开发期间暂时下线的菜单，提供确定性种子、IMF 方差及百分比、进度与取消控制。	code/guicode/AC.m code/seriesanalysis/acycleEmpiricalModeDecomposition.m
 相干与相位菜单	menu_coh	Coherence	显式窗口、重叠、NFFT 与 alpha，返回相位可用性信息，由相干而非有量纲的互谱功率计算相位标准误。	code/guicode/coherenceGUI.m code/seriesanalysis/acycleCoherencePhase.m
 预白化	menu_whiten	AR1Prewhitening	可选经典、稳健和用户 rho；保留历史前向残差，稳健拟合上限独立于物理 Nyquist。	code/guicode/prewhitenGUI.m code/seriesanalysis/acyclePrewhitenSeries.m
@@ -27,4 +27,4 @@ EMD / EEMD	menu_emd menu_eemd	EMD EnsembleEMD	两端都有可用菜单。3.1.1 �
 语言与设置	menu_lang menu_settings	Desktop	旧独立语言菜单撤下；新 Settings 提供字体级别并展示暂时禁用的语言选项。	code/guicode/settingsGUI.m
 隐藏的兼容菜单	menu_norm menu_log10 menu_utilities		程序化构造的三个隐藏标签用于兼容旧回调；不增加三个用户可见的分析方法。	code/guicode/AC.m
 帮助与资源	menu_read menu_manuals menu_findupdates menu_contact menu_email	Desktop	修复重载后的回调，按资源目录定位说明和版本；链接与离线资源可用性仍取决于本地安装。	code/guicode/AC.m code/guicode/ac_gui_dispatch.m
-多变量菜单标题	menu_multivariate1		基线的 Multivariate 标题在新版默认隐藏。各子项按新父菜单分别定位。	code/guicode/AC.m
+多变量菜单标题	menu_multivariate1		基线的 Multivariate 标题在新版默认隐藏，PCA 移至 Math。	code/guicode/AC.m

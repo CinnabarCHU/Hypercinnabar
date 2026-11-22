@@ -73,7 +73,7 @@ p=acmaster.Bispectral.helper(struct('result',v)); p.settings.Visible='off';
 acmaster.Bispectral.plotter(p);
 % The same four-sample input has a documented change of missing-value policy.
 old = acmethods.movemean.analyzer(struct('x',[1;NaN;3;5],'w',3));
-assert(all(isfinite(old.y)));
+assert(isequal(old.y,[1;2;4;4]));
 failedID=aclog.newId();
 try
     acmaster.movemean.analyzer(struct('x',[1;NaN;3;5],'w',3),failedID);
@@ -92,6 +92,20 @@ q=acmaster.interleavedcvcoco.helper(cv); [cvi,~]=acmaster.interleavedcvcoco.anal
 again=aclog.replay(bid); assert(isequaln(cvb.result.srGrid,again.result.srGrid));
 assert(isequaln(cvb.result.srGrid,cvi.result.srGrid) && cvi.result.seed==17);
 assert(~strcmp(cvb.result.publicName,cvi.result.publicName));
+% Six retained COCO files call an absent historical four-argument function in the 3.1.1 tree.
+f=(0:.00025:.08)'; periods=[405 125 100 41 23 19]; grid=(0:.01:2)';
+c=struct('data',[grid,sin(grid*4).^2+.1],'targetf',1./periods,'targetp',ones(size(periods)), ...
+    'target',[f,zeros(size(f))],'orbit7',periods,'rayleigh',.01,'sr1',1,'sr2',1.5,'srstep',.5,'sr0',4,'adjust',0);
+old=acmethods.cyclecorr4.analyzer(c);
+try
+    acmaster.cyclecorr4.analyzer(c);
+    error('test:ExpectedFailure','3.1.1 should expose the missing original target.');
+catch err
+    assert(contains(err.message,'freq2target') && ~strcmp(err.identifier,'test:ExpectedFailure'));
+end
+c.legacyTarget='guide-b52ea9f';
+[v,id]=acmaster.cyclecorr4.analyzer(c);
+assert(isequaln(old,v) && isequaln(v,aclog.replay(id)) && strcmp(path,initialPath));
 % Verify every concrete role is visible to MATLAB's parser.
 rows=readtable(fullfile(root,'migration','master','methods.tsv'),'FileType','text','Delimiter','tab','TextType','string');
 for k=1:height(rows)

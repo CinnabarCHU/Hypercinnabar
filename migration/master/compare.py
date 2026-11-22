@@ -86,6 +86,11 @@ def verify_roles():
         assert markers == code.count('%% End copied source'), file
         count += markers
     assert found == set(listed)
+    source = 'code/corrcoef/freq2target.m'
+    original = (GUIDE/source).read_text(encoding='utf8').splitlines()
+    compat = (ROOT/'upstream/compatibility/coco/freq2target.m').read_text(encoding='utf8').splitlines()
+    assert compat == [f'%% Copied from mingsongli/acycle@{BASE_PIN} {source}:L1-L{len(original)}',
+                      *original,'%% End copied source','end']
     return listed, by_source, count
 
 
@@ -148,6 +153,7 @@ def menu_inventory(roles, write):
             parent = row['parent'].removeprefix('handles.')
             paths[tag] = (path(parent)+' > ' if parent in current else '') + row['label']
         return paths[tag]
+    parents = {r['parent'].removeprefix('handles.') for r in current.values()}
     rows = []
     for tag in sorted(base.keys() | current.keys()):
         b, n = base.get(tag,{}), current.get(tag,{})
@@ -169,14 +175,22 @@ def menu_inventory(roles, write):
             entry = 'visibility changed' if gv!=mv else 'retained'
         else:
             entry = 'new declaration' if n else 'old declaration only'
-        native = ('heading' if not n.get('callback') else
+        native = ('heading' if tag in parents or not n.get('callback') else
                   'hidden declaration' if mv=='hidden' else
                   'acmaster.Desktop.plotter') if n else 'GUIDE source'
-        rows.append([tag,b.get('menu_path',''),gv,path(tag) if n else '',mv,entry,b.get('source',''),
+        changes = []
+        if b and n:
+            old_path = b['menu_path'].split(' > ')
+            new_path = path(tag).split(' > ')
+            if old_path[:-1] != new_path[:-1]:
+                changes.append('parent')
+            if old_path[-1] != new_path[-1]:
+                changes.append('label')
+        rows.append([tag,b.get('menu_path',''),gv,path(tag) if n else '',mv,entry,','.join(changes),b.get('source',''),
                      ('code/guicode/AC.m:'+n['line']) if n else '',n.get('callback',''),
                      ' '.join(old_methods),' '.join(numerical),native,
                      desc.get('feature',''),desc.get('change','')])
-    compare_tsv('menus.tsv',['tag','guide_menu','guide_initial','master_menu','master_initial','declaration',
+    compare_tsv('menus.tsv',['tag','guide_menu','guide_initial','master_menu','master_initial','declaration','changed_menu_fields',
                 'guide_source','master_source','master_callback','guide_packages','master_related_packages',
                 'native_route','feature','observed_change'],rows,write)
     return Counter((r[2],r[4]) for r in rows)

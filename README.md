@@ -1,5 +1,8 @@
 # Acycle GUIDE method migration
 
+
+The pinned Acycle 3.1.1 implementation is available beside GUIDE through `acmaster`. [两版功能对照与并行调用](migration/master/README.zh-CN.md) · [master methods](migration/master/methods.tsv) · [menu changes](migration/master/menus.tsv)
+
 Portable MATLAB analysis methods for the last GUIDE-era [Acycle revision, `b52ea9f`](https://github.com/mingsongli/acycle/tree/b52ea9f510f3be00bde9a0238b9898a1e2315b74). [中文迁移说明](migration/README.zh-CN.md) · [method catalogue](migration/methods.tsv) · [GUIDE menu coverage](migration/menus.tsv) · [recovered sources](migration/recovered.tsv)
 
 ```sh

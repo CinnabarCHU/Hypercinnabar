@@ -34,4 +34,4 @@ jobs:
           products: Signal_Processing_Toolbox Statistics_and_Machine_Learning_Toolbox Image_Processing_Toolbox Curve_Fitting_Toolbox Optimization_Toolbox Wavelet_Toolbox
       - uses: matlab-actions/run-command@v2
         with:
-          command: addpath(fullfile(pwd,'tests')); test_migration; test_desktop_methods; test_scientific_methods; test_package_portability; test_recovered_methods; test_analysis_views; test_exported_methods; test_master_migration; test_master_export
+          command: addpath(fullfile(pwd,'tests')); test_migration; test_desktop_methods; test_scientific_methods; test_package_portability; test_recovered_methods; test_analysis_views; test_exported_methods; test_master_migration; test_master_export; test_master_native_menu

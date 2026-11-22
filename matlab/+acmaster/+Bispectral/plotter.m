@@ -7,8 +7,9 @@ end
 
 function r = execute(p)
 settings = p.settings;
-accompat.requireFields(settings, ...
-    {'Quantity','KeepStrongestFraction','BispectrumKeepStrongestFraction','PlotKeepStrongestBispectrumFraction','BicoherenceKeepStrongestFraction','PlotKeepStrongestBicoherenceFraction','ColorGrid','FrequencyMinimum','FrequencyMaximum','ReferencePeriods','FrequencyPairs','ShowPeriodAxes','PeakCount','ShowSignificance','Title','Visible'});
+accompat.requireFields(settings,{'Quantity','KeepStrongestFraction','BispectrumKeepStrongestFraction', ...
+    'BicoherenceKeepStrongestFraction','ColorGrid','FrequencyMinimum','FrequencyMaximum', ...
+    'ReferencePeriods','FrequencyPairs','ShowPeriodAxes','PeakCount','ShowSignificance','Title','Visible'});
 bispectralPlot(p.result,settings);
 r = [];
 end

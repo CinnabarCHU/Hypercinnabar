@@ -207,13 +207,13 @@ cocoTargetSpectrum	analyzer	dat pad dataPower orbit9 lax sr_i targetMode	code/co
 cohac	analyzer	x y sr window winsize nooverlap alpha	code/misc/cohac.m	source-matched role
 cohac	helper	x y sr window winsize nooverlap alpha qplot	code/misc/cohac.m	source-matched role
 cohac	plotter	qplot F1 Cxy MSC_critical F2 phase_diff_deg phase_uncertainty_deg	code/misc/cohac.m	source-matched role
-corrcoefsig	analyzer	dat target orbit7 dt pad sr1 sr2 srstep adjust red nsim display	code/corrcoef/corrcoefsig.m	source-matched role
+corrcoefsig	analyzer	dat target orbit7 dt pad sr1 sr2 srstep adjust red nsim display; optional legacyTarget	code/corrcoef/corrcoefsig.m	source-matched role
 corrcoefsig	helper	dat target orbit7 dt pad sr1 sr2 srstep adjust red nsim plotn display	code/corrcoef/corrcoefsig.m	source-matched role
-corrcoefslices	analyzer	dat target orbit7 dt pad sr1 sr2 srstep adjust red nsim slices	code/corrcoef/corrcoefslices.m	direct
+corrcoefslices	analyzer	dat target orbit7 dt pad sr1 sr2 srstep adjust red nsim slices; optional legacyTarget	code/corrcoef/corrcoefslices.m	copied calculation without modal progress
 corrcoefslices	helper	dat target orbit7 dt pad sr1 sr2 srstep adjust red nsim plotn slices	code/corrcoef/corrcoefslices.m	source-matched role
 corrcoefslices_rankNew	analyzer	dat orbit9 dt pad sr1 sr2 srstep adjust red nsim slices method fmaxdata main_unit_selection targetMode options(MaxFrequency,Seed,ShowPeriodograms,ProgressFcn)	code/corrcoef/corrcoefslices_rankNew.m	direct
 corrcoefslices_rankNew	helper	method inputs; optional options overrides	code/corrcoef/corrcoefslices_rankNew.m	defaults
-corrsig	analyzer	dat target orbit7 dt pad sr1 sr2 srstep adjust red nsim display	code/corrcoef/corrsig.m	source-matched role
+corrsig	analyzer	dat target orbit7 dt pad sr1 sr2 srstep adjust red nsim display; optional legacyTarget	code/corrcoef/corrsig.m	source-matched role
 corrsig	helper	dat target orbit7 dt pad sr1 sr2 srstep adjust red nsim plotn display	code/corrcoef/corrsig.m	source-matched role
 crp_core	analyzer	x y m tau e method normFlag	code/package/recurrence/crp_core.m	source-matched role
 crp_core	helper	x y m tau e method normFlag	code/package/recurrence/crp_core.m	source-matched role
@@ -231,15 +231,15 @@ cvcoco9B	analyzer	data orbit9 pad sr1 sr2 srstep red nsim method options(BatchSi
 cvcoco9B	helper	method inputs; optional options overrides	code/corrcoef/cvcoco9B.m	defaults
 cvcocoLegacy	analyzer	data orbit9 pad sr1 sr2 srstep red nsim method options(BatchSize,Seed,ProgressFcn,MaxFrequency,AnalysisName,SplitMode,InterleavedPhase,Verbose,WarnOnPartialTraining)	code/corrcoef/cvcocoLegacy.m	direct
 cvcocoLegacy	helper	method inputs; optional options overrides	code/corrcoef/cvcocoLegacy.m	defaults
-cyclecorr	analyzer	data targetf targetp target orbit7 rayleigh sr1 sr2 srstep sr0 adjust method	code/corrcoef/cyclecorr.m	direct
+cyclecorr	analyzer	data targetf targetp target orbit7 rayleigh sr1 sr2 srstep sr0 adjust method; optional legacyTarget	code/corrcoef/cyclecorr.m	direct
 cyclecorr	helper	data targetf targetp target orbit7 rayleigh sr1 sr2 srstep sr0 adjust method	code/corrcoef/cyclecorr.m	source-matched role
-cyclecorr4	analyzer	data targetf targetp target orbit7 rayleigh sr1 sr2 srstep sr0 adjust	code/corrcoef/cyclecorr4.m	source-matched role
-cyclecorr4sig	analyzer	data targetf targetp target orbit7 rayleigh sr1 sr2 srstep sr0 adjust	code/corrcoef/cyclecorr4sig.m	source-matched role
-cyclecorr5	analyzer	xx yy targetf targetp lax orbit7 rayleigh sr1 sr2 srstep sr0 adjust	code/corrcoef/cyclecorr5.m	source-matched role
+cyclecorr4	analyzer	data targetf targetp target orbit7 rayleigh sr1 sr2 srstep sr0 adjust; optional legacyTarget	code/corrcoef/cyclecorr4.m	source-matched role
+cyclecorr4sig	analyzer	data targetf targetp target orbit7 rayleigh sr1 sr2 srstep sr0 adjust; optional legacyTarget	code/corrcoef/cyclecorr4sig.m	source-matched role
+cyclecorr5	analyzer	xx yy targetf targetp lax orbit7 rayleigh sr1 sr2 srstep sr0 adjust; optional legacyTarget	code/corrcoef/cyclecorr5.m	source-matched role
 cyclecorrNew	analyzer	data dat pad target orbit9 rayleigh sr1 sr2 srstep sr0 adjust method targetMode	code/corrcoef/cyclecorrNew.m	direct
-cyclecorr_rank	analyzer	data targetf targetp target orbit7 rayleigh sr1 sr2 srstep sr0 adjust	code/corrcoef/cyclecorr_rank.m	source-matched role
+cyclecorr_rank	analyzer	data targetf targetp target orbit7 rayleigh sr1 sr2 srstep sr0 adjust; optional legacyTarget	code/corrcoef/cyclecorr_rank.m	source-matched role
 cyclecorrsigNew	analyzer	data dat pad target orbit9 rayleigh sr1 sr2 srstep sr0 adjust method targetMode	code/corrcoef/cyclecorrsigNew.m	direct
-cyclesig_rank	analyzer	data targetf targetp target orbit7 rayleigh sr1 sr2 srstep sr0 adjust	code/corrcoef/cyclesig_rank.m	source-matched role
+cyclesig_rank	analyzer	data targetf targetp target orbit7 rayleigh sr1 sr2 srstep sr0 adjust; optional legacyTarget	code/corrcoef/cyclesig_rank.m	source-matched role
 data_slices	analyzer	dat slices	code/corrcoef/data_slices.m	source-matched role
 datapreproc	analyzer	target	code/misc/datapreproc.m	direct
 datapreproc	helper	target qwarn	code/misc/datapreproc.m	source-matched role
@@ -272,7 +272,7 @@ ecocoPhysicalWindowValues	helper	method inputs; optional options overrides	code/
 ecocoWindowSpectra	analyzer	values dt pad red	code/corrcoef/ecocoWindowSpectra.m	direct
 ecocoplot	plotter	prt_sr out_depth out_ecc out_ep out_eci out_ecoco out_ecocorb out_norbit plotn ecoDetails	code/corrcoef/ecocoplot.m	direct
 ecocoplots	plotter	prt_sr out_depth out_ecc out_ep out_eci out_ecoco out_ecocorb	code/corrcoef/ecocoplots.m	direct
-ecocos	analyzer	data target window dt step delinear red pad sr1 sr2 srstep adjust	code/corrcoef/ecocos.m	source-matched role
+ecocos	analyzer	data target window dt step delinear red pad sr1 sr2 srstep adjust; optional legacyTarget	code/corrcoef/ecocos.m	source-matched role
 ecocotrack	analyzer	locatcc out_ecc out_eci out_ecoco out_norbit out_depth sr1 sr2 srstep srsh srslice sig ci sh_norb	code/corrcoef/ecocotrack.m	source-matched role
 ecocotrack	plotter	result out_depth sr1 sr2 srstep	code/corrcoef/ecocotrack.m	source-matched role
 ecocotrackn	analyzer	locat srsh iniloc srn method	code/corrcoef/ecocotrackn.m	source-matched role
