@@ -1,17 +1,37 @@
 # Acycle GUIDE method migration
 
-The numerical and desktop reference is the last GUIDE-era Acycle revision, [mingsongli/acycle at b52ea9f](https://github.com/mingsongli/acycle/tree/b52ea9f510f3be00bde9a0238b9898a1e2315b74). The submodule `upstream/acycle` fixes the original MATLAB files, figures, data and authorship. The `audit/` directory preserves the earlier comparison of Acycle releases.
+Portable MATLAB analysis methods for the last GUIDE-era [Acycle revision, `b52ea9f`](https://github.com/mingsongli/acycle/tree/b52ea9f510f3be00bde9a0238b9898a1e2315b74). [中文迁移说明](migration/README.zh-CN.md) · [method catalogue](migration/methods.tsv) · [GUIDE menu coverage](migration/menus.tsv) · [recovered sources](migration/recovered.tsv)
 
-Clone this branch with its submodule and run `setup_migration` from the checkout in MATLAB. Each method package lives in `matlab/+acmethods`. Its `helper`, `analyzer` and `plotter` functions accept a parameter struct and an optional invocation ID. Each role can be called directly. Numerical dependencies are resolved from the pinned source. Original users and scientific publications are credited in the source comments. Copied ranges have MATLAB section markers and an upstream path and line range.
+```sh
+git clone --branch acycle-guide-migration --recurse-submodules https://github.com/CinnabarCHU/Hypercinnabar.git
+```
+
+From the checkout, run this example in MATLAB with Signal Processing Toolbox.
 
 ```matlab
 setup_migration
-request = struct('data', [0; 1.1; 2.5; 3.1; 7.3; 9.2]);
-options = acmethods.circularspec.helper(request);
-options.pn = 37;
-[result, id] = acmethods.circularspec.analyzer(options);
+t = (0:255)';
+data = [t, sin(2*pi*t/20) + 0.2*cos(2*pi*t/5)];
+p = acmethods.Bandpass.helper(struct('data',data));
+p.flow = 1/25;
+p.fhigh = 1/16;
+[result, id] = acmethods.Bandpass.analyzer(p);
+p.result = result;
+p.unit = 'm';
+acmethods.Bandpass.plotter(p);
+assert(isequaln(result,aclog.replay(id)));
 ```
 
-The `logger(id, attr, info)` function writes an invocation journal. The first `init` records `op` and the `params` reference. The final `fin` records `status` and the `retval` reference. Status values are `incomplete`, `cancelled` and `done`. A returned empty value has an empty reference. The `event`, `msg` and `error` attributes carry `logging` and an empty `details` struct. Archives can move as a directory. `aclog.read(id, reference)` resolves a snapshot in a later session. Set `ACYCLE_LOG_DIR` to choose the archive directory, or supply an ID created by `aclog.newId`.
+Each public role accepts a scalar parameter struct and an optional call ID. The role catalogue lists the fields for each package. Helpers recommend parameters, analyzers produce numerical results, and plotters accept explicit data and display settings. Some data operations have only an analyzer. The reference GUIDE application continues through its original callbacks. The `matlab/+acmethods` packages can be used by code, a GUI, a workflow editor or a harness.
 
-Run `addpath('tests'); test_migration` in MATLAB from the checkout. Headless numerical tests and the GUI reference have separate coverage.
+To take selected methods to another project, export them from the checkout. The resulting folder includes the original role files, their method dependencies, logger, selected Acycle runtime files and a checksum manifest.
+
+```sh
+python migration/export_method.py Bandpass TimeOpt Undatable --output ../acycle-methods
+```
+
+Open the output folder in MATLAB and run `setup_method`. MATLAB toolboxes and optional external orbit data must be available on the destination machine. The exporter follows MATLAB function and script names, quoted lookup names, referenced datasets and package-private files. Additional user-supplied engines for automatic digitization can be installed separately.
+
+The journal records `init(op,params)` and `fin(status,retval)`. References point to companion MAT snapshots. `event`, `msg` and `error` contain `logging` and `details`. Replays restore the original random stream, call the recorded operation and create a new journal. Set `ACYCLE_LOG_DIR` to choose the journal directory. Move a call's whole directory to share it.
+
+Run `python migration/check.py --figures` to compare all attributed code blocks and serialized GUIDE controls with the reference. The [MATLAB workflow](.github/workflows/guide-methods.yml) includes numerical comparisons, figure generation, a file-independent Undatable replay and package isolation tests. The [earlier upstream review](audit/) is retained.
