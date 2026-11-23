@@ -1,0 +1,45 @@
+{
+  "guide": "Acycle v2.8 User Guide, 2025-07-18",
+  "chapter": 6,
+  "source_commit": "b52ea9f510f3be00bde9a0238b9898a1e2315b74",
+  "comparison_commit": "dcba4279168745b563e0535b954297023dd62fc7",
+  "seed": 20261123,
+  "files": {
+    "doc/Acycle_Users_Guide.pdf": {
+      "sha256": "b3d77c3e16588d88731311a2ad89c9dfef476938b74cb21e67eac1ab470c8f61",
+      "bytes": 34198669
+    },
+    "data/Examples/Example-Insol-t-0-2000ka-day-80-lat-65-meandaily-La04.txt": {
+      "sha256": "6397fd514c2efba370c59a28cb10224b96d3e498469aa0e80bb0eb3d1bc6933c",
+      "bytes": 32705
+    },
+    "data/Examples/Example-La2004-1E.5T-1P-0-2000.txt": {
+      "sha256": "9653ac0d10ea7e4bad40afd4b553bacc3901b9c38e88b3da598e12f23565354f",
+      "bytes": 34917
+    },
+    "data/Examples/Example-WayaoCarnianGR0.txt": {
+      "sha256": "f39dcc29be09cd5a07ef1dcdd20c6fa30499213c204ce4897ac02d9f6f086c21",
+      "bytes": 7206
+    }
+  },
+  "acceptance": {
+    "peaks": "nearest strict local maximum, within one unpadded Rayleigh frequency bin 1/(N*dt); not a period-percent tolerance",
+    "coco_rate": "8.1 +/- 0.6 cm/kyr",
+    "coco_p": "<=0.001, evaluated independently of the rate",
+    "master_mtm": "same frequency vector and relative power error below 1e-10",
+    "replay": "exact MTM arrays; stochastic COCO not claimed bitwise reproducible",
+    "plotting": "each registered plotter must execute and create output",
+    "qualitative": "405-kyr modulation, visual eCOCO pattern and visual wavelet bands require additional inspection; finite arrays alone do not verify these claims"
+  },
+  "ambiguities": [
+    "Insolation prose says June 22; shipped fixture filename says day-80. Use the shipped file unchanged.",
+    "ETP prose says E+T-P; fixture filename says 1E.5T-1P. Use the shipped file unchanged.",
+    "Manual-nfft GUIDE callback leaves padtimes undefined. The wrapper explicit-nfft branch is selected with padtimes=5 and nzeropad=N for insolation/ETP.",
+    "ETP evolutionary settings show step=3.2; result title shows step=2. Use settings screenshot.",
+    "Wavelet input screenshot says max 1000; newer settings says 700. Use 700 and unrectified Torrence-Compo method_sel=3.",
+    "Wayao text calls 40 m 1.5-2 times 33.9 m, which is arithmetically inconsistent. Use the explicit 40 m.",
+    "COCO screenshot shows 500 simulations, subsequent filename 1000. Use 1000, explicitly allowed by prose. eCOCO uses screenshot 500.",
+    "COCO displayed 301 rates but rounded endpoints/step give 300; preserve entered decimals.",
+    "AgeScale receives saved age tiepoints, not the historical full model edge extrapolation. Both are retained for diagnosis."
+  ]
+}

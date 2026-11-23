@@ -1,0 +1,40 @@
+name: Acycle User Guide acceptance
+on:
+  push:
+    branches: [acycle-harness-menu]
+    paths:
+      - 'tests/user_guide/**'
+      - '.github/workflows/acycle-user-guide.yml'
+      - 'code/**'
+      - 'matlab/**'
+      - 'harness/overlay/matlab/**'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  guide:
+    strategy:
+      fail-fast: false
+      matrix:
+        example: [insolation, etp, wayao]
+    runs-on: ubuntu-latest
+    timeout-minutes: 50
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          submodules: true
+          persist-credentials: false
+      - uses: matlab-actions/setup-matlab@v2
+        with:
+          release: R2024b
+          products: Signal_Processing_Toolbox Statistics_and_Machine_Learning_Toolbox Curve_Fitting_Toolbox
+      - name: Run guide through production Harness MATLAB bridge
+        uses: matlab-actions/run-command@37b454c384483087929a3d652be474ba585a9659
+        with:
+          command: addpath('tests/user_guide'); r=run_user_guide(pwd,fullfile(pwd,'guide-results','${{ matrix.example }}'),'${{ matrix.example }}'); assert(r.execution_ok,'Guide execution or plotting failed.'); assert(r.criteria_ok,'A guide result was not reproduced; see report.json.');
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: user-guide-${{ matrix.example }}
+          path: guide-results/${{ matrix.example }}/
+          include-hidden-files: true
