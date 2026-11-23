@@ -1,0 +1,111 @@
+item_id,doc_id,section,title,kind,pdf_first,pdf_last,scope,status,note
+SP.T1,SP,Tables,Time estimates,table,8,8,Leg 138,structured,表中各预计值保留刊载精度。航程天数在相邻站位之间。
+SP.T2,SP,Tables,Transit distances and times,table,9,9,Leg 138,structured,表中各预计值保留刊载精度。航程天数在相邻站位之间。
+SP.T3,SP,Tables,Logging time estimates,table,10,10,Leg 138,structured,表中各预计值保留刊载精度。航程天数在相邻站位之间。
+SP.F1,SP,Figures,Equatorial Pacific circulation,figure,11,11,Leg 138,indexed,
+SP.F2,SP,Figures,Dynamic topography and circulation,figure,12,12,Leg 138,indexed,
+SP.F3,SP,Figures,Proposed drilling sites,figure,13,13,Leg 138,indexed,
+SP.S.WEQ-2,SP,Proposed sites,WEQ-2 · Site sheet,site sheet,14,14,WEQ-2,full_card_fields_collated,survey and plan
+SP.MAP.WEQ-2,SP,Proposed sites,WEQ-2 · Survey track and site map,map,15,15,WEQ-2,indexed,survey product
+SP.PROF.WEQ-2,SP,Proposed sites,WEQ-2 · Seismic profile,seismic image,16,16,WEQ-2,indexed,survey product
+SP.S.WEQ-3,SP,Proposed sites,WEQ-3 · Site sheet,site sheet,17,17,WEQ-3,full_card_fields_collated,survey and plan
+SP.MAP.WEQ-3,SP,Proposed sites,WEQ-3 · Survey track and site map,map,18,18,WEQ-3,indexed,survey product
+SP.PROF.WEQ-3,SP,Proposed sites,WEQ-3 · Seismic profile,seismic image,19,19,WEQ-3,indexed,survey product
+SP.S.WEQ-4,SP,Proposed sites,WEQ-4 · Site sheet,site sheet,20,20,WEQ-4,full_card_fields_collated,survey and plan
+SP.MAP.WEQ-4,SP,Proposed sites,WEQ-4 · Survey track and site map,map,21,21,WEQ-4,indexed,survey product
+SP.PROF.WEQ-4,SP,Proposed sites,WEQ-4 · Seismic profile,seismic image,22,22,WEQ-4,indexed,survey product
+SP.S.WEQ-5,SP,Proposed sites,WEQ-5 · Site sheet,site sheet,23,23,WEQ-5,full_card_fields_collated,survey and plan
+SP.MAP.WEQ-5,SP,Proposed sites,WEQ-5 · Survey track and site map,map,24,24,WEQ-5,indexed,survey product
+SP.PROF.WEQ-5,SP,Proposed sites,WEQ-5 · Seismic profile,seismic image,25,25,WEQ-5,indexed,survey product
+SP.S.WEQ-6,SP,Proposed sites,WEQ-6 · Site sheet,site sheet,26,26,WEQ-6,full_card_fields_collated,survey and plan
+SP.MAP.WEQ-6,SP,Proposed sites,WEQ-6 · Survey track and site map,map,27,27,WEQ-6,indexed,survey product
+SP.PROF.WEQ-6,SP,Proposed sites,WEQ-6 · Seismic profile,seismic image,28,28,WEQ-6,indexed,survey product
+SP.S.WEQ-7,SP,Proposed sites,WEQ-7 · Site sheet,site sheet,29,29,WEQ-7,full_card_fields_collated,survey and plan
+SP.MAP.WEQ-7,SP,Proposed sites,WEQ-7 · Survey track and site map,map,30,30,WEQ-7,indexed,survey product
+SP.PROF.WEQ-7,SP,Proposed sites,WEQ-7 · Seismic profile,seismic image,31,31,WEQ-7,indexed,survey product
+SP.S.EEQ-1,SP,Proposed sites,EEQ-1 · Site sheet,site sheet,32,32,EEQ-1,full_card_fields_collated,survey and plan
+SP.MAP.EEQ-1,SP,Proposed sites,EEQ-1 · Survey track and site map,map,33,33,EEQ-1,indexed,survey product
+SP.PROF.EEQ-1,SP,Proposed sites,EEQ-1 · Seismic profile,seismic image,34,34,EEQ-1,indexed,survey product
+SP.S.EEQ-2,SP,Proposed sites,EEQ-2 · Site sheet,site sheet,35,35,EEQ-2,full_card_fields_collated,survey and plan
+SP.MAP.EEQ-2,SP,Proposed sites,EEQ-2 · Survey track and site map,map,36,36,EEQ-2,indexed,survey product
+SP.PROF.EEQ-2,SP,Proposed sites,EEQ-2 · Seismic profile,seismic image,37,37,EEQ-2,indexed,survey product
+SP.S.EEQ-3,SP,Proposed sites,EEQ-3 · Site sheet,site sheet,38,38,EEQ-3,full_card_fields_collated,survey and plan
+SP.MAP.EEQ-3,SP,Proposed sites,EEQ-3 · Survey track and site map,map,39,39,EEQ-3,indexed,survey product
+SP.PROF.EEQ-3,SP,Proposed sites,EEQ-3 · Seismic profile,seismic image,40,40,EEQ-3,indexed,survey product
+SP.S.EEQ-4,SP,Proposed sites,EEQ-4 · Site sheet,site sheet,41,41,EEQ-4,full_card_fields_collated,survey and plan
+SP.MAP.EEQ-4,SP,Proposed sites,EEQ-4 · Survey track and site map,map,42,42,EEQ-4,indexed,survey product
+SP.PROF.EEQ-4,SP,Proposed sites,EEQ-4 · Seismic profile,seismic image,43,43,EEQ-4,indexed,survey product
+SP.S.EEQ-4A,SP,Proposed sites,EEQ-4A · Site sheet,site sheet,44,44,EEQ-4A,full_card_fields_collated,survey and plan
+SP.MAP.EEQ-4A,SP,Proposed sites,EEQ-4A · Survey track and site map,map,45,45,EEQ-4A,indexed,survey product
+SP.PROF.EEQ-4A,SP,Proposed sites,EEQ-4A · Seismic profile,seismic image,46,46,EEQ-4A,indexed,survey product
+SP.S.EEQ-5,SP,Proposed sites,EEQ-5 · Site sheet,site sheet,47,47,EEQ-5,full_card_fields_collated,survey and plan
+SP.MAP.EEQ-5,SP,Proposed sites,EEQ-5 · Survey track and site map,map,48,48,EEQ-5,indexed,survey product
+SP.PROF.EEQ-5,SP,Proposed sites,EEQ-5 · Seismic profile,seismic image,49,49,EEQ-5,indexed,survey product
+SP.TEXT,SP,Scientific prospectus,Scientific objectives and drilling strategy,text,3,7,Leg 138,indexed,
+SP.PART,SP,Scientific prospectus,Shipboard participants,text,50,55,Leg 138,indexed,
+PR.T1,PR,Scientific report,Summary of coring operations on Leg 138,table,29,30,Leg 138,structured,孔、站合计、航次合计分列。空白字段与印刷的 0.0 分别保存。
+PR.SCI,PR,Scientific report,Scientific report including objectives and preliminary site results,section,3,77,Leg 138,indexed,
+PR.SCI.846,PR,Scientific report,Site 846 (proposed Site EEQ-4),text,11,13,Site 846,selected_evidence,本节从印页 12 后半至 14 前半；印页 14 随后转入 Site 847。
+PR.F1,PR,Scientific report,Leg 138 · circulation,figure,31,31,Leg 138,indexed,
+PR.F2,PR,Scientific report,Sites 844–847 · plate backtracking,figure,32,32,Sites 844–847,indexed,东部站的重建轨迹属于板块回推产品。
+PR.F3,PR,Scientific report,Site 844 · composite summary,figure,33,34,Site 844,indexed,跨孔拼接、深度标尺、物性与解释轨道。
+PR.F4,PR,Scientific report,Site 844 · seismic profile,figure,35,35,Site 844,indexed,已出版的剖面影像。
+PR.F5,PR,Scientific report,Site 844 · sedimentation and mass accumulation,figure,36,36,Site 844,indexed,年代模型上的沉积速率和质量堆积速率。
+PR.F6,PR,Scientific report,Site 845 · composite summary,figure,37,38,Site 845,indexed,跨孔拼接、深度标尺、物性与解释轨道。
+PR.F7,PR,Scientific report,Site 845 · seismic profile,figure,39,39,Site 845,indexed,已出版的剖面影像。
+PR.F8,PR,Scientific report,Site 845 · sedimentation and mass accumulation,figure,40,40,Site 845,indexed,年代模型上的沉积速率和质量堆积速率。
+PR.F9,PR,Scientific report,Site 846 · composite summary,figure,41,43,Site 846,indexed,跨孔拼接，mcd；GRAPE、磁化率和颜色已按图注使用 20 点 Gaussian 平滑。
+PR.F10,PR,Scientific report,Site 846 · seismic profile,figure,44,44,Site 846,indexed,VENTURE 01 的 R/V Thomas Washington 单道地震，图上为 Line G。
+PR.F11,PR,Scientific report,Site 846 · sedimentation and mass accumulation,figure,45,45,Site 846,partial_redraw,五面板。左中沉积速率用十区间核验；其余面板提供 IR 表 12 区间均值作图供比对。
+PR.F12,PR,Scientific report,Site 847 · composite summary,figure,46,47,Site 847,indexed,跨孔拼接、深度标尺、物性与解释轨道。
+PR.F13,PR,Scientific report,Site 847 · seismic profile,figure,48,48,Site 847,indexed,已出版的剖面影像。
+PR.F14,PR,Scientific report,Site 847 · sedimentation and mass accumulation,figure,49,49,Site 847,indexed,年代模型上的沉积速率和质量堆积速率。
+PR.F15,PR,Scientific report,Western transect · plate backtracking,figure,50,50,Western transect,indexed,
+PR.F16,PR,Scientific report,Site 848 · composite summary,figure,51,51,Site 848,indexed,跨孔拼接、深度标尺、物性与解释轨道。
+PR.F17,PR,Scientific report,Site 848 · seismic profile,figure,52,52,Site 848,indexed,已出版的剖面影像。
+PR.F18,PR,Scientific report,Site 848 · sedimentation and mass accumulation,figure,53,53,Site 848,indexed,年代模型上的沉积速率和质量堆积速率。
+PR.F19,PR,Scientific report,Site 849 · composite summary,figure,54,56,Site 849,indexed,跨孔拼接、深度标尺、物性与解释轨道。
+PR.F20,PR,Scientific report,Site 849 · seismic profile,figure,57,57,Site 849,indexed,已出版的剖面影像。
+PR.F21,PR,Scientific report,Site 849 · sedimentation and mass accumulation,figure,58,58,Site 849,indexed,年代模型上的沉积速率和质量堆积速率。
+PR.F22,PR,Scientific report,Site 850 · composite summary,figure,59,61,Site 850,indexed,跨孔拼接、深度标尺、物性与解释轨道。
+PR.F23,PR,Scientific report,Site 850 · seismic profile,figure,62,62,Site 850,indexed,已出版的剖面影像。
+PR.F24,PR,Scientific report,Site 850 · sedimentation and mass accumulation,figure,63,63,Site 850,indexed,年代模型上的沉积速率和质量堆积速率。
+PR.F25,PR,Scientific report,Site 851 · composite summary,figure,64,66,Site 851,indexed,跨孔拼接、深度标尺、物性与解释轨道。
+PR.F26,PR,Scientific report,Site 851 · seismic profile,figure,67,67,Site 851,indexed,已出版的剖面影像。
+PR.F27,PR,Scientific report,Site 851 · sedimentation and mass accumulation,figure,68,68,Site 851,indexed,年代模型上的沉积速率和质量堆积速率。
+PR.F28,PR,Scientific report,Site 852 · composite summary,figure,69,69,Site 852,indexed,跨孔拼接、深度标尺、物性与解释轨道。
+PR.F29,PR,Scientific report,Site 852 · seismic profile,figure,70,70,Site 852,indexed,已出版的剖面影像。
+PR.F30,PR,Scientific report,Site 852 · sedimentation and mass accumulation,figure,71,71,Site 852,indexed,年代模型上的沉积速率和质量堆积速率。
+PR.F31,PR,Scientific report,Site 853 · composite summary,figure,72,72,Site 853,indexed,跨孔拼接、深度标尺、物性与解释轨道。
+PR.F32,PR,Scientific report,Site 853 · seismic profile,figure,73,73,Site 853,indexed,已出版的剖面影像。
+PR.F33,PR,Scientific report,Site 853 · sedimentation and mass accumulation,figure,74,74,Site 853,indexed,年代模型上的沉积速率和质量堆积速率。
+PR.F34,PR,Scientific report,Site 854 · composite summary,figure,75,75,Site 854,indexed,跨孔拼接、深度标尺、物性与解释轨道。
+PR.F35,PR,Scientific report,Site 854 · seismic profile,figure,76,76,Site 854,indexed,已出版的剖面影像。
+PR.F36,PR,Scientific report,Site 854 · sedimentation and mass accumulation,figure,77,77,Site 854,indexed,年代模型上的沉积速率和质量堆积速率。
+PR.OPS,PR,Operations report,Operations report,section,78,100,Leg 138,indexed,
+PR.OPS.846,PR,Operations report,"Transit to Site 846, drilling and logging",text,83,85,Site 846,selected_evidence,包含由 845 改航取物资的说明，以及 846B 测井的作业经过。
+PR.OPS.RES,PR,Operations report,Operations Resume,table,99,99,Leg 138,structured,
+PR.OPS.TIME,PR,Operations report,Total time distribution,chart,100,100,Leg 138,structured_labels,已录 3 个百分比。图上总天数 64.3。
+PR.TECH,PR,Technical report,Technical report,section,101,110,Leg 138,indexed,
+PR.TECH.SCAN,PR,Technical report,Split-core reflectance scanner and data processing,text,104,105,Leg 138,selected_evidence,
+PR.TECH.LAB,PR,Technical report,Lab statistics,table,110,110,Leg 138,structured,
+PR.SCI.844,PR,Scientific report,Site 844 (proposed Site EEQ-2),text,7,9,Site 844,section_located,Boundary pages may also contain the preceding or following site.
+PR.OPS.844,PR,Operations report including transit,TRANSIT FROM PANAMA TO SITE 844,text,80,81,Site 844,section_located,Boundary pages may also contain the preceding or following site.
+PR.SCI.845,PR,Scientific report,Site 845 (proposed Site EEQ-1),text,9,11,Site 845,section_located,Boundary pages may also contain the preceding or following site.
+PR.OPS.845,PR,Operations report including transit,TRANSIT FROM SITE 844 TO SITE 845,text,81,83,Site 845,section_located,Boundary pages may also contain the preceding or following site.
+PR.SCI.847,PR,Scientific report,Site 847 (proposed Site EEQ-3),text,13,16,Site 847,section_located,Boundary pages may also contain the preceding or following site.
+PR.OPS.847,PR,Operations report including transit,TRANSIT TO SITE 847,text,85,87,Site 847,section_located,Boundary pages may also contain the preceding or following site.
+PR.SCI.848,PR,Scientific report,Site 848 (proposed Site WEQ-5),text,16,17,Site 848,section_located,Boundary pages may also contain the preceding or following site.
+PR.OPS.848,PR,Operations report including transit,TRANSIT FROM SITE 847 TO SITE 848 (WEQ-5),text,87,89,Site 848,section_located,Boundary pages may also contain the preceding or following site.
+PR.SCI.849,PR,Scientific report,Site 849 (proposed Site WEQ-6),text,17,18,Site 849,section_located,Boundary pages may also contain the preceding or following site.
+PR.OPS.849,PR,Operations report including transit,TRANSIT TO SITE 849,text,89,90,Site 849,section_located,Boundary pages may also contain the preceding or following site.
+PR.SCI.850,PR,Scientific report,Site 850 (new site),text,18,21,Site 850,section_located,Boundary pages may also contain the preceding or following site.
+PR.OPS.850,PR,Operations report including transit,TRANSIT TO SITE 850,text,90,92,Site 850,section_located,Boundary pages may also contain the preceding or following site.
+PR.SCI.851,PR,Scientific report,Site 851 (proposed Site WEQ-4),text,21,22,Site 851,section_located,Boundary pages may also contain the preceding or following site.
+PR.OPS.851,PR,Operations report including transit,TRANSIT TO SITE 851,text,92,94,Site 851,section_located,Boundary pages may also contain the preceding or following site.
+PR.SCI.852,PR,Scientific report,Site 852 (proposed Site WEQ-3),text,22,23,Site 852,section_located,Boundary pages may also contain the preceding or following site.
+PR.OPS.852,PR,Operations report including transit,TRANSIT TO SITE 852,text,94,95,Site 852,section_located,Boundary pages may also contain the preceding or following site.
+PR.SCI.853,PR,Scientific report,Site 853 (proposed Site WEQ-7),text,23,25,Site 853,section_located,Boundary pages may also contain the preceding or following site.
+PR.OPS.853,PR,Operations report including transit,TRANSIT TO SITE 853,text,95,97,Site 853,section_located,Boundary pages may also contain the preceding or following site.
+PR.SCI.854,PR,Scientific report,Site 854 (proposed Site WEQ-2),text,25,26,Site 854,section_located,Boundary pages may also contain the preceding or following site.
+PR.OPS.854,PR,Operations report including transit,TRANSIT TO SITE 854,text,97,97,Site 854,section_located,Boundary pages may also contain the preceding or following site.

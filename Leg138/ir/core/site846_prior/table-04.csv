@@ -1,0 +1,8 @@
+source_line,row_kind,hole_context,event,B_sample_interval,B_depth_mbsf,B_depth_mcd
+4,data,,T Globorotalia tosaensis,2H-CC-3H-CC,16.5-26.0,17.49-28.22
+5,data,,T Globorotalia limbata,7H-CC-8H-CC,64.0-73.5,72.56-83.66
+6,data,,T Dentoglobigerina altispira,12H-CC-13H-CC,111.5-121.0,126.60-138.10
+7,data,,T Sphaeroidinellopsis spp.,13H-CC-14H-CC,121.0-130.5,138.10-147.93
+8,label,,sinistral to dextral coiling,,,
+9,data,,change in Pulleniatina,14H-CC-15H-CC,130.5-140.0,147.93-160.32
+10,data,,B Globorotalia tumida,20H-CC-21H-CC,187.0-197.0,213.45-224.63

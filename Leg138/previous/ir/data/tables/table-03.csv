@@ -1,0 +1,26 @@
+source_line,row_kind,hole_context,event,B_sample_interval,B_depth_mbsf,B_depth_mcd,C_sample_interval,C_depth_mbsf,C_depth_mcd
+5,data,,T Pseudoemiliania lacunosa,"2H-CC-3H-1, 42",16.89-16.92,17.49-18.97,2H-CC-3H-CC,12.20-21.84,12.53-21.32
+6,data,,B Gephyrocapsa sp. 3,"4H-6, 45 -4H-7, 54",33.95-35.34,37.10-38.49,2H-CC-3H-CC,12.20-21.84,12.53-21.32
+7,data,,T >>5.5 mum Gephyrocapsa spp.,"5H-3, 40-5H-4, 40",38.90-40.40,44.10-45.60,,,
+8,data,,B >>5.5 mum Gephyrocapsa spp.,"6H-3, 39-6h-4, 39",48.39-49.89,54.89-56.39,,,
+9,data,,T Calcidiscus macintyrei,"6H-5, 40-6H-6, 40",51.40-52.90,57.90-59.40,,,
+10,data,,B Gephyrocapsa oceanica s.l.,"6H-6, 40-6-CC",52.90-53.94,59.40-60.44,5H-CC-6H-CC,50.69-58.69,54.74-65.50
+11,data,,T Discoaster brouweri,"8H-3, 43 - 8H-3, 140",67.43-68.40,77.13-78.10,7H-CC-8H-CC,69.71-78.36,76.61-85.96
+12,data,,T Discoaster surculus,"10H-2, 60-10H-3, 60",85.10-89.60,97.65-102.15,,,
+13,data,,T Discoaster tamalis,"12H-2, 60-12H-3, 60",104.10-105.60,118.90-120.4,,,
+14,data,,T Reticulofenestra pseudoumbilicus,"14H-CC-15H-1, 60",130.78-131.10,147.93-160.30,13H-CC-14H-CC,126.25-135.17,142.75-153.57
+15,data,,B Discoaster asymmetricus,"15H-CC-16H-1, 60",140.62-140.60,160.32-160.80,,,
+16,data,,T Amaurolithus primus,"17H-1, 50-17H-2, 50",150.00-151.50,171.85-173.35,,,
+17,data,,B Ceratolithus rugosus,"19H-3, 40-19H-4, 40",171.90-173.40,195.70-197.20,,,
+18,data,,B Ceratolithus acutus,"20H-3, 50- 20H-4, 50",181.50-182.5,207.10-208.1,,,
+19,data,,T Discoaster quinqueramus,"1H-4, 50-21H-5, 50",191.50-194.00,218.45-220.95,,,
+20,data,,B Amaurolithus primus,25X-CC-26X-CC,232.12-235.61,260.80-270.70,,,
+21,data,,B Discoaser berggreni,"29X-5, 60-29X-6, 60",270.80-272.30,305.90-307.40,,,
+22,data,,T Discoaster hamatus,"32X-5, 60-32X-6, 60",299.70-301.20,334.80-336.30,,,
+23,data,,T Coccolithus miopelagicus,"33X-4, 60-33X-5, 60",307.90-309.40,343.00-344.50,,,
+24,data,,B Discoaster hamatus,"33X-4, 60-33X-5, 60",307.90-309.4,343.00-344.50,,,
+25,data,,T Cyclicargolithus floridanus,"38X-5, 46-38X-6, 50",357.46-359.00,392.56-394.10,,,
+26,data,,T Sphenolithus heteromorphus,"38X-CC-40X-1, 40",360.20-370.70,395.30-405.80,,,
+27,data,,B Reticulofenestra pseudoumbilicus,"40X-3, 100-40X-4, 40",374.30-374.90,409.40-410.00,,,
+28,data,,T Helicosphaera ampliaperta,"41X-CC-42X-1, 79",387.11-390.39,422.21-425.49,,,
+29,data,,B Discoaster signus,"41X-CC-42X-1, 79",387.11-390.39,422.21-425.49,,,

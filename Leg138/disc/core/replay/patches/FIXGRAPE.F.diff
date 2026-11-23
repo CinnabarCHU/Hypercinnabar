@@ -1,0 +1,10 @@
+--- original/FIXGRAPE.F
++++ build/fixgrape.f
+@@ -21,7 +21,6 @@
+ C
+ 	include 'fixgrape.inc'
+ 
+-	character ahole
+ 	lunw=6
+ 	lunr=5
+ 	dattype='gr'

@@ -1,0 +1,386 @@
+dataset,field,label,unit,role
+c03_a_cd,leg,航次,,标识
+c03_a_cd,site,站号,,标识
+c03_a_cd,hole,孔,,标识
+c03_a_cd,core,岩芯编号,,标识
+c03_a_cd,core_type,取芯器代码,,标识
+c03_a_cd,section,岩芯段标识,,标识
+c03_a_cd,top_cm,段内顶点,cm,定位
+c03_a_cd,bottom_cm,段内底点,cm,定位
+c03_a_cd,depth_mbsf,海底以下深度,m,原标尺
+c03_a_cd,depth_mcd,船上复合深度,m,对比标尺
+c03_a_cd,depth_rmcd,修订复合深度,m,对比标尺
+c03_b_cd,leg,航次,,标识
+c03_b_cd,site,站号,,标识
+c03_b_cd,hole,孔,,标识
+c03_b_cd,core,岩芯编号,,标识
+c03_b_cd,core_type,取芯器代码,,标识
+c03_b_cd,section,岩芯段标识,,标识
+c03_b_cd,top_cm,段内顶点,cm,定位
+c03_b_cd,bottom_cm,段内底点,cm,定位
+c03_b_cd,depth_mbsf,海底以下深度,m,原标尺
+c03_b_cd,depth_mcd,船上复合深度,m,对比标尺
+c03_b_cd,depth_rmcd,修订复合深度,m,对比标尺
+c03_c_cd,leg,航次,,标识
+c03_c_cd,site,站号,,标识
+c03_c_cd,hole,孔,,标识
+c03_c_cd,core,岩芯编号,,标识
+c03_c_cd,core_type,取芯器代码,,标识
+c03_c_cd,section,岩芯段标识,,标识
+c03_c_cd,top_cm,段内顶点,cm,定位
+c03_c_cd,bottom_cm,段内底点,cm,定位
+c03_c_cd,depth_mbsf,海底以下深度,m,原标尺
+c03_c_cd,depth_mcd,船上复合深度,m,对比标尺
+c03_c_cd,depth_rmcd,修订复合深度,m,对比标尺
+c03_d_cd,leg,航次,,标识
+c03_d_cd,site,站号,,标识
+c03_d_cd,hole,孔,,标识
+c03_d_cd,core,岩芯编号,,标识
+c03_d_cd,core_type,取芯器代码,,标识
+c03_d_cd,section,岩芯段标识,,标识
+c03_d_cd,top_cm,段内顶点,cm,定位
+c03_d_cd,bottom_cm,段内底点,cm,定位
+c03_d_cd,depth_mbsf,海底以下深度,m,原标尺
+c03_d_cd,depth_mcd,船上复合深度,m,对比标尺
+c03_d_cd,depth_rmcd,修订复合深度,m,对比标尺
+c06_t20_cd,age_ma,模型年龄,Ma,模型输出
+c06_t20_cd,depth_mcd,船上复合深度,m,对比标尺
+c06_t20_cd,rate_m_myr,沉积速率,m/Myr,年龄模型计算量
+c06_t3_cd,age_ma,模型年龄,Ma,模型输出
+c06_t3_cd,depth_mcd,船上复合深度,m,对比标尺
+c15_t1_cd,hole,孔,,标识
+c15_t1_cd,sample,原表样号,,标识
+c15_t1_cd,depth_mbsf,海底以下深度,m,原标尺
+c15_t1_cd,depth_mcd,船上复合深度,m,对比标尺
+c15_t1_cd,depth_rmcd,修订复合深度,m,对比标尺
+c15_t1_cd,dry_over_150_g,大于 150 μm 干重,g,称重
+c15_t1_cd,dry_under_150_g,小于 150 μm 干重,g,称重
+c15_t1_cd,coarse_pct,粗组分,%,质量分数
+c15_t2_print,taxon,分类单元／统计行,,分类
+c15_t2_print,datum,原表事件,,解释／生物地层
+c15_t2_print,upper_limit,事件上界样号,,解释／生物地层
+c15_t2_print,lower_limit,事件下界样号,,解释／生物地层
+c15_t3_cd,hole,孔,,标识
+c15_t3_cd,sample,原表样号,,标识
+c15_t3_cd,depth_mbsf,海底以下深度,m,原标尺
+c15_t3_cd,depth_mcd,船上复合深度,m,对比标尺
+c15_t3_cd,depth_rmcd,修订复合深度,m,对比标尺
+c15_t3_cd,analysis_id,分析编号,,标识
+c15_t3_cd,species,物种／类群,,分类
+c15_t3_cd,d18o_raw,作者所报原始 δ¹⁸O,‰ PDB,分析值
+c15_t3_cd,d13c_raw,作者所报原始 δ¹³C,‰ PDB,分析值
+c15_t3_cd,d18o_adjusted,类群调整后 δ¹⁸O,‰ PDB,校正值
+c15_t3_cd,d13c_adjusted,类群调整后 δ¹³C,‰ PDB,校正值
+c15_t3_cd,d18o_used,作者选用的 δ¹⁸O,‰ PDB,选用值
+c15_t4_print,code,类群缩写,,分类
+c15_t4_print,species,物种／类群,,分类
+c15_t4_print,offset_d18o,δ¹⁸O 类群校正量,‰,调整参数
+c15_t4_print,offset_d13c,δ¹³C 类群校正量,‰,调整参数
+c15_t5_cd,depth_mbsf,海底以下深度,m,原标尺
+c15_t5_cd,depth_rmcd,修订复合深度,m,对比标尺
+c15_t5_cd,age_ma,模型年龄,Ma,模型输出
+c15_t5_cd,d18o,δ¹⁸O,‰ PDB,作者选择、平均后的序列
+c15_t5_cd,d13c,δ¹³C,‰ PDB,作者选择、平均后的序列
+c15_t6_cd,depth_rmcd,修订复合深度,m,对比标尺
+c15_t6_cd,age_ma,模型年龄,Ma,模型输出
+c15_t7_cd,age_ma,模型年龄,Ma,模型输出
+c15_t7_cd,d18o,δ¹⁸O,‰ PDB,插值后序列
+c15_t7_cd,d13c,δ¹³C,‰ PDB,插值后序列
+c15_t8_print,compared,参与比较的序列,,标识
+c15_t8_print,interval_ma,区间,Ma,分析区间
+c15_t8_print,coh41,coh41,,相干
+c15_t8_print,phase41,phase41,°,相位及原报范围
+c15_t8_print,coh23,coh23,,相干
+c15_t8_print,phase23,phase23,°,相位及原报范围
+c15_t8_print,coh19,coh19,,相干
+c15_t8_print,phase19,phase19,°,相位及原报范围
+c23_t3_cd,datum,原表事件,,解释／生物地层
+c23_t3_cd,shallow_mcd,上界 mcd,m,解释／生物地层
+c23_t3_cd,older_mcd,老端界限 mcd,m,解释／生物地层
+c23_t5_cd,datum,原表事件,,解释／生物地层
+c23_t5_cd,limit_type,界限代码,,解释／生物地层
+c23_t5_cd,age_ma,模型年龄,Ma,模型输出
+c23_t5_cd,fossil_group,化石组,,分类
+c23_t5_cd,site,站号,,标识
+c27_t1_print,sample,原表样号,,标识
+c27_t1_print,mbsf,海底以下深度,m,原标尺
+c27_t1_print,rmcd,修订复合深度,m,对比标尺
+c27_t1_print,age_ka,模型年龄,ka,模型输出
+c27_t1_print,lsr_cm_ka,线性沉积速率,cm/kyr,计算量
+c27_t1_print,wbd,GRAPE 湿容重,g/cm³,与样品位置对应的 GRAPE 数据
+c27_t1_print,dbd,估算干容重,g/cm³,估算量
+c27_t1_print,bar,沉积物质量堆积速率,g/cm²/kyr,计算量
+c27_t1_print,tc_pct,平均总碳,wt %,分析均值
+c27_t1_print,caco3_pct,碳酸钙,wt %,含量
+c27_t1_print,caco3_ar,碳酸钙堆积速率,g/cm²/kyr,计算量
+c27_t1_print,toc_pct,平均有机碳,wt %,分析均值
+c27_t1_print,toc_sd,有机碳标准差,wt %,重复分析统计
+c27_t1_print,toc_ar_mg,有机碳堆积速率,mg/cm²/kyr,计算量
+c27_t1_print,uk37,烯酮不饱和指数,,分析指标
+c27_t1_print,sst_c,估算海表温度,°C,校准换算
+c27_t1_print,sst_sd,海表温度标准差,°C,重复分析统计
+c27_t2_print,compared,参与比较的序列,,标识
+c27_t2_print,coh100,coh100,,相干
+c27_t2_print,phase100,phase100,°,相位及原报范围
+c27_t2_print,coh41,coh41,,相干
+c27_t2_print,phase41,phase41,°,相位及原报范围
+c33_app1_print,sample,原表样号,,标识
+c33_app1_print,mcd,船上复合深度,m,对比标尺
+c33_app1_print,rmcd,修订复合深度,m,对比标尺
+c33_app1_print,o_uni,Orbulina universa,%,计数所得相对丰度
+c33_app1_print,g_rub,Globigerinoides ruber,%,计数所得相对丰度
+c33_app1_print,g_ten,Globigerinoides tenellus,%,计数所得相对丰度
+c33_app1_print,g_sac,Globigerinoides sacculifer,%,计数所得相对丰度
+c33_app1_print,g_aeq,Globigerinella aequilateralis,%,计数所得相对丰度
+c33_app1_print,g_cal,Globigerinella calida,%,计数所得相对丰度
+c33_app1_print,g_bul,Globigerina bulloides,%,计数所得相对丰度
+c33_app1_print,g_rbs,Globigerina rubescens,%,计数所得相对丰度
+c33_app1_print,n_pa_r,Neogloboquadrina pachyderma (R),%,计数所得相对丰度
+c33_app1_print,n_dut,Neogloboquadrina dutertrei,%,计数所得相对丰度
+c33_app2_print,sample,原表样号,,标识
+c33_app2_print,mcd,船上复合深度,m,对比标尺
+c33_app2_print,rmcd,修订复合深度,m,对比标尺
+c33_app2_print,slot_01,印本第 1 数值列,,列义待考
+c33_app2_print,slot_02,印本第 2 数值列,,列义待考
+c33_app2_print,slot_03,印本第 3 数值列,,列义待考
+c33_app2_print,slot_04,印本第 4 数值列,,列义待考
+c33_app2_print,slot_05,印本第 5 数值列,,列义待考
+c33_app2_print,slot_06,印本第 6 数值列,,列义待考
+c33_app2_print,slot_07,印本第 7 数值列,,列义待考
+c33_app2_print,slot_08,印本第 8 数值列,,列义待考
+c33_app2_print,slot_09,印本第 9 数值列,,列义待考
+c33_app2_print,slot_10,印本第 10 数值列,,列义待考
+c33_t1_print,compared,参与比较的序列,,标识
+c33_t1_print,phase100,phase100,°,相位及原报范围
+c33_t1_print,k100,k100,,相干
+c33_t1_print,phase41,phase41,°,相位及原报范围
+c33_t1_print,k41,k41,,相干
+c33_t1_print,phase23,phase23,°,相位及原报范围
+c33_t1_print,k23,k23,,相干
+c33_t2_print,species,物种／类群,,分类
+c33_t2_print,site_mean,site_mean,依原表项目,描述统计
+c33_t2_print,site_sd,site_sd,依原表项目,描述统计
+c33_t2_print,site_min,site_min,依原表项目,描述统计
+c33_t2_print,site_max,site_max,依原表项目,描述统计
+c33_t2_print,coretop_mean,coretop_mean,依原表项目,描述统计
+c33_t2_print,coretop_sd,coretop_sd,依原表项目,描述统计
+c33_t2_print,coretop_min,coretop_min,依原表项目,描述统计
+c33_t2_print,coretop_max,coretop_max,依原表项目,描述统计
+c33_t3_print,taxon,分类单元／统计行,,分类
+c33_t3_print,factor1,factor1,,因子得分；末行为解释方差 %
+c33_t3_print,factor2,factor2,,因子得分；末行为解释方差 %
+c33_t3_print,factor3,factor3,,因子得分；末行为解释方差 %
+c35_appa_cd,hole,孔,,标识
+c35_appa_cd,depth_mcd,船上复合深度,m,对比标尺
+c35_appa_cd,age_ma,模型年龄,Ma,模型输出
+c35_appa_cd,lsr_cm_kyr,线性沉积速率,cm/kyr,计算量
+c35_appa_cd,dbd,估算干容重,g/cm³,估算量
+c35_appa_cd,caco3_pct,碳酸钙,wt %,含量
+c35_appa_cd,caco3_mar,碳酸钙质量堆积速率,g/cm²/kyr,计算量
+c35_appa_cd,contributor,原表数据来源,,数据来源
+c35_appb_cd,hole,孔,,标识
+c35_appb_cd,depth_mcd,船上复合深度,m,对比标尺
+c35_appb_cd,age_ma,模型年龄,Ma,模型输出
+c35_appb_cd,lsr_cm_kyr,线性沉积速率,cm/kyr,计算量
+c35_appb_cd,dbd,估算干容重,g/cm³,估算量
+c35_appb_cd,caco3_pct,碳酸钙,wt %,含量
+c35_appb_cd,opal_pct,蛋白石,wt %,含量
+c35_appb_cd,terrig_pct,陆源组分,wt %,差值计算
+c35_appb_cd,caco3_mar,碳酸钙质量堆积速率,g/cm²/kyr,计算量
+c35_appb_cd,opal_mar,蛋白石质量堆积速率,g/cm²/kyr,计算量
+c35_appb_cd,terrig_mar,陆源组分质量堆积速率,g/cm²/kyr,计算量
+c35_appb_cd,contributor,原表数据来源,,数据来源
+c35_appc_cd,hole,孔,,标识
+c35_appc_cd,depth_mcd,船上复合深度,m,对比标尺
+c35_appc_cd,age_ma,模型年龄,Ma,模型输出
+c35_appc_cd,abundance,丰度等级,,半定量观察
+c35_appc_cd,preservation,保存等级,,半定量观察
+c35_appc_cd,etching,蚀刻等级,,半定量观察
+c35_appc_cd,overgrowth,次生增生等级,,半定量观察
+c39_t2_cd,hole,孔,,标识
+c39_t2_cd,source_record,source_record,,原字段
+c39_t2_corrected,sample,原表样号,,标识
+c39_t2_corrected,depth_mbsf,海底以下深度,m,原标尺
+c39_t2_corrected,delta_m,所报复合深度位移,m,对比标尺
+c39_t2_corrected,depth_mcd,船上复合深度,m,对比标尺
+c39_t2_corrected,age_ma,模型年龄,Ma,模型输出
+c39_t2_corrected,laboratory_id,实验室分析编号,,标识
+c39_t2_corrected,d18o,δ¹⁸O,‰ PDB,全沉积物分析
+c39_t2_corrected,d13c,δ¹³C,‰ PDB,全沉积物分析
+c43_appa_print,section,岩芯段标识,,标识
+c43_appa_print,species,物种／类群,,分类
+c43_appa_print,lab,实验室,,标识
+c43_appa_print,offset_cm,段内位置,cm,定位
+c43_appa_print,depth_mbsf,海底以下深度,m,原标尺
+c43_appa_print,depth_mcd,船上复合深度,m,对比标尺
+c43_appa_print,depth_rmcd,修订复合深度,m,对比标尺
+c43_appa_print,d18o,δ¹⁸O,‰ PDB,实验室逐次分析，已作类群校正
+c43_appa_print,d13c,δ¹³C,‰ PDB,实验室逐次分析，已作类群校正
+c43_appb_print,age_ma,模型年龄,Ma,模型输出
+c43_appb_print,depth_rmcd,修订复合深度,m,对比标尺
+c43_appb_print,rate_m_myr,沉积速率,m/Myr,年龄模型计算量
+noaa_appendix_a,section,岩芯段标识,,标识
+noaa_appendix_a,species,物种／类群,,分类
+noaa_appendix_a,laboratory,实验室,,标识
+noaa_appendix_a,offset_cm,段内位置,cm,定位
+noaa_appendix_a,depth_mbsf,海底以下深度,m,原标尺
+noaa_appendix_a,depth_mcd,船上复合深度,m,对比标尺
+noaa_appendix_a,depth_rmcd,修订复合深度,m,对比标尺
+noaa_appendix_a,d18o,δ¹⁸O,‰ PDB,实验室逐次分析，已作类群校正
+noaa_appendix_a,d13c,δ¹³C,‰ PDB,实验室逐次分析，已作类群校正
+noaa_appendix_b,age_ma,模型年龄,Ma,模型输出
+noaa_appendix_b,depth_rmcd,修订复合深度,m,对比标尺
+noaa_appendix_b,rate_m_myr,沉积速率,m/Myr,年龄模型计算量
+noaa_final,depth_rmcd,修订复合深度,m,对比标尺
+noaa_final,age_ma,模型年龄,Ma,模型输出
+noaa_final,d18o,δ¹⁸O,‰ PDB,作者选择、平均后的序列
+noaa_final,d13c,δ¹³C,‰ PDB,作者选择、平均后的序列
+pangaea_60252,col_01,Event,见仓储表头,仓储原字段
+pangaea_60252,col_02,Depth sed [m],见仓储表头,仓储原字段
+pangaea_60252,col_03,Sample label,见仓储表头,仓储原字段
+pangaea_60252,col_04,Depth comp [mcd],见仓储表头,仓储原字段
+pangaea_60252,col_05,Depth comp r [rmcd],见仓储表头,仓储原字段
+pangaea_60252,col_06,C. wuellerstorfi δ18O [‰ PDB],见仓储表头,仓储原字段
+pangaea_60252,col_07,C. wuellerstorfi δ13C [‰ PDB],见仓储表头,仓储原字段
+pangaea_60252,col_08,U. peregrina δ18O [‰ PDB],见仓储表头,仓储原字段
+pangaea_60252,col_09,U. peregrina δ13C [‰ PDB],见仓储表头,仓储原字段
+pangaea_60253,col_01,Depth sed [m],见仓储表头,仓储原字段
+pangaea_60253,col_02,Age model [ka],见仓储表头,仓储原字段
+pangaea_60253,col_03,SR [cm/ka],见仓储表头,仓储原字段
+pangaea_696445,col_01,Event,见仓储表头,仓储原字段
+pangaea_696445,col_02,Depth sed [m],见仓储表头,仓储原字段
+pangaea_696445,col_03,Depth comp [mcd],见仓储表头,仓储原字段
+pangaea_696445,col_04,Depth comp r [rmcd],见仓储表头,仓储原字段
+pangaea_696445,col_05,Sample label (DSDP/ODP/IODP sample designation),见仓储表头,仓储原字段
+pangaea_696445,col_06,"Samp m [g] (dry weight, Grain size, sieving)",见仓储表头,仓储原字段
+pangaea_696445,col_07,"Samp m [g] (dry weight, Grain size, sieving)",见仓储表头,仓储原字段
+pangaea_696445,col_08,">150 µm [%] (Grain size, sieving)",见仓储表头,仓储原字段
+pangaea_696446,col_01,Ageprof dat des,见仓储表头,仓储原字段
+pangaea_696446,col_02,Sample label,见仓储表头,仓储原字段
+pangaea_696446,col_03,Sample label 2,见仓储表头,仓储原字段
+pangaea_696447,col_01,Event,见仓储表头,仓储原字段
+pangaea_696447,col_02,Sample label (DSDP/ODP/IODP sample designation),见仓储表头,仓储原字段
+pangaea_696447,col_03,Depth sed [m],见仓储表头,仓储原字段
+pangaea_696447,col_04,Depth comp [mcd] (Intercore correlation),见仓储表头,仓储原字段
+pangaea_696447,col_05,Depth comp r [rmcd] (Intercore correlation),见仓储表头,仓储原字段
+pangaea_696447,col_06,Sample ID,见仓储表头,仓储原字段
+pangaea_696447,col_07,"Uvigerina sp. δ18O [‰ PDB] (raw, Isotope ratio mass spect...)",见仓储表头,仓储原字段
+pangaea_696447,col_08,"Uvigerina sp. δ13C [‰ PDB] (raw, Isotope ratio mass spect...)",见仓储表头,仓储原字段
+pangaea_696447,col_09,"Uvigerina sp. δ18O [‰ PDB] (adjusted, adjusted for vital ...)",见仓储表头,仓储原字段
+pangaea_696447,col_10,"Uvigerina sp. δ13C [‰ PDB] (adjusted, adjusted for vital ...)",见仓储表头,仓储原字段
+pangaea_696447,col_11,Uvigerina sp. δ18O [‰ PDB] (used),见仓储表头,仓储原字段
+pangaea_696447,col_12,"C. wuellerstorfi δ18O [‰ PDB] (raw, Isotope ratio mass spect...)",见仓储表头,仓储原字段
+pangaea_696447,col_13,"C. wuellerstorfi δ13C [‰ PDB] (raw, Isotope ratio mass spect...)",见仓储表头,仓储原字段
+pangaea_696447,col_14,"C. wuellerstorfi δ18O [‰ PDB] (adjusted, adjusted for vital ...)",见仓储表头,仓储原字段
+pangaea_696447,col_15,"C. wuellerstorfi δ13C [‰ PDB] (adjusted, adjusted for vital ...)",见仓储表头,仓储原字段
+pangaea_696447,col_16,C. wuellerstorfi δ18O [‰ PDB] (used),见仓储表头,仓储原字段
+pangaea_696447,col_17,"Ordiorsalis δ18O [‰ PDB] (raw, Isotope ratio mass spect...)",见仓储表头,仓储原字段
+pangaea_696447,col_18,"Oridorsalis δ13C [‰ PDB] (raw, Isotope ratio mass spect...)",见仓储表头,仓储原字段
+pangaea_696447,col_19,"Ordiorsalis δ18O [‰ PDB] (adjusted, adjusted for vital ...)",见仓储表头,仓储原字段
+pangaea_696447,col_20,"Oridorsalis δ13C [‰ PDB] (adjusted, adjusted for vital ...)",见仓储表头,仓储原字段
+pangaea_696447,col_21,Ordiorsalis δ18O [‰ PDB] (used),见仓储表头,仓储原字段
+pangaea_696447,col_22,"G. pacifica δ18O [‰ PDB] (raw, Isotope ratio mass spect...)",见仓储表头,仓储原字段
+pangaea_696447,col_23,"G. pacifica δ13C [‰ PDB] (raw, Isotope ratio mass spect...)",见仓储表头,仓储原字段
+pangaea_696447,col_24,"G. pacifica δ18O [‰ PDB] (adjusted, adjusted for vital ...)",见仓储表头,仓储原字段
+pangaea_696447,col_25,G. pacifica δ13C [‰ PDB] (used),见仓储表头,仓储原字段
+pangaea_696447,col_26,"Cibicidoides spp. δ18O [‰ PDB] (raw, Isotope ratio mass spect...)",见仓储表头,仓储原字段
+pangaea_696447,col_27,"Cibicidoides spp. δ13C [‰ PDB] (raw, Isotope ratio mass spect...)",见仓储表头,仓储原字段
+pangaea_696447,col_28,"Cibicidoides spp. δ18O [‰ PDB] (adjusted, adjusted for vital ...)",见仓储表头,仓储原字段
+pangaea_696447,col_29,"Cibicidoides spp. δ13C [‰ PDB] (adjusted, adjusted for vital ...)",见仓储表头,仓储原字段
+pangaea_696447,col_30,Cibicidoides spp. δ18O [‰ PDB] (used),见仓储表头,仓储原字段
+pangaea_696447,col_31,"G. subglobosa δ18O [‰ PDB] (raw, Isotope ratio mass spect...)",见仓储表头,仓储原字段
+pangaea_696447,col_32,"G. subglobosa δ13C [‰ PDB] (raw, Isotope ratio mass spect...)",见仓储表头,仓储原字段
+pangaea_696447,col_33,"G. subglobosa δ18O [‰ PDB] (adjusted, adjusted for vital ...)",见仓储表头,仓储原字段
+pangaea_696447,col_34,"G. subglobosa δ13C [‰ PDB] (adjusted, adjusted for vital ...)",见仓储表头,仓储原字段
+pangaea_696447,col_35,G. subglobosa δ18O [‰ PDB] (used),见仓储表头,仓储原字段
+pangaea_696447,col_36,"Nuttallides sp. δ18O [‰ PDB] (raw, Isotope ratio mass spect...)",见仓储表头,仓储原字段
+pangaea_696447,col_37,"Nuttallides sp. δ13C [‰ PDB] (raw, Isotope ratio mass spect...)",见仓储表头,仓储原字段
+pangaea_696447,col_38,"Nuttallides sp. δ18O [‰ PDB] (adjusted, adjusted for vital ...)",见仓储表头,仓储原字段
+pangaea_696447,col_39,"Nuttallides sp. δ13C [‰ PDB] (adjusted, adjusted for vital ...)",见仓储表头,仓储原字段
+pangaea_696447,col_40,Nuttallides sp. δ18O [‰ PDB] (used),见仓储表头,仓储原字段
+pangaea_696447,col_41,"C. kullenbergi δ18O [‰ PDB] (raw, Isotope ratio mass spect...)",见仓储表头,仓储原字段
+pangaea_696447,col_42,"C. kullenbergi δ13C [‰ PDB] (raw, Isotope ratio mass spect...)",见仓储表头,仓储原字段
+pangaea_696447,col_43,"C. kullenbergi δ18O [‰ PDB] (adjusted, adjusted for vital ...)",见仓储表头,仓储原字段
+pangaea_696447,col_44,"C. kullenbergi δ13C [‰ PDB] (adjusted, adjusted for vital ...)",见仓储表头,仓储原字段
+pangaea_696447,col_45,C. kullenbergi δ18O [‰ PDB] (used),见仓储表头,仓储原字段
+pangaea_696447,col_46,"S. bulloides δ18O [‰ PDB] (raw, Isotope ratio mass spect...)",见仓储表头,仓储原字段
+pangaea_696447,col_47,"S. bulloides δ13C [‰ PDB] (raw, Isotope ratio mass spect...)",见仓储表头,仓储原字段
+pangaea_696447,col_48,"S. bulloides δ18O [‰ PDB] (adjusted, adjusted for vital ...)",见仓储表头,仓储原字段
+pangaea_696447,col_49,S. bulloides δ18O [‰ PDB] (used),见仓储表头,仓储原字段
+pangaea_696447,col_50,"Pyrgo sp. δ18O [‰ PDB] (raw, Isotope ratio mass spect...)",见仓储表头,仓储原字段
+pangaea_696447,col_51,"Pyrgo sp. δ13C [‰ PDB] (raw, Isotope ratio mass spect...)",见仓储表头,仓储原字段
+pangaea_696447,col_52,"Pyrgo sp. δ18O [‰ PDB] (adjusted, adjusted for vital ...)",见仓储表头,仓储原字段
+pangaea_696447,col_53,Pyrgo sp. δ18O [‰ PDB] (used),见仓储表头,仓储原字段
+pangaea_696447,col_54,"H. elegans δ18O [‰ PDB] (raw, Isotope ratio mass spect...)",见仓储表头,仓储原字段
+pangaea_696447,col_55,"H. elegans δ13C [‰ PDB] (raw, Isotope ratio mass spect...)",见仓储表头,仓储原字段
+pangaea_696447,col_56,"H. elegans δ18O [‰ PDB] (adjusted, adjusted for vital ...)",见仓储表头,仓储原字段
+pangaea_696447,col_57,"H. elegans δ13C [‰ PDB] (adjusted, adjusted for vital ...)",见仓储表头,仓储原字段
+pangaea_696447,col_58,H. elegans δ18O [‰ PDB] (used),见仓储表头,仓储原字段
+pangaea_696447,col_59,Uvigerina sp. δ18O [‰ PDB] (Uvigerina sp. + G. pacifica (...),见仓储表头,仓储原字段
+pangaea_696447,col_60,Uvigerina sp. δ13C [‰ PDB] (Uvigerina sp. + G. pacifica (...),见仓储表头,仓储原字段
+pangaea_696447,col_61,Uvigerina sp. δ18O [‰ PDB] (Uvigerina sp. + G. pacifica (...),见仓储表头,仓储原字段
+pangaea_696447,col_62,Uvigerina sp. δ13C [‰ PDB] (Uvigerina sp. + G. pacifica (...),见仓储表头,仓储原字段
+pangaea_696447,col_63,Uvigerina sp. δ18O [‰ PDB] (Uvigerina sp. + G. pacifica (...),见仓储表头,仓储原字段
+pangaea_696447,col_64,Cibicidoides spp. δ18O [‰ PDB] (Cibicidoides sp. + C. wueller...),见仓储表头,仓储原字段
+pangaea_696447,col_65,Cibicidoides spp. δ13C [‰ PDB] (Cibicidoides sp. + C. wueller...),见仓储表头,仓储原字段
+pangaea_696447,col_66,Cibicidoides spp. δ18O [‰ PDB] (Cibicidoides sp. + C. wueller...),见仓储表头,仓储原字段
+pangaea_696447,col_67,Cibicidoides spp. δ13C [‰ PDB] (Cibicidoides sp. + C. wueller...),见仓储表头,仓储原字段
+pangaea_696447,col_68,Cibicidoides spp. δ18O [‰ PDB] (Cibicidoides sp. + C. wueller...),见仓储表头,仓储原字段
+pangaea_696447,col_69,Cibicidoides spp. δ18O [‰ PDB] (C. wuellerstorfi + C. kullenb...),见仓储表头,仓储原字段
+pangaea_696447,col_70,Cibicidoides spp. δ13C [‰ PDB] (C. wuellerstorfi + C. kullenb...),见仓储表头,仓储原字段
+pangaea_696447,col_71,Cibicidoides spp. δ18O [‰ PDB] (C. wuellerstorfi + C. kullenb...),见仓储表头,仓储原字段
+pangaea_696447,col_72,Cibicidoides spp. δ13C [‰ PDB] (C. wuellerstorfi + C. kullenb...),见仓储表头,仓储原字段
+pangaea_696447,col_73,Cibicidoides spp. δ18O [‰ PDB] (C. wuellerstorfi + C. kullenb...),见仓储表头,仓储原字段
+pangaea_696447,col_74,Uvigerina sp. δ18O [‰ PDB] (Uvigerina sp. + Oridorsalis s...),见仓储表头,仓储原字段
+pangaea_696447,col_75,Uvigerina sp. δ13C [‰ PDB] (Uvigerina sp. + Oridorsalis s...),见仓储表头,仓储原字段
+pangaea_696447,col_76,Uvigerina sp. δ18O [‰ PDB] (Uvigerina sp. + Oridorsalis s...),见仓储表头,仓储原字段
+pangaea_696447,col_77,Uvigerina sp. δ18O [‰ PDB] (Uvigerina sp. + Oridorsalis s...),见仓储表头,仓储原字段
+pangaea_696447,col_78,Ordiorsalis δ18O [‰ PDB] (Oridorsalis sp. + G. pacifica...),见仓储表头,仓储原字段
+pangaea_696447,col_79,Oridorsalis δ13C [‰ PDB] (Oridorsalis sp. + G. pacifica...),见仓储表头,仓储原字段
+pangaea_696447,col_80,Ordiorsalis δ18O [‰ PDB] (Oridorsalis sp. + G. pacifica...),见仓储表头,仓储原字段
+pangaea_696447,col_81,Ordiorsalis δ18O [‰ PDB] (Oridorsalis sp. + G. pacifica...),见仓储表头,仓储原字段
+pangaea_696447,col_82,"Foram benth δ18O [‰ PDB] (raw, Isotope ratio mass spect...)",见仓储表头,仓储原字段
+pangaea_696447,col_83,"Foram benth δ13C [‰ PDB] (raw, Isotope ratio mass spect...)",见仓储表头,仓储原字段
+pangaea_696447,col_84,"Foram benth δ18O [‰ PDB] (adjusted, adjusted for vital ...)",见仓储表头,仓储原字段
+pangaea_696447,col_85,"Foram benth δ13C [‰ PDB] (adjusted, adjusted for vital ...)",见仓储表头,仓储原字段
+pangaea_696447,col_86,Foram benth δ18O [‰ PDB] (used),见仓储表头,仓储原字段
+pangaea_696447,col_87,Species,见仓储表头,仓储原字段
+pangaea_696449,col_01,Depth sed [m],见仓储表头,仓储原字段
+pangaea_696449,col_02,Age [ka BP],见仓储表头,仓储原字段
+pangaea_696449,col_03,Depth comp r [rmcd],见仓储表头,仓储原字段
+pangaea_696449,col_04,δ13C [‰ PDB],见仓储表头,仓储原字段
+pangaea_696449,col_05,δ18O [‰],见仓储表头,仓储原字段
+pangaea_696451,col_01,Age [ka BP],见仓储表头,仓储原字段
+pangaea_696451,col_02,δ18O [‰],见仓储表头,仓储原字段
+pangaea_696451,col_03,δ13C [‰ PDB],见仓储表头,仓储原字段
+pangaea_807824,col_01,Sample label,见仓储表头,仓储原字段
+pangaea_807824,col_02,Depth sed [m],见仓储表头,仓储原字段
+pangaea_807824,col_03,Depth comp r [rmcd],见仓储表头,仓储原字段
+pangaea_807824,col_04,Age [ka BP],见仓储表头,仓储原字段
+pangaea_807824,col_05,SR [cm/ka],见仓储表头,仓储原字段
+pangaea_807824,col_06,WBD [g/cm**3],见仓储表头,仓储原字段
+pangaea_807824,col_07,DBD [g/cm**3],见仓储表头,仓储原字段
+pangaea_807824,col_08,MAR [g/cm**2/ka],见仓储表头,仓储原字段
+pangaea_807824,col_09,TC [%],见仓储表头,仓储原字段
+pangaea_807824,col_10,CaCO3 [%],见仓储表头,仓储原字段
+pangaea_807824,col_11,Acc rate CaCO3 [g/cm**2/ka],见仓储表头,仓储原字段
+pangaea_807824,col_12,TOC [%],见仓储表头,仓储原字段
+pangaea_807824,col_13,TOC std dev [±],见仓储表头,仓储原字段
+pangaea_807824,col_14,Acc rate TOC [g/cm**2/ka],见仓储表头,仓储原字段
+pangaea_807824,col_15,UK37,见仓储表头,仓储原字段
+pangaea_807824,col_16,SST (1-12) [°C],见仓储表头,仓储原字段
+pangaea_807824,col_17,SST (1-12) std dev [±],见仓储表头,仓储原字段
+pangaea_808207,col_01,Sample label,见仓储表头,仓储原字段
+pangaea_808207,col_02,Depth sed [m],见仓储表头,仓储原字段
+pangaea_808207,col_03,Depth comp r [rmcd],见仓储表头,仓储原字段
+pangaea_808207,col_04,O. universa [%],见仓储表头,仓储原字段
+pangaea_808207,col_05,G. ruber [%],见仓储表头,仓储原字段
+pangaea_808207,col_06,G. tenellus [%],见仓储表头,仓储原字段
+pangaea_808207,col_07,G. sacculifer [%],见仓储表头,仓储原字段
+pangaea_808207,col_08,G. aequilateralis [%],见仓储表头,仓储原字段
+pangaea_808207,col_09,G. calida [%],见仓储表头,仓储原字段
+pangaea_808207,col_10,G. bulloides [%],见仓储表头,仓储原字段
+pangaea_808207,col_11,G. rubescens [%],见仓储表头,仓储原字段
+pangaea_808207,col_12,G. rubescens [#],见仓储表头,仓储原字段
+pangaea_808207,col_13,N. pachyderma d [%],见仓储表头,仓储原字段
+pangaea_808207,col_14,N. dutertrei [%],见仓储表头,仓储原字段

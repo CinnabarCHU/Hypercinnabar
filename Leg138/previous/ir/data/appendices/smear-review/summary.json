@@ -1,0 +1,15 @@
+{
+ "rows": 143,
+ "columns": 23,
+ "cells": 3289,
+ "counts": {
+  "has_ocr": 1726,
+  "no_ocr_low_ink": 1558,
+  "ink_without_ocr": 5
+ },
+ "source": "sources/odp/VOLUME/CHAPTERS/smear_0846.pdf",
+ "coordinate_system": "PDF points from upper-left on official page; group headers transcribed from each scan. Empty OCR is unverified.",
+ "reviewed_cells": 40,
+ "readings_changed": 18,
+ "manually_resolved_ink_without_ocr": 5
+}

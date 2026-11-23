@@ -1,0 +1,11 @@
+--- original/DEP_ADJ.F
++++ build/dep_adj.f
+@@ -55,7 +55,7 @@
+ 	read(5,*,err=3)isite
+ 	write(depthfile,'(i4)')isite
+ 	depthfile ='depths'//depthfile(1:lenstr(depthfile))//'.fin'
+-	depthfile ='/home/bligh/users/pisias/data/leg138.data/core.data/'//depthfile
++	depthfile ='./'//depthfile
+ 	call deblank(depthfile)
+ 	close(13)
+ 	open(13,file=depthfile,status='old',err=1000)

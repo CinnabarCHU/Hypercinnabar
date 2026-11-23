@@ -1,0 +1,87 @@
+﻿section_order,section,item_id,kind,number,title,locator,available,data_note
+1,Principal results,M04,unnumbered_table,,Holes 846A–D,第 265 页,章首四孔资料,按孔保留原报的作业、现代站位与深度记录，下标和特殊字符见原页。
+2,Background and scientific objectives,F01,figure,1,Site locations and equatorial circulation,第 268 页,印图,站位及洋流示意图。图上箭头表示作者概括的流向，本站位置另见章首。保留印图。
+2,Background and scientific objectives,F02,figure,2,Tectonic setting and basement ages,第 269 页,印图,区域构造和洋壳年龄图，据原图注明的 Hey (1977) 整理。保留作者采用的底图与注记。
+2,Background and scientific objectives,F03,figure,3,SeaBeam bathymetry,第 270 页,印图,航次前 SeaBeam 调查的导航校正等深图经人工勾绘。保存印图，尚未识别逐测深点或同版等深线文件。
+2,Background and scientific objectives,F04,figure,4,Seismic Line G,第 271 页,印图,Thomas Washington 航行调查的 G 测线地震剖面。保存印版图像。原始波形另待查。
+3,Operations,T01,table,1,Coring operations,第 266 页,随盘电子表,表列各孔的作业日期、时间、进尺和实际回收长度。回收率是长度比，按盘表刊值保留。印页月份为 May，盘表表头为 June。
+3,Operations,T02,table,2,Logging operations,第 271 页,印页转录,时间、仪器串深度和作业日志按印页逐行转录。累计小时是船上已列出的历时，空白深度保留为空。
+4,Lithostratigraphy,F05,figure,5,Lithostratigraphic summary,第 272、273、274 页,印图及分栏数据,回收、岩性图式和分层判断分栏刊出。回收数据可查表 1，亚单元界限可查正文第 269–271 页。图形岩性栏保留原图和有出处的分段图读。
+4,Lithostratigraphy,F06,figure,6,Major smear-slide components,第 275 页,印图与部分关联资料,B、C 孔涂片主要组分取自第 669–671 页的涂片表，含显微估计及定性符号。连接线属于绘图表达。
+4,Lithostratigraphy,F07,figure,7,Composite stratigraphic summary,第 276、277、278 页,印图及分栏数据,各孔段拼合到 mcd。图注注明物性曲线经 20 点高斯平滑。盘文件可按孔取得。印图所见 GRAPE 与磁化率另有图读值。磁性年代和岩性栏含解释。
+4,Lithostratigraphy,F08,figure,8,Color in Hole 846B,第 279 页,印图与部分关联资料,左图采用 B 孔三个反射率波段，右图为选定光谱。盘上分有波段文件与分段光谱。尚未确定每条代表谱的精确盘行。
+4,Lithostratigraphy,F09,figure,9,Decimeter-scale reflectance,第 280 页,印图与部分关联资料,846C-6H-1 的三波段仪器反射率与同段照片并列。各自保留来源及单位。
+4,Lithostratigraphy,F10,figure,10,Red reflectance profile,第 281 页,印图与部分关联资料,B 孔 25–30 mbsf 的红波段反射率可查盘文件，生物事件、年龄和图旁注为报告给出的解释。
+4,Lithostratigraphy,F11,figure,11,Zoophycos burrows,第 281 页,印图与同芯照片,印刷岩芯特写及其沉积学解释，另可对照同芯随盘照片。两种取景分别保存出处。
+4,Lithostratigraphy,F12,figure,12,Vertical burrow and diagenetic halo,第 282 页,印图与同芯照片,印刷岩芯特写及其沉积学解释，另可对照同芯随盘照片。两种取景分别保存出处。
+4,Lithostratigraphy,F13,figure,13,Crosscutting burrows,第 282 页,印图与同芯照片,印刷岩芯特写及其沉积学解释，另可对照同芯随盘照片。两种取景分别保存出处。
+4,Lithostratigraphy,F14,figure,14,Burrows and discoloration,第 283 页,印图与同芯照片,印刷岩芯特写及其沉积学解释，另可对照同芯随盘照片。两种取景分别保存出处。
+4,Lithostratigraphy,F15,figure,15,Burrows with truncating halos,第 283 页,印图与同芯照片,印刷岩芯特写及其沉积学解释，另可对照同芯随盘照片。两种取景分别保存出处。
+4,Lithostratigraphy,F16,figure,16,Chondrites,第 284 页,印图与同芯照片,印刷岩芯特写及其沉积学解释，另可对照同芯随盘照片。两种取景分别保存出处。
+4,Lithostratigraphy,F17,figure,17,Bioturbated lithologic contact,第 284 页,印图与同芯照片,印刷岩芯特写及其沉积学解释，另可对照同芯随盘照片。两种取景分别保存出处。
+5,Biostratigraphy,M01,unnumbered_table,,Epoch boundaries,第 285 页,印页转录,表列年代分界、钻孔、两种深度和所用生物事件，按无编号原表保存。
+5,Biostratigraphy,T03,table,3,Calcareous nannofossil events,第 286 页,随盘电子表,表列钙质超微化石事件及限定它的样品区间。事件识别依赖鉴定，mbsf 与拼合后的 mcd 分列。
+5,Biostratigraphy,T04,table,4,Planktonic foraminifer events,第 286 页,随盘电子表,表列浮游有孔虫事件和样品深度范围。保留范围、注释、续行和深度尺度。
+5,Biostratigraphy,T05,table,5,Radiolarian events,第 287 页,随盘电子表,表列放射虫事件、样品及其深度范围。两行的 C、D 孔列按印本对齐，处理写在相应行内，原盘文本随附。
+5,Biostratigraphy,T06,table,6,Diatom events,第 288 页,随盘电子表,表列硅藻事件、样品及深度。印本题作 Site 844，表内为 846B、C、D。B 孔两个深度表头均印作 mbsf，保留原读。
+5,Biostratigraphy,F18,figure,18,Biostratigraphic summary,第 289、290、291 页,印图与部分关联资料,以 846B 为主，图中区分化石带、丰度、保存与边界不确定区间。表 3–6 可查部分事件，整幅解释以三张印图为准。
+6,Paleomagnetism,F19,figure,19,Magnetic susceptibility and remanence,第 294 页,印图与部分关联资料,低场磁化率与剩磁强度叠置。盘中有 B 孔磁化率。此次未确认与图中剩磁曲线逐点对应的电子表。
+6,Paleomagnetism,F20,figure,20,Susceptibility in the upper 40 m,第 294 页,印图与相关表列,B、C 孔上部 40 m 的磁化率叠图。对应的两份随盘文件分开登记。
+7,Sedimentation rates,T07,table,7,Core depths in the composite section,第 295 页,随盘电子表,原表并列各岩芯的 ODP 深度和长度，以及通过跨孔对比得到的复合深度和偏移量。B 孔标题后从 2H 开始。
+7,Sedimentation rates,T08,table,8,Control points for accumulation rates,第 295 页,随盘电子表,每个控制点的复合深度、赋予的年龄和依据，以及相邻点间的沉积速率分行刊出。表 12 底注交代了计算后修订控制点的经过。
+7,Sedimentation rates,F21,figure,21,Multihole composite-depth records,卷后折页 10,印图与相关表列,卷后折页按各孔画出磁化率、GRAPE 与反射率，使用 mcd。为显示而作的横向平移见图注。同类随盘序列按孔保留。
+7,Sedimentation rates,F22,figure,22,Biostratigraphic age vs. depth,第 296 页,印图与部分关联资料,表 8 的深度–年龄控制线与各微体化石的事件区间同绘。连线、样品区间和年龄赋值可分别追查。
+7,Sedimentation rates,F23,figure,23,Sedimentation rate vs. age,第 297 页,印图与相关表列,表 8 相邻年代控制点间的沉积速率按年龄绘制。
+7,Sedimentation rates,F24,figure,24,Sedimentation rate vs. composite depth,第 297 页,印图与相关表列,表 8 相邻年代控制点间的沉积速率按复合深度绘制。
+8,Inorganic geochemistry,T09,table,9,Interstitial-water chemistry,第 298 页,随盘电子表,表列孔隙水样品、深度及化学分析结果。印页表题写 A、C 孔，电子表和正文将较深样品列入 B 孔。
+8,Inorganic geochemistry,F25,figure,25,Interstitial-water chemistry I,第 298 页,印图与相关表列,用表 9 的孔隙水化学数据按深度绘图，保留印版轴标与作者连线。
+8,Inorganic geochemistry,F26,figure,26,Interstitial-water chemistry II,第 299 页,印图与相关表列,用表 9 的孔隙水化学数据按深度绘图，保留印版轴标与作者连线。
+8,Inorganic geochemistry,F27,figure,27,Interstitial-water chemistry III,第 300 页,印图与相关表列,用表 9 的孔隙水化学数据按深度绘图，保留印版轴标与作者连线。
+9,Organic geochemistry,T10,table,10,Carbon and nitrogen,第 300 页正文引述，表见随盘 TABLE.10,随盘电子表,正文第 300 页说明测定总碳、无机碳和总氮，据此计算碳酸钙和有机碳质量分数。适用时表列多测次的均值。原表各列与有效位数照录。
+9,Organic geochemistry,T11,table,11,Duplicate carbonate analyses,第 301 页,印页转录,同一样品的不同分样分别列出第一、第二次，少数另有第三次碳酸盐分析结果。差值和末行平均差直接抄录。刊出的显示精度有时不足以重算其末位。
+9,Organic geochemistry,T12,table,12,Mean sedimentary parameters,第 304 页,随盘电子表,按年代界面划出的区间汇总碳百分比、干体积密度、线性沉积速率和质量堆积速率。表下注明部分控制深度后来修订。此处保留计算时采用的表值。
+9,Organic geochemistry,T13,table,13,Headspace hydrocarbons,第 302 页正文引述，表见随盘 TABLE.13,随盘电子表,表列顶空气体样品的甲烷浓度、深度及所列有机碳百分比。有机碳的计算说明见第 300 页。
+9,Organic geochemistry,T14,table,14,Alkenone analyses and temperature,第 304 页正文引述，表见随盘 TABLE.14,随盘电子表,盘表列两种烯酮的计数、Uᵏ′₃₇ 指数、估算的海表温度，以及从复合深度插值得到的年龄。重复样品标签保持原行序。
+9,Organic geochemistry,F28,figure,28,Carbonate and organic carbon,第 302 页,印图与相关表列,表 10 中报告的碳酸钙和有机碳百分比对深度作图，计算来源见表 10。
+9,Organic geochemistry,F29,figure,29,Carbon and sediment parameters,第 303 页,印图与部分关联资料,把表 10 的碳数据按复合深度和年龄作图。原报告说明这张图作于部分年龄控制点修订之前，见表 12 注。
+9,Organic geochemistry,F30,figure,30,Mass accumulation by interval,第 305 页,印图与部分关联资料,按复合深度绘区间平均与逐样品质量堆积速率。表 12 支持粗线所示区间均值。细线的逐点数值不可直接由表 12 取出。
+9,Organic geochemistry,F31,figure,31,Mass accumulation vs. age,第 306 页,印图与部分关联资料,横轴改用年龄。表 12 给区间平均速率，逐样品细线另属计算结果，部分面板按图注省略细线。
+9,Organic geochemistry,F32,figure,32,Methane and sulfate,第 307 页,印图与相关表列,甲烷与硫酸盐、有机碳作对照。表 9、13 给出相应记录，注意两种化学分析的采样对象。
+9,Organic geochemistry,F33,figure,33,Alkenone index and sea-surface temperature,第 308 页,印图与相关表列,表 14 中的烯酮指数、由其估计的海表温度和赋给样品的年龄共同作图。
+10,Physical properties,T15,table,15,Index properties,第 304 页正文引述，表见随盘 TABLE.15,随盘电子表,盘表给出样品、两种深度，以及已报告的密度、含水率、孔隙度和孔隙比。盘表本身未逐次刊出称量和体积读数。
+10,Physical properties,T16,table,16,Compressional-wave velocity,第 306 页正文引述，表见随盘 TABLE.16,随盘电子表,表列离散样品的纵波速度及 mbsf、mcd。表中的速度是已报告的结果，这份表里没有逐样品的原始波形。
+10,Physical properties,T17,table,17,Undrained shear strength,第 306 页正文引述，表见随盘 TABLE.17,随盘电子表,表列样品的不排水剪切强度和两种深度，保留船上已换算的强度值。
+10,Physical properties,T18,table,18,Thermal conductivity,第 306 页正文引述，表见随盘 TABLE.18,随盘电子表,表列热导率和样品深度。已刊数值与用于拟合它的温升时间序列属于不同记录。
+10,Physical properties,F34,figure,34,Wet-bulk density,第 309 页,印图与相关表列,从表 15 取出湿体积密度按深度绘图。
+10,Physical properties,F35,figure,35,Water content,第 310 页,印图与相关表列,从表 15 取出含水率按深度绘图。
+10,Physical properties,F36,figure,36,Grain density,第 311 页,印图与相关表列,从表 15 取出颗粒密度按深度绘图。
+10,Physical properties,F37,figure,37,Porosity,第 312 页,印图与相关表列,从表 15 取出孔隙度按深度绘图。
+10,Physical properties,F38,figure,38,Compressional-wave velocity,第 313 页,印图与相关表列,从表 16 取出离散样品的纵波速度按深度绘图。
+10,Physical properties,F39,figure,39,Undrained shear strength,第 314 页,印图与相关表列,从表 17 取出剪切强度按深度绘图。
+10,Physical properties,F40,figure,40,Thermal conductivity,第 314 页,印图与相关表列,从表 18 取出热导率按深度绘图。
+11,Downhole measurements,T19,table,19,Logging depth intervals,第 314 页,印页转录,原表汇总 846B 各测井项目的有效井深范围。表注说明统一的海底基准与仪器串深度平移，范围按印页抄录。
+11,Downhole measurements,F41,figure,41,Borehole caliper,第 315 页,印图与部分关联资料,两次 FMS 测井的井径曲线，另有仪器运行区间。归档的两次运行分别可查。
+11,Downhole measurements,F42,figure,42,"Sonic velocity, density and resistivity",第 315 页,印图与部分关联资料,声速、密度与电阻率来自不同测井曲线，仪器的可用深度区间见表 19。
+11,Downhole measurements,F43,figure,43,Downhole chemical composition,第 316 页,印图与部分关联资料,测井化学产额按深度绘图，分层线是对曲线的解释。保留原工具与产额通道。
+11,Downhole measurements,F44,figure,44,Logging and core density comparison,第 316 页,印图与部分关联资料,据图注，测井与岩芯 GRAPE 经 CORPAC 深度配准，以五点移动平均平滑后比较密度差，并与 Ca 产额并列。可查部分输入，最终差值曲线见印图。
+11,Downhole measurements,F45,figure,45,Composite splice depth and logging depth,第 317 页,印图与图读点,实线是拼合岩芯 GRAPE 与井下密度特征的深度对应，虚线为 1∶1 参考。图线清晰可分的部分另有图读点。船上的原始配对点未获确认。
+11,Downhole measurements,F46,figure,46,FMS resistivity image,第 318 页,印图,FMS 四块极板形成的定向井壁图像，附井径、倾角等信息。保留印图。
+11,Downhole measurements,F47,figure,47,Natural gamma-ray activity,第 319 页,印图与部分关联资料,846B 与其他站的自然伽马曲线对照。此处登记本站测井输入和完整印图。
+11,Downhole measurements,F48,figure,48,Hole 846B gamma-ray comparisons,第 319 页,印图与部分关联资料,井下自然伽马与离散分析所得有机碳的对照。本站测井文件和表 10 各自保留。
+11,Downhole measurements,F49,figure,49,Ca log comparison,第 320 页,印图与部分关联资料,845 与 846 的 GST 钙信号经跨站深度对齐后比较。本站的测井输入及报告的对齐结果分别定位。
+12,Seismic stratigraphy,T20,table,20,Seismic reflectors,第 321 页,随盘电子表,表列反射层的走时、合成记录深度、岩芯深度、复合深度和估计年龄。保留同一反射层的续行。
+12,Seismic stratigraphy,F50,figure,50,Synthetic and field seismograms,第 322 页,印图,合成地震记录与野外实测地震剖面并列。印图保留反射界面编号。文中解释与表 20 对应。
+12,Seismic stratigraphy,F51,figure,51,Inputs to synthetic seismograms,第 323 页,印图与部分关联资料,声速、密度及由二者得到的声阻抗供合成地震记录使用。图中反射层为作者的选择。
+13,Summary and conclusions,T21,table,21,Paleolatitudes and longitudes,第 321 页,印页转录,各年龄的南纬、西经为原作者按表注所列欧拉极和角速度回推的古位置。保留南纬、西经的正数写法。
+13,Summary and conclusions,F52,figure,52,"Sedimentation, susceptibility and density",第 324 页,印图与部分关联资料,原报告的年龄域综合图，含沉积速率、磁化率、密度及预测碳酸盐曲线与离散碳酸盐结果。最终展示以原图为准。
+15,Hole 846B log summaries,L325,log_sheet,,Hole 846B: Resistivity-Sonic-Natural Gamma Ray Log Summary,第 325 页,无编号图版,完整原始测井汇总图。各道的深度基准与标注以此页为准。
+15,Hole 846B log summaries,L326,log_sheet,,Hole 846B: Resistivity-Sonic-Natural Gamma Ray Log Summary (continued),第 326 页,无编号图版,完整原始测井汇总图。各道的深度基准与标注以此页为准。
+15,Hole 846B log summaries,L327,log_sheet,,Hole 846B: Resistivity-Sonic-Natural Gamma Ray Log Summary (continued),第 327 页,无编号图版,完整原始测井汇总图。各道的深度基准与标注以此页为准。
+15,Hole 846B log summaries,L328,log_sheet,,Hole 846B: Density-Natural Gamma Ray Log Summary,第 328 页,无编号图版,完整原始测井汇总图。各道的深度基准与标注以此页为准。
+15,Hole 846B log summaries,L329,log_sheet,,Hole 846B: Density-Natural Gamma Ray Log Summary (continued),第 329 页,无编号图版,完整原始测井汇总图。各道的深度基准与标注以此页为准。
+15,Hole 846B log summaries,L330,log_sheet,,Hole 846B: Density-Natural Gamma Ray Log Summary (continued),第 330 页,无编号图版,完整原始测井汇总图。各道的深度基准与标注以此页为准。
+15,Hole 846B log summaries,L331,log_sheet,,Hole 846B: Geochemical Log Summary,第 331 页,无编号图版,完整原始测井汇总图。各道的深度基准与标注以此页为准。
+15,Hole 846B log summaries,L332,log_sheet,,Hole 846B: Geochemical Log Summary (continued),第 332 页,无编号图版,完整原始测井汇总图。各道的深度基准与标注以此页为准。
+15,Hole 846B log summaries,L333,log_sheet,,Hole 846B: Geochemical Log Summary (continued),第 333 页,无编号图版,完整原始测井汇总图。各道的深度基准与标注以此页为准。
+16,Site 846 core descriptions and photographs,M03,appendix,,Core descriptions and core photographs,第 505–593 页及独立照片 PDF,岩芯页与照片目录,92 个岩芯编号对应 89 个描述印页。90 个编号另有可定位的官方照片。描述页可以共页，个别芯号只有文字说明。
+17,Site 846 smear-slide summary,M02,appendix,,Smear-slide summary,第 669–671 页,印页转录,143 行显微观察及组分估计，星号、短横和空白单独保留。随表附逐格定位和既有复核记录。

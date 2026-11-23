@@ -1,0 +1,19 @@
+note_id,item_id,locator,issue_type,reading_a,reading_b,editorial_handling
+IR18-T01-group1,IR18.T01,第 18 章 PDF 7，印刷页 1029，表 1 第 1 组孔名 / CHAP_18/TABLE.1 第 7 行,printed_vs_disc_hole_header,138-853A,138-853A,列出一致的首组作为对照。
+IR18-T01-group2,IR18.T01,第 18 章 PDF 7，印刷页 1029，表 1 第 2 组孔名 / CHAP_18/TABLE.1 第 11 行,printed_vs_disc_hole_header,138-854A,138-853A,两底本标签各自保存，随盘组号在 tables/coring.csv 可查。第 18 章表 7 随盘第 5–6 行将 10.15 m 与 4.25 m 回收长度分别列在 853A-1H、853B-1H 名下，提供旁证。
+IR18-T01-group3,IR18.T01,第 18 章 PDF 7，印刷页 1029，表 1 第 3 组孔名 / CHAP_18/TABLE.1 第 23 行,printed_vs_disc_hole_header,138-854C,138-853C,两底本标签各自保存，随盘组号在 tables/coring.csv 可查。
+IR18-T01-group4,IR18.T01,第 18 章 PDF 7，印刷页 1029，表 1 第 4 组孔名 / CHAP_18/TABLE.1 第 34 行,printed_vs_disc_hole_header,138-854D,138-853D,两底本标签各自保存，随盘组号在 tables/coring.csv 可查。
+IR18-T01-group5,IR18.T01,第 18 章 PDF 7，印刷页 1029，表 1 第 5 组孔名 / CHAP_18/TABLE.1 第 44 行,printed_vs_disc_hole_header,138-854E,138-853E,两底本标签各自保存，随盘组号在 tables/coring.csv 可查。
+IR09-T19-hole,IR09.T19,CHAP_9/TABLE.19 第 4 行,electronic_heading,138-884B-,站章为 Site 844,保留随盘孔名为 884B，所属出版章节仍归 Site 844。
+IR10-T16-depth,IR10.T16,CHAP_10/TABLE.16 第 2–7 行,underlabelled_column,Depth (mbsf),随后另一数值深度列在电子表头无单列标签,保留原位置与数值，发布为 second_depth_unlabelled。
+IR14-T13-methane,IR14.T13,卷首 PDF 第 22 页 / 第 14 章 PDF 48，印刷页 782 / CHAP_14/TABLE.13 第 1 行,front_matter_vs_chapter_diff,卷首目录 Hole 849A,章节表题及随盘文件表题 Hole 849B,保留卷首目录原文并记下章表题。
+IR14-T15-number,IR14.T15,CHAP_14/TABLE.15 第 15 行,non_numeric_published_spelling,1503.o,,原字串保留，数值 API 可显式标为无法数值解析。
+IR19-T12-unit,IR19.T12,CHAP_19/TABLE.12 第 5 行,distributed_units,湿密度 g/cm3,干密度与粒密度 g/cm2,按出版证据分别记录，物性分析需先核对这些单位。
+IR17-T10-core,IR17.T10,CHAP_17/TABLE.10 第 20 行,reported_blank,852B-13H: 长度 0.00，mbsf 113.40–113.40,mcd 与偏移空缺,保留空值。
+IR18-T11-replicate22,IR18.T11,第 18 章 PDF 27，印刷页 1049，表 11 第 22 样品行,published_difference_vs_runs,Run 1 = 87.90，Run 2 = 87.07，报告绝对差 0.17,按展示数值计算绝对差 0.83,"7H-7, 28–30。每次 run 与原书差值均保留。"
+IR12-T11-replicate29,IR12.T11,第 12 章 PDF 29，印刷页 363，表 11 第 29 样品行,published_difference_vs_runs,Run 1 = 66.76，Run 2 = 66.00，Run 3 = 67.00，报告绝对差 0.75,按展示数值计算三次极差 1.00,"847B-14H-6, 145–150。报告差意涵另依原方法解释。"
+IR15-T17-reference,IR15.T17,第 15 章 PDF 35，印刷页 843 / CHAP_15/TABLE.17 第 7–44 行,narrative_to_disc,正文指出重复分析列于 CD-ROM 的 Table 17,37 个样品行；末行报告平均差 0.70,PDF 页为叙述锚点，所有取数使用随盘文件。
+IR06-T01-missing,IR06.T01,站/方法章 PDF 2，印刷页 88 / VOLUME/DATA/TABLES/CHAP_6/TABLE.1,listed_disc_unavailable,卷首 CD-ROM Tables 列有此表,在线 TABLES 目录无同名文件，直取返回 HTTP 404,以印本转录补足报告数字。保留区间与空格语义，未重建缺失分发文件。
+IR06-T03-missing,IR06.T03,站/方法章 PDF 5，印刷页 91 / VOLUME/DATA/TABLES/CHAP_6/TABLE.3,listed_disc_unavailable,卷首 CD-ROM Tables 列有此表,在线 TABLES 目录无同名文件，直取返回 HTTP 404,以印本转录补足报告数字。保留区间与空格语义，未重建缺失分发文件。
+IR06-T04-missing,IR06.T04,站/方法章 PDF 5，印刷页 91 / VOLUME/DATA/TABLES/CHAP_6/TABLE.4,listed_disc_unavailable,卷首 CD-ROM Tables 列有此表,在线 TABLES 目录无同名文件，直取返回 HTTP 404,以印本转录补足报告数字。保留区间与空格语义，未重建缺失分发文件。
+IR12-T06-missing,IR12.T06,站/方法章 PDF 17，印刷页 351 / VOLUME/DATA/TABLES/CHAP_12/TABLE.6,listed_disc_unavailable,卷首 CD-ROM Tables 列有此表,在线 TABLES 目录无同名文件，直取返回 HTTP 404,以印本转录补足报告数字。保留区间与空格语义，未重建缺失分发文件。

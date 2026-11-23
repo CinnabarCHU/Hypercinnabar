@@ -1,0 +1,2 @@
+GNU Fortran (Debian 14.2.0-19) 14.2.0
+-std=legacy -ffixed-line-length-none -fno-align-commons -finit-local-zero -O0

@@ -1,0 +1,7 @@
+page,printed_row,compared,phase100,k100,phase41,k41,phase23,k23
+677,1,δ18O spec vs. δ18O 846,5±10,0.98,2±11,0.98,4±7,0.99
+677,2,−δ18O 846 vs. fragment,-9±23,0.89,13±27,0.86,,NC
+677,3,−δ18O 846 vs. %benthics,15±20,0.92,,NC,,NC
+677,4,−δ18O 846 vs. factor 1,,NC,,NC,,NC
+677,5,−δ18O 846 vs. factor 2,-30±19,0.93,-18±25,0.88,,NC
+677,6,−δ18O 846 vs. factor 3,160±17,0.92,,NC,,NC

@@ -1,0 +1,25 @@
+{
+  "counts": {
+    "documents": 76,
+    "pages": 1922,
+    "plate_pages": 620,
+    "sites": 11,
+    "plans": 12,
+    "items": 1812,
+    "evidence": 4247,
+    "assets": 5425,
+    "datasets": 335,
+    "dataset_items": 395,
+    "native_ir": 17835,
+    "sr_rows": 124288
+  },
+  "checks": "passed",
+  "carbon_witness_checks": {
+    "same_numeric_value": 664,
+    "both_blank": 1628,
+    "unmatched_or_nonunique": 4
+  },
+  "hole_version_pairs": 252,
+  "mcd_rows_traceable_to_hole_fin": 121065,
+  "source_payloads": 5425
+}

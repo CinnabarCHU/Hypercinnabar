@@ -1,0 +1,290 @@
+dataset_id,source,source_line,original_text
+SR.C39.TABLE2.CORRECTED,official/39_02.txt,1,Table 2. 13C and 18O data for Leg 138 sites.
+SR.C39.TABLE2.CORRECTED,official/39_02.txt,3,Sample	Depth (mbsf)	Depth (Delta m)	Depth (mcd)	Age (Ma)	Laboratory code	d18O	d13C	
+SR.C15.TABLE1,official/VOLUME/DATA/CHAP15/138117T1.TXT,1,Table 1.
+SR.C15.TABLE1,official/VOLUME/DATA/CHAP15/138117T1.TXT,2,"Core, section	interval (cm) 		Depth (mbsf)	Depth (mcd)	 Depth (rmcd)	150 (g)	150 (g)	cf (%)"
+SR.C15.TABLE1,official/VOLUME/DATA/CHAP15/138117T1.TXT,3,138-846B-	
+SR.C15.TABLE1,official/VOLUME/DATA/CHAP15/138117T1.TXT,460,846C-	
+SR.C15.TABLE1,official/VOLUME/DATA/CHAP15/138117T1.TXT,714,846D-
+SR.C15.TABLE1,official/VOLUME/DATA/CHAP15/138117T1.TXT,1817,"846D-	, 	, 	, 	"
+SR.C15.TABLE1,official/VOLUME/DATA/CHAP15/138117T1.TXT,2396, Note: The dry weights over and under 150 m are given.  
+SR.C15.TABLE3,official/VOLUME/DATA/CHAP15/138117T3.TXT,1,Table 3. Stable isotope data for Site 846.  
+SR.C15.TABLE3,official/VOLUME/DATA/CHAP15/138117T3.TXT,2,Sample         Depth (mbsf)   Depth (mcd)    Depth (rmcd)   Sample (ident.)     Species
+SR.C15.TABLE3,official/VOLUME/DATA/CHAP15/138117T3.TXT,3,(code)    delta18O (raw) delta13C (raw) delta18O (adj.)     delta13C (adj.)     delta18O (used)
+SR.C15.TABLE3,official/VOLUME/DATA/CHAP15/138117T3.TXT,5,138-846B-                                                   
+SR.C15.TABLE3,official/VOLUME/DATA/CHAP15/138117T3.TXT,1120,"846C-     ,    ,    ,    ,    ,    "
+SR.C15.TABLE3,official/VOLUME/DATA/CHAP15/138117T3.TXT,1769,"846D-     ,    ,    ,    ,    ,    "
+SR.C15.TABLE3,official/VOLUME/DATA/CHAP15/138117T3.TXT,5528,Notes: Each mass spectrometric measurement has a unique identification code: the letter P denotes a
+SR.C15.TABLE3,official/VOLUME/DATA/CHAP15/138117T3.TXT,5529,"VG Isogas Prism mass spectrometer, and S denotes a VG Isogas SIRA Seris 9 mass spectrometer."
+SR.C15.TABLE3,official/VOLUME/DATA/CHAP15/138117T3.TXT,5530,This is followed by the two digits of the year and a four-digit run number which starts with 1 at the
+SR.C15.TABLE3,official/VOLUME/DATA/CHAP15/138117T3.TXT,5531,beginning of the calandar year. The species abbreviations are identified in Table 4 which also gives
+SR.C15.TABLE3,official/VOLUME/DATA/CHAP15/138117T3.TXT,5532,the adjustments made for each species.  The final column repeats the delta 18O value for those
+SR.C15.TABLE3,official/VOLUME/DATA/CHAP15/138117T3.TXT,5533,samples that are used in the depth series in Table 5.                                
+SR.C15.TABLE5,official/VOLUME/DATA/CHAP15/138117T5.TXT,1,Table 5. Depth and age series used for time-series analysis.
+SR.C15.TABLE5,official/VOLUME/DATA/CHAP15/138117T5.TXT,2,Depth (mbsf)   Depth (rmcd)   Age (Ma)  delta 18O delta 13C
+SR.C15.TABLE5,official/VOLUME/DATA/CHAP15/138117T5.TXT,2070,Notes: For each sample in the sequence the adjusted delta 18O and delta 13C measurements are
+SR.C15.TABLE5,official/VOLUME/DATA/CHAP15/138117T5.TXT,2071,averaged.  Depth mbsf and rmcd are given with age derived using the age model of Table 6 (from
+SR.C15.TABLE5,official/VOLUME/DATA/CHAP15/138117T5.TXT,2072,"Shackleton et al., this volume)."
+SR.C15.TABLE6,official/VOLUME/DATA/CHAP15/138117T6.TXT,1,"Table 6. Age model for the Pliocene and topmost Miocene section of Site 846 (from Shackleton et al., this volume)."
+SR.C15.TABLE6,official/VOLUME/DATA/CHAP15/138117T6.TXT,2,Depth (rmcd)	Age (Ma)
+SR.C15.TABLE7,official/VOLUME/DATA/CHAP15/138117T7.TXT,1,Table 7.
+SR.C15.TABLE7,official/VOLUME/DATA/CHAP15/138117T7.TXT,2,Age (Ma)  delta 18 O     delta 13C 
+SR.C15.TABLE7,official/VOLUME/DATA/CHAP15/138117T7.TXT,1467,Note: For cross spectral analysis the phase between insolation and negative delta18O is calculated.
+SR.C15.TABLE9,official/VOLUME/DATA/CHAP15/138117T9.TXT,1,Table 9.  Data listing for Site 677 with proper ODP identifiers as spliced for time-series analysis
+SR.C15.TABLE9,official/VOLUME/DATA/CHAP15/138117T9.TXT,2,(Shackleton    Berger    and Peltier    1990). 
+SR.C15.TABLE9,official/VOLUME/DATA/CHAP15/138117T9.TXT,3,"Core, section   interval (cm) +    Percentage over  150m m  Depth (mbsf)   delta   (m)    "
+SR.C15.TABLE9,official/VOLUME/DATA/CHAP15/138117T9.TXT,4,Depth (mcd)    Benthic delta 18O   Benthic delta 13C   Planktonic delta 18O     Planktonic
+SR.C15.TABLE9,official/VOLUME/DATA/CHAP15/138117T9.TXT,5,delta 13C
+SR.C15.TABLE9,official/VOLUME/DATA/CHAP15/138117T9.TXT,6,111-677A- 
+SR.C15.TABLE9,official/VOLUME/DATA/CHAP15/138117T9.TXT,45,111-677B-
+SR.C15.TABLE9,official/VOLUME/DATA/CHAP15/138117T9.TXT,86,677A-     
+SR.C15.TABLE9,official/VOLUME/DATA/CHAP15/138117T9.TXT,270,"     677B-     ,    ,    ,    , "
+SR.C15.TABLE9,official/VOLUME/DATA/CHAP15/138117T9.TXT,289,"     677A-     ,    ,    ,    , "
+SR.C15.TABLE9,official/VOLUME/DATA/CHAP15/138117T9.TXT,372,"     677B-     ,    ,    ,    , "
+SR.C15.TABLE9,official/VOLUME/DATA/CHAP15/138117T9.TXT,385,"     677A-     ,    ,    ,    , "
+SR.C15.TABLE9,official/VOLUME/DATA/CHAP15/138117T9.TXT,459,"     677B-     ,    ,    ,    , "
+SR.C15.TABLE9,official/VOLUME/DATA/CHAP15/138117T9.TXT,495,"     677A-     ,    ,    ,    , "
+SR.C15.TABLE9,official/VOLUME/DATA/CHAP15/138117T9.TXT,560,"     677B-     ,    ,    ,    , "
+SR.C15.TABLE9,official/VOLUME/DATA/CHAP15/138117T9.TXT,663,"     677B-     ,    ,    ,    , "
+SR.C15.TABLE9,official/VOLUME/DATA/CHAP15/138117T9.TXT,682,"     677A-     ,    ,    ,    , "
+SR.C15.TABLE9,official/VOLUME/DATA/CHAP15/138117T9.TXT,774,"     677B-     ,    ,    ,    , "
+SR.C15.TABLE9,official/VOLUME/DATA/CHAP15/138117T9.TXT,781,"     677A-     ,    ,    ,    , "
+SR.C15.TABLE9,official/VOLUME/DATA/CHAP15/138117T9.TXT,872,"     ,    ,    ,    ,    "
+SR.C15.TABLE9,official/VOLUME/DATA/CHAP15/138117T9.TXT,883,"     677A-     ,    ,    ,    , "
+SR.C15.TABLE9,official/VOLUME/DATA/CHAP15/138117T9.TXT,983,"     677B-     ,    ,    ,    , "
+SR.C15.TABLE9,official/VOLUME/DATA/CHAP15/138117T9.TXT,998,"     677A-     ,    ,    ,    , "
+SR.C15.TABLE9,official/VOLUME/DATA/CHAP15/138117T9.TXT,1094,Note:  The figure delta (m) is added to the depth mbsf to generate a depth mcd (meters composite
+SR.C15.TABLE9,official/VOLUME/DATA/CHAP15/138117T9.TXT,1095,"depth) as was done for the Leg 138 data (Hagelberg et al., this volume). The benthic delta 18O and"
+SR.C15.TABLE9,official/VOLUME/DATA/CHAP15/138117T9.TXT,1096,"delta 13C data shown are averages of all analyses in the sample, adjusted for species-dependent"
+SR.C15.TABLE9,official/VOLUME/DATA/CHAP15/138117T9.TXT,1097,departures from isotopic equilibrium. Balance of table on CD-ROM.     
+SR.C23.TABLE3,official/VOLUME/DATA/CHAP23/38127T03.TXT,1,Table 3. Depths (mcd) of datums in Leg 138 sites (full generic names appear in Table 6).
+SR.C23.TABLE3,official/VOLUME/DATA/CHAP23/38127T03.TXT,3,	844 t	844 o	845 t	845 o	846 t	846 o	847 t	847 o	848 t	848 o
+SR.C23.TABLE3,official/VOLUME/DATA/CHAP23/38127T03.TXT,204,	849 t	849 o	850 t	850 o	851 t	851 o	852 t	852 o	853 t	853 o	854 t	854 o
+SR.C23.TABLE5,official/VOLUME/DATA/CHAP23/38127TO5.TXT,1,Table 5. Placement of biostratigraphic datums in ODP Leg 138 sites
+SR.C23.TABLE5,official/VOLUME/DATA/CHAP23/38127TO5.TXT,2,1 2	3	4	5	6
+SR.C23.TABLE5,official/VOLUME/DATA/CHAP23/38127TO5.TXT,1972,"In column 1, t indicates the top of the range, b the base. Column 2 identifies the biostratigraphic datum. In column 3 t indicates the upper limit of the placement of the datum and o, the older limit.  Column 4 gives the age of these limits. In column 5, D indicates a diatom datum (from Baldauf and Iwai, this volume); F indicates a foraminiferal datum (from Vincent and Toumarkine, this volume; the site chapters in Mayer, Pisias, Janecek et al., 1992 or from Shackleton, Hall and Pate, this volume); N indicates a nannofossil datum (Raffi and Flores, this volume) and R indicates a radiolarian datum (Moore, this volume).  Column 6 indicates the site in which the observation was made. "
+SR.C35.APPENDIXA,official/VOLUME/DATA/CHAP35/38143APA.TXT,1,APPENDIX A 
+SR.C35.APPENDIXA,official/VOLUME/DATA/CHAP35/38143APA.TXT,2,Leg 138 percentages of CaCO3 and associated data.
+SR.C35.APPENDIXA,official/VOLUME/DATA/CHAP35/38143APA.TXT,4,Hole	Depth (mcd)	Age (Ma)	LSR (cm/k.y.)	DBD (g/cm3)	CaCO3 (%)	CaCO3 MARa	Source
+SR.C35.APPENDIXA,official/VOLUME/DATA/CHAP35/38143APA.TXT,3636,"aMAR is the mass accumulation rate in g/cm2 k.y.  Notes:  Depth (mcd) is based on the shipboard meters composite depth scale. Age (Ma) is from Shackleton et al. (this volume). LSR is the instantaneous linear sedimentation rate. DBD is dry bulk density, estimated from %CaCO3 as per Table 3. Percent CaCO3 is the weight percent of the dry bulk sediment comprised of CaCO3.  Data sources are listed in Table 1."
+SR.C35.APPENDIXB,official/VOLUME/DATA/CHAP35/38143APB.TXT,1,APPENDIX B 
+SR.C35.APPENDIXB,official/VOLUME/DATA/CHAP35/38143APB.TXT,2,Leg 138 opal and associated data.
+SR.C35.APPENDIXB,official/VOLUME/DATA/CHAP35/38143APB.TXT,4,CaCO3     Opal  Terrig.  Opal
+SR.C35.APPENDIXB,official/VOLUME/DATA/CHAP35/38143APB.TXT,5,Hole Depth (mcd)    Age (Ma)  LSR (cm/k.y.)  DBD (g/cm3)    CaCO3 (%) Opal (%)  
+SR.C35.APPENDIXB,official/VOLUME/DATA/CHAP35/38143APB.TXT,6,Terrig. (%)    CaCO3 MAR Opal MAR  Terrig. MAR    Opal source
+SR.C35.APPENDIXB,official/VOLUME/DATA/CHAP35/38143APB.TXT,2501,sSuspect value.  Notes:  Depth (mcd) is based on the shipboard meters composite depth scale.  Age
+SR.C35.APPENDIXB,official/VOLUME/DATA/CHAP35/38143APB.TXT,2502,(Ma) is from Shackleton et al. (this volume).  LSR is the instantaneous linear sedimentation rate. 
+SR.C35.APPENDIXB,official/VOLUME/DATA/CHAP35/38143APB.TXT,2503,"DBD is dry bulk density, estimated from %CaCO3 as per Table 3.  CaCO3 and opal percentages are"
+SR.C35.APPENDIXB,official/VOLUME/DATA/CHAP35/38143APB.TXT,2504,weight percentages of the dry bulk sediment.  Terrigenous percentage is calculated as 100 - %CaCO3
+SR.C35.APPENDIXB,official/VOLUME/DATA/CHAP35/38143APB.TXT,2505,- %opal.  MAR is the mass accumulation rate in g/cm2 k.y.  Data sources are listed in Table 1.
+SR.C35.APPENDIXC,official/VOLUME/DATA/CHAP35/38143APC.TXT,1, APPENDIX C 
+SR.C35.APPENDIXC,official/VOLUME/DATA/CHAP35/38143APC.TXT,2,Leg 138 nannofossil assemblage characterization data.
+SR.C35.APPENDIXC,official/VOLUME/DATA/CHAP35/38143APC.TXT,4,Hole	Depth (mcd)	Age (Ma)	Abundance	 Preservation	Etching	 Overgrowth
+SR.C35.APPENDIXC,official/VOLUME/DATA/CHAP35/38143APC.TXT,1734,Notes:  Depth (mcd) is based on the shipboard  meters composite depth scale.  Age (Ma) is from Shackleton et al. (this volume).
+SR.C39.TABLE2.CD,official/VOLUME/DATA/CHAP39/138150T2.TXT,1,Table 2.
+SR.C39.TABLE2.CD,official/VOLUME/DATA/CHAP39/138150T2.TXT,2,Sample         Depth (mbsf)   Depth delta m  Depth (mcd)     Age (Ma) Laboratory
+SR.C39.TABLE2.CD,official/VOLUME/DATA/CHAP39/138150T2.TXT,3,code delta 18O  delta 13C
+SR.C39.TABLE2.CD,official/VOLUME/DATA/CHAP39/138150T2.TXT,4,138-844B-                                    
+SR.C03.APPENDIX1.846A,official/VOLUME/DATA/CHAP_3/846A.TXT,1,==== =======   ===  ===  ==   =====     ==== =======   ========  
+SR.C03.APPENDIX1.846A,official/VOLUME/DATA/CHAP_3/846A.TXT,2,========  ========
+SR.C03.APPENDIX1.846A,official/VOLUME/DATA/CHAP_3/846A.TXT,3,LEG  SITE HOLE CORE SEC  TOP  BOT  MBSF MCD  RMCD
+SR.C03.APPENDIX1.846A,official/VOLUME/DATA/CHAP_3/846A.TXT,4,==== =======   ===  ===  ==   =====     ==== =======   ========  
+SR.C03.APPENDIX1.846A,official/VOLUME/DATA/CHAP_3/846A.TXT,5,========  ========
+SR.C03.APPENDIX1.846B,official/VOLUME/DATA/CHAP_3/846B.TXT,1,==== =======   ===  ===  ==   =====     ==== =======   ========  
+SR.C03.APPENDIX1.846B,official/VOLUME/DATA/CHAP_3/846B.TXT,2,========  ========
+SR.C03.APPENDIX1.846B,official/VOLUME/DATA/CHAP_3/846B.TXT,3,LEG  SITE      HOLE CORE SEC  TOP  BOT  MBSF MCD  RMCD
+SR.C03.APPENDIX1.846B,official/VOLUME/DATA/CHAP_3/846B.TXT,4,==== =======   ===  ===  ==   =====     ==== =======   ========  
+SR.C03.APPENDIX1.846B,official/VOLUME/DATA/CHAP_3/846B.TXT,5,========  ========
+SR.C03.APPENDIX1.846C,official/VOLUME/DATA/CHAP_3/846C.TXT,1,==== =======   ===  ===  ==   =====     ==== =======   ========  
+SR.C03.APPENDIX1.846C,official/VOLUME/DATA/CHAP_3/846C.TXT,2,========  ========
+SR.C03.APPENDIX1.846C,official/VOLUME/DATA/CHAP_3/846C.TXT,3,LEG  SITE      HOLE CORE SEC  TOP  BOT  MBSF MCD  RMCD
+SR.C03.APPENDIX1.846C,official/VOLUME/DATA/CHAP_3/846C.TXT,4,==== =======   ===  ===  ==   =====     ==== =======   ========  
+SR.C03.APPENDIX1.846C,official/VOLUME/DATA/CHAP_3/846C.TXT,5,========  ========
+SR.C03.APPENDIX1.846D,official/VOLUME/DATA/CHAP_3/846D.TXT,1,==== =======   ===  ===  ==   ===  ======    =======   ========  
+SR.C03.APPENDIX1.846D,official/VOLUME/DATA/CHAP_3/846D.TXT,2,========  ========
+SR.C03.APPENDIX1.846D,official/VOLUME/DATA/CHAP_3/846D.TXT,3,LEG  SITE      HOLE CORE SEC  TOP  BOT  MBSF MCD  RMCD
+SR.C03.APPENDIX1.846D,official/VOLUME/DATA/CHAP_3/846D.TXT,4,==== =======   ===  ===  ==   ===  ======    =======   ========  
+SR.C03.APPENDIX1.846D,official/VOLUME/DATA/CHAP_3/846D.TXT,5,========  ========
+SR.C03.APPENDIX1.847A,official/VOLUME/DATA/CHAP_3/847A.TXT,1,==== =======   ===  ===  ==   =====     ==== =======   ========  
+SR.C03.APPENDIX1.847A,official/VOLUME/DATA/CHAP_3/847A.TXT,2,========  ========
+SR.C03.APPENDIX1.847A,official/VOLUME/DATA/CHAP_3/847A.TXT,3,LEG  SITE      HOLE CORE SEC  TOP  BOT  MBSF MCD  RMCD
+SR.C03.APPENDIX1.847A,official/VOLUME/DATA/CHAP_3/847A.TXT,4,==== =======   ===  ===  ==   =====     ==== =======   ========  
+SR.C03.APPENDIX1.847A,official/VOLUME/DATA/CHAP_3/847A.TXT,5,========  ========
+SR.C03.APPENDIX1.847B,official/VOLUME/DATA/CHAP_3/847B.TXT,1,==== =======   ===  ===  ==   =====     ==== =======   ========  
+SR.C03.APPENDIX1.847B,official/VOLUME/DATA/CHAP_3/847B.TXT,2,========  ========
+SR.C03.APPENDIX1.847B,official/VOLUME/DATA/CHAP_3/847B.TXT,3,LEG  SITE HOLE CORE SEC  TOP  BOT  MBSF MCD  RMCD
+SR.C03.APPENDIX1.847B,official/VOLUME/DATA/CHAP_3/847B.TXT,4,==== =======   ===  ===  ==   =====     ==== =======   ========  
+SR.C03.APPENDIX1.847B,official/VOLUME/DATA/CHAP_3/847B.TXT,5,========  ========
+SR.C03.APPENDIX1.847C,official/VOLUME/DATA/CHAP_3/847C.TXT,1,==== =======   ===  ===  ==   =====     ==== =======   ========  
+SR.C03.APPENDIX1.847C,official/VOLUME/DATA/CHAP_3/847C.TXT,2,========  ========
+SR.C03.APPENDIX1.847C,official/VOLUME/DATA/CHAP_3/847C.TXT,3,LEG  SITE HOLE CORE SEC  TOP  BOT  MBSF MCD  RMCD
+SR.C03.APPENDIX1.847C,official/VOLUME/DATA/CHAP_3/847C.TXT,4,==== =======   ===  ===  ==   =====     ==== =======   ========  
+SR.C03.APPENDIX1.847C,official/VOLUME/DATA/CHAP_3/847C.TXT,5,========  ========
+SR.C03.APPENDIX1.847D,official/VOLUME/DATA/CHAP_3/847D.TXT,1,==== =======   ===  ===  ==   ===  ======    =======   ========  
+SR.C03.APPENDIX1.847D,official/VOLUME/DATA/CHAP_3/847D.TXT,2,========  ========
+SR.C03.APPENDIX1.847D,official/VOLUME/DATA/CHAP_3/847D.TXT,3,LEG  SITE HOLE CORE SEC  TOP  BOT  MBSF MCD  RMCD
+SR.C03.APPENDIX1.847D,official/VOLUME/DATA/CHAP_3/847D.TXT,4,==== =======   ===  ===  ==   ===  ======    =======   ========  
+SR.C03.APPENDIX1.847D,official/VOLUME/DATA/CHAP_3/847D.TXT,5,========  ========
+SR.C03.APPENDIX1.848A,official/VOLUME/DATA/CHAP_3/848A.TXT,1,==== =======   ===  ===  ==   =====     ==== =======   ========  
+SR.C03.APPENDIX1.848A,official/VOLUME/DATA/CHAP_3/848A.TXT,2,========  ========
+SR.C03.APPENDIX1.848A,official/VOLUME/DATA/CHAP_3/848A.TXT,3,LEG  SITE HOLE CORE SEC  TOP  BOT  MBSF MCD  RMCD
+SR.C03.APPENDIX1.848A,official/VOLUME/DATA/CHAP_3/848A.TXT,4,==== =======   ===  ===  ==   =====     ==== =======   ========  
+SR.C03.APPENDIX1.848A,official/VOLUME/DATA/CHAP_3/848A.TXT,5,========  ========
+SR.C03.APPENDIX1.848B,official/VOLUME/DATA/CHAP_3/848B.TXT,1,==== =======   ===  ===  ==   =====     ==== =======   ========  
+SR.C03.APPENDIX1.848B,official/VOLUME/DATA/CHAP_3/848B.TXT,2,========  ========
+SR.C03.APPENDIX1.848B,official/VOLUME/DATA/CHAP_3/848B.TXT,3,LEG  SITE HOLE CORE SEC  TOP  BOT  MBSF MCD  RMCD
+SR.C03.APPENDIX1.848B,official/VOLUME/DATA/CHAP_3/848B.TXT,4,==== =======   ===  ===  ==   =====     ==== =======   ========  
+SR.C03.APPENDIX1.848B,official/VOLUME/DATA/CHAP_3/848B.TXT,5,========  ========
+SR.C03.APPENDIX1.848C,official/VOLUME/DATA/CHAP_3/848C.TXT,1,==== =======   ===  ===  ==   =====     ==== =======   ========  
+SR.C03.APPENDIX1.848C,official/VOLUME/DATA/CHAP_3/848C.TXT,2,========  ========
+SR.C03.APPENDIX1.848C,official/VOLUME/DATA/CHAP_3/848C.TXT,3,LEG  SITE HOLE CORE SEC  TOP  BOT  MBSF MCD  RMCD
+SR.C03.APPENDIX1.848C,official/VOLUME/DATA/CHAP_3/848C.TXT,4,==== =======   ===  ===  ==   =====     ==== =======   ========  
+SR.C03.APPENDIX1.848C,official/VOLUME/DATA/CHAP_3/848C.TXT,5,========  ========
+SR.C03.APPENDIX1.848D,official/VOLUME/DATA/CHAP_3/848D.TXT,1,==== =======   ===  ===  ==   =====     ==== =======   ========  
+SR.C03.APPENDIX1.848D,official/VOLUME/DATA/CHAP_3/848D.TXT,2,========  ========
+SR.C03.APPENDIX1.848D,official/VOLUME/DATA/CHAP_3/848D.TXT,3,LEG  SITE HOLE CORE SEC  TOP  BOT  MBSF MCD  RMCD
+SR.C03.APPENDIX1.848D,official/VOLUME/DATA/CHAP_3/848D.TXT,4,==== =======   ===  ===  ==   =====     ==== =======   ========  
+SR.C03.APPENDIX1.848D,official/VOLUME/DATA/CHAP_3/848D.TXT,5,========  ========
+SR.C03.APPENDIX1.849B,official/VOLUME/DATA/CHAP_3/849B.TXT,1,==== =======   ===  ===  ==   =====     ==== =======   ========  
+SR.C03.APPENDIX1.849B,official/VOLUME/DATA/CHAP_3/849B.TXT,2,========  ========
+SR.C03.APPENDIX1.849B,official/VOLUME/DATA/CHAP_3/849B.TXT,3,LEG  SITE HOLE CORE SEC  TOP  BOT  MBSF MCD  RMCD
+SR.C03.APPENDIX1.849B,official/VOLUME/DATA/CHAP_3/849B.TXT,4,==== =======   ===  ===  ==   =====     ==== =======   ========  
+SR.C03.APPENDIX1.849B,official/VOLUME/DATA/CHAP_3/849B.TXT,5,========  ========
+SR.C03.APPENDIX1.849C,official/VOLUME/DATA/CHAP_3/849C.TXT,1,==== =======   ===  ===  ==   ===  ======    =======   ========  
+SR.C03.APPENDIX1.849C,official/VOLUME/DATA/CHAP_3/849C.TXT,2,========  ========
+SR.C03.APPENDIX1.849C,official/VOLUME/DATA/CHAP_3/849C.TXT,3,LEG  SITE HOLE CORE SEC  TOP  BOT  MBSF MCD  RMCD
+SR.C03.APPENDIX1.849C,official/VOLUME/DATA/CHAP_3/849C.TXT,4,==== =======   ===  ===  ==   ===  ======    =======   ========  
+SR.C03.APPENDIX1.849C,official/VOLUME/DATA/CHAP_3/849C.TXT,5,========  ========
+SR.C03.APPENDIX1.849D,official/VOLUME/DATA/CHAP_3/849D.TXT,1,==== =======   ===  ===  ==   =====     ==== =======   ========  
+SR.C03.APPENDIX1.849D,official/VOLUME/DATA/CHAP_3/849D.TXT,2,========  ========
+SR.C03.APPENDIX1.849D,official/VOLUME/DATA/CHAP_3/849D.TXT,3,LEG  SITE HOLE CORE SEC  TOP  BOT  MBSF MCD  RMCD
+SR.C03.APPENDIX1.849D,official/VOLUME/DATA/CHAP_3/849D.TXT,4,==== =======   ===  ===  ==   =====     ==== =======   ========  
+SR.C03.APPENDIX1.849D,official/VOLUME/DATA/CHAP_3/849D.TXT,5,========  ========
+SR.C03.APPENDIX1.850A,official/VOLUME/DATA/CHAP_3/850A.TXT,1,==== =======   ===  ===  ==   =====     ==== =======   ========  
+SR.C03.APPENDIX1.850A,official/VOLUME/DATA/CHAP_3/850A.TXT,2,========  ========
+SR.C03.APPENDIX1.850A,official/VOLUME/DATA/CHAP_3/850A.TXT,3,LEG  SITE HOLE CORE SEC  TOP  BOT  MBSF MCD  RMCD
+SR.C03.APPENDIX1.850A,official/VOLUME/DATA/CHAP_3/850A.TXT,4,==== =======   ===  ===  ==   =====     ==== =======   ========  
+SR.C03.APPENDIX1.850A,official/VOLUME/DATA/CHAP_3/850A.TXT,5,========  ========
+SR.C03.APPENDIX1.850B,official/VOLUME/DATA/CHAP_3/850B.TXT,1,==== =======   ===  ===  ==   =====     ==== =======   ========  
+SR.C03.APPENDIX1.850B,official/VOLUME/DATA/CHAP_3/850B.TXT,2,========  ========
+SR.C03.APPENDIX1.850B,official/VOLUME/DATA/CHAP_3/850B.TXT,3,LEG  SITE HOLE CORE SEC  TOP  BOT  MBSF MCD  RMCD
+SR.C03.APPENDIX1.850B,official/VOLUME/DATA/CHAP_3/850B.TXT,4,==== =======   ===  ===  ==   =====     ==== =======   ========  
+SR.C03.APPENDIX1.850B,official/VOLUME/DATA/CHAP_3/850B.TXT,5,========  ========
+SR.C03.APPENDIX1.851A,official/VOLUME/DATA/CHAP_3/851A.TXT,1,==== =======   ===  ===  ==   =====     ==== =======   ========  
+SR.C03.APPENDIX1.851A,official/VOLUME/DATA/CHAP_3/851A.TXT,2,========  ========
+SR.C03.APPENDIX1.851A,official/VOLUME/DATA/CHAP_3/851A.TXT,3,LEG  SITE HOLE CORE SEC  TOP  BOT  MBSF MCD  RMCD
+SR.C03.APPENDIX1.851A,official/VOLUME/DATA/CHAP_3/851A.TXT,4,==== =======   ===  ===  ==   =====     ==== =======   ========  
+SR.C03.APPENDIX1.851A,official/VOLUME/DATA/CHAP_3/851A.TXT,5,========  ========
+SR.C03.APPENDIX1.851B,official/VOLUME/DATA/CHAP_3/851B.TXT,1,==== =======   ===  ===  ==   =====     ==== =======   ========  
+SR.C03.APPENDIX1.851B,official/VOLUME/DATA/CHAP_3/851B.TXT,2,========  ========
+SR.C03.APPENDIX1.851B,official/VOLUME/DATA/CHAP_3/851B.TXT,3,LEG  SITE HOLE CORE SEC  TOP  BOT  MBSF MCD  RMCD
+SR.C03.APPENDIX1.851B,official/VOLUME/DATA/CHAP_3/851B.TXT,4,==== =======   ===  ===  ==   =====     ==== =======   ========  
+SR.C03.APPENDIX1.851B,official/VOLUME/DATA/CHAP_3/851B.TXT,5,========  ========
+SR.C03.APPENDIX1.851C,official/VOLUME/DATA/CHAP_3/851C.TXT,1,==== =======   ===  ===  ==   =====     ==== =======   ========  
+SR.C03.APPENDIX1.851C,official/VOLUME/DATA/CHAP_3/851C.TXT,2,========  ========
+SR.C03.APPENDIX1.851C,official/VOLUME/DATA/CHAP_3/851C.TXT,3,LEG  SITE HOLE CORE SEC  TOP  BOT  MBSF MCD  RMCD
+SR.C03.APPENDIX1.851C,official/VOLUME/DATA/CHAP_3/851C.TXT,4,==== =======   ===  ===  ==   =====     ==== =======   ========  
+SR.C03.APPENDIX1.851C,official/VOLUME/DATA/CHAP_3/851C.TXT,5,========  ========
+SR.C03.APPENDIX1.851D,official/VOLUME/DATA/CHAP_3/851D.TXT,1,==== =======   ===  ===  ==   ===  ======    =======   ========  
+SR.C03.APPENDIX1.851D,official/VOLUME/DATA/CHAP_3/851D.TXT,2,========  ========
+SR.C03.APPENDIX1.851D,official/VOLUME/DATA/CHAP_3/851D.TXT,3,LEG  SITE HOLE      CORE SEC  TOP  BOT  MBSF MCD  RMCD
+SR.C03.APPENDIX1.851D,official/VOLUME/DATA/CHAP_3/851D.TXT,4,==== =======   ===  ===  ==   ===  ======    =======   ========  
+SR.C03.APPENDIX1.851D,official/VOLUME/DATA/CHAP_3/851D.TXT,5,========  ========
+SR.C03.APPENDIX1.851E,official/VOLUME/DATA/CHAP_3/851E.TXT,1,==== =======   ===  ===  ==   =====     ==== =======   ========  
+SR.C03.APPENDIX1.851E,official/VOLUME/DATA/CHAP_3/851E.TXT,2,========  ========
+SR.C03.APPENDIX1.851E,official/VOLUME/DATA/CHAP_3/851E.TXT,3,LEG  SITE HOLE CORE SEC  TOP  BOT  MBSF MCD  RMCD
+SR.C03.APPENDIX1.851E,official/VOLUME/DATA/CHAP_3/851E.TXT,4,==== =======   ===  ===  ==   =====     ==== =======   ========  
+SR.C03.APPENDIX1.851E,official/VOLUME/DATA/CHAP_3/851E.TXT,5,========  ========
+SR.C03.APPENDIX1.852A,official/VOLUME/DATA/CHAP_3/852A.TXT,1,==== =======   ===  ===  ==   =====     ==== =======   ========  
+SR.C03.APPENDIX1.852A,official/VOLUME/DATA/CHAP_3/852A.TXT,2,========  ========
+SR.C03.APPENDIX1.852A,official/VOLUME/DATA/CHAP_3/852A.TXT,3,LEG  SITE HOLE CORE SEC  TOP  BOT  MBSF MCD  RMCD
+SR.C03.APPENDIX1.852A,official/VOLUME/DATA/CHAP_3/852A.TXT,4,==== =======   ===  ===  ==   =====     ==== =======   ========  
+SR.C03.APPENDIX1.852A,official/VOLUME/DATA/CHAP_3/852A.TXT,5,========  ========
+SR.C03.APPENDIX1.852B,official/VOLUME/DATA/CHAP_3/852B.TXT,1,==== =======   ===  ===  ==   =====     ==== =======   ========  
+SR.C03.APPENDIX1.852B,official/VOLUME/DATA/CHAP_3/852B.TXT,2,========  ========
+SR.C03.APPENDIX1.852B,official/VOLUME/DATA/CHAP_3/852B.TXT,3,LEG  SITE HOLE CORE SEC  TOP  BOT  MBSF MCD  RMCD
+SR.C03.APPENDIX1.852B,official/VOLUME/DATA/CHAP_3/852B.TXT,4,==== =======   ===  ===  ==   =====     ==== =======   ========  
+SR.C03.APPENDIX1.852B,official/VOLUME/DATA/CHAP_3/852B.TXT,5,========  ========
+SR.C03.APPENDIX1.852C,official/VOLUME/DATA/CHAP_3/852C.TXT,1,==== =======   ===  ===  ==   =====     ==== =======   ========  
+SR.C03.APPENDIX1.852C,official/VOLUME/DATA/CHAP_3/852C.TXT,2,========  ========
+SR.C03.APPENDIX1.852C,official/VOLUME/DATA/CHAP_3/852C.TXT,3,LEG  SITE HOLE CORE SEC  TOP  BOT  MBSF MCD  RMCD
+SR.C03.APPENDIX1.852C,official/VOLUME/DATA/CHAP_3/852C.TXT,4,==== =======   ===  ===  ==   =====     ==== =======   ========  
+SR.C03.APPENDIX1.852C,official/VOLUME/DATA/CHAP_3/852C.TXT,5,========  ========
+SR.C03.APPENDIX1.852D,official/VOLUME/DATA/CHAP_3/852D.TXT,1,==== =======   ===  ===  ==   =====     ==== =======   ========  
+SR.C03.APPENDIX1.852D,official/VOLUME/DATA/CHAP_3/852D.TXT,2,========  ========
+SR.C03.APPENDIX1.852D,official/VOLUME/DATA/CHAP_3/852D.TXT,3,LEG  SITE HOLE CORE SEC  TOP  BOT  MBSF MCD  RMCD
+SR.C03.APPENDIX1.852D,official/VOLUME/DATA/CHAP_3/852D.TXT,4,==== =======   ===  ===  ==   =====     ==== =======   ========  
+SR.C03.APPENDIX1.852D,official/VOLUME/DATA/CHAP_3/852D.TXT,5,========  ========
+SR.C06.TABLE1,official/VOLUME/DATA/CHAP_6/38106T01.TXT,1,Table 1.
+SR.C06.TABLE1,official/VOLUME/DATA/CHAP_6/38106T01.TXT,2,Age (Ma)	Depth (mcd)
+SR.C06.TABLE2,official/VOLUME/DATA/CHAP_6/38106T02.TXT,1,Table 2.
+SR.C06.TABLE2,official/VOLUME/DATA/CHAP_6/38106T02.TXT,2,Age (Ma)	Depth (mcd)
+SR.C06.TABLE3,official/VOLUME/DATA/CHAP_6/38106T03.TXT,1,Table 3.
+SR.C06.TABLE3,official/VOLUME/DATA/CHAP_6/38106T03.TXT,2,Age (Ma)	Depth (mcd)
+SR.C06.TABLE4,official/VOLUME/DATA/CHAP_6/38106T04.TXT,1,Table 4.
+SR.C06.TABLE4,official/VOLUME/DATA/CHAP_6/38106T04.TXT,2,Age (Ma)	Depth (mcd)
+SR.C06.TABLE5,official/VOLUME/DATA/CHAP_6/38106T05.TXT,1,Table 5.
+SR.C06.TABLE5,official/VOLUME/DATA/CHAP_6/38106T05.TXT,2,Age (Ma)	Depth (mcd)
+SR.C06.TABLE6,official/VOLUME/DATA/CHAP_6/38106T06.TXT,1,Table 6.
+SR.C06.TABLE6,official/VOLUME/DATA/CHAP_6/38106T06.TXT,2,Age (Ma)	Depth (mcd)
+SR.C06.TABLE7,official/VOLUME/DATA/CHAP_6/38106T07.TXT,1,Table 7.
+SR.C06.TABLE7,official/VOLUME/DATA/CHAP_6/38106T07.TXT,2,Age (Ma)	Depth (mcd)
+SR.C06.TABLE8,official/VOLUME/DATA/CHAP_6/38106T08.TXT,1,TABLE 8. 
+SR.C06.TABLE8,official/VOLUME/DATA/CHAP_6/38106T08.TXT,2,Age (Ma)  Depth (mcd)
+SR.C06.TABLE9,official/VOLUME/DATA/CHAP_6/38106T09.TXT,1,TABLE 9.
+SR.C06.TABLE9,official/VOLUME/DATA/CHAP_6/38106T09.TXT,2,Age (Ma)  Depth (mcd)
+SR.C06.TABLE10,official/VOLUME/DATA/CHAP_6/38106T10.TXT,1,Table 10.
+SR.C06.TABLE10,official/VOLUME/DATA/CHAP_6/38106T10.TXT,2,Age (Ma)	Depth (mcd)
+SR.C06.TABLE11,official/VOLUME/DATA/CHAP_6/38106T11.TXT,1,Table 11.
+SR.C06.TABLE11,official/VOLUME/DATA/CHAP_6/38106T11.TXT,2,Age (Ma)	Depth (mcd)
+SR.C06.TABLE12,official/VOLUME/DATA/CHAP_6/38106T12.TXT,1,Table 12.
+SR.C06.TABLE12,official/VOLUME/DATA/CHAP_6/38106T12.TXT,2,Age (Ma)	Depth (mcd)
+SR.C06.TABLE12,official/VOLUME/DATA/CHAP_6/38106T12.TXT,3,Site 844	
+SR.C06.TABLE12,official/VOLUME/DATA/CHAP_6/38106T12.TXT,9,Site 845	
+SR.C06.TABLE12,official/VOLUME/DATA/CHAP_6/38106T12.TXT,13,Site 846	
+SR.C06.TABLE12,official/VOLUME/DATA/CHAP_6/38106T12.TXT,49,Site 847	
+SR.C06.TABLE12,official/VOLUME/DATA/CHAP_6/38106T12.TXT,78,Site 848	
+SR.C06.TABLE12,official/VOLUME/DATA/CHAP_6/38106T12.TXT,107,Site 849	
+SR.C06.TABLE12,official/VOLUME/DATA/CHAP_6/38106T12.TXT,144,Site 850	
+SR.C06.TABLE12,official/VOLUME/DATA/CHAP_6/38106T12.TXT,181,Site 851	
+SR.C06.TABLE12,official/VOLUME/DATA/CHAP_6/38106T12.TXT,217,Site 852	
+SR.C06.TABLE12,official/VOLUME/DATA/CHAP_6/38106T12.TXT,239,Site 853	
+SR.C06.TABLE12,official/VOLUME/DATA/CHAP_6/38106T12.TXT,244,Site 854	
+SR.C06.TABLE13,official/VOLUME/DATA/CHAP_6/38106T13.TXT,1,Table 13.
+SR.C06.TABLE13,official/VOLUME/DATA/CHAP_6/38106T13.TXT,2,Interval (Ma)  COH 41 k.y.    COH 23 k.y.    COH 19 k.y.
+SR.C06.TABLE13,official/VOLUME/DATA/CHAP_6/38106T13.TXT,11,"a 18O-based time scale from Tables 6, 7, and 8."
+SR.C06.TABLE13,official/VOLUME/DATA/CHAP_6/38106T13.TXT,12,b GRAPE-based time scale from Table 12.
+SR.C06.TABLE14,official/VOLUME/DATA/CHAP_6/38106T14.TXT,1,"Table 14. Ages for reversals in the mid-Pliocene, estimated for Sites 850 and 851. "
+SR.C06.TABLE14,official/VOLUME/DATA/CHAP_6/38106T14.TXT,2,Event	 Hole 850A	 Hole 850B	 Hole 851B	 Hole 851C	 Hole 851E	 Mean	 Event
+SR.C06.TABLE14,official/VOLUME/DATA/CHAP_6/38106T14.TXT,10,"a At C2n.2r(t),  the GRAPE density signal is much clearer at Hole 851E than at the other holes,  so that we have taken the estimate for that hole, rather than the mean. (t) = termination and (o) =  onset. ** See Table 15."
+SR.C06.TABLE15,official/VOLUME/DATA/CHAP_6/38106T15.TXT,1,"Table 15.  Ages for reversals in the Gilbert, estimated for Site 852."
+SR.C06.TABLE15,official/VOLUME/DATA/CHAP_6/38106T15.TXT,2,"Event, Hole 852B, Hole 852C, Hole 852D, Mean, Event"
+SR.C06.TABLE15,official/VOLUME/DATA/CHAP_6/38106T15.TXT,14,"a at C3n.1n(o) and (t), the mean is based on Sites 851 and 852. (t) = termination and (o) = onset."
+SR.C06.TABLE16,official/VOLUME/DATA/CHAP_6/38106T16.TXT,1,"Table 16. Ages of the magnetic reversals of the past 6 m.y., according to SBP90, H91, CK92, and this study. "
+SR.C06.TABLE16,official/VOLUME/DATA/CHAP_6/38106T16.TXT,2,Event	 SBP90	 H91	 CK92	 This study	 Event	 
+SR.C06.TABLE16,official/VOLUME/DATA/CHAP_6/38106T16.TXT,25,a These values are regarded as tentative; we recommend using the figures in Table 17 until a more secure calibration is obtained for events in the late Miocene. (t) = termination; (o) = onset.
+SR.C06.TABLE17,official/VOLUME/DATA/CHAP_6/38106T17.TXT,1,Table 17.
+SR.C06.TABLE17,official/VOLUME/DATA/CHAP_6/38106T17.TXT,2,Anomaly study	Berggren et al. (1985)	CK92	This study
+SR.C06.TABLE17,official/VOLUME/DATA/CHAP_6/38106T17.TXT,46,Note: N.D. = not determined.
+SR.C06.TABLE18,official/VOLUME/DATA/CHAP_6/38106T18.TXT,1,Table 18.
+SR.C06.TABLE18,official/VOLUME/DATA/CHAP_6/38106T18.TXT,2,Age (Ma)	 Depth (mcd)	Rate (m/m.y.)
+SR.C06.TABLE19,official/VOLUME/DATA/CHAP_6/38106T19.TXT,1,Table 19.
+SR.C06.TABLE19,official/VOLUME/DATA/CHAP_6/38106T19.TXT,2,"Age Ma, Depth (mcd), Rate m/m.y."
+SR.C06.TABLE20,official/VOLUME/DATA/CHAP_6/38106T20.TXT,1,Table 20.
+SR.C06.TABLE20,official/VOLUME/DATA/CHAP_6/38106T20.TXT,2,"Age (Ma), Depth (mcd), Rate (m/m.y.)"
+SR.C06.TABLE21,official/VOLUME/DATA/CHAP_6/38106T21.TXT,1,Table 21.
+SR.C06.TABLE21,official/VOLUME/DATA/CHAP_6/38106T21.TXT,2,Age (Ma)  Depth (mcd)    Rate (m/m.y.)
+SR.C06.TABLE22,official/VOLUME/DATA/CHAP_6/38106T22.TXT,1,Table 22.
+SR.C06.TABLE22,official/VOLUME/DATA/CHAP_6/38106T22.TXT,2,"Age Ma, Depth (mcd)	 Rate m/m.y."
+SR.C06.TABLE23,official/VOLUME/DATA/CHAP_6/38106T23.TXT,1,Table 23.
+SR.C06.TABLE23,official/VOLUME/DATA/CHAP_6/38106T23.TXT,2,"Age (Ma), Depth (mcd), Rate (m/m.y.)"
+SR.C06.TABLE24,official/VOLUME/DATA/CHAP_6/38106T24.TXT,1,Table 24.
+SR.C06.TABLE24,official/VOLUME/DATA/CHAP_6/38106T24.TXT,2,Age (Ma)	Depth (mcd)	Rate (m/m.y.)
+SR.C06.TABLE25,official/VOLUME/DATA/CHAP_6/38106T25.TXT,1,Table 25.
+SR.C06.TABLE25,official/VOLUME/DATA/CHAP_6/38106T25.TXT,2,Age (Ma)	Depth (mcd)	Rate (m/m.y.)
+SR.C06.TABLE26,official/VOLUME/DATA/CHAP_6/38106T26.TXT,1,Table 26.
+SR.C06.TABLE26,official/VOLUME/DATA/CHAP_6/38106T26.TXT,2,Age (Ma)	Depth (mcd)	Rate (m/m.y.)
+SR.C06.TABLE27,official/VOLUME/DATA/CHAP_6/38106T27.TXT,1,Table 27.
+SR.C06.TABLE27,official/VOLUME/DATA/CHAP_6/38106T27.TXT,2,"Age (Ma), Depth (mcd), Rate (m/m.y.)"
+SR.C06.TABLE28,official/VOLUME/DATA/CHAP_6/38106T28.TXT,1,Table 28.
+SR.C06.TABLE28,official/VOLUME/DATA/CHAP_6/38106T28.TXT,2,"Age (Ma), Depth (mcd), Rate (m/m.y.)"

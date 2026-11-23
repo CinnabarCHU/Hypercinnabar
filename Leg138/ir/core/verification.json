@@ -1,0 +1,35 @@
+{
+  "sources": 229,
+  "sources_bytes": 149584854,
+  "chapter_pdfs": 20,
+  "chapter_pdf_pages": 791,
+  "figures": 652,
+  "tables": 259,
+  "online_disc_tables": 179,
+  "listed_disc_tables": 183,
+  "recovered_print_tables_with_absent_disc_file": [
+    "IR06.T01",
+    "IR06.T03",
+    "IR06.T04",
+    "IR12.T06"
+  ],
+  "native_lines_exactly_reassembled": 17835,
+  "table_numbers_with_named_data_in_this_module": 104,
+  "other_numbered_tables_without_named_fields_here": 155,
+  "coring_by_row_kind": {
+    "core": 599,
+    "hole_total": 42
+  },
+  "carbon_sample_rows": 2296,
+  "carbon_rows_with_reported_corg": 666,
+  "physical_named_rows": {
+    "index_properties": 4334,
+    "compressional_velocity": 3352,
+    "vane_shear_strength": 1585,
+    "thermal_conductivity": 861
+  },
+  "carbonate_repeat_sample_rows": 318,
+  "carbonate_individual_published_runs": 645,
+  "carbonate_repeat_table_mean_rows": 11,
+  "named_core_depth_interval_rows": 597
+}

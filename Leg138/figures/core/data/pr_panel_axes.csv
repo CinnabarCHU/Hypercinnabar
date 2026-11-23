@@ -1,0 +1,55 @@
+site,pr_figure,pr_pdf_page,pr_print_page,quantity,left_pt,right_pt,top_pt,bottom_pt,x_min_Ma,x_max_Ma,y_min,y_max,unit,interval_layer
+844,5,36,37,bulk_mar,115.5,278.5,136.0,299.5,0,18,0,4,g/(cm2 kyr),interval_candidate
+844,5,36,37,organic_carbon_mar,331.5,494.0,136.5,300.0,0,18,0,10,mg/(cm2 kyr),interval_candidate
+844,5,36,37,sedimentation_rate,115.5,278.0,337.0,499.25,0,18,0,40,m/Myr,rate_height_tested
+844,5,36,37,noncarbonate_mar,331.0,493.75,337.0,501.25,0,18,0,4,g/(cm2 kyr),interval_candidate
+844,5,36,37,carbonate_mar,332.5,495.0,535.25,699.25,0,18,0,4,g/(cm2 kyr),interval_candidate
+845,8,40,41,bulk_mar,131.25,294.25,131.25,295.75,0,18,0,4,g/(cm2 kyr),interval_candidate
+845,8,40,41,organic_carbon_mar,347.0,509.75,131.25,295.75,0,18,0,20,mg/(cm2 kyr),interval_candidate
+845,8,40,41,sedimentation_rate,131.0,293.0,334.25,497.5,0,18,0,80,m/Myr,rate_height_tested
+845,8,40,41,noncarbonate_mar,347.0,509.75,332.75,497.0,0,18,0,4,g/(cm2 kyr),interval_candidate
+845,8,40,41,carbonate_mar,347.5,509.75,534.5,698.25,0,18,0,4,g/(cm2 kyr),interval_candidate
+846,11,45,47,bulk_mar,132.0,294.75,137.0,300.0,0,18,0,5,g/(cm2 kyr),interval_candidate
+846,11,45,47,organic_carbon_mar,348.0,510.75,136.75,300.25,0,18,0,40,mg/(cm2 kyr),interval_candidate
+846,11,45,47,sedimentation_rate,129.25,291.75,333.75,495.25,0,18,0,80,m/Myr,rate_height_tested
+846,11,45,47,noncarbonate_mar,348.0,510.5,332.5,496.5,0,18,0,5,g/(cm2 kyr),interval_candidate
+846,11,45,47,carbonate_mar,349.5,512.0,527.75,692.5,0,18,0,5,g/(cm2 kyr),interval_candidate
+847,14,49,51,bulk_mar,147.0,310.25,129.0,292.25,0,7,0,6,g/(cm2 kyr),interval_candidate
+847,14,49,51,organic_carbon_mar,363.0,525.75,128.5,292.25,0,7,0,20,mg/(cm2 kyr),individual_series_only
+847,14,49,51,sedimentation_rate,147.0,308.75,329.75,494.0,0,7,0,90,m/Myr,rate_height_tested
+847,14,49,51,noncarbonate_mar,363.0,525.75,329.25,493.75,0,7,0,6,g/(cm2 kyr),interval_candidate
+847,14,49,51,carbonate_mar,365.0,527.25,529.75,694.0,0,7,0,6,g/(cm2 kyr),interval_candidate
+848,18,53,55,bulk_mar,137.0,300.0,147.0,310.75,0,12,0,1.5,g/(cm2 kyr),interval_candidate
+848,18,53,55,organic_carbon_mar,353.0,515.75,147.0,310.5,0,12,0,1.5,mg/(cm2 kyr),interval_candidate
+848,18,53,55,sedimentation_rate,135.0,300.0,348.25,512.0,0,12,0,25,m/Myr,rate_height_tested
+848,18,53,55,noncarbonate_mar,353.0,515.75,347.75,511.5,0,12,0,1.5,g/(cm2 kyr),interval_candidate
+848,18,53,55,carbonate_mar,355.0,517.5,549.5,713.25,0,12,0,1.5,g/(cm2 kyr),interval_candidate
+849,21,58,60,bulk_mar,105.25,268.5,141.5,305.75,0,12,0,10,g/(cm2 kyr),interval_candidate
+849,21,58,60,organic_carbon_mar,321.5,484.0,141.0,305.25,0,12,0,20,mg/(cm2 kyr),interval_candidate
+849,21,58,60,sedimentation_rate,106.25,269.25,342.25,507.25,0,12,0,120,m/Myr,rate_height_tested
+849,21,58,60,noncarbonate_mar,322.25,484.75,342.25,506.0,0,12,0,5,g/(cm2 kyr),interval_candidate
+849,21,58,60,carbonate_mar,324.5,487.75,542.0,706.5,0,12,0,10,g/(cm2 kyr),interval_candidate
+850,24,63,65,bulk_mar,139.0,302.0,138.75,302.5,0,12,0,8,g/(cm2 kyr),interval_candidate
+850,24,63,65,organic_carbon_mar,355.0,517.75,137.75,301.5,0,12,0,20,mg/(cm2 kyr),interval_candidate
+850,24,63,65,sedimentation_rate,139.0,301.75,339.75,503.0,0,12,0,100,m/Myr,rate_height_tested
+850,24,63,65,noncarbonate_mar,356.0,518.75,338.75,503.0,0,12,0,4,g/(cm2 kyr),interval_candidate
+850,24,63,65,carbonate_mar,358.25,521.0,542.5,706.5,0,12,0,8,g/(cm2 kyr),interval_candidate
+851,27,68,70,bulk_mar,105.75,268.75,142.25,306.25,0,12,0,6,g/(cm2 kyr),interval_candidate
+851,27,68,70,organic_carbon_mar,321.75,484.5,142.75,306.25,0,12,0,10,mg/(cm2 kyr),interval_candidate
+851,27,68,70,sedimentation_rate,104.25,267.5,343.5,506.75,0,12,0,100,m/Myr,rate_height_tested
+851,27,68,70,noncarbonate_mar,321.75,484.5,343.25,507.25,0,12,0,3,g/(cm2 kyr),interval_candidate
+851,27,68,70,carbonate_mar,323.75,486.25,550.5,715.0,0,12,0,6,g/(cm2 kyr),interval_candidate
+852,30,71,73,bulk_mar,140.25,303.5,135.5,299.75,0,12,0,2,g/(cm2 kyr),interval_candidate
+852,30,71,73,organic_carbon_mar,356.5,519.25,135.5,299.25,0,12,0,1,mg/(cm2 kyr),individual_series_only
+852,30,71,73,sedimentation_rate,140.5,303.5,335.5,498.5,0,12,0,30,m/Myr,rate_height_tested
+852,30,71,73,noncarbonate_mar,356.75,519.5,336.25,500.0,0,12,0,1,g/(cm2 kyr),interval_candidate
+852,30,71,73,carbonate_mar,356.75,519.5,551.0,714.75,0,12,0,2,g/(cm2 kyr),interval_candidate
+853,33,74,76,bulk_mar,96.0,258.75,136.75,301.25,0,8,0,1.5,g/(cm2 kyr),interval_candidate
+853,33,74,76,organic_carbon_mar,312.0,474.5,137.0,301.5,0,8,0,1,mg/(cm2 kyr),individual_series_only
+853,33,74,76,sedimentation_rate,96.5,259.75,339.0,502.75,0,8,0,20,m/Myr,rate_height_tested
+853,33,74,76,noncarbonate_mar,312.0,474.75,338.5,502.5,0,8,0,0.75,g/(cm2 kyr),interval_candidate
+853,33,74,76,carbonate_mar,312.0,474.75,541.75,706.5,0,8,0,1.5,g/(cm2 kyr),interval_candidate
+854,36,77,79,bulk_mar,131.5,294.5,192.75,356.5,0,9,0,1,g/(cm2 kyr),individual_series_only
+854,36,77,79,sedimentation_rate,345.75,508.0,194.0,357.0,0,9,0,25,m/Myr,rate_height_tested
+854,36,77,79,carbonate_mar,131.75,294.5,393.5,557.25,0,9,0,1,g/(cm2 kyr),individual_series_only
+854,36,77,79,noncarbonate_mar,347.75,510.5,393.5,557.25,0,9,0,1,g/(cm2 kyr),individual_series_only

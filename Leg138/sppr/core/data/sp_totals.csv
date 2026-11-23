@@ -1,0 +1,8 @@
+item_id,printed_field,value,unit
+SP.T1,Drill subtotal,30.6,d
+SP.T1,Log subtotal,7.3,d
+SP.T1,Station subtotal,37.9,d
+SP.T1,Transit subtotal,21.9,d
+SP.T1,Total days at sea,59.8,d
+SP.T2,Distance total,5246.6,nmi
+SP.T2,Transit total,21.9,d

@@ -1,0 +1,121 @@
+{
+  "method": "Decoded every ZIP payload and recomputed its byte count and SHA-256; reconciled ZIP membership, both in-ZIP indexes and the independent research-module manifests.",
+  "archives": {
+    "SP_PR_IR": {
+      "archive": "ODP138_Sources_SP_PR_IR.zip",
+      "archive_bytes": 154033216,
+      "archive_sha256": "02f685f81ab6de9e5200bd8ed25fed026d2f4cf4792484c7c7b3ac141797599a",
+      "payload_entries": 232,
+      "payload_bytes": 178220533,
+      "module_manifest_entries": 231,
+      "module_manifests": [
+        {
+          "manifest": "sppr/core/data/source_manifest.csv",
+          "records": 2,
+          "sha256": "7500fcf165d15a3324bc09b5ea8a00dd4785d0bdea55901425e9d6b541f94a4a"
+        },
+        {
+          "manifest": "ir/core/sources.csv",
+          "records": 229,
+          "sha256": "4b5cabc56fb013f2bb1d657318b3d1647122a0b45bae73276c0dc4f27c9a9159"
+        }
+      ],
+      "additional_payload_outside_module_manifests": [
+        "ir/primary/tables-index.html"
+      ],
+      "separately_identified_directory_witnesses": [
+        {
+          "path": "ir/primary/tables-index.html",
+          "in_module_manifest": false,
+          "bytes": 2218,
+          "sha256": "db57ecfc0313642775dc740dc8d75249553ab3bb6cfe646029c6e726d8b6184b",
+          "description": "Publisher table directory snapshot supplied alongside IR sources. A fresh request to the official directory independently matched the ZIP bytes."
+        }
+      ],
+      "inventory_csv_sha256": "31856db68a7b6f67f72fb8d3043e3b9ef5946e93d52f8dbff85e19bdff12f515",
+      "inventory_checksum_list_sha256": "6235167e4fcbd47b56355f2e6d74a77d31ead4920238013d1e97300a637a3e3a",
+      "exact_zip_csv_checksumlist_path_sets": true,
+      "all_payload_bytes_and_sha256_recomputed": true,
+      "complete_module_manifest_coverage_with_identical_hashes": true
+    },
+    "Core_Plates": {
+      "archive": "ODP138_Sources_Core_Plates.zip",
+      "archive_bytes": 427600484,
+      "archive_sha256": "865c7ce0d2a0fa4c470eeb845a1bfca725213d12360745a6941f61625d3a5ff5",
+      "payload_entries": 618,
+      "payload_bytes": 457296127,
+      "module_manifest_entries": 618,
+      "module_manifests": [
+        {
+          "manifest": "plates/core/data/plate_sources.csv",
+          "records": 617,
+          "sha256": "d21fa483574e705d4d59f359e872113d99f1285f2559338b5b0825a8c285a244"
+        },
+        {
+          "manifest": "plates/core/data/plate_directory_witness.csv",
+          "records": 1,
+          "sha256": "c0f8f894df56a36452bec1e621007b37a5220cb7fb4ce6a90fec4de78557cc63"
+        }
+      ],
+      "additional_payload_outside_module_manifests": [],
+      "separately_identified_directory_witnesses": [
+        {
+          "path": "plates/primary/VOLUME/CORES/IMAGES/index.html",
+          "in_module_manifest": true,
+          "bytes": 76835,
+          "sha256": "48f6202ce3deab19c63fbf4abd33530ddcddb48f7713c99ef1f8762e46052a8d",
+          "description": "Publisher photograph directory snapshot with its own plate_directory_witness.csv manifest entry."
+        }
+      ],
+      "inventory_csv_sha256": "a07d1340b98d7a90048dede375d7cc147100809d5bf356fa67d692d999470a51",
+      "inventory_checksum_list_sha256": "1206b9b25d783482e0a91a24d7932f62d6f76f18b0f390ffb202e0f9752433cd",
+      "exact_zip_csv_checksumlist_path_sets": true,
+      "all_payload_bytes_and_sha256_recomputed": true,
+      "complete_module_manifest_coverage_with_identical_hashes": true
+    },
+    "SR": {
+      "archive": "ODP138_Sources_SR.zip",
+      "archive_bytes": 222600018,
+      "archive_sha256": "713e0109d43193a5bd94542cb8918cd08d5a122fa93aa3f42d6aeab59de7ced6",
+      "payload_entries": 192,
+      "payload_bytes": 260338598,
+      "module_manifest_entries": 192,
+      "module_manifests": [
+        {
+          "manifest": "sr/core/source_manifest.csv",
+          "records": 192,
+          "sha256": "2d8f564e582c27bb9ceb70623783a49cfa06935355966f01e8bc08d7e5efc39f"
+        }
+      ],
+      "additional_payload_outside_module_manifests": [],
+      "separately_identified_directory_witnesses": [],
+      "inventory_csv_sha256": "e4899fb542557ca1f49bc5f98d16bd09d41814771a687764a8354b330e05c26a",
+      "inventory_checksum_list_sha256": "f45b6155edd313090d2ac4faf6d83cbc1790fa594fb5fb7ee4dc8fd0feef1be2",
+      "exact_zip_csv_checksumlist_path_sets": true,
+      "all_payload_bytes_and_sha256_recomputed": true,
+      "complete_module_manifest_coverage_with_identical_hashes": true
+    },
+    "Shipboard_CD": {
+      "archive": "ODP138_Sources_Shipboard_CD.zip",
+      "archive_bytes": 102743398,
+      "archive_sha256": "0f94aba40a88ce1eab5fa06a62188e9167319ffc63f38ef19c19dbfa17f82773",
+      "payload_entries": 4383,
+      "payload_bytes": 503989804,
+      "module_manifest_entries": 4383,
+      "module_manifests": [
+        {
+          "manifest": "disc/core/sources.csv",
+          "records": 4383,
+          "sha256": "cfd255ae97c7ec83ed07910ce49bbd35887bb72b202f9e701e8a4fbb99dc26af"
+        }
+      ],
+      "additional_payload_outside_module_manifests": [],
+      "separately_identified_directory_witnesses": [],
+      "inventory_csv_sha256": "5d8d70077a1467027c17ce21d2557256fd60e4f7ad43822cda86e66bce2b1de4",
+      "inventory_checksum_list_sha256": "9fe76dc1e3f819e980d6d29bcb014244fb7174283fe22065f2ba5983d51e9692",
+      "exact_zip_csv_checksumlist_path_sets": true,
+      "all_payload_bytes_and_sha256_recomputed": true,
+      "complete_module_manifest_coverage_with_identical_hashes": true
+    }
+  }
+}

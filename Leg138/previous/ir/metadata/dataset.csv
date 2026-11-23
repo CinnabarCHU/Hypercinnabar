@@ -1,0 +1,31 @@
+sql_name,csv_path,row_count,description
+t01,data/tables/table-01.csv,96,随盘电子表
+t02,data/tables/table-02.csv,26,印页转录
+t03,data/tables/table-03.csv,25,随盘电子表
+t04,data/tables/table-04.csv,7,随盘电子表
+t05,data/tables/table-05.csv,45,随盘电子表
+t06,data/tables/table-06.csv,33,随盘电子表
+t07,data/tables/table-07.csv,91,随盘电子表
+t08,data/tables/table-08.csv,23,随盘电子表
+t09,data/tables/table-09.csv,18,随盘电子表
+t10,data/tables/table-10.csv,318,随盘电子表
+t11,data/tables/table-11.csv,62,印页转录
+t12,data/tables/table-12.csv,21,随盘电子表
+t13,data/tables/table-13.csv,41,随盘电子表
+t14,data/tables/table-14.csv,54,随盘电子表
+t15,data/tables/table-15.csv,568,随盘电子表
+t16,data/tables/table-16.csv,562,随盘电子表
+t17,data/tables/table-17.csv,212,随盘电子表
+t18,data/tables/table-18.csv,78,随盘电子表
+t19,data/tables/table-19.csv,10,印页转录
+t20,data/tables/table-20.csv,26,随盘电子表
+t21,data/tables/table-21.csv,18,印页转录
+epoch_boundaries,data/appendices/epoch-boundaries.csv,5,无编号原表
+smear_slides,data/appendices/smear-slides.csv,143,印页转录
+core_register,data/appendices/cores.csv,92,岩芯编号、印页与独立照片
+hole_particulars,data/appendices/hole-particulars.csv,62,逐孔定位的原文
+fig05_printed_lithology,data/figures/fig05_printed_lithology.csv,9,岩性图栏分段，深度自印图估读
+fig07_printed_lithology,data/figures/fig07_printed_lithology.csv,9,岩性图栏分段，深度自印图估读
+fig05_subunits,data/figures/fig05_subunits.csv,4,正文可定位的岩性亚单元界限
+fig07_ink,data/figures/fig07_ink.csv.gz,2827,GRAPE 与磁化率的印图估读。像素坐标以整张印页为准。
+fig45_ink,data/figures/fig45_ink.csv,19,编辑从印图实线读取的 19 点，非船上原始配对点。未补齐两端。

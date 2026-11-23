@@ -1,0 +1,13 @@
+{
+  "item_id": "PR.F15",
+  "scope": "one illustrated track, Site 851",
+  "positions": 10,
+  "printed_age_labels": 9,
+  "zero_label": "present-day symbol",
+  "table_reference_hole": "851A",
+  "table_latitude": "2\u00b046.22\u2032N",
+  "table_longitude": "110\u00b034.31\u2032W",
+  "distance_from_drawn_modern_symbol_km": 78.6,
+  "calibration": "longitude OLS on four printed ticks; latitude linear between printed 0 and 5 N",
+  "graphic_reference": "PDF points from top left; no plate model or reference-frame transformation"
+}

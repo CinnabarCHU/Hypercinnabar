@@ -1,0 +1,562 @@
+[
+ {
+  "printed_page": "669",
+  "page_row": "2",
+  "column": "mineral_oxides",
+  "ocr": "O",
+  "edition": "",
+  "reason": "The cell interior is blank. The OCR token came from outside the printed entry.",
+  "bbox": [
+   308.47,
+   160.38,
+   329.35,
+   170.62
+  ]
+ },
+ {
+  "printed_page": "669",
+  "page_row": "21",
+  "column": "mineral_quartz",
+  "ocr": "i",
+  "edition": "1",
+  "reason": "The printed glyph is the digit 1.",
+  "bbox": [
+   350.23,
+   354.82,
+   371.11,
+   365.06
+  ]
+ },
+ {
+  "printed_page": "669",
+  "page_row": "22",
+  "column": "mineral_quartz",
+  "ocr": "i",
+  "edition": "1",
+  "reason": "The printed glyph is the digit 1.",
+  "bbox": [
+   350.23,
+   365.06,
+   371.11,
+   375.29
+  ]
+ },
+ {
+  "printed_page": "669",
+  "page_row": "23",
+  "column": "mineral_quartz",
+  "ocr": "i",
+  "edition": "1",
+  "reason": "The printed glyph is the digit 1.",
+  "bbox": [
+   350.23,
+   375.29,
+   371.11,
+   385.52
+  ]
+ },
+ {
+  "printed_page": "669",
+  "page_row": "30",
+  "column": "mineral_volcanic_glass",
+  "ocr": "",
+  "edition": "*",
+  "reason": "A single asterisk appears in the printed cell.",
+  "bbox": [
+   371.11,
+   446.93,
+   391.99,
+   457.16
+  ]
+ },
+ {
+  "printed_page": "669",
+  "page_row": "31",
+  "column": "mineral_volcanic_glass",
+  "ocr": "**",
+  "edition": "*",
+  "reason": "One asterisk is visible.",
+  "bbox": [
+   371.11,
+   457.16,
+   391.99,
+   467.39
+  ]
+ },
+ {
+  "printed_page": "669",
+  "page_row": "47",
+  "column": "texture_sand",
+  "ocr": "-",
+  "edition": "-",
+  "reason": "The original short dash is visible and is retained as a symbol.",
+  "bbox": [
+   120.55,
+   620.9,
+   141.43,
+   631.13
+  ]
+ },
+ {
+  "printed_page": "669",
+  "page_row": "52",
+  "column": "texture_sand",
+  "ocr": "-",
+  "edition": "-",
+  "reason": "The original short dash is visible and is retained as a symbol.",
+  "bbox": [
+   120.55,
+   672.07,
+   141.43,
+   682.3
+  ]
+ },
+ {
+  "printed_page": "670",
+  "page_row": "1",
+  "column": "mineral_calcite",
+  "ocr": "u",
+  "edition": "",
+  "reason": "The cell interior is blank. The OCR token came from outside the printed entry.",
+  "bbox": [
+   227.22,
+   150.8,
+   248.1,
+   161.01
+  ]
+ },
+ {
+  "printed_page": "670",
+  "page_row": "1",
+  "column": "mineral_oxides",
+  "ocr": "O",
+  "edition": "",
+  "reason": "The cell interior is blank. The OCR token came from outside the printed entry.",
+  "bbox": [
+   331.62,
+   150.8,
+   352.5,
+   161.01
+  ]
+ },
+ {
+  "printed_page": "670",
+  "page_row": "1",
+  "column": "biogenic_silicoflagellates",
+  "ocr": "l",
+  "edition": "1",
+  "reason": "The printed glyph is the digit 1.",
+  "bbox": [
+   498.66,
+   150.8,
+   519.54,
+   161.01
+  ]
+ },
+ {
+  "printed_page": "670",
+  "page_row": "1",
+  "column": "biogenic_sponge_spicules",
+  "ocr": "",
+  "edition": "*",
+  "reason": "A single asterisk appears in the printed cell.",
+  "bbox": [
+   519.54,
+   150.8,
+   540.42,
+   161.01
+  ]
+ },
+ {
+  "printed_page": "670",
+  "page_row": "2",
+  "column": "biogenic_sponge_spicules",
+  "ocr": "***",
+  "edition": "*",
+  "reason": "One asterisk is visible.",
+  "bbox": [
+   519.54,
+   161.01,
+   540.42,
+   171.23
+  ]
+ },
+ {
+  "printed_page": "670",
+  "page_row": "3",
+  "column": "biogenic_sponge_spicules",
+  "ocr": "",
+  "edition": "*",
+  "reason": "A single asterisk appears in the printed cell.",
+  "bbox": [
+   519.54,
+   171.23,
+   540.42,
+   181.44
+  ]
+ },
+ {
+  "printed_page": "670",
+  "page_row": "9",
+  "column": "mineral_pyrite",
+  "ocr": "I",
+  "edition": "1",
+  "reason": "The printed glyph is the digit 1.",
+  "bbox": [
+   352.5,
+   232.52,
+   373.38,
+   242.73
+  ]
+ },
+ {
+  "printed_page": "670",
+  "page_row": "9",
+  "column": "biogenic_sponge_spicules",
+  "ocr": "i",
+  "edition": "1",
+  "reason": "The printed glyph is the digit 1.",
+  "bbox": [
+   519.54,
+   232.52,
+   540.42,
+   242.73
+  ]
+ },
+ {
+  "printed_page": "670",
+  "page_row": "10",
+  "column": "mineral_pyrite",
+  "ocr": "l",
+  "edition": "1",
+  "reason": "The printed glyph is the digit 1.",
+  "bbox": [
+   352.5,
+   242.73,
+   373.38,
+   252.95
+  ]
+ },
+ {
+  "printed_page": "670",
+  "page_row": "20",
+  "column": "biogenic_silicoflagellates",
+  "ocr": "",
+  "edition": "*",
+  "reason": "A single asterisk appears in the printed cell.",
+  "bbox": [
+   498.66,
+   344.88,
+   519.54,
+   355.09
+  ]
+ },
+ {
+  "printed_page": "670",
+  "page_row": "29",
+  "column": "texture_sand",
+  "ocr": "-",
+  "edition": "-",
+  "reason": "The original short dash is visible and is retained as a symbol.",
+  "bbox": [
+   143.7,
+   436.81,
+   164.58,
+   447.02
+  ]
+ },
+ {
+  "printed_page": "670",
+  "page_row": "30",
+  "column": "biogenic_silicoflagellates",
+  "ocr": "l",
+  "edition": "1",
+  "reason": "The printed glyph is the digit 1.",
+  "bbox": [
+   498.66,
+   447.02,
+   519.54,
+   457.24
+  ]
+ },
+ {
+  "printed_page": "670",
+  "page_row": "32",
+  "column": "texture_sand",
+  "ocr": "-",
+  "edition": "-",
+  "reason": "The original short dash is visible and is retained as a symbol.",
+  "bbox": [
+   143.7,
+   467.45,
+   164.58,
+   477.67
+  ]
+ },
+ {
+  "printed_page": "670",
+  "page_row": "33",
+  "column": "texture_sand",
+  "ocr": "-",
+  "edition": "-",
+  "reason": "The original short dash is visible and is retained as a symbol.",
+  "bbox": [
+   143.7,
+   477.67,
+   164.58,
+   487.88
+  ]
+ },
+ {
+  "printed_page": "670",
+  "page_row": "34",
+  "column": "texture_sand",
+  "ocr": "-",
+  "edition": "-",
+  "reason": "The original short dash is visible and is retained as a symbol.",
+  "bbox": [
+   143.7,
+   487.88,
+   164.58,
+   498.09
+  ]
+ },
+ {
+  "printed_page": "670",
+  "page_row": "35",
+  "column": "texture_sand",
+  "ocr": "-",
+  "edition": "-",
+  "reason": "The original short dash is visible and is retained as a symbol.",
+  "bbox": [
+   143.7,
+   498.09,
+   164.58,
+   508.31
+  ]
+ },
+ {
+  "printed_page": "670",
+  "page_row": "40",
+  "column": "texture_sand",
+  "ocr": "-",
+  "edition": "-",
+  "reason": "The original short dash is visible and is retained as a symbol.",
+  "bbox": [
+   143.7,
+   549.17,
+   164.58,
+   559.38
+  ]
+ },
+ {
+  "printed_page": "670",
+  "page_row": "41",
+  "column": "texture_sand",
+  "ocr": "-",
+  "edition": "-",
+  "reason": "The original short dash is visible and is retained as a symbol.",
+  "bbox": [
+   143.7,
+   559.38,
+   164.58,
+   569.6
+  ]
+ },
+ {
+  "printed_page": "670",
+  "page_row": "44",
+  "column": "texture_sand",
+  "ocr": "-",
+  "edition": "-",
+  "reason": "The original short dash is visible and is retained as a symbol.",
+  "bbox": [
+   143.7,
+   590.03,
+   164.58,
+   600.24
+  ]
+ },
+ {
+  "printed_page": "671",
+  "page_row": "8",
+  "column": "texture_sand",
+  "ocr": "-",
+  "edition": "-",
+  "reason": "The original short dash is visible and is retained as a symbol.",
+  "bbox": [
+   120.7,
+   218.25,
+   141.58,
+   228.47
+  ]
+ },
+ {
+  "printed_page": "671",
+  "page_row": "10",
+  "column": "texture_sand",
+  "ocr": "-",
+  "edition": "-",
+  "reason": "The original short dash is visible and is retained as a symbol.",
+  "bbox": [
+   120.7,
+   238.69,
+   141.58,
+   248.91
+  ]
+ },
+ {
+  "printed_page": "671",
+  "page_row": "12",
+  "column": "texture_sand",
+  "ocr": "-",
+  "edition": "-",
+  "reason": "The original short dash is visible and is retained as a symbol.",
+  "bbox": [
+   120.7,
+   259.13,
+   141.58,
+   269.35
+  ]
+ },
+ {
+  "printed_page": "671",
+  "page_row": "13",
+  "column": "texture_sand",
+  "ocr": "-",
+  "edition": "-",
+  "reason": "The original short dash is visible and is retained as a symbol.",
+  "bbox": [
+   120.7,
+   269.35,
+   141.58,
+   279.58
+  ]
+ },
+ {
+  "printed_page": "671",
+  "page_row": "14",
+  "column": "texture_sand",
+  "ocr": "-",
+  "edition": "-",
+  "reason": "The original short dash is visible and is retained as a symbol.",
+  "bbox": [
+   120.7,
+   279.58,
+   141.58,
+   289.8
+  ]
+ },
+ {
+  "printed_page": "671",
+  "page_row": "15",
+  "column": "texture_sand",
+  "ocr": "-",
+  "edition": "-",
+  "reason": "The original short dash is visible and is retained as a symbol.",
+  "bbox": [
+   120.7,
+   289.8,
+   141.58,
+   300.02
+  ]
+ },
+ {
+  "printed_page": "671",
+  "page_row": "16",
+  "column": "texture_sand",
+  "ocr": "-",
+  "edition": "-",
+  "reason": "The original short dash is visible and is retained as a symbol.",
+  "bbox": [
+   120.7,
+   300.02,
+   141.58,
+   310.24
+  ]
+ },
+ {
+  "printed_page": "671",
+  "page_row": "17",
+  "column": "texture_sand",
+  "ocr": "-",
+  "edition": "-",
+  "reason": "The original short dash is visible and is retained as a symbol.",
+  "bbox": [
+   120.7,
+   310.24,
+   141.58,
+   320.46
+  ]
+ },
+ {
+  "printed_page": "671",
+  "page_row": "18",
+  "column": "texture_sand",
+  "ocr": "-",
+  "edition": "-",
+  "reason": "The original short dash is visible and is retained as a symbol.",
+  "bbox": [
+   120.7,
+   320.46,
+   141.58,
+   330.68
+  ]
+ },
+ {
+  "printed_page": "671",
+  "page_row": "19",
+  "column": "texture_sand",
+  "ocr": "-",
+  "edition": "-",
+  "reason": "The original short dash is visible and is retained as a symbol.",
+  "bbox": [
+   120.7,
+   330.68,
+   141.58,
+   340.9
+  ]
+ },
+ {
+  "printed_page": "671",
+  "page_row": "20",
+  "column": "texture_sand",
+  "ocr": "-",
+  "edition": "-",
+  "reason": "The original short dash is visible and is retained as a symbol.",
+  "bbox": [
+   120.7,
+   340.9,
+   141.58,
+   351.12
+  ]
+ },
+ {
+  "printed_page": "671",
+  "page_row": "21",
+  "column": "texture_sand",
+  "ocr": "-",
+  "edition": "-",
+  "reason": "The original short dash is visible and is retained as a symbol.",
+  "bbox": [
+   120.7,
+   351.12,
+   141.58,
+   361.35
+  ]
+ },
+ {
+  "printed_page": "671",
+  "page_row": "24",
+  "column": "biogenic_silicoflagellates",
+  "ocr": "",
+  "edition": "*",
+  "reason": "A single asterisk appears in the printed cell.",
+  "bbox": [
+   475.66,
+   381.79,
+   496.54,
+   392.01
+  ]
+ }
+]

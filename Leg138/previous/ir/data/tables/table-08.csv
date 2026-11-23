@@ -1,0 +1,24 @@
+source_line,row_kind,hole_context,depth_mcd,interval_rate_m_per_myr,age_ma,comment
+6,data,,0,,0,Top of sedimentary section
+7,interval,,,40.0,,
+8,data,,44.85,,1.12,T Gephyrocapsa spp >> 5.5 mm
+9,interval,,,32.8,,
+10,data,,59.92,,1.58,B Gephyrocapsa oceanica
+11,interval,,,46.4,,
+12,data,,98.40,,2.41,T Discoaster surculus
+13,interval,,,44.13,,
+14,data,,149.37,,3.56,T Reticulofenestra pseudoumbilicus
+15,interval,,,49.9,,
+16,data,,220.2,,4.98,T Discoaster quinqueramus
+17,interval,,,39.3,,
+18,data,,299.5,,7.00,extension of rate below (see text)
+19,interval,,,14.6,,
+20,data,,306.65,,7.49,B Discoaster berggreni (age estimated in Sites 844 and 845 near
+21,continuation,,,,,the base of magnetochron C5N)
+22,interval,,,15.1,,
+23,data,,343.75,,9.94,T Coccolithus miopelagicus (age estimated in Site 845 within
+24,continuation,,,,,the lower part of magnetochron C5N1)
+25,interval,,,15.8,,
+26,data,,400.1,,13.50,T Sphenolithus heteromorphus
+27,interval,,,10.4,,
+28,data,,426.06,,16.00,T Helicosphaera ampliaperta

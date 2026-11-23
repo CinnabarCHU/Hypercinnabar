@@ -1,0 +1,11 @@
+item_id,site,age_ma,age_label,x_pdf_pt,y_pdf_pt,longitude_deg_approx,latitude_deg_approx,value_status,pdf_page,print_page,source_url
+PR.F15,851,0,modern station symbol,252.75,394.75,-109.95,2.43,editorial_graphic_reading,50,52,https://www-odp.tamu.edu/publications/prelim/138PREL.PDF#page=50
+PR.F15,851,1,labelled age tick,273.5,401.5,-109.11,2.15,editorial_graphic_reading,50,52,https://www-odp.tamu.edu/publications/prelim/138PREL.PDF#page=50
+PR.F15,851,2,labelled age tick,291.75,408.25,-108.37,1.88,editorial_graphic_reading,50,52,https://www-odp.tamu.edu/publications/prelim/138PREL.PDF#page=50
+PR.F15,851,3,labelled age tick,310.25,414.25,-107.62,1.63,editorial_graphic_reading,50,52,https://www-odp.tamu.edu/publications/prelim/138PREL.PDF#page=50
+PR.F15,851,4,labelled age tick,329.75,420.25,-106.83,1.39,editorial_graphic_reading,50,52,https://www-odp.tamu.edu/publications/prelim/138PREL.PDF#page=50
+PR.F15,851,5,labelled age tick,348.25,425.5,-106.09,1.17,editorial_graphic_reading,50,52,https://www-odp.tamu.edu/publications/prelim/138PREL.PDF#page=50
+PR.F15,851,6,labelled age tick,366.75,431.5,-105.34,0.93,editorial_graphic_reading,50,52,https://www-odp.tamu.edu/publications/prelim/138PREL.PDF#page=50
+PR.F15,851,7,labelled age tick,386.5,436.75,-104.54,0.71,editorial_graphic_reading,50,52,https://www-odp.tamu.edu/publications/prelim/138PREL.PDF#page=50
+PR.F15,851,8,labelled age tick,404.75,441.75,-103.80,0.51,editorial_graphic_reading,50,52,https://www-odp.tamu.edu/publications/prelim/138PREL.PDF#page=50
+PR.F15,851,9,labelled age tick,423.0,447.5,-103.06,0.28,editorial_graphic_reading,50,52,https://www-odp.tamu.edu/publications/prelim/138PREL.PDF#page=50

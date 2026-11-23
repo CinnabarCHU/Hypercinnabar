@@ -1,0 +1,7 @@
+item_id,pdf_page,axis,tick_value_deg,coordinate_pt
+PR.F15,50,longitude,-115,128.0
+PR.F15,50,longitude,-110,251.75
+PR.F15,50,longitude,-105,375.0
+PR.F15,50,longitude,-100,498.5
+PR.F15,50,latitude,0,454.25
+PR.F15,50,latitude,5,331.75

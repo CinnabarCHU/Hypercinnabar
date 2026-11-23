@@ -1,0 +1,51 @@
+{
+  "website_listings": 90,
+  "listed_files": 4383,
+  "checked_source_sha256": 4383,
+  "available_bytes": 503989804,
+  "checked_archive_reuse": 612,
+  "source_kinds": {
+    "derived": 66,
+    "operational_record": 39,
+    "documentation": 94,
+    "software": 8,
+    "age_model": 31,
+    "reported_lab_product": 65,
+    "processed_measurement": 169,
+    "undecoded_binary": 1,
+    "calibrated_observation": 3803,
+    "reported_measurement": 42,
+    "reported_logging_product": 65
+  },
+  "spatial_scope": [
+    844,
+    854
+  ],
+  "carbon_rows": 2296,
+  "nonempty_organic_carbon_rows": 666,
+  "spectra_files": 3803,
+  "reflectance_511_rows": 124873,
+  "spectral_source_id_disagreements": [
+    [
+      "SITE_849/COLOR/DATA/849C02H2.REF",
+      "36"
+    ]
+  ],
+  "source_end_marker_absent": [
+    "SITE_850/COLOR/DATA/850B30X6.REF",
+    "SITE_850/COLOR/DATA/850B36X2.REF"
+  ],
+  "named_decoder_unparsed_rows": 0,
+  "binary_files_not_numeric_decoder": 1,
+  "text_only_family_counts": {
+    "filesystem_map": 89,
+    "fortran_include": 3,
+    "fortran_source": 5,
+    "documentation": 5,
+    "interstitial": 11,
+    "logs": 65
+  },
+  "mcd_published_rows_with_verified_fin": 121065,
+  "grape_mbs_reference_files": 10,
+  "grape_mbs_identical_rows": 117469
+}

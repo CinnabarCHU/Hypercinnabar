@@ -1,0 +1,20 @@
+family,fields,record_role,interpretation
+carbon,total_carbon_pct;inorganic_carbon_pct,shipboard_lab_report,Reported determinations when populated. Fixed positions preserve blank cells.
+carbon,carbonate_pct;organic_carbon_pct,reported_composition,Published composition columns. TC and inorganic C may also be supplied; no recomputation or substitution is applied. Consult the site methods for how each value was obtained.
+carbon,nitrogen_pct,report_field,Check each site header. The release has a nitrogen header at 844–846 only.
+carbon,mbsf;mcd,depth_stages,mbsf is the depth below seafloor and mcd is the published multiple-hole composite depth.
+grape_dat,density_g_cm3;integer_1;integer_2,earlier_released_record,Repeated readings are retained as rows. The disk README attributes the two integer fields to GRAPE processing; names stay generic.
+grape_fin,mcd;density_g_cm3;corrected_density_g_cm3;smooth_corrected_density_g_cm3,processed_product,Processed density fields belong to a later stage than DAT. See FIXGRAPE/DEP_ADJ/GRAPECOR replay.
+grape_mcd,mcd;density_g_cm3;smoothed_density_g_cm3,composite_product,The disk README describes these as uncorrected splice densities. Sample IDs are present.
+grape_mbs,rescaled_mbsf;density_g_cm3;smoothed_density_g_cm3;mcd,depth_rescaling,MBSFSPLI computes the equivalent below-seafloor depth of a composite series using site control points.
+spectra_511,pixel_1_pct ... pixel_511_pct,calibrated_observation,Instrument reflectance percent by channel; the original detector-count/standard file named in the header is not a REF file.
+color_ten,R_450_500_pct ... R_900_950_pct,processed_product,Ten 50 nm bands published with sensor offset.
+color_three,blue_450_500_pct;red_650_700_pct;infrared_850_900_pct;mcd;mcd_minus_mbsf,processed_product,Three bands and depth assignment; numeric equality with TEN is tested independently for each FIN file.
+age_lowres,mcd;age_Ma;source_comment,age_model,Site-chapter age-depth ties can include the original datum name and remarks.
+age_mcd,mcd;age_Ma,age_model,High-resolution composite-depth chronology associated with GRAPE events.
+age_mbsf,mbsf;age_Ma,age_model,High-resolution chronology expressed in below-seafloor depth.
+core_sections,top_mbsf;section_1_cm ... section_9_cm;core_catcher_cm,operational_record,Unused section fields and core catcher positions remain distinct from literal zero.
+core_offsets,top_mbsf;bottom_mbsf;top_mcd;bottom_mcd;offset_m,reported_and_derived,ODP depth and multihole adjusted depth in the same source row. Site 852B core 13H has blank composite coordinates.
+first_grape_depth,first_grape_mbsf;first_grape_mcd;offset_m,derived,Depth transform indexed by first GRAPE reading of each core.
+interstitial,source_text,variable_native_layout,Native sample/key layout and column headers vary by site. The reader emits source lines for these files.
+logs,source_text,mixed_measurement_and_calculation,Some files describe measurements and others elemental or oxide products and errors. Headers and multiline configurations are preserved.

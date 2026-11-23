@@ -1,0 +1,72 @@
+hole,printed_page,block,published_text
+A,265,4,Date occupied: 21 May 1991
+A,265,5,Date departed: 21 May 1991
+A,265,6,"Time on hole: 7 hr, 12 min"
+A,265,7,"Position: 3°5.696'S, 90°49.078'W"
+A,265,8,"Bottom felt (rig floor; m, drill-pipe measurement): 3307.3"
+A,265,9,Distance between rig floor and sea level (m): 11.70
+A,265,10,"Water depth (drill-pipe measurement from sea level, m): 3295.6"
+A,265,11,Total depth (rig floor; m): 3314.5
+A,265,12,Penetration (m): 7.2
+A,265,13,Number of cores (including cores with no recovery): 1
+A,265,14,Total length of cored section (m): 7.2
+A,265,15,Total core recovered (m): 7.2
+A,265,16,Core recovery (%): 100.3
+A,265,17,Oldest sediment cored:
+A,265,18,"Depth (mbsf): 7.2
+Nature: nannofossil foraminifer diatom ooze
+Earliest age: Pleistocene"
+B,265,20,Date occupied: 21 May 1991
+B,265,21,Date departed: 24 May 1991
+B,265,22,"Time on hole: 2 days, 13 hr, 8 min"
+B,265,23,"Position: 3°5.696'S, 90°49.078'W"
+B,265,24,"Bottom felt (rig floor; m, drill-pipe measurement): 3307.5"
+B,265,25,Distance between rig floor and sea level (m): 11.7
+B,265,26,"Water depth (drill-pipe measurement from sea level, m): 3295.8"
+B,265,27,Total depth (rig floor; m): 3729.9
+B,265,28,Penetration (m): 422.4
+B,265,29,Number of cores (including cores with no recovery): 45
+B,265,30,Total length of cored section (m): 422.4
+B,265,31,Total core recovered (m): 373.4
+B,265,32,Core recovery (%): 88.4
+B,265,33,Oldest sediment cored:
+B,265,34,"Depth (mbsf): 420.0
+Nature: metalliferous sediment
+Earliest age: early Miocene"
+B,265,35,Basement:
+B,265,36,"Depth (mbsf): 422.4
+Nature: basalt"
+C,265,40,Date occupied: 24 May 1991
+C,265,41,Date departed: 25 May 1991
+C,265,42,"Time on hole: 20 hr, 19 min"
+C,265,43,"Position: 3°5.796'S, 90°49.086'W"
+C,265,44,"Bottom felt (rig floor; m, drill-pipe measurement): 3307.5"
+C,265,45,Distance between rig floor and sea level (m): 11.7
+C,265,46,"Water depth (drill-pipe measurement from sea level, m): 3295.8"
+C,265,47,Total depth (rig floor; m): 3500.0
+C,265,48,Penetration (m): 192.5
+C,265,49,Number of cores (including cores with no recovery): 20
+C,265,50,Total length of cored section (m): 190.0
+C,265,51,Total core recovered (m): 193.1
+C,265,52,Core recovery (%): 101.6
+C,265,53,Oldest sediment cored:
+C,265,54,"Depth (mbsf): 192.5
+Nature: radiolarian diatom nannofossil ooze
+Earliest age: late Miocene"
+D,265,56,Date occupied: 25 May 1991
+D,265,57,Date departed: 26 May 1991
+D,265,58,"Time on hole: 1 day, 3 hr, 15 min"
+D,265,59,"Position: 3°5.802'S, 90°49.074'W"
+D,265,60,"Bottom felt (rig floor; m, drill-pipe measurement): 3307.5"
+D,265,61,Distance between rig floor and sea level (m): 11.7
+D,265,62,"Water depth (drill-pipe measurement from sea level, m): 3295.8"
+D,265,63,Total depth (rig floor; m): 3556.9
+D,265,64,Penetration (m): 249.4
+D,265,65,Number of cores (including cores with no recovery): 26
+D,265,66,Total length of cored section (m): 245.4
+D,265,67,Total core recovered (m): 247.85
+D,265,68,Core recovery (%): 101.0
+D,265,69,Oldest sediment cored:
+D,265,70,"Depth (mbsf): 249.4
+Nature: nannofossil ooze
+Earliest age: late Miocene"

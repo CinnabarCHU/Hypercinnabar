@@ -1,0 +1,25 @@
+item_id,printed_field,value,unit
+PR.OPS.RES,Total days,64.3,d
+PR.OPS.RES,Total days in port,4.1,d
+PR.OPS.RES,Total days under way,22.1,d
+PR.OPS.RES,Total days on site,38.2,d
+PR.OPS.RES,Trip time,6.8,d
+PR.OPS.RES,Coring time,23.8,d
+PR.OPS.RES,Drilling time,0.1,d
+PR.OPS.RES,Logging/downhole science time,6.3,d
+PR.OPS.RES,Repair time (contractor),0.2,d
+PR.OPS.RES,Repair time (ODP),0.1,d
+PR.OPS.RES,Other,0.8,d
+PR.OPS.RES,Total distance traveled,5421,nmi
+PR.OPS.RES,Average speed,10.4,kn
+PR.OPS.RES,Number of sites,11,count
+PR.OPS.RES,Number of holes,42,count
+PR.OPS.RES,Number of reentries,0,count
+PR.OPS.RES,Total interval cored,5542.1,m
+PR.OPS.RES,Total core recovery,5536.8,m
+PR.OPS.RES,Percent core recovery,99.9,%
+PR.OPS.RES,Total interval drilled,86.2,m
+PR.OPS.RES,Total penetration,5628.3,m
+PR.OPS.RES,Maximum penetration,393.6,m
+PR.OPS.RES,Maximum water depth (from drilling datum),3872.7,m
+PR.OPS.RES,Minimum water depth (from drilling datum),3307.3,m

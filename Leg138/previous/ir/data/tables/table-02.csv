@@ -1,0 +1,27 @@
+printed_page,table_row,row_kind,day_may_1991,time_local,hours_cumulative,base_of_string_mbsf,comment
+271,1,data,23,8:35,0.0,,Last core on deck.
+271,2,data,23,11:00,2.4,,Start rig up.
+271,3,data,23,12:20,3.8,,Geophys.tool rigged up (NGT/SDT/HLDT/DIT/TLT); RIH
+271,4,data,23,13:18,4.7,0.0,pause at mud line.
+271,5,data,23,13:27,4.9,135.3,"Start downlog, heave compensator on."
+271,6,data,23,13:50,5.3,420.9,Stopped downlog; at TD.
+271,7,data,23,14:08,5.5,420.9,"At TD, start main log up (NGT/SDT/HLDT/DIT/TLT)."
+271,8,data,23,15:20,6.8,85.0,"Stop up log, go back to TD for repeat section."
+271,9,data,23,15:32,6.9,420.9,Start repeat up log at TD.
+271,10,data,23,15:50,7.2,335.0,End repeat section; close calipers and POOH.
+271,11,data,23,16:45,8.2,,Geophys. tool string at well head.
+271,12,data,23,18:35,10.0,,RIH w/ Geochem String (NGT/ACT/GST/TLT).
+271,13,data,23,20:00,11.4,417.2,near TD; turn heave comp on; calibrate while moving up slowly.
+271,14,data,23,20:11,11.6,419.7,Start main log w/ Geochem String from TD.
+271,15,data,23,22:05,13.5,75.9,Stop main log to turn heave compensator off.
+271,16,data,23,22:24,13.8,63.1,Enter pipe after some difficulty.
+271,17,data,23,22:44,14.1,0.0,Stop main log; POOH.
+271,18,data,23,23:50,15.2,,Geochem. string at wellhead.
+271,19,data,24,0:55,16.3,,RIH w/ FMS string (NGT/GPIT/FMS/TLT).
+271,20,data,24,2:25,17.8,419.1,"At TD, start FMS repeat log; heave compensator on."
+271,21,data,24,2:55,18.3,197.8,Stop repeat log; drop back to TD for main log.
+271,22,data,24,3:07,18.5,421.5,Start main FMS log at TD.
+271,23,data,24,3:53,19.3,66.4,Stop main FMS log.
+271,24,data,24,4:02,19.4,,POOH FMS string; some trouble getting into pipe.
+271,25,data,24,5:12,20.6,,FMS string at wellhead.
+271,26,data,24,5:40,21.1,,Rigged down from logging.

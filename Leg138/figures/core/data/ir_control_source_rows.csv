@@ -1,0 +1,303 @@
+site,ir_table,source_line,row_role,depth_m_as_published,age_Ma,rate_as_printed_on_row,source_line_text
+844,12,7,control_horizon,0,0,,       0               0    Top of sedimentary section
+844,12,8,interstitial_rate,,,13.6,              13.6
+844,12,9,control_horizon,12.35,0.91,,       12.35        0.91    Base Jaramillo (11.05 mbsf Hole 844C)
+844,12,10,interstitial_rate,,,7.0,               7.0
+844,12,11,control_horizon,19.15,1.88,,       19.15        1.88    Base Olduvai (17.85 mbsf Hole 844C)
+844,12,12,interstitial_rate,,,5.2,               5.2
+844,12,13,control_horizon,22.20,2.47,,       22.20        2.47    Base Matuyama (19.85 mbsf Hole 844C)
+844,12,14,interstitial_rate,,,3.5,               3.5
+844,12,15,control_horizon,25.45,3.40,,       25.45        3.40    Base Gauss (23.10 mbsf Hole 844C)
+844,12,16,interstitial_rate,,,3.6,               3.6
+844,12,17,control_horizon,29.35,4.47,,       29.35        4.47    Base Sijdfjall (27.0 mbsf Hole 844C)
+844,12,18,interstitial_rate,,,6.5,               6.5
+844,12,19,control_horizon,35.10,5.35,,       35.10        5.35    Base Gilbert (30.95 mbsf Hole 844C)
+844,12,20,interstitial_rate,,,6.7,               6.7
+844,12,21,control_horizon,38.70,5.89,,       38.70        5.89    Base C3A-n1 (34.55 mbsf Hole 844C)
+844,12,22,interstitial_rate,,,5.1,               5.1
+844,12,23,control_horizon,41.15,6.37,,       41.15        6.37    Top C3A-n3 (37.00 mbsf Hole 844C)
+844,12,24,interstitial_rate,,,10.1,              10.1
+844,12,25,control_horizon,56.65,7.90,,       56.65        7.90    Top C4A-n1 (50.10 mbsf Hole 844A)
+844,12,26,interstitial_rate,,,7.8,               7.8
+844,12,27,control_horizon,64.55,8.92,,       64.55        8.92    Top C5-n1 (56.95 mbsf Hole 844A)
+844,12,28,interstitial_rate,,,7.4,               7.4
+844,12,29,control_horizon,75.55,10.40,,       75.55        10.40    Bottom core 138-844C-7H still normal but Coccolithus miopelagicus present
+844,12,30,interstitial_rate,,,36.6,              36.6
+844,12,31,control_horizon,189.10,13.50,,       189.10        13.50    CN4/CN5top Sphenolithus heteromorphus Sections 138-844B-19H-4 65 cm/-19H-5 65 cm
+844,12,32,interstitial_rate,,,27.6,              27.6
+844,12,33,control_horizon,258.05,16.00,,       258.05        16.00    Top Helicosphaera ampliaporta 138-844B-26H-4 90 cm/-26H-5       90 cm
+844,12,34,interstitial_rate,,,38.7,              38.7
+844,12,35,control_horizon,308.30,17.30,,       308.30        17.30    Bottom of core younger than 17.3 Ma (absence of Craspedodiscus coscinodisus s. st.)
+845,10,5,control_horizon,0,0,,     0       0                      Top of sedimentary section
+845,10,6,control_horizon,12.32,0.41,30.0, 12.32       30.0        0.41       T Stylatractus universus
+845,10,7,control_horizon,37.20,1.61,20.7, 37.20       20.7        1.61       T Pterocanium prismatium
+845,10,8,control_horizon,53.88,2.92,12.1, 53.88       12.1        2.92       Kaena (t)
+845,10,9,control_horizon,65.55,3.88,12.2, 65.55       12.2        3.88       Cochiti (t)
+845,10,10,control_horizon,72.05,4.47,11.0, 72.05       11.0        4.47       Sijdufjall (o)
+845,10,11,control_horizon,76.00,4.77,13.2, 76.00       13.2        4.77       Thvera (o)
+845,10,12,control_horizon,87.51,5.35,19.8, 87.51       19.8        5.35       C3A-n1 (t)
+845,10,13,control_horizon,96.28,5.89,16.3, 96.28       16.3        5.89       C3A-n2 (o)
+845,10,14,control_horizon,104.46,6.50,13.4,104.46       13.4        6.50       C3A-n3 (o)
+845,10,15,control_horizon,120.53,7.35,18.9,120.53       18.9        7.35       C4-n3 (t)
+845,10,16,control_horizon,129.71,7.90,16.6,129.71       16.6        7.90       C4-n1 (t)
+845,10,17,control_horizon,141.53,8.50,19.6,141.53       19.6        8.50       C4A-n2 (o)
+845,10,18,control_horizon,164.93,10.42,12.2,164.93       12.2       10.42       C5-n1 (t)
+845,10,19,control_horizon,166.83,10.51,11.2,166.83       11.2       10.51       C5-n2 (o)
+845,10,20,control_horizon,174.21,11.03,16.7,174.21       16.7       11.03       C5-n3 (t)
+845,10,21,control_horizon,183.73,11.55,18.4,183.73       18.4       11.55       C5A-n1 (t)
+845,10,22,control_horizon,186.93,11.73,17.8,186.93       17.8       11.73       C5A-n1 (o)
+845,10,23,control_horizon,205.08,12.46,24.9,205.08       24.9       12.46       C5A-n3 (t)
+845,10,24,control_horizon,215.93,12.83,29.3,215.93       29.3       12.83       C5AA-n (t)
+845,10,25,control_horizon,226.08,13.20,27.4,226.08       27.4       13.20       C5AB-n (t)
+845,10,26,control_horizon,275.23,16.00,17.6,275.23       17.6       16.00       T Helicosphaera ampliaperta 845A-27X-3-42/845A-27X-5-42
+845,10,27,control_horizon,309.10,16.65,52.1,309.10       52.1       16.65       845A-30X-CC older than B Cestodiscus peplum (16.4 Ma) but younger than B Crucidenticula kanayae (16.9 Ma)
+846,8,6,control_horizon,0,0,,  0                 0          Top of sedimentary section
+846,8,7,interstitial_rate,,,40.0,           40.0
+846,8,8,control_horizon,44.85,1.12,, 44.85              1.12       T Gephyrocapsa spp >> 5.5 mm
+846,8,9,interstitial_rate,,,32.8,           32.8
+846,8,10,control_horizon,59.92,1.58,, 59.92              1.58       B Gephyrocapsa oceanica
+846,8,11,interstitial_rate,,,46.4,           46.4
+846,8,12,control_horizon,98.40,2.41,, 98.40              2.41       T Discoaster surculus
+846,8,13,interstitial_rate,,,44.13,           44.13
+846,8,14,control_horizon,149.37,3.56,,149.37              3.56       T Reticulofenestra pseudoumbilicus
+846,8,15,interstitial_rate,,,49.9,           49.9
+846,8,16,control_horizon,220.2,4.98,,220.2               4.98       T Discoaster quinqueramus
+846,8,17,interstitial_rate,,,39.3,           39.3
+846,8,18,control_horizon,299.5,7.00,,299.5               7.00       extension of rate below (see text)
+846,8,19,interstitial_rate,,,14.6,           14.6
+846,8,20,control_horizon,306.65,7.49,,306.65              7.49       B Discoaster berggreni (age estimated in Sites 844 and 845 near
+846,8,22,interstitial_rate,,,15.1,           15.1
+846,8,23,control_horizon,343.75,9.94,,343.75              9.94       T Coccolithus miopelagicus (age estimated in Site 845 within
+846,8,25,interstitial_rate,,,15.8,           15.8
+846,8,26,control_horizon,400.1,13.50,,400.1              13.50       T Sphenolithus heteromorphus
+846,8,27,interstitial_rate,,,10.4,           10.4
+846,8,28,control_horizon,426.06,16.00,,426.06             16.00       T Helicosphaera ampliaperta
+847,8,9,control_horizon,0,0,,  0                         0            Core top
+847,8,10,interstitial_rate,,,31.8,         31.8
+847,8,11,control_horizon,14.64,0.461,, 14.64                      0.461        T Pseudoemiliania lacunosa
+847,8,12,interstitial_rate,,,37.2,         37.2
+847,8,13,control_horizon,39.15,1.12,, 39.15                      1.12         T Gephyrocapsa spp. >> 5.5 mm
+847,8,14,interstitial_rate,,,40.2,         40.2
+847,8,15,control_horizon,52.43,1.45,, 52.43                      1.45         T Calcidiscus mcintyrei
+847,8,16,interstitial_rate,,,39.9,         39.9
+847,8,17,control_horizon,69.6,1.88,, 69.6                       1.88         T Discoaster brouweri
+847,8,18,interstitial_rate,,,32.5,         32.5
+847,8,19,control_horizon,86.81,2.41,, 86.81                      2.41         T Discoaster surculus
+847,8,20,interstitial_rate,,,30.5,         30.5
+847,8,21,control_horizon,121.88,3.56,,121.88                      3.56         T Reticlofenestra pseudoumbilicus
+847,8,22,interstitial_rate,,,26.5,         26.5
+847,8,23,control_horizon,143.33,4.37,,143.33                      4.37         T Amaurolithus primus
+847,8,24,interstitial_rate,,,84.1,         84.1
+847,8,25,control_horizon,194.6,4.98,,194.6                       4.98         T Discoaster quinqueramus
+847,8,26,interstitial_rate,,,34.1,         34.1
+847,8,27,control_horizon,222.54,5.80,,222.54                      5.80         T Thalassiosira praeconvexa
+847,8,28,interstitial_rate,,,30.1,         30.1
+847,8,29,control_horizon,243.63,6.50,,243.63                      6.50         T Calocycletta caepa
+847,8,30,interstitial_rate,,,38.7,         38.7
+847,8,31,control_horizon,251.36,6.70,,251.36                      6.70         Upper limit; within the range of Amaurolithus primus
+848,9,4,control_horizon,0,0,,  0                     0          Top sedimentary section
+848,9,5,control_horizon,12.45,0.73,17.05, 12.45      17.05       0.73       Brunhes (o)
+848,9,6,control_horizon,16.2,0.91,20.83, 16.2       20.83       0.91       Jaramillo (t)
+848,9,7,control_horizon,17.45,0.98,17.86, 17.45      17.86       0.98       Jaramillo (o)
+848,9,8,control_horizon,26.3,1.66,13.01, 26.3       13.01       1.66       Olduvai (t)
+848,9,9,control_horizon,27.35,1.88,4.77, 27.35       4.77       1.88       Olduvai (o)
+848,9,10,control_horizon,31.15,2.47,6.44, 31.15       6.44       2.47       Gauss (t)
+848,9,11,control_horizon,33.85,2.92,6.00, 33.85       6.00       2.92       Kaena (t)
+848,9,12,control_horizon,34.2,2.99,5.00, 34.2        5.00       2.99       Kaena (o)
+848,9,13,control_horizon,34.5,3.08,3.33, 34.5        3.33       3.08       Mammoth (t)
+848,9,14,control_horizon,35.05,3.18,5.50, 35.05       5.50       3.18       Mammoth (o)
+848,9,15,control_horizon,36.55,3.4,6.82, 36.55       6.82       3.4        Gauss (o)
+848,9,16,control_horizon,39.0,3.88,5.10, 39.0        5.10       3.88       Cochiti (t)
+848,9,17,control_horizon,39.63,3.97,7.00, 39.63       7.00       3.97       Cochiti (o)
+848,9,18,control_horizon,40.55,4.1,7.08, 40.55       7.08       4.1        Nunivak (t)
+848,9,19,control_horizon,42.1,4.24,11.07, 42.1       11.07       4.24       Nunivak (o)
+848,9,20,control_horizon,44.95,4.40,17.81, 44.95      17.81       4.40       Sidujfall (t)
+848,9,21,control_horizon,46.2,4.47,17.86, 46.2       17.86       4.47       Sidujfall (o)
+848,9,22,control_horizon,47.65,4.57,14.50, 47.65      14.50       4.57       Thvera (t)
+848,9,23,control_horizon,81.05,6.7,15.68, 81.05      15.68       6.7         C4-n1 (t)
+848,9,24,control_horizon,82.0,6.78,11.88, 82.0       11.88       6.78       C4-n1 (o)
+848,9,25,control_horizon,82.25,6.85,3.57, 82.25       3.57       6.85       C4-n2 (t)
+848,9,26,control_horizon,84.4,7.28,5.00, 84.4        5.00       7.28       C4-n2 (o)
+848,9,27,control_horizon,84.7,7.35,4.29, 84.7        4.29       7.35       C4-n3 (t)
+848,9,28,control_horizon,85.3,7.41,10.00, 85.3       10.00       7.41       C4-n3 (o)
+848,9,29,control_horizon,87.6,7.9,4.69, 87.6        4.69       7.9        C4A-n1 (t)
+848,9,30,control_horizon,89.7,8.21,6.77, 89.7        6.77       8.21       C4A-n1 (o)
+848,9,31,control_horizon,90.95,8.41,6.25, 90.95       6.25       8.41       C4A-n2 (t)
+848,9,32,control_horizon,92.05,8.50,12.22, 92.05      12.22       8.50       C4A-n2 (o)
+848,9,33,control_horizon,94.15,8.71,10.00, 94.15      10.00       8.71       C4A-n3 (t)
+848,9,34,control_horizon,94.4,8.80,2.78, 94.4        2.78       8.80       C4A-n3 (o)
+848,9,35,control_horizon,94.5,8.92,0.83, 94.5        0.83       8.92       C5-n1 (t)
+848,9,36,control_horizon,102.8,10.42,5.53,102.8        5.53      10.42       C5-n1 (o)
+848,9,37,control_horizon,103.35,10.54,4.58,103.35       4.58      10.54       C5-n2 (t)
+848,9,38,control_horizon,103.65,10.59,6.00,103.65       6.00      10.59       C5-n2 (o)
+849,8,5,control_horizon,0,0,,  0                     0          Core top
+849,8,6,control_horizon,45.3,1.45,31.2, 45.3        31.2       1.45       T Calcidiscus mcintyrei
+849,8,7,control_horizon,105.25,3.56,28.4,105.25       28.4       3.56       T Reticulofenestra pseudoubilicus
+849,8,8,control_horizon,123.75,4.3,25.0,123.75       25.0       4.3        T Nitzschia cylindrica
+849,8,9,control_horizon,156.95,4.66,92.2,156.95       92.2       4.66       B Ceratolithus rugosus
+849,8,10,control_horizon,191.5,4.98,108.0,191.5       108.0       4.98       T Discoaster quinqueramus
+849,8,11,control_horizon,278.5,6.42,60.4,278.5        60.4       6.42       B Amaurolithus primus
+849,8,12,control_horizon,303.8,7.35,30.6,303.8        30.6       7.35       T  Actinocyclus ellipiticus var. javnicus
+849,8,13,control_horizon,314.75,7.55,35.0,314.75       35.0       7.55       T Thalassiosira yabei
+849,8,14,control_horizon,337.5,8.1,42.6,337.5        42.6       8.1        T Stychocoris wolffi
+849,8,15,control_horizon,360.4,9.94,12.5,360.4        12.5       9.94       T Coccolithus miopelagicus
+849,8,16,control_horizon,388.09,10.5,49.4,388.09       49.4       10.5       Top Zone CN5b (see text)
+850,10,5,control_horizon,0.00,0.00,,  0.00                 0.00      Core top
+850,10,6,control_horizon,30.94,1.45,21.34, 30.94      21.34      1.45      T Calcidiscus mcintyrei
+850,10,7,control_horizon,63.66,2.92,22.36, 63.66      22.36      2.92      T Kaena subchron
+850,10,8,control_horizon,65.40,2.99,24.86, 65.40      24.86      2.99      B Kaena subchron
+850,10,9,control_horizon,67.36,3.08,21.78, 67.36      21.78      3.08      T Mammoth subchron
+850,10,10,control_horizon,69.65,3.18,22.90, 69.65      22.90      3.18      B Mammoth subchron
+850,10,11,control_horizon,75.67,3.40,27.36, 75.67      27.36      3.40      B Gauss chron
+850,10,12,control_horizon,79.65,3.56,27.06, 79.65      27.06      3.56      T Reticulofenestra pseudoumbilicus
+850,10,13,control_horizon,116.65,4.66,33.32,116.65      33.32      4.66      B Ceratolithus rugosus
+850,10,14,control_horizon,159.70,5.10,97.73,159.70      97.73      5.10      T Thalassiosira miocenica
+850,10,15,control_horizon,185.00,5.80,36.21,185.00      36.21      5.80      T Thalassiosira praeconvexa
+850,10,16,control_horizon,221.60,6.10,122.00,221.60     122.00      6.10      B Thalassiosira praeconvexa
+850,10,17,control_horizon,250.90,6.75,43.70,250.90      43.70      6.75      B Nitzschia miocenica
+850,10,18,control_horizon,267.4,7.35,27.50,267.4       27.50      7.35      T Actinocyclus ellipticus var. javanicus
+850,10,19,control_horizon,274.85,7.55,37.25,274.85      37.25      7.55      T Thalassiosira yabei
+850,10,20,control_horizon,313.03,8.80,30.50,313.03      30.50      8.80      T Denticulopsis hustedti
+850,10,21,control_horizon,356.60,9.94,38.30,356.60      38.30      9.94      T Coccolithus miopelagicus
+850,10,22,control_horizon,387.70,10.60,47.10,387.70      47.10     10.60      T Craspedodiscus concinodiscus
+851,10,6,control_horizon,0,0,,  0                     0          Core top
+851,10,7,control_horizon,15.09,0.73,20.7, 15.09       20.7       0.73       B Brunhes Chron
+851,10,8,control_horizon,18.95,0.91,21.4, 18.95       21.4       0.91       T Jaramillo Subchron
+851,10,9,control_horizon,20.48,0.98,21.9, 20.48       21.9       0.98       B Jaramillo Subchron
+851,10,10,control_horizon,33.7,1.66,17.4, 33.7        17.4       1.66       T Olduvai Subchron
+851,10,11,control_horizon,35.91,1.88,10.3, 35.91       10.3       1.88       B Olduvai Subchron
+851,10,12,control_horizon,48.65,2.47,21.6, 48.65       21.6       2.47       B Matuyama Chron
+851,10,13,control_horizon,57.85,2.92,20.3, 57.85       20.3       2.92       T Kaena Subchron
+851,10,14,control_horizon,59.06,2.99,17.9, 59.06       17.9       2.99       B Kaena Subchron
+851,10,15,control_horizon,60.83,3.08,19.4, 60.83       19.4       3.08       T Mammoth Subchron
+851,10,16,control_horizon,63.0,3.18,21.7, 63.0        21.7       3.18       B Mammoth Subchron
+851,10,17,control_horizon,68.1,3.40,23.2, 68.1        23.2       3.40       B Gauss Chron
+851,10,18,control_horizon,77.35,3.88,19.3, 77.35       19.3       3.88       T Cochiti Subchron
+851,10,19,control_horizon,79.95,3.97,28.9, 79.95       28.9       3.97       B Cochiti Subchron
+851,10,20,control_horizon,97.4,4.66,25.3, 97.4        25.3       4.66       B Ceratolithus rugosus
+851,10,21,control_horizon,116.47,4.98,59.6,116.47       59.6       4.98       T Discoaster quinqueramus
+851,10,22,control_horizon,168.0,6.1,46.0,168.0        46.0       6.1        B Thalassiosira praeconvexa
+851,10,23,control_horizon,199.7,6.75,48.8,199.7        48.8       6.75       B Nitschia miocenica
+851,10,24,control_horizon,226.39,7.5,34.2,226.39       34.2       7.5        B Discoaster berggreni
+851,10,25,control_horizon,315.0,9.94,36.4,315.0        36.4       9.94       T Coccolithus miopelagicus
+851,10,26,control_horizon,363.19,10.9,51.0,363.19       51.0       10.9       T Coscinoodiscus guigas var. and B Hemidiscus cuneiformis (see text)
+852,11,6,control_horizon,0,0.0,,  0                        0.0         Core top
+852,11,7,control_horizon,9.05,0.73,12.40,  9.05        12.40        0.73        B Brunhes Chron
+852,11,8,control_horizon,11.75,0.91,15.00, 11.75        15.00        0.91        T Jaramillo Subchron
+852,11,9,control_horizon,12.67,0.98,13.14, 12.67        13.14        0.98        B Jaramillo Subchron
+852,11,10,control_horizon,21.08,1.66,12.37, 21.08        12.37        1.66        T Olduvai Subchron
+852,11,11,control_horizon,22.62,1.88,7.00, 22.62         7.00        1.88        B Olduvai Subchron
+852,11,12,control_horizon,29.7,2.47,12.00, 29.7         12.00        2.47        B Matuyama Chron
+852,11,13,control_horizon,35.46,2.92,12.80, 35.46        12.80        2.92        T Kaena Subchron
+852,11,14,control_horizon,36.31,2.99,12.14, 36.31        12.14        2.99        B Kaena Subchron
+852,11,15,control_horizon,37.32,3.08,11.22, 37.32        11.22        3.08        T Mammoth Subchron
+852,11,16,control_horizon,38.44,3.18,11.20, 38.44        11.20        3.18        B Mammoth Subchron
+852,11,17,control_horizon,41.25,3.4,12.77, 41.25        12.77        3.4         B Gauss Chron
+852,11,18,control_horizon,46.4,3.88,10.73, 46.4         10.73        3.88        T Cochiti Subchron
+852,11,19,control_horizon,47.78,3.97,15.33, 47.78        15.33        3.97        B Cochiti Subchron
+852,11,20,control_horizon,50.15,4.1,18.23, 50.15        18.23        4.1         T Nunivak Subchron
+852,11,21,control_horizon,51.8,4.24,11.79, 51.8         11.79        4.24        B Nunivak Subchron
+852,11,22,control_horizon,54.47,4.4,16.69, 54.47        16.69        4.4         T Sidujfall Subchron
+852,11,23,control_horizon,55.87,4.47,20.00, 55.87        20.00        4.47        B Sidujfall Subchron
+852,11,24,control_horizon,57.33,4.57,14.60, 57.33        14.60        4.57        T Thvera Subchron
+852,11,25,control_horizon,61.64,4.77,21.55, 61.64        21.55        4.77        B Thvera Subchron
+852,11,26,control_horizon,72.03,5.35,17.91, 72.03        17.91        5.35        T C3A-n1
+852,11,27,control_horizon,76.28,5.53,23.61, 76.28        23.61        5.53        B C3A-n1
+852,11,28,control_horizon,79.2,5.68,19.47, 79.2         19.47        5.68        T C3A-n2
+852,11,29,control_horizon,93.2,6.42,18.92, 93.2         18.92        6.42        B Amaurolithus primus
+852,11,30,control_horizon,106.0,7.5,11.90,106.0         11.90        7.5         B Discoaster berggreni
+852,11,31,control_horizon,114.45,7.9,21.00,114.45        21.00        7.9         T C4A-n1
+852,11,32,control_horizon,116.66,8.21,7.13,116.66         7.13        8.21        B C4A-n1
+852,11,33,control_horizon,117.26,8.41,3.00,117.26         3.00        8.41        T C4A-n2
+852,11,34,control_horizon,117.99,8.5,8.11,117.99         8.11        8.5         B C4A-n2
+852,11,35,control_horizon,118.99,8.71,4.76,118.99         4.76        8.71        T C4A-n3
+852,11,36,control_horizon,119.26,8.8,3.00,119.26         3.00        8.8         B C4A-n3
+852,11,37,control_horizon,119.63,8.92,3.08,119.63         3.08        8.92        T C5-n1
+852,11,38,control_horizon,128.3,9.94,8.50,128.3          8.50        9.94        T Coccolithus miopelagicus
+853,8,7,control_horizon,0,0.0,, 0                 0.0       Core top
+853,8,8,interstitial_rate,,,4.04,        4.04
+853,8,9,control_horizon,2.95,0.73,, 2.95              0.73       B Brunhes Chron
+853,8,10,interstitial_rate,,,5.0,        5.0
+853,8,11,control_horizon,3.85,0.91,, 3.85              0.91       T Jaramillo Subchron
+853,8,12,interstitial_rate,,,4.86,        4.86
+853,8,13,control_horizon,4.19,0.98,, 4.19              0.98       B Jaramillo Subchron
+853,8,14,interstitial_rate,,,6.25,        6.25
+853,8,15,control_horizon,4.94,1.1,, 4.94              1.1        Cobb Mountain
+853,8,16,interstitial_rate,,,5.11,        5.11
+853,8,17,control_horizon,7.8,1.66,, 7.8               1.66       T Oldubai Subchron
+853,8,18,interstitial_rate,,,3.51,        3.51
+853,8,19,control_horizon,8.57,1.88,, 8.57              1.88       B Oldubai Subchron
+853,8,20,interstitial_rate,,,6.12,        6.12
+853,8,21,control_horizon,12.18,2.47,,12.18              2.47       B Matuyama Chron
+853,8,22,interstitial_rate,,,6.78,        6.78
+853,8,23,control_horizon,15.23,2.92,,15.23              2.92       T Kaena Subchron
+853,8,24,interstitial_rate,,,7.29,        7.29
+853,8,25,control_horizon,15.74,2.99,,15.74              2.99       B Kaena Subchron
+853,8,26,interstitial_rate,,,6.56,        6.56
+853,8,27,control_horizon,16.33,3.08,,16.33              3.08       T Mammoth Subchron
+853,8,28,interstitial_rate,,,5.60,        5.60
+853,8,29,control_horizon,16.89,3.18,,16.89              3.18       B Mammoth Subchron
+853,8,30,interstitial_rate,,,8.68,        8.68
+853,8,31,control_horizon,18.8,3.4,,18.8               3.4        B Gauss Chron
+853,8,32,interstitial_rate,,,7.29,        7.29
+853,8,33,control_horizon,22.3,3.88,,22.3               3.88       T Cochiti Subchron
+853,8,34,interstitial_rate,,,13.67,       13.67
+853,8,35,control_horizon,23.53,3.97,,23.53              3.97       B Cochiti Subchron
+853,8,36,interstitial_rate,,,13.08,       13.08
+853,8,37,control_horizon,25.23,4.1,,25.23              4.1        T Nunibak Subchron
+853,8,38,interstitial_rate,,,6.07,        6.07
+853,8,39,control_horizon,26.08,4.24,,26.08              4.24       B Nunibak Subchron
+853,8,40,interstitial_rate,,,8.37,        8.37
+853,8,41,control_horizon,27.42,4.4,,27.42              4.4        T Sidujfall Subchron
+853,8,42,interstitial_rate,,,10.43,       10.43
+853,8,43,control_horizon,28.15,4.47,,28.15              4.47       B Sidujfall Subchron
+853,8,44,interstitial_rate,,,8.0,        8.0
+853,8,45,control_horizon,28.95,4.57,,28.95              4.57       T Thvera Subchron
+853,8,46,interstitial_rate,,,12.75,       12.75
+853,8,47,control_horizon,31.5,4.77,,31.5               4.77       B Thvera Subchron
+853,8,48,interstitial_rate,,,12.19,       12.19
+853,8,49,control_horizon,38.57,5.35,,38.57              5.35       T C3A_1
+853,8,50,interstitial_rate,,,15.09,       15.09
+853,8,51,control_horizon,43.55,5.68,,43.55              5.68       T C3A_2
+853,8,52,interstitial_rate,,,14.14,       14.14
+853,8,53,control_horizon,46.52,5.89,,46.52              5.89       B C3A_2
+853,8,54,interstitial_rate,,,12.51,       12.51
+853,8,55,control_horizon,54.15,6.5,,54.15              6.5        B C3A_3
+853,8,56,interstitial_rate,,,13.94,       13.94
+853,8,57,control_horizon,59.03,6.85,,59.03              6.85       T C4A_2
+853,8,58,interstitial_rate,,,15.28,       15.28
+853,8,59,control_horizon,65.6,7.28,,65.6               7.28       B C4A_2
+853,8,60,interstitial_rate,,,8.95,        8.95
+853,8,61,control_horizon,67.57,7.5,,67.57              7.5        B Discoaster berggreni
+854,7,6,control_horizon,0,0,5.6, 0          5.6        0          Top of sedimentary section
+854,7,7,control_horizon,4.09,0.73,7.11, 4.09       7.11       0.73       B. Brunhes Chron
+854,7,8,control_horizon,5.37,0.91,7.0, 5.37       7.0        0.91       T. Jaramillo Subchron
+854,7,9,control_horizon,5.86,0.98,5.83, 5.86       5.83       0.98       B. Jaramillo Subchron
+854,7,10,control_horizon,6.56,1.1,7.23, 6.56       7.23       1.1        Cobb Mountain
+854,7,11,control_horizon,10.61,1.66,4.05,10.61       4.05       1.66       T. Olduvai Subchron
+854,7,12,control_horizon,11.5,1.88,8.24,11.5        8.24       1.88       B. Olduvai Subchron
+854,7,13,control_horizon,16.36,2.47,2.29,16.36       2.29       2.47       B. Matuyama Chron
+854,7,14,control_horizon,17.39,2.92,1.57,17.39       1.57       2.92       T. Kaena Subchron
+854,7,15,control_horizon,17.5,2.99,1.78,17.5        1.78       2.99       B. Kaena Subchron
+854,7,16,control_horizon,17.66,3.08,2.0,17.66       2.0        3.08       T. Mammoth Subchron
+854,7,17,control_horizon,17.86,3.18,5.5,17.86       5.5        3.18       B. Mammoth Subchron
+854,7,18,control_horizon,19.0,3.4,5.37,19.0        5.37       3.4        B. Gauss Chron
+854,7,19,control_horizon,19.5,3.5,0.23,19.5        0.23       3.5        Extrapolated
+854,7,20,control_horizon,19.93,5.35,6.61,19.93       6.61       5.35       T. C3A-n1
+854,7,21,control_horizon,21.12,5.53,5.33,21.12       5.33       5.53       B. C3A-n1
+854,7,22,control_horizon,21.92,5.68,5.52,21.92       5.52       5.68       T. C3A-n2
+854,7,23,control_horizon,23.08,5.89,4.56,23.08       4.56       5.89       B. C3A-n2
+854,7,24,control_horizon,25.27,6.37,17.08,25.27      17.08       6.37       T. C3A-n3
+854,7,25,control_horizon,27.49,6.5,16.15,27.49      16.15       6.5        B. C3A-n3
+854,7,26,control_horizon,30.72,6.7,17.0,30.72      17.0        6.7        T. C4-n1
+854,7,27,control_horizon,33.27,6.85,15.14,33.27      15.14       6.85       B. C4-n1
+854,7,28,control_horizon,39.78,7.28,18.14,39.78      18.14       7.28       B. C4-n2
+854,7,29,control_horizon,41.05,7.35,20.83,41.05      20.83       7.35       T. C4-n3
+854,7,30,control_horizon,42.3,7.41,2.92,42.3        2.92       7.41       B. C4-n3
+854,7,31,control_horizon,43.73,7.9,5.13,43.73       5.13       7.9        T. C4A-n1
+854,7,32,control_horizon,45.32,8.21,6.1,45.32       6.1        8.21       B. C4A-n1
+854,7,33,control_horizon,46.54,8.41,10.33,46.54      10.33       8.41       T. C4A-n2
+854,7,34,control_horizon,47.47,8.5,,47.47                  8.5        B. C4A-n2
+854,7,35,control_horizon,48.66,8.71,5.67,48.66       5.67       8.71       T. C4A-n3
+854,7,36,control_horizon,49.21,8.8,6.11,49.21       6.11       8.8        B. C4A-n3
+854,7,37,control_horizon,49.52,8.92,2.58,49.52       2.58       8.92       T. C5-n1

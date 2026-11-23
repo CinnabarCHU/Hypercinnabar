@@ -1,0 +1,74 @@
+pilot_item_id,global_item_id,pilot_status,pilot_title,pilot_section
+T01,IR11.T01,随盘电子表,Coring operations,S03
+T02,IR11.T02,印页转录,Logging operations,S03
+T03,IR11.T03,随盘电子表,Calcareous nannofossil events,S05
+T04,IR11.T04,随盘电子表,Planktonic foraminifer events,S05
+T05,IR11.T05,随盘电子表,Radiolarian events,S05
+T06,IR11.T06,随盘电子表,Diatom events,S05
+T07,IR11.T07,随盘电子表,Core depths in the composite section,S07
+T08,IR11.T08,随盘电子表,Control points for accumulation rates,S07
+T09,IR11.T09,随盘电子表,Interstitial-water chemistry,S08
+T10,IR11.T10,随盘电子表,Carbon and nitrogen,S09
+T11,IR11.T11,印页转录,Duplicate carbonate analyses,S09
+T12,IR11.T12,随盘电子表,Mean sedimentary parameters,S09
+T13,IR11.T13,随盘电子表,Headspace hydrocarbons,S09
+T14,IR11.T14,随盘电子表,Alkenone analyses and temperature,S09
+T15,IR11.T15,随盘电子表,Index properties,S10
+T16,IR11.T16,随盘电子表,Compressional-wave velocity,S10
+T17,IR11.T17,随盘电子表,Undrained shear strength,S10
+T18,IR11.T18,随盘电子表,Thermal conductivity,S10
+T19,IR11.T19,印页转录,Logging depth intervals,S11
+T20,IR11.T20,随盘电子表,Seismic reflectors,S12
+T21,IR11.T21,印页转录,Paleolatitudes and longitudes,S13
+F01,IR11.F01,印图,Site locations and equatorial circulation,S02
+F02,IR11.F02,印图,Tectonic setting and basement ages,S02
+F03,IR11.F03,印图,SeaBeam bathymetry,S02
+F04,IR11.F04,印图,Seismic Line G,S02
+F05,IR11.F05,印图及分栏数据,Lithostratigraphic summary,S04
+F06,IR11.F06,印图与部分关联资料,Major smear-slide components,S04
+F07,IR11.F07,印图及分栏数据,Composite stratigraphic summary,S04
+F08,IR11.F08,印图与部分关联资料,Color in Hole 846B,S04
+F09,IR11.F09,印图与部分关联资料,Decimeter-scale reflectance,S04
+F10,IR11.F10,印图与部分关联资料,Red reflectance profile,S04
+F11,IR11.F11,印图与同芯照片,Zoophycos burrows,S04
+F12,IR11.F12,印图与同芯照片,Vertical burrow and diagenetic halo,S04
+F13,IR11.F13,印图与同芯照片,Crosscutting burrows,S04
+F14,IR11.F14,印图与同芯照片,Burrows and discoloration,S04
+F15,IR11.F15,印图与同芯照片,Burrows with truncating halos,S04
+F16,IR11.F16,印图与同芯照片,Chondrites,S04
+F17,IR11.F17,印图与同芯照片,Bioturbated lithologic contact,S04
+F18,IR11.F18,印图与部分关联资料,Biostratigraphic summary,S05
+F19,IR11.F19,印图与部分关联资料,Magnetic susceptibility and remanence,S06
+F20,IR11.F20,印图与相关表列,Susceptibility in the upper 40 m,S06
+F21,IR11.F21,印图与相关表列,Multihole composite-depth records,S07
+F22,IR11.F22,印图与部分关联资料,Biostratigraphic age vs. depth,S07
+F23,IR11.F23,印图与相关表列,Sedimentation rate vs. age,S07
+F24,IR11.F24,印图与相关表列,Sedimentation rate vs. composite depth,S07
+F25,IR11.F25,印图与相关表列,Interstitial-water chemistry I,S08
+F26,IR11.F26,印图与相关表列,Interstitial-water chemistry II,S08
+F27,IR11.F27,印图与相关表列,Interstitial-water chemistry III,S08
+F28,IR11.F28,印图与相关表列,Carbonate and organic carbon,S09
+F29,IR11.F29,印图与部分关联资料,Carbon and sediment parameters,S09
+F30,IR11.F30,印图与部分关联资料,Mass accumulation by interval,S09
+F31,IR11.F31,印图与部分关联资料,Mass accumulation vs. age,S09
+F32,IR11.F32,印图与相关表列,Methane and sulfate,S09
+F33,IR11.F33,印图与相关表列,Alkenone index and sea-surface temperature,S09
+F34,IR11.F34,印图与相关表列,Wet-bulk density,S10
+F35,IR11.F35,印图与相关表列,Water content,S10
+F36,IR11.F36,印图与相关表列,Grain density,S10
+F37,IR11.F37,印图与相关表列,Porosity,S10
+F38,IR11.F38,印图与相关表列,Compressional-wave velocity,S10
+F39,IR11.F39,印图与相关表列,Undrained shear strength,S10
+F40,IR11.F40,印图与相关表列,Thermal conductivity,S10
+F41,IR11.F41,印图与部分关联资料,Borehole caliper,S11
+F42,IR11.F42,印图与部分关联资料,"Sonic velocity, density and resistivity",S11
+F43,IR11.F43,印图与部分关联资料,Downhole chemical composition,S11
+F44,IR11.F44,印图与部分关联资料,Logging and core density comparison,S11
+F45,IR11.F45,印图与图读点,Composite splice depth and logging depth,S11
+F46,IR11.F46,印图,FMS resistivity image,S11
+F47,IR11.F47,印图与部分关联资料,Natural gamma-ray activity,S11
+F48,IR11.F48,印图与部分关联资料,Hole 846B gamma-ray comparisons,S11
+F49,IR11.F49,印图与部分关联资料,Ca log comparison,S11
+F50,IR11.F50,印图,Synthetic and field seismograms,S12
+F51,IR11.F51,印图与部分关联资料,Inputs to synthetic seismograms,S12
+F52,IR11.F52,印图与部分关联资料,"Sedimentation, susceptibility and density",S13

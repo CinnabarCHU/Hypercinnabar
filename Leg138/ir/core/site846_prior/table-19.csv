@@ -1,0 +1,11 @@
+printed_page,table_row,row_kind,log_type,top_mbsf,bottom_mbsf
+314,1,data,Resistivity,83.0,419.2
+314,2,data,Bulk density,75.1,411.1
+314,3,data,Sonic velocity,63.2,400.4
+314,4,data,Sonic waveforms,63.2,400.4
+314,5,data,Gamma-ray/U-Th-K,00.0,417.2
+314,6,data,Aluminum,00.0,405.2
+314,7,data,Geochemistry,00.0,416.9
+314,8,data,Caliper,66.3,417.2
+314,9,data,Formation Microscanner,66.3,417.2
+314,10,data,LDGE temperature,00.0,417.2

@@ -1,0 +1,45 @@
+{
+  "chapters_indexed": 47,
+  "focus_items": {
+    "appendix": 3,
+    "figure": 36,
+    "table": 14
+  },
+  "data_editions": 42,
+  "edition_rows_including_parallel_releases_and_reference": 53305,
+  "ch27_table1_checked_numeric_positions": 3632,
+  "ch27_numeric_differences": [
+    [
+      171,
+      "sst_c",
+      "25.3",
+      "23.3"
+    ]
+  ],
+  "ch33_print_pangaea_numeric_differences": [
+    [
+      688,
+      14,
+      "rmcd",
+      "1.59",
+      "1.54"
+    ],
+    [
+      690,
+      63,
+      "rmcd",
+      "23.83",
+      "2383.00"
+    ]
+  ],
+  "ch43_A_print_vs_NOAA_section_spelling_or_identifier_differences": 21,
+  "ch43_A_numeric_positions_vs_NOAA": 4854,
+  "ch43_B_unit_converted_rows_vs_PANGAEA": 654,
+  "ch15_T7_rows_corresponding_to_PANGAEA": 1383,
+  "ch15_T7_published_grid_rows": 1463,
+  "ch39_original_846": 0,
+  "ch39_corrected_846": 266,
+  "ch23_unresolved_datum_rows": 5,
+  "source_files_hashed": 191,
+  "source_line_spans_verified": 51061
+}

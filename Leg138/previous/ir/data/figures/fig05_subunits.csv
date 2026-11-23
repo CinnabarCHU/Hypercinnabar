@@ -1,0 +1,5 @@
+hole,unit,subunit,printed_top_mbsf,printed_base_mbsf,printed_top_location,printed_base_location,printed_pages,source_url
+846B,I,IA,0,262.7,138-846B-1H (core only),"138-846B-28X-6, 30 cm",269-271,https://www-odp.tamu.edu/publications/138_IR/VOLUME/CHAPTERS/ir138_11.pdf
+846B,I,IB,262.7,317.0,"138-846B-28X-6, 30 cm","138-846B-34X-4, 110 cm","271, 275",https://www-odp.tamu.edu/publications/138_IR/VOLUME/CHAPTERS/ir138_11.pdf
+846B,II,IIA,317.0,370.5,"138-846B-34X-4, 110 cm","138-846B-40X-1, 20 cm",275,https://www-odp.tamu.edu/publications/138_IR/VOLUME/CHAPTERS/ir138_11.pdf
+846B,II,IIB,370.5,419.2,"138-846B-40X-1, 20 cm","138-846B-45X-1, 63 cm",275,https://www-odp.tamu.edu/publications/138_IR/VOLUME/CHAPTERS/ir138_11.pdf

@@ -1,0 +1,25 @@
+{
+  "source_pdfs": 617,
+  "source_pdf_bytes": 457219292,
+  "directory_listings": 1,
+  "directory_listing_bytes": 76835,
+  "sites": 11,
+  "native_photo_streams_checked": 593,
+  "native_raster_height_counts": {
+    "2700": 591,
+    "1063": 2
+  },
+  "vcd_pages": 592,
+  "vcd_page_identifier_evidence_counts": {
+    "only_printed_photo_identifier_resolved_in_source_OCR": 88,
+    "two_source_OCR_identifiers_agree": 401,
+    "only_form_header_resolved_in_source_OCR": 82,
+    "scan_confirmed_both_labels": 20,
+    "scan_confirmed_form_photo_conflict": 1
+  },
+  "smear_slide_pages": 26,
+  "foldout_figures": 13,
+  "searchable_source_pages": 620,
+  "native_pixel_crops_checked": 22,
+  "coring_table_ids_without_separate_photo": 6
+}

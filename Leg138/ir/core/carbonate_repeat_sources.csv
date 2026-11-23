@@ -1,0 +1,12 @@
+item_id,site,chapter_pdf,chapter_pdf_page,printed_page,chapter_locator_role,native_path,chosen_witness,sample_rows,individual_runs,published_mean_difference_rows
+IR09.T15,844,VOLUME/CHAPTERS/ir138_09.pdf,44,162,printed_table,,chapter_page,12,24,1
+IR10.T13,845,VOLUME/CHAPTERS/ir138_10.pdf,47,235,printed_table,,chapter_page,13,26,1
+IR11.T11,846,VOLUME/CHAPTERS/ir138_11.pdf,37,301,printed_table,,chapter_page_via_collated_site846,61,124,1
+IR12.T11,847,VOLUME/CHAPTERS/ir138_12.pdf,29,363,printed_table,,chapter_page,43,91,1
+IR13.T18,848,VOLUME/CHAPTERS/ir138_13.pdf,52,728,printed_table,,chapter_page,18,36,1
+IR14.T11,849,VOLUME/CHAPTERS/ir138_14.pdf,47,781,printed_table,,chapter_page,42,86,1
+IR15.T17,850,VOLUME/CHAPTERS/ir138_15.pdf,35,843,narrative_reference_to_cd_rom,VOLUME/DATA/TABLES/CHAP_15/TABLE.17,disc_ascii,37,74,1
+IR16.T13,851,VOLUME/CHAPTERS/ir138_16.pdf,42,932,printed_table,,chapter_page,25,50,1
+IR17.T14,852,VOLUME/CHAPTERS/ir138_17.pdf,35,1001,printed_table,,chapter_page,35,70,1
+IR18.T11,853,VOLUME/CHAPTERS/ir138_18.pdf,27,1049,printed_table,,chapter_page,24,48,1
+IR19.T10,854,VOLUME/CHAPTERS/ir138_19.pdf,22,1084,printed_table,,chapter_page,8,16,1

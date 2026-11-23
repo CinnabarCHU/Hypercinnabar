@@ -1,0 +1,14 @@
+page,printed_row,code,species,offset_d18o,offset_d13c
+341,1,UVIG,Uvigerina sp.,0.00,0.90
+341,2,HELEG,Hoeglundina elegans,-0.40,-1.30
+341,3,PWUELL,Cibicidoides wuellerstorfi,0.64,0.00
+341,4,CIBKULL,C. kullenbergi,0.64,0.00
+341,5,ORID,Oridorsalis sp.,0.00,1.00
+341,6,GLOBOCAS,Globocassidulina subglobosa,-0.10,0.50
+341,7,WUELKULL,C. kull. and C. wuell.,0.64,0.00
+341,8,NUTT,Nuttalides sp.,0.35,0.00
+341,9,NUTTCIB,Nuttalides and Cib.,0.40,0.00
+341,10,SBULL,Sphaeroidina bulloides,-0.10,-0.10
+341,11,CIB,Cibicidoides spp.,0.50,0.00
+341,12,GYROID,Gyroidina sp.,0.00,0.00
+341,13,GLOBOBUL,Globobulimina pacifica,0.00,NA

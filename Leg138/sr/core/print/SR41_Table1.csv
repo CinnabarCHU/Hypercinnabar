@@ -1,0 +1,12 @@
+printed_page,pdf_page,printed_row,site,location_as_printed,longitude_W_as_printed,latitude_N_as_printed,age_Ma,sedimentary_cover_m,depth_drilled_mbsf,sedimentation_rate_m_per_my,regional_heat_flow,local_topography_as_printed,Sr87_Sr86_profile_near_basement,footnote_marker
+814,2,1,844,Guatemala Basin,90°28′,7°55′,17.5,300,290.8,30–35,Low,"Topography minimal, seamount 8 km SW, 475m above seafloor",Reversal,
+814,2,2,845,Guatemala Basin,94°35′,9°34′,17,291,291.6,25–40,Low,"Topography minimal, rough basement, no outcrops",Reversal,
+814,2,3,846,South of Galapagos Islands,90°49′,3°05′S,16.5,422,422.4,20–50,High,"Flat and undisturbed, no outcrops",No reversal,a
+814,2,4,847,West of Galapagos Islands,95°19′,0°11′,7,295,231.0,30–80,High,"Topographic high, relatively rough basement",Basement not reached,
+814,2,5,848,"EEP, sed. bulge",110°28′,2°59′S,11,93.3,93.3,10–20,Low,"Number of small peaks and troughs, rough basement",Reversal,
+814,2,6,849,"EEP, sed. bulge",110°31′,0°10′N,10.5,350,350.5,20–100,Low,"A small outcrop 10–15 km W, 300 m above seafloor",Reversal,
+814,2,7,850,"EEP, sed. bulge",110°31′,1°17′,12,399,399.8,20–100,low,"A topographic high, with rough basement, outcrop 9 km S",Reversal,
+814,2,8,851,"EEP, sed. bulge",110°34′,2°46′,11,320,320.5,30–70,Low,"Topographic high, with complex basement relief",Reversal,
+814,2,9,852,"EEP, sed. bulge",110°4′,5°17′,10,125,117.3,10–25,Low,"Topographic high, with rough basement relief",Reversal,
+814,2,10,853,West of EPR,109°45′,7°12′,7,73,72.4,5–15,High,"Small topographic high, no outcrops",No reversal,
+814,2,11,854,West of EPR,109°35′,11°13′,9,46,46.0,2–15,High,No major topographic features,No reversal,

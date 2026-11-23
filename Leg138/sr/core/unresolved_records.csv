@@ -1,0 +1,11 @@
+dataset_id,source,first_line,last_line,reason,original_text
+SR.C15.TABLE9,official/VOLUME/DATA/CHAP15/138117T9.TXT,873,873,hole_heading_mixed_with_partial_record,     677B-     140  5.3  81.60     5.4  87.00     3.92 -0.56     -1.36
+SR.C23.TABLE3,official/VOLUME/DATA/CHAP23/38127T03.TXT,132,133,excess_cells_or_physical_line_break,"b T. davisiana	34.7	22.05	23.35	49.60	51.93	105.78	110.10	89.58	91.95	31.35
+31.86 "
+SR.C23.TABLE3,official/VOLUME/DATA/CHAP23/38127T03.TXT,139,140,excess_cells_or_physical_line_break,"b L. neoheteroporos	40.71	20.35	22.05	55.37	56.18	135.45	136.45	97.98	99.83	30.33
+30.85"
+SR.C23.TABLE3,official/VOLUME/DATA/CHAP23/38127T03.TXT,141,141,excess_cells_or_physical_line_break,t P. dolium	40.71	26.05	31.01	63.36	64.06	157.70	160.32	128.74	129.00	36.85	36.92
+SR.C23.TABLE3,official/VOLUME/DATA/CHAP23/38127T03.TXT,145,145,excess_cells_or_physical_line_break,b P. prismatium	68.76	24.93	26.05	66.70	67.06	183.65	184.41	160.45	163.45	44.42	44.95
+SR.C23.TABLE3,official/VOLUME/DATA/CHAP23/38127T03.TXT,164,164,excess_cells_or_physical_line_break,b D. pettersoni	261.93	110.60	113.49	183.00	183.60	388.65	393.15	n.a	n.a	n.a	n.a
+SR.C35.APPENDIXB,official/VOLUME/DATA/CHAP35/38143APB.TXT,950,950,field_count_mismatch,847B 44.84     1.403     2.64 0.698     78.01s     26.11s        1.44 0.48 Janecek
+SR.C35.APPENDIXB,official/VOLUME/DATA/CHAP35/38143APB.TXT,2065,2065,field_count_mismatch,850B 378.56    11.066    4.69 0.673     68.91     18  .86   12.22     2.17 0.59 0.39 Janecek

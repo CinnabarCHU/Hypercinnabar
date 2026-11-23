@@ -1,0 +1,95 @@
+{
+  "entry": "browse.html",
+  "scheme": "file",
+  "browser": "Chromium headless",
+  "tested_stations": [
+    "844",
+    "845",
+    "846",
+    "847",
+    "848",
+    "849",
+    "850",
+    "851",
+    "852",
+    "853",
+    "854"
+  ],
+  "tested_prospectus_cards": 12,
+  "local_links_checked_per_item": true,
+  "optical_sample_windows_decoded": 22,
+  "site846_exported_nonempty_rows": 147,
+  "query_checks": [
+    "EEQ-4A",
+    "852B",
+    "IR11.T10",
+    "GRAPE",
+    "isotope"
+  ],
+  "mobile_width_px": 390,
+  "station_tables_ui": {
+    "844": {
+      "nonempty_org_c": 67,
+      "source_rows": 187,
+      "repeat_sample_rows": 12
+    },
+    "845": {
+      "nonempty_org_c": 133,
+      "source_rows": 223,
+      "repeat_sample_rows": 13
+    },
+    "846": {
+      "nonempty_org_c": 147,
+      "source_rows": 318,
+      "repeat_sample_rows": 61
+    },
+    "847": {
+      "nonempty_org_c": 26,
+      "source_rows": 260,
+      "repeat_sample_rows": 43
+    },
+    "848": {
+      "nonempty_org_c": 20,
+      "source_rows": 127,
+      "repeat_sample_rows": 18
+    },
+    "849": {
+      "nonempty_org_c": 75,
+      "source_rows": 278,
+      "repeat_sample_rows": 42
+    },
+    "850": {
+      "nonempty_org_c": 79,
+      "source_rows": 294,
+      "repeat_sample_rows": 37
+    },
+    "851": {
+      "nonempty_org_c": 67,
+      "source_rows": 266,
+      "repeat_sample_rows": 25
+    },
+    "852": {
+      "nonempty_org_c": 44,
+      "source_rows": 187,
+      "repeat_sample_rows": 35
+    },
+    "853": {
+      "nonempty_org_c": 8,
+      "source_rows": 93,
+      "repeat_sample_rows": 24
+    },
+    "854": {
+      "nonempty_org_c": 0,
+      "source_rows": 63,
+      "repeat_sample_rows": 8
+    }
+  },
+  "carbonate_repeat_sample_rows_opened": 318,
+  "http_search_check": {
+    "site": "852",
+    "q": "carbonate",
+    "series": "PR",
+    "status": 200,
+    "first_match_pdf_page": 23
+  }
+}

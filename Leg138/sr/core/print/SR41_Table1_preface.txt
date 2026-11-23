@@ -1,0 +1,7 @@
+Oyun, Elderfield & Klinkhammer (1995), Scientific Results 138, Chapter 41, Table 1.
+Printed p. 814, chapter PDF leaf 2. Printed heading: “Summary of Leg 138 sites and Sr-isotope reversals.”
+The table was printed rotated and transcribed after rotating a crop clockwise. This is a summary assembled by the paper's authors. The longitude and latitude fields reproduce the paper's own historical labels. The two headers are Longitude (°W) and Latitude (°N), and some latitude cells explicitly carry S or N. Preserve those cell qualifiers independently. Age is in Ma, sedimentary cover is in m, depth drilled in mbsf, sedimentation rates in m/m.y. The strontium column records the authors' qualitative interpretation near basement. It is separate from Chapter 41 Table 2 measurements. Site 847 has “Basement not reached”. The footnote marker for Site 846 qualified the strontium-ratio interpretation and is kept separate.
+Printed notes, transcription:
+Notes: In the “Sedimentary Cover” column, there are no major differences in the lithostratigraphy at all sites, and the presence of volcanic ash is negligible. EEP = East Equatorial Pacific, and EPR = East Pacific Rise.
+a Reversal in Sr²⁺ (see Fig. 2).
+Publisher leaf in unrotated points, bounding box x=75, y=35, x2=278, y2=690; rotate clockwise 90° for reading. All 11 rows were read against the scan. Source capitalization of “low” in Site 850 preserved. No site was geocoded or modernized to reconcile this table with other publications.

@@ -1,0 +1,59 @@
+{
+  "parts": [
+    {
+      "path": "publication/Station_reader.pdf",
+      "heading": "航次与站点校读",
+      "first_page": 1,
+      "last_page": 30,
+      "input_sha256": "141ae6e8ec05b92f64727428beb60600c7f9773e39f245c289f11eb8d83441c6",
+      "preserved_source_links": 76
+    },
+    {
+      "path": "sppr/core/publication/Leg138_SP_Proposed_Sites.pdf",
+      "heading": "航前拟钻站",
+      "first_page": 31,
+      "last_page": 66,
+      "input_sha256": "47b770c02b2b793eb8bb93e63bd8ae38de904ba20e2671939a9fce9a457b80ba",
+      "preserved_source_links": 36
+    },
+    {
+      "path": "figures/core/Leg138_PR_Rate_Atlas.pdf",
+      "heading": "航后初报图件对校",
+      "first_page": 67,
+      "last_page": 77,
+      "input_sha256": "5b42c56ae6e504d23d4e3efd59182c9aadf86ab38a0c5bfeaf158c6d27c9cf5c",
+      "preserved_source_links": 0
+    },
+    {
+      "path": "sr/core/figures/SR06_Figure11_comparison.pdf",
+      "heading": "后续研究图件复算",
+      "first_page": 78,
+      "last_page": 78,
+      "input_sha256": "53cfd5d739178f7f260d02ac47f8ccf8b210af4cb6366349c5e3813c08506101",
+      "preserved_source_links": 0
+    },
+    {
+      "path": "plates/core/optical/Optical_windows_Leg138.pdf",
+      "heading": "岩芯照片与标尺",
+      "first_page": 79,
+      "last_page": 82,
+      "input_sha256": "c4686f2a7d532b54939f42e0cc481073cbe40b0321e6a68dae154ddea2b627af",
+      "preserved_source_links": 11
+    },
+    {
+      "path": "sppr/core/figures/pr_fig15_graphic_check.pdf",
+      "heading": "航后初报的古地理图读",
+      "first_page": 83,
+      "last_page": 83,
+      "input_sha256": "8cdaa96885f4b76dddaeb839eb9576d943111c66c857f6c02b7d7e43a1a6e777",
+      "preserved_source_links": 0
+    }
+  ],
+  "total_pages": 84,
+  "contents_page": 84,
+  "bookmark_count": 86,
+  "preserved_source_links": 123,
+  "new_internal_links": 7,
+  "output_sha256": "40ebb8d32008f50edb3623f62b1f5c92d4a0a9f952e1223d4dc3853a01d3c503",
+  "output_bytes": 9202807
+}

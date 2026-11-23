@@ -1,0 +1,10 @@
+--- original/SPLICE.F
++++ build/splice.f
+@@ -68,6 +68,7 @@
+       character ohole
+       character*3 osite
+ 	character*80 tempfile
++      real junk
+       integer oleg
+       integer oncore,osect
+ *

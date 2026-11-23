@@ -1,0 +1,20 @@
+page,printed_row,species,site_mean,site_sd,site_min,site_max,coretop_mean,coretop_sd,coretop_min,coretop_max
+682,1,Orbulina universa,2.3,2.0,0.0,13.0,0.7,1.3,0.0,14.0
+682,2,Globigerinoides ruber,2.3,1.4,0.0,6.9,10.4,15.6,0.0,74.7
+682,3,Globigerinoides tenellus,0.1,0.3,0.0,1.7,0.7,1.6,0.0,8.2
+682,4,Globigerinoides sacculifer,1.2,1.2,0.0,7.1,4.4,5.3,0.0,25.2
+682,5,Globigerinella aequilateralis,0.3,0.4,0.0,2.9,2.1,2.5,0.0,13.9
+682,6,Globigerinella calida,1.1,0.8,0.0,4.8,1.9,2.5,0.0,15.2
+682,7,Globigerina bulloides,11.7,5.9,1.3,29.3,4.2,11.1,0.0,60.4
+682,8,Globigerina rubescens,0.1,0.2,0.0,1.5,0.8,1.6,0.0,12.1
+682,9,Neogloboquadrina pachyderma (R),17.9,7.0,1.8,35.4,0.2,2.4,0.0,39.4
+682,10,Neogloboquadrina dutertrei,51.6,8.0,31.5,67.7,17.3,24.3,0.0,95.0
+682,11,Globoquadrina conglomerata,0.0,0.2,0.0,1.1,2.0,2.8,0.0,16.7
+682,12,Pulleniatina obliquiloculata,0.3,0.4,0.0,2.4,10.2,15.2,0.0,68.0
+682,13,Globorotalia inflata,1.5,5.6,0.0,41.1,3.6,9.7,0.0,87.0
+682,14,Globorotalia crassaformis,0.4,0.8,0.0,6.3,0.9,3.0,0.0,26.7
+682,15,Globorotalia menardii,5.6,6.8,0.0,36.0,2.9,5.2,0.0,50.0
+682,16,Globorotalia tumida,0.1,0.2,0.0,1.1,17.5,23.7,0.0,98.0
+682,17,Globigerinita glutinata,2.4,1.5,0.0,8.2,8.0,10.7,0.0,41.4
+682,18,Fragmentation index,9.0,6.6,2.2,43.2,,,,
+682,19,% Benthic foraminifers,3.6,2.3,0.0,12.8,,,,

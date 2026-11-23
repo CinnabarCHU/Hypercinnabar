@@ -1,0 +1,14 @@
+dataset_id,item_id,chapter,source,source_pdf_page_from,source_pdf_page_to,site,records,file,description
+SR.C15.TABLE2.PRINT846,SR.C15.TABLE2,15,official/VOLUME/CHAPTERS/sr138_15.pdf,3,3,846,7,verified846/print/c15_t2.csv,事件的样品上下界。
+SR.C15.TABLE4.PRINT846,SR.C15.TABLE4,15,official/VOLUME/CHAPTERS/sr138_15.pdf,5,5,846,13,verified846/print/c15_t4.csv,从原始同位素值到作者规定的类群参比的加法系数，单位 ‰。
+SR.C15.TABLE8.PRINT846,SR.C15.TABLE8,15,official/VOLUME/CHAPTERS/sr138_15.pdf,18,18,846,13,verified846/print/c15_t8.csv,各周期的相干与相位（度）；原表空白原样保留。
+SR.C27.TABLE1.PRINT846,SR.C27.TABLE1,27,official/VOLUME/CHAPTERS/sr138_27.pdf,3,5,846,227,verified846/print/c27_t1.csv,碳分析、GRAPE 湿密度和烯酮指标与年龄、估算干密度、温度及堆积速率同表。龄 ka，深度 m；BAR 与碳酸钙通量 g cm⁻² kyr⁻¹，TOC 通量 mg cm⁻² kyr⁻¹。
+SR.C27.TABLE2.PRINT846,SR.C27.TABLE2,27,official/VOLUME/CHAPTERS/sr138_27.pdf,8,8,846,3,verified846/print/c27_t2.csv,原刊相位含一处难解字形，最后一格照录 11É ±21°。
+SR.C33.APPENDIX1.PRINT846,SR.C33.APPENDIX,33,official/VOLUME/CHAPTERS/sr138_33.pdf,14,19,846,239,verified846/print/c33_app1.csv,印本前半，十个具名物种的相对丰度（%）；mcd 是船上复合深度。
+SR.C33.APPENDIX2.PRINT846,SR.C33.APPENDIX,33,official/VOLUME/CHAPTERS/sr138_33.pdf,14,19,846,239,verified846/print/c33_app2.csv,后半段重新列样，同一表头跨用；保留十列刊面读数，slot_08 有三位整数，其余各列亦不据复用表头推断物种或单位。
+SR.C33.TABLE1.PRINT846,SR.C33.TABLE1,33,official/VOLUME/CHAPTERS/sr138_33.pdf,3,3,846,6,verified846/print/c33_t1.csv,三频带的相位和相干，保留 NC。
+SR.C33.TABLE2.PRINT846,SR.C33.TABLE2,33,official/VOLUME/CHAPTERS/sr138_33.pdf,8,8,846,19,verified846/print/c33_t2.csv,样品统计量；coretop_* 属于被比较的东太平洋表层样品。
+SR.C33.TABLE3.PRINT846,SR.C33.TABLE3,33,official/VOLUME/CHAPTERS/sr138_33.pdf,9,9,846,15,verified846/print/c33_t3.csv,因子得分；末行是方差百分数。
+SR.C43.APPENDIXA.PRINT846,SR.C43.APPENDIXA,43,official/VOLUME/CHAPTERS/sr138_43.pdf,10,14,846,809,verified846/print/c43_appa.csv,印本的逐次底栖分析。p.852 表注说明已作类群校正：C. wuellerstorfi δ18O 加 0.64‰，U. peregrina δ13C 加 0.90‰，不要再加。
+SR.C43.APPENDIXB.PRINT846,SR.C43.APPENDIXB,43,official/VOLUME/CHAPTERS/sr138_43.pdf,15,16,846,654,verified846/print/c43_appb.csv,印本年龄（Ma）、修订复合深度（rmcd）和沉积速率（m/Myr），保留作者列出的 10 cm 网格。
+SR.C41.TABLE1.PRINT,SR.C41.TABLE1,41,official/VOLUME/CHAPTERS/sr138_41.pdf,2,2,844|845|846|847|848|849|850|851|852|853|854,11,print/SR41_Table1.csv,十一站沉积覆盖、钻深、沉积速率范围、区域地形、热流以及近基底锶同位素剖面判读。纸刊汇总数据，全部单元据印表核读。

@@ -1,0 +1,50 @@
+{
+  "source_files": 192,
+  "official_files": 179,
+  "directories": 14,
+  "directory_files": 174,
+  "volume_chapters": 47,
+  "chapter_leaves": 888,
+  "all_indexed_leaves": 935,
+  "located_items": 791,
+  "item_kinds": {
+    "figure": 517,
+    "table": 231,
+    "appendix": 7,
+    "plate": 36
+  },
+  "anchors": 978,
+  "text_site_evidence": 3104,
+  "table_site_evidence": 135,
+  "electronic_editions": 67,
+  "electronic_records": 124288,
+  "field_mapped": 124280,
+  "unresolved": 8,
+  "accounted_nonrecord_nonempty_source_lines": 289,
+  "transcribed_print_datasets": 13,
+  "transcribed_print_records": 2255,
+  "revised_ch39_table2": {
+    "cd_rows": 197,
+    "replacement_rows": 2472
+  },
+  "sr6_fig11": {
+    "published_panels": [
+      844,
+      845,
+      846,
+      847,
+      848,
+      849,
+      850,
+      851,
+      852,
+      853
+    ],
+    "additional_distributed_site": 854
+  },
+  "unresolved_by_table": {
+    "SR.C15.TABLE9": 1,
+    "SR.C23.TABLE3": 5,
+    "SR.C35.APPENDIXB": 2
+  }
+}

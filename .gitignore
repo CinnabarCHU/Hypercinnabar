@@ -1,0 +1,7 @@
+__pycache__/
+*.py[cod]
+/Leg138/Leg138.sqlite
+/Leg138/*.building.sqlite
+/Leg138/*/primary/
+/Leg138/build/
+/Leg138/.venv/

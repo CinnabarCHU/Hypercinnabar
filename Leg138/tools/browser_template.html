@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Leg 138 · 大洋钻探站点档案</title>
+<style>
+:root{--ink:#182d30;--muted:#526766;--sea:#11615b;--line:#c9d8d2;--paper:#fbfbf6;--sand:#92521c;--water:#edf5f0}
+*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font-family:system-ui,"Noto Sans CJK SC","Microsoft YaHei",sans-serif;font-size:15px;line-height:1.55}header{background:#133c3b;color:#f5f5e8;padding:21px max(5%,calc((100vw - 1150px)/2)) 24px}h1,h2,h3{margin:0;line-height:1.22}h1,h2{font-family:Georgia,"Noto Serif CJK SC",serif;font-weight:600}h1{font-size:clamp(31px,4vw,51px);margin:6px 0 8px}header p{margin:0;color:#d8e8df}small,.label{color:var(--muted);font-size:12px}.over{font-family:system-ui,sans-serif;font-size:11px;letter-spacing:.15em;font-weight:700;color:#badbd0}.wrap{max-width:1220px;padding:20px 32px 52px;margin:auto}nav{border-bottom:1px solid var(--line);padding-bottom:18px}label{font-weight:600}input,button,select{font:inherit;color:inherit}input{border:1px solid #93aaa0;background:white;border-radius:5px;padding:9px 12px;width:min(100%,500px)}button{cursor:pointer}button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible{outline:3px solid #ce702d;outline-offset:3px}.searchHead,.strip,.navrow,.line{display:flex;flex-wrap:wrap;align-items:center;gap:8px}.searchHead{margin-bottom:14px}.navrow+.navrow{margin-top:8px}.navrow>span{margin-right:5px;min-width:54px}.chip,.button{background:white;border:1px solid var(--line);padding:4px 9px;border-radius:4px;box-shadow:none}.chip[aria-current=true]{background:var(--sea);color:#fff;border-color:var(--sea)}.chip:hover,.button:hover{border-color:var(--sea)}a{color:#0b635b;text-decoration:underline;text-underline-offset:3px}a:hover{color:#813b17}.quiet{font-size:13px;color:var(--muted)}h2{font-size:34px}h3{font-size:18px;margin:0 0 6px}p{margin:7px 0}article{background:white;border:1px solid var(--line);border-radius:7px;padding:16px 17px;min-width:0}.detail{margin-top:22px}.hero{display:grid;grid-template-columns:minmax(260px,.88fr) minmax(350px,1.12fr);gap:22px;align-items:start;margin-bottom:16px}.intro{padding:12px 0}.hero .over{color:var(--sea);margin-bottom:4px}.hero h2{font-size:clamp(32px,3.8vw,54px);margin-bottom:6px}.bigstat{display:flex;gap:22px;margin-top:18px;border-top:1px solid var(--line);padding-top:10px}.bigstat b{display:block;font:600 23px Georgia,serif}.bigstat small{display:block}.mapbox{border:1px solid var(--line);background:var(--water);border-radius:6px;overflow:hidden}.mapbox svg{display:block;width:100%;height:auto}.mapbox figcaption{padding:0 10px 6px;font-size:11px;color:var(--muted)}figure{margin:0}.mapbox g[role=button]{cursor:pointer}.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.pair{display:flex;gap:8px;align-items:center}.pair img{max-height:88px;max-width:75px;object-fit:contain}.pair figure{display:flex;align-items:center;gap:8px}.linkbar{display:flex;flex-wrap:wrap;gap:4px 15px;margin-top:9px;font-size:13px}.full{grid-column:1/-1}.tools{display:flex;flex-wrap:wrap;align-items:center;gap:8px;margin:9px 0}select{border:1px solid var(--line);border-radius:4px;padding:5px}.scroll{max-height:350px;overflow:auto;border:1px solid var(--line);margin:8px 0}table{border-collapse:collapse;text-align:left;width:100%;font-size:13px}td,th{padding:6px 10px;border-bottom:1px solid #e4ece7;vertical-align:top}th{background:#edf4ee;position:sticky;top:0;white-space:nowrap;font-weight:600}details{margin-top:10px}summary{cursor:pointer;color:var(--sea);font-weight:600}.results{max-height:280px;overflow:auto;border:1px solid var(--line);padding:6px 12px;background:white;border-radius:5px;margin:4px 0 12px}.result{padding:5px 0;border-bottom:1px solid #e4eae5}.result:last-child{border:none}.result button{padding:0;border:0;background:transparent;color:var(--sea);text-decoration:underline}.result small{display:block}.hide{display:none}footer{margin-top:22px;border-top:1px solid var(--line);padding-top:10px;color:var(--muted);font-size:12px}.source{font-weight:650}.mapbox svg text{font-family:system-ui,sans-serif} .footnote{font-size:12px;color:var(--muted)}@media(max-width:760px){.wrap{padding:16px}.hero{grid-template-columns:1fr;gap:4px}.grid{grid-template-columns:1fr}.full{grid-column:auto}.bigstat{margin-top:12px}.wrap header{padding:16px}.searchHead input{width:100%}.navrow>span{min-width:43px}.tools select{max-width:100%}}
+</style></head>
+<body>
+<header><div class="over">OCEAN DRILLING PROGRAM · EASTERN EQUATORIAL PACIFIC</div><h1>Leg 138 航次档案</h1><p>从航前选址、实钻记录到随盘数据与后续研究。</p></header>
+<main class="wrap">
+<nav aria-label="站点与检索"><div class="searchHead"><label for="query">查找站点或项目</label><input id="query" type="search" autocomplete="off" placeholder="例如 EEQ-4A、852B、IR11.T10、GRAPE 或 isotope"><button id="api" type="button" class="button">全文检索 API</button></div>
+<div id="apiHint" class="quiet hide" role="status"></div><div id="results" class="results hide" aria-live="polite"></div>
+<div class="navrow" id="sites"><span class="label">实钻站</span></div>
+<div class="navrow" id="plans"><span class="label">航前站</span></div></nav>
+<div class="detail" id="detail" aria-live="polite"></div>
+<footer>经纬度保留原刊表达。图上按地理度显示，未另做大地基准转换。区域岸线来自 Natural Earth 1:50m。原刊链接需要联网，数据表、重绘图与光学样窗可从解压后的档案离线打开。</footer>
+</main>
+<script type="application/json" id="payload">@DATA@</script>
+<script>
+"use strict";
+const D=JSON.parse(document.getElementById('payload').textContent);
+const byId=id=>document.getElementById(id);
+const escaped=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const base=/\/integration\/core\/browse\.html$/i.test(location.pathname)?'../../':'';
+const file=(path)=>base+path;
+const datafile=name=>'data/'+name;
+const a=(url,title)=>'<a target="_blank" rel="noopener" href="'+escaped(url)+'">'+escaped(title)+'</a>';
+const links=items=>'<div class="linkbar">'+items.filter(Boolean).join('')+'</div>';
+const btn=(key,label)=>'<button type="button" class="chip" data-id="'+escaped(key)+'">'+escaped(label)+'</button>';
+const box=(title,content,cl='')=>'<article class="'+cl+'"><h3>'+title+'</h3>'+content+'</article>';
+const lcl=(path,name)=>a(file(path),name);
+const filt=(text)=>String(text).toLowerCase().replace(/[\s.\-_]/g,'');
+const metrics=items=>'<div class="bigstat">'+items.map(([v,k])=>'<div><b>'+escaped(v)+'</b><small>'+k+'</small></div>').join('')+'</div>';
+const grid=(heads,rows)=>'<div class="scroll"><table><thead><tr>'+heads.map(h=>'<th>'+h+'</th>').join('')+'</tr></thead><tbody>'+rows.map(r=>'<tr>'+r.map(c=>'<td>'+c+'</td>').join('')+'</tr>').join('')+'</tbody></table></div>';
+let selected='846';
+const planSite=code=>D.proposals[code]?.cross.site||'';
+function navigate(key){if(!D.sites[key]&&!D.proposals[key])return;selected=key;location.hash=encodeURIComponent(key);render()}
+function mapview(key){
+ const W=620,H=249,x=v=>45+(v+114)*(557/35),y=v=>13+(14-v)*(209/19);
+ const path=L=>'M'+L.map(([xx,yy])=>x(xx).toFixed(1)+','+y(yy).toFixed(1)).join(' L');
+ let g='<svg viewBox="0 0 '+W+' '+H+'" aria-label="实钻首孔与航前选址位置图"><defs><clipPath id="bounds"><rect x="45" y="13" width="557" height="209"/></clipPath></defs>';
+ for(let j=-110;j<=-80;j+=5)g+='<path d="M'+x(j)+' 13V222" stroke="#d3e1d8"/><text x="'+x(j)+'" y="238" text-anchor="middle" font-size="10" fill="#586b66">'+(-j)+'°W</text>';
+ for(let j=-5;j<=10;j+=5)g+='<path d="M45 '+y(j)+'H602" stroke="#d3e1d8"/><text x="39" y="'+(y(j)+3)+'" font-size="10" text-anchor="end" fill="#586b66">'+Math.abs(j)+'°'+(j<0?'S':j>0?'N':'')+'</text>';
+ g+='<g clip-path="url(#bounds)">';
+ for(const line of D.coast)g+='<path fill="none" stroke="#8da89a" stroke-width="1.25" d="'+path(line)+'"/>';
+ const selectedPlan=D.sites[key]?.cross.proposed_site||key, selectedSite=D.sites[key]?key:planSite(key);
+ const ps=D.positions.filter(f=>f.properties.stage==='SP'||f.properties.record.endsWith('A'));
+ const active=[], marks=[];
+ for(const f of ps){
+  const p=f.properties,[lon,lat]=f.geometry.coordinates,xx=x(lon),yy=y(lat),plan=p.stage==='SP',id=plan?p.record:p.source_site;
+  const isActive=plan?id===selectedPlan:id===selectedSite;
+  const title=escaped(plan?id:'Site '+id);
+  let element='<g role="button" tabindex="0" aria-label="'+title+'" data-id="'+id+'"><title>'+title+'</title><circle cx="'+xx+'" cy="'+yy+'" r="6.4" fill="transparent"/>';
+  element+=plan?'<circle cx="'+xx+'" cy="'+yy+'" r="4.8" fill="none" stroke="#a56b37" stroke-width="1.3"/>':'<circle cx="'+xx+'" cy="'+yy+'" r="2.9" fill="#14665e"/>';
+  if(isActive)element+='<circle cx="'+xx+'" cy="'+yy+'" r="7.4" fill="none" stroke="#243d39" stroke-width="1.3"/>';
+  if(!plan){const offsets={'848':[8,4],'849':[-24,6],'850':[8,1],'851':[-24,-1],'852':[8,3],'853':[-24,3],'854':[8,1]};const [dx,dy]=offsets[id]||[8,3];element+='<text x="'+(xx+dx)+'" y="'+(yy+dy)+'" font-size="9.6" font-weight="'+(isActive?'700':'500')+'" fill="#263f3e">'+id+'</text>'}
+  element+='</g>';(isActive?active:marks).push(element);
+ }
+ return '<figure class="mapbox">'+g+marks.join('')+active.join('')+'</g></svg><figcaption>● 实钻首孔　<span style="color:#92521c">○ 航前选址</span>　外圈为当前选择。位置接近时可用上方站号切换。</figcaption></figure>';
+}
+function matches(key){return key===selected}
+function render(){
+ [...document.querySelectorAll('nav .chip')].forEach(el=>el.setAttribute('aria-current',String(matches(el.dataset.id))));
+ const isSite=!!D.sites[selected];
+ byId('detail').innerHTML=isSite?renderSite(selected):renderPlan(selected);
+ const filter=byId('cfilter');if(filter){filter.addEventListener('change',renderCarbon);byId('download').addEventListener('click',downloadCarbon);renderCarbon()}
+}
+function renderPlan(k){
+ const p=D.proposals[k],c=p.card,r=p.cross;
+ let body='<div class="hero"><div class="intro"><div class="over">SCIENTIFIC PROSPECTUS</div><h2>'+k+'</h2><p>'+(r.site?'PR 确认对应实钻站 '+btn(r.site,'Site '+r.site):'航前列出的候选站，初报站节未登记实际占位。')+'</p><p class="quiet">'+escaped(c.position_printed)+' · 航前优先级 '+c.priority+'</p>'+metrics([[c.water_depth_printed,'预计水深'],[c.sediment_thickness_printed,'沉积厚度']])+'</div>'+mapview(k)+'</div><div class="grid">';
+ body+=box('SP 站卡', '<p>'+escaped(c.proposed_drilling_program)+'</p><p class="quiet">'+escaped(c.seismic_record)+'</p><p class="quiet">'+escaped(c.sediment_record)+'</p>'+links([a(c.source_url,'原刊 PDF · '+c.pdf_page+' 页'),lcl('sppr/core/publication/Leg138_SP_Proposed_Sites.pdf#page='+c.edition_page,'现代站卡 · '+c.edition_page+' 页'),lcl('sppr/core/data/sp_card_fields.csv','全站原字段 CSV')]));
+ body+=box('勘察与科学目标','<p>'+escaped(c.objectives)+'</p><small>'+escaped(c.anticipated_sediment_rocks)+'</small>'+links([a(c.source_url.replace(/#page=\d+$/,'#page='+c.map_pdf_page),'原勘察地图'),a(c.source_url.replace(/#page=\d+$/,'#page='+c.profile_pdf_page),'原剖面图')]));
+ return body+'</div>';
+}
+function renderSite(s){
+ const t=D.sites[s],r=t.cross,h=t.carbon,st=t.pr,ip=t.ir,o=t.plates,d=t.splice;
+ let head='<div class="hero"><div class="intro"><div class="over">PRELIMINARY REPORT · '+r.reference_hole+'</div><h2>Site '+s+'</h2><p>'+(r.proposed_site?'航前站 '+btn(r.proposed_site,r.proposed_site)+'　优先级 '+escaped(r.priority):'航中新增站')+'</p><p class="quiet">首孔 '+r.hole_latitude+'，'+r.hole_longitude+'　·　'+t.holes.join('、')+'</p>';
+ head+=metrics([[t.holes.length,'孔'],[st.cores,'岩芯'],[st.core_recovered_m+' m','回收长度']])+'</div>'+mapview(s)+'</div>';
+ let body='<div class="grid">';
+ const reading=t.pr_blocks.map(b=>'<p class="source">'+escaped(b[0])+' · '+a(b[3],'PDF '+b[1])+'</p><p style="white-space:pre-line">'+escaped(b[2])+'</p>').join('');
+ const prReading='<details><summary>离线读本站科学与作业正文</summary><div class="scroll" style="padding:9px 12px"><small>正文采用原分发件 OCR，站节边界已校核。</small>'+reading+'</div></details>';
+ body+=box('PR · 航后初报','<p>'+escaped(r.pr_heading)+'</p><p class="quiet">'+(r.proposed_site?'按 SP 刊载坐标与 PR 首孔坐标计算，两点相距约 '+r.great_circle_difference_km+' km。':'船上新增站的科学小节和作业记录各有独立页码。')+'</p>'+prReading+links([a(r.source_url,'科学小节 · PDF '+r.pr_sci_pdf_page),a(r.ops_url,'作业小节 · PDF '+r.pr_ops_site_pdf_page),lcl('sppr/core/data/pr_sections.csv','离线章节索引'),lcl('figures/core/'+t.strand.svg,'本站速率重绘 SVG')]));
+ const repeat=t.repeat, rp=t.repeat_rows.filter(v=>v[6]==='sample');
+ const mean=t.repeat_rows.find(v=>v[6]==='mean_difference');
+ const repeatPage=ip.url+'#page='+repeat.chapter_pdf_page;
+ const repeatTable=grid(['样品行','样品','测次 1','测次 2','测次 3','刊载绝对差'],rp.map(v=>v.slice(0,6).map(x=>escaped(x||'—'))));
+ const repeatEvidence=repeat.native_path?a('https://www-odp.tamu.edu/publications/138_IR/'+repeat.native_path,'随盘原表'):a(repeatPage,'重复测量原表 · PDF '+repeat.chapter_pdf_page);
+ const repeats='<details id="carbonateRepeats"><summary>CaCO₃ 重复分析 · '+repeat.sample_rows+' 个样品，'+repeat.individual_runs+' 个测次</summary><p class="quiet">'+repeat.item_id+'。测次与样品行用稳定行号相连。'+(mean?'表末刊载平均绝对差为 '+escaped(mean[5])+'。':'')+'</p>'+repeatTable+(s==='853'?'<p class="quiet">第 22 行两次刊值为 87.90 和 87.07，原表绝对差印作 0.17；按两项显示值相减为 0.83。两种记录各自保留。</p>':'')+links([repeatEvidence,repeat.native_path?a(repeatPage,'站章中指向随盘表的原页'):null,lcl('ir/core/carbonate_repeat_samples.csv','样品与刊载绝对差 CSV'),lcl('ir/core/carbonate_repeat_runs.csv','独立测次 CSV')])+'</details>';
+ body+=box('IR · 船上原始报告','<p>第 '+ip.chapter+' 章，'+ip.pdf_pages+' 页。目录载本站 '+t.ir_count+' 项图表，'+t.ir_native+' 项有对应电子表。</p><p class="quiet">孔摘要与 PR 的独立校读记录'+(t.diffs.length?'有 '+t.diffs.length+' 项刊值差别。':'中，所比字段的刊值相符。')+'</p>'+repeats+links([a(ip.url,'原刊站章 PDF'),lcl('ir/core/chapter_items.csv','图表目录 CSV'),a(t.carbon_rows[0][10],'原刊碳分析电子表'),aUrl('pr_ir_field_comparison.csv','孔摘要逐项校读'),s==='846'?lcl('ir/core/site846_prior/item.csv','846 精校项目目录'):null]));
+ let srrows=t.sr.map(e=>[escaped(e.id),escaped(e.title),escaped(e.count),a(e.url,'原刊')]);
+ body+=box('SR · 后续研究','<p>'+new Set(t.sr.map(e=>e.chapter)).size+' 章、'+t.sr.length+' 份电子数据版本有本站表行证据。</p><details><summary>查看数据及对应章节</summary>'+grid(['数据版本','章节','含本站记录数','来源'],srrows)+'</details>'+links([lcl('sr/core/dataset_site_evidence.csv','表行证据 CSV'),lcl('sr/core/site_evidence.csv','其他正文和图注提及'),lcl('sr/core/chapters.csv','SR 章节目录'),lcl('sr/core/records.jsonl.gz','电子表记录 JSONL.gz'),s==='846'?lcl('sr/core/verified846/items.csv','846 精校项目目录'):null]));
+ body+=box('随盘文件 · GRAPE','<p>本站有 '+d.splice_intervals+' 条拼接区间，已发布 mcd 序列有 '+d.released_mcd_rows+' 行。</p><p class="quiet">拼接核验中，'+d.paired_mcd_density_equal+' 个配对样本的 mcd 与密度相同。</p>'+links([lcl('disc/core/replay/splice_membership.csv','各站拼接校验'),lcl('disc/core/replay/grape_replay.csv','程序重跑结果'),a('https://www-odp.tamu.edu/publications/138_IR/VOLUME/DATA/SITE_'+s+'/','发布目录 · Site '+s)]));
+ let imgs='<div class="pair">'+[['sediment_interior','岩芯内部'],['printed_ruler','原刊标尺']].map(([role,label])=>{const path=file('plates/core/optical/'+t.optical[role]);return '<figure><a href="'+path+'" target="_blank" rel="noopener"><img loading="lazy" alt="'+label+' '+s+'B2H" src="'+path+'"></a><figcaption class="quiet">'+label+'</figcaption></figure>'}).join('')+'</div>';
+ body+=box('光学图像 · '+s+'B2H',imgs+'<p class="quiet">本站收录 '+o.photo_pdf_count+' 份单芯照片 PDF，取 B 孔 2H 作样窗。像素来自出版图像。</p>'+links([lcl('plates/core/optical/row_rgb.csv','样窗逐行 RGB'),lcl('plates/core/data/native_photo_catalog.csv','原图目录'),lcl('plates/core/optical/Optical_windows_Leg138.pdf','11 站光学图册')]));
+ let pn=r.proposed_site?lcl('sppr/core/publication/Leg138_SP_Proposed_Sites.pdf#page='+D.proposals[r.proposed_site].card.edition_page,'本站航前站卡'):null;
+ let paleolink=t.profiles.pr_item;const west=+s>=848;
+ body+=box('站勘与古地理','<p>'+({shared_survey_profile_graphic:'站勘剖面在 SP 和 PR 中复用，编校记录保留图上注记差异。',different_survey_product:'航前 VENTURE 01 剖面和 PR 的航中 3.5 kHz 剖面各自独立。',no_prospectus_site:'新增站的 PR 剖面来自 JOIDES Resolution 航中调查。'}[t.profiles.profile_relation])+'</p><p class="quiet">'+(west?'PR 图 15 标示西部七站。带 1–9 Ma 标记的轨迹属于 851。':'PR 图 2 标示东部四站。图中的数值为磁异常条带年龄。')+'</p>'+links([a(t.profiles.pr_source_url,'PR 站勘图 '+paleolink),pn,west?lcl('sppr/core/figures/pr_fig15_graphic_check.pdf','图 15 坐标校读'):a('https://www-odp.tamu.edu/publications/prelim/138PREL.PDF#page=32','图 2 原刊')]));
+ body+=box('有机碳 · IR 已刊样品行','<p>'+h.source_item+' 收 '+h.source_rows+' 行，'+h.with_org_c+' 行有有机碳刊值，'+h.blank_or_absent+' 行空白或无该栏。带脚注 '+h.footnoted+' 行，原刊负值 '+h.negative_reported+' 行。</p><div class="tools"><label for="cfilter">筛选</label><select id="cfilter"><option value="filled">有刊值</option><option value="all">所有表行</option><option value="foot">带脚注</option><option value="blank">空白或无该栏</option><option value="negative">刊为负数</option></select><button class="button" id="download">导出筛选结果 CSV</button></div><div id="carbonRows"></div>'+links([aUrl('carbon_reported.csv','跨站刊值 CSV'),aUrl('carbon_distribution_comparison.csv','与随盘版本逐行对照'),aUrl('carbon_by_site.pdf','各站深度剖面 PDF')]),'full');
+ if(t.notes.length||t.diffs.length){
+ let ns=t.notes.map(n=>'<p>'+escaped(n.note)+' '+a(n.source_url,'原页')+'</p>').join('');
+ if(t.diffs.length)ns+=grid(['孔','PR 字段','PR 刊值','IR 刊值'],t.diffs.map(d=>[d.hole,d.pr_field,d.pr_value,d.ir_value].map(escaped)));
+ body+=box('本站校记',ns,'full');}
+ return head+body+'</div>';
+}
+const aUrl=(name,label)=>a(datafile(name),label);
+function filterCarbon(){
+ const rs=D.sites[selected].carbon_rows,v=byId('cfilter').value;
+ return rs.filter(r=>v==='all'||(v==='filled'&&r[5]!=='')||(v==='blank'&&r[5]==='')||(v==='foot'&&r[6]!=='')||(v==='negative'&&r[5]!==''&&+r[5]<0));
+}
+function renderCarbon(){
+ const rs=filterCarbon();byId('carbonRows').innerHTML=rs.length?'<small>'+rs.length+' 行 · 深度单位 m，有机碳单位 wt%</small>'+grid(['孔','样品','mbsf','mcd','原刊有机碳','脚注','来源行'],rs.map(r=>[r[0],r[1],r[2],r[3],r[4]||'—',r[6]||'—',a(r[10],r[9])].map((v,i)=>i===6?v:escaped(v)))):'<p class="quiet">此筛选下有 0 行。</p>';
+}
+function downloadCarbon(){
+ const csvquote=v=>'"'+String(v).replace(/"/g,'""')+'"';
+ const rows=[D.carbon_fields,...filterCarbon()];
+ const blob=new Blob(['\uFEFF'+rows.map(r=>r.map(csvquote).join(',')).join('\r\n')+'\r\n'],{type:'text/csv;charset=utf-8'});
+ const url=URL.createObjectURL(blob);const anchor=document.createElement('a');anchor.href=url;anchor.download='Site'+selected+'_organic_carbon_'+byId('cfilter').value+'.csv';anchor.click();setTimeout(()=>URL.revokeObjectURL(url),1500);
+}
+function search(){
+ const val=byId('query').value.trim(),q=filt(val),el=byId('results');byId('apiHint').classList.add('hide');
+ if(!q){el.classList.add('hide');el.innerHTML='';return}
+ let all=[];
+ const near=(key,title,desc)=>all.push('<div class="result">'+btn(key,title)+' <small>'+escaped(desc)+'</small></div>');
+ for(const [s,t] of Object.entries(D.sites)){
+  const hit=t.holes.find(v=>filt(v)===q);
+  if(hit||filt('Site'+s).includes(q)||filt(s)===q)near(s,hit||'Site '+s,'实钻站 · '+t.holes.join('、'));
+ }
+ for(const [s,t] of Object.entries(D.proposals))if(filt(s).includes(q))near(s,s,'航前站 · '+(t.cross.site?'对应 Site '+t.cross.site:'保留候选'));
+ const classes=[['碳酸钙 重复分析 重复测量 CaCO₃ CaCO3 carbonate repeat','IR 碳酸钙重复分析测次'],['GRAPE 磁化率 密度 密度拼接 susceptibility','随盘 GRAPE 和 PR 复合柱'],['有机碳 organic carbon 碳分析','IR 已刊有机碳样品'],['岩芯 照片 光学 optical RGB','原刊照片和光学样窗'],['古地理 backtrack 古位置','PR 分区古地理图']];
+ for(const [terms,title] of classes)if(terms.toLowerCase().includes(val.toLowerCase()))for(const s of Object.keys(D.sites))near(s,'Site '+s,title);
+ const seen=new Set();
+ const ranked=D.search.map(v=>[v,(filt(v[1])===q?0:filt(v[1]).includes(q)?1:filt(v[2]).includes(q)?2:99)]).filter(v=>v[1]!==99).sort((x,y)=>x[1]-y[1]);
+ for(const [v,rank] of ranked){
+  const k=v[1]+'|'+v[0];if(seen.has(k))continue;seen.add(k);
+  all.push('<div class="result">'+a(v[4],v[1])+'　'+(v[0]?btn(v[0],'Site '+v[0]):'')+' <small>'+escaped(v[2])+'</small></div>')
+ }
+ el.innerHTML='<small>'+all.length+' 项匹配'+(all.length>80?' · 展示前 80 项':'')+'</small>'+all.slice(0,80).join('');el.classList.remove('hide');
+}
+byId('sites').insertAdjacentHTML('beforeend',Object.keys(D.sites).map(s=>btn(s,s)).join(''));
+byId('plans').insertAdjacentHTML('beforeend',Object.keys(D.proposals).sort((a,b)=>a.localeCompare(b)).map(k=>btn(k,k)).join(''));
+document.addEventListener('click',e=>{const el=e.target.closest('[data-id]');if(el){navigate(el.dataset.id);if(el.closest('#results')){byId('query').value='';search()}}});
+document.addEventListener('keydown',e=>{if((e.key==='Enter'||e.key===' ')&&e.target instanceof SVGElement){const el=e.target.closest('[data-id]');if(el){e.preventDefault();navigate(el.dataset.id)}}});
+byId('query').addEventListener('input',search);
+byId('api').addEventListener('click',()=>{const q=byId('query').value.trim(),el=byId('apiHint');
+ const host=location.protocol==='file:'?'http://127.0.0.1:8138':location.origin;
+ if(q)el.innerHTML=(location.protocol==='file:'?'解压档案后在根目录运行 python tools/serve.py，再访问此链接。 ':'')+a(host+'/api/search?q='+encodeURIComponent(q),'全文检索 “'+q+'”');
+ else el.textContent='先输入词或表号，再查询航前、初报、IR 与 SR 的来源页全文。';
+ el.classList.remove('hide');
+});
+window.addEventListener('hashchange',()=>{const h=decodeURIComponent(location.hash.slice(1));if((D.sites[h]||D.proposals[h])&&h!==selected){selected=h;render()}});
+const first=decodeURIComponent(location.hash.slice(1));if(D.sites[first]||D.proposals[first])selected=first;render();
+</script></body></html>
