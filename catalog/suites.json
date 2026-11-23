@@ -1,0 +1,70 @@
+{
+  "guide-master": {
+    "repository": "CinnabarCHU/Hypercinnabar",
+    "commit": "74082d52da4b2800068577bd1e66a5a026d470c1",
+    "scope": "12 GUIDE/master MATLAB suites plus two inventory/interface probes.",
+    "submodules": true,
+    "matlab_tests": [
+      "test_menu_interfaces",
+      "test_menu_export",
+      "test_migration",
+      "test_desktop_methods",
+      "test_scientific_methods",
+      "test_package_portability",
+      "test_recovered_methods",
+      "test_analysis_views",
+      "test_exported_methods",
+      "test_master_migration",
+      "test_master_export",
+      "test_master_native_menu",
+      "testModuleInventoryLayout",
+      "probeMethodRoleContracts"
+    ]
+  },
+  "harness-cases": {
+    "repository": "JFjifang/Acycle_Harness",
+    "commit": "eefe06cf83dea1799e91fe5475e6b774d2e3f077",
+    "scope": "All six official examples, two paper-input smoke tests, and four paper protocols."
+  },
+  "harness-parity": {
+    "repository": "JFjifang/Acycle_Harness",
+    "commit": "eefe06cf83dea1799e91fe5475e6b774d2e3f077",
+    "scope": "Native MATLAB adapter versus original functions (tuning, interpolation, SWA, COCO and batch)."
+  },
+  "upstream-bispectrum": {
+    "repository": "mingsongli/acycle",
+    "commit": "dcba4279168745b563e0535b954297023dd62fc7",
+    "scope": "Estimator identities, coupled/uncoupled triads, biphase, and surrogate inference."
+  },
+  "upstream-coco": {
+    "repository": "mingsongli/acycle",
+    "commit": "dcba4279168745b563e0535b954297023dd62fc7",
+    "scope": "Four confirmatory/sensitivity methods on six publication records; original input root required."
+  },
+  "upstream-bispectral-examples": {
+    "repository": "mingsongli/acycle",
+    "commit": "dcba4279168745b563e0535b954297023dd62fc7",
+    "scope": "Five cases; original processed Newark and 1262 records required."
+  },
+  "cenogrid-figures": {
+    "repository": "CinnabarCHU/Hypercinnabar",
+    "commit": "b1107aa5f4de152a290857fc8621a28874306dd8",
+    "scope": "16 manuscript figures; archived, equivalent and version-specific profiles."
+  },
+  "cenogrid-modulation": {
+    "repository": "CinnabarCHU/Hypercinnabar",
+    "commit": "8654958658a1a3fbc9e4de76e478d5361d8b51ab",
+    "scope": "11 MATLAB drivers and their individually configured workflows; fetch to inspect or run."
+  },
+  "cenogrid-spectra": {
+    "repository": "CinnabarCHU/Hypercinnabar",
+    "commit": "e5266e81b030c0518ef27d05a8152c2e31bea975",
+    "scope": "Three-revision MATLAB spectrum/window/phase workflow and sensitivity branches."
+  },
+  "harness-menu": {
+    "repository": "CinnabarCHU/Hypercinnabar",
+    "commit": "90894f83e0c4367b797bf65ae0e9d51eb6faf858",
+    "scope": "Assembled Python/Node/MATLAB menu and plugin integration; pinned workflow.",
+    "submodules": true
+  }
+}

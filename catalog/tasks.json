@@ -1,0 +1,799 @@
+{
+  "lavernock": {
+    "title": "Lavernock Jurassic magnetic susceptibility",
+    "kind": "paper_feature",
+    "inputs": {
+      "data": "lavernock"
+    },
+    "params": {
+      "selection": "Report the strongest local spectral peak within 0.74\u20130.88 m and its own multiple-testing threshold. If no peak is detected, report all three as null. Use the native observations and describe the tested frequency family."
+    },
+    "output_fields": {
+      "wavelength_m": "Wavelength at selected peak or null.",
+      "peak_power": "Power at that same peak, nonnegative or null.",
+      "fdr05_power": "5% FDR power threshold on the same scale at that bin, or null if unavailable."
+    },
+    "metrics": [
+      {
+        "field": "wavelength_m",
+        "kind": "range",
+        "unit": "m",
+        "reference": 0.81,
+        "bounds": [
+          0.74,
+          0.88
+        ]
+      },
+      {
+        "kind": "fdr",
+        "field": "fdr05_power"
+      }
+    ],
+    "source": "https://doi.org/10.21701/bolgeomin.131.2.001",
+    "interpretation": "The published feature requires both its position and simultaneous evidence above 5% FDR; a pointwise threshold does not answer this question."
+  },
+  "petm-published": {
+    "title": "Howards Tract PETM \u2014 published protocol interval",
+    "kind": "paper_feature",
+    "inputs": {
+      "data": "petm-paper"
+    },
+    "params": {
+      "depth_unit": "m",
+      "method": "phase_averaged",
+      "orbital_periods_kyr": [
+        125,
+        95,
+        39.8,
+        23.3,
+        22,
+        18.7
+      ],
+      "sedimentation_rate_min": 0.13,
+      "sedimentation_rate_max": 30,
+      "sedimentation_rate_step": 0.1,
+      "nsim": 2000,
+      "seed": 1,
+      "red_noise": 1,
+      "correlation": "Pearson",
+      "detrend": "loess",
+      "detrend_window": 20,
+      "dt": 0.01,
+      "nfft": 5000,
+      "max_frequency": 0.06,
+      "slices": 1
+    },
+    "output_fields": {
+      "rate_cm_per_ka": "Positive primary whole-interval rate (cm/ka).",
+      "global_p": "Full rate-search adjusted p value or null."
+    },
+    "metrics": [
+      {
+        "field": "rate_cm_per_ka",
+        "kind": "range",
+        "unit": "cm/ka",
+        "bounds": [
+          8,
+          15
+        ]
+      },
+      {
+        "field": "global_p",
+        "kind": "p_value"
+      }
+    ],
+    "source": "https://doi.org/10.1038/s41467-022-33390-x",
+    "interpretation": "Independent modern COCO comparison using the MS protocol recovered from Supplementary Text 3, pages 22\u201323: raw 187.54\u2013211.24 m interval, original 20 m LOESS, linear 0.01 m interpolation, Pearson, NFFT 5000, frequency 0\u20130.06 cycles/kyr, six periods and 2000 draws. Modern phase-averaged target/null still differ from historical Acycle 2.4.1; not an exact old-engine replay. The original broader-interval failed comparison is preserved."
+  },
+  "petm-broad": {
+    "title": "Howards Tract PETM \u2014 broader sensitivity interval",
+    "kind": "paper_feature",
+    "inputs": {
+      "data": "petm-wide"
+    },
+    "params": {
+      "depth_unit": "m",
+      "method": "phase_averaged",
+      "orbital_periods_kyr": [
+        125,
+        95,
+        39.8,
+        23.3,
+        22,
+        18.7
+      ],
+      "sedimentation_rate_min": 0.13,
+      "sedimentation_rate_max": 30,
+      "sedimentation_rate_step": 0.1,
+      "nsim": 2000,
+      "seed": 1,
+      "red_noise": 1,
+      "correlation": "Spearman",
+      "detrend": "loess",
+      "detrend_window": 20
+    },
+    "output_fields": {
+      "rate_cm_per_ka": "Positive primary whole-interval rate (cm/ka).",
+      "global_p": "Full rate-search adjusted p value or null."
+    },
+    "metrics": [
+      {
+        "field": "rate_cm_per_ka",
+        "kind": "range",
+        "unit": "cm/ka",
+        "bounds": [
+          8,
+          15
+        ]
+      },
+      {
+        "field": "global_p",
+        "kind": "p_value"
+      }
+    ],
+    "source": "https://doi.org/10.1038/s41467-022-33390-x",
+    "interpretation": "Broader-interval modern COCO comparison on untuned MS below the Nanjemoy basal unconformity. Uses published six targets, 20 m LOESS, rate grid and 2000 draws, but extends below the actual published interval and uses median 0.005 m interpolation, Spearman and default NFFT/frequency settings. The original 8\u201315 cm/kyr comparison remains unchanged; see separate published-protocol case. No exact historical-paper reproduction."
+  },
+  "odp926b-timeopt": {
+    "title": "ODP 926B \u2014 precession amplitude modulation",
+    "kind": "literature_comparison",
+    "inputs": {
+      "data": "odp926b"
+    },
+    "params": {
+      "search_cm_per_ka": [
+        1.3,
+        5
+      ],
+      "number_of_rates": 100,
+      "depth_interval_mcd": [
+        440,
+        490
+      ],
+      "historical_protocol": "0.1 m interpolation; remove variability below 0.06 cycles/m using LOWESS; precession band 0.035\u20130.065 cycles/ka, roll-off 1000."
+    },
+    "output_fields": {
+      "rate_cm_per_ka": "Positive primary whole-interval rate (cm/ka)."
+    },
+    "metrics": [
+      {
+        "field": "rate_cm_per_ka",
+        "kind": "distance",
+        "unit": "cm/ka",
+        "reference": 3.02
+      }
+    ],
+    "source": "https://doi.org/10.1002/2015PA002850",
+    "interpretation": "Distance to the 2015 TimeOpt optimum in Fig. 5. ASM and the individual objective components yield other optima."
+  },
+  "la-thure-coco": {
+    "title": "La Thure \u2014 whole-section sedimentation rate",
+    "kind": "literature_comparison",
+    "inputs": {
+      "data": "la-thure"
+    },
+    "params": {
+      "age_ma": 384,
+      "target_periods_ka": [
+        413,
+        123,
+        95,
+        39.3,
+        31.9,
+        19.8,
+        16.8
+      ],
+      "historical_protocol": "Log susceptibility; interpolate at 0.3 m; 80 m robust LOESS; 2000 MC draws."
+    },
+    "output_fields": {
+      "rate_cm_per_ka": "Positive primary whole-interval rate (cm/ka)."
+    },
+    "metrics": [
+      {
+        "field": "rate_cm_per_ka",
+        "kind": "distance",
+        "unit": "cm/ka",
+        "reference": 8
+      },
+      {
+        "field": "rate_cm_per_ka",
+        "kind": "range",
+        "unit": "cm/ka",
+        "bounds": [
+          6.6,
+          10.4
+        ]
+      }
+    ],
+    "source": "https://doi.org/10.1016/j.epsl.2018.08.041",
+    "interpretation": "8 cm/ka is the approximate broad maximum. The 6.6\u201310.4 range is the reported p<0.01 region of the original COCO scan, not an uncertainty interval on the true rate."
+  },
+  "anticosti-precession": {
+    "title": "Anticosti LL1 \u2014 precession template",
+    "kind": "literature_comparison",
+    "inputs": {
+      "data": "anticosti-gr"
+    },
+    "params": {
+      "template": "precession",
+      "template_shape": "linear with stratigraphic depth",
+      "targetP_ka": [
+        20.8,
+        19.8,
+        17.2,
+        17.1
+      ],
+      "targetE_ka": [
+        405,
+        125,
+        95
+      ],
+      "historical_search": {
+        "sedmin": 20,
+        "sedmax": 60,
+        "difmin": 10,
+        "difmax": 70,
+        "numsed": 50,
+        "fit": 1,
+        "iopt": 3,
+        "flipTemplate": false
+      }
+    },
+    "output_fields": {
+      "rate_cm_per_ka": "Positive primary whole-interval rate (cm/ka).",
+      "duration_ka": "Inferred elapsed duration over 477 m (ka)."
+    },
+    "metrics": [
+      {
+        "field": "rate_cm_per_ka",
+        "kind": "distance",
+        "unit": "cm/ka",
+        "reference": 41.91375
+      },
+      {
+        "field": "duration_ka",
+        "kind": "distance",
+        "unit": "ka",
+        "reference": 1137.813
+      }
+    ],
+    "source": "https://doi.org/10.1130/GEOL.S.14810550",
+    "interpretation": "Supplement Figs. S5\u2013S6. Compare like templates separately. The NACP isotope series is a different core."
+  },
+  "anticosti-eccentricity": {
+    "title": "Anticosti LL1 \u2014 eccentricity template",
+    "kind": "literature_comparison",
+    "inputs": {
+      "data": "anticosti-gr"
+    },
+    "params": {
+      "template": "eccentricity",
+      "template_shape": "linear with stratigraphic depth",
+      "targetP_ka": [
+        20.8,
+        19.8,
+        17.2,
+        17.1
+      ],
+      "targetE_ka": [
+        405,
+        125,
+        95
+      ],
+      "historical_search": {
+        "sedmin": 20,
+        "sedmax": 60,
+        "difmin": 10,
+        "difmax": 70,
+        "numsed": 50,
+        "fit": 2,
+        "iopt": 1,
+        "flipTemplate": false
+      }
+    },
+    "output_fields": {
+      "rate_cm_per_ka": "Positive primary whole-interval rate (cm/ka).",
+      "duration_ka": "Inferred elapsed duration over 477 m (ka)."
+    },
+    "metrics": [
+      {
+        "field": "rate_cm_per_ka",
+        "kind": "distance",
+        "unit": "cm/ka",
+        "reference": 38.31845
+      },
+      {
+        "field": "duration_ka",
+        "kind": "distance",
+        "unit": "ka",
+        "reference": 1244.57
+      }
+    ],
+    "source": "https://doi.org/10.1130/GEOL.S.14810550",
+    "interpretation": "Supplement Figs. S5\u2013S6. Compare like templates separately. The NACP isotope series is a different core."
+  },
+  "bridge-meyers": {
+    "title": "Bridge Creek C/T boundary \u2014 meyers dates",
+    "kind": "literature_comparison",
+    "inputs": {
+      "data": "bridge-position",
+      "dates": "bridge-meyers-dates"
+    },
+    "params": {
+      "ctb_position_m": 7.315,
+      "coordinate": "position increases downsection",
+      "break_positions_m": [
+        5.5,
+        9.5
+      ],
+      "hiatus_position_m": 9.5,
+      "periods_myr": [
+        0.4056795,
+        0.09487666,
+        0.09886307,
+        0.05044341,
+        0.0391,
+        0.02791299,
+        0.02241,
+        0.018605
+      ]
+    },
+    "output_fields": {
+      "ctb_age_ma": "CTB age (Ma), posterior median if available.",
+      "ci95_ma": "Optional [lower,upper] in Ma, or null for a point estimate."
+    },
+    "metrics": [
+      {
+        "field": "ctb_age_ma",
+        "kind": "distance",
+        "unit": "Ma",
+        "reference": 93.87
+      },
+      {
+        "field": "ci95_ma",
+        "kind": "interval",
+        "center_field": "ctb_age_ma",
+        "reference_bounds": [
+          93.72,
+          94.02000000000001
+        ],
+        "unit": "Ma"
+      }
+    ],
+    "source": "https://doi.org/10.5194/gchron-6-107-2024",
+    "interpretation": "Reference is the published model median and 95% interval for this date set. Grayscale and bentonites use the author position coordinate. No independent age truth is implied."
+  },
+  "bridge-updated": {
+    "title": "Bridge Creek C/T boundary \u2014 updated dates",
+    "kind": "literature_comparison",
+    "inputs": {
+      "data": "bridge-position",
+      "dates": "bridge-updated-dates"
+    },
+    "params": {
+      "ctb_position_m": 7.315,
+      "coordinate": "position increases downsection",
+      "break_positions_m": [
+        5.5,
+        9.5
+      ],
+      "hiatus_position_m": 9.5,
+      "periods_myr": [
+        0.4056795,
+        0.09487666,
+        0.09886307,
+        0.05044341,
+        0.0391,
+        0.02791299,
+        0.02241,
+        0.018605
+      ]
+    },
+    "output_fields": {
+      "ctb_age_ma": "CTB age (Ma), posterior median if available.",
+      "ci95_ma": "Optional [lower,upper] in Ma, or null for a point estimate."
+    },
+    "metrics": [
+      {
+        "field": "ctb_age_ma",
+        "kind": "distance",
+        "unit": "Ma",
+        "reference": 93.98
+      },
+      {
+        "field": "ci95_ma",
+        "kind": "interval",
+        "center_field": "ctb_age_ma",
+        "reference_bounds": [
+          93.88000000000001,
+          94.08
+        ],
+        "unit": "Ma"
+      }
+    ],
+    "source": "https://doi.org/10.5194/gchron-6-107-2024",
+    "interpretation": "Reference is the published model median and 95% interval for this date set. Grayscale and bentonites use the author position coordinate. No independent age truth is implied."
+  },
+  "cenogrid-modulation": {
+    "title": "CENOGRID \u2014 dominant isotope periods in four fixed bands",
+    "kind": "literature_comparison",
+    "inputs": {},
+    "params": {
+      "bands_per_ka": [
+        [
+          0.00038,
+          0.00055
+        ],
+        [
+          0.000665,
+          0.000785
+        ],
+        [
+          0.000385,
+          0.000605
+        ],
+        [
+          0.0007,
+          0.00091
+        ]
+      ],
+      "order": [
+        "carbon_1",
+        "carbon_2",
+        "oxygen_1",
+        "oxygen_2"
+      ],
+      "axis": "positive age in ka",
+      "inputs": "residuals after archived LOWESS and PETM treatment; search power within each specified band."
+    },
+    "output_fields": {
+      "carbon_1_myr": "Dominant period in this predeclared frequency band (Myr).",
+      "carbon_2_myr": "Dominant period in this predeclared frequency band (Myr).",
+      "oxygen_1_myr": "Dominant period in this predeclared frequency band (Myr).",
+      "oxygen_2_myr": "Dominant period in this predeclared frequency band (Myr)."
+    },
+    "metrics": [
+      {
+        "field": "carbon_1_myr",
+        "kind": "distance",
+        "unit": "Myr",
+        "reference": 2.1548975862068964
+      },
+      {
+        "field": "carbon_2_myr",
+        "kind": "distance",
+        "unit": "Myr",
+        "reference": 1.3887117777777778
+      },
+      {
+        "field": "oxygen_1_myr",
+        "kind": "distance",
+        "unit": "Myr",
+        "reference": 1.8380008823529415
+      },
+      {
+        "field": "oxygen_2_myr",
+        "kind": "distance",
+        "unit": "Myr",
+        "reference": 1.329617659574468
+      }
+    ],
+    "source": "https://github.com/CinnabarCHU/Hypercinnabar/tree/b1107aa5f4de152a290857fc8621a28874306dd8",
+    "interpretation": "Compare with the v2.8 manuscript-reproduction fields. Peak displacement is descriptive; a matching period alone makes no phase or detection claim."
+  },
+  "lr04-gaps": {
+    "title": "LR04 \u2014 recover withheld isotope observations",
+    "kind": "held_out_measurements",
+    "inputs": {
+      "data": "lr04"
+    },
+    "params": {
+      "age_window_ka": [
+        1600,
+        2500
+      ],
+      "mask": "fixed singletons and contiguous gaps, all at native ages",
+      "input": "data.csv gives retained observations; queries.csv lists withheld ages and gap class."
+    },
+    "output_fields": {
+      "prediction.csv": "age_ka,benthic_d18O_permil, at all requested ages in order."
+    },
+    "metrics": [
+      {
+        "kind": "reconstruction",
+        "field": "prediction.csv",
+        "unit": "per mil VPDB"
+      }
+    ],
+    "source": "https://doi.org/10.1029/2004PA001071",
+    "interpretation": "Scores against actual withheld isotope measurements on the published tuned axis. Report RMSE and bias separately for isolated observations and contiguous gaps."
+  },
+  "synthetic-rate-step": {
+    "title": "Synthetic two-rate depth section",
+    "kind": "known_truth",
+    "inputs": {},
+    "params": {
+      "target_periods_ka": [
+        23,
+        41,
+        100
+      ],
+      "depth_unit": "m",
+      "output_support": "estimate one characteristic rate for each marked interval in windows.csv",
+      "construction": "Open, fixed positive control inspired by the Acycle 4-to-6 rate-change validation. Independent waveform, noise and input file."
+    },
+    "output_fields": {
+      "first_cm_per_ka": "Rate in interval 1.",
+      "second_cm_per_ka": "Rate in interval 2."
+    },
+    "metrics": [
+      {
+        "field": "first_cm_per_ka",
+        "kind": "distance",
+        "unit": "cm/ka",
+        "reference": 4
+      },
+      {
+        "field": "second_cm_per_ka",
+        "kind": "distance",
+        "unit": "cm/ka",
+        "reference": 6
+      }
+    ],
+    "source": "https://github.com/mingsongli/acycle/blob/dcba4279168745b563e0535b954297023dd62fc7/code/corrcoef/runCocoPublicationValidation.m",
+    "interpretation": "Known design values test scale and ability to resolve the rate change."
+  },
+  "synthetic-detection": {
+    "title": "Periodic signals versus matched AR(1) records",
+    "kind": "known_truth",
+    "inputs": {},
+    "params": {
+      "alpha": 0.05,
+      "n_records": 40,
+      "target_periods_samples": [
+        23,
+        41
+      ],
+      "input": "Long-form data.csv, record_id,sample,proxy. Submit one full-search detection per record, in ID order."
+    },
+    "output_fields": {
+      "prediction.csv": "record_id,detected; use 0 or 1."
+    },
+    "metrics": [
+      {
+        "kind": "detection",
+        "field": "prediction.csv"
+      }
+    ],
+    "source": "Original fixed open calibration panel",
+    "interpretation": "Report positives detected and null false alarms separately. Forty public realizations provide a small calibration panel, not a blind leaderboard."
+  },
+  "cip1-case3": {
+    "title": "CIP 1 Case 3 \u2014 elapsed time from a virtual depth series",
+    "kind": "known_truth",
+    "params": {
+      "origin": "0 ka at 0 m; elapsed time increases upsection. Source CSV header says cm; the generator defines metres.",
+      "target_ka": 405,
+      "task": "Estimate an elapsed-time curve at all observation heights; the supplied proxy is the observable."
+    },
+    "inputs": {
+      "data": "cip-case3"
+    },
+    "output_fields": {
+      "prediction.csv": "segment,coordinate_m,time_ka at each query, in supplied order; time increases along the coordinate within every segment."
+    },
+    "metrics": [
+      {
+        "field": "prediction.csv",
+        "kind": "clock",
+        "unit": "ka"
+      }
+    ],
+    "source": "https://doi.org/10.1016/j.earscirev.2019.102965",
+    "interpretation": "Public retrospective reconstruction of the CIP generator at observation heights. Preserve end error and deviations within the competing cycle-count interval.",
+    "packet_files": [
+      "fixtures/chronology/cip1-case3/input/queries.csv"
+    ],
+    "reference_file": "fixtures/chronology/cip1-case3/reference.csv"
+  },
+  "meishan-tuning": {
+    "title": "Meishan \u2014 short-eccentricity tuning on the Li section",
+    "kind": "literature_comparison",
+    "params": {
+      "short_eccentricity_ka": 100,
+      "constraints": "Use published terminal relative times (anchors.csv), and the two observed logs. Report ages on the Li relative-time axis, increasing upsection."
+    },
+    "inputs": {},
+    "output_fields": {
+      "prediction.csv": "segment,coordinate_m,time_ka at each query, in supplied order; time increases along the coordinate within every segment."
+    },
+    "metrics": [
+      {
+        "field": "prediction.csv",
+        "kind": "clock",
+        "unit": "ka"
+      }
+    ],
+    "source": "https://doi.org/10.1016/j.epsl.2016.02.017",
+    "interpretation": "Compare with the 288 published Excel pairs. Interior times are a tuned solution; equality is evidence of historical agreement. The original depth-domain passbands and full author tie-point list remain unresolved.",
+    "packet_files": [
+      "fixtures/chronology/meishan-tuning/input/anchors.csv",
+      "fixtures/chronology/meishan-tuning/input/data.csv",
+      "fixtures/chronology/meishan-tuning/input/queries.csv"
+    ],
+    "reference_file": "fixtures/chronology/meishan-tuning/reference.csv"
+  },
+  "odp846-oracle-original": {
+    "title": "ODP 846-calibrated synthetic section \u2014 original variability",
+    "kind": "known_truth",
+    "params": {
+      "protocol": "Conditional interpolation between perfect obliquity ties, segment endpoints and both sides of two prescribed gaps; seed 117. queries.csv is a 0.05 m depth grid with segment endpoints in preserved sediment."
+    },
+    "inputs": {},
+    "output_fields": {
+      "prediction.csv": "segment,coordinate_m,time_ka at each query, in supplied order; time increases along the coordinate within every segment."
+    },
+    "metrics": [
+      {
+        "field": "prediction.csv",
+        "kind": "clock",
+        "unit": "ka"
+      }
+    ],
+    "source": "ODP846 / LR04 calibrated open obliquity-oracle experiment, seed 117",
+    "interpretation": "Piecewise-linear interpolation is a comparator. This is a synthetic age model calibrated from ODP 846; error here is not the accuracy of the ODP 846 chronology.",
+    "packet_files": [
+      "fixtures/chronology/odp846-oracle-original/input/controls.csv",
+      "fixtures/chronology/odp846-oracle-original/input/queries.csv"
+    ],
+    "reference_file": "fixtures/chronology/odp846-oracle-original/reference.csv"
+  },
+  "odp846-oracle-reduced": {
+    "title": "ODP 846-calibrated synthetic section \u2014 reduced variability",
+    "kind": "known_truth",
+    "params": {
+      "protocol": "Conditional interpolation between perfect obliquity ties, segment endpoints and both sides of two prescribed gaps; seed 117. queries.csv is a 0.05 m depth grid with segment endpoints in preserved sediment."
+    },
+    "inputs": {},
+    "output_fields": {
+      "prediction.csv": "segment,coordinate_m,time_ka at each query, in supplied order; time increases along the coordinate within every segment."
+    },
+    "metrics": [
+      {
+        "field": "prediction.csv",
+        "kind": "clock",
+        "unit": "ka"
+      }
+    ],
+    "source": "ODP846 / LR04 calibrated open obliquity-oracle experiment, seed 117",
+    "interpretation": "Piecewise-linear interpolation is a comparator. This is a synthetic age model calibrated from ODP 846; error here is not the accuracy of the ODP 846 chronology.",
+    "packet_files": [
+      "fixtures/chronology/odp846-oracle-reduced/input/controls.csv",
+      "fixtures/chronology/odp846-oracle-reduced/input/queries.csv"
+    ],
+    "reference_file": "fixtures/chronology/odp846-oracle-reduced/reference.csv"
+  },
+  "laurin-stable": {
+    "title": "Laurin-style conditional tuning \u2014 stable",
+    "kind": "known_truth",
+    "params": {
+      "assigned_period_ka": 20,
+      "input": "Noisy replicate 0 of the full-trend synthetic experiment. Fixed cycle assignment and depth windows; infer the three adjacent durations."
+    },
+    "inputs": {},
+    "output_fields": {
+      "interval_1_ka": "Elapsed duration between adjacent query depths (ka).",
+      "interval_2_ka": "Elapsed duration between adjacent query depths (ka).",
+      "interval_3_ka": "Elapsed duration between adjacent query depths (ka)."
+    },
+    "metrics": [
+      {
+        "kind": "distance",
+        "field": "interval_1_ka",
+        "unit": "ka",
+        "reference": 40.00791778431309
+      },
+      {
+        "kind": "distance",
+        "field": "interval_2_ka",
+        "unit": "ka",
+        "reference": 40.00663998626834
+      },
+      {
+        "kind": "distance",
+        "field": "interval_3_ka",
+        "unit": "ka",
+        "reference": 40.005648414985586
+      }
+    ],
+    "source": "Laurin-style synthetic comparison inspired by https://doi.org/10.1029/2020PA004188",
+    "interpretation": "Synthetic full-trend control; weak-band and variable-rate variants use the original frozen injections. These three cases are individual realizations. The three duration errors do not establish coverage across the 300-record experiment.",
+    "packet_files": [
+      "fixtures/chronology/laurin-stable/input/data.csv",
+      "fixtures/chronology/laurin-stable/input/queries.csv",
+      "fixtures/chronology/laurin-stable/input/windows.csv"
+    ]
+  },
+  "laurin-variable-rate": {
+    "title": "Laurin-style conditional tuning \u2014 variable rate",
+    "kind": "known_truth",
+    "params": {
+      "assigned_period_ka": 20,
+      "input": "Noisy replicate 0 of the full-trend synthetic experiment. Fixed cycle assignment and depth windows; infer the three adjacent durations."
+    },
+    "inputs": {},
+    "output_fields": {
+      "interval_1_ka": "Elapsed duration between adjacent query depths (ka).",
+      "interval_2_ka": "Elapsed duration between adjacent query depths (ka).",
+      "interval_3_ka": "Elapsed duration between adjacent query depths (ka)."
+    },
+    "metrics": [
+      {
+        "kind": "distance",
+        "field": "interval_1_ka",
+        "unit": "ka",
+        "reference": 43.06132958997922
+      },
+      {
+        "kind": "distance",
+        "field": "interval_2_ka",
+        "unit": "ka",
+        "reference": 36.95394864382733
+      },
+      {
+        "kind": "distance",
+        "field": "interval_3_ka",
+        "unit": "ka",
+        "reference": 41.361220827879066
+      }
+    ],
+    "source": "Laurin-style synthetic comparison inspired by https://doi.org/10.1029/2020PA004188",
+    "interpretation": "Synthetic full-trend control; weak-band and variable-rate variants use the original frozen injections. These three cases are individual realizations. The three duration errors do not establish coverage across the 300-record experiment.",
+    "packet_files": [
+      "fixtures/chronology/laurin-variable-rate/input/data.csv",
+      "fixtures/chronology/laurin-variable-rate/input/queries.csv",
+      "fixtures/chronology/laurin-variable-rate/input/windows.csv"
+    ]
+  },
+  "laurin-weak-band": {
+    "title": "Laurin-style conditional tuning \u2014 weak band",
+    "kind": "known_truth",
+    "params": {
+      "assigned_period_ka": 20,
+      "input": "Noisy replicate 0 of the full-trend synthetic experiment. Fixed cycle assignment and depth windows; infer the three adjacent durations."
+    },
+    "inputs": {},
+    "output_fields": {
+      "interval_1_ka": "Elapsed duration between adjacent query depths (ka).",
+      "interval_2_ka": "Elapsed duration between adjacent query depths (ka).",
+      "interval_3_ka": "Elapsed duration between adjacent query depths (ka)."
+    },
+    "metrics": [
+      {
+        "kind": "distance",
+        "field": "interval_1_ka",
+        "unit": "ka",
+        "reference": 43.06132958997922
+      },
+      {
+        "kind": "distance",
+        "field": "interval_2_ka",
+        "unit": "ka",
+        "reference": 36.95394864382733
+      },
+      {
+        "kind": "distance",
+        "field": "interval_3_ka",
+        "unit": "ka",
+        "reference": 41.361220827879066
+      }
+    ],
+    "source": "Laurin-style synthetic comparison inspired by https://doi.org/10.1029/2020PA004188",
+    "interpretation": "Synthetic full-trend control; weak-band and variable-rate variants use the original frozen injections. These three cases are individual realizations. The three duration errors do not establish coverage across the 300-record experiment.",
+    "packet_files": [
+      "fixtures/chronology/laurin-weak-band/input/data.csv",
+      "fixtures/chronology/laurin-weak-band/input/queries.csv",
+      "fixtures/chronology/laurin-weak-band/input/windows.csv"
+    ]
+  }
+}

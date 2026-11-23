@@ -1,0 +1,105 @@
+name: Cyclostratigraphy benchmark
+on:
+  push:
+    branches: [cyclostratigraphy-benchmark]
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  portable:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install -r requirements.txt
+      - run: python bench.py verify
+      - run: python -m unittest discover -s tests -v
+      - name: Independent numerical and geological baselines on bundled inputs
+        run: |
+          python tools/run_profile.py python .results/python tune-knots tune-clip tune-extrapolate constant-sedrate sedrate-to-time sedrate-variable linear-irregular periodogram-lines r-tune-replay meishan-recovered-clock cenogrid-carbon-v28-linear cenogrid-oxygen-v28-linear lavernock petm-broad petm-published odp926b-timeopt la-thure-coco lr04-gaps synthetic-rate-step synthetic-detection cenogrid-modulation meishan-tuning odp846-oracle-original odp846-oracle-reduced laurin-stable laurin-variable-rate laurin-weak-band
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: portable-scores
+          path: .results/python/**/score.json
+          include-hidden-files: true
+  astrochron:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install -r requirements.txt
+      - uses: r-lib/actions/setup-r@v2
+        with:
+          r-version: '4.5.0'
+          use-public-rspm: true
+      - uses: r-lib/actions/setup-r-dependencies@v2
+        with:
+          packages: |
+            any::astrochron@1.8
+            any::jsonlite
+            any::hdf5r
+          needs: ''
+      - name: Native R cases and Site 926B TimeOpt
+        run: python tools/run_profile.py r .results/r
+      - name: Replay the original R journals
+        run: |
+          Rscript --vanilla fixtures/replay/replay.R fixtures/replay/examples/tune .results/r/replay-tune
+          Rscript --vanilla fixtures/replay/replay.R fixtures/replay/examples/ar1 .results/r/replay-ar1
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: astrochron-scores
+          path: .results/r/**/score.json
+          include-hidden-files: true
+  acycle:
+    runs-on: ubuntu-latest
+    timeout-minutes: 55
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - label: current
+            sha: dcba4279168745b563e0535b954297023dd62fc7
+          - label: v28
+            sha: e3553eb00b4890c0071ef64b213df34db5670de5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/checkout@v4
+        with:
+          repository: mingsongli/acycle
+          ref: ${{ matrix.sha }}
+          path: upstream
+          sparse-checkout: |
+            code/seriesanalysis
+            code/package/swa
+            code/package/bispectral
+            code/misc
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install -r requirements.txt
+      - run: python tools/matlab_profile.py prepare ${{ matrix.label }} .results/matlab
+      - uses: matlab-actions/setup-matlab@v2
+        with:
+          release: R2024b
+          products: Signal_Processing_Toolbox Statistics_and_Machine_Learning_Toolbox
+      - uses: matlab-actions/run-command@v2
+        with:
+          command: addpath(fullfile(pwd,'adapters')); acycle_batch(fullfile(pwd,'.results','matlab'),fullfile(pwd,'upstream'));
+      - run: python tools/matlab_profile.py score ${{ matrix.label }} .results/matlab
+      - if: matrix.label == 'current'
+        uses: matlab-actions/run-command@v2
+        with:
+          command: addpath(fullfile(pwd,'upstream','code','package','bispectral')); r=bispectralSelfTest(); assert(r.Passed);
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: acycle-${{ matrix.label }}-scores
+          path: .results/matlab/**/score.json
+          include-hidden-files: true

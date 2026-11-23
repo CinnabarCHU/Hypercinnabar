@@ -1,0 +1,319 @@
+{
+  "odp926b": {
+    "columns": [
+      "depth",
+      "adjusted_benthic_delta18O_permil"
+    ],
+    "unit": "m",
+    "rows": 476,
+    "selection": [
+      440.0,
+      490.0
+    ],
+    "sha256": "e2a574326362c8877eb9e494c2d4d25005d548fc8ff447e991afe7d9e16ed803",
+    "source_selection_sha256": "06ca48528627acec11620bf3c9f5a879c9abdea2203fbd46185f8d05a4c95f13",
+    "asset": "926B-18O.txt.bz2",
+    "reader": "bz2-whitespace",
+    "indices": [
+      0,
+      1
+    ],
+    "citation": "https://doi.org/10.1594/PANGAEA.743431",
+    "file": "fixtures/records/odp926b.csv"
+  },
+  "la-thure": {
+    "columns": [
+      "height",
+      "specific_magnetic_susceptibility_1e-9_m3_kg"
+    ],
+    "unit": "m",
+    "rows": 484,
+    "selection": null,
+    "sha256": "781ae1102b71cf5fd08c163fdc7481ccd0fbea246fc56ba9bc2fa8bcc3de7118",
+    "source_selection_sha256": "dc615796cdf3aacad62b15591e1c814f03e82976335239872f93f9538db0eb09",
+    "file": "fixtures/records/la-thure.csv",
+    "asset": "LaThure_PANGAEA_855764.txt",
+    "reader": "pangaea",
+    "indices": [
+      0,
+      1
+    ],
+    "citation": "https://doi.org/10.1594/PANGAEA.855764"
+  },
+  "bridge-height": {
+    "columns": [
+      "height",
+      "grayscale"
+    ],
+    "unit": "m",
+    "rows": 15741,
+    "selection": null,
+    "sha256": "c6892da243b4ce8002f6aa66c31e2a46777b7bf399e73a8b247c0d7da579001d",
+    "source_selection_sha256": "60c0d03cc6d1d7388fc8aec855ef7771ec70787d55320f02415d1754683c8a0f",
+    "asset": "cyclostratigraphic_record.csv",
+    "reader": "csv",
+    "indices": [
+      0,
+      3
+    ],
+    "citation": "https://doi.org/10.5281/zenodo.10871097"
+  },
+  "anticosti-gr": {
+    "columns": [
+      "depth",
+      "GR_K_percent"
+    ],
+    "unit": "m",
+    "rows": 4771,
+    "selection": null,
+    "sha256": "9b2d04bcad29fa57a5b749e5c65615aedf61e4681498101639208c5b39acd448",
+    "source_selection_sha256": "85ffa174a1ce4dc2ed66f5352d499c164d916afe0bdc384b961feb97d5abe371",
+    "asset": "G49083_SuppData1.xlsx",
+    "reader": "xlsx",
+    "sheet": 0,
+    "indices": [
+      0,
+      1
+    ],
+    "citation": "https://doi.org/10.1130/GEOL.S.14810550"
+  },
+  "anticosti-carbon": {
+    "columns": [
+      "depth",
+      "delta13C_average"
+    ],
+    "unit": "m",
+    "rows": 471,
+    "selection": null,
+    "sha256": "153a79a7c23570471311928451931bda4a573c7d63158c7cfa96625b624b2c0d",
+    "source_selection_sha256": "2e4a8dc5fc5540722e1260e5d730b56df9e754f86ae8242cdd33bb5d9d8d9b8d",
+    "asset": "G49083_SuppData1.xlsx",
+    "reader": "xlsx",
+    "sheet": 1,
+    "indices": [
+      1,
+      2
+    ],
+    "citation": "https://doi.org/10.1130/GEOL.S.14810550"
+  },
+  "odp1262-a": {
+    "columns": [
+      "depth",
+      "a_star"
+    ],
+    "unit": "m",
+    "rows": 1024,
+    "selection": [
+      117.36,
+      139.75
+    ],
+    "sha256": "e3ca0161e30d6321b8ddad3960d7240ffb6d2aa5cd9fc5d3541f92962a956bf0",
+    "source_selection_sha256": "6ae45dd0551b7b0cb1fb449ecbcce3e8c4297c0010778770e106353acabd3231",
+    "asset": "1262_a.txt.bz2",
+    "reader": "bz2-whitespace",
+    "indices": [
+      0,
+      1
+    ],
+    "citation": "https://raw.githubusercontent.com/srmeyers2/getData/56de9938d728b04627b2f08fc66cc60ce31f1b38/1262_a.txt.bz2"
+  },
+  "xiamaling": {
+    "columns": [
+      "depth",
+      "Cu_Al"
+    ],
+    "unit": "m",
+    "rows": 179,
+    "selection": [
+      263.42,
+      265.496
+    ],
+    "sha256": "ea9dbbf12e376f0f9734b088f7c3bf4b933ae4b81a103e9cd0b59819e9be2e98",
+    "source_selection_sha256": "09acb851811ee49e15b711b8f5f6cb2dba2bc446490d862bcaff9e01c7242b29",
+    "asset": "Xiamaling-CuAl.txt.bz2",
+    "reader": "bz2-whitespace",
+    "indices": [
+      0,
+      1
+    ],
+    "citation": "https://raw.githubusercontent.com/srmeyers2/getData/56de9938d728b04627b2f08fc66cc60ce31f1b38/Xiamaling-CuAl.txt.bz2"
+  },
+  "dsdp607": {
+    "columns": [
+      "depth",
+      "benthic_delta18O_permil"
+    ],
+    "unit": "m",
+    "rows": 1266,
+    "selection": null,
+    "sha256": "9a95be1ac5d6ac521bf720f6e433013c46b20bf4c74d8e08539a0eb56d461309",
+    "source_selection_sha256": "c63889a77e9dc81cc8b548830dadabdec66a99cd03e2095bcf49f9d1e6e4ec12",
+    "asset": "607-18O.txt.bz2",
+    "reader": "bz2-whitespace",
+    "indices": [
+      0,
+      1
+    ],
+    "citation": "https://raw.githubusercontent.com/srmeyers2/getData/56de9938d728b04627b2f08fc66cc60ce31f1b38/607-18O.txt.bz2"
+  },
+  "ain-el-beida": {
+    "columns": [
+      "depth",
+      "planktic_delta18O_permil"
+    ],
+    "unit": "m",
+    "rows": 324,
+    "selection": null,
+    "sha256": "724bd46eb37b98f9d0f55d72879652d3fc53f8aa1c5beb9b05f660a513424a3a",
+    "source_selection_sha256": "65469106d85dc3e32f2b6714534e57d85dfd806ed29dbeb87239ce41b8f70ae1",
+    "asset": "AEB-18O.txt.bz2",
+    "reader": "bz2-whitespace",
+    "indices": [
+      0,
+      1
+    ],
+    "citation": "https://raw.githubusercontent.com/srmeyers2/getData/56de9938d728b04627b2f08fc66cc60ce31f1b38/AEB-18O.txt.bz2"
+  },
+  "newark-ft": {
+    "columns": [
+      "depth",
+      "depth_rank"
+    ],
+    "unit": "ft",
+    "rows": 4040,
+    "selection": null,
+    "sha256": "463fcc4406c9be0cd8a2cff5754bf23412f0ce86bc167f6bb6539a40caa8aec9",
+    "source_selection_sha256": "b1263cde3dde2676e9856e4d511efa2ed44b0636b2aac4219f6f32ea2f1d186e",
+    "asset": "Newark-rank.txt.bz2",
+    "reader": "bz2-whitespace",
+    "indices": [
+      0,
+      1
+    ],
+    "citation": "https://raw.githubusercontent.com/srmeyers2/getData/56de9938d728b04627b2f08fc66cc60ce31f1b38/Newark-rank.txt.bz2"
+  },
+  "bridge-position": {
+    "asset": "cyclostratigraphic_record.csv",
+    "reader": "csv",
+    "indices": [
+      2,
+      3
+    ],
+    "columns": [
+      "position_m",
+      "grayscale"
+    ],
+    "unit": "m",
+    "selection": null,
+    "rows": 15741,
+    "sha256": "553b1e85e9a48a98797bcdc60586d828ce55f9d13dd783118191ae3bcda5e520",
+    "citation": "https://doi.org/10.5281/zenodo.10871097"
+  },
+  "bridge-meyers-dates": {
+    "asset": "meyers_radioisotopic_dates.csv",
+    "reader": "csv",
+    "indices": [
+      5,
+      1,
+      2
+    ],
+    "columns": [
+      "position_m",
+      "age_ma",
+      "age_sd_ma"
+    ],
+    "unit": "m",
+    "selection": null,
+    "rows": 4,
+    "sha256": "0eb5ff3d8e4ca1ac30783d8ae858090a0188ab646e5747f503dc9970d39056df",
+    "citation": "https://doi.org/10.5281/zenodo.10871097"
+  },
+  "bridge-updated-dates": {
+    "asset": "updated_radioisotopic_dates.csv",
+    "reader": "csv",
+    "indices": [
+      5,
+      1,
+      2
+    ],
+    "columns": [
+      "position_m",
+      "age_ma",
+      "age_sd_ma"
+    ],
+    "unit": "m",
+    "selection": null,
+    "rows": 4,
+    "sha256": "10117756126409c02e798db5f41a3d0e8d5f30cdfadbb3871cbede417e94b950",
+    "citation": "https://doi.org/10.5281/zenodo.10871097"
+  },
+  "lavernock": {
+    "file": "fixtures/records/lavernock.csv",
+    "rows": 439,
+    "columns": [
+      "stratigraphic_height_m",
+      "magnetic_susceptibility_1e-6_SI"
+    ],
+    "unit": "m",
+    "sha256": "b7e212c7f71b630c1f9b55429bc0b1085b58ee1480927be428cfef12cb57c1c4",
+    "citation": "https://doi.org/10.1594/PANGAEA.896872",
+    "provenance": "https://github.com/JFjifang/Acycle_Harness/blob/eefe06cf83dea1799e91fe5475e6b774d2e3f077/benchmarks/data/weedon_2020_lavernock_0_13_17m.provenance.json"
+  },
+  "petm-wide": {
+    "file": "fixtures/records/petm-wide.csv",
+    "rows": 5027,
+    "columns": [
+      "depth_m",
+      "magnetic_susceptibility_SI_x1e-5"
+    ],
+    "unit": "m",
+    "sha256": "d984dca509df88449f13994c72648441c5d59788056c2deaef0848c1d8a764f3",
+    "citation": "https://doi.org/10.1038/s41467-022-33390-x",
+    "provenance": "https://github.com/JFjifang/Acycle_Harness/blob/eefe06cf83dea1799e91fe5475e6b774d2e3f077/benchmarks/data/petm_2022_ms_below_nanjemoy.provenance.json"
+  },
+  "petm-paper": {
+    "file": "fixtures/records/petm-paper.csv",
+    "rows": 4364,
+    "columns": [
+      "depth_m",
+      "magnetic_susceptibility_SI_x1e-5"
+    ],
+    "unit": "m",
+    "sha256": "216f8a99011ec476365499d51393a79123a074dfdee067b176194c1d54b2efc6",
+    "citation": "https://doi.org/10.1038/s41467-022-33390-x",
+    "provenance": "https://github.com/JFjifang/Acycle_Harness/blob/eefe06cf83dea1799e91fe5475e6b774d2e3f077/benchmarks/data/petm_2022_ms_published_coco_interval.provenance.json"
+  },
+  "lr04": {
+    "file": "fixtures/records/lr04.csv",
+    "rows": 361,
+    "columns": [
+      "age_ka",
+      "benthic_d18O_permil"
+    ],
+    "unit": "ka",
+    "sha256": "c736b59ae028f44ed1728568eccb285e26e879cda48224ed457a05b38a504174",
+    "selection": [
+      1600,
+      2500
+    ],
+    "provenance": "https://github.com/mingsongli/acycle/blob/dcba4279168745b563e0535b954297023dd62fc7/data/Examples/LR04stack5320ka.txt",
+    "citation": "https://doi.org/10.1594/PANGAEA.704257"
+  },
+  "cip-case3": {
+    "asset": "cip-case3",
+    "reader": "csv",
+    "indices": [
+      0,
+      1
+    ],
+    "selection": null,
+    "columns": [
+      "height_m",
+      "proxy"
+    ],
+    "unit": "m",
+    "rows": 2631,
+    "sha256": "fb36ffe3a4aaee90cff43d91713620048eb28da721ad7e55b7d8c756b0003478",
+    "citation": "https://doi.org/10.1016/j.earscirev.2019.102965"
+  }
+}

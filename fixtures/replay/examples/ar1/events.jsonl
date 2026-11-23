@@ -1,0 +1,2 @@
+{"attr": "init", "info": {"op": "astrochron::ar1", "params": "events.jsonl.params.mat"}}
+{"attr": "fin", "info": {"status": "done", "retval": "events.jsonl.retval.mat"}}

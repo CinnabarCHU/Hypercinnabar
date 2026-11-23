@@ -1,0 +1,50 @@
+{
+  "926B-18O.txt.bz2": {
+    "url": "https://raw.githubusercontent.com/srmeyers2/getData/56de9938d728b04627b2f08fc66cc60ce31f1b38/926B-18O.txt.bz2",
+    "sha256": "eba0b60c7d9a93d0796eaa66c19298744caf389e5ee7c9fa4f1934b64b649d21"
+  },
+  "LaThure_PANGAEA_855764.txt": {
+    "url": "https://doi.pangaea.de/10.1594/PANGAEA.855764?format=textfile",
+    "sha256": "4da71fbaa73e51947ae98ebb6166ef53f90302b40ef23b0fde87937f3a910cbe"
+  },
+  "cyclostratigraphic_record.csv": {
+    "url": "https://raw.githubusercontent.com/robintrayler/astroBayes_manuscript/8c00bbb74a24e22db75dc19b5365248a449016b7/data/BCL/cyclostratigraphic_record.csv",
+    "sha256": "2a9544bd2b70e9133b8fb70d9bb1240cb135f973ae3f2289989f0af556c2b796"
+  },
+  "G49083_SuppData1.xlsx": {
+    "url": "https://ndownloader.figshare.com/files/28496532",
+    "sha256": "7a957ed524f9573dd53472bc3c9727e1f52aa6c6b97fb7764f58774924d29728"
+  },
+  "1262_a.txt.bz2": {
+    "url": "https://raw.githubusercontent.com/srmeyers2/getData/56de9938d728b04627b2f08fc66cc60ce31f1b38/1262_a.txt.bz2",
+    "sha256": "0b7b4c1ea78a1270ff0cb9610ee2bd5f7124af797bb65a0db5ff2962ec2003ed"
+  },
+  "Xiamaling-CuAl.txt.bz2": {
+    "url": "https://raw.githubusercontent.com/srmeyers2/getData/56de9938d728b04627b2f08fc66cc60ce31f1b38/Xiamaling-CuAl.txt.bz2",
+    "sha256": "16cb2d23cba32040b11796486a2ba6d3b22ed1c7dc3fdf647cdaef8c24bf87b1"
+  },
+  "607-18O.txt.bz2": {
+    "url": "https://raw.githubusercontent.com/srmeyers2/getData/56de9938d728b04627b2f08fc66cc60ce31f1b38/607-18O.txt.bz2",
+    "sha256": "65c306484dec71793c43e98293009b2d18edcd72684c79d5d32a1492b6c13348"
+  },
+  "AEB-18O.txt.bz2": {
+    "url": "https://raw.githubusercontent.com/srmeyers2/getData/56de9938d728b04627b2f08fc66cc60ce31f1b38/AEB-18O.txt.bz2",
+    "sha256": "9fbe6358c953c82df143fa2bd0659efa038a8b2759d72475d2604df57b6c593c"
+  },
+  "Newark-rank.txt.bz2": {
+    "url": "https://raw.githubusercontent.com/srmeyers2/getData/56de9938d728b04627b2f08fc66cc60ce31f1b38/Newark-rank.txt.bz2",
+    "sha256": "ef27a148ef31ddbe3a5d86dac276247b5a67b5010ace75a52a909c8a114ee3e2"
+  },
+  "meyers_radioisotopic_dates.csv": {
+    "url": "https://raw.githubusercontent.com/robintrayler/astroBayes_manuscript/8c00bbb74a24e22db75dc19b5365248a449016b7/data/BCL/meyers_radioisotopic_dates.csv",
+    "sha256": "fcee29c696a88bdcc48c13b5dac2a2dfb419557a67843cd00cfb7e435df90a18"
+  },
+  "updated_radioisotopic_dates.csv": {
+    "url": "https://raw.githubusercontent.com/robintrayler/astroBayes_manuscript/8c00bbb74a24e22db75dc19b5365248a449016b7/data/BCL/updated_radioisotopic_dates.csv",
+    "sha256": "2d4457efe19289a8c9e9ce0f749fcc262a28d6a3cd3858b2c53aea5dad301402"
+  },
+  "cip-case3": {
+    "url": "https://www.cyclostratigraphy.org/fileadmin/user_upload/Microsite_Cyclostratigraphy/CIP_cases/Case3/Case-3-Signal.csv",
+    "sha256": "e9567bc54c28c6425774c4c0969712ff654bc86af1d7729cfd1603dd67fc2440"
+  }
+}

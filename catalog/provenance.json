@@ -1,0 +1,111 @@
+{
+  "freeze": "2026-11-23",
+  "archives": [
+    {
+      "collection": "Astrochron_Exchange_Replay.zip",
+      "sha256": "0fc815c50ee8193bc2f331d693bc34d025b6f8b1b76d2e04cea7032a5e626375",
+      "group": "Recorded R calls",
+      "members": {
+        "README.md": "11d7dc07237225cb8c712da58021e7178f1d83c3ccec7eab192e057b242b09ef",
+        "record.py": "55eb7bd11e988e6b6075617b41485bf4ad7669d50c5290b3dd79ffa35f0bb67f",
+        "replay.R": "8a087f672857b57dd8099847589f5547927dd99f9169e31831d17be96f03a263",
+        "examples/ar1/events.jsonl": "b404eb5b0a9ad2705b8e643e2c8caf118b751bc89f0633dcd504003d81b2c2e2",
+        "examples/ar1/events.jsonl.params.mat": "494d181cbd3dd0d5d791014f4cd89d5cb7dabe1c66e59597c2f12d415c52c697",
+        "examples/ar1/events.jsonl.retval.mat": "0713e8a738ffa6af7c393526fdfb18d5a7d8465cad8d4d655d2c1f052eeaf246",
+        "examples/ar1/events.jsonl.rng.mat": "aa2701edc873332168a3b1e7ab01a820dd46de8a726a6950ab52f75fe86260aa",
+        "examples/ar1/manifest.json": "94c2a8d49d6f9d01e3944e67b26e6dc4d73247257a4299808fdf604f7dad7736",
+        "examples/tune/events.jsonl": "8718e052db131ab7b6539be37d8ba5b351d1e45d255d7e749ee9415cd33be17b",
+        "examples/tune/events.jsonl.params.mat": "6f0f96082634626b48b5813fe4a0e744e33d84b81cc3cb739041381eafb487e4",
+        "examples/tune/events.jsonl.retval.mat": "eb9f42159aa6b5eb67085479fd8065342a17cf6b74061594e3402e39438d7297",
+        "examples/tune/manifest.json": "50a45015a4b00c9c003f0affcaeee548a1bb9fb1ab745200cd5d222e11d177d6",
+        "examples/tune/tune.png": "8c055a6775a7d2de4fa3c99d03c95e994616b2b0b17df6f6eafb5b42fe443b5c"
+      },
+      "derivation": "The original 13 archive members are supplied in fixtures/replay. The portable case materializes numerical arrays in row-major CSV order."
+    },
+    {
+      "collection": "CIP_challenge_scout_data_and_code.zip",
+      "sha256": "d41071db6a42745d14336f09343bf7b4f3b545005c3a17a5a595321c41e1ade8",
+      "group": "CIP 1 Case 3",
+      "members": {
+        "CIP_challenge_scout/scout_analysis.py": "01aa391acdb2bd74d67b409c6b24b2f5f3da5c0286a6e4b0dafddabf5bd771c3",
+        "CIP_challenge_scout/sources/Case3_signal.csv": "e9567bc54c28c6425774c4c0969712ff654bc86af1d7729cfd1603dd67fc2440",
+        "CIP_challenge_scout/validation_only/CIP1_Case3_true_time_at_observations.csv": "7f41810bff8469462856024195e120f7593294e194b306328744f036232e6783"
+      },
+      "derivation": "The scorer uses the public generator clock at the native metre observation heights. The method receives the proxy and query heights."
+    },
+    {
+      "collection": "Laurin_external_benchmark_reproducibility.zip",
+      "sha256": "58c733a25c5e18c5fcb3cee7d135ae7fdef17d2b4d08e778994a1e909030f61d",
+      "group": "Laurin conditional experiments",
+      "members": {
+        "laurin_trial/external/complete_trend/results/synthetic_stable_0_importance.npz": "54a644a85cdd01a020dbf71b6a7c3e7f51cd3bae237514ba7a473e8f9c4fcc7e",
+        "laurin_trial/external/complete_trend/results/synthetic_stable_truth.npz": "c78a9ef962d45801a5aea1bc1ed961932b34481bfd9ebfa3460125ee8d36d076",
+        "laurin_trial/external/complete_trend/results/synthetic_variable_rate_0_importance.npz": "7f1ad40414a71b5dfe69e477025f07e3591426eb6c21fb8ab15ef0fd77805d6e",
+        "laurin_trial/external/complete_trend/results/synthetic_variable_rate_truth.npz": "71d77d73939ead22d731bc923ba1293b8ea4d3903d27746f246477f00ad29d5a",
+        "laurin_trial/external/complete_trend/results/synthetic_weak_band_0_importance.npz": "b0d4c3cf295bc11c4e500fd5680c155b88eace9e3864901075cb98c42b358cbb",
+        "laurin_trial/external/complete_trend/results/synthetic_weak_band_truth.npz": "20c6a399bf65371c7254dd8b0bbf4acae6b70e4687c97b971c3829b58f02359b"
+      },
+      "derivation": "Use z and the y array of noisy replicate 0, p0/lower/upper, and ztest. The first three entries of truth are adjacent interval durations in kyr."
+    },
+    {
+      "collection": "Obliquity_Oracle_Benchmark_Bundle.zip",
+      "sha256": "5fda33526410fb7312b01ac95ecf069aae9757013f825db811f0f89e2791f4dd",
+      "group": "ODP 846-calibrated synthetic chronologies",
+      "members": {
+        "README.txt": "ac400aceb068cb7c07feef50e85f5fc0cb9edc28821a38201bca6a085b2fc576",
+        "outputs/benchmark_curves.npz": "f87ec631e54a7ba5301249ee5bccc7606378db24cd2a408207fddad26439df98",
+        "outputs/blocks.json": "279cdbc2b3759a3794fc5296d685c0f477a0695d5d7f53cfefeefdac16d3e7fe"
+      },
+      "derivation": "Use original and reduced depth/age arrays from the frozen seed. Group nodes by the age limits of each segment in blocks.json. Evaluate the dense generator clock on multiples of 0.05 m plus both segment ends."
+    },
+    {
+      "collection": "Li_Tuning_Wavelet_Reproducibility.zip",
+      "sha256": "c0bd3ffb4e53d0af85e8ecf12046076e9e1beaa176e41048af004e12026c7eaf",
+      "group": "Meishan table and recovered clock",
+      "members": {
+        "recover_published_clock.py": "4965cc736c9153cc14cd267d40631d28e802534bab65081a525343195c5d202c",
+        "inputs/Meishan_GR_U.csv": "b37cbb4adfddba99e08c1eb06402f3b2516cfd71369ffc1459ce484788360e9a",
+        "inputs/Li_Excel_Knot_Recovery.json": "c48f564f93369ca5f5a03f49eca839364185fb3a26459affda90ea28d7bfc1f5"
+      },
+      "derivation": "Use mmc2-derived depth_m, GR_cpm, U_cpm and tuned_kyr; recoverable interior breaks and two terminal rows constrain the functional test. Only terminal times are given to geological candidates."
+    },
+    {
+      "collection": "geological_benchmarks_materials_2026-09-09.zip",
+      "sha256": "8efcb277b35a8509c94909043fa85ff4bdb86d971f8f25bccee2ca2aba8ac908",
+      "group": "Geological records collection",
+      "members": {
+        "geological_benchmarks/audit_sampling.py": "c83ea3bdbdbeaea8e7011b8f192c0186397fb97a86b2c39df76de5d14a4bab7d",
+        "geological_benchmarks/baseline_reference.json": "6c2a5f0a44adc9acab941caf390c0d92b085e911bc6ca8bf0bc2b7075fa527da",
+        "geological_benchmarks/manifest.json": "949c886798fd6504676a6f73bd32a0f3f3f251d1c90754a737070f5c4ec899dd",
+        "geological_benchmarks/version_audit_926B.json": "e817b097e3e4c8e3b174707f3d3d4a5d5087cd90cf076752fb64e0c7930904f9"
+      },
+      "derivation": "Source bytes, selected table bytes, columns, units and inclusive bounds are traced independently in records.json and assets.json."
+    }
+  ],
+  "archived_tests": [
+    {
+      "project": "acycle-library-pipeline-poc",
+      "commit": "9b1f08d2e6cec4df9f2ecd727d7a89fd5693ace2",
+      "original_path": "acycle-library-pipeline-poc/tests/",
+      "published_path": "suites/archived/acycle-library-pipeline-poc/tests/"
+    },
+    {
+      "project": "acycle-refactor-poc",
+      "commit": "5b29be9a20d12f827300e542ef41faab2c5d0960",
+      "original_path": "acycle-refactor-poc/tests/",
+      "published_path": "suites/archived/acycle-refactor-poc/tests/"
+    },
+    {
+      "project": "astrochron-rpy2-minimal-poc",
+      "commit": "0a9222ddaf3486da5b7134cf36891cadbd48b0e5",
+      "original_path": "astrochron-rpy2-minimal-poc/tests/",
+      "published_path": "suites/archived/astrochron-rpy2-minimal-poc/tests/"
+    },
+    {
+      "project": "astrochron-warp-poc",
+      "commit": "41e1b393fe8125b9c7fd52cb4f4a8dd1004787e1",
+      "original_path": "astrochron-warp-poc/tests/",
+      "published_path": "suites/archived/astrochron-warp-poc/tests/"
+    }
+  ]
+}

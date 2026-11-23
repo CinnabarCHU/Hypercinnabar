@@ -1,0 +1,820 @@
+[
+  {
+    "id": "tune-knots",
+    "candidate": {
+      "method": "portable-baseline",
+      "version": "NumPy 2.3.5, SciPy 1.17.0"
+    },
+    "status": "match",
+    "rows": 4,
+    "columns": {
+      "time_ka": {
+        "max_abs_error": 0.0,
+        "failures": 0,
+        "max_error_row": 1,
+        "atol": 1e-12,
+        "rtol": 1e-11
+      },
+      "proxy": {
+        "max_abs_error": 0.0,
+        "failures": 0,
+        "max_error_row": 1,
+        "atol": 1e-12,
+        "rtol": 2e-11
+      }
+    }
+  },
+  {
+    "id": "tune-clip",
+    "candidate": {
+      "method": "portable-baseline",
+      "version": "NumPy 2.3.5, SciPy 1.17.0"
+    },
+    "status": "match",
+    "rows": 4,
+    "columns": {
+      "time_ka": {
+        "max_abs_error": 0.0,
+        "failures": 0,
+        "max_error_row": 1,
+        "atol": 1e-12,
+        "rtol": 1e-11
+      },
+      "proxy": {
+        "max_abs_error": 0.0,
+        "failures": 0,
+        "max_error_row": 1,
+        "atol": 1e-12,
+        "rtol": 2e-11
+      }
+    }
+  },
+  {
+    "id": "tune-extrapolate",
+    "candidate": {
+      "method": "portable-baseline",
+      "version": "NumPy 2.3.5, SciPy 1.17.0"
+    },
+    "status": "match",
+    "rows": 6,
+    "columns": {
+      "time_ka": {
+        "max_abs_error": 0.0,
+        "failures": 0,
+        "max_error_row": 1,
+        "atol": 1e-12,
+        "rtol": 1e-11
+      },
+      "proxy": {
+        "max_abs_error": 0.0,
+        "failures": 0,
+        "max_error_row": 1,
+        "atol": 1e-12,
+        "rtol": 2e-11
+      }
+    }
+  },
+  {
+    "id": "constant-sedrate",
+    "candidate": {
+      "method": "portable-baseline",
+      "version": "NumPy 2.3.5, SciPy 1.17.0"
+    },
+    "status": "match",
+    "rows": 3,
+    "columns": {
+      "time_ka": {
+        "max_abs_error": 0.0,
+        "failures": 0,
+        "max_error_row": 1,
+        "atol": 1e-12,
+        "rtol": 1e-11
+      },
+      "proxy": {
+        "max_abs_error": 0.0,
+        "failures": 0,
+        "max_error_row": 1,
+        "atol": 1e-12,
+        "rtol": 2e-11
+      }
+    }
+  },
+  {
+    "id": "sedrate-to-time",
+    "candidate": {
+      "method": "portable-baseline",
+      "version": "NumPy 2.3.5, SciPy 1.17.0"
+    },
+    "status": "match",
+    "rows": 3,
+    "columns": {
+      "depth_m": {
+        "max_abs_error": 0.0,
+        "failures": 0,
+        "max_error_row": 1,
+        "atol": 1e-12,
+        "rtol": 1e-11
+      },
+      "time_ka": {
+        "max_abs_error": 0.0,
+        "failures": 0,
+        "max_error_row": 1,
+        "atol": 1e-12,
+        "rtol": 2e-11
+      }
+    }
+  },
+  {
+    "id": "sedrate-variable",
+    "candidate": {
+      "method": "portable-baseline",
+      "version": "NumPy 2.3.5, SciPy 1.17.0"
+    },
+    "status": "match",
+    "rows": 3,
+    "columns": {
+      "depth_m": {
+        "max_abs_error": 0.0,
+        "failures": 0,
+        "max_error_row": 1,
+        "atol": 1e-12,
+        "rtol": 1e-11
+      },
+      "time_ka": {
+        "max_abs_error": 0.0,
+        "failures": 0,
+        "max_error_row": 1,
+        "atol": 1e-12,
+        "rtol": 2e-11
+      }
+    }
+  },
+  {
+    "id": "linear-irregular",
+    "candidate": {
+      "method": "portable-baseline",
+      "version": "NumPy 2.3.5, SciPy 1.17.0"
+    },
+    "status": "match",
+    "rows": 7,
+    "columns": {
+      "depth_m": {
+        "max_abs_error": 0.0,
+        "failures": 0,
+        "max_error_row": 1,
+        "atol": 1e-12,
+        "rtol": 1e-11
+      },
+      "proxy": {
+        "max_abs_error": 4.440892098500626e-16,
+        "failures": 0,
+        "max_error_row": 7,
+        "atol": 1e-12,
+        "rtol": 2e-11
+      }
+    }
+  },
+  {
+    "id": "periodogram-lines",
+    "candidate": {
+      "method": "portable-baseline",
+      "version": "NumPy 2.3.5, SciPy 1.17.0"
+    },
+    "status": "match",
+    "rows": 33,
+    "columns": {
+      "frequency_per_ka": {
+        "max_abs_error": 0.0,
+        "failures": 0,
+        "max_error_row": 1,
+        "atol": 1e-12,
+        "rtol": 1e-11
+      },
+      "psd": {
+        "max_abs_error": 5.329070518200751e-15,
+        "failures": 0,
+        "max_error_row": 33,
+        "atol": 1e-12,
+        "rtol": 2e-11
+      }
+    }
+  },
+  {
+    "id": "r-tune-replay",
+    "candidate": {
+      "method": "portable-baseline",
+      "version": "NumPy 2.3.5, SciPy 1.17.0"
+    },
+    "status": "match",
+    "rows": 81,
+    "columns": {
+      "time_ka": {
+        "max_abs_error": 1.4210854715202004e-14,
+        "failures": 0,
+        "max_error_row": 64,
+        "atol": 1e-12,
+        "rtol": 1e-11
+      },
+      "proxy": {
+        "max_abs_error": 0.0,
+        "failures": 0,
+        "max_error_row": 1,
+        "atol": 1e-12,
+        "rtol": 2e-11
+      }
+    }
+  },
+  {
+    "id": "cenogrid-carbon-v28-linear",
+    "candidate": {
+      "method": "portable-baseline",
+      "version": "NumPy 2.3.5, SciPy 1.17.0"
+    },
+    "status": "match",
+    "rows": 7324,
+    "columns": {
+      "age_ka": {
+        "max_abs_error": 7.275957614183426e-12,
+        "failures": 0,
+        "max_error_row": 3664,
+        "atol": 1e-12,
+        "rtol": 1e-11
+      },
+      "isotope": {
+        "max_abs_error": 6.391137619132792e-12,
+        "failures": 0,
+        "max_error_row": 4040,
+        "atol": 1e-11,
+        "rtol": 2e-09
+      }
+    }
+  },
+  {
+    "id": "cenogrid-oxygen-v28-linear",
+    "candidate": {
+      "method": "portable-baseline",
+      "version": "NumPy 2.3.5, SciPy 1.17.0"
+    },
+    "status": "match",
+    "rows": 7324,
+    "columns": {
+      "age_ka": {
+        "max_abs_error": 7.275957614183426e-12,
+        "failures": 0,
+        "max_error_row": 3664,
+        "atol": 1e-12,
+        "rtol": 1e-11
+      },
+      "isotope": {
+        "max_abs_error": 7.802480883611906e-12,
+        "failures": 0,
+        "max_error_row": 4040,
+        "atol": 1e-11,
+        "rtol": 2e-09
+      }
+    }
+  },
+  {
+    "id": "meishan-recovered-clock",
+    "candidate": {
+      "method": "portable-baseline",
+      "version": "NumPy 2.3.5, SciPy 1.17.0"
+    },
+    "status": "match",
+    "rows": 288,
+    "columns": {
+      "relative_time_ka": {
+        "max_abs_error": 6.685693278996041e-07,
+        "failures": 0,
+        "max_error_row": 282,
+        "atol": 1e-05,
+        "rtol": 0
+      },
+      "U_cpm": {
+        "max_abs_error": 0.0,
+        "failures": 0,
+        "max_error_row": 1,
+        "atol": 1e-12,
+        "rtol": 0
+      }
+    }
+  },
+  {
+    "id": "lavernock",
+    "candidate": {
+      "method": "portable-baseline",
+      "version": "NumPy 2.3.5, SciPy 1.17.0"
+    },
+    "status": "criterion_unmet",
+    "metrics": [
+      {
+        "field": "wavelength_m",
+        "quantity": "range",
+        "value": 0.8304136446959433,
+        "unit": "m",
+        "reference": 0.81,
+        "absolute_difference": 0.0204136446959432,
+        "bounds": [
+          0.74,
+          0.88
+        ],
+        "distance_to_range": 0.0,
+        "met": true
+      },
+      {
+        "field": "fdr05_power",
+        "quantity": "fdr",
+        "value": null,
+        "available": false,
+        "met": false
+      }
+    ]
+  },
+  {
+    "id": "petm-published",
+    "candidate": {
+      "method": "portable-baseline",
+      "version": "NumPy 2.3.5, SciPy 1.17.0"
+    },
+    "status": "criterion_unmet",
+    "metrics": [
+      {
+        "field": "rate_cm_per_ka",
+        "quantity": "range",
+        "value": 30.0,
+        "unit": "cm/ka",
+        "bounds": [
+          8,
+          15
+        ],
+        "distance_to_range": 15.0,
+        "met": false
+      },
+      {
+        "field": "global_p",
+        "quantity": "p_value",
+        "value": null
+      }
+    ]
+  },
+  {
+    "id": "petm-broad",
+    "candidate": {
+      "method": "portable-baseline",
+      "version": "NumPy 2.3.5, SciPy 1.17.0"
+    },
+    "status": "criterion_unmet",
+    "metrics": [
+      {
+        "field": "rate_cm_per_ka",
+        "quantity": "range",
+        "value": 30.0,
+        "unit": "cm/ka",
+        "bounds": [
+          8,
+          15
+        ],
+        "distance_to_range": 15.0,
+        "met": false
+      },
+      {
+        "field": "global_p",
+        "quantity": "p_value",
+        "value": null
+      }
+    ]
+  },
+  {
+    "id": "odp926b-timeopt",
+    "candidate": {
+      "method": "portable-baseline",
+      "version": "NumPy 2.3.5, SciPy 1.17.0"
+    },
+    "status": "scored",
+    "metrics": [
+      {
+        "field": "rate_cm_per_ka",
+        "quantity": "distance",
+        "value": 2.896321070234114,
+        "unit": "cm/ka",
+        "reference": 3.02,
+        "absolute_difference": 0.12367892976588601
+      }
+    ]
+  },
+  {
+    "id": "la-thure-coco",
+    "candidate": {
+      "method": "portable-baseline",
+      "version": "NumPy 2.3.5, SciPy 1.17.0"
+    },
+    "status": "criterion_unmet",
+    "metrics": [
+      {
+        "field": "rate_cm_per_ka",
+        "quantity": "distance",
+        "value": 16.816053511705682,
+        "unit": "cm/ka",
+        "reference": 8,
+        "absolute_difference": 8.816053511705682
+      },
+      {
+        "field": "rate_cm_per_ka",
+        "quantity": "range",
+        "value": 16.816053511705682,
+        "unit": "cm/ka",
+        "bounds": [
+          6.6,
+          10.4
+        ],
+        "distance_to_range": 6.416053511705682,
+        "met": false
+      }
+    ]
+  },
+  {
+    "id": "anticosti-precession",
+    "candidate": {
+      "method": "portable-baseline",
+      "version": "NumPy 2.3.5, SciPy 1.17.0"
+    },
+    "status": "scored",
+    "metrics": [
+      {
+        "field": "rate_cm_per_ka",
+        "quantity": "distance",
+        "value": 46.2,
+        "unit": "cm/ka",
+        "reference": 41.91375,
+        "absolute_difference": 4.286250000000003
+      },
+      {
+        "field": "duration_ka",
+        "quantity": "distance",
+        "value": 1032.4675324675325,
+        "unit": "ka",
+        "reference": 1137.813,
+        "absolute_difference": 105.34546753246764
+      }
+    ]
+  },
+  {
+    "id": "anticosti-eccentricity",
+    "candidate": {
+      "method": "portable-baseline",
+      "version": "NumPy 2.3.5, SciPy 1.17.0"
+    },
+    "status": "scored",
+    "metrics": [
+      {
+        "field": "rate_cm_per_ka",
+        "quantity": "distance",
+        "value": 60.0,
+        "unit": "cm/ka",
+        "reference": 38.31845,
+        "absolute_difference": 21.68155
+      },
+      {
+        "field": "duration_ka",
+        "quantity": "distance",
+        "value": 795.0,
+        "unit": "ka",
+        "reference": 1244.57,
+        "absolute_difference": 449.56999999999994
+      }
+    ]
+  },
+  {
+    "id": "bridge-meyers",
+    "candidate": {
+      "method": "portable-baseline",
+      "version": "NumPy 2.3.5, SciPy 1.17.0"
+    },
+    "status": "scored",
+    "metrics": [
+      {
+        "field": "ctb_age_ma",
+        "quantity": "distance",
+        "value": 93.90166660473537,
+        "unit": "Ma",
+        "reference": 93.87,
+        "absolute_difference": 0.031666604735363535
+      },
+      {
+        "field": "ci95_ma",
+        "quantity": "interval",
+        "value": [
+          93.76184175882834,
+          94.0414914506424
+        ],
+        "unit": "Ma",
+        "width": 0.27964969181405763,
+        "lower_difference": 0.0418417588283404,
+        "upper_difference": 0.021491450642386667
+      }
+    ]
+  },
+  {
+    "id": "bridge-updated",
+    "candidate": {
+      "method": "portable-baseline",
+      "version": "NumPy 2.3.5, SciPy 1.17.0"
+    },
+    "status": "scored",
+    "metrics": [
+      {
+        "field": "ctb_age_ma",
+        "quantity": "distance",
+        "value": 93.96926179670511,
+        "unit": "Ma",
+        "reference": 93.98,
+        "absolute_difference": 0.010738203294891946
+      },
+      {
+        "field": "ci95_ma",
+        "quantity": "interval",
+        "value": [
+          93.86877958976662,
+          94.0697440036436
+        ],
+        "unit": "Ma",
+        "width": 0.2009644138769886,
+        "lower_difference": -0.011220410233391931,
+        "upper_difference": -0.010255996356391961
+      }
+    ]
+  },
+  {
+    "id": "cenogrid-modulation",
+    "candidate": {
+      "method": "portable-baseline",
+      "version": "NumPy 2.3.5, SciPy 1.17.0"
+    },
+    "status": "scored",
+    "metrics": [
+      {
+        "field": "carbon_1_myr",
+        "quantity": "distance",
+        "value": 2.1548975862071904,
+        "unit": "Myr",
+        "reference": 2.1548975862068964,
+        "absolute_difference": 2.9398705692074145e-13
+      },
+      {
+        "field": "carbon_2_myr",
+        "quantity": "distance",
+        "value": 1.3296176595746494,
+        "unit": "Myr",
+        "reference": 1.3887117777777778,
+        "absolute_difference": 0.059094118203128376
+      },
+      {
+        "field": "oxygen_1_myr",
+        "quantity": "distance",
+        "value": 2.048919016393722,
+        "unit": "Myr",
+        "reference": 1.8380008823529415,
+        "absolute_difference": 0.21091813404078064
+      },
+      {
+        "field": "oxygen_2_myr",
+        "quantity": "distance",
+        "value": 1.2253339215687944,
+        "unit": "Myr",
+        "reference": 1.329617659574468,
+        "absolute_difference": 0.10428373800567359
+      }
+    ]
+  },
+  {
+    "id": "lr04-gaps",
+    "candidate": {
+      "method": "portable-baseline",
+      "version": "NumPy 2.3.5, SciPy 1.17.0"
+    },
+    "status": "scored",
+    "metrics": {
+      "isolated": {
+        "n": 26,
+        "rmse_permil": 0.09171443976571225,
+        "bias_permil": -0.01692307692307697
+      },
+      "block": {
+        "n": 22,
+        "rmse_permil": 0.26124993009382025,
+        "bias_permil": 0.23749999999999993
+      },
+      "all": {
+        "n": 48,
+        "rmse_permil": 0.18930979743468618,
+        "bias_permil": 0.09968749999999998
+      }
+    }
+  },
+  {
+    "id": "synthetic-rate-step",
+    "candidate": {
+      "method": "portable-baseline",
+      "version": "NumPy 2.3.5, SciPy 1.17.0"
+    },
+    "status": "scored",
+    "metrics": [
+      {
+        "field": "first_cm_per_ka",
+        "quantity": "distance",
+        "value": 4.0,
+        "unit": "cm/ka",
+        "reference": 4,
+        "absolute_difference": 0.0
+      },
+      {
+        "field": "second_cm_per_ka",
+        "quantity": "distance",
+        "value": 6.0,
+        "unit": "cm/ka",
+        "reference": 6,
+        "absolute_difference": 0.0
+      }
+    ]
+  },
+  {
+    "id": "synthetic-detection",
+    "candidate": {
+      "method": "portable-baseline",
+      "version": "NumPy 2.3.5, SciPy 1.17.0"
+    },
+    "status": "scored",
+    "metrics": {
+      "true_positive": 20,
+      "false_positive": 0,
+      "n_signal": 20,
+      "n_null": 20,
+      "sensitivity": 1.0,
+      "false_positive_rate": 0.0,
+      "balanced_accuracy": 1.0
+    }
+  },
+  {
+    "id": "cip1-case3",
+    "candidate": {
+      "method": "portable-baseline",
+      "version": "NumPy 2.3.5, SciPy 1.17.0"
+    },
+    "status": "scored",
+    "metrics": {
+      "rmse_ka": 57.84338977626429,
+      "max_abs_ka": 122.16130637813353,
+      "mae_ka": 47.46075925719615,
+      "end_minus_start_error_ka": 2.3108650992853654,
+      "rows": 2631,
+      "disputed_interval_duration_error_ka": 71.9572296861561
+    }
+  },
+  {
+    "id": "meishan-tuning",
+    "candidate": {
+      "method": "portable-baseline",
+      "version": "NumPy 2.3.5, SciPy 1.17.0"
+    },
+    "status": "scored",
+    "metrics": {
+      "rmse_ka": 101.86115206822691,
+      "max_abs_ka": 196.96607490730764,
+      "mae_ka": 73.53956907257512,
+      "end_minus_start_error_ka": 0.0,
+      "rows": 288
+    }
+  },
+  {
+    "id": "odp846-oracle-original",
+    "candidate": {
+      "method": "portable-baseline",
+      "version": "NumPy 2.3.5, SciPy 1.17.0"
+    },
+    "status": "scored",
+    "metrics": {
+      "rmse_ka": 2.477886575807339,
+      "max_abs_ka": 7.402940061066147,
+      "mae_ka": 1.9024986237498631,
+      "end_minus_start_error_ka": 0.0,
+      "rows": 656
+    }
+  },
+  {
+    "id": "odp846-oracle-reduced",
+    "candidate": {
+      "method": "portable-baseline",
+      "version": "NumPy 2.3.5, SciPy 1.17.0"
+    },
+    "status": "scored",
+    "metrics": {
+      "rmse_ka": 1.976734776711938,
+      "max_abs_ka": 5.8624413213710795,
+      "mae_ka": 1.5222535314919652,
+      "end_minus_start_error_ka": 0.0,
+      "rows": 657
+    }
+  },
+  {
+    "id": "laurin-stable",
+    "candidate": {
+      "method": "portable-baseline",
+      "version": "NumPy 2.3.5, SciPy 1.17.0"
+    },
+    "status": "scored",
+    "metrics": [
+      {
+        "field": "interval_1_ka",
+        "quantity": "distance",
+        "value": 40.00791778431309,
+        "unit": "ka",
+        "reference": 40.00791778431309,
+        "absolute_difference": 0.0
+      },
+      {
+        "field": "interval_2_ka",
+        "quantity": "distance",
+        "value": 40.00663998626834,
+        "unit": "ka",
+        "reference": 40.00663998626834,
+        "absolute_difference": 0.0
+      },
+      {
+        "field": "interval_3_ka",
+        "quantity": "distance",
+        "value": 40.005648414985615,
+        "unit": "ka",
+        "reference": 40.005648414985586,
+        "absolute_difference": 2.842170943040401e-14
+      }
+    ]
+  },
+  {
+    "id": "laurin-variable-rate",
+    "candidate": {
+      "method": "portable-baseline",
+      "version": "NumPy 2.3.5, SciPy 1.17.0"
+    },
+    "status": "scored",
+    "metrics": [
+      {
+        "field": "interval_1_ka",
+        "quantity": "distance",
+        "value": 40.00791778431309,
+        "unit": "ka",
+        "reference": 43.06132958997922,
+        "absolute_difference": 3.05341180566613
+      },
+      {
+        "field": "interval_2_ka",
+        "quantity": "distance",
+        "value": 40.00663998626834,
+        "unit": "ka",
+        "reference": 36.95394864382733,
+        "absolute_difference": 3.0526913424410083
+      },
+      {
+        "field": "interval_3_ka",
+        "quantity": "distance",
+        "value": 40.005648414985615,
+        "unit": "ka",
+        "reference": 41.361220827879066,
+        "absolute_difference": 1.3555724128934514
+      }
+    ]
+  },
+  {
+    "id": "laurin-weak-band",
+    "candidate": {
+      "method": "portable-baseline",
+      "version": "NumPy 2.3.5, SciPy 1.17.0"
+    },
+    "status": "scored",
+    "metrics": [
+      {
+        "field": "interval_1_ka",
+        "quantity": "distance",
+        "value": 40.00791778431309,
+        "unit": "ka",
+        "reference": 43.06132958997922,
+        "absolute_difference": 3.05341180566613
+      },
+      {
+        "field": "interval_2_ka",
+        "quantity": "distance",
+        "value": 40.00663998626834,
+        "unit": "ka",
+        "reference": 36.95394864382733,
+        "absolute_difference": 3.0526913424410083
+      },
+      {
+        "field": "interval_3_ka",
+        "quantity": "distance",
+        "value": 40.005648414985615,
+        "unit": "ka",
+        "reference": 41.361220827879066,
+        "absolute_difference": 1.3555724128934514
+      }
+    ]
+  }
+]

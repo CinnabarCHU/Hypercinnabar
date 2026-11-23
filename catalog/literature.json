@@ -1,0 +1,214 @@
+{
+  "retrieval_date": "2026-09-09",
+  "status": "Published reference values and documented preprocessing; spectral methods were not rerun in this collection task.",
+  "benchmarks": [
+    {
+      "id": "LaThure_COCO_2018",
+      "paper": "https://doi.org/10.1016/j.epsl.2018.08.041",
+      "location": "Section 4.3, Figures 6D and 10",
+      "preprocessing": {
+        "log_transform": true,
+        "linear_interpolation_m": 0.3,
+        "rloess_trend_length_m": 80
+      },
+      "astronomical_age_Ma": 384,
+      "target_periods_kyr": [
+        413,
+        123,
+        95,
+        39.3,
+        31.9,
+        19.8,
+        16.8
+      ],
+      "reference": {
+        "broad_COCO_peak_cm_per_kyr": 8.0,
+        "reported_p_below_0_001_at_cm_per_kyr": 7.8,
+        "reported_p_below_0_01_range_cm_per_kyr": [
+          6.6,
+          10.4
+        ],
+        "monte_carlo_replicates": 2000
+      },
+      "caution": "Variable sedimentation and proposed hiatus near 100 m; full record is not a constant-rate ground truth.",
+      "original_collection_data": "raw/LaThure_PANGAEA_855764.txt"
+    },
+    {
+      "id": "926B_TimeOpt2015",
+      "paper": "https://doi.org/10.1002/2015PA002850",
+      "location": "Section 5, Figure 5",
+      "bounds_mcd": [
+        440,
+        490
+      ],
+      "preprocessing": {
+        "linear_interpolation_m": 0.1,
+        "lowess_trend_removed_below_cycles_per_m": 0.06
+      },
+      "search": {
+        "sedimentation_cm_per_kyr": [
+          1.3,
+          5
+        ],
+        "number_of_rates": 100,
+        "precession_half_power_cycles_per_kyr": [
+          0.035,
+          0.065
+        ],
+        "filter_rolloff": 1000
+      },
+      "reference": {
+        "sedimentation_cm_per_kyr": 3.02,
+        "r2_opt": 0.099,
+        "p_value": 0.005,
+        "AR1_rho": 0.706,
+        "monte_carlo_replicates": 2000,
+        "r2_spectral_peak": 0.3,
+        "spectral_peak_rate_cm_per_kyr": 2.94,
+        "r2_envelope_peak": 0.371,
+        "ASM_reference_rate_cm_per_kyr": 2.95,
+        "r2_opt_with_added_40_16_kyr_obliquity": 0.119
+      },
+      "caution": "Corrected benthic isotope on composite depth; PANGAEA duplicates and author version audited separately.",
+      "original_collection_data": "prepared/926B_TimeOpt2015.json"
+    },
+    {
+      "id": "1262_a_TimeOptB_manual",
+      "paper": "https://doi.org/10.1029/2023GC011176",
+      "manual": "https://cran.r-universe.dev/astrochron/doc/manual.html",
+      "selection_source": "Current official manual; exact historical paper interval not locked",
+      "bounds_m": [
+        117.36,
+        139.75
+      ],
+      "linear_interpolation_m": 0.02,
+      "sedimentation_cm_per_kyr": [
+        1.2,
+        1.4
+      ],
+      "age_Ma": 55,
+      "axial_precession_k_arcsec_per_year": [
+        49,
+        53
+      ],
+      "reference": {
+        "2015_TimeOpt_rate_cm_per_kyr": 1.33,
+        "2015_TimeOpt_r2_opt": 0.212,
+        "2024_band_result": "Eccentricity and precession supported; obliquity weak."
+      },
+      "original_collection_data": "prepared/1262_a_TimeOptB_manual.json"
+    },
+    {
+      "id": "Xiamaling_TimeOptB_manual",
+      "paper": "https://doi.org/10.1029/2023GC011176",
+      "manual": "https://cran.r-universe.dev/astrochron/doc/manual.html",
+      "bounds_m": [
+        263.42,
+        265.496
+      ],
+      "linear_interpolation_m": 0.012,
+      "sedimentation_cm_per_kyr": [
+        0.3,
+        0.4
+      ],
+      "age_Ma": 1400,
+      "axial_precession_k_arcsec_per_year": [
+        78,
+        94
+      ],
+      "caution": "Near-uniform sampling; ancient target frequencies uncertain; 179 selected samples, 180 in full distributed file.",
+      "original_collection_data": "prepared/Xiamaling_TimeOptB_manual.json"
+    },
+    {
+      "id": "Anticosti_TemplateTimeOpt",
+      "paper": "https://doi.org/10.1130/G49083.1",
+      "supplement": "https://doi.org/10.1130/GEOL.S.14810550",
+      "location": "Supplement Figures S5 and S6",
+      "reference": {
+        "precession_template": {
+          "mean_rate_cm_per_kyr": 41.91375,
+          "duration_kyr": 1137.813,
+          "reported_r_squared_max": 0.09355524
+        },
+        "eccentricity_template": {
+          "mean_rate_cm_per_kyr": 38.31845,
+          "duration_kyr": 1244.57,
+          "reported_r_squared_max": 0.7227406
+        }
+      },
+      "caution": "Main GR record evenly spaced. Distinct objectives; do not rank methods by these r-squared values alone.",
+      "original_collection_data": "raw/G49083_SuppData1.xlsx"
+    },
+    {
+      "id": "BridgeCreek_astroBayes2024",
+      "paper": "https://doi.org/10.5194/gchron-6-107-2024",
+      "repo": "https://github.com/robintrayler/astroBayes_manuscript",
+      "commit": "8c00bbb74a24e22db75dc19b5365248a449016b7",
+      "reference": {
+        "Meyers_dates_CTB_age_Ma": 93.87,
+        "Meyers_dates_reported_95pct_CI_plusminus_Ma": 0.15,
+        "updated_dates_CTB_age_Ma": 93.98,
+        "updated_dates_reported_95pct_CI_plusminus_Ma": 0.1,
+        "known_hiatus_height_approx_m": 2.7,
+        "rate_change_height_approx_m": 6.7
+      },
+      "author_preprocessing": {
+        "coordinate_column": "position",
+        "linear_interpolation_m": 0.025,
+        "demean": true,
+        "linear_detrend": true
+      },
+      "caution": "Age-depth method assumes orbital signal established; not a signal-detection null test. Gray data differs from ASM CaCO3. Age estimates are published model outputs, not ground truth.",
+      "original_collection_data_directory": "raw/astroBayes_2024/data/BCL"
+    },
+    {
+      "id": "BridgeCreek_ASM2007_pending_CaCO3",
+      "data_status": "Original CaCO3 numeric array not acquired",
+      "paper": "https://doi.org/10.2475/05.2007.01",
+      "location": "Figures 6 and 7, Table 1",
+      "height_bounds_m_bentonite_removed": [
+        6,
+        11.835
+      ],
+      "preprocessing": {
+        "approx_original_interval_m": 0.05,
+        "linear_interpolation_to_even_grid": true,
+        "demean": true,
+        "linear_detrend": true,
+        "MTM_NW": 3,
+        "tapers": 5
+      },
+      "reference": {
+        "best_rate_cm_per_kyr": 0.61,
+        "best_ASM_cycles_per_kyr": 0.000442,
+        "best_p": 0.0011,
+        "alternate_rate_cm_per_kyr": 1.65,
+        "alternate_p": 0.0322,
+        "reported_critical_p": 0.0055
+      },
+      "caution": "Do not apply this numeric baseline to the acquired grayscale series."
+    }
+  ],
+  "record_ids": {
+    "LaThure_COCO_2018": [
+      "la-thure"
+    ],
+    "926B_TimeOpt2015": [
+      "odp926b"
+    ],
+    "1262_a_TimeOptB_manual": [
+      "odp1262-a"
+    ],
+    "Xiamaling_TimeOptB_manual": [
+      "xiamaling"
+    ],
+    "Anticosti_TemplateTimeOpt": [
+      "anticosti-gr"
+    ],
+    "BridgeCreek_astroBayes2024": [
+      "bridge-position",
+      "bridge-meyers-dates",
+      "bridge-updated-dates"
+    ]
+  }
+}

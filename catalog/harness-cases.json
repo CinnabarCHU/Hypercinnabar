@@ -1,0 +1,464 @@
+{
+  "schema_version": 1,
+  "upstream": {
+    "repository": "https://github.com/mingsongli/acycle",
+    "branch": "master",
+    "validated_source_candidate": "dcba4279168745b563e0535b954297023dd62fc7"
+  },
+  "execution_backend": "MATLAB/Acycle originals; Python orchestration only",
+  "status_policy": "Manifest entries describe tests. Consult actual validation receipts for completed execution and pass/fail.",
+  "cases": [
+    {
+      "id": "official-la2004",
+      "kind": "official_example",
+      "runnable": true,
+      "input": {
+        "root": "acycle",
+        "path": "data/Examples/Example-La2004-1E.5T-1P-0-2000.txt",
+        "sha256": "9653ac0d10ea7e4bad40afd4b553bacc3901b9c38e88b3da598e12f23565354f"
+      },
+      "parameters": {
+        "detrend": "lowess",
+        "span": 0.35,
+        "mtm_nw": 2,
+        "smooth_fraction": 0.25,
+        "evolution": true,
+        "coordinate_unit": "kyr"
+      },
+      "scope": "Astronomical ETP example; workflow and axes test, not astronomical solution recomputation.",
+      "documentation_url": "https://github.com/mingsongli/acycle/wiki/Examples",
+      "acceptance": [
+        "completed MATLAB response",
+        "original-source provenance",
+        "MATLAB processed data and spectra",
+        "MATLAB figures saved"
+      ],
+      "execution_status": "not_asserted_by_manifest"
+    },
+    {
+      "id": "official-guandao",
+      "kind": "official_example",
+      "runnable": true,
+      "input": {
+        "root": "acycle",
+        "path": "data/Examples/Example-Guandao2AnisianGR.txt",
+        "sha256": "f357613a31445cbec7658aa2fcf4b65b8c1945e98b1befe5b82223a1c6a8ddec"
+      },
+      "parameters": {
+        "detrend": "lowess",
+        "span": 0.35,
+        "mtm_nw": 2,
+        "smooth_fraction": 0.25,
+        "evolution": true,
+        "coordinate_unit": "m"
+      },
+      "scope": "Official Anisian gamma-ray example; sorting, interpolation and mini robot workflow.",
+      "documentation_url": "https://github.com/mingsongli/acycle/wiki/Examples",
+      "acceptance": [
+        "completed MATLAB response",
+        "original-source provenance",
+        "MATLAB processed data and spectra",
+        "MATLAB figures saved"
+      ],
+      "execution_status": "not_asserted_by_manifest"
+    },
+    {
+      "id": "official-wayao",
+      "kind": "official_example",
+      "runnable": true,
+      "input": {
+        "root": "acycle",
+        "path": "data/Examples/Example-WayaoCarnianGR0.txt",
+        "sha256": "f39dcc29be09cd5a07ef1dcdd20c6fa30499213c204ce4897ac02d9f6f086c21"
+      },
+      "parameters": {
+        "detrend": "lowess",
+        "span": 0.35,
+        "mtm_nw": 2,
+        "smooth_fraction": 0.25,
+        "evolution": true,
+        "coordinate_unit": "m"
+      },
+      "scope": "Official Carnian gamma-ray example; mini robot baseline and optional sensitivity branches.",
+      "documentation_url": "https://github.com/mingsongli/acycle/wiki/Examples",
+      "acceptance": [
+        "completed MATLAB response",
+        "original-source provenance",
+        "MATLAB processed data and spectra",
+        "MATLAB figures saved"
+      ],
+      "execution_status": "not_asserted_by_manifest"
+    },
+    {
+      "id": "official-svalbard",
+      "kind": "official_example",
+      "runnable": true,
+      "input": {
+        "root": "acycle",
+        "path": "data/Examples/Example-SvalbardPETM-logFe.txt",
+        "sha256": "bb7235a5afa92ca689a586c43d95a4820fe5dfb1c779d582306fedba8245bf89"
+      },
+      "parameters": {
+        "detrend": "lowess",
+        "span": 0.35,
+        "mtm_nw": 2,
+        "smooth_fraction": 0.25,
+        "evolution": true,
+        "coordinate_unit": "m"
+      },
+      "scope": "Official PETM logFe example; mini robot workflow, not reproduction of PETM chronology.",
+      "documentation_url": "https://github.com/mingsongli/acycle/wiki/Examples",
+      "acceptance": [
+        "completed MATLAB response",
+        "original-source provenance",
+        "MATLAB processed data and spectra",
+        "MATLAB figures saved"
+      ],
+      "execution_status": "not_asserted_by_manifest"
+    },
+    {
+      "id": "official-rednoise",
+      "kind": "official_example",
+      "runnable": true,
+      "input": {
+        "root": "acycle",
+        "path": "data/Examples/Example-Rednoise0.7-2000.txt",
+        "sha256": "cad728ce0b45b7b654e6d822b5a206fcbc7841c18e2efb2bf18fdc0a876041e3"
+      },
+      "parameters": {
+        "detrend": "lowess",
+        "span": 0.35,
+        "mtm_nw": 2,
+        "smooth_fraction": 0.25,
+        "evolution": true,
+        "coordinate_unit": "sample"
+      },
+      "scope": "Negative control: original MATLAB processing and qualified interpretation; pointwise peaks may occur.",
+      "documentation_url": "https://github.com/mingsongli/acycle/wiki/Examples",
+      "acceptance": [
+        "completed MATLAB response",
+        "original-source provenance",
+        "MATLAB processed data and spectra",
+        "MATLAB figures saved"
+      ],
+      "execution_status": "not_asserted_by_manifest"
+    },
+    {
+      "id": "official-newark",
+      "kind": "official_example",
+      "runnable": true,
+      "input": {
+        "root": "acycle",
+        "path": "data/Examples/Example-LateTriassicNewarkDepthRank.txt",
+        "sha256": "1cd82c19c0de98a8c4d6f09d3af1fdb3ff2e07fe93c3ee241102dd75e4b65ac2"
+      },
+      "parameters": {
+        "detrend": "lowess",
+        "span": 0.35,
+        "mtm_nw": 2,
+        "smooth_fraction": 0.25,
+        "evolution": true,
+        "coordinate_unit": "m"
+      },
+      "scope": "Full official Newark depth-rank record (2344 finite observations); MATLAB mini-robot, MTM/evoFFT and figure output. This is not independent reproduction of a Newark astrochronology.",
+      "documentation_url": "https://github.com/mingsongli/acycle/wiki/Examples",
+      "acceptance": [
+        "completed MATLAB response",
+        "original-source provenance",
+        "MATLAB processed data and spectra",
+        "MATLAB figures saved"
+      ],
+      "execution_status": "not_asserted_by_manifest",
+      "validation_receipts": [
+        "validation/newark-result.json",
+        "validation/newark-evidence.json"
+      ]
+    },
+    {
+      "id": "paper-petm-ms",
+      "kind": "paper_data_workflow",
+      "runnable": true,
+      "input": {
+        "root": "benchmarks",
+        "path": "data/petm_2022_ms_194_200m.csv",
+        "sha256": "2538e6cf4e3c41ce2de1299a60319dd45de933bfeccdd7707c9587d5db8aac5e",
+        "extraction_receipt": "data/petm_2022_ms_194_200m.provenance.json"
+      },
+      "parameters": {
+        "detrend": "lowess",
+        "span": 0.35,
+        "mtm_nw": 2,
+        "smooth_fraction": 0.25,
+        "evolution": true,
+        "coordinate_unit": "m"
+      },
+      "paper_doi": "10.1038/s41467-022-33390-x",
+      "paper_url": "https://doi.org/10.1038/s41467-022-33390-x",
+      "scope": "Paper-data workflow smoke test on selected 194\u2013200 m magnetic-susceptibility interval; no published Lomb\u2013Scargle/COCO/ASM/chronology reproduction.",
+      "published_result_reproduction": false,
+      "acceptance": [
+        "completed MATLAB response",
+        "source and extraction checksums",
+        "finite outputs checked by MATLAB validation",
+        "MATLAB figures saved"
+      ],
+      "execution_status": "not_asserted_by_manifest"
+    },
+    {
+      "id": "paper-cambrian-gr",
+      "kind": "paper_data_workflow",
+      "runnable": true,
+      "input": {
+        "root": "benchmarks",
+        "path": "data/cambrian_2022_gamma_ray.csv",
+        "sha256": "7b3829c6b4dc62178d07a8960f1da009f0c495e2e3d59ed2c5dc418afdc81f54",
+        "extraction_receipt": "data/cambrian_2022_gamma_ray.provenance.json"
+      },
+      "parameters": {
+        "detrend": "lowess",
+        "span": 0.35,
+        "mtm_nw": 2,
+        "smooth_fraction": 0.25,
+        "evolution": true,
+        "coordinate_unit": "m"
+      },
+      "paper_doi": "10.1038/s41467-022-29651-4",
+      "paper_url": "https://doi.org/10.1038/s41467-022-29651-4",
+      "scope": "Paper-data workflow smoke test on full numeric auxiliary gamma-ray record; no primary Al-based chronology reproduction.",
+      "published_result_reproduction": false,
+      "acceptance": [
+        "completed MATLAB response",
+        "source and extraction checksums",
+        "finite outputs checked by MATLAB validation",
+        "MATLAB figures saved"
+      ],
+      "execution_status": "not_asserted_by_manifest"
+    },
+    {
+      "kind": "paper_method_validation",
+      "runnable": true,
+      "published_result_reproduction": false,
+      "execution_status": "not_asserted_by_manifest",
+      "id": "paper-weedon-swa",
+      "tool": "acycle_swa",
+      "input": {
+        "root": "benchmarks",
+        "path": "data/weedon_2020_lavernock_0_13_17m.csv",
+        "sha256": "b7e212c7f71b630c1f9b55429bc0b1085b58ee1480927be428cfef12cb57c1c4",
+        "extraction_receipt": "data/weedon_2020_lavernock_0_13_17m.provenance.json"
+      },
+      "parameters": {
+        "method": "lomb",
+        "coordinate_unit": "m"
+      },
+      "paper_doi": "10.21701/bolgeomin.131.2.001",
+      "paper_url": "https://doi.org/10.21701/bolgeomin.131.2.001",
+      "method_origin_doi": "10.1017/S0016756818000808",
+      "dataset_doi": "10.1594/PANGAEA.896872",
+      "scope": "SWA method-paper feature check on untuned Lavernock MS: published approximately 0.81 m spectral peak exceeding 5% FDR. No Bayesian probability or stage-duration reproduction.",
+      "acceptance": [
+        "completed original MATLAB SWA response",
+        "439 original observations retained without interpolation",
+        "peak wavelength 0.81 +/- 0.07 m and exceeds 5% FDR",
+        "MATLAB spectrum and figures saved"
+      ],
+      "scientific_checks": [
+        {
+          "type": "peak_period",
+          "id": "published_lavernock_peak",
+          "target": 0.81,
+          "absolute_tolerance": 0.07,
+          "require_above_fdr_5": true,
+          "unit": "m",
+          "rationale": "A priori interval around the rounded published wavelength; approximately one independent spectral resolution element at 0.81 m for a 13.14 m record (~0.05 m), plus rounding allowance."
+        }
+      ]
+    },
+    {
+      "kind": "paper_method_validation",
+      "runnable": true,
+      "published_result_reproduction": false,
+      "execution_status": "not_asserted_by_manifest",
+      "id": "paper-petm-coco",
+      "tool": "acycle_coco",
+      "input": {
+        "root": "benchmarks",
+        "path": "data/petm_2022_ms_below_nanjemoy.csv",
+        "sha256": "d984dca509df88449f13994c72648441c5d59788056c2deaef0848c1d8a764f3",
+        "extraction_receipt": "data/petm_2022_ms_below_nanjemoy.provenance.json"
+      },
+      "parameters": {
+        "depth_unit": "m",
+        "method": "phase_averaged",
+        "orbital_periods_kyr": [
+          125,
+          95,
+          39.8,
+          23.3,
+          22,
+          18.7
+        ],
+        "sedimentation_rate_min": 0.13,
+        "sedimentation_rate_max": 30,
+        "sedimentation_rate_step": 0.1,
+        "nsim": 2000,
+        "seed": 1,
+        "red_noise": 1,
+        "correlation": "Spearman",
+        "detrend": "loess",
+        "detrend_window": 20
+      },
+      "paper_doi": "10.1038/s41467-022-33390-x",
+      "paper_url": "https://doi.org/10.1038/s41467-022-33390-x",
+      "scope": "Broader-interval modern COCO comparison on untuned MS below the Nanjemoy basal unconformity. Uses published six targets, 20 m LOESS, rate grid and 2000 draws, but extends below the actual published interval and uses median 0.005 m interpolation, Spearman and default NFFT/frequency settings. The original 8\u201315 cm/kyr comparison remains unchanged; see separate published-protocol case. No exact historical-paper reproduction.",
+      "acceptance": [
+        "completed original MATLAB COCO response",
+        "original-source parity and full 2000-draw count",
+        "best-rate diagnostic compared against published broad COCO interval 8\u201315 cm/kyr",
+        "MATLAB rate spectrum, null maxima and figures saved"
+      ],
+      "scientific_checks": [
+        {
+          "type": "summary_range",
+          "id": "published_petm_rate_range",
+          "field": "best_rate_cm_kyr",
+          "minimum": 8,
+          "maximum": 15,
+          "unit": "cm/kyr",
+          "rationale": "A priori broad published COCO optimal-rate interval; modern algorithm may disagree, in which case report a failed consistency check without retuning."
+        }
+      ]
+    },
+    {
+      "kind": "paper_data_workflow",
+      "runnable": true,
+      "published_result_reproduction": false,
+      "execution_status": "not_asserted_by_manifest",
+      "id": "paper-cambrian-ecoco",
+      "tool": "acycle_ecoco",
+      "input": {
+        "root": "benchmarks",
+        "path": "data/cambrian_2022_al_0_18m.csv",
+        "sha256": "83fb4573b6b92043ddc4d664338c678d58f8f9683fe6e38358bb06ef6e433a8d",
+        "extraction_receipt": "data/cambrian_2022_al_0_18m.provenance.json"
+      },
+      "parameters": {
+        "depth_unit": "m",
+        "method": "adaptive",
+        "middle_age_ma": 500,
+        "sedimentation_rate_min": 0.05,
+        "sedimentation_rate_max": 1.5,
+        "sedimentation_rate_step": 0.05,
+        "nsim": 199,
+        "seed": 1,
+        "red_noise": 0,
+        "detrend": "loess",
+        "detrend_window": 6,
+        "window": 4,
+        "step": 2
+      },
+      "paper_doi": "10.1038/s41467-022-29651-4",
+      "paper_url": "https://doi.org/10.1038/s41467-022-29651-4",
+      "scope": "Reduced modern eCOCO workflow on primary untuned Al in the first published 0\u201318 m subset. Approximate 6 m LOESS, omitted original 12-point smoothing, 2 m window step, 199 draws, coarser rate grid and modern nine-period age-500 target differ from the paper. A published ~0.457 cm/kyr scale is a diagnostic reference only.",
+      "acceptance": [
+        "completed original MATLAB eCOCO response",
+        "eight complete 4 m windows with no edge padding",
+        "original-source numerical parity",
+        "MATLAB maps, tracked rates and figures saved"
+      ],
+      "scientific_checks": [
+        {
+          "type": "summary_range",
+          "id": "complete_windows",
+          "field": "window_count",
+          "minimum": 8,
+          "maximum": 8,
+          "unit": "windows",
+          "rationale": "0\u201318 m input, 4 m windows at 2 m steps, no edge padding; structural workflow assertion only."
+        }
+      ],
+      "diagnostic_reference": {
+        "rate_cm_kyr": 0.4567901234567901,
+        "basis": "Published first-subset wavelength approximately 1.85 m / 405 kyr; this is not a numerical eCOCO reproduction target."
+      }
+    },
+    {
+      "kind": "paper_method_validation",
+      "runnable": true,
+      "published_result_reproduction": false,
+      "execution_status": "not_asserted_by_manifest",
+      "id": "paper-petm-coco-published-protocol",
+      "tool": "acycle_coco",
+      "input": {
+        "root": "benchmarks",
+        "path": "data/petm_2022_ms_published_coco_interval.csv",
+        "sha256": "216f8a99011ec476365499d51393a79123a074dfdee067b176194c1d54b2efc6",
+        "extraction_receipt": "data/petm_2022_ms_published_coco_interval.provenance.json"
+      },
+      "parameters": {
+        "depth_unit": "m",
+        "method": "phase_averaged",
+        "orbital_periods_kyr": [
+          125,
+          95,
+          39.8,
+          23.3,
+          22,
+          18.7
+        ],
+        "sedimentation_rate_min": 0.13,
+        "sedimentation_rate_max": 30,
+        "sedimentation_rate_step": 0.1,
+        "nsim": 2000,
+        "seed": 1,
+        "red_noise": 1,
+        "correlation": "Pearson",
+        "detrend": "loess",
+        "detrend_window": 20,
+        "dt": 0.01,
+        "nfft": 5000,
+        "max_frequency": 0.06,
+        "slices": 1
+      },
+      "paper_doi": "10.1038/s41467-022-33390-x",
+      "paper_url": "https://doi.org/10.1038/s41467-022-33390-x",
+      "scope": "Independent modern COCO comparison using the MS protocol recovered from Supplementary Text 3, pages 22\u201323: raw 187.54\u2013211.24 m interval, original 20 m LOESS, linear 0.01 m interpolation, Pearson, NFFT 5000, frequency 0\u20130.06 cycles/kyr, six periods and 2000 draws. Modern phase-averaged target/null still differ from historical Acycle 2.4.1; not an exact old-engine replay. The original broader-interval failed comparison is preserved.",
+      "acceptance": [
+        "completed original modern MATLAB COCO response",
+        "4364 raw observations; original MATLAB preparation yields 2370 points at 0.01 m",
+        "2000 completed draws with recorded protocol and original-source hashes",
+        "best-rate comparison against unchanged published 8\u201315 cm/kyr interval",
+        "MATLAB rate spectrum, null maxima and figures saved"
+      ],
+      "scientific_checks": [
+        {
+          "type": "summary_range",
+          "id": "published_petm_rate_range",
+          "field": "best_rate_cm_kyr",
+          "minimum": 8,
+          "maximum": 15,
+          "unit": "cm/kyr",
+          "rationale": "A priori broad published COCO optimal-rate interval; modern algorithm may disagree, in which case report a failed consistency check without retuning."
+        }
+      ],
+      "protocol_source": {
+        "file": "sources/petm_2022_supplement.pdf",
+        "sha256": "ca71136f8c11e535c8a8421dd09b2de14155297c34f47dc99054d4d2c608ff5b",
+        "section": "Supplementary Text 3",
+        "pages": [
+          22,
+          23
+        ],
+        "log_excerpt": "sources/petm_2022_coco_protocol.txt",
+        "processed_input_expected": {
+          "depth_range_m": [
+            187.542,
+            211.232
+          ],
+          "rows": 2370,
+          "spacing_m": 0.01
+        }
+      }
+    }
+  ]
+}

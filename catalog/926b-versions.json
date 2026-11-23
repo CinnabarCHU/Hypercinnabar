@@ -1,0 +1,21 @@
+{
+  "pangaea_rows": 2082,
+  "pangaea_unique_depths": 2070,
+  "getData_rows": 2070,
+  "same_unique_depths": true,
+  "comparison_rule": "Arithmetic average of corrected isotope values at identical PANGAEA composite depths, compared with downloaded getData version; no assumption about the author's undocumented processing.",
+  "differences": [
+    {
+      "depth_mcd": 579.31,
+      "pangaea_duplicate_mean": 1.79,
+      "getData_value": 5.21
+    },
+    {
+      "depth_mcd": 586.61,
+      "pangaea_duplicate_mean": 1.96,
+      "getData_value": 2.06
+    }
+  ],
+  "TimeOpt_440_490_roi_agrees_after_duplicate_averaging": true,
+  "note": "Both versions are preserved. The two differing values occur outside the selected TimeOpt interval. Their cause is not established."
+}
