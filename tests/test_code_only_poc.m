@@ -51,17 +51,11 @@ for k = 1:numel(cases)
         fprintf(2,'FAIL %s\n%s\n',failures{end},getReport(err,'extended','hyperlinks','off'));
     end
 end
-screenshot = fullfile(getenv('RUNNER_TEMP'),'acycle-preview.png');
-if ~isempty(getenv('RUNNER_TEMP'))
-    set(fig,'Visible','on'); drawnow;
-    try
-        frame = getframe(fig); imwrite(frame.cdata,screenshot);
-    catch
-        print(fig,screenshot,'-dpng','-r100');
-    end
-end
 assert(isempty(failures),'Cases failed: %s',strjoin(failures,', '));
-fprintf('All 33 layouts, desktop selection, original filter/detrend/SWA previews, version selection, master bispectrum, exchange and replay passed.\n');
+if ~isempty(getenv('RUNNER_TEMP'))
+    captureDesktop(fig,fullfile(getenv('RUNNER_TEMP'),'acycle-preview.png'));
+end
+fprintf('All 33 layouts, desktop selection, filter/detrend/SWA previews, Mini-Robot, master bispectrum, exchange and replay passed.\n');
 end
 
 function checkFilter(h,data,folder,t)
@@ -144,7 +138,34 @@ acgui.refresh(h,folder);
 names = cellstr(h.listbox_acmain.String);
 h.listbox_acmain.Value = find(ismember(names,{'test-series.txt','second.txt'}));
 click(findall(fig,'Tag','push_robot'));
-assert(numel(findall(groot,'Type','figure','Name','Mini-Robot'))==2);
+windows = findall(groot,'Type','figure','Name','Mini-Robot'); assert(numel(windows)==2);
+controls = findall(windows(1),'Style','checkbox','String','Yes'); assert(numel(controls)==5);
+set(controls,'Value',0); set(findall(windows(1),'String','Save data'),'Value',0);
+click(findall(windows(1),'Style','pushbutton'));
+completed = getappdata(windows(1),'AcycleWorkflow');
+assert(strcmp(completed.params.operation,'Robot_legacy') && ~isempty(completed.id));
+assert(max(abs(completed.res.prepared-data),[],'all')<1e-10);
+assert(isequaln(completed.res,accore.replay(completed.id)));
+end
+
+function captureDesktop(fig,destination)
+otherWindows = findall(groot,'Type','figure');
+set(otherWindows(otherWindows~=fig),'Visible','off');
+set(fig,'Visible','on'); figure(fig); drawnow; pause(.5);
+if isunix && ~ismac && ~isempty(getenv('DISPLAY'))
+    setenv('ACYCLE_CAPTURE_TITLE',fig.Name); setenv('ACYCLE_CAPTURE_PNG',destination);
+    % Capture the X11 window together with its actual menus and toolbar.
+    cmd = 'xwininfo -name "$ACYCLE_CAPTURE_TITLE" >/dev/null 2>&1 && timeout 15 import -silent -window "$ACYCLE_CAPTURE_TITLE" "$ACYCLE_CAPTURE_PNG"';
+    [code,~] = system(cmd);
+    if code~=0
+        [code,msg] = system('timeout 15 import -silent -window root -trim +repage "$ACYCLE_CAPTURE_PNG"');
+        assert(code==0,'X11 capture failed: %s',msg);
+    end
+else
+    frame = getframe(fig); imwrite(frame.cdata,destination);
+end
+img = imread(destination);
+assert(size(img,1)>100 && size(img,2)>100 && any(img(:)~=img(1)),'Empty desktop capture.');
 end
 
 function click(obj)

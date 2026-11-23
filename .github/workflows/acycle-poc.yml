@@ -25,9 +25,24 @@ jobs:
         with:
           release: R2024b
           products: Signal_Processing_Toolbox Statistics_and_Machine_Learning_Toolbox Image_Processing_Toolbox Curve_Fitting_Toolbox Optimization_Toolbox Wavelet_Toolbox
+      - name: Start a display for the native MATLAB windows
+        shell: bash
+        run: |
+          if ! command -v Xvfb || ! command -v import || ! command -v xdpyinfo || ! command -v xwininfo; then
+            sudo apt-get update -qq
+            sudo apt-get install -y xvfb imagemagick x11-utils
+          fi
+          Xvfb :93 -screen 0 1600x1000x24 -ac -nolisten tcp > "$RUNNER_TEMP/acycle-xvfb.log" 2>&1 &
+          for attempt in {1..30}; do
+            if xdpyinfo -display :93 >/dev/null 2>&1; then break; fi
+            sleep 1
+          done
+          xdpyinfo -display :93 >/dev/null
+          echo 'DISPLAY=:93' >> "$GITHUB_ENV"
       - name: Exercise the shipped desktop and numerical paths
         uses: matlab-actions/run-command@v2
         with:
+          startup-options: -display :93
           command: addpath(fullfile(pwd,'tests')); cd(fullfile(getenv('RUNNER_TEMP'),'acycle')); test_code_only_poc;
       - uses: actions/upload-artifact@v4
         with:
@@ -37,4 +52,4 @@ jobs:
         with:
           name: Acycle-desktop-check
           path: ${{ runner.temp }}/acycle-preview.png
-          if-no-files-found: ignore
+          if-no-files-found: error
