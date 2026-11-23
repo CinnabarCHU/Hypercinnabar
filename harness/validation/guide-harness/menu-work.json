@@ -1,33 +1,17 @@
 {
   "case": "etp",
-  "run_id": "20261123T144457Z-77d8a5c5cf89",
-  "role": "helper",
+  "run_id": "20261123T144852Z-f13897519900",
+  "role": "analyzer",
   "menu": "menu_waveletGUI",
-  "settings": {
-    "input": {
-      "data_standardize": false,
-      "dss": 1,
-      "method_sel": "FFT",
-      "mother": "Morlet",
-      "operation": "WaveletSpectrum_legacy",
-      "pad": 1,
-      "param": 6,
-      "pt1": 10,
-      "pt2": 700
-    }
-  },
+  "settings": {},
   "sources": {
-    "file_input": {
-      "mode": "matrix",
-      "field": "data",
-      "source": {
-        "kind": "artifact",
-        "workflow": "45193115937",
-        "sha": "710953f73d8337e587f7b3d28f66b3981d539e87",
-        "run_id": "20261123T141904Z-dd3c2a2555c7",
-        "member": "processed.csv",
-        "digest": "32244c243095208e4501f284042840815ad487953b5a29522fd85368b4f1df0d"
-      }
+    "helper_journal": {
+      "kind": "artifact",
+      "workflow": "45197573273",
+      "sha": "7fa3812764c43a7af1794ed587a24a9f9e9ac171",
+      "run_id": "20261123T144457Z-77d8a5c5cf89",
+      "member": "journals/registered/1795445311301/events.jsonl",
+      "digest": "6729620e8f041b61ceb6455b48fb4e347feeacf71517bdfbc543f47b3cc34110"
     }
   }
 }
