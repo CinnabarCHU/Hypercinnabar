@@ -1,0 +1,28 @@
+{
+  "original_object_ids": 791,
+  "original_candidates_reviewed": 721,
+  "original_candidates_verified": 718,
+  "selected_caption_or_supplement_proofs": 812,
+  "chapters_covered": 47,
+  "original_chapter_leaves": 888,
+  "distinct_chapter_authoritative_sources_checked": 48,
+  "active_objects": 809,
+  "rejected_ids": 3,
+  "new_appendices": 21,
+  "opening_leaf_corrections": 5,
+  "previous_chapter_page_sources": 47,
+  "new_print_tables": 7,
+  "new_transcribed_rows": 70,
+  "new_separate_repository_witnesses": 9,
+  "full_cd_exception_rows_reassessed": 8,
+  "two_fully_field_mapped_appendix_b_rows": 2,
+  "ch23_field_aligned_rows_with_orphan_token": 5,
+  "site677_partial_row": 1,
+  "ch23_witness_pairs": {
+    "exact": 19,
+    "same_field_position_different_published_value": 4,
+    "no_matching_event_in_site_table": 2
+  },
+  "complete_caption_text_proofread": false,
+  "limitation": "The scan audits confirm object identity and opening locator. Figure contents, continuation folios, full caption text and every visible mark on each leaf have not been exhaustively collated."
+}

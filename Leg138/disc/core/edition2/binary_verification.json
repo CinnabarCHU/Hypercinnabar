@@ -1,0 +1,14 @@
+{
+  "source_file": "SITE_844/COLOR/COL844B.FIN",
+  "source_bytes": 352680,
+  "source_sha256": "1533b9c5c87869fc38e31edde812bb1ada239f42afe9b63b72f19df6565bd855",
+  "array_rows": 6441,
+  "column_count": 9,
+  "source_addressed_values": 57969,
+  "values_matching_six_companion_ascii_columns": 38646,
+  "ratio_values_equal_to_binary32_quotient": 19321,
+  "ratio_first_row_differences": 2,
+  "ambiguous_byte_sequences_resolved": 2,
+  "ascii_bx_only_rows": 3,
+  "container_metadata_outside_arrays": "undocumented"
+}

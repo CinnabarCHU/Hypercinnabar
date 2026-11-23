@@ -1,0 +1,10 @@
+item_id,site,source_path,source_line,verification_flags,reported_hole,context_line,reported_core_prefix,core_section,interval_cm,depth_mbsf,depth_mcd,interpretation,age_ma,comments,unresolved_source_fragment,raw_source_line
+IR15.T08,850,VOLUME/DATA/TABLES/CHAP_15/TABLE.8,6,,850A,5,,7H-1,30,55.50,62.86,Kaena (t),2.92,,,7H-1 30        55.50       62.86       Kaena (t)         2.92
+IR15.T08,850,VOLUME/DATA/TABLES/CHAP_15/TABLE.8,7,,850A,5,,7H-2,55,57.25,64.61,Kaena (o),2.99,,,7H-2 55        57.25       64.61       Kaena (o)         2.99
+IR15.T08,850,VOLUME/DATA/TABLES/CHAP_15/TABLE.8,8,,850A,5,,7H-3,100,59.20,66.56,Mammoth (t),3.08,,,7H-3 100       59.20       66.56       Mammoth (t)       3.08
+IR15.T08,850,VOLUME/DATA/TABLES/CHAP_15/TABLE.8,9,,850A,5,,7H-5,35,61.55,68.91,Mammoth (o),3.18,,,7H-5 35        61.55       68.91       Mammoth (o)       3.18
+IR15.T08,850,VOLUME/DATA/TABLES/CHAP_15/TABLE.8,10,,850A,5,,8H-1,130,66.00,75.04,Gauss/Gilbert,3.40,,,8H-1 130       66.00       75.04       Gauss/Gilbert     3.40
+IR15.T08,850,VOLUME/DATA/TABLES/CHAP_15/TABLE.8,12,,850B,11,,6H-5,85,57.35,62.85,Kaena (t),2.92,,,6H-5 85        57.35       62.85       Kaena (t)         2.92
+IR15.T08,850,VOLUME/DATA/TABLES/CHAP_15/TABLE.8,13,,850B,11,,6H-6,110,59.10,64.60,Keano (o),2.99,,,6H-6 110       59.10       64.60       Keano (o)         2.99
+IR15.T08,850,VOLUME/DATA/TABLES/CHAP_15/TABLE.8,14,,850B,11,,7H-2,70,62.20,68.77,Mammoth (o),3.18,,,7H-2 70        62.20       68.77       Mammoth (o)       3.18
+IR15.T08,850,VOLUME/DATA/TABLES/CHAP_15/TABLE.8,15,,850B,11,,7H-6,80,68.30,74.87,Gauss/Gilbert,3.40,,,7H-6 80        68.30       74.87       Gauss/Gilbert     3.40

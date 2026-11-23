@@ -1,0 +1,28 @@
+{
+  "physical_data_lines": 135092,
+  "cell_roundtrip": 1280581,
+  "oxide_numeric_pairs": 60727,
+  "oxide_values_within_bounds": 58397,
+  "indicator_ratios": {
+    "LIR": {
+      "testable": 16516,
+      "ratio_consistent_with_printed_precision": 13331,
+      "hundred_times_ratio_consistent": 28
+    },
+    "IIR": {
+      "testable": 16516,
+      "ratio_consistent_with_printed_precision": 13696,
+      "hundred_times_ratio_consistent": 8
+    },
+    "SIR": {
+      "testable": 16518,
+      "ratio_consistent_with_printed_precision": 15777,
+      "hundred_times_ratio_consistent": 0
+    },
+    "PIR": {
+      "testable": 16513,
+      "ratio_consistent_with_printed_precision": 0,
+      "hundred_times_ratio_consistent": 13192
+    }
+  }
+}

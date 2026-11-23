@@ -18,6 +18,8 @@ def verify(ir, pr):
     intervals=read('ir_mean_intervals.csv')
     checks=read('pr_rate_check.csv')
     assert len(intervals)==len(checks)==230
+    terminal=next(r for r in intervals if r['site']=='853' and r['values_source_line']=='59')
+    assert (terminal['young_Ma'],terminal['old_Ma'],terminal['noncarbonate_mar'],terminal['organic_carbon_mar'])==('7.28','7.50','','0.14')
     assert len(read('pr_panel_axes.csv'))==54
     assert len(read('pr_printed_marks.csv'))==44
     assert len(read('pr_mar_spotcheck.csv'))==1

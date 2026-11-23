@@ -1,0 +1,93 @@
+item_id,site,source_path,source_line,verification_flags,reported_hole,context_line,reported_core_prefix,core_section,interval_cm,depth_mbsf,depth_mcd,interpretation,age_ma,comments,unresolved_source_fragment,raw_source_line
+IR13.T07,848,VOLUME/DATA/TABLES/CHAP_13/TABLE.7,6,,848B,5,,2H-6,4,9.74,12.54,Brunhes/Matuyama,0.73,Near section break,,2H-6    4         9.74       12.54       Brunhes/Matuyama   0.73       Near section break
+IR13.T07,848,VOLUME/DATA/TABLES/CHAP_13/TABLE.7,7,,848B,5,,3H-1,40,12.10,16.05,Jaramillo (t),0.91,,,3H-1    40       12.10       16.05       Jaramillo (t)      0.91      
+IR13.T07,848,VOLUME/DATA/TABLES/CHAP_13/TABLE.7,8,,848B,5,,3H-2,15,13.35,17.30,Jaramillo (o),0.98,,,3H-2    15       13.35       17.30       Jaramillo (o)      0.98      
+IR13.T07,848,VOLUME/DATA/TABLES/CHAP_13/TABLE.7,9,,848B,5,,64H-1,25,21.45,25.80,Olduvai (t),1.66,Near core top (?),,64H-1   25       21.45       25.80       Olduvai (t)        1.66       Near core top (?)
+IR13.T07,848,VOLUME/DATA/TABLES/CHAP_13/TABLE.7,10,,848B,5,,4H-2,30,23.00,27.35,Olduvai (o),1.88,,,4H-2    30       23.00       27.35       Olduvai (o)        1.88      
+IR13.T07,848,VOLUME/DATA/TABLES/CHAP_13/TABLE.7,11,,848B,5,,4H-6,90,29.60,33.95,Kaena (t),2.92,,,4H-6    90       29.60       33.95       Kaena (t)          2.92      
+IR13.T07,848,VOLUME/DATA/TABLES/CHAP_13/TABLE.7,12,,848B,5,,4H-6,125,29.95,34.30,Kaena (o),2.99,,,4H-6   125       29.95       34.30       Kaena (o)          2.99      
+IR13.T07,848,VOLUME/DATA/TABLES/CHAP_13/TABLE.7,13,,848B,5,,4H-6,145,30.15,34.50,Mammoth (t),3.08,Near section break,,4H-6   145       30.15       34.50       Mammoth (t)        3.08       Near section break
+IR13.T07,848,VOLUME/DATA/TABLES/CHAP_13/TABLE.7,14,,848B,5,,4H-7,55,30.75,35.10,Mammoth (o),3.18,,,4H-7    55       30.75       35.10       Mammoth (o)        3.18      
+IR13.T07,848,VOLUME/DATA/TABLES/CHAP_13/TABLE.7,15,,848B,5,,5H-2,85,33.05,38.70,Cochiti (t),3.88,,,5H-2    85       33.05       38.70       Cochiti (t)        3.88      
+IR13.T07,848,VOLUME/DATA/TABLES/CHAP_13/TABLE.7,16,,848B,5,,5H-3,25,33.95,39.60,Cochiti (o),3.97,,,5H-3    25       33.95       39.60       Cochiti (o)        3.97      
+IR13.T07,848,VOLUME/DATA/TABLES/CHAP_13/TABLE.7,17,,848B,5,,5H-3,120,34.90,40.55,Nunivak (t),4.10,,,5H-3   120       34.90       40.55       Nunivak (t)        4.10      
+IR13.T07,848,VOLUME/DATA/TABLES/CHAP_13/TABLE.7,18,,848B,5,,5H-4,145,36.65,42.30,Nunivak (o),4.24,Near section break,,5H-4   145       36.65       42.30       Nunivak (o)        4.24       Near section break
+IR13.T07,848,VOLUME/DATA/TABLES/CHAP_13/TABLE.7,19,,848B,5,,5H-6,130,39.50,45.15,Sidufjall (t),4.40,,,5H-6   130       39.50       45.15       Sidufjall (t)      4.40       
+IR13.T07,848,VOLUME/DATA/TABLES/CHAP_13/TABLE.7,20,,848B,5,,6H-2,20,41.90,47.60,Thvera (t),4.47,,,6H-2    20       41.90       47.60       Thvera (t)         4.47      
+IR13.T07,848,VOLUME/DATA/TABLES/CHAP_13/TABLE.7,21,,848B,5,,9H-2,125,71.45,81.05,C4-n1 (t),6.70,,,9H-2   125       71.45       81.05       C4-n1 (t)          6.70      
+IR13.T07,848,VOLUME/DATA/TABLES/CHAP_13/TABLE.7,22,,848B,5,,9H-3,70,72.40,82.00,C4-n1 (o),6.78,,,9H-3    70       72.40       82.00       C4-n1 (o)          6.78      
+IR13.T07,848,VOLUME/DATA/TABLES/CHAP_13/TABLE.7,23,,848B,5,,9H-3,95,72.65,82.25,C4-n2 (t),6.85,,,9H-3    95       72.65       82.25       C4-n2 (t)          6.85      
+IR13.T07,848,VOLUME/DATA/TABLES/CHAP_13/TABLE.7,24,,848B,5,,9H-3,10,74.80,84.40,C4-n2 (o)(?),7.28,,,9H-3    10       74.80       84.40       C4-n2 (o)(?)       7.28      
+IR13.T07,848,VOLUME/DATA/TABLES/CHAP_13/TABLE.7,25,,848B,5,,9H-3,30,75.00,84.60,C4-n3 (t)(?),7.35,,,9H-3    30       75.00       84.60       C4-n3 (t)(?)       7.35      
+IR13.T07,848,VOLUME/DATA/TABLES/CHAP_13/TABLE.7,26,,848B,5,,9H-5,100,75.70,85.30,C4-n3 (o),7.41,,,9H-5   100       75.70       85.30       C4-n3 (o)          7.41      
+IR13.T07,848,VOLUME/DATA/TABLES/CHAP_13/TABLE.7,27,,848B,5,,9H-7,15,77.85,87.45,C4A-n1 (t),7.90,,,9H-7    15       77.85       87.45       C4A-n1 (t)         7.90      
+IR13.T07,848,VOLUME/DATA/TABLES/CHAP_13/TABLE.7,28,,848B,5,,10H-2,65,80.35,90.95,C4A-n2 (t),8.41,,,10H-2   65       80.35       90.95       C4A-n2 (t)         8.41      
+IR13.T07,848,VOLUME/DATA/TABLES/CHAP_13/TABLE.7,29,,848B,5,,10H-3,15,81.35,91.95,C4A-n2 (o),8.50,,,10H-3   15       81.35       91.95       C4A-n2 (o)         8.50      
+IR13.T07,848,VOLUME/DATA/TABLES/CHAP_13/TABLE.7,30,,848B,5,,10H-4,90,83.60,94.20,C4A-n3 (t),8.71,,,10H-4   90       83.60       94.20       C4A-n3 (t)         8.71      
+IR13.T07,848,VOLUME/DATA/TABLES/CHAP_13/TABLE.7,31,,848B,5,,10H-4,130,84.00,94.60,C4A-n3 (o),8.80,,,10H-4  130       84.00       94.60       C4A-n3 (o)         8.80      
+IR13.T07,848,VOLUME/DATA/TABLES/CHAP_13/TABLE.7,32,,848B,5,,10H-4,145,84.15,94.75,C5-n1 (t),8.92,Near section break,,10H-4  145       84.15       94.75       C5-n1 (t)          8.92       Near section break
+IR13.T07,848,VOLUME/DATA/TABLES/CHAP_13/TABLE.7,33,,848B,5,,10H-5,45,84.65,95.25,R ->> N,,,,10H-5   45       84.65       95.25       R ->> N             
+IR13.T07,848,VOLUME/DATA/TABLES/CHAP_13/TABLE.7,34,,848B,5,,10H-5,65,84.85,95.45,N ->> R,,,,10H-5   65       84.85       95.45       N ->> R             
+IR13.T07,848,VOLUME/DATA/TABLES/CHAP_13/TABLE.7,35,,848B,5,,11H-2,125,90.45,102.80,C5-n1 (o)(?),10.42,Poorly defined,,11H-2  125       90.45      102.80       C5-n1 (o)(?)      10.42       Poorly defined
+IR13.T07,848,VOLUME/DATA/TABLES/CHAP_13/TABLE.7,36,,848B,5,,11H-3,30,91.00,103.35,C5-n2 (t)(?),10.54,Poorly defined,,11H-3   30       91.00      103.35       C5-n2 (t)(?)      10.54       Poorly defined
+IR13.T07,848,VOLUME/DATA/TABLES/CHAP_13/TABLE.7,37,,848B,5,,11H-3,60,91.30,103.65,C5-n2 (o)(?),10.59,Poorly defined,,11H-3   60       91.30      103.65       C5-n2 (o)(?)      10.59       Poorly defined
+IR13.T07,848,VOLUME/DATA/TABLES/CHAP_13/TABLE.7,39,,848C,38,,2H-4,10,10.10,12.35,Brunhes/Matuyama,0.73,Near section break,,2H-4    10       10.10       12.35       Brunhes/Matuyama   0.73       Near section break
+IR13.T07,848,VOLUME/DATA/TABLES/CHAP_13/TABLE.7,40,,848C,38,,2H-6,80,13.80,16.05,Jaramillo (t),0.91,,,2H-6    80       13.80       16.05       Jaramillo (t)      0.91      
+IR13.T07,848,VOLUME/DATA/TABLES/CHAP_13/TABLE.7,41,,848C,38,,3H-6,70,23.20,26.20,Olduvai (t),1.66,,,3H-6    70       23.20       26.20       Olduvai (t)        1.66      
+IR13.T07,848,VOLUME/DATA/TABLES/CHAP_13/TABLE.7,42,,848C,38,,3H-7,30,24.30,27.30,Olduvai (o),1.88,,,3H-7    30       24.30       27.30       Olduvai (o)        1.88      
+IR13.T07,848,VOLUME/DATA/TABLES/CHAP_13/TABLE.7,43,,848C,38,,4H-4,65,29.65,33.90,Kaena (t),2.92,,,4H-4    65       29.65       33.90       Kaena (t)          2.92      
+IR13.T07,848,VOLUME/DATA/TABLES/CHAP_13/TABLE.7,44,,848C,38,,4H-4,100,30.00,34.25,Kaena (o),2.99,,,4H-4   100       30.00       34.25       Kaena (o)          2.99      
+IR13.T07,848,VOLUME/DATA/TABLES/CHAP_13/TABLE.7,45,,848C,38,,4H-4,125,30.25,34.50,Mammoth (t),3.08,,,4H-4   125       30.25       34.50       Mammoth (t)        3.08      
+IR13.T07,848,VOLUME/DATA/TABLES/CHAP_13/TABLE.7,46,,848C,38,,4H-5,30,30.80,35.05,Mammoth (o),3.18,,,4H-5    30       30.80       35.05       Mammoth (o)        3.18      
+IR13.T07,848,VOLUME/DATA/TABLES/CHAP_13/TABLE.7,47,,848C,38,,4H-6,30,32.30,36.55,Gauss/Gilbert,3.40,,,4H-6    30       32.30       36.55       Gauss/Gilbert      3.40      
+IR13.T07,848,VOLUME/DATA/TABLES/CHAP_13/TABLE.7,48,,848C,38,,4H-6,70,32.70,36.95,N ->> R,,,,4H-6    70       32.70       36.95       N ->> R             
+IR13.T07,848,VOLUME/DATA/TABLES/CHAP_13/TABLE.7,49,,848C,38,,4H-6,80,32.80,37.05,R ->> N,,,,4H-6    80       32.80       37.05       R ->> N             
+IR13.T07,848,VOLUME/DATA/TABLES/CHAP_13/TABLE.7,50,,848C,38,,5H-1,110,35.10,39.65,Cochiti (o),3.97,,,5H-1   110       35.10       39.65       Cochiti (o)        3.97      
+IR13.T07,848,VOLUME/DATA/TABLES/CHAP_13/TABLE.7,51,,848C,38,,5H-2,50,36.00,40.55,Nunivak (t),4.10,,,5H-2    50       36.00       40.55       Nunivak (t)        4.10      
+IR13.T07,848,VOLUME/DATA/TABLES/CHAP_13/TABLE.7,52,,848C,38,,5H-3,65,37.65,42.20,Nunivak (o),4.24,,,5H-3    65       37.65       42.20       Nunivak (o)        4.24      
+IR13.T07,848,VOLUME/DATA/TABLES/CHAP_13/TABLE.7,53,,848C,38,,5H-5,35,40.35,44.90,Sidufjall (t),4.40,,,5H-5    35       40.35       44.90       Sidufjall (t)      4.40      
+IR13.T07,848,VOLUME/DATA/TABLES/CHAP_13/TABLE.7,54,,848C,38,,5H-6,10,41.60,46.15,Sidufjall (t),4.47,Near section break,,5H-6    10       41.60       46.15       Sidufjall (t)      4.47       Near section break
+IR13.T07,848,VOLUME/DATA/TABLES/CHAP_13/TABLE.7,55,composite_depth_empty_in_source,848C,38,,9H-1,35,72.35,,C4-n2 (t)(?),6.85,Near core top,,9H-1    35       72.35                   C4-n2 (t)(?)       6.85       Near core top
+IR13.T07,848,VOLUME/DATA/TABLES/CHAP_13/TABLE.7,56,,848C,38,,9H-2,105,74.55,84.35,C4-n2 (o)(?),7.28,,,9H-2   105       74.55       84.35       C4-n2 (o)(?)       7.28      
+IR13.T07,848,VOLUME/DATA/TABLES/CHAP_13/TABLE.7,57,,848C,38,,9H-2,150,75.00,84.80,C4-n3 (t)(?),7.35,Near section break,,9H-2   150       75.00       84.80       C4-n3 (t)(?)       7.35       Near section break
+IR13.T07,848,VOLUME/DATA/TABLES/CHAP_13/TABLE.7,58,,848C,38,,9H-3,45,75.45,85.25,C4-n3 (o)(?),7.41,,,9H-3    45       75.45       85.25       C4-n3 (o)(?)       7.41
+IR13.T07,848,VOLUME/DATA/TABLES/CHAP_13/TABLE.7,59,,848C,38,,9H-4,130,77.80,87.60,C4A-n1 (t),7.90,,,9H-4   130       77.80       87.60       C4A-n1 (t)         7.90
+IR13.T07,848,VOLUME/DATA/TABLES/CHAP_13/TABLE.7,60,,848C,38,,9H-6,35,79.85,89.65,C4A-n1 (o),8.21,,,9H-6    35       79.85       89.65       C4A-n1 (o)         8.21
+IR13.T07,848,VOLUME/DATA/TABLES/CHAP_13/TABLE.7,61,,848C,38,,9H-6,85,80.35,90.15,N ->> R,,,,9H-6    85       80.35       90.15       N ->> R             
+IR13.T07,848,VOLUME/DATA/TABLES/CHAP_13/TABLE.7,62,,848C,38,,9H-6,105,80.55,90.35,R ->> N,,,,9H-6   105       80.55       90.35       R ->> N             
+IR13.T07,848,VOLUME/DATA/TABLES/CHAP_13/TABLE.7,63,,848C,38,,9H-7,10,81.10,90.90,C4A-n2 (t),8.41,Near section break,,9H-7    10       81.10       90.90       C4A-n2 (t)         8.41       Near section break
+IR13.T07,848,VOLUME/DATA/TABLES/CHAP_13/TABLE.7,64,,848C,38,,10H-2,30,83.30,94.05,C4A-n3 (t),8.71,,,10H-2   30       83.30       94.05       C4A-n3 (t)         8.71      
+IR13.T07,848,VOLUME/DATA/TABLES/CHAP_13/TABLE.7,65,,848C,38,,10H-2,65,83.65,94.40,C4A-n3 (o),8.80,,,10H-2   65       83.65       94.40       C4A-n3 (o)         8.80      
+IR13.T07,848,VOLUME/DATA/TABLES/CHAP_13/TABLE.7,66,,848C,38,,10H-2,85,83.85,94.60,C5-n1 (t),8.92,,,10H-2   85       83.85       94.60       C5-n1 (t)          8.92      
+IR13.T07,848,VOLUME/DATA/TABLES/CHAP_13/TABLE.7,67,section_number_absent,848C,38,,10H-,140,84.40,95.15,R ->> N,,,,10H-   140       84.40       95.15       R ->> N             
+IR13.T07,848,VOLUME/DATA/TABLES/CHAP_13/TABLE.7,68,,848C,38,,10H-3,10,84.60,95.35,N ->> R,,Near section break,,10H-3   10       84.60       95.35       N ->> R                       Near section break
+IR13.T07,848,VOLUME/DATA/TABLES/CHAP_13/TABLE.7,70,,848D,69,,2H-2,55,10.45,12.40,Brunhes/Matuyama,0.73,,,2H-2    55       10.45       12.40       Brunhes/Matuyama   0.73      
+IR13.T07,848,VOLUME/DATA/TABLES/CHAP_13/TABLE.7,71,,848D,69,,2H-5,10,14.50,16.45,Jaramillo (t),0.91,Near section break,,2H-5    10       14.50       16.45       Jaramillo (t)      0.91       Near section break
+IR13.T07,848,VOLUME/DATA/TABLES/CHAP_13/TABLE.7,72,,848D,69,,2H-5,120,15.60,17.55,Jaramillo (o),0.98,,,2H-5   120       15.60       17.55       Jaramillo (o)      0.98      
+IR13.T07,848,VOLUME/DATA/TABLES/CHAP_13/TABLE.7,73,,848D,69,,3H-4,125,23.65,26.35,Olduvai (t),1.66,,,3H-4   125       23.65       26.35       Olduvai (t)        1.66      
+IR13.T07,848,VOLUME/DATA/TABLES/CHAP_13/TABLE.7,74,,848D,69,,3H-5,80,24.70,27.40,Olduvai (o),1.88,,,3H-5    80       24.70       27.40       Olduvai (o)        1.88      
+IR13.T07,848,VOLUME/DATA/TABLES/CHAP_13/TABLE.7,75,,848D,69,,4H-1,115,28.55,31.15,Matuyama/Gauss (?),2.47,,,4H-1   115       28.55       31.15       Matuyama/Gauss (?) 2.47      
+IR13.T07,848,VOLUME/DATA/TABLES/CHAP_13/TABLE.7,76,,848D,69,,4H-3,75,31.15,33.75,Kaena (t),2.92,,,4H-3    75       31.15       33.75       Kaena (t)          2.92      
+IR13.T07,848,VOLUME/DATA/TABLES/CHAP_13/TABLE.7,77,,848D,69,,4H-3,110,31.50,34.10,Kaena (o),2.99,,,4H-3   110       31.50       34.10       Kaena (o)          2.99      
+IR13.T07,848,VOLUME/DATA/TABLES/CHAP_13/TABLE.7,78,,848D,69,,4H-3,145,31.85,34.45,Mammoth (t),3.08,,,4H-3   145       31.85       34.45       Mammoth (t)        3.08      
+IR13.T07,848,VOLUME/DATA/TABLES/CHAP_13/TABLE.7,79,,848D,69,,4H-4,50,32.40,35.00,Mammoth (o),3.18,,,4H-4    50       32.40       35.00       Mammoth (o)        3.18      
+IR13.T07,848,VOLUME/DATA/TABLES/CHAP_13/TABLE.7,80,,848D,69,,4H-5,70,34.10,36.70,Gauss/Gilbert,3.40,,,4H-5    70       34.10       36.70       Gauss/Gilbert      3.40      
+IR13.T07,848,VOLUME/DATA/TABLES/CHAP_13/TABLE.7,81,,848D,69,,4H-7,35,36.74,39.34,Cochiti (t),3.88,,,4H-7    35       36.74       39.34       Cochiti (t)        3.88      
+IR13.T07,848,VOLUME/DATA/TABLES/CHAP_13/TABLE.7,82,,848D,69,,5H-1,100,37.90,41.90,Nunivak (o),4.24,,,5H-1   100       37.90       41.90       Nunivak (o)        4.24      
+IR13.T07,848,VOLUME/DATA/TABLES/CHAP_13/TABLE.7,83,,848D,69,,5H-3,90,40.80,44.80,Sidufjall (t),4.40,,,5H-3    90       40.80       44.80       Sidufjall (t)      4.40      
+IR13.T07,848,VOLUME/DATA/TABLES/CHAP_13/TABLE.7,84,,848D,69,,5H-4,80,42.20,46.20,Sidufjall (o),4.47,,,5H-4    80       42.20       46.20       Sidufjall (o)      4.47      
+IR13.T07,848,VOLUME/DATA/TABLES/CHAP_13/TABLE.7,85,,848D,69,,5H-5,75,43.65,47.65,Thvera (t),4.57,,,5H-5    75       43.65       47.65       Thvera (t)         4.57      
+IR13.T07,848,VOLUME/DATA/TABLES/CHAP_13/TABLE.7,86,,848D,69,,8H-6,65,73.55,81.05,C4-n1 (t),6.70,,,8H-6    65       73.55       81.05       C4-n1 (t)          6.70      
+IR13.T07,848,VOLUME/DATA/TABLES/CHAP_13/TABLE.7,87,,848D,69,,8H-7,5,74.45,81.95,C4-n1 (o),6.78,Near section break,,8H-7     5       74.45       81.95       C4-n1 (o)          6.78       Near section break
+IR13.T07,848,VOLUME/DATA/TABLES/CHAP_13/TABLE.7,88,,848D,69,,8H-7,35,74.75,82.25,C4-n2 (t),6.85,,,8H-7    35       74.75       82.25       C4-n2 (t)          6.85      
+IR13.T07,848,VOLUME/DATA/TABLES/CHAP_13/TABLE.7,89,,848D,69,,9H-2,75,77.15,85.35,C4-n3 (o)(?),7.41,,,9H-2    75       77.15       85.35       C4-n3 (o)(?)       7.41      
+IR13.T07,848,VOLUME/DATA/TABLES/CHAP_13/TABLE.7,90,,848D,69,,9H-4,10,79.50,87.70,C4A-n1 (t),7.90,Near section break,,9H-4    10       79.50       87.70       C4A-n1 (t)         7.90       Near section break
+IR13.T07,848,VOLUME/DATA/TABLES/CHAP_13/TABLE.7,91,,848D,69,,9H-5,70,81.60,89.80,C4A-n1 (o),8.21,,,9H-5    70       81.60       89.80       C4A-n1 (o)         8.21      
+IR13.T07,848,VOLUME/DATA/TABLES/CHAP_13/TABLE.7,92,,848D,69,,9H-5,115,82.05,90.25,N ->> R,,,,9H-5   115       82.05       90.25       N ->> R             
+IR13.T07,848,VOLUME/DATA/TABLES/CHAP_13/TABLE.7,93,,848D,69,,9H-5,140,82.30,90.50,R ->> N,,Near section break,,9H-5   140       82.30       90.50       R ->> N                       Near section break
+IR13.T07,848,VOLUME/DATA/TABLES/CHAP_13/TABLE.7,94,,848D,69,,9H-6,40,82.80,91.00,C4A-n2 (t),8.41,,,9H-6    40       82.80       91.00       C4A-n2 (t)         8.41      
+IR13.T07,848,VOLUME/DATA/TABLES/CHAP_13/TABLE.7,95,,848D,69,,9H-7,0,83.90,92.10,C4A-n2 (o),8.50,Near section break,,9H-7     0       83.90       92.10       C4A-n2 (o)         8.50       Near section break
+IR13.T07,848,VOLUME/DATA/TABLES/CHAP_13/TABLE.7,96,,848D,69,,10H-1,50,84.90,94.20,C4A-n3 (o),8.80,,,10H-1   50       84.90       94.20       C4A-n3 (o)         8.80      
+IR13.T07,848,VOLUME/DATA/TABLES/CHAP_13/TABLE.7,97,,848D,69,,10H-1,70,85.10,94.40,C5-n1 (t),8.92,,,10H-1   70       85.10       94.40       C5-n1 (t)          8.92      
+IR13.T07,848,VOLUME/DATA/TABLES/CHAP_13/TABLE.7,98,,848D,69,,10H-1,125,85.65,94.95,R ->> N,,,,10H-1  125       85.65       94.95       R ->> N             
+IR13.T07,848,VOLUME/DATA/TABLES/CHAP_13/TABLE.7,99,,848D,69,,10H-2,0,85.90,95.20,N ->> R,,Near section break,,10H-2    0       85.90       95.20       N ->> R                       Near section break

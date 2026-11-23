@@ -1,0 +1,45 @@
+item_id,site,source_path,source_line,verification_flags,row_kind,composite_depth,age_ma,mean_CaCO3,mean_Corg,sedimentation_rate,mean_DBD,bulk_MAR,CaCO3_MAR,non_CaCO3_MAR,Corg_MAR,unresolved_source_fragment,raw_source_line
+IR10.T14,845,VOLUME/DATA/TABLES/CHAP_10/TABLE.14,5,,boundary,12.32,0.41,,,,,,,,,, 12.32       0.41       
+IR10.T14,845,VOLUME/DATA/TABLES/CHAP_10/TABLE.14,6,,interval_parameters,,,3.83,1.33,30.05,0.24,0.72,0.03,0.69,9.59,,                   3.83    1.33    30.05    0.24       0.72       0.03       0.69       9.59
+IR10.T14,845,VOLUME/DATA/TABLES/CHAP_10/TABLE.14,7,,boundary,37.20,1.61,,,,,,,,,, 37.20       1.61       
+IR10.T14,845,VOLUME/DATA/TABLES/CHAP_10/TABLE.14,8,,interval_parameters,,,6.14,1.08,20.73,0.26,0.54,0.03,0.51,5.90,,                   6.14    1.08    20.73    0.26       0.54       0.03       0.51       5.90
+IR10.T14,845,VOLUME/DATA/TABLES/CHAP_10/TABLE.14,9,,boundary,53.00,2.92,,,,,,,,,, 53.00       2.92       
+IR10.T14,845,VOLUME/DATA/TABLES/CHAP_10/TABLE.14,10,,interval_parameters,,,3.54,0.72,12.06,0.25,0.30,0.01,0.29,2.18,,                   3.54    0.72    12.06    0.25       0.30       0.01       0.29       2.18
+IR10.T14,845,VOLUME/DATA/TABLES/CHAP_10/TABLE.14,11,,boundary,65.55,3.88,,,,,,,,,, 65.55       3.88       
+IR10.T14,845,VOLUME/DATA/TABLES/CHAP_10/TABLE.14,12,,interval_parameters,,,1.90,0.46,13.07,0.28,0.36,0.01,0.36,1.65,,                   1.90    0.46    13.07    0.28       0.36       0.01       0.36       1.65
+IR10.T14,845,VOLUME/DATA/TABLES/CHAP_10/TABLE.14,13,,boundary,72.05,4.47,,,,,,,,,, 72.05       4.47 
+IR10.T14,845,VOLUME/DATA/TABLES/CHAP_10/TABLE.14,14,,interval_parameters,,,1.42,0.32,11.02,0.29,0.32,0.00,0.31,1.03,,                   1.42    0.32    11.02    0.29       0.32       0.00       0.31       1.03
+IR10.T14,845,VOLUME/DATA/TABLES/CHAP_10/TABLE.14,15,,boundary,76.00,4.77,,,,,,,,,, 76.00       4.77 
+IR10.T14,845,VOLUME/DATA/TABLES/CHAP_10/TABLE.14,16,,interval_parameters,,,13.92,0.69,13.17,0.30,0.39,0.05,0.34,2.68,,                  13.92    0.69    13.17    0.30       0.39       0.05       0.34       2.68
+IR10.T14,845,VOLUME/DATA/TABLES/CHAP_10/TABLE.14,17,,boundary,87.50,5.35,,,,,,,,,, 87.50       5.35
+IR10.T14,845,VOLUME/DATA/TABLES/CHAP_10/TABLE.14,18,,interval_parameters,,,3.83,0.60,19.83,0.24,0.47,0.02,0.46,2.86,,                   3.83    0.60    19.83    0.24       0.47       0.02       0.46       2.86
+IR10.T14,845,VOLUME/DATA/TABLES/CHAP_10/TABLE.14,19,,boundary,96.30,5.89,,,,,,,,,, 96.30       5.89
+IR10.T14,845,VOLUME/DATA/TABLES/CHAP_10/TABLE.14,20,,interval_parameters,,,11.70,0.39,16.30,0.25,0.41,0.05,0.36,1.61,,                  11.70    0.39    16.30    0.25       0.41       0.05       0.36       1.61
+IR10.T14,845,VOLUME/DATA/TABLES/CHAP_10/TABLE.14,21,,boundary,104.45,6.50,,,,,,,,,,104.45       6.50
+IR10.T14,845,VOLUME/DATA/TABLES/CHAP_10/TABLE.14,22,,interval_parameters,,,11.18,0.38,13.36,0.24,0.32,0.04,0.28,1.22,,                  11.18    0.38    13.36    0.24       0.32       0.04       0.28       1.22
+IR10.T14,845,VOLUME/DATA/TABLES/CHAP_10/TABLE.14,23,,boundary,120.55,7.35,,,,,,,,,,120.55       7.35
+IR10.T14,845,VOLUME/DATA/TABLES/CHAP_10/TABLE.14,24,,interval_parameters,,,13.05,0.45,18.94,0.24,0.46,0.06,0.40,2.09,,                  13.05    0.45    18.94    0.24       0.46       0.06       0.40       2.09
+IR10.T14,845,VOLUME/DATA/TABLES/CHAP_10/TABLE.14,25,,boundary,129.70,7.90,,,,,,,,,,129.70       7.90
+IR10.T14,845,VOLUME/DATA/TABLES/CHAP_10/TABLE.14,26,,interval_parameters,,,9.70,0.61,16.64,0.23,0.39,0.04,0.35,2.38,,                   9.70    0.61    16.64    0.23       0.39       0.04       0.35       2.38
+IR10.T14,845,VOLUME/DATA/TABLES/CHAP_10/TABLE.14,27,,boundary,141.45,8.50,,,,,,,,,,141.45       8.50
+IR10.T14,845,VOLUME/DATA/TABLES/CHAP_10/TABLE.14,28,,interval_parameters,,,0.30,0.26,19.58,0.24,0.47,0.00,0.47,1.22,,                   0.30    0.26    19.58    0.24       0.47       0.00       0.47       1.22
+IR10.T14,845,VOLUME/DATA/TABLES/CHAP_10/TABLE.14,29,,boundary,164.95,10.42,,,,,,,,,,164.95       10.42
+IR10.T14,845,VOLUME/DATA/TABLES/CHAP_10/TABLE.14,30,,interval_parameters,,,19.28,0.33,12.24,0.29,0.35,0.07,0.28,1.15,,                  19.28    0.33    12.24    0.29       0.35       0.07       0.28       1.15
+IR10.T14,845,VOLUME/DATA/TABLES/CHAP_10/TABLE.14,31,,boundary,166.85,10.59,,,,,,,,,,166.85       10.59
+IR10.T14,845,VOLUME/DATA/TABLES/CHAP_10/TABLE.14,32,,interval_parameters,,,51.67,0.25,11.18,0.41,0.46,0.24,0.22,1.17,,                  51.67    0.25    11.18    0.41       0.46       0.24       0.22       1.17
+IR10.T14,845,VOLUME/DATA/TABLES/CHAP_10/TABLE.14,33,,boundary,174.20,11.03,,,,,,,,,,174.20       11.03
+IR10.T14,845,VOLUME/DATA/TABLES/CHAP_10/TABLE.14,34,,interval_parameters,,,65.49,0.27,16.70,0.55,0.92,0.60,0.32,2.43,,                  65.49    0.27    16.70    0.55       0.92       0.60       0.32       2.43
+IR10.T14,845,VOLUME/DATA/TABLES/CHAP_10/TABLE.14,35,,boundary,183.75,11.55,,,,,,,,,,183.75       11.55
+IR10.T14,845,VOLUME/DATA/TABLES/CHAP_10/TABLE.14,36,,interval_parameters,,,69.98,0.21,18.37,0.59,1.09,0.76,0.33,2.32,,                  69.98    0.21    18.37    0.59       1.09       0.76       0.33       2.32
+IR10.T14,845,VOLUME/DATA/TABLES/CHAP_10/TABLE.14,37,,boundary,186.95,11.73,,,,,,,,,,186.95       11.73
+IR10.T14,845,VOLUME/DATA/TABLES/CHAP_10/TABLE.14,38,,interval_parameters,,,71.34,0.23,17.78,0.61,1.09,0.78,0.31,2.50,,                  71.34    0.23    17.78    0.61       1.09       0.78       0.31       2.50
+IR10.T14,845,VOLUME/DATA/TABLES/CHAP_10/TABLE.14,39,,boundary,205.10,12.46,,,,,,,,,,205.10       12.46
+IR10.T14,845,VOLUME/DATA/TABLES/CHAP_10/TABLE.14,40,,interval_parameters,,,81.42,,24.86,0.69,1.72,1.40,0.32,,,                  81.42            24.86    0.69       1.72       1.40       0.32      
+IR10.T14,845,VOLUME/DATA/TABLES/CHAP_10/TABLE.14,41,,boundary,215.95,12.83,,,,,,,,,,215.95       12.83
+IR10.T14,845,VOLUME/DATA/TABLES/CHAP_10/TABLE.14,42,,interval_parameters,,,78.17,,29.32,0.70,2.06,1.61,0.45,,,                  78.17            29.32    0.70       2.06       1.61       0.45      
+IR10.T14,845,VOLUME/DATA/TABLES/CHAP_10/TABLE.14,43,,boundary,226.08,13.20,,,,,,,,,,226.08       13.20
+IR10.T14,845,VOLUME/DATA/TABLES/CHAP_10/TABLE.14,44,,interval_parameters,,,81.34,,27.38,0.75,2.04,1.66,0.38,,,                  81.34            27.38    0.75       2.04       1.66       0.38      
+IR10.T14,845,VOLUME/DATA/TABLES/CHAP_10/TABLE.14,45,,boundary,275.23,16.00,,,,,,,,,,275.23       16.00
+IR10.T14,845,VOLUME/DATA/TABLES/CHAP_10/TABLE.14,46,,interval_parameters,,,82.59,,17.55,0.82,1.44,1.19,0.25,,,                  82.59            17.55    0.82       1.44       1.19       0.25      
+IR10.T14,845,VOLUME/DATA/TABLES/CHAP_10/TABLE.14,47,,boundary,309.10,16.65,,,,,,,,,,309.10       16.65 
+IR10.T14,845,VOLUME/DATA/TABLES/CHAP_10/TABLE.14,48,,interval_parameters,,,75.56,,52.11,0.74,3.87,2.92,0.94,,,                  75.56            52.11    0.74       3.87       2.92       0.94      

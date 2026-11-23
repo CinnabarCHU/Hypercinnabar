@@ -1,0 +1,26 @@
+table,source_line,source_event,site,cd_t,cd_o,unassigned_leading_token,ch11_witness,witness_line,witness_event,witness_t,witness_o,comparison,ch11_source,ch11_pdf_page,ch23_repository_edition,ch23_repository_line,ch23_repository_t,ch23_repository_o
+SR.C23.TABLE3,132,b T. davisiana,844,22.05,23.35,34.7,808116,37,B Theocalyptra davisiana,22.05,23.35,exact,official/VOLUME/CHAPTERS/sr138_11.pdf,23,806678,126,34.70,22.05
+SR.C23.TABLE3,132,b T. davisiana,845,49.60,51.93,34.7,808118,37,B Theocalyptra davisiana,49.60,51.93,exact,official/VOLUME/CHAPTERS/sr138_11.pdf,26,806678,248,23.35,49.60
+SR.C23.TABLE3,132,b T. davisiana,846,105.78,110.10,34.7,808119,37,B Theocalyptra davisiana,105.78,110.10,exact,official/VOLUME/CHAPTERS/sr138_11.pdf,27,806678,389,51.93,105.78
+SR.C23.TABLE3,132,b T. davisiana,847,89.58,91.95,34.7,808121,37,B Theocalyptra davisiana,89.58,91.95,exact,official/VOLUME/CHAPTERS/sr138_11.pdf,32,806678,476,110.10,89.58
+SR.C23.TABLE3,132,b T. davisiana,848,31.35,31.86,34.7,808122,37,B Theocalyptra davisiana,31.35,31.86,exact,official/VOLUME/CHAPTERS/sr138_11.pdf,33,806678,565,91.95,31.35
+SR.C23.TABLE3,139,b L. neoheteroporos,844,20.35,22.05,40.71,808116,40,B Lamprocyrtis neoheteroporos,20.35,22.05,exact,official/VOLUME/CHAPTERS/sr138_11.pdf,23,806678,132,40.71,20.35
+SR.C23.TABLE3,139,b L. neoheteroporos,845,55.37,56.18,40.71,808118,40,B Lamprocyrtis neoheteroporos,55.37,56.18,exact,official/VOLUME/CHAPTERS/sr138_11.pdf,26,806678,254,22.05,55.37
+SR.C23.TABLE3,139,b L. neoheteroporos,846,135.45,136.45,40.71,808119,40,B Lamprocyrtis neoheteroporos,135.45,136.45,exact,official/VOLUME/CHAPTERS/sr138_11.pdf,27,806678,395,56.18,135.45
+SR.C23.TABLE3,139,b L. neoheteroporos,847,97.98,99.83,40.71,808121,40,B Lamprocyrtis neoheteroporos,97.98,99.83,exact,official/VOLUME/CHAPTERS/sr138_11.pdf,32,806678,482,136.45,97.98
+SR.C23.TABLE3,139,b L. neoheteroporos,848,30.33,30.85,40.71,808122,40,B Lamprocyrtis neoheteroporos,30.33,30.85,exact,official/VOLUME/CHAPTERS/sr138_11.pdf,33,806678,571,99.83,30.33
+SR.C23.TABLE3,141,t P. dolium,844,26.05,31.01,40.71,808116,44,T Phormostichoartus doliolum,26.05,31.01,exact,official/VOLUME/CHAPTERS/sr138_11.pdf,23,806678,133,40.71,26.05
+SR.C23.TABLE3,141,t P. dolium,845,63.36,64.06,40.71,808118,44,T Phormostichoartus doliolum,63.36,64.06,exact,official/VOLUME/CHAPTERS/sr138_11.pdf,26,806678,255,31.01,63.36
+SR.C23.TABLE3,141,t P. dolium,846,157.70,160.32,40.71,808119,44,T Phormostichoartus doliolum,157.70,160.32,exact,official/VOLUME/CHAPTERS/sr138_11.pdf,27,806678,396,64.06,157.70
+SR.C23.TABLE3,141,t P. dolium,847,128.74,129.00,40.71,808121,44,T Phormostichoartus doliolum,128.70,129.00,same_field_position_different_published_value,official/VOLUME/CHAPTERS/sr138_11.pdf,32,806678,483,160.32,128.74
+SR.C23.TABLE3,141,t P. dolium,848,36.85,36.92,40.71,808122,44,T Phormostichoartus doliolum,36.85,36.92,exact,official/VOLUME/CHAPTERS/sr138_11.pdf,33,806678,572,129.00,36.85
+SR.C23.TABLE3,145,b P. prismatium,844,24.93,26.05,68.76,808116,48,B Pterocanium prismatium,24.93,26.05,exact,official/VOLUME/CHAPTERS/sr138_11.pdf,23,806678,137,68.76,24.93
+SR.C23.TABLE3,145,b P. prismatium,845,66.70,67.06,68.76,808118,48,B Pterocanium prismatium,66.70,67.06,exact,official/VOLUME/CHAPTERS/sr138_11.pdf,26,806678,259,26.05,66.70
+SR.C23.TABLE3,145,b P. prismatium,846,183.65,184.41,68.76,808119,48,B Pterocanium prismatium,183.65,184.41,exact,official/VOLUME/CHAPTERS/sr138_11.pdf,27,806678,400,67.06,183.65
+SR.C23.TABLE3,145,b P. prismatium,847,160.45,163.45,68.76,808121,48,B Pterocanium prismatium,160.50,163.50,same_field_position_different_published_value,official/VOLUME/CHAPTERS/sr138_11.pdf,32,806678,487,184.41,160.45
+SR.C23.TABLE3,145,b P. prismatium,848,44.42,44.95,68.76,808122,48,B Pterocanium prismatium,44.42,44.95,exact,official/VOLUME/CHAPTERS/sr138_11.pdf,33,806678,576,163.45,44.42
+SR.C23.TABLE3,164,b D. pettersoni,844,110.60,113.49,261.93,808116,67,B Diartus petterssoni,110.60,113.50,same_field_position_different_published_value,official/VOLUME/CHAPTERS/sr138_11.pdf,23,806678,155,261.93,110.60
+SR.C23.TABLE3,164,b D. pettersoni,845,183.00,183.60,261.93,808118,67,B Diartus petterssoni,183.00,183.60,exact,official/VOLUME/CHAPTERS/sr138_11.pdf,26,806678,277,113.49,183.00
+SR.C23.TABLE3,164,b D. pettersoni,846,388.65,393.15,261.93,808119,68,B Diartus petterssoni,389.10,393.10,same_field_position_different_published_value,official/VOLUME/CHAPTERS/sr138_11.pdf,27,806678,418,183.60,388.65
+SR.C23.TABLE3,164,b D. pettersoni,847,n.a,n.a,261.93,808121,,B Diartus petterssoni,,,no_matching_event_in_site_table,official/VOLUME/CHAPTERS/sr138_11.pdf,32,806678,493,393.15,
+SR.C23.TABLE3,164,b D. pettersoni,848,n.a,n.a,261.93,808122,,B Diartus petterssoni,,,no_matching_event_in_site_table,official/VOLUME/CHAPTERS/sr138_11.pdf,33,806678,,,

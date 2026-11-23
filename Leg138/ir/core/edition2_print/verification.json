@@ -1,0 +1,39 @@
+{
+  "table_ids": 63,
+  "caption_regions": 64,
+  "physical_rows": 1516,
+  "cell_slots": 6273,
+  "status_counts": {
+    "pdf_and_optical_agree": 3377,
+    "readers_disagree": 701,
+    "blank_at_scan_threshold": 988,
+    "visually_collated": 907,
+    "pdf_layer_only": 57,
+    "vertical_label_in_separate_table": 44,
+    "ink_without_string": 29,
+    "column_assignment_review": 142,
+    "optical_only": 28
+  },
+  "manual_cells": 907,
+  "pending_cells": 957,
+  "fully_manually_collated_print_bodies": [
+    "IR02.T02",
+    "IR07.T01",
+    "IR07.T02",
+    "IR09.T23",
+    "IR10.T22",
+    "IR10.T25",
+    "IR12.T22",
+    "IR13.T19",
+    "IR13.T25",
+    "IR14.T22",
+    "IR15.T25",
+    "IR16.T23",
+    "IR17.T03",
+    "IR17.T22",
+    "IR18.T18",
+    "IR19.T15"
+  ],
+  "paleogeographic_print_rows": 131,
+  "sources_sha256_verified": 14
+}

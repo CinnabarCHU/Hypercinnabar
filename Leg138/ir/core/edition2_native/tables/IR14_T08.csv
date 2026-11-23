@@ -1,0 +1,13 @@
+item_id,site,source_path,source_line,verification_flags,composite_depth,sedimentation_rate,age_ma,remarks,unresolved_source_fragment,raw_source_line
+IR14.T08,849,VOLUME/DATA/TABLES/CHAP_14/TABLE.8,5,,0,,0,Core top,,  0                     0          Core top
+IR14.T08,849,VOLUME/DATA/TABLES/CHAP_14/TABLE.8,6,,45.3,31.2,1.45,T Calcidiscus mcintyrei,, 45.3        31.2       1.45       T Calcidiscus mcintyrei
+IR14.T08,849,VOLUME/DATA/TABLES/CHAP_14/TABLE.8,7,,105.25,28.4,3.56,T Reticulofenestra pseudoubilicus,,105.25       28.4       3.56       T Reticulofenestra pseudoubilicus
+IR14.T08,849,VOLUME/DATA/TABLES/CHAP_14/TABLE.8,8,,123.75,25.0,4.3,T Nitzschia cylindrica,,123.75       25.0       4.3        T Nitzschia cylindrica
+IR14.T08,849,VOLUME/DATA/TABLES/CHAP_14/TABLE.8,9,,156.95,92.2,4.66,B Ceratolithus rugosus,,156.95       92.2       4.66       B Ceratolithus rugosus
+IR14.T08,849,VOLUME/DATA/TABLES/CHAP_14/TABLE.8,10,,191.5,108.0,4.98,T Discoaster quinqueramus,,191.5       108.0       4.98       T Discoaster quinqueramus
+IR14.T08,849,VOLUME/DATA/TABLES/CHAP_14/TABLE.8,11,,278.5,60.4,6.42,B Amaurolithus primus,,278.5        60.4       6.42       B Amaurolithus primus
+IR14.T08,849,VOLUME/DATA/TABLES/CHAP_14/TABLE.8,12,,303.8,30.6,7.35,T  Actinocyclus ellipiticus var. javnicus,,303.8        30.6       7.35       T  Actinocyclus ellipiticus var. javnicus
+IR14.T08,849,VOLUME/DATA/TABLES/CHAP_14/TABLE.8,13,,314.75,35.0,7.55,T Thalassiosira yabei,,314.75       35.0       7.55       T Thalassiosira yabei
+IR14.T08,849,VOLUME/DATA/TABLES/CHAP_14/TABLE.8,14,,337.5,42.6,8.1,T Stychocoris wolffi,,337.5        42.6       8.1        T Stychocoris wolffi
+IR14.T08,849,VOLUME/DATA/TABLES/CHAP_14/TABLE.8,15,,360.4,12.5,9.94,T Coccolithus miopelagicus,,360.4        12.5       9.94       T Coccolithus miopelagicus
+IR14.T08,849,VOLUME/DATA/TABLES/CHAP_14/TABLE.8,16,,388.09,49.4,10.5,Top Zone CN5b (see text),,388.09       49.4       10.5       Top Zone CN5b (see text)

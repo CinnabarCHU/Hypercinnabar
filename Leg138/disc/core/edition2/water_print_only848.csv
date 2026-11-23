@@ -1,0 +1,11 @@
+item,pdf_file,pdf_page,printed_page,print_row,print_core_section,print_hole_context,interval,field,threshold_as_printed,printed_unit,chem_file,chem_line,chem_hole,link_evidence
+IR13.T10,VOLUME/CHAPTERS/ir138_13.pdf,41,717,1,1H-1,848A,145-150,ammonia,<10,µM,SITE_848/CHEM/INTERSTI.848,5,A,matched row order and sample
+IR13.T10,VOLUME/CHAPTERS/ir138_13.pdf,41,717,2,1H-3,848A,145-150,ammonia,<10,µM,SITE_848/CHEM/INTERSTI.848,6,A,matched row order and sample
+IR13.T10,VOLUME/CHAPTERS/ir138_13.pdf,41,717,3,1H-5,848A,145-150,ammonia,<10,µM,SITE_848/CHEM/INTERSTI.848,7,A,matched row order and sample
+IR13.T10,VOLUME/CHAPTERS/ir138_13.pdf,41,717,4,3H-6,848B,145-150,ammonia,<10,µM,SITE_848/CHEM/INTERSTI.848,8,B,matched row order and sample
+IR13.T10,VOLUME/CHAPTERS/ir138_13.pdf,41,717,5,6H-6,848B,145-150,ammonia,<10,µM,SITE_848/CHEM/INTERSTI.848,9,A,"matched on row order, core-section, interval and Li/Si; differing hole retained"
+IR13.T10,VOLUME/CHAPTERS/ir138_13.pdf,41,717,6,7H-6,848B,145-150,ammonia,<10,µM,SITE_848/CHEM/INTERSTI.848,10,A,"matched on row order, core-section, interval and Li/Si; differing hole retained"
+IR13.T10,VOLUME/CHAPTERS/ir138_13.pdf,41,717,7,8H-6,848B,145-150,ammonia,<10,µM,SITE_848/CHEM/INTERSTI.848,11,A,"matched on row order, core-section, interval and Li/Si; differing hole retained"
+IR13.T10,VOLUME/CHAPTERS/ir138_13.pdf,41,717,8,9H-6,848B,145-150,ammonia,<10,µM,SITE_848/CHEM/INTERSTI.848,12,A,"matched on row order, core-section, interval and Li/Si; differing hole retained"
+IR13.T10,VOLUME/CHAPTERS/ir138_13.pdf,41,717,9,10H-6,848B,145-150,ammonia,<10,µM,SITE_848/CHEM/INTERSTI.848,13,A,"matched on row order, core-section, interval and Li/Si; differing hole retained"
+IR13.T10,VOLUME/CHAPTERS/ir138_13.pdf,41,717,10,11H-3,848B,145-150,ammonia,<10,µM,SITE_848/CHEM/INTERSTI.848,14,A,"matched on row order, core-section, interval and Li/Si; differing hole retained"

@@ -1,0 +1,241 @@
+site,column_ordinal,printed_group,printed_label,field_key,evidence
+844,1,Sample,"Hole, core, section, location (cm)",sample_label,visually read in the scanned table headers; ordered sequence compared across all pages of this site
+844,2,,Depth (mbsf),depth_mbsf,visually read in the scanned table headers; ordered sequence compared across all pages of this site
+844,3,,Lithology,lithology,visually read in the scanned table headers; ordered sequence compared across all pages of this site
+844,4,Texture data,Sand,texture_sand,visually read in the scanned table headers; ordered sequence compared across all pages of this site
+844,5,Texture data,Silt,texture_silt,visually read in the scanned table headers; ordered sequence compared across all pages of this site
+844,6,Texture data,Clay,texture_clay,visually read in the scanned table headers; ordered sequence compared across all pages of this site
+844,7,Mineral,Accessory Minerals,mineral_accessory,visually read in the scanned table headers; ordered sequence compared across all pages of this site
+844,8,Mineral,Calcite,mineral_calcite,visually read in the scanned table headers; ordered sequence compared across all pages of this site
+844,9,Mineral,Clay,mineral_clay,visually read in the scanned table headers; ordered sequence compared across all pages of this site
+844,10,Mineral,Feldspar,mineral_feldspar,visually read in the scanned table headers; ordered sequence compared across all pages of this site
+844,11,Mineral,Mica,mineral_mica,visually read in the scanned table headers; ordered sequence compared across all pages of this site
+844,12,Mineral,Pyrite,mineral_pyrite,visually read in the scanned table headers; ordered sequence compared across all pages of this site
+844,13,Mineral,Quartz,mineral_quartz,visually read in the scanned table headers; ordered sequence compared across all pages of this site
+844,14,Mineral,Volcanic Glass,mineral_volcanic_glass,visually read in the scanned table headers; ordered sequence compared across all pages of this site
+844,15,Biogenic,Diatoms,biogenic_diatoms,visually read in the scanned table headers; ordered sequence compared across all pages of this site
+844,16,Biogenic,Discoaster,biogenic_discoaster,visually read in the scanned table headers; ordered sequence compared across all pages of this site
+844,17,Biogenic,Fish Remains,biogenic_fish_remains,visually read in the scanned table headers; ordered sequence compared across all pages of this site
+844,18,Biogenic,Foraminifers,biogenic_foraminifers,visually read in the scanned table headers; ordered sequence compared across all pages of this site
+844,19,Biogenic,Nannofossils,biogenic_nannofossils,visually read in the scanned table headers; ordered sequence compared across all pages of this site
+844,20,Biogenic,Radiolarians,biogenic_radiolarians,visually read in the scanned table headers; ordered sequence compared across all pages of this site
+844,21,Biogenic,Silicoflagellates,biogenic_silicoflagellates,visually read in the scanned table headers; ordered sequence compared across all pages of this site
+844,22,Biogenic,Sponge Spicules,biogenic_sponge_spicules,visually read in the scanned table headers; ordered sequence compared across all pages of this site
+844,23,Rock,Micronodule,rock_micronodule,visually read in the scanned table headers; ordered sequence compared across all pages of this site
+845,1,Sample,"Hole, core, section, location (cm)",sample_label,visually read in the scanned table headers; ordered sequence compared across all pages of this site
+845,2,,Depth (mbsf),depth_mbsf,visually read in the scanned table headers; ordered sequence compared across all pages of this site
+845,3,,Lithology,lithology,visually read in the scanned table headers; ordered sequence compared across all pages of this site
+845,4,Texture data,Sand,texture_sand,visually read in the scanned table headers; ordered sequence compared across all pages of this site
+845,5,Texture data,Silt,texture_silt,visually read in the scanned table headers; ordered sequence compared across all pages of this site
+845,6,Texture data,Clay,texture_clay,visually read in the scanned table headers; ordered sequence compared across all pages of this site
+845,7,Mineral,Accessory Minerals,mineral_accessory,visually read in the scanned table headers; ordered sequence compared across all pages of this site
+845,8,Mineral,Calcite,mineral_calcite,visually read in the scanned table headers; ordered sequence compared across all pages of this site
+845,9,Mineral,Clay,mineral_clay,visually read in the scanned table headers; ordered sequence compared across all pages of this site
+845,10,Mineral,Feldspar,mineral_feldspar,visually read in the scanned table headers; ordered sequence compared across all pages of this site
+845,11,Mineral,Hematite,mineral_hematite,visually read in the scanned table headers; ordered sequence compared across all pages of this site
+845,12,Mineral,Mica,mineral_mica,visually read in the scanned table headers; ordered sequence compared across all pages of this site
+845,13,Mineral,Oxides,mineral_oxides,visually read in the scanned table headers; ordered sequence compared across all pages of this site
+845,14,Mineral,Palagonite,mineral_palagonite,visually read in the scanned table headers; ordered sequence compared across all pages of this site
+845,15,Mineral,Pyrite,mineral_pyrite,visually read in the scanned table headers; ordered sequence compared across all pages of this site
+845,16,Mineral,Quartz,mineral_quartz,visually read in the scanned table headers; ordered sequence compared across all pages of this site
+845,17,Mineral,Volcanic Glass,mineral_volcanic_glass,visually read in the scanned table headers; ordered sequence compared across all pages of this site
+845,18,Biogenic,Diatoms,biogenic_diatoms,visually read in the scanned table headers; ordered sequence compared across all pages of this site
+845,19,Biogenic,Fish Remains,biogenic_fish_remains,visually read in the scanned table headers; ordered sequence compared across all pages of this site
+845,20,Biogenic,Foraminifers,biogenic_foraminifers,visually read in the scanned table headers; ordered sequence compared across all pages of this site
+845,21,Biogenic,Nannofossils,biogenic_nannofossils,visually read in the scanned table headers; ordered sequence compared across all pages of this site
+845,22,Biogenic,Radiolarians,biogenic_radiolarians,visually read in the scanned table headers; ordered sequence compared across all pages of this site
+845,23,Biogenic,Silicoflagellates,biogenic_silicoflagellates,visually read in the scanned table headers; ordered sequence compared across all pages of this site
+845,24,Biogenic,Sponge Spicules,biogenic_sponge_spicules,visually read in the scanned table headers; ordered sequence compared across all pages of this site
+845,25,Rock,Rock Fragment,rock_fragments,visually read in the scanned table headers; ordered sequence compared across all pages of this site
+846,1,Sample,"Hole, core, section, location (cm)",sample_label,visually read in the scanned table headers; ordered sequence compared across all pages of this site
+846,2,,Depth (mbsf),depth_mbsf,visually read in the scanned table headers; ordered sequence compared across all pages of this site
+846,3,,Lithology,lithology,visually read in the scanned table headers; ordered sequence compared across all pages of this site
+846,4,Texture data,Sand,texture_sand,visually read in the scanned table headers; ordered sequence compared across all pages of this site
+846,5,Texture data,Silt,texture_silt,visually read in the scanned table headers; ordered sequence compared across all pages of this site
+846,6,Texture data,Clay,texture_clay,visually read in the scanned table headers; ordered sequence compared across all pages of this site
+846,7,Mineral,Accessory Minerals,mineral_accessory,visually read in the scanned table headers; ordered sequence compared across all pages of this site
+846,8,Mineral,Calcite,mineral_calcite,visually read in the scanned table headers; ordered sequence compared across all pages of this site
+846,9,Mineral,Clay,mineral_clay,visually read in the scanned table headers; ordered sequence compared across all pages of this site
+846,10,Mineral,Dolomite,mineral_dolomite,visually read in the scanned table headers; ordered sequence compared across all pages of this site
+846,11,Mineral,Feldspar,mineral_feldspar,visually read in the scanned table headers; ordered sequence compared across all pages of this site
+846,12,Mineral,Opal Or Opaline Frag,mineral_opal_or_opaline_fragments,visually read in the scanned table headers; ordered sequence compared across all pages of this site
+846,13,Mineral,Oxides,mineral_oxides,visually read in the scanned table headers; ordered sequence compared across all pages of this site
+846,14,Mineral,Pyrite,mineral_pyrite,visually read in the scanned table headers; ordered sequence compared across all pages of this site
+846,15,Mineral,Quartz,mineral_quartz,visually read in the scanned table headers; ordered sequence compared across all pages of this site
+846,16,Mineral,Volcanic Glass,mineral_volcanic_glass,visually read in the scanned table headers; ordered sequence compared across all pages of this site
+846,17,Biogenic,Diatoms,biogenic_diatoms,visually read in the scanned table headers; ordered sequence compared across all pages of this site
+846,18,Biogenic,Foraminifers,biogenic_foraminifers,visually read in the scanned table headers; ordered sequence compared across all pages of this site
+846,19,Biogenic,Nannofossils,biogenic_nannofossils,visually read in the scanned table headers; ordered sequence compared across all pages of this site
+846,20,Biogenic,Radiolarians,biogenic_radiolarians,visually read in the scanned table headers; ordered sequence compared across all pages of this site
+846,21,Biogenic,Silicoflagellates,biogenic_silicoflagellates,visually read in the scanned table headers; ordered sequence compared across all pages of this site
+846,22,Biogenic,Sponge Spicules,biogenic_sponge_spicules,visually read in the scanned table headers; ordered sequence compared across all pages of this site
+846,23,Rock,Rock Fragment,rock_fragments,visually read in the scanned table headers; ordered sequence compared across all pages of this site
+847,1,Sample,"Hole, core, section, location (cm)",sample_label,visually read in the scanned table headers; ordered sequence compared across all pages of this site
+847,2,,Depth (mbsf),depth_mbsf,visually read in the scanned table headers; ordered sequence compared across all pages of this site
+847,3,,Lithology,lithology,visually read in the scanned table headers; ordered sequence compared across all pages of this site
+847,4,Texture data,Sand,texture_sand,visually read in the scanned table headers; ordered sequence compared across all pages of this site
+847,5,Texture data,Silt,texture_silt,visually read in the scanned table headers; ordered sequence compared across all pages of this site
+847,6,Texture data,Clay,texture_clay,visually read in the scanned table headers; ordered sequence compared across all pages of this site
+847,7,Mineral,Calcite,mineral_calcite,visually read in the scanned table headers; ordered sequence compared across all pages of this site
+847,8,Mineral,Clay,mineral_clay,visually read in the scanned table headers; ordered sequence compared across all pages of this site
+847,9,Mineral,Feldspar,mineral_feldspar,visually read in the scanned table headers; ordered sequence compared across all pages of this site
+847,10,Mineral,Inorganic Calcite,mineral_inorganic_calcite,visually read in the scanned table headers; ordered sequence compared across all pages of this site
+847,11,Mineral,Mica,mineral_mica,visually read in the scanned table headers; ordered sequence compared across all pages of this site
+847,12,Mineral,Pyrite,mineral_pyrite,visually read in the scanned table headers; ordered sequence compared across all pages of this site
+847,13,Mineral,Pyroxene,mineral_pyroxene,visually read in the scanned table headers; ordered sequence compared across all pages of this site
+847,14,Mineral,Quartz,mineral_quartz,visually read in the scanned table headers; ordered sequence compared across all pages of this site
+847,15,Mineral,Volcanic Glass,mineral_volcanic_glass,visually read in the scanned table headers; ordered sequence compared across all pages of this site
+847,16,Biogenic,Diatoms,biogenic_diatoms,visually read in the scanned table headers; ordered sequence compared across all pages of this site
+847,17,Biogenic,Foraminifers,biogenic_foraminifers,visually read in the scanned table headers; ordered sequence compared across all pages of this site
+847,18,Biogenic,Nannofossils,biogenic_nannofossils,visually read in the scanned table headers; ordered sequence compared across all pages of this site
+847,19,Biogenic,Radiolarians,biogenic_radiolarians,visually read in the scanned table headers; ordered sequence compared across all pages of this site
+847,20,Biogenic,Silicoflagellates,biogenic_silicoflagellates,visually read in the scanned table headers; ordered sequence compared across all pages of this site
+847,21,Biogenic,Sponge Spicules,biogenic_sponge_spicules,visually read in the scanned table headers; ordered sequence compared across all pages of this site
+848,1,Sample,"Hole, core, section, location (cm)",sample_label,visually read in the scanned table headers; ordered sequence compared across all pages of this site
+848,2,,Depth (mbsf),depth_mbsf,visually read in the scanned table headers; ordered sequence compared across all pages of this site
+848,3,,Lithology,lithology,visually read in the scanned table headers; ordered sequence compared across all pages of this site
+848,4,Texture data,Sand,texture_sand,visually read in the scanned table headers; ordered sequence compared across all pages of this site
+848,5,Texture data,Silt,texture_silt,visually read in the scanned table headers; ordered sequence compared across all pages of this site
+848,6,Texture data,Clay,texture_clay,visually read in the scanned table headers; ordered sequence compared across all pages of this site
+848,7,Mineral,Barite,mineral_barite,visually read in the scanned table headers; ordered sequence compared across all pages of this site
+848,8,Mineral,Clay,mineral_clay,visually read in the scanned table headers; ordered sequence compared across all pages of this site
+848,9,Mineral,Fe Oxide,mineral_fe_oxide,visually read in the scanned table headers; ordered sequence compared across all pages of this site
+848,10,Mineral,Feldspar,mineral_feldspar,visually read in the scanned table headers; ordered sequence compared across all pages of this site
+848,11,Mineral,Oxides,mineral_oxides,visually read in the scanned table headers; ordered sequence compared across all pages of this site
+848,12,Mineral,Pyrite,mineral_pyrite,visually read in the scanned table headers; ordered sequence compared across all pages of this site
+848,13,Mineral,Quartz,mineral_quartz,visually read in the scanned table headers; ordered sequence compared across all pages of this site
+848,14,Mineral,Volcanic Glass,mineral_volcanic_glass,visually read in the scanned table headers; ordered sequence compared across all pages of this site
+848,15,Mineral,Zeolite,mineral_zeolite,visually read in the scanned table headers; ordered sequence compared across all pages of this site
+848,16,Biogenic,Diatoms,biogenic_diatoms,visually read in the scanned table headers; ordered sequence compared across all pages of this site
+848,17,Biogenic,Foraminifers,biogenic_foraminifers,visually read in the scanned table headers; ordered sequence compared across all pages of this site
+848,18,Biogenic,Nannofossils,biogenic_nannofossils,visually read in the scanned table headers; ordered sequence compared across all pages of this site
+848,19,Biogenic,Radiolarians,biogenic_radiolarians,visually read in the scanned table headers; ordered sequence compared across all pages of this site
+848,20,Biogenic,Silicoflagellates,biogenic_silicoflagellates,visually read in the scanned table headers; ordered sequence compared across all pages of this site
+848,21,Biogenic,Sponge Spicules,biogenic_sponge_spicules,visually read in the scanned table headers; ordered sequence compared across all pages of this site
+848,22,Rock,Carbonate Particles,rock_carbonate_particles,visually read in the scanned table headers; ordered sequence compared across all pages of this site
+849,1,Sample,"Hole, core, section, location (cm)",sample_label,visually read in the scanned table headers; ordered sequence compared across all pages of this site
+849,2,,Depth (mbsf),depth_mbsf,visually read in the scanned table headers; ordered sequence compared across all pages of this site
+849,3,,Lithology,lithology,visually read in the scanned table headers; ordered sequence compared across all pages of this site
+849,4,Texture data,Sand,texture_sand,visually read in the scanned table headers; ordered sequence compared across all pages of this site
+849,5,Texture data,Silt,texture_silt,visually read in the scanned table headers; ordered sequence compared across all pages of this site
+849,6,Texture data,Clay,texture_clay,visually read in the scanned table headers; ordered sequence compared across all pages of this site
+849,7,Mineral,Calcite,mineral_calcite,visually read in the scanned table headers; ordered sequence compared across all pages of this site
+849,8,Mineral,Clay,mineral_clay,visually read in the scanned table headers; ordered sequence compared across all pages of this site
+849,9,Mineral,Feldspar,mineral_feldspar,visually read in the scanned table headers; ordered sequence compared across all pages of this site
+849,10,Mineral,Oxides,mineral_oxides,visually read in the scanned table headers; ordered sequence compared across all pages of this site
+849,11,Mineral,Pyrite,mineral_pyrite,visually read in the scanned table headers; ordered sequence compared across all pages of this site
+849,12,Mineral,Quartz,mineral_quartz,visually read in the scanned table headers; ordered sequence compared across all pages of this site
+849,13,Mineral,Volcanic Glass,mineral_volcanic_glass,visually read in the scanned table headers; ordered sequence compared across all pages of this site
+849,14,Biogenic,Diatoms,biogenic_diatoms,visually read in the scanned table headers; ordered sequence compared across all pages of this site
+849,15,Biogenic,Foraminifers,biogenic_foraminifers,visually read in the scanned table headers; ordered sequence compared across all pages of this site
+849,16,Biogenic,Nannofossils,biogenic_nannofossils,visually read in the scanned table headers; ordered sequence compared across all pages of this site
+849,17,Biogenic,Radiolarians,biogenic_radiolarians,visually read in the scanned table headers; ordered sequence compared across all pages of this site
+849,18,Biogenic,Silicoflagellates,biogenic_silicoflagellates,visually read in the scanned table headers; ordered sequence compared across all pages of this site
+849,19,Biogenic,Sponge Spicules,biogenic_sponge_spicules,visually read in the scanned table headers; ordered sequence compared across all pages of this site
+850,1,Sample,"Hole, core, section, location (cm)",sample_label,visually read in the scanned table headers; ordered sequence compared across all pages of this site
+850,2,,Depth (mbsf),depth_mbsf,visually read in the scanned table headers; ordered sequence compared across all pages of this site
+850,3,,Lithology,lithology,visually read in the scanned table headers; ordered sequence compared across all pages of this site
+850,4,Texture data,Sand,texture_sand,visually read in the scanned table headers; ordered sequence compared across all pages of this site
+850,5,Texture data,Silt,texture_silt,visually read in the scanned table headers; ordered sequence compared across all pages of this site
+850,6,Texture data,Clay,texture_clay,visually read in the scanned table headers; ordered sequence compared across all pages of this site
+850,7,Mineral,Calcite,mineral_calcite,visually read in the scanned table headers; ordered sequence compared across all pages of this site
+850,8,Mineral,Carbonate,mineral_carbonate,visually read in the scanned table headers; ordered sequence compared across all pages of this site
+850,9,Mineral,Clay,mineral_clay,visually read in the scanned table headers; ordered sequence compared across all pages of this site
+850,10,Mineral,Fe Oxide,mineral_fe_oxide,visually read in the scanned table headers; ordered sequence compared across all pages of this site
+850,11,Mineral,Feldspar,mineral_feldspar,visually read in the scanned table headers; ordered sequence compared across all pages of this site
+850,12,Mineral,Oxides,mineral_oxides,visually read in the scanned table headers; ordered sequence compared across all pages of this site
+850,13,Mineral,Pyrite,mineral_pyrite,visually read in the scanned table headers; ordered sequence compared across all pages of this site
+850,14,Mineral,Quartz,mineral_quartz,visually read in the scanned table headers; ordered sequence compared across all pages of this site
+850,15,Mineral,Volcanic Glass,mineral_volcanic_glass,visually read in the scanned table headers; ordered sequence compared across all pages of this site
+850,16,Biogenic,Diatoms,biogenic_diatoms,visually read in the scanned table headers; ordered sequence compared across all pages of this site
+850,17,Biogenic,Foraminifers,biogenic_foraminifers,visually read in the scanned table headers; ordered sequence compared across all pages of this site
+850,18,Biogenic,Nannofossils,biogenic_nannofossils,visually read in the scanned table headers; ordered sequence compared across all pages of this site
+850,19,Biogenic,Radiolarians,biogenic_radiolarians,visually read in the scanned table headers; ordered sequence compared across all pages of this site
+850,20,Biogenic,Silicoflagellates,biogenic_silicoflagellates,visually read in the scanned table headers; ordered sequence compared across all pages of this site
+850,21,Biogenic,Sponge Spicules,biogenic_sponge_spicules,visually read in the scanned table headers; ordered sequence compared across all pages of this site
+851,1,Sample,"Hole, core, section, location (cm)",sample_label,visually read in the scanned table headers; ordered sequence compared across all pages of this site
+851,2,,Depth (mbsf),depth_mbsf,visually read in the scanned table headers; ordered sequence compared across all pages of this site
+851,3,,Lithology,lithology,visually read in the scanned table headers; ordered sequence compared across all pages of this site
+851,4,Texture data,Sand,texture_sand,visually read in the scanned table headers; ordered sequence compared across all pages of this site
+851,5,Texture data,Silt,texture_silt,visually read in the scanned table headers; ordered sequence compared across all pages of this site
+851,6,Texture data,Clay,texture_clay,visually read in the scanned table headers; ordered sequence compared across all pages of this site
+851,7,Mineral,Clay,mineral_clay,visually read in the scanned table headers; ordered sequence compared across all pages of this site
+851,8,Mineral,Fe Oxide,mineral_fe_oxide,visually read in the scanned table headers; ordered sequence compared across all pages of this site
+851,9,Mineral,Feldspar,mineral_feldspar,visually read in the scanned table headers; ordered sequence compared across all pages of this site
+851,10,Mineral,Manganese Oxide,mineral_manganese_oxide,visually read in the scanned table headers; ordered sequence compared across all pages of this site
+851,11,Mineral,Oxides,mineral_oxides,visually read in the scanned table headers; ordered sequence compared across all pages of this site
+851,12,Mineral,Pyrite,mineral_pyrite,visually read in the scanned table headers; ordered sequence compared across all pages of this site
+851,13,Mineral,Pyroxene,mineral_pyroxene,visually read in the scanned table headers; ordered sequence compared across all pages of this site
+851,14,Mineral,Quartz,mineral_quartz,visually read in the scanned table headers; ordered sequence compared across all pages of this site
+851,15,Mineral,Volcanic Glass,mineral_volcanic_glass,visually read in the scanned table headers; ordered sequence compared across all pages of this site
+851,16,Biogenic,Diatoms,biogenic_diatoms,visually read in the scanned table headers; ordered sequence compared across all pages of this site
+851,17,Biogenic,Foraminifers,biogenic_foraminifers,visually read in the scanned table headers; ordered sequence compared across all pages of this site
+851,18,Biogenic,Nannofossils,biogenic_nannofossils,visually read in the scanned table headers; ordered sequence compared across all pages of this site
+851,19,Biogenic,Radiolarians,biogenic_radiolarians,visually read in the scanned table headers; ordered sequence compared across all pages of this site
+851,20,Biogenic,Silicoflagellates,biogenic_silicoflagellates,visually read in the scanned table headers; ordered sequence compared across all pages of this site
+851,21,Biogenic,Sponge Spicules,biogenic_sponge_spicules,visually read in the scanned table headers; ordered sequence compared across all pages of this site
+852,1,Sample,"Hole, core, section, location (cm)",sample_label,visually read in the scanned table headers; ordered sequence compared across all pages of this site
+852,2,,Depth (mbsf),depth_mbsf,visually read in the scanned table headers; ordered sequence compared across all pages of this site
+852,3,,Lithology,lithology,visually read in the scanned table headers; ordered sequence compared across all pages of this site
+852,4,Texture data,Sand,texture_sand,visually read in the scanned table headers; ordered sequence compared across all pages of this site
+852,5,Texture data,Silt,texture_silt,visually read in the scanned table headers; ordered sequence compared across all pages of this site
+852,6,Texture data,Clay,texture_clay,visually read in the scanned table headers; ordered sequence compared across all pages of this site
+852,7,Mineral,Clay,mineral_clay,visually read in the scanned table headers; ordered sequence compared across all pages of this site
+852,8,Mineral,Fe Oxide,mineral_fe_oxide,visually read in the scanned table headers; ordered sequence compared across all pages of this site
+852,9,Mineral,Feldspar,mineral_feldspar,visually read in the scanned table headers; ordered sequence compared across all pages of this site
+852,10,Mineral,Manganese Oxide,mineral_manganese_oxide,visually read in the scanned table headers; ordered sequence compared across all pages of this site
+852,11,Mineral,Oxides,mineral_oxides,visually read in the scanned table headers; ordered sequence compared across all pages of this site
+852,12,Mineral,Pyrite,mineral_pyrite,visually read in the scanned table headers; ordered sequence compared across all pages of this site
+852,13,Mineral,Quartz,mineral_quartz,visually read in the scanned table headers; ordered sequence compared across all pages of this site
+852,14,Mineral,Volcanic Glass,mineral_volcanic_glass,visually read in the scanned table headers; ordered sequence compared across all pages of this site
+852,15,Biogenic,Diatoms,biogenic_diatoms,visually read in the scanned table headers; ordered sequence compared across all pages of this site
+852,16,Biogenic,Foraminifers,biogenic_foraminifers,visually read in the scanned table headers; ordered sequence compared across all pages of this site
+852,17,Biogenic,Nannofossils,biogenic_nannofossils,visually read in the scanned table headers; ordered sequence compared across all pages of this site
+852,18,Biogenic,Radiolarians,biogenic_radiolarians,visually read in the scanned table headers; ordered sequence compared across all pages of this site
+852,19,Biogenic,Silicoflagellates,biogenic_silicoflagellates,visually read in the scanned table headers; ordered sequence compared across all pages of this site
+852,20,Biogenic,Sponge Spicules,biogenic_sponge_spicules,visually read in the scanned table headers; ordered sequence compared across all pages of this site
+853,1,Sample,"Hole, core, section, location (cm)",sample_label,visually read in the scanned table headers; ordered sequence compared across all pages of this site
+853,2,,Depth (mbsf),depth_mbsf,visually read in the scanned table headers; ordered sequence compared across all pages of this site
+853,3,,Lithology,lithology,visually read in the scanned table headers; ordered sequence compared across all pages of this site
+853,4,Texture data,Sand,texture_sand,visually read in the scanned table headers; ordered sequence compared across all pages of this site
+853,5,Texture data,Silt,texture_silt,visually read in the scanned table headers; ordered sequence compared across all pages of this site
+853,6,Texture data,Clay,texture_clay,visually read in the scanned table headers; ordered sequence compared across all pages of this site
+853,7,Mineral,Clay,mineral_clay,visually read in the scanned table headers; ordered sequence compared across all pages of this site
+853,8,Mineral,Fe Oxide,mineral_fe_oxide,visually read in the scanned table headers; ordered sequence compared across all pages of this site
+853,9,Mineral,Feldspar,mineral_feldspar,visually read in the scanned table headers; ordered sequence compared across all pages of this site
+853,10,Mineral,Manganese Oxide,mineral_manganese_oxide,visually read in the scanned table headers; ordered sequence compared across all pages of this site
+853,11,Mineral,Oxides,mineral_oxides,visually read in the scanned table headers; ordered sequence compared across all pages of this site
+853,12,Mineral,Quartz,mineral_quartz,visually read in the scanned table headers; ordered sequence compared across all pages of this site
+853,13,Mineral,Volcanic Glass,mineral_volcanic_glass,visually read in the scanned table headers; ordered sequence compared across all pages of this site
+853,14,Mineral,Zeolite,mineral_zeolite,visually read in the scanned table headers; ordered sequence compared across all pages of this site
+853,15,Biogenic,Diatoms,biogenic_diatoms,visually read in the scanned table headers; ordered sequence compared across all pages of this site
+853,16,Biogenic,Foraminifers,biogenic_foraminifers,visually read in the scanned table headers; ordered sequence compared across all pages of this site
+853,17,Biogenic,Nannofossils,biogenic_nannofossils,visually read in the scanned table headers; ordered sequence compared across all pages of this site
+853,18,Biogenic,Radiolarians,biogenic_radiolarians,visually read in the scanned table headers; ordered sequence compared across all pages of this site
+853,19,Biogenic,Silicoflagellates,biogenic_silicoflagellates,visually read in the scanned table headers; ordered sequence compared across all pages of this site
+853,20,Biogenic,Sponge Spicules,biogenic_sponge_spicules,visually read in the scanned table headers; ordered sequence compared across all pages of this site
+854,1,Sample,"Hole, core, section, location (cm)",sample_label,visually read in the scanned table headers; ordered sequence compared across all pages of this site
+854,2,,Depth (mbsf),depth_mbsf,visually read in the scanned table headers; ordered sequence compared across all pages of this site
+854,3,,Lithology,lithology,visually read in the scanned table headers; ordered sequence compared across all pages of this site
+854,4,Texture data,Sand,texture_sand,visually read in the scanned table headers; ordered sequence compared across all pages of this site
+854,5,Texture data,Silt,texture_silt,visually read in the scanned table headers; ordered sequence compared across all pages of this site
+854,6,Texture data,Clay,texture_clay,visually read in the scanned table headers; ordered sequence compared across all pages of this site
+854,7,Mineral,Carbonate,mineral_carbonate,visually read in the scanned table headers; ordered sequence compared across all pages of this site
+854,8,Mineral,Clay,mineral_clay,visually read in the scanned table headers; ordered sequence compared across all pages of this site
+854,9,Mineral,Fe Oxide,mineral_fe_oxide,visually read in the scanned table headers; ordered sequence compared across all pages of this site
+854,10,Mineral,Feldspar,mineral_feldspar,visually read in the scanned table headers; ordered sequence compared across all pages of this site
+854,11,Mineral,Hematite,mineral_hematite,visually read in the scanned table headers; ordered sequence compared across all pages of this site
+854,12,Mineral,Hornblende,mineral_hornblende,visually read in the scanned table headers; ordered sequence compared across all pages of this site
+854,13,Mineral,Manganese Oxide,mineral_manganese_oxide,visually read in the scanned table headers; ordered sequence compared across all pages of this site
+854,14,Mineral,Orthopyroxene,mineral_orthopyroxene,visually read in the scanned table headers; ordered sequence compared across all pages of this site
+854,15,Mineral,Oxides,mineral_oxides,visually read in the scanned table headers; ordered sequence compared across all pages of this site
+854,16,Mineral,Quartz,mineral_quartz,visually read in the scanned table headers; ordered sequence compared across all pages of this site
+854,17,Mineral,Volcanic Glass,mineral_volcanic_glass,visually read in the scanned table headers; ordered sequence compared across all pages of this site
+854,18,Mineral,Zeolite,mineral_zeolite,visually read in the scanned table headers; ordered sequence compared across all pages of this site
+854,19,Biogenic,Diatoms,biogenic_diatoms,visually read in the scanned table headers; ordered sequence compared across all pages of this site
+854,20,Biogenic,Foraminifers,biogenic_foraminifers,visually read in the scanned table headers; ordered sequence compared across all pages of this site
+854,21,Biogenic,Nannofossils,biogenic_nannofossils,visually read in the scanned table headers; ordered sequence compared across all pages of this site
+854,22,Biogenic,Radiolarians,biogenic_radiolarians,visually read in the scanned table headers; ordered sequence compared across all pages of this site
+854,23,Biogenic,Silicoflagellates,biogenic_silicoflagellates,visually read in the scanned table headers; ordered sequence compared across all pages of this site
+854,24,Biogenic,Sponge Spicules,biogenic_sponge_spicules,visually read in the scanned table headers; ordered sequence compared across all pages of this site
+854,25,Rock,Rock Fragment,rock_fragments,visually read in the scanned table headers; ordered sequence compared across all pages of this site

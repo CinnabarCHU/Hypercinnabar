@@ -1,0 +1,22 @@
+item_id,site,source_path,source_line,verification_flags,composite_depth,sedimentation_rate,age_ma,remarks,unresolved_source_fragment,raw_source_line
+IR16.T10,851,VOLUME/DATA/TABLES/CHAP_16/TABLE.10,6,,0,,0,Core top,,  0                     0          Core top
+IR16.T10,851,VOLUME/DATA/TABLES/CHAP_16/TABLE.10,7,,15.09,20.7,0.73,B Brunhes Chron,, 15.09       20.7       0.73       B Brunhes Chron
+IR16.T10,851,VOLUME/DATA/TABLES/CHAP_16/TABLE.10,8,,18.95,21.4,0.91,T Jaramillo Subchron,, 18.95       21.4       0.91       T Jaramillo Subchron
+IR16.T10,851,VOLUME/DATA/TABLES/CHAP_16/TABLE.10,9,,20.48,21.9,0.98,B Jaramillo Subchron,, 20.48       21.9       0.98       B Jaramillo Subchron
+IR16.T10,851,VOLUME/DATA/TABLES/CHAP_16/TABLE.10,10,,33.7,17.4,1.66,T Olduvai Subchron,, 33.7        17.4       1.66       T Olduvai Subchron
+IR16.T10,851,VOLUME/DATA/TABLES/CHAP_16/TABLE.10,11,,35.91,10.3,1.88,B Olduvai Subchron,, 35.91       10.3       1.88       B Olduvai Subchron
+IR16.T10,851,VOLUME/DATA/TABLES/CHAP_16/TABLE.10,12,,48.65,21.6,2.47,B Matuyama Chron,, 48.65       21.6       2.47       B Matuyama Chron
+IR16.T10,851,VOLUME/DATA/TABLES/CHAP_16/TABLE.10,13,,57.85,20.3,2.92,T Kaena Subchron,, 57.85       20.3       2.92       T Kaena Subchron
+IR16.T10,851,VOLUME/DATA/TABLES/CHAP_16/TABLE.10,14,,59.06,17.9,2.99,B Kaena Subchron,, 59.06       17.9       2.99       B Kaena Subchron
+IR16.T10,851,VOLUME/DATA/TABLES/CHAP_16/TABLE.10,15,,60.83,19.4,3.08,T Mammoth Subchron,, 60.83       19.4       3.08       T Mammoth Subchron
+IR16.T10,851,VOLUME/DATA/TABLES/CHAP_16/TABLE.10,16,,63.0,21.7,3.18,B Mammoth Subchron,, 63.0        21.7       3.18       B Mammoth Subchron
+IR16.T10,851,VOLUME/DATA/TABLES/CHAP_16/TABLE.10,17,,68.1,23.2,3.40,B Gauss Chron,, 68.1        23.2       3.40       B Gauss Chron
+IR16.T10,851,VOLUME/DATA/TABLES/CHAP_16/TABLE.10,18,,77.35,19.3,3.88,T Cochiti Subchron,, 77.35       19.3       3.88       T Cochiti Subchron
+IR16.T10,851,VOLUME/DATA/TABLES/CHAP_16/TABLE.10,19,,79.95,28.9,3.97,B Cochiti Subchron,, 79.95       28.9       3.97       B Cochiti Subchron
+IR16.T10,851,VOLUME/DATA/TABLES/CHAP_16/TABLE.10,20,,97.4,25.3,4.66,B Ceratolithus rugosus,, 97.4        25.3       4.66       B Ceratolithus rugosus
+IR16.T10,851,VOLUME/DATA/TABLES/CHAP_16/TABLE.10,21,,116.47,59.6,4.98,T Discoaster quinqueramus,,116.47       59.6       4.98       T Discoaster quinqueramus
+IR16.T10,851,VOLUME/DATA/TABLES/CHAP_16/TABLE.10,22,,168.0,46.0,6.1,B Thalassiosira praeconvexa,,168.0        46.0       6.1        B Thalassiosira praeconvexa
+IR16.T10,851,VOLUME/DATA/TABLES/CHAP_16/TABLE.10,23,,199.7,48.8,6.75,B Nitschia miocenica,,199.7        48.8       6.75       B Nitschia miocenica
+IR16.T10,851,VOLUME/DATA/TABLES/CHAP_16/TABLE.10,24,,226.39,34.2,7.5,B Discoaster berggreni,,226.39       34.2       7.5        B Discoaster berggreni
+IR16.T10,851,VOLUME/DATA/TABLES/CHAP_16/TABLE.10,25,,315.0,36.4,9.94,T Coccolithus miopelagicus,,315.0        36.4       9.94       T Coccolithus miopelagicus
+IR16.T10,851,VOLUME/DATA/TABLES/CHAP_16/TABLE.10,26,,363.19,51.0,10.9,T Coscinoodiscus guigas var. and B Hemidiscus cuneiformis (see text),,363.19       51.0       10.9       T Coscinoodiscus guigas var. and B Hemidiscus cuneiformis (see text)

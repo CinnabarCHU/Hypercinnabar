@@ -1,0 +1,15 @@
+{
+  "splice_cut": "SITE_844/SPLICE.844 lines 4–5, Hole B, 18.3 <= mcd < 21.5",
+  "core_offset_source": "COREDATA/844.ADJ lines 5–6 (+2.25 m for 3H, -8.55 m for 4H)",
+  "operational_context": "IR09 pp. 121,146 (PDF pages 3,28); 4H re-cored the same interval after 3H",
+  "published_3H_rows": 157,
+  "additional_4H_rows": 157,
+  "published_site844_order_recovered_with_explicit_core_exclusion": 12586,
+  "spectrum_files_checked": 3803,
+  "unpaired_ref_rows": 2568,
+  "matched_rows_any_band_above_0p1": 4200,
+  "bands_above_0p1": 39719,
+  "site849_hypothesis_rows": 36,
+  "site849_bands_within_0p05_against_TEN": 360,
+  "site848_identical_alternative_rows": 0
+}

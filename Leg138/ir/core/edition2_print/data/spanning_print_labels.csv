@@ -1,0 +1,4 @@
+item_id,pdf_page,field,reading,source_bbox_pt,basis
+IR02.T02,9,group_margin,Gravel,"507,436,521,459",vertical label beside the Wentworth grain-size table without printed row boundaries
+IR02.T02,9,group_margin,Sand,"507,560,521,577",vertical label beside the Wentworth grain-size table without printed row boundaries
+IR02.T02,9,group_margin,Mud,"507,666,521,680",vertical label beside the Wentworth grain-size table without printed row boundaries

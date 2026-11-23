@@ -1,0 +1,19 @@
+item_id,site,source_path,source_line,verification_flags,composite_depth,sedimentation_rate,age_ma,remarks,unresolved_source_fragment,raw_source_line
+IR15.T10,850,VOLUME/DATA/TABLES/CHAP_15/TABLE.10,5,,0.00,,0.00,Core top,,  0.00                 0.00      Core top
+IR15.T10,850,VOLUME/DATA/TABLES/CHAP_15/TABLE.10,6,,30.94,21.34,1.45,T Calcidiscus mcintyrei,, 30.94      21.34      1.45      T Calcidiscus mcintyrei
+IR15.T10,850,VOLUME/DATA/TABLES/CHAP_15/TABLE.10,7,,63.66,22.36,2.92,T Kaena subchron,, 63.66      22.36      2.92      T Kaena subchron
+IR15.T10,850,VOLUME/DATA/TABLES/CHAP_15/TABLE.10,8,,65.40,24.86,2.99,B Kaena subchron,, 65.40      24.86      2.99      B Kaena subchron
+IR15.T10,850,VOLUME/DATA/TABLES/CHAP_15/TABLE.10,9,,67.36,21.78,3.08,T Mammoth subchron,, 67.36      21.78      3.08      T Mammoth subchron
+IR15.T10,850,VOLUME/DATA/TABLES/CHAP_15/TABLE.10,10,,69.65,22.90,3.18,B Mammoth subchron,, 69.65      22.90      3.18      B Mammoth subchron
+IR15.T10,850,VOLUME/DATA/TABLES/CHAP_15/TABLE.10,11,,75.67,27.36,3.40,B Gauss chron,, 75.67      27.36      3.40      B Gauss chron
+IR15.T10,850,VOLUME/DATA/TABLES/CHAP_15/TABLE.10,12,,79.65,27.06,3.56,T Reticulofenestra pseudoumbilicus,, 79.65      27.06      3.56      T Reticulofenestra pseudoumbilicus
+IR15.T10,850,VOLUME/DATA/TABLES/CHAP_15/TABLE.10,13,,116.65,33.32,4.66,B Ceratolithus rugosus,,116.65      33.32      4.66      B Ceratolithus rugosus
+IR15.T10,850,VOLUME/DATA/TABLES/CHAP_15/TABLE.10,14,,159.70,97.73,5.10,T Thalassiosira miocenica,,159.70      97.73      5.10      T Thalassiosira miocenica
+IR15.T10,850,VOLUME/DATA/TABLES/CHAP_15/TABLE.10,15,,185.00,36.21,5.80,T Thalassiosira praeconvexa,,185.00      36.21      5.80      T Thalassiosira praeconvexa
+IR15.T10,850,VOLUME/DATA/TABLES/CHAP_15/TABLE.10,16,,221.60,122.00,6.10,B Thalassiosira praeconvexa,,221.60     122.00      6.10      B Thalassiosira praeconvexa
+IR15.T10,850,VOLUME/DATA/TABLES/CHAP_15/TABLE.10,17,,250.90,43.70,6.75,B Nitzschia miocenica,,250.90      43.70      6.75      B Nitzschia miocenica
+IR15.T10,850,VOLUME/DATA/TABLES/CHAP_15/TABLE.10,18,,267.4,27.50,7.35,T Actinocyclus ellipticus var. javanicus,,267.4       27.50      7.35      T Actinocyclus ellipticus var. javanicus
+IR15.T10,850,VOLUME/DATA/TABLES/CHAP_15/TABLE.10,19,,274.85,37.25,7.55,T Thalassiosira yabei,,274.85      37.25      7.55      T Thalassiosira yabei
+IR15.T10,850,VOLUME/DATA/TABLES/CHAP_15/TABLE.10,20,,313.03,30.50,8.80,T Denticulopsis hustedti,,313.03      30.50      8.80      T Denticulopsis hustedti
+IR15.T10,850,VOLUME/DATA/TABLES/CHAP_15/TABLE.10,21,,356.60,38.30,9.94,T Coccolithus miopelagicus,,356.60      38.30      9.94      T Coccolithus miopelagicus
+IR15.T10,850,VOLUME/DATA/TABLES/CHAP_15/TABLE.10,22,,387.70,47.10,10.60,T Craspedodiscus concinodiscus,,387.70      47.10     10.60      T Craspedodiscus concinodiscus

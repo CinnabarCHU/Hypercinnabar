@@ -1,0 +1,30 @@
+item_id,site,source_path,source_line,verification_flags,composite_depth,sedimentation_rate,age_ma,remarks,unresolved_source_fragment,raw_source_line
+IR09.T12,844,VOLUME/DATA/TABLES/CHAP_9/TABLE.12,7,,0,,0,Top of sedimentary section,,       0               0    Top of sedimentary section 
+IR09.T12,844,VOLUME/DATA/TABLES/CHAP_9/TABLE.12,8,,,13.6,,,,              13.6         
+IR09.T12,844,VOLUME/DATA/TABLES/CHAP_9/TABLE.12,9,,12.35,,0.91,Base Jaramillo (11.05 mbsf Hole 844C),,       12.35        0.91    Base Jaramillo (11.05 mbsf Hole 844C)
+IR09.T12,844,VOLUME/DATA/TABLES/CHAP_9/TABLE.12,10,,,7.0,,,,               7.0         
+IR09.T12,844,VOLUME/DATA/TABLES/CHAP_9/TABLE.12,11,,19.15,,1.88,Base Olduvai (17.85 mbsf Hole 844C),,       19.15        1.88    Base Olduvai (17.85 mbsf Hole 844C)
+IR09.T12,844,VOLUME/DATA/TABLES/CHAP_9/TABLE.12,12,,,5.2,,,,               5.2        
+IR09.T12,844,VOLUME/DATA/TABLES/CHAP_9/TABLE.12,13,,22.20,,2.47,Base Matuyama (19.85 mbsf Hole 844C),,       22.20        2.47    Base Matuyama (19.85 mbsf Hole 844C)
+IR09.T12,844,VOLUME/DATA/TABLES/CHAP_9/TABLE.12,14,,,3.5,,,,               3.5        
+IR09.T12,844,VOLUME/DATA/TABLES/CHAP_9/TABLE.12,15,,25.45,,3.40,Base Gauss (23.10 mbsf Hole 844C),,       25.45        3.40    Base Gauss (23.10 mbsf Hole 844C)
+IR09.T12,844,VOLUME/DATA/TABLES/CHAP_9/TABLE.12,16,,,3.6,,,,               3.6        
+IR09.T12,844,VOLUME/DATA/TABLES/CHAP_9/TABLE.12,17,,29.35,,4.47,Base Sijdfjall (27.0 mbsf Hole 844C),,       29.35        4.47    Base Sijdfjall (27.0 mbsf Hole 844C)
+IR09.T12,844,VOLUME/DATA/TABLES/CHAP_9/TABLE.12,18,,,6.5,,,,               6.5        
+IR09.T12,844,VOLUME/DATA/TABLES/CHAP_9/TABLE.12,19,,35.10,,5.35,Base Gilbert (30.95 mbsf Hole 844C),,       35.10        5.35    Base Gilbert (30.95 mbsf Hole 844C)
+IR09.T12,844,VOLUME/DATA/TABLES/CHAP_9/TABLE.12,20,,,6.7,,,,               6.7        
+IR09.T12,844,VOLUME/DATA/TABLES/CHAP_9/TABLE.12,21,,38.70,,5.89,Base C3A-n1 (34.55 mbsf Hole 844C),,       38.70        5.89    Base C3A-n1 (34.55 mbsf Hole 844C)
+IR09.T12,844,VOLUME/DATA/TABLES/CHAP_9/TABLE.12,22,,,5.1,,,,               5.1        
+IR09.T12,844,VOLUME/DATA/TABLES/CHAP_9/TABLE.12,23,,41.15,,6.37,Top C3A-n3 (37.00 mbsf Hole 844C),,       41.15        6.37    Top C3A-n3 (37.00 mbsf Hole 844C)
+IR09.T12,844,VOLUME/DATA/TABLES/CHAP_9/TABLE.12,24,,,10.1,,,,              10.1        
+IR09.T12,844,VOLUME/DATA/TABLES/CHAP_9/TABLE.12,25,,56.65,,7.90,Top C4A-n1 (50.10 mbsf Hole 844A),,       56.65        7.90    Top C4A-n1 (50.10 mbsf Hole 844A)
+IR09.T12,844,VOLUME/DATA/TABLES/CHAP_9/TABLE.12,26,,,7.8,,,,               7.8        
+IR09.T12,844,VOLUME/DATA/TABLES/CHAP_9/TABLE.12,27,,64.55,,8.92,Top C5-n1 (56.95 mbsf Hole 844A),,       64.55        8.92    Top C5-n1 (56.95 mbsf Hole 844A) 
+IR09.T12,844,VOLUME/DATA/TABLES/CHAP_9/TABLE.12,28,,,7.4,,,,               7.4        
+IR09.T12,844,VOLUME/DATA/TABLES/CHAP_9/TABLE.12,29,,75.55,,10.40,Bottom core 138-844C-7H still normal but Coccolithus miopelagicus present,,       75.55        10.40    Bottom core 138-844C-7H still normal but Coccolithus miopelagicus present
+IR09.T12,844,VOLUME/DATA/TABLES/CHAP_9/TABLE.12,30,,,36.6,,,,              36.6        
+IR09.T12,844,VOLUME/DATA/TABLES/CHAP_9/TABLE.12,31,,189.10,,13.50,CN4/CN5top Sphenolithus heteromorphus Sections 138-844B-19H-4 65 cm/-19H-5 65 cm,,       189.10        13.50    CN4/CN5top Sphenolithus heteromorphus Sections 138-844B-19H-4 65 cm/-19H-5 65 cm
+IR09.T12,844,VOLUME/DATA/TABLES/CHAP_9/TABLE.12,32,,,27.6,,,,              27.6        
+IR09.T12,844,VOLUME/DATA/TABLES/CHAP_9/TABLE.12,33,,258.05,,16.00,Top Helicosphaera ampliaporta 138-844B-26H-4 90 cm/-26H-5       90 cm,,       258.05        16.00    Top Helicosphaera ampliaporta 138-844B-26H-4 90 cm/-26H-5       90 cm    
+IR09.T12,844,VOLUME/DATA/TABLES/CHAP_9/TABLE.12,34,,,38.7,,,,              38.7        
+IR09.T12,844,VOLUME/DATA/TABLES/CHAP_9/TABLE.12,35,,308.30,,17.30,Bottom of core younger than 17.3 Ma (absence of Craspedodiscus coscinodisus s. st.),,       308.30        17.30    Bottom of core younger than 17.3 Ma (absence of Craspedodiscus coscinodisus s. st.) 

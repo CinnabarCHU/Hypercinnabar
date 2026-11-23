@@ -1,0 +1,908 @@
+item_id,pdf_page,row_y_pt,field,reading,basis
+IR02.T01,9,579.25,major_modifier,(gravels only),visually compared with the printed row
+IR02.T01,9,579.25,minor_modifiers,composition of,visually compared with the printed row
+IR02.T02,9,438.51,decimal_mm,,"complete visually collated body, grain-size scale; anomalous printed values retained"
+IR02.T02,9,438.51,fraction_mm,,"complete visually collated body, grain-size scale; anomalous printed values retained"
+IR02.T02,9,438.51,micrometers,,"complete visually collated body, grain-size scale; anomalous printed values retained"
+IR02.T02,9,438.51,phi,-20,"complete visually collated body, grain-size scale; anomalous printed values retained"
+IR02.T02,9,438.51,wentworth_size_class,,"complete visually collated body, grain-size scale; anomalous printed values retained"
+IR02.T02,9,445.08,decimal_mm,4096,"complete visually collated body, grain-size scale; anomalous printed values retained"
+IR02.T02,9,445.08,fraction_mm,,"complete visually collated body, grain-size scale; anomalous printed values retained"
+IR02.T02,9,445.08,micrometers,,"complete visually collated body, grain-size scale; anomalous printed values retained"
+IR02.T02,9,445.08,phi,-12,"complete visually collated body, grain-size scale; anomalous printed values retained"
+IR02.T02,9,445.08,wentworth_size_class,Boulder (-8 to -12φ),"complete visually collated body, grain-size scale; anomalous printed values retained"
+IR02.T02,9,451.48,decimal_mm,1024,"complete visually collated body, grain-size scale; anomalous printed values retained"
+IR02.T02,9,451.48,fraction_mm,,"complete visually collated body, grain-size scale; anomalous printed values retained"
+IR02.T02,9,451.48,micrometers,,"complete visually collated body, grain-size scale; anomalous printed values retained"
+IR02.T02,9,451.48,phi,-10,"complete visually collated body, grain-size scale; anomalous printed values retained"
+IR02.T02,9,451.48,wentworth_size_class,,"complete visually collated body, grain-size scale; anomalous printed values retained"
+IR02.T02,9,458.10,decimal_mm,256,"complete visually collated body, grain-size scale; anomalous printed values retained"
+IR02.T02,9,458.10,fraction_mm,,"complete visually collated body, grain-size scale; anomalous printed values retained"
+IR02.T02,9,458.10,micrometers,,"complete visually collated body, grain-size scale; anomalous printed values retained"
+IR02.T02,9,458.10,phi,-8,"complete visually collated body, grain-size scale; anomalous printed values retained"
+IR02.T02,9,458.10,wentworth_size_class,,"complete visually collated body, grain-size scale; anomalous printed values retained"
+IR02.T02,9,464.78,decimal_mm,84,"complete visually collated body, grain-size scale; anomalous printed values retained"
+IR02.T02,9,464.78,fraction_mm,,"complete visually collated body, grain-size scale; anomalous printed values retained"
+IR02.T02,9,464.78,micrometers,,"complete visually collated body, grain-size scale; anomalous printed values retained"
+IR02.T02,9,464.78,phi,-6,"complete visually collated body, grain-size scale; anomalous printed values retained"
+IR02.T02,9,464.78,wentworth_size_class,Cobble (-6 to -8φ),"complete visually collated body, grain-size scale; anomalous printed values retained"
+IR02.T02,9,471.14,decimal_mm,16,"complete visually collated body, grain-size scale; anomalous printed values retained"
+IR02.T02,9,471.14,fraction_mm,,"complete visually collated body, grain-size scale; anomalous printed values retained"
+IR02.T02,9,471.14,micrometers,,"complete visually collated body, grain-size scale; anomalous printed values retained"
+IR02.T02,9,471.14,phi,-4,"complete visually collated body, grain-size scale; anomalous printed values retained"
+IR02.T02,9,471.14,wentworth_size_class,Pebble (-2 to -6φ),"complete visually collated body, grain-size scale; anomalous printed values retained"
+IR02.T02,9,477.78,decimal_mm,4,"complete visually collated body, grain-size scale; anomalous printed values retained"
+IR02.T02,9,477.78,fraction_mm,,"complete visually collated body, grain-size scale; anomalous printed values retained"
+IR02.T02,9,477.78,micrometers,,"complete visually collated body, grain-size scale; anomalous printed values retained"
+IR02.T02,9,477.78,phi,-2,"complete visually collated body, grain-size scale; anomalous printed values retained"
+IR02.T02,9,477.78,wentworth_size_class,,"complete visually collated body, grain-size scale; anomalous printed values retained"
+IR02.T02,9,484.11,decimal_mm,3.36,"complete visually collated body, grain-size scale; anomalous printed values retained"
+IR02.T02,9,484.11,fraction_mm,,"complete visually collated body, grain-size scale; anomalous printed values retained"
+IR02.T02,9,484.11,micrometers,,"complete visually collated body, grain-size scale; anomalous printed values retained"
+IR02.T02,9,484.11,phi,-1.75,"complete visually collated body, grain-size scale; anomalous printed values retained"
+IR02.T02,9,484.11,wentworth_size_class,,"complete visually collated body, grain-size scale; anomalous printed values retained"
+IR02.T02,9,490.79,decimal_mm,2.83,"complete visually collated body, grain-size scale; anomalous printed values retained"
+IR02.T02,9,490.79,fraction_mm,,"complete visually collated body, grain-size scale; anomalous printed values retained"
+IR02.T02,9,490.79,micrometers,,"complete visually collated body, grain-size scale; anomalous printed values retained"
+IR02.T02,9,490.79,phi,-1.5,"complete visually collated body, grain-size scale; anomalous printed values retained"
+IR02.T02,9,490.79,wentworth_size_class,Granule,"complete visually collated body, grain-size scale; anomalous printed values retained"
+IR02.T02,9,497.22,decimal_mm,2.36,"complete visually collated body, grain-size scale; anomalous printed values retained"
+IR02.T02,9,497.22,fraction_mm,,"complete visually collated body, grain-size scale; anomalous printed values retained"
+IR02.T02,9,497.22,micrometers,,"complete visually collated body, grain-size scale; anomalous printed values retained"
+IR02.T02,9,497.22,phi,-1.25,"complete visually collated body, grain-size scale; anomalous printed values retained"
+IR02.T02,9,497.22,wentworth_size_class,,"complete visually collated body, grain-size scale; anomalous printed values retained"
+IR02.T02,9,503.73,decimal_mm,2.00,"complete visually collated body, grain-size scale; anomalous printed values retained"
+IR02.T02,9,503.73,fraction_mm,,"complete visually collated body, grain-size scale; anomalous printed values retained"
+IR02.T02,9,503.73,micrometers,,"complete visually collated body, grain-size scale; anomalous printed values retained"
+IR02.T02,9,503.73,phi,-1.0,"complete visually collated body, grain-size scale; anomalous printed values retained"
+IR02.T02,9,503.73,wentworth_size_class,,"complete visually collated body, grain-size scale; anomalous printed values retained"
+IR02.T02,9,510.20,decimal_mm,1.58,"complete visually collated body, grain-size scale; anomalous printed values retained"
+IR02.T02,9,510.20,fraction_mm,,"complete visually collated body, grain-size scale; anomalous printed values retained"
+IR02.T02,9,510.20,micrometers,,"complete visually collated body, grain-size scale; anomalous printed values retained"
+IR02.T02,9,510.20,phi,-0.75,"complete visually collated body, grain-size scale; anomalous printed values retained"
+IR02.T02,9,510.20,wentworth_size_class,,"complete visually collated body, grain-size scale; anomalous printed values retained"
+IR02.T02,9,516.81,decimal_mm,1.41,"complete visually collated body, grain-size scale; anomalous printed values retained"
+IR02.T02,9,516.81,fraction_mm,,"complete visually collated body, grain-size scale; anomalous printed values retained"
+IR02.T02,9,516.81,micrometers,,"complete visually collated body, grain-size scale; anomalous printed values retained"
+IR02.T02,9,516.81,phi,-0.5,"complete visually collated body, grain-size scale; anomalous printed values retained"
+IR02.T02,9,516.81,wentworth_size_class,Very coarse sand,"complete visually collated body, grain-size scale; anomalous printed values retained"
+IR02.T02,9,523.39,decimal_mm,1.19,"complete visually collated body, grain-size scale; anomalous printed values retained"
+IR02.T02,9,523.39,fraction_mm,,"complete visually collated body, grain-size scale; anomalous printed values retained"
+IR02.T02,9,523.39,micrometers,,"complete visually collated body, grain-size scale; anomalous printed values retained"
+IR02.T02,9,523.39,phi,-0.25,"complete visually collated body, grain-size scale; anomalous printed values retained"
+IR02.T02,9,523.39,wentworth_size_class,,"complete visually collated body, grain-size scale; anomalous printed values retained"
+IR02.T02,9,529.81,decimal_mm,1.00,"complete visually collated body, grain-size scale; anomalous printed values retained"
+IR02.T02,9,529.81,fraction_mm,,"complete visually collated body, grain-size scale; anomalous printed values retained"
+IR02.T02,9,529.81,micrometers,,"complete visually collated body, grain-size scale; anomalous printed values retained"
+IR02.T02,9,529.81,phi,0.0,"complete visually collated body, grain-size scale; anomalous printed values retained"
+IR02.T02,9,529.81,wentworth_size_class,,"complete visually collated body, grain-size scale; anomalous printed values retained"
+IR02.T02,9,536.43,decimal_mm,0.84,"complete visually collated body, grain-size scale; anomalous printed values retained"
+IR02.T02,9,536.43,fraction_mm,,"complete visually collated body, grain-size scale; anomalous printed values retained"
+IR02.T02,9,536.43,micrometers,,"complete visually collated body, grain-size scale; anomalous printed values retained"
+IR02.T02,9,536.43,phi,0.25,"complete visually collated body, grain-size scale; anomalous printed values retained"
+IR02.T02,9,536.43,wentworth_size_class,,"complete visually collated body, grain-size scale; anomalous printed values retained"
+IR02.T02,9,542.93,decimal_mm,0.71,"complete visually collated body, grain-size scale; anomalous printed values retained"
+IR02.T02,9,542.93,fraction_mm,,"complete visually collated body, grain-size scale; anomalous printed values retained"
+IR02.T02,9,542.93,micrometers,,"complete visually collated body, grain-size scale; anomalous printed values retained"
+IR02.T02,9,542.93,phi,0.5,"complete visually collated body, grain-size scale; anomalous printed values retained"
+IR02.T02,9,542.93,wentworth_size_class,Coarse sand,"complete visually collated body, grain-size scale; anomalous printed values retained"
+IR02.T02,9,549.28,decimal_mm,0.59,"complete visually collated body, grain-size scale; anomalous printed values retained"
+IR02.T02,9,549.28,fraction_mm,,"complete visually collated body, grain-size scale; anomalous printed values retained"
+IR02.T02,9,549.28,micrometers,,"complete visually collated body, grain-size scale; anomalous printed values retained"
+IR02.T02,9,549.28,phi,0.75,"complete visually collated body, grain-size scale; anomalous printed values retained"
+IR02.T02,9,549.28,wentworth_size_class,,"complete visually collated body, grain-size scale; anomalous printed values retained"
+IR02.T02,9,555.99,decimal_mm,0.50,"complete visually collated body, grain-size scale; anomalous printed values retained"
+IR02.T02,9,555.99,fraction_mm,1/2,"complete visually collated body, grain-size scale; anomalous printed values retained"
+IR02.T02,9,555.99,micrometers,500,"complete visually collated body, grain-size scale; anomalous printed values retained"
+IR02.T02,9,555.99,phi,1.0,"complete visually collated body, grain-size scale; anomalous printed values retained"
+IR02.T02,9,555.99,wentworth_size_class,,"complete visually collated body, grain-size scale; anomalous printed values retained"
+IR02.T02,9,562.53,decimal_mm,0.42,"complete visually collated body, grain-size scale; anomalous printed values retained"
+IR02.T02,9,562.53,fraction_mm,,"complete visually collated body, grain-size scale; anomalous printed values retained"
+IR02.T02,9,562.53,micrometers,420,"complete visually collated body, grain-size scale; anomalous printed values retained"
+IR02.T02,9,562.53,phi,1.25,"complete visually collated body, grain-size scale; anomalous printed values retained"
+IR02.T02,9,562.53,wentworth_size_class,,"complete visually collated body, grain-size scale; anomalous printed values retained"
+IR02.T02,9,569.06,decimal_mm,0.35,"complete visually collated body, grain-size scale; anomalous printed values retained"
+IR02.T02,9,569.06,fraction_mm,,"complete visually collated body, grain-size scale; anomalous printed values retained"
+IR02.T02,9,569.06,micrometers,350,"complete visually collated body, grain-size scale; anomalous printed values retained"
+IR02.T02,9,569.06,phi,1.5,"complete visually collated body, grain-size scale; anomalous printed values retained"
+IR02.T02,9,569.06,wentworth_size_class,Medium sand,"complete visually collated body, grain-size scale; anomalous printed values retained"
+IR02.T02,9,575.38,decimal_mm,0.30,"complete visually collated body, grain-size scale; anomalous printed values retained"
+IR02.T02,9,575.38,fraction_mm,,"complete visually collated body, grain-size scale; anomalous printed values retained"
+IR02.T02,9,575.38,micrometers,300,"complete visually collated body, grain-size scale; anomalous printed values retained"
+IR02.T02,9,575.38,phi,1.75,"complete visually collated body, grain-size scale; anomalous printed values retained"
+IR02.T02,9,575.38,wentworth_size_class,,"complete visually collated body, grain-size scale; anomalous printed values retained"
+IR02.T02,9,582.16,decimal_mm,0.25,"complete visually collated body, grain-size scale; anomalous printed values retained"
+IR02.T02,9,582.16,fraction_mm,1/4,"complete visually collated body, grain-size scale; anomalous printed values retained"
+IR02.T02,9,582.16,micrometers,250,"complete visually collated body, grain-size scale; anomalous printed values retained"
+IR02.T02,9,582.16,phi,2.0,"complete visually collated body, grain-size scale; anomalous printed values retained"
+IR02.T02,9,582.16,wentworth_size_class,,"complete visually collated body, grain-size scale; anomalous printed values retained"
+IR02.T02,9,588.76,decimal_mm,0.210,"complete visually collated body, grain-size scale; anomalous printed values retained"
+IR02.T02,9,588.76,fraction_mm,,"complete visually collated body, grain-size scale; anomalous printed values retained"
+IR02.T02,9,588.76,micrometers,210,"complete visually collated body, grain-size scale; anomalous printed values retained"
+IR02.T02,9,588.76,phi,2.25,"complete visually collated body, grain-size scale; anomalous printed values retained"
+IR02.T02,9,588.76,wentworth_size_class,,"complete visually collated body, grain-size scale; anomalous printed values retained"
+IR02.T02,9,595.33,decimal_mm,0.177,"complete visually collated body, grain-size scale; anomalous printed values retained"
+IR02.T02,9,595.33,fraction_mm,,"complete visually collated body, grain-size scale; anomalous printed values retained"
+IR02.T02,9,595.33,micrometers,177,"complete visually collated body, grain-size scale; anomalous printed values retained"
+IR02.T02,9,595.33,phi,2.5,"complete visually collated body, grain-size scale; anomalous printed values retained"
+IR02.T02,9,595.33,wentworth_size_class,Fine sand,"complete visually collated body, grain-size scale; anomalous printed values retained"
+IR02.T02,9,601.57,decimal_mm,0.149,"complete visually collated body, grain-size scale; anomalous printed values retained"
+IR02.T02,9,601.57,fraction_mm,,"complete visually collated body, grain-size scale; anomalous printed values retained"
+IR02.T02,9,601.57,micrometers,149,"complete visually collated body, grain-size scale; anomalous printed values retained"
+IR02.T02,9,601.57,phi,2.75,"complete visually collated body, grain-size scale; anomalous printed values retained"
+IR02.T02,9,601.57,wentworth_size_class,,"complete visually collated body, grain-size scale; anomalous printed values retained"
+IR02.T02,9,608.22,decimal_mm,0.125,"complete visually collated body, grain-size scale; anomalous printed values retained"
+IR02.T02,9,608.22,fraction_mm,1/8,"complete visually collated body, grain-size scale; anomalous printed values retained"
+IR02.T02,9,608.22,micrometers,125,"complete visually collated body, grain-size scale; anomalous printed values retained"
+IR02.T02,9,608.22,phi,3.0,"complete visually collated body, grain-size scale; anomalous printed values retained"
+IR02.T02,9,608.22,wentworth_size_class,,"complete visually collated body, grain-size scale; anomalous printed values retained"
+IR02.T02,9,614.78,decimal_mm,0.106,"complete visually collated body, grain-size scale; anomalous printed values retained"
+IR02.T02,9,614.78,fraction_mm,,"complete visually collated body, grain-size scale; anomalous printed values retained"
+IR02.T02,9,614.78,micrometers,106,"complete visually collated body, grain-size scale; anomalous printed values retained"
+IR02.T02,9,614.78,phi,3.25,"complete visually collated body, grain-size scale; anomalous printed values retained"
+IR02.T02,9,614.78,wentworth_size_class,,"complete visually collated body, grain-size scale; anomalous printed values retained"
+IR02.T02,9,621.33,decimal_mm,0.068,"complete visually collated body, grain-size scale; anomalous printed values retained"
+IR02.T02,9,621.33,fraction_mm,,"complete visually collated body, grain-size scale; anomalous printed values retained"
+IR02.T02,9,621.33,micrometers,88,"complete visually collated body, grain-size scale; anomalous printed values retained"
+IR02.T02,9,621.33,phi,3.5,"complete visually collated body, grain-size scale; anomalous printed values retained"
+IR02.T02,9,621.33,wentworth_size_class,Very fine sand,"complete visually collated body, grain-size scale; anomalous printed values retained"
+IR02.T02,9,627.58,decimal_mm,0.074,"complete visually collated body, grain-size scale; anomalous printed values retained"
+IR02.T02,9,627.58,fraction_mm,,"complete visually collated body, grain-size scale; anomalous printed values retained"
+IR02.T02,9,627.58,micrometers,74,"complete visually collated body, grain-size scale; anomalous printed values retained"
+IR02.T02,9,627.58,phi,3.75,"complete visually collated body, grain-size scale; anomalous printed values retained"
+IR02.T02,9,627.58,wentworth_size_class,,"complete visually collated body, grain-size scale; anomalous printed values retained"
+IR02.T02,9,634.32,decimal_mm,0.0625,"complete visually collated body, grain-size scale; anomalous printed values retained"
+IR02.T02,9,634.32,fraction_mm,1/16,"complete visually collated body, grain-size scale; anomalous printed values retained"
+IR02.T02,9,634.32,micrometers,63,"complete visually collated body, grain-size scale; anomalous printed values retained"
+IR02.T02,9,634.32,phi,4.0,"complete visually collated body, grain-size scale; anomalous printed values retained"
+IR02.T02,9,634.32,wentworth_size_class,,"complete visually collated body, grain-size scale; anomalous printed values retained"
+IR02.T02,9,640.98,decimal_mm,0.063,"complete visually collated body, grain-size scale; anomalous printed values retained"
+IR02.T02,9,640.98,fraction_mm,,"complete visually collated body, grain-size scale; anomalous printed values retained"
+IR02.T02,9,640.98,micrometers,83,"complete visually collated body, grain-size scale; anomalous printed values retained"
+IR02.T02,9,640.98,phi,4.25,"complete visually collated body, grain-size scale; anomalous printed values retained"
+IR02.T02,9,640.98,wentworth_size_class,,"complete visually collated body, grain-size scale; anomalous printed values retained"
+IR02.T02,9,647.47,decimal_mm,0.044,"complete visually collated body, grain-size scale; anomalous printed values retained"
+IR02.T02,9,647.47,fraction_mm,,"complete visually collated body, grain-size scale; anomalous printed values retained"
+IR02.T02,9,647.47,micrometers,44,"complete visually collated body, grain-size scale; anomalous printed values retained"
+IR02.T02,9,647.47,phi,4.5,"complete visually collated body, grain-size scale; anomalous printed values retained"
+IR02.T02,9,647.47,wentworth_size_class,Coarse silt,"complete visually collated body, grain-size scale; anomalous printed values retained"
+IR02.T02,9,653.80,decimal_mm,0.037,"complete visually collated body, grain-size scale; anomalous printed values retained"
+IR02.T02,9,653.80,fraction_mm,,"complete visually collated body, grain-size scale; anomalous printed values retained"
+IR02.T02,9,653.80,micrometers,37,"complete visually collated body, grain-size scale; anomalous printed values retained"
+IR02.T02,9,653.80,phi,4.75,"complete visually collated body, grain-size scale; anomalous printed values retained"
+IR02.T02,9,653.80,wentworth_size_class,,"complete visually collated body, grain-size scale; anomalous printed values retained"
+IR02.T02,9,660.39,decimal_mm,0.031,"complete visually collated body, grain-size scale; anomalous printed values retained"
+IR02.T02,9,660.39,fraction_mm,1/32,"complete visually collated body, grain-size scale; anomalous printed values retained"
+IR02.T02,9,660.39,micrometers,31,"complete visually collated body, grain-size scale; anomalous printed values retained"
+IR02.T02,9,660.39,phi,5.0,"complete visually collated body, grain-size scale; anomalous printed values retained"
+IR02.T02,9,660.39,wentworth_size_class,,"complete visually collated body, grain-size scale; anomalous printed values retained"
+IR02.T02,9,667.08,decimal_mm,0.0156,"complete visually collated body, grain-size scale; anomalous printed values retained"
+IR02.T02,9,667.08,fraction_mm,1/64,"complete visually collated body, grain-size scale; anomalous printed values retained"
+IR02.T02,9,667.08,micrometers,15.6,"complete visually collated body, grain-size scale; anomalous printed values retained"
+IR02.T02,9,667.08,phi,6.0,"complete visually collated body, grain-size scale; anomalous printed values retained"
+IR02.T02,9,667.08,wentworth_size_class,Medium silt,"complete visually collated body, grain-size scale; anomalous printed values retained"
+IR02.T02,9,673.29,decimal_mm,0.0078,"complete visually collated body, grain-size scale; anomalous printed values retained"
+IR02.T02,9,673.29,fraction_mm,1/128,"complete visually collated body, grain-size scale; anomalous printed values retained"
+IR02.T02,9,673.29,micrometers,7.8,"complete visually collated body, grain-size scale; anomalous printed values retained"
+IR02.T02,9,673.29,phi,7.0,"complete visually collated body, grain-size scale; anomalous printed values retained"
+IR02.T02,9,673.29,wentworth_size_class,Fine silt,"complete visually collated body, grain-size scale; anomalous printed values retained"
+IR02.T02,9,679.94,decimal_mm,0.0039,"complete visually collated body, grain-size scale; anomalous printed values retained"
+IR02.T02,9,679.94,fraction_mm,1/256,"complete visually collated body, grain-size scale; anomalous printed values retained"
+IR02.T02,9,679.94,micrometers,3.9,"complete visually collated body, grain-size scale; anomalous printed values retained"
+IR02.T02,9,679.94,phi,8.0,"complete visually collated body, grain-size scale; anomalous printed values retained"
+IR02.T02,9,679.94,wentworth_size_class,Very fine silt,"complete visually collated body, grain-size scale; anomalous printed values retained"
+IR02.T02,9,686.31,decimal_mm,0.0020,"complete visually collated body, grain-size scale; anomalous printed values retained"
+IR02.T02,9,686.31,fraction_mm,,"complete visually collated body, grain-size scale; anomalous printed values retained"
+IR02.T02,9,686.31,micrometers,2.0,"complete visually collated body, grain-size scale; anomalous printed values retained"
+IR02.T02,9,686.31,phi,9.0,"complete visually collated body, grain-size scale; anomalous printed values retained"
+IR02.T02,9,686.31,wentworth_size_class,,"complete visually collated body, grain-size scale; anomalous printed values retained"
+IR02.T02,9,692.99,decimal_mm,0.00096,"complete visually collated body, grain-size scale; anomalous printed values retained"
+IR02.T02,9,692.99,fraction_mm,,"complete visually collated body, grain-size scale; anomalous printed values retained"
+IR02.T02,9,692.99,micrometers,0.96,"complete visually collated body, grain-size scale; anomalous printed values retained"
+IR02.T02,9,692.99,phi,10.0,"complete visually collated body, grain-size scale; anomalous printed values retained"
+IR02.T02,9,692.99,wentworth_size_class,Clay,"complete visually collated body, grain-size scale; anomalous printed values retained"
+IR02.T02,9,699.58,decimal_mm,0.00049,"complete visually collated body, grain-size scale; anomalous printed values retained"
+IR02.T02,9,699.58,fraction_mm,,"complete visually collated body, grain-size scale; anomalous printed values retained"
+IR02.T02,9,699.58,micrometers,0.49,"complete visually collated body, grain-size scale; anomalous printed values retained"
+IR02.T02,9,699.58,phi,11.0,"complete visually collated body, grain-size scale; anomalous printed values retained"
+IR02.T02,9,699.58,wentworth_size_class,,"complete visually collated body, grain-size scale; anomalous printed values retained"
+IR02.T02,9,706.19,decimal_mm,0.00024,"complete visually collated body, grain-size scale; anomalous printed values retained"
+IR02.T02,9,706.19,fraction_mm,,"complete visually collated body, grain-size scale; anomalous printed values retained"
+IR02.T02,9,706.19,micrometers,0.24,"complete visually collated body, grain-size scale; anomalous printed values retained"
+IR02.T02,9,706.19,phi,12.0,"complete visually collated body, grain-size scale; anomalous printed values retained"
+IR02.T02,9,706.19,wentworth_size_class,,"complete visually collated body, grain-size scale; anomalous printed values retained"
+IR02.T02,9,712.58,decimal_mm,0.00012,"complete visually collated body, grain-size scale; anomalous printed values retained"
+IR02.T02,9,712.58,fraction_mm,,"complete visually collated body, grain-size scale; anomalous printed values retained"
+IR02.T02,9,712.58,micrometers,0.12,"complete visually collated body, grain-size scale; anomalous printed values retained"
+IR02.T02,9,712.58,phi,13.0,"complete visually collated body, grain-size scale; anomalous printed values retained"
+IR02.T02,9,712.58,wentworth_size_class,,"complete visually collated body, grain-size scale; anomalous printed values retained"
+IR02.T02,9,719.24,decimal_mm,0.00006,"complete visually collated body, grain-size scale; anomalous printed values retained"
+IR02.T02,9,719.24,fraction_mm,,"complete visually collated body, grain-size scale; anomalous printed values retained"
+IR02.T02,9,719.24,micrometers,0.06,"complete visually collated body, grain-size scale; anomalous printed values retained"
+IR02.T02,9,719.24,phi,14.0,"complete visually collated body, grain-size scale; anomalous printed values retained"
+IR02.T02,9,719.24,wentworth_size_class,,"complete visually collated body, grain-size scale; anomalous printed values retained"
+IR02.T03,11,353.07,age_Ma,8.80,visually compared with the printed row
+IR02.T03,11,353.07,chron_subchron_event,C4A-n3(o),visually compared with the printed row
+IR02.T03,11,353.07,sense,R->N,visually compared with the printed row
+IR02.T04,13,253.60,age_Ma_and_reference,5.33 (5),visually compared with the printed row
+IR02.T04,13,253.60,calibration,C3A,visually compared with the printed row
+IR02.T04,13,253.60,event,T Amaurolithus amplificus,visually compared with the printed row
+IR02.T05,14,377.24,age_Ma_and_reference,8.8 (1),visually compared with the printed row
+IR02.T05,14,377.24,calibration,C4A-n3,visually compared with the printed row
+IR02.T05,14,377.24,event,T Crucidenticula hustedtii s.l.,visually compared with the printed row
+IR02.T05,15,139.64,age_Ma_and_reference,21.7,visually compared with the printed row
+IR02.T05,15,139.64,event,T Thalassiosira primalabiata,visually compared with the printed row
+IR02.T05,15,139.64,zone_base,A/B boundary,visually compared with the printed row
+IR02.T06,16,210.34,age_Ma,5.2,visually compared with the printed row
+IR02.T06,16,210.34,event,B Pulleniatina spectabilis,visually compared with the printed row
+IR02.T07,16,311.50,age_Ma_and_reference,**6.1-6.7 (4),visually compared with the printed row
+IR02.T07,16,311.50,datum,>S. peregrina,visually compared with the printed row
+IR02.T07,16,311.50,zone_base,S. omnitubus,visually compared with the printed row
+IR02.T08,18,239.78,core,844B-21X,visually compared with the printed row
+IR02.T08,18,239.78,core_m,9.69,visually compared with the printed row
+IR02.T08,18,239.78,depth_mbsf,185.00-194.69,visually compared with the printed row
+IR02.T08,18,239.78,depth_mcd,203.63-213.32,visually compared with the printed row
+IR02.T08,18,239.78,offset_m,18.63,visually compared with the printed row
+IR02.T09,27,622.76,abbreviation,NGT,visually compared with the printed row
+IR02.T09,27,622.76,definition,Natural gamma-ray tool,visually compared with the printed row
+IR03.T01,5,263.17,line_1,80,visually compared with the printed row
+IR03.T01,5,263.17,line_10,80/85,visually compared with the printed row
+IR03.T01,5,263.17,line_2,80,visually compared with the printed row
+IR03.T01,5,263.17,line_3,70,visually compared with the printed row
+IR03.T01,5,263.17,line_4,70/65,visually compared with the printed row
+IR03.T01,5,263.17,line_5,70,visually compared with the printed row
+IR03.T01,5,263.17,line_6,80,visually compared with the printed row
+IR03.T01,5,263.17,line_7,80,visually compared with the printed row
+IR03.T01,5,263.17,line_8,80,visually compared with the printed row
+IR03.T01,5,263.17,line_9,80,visually compared with the printed row
+IR03.T01,5,263.17,parameter,Gain (dB):,visually compared with the printed row
+IR05.T01,7,335.55,depth_mcd,105.65,visually compared with the printed row
+IR05.T01,7,335.55,equivalent_depth_mbsf,93.30,visually compared with the printed row
+IR07.T01,4,579.76,distance_cm,0,all printed body values visually collated
+IR07.T01,4,579.76,measured_response,915,all printed body values visually collated
+IR07.T01,4,579.76,normalized_response,0.1886,all printed body values visually collated
+IR07.T01,4,587.50,distance_cm,1,all printed body values visually collated
+IR07.T01,4,587.50,measured_response,766,all printed body values visually collated
+IR07.T01,4,587.50,normalized_response,0.1579,all printed body values visually collated
+IR07.T01,4,595.60,distance_cm,2,all printed body values visually collated
+IR07.T01,4,595.60,measured_response,503,all printed body values visually collated
+IR07.T01,4,595.60,normalized_response,0.1037,all printed body values visually collated
+IR07.T01,4,603.52,distance_cm,3,all printed body values visually collated
+IR07.T01,4,603.52,measured_response,292,all printed body values visually collated
+IR07.T01,4,603.52,normalized_response,0.0602,all printed body values visually collated
+IR07.T01,4,611.44,distance_cm,4,all printed body values visually collated
+IR07.T01,4,611.44,measured_response,166,all printed body values visually collated
+IR07.T01,4,611.44,normalized_response,0.0342,all printed body values visually collated
+IR07.T01,4,619.54,distance_cm,5,all printed body values visually collated
+IR07.T01,4,619.54,measured_response,95,all printed body values visually collated
+IR07.T01,4,619.54,normalized_response,0.0196,all printed body values visually collated
+IR07.T01,4,627.46,distance_cm,6,all printed body values visually collated
+IR07.T01,4,627.46,measured_response,56,all printed body values visually collated
+IR07.T01,4,627.46,normalized_response,0.0115,all printed body values visually collated
+IR07.T01,4,635.20,distance_cm,7,all printed body values visually collated
+IR07.T01,4,635.20,measured_response,34,all printed body values visually collated
+IR07.T01,4,635.20,normalized_response,0.0070,all printed body values visually collated
+IR07.T01,4,643.66,distance_cm,8,all printed body values visually collated
+IR07.T01,4,643.66,measured_response,20,all printed body values visually collated
+IR07.T01,4,643.66,normalized_response,0.0041,all printed body values visually collated
+IR07.T01,4,651.58,distance_cm,9,all printed body values visually collated
+IR07.T01,4,651.58,measured_response,13,all printed body values visually collated
+IR07.T01,4,651.58,normalized_response,0.0027,all printed body values visually collated
+IR07.T01,4,659.50,distance_cm,10,all printed body values visually collated
+IR07.T01,4,659.50,measured_response,8,all printed body values visually collated
+IR07.T01,4,659.50,normalized_response,0.0016,all printed body values visually collated
+IR07.T01,4,667.78,distance_cm,11,all printed body values visually collated
+IR07.T01,4,667.78,measured_response,5,all printed body values visually collated
+IR07.T01,4,667.78,normalized_response,0.0010,all printed body values visually collated
+IR07.T01,4,675.52,distance_cm,12,all printed body values visually collated
+IR07.T01,4,675.52,measured_response,4,all printed body values visually collated
+IR07.T01,4,675.52,normalized_response,0.0008,all printed body values visually collated
+IR07.T01,4,683.62,distance_cm,13,all printed body values visually collated
+IR07.T01,4,683.62,measured_response,3,all printed body values visually collated
+IR07.T01,4,683.62,normalized_response,0.0006,all printed body values visually collated
+IR07.T01,4,691.72,distance_cm,14,all printed body values visually collated
+IR07.T01,4,691.72,measured_response,2,all printed body values visually collated
+IR07.T01,4,691.72,normalized_response,0.0004,all printed body values visually collated
+IR07.T01,4,699.46,distance_cm,15,all printed body values visually collated
+IR07.T01,4,699.46,measured_response,1,all printed body values visually collated
+IR07.T01,4,699.46,normalized_response,0.0002,all printed body values visually collated
+IR07.T01,4,707.38,distance_cm,16,all printed body values visually collated
+IR07.T01,4,707.38,measured_response,0,all printed body values visually collated
+IR07.T01,4,707.38,normalized_response,0.0000,all printed body values visually collated
+IR07.T02,4,123.37,correction_factor,2.000,all printed body values visually collated
+IR07.T02,4,123.37,distance_from_end_cm,0,all printed body values visually collated
+IR07.T02,4,131.83,correction_factor,1.485,all printed body values visually collated
+IR07.T02,4,131.83,distance_from_end_cm,1,all printed body values visually collated
+IR07.T02,4,139.66,correction_factor,1.244,all printed body values visually collated
+IR07.T02,4,139.66,distance_from_end_cm,2,all printed body values visually collated
+IR07.T02,4,147.58,correction_factor,1.129,all printed body values visually collated
+IR07.T02,4,147.58,distance_from_end_cm,3,all printed body values visually collated
+IR07.T02,4,155.59,correction_factor,1.072,all printed body values visually collated
+IR07.T02,4,155.59,distance_from_end_cm,4,all printed body values visually collated
+IR07.T02,4,163.51,correction_factor,1.042,all printed body values visually collated
+IR07.T02,4,163.51,distance_from_end_cm,5,all printed body values visually collated
+IR07.T03,6,167.93,closest_XBT_latitude,3°00.7'S,visually compared with the printed row
+IR07.T03,6,167.93,closest_XBT_longitude,110°29.7′W,visually compared with the printed row
+IR07.T03,6,167.93,closest_XBT_time,22:46,visually compared with the printed row
+IR07.T03,6,167.93,date,9/10/89,visually compared with the printed row
+IR07.T03,6,167.93,latitude,3°01.00'S,visually compared with the printed row
+IR07.T03,6,167.93,longitude,110°29.58'W,visually compared with the printed row
+IR07.T03,6,167.93,rate,30,visually compared with the printed row
+IR07.T03,6,167.93,station,7,visually compared with the printed row
+IR07.T03,6,167.93,time_UTC,22:55,visually compared with the printed row
+IR07.T03,6,167.93,tow_number,7,visually compared with the printed row
+IR09.T02,8,182.28,cumulative_hours,9.3,visually compared with the printed row
+IR09.T02,8,182.28,depth_base_string_mbsf,156.5,visually compared with the printed row
+IR09.T02,8,182.28,local_date,10,visually compared with the printed row
+IR09.T02,8,182.28,procedure,Broke into open hole by lowering stand; repeat section up to pipe,visually compared with the printed row
+IR09.T02,8,182.28,time,2120,visually compared with the printed row
+IR09.T07,28,232.34,core,9H,visually compared with the printed row
+IR09.T07,28,232.34,treatment_mT,"NRM, 10",visually compared with the printed row
+IR09.T08,30,219.82,core_section_interval_cm,"5H-2, 70",visually compared with the printed row
+IR09.T08,30,219.82,declination_deg,216.1,visually compared with the printed row
+IR09.T08,30,219.82,inclination_deg,-14.0,visually compared with the printed row
+IR09.T09,35,269.60,azimuthal_orientation_deg,357,visually compared with the printed row
+IR09.T09,35,269.60,core,18H,visually compared with the printed row
+IR09.T09,35,269.60,deviation_direction_deg,154,visually compared with the printed row
+IR09.T09,35,269.60,deviation_drift_deg,2.0,visually compared with the printed row
+IR09.T21,64,135.30,depth_mbsf,00.0-287.3,visually compared with the printed row
+IR09.T21,64,135.30,log_type,Gamma ray/U-Th-K,visually compared with the printed row
+IR09.T23,64,137.29,age_Ma,0,all rows and all populated fields collated against printed paleogeographic table
+IR09.T23,64,137.29,latitude_N,7.90,all rows and all populated fields collated against printed paleogeographic table
+IR09.T23,64,144.58,age_Ma,1,all rows and all populated fields collated against printed paleogeographic table
+IR09.T23,64,144.58,latitude_N,7.53,all rows and all populated fields collated against printed paleogeographic table
+IR09.T23,64,152.59,age_Ma,2,all rows and all populated fields collated against printed paleogeographic table
+IR09.T23,64,152.59,latitude_N,7.16,all rows and all populated fields collated against printed paleogeographic table
+IR09.T23,64,160.60,age_Ma,3,all rows and all populated fields collated against printed paleogeographic table
+IR09.T23,64,160.60,latitude_N,6.79,all rows and all populated fields collated against printed paleogeographic table
+IR09.T23,64,168.61,age_Ma,4,all rows and all populated fields collated against printed paleogeographic table
+IR09.T23,64,168.61,latitude_N,6.43,all rows and all populated fields collated against printed paleogeographic table
+IR09.T23,64,176.71,age_Ma,5,all rows and all populated fields collated against printed paleogeographic table
+IR09.T23,64,176.71,latitude_N,6.07,all rows and all populated fields collated against printed paleogeographic table
+IR09.T23,64,184.72,age_Ma,6,all rows and all populated fields collated against printed paleogeographic table
+IR09.T23,64,184.72,latitude_N,5.72,all rows and all populated fields collated against printed paleogeographic table
+IR09.T23,64,192.73,age_Ma,7,all rows and all populated fields collated against printed paleogeographic table
+IR09.T23,64,192.73,latitude_N,5.37,all rows and all populated fields collated against printed paleogeographic table
+IR09.T23,64,200.74,age_Ma,8,all rows and all populated fields collated against printed paleogeographic table
+IR09.T23,64,200.74,latitude_N,5.02,all rows and all populated fields collated against printed paleogeographic table
+IR09.T23,64,208.84,age_Ma,9,all rows and all populated fields collated against printed paleogeographic table
+IR09.T23,64,208.84,latitude_N,4.68,all rows and all populated fields collated against printed paleogeographic table
+IR09.T23,64,216.76,age_Ma,10,all rows and all populated fields collated against printed paleogeographic table
+IR09.T23,64,216.76,latitude_N,4.34,all rows and all populated fields collated against printed paleogeographic table
+IR09.T23,64,224.68,age_Ma,11,all rows and all populated fields collated against printed paleogeographic table
+IR09.T23,64,224.68,latitude_N,4.00,all rows and all populated fields collated against printed paleogeographic table
+IR09.T23,64,232.78,age_Ma,12,all rows and all populated fields collated against printed paleogeographic table
+IR09.T23,64,232.78,latitude_N,3.67,all rows and all populated fields collated against printed paleogeographic table
+IR09.T23,64,240.88,age_Ma,13,all rows and all populated fields collated against printed paleogeographic table
+IR09.T23,64,240.88,latitude_N,3.34,all rows and all populated fields collated against printed paleogeographic table
+IR09.T23,64,248.80,age_Ma,14,all rows and all populated fields collated against printed paleogeographic table
+IR09.T23,64,248.80,latitude_N,3.02,all rows and all populated fields collated against printed paleogeographic table
+IR09.T23,64,256.81,age_Ma,15,all rows and all populated fields collated against printed paleogeographic table
+IR09.T23,64,256.81,latitude_N,2.71,all rows and all populated fields collated against printed paleogeographic table
+IR09.T23,64,264.82,age_Ma,16,all rows and all populated fields collated against printed paleogeographic table
+IR09.T23,64,264.82,latitude_N,2.39,all rows and all populated fields collated against printed paleogeographic table
+IR09.T23,64,272.83,age_Ma,17,all rows and all populated fields collated against printed paleogeographic table
+IR09.T23,64,272.83,latitude_N,2.08,all rows and all populated fields collated against printed paleogeographic table
+IR10.T02,8,191.38,cumulative_hours,8.7,visually compared with the printed row
+IR10.T02,8,191.38,local_date,15,visually compared with the printed row
+IR10.T02,8,191.38,remarks,Geophys. tool string at wellhead.,visually compared with the printed row
+IR10.T02,8,191.38,time,1700,visually compared with the printed row
+IR10.T06,28,166.99,MAD,3.3,visually compared with the printed row
+IR10.T06,28,166.99,N,7,visually compared with the printed row
+IR10.T06,28,166.99,declination_deg,105.2,visually compared with the printed row
+IR10.T06,28,166.99,inclination_deg,-5.1,visually compared with the printed row
+IR10.T06,28,166.99,sample_interval_cm,"7H-4, 90-92",visually compared with the printed row
+IR10.T07,29,286.46,azimuthal_orientation_deg,125,visually compared with the printed row
+IR10.T07,29,286.46,core,22H,visually compared with the printed row
+IR10.T07,29,286.46,deviation_from_north_deg,038,visually compared with the printed row
+IR10.T07,29,286.46,vertical_drift_deg,1.0,visually compared with the printed row
+IR10.T15,51,691.56,dry_water_content_avg,225.5,visually compared with the printed row
+IR10.T15,51,691.56,dry_water_content_range,153.4-407.7,visually compared with the printed row
+IR10.T15,51,691.56,grain_density_avg,2.60,visually compared with the printed row
+IR10.T15,51,691.56,grain_density_range,2.29-2.89,visually compared with the printed row
+IR10.T15,51,691.56,porosity_avg,84.3,visually compared with the printed row
+IR10.T15,51,691.56,porosity_range,73.7-91.6,visually compared with the printed row
+IR10.T15,51,691.56,unit,Physical properties Subunit IIA,visually compared with the printed row
+IR10.T15,51,691.56,wet_bulk_density_avg,1.26,visually compared with the printed row
+IR10.T15,51,691.56,wet_bulk_density_range,1.18-1.35,visually compared with the printed row
+IR10.T20,58,148.54,depth_mbsf,0-281.2,visually compared with the printed row
+IR10.T20,58,148.54,log_type,U-Th-K,visually compared with the printed row
+IR10.T21,58,671.44,property,Gamma-ray (API units),visually compared with the printed row
+IR10.T21,58,671.44,unit_III_mean,4.11,visually compared with the printed row
+IR10.T21,58,671.44,unit_III_sd,0.928,visually compared with the printed row
+IR10.T21,58,671.44,unit_II_mean,4.71,visually compared with the printed row
+IR10.T21,58,671.44,unit_II_sd,0.796,visually compared with the printed row
+IR10.T21,58,671.44,unit_I_mean,8.68,visually compared with the printed row
+IR10.T21,58,671.44,unit_I_sd,2.28,visually compared with the printed row
+IR10.T22,59,112.02,log_unit,1,all printed body rows collated including empty cells
+IR10.T22,59,112.02,parameter_equation,FF = 0.94 F^−1.45,all printed body rows collated including empty cells
+IR10.T22,59,119.17,log_unit,2,all printed body rows collated including empty cells
+IR10.T22,59,119.17,parameter_equation,FF = 1.01 F^−1.69,all printed body rows collated including empty cells
+IR10.T22,59,127.77,log_unit,3,all printed body rows collated including empty cells
+IR10.T22,59,127.77,parameter_equation,FF = 1.39 F^−1.13,all printed body rows collated including empty cells
+IR10.T23,59,254.76,depth_mbsf,140-203,visually compared with the printed row
+IR10.T23,59,254.76,log_density_minus_GRAPE,-0.005 ± 0.034,visually compared with the printed row
+IR10.T23,59,254.76,log_density_minus_gravimetric,0.073 ± 0.05,visually compared with the printed row
+IR10.T25,63,488.45,age_Ma,0,all rows and all populated fields collated against printed paleogeographic table
+IR10.T25,63,488.45,latitude_N,9.58,all rows and all populated fields collated against printed paleogeographic table
+IR10.T25,63,496.34,age_Ma,1,all rows and all populated fields collated against printed paleogeographic table
+IR10.T25,63,496.34,latitude_N,9.38,all rows and all populated fields collated against printed paleogeographic table
+IR10.T25,63,504.26,age_Ma,2,all rows and all populated fields collated against printed paleogeographic table
+IR10.T25,63,504.26,latitude_N,9.07,all rows and all populated fields collated against printed paleogeographic table
+IR10.T25,63,512.36,age_Ma,3,all rows and all populated fields collated against printed paleogeographic table
+IR10.T25,63,512.36,latitude_N,8.76,all rows and all populated fields collated against printed paleogeographic table
+IR10.T25,63,520.28,age_Ma,4,all rows and all populated fields collated against printed paleogeographic table
+IR10.T25,63,520.28,latitude_N,8.46,all rows and all populated fields collated against printed paleogeographic table
+IR10.T25,63,528.20,age_Ma,5,all rows and all populated fields collated against printed paleogeographic table
+IR10.T25,63,528.20,latitude_N,8.16,all rows and all populated fields collated against printed paleogeographic table
+IR10.T25,63,536.30,age_Ma,6,all rows and all populated fields collated against printed paleogeographic table
+IR10.T25,63,536.30,latitude_N,7.86,all rows and all populated fields collated against printed paleogeographic table
+IR10.T25,63,544.22,age_Ma,7,all rows and all populated fields collated against printed paleogeographic table
+IR10.T25,63,544.22,latitude_N,7.56,all rows and all populated fields collated against printed paleogeographic table
+IR10.T25,63,552.23,age_Ma,8,all rows and all populated fields collated against printed paleogeographic table
+IR10.T25,63,552.23,latitude_N,7.27,all rows and all populated fields collated against printed paleogeographic table
+IR10.T25,63,560.33,age_Ma,9,all rows and all populated fields collated against printed paleogeographic table
+IR10.T25,63,560.33,latitude_N,6.98,all rows and all populated fields collated against printed paleogeographic table
+IR10.T25,63,568.34,age_Ma,10,all rows and all populated fields collated against printed paleogeographic table
+IR10.T25,63,568.34,latitude_N,6.70,all rows and all populated fields collated against printed paleogeographic table
+IR10.T25,63,576.26,age_Ma,11,all rows and all populated fields collated against printed paleogeographic table
+IR10.T25,63,576.26,latitude_N,6.42,all rows and all populated fields collated against printed paleogeographic table
+IR10.T25,63,584.36,age_Ma,12,all rows and all populated fields collated against printed paleogeographic table
+IR10.T25,63,584.36,latitude_N,6.14,all rows and all populated fields collated against printed paleogeographic table
+IR10.T25,63,592.37,age_Ma,13,all rows and all populated fields collated against printed paleogeographic table
+IR10.T25,63,592.37,latitude_N,5.87,all rows and all populated fields collated against printed paleogeographic table
+IR10.T25,63,600.38,age_Ma,14,all rows and all populated fields collated against printed paleogeographic table
+IR10.T25,63,600.38,latitude_N,5.60,all rows and all populated fields collated against printed paleogeographic table
+IR10.T25,63,608.48,age_Ma,15,all rows and all populated fields collated against printed paleogeographic table
+IR10.T25,63,608.48,latitude_N,5.33,all rows and all populated fields collated against printed paleogeographic table
+IR10.T25,63,616.31,age_Ma,16,all rows and all populated fields collated against printed paleogeographic table
+IR10.T25,63,616.31,latitude_N,5.07,all rows and all populated fields collated against printed paleogeographic table
+IR10.T25,63,624.32,age_Ma,17,all rows and all populated fields collated against printed paleogeographic table
+IR10.T25,63,624.32,latitude_N,4.81,all rows and all populated fields collated against printed paleogeographic table
+IR12.T02,13,244.14,base_string_mbsf,247.2,visually compared with the printed row
+IR12.T02,13,244.14,cumulative_hours,11.1,visually compared with the printed row
+IR12.T02,13,244.14,local_date,29 May 1991,visually compared with the printed row
+IR12.T02,13,244.14,remarks,At TD; heave compensator on;,visually compared with the printed row
+IR12.T02,13,244.14,time,10:46,visually compared with the printed row
+IR12.T18,38,133.88,depth_mbsf,0-243.0,visually compared with the printed row
+IR12.T18,38,133.88,log_type,Gamma ray/U-Th-K,visually compared with the printed row
+IR12.T19,42,164.12,property,Intermediate resistivity (ohm-m),visually compared with the printed row
+IR12.T19,42,164.12,transition_mean,0.429,visually compared with the printed row
+IR12.T19,42,164.12,transition_sd,0.029,visually compared with the printed row
+IR12.T19,42,164.12,unit_II_mean,0.384,visually compared with the printed row
+IR12.T19,42,164.12,unit_II_sd,0.027,visually compared with the printed row
+IR12.T19,42,164.12,unit_I_mean,0.443,visually compared with the printed row
+IR12.T19,42,164.12,unit_I_sd,0.032,visually compared with the printed row
+IR12.T20,42,322.52,depth_mbsf_and_position,232.9 U,visually compared with the printed row
+IR12.T20,42,322.52,parameter,Intermediate,visually compared with the printed row
+IR12.T20,42,322.52,value,0.43 ohm-m,visually compared with the printed row
+IR12.T22,47,579.38,age_Ma,1,all rows and all populated fields collated against printed paleogeographic table
+IR12.T22,47,579.38,latitude_S,0.24,all rows and all populated fields collated against printed paleogeographic table
+IR12.T22,47,579.38,longitude_W,96.01,all rows and all populated fields collated against printed paleogeographic table
+IR12.T22,47,586.22,age_Ma,2,all rows and all populated fields collated against printed paleogeographic table
+IR12.T22,47,586.22,latitude_S,0.28,all rows and all populated fields collated against printed paleogeographic table
+IR12.T22,47,586.22,longitude_W,96.72,all rows and all populated fields collated against printed paleogeographic table
+IR12.T22,47,592.70,age_Ma,3,all rows and all populated fields collated against printed paleogeographic table
+IR12.T22,47,592.70,latitude_S,0.32,all rows and all populated fields collated against printed paleogeographic table
+IR12.T22,47,592.70,longitude_W,97.43,all rows and all populated fields collated against printed paleogeographic table
+IR12.T22,47,599.18,age_Ma,4,all rows and all populated fields collated against printed paleogeographic table
+IR12.T22,47,599.18,latitude_S,0.36,all rows and all populated fields collated against printed paleogeographic table
+IR12.T22,47,599.18,longitude_W,98.14,all rows and all populated fields collated against printed paleogeographic table
+IR12.T22,47,606.02,age_Ma,5,all rows and all populated fields collated against printed paleogeographic table
+IR12.T22,47,606.02,latitude_S,0.41,all rows and all populated fields collated against printed paleogeographic table
+IR12.T22,47,606.02,longitude_W,98.85,all rows and all populated fields collated against printed paleogeographic table
+IR12.T22,47,612.50,age_Ma,6,all rows and all populated fields collated against printed paleogeographic table
+IR12.T22,47,612.50,latitude_S,0.46,all rows and all populated fields collated against printed paleogeographic table
+IR12.T22,47,612.50,longitude_W,99.56,all rows and all populated fields collated against printed paleogeographic table
+IR12.T22,47,618.98,age_Ma,7,all rows and all populated fields collated against printed paleogeographic table
+IR12.T22,47,618.98,latitude_S,0.52,all rows and all populated fields collated against printed paleogeographic table
+IR12.T22,47,618.98,longitude_W,100.27,all rows and all populated fields collated against printed paleogeographic table
+IR13.T02,7,448.70,base_string_mbsf,94.5,visually compared with the printed row
+IR13.T02,7,448.70,cumulative_hours,3.6,visually compared with the printed row
+IR13.T02,7,448.70,local_date,5,visually compared with the printed row
+IR13.T02,7,448.70,remarks,At TD; heave comp. left off; calibrate while moving up slowly.,visually compared with the printed row
+IR13.T02,7,448.70,time,0935,visually compared with the printed row
+IR13.T06,29,488.94,azimuthal_orientation_deg,215,visually compared with the printed row
+IR13.T06,29,488.94,core,2H,visually compared with the printed row
+IR13.T11,41,332.98,change_pct,14,visually compared with the printed row
+IR13.T11,41,332.98,measurable_change,Yes,visually compared with the printed row
+IR13.T11,41,332.98,parameter,Silica,visually compared with the printed row
+IR13.T11,41,332.98,precision_pct,3,visually compared with the printed row
+IR13.T11,41,332.98,range,766-888,visually compared with the printed row
+IR13.T11,41,332.98,units,(µM),visually compared with the printed row
+IR13.T19,53,600.62,core_section_interval_cm,"138-848B-1H-1, 145–150",all printed body rows collated including empty cells
+IR13.T19,53,600.62,depth_mbsf,1.45,all printed body rows collated including empty cells
+IR13.T19,53,600.62,methane_uL_L,1.2,all printed body rows collated including empty cells
+IR13.T19,53,608.72,core_section_interval_cm,"2H-6, 145–150",all printed body rows collated including empty cells
+IR13.T19,53,608.72,depth_mbsf,11.45,all printed body rows collated including empty cells
+IR13.T19,53,608.72,methane_uL_L,2.4,all printed body rows collated including empty cells
+IR13.T19,53,616.64,core_section_interval_cm,"3H-6, 145–150",all printed body rows collated including empty cells
+IR13.T19,53,616.64,depth_mbsf,20.65,all printed body rows collated including empty cells
+IR13.T19,53,616.64,methane_uL_L,2.5,all printed body rows collated including empty cells
+IR13.T19,53,624.56,core_section_interval_cm,"4H-6, 145–150",all printed body rows collated including empty cells
+IR13.T19,53,624.56,depth_mbsf,30.15,all printed body rows collated including empty cells
+IR13.T19,53,624.56,methane_uL_L,1.0,all printed body rows collated including empty cells
+IR13.T19,53,632.66,core_section_interval_cm,"5H-6, 145–150",all printed body rows collated including empty cells
+IR13.T19,53,632.66,depth_mbsf,39.65,all printed body rows collated including empty cells
+IR13.T19,53,632.66,methane_uL_L,0.4,all printed body rows collated including empty cells
+IR13.T19,53,640.76,core_section_interval_cm,"6H-6, 145–150",all printed body rows collated including empty cells
+IR13.T19,53,640.76,depth_mbsf,49.15,all printed body rows collated including empty cells
+IR13.T19,53,640.76,methane_uL_L,1.6,all printed body rows collated including empty cells
+IR13.T19,53,648.68,core_section_interval_cm,"7H-6, 145–150",all printed body rows collated including empty cells
+IR13.T19,53,648.68,depth_mbsf,58.65,all printed body rows collated including empty cells
+IR13.T19,53,648.68,methane_uL_L,1.2,all printed body rows collated including empty cells
+IR13.T19,53,656.60,core_section_interval_cm,"8H-7, 0–5",all printed body rows collated including empty cells
+IR13.T19,53,656.60,depth_mbsf,68.20,all printed body rows collated including empty cells
+IR13.T19,53,656.60,methane_uL_L,1.5,all printed body rows collated including empty cells
+IR13.T19,53,664.70,core_section_interval_cm,"9H-6, 145–150",all printed body rows collated including empty cells
+IR13.T19,53,664.70,depth_mbsf,77.65,all printed body rows collated including empty cells
+IR13.T19,53,664.70,methane_uL_L,0.0,all printed body rows collated including empty cells
+IR13.T19,53,672.80,core_section_interval_cm,"10H-6, 145–150",all printed body rows collated including empty cells
+IR13.T19,53,672.80,depth_mbsf,87.15,all printed body rows collated including empty cells
+IR13.T19,53,672.80,methane_uL_L,3.1,all printed body rows collated including empty cells
+IR13.T19,53,680.72,core_section_interval_cm,"11H-3, 145–150",all printed body rows collated including empty cells
+IR13.T19,53,680.72,depth_mbsf,92.15,all printed body rows collated including empty cells
+IR13.T19,53,680.72,methane_uL_L,4.5,all printed body rows collated including empty cells
+IR13.T24,54,561.25,age_Ma,4.73,visually compared with the printed row
+IR13.T24,54,561.25,depth_mbsf,44.50,visually compared with the printed row
+IR13.T24,54,561.25,depth_mcd,50.20,visually compared with the printed row
+IR13.T24,54,561.25,synthetic_depth_m,44.50,visually compared with the printed row
+IR13.T24,54,561.25,traveltime_s,0.059,visually compared with the printed row
+IR13.T25,55,509.32,age_Ma,1,all rows and all populated fields collated against printed paleogeographic table
+IR13.T25,55,509.32,latitude_S,3.25,all rows and all populated fields collated against printed paleogeographic table
+IR13.T25,55,509.32,longitude_W,109.72,all rows and all populated fields collated against printed paleogeographic table
+IR13.T25,55,517.42,age_Ma,2,all rows and all populated fields collated against printed paleogeographic table
+IR13.T25,55,517.42,latitude_S,3.50,all rows and all populated fields collated against printed paleogeographic table
+IR13.T25,55,517.42,longitude_W,108.95,all rows and all populated fields collated against printed paleogeographic table
+IR13.T25,55,525.16,age_Ma,3,all rows and all populated fields collated against printed paleogeographic table
+IR13.T25,55,525.16,latitude_S,3.75,all rows and all populated fields collated against printed paleogeographic table
+IR13.T25,55,525.16,longitude_W,108.17,all rows and all populated fields collated against printed paleogeographic table
+IR13.T25,55,533.20,age_Ma,4,all rows and all populated fields collated against printed paleogeographic table
+IR13.T25,55,533.20,latitude_S,3.99,all rows and all populated fields collated against printed paleogeographic table
+IR13.T25,55,533.20,longitude_W,107.39,all rows and all populated fields collated against printed paleogeographic table
+IR13.T25,55,541.36,age_Ma,5,all rows and all populated fields collated against printed paleogeographic table
+IR13.T25,55,541.36,latitude_S,4.23,all rows and all populated fields collated against printed paleogeographic table
+IR13.T25,55,541.36,longitude_W,106.61,all rows and all populated fields collated against printed paleogeographic table
+IR13.T25,55,549.28,age_Ma,6,all rows and all populated fields collated against printed paleogeographic table
+IR13.T25,55,549.28,latitude_S,4.47,all rows and all populated fields collated against printed paleogeographic table
+IR13.T25,55,549.28,longitude_W,105.83,all rows and all populated fields collated against printed paleogeographic table
+IR13.T25,55,557.20,age_Ma,7,all rows and all populated fields collated against printed paleogeographic table
+IR13.T25,55,557.20,latitude_S,4.71,all rows and all populated fields collated against printed paleogeographic table
+IR13.T25,55,557.20,longitude_W,105.05,all rows and all populated fields collated against printed paleogeographic table
+IR13.T25,55,565.30,age_Ma,8,all rows and all populated fields collated against printed paleogeographic table
+IR13.T25,55,565.30,latitude_S,4.94,all rows and all populated fields collated against printed paleogeographic table
+IR13.T25,55,565.30,longitude_W,104.27,all rows and all populated fields collated against printed paleogeographic table
+IR13.T25,55,573.40,age_Ma,9,all rows and all populated fields collated against printed paleogeographic table
+IR13.T25,55,573.40,latitude_S,5.17,all rows and all populated fields collated against printed paleogeographic table
+IR13.T25,55,573.40,longitude_W,103.48,all rows and all populated fields collated against printed paleogeographic table
+IR13.T25,55,581.50,age_Ma,10,all rows and all populated fields collated against printed paleogeographic table
+IR13.T25,55,581.50,latitude_S,5.39,all rows and all populated fields collated against printed paleogeographic table
+IR13.T25,55,581.50,longitude_W,102.70,all rows and all populated fields collated against printed paleogeographic table
+IR14.T02,9,432.78,comments,Geophysical tool string at wellhead,visually compared with the printed row
+IR14.T02,9,432.78,cumulative_hours,9.3,visually compared with the printed row
+IR14.T02,9,432.78,local_date,9,visually compared with the printed row
+IR14.T02,9,432.78,time,23:35,visually compared with the printed row
+IR14.T18,48,428.36,depth_mbsf,48.7-327.9,visually compared with the printed row
+IR14.T18,48,428.36,log_type,Sonic waveforms,visually compared with the printed row
+IR14.T19,52,629.69,high_carbonate_120_136_mbsf,1.62 ±0.052,visually compared with the printed row
+IR14.T19,52,629.69,high_carbonate_240_304_mbsf,1.73 ±0.058,visually compared with the printed row
+IR14.T19,52,629.69,log_subunit_IA,1.53 ± .047,visually compared with the printed row
+IR14.T19,52,629.69,log_subunit_IB,1.67 ±0.063,visually compared with the printed row
+IR14.T19,52,629.69,property,Velocity (km/s),visually compared with the printed row
+IR14.T20,53,672.70,density_minus_GRAPE_mean,-0.0043,visually compared with the printed row
+IR14.T20,53,672.70,density_minus_GRAPE_sd,0.064,visually compared with the printed row
+IR14.T20,53,672.70,density_minus_gravimetric_mean,0.041,visually compared with the printed row
+IR14.T20,53,672.70,density_minus_gravimetric_sd,0.061,visually compared with the printed row
+IR14.T20,53,672.70,unit,Subunit IB,visually compared with the printed row
+IR14.T22,56,518.70,age_Ma,1,all rows and all populated fields collated against printed paleogeographic table
+IR14.T22,56,518.70,latitude_S,0.15,all rows and all populated fields collated against printed paleogeographic table
+IR14.T22,56,518.70,longitude_W,109.74,all rows and all populated fields collated against printed paleogeographic table
+IR14.T22,56,526.62,age_Ma,2,all rows and all populated fields collated against printed paleogeographic table
+IR14.T22,56,526.62,latitude_S,0.40,all rows and all populated fields collated against printed paleogeographic table
+IR14.T22,56,526.62,longitude_W,108.97,all rows and all populated fields collated against printed paleogeographic table
+IR14.T22,56,534.72,age_Ma,3,all rows and all populated fields collated against printed paleogeographic table
+IR14.T22,56,534.72,latitude_S,0.65,all rows and all populated fields collated against printed paleogeographic table
+IR14.T22,56,534.72,longitude_W,108.20,all rows and all populated fields collated against printed paleogeographic table
+IR14.T22,56,542.64,age_Ma,4,all rows and all populated fields collated against printed paleogeographic table
+IR14.T22,56,542.64,latitude_S,0.89,all rows and all populated fields collated against printed paleogeographic table
+IR14.T22,56,542.64,longitude_W,107.44,all rows and all populated fields collated against printed paleogeographic table
+IR14.T22,56,550.74,age_Ma,5,all rows and all populated fields collated against printed paleogeographic table
+IR14.T22,56,550.74,latitude_S,1.13,all rows and all populated fields collated against printed paleogeographic table
+IR14.T22,56,550.74,longitude_W,106.67,all rows and all populated fields collated against printed paleogeographic table
+IR14.T22,56,558.48,age_Ma,6,all rows and all populated fields collated against printed paleogeographic table
+IR14.T22,56,558.48,latitude_S,1.37,all rows and all populated fields collated against printed paleogeographic table
+IR14.T22,56,558.48,longitude_W,105.90,all rows and all populated fields collated against printed paleogeographic table
+IR14.T22,56,566.58,age_Ma,7,all rows and all populated fields collated against printed paleogeographic table
+IR14.T22,56,566.58,latitude_S,1.61,all rows and all populated fields collated against printed paleogeographic table
+IR14.T22,56,566.58,longitude_W,105.13,all rows and all populated fields collated against printed paleogeographic table
+IR14.T22,56,574.44,age_Ma,8,all rows and all populated fields collated against printed paleogeographic table
+IR14.T22,56,574.44,latitude_S,1.84,all rows and all populated fields collated against printed paleogeographic table
+IR14.T22,56,574.44,longitude_W,104.36,all rows and all populated fields collated against printed paleogeographic table
+IR14.T22,56,582.60,age_Ma,9,all rows and all populated fields collated against printed paleogeographic table
+IR14.T22,56,582.60,latitude_S,2.07,all rows and all populated fields collated against printed paleogeographic table
+IR14.T22,56,582.60,longitude_W,103.59,all rows and all populated fields collated against printed paleogeographic table
+IR14.T22,56,590.64,age_Ma,10,all rows and all populated fields collated against printed paleogeographic table
+IR14.T22,56,590.64,latitude_S,2.30,all rows and all populated fields collated against printed paleogeographic table
+IR14.T22,56,590.64,longitude_W,102.82,all rows and all populated fields collated against printed paleogeographic table
+IR14.T22,56,598.62,age_Ma,11,all rows and all populated fields collated against printed paleogeographic table
+IR14.T22,56,598.62,latitude_S,2.52,all rows and all populated fields collated against printed paleogeographic table
+IR14.T22,56,598.62,longitude_W,102.04,all rows and all populated fields collated against printed paleogeographic table
+IR14.T22,56,606.72,age_Ma,12,all rows and all populated fields collated against printed paleogeographic table
+IR14.T22,56,606.72,latitude_S,2.74,all rows and all populated fields collated against printed paleogeographic table
+IR14.T22,56,606.72,longitude_W,101.27,all rows and all populated fields collated against printed paleogeographic table
+IR15.T02,13,173.38,base_string_mbsf,400.2,visually compared with the printed row
+IR15.T02,13,173.38,comments,At TD; no heave compensator; calibrate while moving up slowly,visually compared with the printed row
+IR15.T02,13,173.38,cumulative_hours,10.0,visually compared with the printed row
+IR15.T02,13,173.38,local_date,15,visually compared with the printed row
+IR15.T02,13,173.38,time,1615,visually compared with the printed row
+IR15.T07,26,164.66,azimuthal_orientation_deg,344,visually compared with the printed row
+IR15.T07,26,164.66,core,850B-4H,visually compared with the printed row
+IR15.T07,26,164.66,deviation_from_north_deg,300,visually compared with the printed row
+IR15.T07,26,164.66,vertical_drift_deg,3.2,visually compared with the printed row
+IR15.T23,51,134.60,depth_mbsf,00.0-388.5,visually compared with the printed row
+IR15.T23,51,134.60,log_type,Gamma ray/U-Th-K,visually compared with the printed row
+IR15.T25,51,111.21,age_Ma,1,all rows and all populated fields collated against printed paleogeographic table
+IR15.T25,51,111.21,latitude_signed_south_negative,0.75,all rows and all populated fields collated against printed paleogeographic table
+IR15.T25,51,111.21,longitude_W,109.24,all rows and all populated fields collated against printed paleogeographic table
+IR15.T25,51,119.31,age_Ma,2,all rows and all populated fields collated against printed paleogeographic table
+IR15.T25,51,119.31,latitude_signed_south_negative,0.50,all rows and all populated fields collated against printed paleogeographic table
+IR15.T25,51,119.31,longitude_W,108.48,all rows and all populated fields collated against printed paleogeographic table
+IR15.T25,51,127.23,age_Ma,3,all rows and all populated fields collated against printed paleogeographic table
+IR15.T25,51,127.23,latitude_signed_south_negative,0.26,all rows and all populated fields collated against printed paleogeographic table
+IR15.T25,51,127.23,longitude_W,107.71,all rows and all populated fields collated against printed paleogeographic table
+IR15.T25,51,135.33,age_Ma,4,all rows and all populated fields collated against printed paleogeographic table
+IR15.T25,51,135.33,latitude_signed_south_negative,0.01,all rows and all populated fields collated against printed paleogeographic table
+IR15.T25,51,135.33,longitude_W,106.95,all rows and all populated fields collated against printed paleogeographic table
+IR15.T25,51,143.43,age_Ma,5,all rows and all populated fields collated against printed paleogeographic table
+IR15.T25,51,143.43,latitude_signed_south_negative,-0.23,all rows and all populated fields collated against printed paleogeographic table
+IR15.T25,51,143.43,longitude_W,106.19,all rows and all populated fields collated against printed paleogeographic table
+IR15.T25,51,151.53,age_Ma,6,all rows and all populated fields collated against printed paleogeographic table
+IR15.T25,51,151.53,latitude_signed_south_negative,-0.46,all rows and all populated fields collated against printed paleogeographic table
+IR15.T25,51,151.53,longitude_W,105.42,all rows and all populated fields collated against printed paleogeographic table
+IR15.T25,51,159.63,age_Ma,7,all rows and all populated fields collated against printed paleogeographic table
+IR15.T25,51,159.63,latitude_signed_south_negative,-0.70,all rows and all populated fields collated against printed paleogeographic table
+IR15.T25,51,159.63,longitude_W,104.66,all rows and all populated fields collated against printed paleogeographic table
+IR15.T25,51,167.37,age_Ma,8,all rows and all populated fields collated against printed paleogeographic table
+IR15.T25,51,167.37,latitude_signed_south_negative,-0.93,all rows and all populated fields collated against printed paleogeographic table
+IR15.T25,51,167.37,longitude_W,103.89,all rows and all populated fields collated against printed paleogeographic table
+IR15.T25,51,175.47,age_Ma,9,all rows and all populated fields collated against printed paleogeographic table
+IR15.T25,51,175.47,latitude_signed_south_negative,-1.15,all rows and all populated fields collated against printed paleogeographic table
+IR15.T25,51,175.47,longitude_W,103.12,all rows and all populated fields collated against printed paleogeographic table
+IR15.T25,51,183.39,age_Ma,10,all rows and all populated fields collated against printed paleogeographic table
+IR15.T25,51,183.39,latitude_signed_south_negative,-1.38,all rows and all populated fields collated against printed paleogeographic table
+IR15.T25,51,183.39,longitude_W,102.35,all rows and all populated fields collated against printed paleogeographic table
+IR15.T25,51,191.31,age_Ma,11,all rows and all populated fields collated against printed paleogeographic table
+IR15.T25,51,191.31,latitude_signed_south_negative,-1.60,all rows and all populated fields collated against printed paleogeographic table
+IR15.T25,51,191.31,longitude_W,101.58,all rows and all populated fields collated against printed paleogeographic table
+IR15.T25,51,199.41,age_Ma,12,all rows and all populated fields collated against printed paleogeographic table
+IR15.T25,51,199.41,latitude_signed_south_negative,-1.82,all rows and all populated fields collated against printed paleogeographic table
+IR15.T25,51,199.41,longitude_W,100.81,all rows and all populated fields collated against printed paleogeographic table
+IR15.T25,51,207.51,age_Ma,13,all rows and all populated fields collated against printed paleogeographic table
+IR15.T25,51,207.51,latitude_signed_south_negative,-2.03,all rows and all populated fields collated against printed paleogeographic table
+IR15.T25,51,207.51,longitude_W,100.04,all rows and all populated fields collated against printed paleogeographic table
+IR15.T25,51,215.25,age_Ma,14,all rows and all populated fields collated against printed paleogeographic table
+IR15.T25,51,215.25,latitude_signed_south_negative,-2.24,all rows and all populated fields collated against printed paleogeographic table
+IR15.T25,51,215.25,longitude_W,99.26,all rows and all populated fields collated against printed paleogeographic table
+IR16.T02,9,466.70,cumulative_hours,8.8,visually compared with the printed row
+IR16.T02,9,466.70,local_date,18,visually compared with the printed row
+IR16.T02,9,466.70,remarks,RIH w/geochem. string (NGT/ACT/GST/TLT).,visually compared with the printed row
+IR16.T02,9,466.70,time,1710,visually compared with the printed row
+IR16.T07,32,277.50,azimuthal_orientation_deg,260,visually compared with the printed row
+IR16.T07,32,277.50,core,ᵃ2H,visually compared with the printed row
+IR16.T20,52,618.82,depth_mbsf,61.6-302.1,visually compared with the printed row
+IR16.T20,52,618.82,log_type,Sonic waveforms,visually compared with the printed row
+IR16.T21,53,151.42,property,Velocity (km/s):,visually compared with the printed row
+IR16.T21,53,151.42,subunit_IA,1.58 ± 0.048,visually compared with the printed row
+IR16.T21,53,151.42,subunit_IB,1.61 ± 0.045,visually compared with the printed row
+IR16.T21,53,151.42,subunit_IC,1.7 ± 0.053,visually compared with the printed row
+IR16.T23,56,538.69,age_Ma,1,all rows and all populated fields collated against printed paleogeographic table
+IR16.T23,56,538.69,latitude_signed_south_negative,2.55,all rows and all populated fields collated against printed paleogeographic table
+IR16.T23,56,538.69,longitude_W,109.85,all rows and all populated fields collated against printed paleogeographic table
+IR16.T23,56,546.61,age_Ma,2,all rows and all populated fields collated against printed paleogeographic table
+IR16.T23,56,546.61,latitude_signed_south_negative,2.30,all rows and all populated fields collated against printed paleogeographic table
+IR16.T23,56,546.61,longitude_W,109.09,all rows and all populated fields collated against printed paleogeographic table
+IR16.T23,56,554.53,age_Ma,3,all rows and all populated fields collated against printed paleogeographic table
+IR16.T23,56,554.53,latitude_signed_south_negative,2.05,all rows and all populated fields collated against printed paleogeographic table
+IR16.T23,56,554.53,longitude_W,108.33,all rows and all populated fields collated against printed paleogeographic table
+IR16.T23,56,562.63,age_Ma,4,all rows and all populated fields collated against printed paleogeographic table
+IR16.T23,56,562.63,latitude_signed_south_negative,1.81,all rows and all populated fields collated against printed paleogeographic table
+IR16.T23,56,562.63,longitude_W,107.58,all rows and all populated fields collated against printed paleogeographic table
+IR16.T23,56,570.73,age_Ma,5,all rows and all populated fields collated against printed paleogeographic table
+IR16.T23,56,570.73,latitude_signed_south_negative,1.56,all rows and all populated fields collated against printed paleogeographic table
+IR16.T23,56,570.73,longitude_W,106.82,all rows and all populated fields collated against printed paleogeographic table
+IR16.T23,56,578.47,age_Ma,6,all rows and all populated fields collated against printed paleogeographic table
+IR16.T23,56,578.47,latitude_signed_south_negative,1.32,all rows and all populated fields collated against printed paleogeographic table
+IR16.T23,56,578.47,longitude_W,106.06,all rows and all populated fields collated against printed paleogeographic table
+IR16.T23,56,586.75,age_Ma,7,all rows and all populated fields collated against printed paleogeographic table
+IR16.T23,56,586.75,latitude_signed_south_negative,1.09,all rows and all populated fields collated against printed paleogeographic table
+IR16.T23,56,586.75,longitude_W,105.30,all rows and all populated fields collated against printed paleogeographic table
+IR16.T23,56,594.67,age_Ma,8,all rows and all populated fields collated against printed paleogeographic table
+IR16.T23,56,594.67,latitude_signed_south_negative,0.86,all rows and all populated fields collated against printed paleogeographic table
+IR16.T23,56,594.67,longitude_W,104.54,all rows and all populated fields collated against printed paleogeographic table
+IR16.T23,56,602.59,age_Ma,9,all rows and all populated fields collated against printed paleogeographic table
+IR16.T23,56,602.59,latitude_signed_south_negative,0.63,all rows and all populated fields collated against printed paleogeographic table
+IR16.T23,56,602.59,longitude_W,103.78,all rows and all populated fields collated against printed paleogeographic table
+IR16.T23,56,610.69,age_Ma,10,all rows and all populated fields collated against printed paleogeographic table
+IR16.T23,56,610.69,latitude_signed_south_negative,0.40,all rows and all populated fields collated against printed paleogeographic table
+IR16.T23,56,610.69,longitude_W,103.02,all rows and all populated fields collated against printed paleogeographic table
+IR16.T23,56,618.61,age_Ma,11,all rows and all populated fields collated against printed paleogeographic table
+IR16.T23,56,618.61,latitude_signed_south_negative,0.17,all rows and all populated fields collated against printed paleogeographic table
+IR16.T23,56,618.61,longitude_W,102.26,all rows and all populated fields collated against printed paleogeographic table
+IR16.T23,56,626.53,age_Ma,12,all rows and all populated fields collated against printed paleogeographic table
+IR16.T23,56,626.53,latitude_signed_south_negative,-0.05,all rows and all populated fields collated against printed paleogeographic table
+IR16.T23,56,626.53,longitude_W,101.49,all rows and all populated fields collated against printed paleogeographic table
+IR16.T23,56,634.63,age_Ma,13,all rows and all populated fields collated against printed paleogeographic table
+IR16.T23,56,634.63,latitude_signed_south_negative,-0.26,all rows and all populated fields collated against printed paleogeographic table
+IR16.T23,56,634.63,longitude_W,100.73,all rows and all populated fields collated against printed paleogeographic table
+IR16.T23,56,642.55,age_Ma,14,all rows and all populated fields collated against printed paleogeographic table
+IR16.T23,56,642.55,latitude_signed_south_negative,-0.48,all rows and all populated fields collated against printed paleogeographic table
+IR16.T23,56,642.55,longitude_W,99.96,all rows and all populated fields collated against printed paleogeographic table
+IR16.T23,56,650.83,age_Ma,15,all rows and all populated fields collated against printed paleogeographic table
+IR16.T23,56,650.83,latitude_signed_south_negative,-0.69,all rows and all populated fields collated against printed paleogeographic table
+IR16.T23,56,650.83,longitude_W,99.20,all rows and all populated fields collated against printed paleogeographic table
+IR17.T02,7,626.70,base_string_mbsf,116.1,visually compared with the printed row
+IR17.T02,7,626.70,comments,At TD; heave comp. left off; run out 20 ft slack.,visually compared with the printed row
+IR17.T02,7,626.70,cumulative_hours,3.8,visually compared with the printed row
+IR17.T02,7,626.70,local_date,24,visually compared with the printed row
+IR17.T02,7,626.70,time,0750,visually compared with the printed row
+IR17.T03,9,624.59,age,Pleistocene to,all printed body rows collated including empty cells
+IR17.T03,9,624.59,depth_mbsf,"0–5.80, Hole 852A",all printed body rows collated including empty cells
+IR17.T03,9,624.59,lithology,Nannofossil foraminifer,all printed body rows collated including empty cells
+IR17.T03,9,624.59,range,138-852A-1H,all printed body rows collated including empty cells
+IR17.T03,9,632.51,age,late Pliocene,all printed body rows collated including empty cells
+IR17.T03,9,632.51,depth_mbsf,"0–42.25, Hole 852B",all printed body rows collated including empty cells
+IR17.T03,9,632.51,lithology,ooze and foraminifer,all printed body rows collated including empty cells
+IR17.T03,9,632.51,range,"138-852B-1H to 5H-4, 35 cm",all printed body rows collated including empty cells
+IR17.T03,9,640.43,age,,all printed body rows collated including empty cells
+IR17.T03,9,640.43,depth_mbsf,"0–41.50, Hole 852C",all printed body rows collated including empty cells
+IR17.T03,9,640.43,lithology,nannofossil ooze,all printed body rows collated including empty cells
+IR17.T03,9,640.43,range,"138-852C-1H to 5H-5, 100 cm",all printed body rows collated including empty cells
+IR17.T03,9,648.35,age,,all printed body rows collated including empty cells
+IR17.T03,9,648.35,depth_mbsf,"0–41.50, Hole 852C",all printed body rows collated including empty cells
+IR17.T03,9,648.35,lithology,,all printed body rows collated including empty cells
+IR17.T03,9,648.35,range,"138-852D-1H to 5H-2, 20 cm",all printed body rows collated including empty cells
+IR17.T03,9,664.55,age,late Pliocene to,all printed body rows collated including empty cells
+IR17.T03,9,664.55,depth_mbsf,"42–25–81.85, Hole 852B",all printed body rows collated including empty cells
+IR17.T03,9,664.55,lithology,Nannofossil ooze,all printed body rows collated including empty cells
+IR17.T03,9,664.55,range,"138-852B-5H-4, 35 cm to 9H-5, 46 cm",all printed body rows collated including empty cells
+IR17.T03,9,672.47,age,late Miocene,all printed body rows collated including empty cells
+IR17.T03,9,672.47,depth_mbsf,"41–50, Hole 852C",all printed body rows collated including empty cells
+IR17.T03,9,672.47,lithology,with foraminifers,all printed body rows collated including empty cells
+IR17.T03,9,672.47,range,"138-852C-5H-5, 100 cm to 9H-7, 65 cm",all printed body rows collated including empty cells
+IR17.T03,9,680.39,age,,all printed body rows collated including empty cells
+IR17.T03,9,680.39,depth_mbsf,"41–5–81.85, Hole 852D",all printed body rows collated including empty cells
+IR17.T03,9,680.39,lithology,,all printed body rows collated including empty cells
+IR17.T03,9,680.39,range,"138-852D-5H-2, 20 cm to 9H-2, 37 cm",all printed body rows collated including empty cells
+IR17.T03,9,696.41,age,late Miocene,all printed body rows collated including empty cells
+IR17.T03,9,696.41,depth_mbsf,"81–85–113.40, Hole 852B",all printed body rows collated including empty cells
+IR17.T03,9,696.41,lithology,Radiolarian,all printed body rows collated including empty cells
+IR17.T03,9,696.41,range,"138-852B-9H-5, 46 cm to 12H-CC",all printed body rows collated including empty cells
+IR17.T03,9,704.33,age,,all printed body rows collated including empty cells
+IR17.T03,9,704.33,depth_mbsf,"82–0–117.30, Hole 852C",all printed body rows collated including empty cells
+IR17.T03,9,704.33,lithology,nannofossil ooze,all printed body rows collated including empty cells
+IR17.T03,9,704.33,range,"138-852C-9H-7, 65 cm to 13X-CC",all printed body rows collated including empty cells
+IR17.T03,9,712.25,age,,all printed body rows collated including empty cells
+IR17.T03,9,712.25,depth_mbsf,"81–85–116.0, Hole 852D",all printed body rows collated including empty cells
+IR17.T03,9,712.25,lithology,with foraminifers,all printed body rows collated including empty cells
+IR17.T03,9,712.25,range,"138-852D-9H-2, 37 cm to 12H-CC",all printed body rows collated including empty cells
+IR17.T08,21,254.09,azimuthal_orientation_deg,065,visually compared with the printed row
+IR17.T08,21,254.09,core,ᵃ2H,visually compared with the printed row
+IR17.T20,37,706.59,depth_mbsf,0-101.3,visually compared with the printed row
+IR17.T20,37,706.59,log_type,Gamma-ray/U-Th-K,visually compared with the printed row
+IR17.T22,40,550.74,age_Ma,1,all rows and all populated fields collated against printed paleogeographic table
+IR17.T22,40,550.74,latitude_signed_south_negative,5.05,all rows and all populated fields collated against printed paleogeographic table
+IR17.T22,40,550.74,longitude_W,109.25,all rows and all populated fields collated against printed paleogeographic table
+IR17.T22,40,558.84,age_Ma,2,all rows and all populated fields collated against printed paleogeographic table
+IR17.T22,40,558.84,latitude_signed_south_negative,4.80,all rows and all populated fields collated against printed paleogeographic table
+IR17.T22,40,558.84,longitude_W,108.51,all rows and all populated fields collated against printed paleogeographic table
+IR17.T22,40,566.94,age_Ma,3,all rows and all populated fields collated against printed paleogeographic table
+IR17.T22,40,566.94,latitude_signed_south_negative,4.56,all rows and all populated fields collated against printed paleogeographic table
+IR17.T22,40,566.94,longitude_W,107.76,all rows and all populated fields collated against printed paleogeographic table
+IR17.T22,40,574.86,age_Ma,4,all rows and all populated fields collated against printed paleogeographic table
+IR17.T22,40,574.86,latitude_signed_south_negative,4.31,all rows and all populated fields collated against printed paleogeographic table
+IR17.T22,40,574.86,longitude_W,107.01,all rows and all populated fields collated against printed paleogeographic table
+IR17.T22,40,582.78,age_Ma,5,all rows and all populated fields collated against printed paleogeographic table
+IR17.T22,40,582.78,latitude_signed_south_negative,4.07,all rows and all populated fields collated against printed paleogeographic table
+IR17.T22,40,582.78,longitude_W,106.27,all rows and all populated fields collated against printed paleogeographic table
+IR17.T22,40,590.88,age_Ma,6,all rows and all populated fields collated against printed paleogeographic table
+IR17.T22,40,590.88,latitude_signed_south_negative,3.84,all rows and all populated fields collated against printed paleogeographic table
+IR17.T22,40,590.88,longitude_W,105.52,all rows and all populated fields collated against printed paleogeographic table
+IR17.T22,40,598.98,age_Ma,7,all rows and all populated fields collated against printed paleogeographic table
+IR17.T22,40,598.98,latitude_signed_south_negative,3.60,all rows and all populated fields collated against printed paleogeographic table
+IR17.T22,40,598.98,longitude_W,104.77,all rows and all populated fields collated against printed paleogeographic table
+IR17.T22,40,606.90,age_Ma,8,all rows and all populated fields collated against printed paleogeographic table
+IR17.T22,40,606.90,latitude_signed_south_negative,3.37,all rows and all populated fields collated against printed paleogeographic table
+IR17.T22,40,606.90,longitude_W,104.02,all rows and all populated fields collated against printed paleogeographic table
+IR17.T22,40,614.64,age_Ma,9,all rows and all populated fields collated against printed paleogeographic table
+IR17.T22,40,614.64,latitude_signed_south_negative,3.14,all rows and all populated fields collated against printed paleogeographic table
+IR17.T22,40,614.64,longitude_W,103.27,all rows and all populated fields collated against printed paleogeographic table
+IR17.T22,40,622.74,age_Ma,10,all rows and all populated fields collated against printed paleogeographic table
+IR17.T22,40,622.74,latitude_signed_south_negative,2.92,all rows and all populated fields collated against printed paleogeographic table
+IR17.T22,40,622.74,longitude_W,102.52,all rows and all populated fields collated against printed paleogeographic table
+IR17.T22,40,630.84,age_Ma,11,all rows and all populated fields collated against printed paleogeographic table
+IR17.T22,40,630.84,latitude_signed_south_negative,2.70,all rows and all populated fields collated against printed paleogeographic table
+IR17.T22,40,630.84,longitude_W,101.76,all rows and all populated fields collated against printed paleogeographic table
+IR17.T22,40,638.76,age_Ma,12,all rows and all populated fields collated against printed paleogeographic table
+IR17.T22,40,638.76,latitude_signed_south_negative,2.48,all rows and all populated fields collated against printed paleogeographic table
+IR17.T22,40,638.76,longitude_W,101.01,all rows and all populated fields collated against printed paleogeographic table
+IR17.T22,40,646.86,age_Ma,13,all rows and all populated fields collated against printed paleogeographic table
+IR17.T22,40,646.86,latitude_signed_south_negative,2.26,all rows and all populated fields collated against printed paleogeographic table
+IR17.T22,40,646.86,longitude_W,100.26,all rows and all populated fields collated against printed paleogeographic table
+IR17.T22,40,654.96,age_Ma,14,all rows and all populated fields collated against printed paleogeographic table
+IR17.T22,40,654.96,latitude_signed_south_negative,2.05,all rows and all populated fields collated against printed paleogeographic table
+IR17.T22,40,654.96,longitude_W,99.50,all rows and all populated fields collated against printed paleogeographic table
+IR17.T22,40,662.88,age_Ma,15,all rows and all populated fields collated against printed paleogeographic table
+IR17.T22,40,662.88,latitude_signed_south_negative,1.84,all rows and all populated fields collated against printed paleogeographic table
+IR17.T22,40,662.88,longitude_W,98.75,all rows and all populated fields collated against printed paleogeographic table
+IR18.T05,20,263.22,azimuthal_orientation_deg,162,visually compared with the printed row
+IR18.T05,20,263.22,core,138-853D-5H,visually compared with the printed row
+IR18.T05,20,263.22,deviation_from_north_deg,140,visually compared with the printed row
+IR18.T05,20,263.22,vertical_drift_deg,4.9,visually compared with the printed row
+IR18.T18,37,573.60,age_Ma,1,all rows and all populated fields collated against printed paleogeographic table
+IR18.T18,37,573.60,latitude_N,6.95,all rows and all populated fields collated against printed paleogeographic table
+IR18.T18,37,573.60,longitude_W,109.06,all rows and all populated fields collated against printed paleogeographic table
+IR18.T18,37,580.44,age_Ma,2,all rows and all populated fields collated against printed paleogeographic table
+IR18.T18,37,580.44,latitude_N,6.70,all rows and all populated fields collated against printed paleogeographic table
+IR18.T18,37,580.44,longitude_W,108.32,all rows and all populated fields collated against printed paleogeographic table
+IR18.T18,37,586.92,age_Ma,3,all rows and all populated fields collated against printed paleogeographic table
+IR18.T18,37,586.92,latitude_N,6.46,all rows and all populated fields collated against printed paleogeographic table
+IR18.T18,37,586.92,longitude_W,107.58,all rows and all populated fields collated against printed paleogeographic table
+IR18.T18,37,593.76,age_Ma,4,all rows and all populated fields collated against printed paleogeographic table
+IR18.T18,37,593.76,latitude_N,6.22,all rows and all populated fields collated against printed paleogeographic table
+IR18.T18,37,593.76,longitude_W,106.84,all rows and all populated fields collated against printed paleogeographic table
+IR18.T18,37,600.60,age_Ma,5,all rows and all populated fields collated against printed paleogeographic table
+IR18.T18,37,600.60,latitude_N,5.98,all rows and all populated fields collated against printed paleogeographic table
+IR18.T18,37,600.60,longitude_W,106.10,all rows and all populated fields collated against printed paleogeographic table
+IR18.T18,37,606.72,age_Ma,6,all rows and all populated fields collated against printed paleogeographic table
+IR18.T18,37,606.72,latitude_N,5.74,all rows and all populated fields collated against printed paleogeographic table
+IR18.T18,37,606.72,longitude_W,105.36,all rows and all populated fields collated against printed paleogeographic table
+IR18.T18,37,613.92,age_Ma,7,all rows and all populated fields collated against printed paleogeographic table
+IR18.T18,37,613.92,latitude_N,5.51,all rows and all populated fields collated against printed paleogeographic table
+IR18.T18,37,613.92,longitude_W,104.62,all rows and all populated fields collated against printed paleogeographic table
+IR18.T18,37,619.68,age_Ma,8,all rows and all populated fields collated against printed paleogeographic table
+IR18.T18,37,619.68,latitude_N,5.28,all rows and all populated fields collated against printed paleogeographic table
+IR18.T18,37,619.68,longitude_W,103.88,all rows and all populated fields collated against printed paleogeographic table
+IR18.T18,37,626.16,age_Ma,9,all rows and all populated fields collated against printed paleogeographic table
+IR18.T18,37,626.16,latitude_N,5.05,all rows and all populated fields collated against printed paleogeographic table
+IR18.T18,37,626.16,longitude_W,103.13,all rows and all populated fields collated against printed paleogeographic table
+IR18.T18,37,633.00,age_Ma,10,all rows and all populated fields collated against printed paleogeographic table
+IR18.T18,37,633.00,latitude_N,4.83,all rows and all populated fields collated against printed paleogeographic table
+IR18.T18,37,633.00,longitude_W,102.39,all rows and all populated fields collated against printed paleogeographic table
+IR18.T18,37,639.48,age_Ma,11,all rows and all populated fields collated against printed paleogeographic table
+IR18.T18,37,639.48,latitude_N,4.60,all rows and all populated fields collated against printed paleogeographic table
+IR18.T18,37,639.48,longitude_W,101.65,all rows and all populated fields collated against printed paleogeographic table
+IR18.T18,37,645.96,age_Ma,12,all rows and all populated fields collated against printed paleogeographic table
+IR18.T18,37,645.96,latitude_N,4.39,all rows and all populated fields collated against printed paleogeographic table
+IR18.T18,37,645.96,longitude_W,100.90,all rows and all populated fields collated against printed paleogeographic table
+IR18.T18,37,652.44,age_Ma,13,all rows and all populated fields collated against printed paleogeographic table
+IR18.T18,37,652.44,latitude_N,4.17,all rows and all populated fields collated against printed paleogeographic table
+IR18.T18,37,652.44,longitude_W,100.15,all rows and all populated fields collated against printed paleogeographic table
+IR19.T04,12,592.37,angle_deg,280,visually compared with the printed row
+IR19.T04,12,592.37,core,ᵃ854B-4H,visually compared with the printed row
+IR19.T15,27,629.96,age_Ma,1,all rows and all populated fields collated against printed paleogeographic table
+IR19.T15,27,629.96,latitude_N,10.95,all rows and all populated fields collated against printed paleogeographic table
+IR19.T15,27,629.96,longitude_W,108.78,all rows and all populated fields collated against printed paleogeographic table
+IR19.T15,27,636.98,age_Ma,2,all rows and all populated fields collated against printed paleogeographic table
+IR19.T15,27,636.98,latitude_N,10.70,all rows and all populated fields collated against printed paleogeographic table
+IR19.T15,27,636.98,longitude_W,108.05,all rows and all populated fields collated against printed paleogeographic table
+IR19.T15,27,643.46,age_Ma,3,all rows and all populated fields collated against printed paleogeographic table
+IR19.T15,27,643.46,latitude_N,10.46,all rows and all populated fields collated against printed paleogeographic table
+IR19.T15,27,643.46,longitude_W,107.33,all rows and all populated fields collated against printed paleogeographic table
+IR19.T15,27,649.94,age_Ma,4,all rows and all populated fields collated against printed paleogeographic table
+IR19.T15,27,649.94,latitude_N,10.22,all rows and all populated fields collated against printed paleogeographic table
+IR19.T15,27,649.94,longitude_W,106.60,all rows and all populated fields collated against printed paleogeographic table
+IR19.T15,27,656.42,age_Ma,5,all rows and all populated fields collated against printed paleogeographic table
+IR19.T15,27,656.42,latitude_N,9.98,all rows and all populated fields collated against printed paleogeographic table
+IR19.T15,27,656.42,longitude_W,105.88,all rows and all populated fields collated against printed paleogeographic table
+IR19.T15,27,662.90,age_Ma,6,all rows and all populated fields collated against printed paleogeographic table
+IR19.T15,27,662.90,latitude_N,9.75,all rows and all populated fields collated against printed paleogeographic table
+IR19.T15,27,662.90,longitude_W,105.15,all rows and all populated fields collated against printed paleogeographic table
+IR19.T15,27,669.74,age_Ma,7,all rows and all populated fields collated against printed paleogeographic table
+IR19.T15,27,669.74,latitude_N,9.51,all rows and all populated fields collated against printed paleogeographic table
+IR19.T15,27,669.74,longitude_W,104.43,all rows and all populated fields collated against printed paleogeographic table
+IR19.T15,27,675.86,age_Ma,8,all rows and all populated fields collated against printed paleogeographic table
+IR19.T15,27,675.86,latitude_N,9.28,all rows and all populated fields collated against printed paleogeographic table
+IR19.T15,27,675.86,longitude_W,103.70,all rows and all populated fields collated against printed paleogeographic table
+IR19.T15,27,682.34,age_Ma,9,all rows and all populated fields collated against printed paleogeographic table
+IR19.T15,27,682.34,latitude_N,9.06,all rows and all populated fields collated against printed paleogeographic table
+IR19.T15,27,682.34,longitude_W,102.98,all rows and all populated fields collated against printed paleogeographic table

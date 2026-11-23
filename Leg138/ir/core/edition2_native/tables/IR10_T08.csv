@@ -1,0 +1,95 @@
+item_id,site,source_path,source_line,verification_flags,reported_hole,context_line,reported_core_prefix,core_section,interval_cm,depth_mbsf,depth_mcd,interpretation,age_ma,comments,unresolved_source_fragment,raw_source_line
+IR10.T08,845,VOLUME/DATA/TABLES/CHAP_10/TABLE.8,10,,845A,9,138-845A-6H-,3,120,49.80,53.88,Kaena (t),2.92,,,3 120         49.80        53.88       Kaena (t)                  2.92      
+IR10.T08,845,VOLUME/DATA/TABLES/CHAP_10/TABLE.8,11,,845A,9,,6H-4,80,50.90,54.98,Kaena (o),2.99,,,6H-4 80       50.90        54.98       Kaena (o)                  2.99      
+IR10.T08,845,VOLUME/DATA/TABLES/CHAP_10/TABLE.8,12,,845A,9,,6H-5,30,51.90,55.98,Mammoth (t),3.08,,,6H-5 30       51.90        55.98       Mammoth (t)                3.08      
+IR10.T08,845,VOLUME/DATA/TABLES/CHAP_10/TABLE.8,13,,845A,9,,6H-6,20,53.30,57.38,Mammoth (o),3.18,,,6H-6 20       53.30        57.38       Mammoth (o)                3.18      
+IR10.T08,845,VOLUME/DATA/TABLES/CHAP_10/TABLE.8,14,,845A,9,,7H-4,110,60.70,65.56,Cochiti (t),3.88,,,7H-4 110      60.70        65.56       Cochiti (t)                3.88      
+IR10.T08,845,VOLUME/DATA/TABLES/CHAP_10/TABLE.8,15,,845A,9,,7H-5,110,62.20,67.06,Cochiti (0),3.97,,,7H-5 110      62.20        67.06       Cochiti (0)                3.97      
+IR10.T08,845,VOLUME/DATA/TABLES/CHAP_10/TABLE.8,16,,845A,9,,7H-6,100,63.60,68.46,Nunivak (t),4.10,,,7H-6 100      63.60        68.46       Nunivak (t)                4.10      
+IR10.T08,845,VOLUME/DATA/TABLES/CHAP_10/TABLE.8,17,,845A,9,,8H-1,70,65.30,71.60,Sijdufjall (t),4.40,,,8H-1 70       65.30        71.60       Sijdufjall (t)             4.40      
+IR10.T08,845,VOLUME/DATA/TABLES/CHAP_10/TABLE.8,18,,845A,9,,8H-1,115,65.75,72.05,Sijdufjall (o),4.47,,,8H-1 115      65.75        72.05       Sijdufjall (o)             4.47      
+IR10.T08,845,VOLUME/DATA/TABLES/CHAP_10/TABLE.8,19,,845A,9,,8H-2,90,67.00,73.30,Thvera (t),4.57,,,8H-2 90       67.00        73.30       Thvera (t)                 4.57      
+IR10.T08,845,VOLUME/DATA/TABLES/CHAP_10/TABLE.8,20,,845A,9,,8H-4,60,69.70,76.00,Thvera (o),4.77,,,8H-4 60       69.70        76.00       Thvera (o)                 4.77      
+IR10.T08,845,VOLUME/DATA/TABLES/CHAP_10/TABLE.8,21,,845A,9,,9H-4,90,79.50,87.51,C3A-n1 (t),5.35,,,9H-4 90       79.50        87.51       C3A-n1 (t)                 5.35      
+IR10.T08,845,VOLUME/DATA/TABLES/CHAP_10/TABLE.8,22,,845A,9,,9H-6,60,82.20,90.21,C3A-n1 (o),5.53,,,9H-6 60       82.20        90.21       C3A-n1 (o)                 5.53      
+IR10.T08,845,VOLUME/DATA/TABLES/CHAP_10/TABLE.8,23,,845A,9,,10H-1,140,85.00,93.48,C3A-n2 (t),5.68,,,10H-1 140     85.00        93.48       C3A-n2 (t)                 5.68      
+IR10.T08,845,VOLUME/DATA/TABLES/CHAP_10/TABLE.8,24,,845A,9,,10H-3,120,87.80,96.28,C3A-n2 (o),5.89,,,10H-3 120     87.80        96.28       C3A-n2 (o)                 5.89      
+IR10.T08,845,VOLUME/DATA/TABLES/CHAP_10/TABLE.8,25,,845A,9,,10H-7,10,92.70,101.18,C3A-n3 (t),6.37,,,10H-7 10      92.70       101.18       C3A-n3 (t)                 6.37      
+IR10.T08,845,VOLUME/DATA/TABLES/CHAP_10/TABLE.8,26,,845A,9,,11H-1,20,93.30,103.06,C3A-n3 (o)(?),6.50,,,11H-1 20      93.30       103.06       C3A-n3 (o)(?)              6.50      
+IR10.T08,845,VOLUME/DATA/TABLES/CHAP_10/TABLE.8,27,,845A,9,,11H-1,85,93.95,103.71,N ->> R,,,,11H-1 85      93.95       103.71       N ->> R
+IR10.T08,845,VOLUME/DATA/TABLES/CHAP_10/TABLE.8,28,,845A,9,,11H-2,10,94.70,104.46,C3A-n3 (o)(?),6.50,,,11H-2 10      94.70       104.46       C3A-n3 (o)(?)              6.50      
+IR10.T08,845,VOLUME/DATA/TABLES/CHAP_10/TABLE.8,29,,845A,9,,11H-3,100,97.10,106.86,C4-n1 (t)(?),,,,11H-3 100     97.10       106.86       C4-n1 (t)(?)
+IR10.T08,845,VOLUME/DATA/TABLES/CHAP_10/TABLE.8,30,,845A,9,,11H-4,10,97.70,107.46,R ->> N,,,,11H-4 10      97.70       107.46       R ->> N
+IR10.T08,845,VOLUME/DATA/TABLES/CHAP_10/TABLE.8,31,,845A,9,,11H-4,70,98.30,108.06,C4-n1 (t)(?),6.70,,,11H-4 70      98.30       108.06       C4-n1 (t)(?)               6.70      
+IR10.T08,845,VOLUME/DATA/TABLES/CHAP_10/TABLE.8,32,,845A,9,,11H-5,125,100.35,110.11,C4-n1 (o),6.78,,,11H-5 125    100.35       110.11       C4-n1 (o)                  6.78      
+IR10.T08,845,VOLUME/DATA/TABLES/CHAP_10/TABLE.8,33,,845A,9,,11H-6,65,101.25,111.01,C4-n2 (t),6.85,,,11H-6 65     101.25       111.01       C4-n2 (t)                  6.85      
+IR10.T08,845,VOLUME/DATA/TABLES/CHAP_10/TABLE.8,34,,845A,9,,12H-4,85,107.95,119.28,C4-n2 (o),7.28,,,12H-4 85     107.95       119.28       C4-n2 (o)                  7.28      
+IR10.T08,845,VOLUME/DATA/TABLES/CHAP_10/TABLE.8,35,,845A,9,,12H-5,60,109.20,120.53,C4-n3 (t)(?),7.35,,,12H-5 60     109.20       120.53       C4-n3 (t)(?)               7.35      
+IR10.T08,845,VOLUME/DATA/TABLES/CHAP_10/TABLE.8,36,,845A,9,,12H-5,90,109.50,120.83,C4-n3 (o)(?),7.41,,,12H-5 90     109.50       120.83       C4-n3 (o)(?)               7.41      
+IR10.T08,845,VOLUME/DATA/TABLES/CHAP_10/TABLE.8,37,,845A,9,,12H-6,40,110.50,121.83,C4-n3 (t)(?),7.35,,,12H-6 40     110.50       121.83       C4-n3 (t)(?)               7.35      
+IR10.T08,845,VOLUME/DATA/TABLES/CHAP_10/TABLE.8,38,,845A,9,,12H-6,70,110.80,122.13,C4-n3 (o)(?),7.41,,,12H-6 70     110.80       122.13       C4-n3 (o)(?)               7.41      
+IR10.T08,845,VOLUME/DATA/TABLES/CHAP_10/TABLE.8,39,,845A,9,,13H-3,25,115.35,127.96,C4A-n1 (t)(?),7.90,,,13H-3 25     115.35       127.96       C4A-n1 (t)(?)              7.90      
+IR10.T08,845,VOLUME/DATA/TABLES/CHAP_10/TABLE.8,40,,845A,9,,13H-3,95,116.05,128.66,C4A-n1 (o)(?),8.21,,,13H-3 95     116.05       128.66       C4A-n1 (o)(?)              8.21      
+IR10.T08,845,VOLUME/DATA/TABLES/CHAP_10/TABLE.8,41,,845A,9,,13H-4,50,117.10,129.71,C4A-n1 (t)(?),7.90,,,13H-4 50     117.10       129.71       C4A-n1 (t)(?)              7.90      
+IR10.T08,845,VOLUME/DATA/TABLES/CHAP_10/TABLE.8,42,,845A,9,,14H-1,110,122.70,136.68,C4A-n1 (o) ?,8.21,,,14H-1 110    122.70       136.68       C4A-n1 (o) ?               8.21      
+IR10.T08,845,VOLUME/DATA/TABLES/CHAP_10/TABLE.8,43,,845A,9,,14H-3,140,126.00,139.98,C4A-n2 (t),8.41,,,14H-3 140    126.00       139.98       C4A-n2 (t)                 8.41      
+IR10.T08,845,VOLUME/DATA/TABLES/CHAP_10/TABLE.8,44,,845A,9,,14H-4,135,127.45,141.43,C4A-n2 (o),8.50,,,14H-4 135    127.45       141.43       C4A-n2 (o)                 8.50      
+IR10.T08,845,VOLUME/DATA/TABLES/CHAP_10/TABLE.8,45,,845A,9,,14H-7,50,131.10,145.08,C4A-n3 (t),8.71,,,14H-7 50     131.10       145.08       C4A-n3 (t)                 8.71      
+IR10.T08,845,VOLUME/DATA/TABLES/CHAP_10/TABLE.8,46,,845A,9,,15H-1,90,132.00,147.86,C5-n1 (t),8.92,,,15H-1 90     132.00       147.86       C5-n1 (t)                  8.92      
+IR10.T08,845,VOLUME/DATA/TABLES/CHAP_10/TABLE.8,47,,845A,9,,15H-3,25,134.35,150.21,R ->> N,,,,15H-3 25     134.35       150.21       R ->> N
+IR10.T08,845,VOLUME/DATA/TABLES/CHAP_10/TABLE.8,48,,845A,9,,15H-3,80,134.90,150.76,N ->> R,,,,15H-3 80     134.90       150.76       N ->> R
+IR10.T08,845,VOLUME/DATA/TABLES/CHAP_10/TABLE.8,49,,845A,9,,16H-5,60,147.20,164.93,C5-n1 (o),10.42,,,16H-5 60     147.20       164.93       C5-n1 (o)                 10.42      
+IR10.T08,845,VOLUME/DATA/TABLES/CHAP_10/TABLE.8,50,,845A,9,,16H-6,25,148.35,166.08,C5-n2 (t),10.54,,,16H-6 25     148.35       166.08       C5-n2 (t)                 10.54      
+IR10.T08,845,VOLUME/DATA/TABLES/CHAP_10/TABLE.8,51,,845A,9,,16H-6,100,149.10,166.83,C5-n2 (o),10.59,,,16H-6 100    149.10       166.83       C5-n2 (o)                 10.59      
+IR10.T08,845,VOLUME/DATA/TABLES/CHAP_10/TABLE.8,52,two_alternative_MPTS_ages_as_written,845A,9,,17H-4,80,155.40,174.21,C5-n3 or C5A-n1 (t),11.03 11.55,,,17H-4 80     155.40       174.21       C5-n3 or C5A-n1 (t)       11.03 11.55      
+IR10.T08,845,VOLUME/DATA/TABLES/CHAP_10/TABLE.8,53,comment_and_interpretation_touch_in_source,845A,9,,17H-6,10,157.70,176.51,R ->> N ?,,Poorly defined,,17H-6 10     157.70       176.51       R ->> N ? Poorly defined
+IR10.T08,845,VOLUME/DATA/TABLES/CHAP_10/TABLE.8,54,comment_and_interpretation_touch_in_source,845A,9,,17H-6,90,158.50,177.31,N ->> R ?,,Poorly defined,,17H-6 90     158.50       177.31       N ->> R ? Poorly defined
+IR10.T08,845,VOLUME/DATA/TABLES/CHAP_10/TABLE.8,55,two_alternative_MPTS_ages_as_written,845A,9,,17H-7,40,159.50,178.31,C5-n3 or C5A-n1 (o)(?),11.09 11.73,Very poorly defined,,17H-7 40     159.50       178.31       C5-n3 or C5A-n1 (o)(?)    11.09 11.73 Very poorly defined
+IR10.T08,845,VOLUME/DATA/TABLES/CHAP_10/TABLE.8,56,two_alternative_MPTS_ages_as_written,845A,9,,18H-4,35,164.45,183.73,C5A-n1 or -n2 (t)(?),11.55 11.86,,,18H-4 35     164.45       183.73       C5A-n1 or -n2 (t)(?)      11.55 11.86      
+IR10.T08,845,VOLUME/DATA/TABLES/CHAP_10/TABLE.8,57,two_alternative_MPTS_ages_as_written,845A,9,,18H-6,55,167.65,186.93,C5A-n1 or -n2 (o)(?),11.73 12.12,,,18H-6 55     167.65       186.93       C5A-n1 or -n2 (o)(?)      11.73 12.12      
+IR10.T08,845,VOLUME/DATA/TABLES/CHAP_10/TABLE.8,58,,845A,9,,20H-3,115,182.75,205.08,C5A-n3 (t),12.46,,,20H-3 115    182.75       205.08       C5A-n3 (t)                12.46      
+IR10.T08,845,VOLUME/DATA/TABLES/CHAP_10/TABLE.8,59,,845A,9,,20H-4,35,183.45,205.78,C5A-n3 (0),12.49,Poorly defined,,20H-4 35     183.45       205.78       C5A-n3 (0)                12.49       Poorly defined
+IR10.T08,845,VOLUME/DATA/TABLES/CHAP_10/TABLE.8,60,,845A,9,,20H-5,130,185.90,208.23,C5A-n4 (t),12.58,,,20H-5 130    185.90       208.23       C5A-n4 (t)                12.58      
+IR10.T08,845,VOLUME/DATA/TABLES/CHAP_10/TABLE.8,61,,845A,9,,20H-6,115,187.25,209.58,C5A-n4 (o),12.62,Poorly defined,,20H-6 115    187.25       209.58       C5A-n4 (o)                12.62       Poorly defined
+IR10.T08,845,VOLUME/DATA/TABLES/CHAP_10/TABLE.8,62,,845A,9,,21H-4,10,192.70,215.93,C5AA-n (t),12.83,,,21H-4 10     192.70       215.93       C5AA-n (t)                12.83      
+IR10.T08,845,VOLUME/DATA/TABLES/CHAP_10/TABLE.8,63,,845A,9,,21H-6,105,196.65,219.88,C5AA-n (o),13.01,,,21H-6 105    196.65       219.88       C5AA-n (o)                13.01      
+IR10.T08,845,VOLUME/DATA/TABLES/CHAP_10/TABLE.8,64,,845A,9,,22H-3,25,200.85,226.08,C5AB-n (t),13.20,,,22H-3 25     200.85       226.08       C5AB-n (t)                13.20      
+IR10.T08,845,VOLUME/DATA/TABLES/CHAP_10/TABLE.8,66,,845B,65,,06H-2,105,53.15,59.88,Gauss/Gilbert,3.40,,,06H-2 105     53.15        59.88       Gauss/Gilbert              3.40      
+IR10.T08,845,VOLUME/DATA/TABLES/CHAP_10/TABLE.8,67,,845B,65,,06H-6,070,58.80,65.53,Cochiti (t),3.88,,,06H-6 070     58.80        65.53       Cochiti (t)                3.88      
+IR10.T08,845,VOLUME/DATA/TABLES/CHAP_10/TABLE.8,68,,845B,65,,06H-6,135,59.45,66.18,Cochiti (o),3.97,,,06H-6 135     59.45        66.18       Cochiti (o)                3.97      
+IR10.T08,845,VOLUME/DATA/TABLES/CHAP_10/TABLE.8,69,,845B,65,,07H-2,035,61.95,68.56,Nunivak (t),4.10,,,07H-2 035     61.95        68.56       Nunivak (t)                4.10      
+IR10.T08,845,VOLUME/DATA/TABLES/CHAP_10/TABLE.8,70,,845B,65,,07H-3,005,63.15,69.76,Nunivak (o),4.24,,,07H-3 005     63.15        69.76       Nunivak (o)                4.24      
+IR10.T08,845,VOLUME/DATA/TABLES/CHAP_10/TABLE.8,71,,845B,65,,07H-4,035,64.95,71.56,Sidufjall (t),4.40,,,07H-4 035     64.95        71.56       Sidufjall (t)              4.40      
+IR10.T08,845,VOLUME/DATA/TABLES/CHAP_10/TABLE.8,72,,845B,65,,07H-4,085,65.45,72.06,Sidufjall (o),4.47,,,07H-4 085     65.45        72.06       Sidufjall (o)              4.47      
+IR10.T08,845,VOLUME/DATA/TABLES/CHAP_10/TABLE.8,73,,845B,65,,07H-5,055,66.65,73.26,Thvera (t),4.57,,,07H-5 055     66.65        73.26       Thvera (t)                 4.57      
+IR10.T08,845,VOLUME/DATA/TABLES/CHAP_10/TABLE.8,74,,845B,65,,07H-7,025,69.35,75.96,Thvera (o),4.77,,,07H-7 025     69.35        75.96       Thvera (o)                 4.77      
+IR10.T08,845,VOLUME/DATA/TABLES/CHAP_10/TABLE.8,75,,845B,65,,08H-7,050,79.10,87.48,C3A-n1 (t),5.35,,,08H-7 050     79.10        87.48       C3A-n1 (t)                 5.35      
+IR10.T08,845,VOLUME/DATA/TABLES/CHAP_10/TABLE.8,76,,845B,65,,09H-2,075,81.35,90.21,C3A-n1 (o),5.53,,,09H-2 075     81.35        90.21       C3A-n1 (o)                 5.53      
+IR10.T08,845,VOLUME/DATA/TABLES/CHAP_10/TABLE.8,77,,845B,65,,09H-4,005,83.65,92.51,C3A-n2 (t),5.68,,,09H-4 005     83.65        92.51       C3A-n2 (t)                 5.68      
+IR10.T08,845,VOLUME/DATA/TABLES/CHAP_10/TABLE.8,78,,845B,65,,09H-6,085,87.45,96.31,C3A-n2 (o),5.89,,,09H-6 085     87.45        96.31       C3A-n2 (o)                 5.89      
+IR10.T08,845,VOLUME/DATA/TABLES/CHAP_10/TABLE.8,79,,845B,65,,10H-2,125,91.35,101.68,C3A-n3 (t),6.37,,,10H-2 125     91.35       101.68       C3A-n3 (t)                 6.37      
+IR10.T08,845,VOLUME/DATA/TABLES/CHAP_10/TABLE.8,80,,845B,65,,10H-3,125,92.85,103.18,C3A-n3 (o)(?),6.50,,,10H-3 125     92.85       103.18       C3A-n3 (o)(?)              6.50      
+IR10.T08,845,VOLUME/DATA/TABLES/CHAP_10/TABLE.8,81,,845B,65,,10H-4,050,93.60,103.93,N ->> R,,,,10H-4 050     93.60       103.93       N ->> R
+IR10.T08,845,VOLUME/DATA/TABLES/CHAP_10/TABLE.8,82,,845B,65,,10H-4,105,94.15,104.48,C3A-n3 (o)(?),6.50,,,10H-4 105     94.15       104.48       C3A-n3 (o)(?)              6.50      
+IR10.T08,845,VOLUME/DATA/TABLES/CHAP_10/TABLE.8,83,,845B,65,,10H-6,030,96.40,106.73,C4-n1 (t),6.70,,,10H-6 030     96.40       106.73       C4-n1 (t)                  6.70      
+IR10.T08,845,VOLUME/DATA/TABLES/CHAP_10/TABLE.8,84,,845B,65,,10H-6,085,96.95,107.28,C4-n1 (o),6.78,,,10H-6 085     96.95       107.28       C4-n1 (o)                  6.78      
+IR10.T08,845,VOLUME/DATA/TABLES/CHAP_10/TABLE.8,85,,845B,65,,10H-7,005,97.65,107.98,C4-n2 (t),6.85,,,10H-7 005     97.65       107.98       C4-n2 (t)                  6.85      
+IR10.T08,845,VOLUME/DATA/TABLES/CHAP_10/TABLE.8,86,,845B,65,,11H-7,010,107.20,119.31,C4-n2 (o),7.28,,,11H-7 010    107.20       119.31       C4-n2 (o)                  7.28      
+IR10.T08,845,VOLUME/DATA/TABLES/CHAP_10/TABLE.8,87,,845B,65,,12H-2,035,109.45,121.56,C4-n3 (o),7.41,,,12H-2 035    109.45       121.56       C4-n3 (o)                  7.41      
+IR10.T08,845,VOLUME/DATA/TABLES/CHAP_10/TABLE.8,88,,845B,65,,12H-6,010,115.20,127.31,C4A-n1 (t)(?),7.90,,,12H-6 010    115.20       127.31       C4A-n1 (t)(?)              7.90      
+IR10.T08,845,VOLUME/DATA/TABLES/CHAP_10/TABLE.8,89,,845B,65,,12H-6,050,115.60,127.71,R ->> N,,,,12H-6 050    115.60       127.71       R ->> N
+IR10.T08,845,VOLUME/DATA/TABLES/CHAP_10/TABLE.8,90,,845B,65,,12H-7,020,116.80,128.91,C4A-n1 (t)(?),7.90,,,12H-7 020    116.80       128.91       C4A-n1 (t)(?)              7.90      
+IR10.T08,845,VOLUME/DATA/TABLES/CHAP_10/TABLE.8,91,,845B,65,,13H-4,045,122.05,136.81,C4A-n1 (o),8.21,,,13H-4 045    122.05       136.81       C4A-n1 (o)                 8.21      
+IR10.T08,845,VOLUME/DATA/TABLES/CHAP_10/TABLE.8,92,,845B,65,,13H-6,065,125.25,140.01,C4A-n2 (t),8.41,,,13H-6 065    125.25       140.01       C4A-n2 (t)                 8.41      
+IR10.T08,845,VOLUME/DATA/TABLES/CHAP_10/TABLE.8,93,,845B,65,,14H-2,055,128.65,145.05,C4A-n3 (t),8.71,,,14H-2 055    128.65       145.05       C4A-n3 (t)                 8.71      
+IR10.T08,845,VOLUME/DATA/TABLES/CHAP_10/TABLE.8,94,,845B,65,,14H-3,070,130.30,146.70,C4A-n3 (o),8.80,,,14H-3 070    130.30       146.70       C4A-n3 (o)                 8.80      
+IR10.T08,845,VOLUME/DATA/TABLES/CHAP_10/TABLE.8,95,,845B,65,,14H-4,025,131.35,147.75,C5-n1 (t),8.92,,,14H-4 025    131.35       147.75       C5-n1 (t)                  8.92      
+IR10.T08,845,VOLUME/DATA/TABLES/CHAP_10/TABLE.8,96,,845B,65,,14H-5,135,133.95,150.35,R ->> N,,,,14H-5 135    133.95       150.35       R ->> N
+IR10.T08,845,VOLUME/DATA/TABLES/CHAP_10/TABLE.8,97,,845B,65,,14H-6,030,134.40,150.80,N ->> R,,,,14H-6 030    134.40       150.80       N ->> R
+IR10.T08,845,VOLUME/DATA/TABLES/CHAP_10/TABLE.8,98,two_alternative_MPTS_ages_as_written,845B,65,,16H-6,150,154.60,174.30,C5-n3 or C5A-n1 (t)(?),11.03 11.55,Section break,,16H-6 150    154.60       174.30       C5-n3 or C5A-n1 (t)(?)    11.03 11.55       Section break
+IR10.T08,845,VOLUME/DATA/TABLES/CHAP_10/TABLE.8,99,two_alternative_MPTS_ages_as_written,845B,65,,17H-6,110,163.70,183.50,C5A-n1 or -n2 (t)(?),11.55 11.86,,,17H-6 110    163.70       183.50       C5A-n1 or -n2 (t)(?)      11.55 11.86      
+IR10.T08,845,VOLUME/DATA/TABLES/CHAP_10/TABLE.8,100,,845B,65,,20H-1,100,184.60,206.40,C5A-n3 (o),12.49,Poorly defined,,20H-1 100    184.60       206.40       C5A-n3 (o)                12.49       Poorly defined
+IR10.T08,845,VOLUME/DATA/TABLES/CHAP_10/TABLE.8,101,,845B,65,,20H-2,115,186.25,208.05,C5A-n4 (t),12.58,,,20H-2 115    186.25       208.05       C5A-n4 (t)                12.58      
+IR10.T08,845,VOLUME/DATA/TABLES/CHAP_10/TABLE.8,102,,845B,65,,20H-4,020,188.30,210.10,C5A-n4 (o),12.62,Poorly defined,,20H-4 020    188.30       210.10       C5A-n4 (o)                12.62       Poorly defined
+IR10.T08,845,VOLUME/DATA/TABLES/CHAP_10/TABLE.8,103,,845B,65,,21H-2,040,195.00,216.30,C5AA-n (t),12.83,,,21H-2 040    195.00       216.30       C5AA-n (t)                12.83      
+IR10.T08,845,VOLUME/DATA/TABLES/CHAP_10/TABLE.8,104,,845B,65,,21H-4,130,198.90,220.20,C5AA-n (o),13.01,,,21H-4 130    198.90       220.20       C5AA-n (o)                13.01      

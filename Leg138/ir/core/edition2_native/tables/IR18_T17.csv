@@ -1,0 +1,17 @@
+item_id,site,source_path,source_line,verification_flags,reflector_label_as_written,reflector_group_context,reflector_group_source_line,traveltime_s,synthetic_depth_m,depth_mbsf,depth_mcd,age_ma,unresolved_source_fragment,raw_source_line
+IR18.T17,853,VOLUME/DATA/TABLES/CHAP_18/TABLE.17,5,,R1,R1,5,0.024,18.00,17.70,19.40,3.48,,R1       0.024       18.00       17.70       19.40       3.48
+IR18.T17,853,VOLUME/DATA/TABLES/CHAP_18/TABLE.17,6,,,R1,5,0.037,20.30,19.90,21.50,3.77,,         0.037       20.30       19.90       21.50       3.77
+IR18.T17,853,VOLUME/DATA/TABLES/CHAP_18/TABLE.17,7,,R2,R2,7,0.032,23.90,25.80,25.20,4.10,,R2       0.032       23.90       25.80       25.20       4.10
+IR18.T17,853,VOLUME/DATA/TABLES/CHAP_18/TABLE.17,8,,,R2,7,0.039,29.10,29.30,28.70,4.54,,         0.039       29.10       29.30       28.70       4.54
+IR18.T17,853,VOLUME/DATA/TABLES/CHAP_18/TABLE.17,9,,R3,R3,9,0.042,31.40,31.90,33.40,4.93,,R3       0.042       31.40       31.90       33.40       4.93
+IR18.T17,853,VOLUME/DATA/TABLES/CHAP_18/TABLE.17,10,,,R3,9,0.044,32.80,33.20,34.55,5.02,,         0.044       32.80       33.20       34.55       5.02
+IR18.T17,853,VOLUME/DATA/TABLES/CHAP_18/TABLE.17,11,,R4,R4,11,0.047,35.10,34.40,35.70,5.11,,R4       0.047       35.10       34.40       35.70       5.11
+IR18.T17,853,VOLUME/DATA/TABLES/CHAP_18/TABLE.17,12,,,R4,11,0.050,37.30,36.00,37.30,5.25,,         0.050       37.30       36.00       37.30       5.25
+IR18.T17,853,VOLUME/DATA/TABLES/CHAP_18/TABLE.17,13,,R5,R5,13,0.057,42.50,38.20,38.80,5.37,,R5       0.057       42.50       38.20       38.80       5.37
+IR18.T17,853,VOLUME/DATA/TABLES/CHAP_18/TABLE.17,14,,,R5,13,0.062,46.20,42.00,43.90,5.70,,         0.062       46.20       42.00       43.90       5.70
+IR18.T17,853,VOLUME/DATA/TABLES/CHAP_18/TABLE.17,15,,R6,R6,15,0.068,50.80,50.30,52.10,6.34,,R6       0.068       50.80       50.30       52.10       6.34
+IR18.T17,853,VOLUME/DATA/TABLES/CHAP_18/TABLE.17,16,,,R6,15,0.072,53.80,53.30,55.20,6.58,,         0.072       53.80       53.30       55.20       6.58
+IR18.T17,853,VOLUME/DATA/TABLES/CHAP_18/TABLE.17,17,,R7,R7,17,0.076,56.70,55.60,57.50,6.74,,R7       0.076       56.70       55.60       57.50       6.74
+IR18.T17,853,VOLUME/DATA/TABLES/CHAP_18/TABLE.17,18,,,R7,17,0.078,58.20,58.30,59.90,6.91,,         0.078       58.20       58.30       59.90       6.91
+IR18.T17,853,VOLUME/DATA/TABLES/CHAP_18/TABLE.17,19,,R8,R8,19,0.082,61.20,61.50,64.40,7.20,,R8       0.082       61.20       61.50       64.40       7.20
+IR18.T17,853,VOLUME/DATA/TABLES/CHAP_18/TABLE.17,20,,,R8,19,0.085,63.40,63.50,66.50,7.38,,         0.085       63.40       63.50       66.50       7.38

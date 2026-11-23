@@ -1,6 +1,7 @@
 """Build interval and source-row transcriptions for the eleven Leg 138 initial-report chapters."""
 from pathlib import Path
 import argparse, csv, hashlib, re
+from bisect import bisect_right
 ROOT=Path(__file__).resolve().parents[1]
 DATA=ROOT/'data'
 TABLES=[(12,16,38,47,156,165),(10,14,41,47,229,235),(8,12,31,40,295,304),(8,12,23,34,357,368),(9,16,39,52,715,728),(8,12,38,48,772,782),(10,15,31,42,839,850),(10,14,41,43,931,933),(11,15,23,37,989,1003),(8,12,22,30,1044,1052),(7,11,19,26,1081,1088)]
@@ -17,11 +18,22 @@ def numprefix(s):
         if not re.fullmatch(r'[0-9]+(?:\.[0-9]+)?',token):break
         result.append(token)
     return result
-def decode_values(numbers,site,lineno):
+def decode_values(numbers,site,lineno,source_line):
+    if site==853:
+        # Table 12's rightmost token can be either Corg MAR or non-carbonate MAR.
+        # Use the published fixed columns, independently of the count of populated cells.
+        # Line 59 starts its final token at character 87. The print page confirms Corg.
+        starts=(16,26,35,45,55,66,76,86)
+        result=dict.fromkeys(FIELDS,'')
+        for token in re.finditer(r'\S+',source_line):
+            slot=bisect_right(starts,token.start())-1
+            if slot<0 or result[FIELDS[slot]]:
+                raise ValueError((site,lineno,token.start()))
+            result[FIELDS[slot]]=token.group()
+        return result
     if len(numbers)==8:keys=FIELDS
     elif len(numbers)==6:keys=[FIELDS[i] for i in [0,2,3,4,5,6]]
     elif len(numbers)==1:keys=[FIELDS[2]]
-    elif site==853 and len(numbers)==7:keys=FIELDS[:7]
     elif site==854 and len(numbers)==3:keys=[FIELDS[i] for i in [0,2,3]]
     else:raise ValueError((site,lineno,numbers))
     d=dict.fromkeys(FIELDS,'');d.update(zip(keys,numbers,strict=True));return d
@@ -51,7 +63,7 @@ def parse_mean(raw,site,num,controls):
                 if previous is None:
                     assert float(vals[1])>0 and 0 in controls
                     previous=(controls[0][0],'0',0)
-                intervals.append((previous,point,n,decode_values(vals[2:],site,n)))
+                intervals.append((previous,point,n,decode_values(vals[2:],site,n,s)))
             previous=point;points.append(point)
         elif site==845:
             # Print table (p.235) places these values on the same line as the interval-ending horizon.
@@ -60,7 +72,7 @@ def parse_mean(raw,site,num,controls):
                 point=(vals[0],vals[1],n);points.append(point)
             else:
                 if previous is None:previous=(controls[0][0],'0',0)
-                intervals.append((previous,point,n,decode_values(vals,site,n)));previous=point
+                intervals.append((previous,point,n,decode_values(vals,site,n,s)));previous=point
         else:
             if len(vals)==2:
                 point=(vals[0],vals[1],n);points.append(point)
@@ -70,7 +82,7 @@ def parse_mean(raw,site,num,controls):
                 previous=point
             else:
                 assert pending is None,(site,n)
-                pending=n,decode_values(vals,site,n)
+                pending=n,decode_values(vals,site,n,s)
     assert pending is None
     returned=[]
     for a,b,ln,values in intervals:

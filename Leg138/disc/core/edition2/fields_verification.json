@@ -1,0 +1,16 @@
+{
+  "porewater_files": 11,
+  "porewater_rows": 149,
+  "water_source_mark_counts": {
+    "**": 5,
+    "-": 9,
+    "<<10": 17,
+    "<10": 14,
+    "_": 2
+  },
+  "logging_files": 65,
+  "logging_records": 112810,
+  "logging_cells": 1280581,
+  "logging_minus999p25_cells": 70104,
+  "logging_asterisk_cells": 44
+}

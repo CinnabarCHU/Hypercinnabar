@@ -1,0 +1,7 @@
+core_id,lane_ordinal,top_px,bottom_px_exclusive,reason
+844B2H,1,1370,1490,White PALEO tag crossing the photographed material. Padded exclusion.
+853B2H,1,2030,2140,White insert crossing the photographed material. Padded exclusion.
+853B2H,2,335,590,White backing or void between pieces of sediment. Padded exclusion.
+852A1H,2,60,620,White liner with red handwriting near the top. Padded exclusion.
+851C1H,2,375,450,White label with lettering at mid-column. Native short-resolution coordinates.
+846D20X,8,162,235,White handwritten tag in the catcher. Native short-resolution coordinates.

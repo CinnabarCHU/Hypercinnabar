@@ -1,0 +1,6 @@
+dataset_id,source_line,witness,witness_line,comment
+SR.C15.TABLE9,873,701308,1013,111-677A at 81.60 mbsf; comparison only. Independent publication or adjusted values are not an exact duplicate record.
+SR.C15.TABLE9,873,701308,1491,111-677B at 81.60 mbsf; comparison only. Independent publication or adjusted values are not an exact duplicate record.
+SR.C15.TABLE9,873,701312,794,111-677A at 81.60 mbsf; comparison only. Independent publication or adjusted values are not an exact duplicate record.
+SR.C35.APPENDIXB,950,806757,980,"Same hole, composite depth and chronology; preserves printed suspect flags rather than translating their encoding."
+SR.C35.APPENDIXB,2065,806757,2092,"Same hole, composite depth and chronology; preserves printed suspect flags rather than translating their encoding."

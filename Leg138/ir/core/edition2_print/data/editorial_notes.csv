@@ -1,0 +1,12 @@
+item_id,field_or_area,comment
+IR02.T01,multiline lists,"Rows preserve the physical lines within four parallel classifications. A single physical line may contain fragments of several enumerated entries."
+IR02.T02,millimeters and micrometers,"The publication prints 84 at φ = −6, 0.068 and 88 at φ = 3.5, and 0.063 and 83 at φ = 4.25. They are preserved as printed without recomputing the scale. Three vertical group labels are in spanning_print_labels.csv."
+IR02.T05,continuation,"The second page resumes the same table under a repeated header. Physical rows are numbered continuously across PDF pages 14 and 15."
+IR03.T01,column scope,"Ten printed survey columns correspond to lines 1–10 and Sites 844–853. Group headings and parameter lines are kept in sequence."
+IR07.T03,tow rate,"The printed rate column is metres per minute. Closest XBT latitude, longitude and time are separate from the tow position and its UTC time."
+IR10.T22,formula,"The source note defines FF as formation factor and F as porosity. Superscript exponents are transcribed with a caret. All three equations were visually collated."
+IR13.T19,methane,"Headspace methane is printed in μL/L. All eleven sample rows were checked against the scan. The note says Corg and %CaCO3 were measured in sediment samples used for gas desorption."
+IR17.T03,lithologic intervals,"Printed fractional depths contain dashes and inconsistent labels. The fourth sample range names Hole 852D while its printed depth cell names Hole 852C. Published depth strings and physical text wrapping are preserved."
+IR18.T05,orientation,"Groups of core labels and several values recur on the printed page, followed by a change in the supplementary entries. Keep every occurrence in source order."
+IR18.T18,rotation,"The note gives angular velocity 0.83°/m.y. This differs from the 0.84 printed in several preceding chapters. See pole_notes.csv."
+IR19.T15,caption,"The Site 854 chapter prints the caption Backtracked path for Site 851. The table is indexed under its publication chapter and no reassignment of its measurements is inferred."

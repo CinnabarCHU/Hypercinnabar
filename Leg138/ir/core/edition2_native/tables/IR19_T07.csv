@@ -1,0 +1,33 @@
+item_id,site,source_path,source_line,verification_flags,composite_depth,sedimentation_rate,age_ma,remarks,unresolved_source_fragment,raw_source_line
+IR19.T07,854,VOLUME/DATA/TABLES/CHAP_19/TABLE.7,6,,0,5.6,0,Top of sedimentary section,, 0          5.6        0          Top of sedimentary section
+IR19.T07,854,VOLUME/DATA/TABLES/CHAP_19/TABLE.7,7,,4.09,7.11,0.73,B. Brunhes Chron,, 4.09       7.11       0.73       B. Brunhes Chron
+IR19.T07,854,VOLUME/DATA/TABLES/CHAP_19/TABLE.7,8,,5.37,7.0,0.91,T. Jaramillo Subchron,, 5.37       7.0        0.91       T. Jaramillo Subchron
+IR19.T07,854,VOLUME/DATA/TABLES/CHAP_19/TABLE.7,9,,5.86,5.83,0.98,B. Jaramillo Subchron,, 5.86       5.83       0.98       B. Jaramillo Subchron
+IR19.T07,854,VOLUME/DATA/TABLES/CHAP_19/TABLE.7,10,,6.56,7.23,1.1,Cobb Mountain,, 6.56       7.23       1.1        Cobb Mountain
+IR19.T07,854,VOLUME/DATA/TABLES/CHAP_19/TABLE.7,11,,10.61,4.05,1.66,T. Olduvai Subchron,,10.61       4.05       1.66       T. Olduvai Subchron
+IR19.T07,854,VOLUME/DATA/TABLES/CHAP_19/TABLE.7,12,,11.5,8.24,1.88,B. Olduvai Subchron,,11.5        8.24       1.88       B. Olduvai Subchron
+IR19.T07,854,VOLUME/DATA/TABLES/CHAP_19/TABLE.7,13,,16.36,2.29,2.47,B. Matuyama Chron,,16.36       2.29       2.47       B. Matuyama Chron
+IR19.T07,854,VOLUME/DATA/TABLES/CHAP_19/TABLE.7,14,,17.39,1.57,2.92,T. Kaena Subchron,,17.39       1.57       2.92       T. Kaena Subchron
+IR19.T07,854,VOLUME/DATA/TABLES/CHAP_19/TABLE.7,15,,17.5,1.78,2.99,B. Kaena Subchron,,17.5        1.78       2.99       B. Kaena Subchron
+IR19.T07,854,VOLUME/DATA/TABLES/CHAP_19/TABLE.7,16,,17.66,2.0,3.08,T. Mammoth Subchron,,17.66       2.0        3.08       T. Mammoth Subchron
+IR19.T07,854,VOLUME/DATA/TABLES/CHAP_19/TABLE.7,17,,17.86,5.5,3.18,B. Mammoth Subchron,,17.86       5.5        3.18       B. Mammoth Subchron
+IR19.T07,854,VOLUME/DATA/TABLES/CHAP_19/TABLE.7,18,,19.0,5.37,3.4,B. Gauss Chron,,19.0        5.37       3.4        B. Gauss Chron
+IR19.T07,854,VOLUME/DATA/TABLES/CHAP_19/TABLE.7,19,,19.5,0.23,3.5,Extrapolated,,19.5        0.23       3.5        Extrapolated
+IR19.T07,854,VOLUME/DATA/TABLES/CHAP_19/TABLE.7,20,,19.93,6.61,5.35,T. C3A-n1,,19.93       6.61       5.35       T. C3A-n1
+IR19.T07,854,VOLUME/DATA/TABLES/CHAP_19/TABLE.7,21,,21.12,5.33,5.53,B. C3A-n1,,21.12       5.33       5.53       B. C3A-n1
+IR19.T07,854,VOLUME/DATA/TABLES/CHAP_19/TABLE.7,22,,21.92,5.52,5.68,T. C3A-n2,,21.92       5.52       5.68       T. C3A-n2
+IR19.T07,854,VOLUME/DATA/TABLES/CHAP_19/TABLE.7,23,,23.08,4.56,5.89,B. C3A-n2,,23.08       4.56       5.89       B. C3A-n2
+IR19.T07,854,VOLUME/DATA/TABLES/CHAP_19/TABLE.7,24,,25.27,17.08,6.37,T. C3A-n3,,25.27      17.08       6.37       T. C3A-n3
+IR19.T07,854,VOLUME/DATA/TABLES/CHAP_19/TABLE.7,25,,27.49,16.15,6.5,B. C3A-n3,,27.49      16.15       6.5        B. C3A-n3
+IR19.T07,854,VOLUME/DATA/TABLES/CHAP_19/TABLE.7,26,,30.72,17.0,6.7,T. C4-n1,,30.72      17.0        6.7        T. C4-n1
+IR19.T07,854,VOLUME/DATA/TABLES/CHAP_19/TABLE.7,27,,33.27,15.14,6.85,B. C4-n1,,33.27      15.14       6.85       B. C4-n1
+IR19.T07,854,VOLUME/DATA/TABLES/CHAP_19/TABLE.7,28,,39.78,18.14,7.28,B. C4-n2,,39.78      18.14       7.28       B. C4-n2
+IR19.T07,854,VOLUME/DATA/TABLES/CHAP_19/TABLE.7,29,,41.05,20.83,7.35,T. C4-n3,,41.05      20.83       7.35       T. C4-n3
+IR19.T07,854,VOLUME/DATA/TABLES/CHAP_19/TABLE.7,30,,42.3,2.92,7.41,B. C4-n3,,42.3        2.92       7.41       B. C4-n3
+IR19.T07,854,VOLUME/DATA/TABLES/CHAP_19/TABLE.7,31,,43.73,5.13,7.9,T. C4A-n1,,43.73       5.13       7.9        T. C4A-n1
+IR19.T07,854,VOLUME/DATA/TABLES/CHAP_19/TABLE.7,32,,45.32,6.1,8.21,B. C4A-n1,,45.32       6.1        8.21       B. C4A-n1
+IR19.T07,854,VOLUME/DATA/TABLES/CHAP_19/TABLE.7,33,,46.54,10.33,8.41,T. C4A-n2,,46.54      10.33       8.41       T. C4A-n2
+IR19.T07,854,VOLUME/DATA/TABLES/CHAP_19/TABLE.7,34,,47.47,,8.5,B. C4A-n2,,47.47                  8.5        B. C4A-n2
+IR19.T07,854,VOLUME/DATA/TABLES/CHAP_19/TABLE.7,35,,48.66,5.67,8.71,T. C4A-n3,,48.66       5.67       8.71       T. C4A-n3
+IR19.T07,854,VOLUME/DATA/TABLES/CHAP_19/TABLE.7,36,,49.21,6.11,8.8,B. C4A-n3,,49.21       6.11       8.8        B. C4A-n3
+IR19.T07,854,VOLUME/DATA/TABLES/CHAP_19/TABLE.7,37,,49.52,2.58,8.92,T. C5-n1,,49.52       2.58       8.92       T. C5-n1

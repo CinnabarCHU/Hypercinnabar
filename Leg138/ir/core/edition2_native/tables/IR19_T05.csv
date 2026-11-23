@@ -1,0 +1,89 @@
+item_id,site,source_path,source_line,verification_flags,reported_hole,context_line,reported_core_prefix,core_section,interval_cm,depth_mbsf,depth_mcd,interpretation,age_ma,comments,unresolved_source_fragment,raw_source_line
+IR19.T05,854,VOLUME/DATA/TABLES/CHAP_19/TABLE.5,8,,854A,7,,1H-2,115,2.65,4.10,,0.73,,,1H-2 115        2.65        4.10                         0.73      
+IR19.T05,854,VOLUME/DATA/TABLES/CHAP_19/TABLE.5,9,,854A,7,,1H-3,98,3.98,5.43,Jaramillo (t),0.91,,,1H-3 98         3.98        5.43       Jaramillo (t)     0.91      
+IR19.T05,854,VOLUME/DATA/TABLES/CHAP_19/TABLE.5,10,,854A,7,,1H-4,0,4.50,5.95,Jaramillo (o),0.98,Section break,,1H-4 0          4.50        5.95       Jaramillo (o)     0.98       Section break
+IR19.T05,854,VOLUME/DATA/TABLES/CHAP_19/TABLE.5,11,,854A,7,,1H-7,58,9.58,11.03,Olduvai (t),1.66,,,1H-7 58         9.58       11.03       Olduvai (t)       1.66      
+IR19.T05,854,VOLUME/DATA/TABLES/CHAP_19/TABLE.5,12,,854A,7,,2H-1,60,10.50,11.55,Olduvai (o),1.88,,,2H-1 60        10.50       11.55       Olduvai (o)       1.88      
+IR19.T05,854,VOLUME/DATA/TABLES/CHAP_19/TABLE.5,13,,854A,7,,2H-2,52,11.92,12.97,Reunion (t),2.06,,,2H-2 52        11.92       12.97       Reunion (t)       2.06      
+IR19.T05,854,VOLUME/DATA/TABLES/CHAP_19/TABLE.5,14,,854A,7,,2H-2,62,12.02,13.07,Reunion (o),2.09,,,2H-2 62        12.02       13.07       Reunion (o)       2.09      
+IR19.T05,854,VOLUME/DATA/TABLES/CHAP_19/TABLE.5,15,,854A,7,,2H-4,88,15.28,16.33,M/G,2.47,,,2H-4 88        15.28       16.33       M/G               2.47      
+IR19.T05,854,VOLUME/DATA/TABLES/CHAP_19/TABLE.5,16,,854A,7,,2H-5,62,16.52,17.57,Kaena (t),2.92,,,2H-5 62        16.52       17.57       Kaena (t)         2.92      
+IR19.T05,854,VOLUME/DATA/TABLES/CHAP_19/TABLE.5,17,,854A,7,,2H-5,78,16.68,17.73,Kaena (o),2.99,,,2H-5 78        16.68       17.73       Kaena (o)         2.99      
+IR19.T05,854,VOLUME/DATA/TABLES/CHAP_19/TABLE.5,18,,854A,7,,2H-5,92,16.82,17.87,Mammoth (t),3.08,,,2H-5 92        16.82       17.87       Mammoth (t)       3.08      
+IR19.T05,854,VOLUME/DATA/TABLES/CHAP_19/TABLE.5,19,,854A,7,,2H-5,112,17.02,18.07,Mammoth (o),3.18,,,2H-5 112       17.02       18.07       Mammoth (o)       3.18      
+IR19.T05,854,VOLUME/DATA/TABLES/CHAP_19/TABLE.5,20,,854A,7,,2H-6,60,18.00,19.05,G/G,3.40,,,2H-6 60        18.00       19.05       G/G               3.40      
+IR19.T05,854,VOLUME/DATA/TABLES/CHAP_19/TABLE.5,21,,854A,7,,2H-6,148,18.88,19.93,C3A-n1 (t),5.35,,,2H-6 148       18.88       19.93       C3A-n1 (t)        5.35
+IR19.T05,854,VOLUME/DATA/TABLES/CHAP_19/TABLE.5,24,,854B,23,,1H-3,108,4.08,4.08,B/M,0.73,,,1H-3 108        4.08        4.08       B/M               0.73      
+IR19.T05,854,VOLUME/DATA/TABLES/CHAP_19/TABLE.5,25,,854B,23,,1H-4,82,5.32,5.32,Jaramillo (t),0.91,,,1H-4 82         5.32        5.32       Jaramillo (t)     0.91      
+IR19.T05,854,VOLUME/DATA/TABLES/CHAP_19/TABLE.5,26,,854B,23,,1H-4,130,5.80,5.80,Jaramillo (o),0.98,,,1H-4 130        5.80        5.80       Jaramillo (o)     0.98      
+IR19.T05,854,VOLUME/DATA/TABLES/CHAP_19/TABLE.5,27,,854B,23,,1H-5,45,6.45,6.45,Cobb (t),1.10,Midpoint,,1H-5 45         6.45        6.45       Cobb (t)          1.10       Midpoint
+IR19.T05,854,VOLUME/DATA/TABLES/CHAP_19/TABLE.5,28,,854B,23,,1H-5,55,6.55,6.55,Cobb (o),1.10,Midpoint,,1H-5 55         6.55        6.55       Cobb (o)          1.10       Midpoint
+IR19.T05,854,VOLUME/DATA/TABLES/CHAP_19/TABLE.5,29,,854B,23,,2H-2,40,10.30,10.60,Olduvai (t),1.66,,,2H-2 40        10.30       10.60       Olduvai (t)       1.66      
+IR19.T05,854,VOLUME/DATA/TABLES/CHAP_19/TABLE.5,30,,854B,23,,2H-2,128,11.18,11.48,Olduvai (o),1.88,,,2H-2 128       11.18       11.48       Olduvai (o)       1.88      
+IR19.T05,854,VOLUME/DATA/TABLES/CHAP_19/TABLE.5,31,,854B,23,,2H-5,118,15.58,15.88,M/G,2.47,,,2H-5 118       15.58       15.88       M/G               2.47      
+IR19.T05,854,VOLUME/DATA/TABLES/CHAP_19/TABLE.5,32,,854B,23,,2H-6,72,16.62,16.92,Kaena (t),2.92,,,2H-6 72        16.62       16.92       Kaena (t)         2.92      
+IR19.T05,854,VOLUME/DATA/TABLES/CHAP_19/TABLE.5,33,,854B,23,,2H-6,88,16.78,17.08,Kaena (o),2.99,,,2H-6 88        16.78       17.08       Kaena (o)         2.99      
+IR19.T05,854,VOLUME/DATA/TABLES/CHAP_19/TABLE.5,34,,854B,23,,2H-6,98,16.88,17.18,Mammoth (t),3.08,,,2H-6 98        16.88       17.18       Mammoth (t)       3.08      
+IR19.T05,854,VOLUME/DATA/TABLES/CHAP_19/TABLE.5,35,,854B,23,,2H-6,118,17.08,17.38,Mammoth (o),3.18,,,2H-6 118       17.08       17.38       Mammoth (o)       3.18      
+IR19.T05,854,VOLUME/DATA/TABLES/CHAP_19/TABLE.5,36,,854B,23,,3H-1,88,18.78,21.13,C3A-n1 (o),5.53,,,3H-1 88        18.78       21.13       C3A-n1 (o)        5.53      
+IR19.T05,854,VOLUME/DATA/TABLES/CHAP_19/TABLE.5,37,,854B,23,,3H-2,18,19.58,21.93,C3A-n2 (t),5.68,,,3H-2 18        19.58       21.93       C3A-n2 (t)        5.68      
+IR19.T05,854,VOLUME/DATA/TABLES/CHAP_19/TABLE.5,38,,854B,23,,3H-2,138,20.78,23.13,C3A-n2 (o),5.89,,,3H-2 138       20.78       23.13       C3A-n2 (o)        5.89      
+IR19.T05,854,VOLUME/DATA/TABLES/CHAP_19/TABLE.5,39,,854B,23,,3H-4,52,22.92,25.27,C3A-n3 (t),6.37,,,3H-4 52        22.92       25.27       C3A-n3 (t)        6.37      
+IR19.T05,854,VOLUME/DATA/TABLES/CHAP_19/TABLE.5,40,,854B,23,,3H-5,20,24.10,26.45,R-gtN,,,,3H-5 20        24.10       26.45       R-gtN             
+IR19.T05,854,VOLUME/DATA/TABLES/CHAP_19/TABLE.5,41,,854B,23,,3H-5,68,24.58,26.93,N-gtR,,,,3H-5 68        24.58       26.93       N-gtR             
+IR19.T05,854,VOLUME/DATA/TABLES/CHAP_19/TABLE.5,42,,854B,23,,3H-5,132,25.22,27.57,C3A-n3 (o),6.50,,,3H-5 132       25.22       27.57       C3A-n3 (o)        6.50      
+IR19.T05,854,VOLUME/DATA/TABLES/CHAP_19/TABLE.5,43,,854B,23,,3H-7,52,27.42,29.77,N-gtR,,,,3H-7 52        27.42       29.77       N-gtR             
+IR19.T05,854,VOLUME/DATA/TABLES/CHAP_19/TABLE.5,44,,854B,23,,4H-2,115,30.05,32.65,C4-n1 (o),6.78,,,4H-2 115       30.05       32.65       C4-n1 (o)         6.78      
+IR19.T05,854,VOLUME/DATA/TABLES/CHAP_19/TABLE.5,45,,854B,23,,4H-3,30,30.70,33.30,C4-n2 (t),6.85,,,4H-3 30        30.70       33.30       C4-n2 (t)         6.85      
+IR19.T05,854,VOLUME/DATA/TABLES/CHAP_19/TABLE.5,46,,854B,23,,5H-2,142,39.82,43.67,C4A-n1 (t),7.90,,,5H-2 142       39.82       43.67       C4A-n1 (t)        7.90      
+IR19.T05,854,VOLUME/DATA/TABLES/CHAP_19/TABLE.5,47,,854B,23,,5H-3,148,41.38,45.23,C4A-n1 (o),8.21,Section break,,5H-3 148       41.38       45.23       C4A-n1 (o)        8.21       Section break
+IR19.T05,854,VOLUME/DATA/TABLES/CHAP_19/TABLE.5,48,,854B,23,,5H-4,58,41.98,45.83,blip (t),,,,5H-4 58        41.98       45.83       blip (t)             
+IR19.T05,854,VOLUME/DATA/TABLES/CHAP_19/TABLE.5,49,,854B,23,,5H-4,78,42.18,46.02,blip (o),,,,5H-4 78        42.18       46.02       blip (o)             
+IR19.T05,854,VOLUME/DATA/TABLES/CHAP_19/TABLE.5,50,,854B,23,,5H-4,128,42.68,46.53,C4A-n2 (t),8.41,,,5H-4 128       42.68       46.53       C4A-n2 (t)        8.41      
+IR19.T05,854,VOLUME/DATA/TABLES/CHAP_19/TABLE.5,51,,854B,23,,5H-5,58,43.48,47.33,C4A-n2 (o),8.50,,,5H-5 58        43.48       47.33       C4A-n2 (o)        8.50      
+IR19.T05,854,VOLUME/DATA/TABLES/CHAP_19/TABLE.5,52,,854B,23,,5H-6,22,44.62,48.47,C4A-n3 (t),8.71,,,5H-6 22        44.62       48.47       C4A-n3 (t)        8.71      
+IR19.T05,854,VOLUME/DATA/TABLES/CHAP_19/TABLE.5,53,,854B,23,,5H-6,68,45.08,48.93,C4A-n3 (o),8.80,,,5H-6 68        45.08       48.93       C4A-n3 (o)        8.80      
+IR19.T05,854,VOLUME/DATA/TABLES/CHAP_19/TABLE.5,54,,854B,23,,5H-6,98,45.38,49.23,C5-n1 (t),8.92,,,5H-6 98        45.38       49.23       C5-n1 (t)         8.92 
+IR19.T05,854,VOLUME/DATA/TABLES/CHAP_19/TABLE.5,57,,854C,56,,2H-1,95,4.55,5.35,Jaramillo (t),0.91,,,2H-1 95         4.55        5.35       Jaramillo (t)     0.91      
+IR19.T05,854,VOLUME/DATA/TABLES/CHAP_19/TABLE.5,58,,854C,56,,2H-1,142,5.02,5.82,Jaramillo (o),0.98,,,2H-1 142        5.02        5.82       Jaramillo (o)     0.98      
+IR19.T05,854,VOLUME/DATA/TABLES/CHAP_19/TABLE.5,59,,854C,56,,2H-2,60,5.70,6.50,Cobb (t),1.10,Midpoint,,2H-2 60         5.70        6.50       Cobb (t)          1.10       Midpoint
+IR19.T05,854,VOLUME/DATA/TABLES/CHAP_19/TABLE.5,60,,854C,56,,2H-2,72,5.82,6.62,Cobb (o),1.10,Midpoint,,2H-2 72         5.82        6.62       Cobb (o)          1.10       Midpoint
+IR19.T05,854,VOLUME/DATA/TABLES/CHAP_19/TABLE.5,61,,854C,56,,2H-5,22,9.82,10.62,Olduvai (t),1.66,,,2H-5 22         9.82       10.62       Olduvai (t)       1.66      
+IR19.T05,854,VOLUME/DATA/TABLES/CHAP_19/TABLE.5,62,,854C,56,,2H-5,108,10.68,11.48,Olfuvai (o),1.88,,,2H-5 108       10.68       11.48       Olfuvai (o)       1.88      
+IR19.T05,854,VOLUME/DATA/TABLES/CHAP_19/TABLE.5,63,,854C,56,,2H-6,82,11.92,12.72,Reunion (t),2.06,,,2H-6 82        11.92       12.72       Reunion (t)       2.06      
+IR19.T05,854,VOLUME/DATA/TABLES/CHAP_19/TABLE.5,64,,854C,56,,2H-6,88,11.98,12.78,Reunion (o),2.09,,,2H-6 88        11.98       12.78       Reunion (o)       2.09      
+IR19.T05,854,VOLUME/DATA/TABLES/CHAP_19/TABLE.5,65,,854C,56,,3H-2,8,14.68,16.68,M/G,2.47,,,3H-2 8         14.68       16.68       M/G               2.47      
+IR19.T05,854,VOLUME/DATA/TABLES/CHAP_19/TABLE.5,66,,854C,56,,3H-2,108,15.68,17.68,Kaena (t),2.92,,,3H-2 108       15.68       17.68       Kaena (t)         2.92      
+IR19.T05,854,VOLUME/DATA/TABLES/CHAP_19/TABLE.5,67,,854C,56,,3H-2,122,15.82,17.68,Kaena (o),2.99,,,3H-2 122       15.82       17.68       Kaena (o)         2.99      
+IR19.T05,854,VOLUME/DATA/TABLES/CHAP_19/TABLE.5,68,,854C,56,,3H-2,135,15.95,17.95,Mammoth (t),3.08,,,3H-2 135       15.95       17.95       Mammoth (t)       3.08      
+IR19.T05,854,VOLUME/DATA/TABLES/CHAP_19/TABLE.5,69,,854C,56,,3H-3,5,16.15,18.15,Mammoth (o),3.18,,,3H-3 5         16.15       18.15       Mammoth (o)       3.18      
+IR19.T05,854,VOLUME/DATA/TABLES/CHAP_19/TABLE.5,70,,854C,56,,3H-3,98,17.08,19.08,G/G,3.40,,,3H-3 98        17.08       19.08       G/G               3.40      
+IR19.T05,854,VOLUME/DATA/TABLES/CHAP_19/TABLE.5,71,,854C,56,,3H-4,32,17.93,19.93,C3A-n1 (t),5.35,,,3H-4 32        17.93       19.93       C3A-n1 (t)        5.35      
+IR19.T05,854,VOLUME/DATA/TABLES/CHAP_19/TABLE.5,72,source_core_section_written_without_hyphen,854C,56,,3H4,150,19.11,21.11,C3A-n1 (o),5.53,Section break,,3H4 150        19.11       21.11       C3A-n1 (o)        5.53       Section break
+IR19.T05,854,VOLUME/DATA/TABLES/CHAP_19/TABLE.5,73,,854C,56,,3H-5,80,19.91,21.91,C3A-n2 (t),5.68,,,3H-5 80        19.91       21.91       C3A-n2 (t)        5.68      
+IR19.T05,854,VOLUME/DATA/TABLES/CHAP_19/TABLE.5,74,,854C,56,,3H-6,42,21.03,23.03,C3A-n2 (o),5.89,,,3H-6 42        21.03       23.03       C3A-n2 (o)        5.89      
+IR19.T05,854,VOLUME/DATA/TABLES/CHAP_19/TABLE.5,75,,854C,56,,4H-1,98,23.58,26.28,R-gtN,,,,4H-1 98        23.58       26.28       R-gtN             
+IR19.T05,854,VOLUME/DATA/TABLES/CHAP_19/TABLE.5,76,,854C,56,,4H-1,142,24.02,26.72,N-gtR,,,,4H-1 142       24.02       26.72       N-gtR             
+IR19.T05,854,VOLUME/DATA/TABLES/CHAP_19/TABLE.5,77,,854C,56,,4H-2,60,24.70,27.40,C3A-n3 (o),6.50,,,4H-2 60        24.70       27.40       C3A-n3 (o)        6.50      
+IR19.T05,854,VOLUME/DATA/TABLES/CHAP_19/TABLE.5,78,,854C,56,,4H-3,142,27.02,29.72,N-gtR,,,,4H-3 142       27.02       29.72       N-gtR             
+IR19.T05,854,VOLUME/DATA/TABLES/CHAP_19/TABLE.5,79,,854C,56,,4H-4,52,27.62,30.32,R-gtN,,,,4H-4 52        27.62       30.32       R-gtN             
+IR19.T05,854,VOLUME/DATA/TABLES/CHAP_19/TABLE.5,80,,854C,56,,4H-4,92,28.02,30.72,C4-n1 (t),6.70,,,4H-4 92        28.02       30.72       C4-n1 (t)         6.70      
+IR19.T05,854,VOLUME/DATA/TABLES/CHAP_19/TABLE.5,81,,854C,56,,4H-5,138,29.99,32.69,C4-n1 (o),6.78,,,4H-5 138       29.99       32.69       C4-n1 (o)         6.78      
+IR19.T05,854,VOLUME/DATA/TABLES/CHAP_19/TABLE.5,82,,854C,56,,4H-6,42,30.53,33.23,C4-n2 (t),6.85,,,4H-6 42        30.53       33.23       C4-n2 (t)         6.85      
+IR19.T05,854,VOLUME/DATA/TABLES/CHAP_19/TABLE.5,83,,854C,56,,5H-3,98,36.08,39.78,C4-n2 (o),7.28,,,5H-3 98        36.08       39.78       C4-n2 (o)         7.28      
+IR19.T05,854,VOLUME/DATA/TABLES/CHAP_19/TABLE.5,84,,854C,56,,5H-4,75,37.35,41.05,C4-n3 (t),7.35,,,5H-4 75        37.35       41.05       C4-n3 (t)         7.35      
+IR19.T05,854,VOLUME/DATA/TABLES/CHAP_19/TABLE.5,85,,854C,56,,5H-4,102,37.62,41.32,R-gtN,,,,5H-4 102       37.62       41.32       R-gtN             
+IR19.T05,854,VOLUME/DATA/TABLES/CHAP_19/TABLE.5,86,,854C,56,,5H-4,145,38.05,41.75,N-gtR,,,,5H-4 145       38.05       41.75       N-gtR             
+IR19.T05,854,VOLUME/DATA/TABLES/CHAP_19/TABLE.5,87,,854C,56,,5H-5,50,38.60,42.30,C4-n3 (o),7.41,,,5H-5 50        38.60       42.30       C4-n3 (o)         7.41      
+IR19.T05,854,VOLUME/DATA/TABLES/CHAP_19/TABLE.5,88,,854C,56,,5H-5,48,40.08,43.78,C4A-n1 (t),7.90,,,5H-5 48        40.08       43.78       C4A-n1 (t)        7.90      
+IR19.T05,854,VOLUME/DATA/TABLES/CHAP_19/TABLE.5,89,,854C,56,,5H-7,60,41.70,45.40,C4A-n1 (o),8.21,,,5H-7 60        41.70       45.40       C4A-n1 (o)        8.21      
+IR19.T05,854,VOLUME/DATA/TABLES/CHAP_19/TABLE.5,90,,854C,56,,6H-1,92,42.52,41.73,N-gtR,,,,6H-1 92        42.52       41.73       N-gtR             
+IR19.T05,854,VOLUME/DATA/TABLES/CHAP_19/TABLE.5,91,,854C,56,,6H-2,5,43.15,42.35,C4-n3 (o),7.41,Section break,,6H-2 5         43.15       42.35       C4-n3 (o)         7.41       Section break
+IR19.T05,854,VOLUME/DATA/TABLES/CHAP_19/TABLE.5,92,,854C,56,,6H-3,2,44.62,43.82,C4A-n1 (t),7.90,Section break,,6H-3 2         44.62       43.82       C4A-n1 (t)        7.90       Section break
+IR19.T05,854,VOLUME/DATA/TABLES/CHAP_19/TABLE.5,93,,854C,56,,6H-3,140,46.00,45.20,C4A-n1 (o),8.21,,,6H-3 140       46.00       45.20       C4A-n1 (o)        8.21      
+IR19.T05,854,VOLUME/DATA/TABLES/CHAP_19/TABLE.5,94,,854C,56,,6H-4,42,46.52,45.72,N-gtR,,,,6H-4 42        46.52       45.72       N-gtR             
+IR19.T05,854,VOLUME/DATA/TABLES/CHAP_19/TABLE.5,95,,854C,56,,6H-4,78,46.88,46.08,R-gtN,,,,6H-4 78        46.88       46.08       R-gtN             
+IR19.T05,854,VOLUME/DATA/TABLES/CHAP_19/TABLE.5,96,,854C,56,,6H-4,125,47.35,46.55,C4A-n2 (t),8.50,,,6H-4 125       47.35       46.55       C4A-n2 (t)        8.50      
+IR19.T05,854,VOLUME/DATA/TABLES/CHAP_19/TABLE.5,97,,854C,56,,6H-6,55,49.65,48.85,C4A-n3 (t),8.71,,,6H-6 55        49.65       48.85       C4A-n3 (t)        8.71      
+IR19.T05,854,VOLUME/DATA/TABLES/CHAP_19/TABLE.5,98,,854C,56,,6H-6,118,50.28,49.48,C4A-n3 (o),8.80,,,6H-6 118       50.28       49.48       C4A-n3 (o)        8.80      
+IR19.T05,854,VOLUME/DATA/TABLES/CHAP_19/TABLE.5,99,,854C,56,,6H-7,0,50.60,49.80,C5-n1 (t),8.92,Section break,,6H-7 0         50.60       49.80       C5-n1 (t)         8.92       Section break

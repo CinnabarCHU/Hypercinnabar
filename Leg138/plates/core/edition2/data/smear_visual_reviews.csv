@@ -1,0 +1,54 @@
+cell_id,site,pdf_page,page_row,field_key,source_text,visually_read_value,evidence
+S844.P01.R001.C11,844,1,1,mineral_mica,*,*,visually read printed glyph at native PDF cell coordinates
+S844.P01.R019.C14,844,1,19,mineral_volcanic_glass,,2,visually read printed glyph at native PDF cell coordinates
+S844.P01.R003.C04,844,1,3,texture_sand,15^,15,visually read printed glyph at native PDF cell coordinates
+S844.P02.R001.C02,844,2,1,depth_mbsf,109.25,109.25,visually read printed glyph at native PDF cell coordinates
+S844.P01.R050.C03,844,1,50,lithology,P,D,visually read printed glyph at native PDF cell coordinates
+S845.P01.R004.C17,845,1,4,mineral_volcanic_glass,*,*,visually read printed glyph at native PDF cell coordinates
+S845.P01.R003.C21,845,1,3,biogenic_nannofossils,,*,visually read printed glyph at native PDF cell coordinates
+S845.P01.R002.C07,845,1,2,mineral_accessory,<,,printed cell visibly empty
+S845.P01.R032.C02,845,1,32,depth_mbsf,IAM,74.17,visually read printed glyph at native PDF cell coordinates
+S845.P02.R001.C03,845,2,1,lithology,M,M,visually read printed glyph at native PDF cell coordinates
+S846.P01.R002.C22,846,1,2,biogenic_sponge_spicules,*,*,visually read printed glyph at native PDF cell coordinates
+S846.P02.R001.C12,846,2,1,mineral_opal_or_opaline_fragments,T3s,,printed cell visibly empty
+S846.P02.R001.C03,846,2,1,lithology,D J,D,visually read printed glyph at native PDF cell coordinates
+S847.P01.R001.C12,847,1,1,mineral_pyrite,*,*,visually read printed glyph at native PDF cell coordinates
+S847.P01.R004.C20,847,1,4,biogenic_silicoflagellates,,*,visually read printed glyph at native PDF cell coordinates
+S847.P01.R002.C20,847,1,2,biogenic_silicoflagellates,*****,*,visually read printed glyph at native PDF cell coordinates
+S847.P02.R028.C02,847,2,28,depth_mbsf,91 Al,97.17,visually read printed glyph at native PDF cell coordinates
+S848.P01.R001.C20,848,1,1,biogenic_silicoflagellates,*,*,visually read printed glyph at native PDF cell coordinates
+S848.P01.R010.C12,848,1,10,mineral_pyrite,,*,visually read printed glyph at native PDF cell coordinates
+S848.P01.R002.C22,848,1,2,rock_carbonate_particles,u,,printed cell visibly empty
+S848.P02.R001.C02,848,2,1,depth_mbsf,"90,47",90.47,visually read printed glyph at native PDF cell coordinates
+S848.P02.R009.C03,848,2,9,lithology,I D,D,visually read printed glyph at native PDF cell coordinates
+S849.P01.R001.C18,849,1,1,biogenic_silicoflagellates,*,*,visually read printed glyph at native PDF cell coordinates
+S849.P02.R001.C15,849,2,1,biogenic_foraminifers,,3,visually read printed glyph at native PDF cell coordinates
+S849.P01.R001.C08,849,1,1,mineral_clay,26_,26,visually read printed glyph at native PDF cell coordinates
+S850.P01.R001.C15,850,1,1,mineral_volcanic_glass,*,*,visually read printed glyph at native PDF cell coordinates
+S850.P01.R002.C21,850,1,2,biogenic_sponge_spicules,,*,visually read printed glyph at native PDF cell coordinates
+S850.P01.R001.C19,850,1,1,biogenic_radiolarians,'t 7,7,visually read printed glyph at native PDF cell coordinates
+S851.P01.R001.C20,851,1,1,biogenic_silicoflagellates,*,*,visually read printed glyph at native PDF cell coordinates
+S851.P02.R002.C14,851,2,2,mineral_quartz,,,printed cell visibly empty
+S851.P01.R002.C07,851,1,2,mineral_clay,5 ',5,visually read printed glyph at native PDF cell coordinates
+S851.P02.R017.C03,851,2,17,lithology,M,M,visually read printed glyph at native PDF cell coordinates
+S852.P01.R005.C07,852,1,5,mineral_clay,4,4,visually read printed glyph at native PDF cell coordinates
+S852.P01.R001.C03,852,1,1,lithology,D,D,visually read printed glyph at native PDF cell coordinates
+S852.P01.R001.C04,852,1,1,texture_sand,,,printed cell visibly empty
+S852.P01.R001.C02,852,1,1,depth_mbsf,.01,.01,visually read printed glyph at native PDF cell coordinates
+S852.P01.R018.C03,852,1,18,lithology,M,M,visually read printed glyph at native PDF cell coordinates
+S853.P01.R005.C11,853,1,5,mineral_oxides,*,*,visually read printed glyph at native PDF cell coordinates
+S853.P01.R003.C19,853,1,3,biogenic_silicoflagellates,,*,visually read printed glyph at native PDF cell coordinates
+S853.P01.R002.C19,853,1,2,biogenic_silicoflagellates,***,*,visually read printed glyph at native PDF cell coordinates
+S854.P01.R001.C24,854,1,1,biogenic_sponge_spicules,*,*,visually read printed glyph at native PDF cell coordinates
+S854.P01.R007.C10,854,1,7,mineral_feldspar,,*,visually read printed glyph at native PDF cell coordinates
+S854.P01.R001.C07,854,1,1,mineral_carbonate,u,,printed cell visibly empty
+S844.P02.R013.C02,844,2,13,depth_mbsf,j 171.3θj,171.30,visually read printed glyph at native PDF cell coordinates
+S844.P02.R024.C03,844,2,24,lithology,D |,D,visually read printed glyph at native PDF cell coordinates
+S844.P02.R032.C02,844,2,32,depth_mbsf,|265.40,265.40,visually read printed glyph at native PDF cell coordinates
+S844.P02.R040.C02,844,2,40,depth_mbsf,[290.65,290.65,visually read printed glyph at native PDF cell coordinates
+S845.P02.R034.C03,845,2,34,lithology,' M,M,visually read printed glyph at native PDF cell coordinates
+S845.P02.R055.C02,845,2,55,depth_mbsf,I 35.05,35.05,visually read printed glyph at native PDF cell coordinates
+S845.P03.R001.C02,845,3,1,depth_mbsf,44.85 a,44.85,visually read printed glyph at native PDF cell coordinates
+S847.P02.R018.C01,847,2,18,sample_label,"74)4, 40","7-04, 40",visually read printed glyph at native PDF cell coordinates
+S848.P02.R002.C02,848,2,2,depth_mbsf,"91,26",91.26,visually read printed glyph at native PDF cell coordinates
+S851.P03.R043.C03,851,3,43,lithology,L M,M,visually read printed glyph at native PDF cell coordinates

@@ -1,0 +1,32 @@
+item_id,site,source_path,source_line,verification_flags,reported_hole,context_line,reported_core_prefix,core_section,interval_cm,depth_mbsf,depth_mcd,interpretation,age_ma,comments,unresolved_source_fragment,raw_source_line
+IR16.T08,851,VOLUME/DATA/TABLES/CHAP_16/TABLE.8,4,,851B,4,,851B-2H-4,75,12.75,15.10,Brunhes/Matuyama,0.73,,,851B-2H-4       75       12.75       15.10       Brunhes/Matuyama    0.73      
+IR16.T08,851,VOLUME/DATA/TABLES/CHAP_16/TABLE.8,5,,851B,5,,851B-4H-2,10,28.10,33.50,Olduvai (t),1.66,,,851B-4H-2       10       28.10       33.50       Olduvai (t)         1.66      
+IR16.T08,851,VOLUME/DATA/TABLES/CHAP_16/TABLE.8,6,,851B,6,,851B-4H-3,98,30.48,35.88,Olduvai (o),1.88,,,851B-4H-3       98       30.48       35.88       Olduvai (o)         1.88      
+IR16.T08,851,VOLUME/DATA/TABLES/CHAP_16/TABLE.8,7,,851B,7,,851B-5H-5,30,42.30,48.60,Matuyama/Gauss,2.47,,,851B-5H-5       30       42.30       48.60       Matuyama/Gauss      2.47      
+IR16.T08,851,VOLUME/DATA/TABLES/CHAP_16/TABLE.8,8,,851B,8,,851B-6H-3,140,49.90,57.75,Kaena (t),2.92,Near section break,,851B-6H-3      140       49.90       57.75       Kaena (t)           2.92       Near section break
+IR16.T08,851,VOLUME/DATA/TABLES/CHAP_16/TABLE.8,9,,851B,9,,851B-6H-4,108,51.08,58.93,Kaena (o),2.99,,,851B-6H-4      108       51.08       58.93       Kaena (o)           2.99      
+IR16.T08,851,VOLUME/DATA/TABLES/CHAP_16/TABLE.8,10,,851B,10,,851B-6H-5,142,52.92,60.77,Mammoth (t),3.08,Near section break,,851B-6H-5      142       52.92       60.77       Mammoth (t)         3.08       Near section break
+IR16.T08,851,VOLUME/DATA/TABLES/CHAP_16/TABLE.8,11,,851B,11,,851B-6H-7,60,55.10,62.95,Mammoth (o),3.18,,,851B-6H-7       60       55.10       62.95       Mammoth (o)         3.18      
+IR16.T08,851,VOLUME/DATA/TABLES/CHAP_16/TABLE.8,12,,851B,12,,851B-7H-4,22,59.72,68.17,Gauss/Gilbert,3.40,,,851B-7H-4       22       59.72       68.17       Gauss/Gilbert       3.40      
+IR16.T08,851,VOLUME/DATA/TABLES/CHAP_16/TABLE.8,13,,851B,13,,851B-8H-2,140,67.40,77.30,Cochiti (t),3.88,Near section break,,851B-8H-2      140       67.40       77.30       Cochiti (t)         3.88       Near section break
+IR16.T08,851,VOLUME/DATA/TABLES/CHAP_16/TABLE.8,14,,851B,14,,851B-8H-4,110,70.10,80.00,Cochiti (o),3.97,,,851B-8H-4      110       70.10       80.00       Cochiti (o)         3.97      
+IR16.T08,851,VOLUME/DATA/TABLES/CHAP_16/TABLE.8,15,,851C,15,,851C-2H-2,145,14.95,18.95,Jaramillo (t),0.91,,,851C-2H-2      145       14.95       18.95       Jaramillo (t)       0.91      
+IR16.T08,851,VOLUME/DATA/TABLES/CHAP_16/TABLE.8,16,,851C,16,,851C-2H-4,0,16.50,20.50,Jaramillo (o),0.98,Top of section,,851C-2H-4        0       16.50       20.50       Jaramillo (o)       0.98       Top of section
+IR16.T08,851,VOLUME/DATA/TABLES/CHAP_16/TABLE.8,17,,851C,17,,851C-3H-5,30,27.80,33.85,Olduvai (t),1.66,,,851C-3H-5       30       27.80       33.85       Olduvai (t)         1.66      
+IR16.T08,851,VOLUME/DATA/TABLES/CHAP_16/TABLE.8,18,,851C,18,,851C-3H-6,85,29.85,35.90,Olduvai (o),1.88,,,851C-3H-6       85       29.85       35.90       Olduvai (o)         1.88      
+IR16.T08,851,VOLUME/DATA/TABLES/CHAP_16/TABLE.8,19,,851C,19,,851C-6H-2,55,52.05,60.75,Mammoth (t),3.08,,,851C-6H-2       55       52.05       60.75       Mammoth (t)         3.08      
+IR16.T08,851,VOLUME/DATA/TABLES/CHAP_16/TABLE.8,20,,851C,20,,851C-6H-3,130,54.30,63.00,Mammoth (o),3.18,,,851C-6H-3      130       54.30       63.00       Mammoth (o)         3.18      
+IR16.T08,851,VOLUME/DATA/TABLES/CHAP_16/TABLE.8,21,,851C,21,,851C-6H-7,25,59.25,67.95,Gauss/Gilbert,3.40,,,851C-6H-7       25       59.25       67.95       Gauss/Gilbert       3.40      
+IR16.T08,851,VOLUME/DATA/TABLES/CHAP_16/TABLE.8,22,,851C,22,,851C-7H-6,95,67.95,77.55,Cochiti (t),3.88,,,851C-7H-6       95       67.95       77.55       Cochiti (t)         3.88      
+IR16.T08,851,VOLUME/DATA/TABLES/CHAP_16/TABLE.8,23,,851E,23,,851E-2H-1,70,11.58,15.08,Brunhes/Matuyama,0.73,,,851E-2H-1       70       11.58       15.08       Brunhes/Matuyama    0.73      
+IR16.T08,851,VOLUME/DATA/TABLES/CHAP_16/TABLE.8,24,,851E,24,,851E-2H-5,05,15.43,18.93,Jaramillo (t),0.91,Top of section,,851E-2H-5       05       15.43       18.93       Jaramillo (t)       0.91       Top of section
+IR16.T08,851,VOLUME/DATA/TABLES/CHAP_16/TABLE.8,25,,851E,25,,851E-2H-6,10,16.98,20.48,Jaramillo (o),0.98,,,851E-2H-6       10       16.98       20.48       Jaramillo (o)       0.98      
+IR16.T08,851,VOLUME/DATA/TABLES/CHAP_16/TABLE.8,26,,851E,26,,851E-4H-1,125,29.75,35.95,Olduvai (o),1.88,,,851E-4H-1      125       29.75       35.95       Olduvai (o)         1.88      
+IR16.T08,851,VOLUME/DATA/TABLES/CHAP_16/TABLE.8,27,,851E,27,,851E-5H-3,90,41.90,48.70,Matuyama/Gauss,2.47,,,851E-5H-3       90       41.90       48.70       Matuyama/Gauss      2.47      
+IR16.T08,851,VOLUME/DATA/TABLES/CHAP_16/TABLE.8,28,,851E,28,,851E-6H-2,125,50.25,57.85,Kaena (t),2.92,,,851E-6H-2      125       50.25       57.85       Kaena (t)           2.92      
+IR16.T08,851,VOLUME/DATA/TABLES/CHAP_16/TABLE.8,29,,851E,29,,851E-6H-3,110,51.60,59.20,Kaena (o),2.99,,,851E-6H-3      110       51.60       59.20       Kaena (o)           2.99      
+IR16.T08,851,VOLUME/DATA/TABLES/CHAP_16/TABLE.8,30,,851E,30,,851E-6H-4,135,53.35,60.95,Mammoth (t),3.08,,,851E-6H-4      135       53.35       60.95       Mammoth (t)         3.08      
+IR16.T08,851,VOLUME/DATA/TABLES/CHAP_16/TABLE.8,31,,851E,31,,851E-6H-6,45,55.45,63.05,Mammoth (o),3.18,,,851E-6H-6       45       55.45       63.05       Mammoth (o)         3.18      
+IR16.T08,851,VOLUME/DATA/TABLES/CHAP_16/TABLE.8,32,,851E,32,,851E-7H-2,110,59.60,68.20,Gauss/Gilbert,3.40,,,851E-7H-2      110       59.60       68.20       Gauss/Gilbert       3.40      
+IR16.T08,851,VOLUME/DATA/TABLES/CHAP_16/TABLE.8,33,,851E,33,,851E-8H-1,130,67.80,77.40,Cochiti (t),3.88,,,851E-8H-1      130       67.80       77.40       Cochiti (t)         3.88      
+IR16.T08,851,VOLUME/DATA/TABLES/CHAP_16/TABLE.8,34,,851E,34,,851E-8H-3,80,70.30,79.90,Cochiti (o),3.97,,,851E-8H-3       80       70.30       79.90       Cochiti (o)         3.97      

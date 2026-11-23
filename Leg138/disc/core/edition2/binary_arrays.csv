@@ -1,0 +1,10 @@
+field,embedded_label,download_label_offset,download_data_start,download_data_end_exclusive,norm_data_bytes,items,ambiguous_CRLF_recoveries
+mbsf,MBSF,548,913,27130,25763,6441,1
+blue_pct,Blue,591,40153,65939,25764,6441,0
+red_pct,Red,632,78958,104755,25764,6441,0
+near_ir_pct,Near IR,672,117773,143562,25764,6441,0
+composite_depth_m,Composite Depth (m),712,156580,182743,25764,6441,0
+affine,affine,752,195761,223180,25764,6441,0
+red_over_blue,Red/Blue,792,236198,262010,25763,6441,1
+ir_over_red,IR/Red,833,275029,300836,25764,6441,0
+ir_over_blue,IR/Blue,873,313854,339662,25764,6441,0

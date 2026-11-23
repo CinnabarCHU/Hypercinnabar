@@ -1,0 +1,53 @@
+{
+  "tables": 92,
+  "source_lines": 3252,
+  "named_rows": 2726,
+  "source_roles": {
+    "data": 2726,
+    "header": 327,
+    "blank_or_eof": 96,
+    "trailing_note": 76,
+    "core_heading": 1,
+    "hole_heading": 26
+  },
+  "families": {
+    "cross_site": 1,
+    "fossils": 34,
+    "reversals": 8,
+    "age_control": 10,
+    "porewater": 10,
+    "sediment_means": 10,
+    "reflectors": 8,
+    "hydrocarbon": 4,
+    "elemental": 7
+  },
+  "tables_with_source_or_alignment_flags": 25,
+  "flagged_lines": 116,
+  "flags": {
+    "age_absent_in_electronic_source": 1,
+    "depth_range_descends_in_source": 17,
+    "sample_under_first_hole_on_continuation_line_location_uncertain": 1,
+    "irregular_depth_lexeme": 2,
+    "two_alternative_MPTS_ages_as_written": 7,
+    "comment_and_interpretation_touch_in_source": 2,
+    "native_age_and_rate_headers_order_differs_from_chapter_interpretation": 23,
+    "truncated_event_and_displaced_or_duplicated_source_cells": 1,
+    "only_one_depth_token_check_alignment": 2,
+    "isolated_depth_in_final_hole_group": 1,
+    "composite_depth_empty_in_source": 1,
+    "section_number_absent": 1,
+    "source_core_label_truncated": 1,
+    "column_positions_shift_relative_to_print_and_adjacent_intervals; preserve electronic positions": 1,
+    "header_hole_844B_in_site_849_chapter": 6,
+    "no_hole_identifier_in_native_header": 5,
+    "hole_not_stated_in_source": 40,
+    "mcd_continues_on_following_source_line": 1,
+    "continuation_of_preceding_constraint": 1,
+    "Corg_MAR_verified_in_print_at_0.14_noncarbonate_MAR_blank": 1,
+    "source_core_section_written_without_hyphen": 1
+  },
+  "source_byte_roundtrips_verified": 92,
+  "source_lines_reassembled": 3252,
+  "data_rows_verified_for_exact_literal_token_multisets": 2726,
+  "populated_literal_fields_including_unresolved_fragments": 17062
+}

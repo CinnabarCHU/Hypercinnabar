@@ -1,0 +1,11 @@
+item_id,pdf_page,printed_page,source_bbox_pt,note_position,age_range_Ma,pole_latitude_N,pole_longitude_W,angular_velocity_deg_Myr,collation_note
+IR09.T23,64,182,"341,73,531,99",above_headers,,21.9,115.5,-0.948,"Angular velocity typography irregular, published minus sign retained."
+IR10.T25,63,251,"179,634,375,674",below_body,,21.9,115.5,-0.948,
+IR12.T22,47,381,"164,628,396,668",below_body,0–12,71.5,86.8,-0.75,"A minus sign is printed before the value."
+IR13.T25,55,731,"154,590,386,630",no_numeric_note_in_adjacent_area,,,,,"The caption refers to a pole of rotation. No numeric note appears directly under this table."
+IR14.T22,56,790,"194,618,433,658",below_body,0–12,67.0,59.0,0.84,
+IR15.T25,51,859,"270,224,529,264",below_body,0–12,67.0,59.0,0.84,"van Andel et al. (1975) credited."
+IR16.T23,56,946,"204,661,445,701",below_body,0–12,67.0,59.0,0.84,
+IR17.T22,40,1006,"316,674,565,714",below_body,0–12,67.0,59.0,0.84,
+IR18.T18,37,1059,"288,660,535,700",below_body,0–12,67.0,59.0,0.83,"Printed 0.83; preserve the difference from 0.84 in some adjacent stations."
+IR19.T15,27,1089,"315,689,544,729",no_numeric_note_in_adjacent_area,,,,,"Printed caption reads Site 851 in the Site 854 chapter."

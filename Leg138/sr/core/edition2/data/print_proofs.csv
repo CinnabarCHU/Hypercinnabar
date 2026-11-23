@@ -1,0 +1,8 @@
+dataset_id,source,pdf_page,bbox_pt,witness_png
+SR.C01.TABLE1.PRINT.E2,official/VOLUME/CHAPTERS/sr138_01.pdf,8,"[48, 47, 300, 250]",print/SR.C01.TABLE1_scan.png
+SR.C03.TABLE3.PRINT.E2,official/VOLUME/CHAPTERS/sr138_03.pdf,10,"[49, 365, 303, 481]",print/SR.C03.TABLE3_scan.png
+SR.C03.TABLE4.PRINT.E2,official/VOLUME/CHAPTERS/sr138_03.pdf,11,"[292, 536, 538, 657]",print/SR.C03.TABLE4_scan.png
+SR.C03.TABLE6.PRINT.E2,official/VOLUME/CHAPTERS/sr138_03.pdf,15,"[18, 44, 283, 419]",print/SR.C03.TABLE6_scan.png
+SR.C04.TABLE1.PRINT.E2,official/VOLUME/CHAPTERS/sr138_04.pdf,5,"[323, 284, 508, 427]",print/SR.C04.TABLE1_scan.png
+SR.C36.TABLE1.PRINT.E2,official/VOLUME/CHAPTERS/sr138_36.pdf,2,"[344, 41, 547, 184]",print/SR.C36.TABLE1_scan.png
+SR.C41.TABLE3.PRINT.E2,official/VOLUME/CHAPTERS/sr138_41.pdf,7,"[50, 224, 251, 427]",print/SR.C41.TABLE3_scan.png

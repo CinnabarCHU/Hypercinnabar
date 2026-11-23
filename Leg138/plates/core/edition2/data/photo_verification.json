@@ -1,0 +1,29 @@
+{
+  "photos": 593,
+  "verified_pdf_and_jpeg_sources": 593,
+  "attempted_columns": 4499,
+  "layout_grades": {
+    "edge_supported": 590,
+    "review_needed": 1,
+    "weak_or_short_lane": 2
+  },
+  "roi_counts": {
+    "printed_ruler": 593,
+    "board_background": 593,
+    "photographed_liner": 4497,
+    "sediment_candidate": 7300,
+    "reviewed_non_sediment_band": 6
+  },
+  "columns_by_evidence": {
+    "strong": 4495,
+    "unresolved": 2,
+    "weak": 2
+  },
+  "no_sediment_candidates": [
+    "848B8H"
+  ],
+  "columns_without_sediment_candidate": 65,
+  "native_rgb_checksums": 12989,
+  "inherited_manual_windows": 22,
+  "crop_decode": "RGB byte order, Pillow decoder, no resizing or color correction; hash per ROI excludes PNG headers"
+}

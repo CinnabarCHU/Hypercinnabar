@@ -21,7 +21,7 @@
       "heading": "航后初报图件对校",
       "first_page": 67,
       "last_page": 77,
-      "input_sha256": "5b42c56ae6e504d23d4e3efd59182c9aadf86ab38a0c5bfeaf158c6d27c9cf5c",
+      "input_sha256": "f5a374bbc29f8452bfe05c822f94aaa84c3263369c7596f163a900f5e2cd1c50",
       "preserved_source_links": 0
     },
     {
@@ -54,6 +54,6 @@
   "bookmark_count": 86,
   "preserved_source_links": 123,
   "new_internal_links": 7,
-  "output_sha256": "40ebb8d32008f50edb3623f62b1f5c92d4a0a9f952e1223d4dc3853a01d3c503",
-  "output_bytes": 9202807
+  "output_sha256": "18054662c542d70b8501ff6832b43fef7ca5385b807e104bb7fbd136922aa1fa",
+  "output_bytes": 9203031
 }

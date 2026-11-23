@@ -1,0 +1,34 @@
+item_id,site,source_path,source_line,verification_flags,composite_depth,sedimentation_rate,age_ma,remarks,unresolved_source_fragment,raw_source_line
+IR17.T11,852,VOLUME/DATA/TABLES/CHAP_17/TABLE.11,6,,0,,0.0,Core top,,  0                        0.0         Core top
+IR17.T11,852,VOLUME/DATA/TABLES/CHAP_17/TABLE.11,7,,9.05,12.40,0.73,B Brunhes Chron,,  9.05        12.40        0.73        B Brunhes Chron
+IR17.T11,852,VOLUME/DATA/TABLES/CHAP_17/TABLE.11,8,,11.75,15.00,0.91,T Jaramillo Subchron,, 11.75        15.00        0.91        T Jaramillo Subchron
+IR17.T11,852,VOLUME/DATA/TABLES/CHAP_17/TABLE.11,9,,12.67,13.14,0.98,B Jaramillo Subchron,, 12.67        13.14        0.98        B Jaramillo Subchron
+IR17.T11,852,VOLUME/DATA/TABLES/CHAP_17/TABLE.11,10,,21.08,12.37,1.66,T Olduvai Subchron,, 21.08        12.37        1.66        T Olduvai Subchron
+IR17.T11,852,VOLUME/DATA/TABLES/CHAP_17/TABLE.11,11,,22.62,7.00,1.88,B Olduvai Subchron,, 22.62         7.00        1.88        B Olduvai Subchron
+IR17.T11,852,VOLUME/DATA/TABLES/CHAP_17/TABLE.11,12,,29.7,12.00,2.47,B Matuyama Chron,, 29.7         12.00        2.47        B Matuyama Chron
+IR17.T11,852,VOLUME/DATA/TABLES/CHAP_17/TABLE.11,13,,35.46,12.80,2.92,T Kaena Subchron,, 35.46        12.80        2.92        T Kaena Subchron
+IR17.T11,852,VOLUME/DATA/TABLES/CHAP_17/TABLE.11,14,,36.31,12.14,2.99,B Kaena Subchron,, 36.31        12.14        2.99        B Kaena Subchron
+IR17.T11,852,VOLUME/DATA/TABLES/CHAP_17/TABLE.11,15,,37.32,11.22,3.08,T Mammoth Subchron,, 37.32        11.22        3.08        T Mammoth Subchron
+IR17.T11,852,VOLUME/DATA/TABLES/CHAP_17/TABLE.11,16,,38.44,11.20,3.18,B Mammoth Subchron,, 38.44        11.20        3.18        B Mammoth Subchron
+IR17.T11,852,VOLUME/DATA/TABLES/CHAP_17/TABLE.11,17,,41.25,12.77,3.4,B Gauss Chron,, 41.25        12.77        3.4         B Gauss Chron
+IR17.T11,852,VOLUME/DATA/TABLES/CHAP_17/TABLE.11,18,,46.4,10.73,3.88,T Cochiti Subchron,, 46.4         10.73        3.88        T Cochiti Subchron
+IR17.T11,852,VOLUME/DATA/TABLES/CHAP_17/TABLE.11,19,,47.78,15.33,3.97,B Cochiti Subchron,, 47.78        15.33        3.97        B Cochiti Subchron
+IR17.T11,852,VOLUME/DATA/TABLES/CHAP_17/TABLE.11,20,,50.15,18.23,4.1,T Nunivak Subchron,, 50.15        18.23        4.1         T Nunivak Subchron
+IR17.T11,852,VOLUME/DATA/TABLES/CHAP_17/TABLE.11,21,,51.8,11.79,4.24,B Nunivak Subchron,, 51.8         11.79        4.24        B Nunivak Subchron
+IR17.T11,852,VOLUME/DATA/TABLES/CHAP_17/TABLE.11,22,,54.47,16.69,4.4,T Sidujfall Subchron,, 54.47        16.69        4.4         T Sidujfall Subchron
+IR17.T11,852,VOLUME/DATA/TABLES/CHAP_17/TABLE.11,23,,55.87,20.00,4.47,B Sidujfall Subchron,, 55.87        20.00        4.47        B Sidujfall Subchron
+IR17.T11,852,VOLUME/DATA/TABLES/CHAP_17/TABLE.11,24,,57.33,14.60,4.57,T Thvera Subchron,, 57.33        14.60        4.57        T Thvera Subchron
+IR17.T11,852,VOLUME/DATA/TABLES/CHAP_17/TABLE.11,25,,61.64,21.55,4.77,B Thvera Subchron,, 61.64        21.55        4.77        B Thvera Subchron
+IR17.T11,852,VOLUME/DATA/TABLES/CHAP_17/TABLE.11,26,,72.03,17.91,5.35,T C3A-n1,, 72.03        17.91        5.35        T C3A-n1
+IR17.T11,852,VOLUME/DATA/TABLES/CHAP_17/TABLE.11,27,,76.28,23.61,5.53,B C3A-n1,, 76.28        23.61        5.53        B C3A-n1
+IR17.T11,852,VOLUME/DATA/TABLES/CHAP_17/TABLE.11,28,,79.2,19.47,5.68,T C3A-n2,, 79.2         19.47        5.68        T C3A-n2
+IR17.T11,852,VOLUME/DATA/TABLES/CHAP_17/TABLE.11,29,,93.2,18.92,6.42,B Amaurolithus primus,, 93.2         18.92        6.42        B Amaurolithus primus
+IR17.T11,852,VOLUME/DATA/TABLES/CHAP_17/TABLE.11,30,,106.0,11.90,7.5,B Discoaster berggreni,,106.0         11.90        7.5         B Discoaster berggreni
+IR17.T11,852,VOLUME/DATA/TABLES/CHAP_17/TABLE.11,31,,114.45,21.00,7.9,T C4A-n1,,114.45        21.00        7.9         T C4A-n1
+IR17.T11,852,VOLUME/DATA/TABLES/CHAP_17/TABLE.11,32,,116.66,7.13,8.21,B C4A-n1,,116.66         7.13        8.21        B C4A-n1
+IR17.T11,852,VOLUME/DATA/TABLES/CHAP_17/TABLE.11,33,,117.26,3.00,8.41,T C4A-n2,,117.26         3.00        8.41        T C4A-n2
+IR17.T11,852,VOLUME/DATA/TABLES/CHAP_17/TABLE.11,34,,117.99,8.11,8.5,B C4A-n2,,117.99         8.11        8.5         B C4A-n2
+IR17.T11,852,VOLUME/DATA/TABLES/CHAP_17/TABLE.11,35,,118.99,4.76,8.71,T C4A-n3,,118.99         4.76        8.71        T C4A-n3
+IR17.T11,852,VOLUME/DATA/TABLES/CHAP_17/TABLE.11,36,,119.26,3.00,8.8,B C4A-n3,,119.26         3.00        8.8         B C4A-n3
+IR17.T11,852,VOLUME/DATA/TABLES/CHAP_17/TABLE.11,37,,119.63,3.08,8.92,T C5-n1,,119.63         3.08        8.92        T C5-n1
+IR17.T11,852,VOLUME/DATA/TABLES/CHAP_17/TABLE.11,38,,128.3,8.50,9.94,T Coccolithus miopelagicus,,128.3          8.50        9.94        T Coccolithus miopelagicus

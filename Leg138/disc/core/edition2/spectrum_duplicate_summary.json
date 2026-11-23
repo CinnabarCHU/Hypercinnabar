@@ -1,0 +1,12 @@
+{
+  "exact_file_groups": {},
+  "compared_REF_files": 3803,
+  "site854_variant_files": [
+    "SITE_854/COLOR/DATA/854C06H6.REF",
+    "SITE_854/COLOR/DATA/854X06H6.REF"
+  ],
+  "variant_source_scan_metadata_equal": true,
+  "variant_rows_same_sample_and_offset": 49,
+  "variant_rows_all_511_values_equal": 0,
+  "largest_variant_difference_pct_points": 24.0
+}

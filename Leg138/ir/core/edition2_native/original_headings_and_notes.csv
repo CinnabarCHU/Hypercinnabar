@@ -1,0 +1,431 @@
+item_id,source_line,role,text
+IR06.T02,1,header,Table 2.
+IR06.T02,3,header,Mean      Site 846   Site 847   Site 848   Site 849   Site 850  Site 851   Site 852   Site 853
+IR06.T02,4,header,Age (Ma) Sed. Rate  Sed. Rate  Sed. Rate  Sed. Rate  Sed. Rate Sed. Rate  Sed. Rate  Sed. Rate
+IR06.T02,5,header,         (mcd/m.y.) (mcd/m.y.)  (mcd/m.y.)(mcd/m.y.) (mcd/m.y.)(mcd/m.y.) (mcd/m.y.) (mcd/m.y.) 
+IR09.T03,1,header,Table 3. Interval (core and section) and depth (mbsf and mcd) constraints of calcareous nannofossil events for Site 844.       
+IR09.T03,2,header,                                         Hole 844B                                     Hole 844C 
+IR09.T03,3,header,                                 Interval           Depth     Depth           Interval         Depth           Depth
+IR09.T03,4,header,           Event                          (cm)      (mbsf)     (mcd)                 (cm)       (mbsf)        (mcd)
+IR09.T03,23,trailing_note,T = top occurrence; B = bottom occurrence.      
+IR09.T04,1,header,Table 4. Interval (core and section) and depth (mbsf and mcd) constraints of planktonic foraminifer events for Site 844.   
+IR09.T04,2,header,                                            Hole 844B 
+IR09.T04,3,header,                                      Interval      Depth          Depth
+IR09.T04,4,header,          Event                       (section)     (mbsf)         (mcd)
+IR09.T04,11,trailing_note,T = top occurrence; B = bottom occurrence.  
+IR09.T05,1,header,Table 5. Interval (core and section) and depth (mbsf and mcd) constraints of radiolarian events for Site 844.       
+IR09.T05,2,header,                                       Hole 844B                                Hole 844C                      Hole 844D
+IR09.T05,3,header,                               Interval       Depth         Depth       Interval     Depth      Depth  Interval        Depth      Depth
+IR09.T05,4,header,Event                         (section)      (mbsf)         (mcd)      (section)    (mbsf)      (mcd)       (section) (mbsf) (mcd)
+IR09.T05,69,trailing_note,T = top occurrence; B = bottom occurrence.      
+IR09.T06,1,header,Table 6. Sample and depth (mbsf) constraints of diatom events for Site 844.       
+IR09.T06,2,header,                                              Hole 844B                                   Hole 844C 
+IR09.T06,3,header,                                  Interval       Depth         Depth        Interval       Depth          Depth
+IR09.T06,4,header,        Event                     (section)      (mbsf)        (mcd)         (section)     (mbsf)        (mcd)
+IR09.T06,52,trailing_note,T = top occurrence; B = bottom occurrence.      
+IR09.T10,1,header,Table 10. Reversal boundary depths from Site 844.          
+IR09.T10,3,header,      Interpreted  MPTS  
+IR09.T10,5,header,Core    section       Depth  Depth polarity                 Age  
+IR09.T10,7,header,interval        (cm)  (mbsf)(mcd)      boundary            (Ma)   Comments 
+IR09.T10,74,trailing_note,Note: Because of end effects during measurement   reversal boundaries marked as being at section breaks probably are not well located.  
+IR09.T12,1,header,Table 12. Control points for accumulation rates.            
+IR09.T12,3,header,Composite    Sed. rate    Age    
+IR09.T12,5,header,depth (m)    (m/m.y.)    (Ma)     Comments
+IR09.T13,1,header,Table 13. Interstitial-water geochemical data for Holes 844A and 844B. aMeasurements were not performed.              
+IR09.T13,3,header,               Interval Depth  Salinity Chloride Sodium Alkalinity Sulfate Magnesium Calcium Potassium Strontium Lithium Silica
+IR09.T13,4,header,Core section   (cm)   (mbsf) pH (mM) (mM) (mM) (mM) (mM)  (mM)  (mM)  (mM) (mM) (mM)  (mM)
+IR09.T16,1,header,Table 16. Average values of sedimentary parameters measured or calculated over time intervals defined by chrono-stratigraphic levels. See <169>Sedimentation Rates<170> section (this chapter) for a dis
+IR09.T16,2,header,Composite          Mean    Mean    Mean    Mean     Mean     Mean      Mean           Mean
+IR09.T16,3,header,depth       Age    CaCO3    Corg   sed. rate DBD    bulk MAR CaCO3 MAR non-CaCO3 MAR  Corg MAR
+IR09.T16,4,header,(mcd)    (Ma)       (%)    (%)    (m/m.y.) (g/cm3)(g/cm2-k.y.)(g/cm2-k.y.)(g/cm2-k.y.)(mg/cm2-k.y.)
+IR09.T16,34,trailing_note,Note: After this table was constructed on board the ship changes were made to depths of the 
+IR09.T16,35,trailing_note,age control points (see Sedimentation Rates section this chapter for final selection of age
+IR09.T16,36,trailing_note,DBD = dry-bulk density; MAR = mass accumulation rate.                                                                               
+IR09.T22,1,header,Table 22. Summary of traveltimes depths and ages for Site 844 reflectors.                                  
+IR09.T22,2,header,       Traveltime    Synthetic     Depth       Depth        Age
+IR09.T22,3,header,Reflector (sec)       (m)         (mbsf)        (mcd)       (Ma)
+IR10.T03,1,header,Table 3. Sample and depth constraints of calcareous nannofossil events for Site 845.
+IR10.T03,2,header,                                        Hole 845A                Hole 845B       
+IR10.T03,3,header,      Depth           Depth
+IR10.T03,4,header,           Event                          (cm)               (mbsf)     (mcd)           (cm)       (mbsf)        (mcd)
+IR10.T03,20,trailing_note,T = top occurrence; B = bottom occurrence.                                                
+IR10.T04,1,header,Table 4. Sample and depth constraints of radiolarian events for Site 845.
+IR10.T04,3,header,Event                           Hole 845A  depth (mbsf)    depth (mcd)    Hole 845B      depth (mbsf)    depth (mcd)  
+IR10.T04,4,header,                                (section)                                (section )  
+IR10.T04,71,trailing_note,T = top occurrence; B = bottom occurrence. An >> denotes an evolutionary transition. 
+IR10.T05,1,header,Table 5. Sample and depth constraints of diatom events for Site 845.
+IR10.T05,3,header,                                                 Hole 845A                            Hole 845B
+IR10.T05,4,header,             Event             Interval      Depth (mbsf)   Depth (mcd) Interval     Depth (mbsf)   Depth (mcd)
+IR10.T05,21,trailing_note,T = top occurrence; B = bottom occurrence.     
+IR10.T08,1,header,Table 8. Reversal boundary depths from Site 845.   
+IR10.T08,2,header,      Interpreted  MPTS  
+IR10.T08,4,header,Core 
+IR10.T08,5,header,section       Depth         Depth     polarity                     Age  
+IR10.T08,7,header,interval (cm)  (mbsf)      (mcd)      boundary                    (Ma)   Comments 
+IR10.T08,9,core_heading,138-845A-6H-
+IR10.T08,65,hole_heading,138-845B-
+IR10.T08,105,trailing_note,Because of end effects in measurement the reversal boundaries marked as being at section breaks are probably not well located. t = termination; o = onset.        
+IR10.T10,1,header,Table 10. Control points for accumulation rates.                    
+IR10.T10,2,header,Composite    Age         Rate 
+IR10.T10,3,header,depth       
+IR10.T10,4,header,(mcd)        (Ma)       (m/m.y.)     Comments
+IR10.T10,28,trailing_note,(t) = termination; (o) = onset; T = top;  B = bottom.                    
+IR10.T11,1,header,Table 11. Interstitial-water geochemical data for Holes 845A and 845C.
+IR10.T11,3,header,Core Section   Depth   pH   Sal   Chl  Na    Alk  Sulfate  Mg     Ca     K      Sr    Li   Si  Ammonia
+IR10.T11,4,header,               (mbsf)                 (mM)   (mM)   (mM)   (mM)   (mM) (mM)    (mM)  (mmM)(mmM)(mmM)
+IR10.T11,5,hole_heading,Hole C   
+IR10.T11,6,hole_heading,138-845C-
+IR10.T11,10,hole_heading,Hole A   
+IR10.T11,11,hole_heading,138-845A-
+IR10.T11,25,trailing_note,(mmM = micromolar)
+IR10.T14,1,header,Table 14. Averages values of sedimentary parameters calculated over time intervals defined by chronostratigraphic levels. 
+IR10.T14,2,header,Composite          Mean    Mean    Mean    Mean     Mean     Mean      Mean           Mean
+IR10.T14,3,header,depth       Age    CaCO3    Corg   sed. rate DBD    bulk MAR CaCO3 MAR non-CaCO3 MAR  Corg MAR
+IR10.T14,4,header,(mcd)    (Ma)       (%)    (%)    (m/m.y.) (g/cm3)(g/cm2-k.y.)(g/cm2-k.y.)(g/cm2-k.y.)(mg/cm2-k.y.)
+IR10.T14,49,trailing_note,Note: For discussion of chronostratigraphic levels see <169>Sedimentation Rates<170> section
+IR10.T14,50,trailing_note,(this chapter). Parameters are percentages of CaCO3 Corg dry-bulk density (DBR)linear sedimentation
+IR10.T14,51,trailing_note,After this table was constructed on board the ship depths of the age control points were changed 
+IR10.T14,52,trailing_note,(see Sedimentation Rates section this chapter for the final selection of age control 
+IR10.T14,53,trailing_note,points
+IR10.T24,1,header,Table 24. Summary of traveltimes depth and ages for Site 845 reflect
+IR10.T24,3,header,       Traveltime    Synthetic     Depth       Depth        Age
+IR10.T24,4,header,Reflector (sec)       (m)         (mbsf)        (mcd)       (Ma)
+IR12.T03,1,header,Table 3. Sample interval ODP depth and composite depth constraints of 
+IR12.T03,2,header,"    calcareous nannofossil events for Holes 847B, 847C, and 847D."
+IR12.T03,4,header,                                             Hole 847B                                             Hole 847C                                 Hole 847D            
+IR12.T03,5,header,Event                                 Interval (cm)        Depth (mbsf)   Depth (mcd)      Interval (cm)   Depth (mbsf)   Depth (mcd)    Interval(cm)      Depth (mbsf)    Depth (mcd)
+IR12.T03,23,trailing_note,T=  top occurrence; B=  bottom occurrence.
+IR12.T04,1,header,"Table 4. Sample interval ODP depth, and composite depth constraints of planktonic "
+IR12.T04,2,header,         foraminifer events for Hole 847B. 
+IR12.T04,4,header,Event                              Interval            Depth (mbsf)       Depth (mcd)
+IR12.T04,14,trailing_note,T = top occurrence; B = bottom occurrence.
+IR12.T05,1,header,"Table 5. Sample (core and section), ODP depth (mbsf), and composite depth (mcd) for Holes 847B, 847C, "
+IR12.T05,2,header,         and 847D. T = top occurrence; B = bottom occurrence.
+IR12.T05,3,header,                                             Hole 847B                                   Hole 847C                                        Hole 847D          
+IR12.T05,4,header,Event                          Interval       Depth (mbsf)    Depth (mcd)     Interval     Depth (mbsf)    Depth (mcd)     Interval       Depth (mbsf)    Depth (mcd)
+IR12.T05,36,trailing_note,T = top occurrence; B = bottom occurrence; >> = evolutionary transition.
+IR12.T08,1,header,Table 8. Control points for accumulation rates.
+IR12.T08,5,header,Composite 
+IR12.T08,6,header,depth   Sedimentation     Age
+IR12.T08,7,header,(mcd)    rate             (Ma)
+IR12.T08,8,header,        (m/m.y.)                         Remarks
+IR12.T08,32,trailing_note,T = top occurrence.
+IR12.T09,1,header,Table 9
+IR12.T09,3,header,Hole Core      Depth   pH     Sal     Cl    Na   Alk    Sulfate  Mg      Ca      K      Sr     Li    Si  Ammonia
+IR12.T09,4,header,interval (cm)  (mbsf)                (mM)  (mM)  (mM)    (mM)    (mM)    (mM)    (mM)   (mM)   (mM)   (mM) (mM)
+IR12.T09,5,hole_heading,847A 
+IR12.T09,9,hole_heading,847B 
+IR12.T12,1,header,Table 12. 
+IR12.T12,3,header,Composite             Mean        Mean       Mean        Mean       Mean       Mean       Mean       Mean
+IR12.T12,4,header,Depth        Age      CaCO3       Corg       sed. rate   DBD       Bulk MAR  CaCO3 MAR  non-CaCO3 MAR Corg MAR
+IR12.T12,5,header,(mcd)        (Ma)      (%)         (%)       (m/m.y.)   (gm/cm3)   [ ............gm/cm2/k.y. ............]
+IR12.T12,27,trailing_note,"Note: DBD: dry bulk density; MAR = mass accumulation rate.  After this table was constructed on board the ship, changes were made to the depths of the age control points (see ""Sedimentation Rates"" section, this chapter, for the final selection of age control points). These depth changes are often minor (less than 5 m). None of these changes have been incorporated in this table nor in the accompanying Figures 28 and 29."
+IR12.T13,1,header,"Table 13. Concentrations of total carbon, inorganic carbon, organic carbon, total nitrogen, and total methane vs. sediments of Hole 847B."
+IR12.T13,3,header,Hole core section        Depth        Depth       Total     Inorganic  Organic    Total Nitrogen
+IR12.T13,4,header,     interval (cm)       (mbsf)       (mcd)       carbon     carbon    carbon        methane 
+IR12.T13,5,header,                                                   (%)        (%)       (%)       (%)     (microL/L)
+IR12.T13,32,trailing_note,Note: Values are from samples used for gas desorption.
+IR12.T21,1,header,Table 21.
+IR12.T21,3,header,Reflector Traveltime  Synthetic     Depth        Depth       Age 
+IR12.T21,4,header,          (s)        depth (m)      (mbsf)       (mcd)       (Ma)
+IR13.T03,1,header,Table 3. Sample and depth constraints of calcareous nannofossil events for Site 848.                 
+IR13.T03,2,header,                                               Hole 848B                                 Hole 848C                                    Hole 848D   
+IR13.T03,3,header,"Event  Interval  (cm)                                Depth  (mbsf)  Depth  (mcd)  Interval  (cm), Depth  (mbsf)  Depth  (mcd)  Interval  (cm)  Depth  (mbsf)  Depth  (mcd)"
+IR13.T03,25,trailing_note,T = top occurrence; B = bottom occurrence.                 
+IR13.T04,1,header,Table 4. Sample and depth constraints of radiolarian events for Site
+IR13.T04,2,header,848.         
+IR13.T04,3,header,                                       Hole 848B                           Hole 848C                       Hole 848D 
+IR13.T04,4,header,Event Interval                            Depth (mbsf) Depth (mcd)  Interval   Depth (mbsf) Depth (mcd) Interval Depth (mbsf) Depth (mcd)
+IR13.T04,42,trailing_note,T  top; B = bottom; >> = evolutionary transition.         
+IR13.T05,1,header,Table 5. Sample and depth constraints of diatom events for Site 848.
+IR13.T05,2,header,                                         Hole 848 B                           Hole 848C                     Hole 848D       
+IR13.T05,3,header,Event                     Interval    Depth (mbsf)  Depth (mcd)   Interval    Depth (mbsf)  Depth (mcd)    Interval    Depth (mbsf)  Depth (mcd)
+IR13.T05,24,trailing_note,T = top occurrence; B = bottom occurrence.
+IR13.T07,1,header,Table 7. Reversal boundary depths from Site 848.                                  
+IR13.T07,2,header,Core    
+IR13.T07,3,header,section interval  Depth      Depth       Interpretation     Age       Comments
+IR13.T07,4,header,        (cm)      (mbsf)     (mcd)                          (Ma)
+IR13.T07,5,hole_heading,138-848B-
+IR13.T07,38,hole_heading,138-848C-
+IR13.T07,69,hole_heading,138-848D-
+IR13.T07,100,trailing_note,t = top; o = onset.
+IR13.T09,1,header,Table 9. Control points for accumulation rates.                    
+IR13.T09,2,header,Depth  Sediment rate     Age       
+IR13.T09,3,header,(mcd)       (m/m.y.)    (Ma)       
+IR13.T09,39,trailing_note,o = onset of event  t = termination of event (from Paleomagnetism section this chapter).                    
+IR13.T10,1,header,Table 10. Interstitial-water geochemical data for Holes 848A and 848B.      
+IR13.T10,2,header,Core   interval (cm)   Depth   pH  Salinity   Chloride   (mM)   Sodium   (mM)   Akalinity   (mM)   Sulfate(mM)   Magnesium   (mM)   Calcium   (mM)   Potassium   (mM)   Strontium (mM)   Lithium   (mM
+IR13.T10,3,header,Site Core Interval      Depth  pH    Sal    Chl Na  Alk   Sulfate Mg     Ca     K    Sr    Li    Si
+IR13.T10,4,header,                        (mbsf)                  (mM) (mM)  (mM)   (mM)   (mM)  (mM)  (mM)  (mmM) (mmM)
+IR13.T10,16,trailing_note,Note: (-) indicates samples that were not measured.      
+IR13.T12,1,header,Table 12. Bulk-sediment major oxide composition from X-ray fluorescence spectroscopy and loss on ignition in sediments from Hole 848C.            
+IR13.T12,2,header,Core section interval  Depth SiO2  TiO2 Al2O3 Fe2O3 MnO MgO CaO   Na2O K2O  P2O5  Total  LOI
+IR13.T12,3,header,              (cm)     (mbsf)(wt%) (wt%)(wt%)(wt%)(wt%)(wt%) (wt%)(wt%)(wt%)(wt%) (wt%)  (wt%)
+IR13.T12,20,trailing_note,LOI = loss on ignition.            
+IR13.T13,1,header,Table 13. Comparison of X-ray fluorescence normative CaCO3 with coulometric CaCO3 measurements.                       
+IR13.T13,2,header,Core Section Interval   Depth   CaO    non-vol  LOI    100%-LOI Ca(unig CaCO3  CaCO3
+IR13.T13,3,header,                        (mbsf)                                  sample) in unig Measured
+IR13.T13,4,header,                                 (wt%)  (wt%)    (wt%)  (wt%)   (wt%)   (wt%)   (wt%)
+IR13.T14,1,header,Table 14. Elemental composition in bulk-sediments and on a carbonate-free basis.              
+IR13.T14,2,header,Core section interval  Depth  Al   Si    Ca   Fe   Mn   Ti   P   CaCO3  Al    Si    Fe   Mn  Ti    P
+IR13.T14,3,header,                                                                  (est) (CF) (CF) (CF)  (CF) (CF) (CF)
+IR13.T14,4,header,                             (wt%) (wt%) (wt%) (wt%)(wt%)(wt%)(wt%)(wt%)(wt%) (wt%)(wt%)(wt%)(wt%)(wt%)
+IR13.T14,21,trailing_note,cf = carbonate-free.              
+IR13.T15,1,header,Table 15. Mass accumulation rates for selected elements and for opal.                        
+IR13.T15,2,header,                                                             Accumulation Rate (g/cm2/k.y.)        
+IR13.T15,3,header,Core                   Depth    Depth    Age   Bulk MAR
+IR13.T15,4,header,  no.                  (mbsf)   (mcd)    (Ma)  (g/cm2/ky)  Al      Fe        Mn       Fe(hydro)  Opal
+IR13.T16,1,header,Table 16. Average values of sedimentary parameters calculated over
+IR13.T16,2,header,time intervals defined by chronostratigraphic levels.
+IR13.T16,3,header,Composite            Mean      Mean               Mean     Mean     Mean      Mean   Mean
+IR13.T16,4,header, depth       Age     CaCO3     Corg     Sed. Rate DBD      bulk MAR CaCO3    non-   Corg MAR
+IR13.T16,5,header,  (mcd)      (ma)     (%)       (5)     (m/my)    g/cm3              MAR    CaCO3 MAR
+IR13.T16,6,header,                                                           g/cm2/ky g/cm2/ky g/cm2/ky g/cm2/ky
+IR13.T16,42,trailing_note,Note: See Sedimentation Rates section (this chapter) for details. Parameters are percentages of CaCO3 and Corg; LSR = linear sedimentation rate; DBD = dry-bulk density; Bulk MAR = bulk mass accumulati
+IR14.T03,1,header,Table 3. Sample (core and section) and depth (mbsf and mcd) constraints of calcareous nannofossil events for Site 849. 
+IR14.T03,3,header,                                                    Hole 849B                                    Hole 849C                                        Hole 849D       
+IR14.T03,4,header,Event                                     Interval (cm)    Depth (mbsf)    Depth (mcd)        Interval (cm)    Depth (mbsf)    Depth (mcd)    Interval (cm)        Depth (mbsf)    Depth (mcd)
+IR14.T03,28,trailing_note,T = top occurrence; B = bottom occurrence.                                           
+IR14.T04,1,header,Table 4. Sample (core and section) and depth (mbsf and mcd) constraints of planktonic foraminifers events for Site 849. 
+IR14.T04,2,header,    Hole 844B   
+IR14.T04,3,header,Event                           Interval         Depth (mbsf)     Depth (mcd)
+IR14.T04,10,trailing_note,T = top occurrence; B = bottom occurrence.
+IR14.T05,1,header,Table 5. Sample (core and section) and depth (mbsf and mcd) constraints of radiolarian events for Site 849. 
+IR14.T05,2,header,                                            Hole 849B                               Hole 849C                                          Hole 849D       
+IR14.T05,3,header,Event                         Interval       Depth (mbsf)    Depth (mcd)        Interval    Depth (mbsf)    Depth (mcd)     Interval            Depth (mbsf)    Depth (mcd)
+IR14.T05,52,trailing_note,T = top occurrence; B = bottom occurrence; >> = evolutionary transition.             
+IR14.T06,1,header,Table 6. Sample and depth constraints of diatom events for Site 849. 
+IR14.T06,3,header,                                       Hole 849B                                             Hole 849C                                      Hole 849D       
+IR14.T06,4,header,Event                                      Interval       Depth (mbsf)  Depth (mcd)        Interval      Depth (mbsf)    Depth (mcd)    Interval    Depth (mbsf)  Depth (mcd)
+IR14.T06,26,trailing_note,T = top occurrence; B = bottom occurrence.
+IR14.T08,1,header,Table 8. Control points for sedimentation rates.
+IR14.T08,3,header,Depth        Rate       Age        Remarks
+IR14.T08,4,header, (mcd)      (m/m.y.)    (Ma)
+IR14.T08,17,trailing_note,B = bottom; T = top.
+IR14.T09,1,header,Table 9. Interstitial-water geochemical data for Holes 849A and 849B. 
+IR14.T09,3,header,Core  Interval Depth  pH     Sal    Chl   Na     Alk    Sulfate  Mg     Ca      K      Sr   Li     Si  Ammonia
+IR14.T09,4,header,        (cm)   (mbsf)       (g\kg)  (mM) (mM)    (mM)   (mM)    (mM)   (mM)    (mM)   (mM) (mM)   (mM)  (mM)
+IR14.T09,6,hole_heading,138-849-A
+IR14.T09,11,hole_heading,138-849-B
+IR14.T09,28,trailing_note,(-) indicates a missed analysis.
+IR14.T12,1,header,Table 12. Averages values of sedimentary parameters calculated over time intervals defined by chronostratigraphic levels.
+IR14.T12,2,header,																		     Mass Accumulation Rates
+IR14.T12,3,header,Depth     Age    Mean     Mean   Sed. rate Mean    Mean  Mean     Mean    Mean 
+IR14.T12,4,header,(mcd)     (Ma)   CaCO3    Corg   (m/m.y.)  DBD      Bulk   CaCO3 non-CaCO3 Corg
+IR14.T12,5,header,                                          (g/cm3)         (gm/cm2/kyr)
+IR14.T12,31,trailing_note,DBD = Dry-Bulk Density; MAR = Mass Accumulation Rate.                                   
+IR14.T12,32,trailing_note,Note: After this table was constructed onboard changes were made
+IR14.T12,33,trailing_note,to the depths of the age control points ( see Sedimentation Rates      
+IR14.T12,34,trailing_note,this chapter for the final selection of age control points).
+IR14.T12,35,trailing_note,These depth changes are often minor (less than 5 m). None of these
+IR14.T12,36,trailing_note,changes has been incorporated in this table nor in the accompanying
+IR14.T12,37,trailing_note,"Figures 32 and 33. Parameters are %CaCO3, %Corg,  DBD      "
+IR14.T12,38,trailing_note,"LSR, Bulk MAR, CaCO3 MAR, non-CaCO3 MAR (calculated"
+IR14.T12,39,trailing_note,as 100% minus %CaCO3) and Corg MAR.                                   
+IR14.T13,1,header,Table 13. Concentrations of methane in samples from Hole 849B.
+IR14.T13,2,header,Core 
+IR14.T13,3,header,section   Interval (cm) Depth (mbsf)   Methane (mL/L)      
+IR14.T13,4,hole_heading,138-849B-
+IR14.T21,1,header,Table 21. Summary of traveltimes+ depths+ and ages for Site 849 reflectors.
+IR14.T21,3,header,Reflector Traveltime Synthetic    Depth        Depth       Age 
+IR14.T21,4,header,                      Depth
+IR14.T21,5,header,         (s)          (m)         (mbsf)        (mcd)       (Ma)
+IR15.T03,1,header,Table 3. Sample and depth constraints of calcareous nannofossil events for Site 850.
+IR15.T03,2,header,                                              Hole 850A                                                Hole 850B         
+IR15.T03,3,header,Event                                        Interval      Depth       Depth              Interval            Depth             Depth
+IR15.T03,4,header,                                             (cm)         (mbsf)       (mcd)                 (cm)                (mbsf)        (mcd)  
+IR15.T04,1,header,Table 4. Sample and depth constraints of planktonic foraminifer events for Site 850.
+IR15.T04,3,header,Event                            Interval           Depth            Depth
+IR15.T04,4,header,                                                   (mbsf)            (mcd)
+IR15.T05,1,header,Table 5. Sample and depth constraints of radiolarian events for Site 850.
+IR15.T05,3,header,                                         Hole 850A                                         Hole 850B   
+IR15.T05,4,header,Event                           Interval      Depth      Depth          Interval          Depth           Depth
+IR15.T05,5,header,                                             (mbsf)      (mcd)                            (mbsf)          (mcd)
+IR15.T06,1,header,Table 6. Sample and depth constraints of diatom events for Site 850.
+IR15.T06,3,header,                                                    Hole 850A                                    Hole 850B
+IR15.T06,4,header,Event                                     Interval  Depth        Depth      Interval         Depth         Depth
+IR15.T06,5,header,                                                    (mbsf)       (mcd)                       (mbsf)        (mcd)    
+IR15.T08,1,header,Table 8. Reversal boundary determinations.
+IR15.T08,3,header,Interval       Depth       Depth       Interpretation     Age
+IR15.T08,4,header,(cm)           (mbsf)      (mcd)                         (Ma)
+IR15.T08,5,hole_heading,850A-
+IR15.T08,11,hole_heading,850B-
+IR15.T10,1,header,Table 10. Control points for sedimentation rates.
+IR15.T10,3,header,Composite     Rate      Age      Remarks
+IR15.T10,4,header, Depth (mcd) (m/m.y.)   (Ma)     
+IR15.T11,1,header,Table 11. Interstitial water geochemical data for Holes 850A and 850B.
+IR15.T11,3,header,Core  Interval  Depth  pH   Sal   Chl  Na    Alk   Sulfate Mg     Ca      K   Sr   Li     Si   Ammonia
+IR15.T11,4,header, Section (cm)  (mbsf)            (mM) (mM)   (mM)  (mM)   (mM)   (mM)   (mM) (mM) (mM)   (mM)  (mM)
+IR15.T11,6,hole_heading,850A-
+IR15.T11,8,hole_heading,850B- 
+IR15.T12,1,header,Table 12. Concentrations of SiO2 A12O3 Fe2O3 MnO CaO Na2O K2O and P2O5 in ignited sediments from Site 850.
+IR15.T12,2,header,Core section             Depth  Depth   SiO2   TiO2  Al2O3 Fe2O3  MnO  CaO   Na2O   K2O   P2O5  Total   LOI
+IR15.T12,3,header,     interval (cm)       (mbsf) (mcd)  (wt%)  (wt%)  (wt%) (wt%)  (wt%) (wt%) (wt%) (wt%) (wt%)  (wt%)  (wt%)
+IR15.T13,1,header,Table 13. Concentrations of SiO2 A12O3 Fe2O3 MnO CaO Na2O K2O and P2O5 in ignited sediments from Site 850 recalculated assuming all loss on ignition is CO2 driven off CaCO3.
+IR15.T13,2,header,Core section   Depth   Depth    SiO2   Al2O3   Fe2O3   MnO   CaO    Na2O    K2O   P2O5   CaCO3   CaCO3
+IR15.T13,3,header,interval (cm) (mbsf)   (mcd)    (LOI)  (LOI)   (LOI)  (LOI)  (LOI)  (LOI)  (LOI)  (LOI) (measured) (estimated)
+IR15.T13,4,header,                                 (%)     (%)     (%)    (%)    (%)    (%)    (%)    (%)
+IR15.T13,5,hole_heading,138-850A-
+IR15.T13,14,hole_heading,-850B-
+IR15.T13,48,trailing_note,CaCO3 concentrations (wt%) measured by coulometry and estimated from the CaO concentration (see text).
+IR15.T14,1,header,Table 14. Accumulation rates of SiO2 A12O3 Fe2O3 MnO P2O5 and biogenic silica (opal).
+IR15.T14,3,header,                                                Accumulation Rates
+IR15.T14,4,header,Core section    Depth    Depth    Age      SiO2   Al2O3 Fe2O3  MnO   P2O5    Opal
+IR15.T14,5,header,interval (cm)   (mbsf)   (mcd)    (m.y.)   [......... (mg/cm2/k.y.)..............]  
+IR15.T14,6,header,                 top    midpoint midpoint
+IR15.T15,1,header,Table 15. Averages values of sedimentary parameters calculated over time intervals defined by chronostratigraphy
+IR15.T15,3,header,Composite          Mean     Mean             Mean    Mean    Mean    Mean    Mean
+IR15.T15,4,header,Depth      Age     CaCO3    Corg   Sed. Rate DBD     MAR    CaCO3  nonCaCO3  Corg
+IR15.T15,5,header, (mcd)     (Ma)     (%)      (%)   (m/m.y.) (gm/cm3)
+IR15.T15,6,header,                                                    [......gm/cm2/k.y.)..........]
+IR15.T15,25,trailing_note,DBD = Dry bulk density; MAR = Mass accumulation rate.
+IR15.T15,26,trailing_note,Note: After this table was constructed onboard       changes were made to the depths of the age control points (see ``Sedimentation Rates'' section       this chapter       for the final selection of age control points). These depth changes are often minor (less than 5m). None of these changes have been incorpo
+IR15.T18,1,header,Table 18. Concentrations of methane in samples from Hole 850B.
+IR15.T18,3,header,Core section        Depth       Methane
+IR15.T18,4,header,     interval (cm)  (mbsf)       (mL/L)
+IR15.T18,5,hole_heading,138-850B-
+IR15.T24,1,header,"Table 24. Summary of traveltimes, depths, and ages for Site 850 reflectors."
+IR15.T24,3,header,Reflector Traveltime Synthetic      Depth        Depth       Age 
+IR15.T24,4,header,           (s)       depth(m)       (mbsf)       (mcd)       (Ma)
+IR16.T03,1,header,Table 3. Sample and depth constraints of calcareous nannofossil events for Site 851.
+IR16.T03,3,header,                                                  Hole 851B                                       Hole 851C                                         Hole 851E     
+IR16.T03,4,header,Event                                  Interva (cm)      Depth (mbsf)   Depth (mc d)       Interval   (cm)      Depth (mbsf)   Depth(mcd)    Interval (cm)         Depth (mbsf)   Depth (mcd)
+IR16.T03,32,trailing_note,T = top occurrence; B = bottom occurrence.                             
+IR16.T04,1,header,Table 4. Sample and depth constraints of planktonic foraminifer events for Hole 851B.                 
+IR16.T04,4,header,Event                             Interval          Depth (mbsf)      Depth (mcd)
+IR16.T04,15,trailing_note,T = top occurrence; B = bottom occurrence.                 
+IR16.T05,1,header,Table 5. Sample and depth constraints of radiolarian events for Site 851.                                                                                                                           
+IR16.T05,2,header,                                          Hole 851B                                     Hole 851C                                   Hole 851E     
+IR16.T05,3,header,Event                             Interval   Depth (mbsf)    Depth   (mcd)      Interval   Depth   (mbsf)   Depth   (mcd)       Interval       Depth   (mbsf)   Depth   (mcd)
+IR16.T05,51,trailing_note,T = top occurrence; B = bottom occurrence; >> = evolutionary transition.                                                                                                                           
+IR16.T06,1,header,Table 6. Sample and depth constraints of diatom events for Site 851.   
+IR16.T06,4,header,                                               Hole 851B                                             Hole 851C                                      Hole 851E       
+IR16.T06,5,header,Event                                      Interval       Depth (mbsf)  Depth (mcd)      Interval      Depth (mbsf)     Depth (mcd)       Interval       Depth (mbsf)   Depth (mcd)
+IR16.T06,36,trailing_note,T = top occurrence; B = bottom occurrence.
+IR16.T08,1,header,Table 8. Reversal boundary depths from Site 851.
+IR16.T08,2,header,Core         Interval    Depth       Depth       Interpretation      Age       Comments
+IR16.T08,3,header,     Section   (cm)      (mbsf)      (mcd)                           (Ma)
+IR16.T08,35,trailing_note,(t) = termination; (o) = onset.                                  
+IR16.T10,1,header,Table 10. Control points for sedimentation rates.
+IR16.T10,3,header,Composite   Sediment             
+IR16.T10,4,header,depth        Rate      Age         Remarks
+IR16.T10,5,header,(mcd)        (m/m.y.)  (Ma)
+IR16.T10,27,trailing_note,T = top; B = bottom.                    
+IR16.T11,1,header,Table 11. Interstitial-water geochemical data for Holes 851A and 851B. 
+IR16.T11,3,header,Core  Interval   Depth  pH     Sal   Chl    Na    Alk   Sulfate    Mg     Ca       K     Sr     Li     Si   Ammonia
+IR16.T11,4,header, Section (cm)    (mbsf)              (mM)  (mM)   (mM)  (mM)      (mM)   (mM)    (mM)    (mM)  (mM)   (mM)  (mM)
+IR16.T11,5,hole_heading,138-851A-
+IR16.T11,8,hole_heading,851B-
+IR16.T11,22,trailing_note,aIndicates a missed analysis.                                         
+IR16.T14,1,header,Table 14. Average values of sedimentary parameters calculated over time intervals defined by 
+IR16.T14,2,header,chronostratigraphic levels.
+IR16.T14,4,header,Composite           Mean    Mean    Sed.    Mean      Bulk    CaCO3 Non-CaCO3 Corg
+IR16.T14,5,header,Depth      Age     CaCO3    Corg    Rate     DBD      MAR     MAR     MAR     MAR
+IR16.T14,6,header, (mcd)     (Ma)      (%)     (%)    (m/m.y.) (gm/cm3) [.....gm/cm3/kyr..........]
+IR16.T14,27,trailing_note,"Note: See ""Sedimentation Rates"" section this chapter for more details. Parameters are %CaCO3 %Corg "
+IR16.T14,28,trailing_note,DBD LSR Bulk MAR CaCO3 MAR non-CaCO3 MAR (calculated as 100% - %CaCO3).
+IR16.T14,29,trailing_note,DBD = dry bulk density; MAR = mas accumulation rate.
+IR16.T15,1,header,Table 15. Concentrations of methane in samples from Hole 851B. 
+IR16.T15,3,header,Core section        Depth       Methane 
+IR16.T15,4,header,interval (cm)       (mbsf)      (mL/L)   
+IR16.T15,5,hole_heading,138-851B-
+IR16.T22,1,header,"Table 22. Summary of traveltimes, depths, and ages for Site 851 reflectors."
+IR16.T22,3,header,Reflector  Traveltime  Synthetic    Depth        Depth        Age      
+IR16.T22,4,header,            (s)      depth (m)      (mbsf)       (mcd)        (Ma)
+IR17.T04,1,header,"Table 4. Sample interval, ODP depth, and composite depth constraints of calcareous "
+IR17.T04,2,header,"nannofossil events for Holes 852B, 852C, and 852D."
+IR17.T04,3,header,                                                   Hole 852B                                         Hole 852C                                           Hole 852D      
+IR17.T04,4,header,Event                                       Interval (cm)    Depth (mbsf)    Depth (mcd)       Interval (cm)    Depth (mbsf)    Depth (mcd)         Interval (cm)    Depth (mbsf)    Depth (mcd)
+IR17.T04,28,trailing_note,T = top occurrence; B = bottom occurrence.                                  
+IR17.T05,1,header,"Table 5. Sample, ODP depth, and composite depth constraints of planktonic foraminifer events for Hole 852B."
+IR17.T05,3,header,Hole 852B             
+IR17.T05,4,header,Event                              Interval       Depth (mbsf)       Depth (mcd)
+IR17.T05,9,trailing_note,T = top occurrence; B = bottom occurrence.
+IR17.T06,1,header,Table 6. Sample+ ODP depth+ and composite depth constraints of radiolarian events for Holes 852B+ 852C+ 
+IR17.T06,2,header,and 852D.
+IR17.T06,4,header,                                           Hole 852B                                  Hole 852C                                  Hole 852D      
+IR17.T06,5,header,Event                            Interval    Depth (mbsf)    Depth (mcd)    Interval    Depth (mbsf)    Depth (mcd)    Interval    Depth (mbsf)    Depth (mcd)
+IR17.T06,50,trailing_note,T =  top occurrence; B = bottom occurrence. 
+IR17.T07,1,header,Table 7. Sample interval+ ODP depth+ and composite depth constraints of diatom events for Holes 852B+ 852C+ and 852D.
+IR17.T07,3,header,Event                                       Hole 852B                                   Hole 852C                               Hole 852D       
+IR17.T07,4,header,                             Interval    Depth (mbsf)  Depth (mcd)   Interval    Depth (mbsf)    Depth (mcd)           Interval    Depth (mbsf)    Depth (mcd)
+IR17.T07,26,trailing_note,T = top occurrence; B = bottom occurrence.
+IR17.T09,1,header,Table 9. Reversal boundary depths from Site 852.
+IR17.T09,3,header,Interval (cm)       Depth (mbsf)   Depth (mcd) Interpretation   Age (Ma)       Comments
+IR17.T09,98,trailing_note,T =  termination; O =  onset.
+IR17.T11,1,header,Table 11. Control points for sedimentation rates at Site 852.
+IR17.T11,3,header,Composite   Sediment Rate  Age    
+IR17.T11,4,header,depth (mcd)   (m/m.y.)     (Ma)        Remarks
+IR17.T11,39,trailing_note,T = top; B = bottom.                       
+IR17.T12,1,header,Table 12. Interstitial-water geochemical data for Holes 852A 852B and 852C.
+IR17.T12,3,header,Core Section        Depth   pH   Sal    Chl   Na   Alk   Sulfate    Mg      Ca      K    Sr    Li    Si  Ammonia
+IR17.T12,4,header,        interval(cm) (mbsf)      (mM)   (mM) (mM)  (mM)    (mM)    (mM)    (mM)    (mM)  (mM)  (mM)  (mM)  (mM)
+IR17.T15,1,header,Table 15. Average values of sedimentary parameters calculated over time intervals 
+IR17.T15,2,header,          defined by chronostratigraphic levels in Table 11.
+IR17.T15,5,header,Composite               Mean        Mean       Mean       Mean       Bulk       CaCO3     non-CaCO3   Corg
+IR17.T15,6,header,depth        Age       CaCO3        Corg     Sed.Rate     DBD        MAR         MAR       MAR        MAR
+IR17.T15,7,header,(mcd)        (Ma)       (%)          (%)      (m/m.y)     (gm/cm3)   [ ............ gm/cm3/kyr.............]
+IR17.T21,1,header,"Table 21. Summary of traveltimes, depth, and ages for Site 852 reflectors."
+IR17.T21,3,header,Reflector           Synthetic      
+IR17.T21,4,header,       Traveltime    depth       Depth       Depth       Age
+IR17.T21,5,header,          (s)         (m)        (mbsf)       (mcd)       (Ma)
+IR18.T02,1,header,Table 2
+IR18.T02,2,header,                                                                Hole 853B       
+IR18.T02,3,header,Event                                       Interval             Depth (mbsf)       Depth (mcd)
+IR18.T02,22,trailing_note,T = top; B = bottom.
+IR18.T03,1,header,Table 3.
+IR18.T03,3,header,                                                        Hole 853B       
+IR18.T03,4,header,Event                               Interval          Depth (mbsf)    Depth (mcd)
+IR18.T04,1,header,Table 4
+IR18.T04,2,header,                                                  Hole 853B
+IR18.T04,3,header,Event                            Interval       Depth (mbsf)       Depth (mcd)
+IR18.T04,10,trailing_note,T = top; B = bottom.
+IR18.T06,1,header,Table 6
+IR18.T06,2,header,Interval (cm)           Depth        Depth      Interpretation          Age       Comments
+IR18.T06,3,header,                        (mbsf)       (mcd)                              (Ma)
+IR18.T06,101,trailing_note,(t) = termination; (o) = onset.
+IR18.T08,1,header,Table 8.
+IR18.T08,3,header,Composite Sediment.  
+IR18.T08,4,header,depth     rate      Age         Remarks
+IR18.T08,5,header,(mcd)     (m/m.y.)   (Ma)    
+IR18.T08,6,header,Remarks
+IR18.T08,62,trailing_note,T = top; B = bottom.
+IR18.T09,1,header,Table  9
+IR18.T09,3,header,Core Section        Depth  pH   Sal   Chl   Na   Alk   Sulfate  Mg    Ca     K   Sr   Li   Si  Ammonia
+IR18.T09,4,header,      interval(cm) (mbsf)      (mM)   (mM) (mM)  (mM)    (mM)   (mM)  (mM)  (mM) (mM) (mM) (mM)  (mM)
+IR18.T12,1,header,Table 12
+IR18.T12,3,header,Composite         Mean       Mean              Mean       Mean bulk Mean CaCO3 Mean non-   Mean Corg.
+IR18.T12,4,header,depth       Age   CaCO3      Corg.  sed. rate   DBD        MAR        MAR      CaCO3 MAR    MAR
+IR18.T12,5,header,(mbsf)      (Ma)    (%)      (%)    (m/m.y.)   (gm/cm3)   [ ...... gm/cm2/kyr ....................]
+IR18.T12,61,trailing_note,DBD=dry-bulk density; MAR=mass accumulation rate.
+IR18.T17,1,header,Table 17
+IR18.T17,2,header,Reflector Traveltime Synthetic   Depth      Depth        Age 
+IR18.T17,3,header,          (s)        depth
+IR18.T17,4,header,                      (m)        (mbsf)      (mcd)       (Ma)
+IR19.T02,1,header,Table 2.
+IR19.T02,3,header,                                                 Hole 854B
+IR19.T02,4,header,Event                         Interval (cm)           Depth (mbsf)     Depth (mcd)
+IR19.T03,1,header,Table 3.
+IR19.T03,3,header,                                                Hole 854B 
+IR19.T03,4,header,Event                          interval       Depth (mbsf)     Depth (mcd)
+IR19.T05,1,header,Table 5. Reversal boundary depths.
+IR19.T05,3,header,Core section
+IR19.T05,4,header,interval (cm)  Depth       Depth      Interpretation     Age
+IR19.T05,5,header,               (mbsf)      (mcd)                         (Ma)       Comments
+IR19.T05,7,hole_heading,138-854A-
+IR19.T05,23,hole_heading,138-854B-
+IR19.T05,56,hole_heading,138-854C-
+IR19.T05,100,trailing_note,B/M = Brunhes/Matuyama; M/G = Matuyama/Gauss; G/G = Gauss/Gilbert. t = termination; o = onset.       
+IR19.T07,1,header,Table 7.
+IR19.T07,3,header,Composite  Sed. Rate   Age
+IR19.T07,4,header,depth 
+IR19.T07,5,header,(mcd)      (m/m.y.)    (Ma)       Remarks
+IR19.T07,38,trailing_note,T = top; B = bottom.
+IR19.T08,1,header,Table 8. Interstitial-water geochemical data for Holes 854B.
+IR19.T08,3,header,Core Section       Depth  pH   Sal   Chl  Na   Alk   Sulfate  Mg     Ca     K   Sr    Li   Si  Ammonia
+IR19.T08,4,header,        interval(cm) (mbsf)    (mM)  (mM) (mM) (mM)   (mM)   (mM)   (mM)  (mM)  (mM) (mM) (mM)  (mM)
+IR19.T11,1,header,Table 11
+IR19.T11,3,header,Comp.               Mean                   Mean       Mean       Mean       Mean   
+IR19.T11,4,header,Depth      Age      CaCO3    Sed. rate     DBD       bulk MAR   CaCO3 MAR non-CaCO3 MAR
+IR19.T11,5,header,(cmd)      (Ma)      (%)       (m/m.y.)   (g/cm3)   [ .... g/cm2/k.y. ......     ]
+IR19.T11,71,trailing_note,"Note:  After this table was constructed on board the ship             depths of the age control points were changed (see ""Sedimentation Rates"" section             this chapter             for the final selection of age control points).  These depth changes were often minor (less than 5 m).  None of these changes were incorporate"

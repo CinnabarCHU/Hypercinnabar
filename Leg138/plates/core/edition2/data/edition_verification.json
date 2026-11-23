@@ -1,0 +1,101 @@
+{
+  "photo_checks": {
+    "photos": 593,
+    "verified_pdf_and_jpeg_sources": 593,
+    "attempted_columns": 4499,
+    "layout_grades": {
+      "edge_supported": 590,
+      "review_needed": 1,
+      "weak_or_short_lane": 2
+    },
+    "roi_counts": {
+      "printed_ruler": 593,
+      "board_background": 593,
+      "photographed_liner": 4497,
+      "sediment_candidate": 7300,
+      "reviewed_non_sediment_band": 6
+    },
+    "columns_by_evidence": {
+      "strong": 4495,
+      "unresolved": 2,
+      "weak": 2
+    },
+    "no_sediment_candidates": [
+      "848B8H"
+    ],
+    "columns_without_sediment_candidate": 65,
+    "native_rgb_checksums": 12989,
+    "inherited_manual_windows": 22,
+    "crop_decode": "RGB byte order, Pillow decoder, no resizing or color correction; hash per ROI excludes PNG headers"
+  },
+  "visual_photo_overviews": 43,
+  "smear": {
+    "pages": 26,
+    "printed_rows": 1156,
+    "printed_grid_cells": 25194,
+    "sites": 11,
+    "visually_read_field_counts_by_site": {
+      "844": 23,
+      "845": 25,
+      "846": 23,
+      "847": 21,
+      "848": 22,
+      "849": 19,
+      "850": 21,
+      "851": 21,
+      "852": 20,
+      "853": 20,
+      "854": 25
+    },
+    "status_counts": {
+      "source_identifier_token": 1156,
+      "source_numeric_token": 8203,
+      "source_lithology_marker": 1150,
+      "no_text_low_ink": 12311,
+      "source_trace_symbol": 1752,
+      "check_composition_token": 438,
+      "ink_without_text": 169,
+      "check_lithology_token": 6,
+      "check_depth_token": 9
+    },
+    "edition_evidence_counts": {
+      "source text layer and located cell": 25101,
+      "second-edition visual cell decision": 53,
+      "inherited Site 846 visual cell decision": 40
+    },
+    "inherited_visual_decisions": 40,
+    "new_visual_decisions": 53,
+    "new_visual_decisions_changed_text": 34,
+    "manually_read_missing_printed_folios": 6,
+    "adjusted_text_layers": [
+      [
+        "844",
+        2,
+        -9.89
+      ],
+      [
+        "845",
+        2,
+        -13.6
+      ],
+      [
+        "852",
+        1,
+        -6.47
+      ]
+    ]
+  },
+  "smear_manually_checked_total": 93,
+  "smear_unreviewed_flag_queue": {
+    "check_composition_token": 393,
+    "ink_without_text": 156
+  },
+  "smear_unreviewed_flagged_cells": 549,
+  "vcd_identity_evidence": {
+    "visually_read_missing_label_matches_other_side": 169,
+    "two_source_OCR_identifiers_agree": 401,
+    "scan_confirmed_both_labels": 20,
+    "scan_confirmed_form_photo_conflict": 1,
+    "visually_read_label_conflicts_with_form": 1
+  }
+}

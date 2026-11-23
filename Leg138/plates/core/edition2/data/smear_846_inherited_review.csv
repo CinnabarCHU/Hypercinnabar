@@ -1,0 +1,41 @@
+printed_page,page_row,field_key,prior_ocr,prior_edition_reading,prior_reason,prior_review_file_sha256
+669,2,mineral_oxides,O,,The cell interior is blank. The OCR token came from outside the printed entry.,b780668339bb8922e5c8b8b66cb4beeef6f7873e7e3ff3ed33ad020058da1b8a
+669,21,mineral_quartz,i,1,The printed glyph is the digit 1.,b780668339bb8922e5c8b8b66cb4beeef6f7873e7e3ff3ed33ad020058da1b8a
+669,22,mineral_quartz,i,1,The printed glyph is the digit 1.,b780668339bb8922e5c8b8b66cb4beeef6f7873e7e3ff3ed33ad020058da1b8a
+669,23,mineral_quartz,i,1,The printed glyph is the digit 1.,b780668339bb8922e5c8b8b66cb4beeef6f7873e7e3ff3ed33ad020058da1b8a
+669,30,mineral_volcanic_glass,,*,A single asterisk appears in the printed cell.,b780668339bb8922e5c8b8b66cb4beeef6f7873e7e3ff3ed33ad020058da1b8a
+669,31,mineral_volcanic_glass,**,*,One asterisk is visible.,b780668339bb8922e5c8b8b66cb4beeef6f7873e7e3ff3ed33ad020058da1b8a
+669,47,texture_sand,-,-,The original short dash is visible and is retained as a symbol.,b780668339bb8922e5c8b8b66cb4beeef6f7873e7e3ff3ed33ad020058da1b8a
+669,52,texture_sand,-,-,The original short dash is visible and is retained as a symbol.,b780668339bb8922e5c8b8b66cb4beeef6f7873e7e3ff3ed33ad020058da1b8a
+670,1,mineral_calcite,u,,The cell interior is blank. The OCR token came from outside the printed entry.,b780668339bb8922e5c8b8b66cb4beeef6f7873e7e3ff3ed33ad020058da1b8a
+670,1,mineral_oxides,O,,The cell interior is blank. The OCR token came from outside the printed entry.,b780668339bb8922e5c8b8b66cb4beeef6f7873e7e3ff3ed33ad020058da1b8a
+670,1,biogenic_silicoflagellates,l,1,The printed glyph is the digit 1.,b780668339bb8922e5c8b8b66cb4beeef6f7873e7e3ff3ed33ad020058da1b8a
+670,1,biogenic_sponge_spicules,,*,A single asterisk appears in the printed cell.,b780668339bb8922e5c8b8b66cb4beeef6f7873e7e3ff3ed33ad020058da1b8a
+670,2,biogenic_sponge_spicules,***,*,One asterisk is visible.,b780668339bb8922e5c8b8b66cb4beeef6f7873e7e3ff3ed33ad020058da1b8a
+670,3,biogenic_sponge_spicules,,*,A single asterisk appears in the printed cell.,b780668339bb8922e5c8b8b66cb4beeef6f7873e7e3ff3ed33ad020058da1b8a
+670,9,mineral_pyrite,I,1,The printed glyph is the digit 1.,b780668339bb8922e5c8b8b66cb4beeef6f7873e7e3ff3ed33ad020058da1b8a
+670,9,biogenic_sponge_spicules,i,1,The printed glyph is the digit 1.,b780668339bb8922e5c8b8b66cb4beeef6f7873e7e3ff3ed33ad020058da1b8a
+670,10,mineral_pyrite,l,1,The printed glyph is the digit 1.,b780668339bb8922e5c8b8b66cb4beeef6f7873e7e3ff3ed33ad020058da1b8a
+670,20,biogenic_silicoflagellates,,*,A single asterisk appears in the printed cell.,b780668339bb8922e5c8b8b66cb4beeef6f7873e7e3ff3ed33ad020058da1b8a
+670,29,texture_sand,-,-,The original short dash is visible and is retained as a symbol.,b780668339bb8922e5c8b8b66cb4beeef6f7873e7e3ff3ed33ad020058da1b8a
+670,30,biogenic_silicoflagellates,l,1,The printed glyph is the digit 1.,b780668339bb8922e5c8b8b66cb4beeef6f7873e7e3ff3ed33ad020058da1b8a
+670,32,texture_sand,-,-,The original short dash is visible and is retained as a symbol.,b780668339bb8922e5c8b8b66cb4beeef6f7873e7e3ff3ed33ad020058da1b8a
+670,33,texture_sand,-,-,The original short dash is visible and is retained as a symbol.,b780668339bb8922e5c8b8b66cb4beeef6f7873e7e3ff3ed33ad020058da1b8a
+670,34,texture_sand,-,-,The original short dash is visible and is retained as a symbol.,b780668339bb8922e5c8b8b66cb4beeef6f7873e7e3ff3ed33ad020058da1b8a
+670,35,texture_sand,-,-,The original short dash is visible and is retained as a symbol.,b780668339bb8922e5c8b8b66cb4beeef6f7873e7e3ff3ed33ad020058da1b8a
+670,40,texture_sand,-,-,The original short dash is visible and is retained as a symbol.,b780668339bb8922e5c8b8b66cb4beeef6f7873e7e3ff3ed33ad020058da1b8a
+670,41,texture_sand,-,-,The original short dash is visible and is retained as a symbol.,b780668339bb8922e5c8b8b66cb4beeef6f7873e7e3ff3ed33ad020058da1b8a
+670,44,texture_sand,-,-,The original short dash is visible and is retained as a symbol.,b780668339bb8922e5c8b8b66cb4beeef6f7873e7e3ff3ed33ad020058da1b8a
+671,8,texture_sand,-,-,The original short dash is visible and is retained as a symbol.,b780668339bb8922e5c8b8b66cb4beeef6f7873e7e3ff3ed33ad020058da1b8a
+671,10,texture_sand,-,-,The original short dash is visible and is retained as a symbol.,b780668339bb8922e5c8b8b66cb4beeef6f7873e7e3ff3ed33ad020058da1b8a
+671,12,texture_sand,-,-,The original short dash is visible and is retained as a symbol.,b780668339bb8922e5c8b8b66cb4beeef6f7873e7e3ff3ed33ad020058da1b8a
+671,13,texture_sand,-,-,The original short dash is visible and is retained as a symbol.,b780668339bb8922e5c8b8b66cb4beeef6f7873e7e3ff3ed33ad020058da1b8a
+671,14,texture_sand,-,-,The original short dash is visible and is retained as a symbol.,b780668339bb8922e5c8b8b66cb4beeef6f7873e7e3ff3ed33ad020058da1b8a
+671,15,texture_sand,-,-,The original short dash is visible and is retained as a symbol.,b780668339bb8922e5c8b8b66cb4beeef6f7873e7e3ff3ed33ad020058da1b8a
+671,16,texture_sand,-,-,The original short dash is visible and is retained as a symbol.,b780668339bb8922e5c8b8b66cb4beeef6f7873e7e3ff3ed33ad020058da1b8a
+671,17,texture_sand,-,-,The original short dash is visible and is retained as a symbol.,b780668339bb8922e5c8b8b66cb4beeef6f7873e7e3ff3ed33ad020058da1b8a
+671,18,texture_sand,-,-,The original short dash is visible and is retained as a symbol.,b780668339bb8922e5c8b8b66cb4beeef6f7873e7e3ff3ed33ad020058da1b8a
+671,19,texture_sand,-,-,The original short dash is visible and is retained as a symbol.,b780668339bb8922e5c8b8b66cb4beeef6f7873e7e3ff3ed33ad020058da1b8a
+671,20,texture_sand,-,-,The original short dash is visible and is retained as a symbol.,b780668339bb8922e5c8b8b66cb4beeef6f7873e7e3ff3ed33ad020058da1b8a
+671,21,texture_sand,-,-,The original short dash is visible and is retained as a symbol.,b780668339bb8922e5c8b8b66cb4beeef6f7873e7e3ff3ed33ad020058da1b8a
+671,24,biogenic_silicoflagellates,,*,A single asterisk appears in the printed cell.,b780668339bb8922e5c8b8b66cb4beeef6f7873e7e3ff3ed33ad020058da1b8a

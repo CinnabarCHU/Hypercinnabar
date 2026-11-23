@@ -1,0 +1,21 @@
+item_id,site,source_path,source_line,verification_flags,row_kind,composite_depth,age_ma,mean_CaCO3,mean_Corg,sedimentation_rate,mean_DBD,bulk_MAR,CaCO3_MAR,non_CaCO3_MAR,Corg_MAR,unresolved_source_fragment,raw_source_line
+IR16.T14,851,VOLUME/DATA/TABLES/CHAP_16/TABLE.14,7,,interval_and_boundary,12.10,0.73,84.10,0.05,16.58,0.61,1.01,0.85,0.16,0.46,, 12.10     0.73    84.10    0.05    16.58    0.61    1.01    0.85    0.16    0.46
+IR16.T14,851,VOLUME/DATA/TABLES/CHAP_16/TABLE.14,8,,interval_and_boundary,18.95,0.91,83.97,0.08,38.06,0.62,2.37,1.99,0.38,1.80,, 18.95     0.91    83.97    0.08    38.06    0.62    2.37    1.99    0.38    1.80
+IR16.T14,851,VOLUME/DATA/TABLES/CHAP_16/TABLE.14,9,,interval_and_boundary,20.50,0.98,,,22.14,,,,,,, 20.50     0.98                     22.14                               
+IR16.T14,851,VOLUME/DATA/TABLES/CHAP_16/TABLE.14,10,,interval_and_boundary,33.70,1.66,78.82,0.08,19.41,0.55,1.06,0.84,0.23,0.83,, 33.70     1.66    78.82    0.08    19.41    0.55    1.06    0.84    0.23    0.83
+IR16.T14,851,VOLUME/DATA/TABLES/CHAP_16/TABLE.14,11,,interval_and_boundary,35.96,1.88,65.57,,10.27,0.43,0.44,0.29,0.15,,, 35.96     1.88    65.57            10.27    0.43    0.44    0.29    0.15   
+IR16.T14,851,VOLUME/DATA/TABLES/CHAP_16/TABLE.14,12,,interval_and_boundary,48.70,2.47,77.60,,21.59,0.57,1.24,0.96,0.28,,, 48.70     2.47    77.60            21.59    0.57    1.24    0.96    0.28   
+IR16.T14,851,VOLUME/DATA/TABLES/CHAP_16/TABLE.14,13,,interval_and_boundary,57.83,2.92,78.37,0.12,20.29,0.59,1.20,0.94,0.26,1.43,, 57.83     2.92    78.37    0.12    20.29    0.59    1.20    0.94    0.26    1.43
+IR16.T14,851,VOLUME/DATA/TABLES/CHAP_16/TABLE.14,14,,interval_and_boundary,59.08,2.99,70.92,,17.86,0.51,0.91,0.65,0.26,,, 59.08     2.99    70.92            17.86    0.51    0.91    0.65    0.26   
+IR16.T14,851,VOLUME/DATA/TABLES/CHAP_16/TABLE.14,15,,interval_and_boundary,60.83,3.08,68.07,,19.44,0.47,0.91,0.62,0.29,,, 60.83     3.08    68.07            19.44    0.47    0.91    0.62    0.29   
+IR16.T14,851,VOLUME/DATA/TABLES/CHAP_16/TABLE.14,16,,interval_and_boundary,63.00,3.18,85.26,,21.70,0.67,1.45,1.24,0.21,,, 63.00     3.18    85.26            21.70    0.67    1.45    1.24    0.21   
+IR16.T14,851,VOLUME/DATA/TABLES/CHAP_16/TABLE.14,17,,interval_and_boundary,68.10,3.40,78.92,0.04,23.18,0.67,1.55,1.23,0.33,0.61,, 68.10     3.40    78.92    0.04    23.18    0.67    1.55    1.23    0.33    0.61
+IR16.T14,851,VOLUME/DATA/TABLES/CHAP_16/TABLE.14,18,,interval_and_boundary,77.35,3.88,77.30,0.07,19.27,0.68,1.31,1.01,0.30,0.95,, 77.35     3.88    77.30    0.07    19.27    0.68    1.31    1.01    0.30    0.95
+IR16.T14,851,VOLUME/DATA/TABLES/CHAP_16/TABLE.14,19,,interval_and_boundary,79.85,3.97,80.23,,27.78,0.68,1.89,1.52,0.37,,, 79.85     3.97    80.23            27.78    0.68    1.89    1.52    0.37   
+IR16.T14,851,VOLUME/DATA/TABLES/CHAP_16/TABLE.14,20,,interval_and_boundary,97.40,4.66,77.86,0.11,25.43,0.70,1.79,1.39,0.40,1.95,, 97.40     4.66    77.86    0.11    25.43    0.70    1.79    1.39    0.40    1.95
+IR16.T14,851,VOLUME/DATA/TABLES/CHAP_16/TABLE.14,21,,interval_and_boundary,116.47,4.98,73.64,0.16,59.59,0.66,3.95,2.91,1.04,6.27,,116.47     4.98    73.64    0.16    59.59    0.66    3.95    2.91    1.04    6.27
+IR16.T14,851,VOLUME/DATA/TABLES/CHAP_16/TABLE.14,22,,interval_and_boundary,155.60,6.10,75.99,0.12,34.94,0.72,2.51,1.91,0.60,3.09,,155.60     6.10    75.99    0.12    34.94    0.72    2.51    1.91    0.60    3.09
+IR16.T14,851,VOLUME/DATA/TABLES/CHAP_16/TABLE.14,23,,interval_and_boundary,199.70,6.75,72.74,0.11,67.85,0.72,4.90,3.56,1.34,5.50,,199.70     6.75    72.74    0.11    67.85    0.72    4.90    3.56    1.34    5.50
+IR16.T14,851,VOLUME/DATA/TABLES/CHAP_16/TABLE.14,24,,interval_and_boundary,225.38,7.50,69.03,0.24,34.24,0.66,2.26,1.56,0.70,5.46,,225.38     7.50    69.03    0.24    34.24    0.66    2.26    1.56    0.70    5.46
+IR16.T14,851,VOLUME/DATA/TABLES/CHAP_16/TABLE.14,25,,interval_and_boundary,314.23,9.94,61.70,0.07,36.41,0.64,2.32,1.43,0.89,1.73,,314.23     9.94    61.70    0.07    36.41    0.64    2.32    1.43    0.89    1.73
+IR16.T14,851,VOLUME/DATA/TABLES/CHAP_16/TABLE.14,26,,interval_and_boundary,363.19,10.90,66.05,0.18,51.00,0.72,3.68,2.43,1.25,6.60,,363.19    10.90    66.05    0.18    51.00    0.72    3.68    2.43    1.25    6.60

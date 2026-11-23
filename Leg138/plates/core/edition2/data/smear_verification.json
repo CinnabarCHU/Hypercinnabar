@@ -1,0 +1,56 @@
+{
+  "pages": 26,
+  "printed_rows": 1156,
+  "printed_grid_cells": 25194,
+  "sites": 11,
+  "visually_read_field_counts_by_site": {
+    "844": 23,
+    "845": 25,
+    "846": 23,
+    "847": 21,
+    "848": 22,
+    "849": 19,
+    "850": 21,
+    "851": 21,
+    "852": 20,
+    "853": 20,
+    "854": 25
+  },
+  "status_counts": {
+    "source_identifier_token": 1156,
+    "source_numeric_token": 8203,
+    "source_lithology_marker": 1150,
+    "no_text_low_ink": 12311,
+    "source_trace_symbol": 1752,
+    "check_composition_token": 438,
+    "ink_without_text": 169,
+    "check_lithology_token": 6,
+    "check_depth_token": 9
+  },
+  "edition_evidence_counts": {
+    "source text layer and located cell": 25101,
+    "second-edition visual cell decision": 53,
+    "inherited Site 846 visual cell decision": 40
+  },
+  "inherited_visual_decisions": 40,
+  "new_visual_decisions": 53,
+  "new_visual_decisions_changed_text": 34,
+  "manually_read_missing_printed_folios": 6,
+  "adjusted_text_layers": [
+    [
+      "844",
+      2,
+      -9.89
+    ],
+    [
+      "845",
+      2,
+      -13.6
+    ],
+    [
+      "852",
+      1,
+      -6.47
+    ]
+  ]
+}

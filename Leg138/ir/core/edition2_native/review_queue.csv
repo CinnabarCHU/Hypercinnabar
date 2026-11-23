@@ -1,0 +1,117 @@
+item_id,source_line,issue,source_text
+IR06.T02,24,age_absent_in_electronic_source,            7.3                             17.5       45.0       52.2       10.2       
+IR09.T05,18,depth_range_descends_in_source,B Theocalyptra davisiana      4H-5-3H-5    30.63-21.10   22.08-23.35   
+IR09.T05,19,depth_range_descends_in_source,T Stichocorys peregrina       4H-5-3H-5    30.63-21.10   22.08-23.35   
+IR09.T05,33,sample_under_first_hole_on_continuation_line_location_uncertain,>> S. peregrina               1H-4 30.00   34.70
+IR09.T05,35,depth_range_descends_in_source,B Solenosphaera omnitubus     5H-3-5H-5    37.14-40.14   42.33-43.71   4H-CC-5H-CC 38.18-47.56 42.33-32.81
+IR10.T03,11,depth_range_descends_in_source,B Discoaster hamatus               15H-CC-16H-1 42      141.13-141.02 156.99-158.75 15H-2  60-15H-3 60 138.20-139.70 156.50-158.00
+IR10.T04,29,irregular_depth_lexeme,Solenosphaera omnitubus        8H-3-8H-5    68.70-71.70    75.00-78.00    7H-CC-8H-CC    69.85.57       76.46-87.95
+IR10.T08,52,two_alternative_MPTS_ages_as_written,17H-4 80     155.40       174.21       C5-n3 or C5A-n1 (t)       11.03 11.55      
+IR10.T08,53,comment_and_interpretation_touch_in_source,17H-6 10     157.70       176.51       R ->> N ? Poorly defined
+IR10.T08,54,comment_and_interpretation_touch_in_source,17H-6 90     158.50       177.31       N ->> R ? Poorly defined
+IR10.T08,55,two_alternative_MPTS_ages_as_written,17H-7 40     159.50       178.31       C5-n3 or C5A-n1 (o)(?)    11.09 11.73 Very poorly defined
+IR10.T08,56,two_alternative_MPTS_ages_as_written,18H-4 35     164.45       183.73       C5A-n1 or -n2 (t)(?)      11.55 11.86      
+IR10.T08,57,two_alternative_MPTS_ages_as_written,18H-6 55     167.65       186.93       C5A-n1 or -n2 (o)(?)      11.73 12.12      
+IR10.T08,98,two_alternative_MPTS_ages_as_written,16H-6 150    154.60       174.30       C5-n3 or C5A-n1 (t)(?)    11.03 11.55       Section break
+IR10.T08,99,two_alternative_MPTS_ages_as_written,17H-6 110    163.70       183.50       C5A-n1 or -n2 (t)(?)      11.55 11.86      
+IR10.T10,5,native_age_and_rate_headers_order_differs_from_chapter_interpretation,     0       0                      Top of sedimentary section
+IR10.T10,6,native_age_and_rate_headers_order_differs_from_chapter_interpretation, 12.32       30.0        0.41       T Stylatractus universus
+IR10.T10,7,native_age_and_rate_headers_order_differs_from_chapter_interpretation, 37.20       20.7        1.61       T Pterocanium prismatium
+IR10.T10,8,native_age_and_rate_headers_order_differs_from_chapter_interpretation, 53.88       12.1        2.92       Kaena (t)
+IR10.T10,9,native_age_and_rate_headers_order_differs_from_chapter_interpretation, 65.55       12.2        3.88       Cochiti (t)
+IR10.T10,10,native_age_and_rate_headers_order_differs_from_chapter_interpretation, 72.05       11.0        4.47       Sijdufjall (o)
+IR10.T10,11,native_age_and_rate_headers_order_differs_from_chapter_interpretation, 76.00       13.2        4.77       Thvera (o)
+IR10.T10,12,native_age_and_rate_headers_order_differs_from_chapter_interpretation, 87.51       19.8        5.35       C3A-n1 (t)
+IR10.T10,13,native_age_and_rate_headers_order_differs_from_chapter_interpretation, 96.28       16.3        5.89       C3A-n2 (o)
+IR10.T10,14,native_age_and_rate_headers_order_differs_from_chapter_interpretation,104.46       13.4        6.50       C3A-n3 (o)
+IR10.T10,15,native_age_and_rate_headers_order_differs_from_chapter_interpretation,120.53       18.9        7.35       C4-n3 (t)
+IR10.T10,16,native_age_and_rate_headers_order_differs_from_chapter_interpretation,129.71       16.6        7.90       C4-n1 (t)
+IR10.T10,17,native_age_and_rate_headers_order_differs_from_chapter_interpretation,141.53       19.6        8.50       C4A-n2 (o)
+IR10.T10,18,native_age_and_rate_headers_order_differs_from_chapter_interpretation,164.93       12.2       10.42       C5-n1 (t)
+IR10.T10,19,native_age_and_rate_headers_order_differs_from_chapter_interpretation,166.83       11.2       10.51       C5-n2 (o)
+IR10.T10,20,native_age_and_rate_headers_order_differs_from_chapter_interpretation,174.21       16.7       11.03       C5-n3 (t)
+IR10.T10,21,native_age_and_rate_headers_order_differs_from_chapter_interpretation,183.73       18.4       11.55       C5A-n1 (t)
+IR10.T10,22,native_age_and_rate_headers_order_differs_from_chapter_interpretation,186.93       17.8       11.73       C5A-n1 (o)
+IR10.T10,23,native_age_and_rate_headers_order_differs_from_chapter_interpretation,205.08       24.9       12.46       C5A-n3 (t)
+IR10.T10,24,native_age_and_rate_headers_order_differs_from_chapter_interpretation,215.93       29.3       12.83       C5AA-n (t)
+IR10.T10,25,native_age_and_rate_headers_order_differs_from_chapter_interpretation,226.08       27.4       13.20       C5AB-n (t)
+IR10.T10,26,native_age_and_rate_headers_order_differs_from_chapter_interpretation,275.23       17.6       16.00       T Helicosphaera ampliaperta 845A-27X-3-42/845A-27X-5-42
+IR10.T10,27,native_age_and_rate_headers_order_differs_from_chapter_interpretation,309.10       52.1       16.65       845A-30X-CC older than B Cestodiscus peplum (16.4 Ma) but younger than B Crucidenticula kanayae (16.9 Ma)
+IR12.T03,6,truncated_event_and_displaced_or_duplicated_source_cells,"iliania lacunosa                      2H-5, 50-2H-6, 51    13.00-14.51    13.13-14.64      2H-1  140-2H-1 145    12.90-12.95    14.58-14.63            4.51    13.13-14.64    2H-1   140-2H-1   145    12.90-12.95    14.58-14.63            "
+IR12.T04,12,irregular_depth_lexeme,B Pulleniatina spectabilis         12H-CC-13H-CC       111.59121.05        124.61-135.05
+IR13.T03,13,depth_range_descends_in_source,"T Sphenolithus spp.                 4H-CC-5H-1, 42     31.17-31.12  35.52-36.77  3H-CC-4H-CC        25.06-34.57  28.06-38.82  3H-CC-4H-CC         27.81-37.16  30.51-39.76"
+IR13.T03,23,depth_range_descends_in_source,"T Coccolithus miopelagicus         10H-CC-11H-1, 20    88.16-87.90  98.76-100.25 9H-CC-10H-CC       82.00-91.37  91.80-102.12  9H-CC-10H-CC       84.78-94.37  92.98-103.67"
+IR13.T04,9,only_one_depth_token_check_alignment,T Theocorythium vetulum       2H-CC-3H-3  12.27-15.82 17.70-20.23  2H-CC-3H-CC 15.45-25.06             2H-CC-3H-CC 18.28-27.81 20.23-30.51
+IR13.T04,30,isolated_depth_in_final_hole_group,T Siphostichartus corona      6H-5-6H-CC  47.30-50.17 53.00-55.87                                                             61.40-71.87
+IR13.T04,31,only_one_depth_token_check_alignment,T Acrobotrys tritubus         8H-3-8H-5   63.30-66.30 70.75-71.87                                      6H-CC-7H-CC 56.40-65.07
+IR13.T05,5,depth_range_descends_in_source,T N. fossilis              1H-CC-2H-CC 2.23-12.27   2.43-15.07   1H-CC-2H-CC  5.47-15.4  55.47-17.7  1H-CC-2H-CC     8.44-18.28   8.64-20.23
+IR13.T05,7,depth_range_descends_in_source,B P. doliolus              4H-1-4H-2  22.53-24.03  26.88-28.38   3H-CC-4H-1  25.06-24.9  28.06-28.46    4H-2-4H-CC  29.9-37.16   32.5-39.76
+IR13.T07,55,composite_depth_empty_in_source,9H-1    35       72.35                   C4-n2 (t)(?)       6.85       Near core top
+IR13.T07,67,section_number_absent,10H-   140       84.40       95.15       R ->> N             
+IR13.T15,18,source_core_label_truncated,138-848                43.00    47.55    4.56   0.96              
+IR13.T16,40,column_positions_shift_relative_to_print_and_adjacent_intervals; preserve electronic positions,103.35     10.54     65.59     4.58      0.70     0.32     0.21     0.11    
+IR14.T04,4,header_hole_844B_in_site_849_chapter,T Globorotalia limbata          6H-CC-7H-CC       54.54-64.26    62.04-73.71
+IR14.T04,5,header_hole_844B_in_site_849_chapter,T Dentoglobigerina altispira    9H-CC-10H-CC      83.29-92.49    94.94-104.29
+IR14.T04,6,header_hole_844B_in_site_849_chapter,T Sphaeroidinellopsis spp.      9H-CC-10H-CC      83.29-92.49    94.94-104.29
+IR14.T04,7,header_hole_844B_in_site_849_chapter,B Globorotalia tumida           16X-CC-17X-CC   149.53-159.44   170.03-182.39
+IR14.T04,8,header_hole_844B_in_site_849_chapter,T Globoquadrina dehiscens       20X-CC-21X-CC   187.16-196.61   216.01-226.51
+IR14.T04,9,header_hole_844B_in_site_849_chapter,B Globorotalia plesiotumida     30X-CC-31X-CC   283.87-293.69   318.17-329.74
+IR15.T03,12,depth_range_descends_in_source,"T Discoaster surculus               6H-1, 70-6H-2, 68    46.40-47.88  52.15-53.63       5H-CC-6H-1, 20        51.08-50.70    55.48-56.20"
+IR15.T03,14,depth_range_descends_in_source,"T Sphenolithus spp.                 8H-2, 59-8H-3, 72    66.79-68.42  75.79-77.42       7H-CC-8H-1, 60        70.11-70.10    76.66-77.85"
+IR15.T04,5,no_hole_identifier_in_native_header,T Globorotalia limbata          3H-CC-4H-CC      27.27-36.83      28.92-39.83
+IR15.T04,6,no_hole_identifier_in_native_header,T Dentoglobigerina altispira    5H-CC-6H-CC      46.21-55.81      50.01-61.56
+IR15.T04,7,no_hole_identifier_in_native_header,T Sphaeroidinellopsis spp.      5H-CC-6H-CC      46.21-55.81      50.01-61.56
+IR15.T04,8,no_hole_identifier_in_native_header,B Globorotalia tumida          14X-CC-15X-CC    136.38-146.05    144.13-153.80
+IR15.T04,9,no_hole_identifier_in_native_header,B Globorotalia plesiotumida    28X-CC-29X-CC    270.26-279.93    278.01-287.68
+IR15.T14,7,hole_not_stated_in_source,1H-1 0-150       0.00      0.75    0.04     145     7     5    2.1    0.8     123
+IR15.T14,8,hole_not_stated_in_source,1H-1 0-150       3.00      3.75    0.18     231    11    14    3.4    1.4     198
+IR15.T14,9,hole_not_stated_in_source,2H-1 0-150       7.70     10.00    0.47     252    13     8    1.6    1.0     214
+IR15.T14,10,hole_not_stated_in_source,3H-1 0-150      17.20     19.60    0.92     105     9     7    1.3    1.0      79
+IR15.T14,11,hole_not_stated_in_source,4H-1 0-150      26.70     30.45    1.43     174     9     8    1.5    1.0     147
+IR15.T14,12,hole_not_stated_in_source,5H-1 0-150      36.20     40.75    1.89     184    11    10    2.2    1.0     150
+IR15.T14,13,hole_not_stated_in_source,6H-1 0-150      45.70     52.20    2.41     246    10    10    2.1    0.9     216
+IR15.T14,14,hole_not_stated_in_source,7H-1 0-150      55.20     63.30    2.90     151     9    12    3.0    1.1     123
+IR15.T14,15,hole_not_stated_in_source,8H-1 0-150      64.70     74.45    3.36     237    14    19    4.6    1.6     194
+IR15.T14,16,hole_not_stated_in_source,9H-1 0-150      69.50     78.00    3.49     171    13    17    4.5    1.3     132
+IR15.T14,17,hole_not_stated_in_source,10H-1 0-150     88.50     97.00    4.07     628    11    10    2.8    1.3     595
+IR15.T14,18,hole_not_stated_in_source,11X-1 0-150     98.00    106.50    4.36     224    11    10    2.1    1.6     192
+IR15.T14,19,hole_not_stated_in_source,14X-1 0-150    126.80    135.30    4.85    1338    37    56    7.2    6.0    1228
+IR15.T14,20,hole_not_stated_in_source,17X-1 0-150    155.70    164.20    5.23     322    10    12    3.7    1.8     292
+IR15.T14,21,hole_not_stated_in_source,18X-1 0-150    165.00    173.50    5.48     492    10    14    2.1    1.7     461
+IR15.T14,22,hole_not_stated_in_source,19X-1 0-150    174.20    182.70    5.74     310    10    12    3.6    2.6     279
+IR15.T14,23,hole_not_stated_in_source,20X-1 0-150    183.80    192.30    5.88    1033    25    45    8.2    4.8     958
+IR15.T14,24,hole_not_stated_in_source,21X-1 0-150    193.50    202.00    5.98    2541    21    24    3.0    2.2    2478
+IR15.T14,25,hole_not_stated_in_source,22X-1 0-150    203.10    211.60    6.09    2428    20    24    3.4    2.1    2369
+IR15.T14,26,hole_not_stated_in_source,23X-1 0-150    212.80    221.30    6.25     944    15    18    4.3    2.4     898
+IR15.T14,27,hole_not_stated_in_source,24X-1 0-150    222.50    231.00    6.41     734    12    18    2.7    3.0     697
+IR15.T14,28,hole_not_stated_in_source,25X-1 0-150    232.10    240.60    6.57     979    14    37    4.8    2.2     937
+IR15.T14,29,hole_not_stated_in_source,27X-1 0-150    251.00    259.50    7.06     521     9    42    3.7    0.9     495
+IR15.T14,30,hole_not_stated_in_source,28X-1 0-150    260.70    269.20    7.43     261     6    13    3.2    1.0     242
+IR15.T14,31,hole_not_stated_in_source,29X-1 0-150    270.30    278.80    7.77     256    10    18    3.8    1.8     226
+IR15.T14,32,hole_not_stated_in_source,30X-1 0-150    279.90    288.40    8.06     247    11    22    4.3    1.9     213
+IR15.T14,33,hole_not_stated_in_source,31X-1 0-150    289.60    298.10    8.35     475    12    24    5.4    1.8     438
+IR15.T14,34,hole_not_stated_in_source,32X-1 60-62    299.80    307.56    8.64     343    16    32    4.3    2.5     295
+IR15.T14,35,hole_not_stated_in_source,33X-1 81-83    309.71    317.47    8.92     821    12    20    4.4    1.1     784
+IR15.T14,36,hole_not_stated_in_source,34X-1 127-129  319.87    327.63    9.18     742    20    50    6.7    2.6     683
+IR15.T14,37,hole_not_stated_in_source,35X-1 86-88    329.06    336.82    9.42     493    13    35    6.2    2.6     454
+IR15.T14,38,hole_not_stated_in_source,36X-1 60-62    338.40    346.16    9.67    1504    11    25    3.6    0.6    1470
+IR15.T14,39,hole_not_stated_in_source,36X-1 70-72    338.50    346.26    9.67    2117     8     6    1.1    0.0    2093
+IR15.T14,40,hole_not_stated_in_source,37X-1 44-46    347.94    355.70    9.92     253    17    37    6.5    3.1     203
+IR15.T14,41,hole_not_stated_in_source,38X-1 28-30    357.38    365.14   10.12    1040    19    36    8.3    2.1     982
+IR15.T14,42,hole_not_stated_in_source,38X-1 63-66    359.23    366.99   10.16    2887    12    18    2.1    0.0    2852
+IR15.T14,43,hole_not_stated_in_source,38X-1 133-136  359.93    367.69   10.18    2746    10     8    2.3    0.0    2717
+IR15.T14,44,hole_not_stated_in_source,39X-1 40-42    367.20    374.96   10.33    1230    15    64    5.3    1.9    1184
+IR15.T14,45,hole_not_stated_in_source,40X-1 41-43    376.81    384.57   10.53     357    14    30    7.1    5.3     316
+IR15.T14,46,hole_not_stated_in_source,41X-1 43-47    386.53    394.29   10.74     517    16    70    4.0    3.8     471
+IR16.T03,6,mcd_continues_on_following_source_line,"T Pseudoemiliania lacunosa           1H-5, 95-1H-5, 140   6.95-7.40  "
+IR16.T03,7,continuation_of_preceding_constraint,6.95-7.40                    
+IR16.T03,12,depth_range_descends_in_source,"B Gephyrocapsa oceanica s.l.         3H-CC-4H-1, 19       27.10-26.69    31.25-32.09      3H-3, 70-3H-3, 140   25.20-25.90   31.25-31.95         "
+IR16.T03,21,depth_range_descends_in_source,"T Discoaster quinqueramus            11H-CC-12H-1, 30     103.01-102.80  116.16-117.80                                                     11H-6, 44-11H-6, 90   102.94-103.40   116.24-116.70"
+IR16.T03,26,depth_range_descends_in_source,"B Discoaster berggreni               20X-CC-21X-1, 25     188.93-188.55  224.88-227.90                    "
+IR17.T04,20,depth_range_descends_in_source,B Ceratolithus acutus                 7H-1   71-7H-1   127    57.11-57.67    62.96-62.52  
+IR17.T05,8,depth_range_descends_in_source,T Neogloboquadrina siakensis     12H-CC-13H-CC       113.94-113.40       126.14-113.40
+IR18.T06,87,two_alternative_MPTS_ages_as_written,138-853D-7H-2 40        58.20       65.60       C4-n2 (o)               7 28      
+IR18.T12,59,Corg_MAR_verified_in_print_at_0.14_noncarbonate_MAR_blank,                  81.0              8.95       0.80       0.71       0.58              0.14
+IR19.T03,14,depth_range_descends_in_source,T Pterocanium prismatium       2H-2-2H-2      10.30-11.0       10.60-1.30
+IR19.T03,17,depth_range_descends_in_source,B Theocalyptra davisiana       2H-5-2H-5      14.80-15.50      15.10-5.80
+IR19.T05,72,source_core_section_written_without_hyphen,3H4 150        19.11       21.11       C3A-n1 (o)        5.53       Section break
