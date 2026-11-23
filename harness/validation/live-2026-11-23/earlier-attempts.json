@@ -1,0 +1,284 @@
+[
+  {
+    "attempt": 1,
+    "status": "failed",
+    "raw_receipt_sha256": "ed29bf24e469911f293b168fa7ceb9fb1af20b9bfe733d896af80fdad91c189e",
+    "first_error": "User turn 1 exceeded the configured tool-call budget",
+    "diagnosis": "Discovery reached its 14-call guard after ambiguous search instructions and a binary image was sent to the text-only inspector.",
+    "tool_calls": [
+      {
+        "turn": 1,
+        "step": 1,
+        "callId": "call_00_Usn9CixEbkAPMudInzzy4859",
+        "name": "skill",
+        "arguments": "{\"name\": \"acycle-intake\"}",
+        "event_seq": 13
+      },
+      {
+        "turn": 1,
+        "step": 1,
+        "callId": "call_01_TYPuDLLZjfWNfy3KccU22438",
+        "name": "acycle_capabilities",
+        "arguments": "{}",
+        "event_seq": 15
+      },
+      {
+        "turn": 1,
+        "step": 2,
+        "callId": "call_00_xerpSm7YUG3zEj89IJYq7077",
+        "name": "acycle_menu_catalog",
+        "arguments": "{\"query\": \"灰度\"}",
+        "event_seq": 21
+      },
+      {
+        "turn": 1,
+        "step": 2,
+        "callId": "call_01_xfu0ITNG8ChHqaYorLzr9637",
+        "name": "acycle_menu_catalog",
+        "arguments": "{\"query\": \"image gray grayscale rgb\"}",
+        "event_seq": 23
+      },
+      {
+        "turn": 1,
+        "step": 3,
+        "callId": "call_00_xZp2cermIFgQL9GJlzdY5633",
+        "name": "acycle_menu_catalog",
+        "arguments": "{\"query\": \"Image\", \"limit\": 50}",
+        "event_seq": 29
+      },
+      {
+        "turn": 1,
+        "step": 3,
+        "callId": "call_01_UgYjlN0W3Gj9ovm6z3340912",
+        "name": "acycle_menu_catalog",
+        "arguments": "{\"query\": \"Color\", \"limit\": 50}",
+        "event_seq": 31
+      },
+      {
+        "turn": 1,
+        "step": 4,
+        "callId": "call_00_ET_2l76Cmr9GLoOYPEAa2io5301",
+        "name": "acycle_menu_catalog",
+        "arguments": "{\"menu\": \"menu_rgb2gray\"}",
+        "event_seq": 37
+      },
+      {
+        "turn": 1,
+        "step": 4,
+        "callId": "call_01_ET_5YLudtSnu4w8KOPrlIHj2205",
+        "name": "acycle_import_attachment",
+        "arguments": "{}",
+        "event_seq": 39
+      },
+      {
+        "turn": 1,
+        "step": 5,
+        "callId": "call_00_ie2st1VI4DMQtEtjKmce8095",
+        "name": "acycle_inspect",
+        "arguments": "{\"input_path\": \"WORKSPACE/.acycle/imports/ab58defac30c269842e840e945ac1dd789151fcd85fbd9c8c9ccb0af9eb55cf4/rgb.png\"}",
+        "event_seq": 45
+      },
+      {
+        "turn": 1,
+        "step": 5,
+        "callId": "call_01_565GVKyfdkwlNT8IKadQ1090",
+        "name": "acycle_menu_catalog",
+        "arguments": "{\"menu\": \"menu_rgb2gray\", \"operation\": \"RGBToGray\"}",
+        "event_seq": 47
+      },
+      {
+        "turn": 1,
+        "step": 5,
+        "callId": "call_02_6Xk0iR9l4GMKbMMLbaNd4297",
+        "name": "acycle_menu_catalog",
+        "arguments": "{\"menu\": \"menu_rgb2gray\", \"operation\": \"RGBToGray_legacy\"}",
+        "event_seq": 49
+      },
+      {
+        "turn": 1,
+        "step": 5,
+        "callId": "call_03_rAWsvvWZMfUPiKPSHkq04211",
+        "name": "acycle_menu_catalog",
+        "arguments": "{\"menu\": \"menu_rgb2gray\", \"operation\": \"Desktop\"}",
+        "event_seq": 51
+      },
+      {
+        "turn": 1,
+        "step": 5,
+        "callId": "call_04_xhAwWZLIumTNDAXqtX5w9278",
+        "name": "acycle_menu_catalog",
+        "arguments": "{\"menu\": \"menu_rgb2gray\", \"operation\": \"Desktop_legacy\"}",
+        "event_seq": 53
+      },
+      {
+        "turn": 1,
+        "step": 6,
+        "callId": "call_00_RhjqQHEoZ6sHRe1gIHZF9534",
+        "name": "acycle_catalog",
+        "arguments": "{\"query\": \"RGBToGray\", \"limit\": 30}",
+        "event_seq": 59
+      },
+      {
+        "turn": 1,
+        "step": 6,
+        "callId": "call_01_1nq6AoGAuZRI6Q125ylp1241",
+        "name": "acycle_catalog",
+        "arguments": "{\"entrypoint\": \"RGBToGray\"}",
+        "event_seq": 61
+      }
+    ]
+  },
+  {
+    "attempt": 2,
+    "status": "failed",
+    "raw_receipt_sha256": "f88aab649a7081de681cac24daa7ee691456050b634fa610b1b8ddb6c4c74dac",
+    "first_error": "User turn 1 exceeded the configured scientific-call budget",
+    "diagnosis": "The strict read-only guard stopped a recorded helper invocation. Native source lookups of wrapper names were also unnecessary. The discovery wording and menu workflow guidance were clarified.",
+    "tool_calls": [
+      {
+        "turn": 1,
+        "step": 1,
+        "callId": "call_00_1VRXRQGx5CZk5FUqXFTd9866",
+        "name": "skill",
+        "arguments": "{\"name\": \"acycle-intake\"}",
+        "event_seq": 13
+      },
+      {
+        "turn": 1,
+        "step": 1,
+        "callId": "call_01_2ZVP1CY5HCAMFgFJmgtN9497",
+        "name": "acycle_capabilities",
+        "arguments": "{}",
+        "event_seq": 15
+      },
+      {
+        "turn": 1,
+        "step": 1,
+        "callId": "call_02_5iBrF4rQA4gxQx6tVW7S6596",
+        "name": "acycle_menu_catalog",
+        "arguments": "{\"query\": \"rgb\"}",
+        "event_seq": 17
+      },
+      {
+        "turn": 1,
+        "step": 1,
+        "callId": "call_03_ws85DIv2RJK8CMtBICMx8254",
+        "name": "acycle_catalog",
+        "arguments": "{\"query\": \"rgb2gray\"}",
+        "event_seq": 19
+      },
+      {
+        "turn": 1,
+        "step": 1,
+        "callId": "call_04_4QOBgbigyfWkuq2ehYN87656",
+        "name": "acycle_import_attachment",
+        "arguments": "{}",
+        "event_seq": 21
+      },
+      {
+        "turn": 1,
+        "step": 2,
+        "callId": "call_00_sk1nGmySLQsRkqlbE2QA0409",
+        "name": "acycle_menu_catalog",
+        "arguments": "{\"menu\": \"menu_rgb2gray\"}",
+        "event_seq": 27
+      },
+      {
+        "turn": 1,
+        "step": 2,
+        "callId": "call_01_vnoy8Ewf4ub3y2Lau0211971",
+        "name": "acycle_catalog",
+        "arguments": "{\"query\": \"rgb\"}",
+        "event_seq": 29
+      },
+      {
+        "turn": 1,
+        "step": 3,
+        "callId": "call_00_NCaNDQKFmowxNOyTubNP6286",
+        "name": "acycle_menu_catalog",
+        "arguments": "{\"menu\": \"menu_rgb2gray\", \"operation\": \"RGBToGray\"}",
+        "event_seq": 35
+      },
+      {
+        "turn": 1,
+        "step": 3,
+        "callId": "call_01_mLInexLgvcCAY1PKpKvq9836",
+        "name": "acycle_menu_catalog",
+        "arguments": "{\"menu\": \"menu_rgb2gray\", \"operation\": \"RGBToGray_legacy\"}",
+        "event_seq": 37
+      },
+      {
+        "turn": 1,
+        "step": 3,
+        "callId": "call_02_QhljdhK4GcqbuaPvwzey1395",
+        "name": "acycle_menu_catalog",
+        "arguments": "{\"menu\": \"menu_rgb2gray\", \"operation\": \"Desktop\"}",
+        "event_seq": 39
+      },
+      {
+        "turn": 1,
+        "step": 3,
+        "callId": "call_03_QHjg1CDYL55orTOAbBip3318",
+        "name": "acycle_menu_catalog",
+        "arguments": "{\"menu\": \"menu_rgb2gray\", \"operation\": \"Desktop_legacy\"}",
+        "event_seq": 41
+      },
+      {
+        "turn": 1,
+        "step": 4,
+        "callId": "call_00_zPooUW6rcws3QUFUSAAS0381",
+        "name": "acycle_catalog",
+        "arguments": "{\"entrypoint\": \"RGBToGray\"}",
+        "event_seq": 47
+      },
+      {
+        "turn": 1,
+        "step": 4,
+        "callId": "call_01_gssOtrlqfLX9215Cc7IA8311",
+        "name": "acycle_catalog",
+        "arguments": "{\"entrypoint\": \"RGBToGray_legacy\"}",
+        "event_seq": 49
+      },
+      {
+        "turn": 1,
+        "step": 4,
+        "callId": "call_02_aEacxga4gcDgu6b23f4n9207",
+        "name": "acycle_catalog",
+        "arguments": "{\"entrypoint\": \"Desktop\"}",
+        "event_seq": 51
+      },
+      {
+        "turn": 1,
+        "step": 5,
+        "callId": "call_00_5rU14pZ0lbVrJMpaufEo1002",
+        "name": "acycle_catalog",
+        "arguments": "{\"query\": \"Gray\", \"limit\": 30}",
+        "event_seq": 57
+      },
+      {
+        "turn": 1,
+        "step": 5,
+        "callId": "call_01_GDn20fXauLy9GB8qSdT79814",
+        "name": "acycle_catalog",
+        "arguments": "{\"query\": \"image\", \"limit\": 30}",
+        "event_seq": 59
+      },
+      {
+        "turn": 1,
+        "step": 5,
+        "callId": "call_02_RECFOpgm1vsQcQLmWnZG0473",
+        "name": "acycle_menu_catalog",
+        "arguments": "{\"query\": \"image\"}",
+        "event_seq": 61
+      },
+      {
+        "turn": 1,
+        "step": 6,
+        "callId": "call_00_IFwBAOyXnEeQOsYFrAM94287",
+        "name": "acycle_menu_helper",
+        "arguments": "{\"menu\": \"menu_rgb2gray\", \"input_path\": \"WORKSPACE/.acycle/imports/ab58defac30c269842e840e945ac1dd789151fcd85fbd9c8c9ccb0af9eb55cf4/rgb.png\", \"input_kind\": \"image\", \"override\": {\"params\": {\"operation\": \"RGBToGray\"}}}",
+        "event_seq": 67
+      }
+    ]
+  }
+]

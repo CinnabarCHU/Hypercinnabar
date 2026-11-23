@@ -1,0 +1,130 @@
+{
+  "run_id": "20261123T120900Z-6fda234c2a6c",
+  "operation": "menu",
+  "role": "helper",
+  "action": "helper",
+  "menu": "menu_rgb2gray",
+  "selector": "RGBToGray_legacy",
+  "revision_pin": "74082d52da4b2800068577bd1e66a5a026d470c1",
+  "status": "completed",
+  "source_runs": [],
+  "parent_run_id": null,
+  "output_dir": "WORKSPACE/.acycle/runs/20261123T120900Z-6fda234c2a6c/outputs",
+  "artifacts": {
+    "journal_zip": "acycle-journal.zip"
+  },
+  "input_sha256": "ab58defac30c269842e840e945ac1dd789151fcd85fbd9c8c9ccb0af9eb55cf4",
+  "journal": "outputs/journals/registered/1795435843431/events.jsonl",
+  "completion": "done",
+  "summary": {
+    "class": "struct",
+    "size": [
+      1,
+      1
+    ],
+    "fields": [
+      "params",
+      "plt",
+      "dat"
+    ],
+    "preview": {
+      "params": {
+        "class": "struct",
+        "size": [
+          1,
+          1
+        ],
+        "fields": [
+          "operation",
+          "im_name"
+        ],
+        "preview": {
+          "operation": {
+            "class": "char",
+            "size": [
+              1,
+              16
+            ],
+            "value": "RGBToGray_legacy"
+          },
+          "im_name": {
+            "class": "uint8",
+            "size": [
+              2,
+              3,
+              3
+            ],
+            "value": [
+              [
+                [
+                  255,
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  255,
+                  0
+                ],
+                [
+                  0,
+                  0,
+                  255
+                ]
+              ],
+              [
+                [
+                  0,
+                  0,
+                  0
+                ],
+                [
+                  255,
+                  255,
+                  255
+                ],
+                [
+                  128,
+                  128,
+                  128
+                ]
+              ]
+            ]
+          }
+        }
+      },
+      "plt": {
+        "class": "struct",
+        "size": [
+          1,
+          1
+        ],
+        "fields": [
+          "operation"
+        ],
+        "preview": {
+          "operation": {
+            "class": "char",
+            "size": [
+              1,
+              16
+            ],
+            "value": "RGBToGray_legacy"
+          }
+        }
+      },
+      "dat": {
+        "class": "struct",
+        "size": [
+          1,
+          1
+        ],
+        "fields": [],
+        "preview": {}
+      }
+    }
+  },
+  "plot_selector": "RGBToGray_legacy",
+  "source_result_sha256": "2120a03e0203ebe78d3f57daaa83685eafb4388067b942826a6cd61d75c4e22f",
+  "export_note": "Artifact paths are relative to this folder. Other original workspace paths are normalized; use the journal ZIP for replay."
+}

@@ -1,0 +1,19 @@
+{
+  "credential_ingress": "stdin with terminal echo disabled; no literal credential in a file or shell command argument",
+  "provider_origin": "https://api.deepseek.com",
+  "credential_in_model_prompts": false,
+  "numerical_worker_credential_inherited": false,
+  "credential_process_closed": true,
+  "exact_credential_scan": {
+    "files_scanned": 683,
+    "matches": 0,
+    "scope": "all files under the private validation directory, including application logs, raw receipts, input/output files and prepared publication"
+  },
+  "source_credential_pattern_scan": "passed before source commit",
+  "limitation": "This verifies generated files and this execution boundary. It is not a claim about chat or provider retention; the credential was originally supplied in chat.",
+  "publication_pattern_scan": {
+    "tool": "Gitleaks 8.30.1",
+    "findings": 0,
+    "exit_code": 0
+  }
+}

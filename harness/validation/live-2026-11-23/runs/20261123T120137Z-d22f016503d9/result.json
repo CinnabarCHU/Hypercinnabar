@@ -1,0 +1,54 @@
+{
+  "run_id": "20261123T120137Z-d22f016503d9",
+  "operation": "menu",
+  "role": "analyzer",
+  "action": "analyzer",
+  "menu": "menu_rgb2gray",
+  "selector": "RGBToGray",
+  "revision_pin": "74082d52da4b2800068577bd1e66a5a026d470c1",
+  "status": "completed",
+  "source_runs": [
+    "20261123T115727Z-7f4853b8b4c1"
+  ],
+  "parent_run_id": "20261123T115727Z-7f4853b8b4c1",
+  "output_dir": "WORKSPACE/.acycle/runs/20261123T120137Z-d22f016503d9/outputs",
+  "artifacts": {
+    "journal_zip": "acycle-journal.zip"
+  },
+  "journal": "outputs/journals/registered/1795435411361/events.jsonl",
+  "completion": "done",
+  "summary": {
+    "class": "struct",
+    "size": [
+      1,
+      1
+    ],
+    "fields": [
+      "I"
+    ],
+    "preview": {
+      "I": {
+        "class": "uint8",
+        "size": [
+          2,
+          3
+        ],
+        "value": [
+          [
+            76,
+            150,
+            29
+          ],
+          [
+            0,
+            255,
+            128
+          ]
+        ]
+      }
+    }
+  },
+  "plot_selector": "RGBToGray",
+  "source_result_sha256": "08e68ee7c4fa1ff430afc8e0387e3ad528e4c8f0e6acdbe78d94974cc09ea05b",
+  "export_note": "Artifact paths are relative to this folder. Other original workspace paths are normalized; use the journal ZIP for replay."
+}

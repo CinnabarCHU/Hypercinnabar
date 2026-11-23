@@ -1,0 +1,44 @@
+{
+  "cases": [
+    {
+      "id": "menu-live",
+      "attachment": {
+        "root": "scenario",
+        "path": "rgb.png",
+        "name": "rgb.png"
+      },
+      "turns": [
+        {
+          "id": "current",
+          "user_prompt": "请将附件 RGB 图像转换成灰度图，使用当前 Acycle 版本，完成参数准备、数值计算和绘图。展示图像，报告完整灰度矩阵和运行编号。所有计算与绘图使用 Acycle 的 MATLAB 实现。",
+          "execution_policy": {
+            "kind": "scientific",
+            "min_completed_scientific_runs": 3,
+            "max_scientific_calls": 3,
+            "max_tool_calls": 24
+          }
+        },
+        {
+          "id": "replay",
+          "user_prompt": "请从刚才保存的调用记录重放灰度计算，核对所得矩阵与之前是否一致，并给出新的运行编号。保留之前的结果，不需要重新绘图。",
+          "execution_policy": {
+            "kind": "scientific",
+            "min_completed_scientific_runs": 1,
+            "max_scientific_calls": 1,
+            "max_tool_calls": 8
+          }
+        },
+        {
+          "id": "legacy",
+          "user_prompt": "请对同一附件另跑一遍 GUIDE 旧版的 RGB 转灰度，完成参数准备、计算与绘图并展示，对比当前版与旧版的输出矩阵。保留全部记录。",
+          "execution_policy": {
+            "kind": "scientific",
+            "min_completed_scientific_runs": 3,
+            "max_scientific_calls": 3,
+            "max_tool_calls": 16
+          }
+        }
+      ]
+    }
+  ]
+}

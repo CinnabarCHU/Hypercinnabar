@@ -1,0 +1,115 @@
+{
+  "status": "passed",
+  "source_commit": "6cc8b78e3cabb99a9fd802c06eb915235953455c",
+  "sdk": "0.2.1-rc.3",
+  "dsh": "0.2.1-rc.3",
+  "model": {
+    "provider": "deepseek-official",
+    "model": "deepseek-flash",
+    "maxTokens": 8192,
+    "reasoningEffort": "high"
+  },
+  "plugin_sha256": "6cbaccbd56641d45baf6821f227383b5aac962d702b550d6b483b78d4236a8b6",
+  "session_id": "session-afccea841db94689a2d6be83f3758772",
+  "user_turns": 3,
+  "tool_calls": 18,
+  "acycle_tools_registered": 20,
+  "acycle_skills_visible": 10,
+  "matlab_calls": 7,
+  "expected_uint8_matrix": [
+    [
+      76,
+      150,
+      29
+    ],
+    [
+      0,
+      255,
+      128
+    ]
+  ],
+  "runs": [
+    {
+      "run_id": "20261123T115727Z-7f4853b8b4c1",
+      "role": "helper",
+      "action": "helper",
+      "selector": "RGBToGray",
+      "workflow_url": "https://github.com/CinnabarCHU/Hypercinnabar/actions/runs/45169867343",
+      "worker_commit": "d61654aa10c9910f05253cfa7fe8cf394e3add75",
+      "parent_run_id": null
+    },
+    {
+      "run_id": "20261123T120137Z-d22f016503d9",
+      "role": "analyzer",
+      "action": "analyzer",
+      "selector": "RGBToGray",
+      "workflow_url": "https://github.com/CinnabarCHU/Hypercinnabar/actions/runs/45170482865",
+      "worker_commit": "59d045e7154d1ef4455095ea6d00970f89e9712c",
+      "parent_run_id": "20261123T115727Z-7f4853b8b4c1"
+    },
+    {
+      "run_id": "20261123T120354Z-7269282e94e2",
+      "role": "plotter",
+      "action": "plotter",
+      "selector": "RGBToGray",
+      "workflow_url": "https://github.com/CinnabarCHU/Hypercinnabar/actions/runs/45170820634",
+      "worker_commit": "21b6ff4097b8a388305b1609630b67f9809fd6d3",
+      "parent_run_id": "20261123T115727Z-7f4853b8b4c1"
+    },
+    {
+      "run_id": "20261123T120620Z-97b928c26dc6",
+      "role": "analyzer",
+      "action": "replay",
+      "selector": "RGBToGray",
+      "workflow_url": "https://github.com/CinnabarCHU/Hypercinnabar/actions/runs/45171189902",
+      "worker_commit": "f189c578028808f23af5578455307d1e8712acd2",
+      "parent_run_id": "20261123T120137Z-d22f016503d9"
+    },
+    {
+      "run_id": "20261123T120900Z-6fda234c2a6c",
+      "role": "helper",
+      "action": "helper",
+      "selector": "RGBToGray_legacy",
+      "workflow_url": "https://github.com/CinnabarCHU/Hypercinnabar/actions/runs/45171609814",
+      "worker_commit": "91c213903a714442f798095cc9091a1606516891",
+      "parent_run_id": null
+    },
+    {
+      "run_id": "20261123T121101Z-a22d5eb98355",
+      "role": "analyzer",
+      "action": "analyzer",
+      "selector": "RGBToGray_legacy",
+      "workflow_url": "https://github.com/CinnabarCHU/Hypercinnabar/actions/runs/45171922992",
+      "worker_commit": "1c635a0e20f4b9a67e1ce608d251b253f7c86b4c",
+      "parent_run_id": "20261123T120900Z-6fda234c2a6c"
+    },
+    {
+      "run_id": "20261123T121257Z-60b2e2bb99c2",
+      "role": "plotter",
+      "action": "plotter",
+      "selector": "RGBToGray_legacy",
+      "workflow_url": "https://github.com/CinnabarCHU/Hypercinnabar/actions/runs/45172230648",
+      "worker_commit": "c2ed09e5f249fb776a42ea62532b3358b02c687d",
+      "parent_run_id": "20261123T120900Z-6fda234c2a6c"
+    }
+  ],
+  "matlab": "R2024b, GitHub Actions; no model credential on the worker",
+  "transport": "Test-only operator-relayed requests. JSON paths relocated; MAT snapshots and input bytes unchanged. The broker did not choose tools, fill parameters, or compute numerical outputs.",
+  "ci": {
+    "url": "https://github.com/CinnabarCHU/Hypercinnabar/actions/runs/45169742055",
+    "python_tests_passed": 260,
+    "native_plugin_tests_passed": 15,
+    "official_attachment_tests_passed": {
+      "0.2.1-rc.3": 11,
+      "0.2.2-rc.5": 11
+    },
+    "real_matlab_smoke_invocations": 13
+  },
+  "limitations": [
+    "Functional smoke test, not a scientific-method benchmark.",
+    "No browser or desktop UI rendering acceptance.",
+    "Only a deterministic 2 by 3 RGB fixture in the live agent test.",
+    "This relay is not a production cloud MATLAB backend."
+  ],
+  "raw_receipt_sha256": "ee50b5f2b17af6d4dd1f722db91d3bd12671e618a12b1ef0c3097e61be66a3fd"
+}

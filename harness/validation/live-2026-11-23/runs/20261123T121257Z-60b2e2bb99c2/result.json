@@ -1,0 +1,33 @@
+{
+  "run_id": "20261123T121257Z-60b2e2bb99c2",
+  "operation": "menu",
+  "role": "plotter",
+  "action": "plotter",
+  "menu": "menu_rgb2gray",
+  "selector": "RGBToGray_legacy",
+  "revision_pin": "74082d52da4b2800068577bd1e66a5a026d470c1",
+  "status": "completed",
+  "source_runs": [
+    "20261123T120900Z-6fda234c2a6c",
+    "20261123T121101Z-a22d5eb98355"
+  ],
+  "parent_run_id": "20261123T120900Z-6fda234c2a6c",
+  "output_dir": "WORKSPACE/.acycle/runs/20261123T121257Z-60b2e2bb99c2/outputs",
+  "artifacts": {
+    "journal_zip": "acycle-journal.zip",
+    "figure_01": "figure_01.png"
+  },
+  "journal": "outputs/journals/registered/1795436089640/events.jsonl",
+  "completion": "done",
+  "summary": {
+    "class": "double",
+    "size": [
+      0,
+      0
+    ],
+    "value": []
+  },
+  "plot_selector": "RGBToGray_legacy",
+  "source_result_sha256": "083ed80c4fc69e1d3630425b72fd056b3246fb207d83c7df6c379b134ba03743",
+  "export_note": "Artifact paths are relative to this folder. Other original workspace paths are normalized; use the journal ZIP for replay."
+}
