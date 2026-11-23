@@ -1,5 +1,15 @@
 function [retval, id] = invoke(op, params, id, implementation)
 % Call one method role, preserving the original MATLAB exception.
+if isstruct(id) && isscalar(id) && isfield(id,'acycleParentJournal')
+    parent = id.acycleParentJournal;
+    if ~ischar(parent) || ~isfile(parent) || ~isfolder([parent,'.lock'])
+        error('Acycle:Logger:Parent','Expected an active enclosing menu invocation.');
+    end
+    [retval,status,caught] = runMethod(implementation,params);
+    if ~isempty(caught), rethrow(caught); end
+    id = struct('status',status);
+    return
+end
 if isempty(id), id = aclog.newId(); end
 if ~isfile(id), error('Acycle:Logger:UnknownId', 'Unknown call journal: %s', id); end
 [ok, file] = fileattrib(id);
@@ -19,7 +29,7 @@ try
     transcript = evalc('[retval, status, caught] = runMethod(implementation, params);');
     if ~isempty(strtrim(transcript))
         logger(id,'msg',struct('logging',transcript,'details',struct()));
-        fprintf('%s',transcript);
+        if ~isfile([id,'.console']), fprintf('%s',transcript); end
     end
     if ~isempty(caught), rethrow(caught); end
     if ~any(strcmp(status, {'incomplete','cancelled','done'}))

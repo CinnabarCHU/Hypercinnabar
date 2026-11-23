@@ -1,5 +1,6 @@
 function logger(id, attr, info)
 % Append one public method event to an existing call journal.
+if isnumeric(id), id=aclog.interfaceId(id,true); end
 if ~isfile(id)
     error('Acycle:Logger:UnknownId', 'Unknown call journal: %s', id);
 end
@@ -19,5 +20,9 @@ end
 closed = fclose(fid);
 if n ~= numel(encoded) || closed ~= 0
     error('Acycle:Logger:Write', 'Incomplete journal write to %s.', id);
+end
+if isfile([id,'.console'])
+    record.id = id;
+    fprintf('%s\n',jsonencode(record));
 end
 end

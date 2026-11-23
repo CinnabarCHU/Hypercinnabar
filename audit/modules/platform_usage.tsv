@@ -1,5 +1,6 @@
 source	part	disposition	direct_guide_roles	direct_master_roles	direct_module_ids	responsibility_zh
 matlab/logger.m	Logger	core	0	0		统一写入 init、fin、event、msg、error。
+matlab/+aclog/interfaceId.m	Logger	core	0	0		登记新接口的整数调用 ID，并为无登记的调用分配控制台和持久日志。
 matlab/+aclog/newId.m	Logger	core	0	0		分配调用 ID 与记录目录。
 matlab/+aclog/invoke.m	Runner	core	388	0	Association BuildAgeModel Changepoint CircularSpectrum Coco Coherence Columns DYNOT Derivative Detrending Digitizer Distribution EMD EvolutionaryCoco EvolutionarySpectrum EvolutionaryTimeOpt Examples Extrema Filtering HypothesisTests ImageColor ImageDisplay ImageProfile Insolation Interpolation LagOne LeadLag Lyapunov Modulation OrbitSolution OrbitalPeriods PCA PowerDecomposition PowerSpectrum Prewhitening Recurrence ReferenceSeries Regression SWA Sampling SeriesArithmetic SeriesEditing SeriesGenerator SeriesPlot Smoothing SortUnique Sound SpectralMoments StratCorrelation SummaryStatistics TimeOpt Transform Tuning Undatable Wavelet WaveletCoherence	为一次公开角色调用安排输入、随机状态、消息与终态记录。
 matlab/+aclog/read.m	IO	core	0	0		按引用读取 MAT 值。

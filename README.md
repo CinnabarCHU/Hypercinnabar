@@ -1,5 +1,7 @@
 # Acycle GUIDE method migration
 
+[按当前 GUI 菜单调用 GUIDE 和 master](migration/menu/README.zh-CN.md) · [全部菜单及版本选择值](migration/menu/MENUS.md)
+
 [逐项归并方案（62 项源码归属）](audit/MODULE_CONSOLIDATION.zh-CN.md) · [helper / analyzer / plotter 契约评审](audit/METHOD_ROLE_REVIEW.zh-CN.md)
 
 The pinned Acycle 3.1.1 implementation is available beside GUIDE through `acmaster`. [两版功能对照与并行调用](migration/master/README.zh-CN.md) · [master methods](migration/master/methods.tsv) · [menu changes](migration/master/menus.tsv)
@@ -26,7 +28,7 @@ acmethods.Bandpass.plotter(p);
 assert(isequaln(result,aclog.replay(id)));
 ```
 
-Each public role accepts a scalar parameter struct and an optional call ID. The role catalogue lists the fields for each package. Helpers recommend parameters, analyzers produce numerical results, and plotters accept explicit data and display settings. Some data operations have only an analyzer. The reference GUIDE application continues through its original callbacks. The `matlab/+acmethods` packages can be used by code, a GUI, a workflow editor or a harness.
+Each historical package role accepts a scalar parameter struct and an optional call ID. The role catalogue lists the fields for each package. Helpers recommend parameters, analyzers produce numerical results, and plotters accept explicit data and display settings. Some data operations have only an analyzer. The reference GUIDE application continues through its original callbacks. The `matlab/+acmethods` packages can be used by code, a GUI, a workflow editor or a harness.
 
 To take selected methods to another project, export them from the checkout. The resulting folder includes the original role files, their method dependencies, logger, selected Acycle runtime files and a checksum manifest.
 

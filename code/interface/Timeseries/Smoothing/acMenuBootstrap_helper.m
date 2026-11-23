@@ -1,0 +1,4 @@
+function retval = acMenuBootstrap_helper(varargin)
+% Timeseries > Smoothing > Bootstrap (menu_bootstrap). See acMenuCatalog for available operations.
+retval = acMenuInvoke('menu_bootstrap','helper',varargin{:});
+end

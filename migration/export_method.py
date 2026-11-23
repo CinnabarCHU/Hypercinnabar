@@ -1,5 +1,6 @@
 """Copy selected portable packages and their distributed Acycle dependencies, preserving file bytes."""
 import argparse
+import json
 from collections import defaultdict
 from hashlib import sha256
 from pathlib import Path
@@ -17,7 +18,7 @@ FILES = re.compile(r'[\w.()+-]+\.(?:mat|txt|csv|dat|jpg|png|xlsx|fig|14c)\b', re
 
 SETUP = """function setup_method()
 root=fileparts(mfilename('fullpath'));
-dirs={'upstream/recovered/code','upstream/acycle/code','upstream/acycle/data','code/method'};
+dirs={'upstream/recovered/code','upstream/acycle/code','upstream/acycle/data','code/method','code/interface'};
 for i=1:numel(dirs)
     folder=fullfile(root,dirs{i});
     if isfolder(folder), addpath(genpath(folder)); end
@@ -151,8 +152,41 @@ def master_dependencies(methods):
     return sorted(files)
 
 
+def menu_dependencies(tags):
+    api=ROOT/'code/interface'
+    cat=json.loads((api/'catalogue.json').read_text(encoding='utf-8'))
+    menus=[m for m in cat['menus'] if m['tag'] in tags and m['entry']]
+    unknown=set(tags)-{m['tag'] for m in menus}
+    if unknown:
+        raise ValueError('Unknown or non-executable menu: '+', '.join(sorted(unknown)))
+    choices={s for m in menus for s in m['choices'].split()}
+    engines=[e for e in cat['engines'] if e['operation'] in choices]
+    files={api/'acMenuInvoke.m',api/'acMenuNewId.m',api/'acMenuCatalog.m'}
+    files.update(files_under(ROOT/'code/method'))
+    for m in menus:
+        files.update(api/m['folder']/(m['entry']+'_'+role+'.m') for role in m['roles'].split())
+    native_guide=any(e['revision']=='guide' and e['package'] in ('Desktop','Robot') for e in engines)
+    guide={e['package'] for e in engines if e['revision']=='guide' and e['package'] not in ('Desktop','Robot')}
+    master={e['package'] for e in engines if e['revision']=='master' and e['package']!='Robot'}
+    files.update(dependencies(guide))
+    if master or 'Robot' in choices:
+        files.update(master_dependencies(master or {'Desktop'}))
+    if native_guide:
+        files.add(BASE/'ac.m')
+        for folder in ('code','data','doc'):
+            files.update(files_under(BASE/folder))
+    for folder in ('+aclog','+accompat'):
+        files.update(files_under(ROOT/'matlab'/folder))
+    cat.update(menus=menus,engines=engines)
+    return sorted(files),cat
+
+
 def export(methods, destination, revision='guide'):
-    files = master_dependencies(methods) if revision == 'master' else dependencies(methods)
+    catalogue=None
+    if revision=='menu':
+        files,catalogue=menu_dependencies(methods)
+    else:
+        files=master_dependencies(methods) if revision=='master' else dependencies(methods)
     destination=destination.resolve()
     if destination.exists():
         raise FileExistsError(f'Destination already exists: {destination}')
@@ -167,16 +201,21 @@ def export(methods, destination, revision='guide'):
             target.parent.mkdir(parents=True, exist_ok=True)
             shutil.copyfile(file,target)
             checks.append(f'{sha256(target.read_bytes()).hexdigest()}  {relative.as_posix()}')
+        if catalogue is not None:
+            target=stage/'code/interface/catalogue.json'
+            target.write_text(json.dumps(catalogue,ensure_ascii=False,indent=1)+'\n',encoding='utf-8')
+            checks.append(f'{sha256(target.read_bytes()).hexdigest()}  code/interface/catalogue.json')
         (stage/'setup_method.m').write_text(SETUP, encoding='utf8')
+        checks.append(f"{sha256((stage/'setup_method.m').read_bytes()).hexdigest()}  setup_method.m")
         (stage/'SHA256SUMS').write_text('\n'.join(checks)+'\n', encoding='utf8')
         stage.rename(destination)
-    return len(files)
+    return len(checks)
 
 
 if __name__ == '__main__':
     parser=argparse.ArgumentParser(description=__doc__)
-    parser.add_argument('methods',nargs='+',help='Case-sensitive MATLAB package names')
-    parser.add_argument('--revision', choices=('guide','master'), default='guide')
+    parser.add_argument('methods',nargs='+',help='Case-sensitive package names, or GUI tags for --revision menu')
+    parser.add_argument('--revision', choices=('guide','master','menu'), default='guide')
     parser.add_argument('--output',required=True,type=Path)
     args=parser.parse_args()
     print(f'Exported {export(args.methods,args.output,args.revision)} files to {args.output}')

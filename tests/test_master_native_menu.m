@@ -22,7 +22,8 @@ for i = 1:height(rows)
         assert(hidden == (rows.master_initial(i)=="hidden"),'%s visibility',rows.tag(i));
     end
 end
-r = acmaster.Desktop.plotter(struct('tag','menu_settings'));
+h=acMenuSettings_helper('id',acMenuNewId());
+r=acMenuSettings_plotter(h.plt,'params',h.params,'id',acMenuNewId());
 assert(strcmp(r.tag,'menu_settings') && ~isempty(findall(groot,'Tag','AcycleSettingsFigure')));
 try
     acmaster.Desktop.plotter(struct('tag','menu_opendir'));
