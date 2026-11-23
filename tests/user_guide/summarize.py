@@ -7,20 +7,30 @@ parser = argparse.ArgumentParser()
 parser.add_argument('results', type=Path)
 parser.add_argument('--output', type=Path)
 args = parser.parse_args()
+def flat_checks(values):
+    # Earlier MATLAB reports expanded cell-valued details into struct arrays.
+    for value in values:
+        if isinstance(value, list):
+            yield from flat_checks(value)
+        else:
+            yield value
+
 reports = []
 for path in sorted(args.results.glob('*/report.json')):
     report = json.loads(path.read_text())
+    checks = list(flat_checks(report['checks']))
     reports.append({
         'case_id': report['case_id'],
         'execution_ok': report['execution_ok'],
         'criteria_ok': report['criteria_ok'],
         'steps': len(report['steps']),
-        'checks': len(report['checks']),
-        'passed_checks': sum(c['passed'] for c in report['checks']),
+        'checks': len(checks),
+        'passed_checks': sum(c['passed'] for c in checks),
         'failed_steps': [s for s in report['steps'] if s['status'] != 'ok' or s['completion'] != 'done'],
-        'failed_checks': [c for c in report['checks'] if not c['passed']],
+        'failed_checks': [c for c in checks if not c['passed']],
         'fatal': report['fatal'],
         'peaks': report.get('peaks'),
+        'peaks_5x_diagnostic': report.get('peaks_5x_diagnostic'),
         'coco': report.get('coco'),
         'ecoco': report.get('ecoco'),
         'age_model_edge': report.get('age_model_edge'),

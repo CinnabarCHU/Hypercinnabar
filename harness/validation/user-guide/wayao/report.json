@@ -1,0 +1,874 @@
+{
+  "case_id": "wayao",
+  "matlab": "24.2.0.3361896 (R2024b) Update 10",
+  "seed": 20261123.0,
+  "scope": "Chapter 6; real Harness MATLAB bridge; no LLM in this runner",
+  "steps": [
+    {
+      "label": "sort-helper",
+      "menu": "menu_sort",
+      "role": "helper",
+      "status": "ok",
+      "completion": "done",
+      "seconds": 2.067329,
+      "folder": "01-sort-helper"
+    },
+    {
+      "label": "sort",
+      "menu": "menu_sort",
+      "role": "analyzer",
+      "status": "ok",
+      "completion": "done",
+      "seconds": 0.477202,
+      "folder": "02-sort"
+    },
+    {
+      "label": "sampling-helper",
+      "menu": "menu_samplerate",
+      "role": "helper",
+      "status": "ok",
+      "completion": "done",
+      "seconds": 0.472735,
+      "folder": "03-sampling-helper"
+    },
+    {
+      "label": "sampling",
+      "menu": "menu_samplerate",
+      "role": "analyzer",
+      "status": "ok",
+      "completion": "done",
+      "seconds": 0.457125,
+      "folder": "04-sampling"
+    },
+    {
+      "label": "sampling-plot",
+      "menu": "menu_samplerate",
+      "role": "plotter",
+      "status": "ok",
+      "completion": "done",
+      "seconds": 8.664788,
+      "folder": "05-sampling-plot"
+    },
+    {
+      "label": "interpolate-helper",
+      "menu": "menu_interp",
+      "role": "helper",
+      "status": "ok",
+      "completion": "done",
+      "seconds": 0.51317,
+      "folder": "06-interpolate-helper"
+    },
+    {
+      "label": "interpolate",
+      "menu": "menu_interp",
+      "role": "analyzer",
+      "status": "ok",
+      "completion": "done",
+      "seconds": 0.480677,
+      "folder": "07-interpolate"
+    },
+    {
+      "label": "detrend-helper",
+      "menu": "menu_prewhiten",
+      "role": "helper",
+      "status": "ok",
+      "completion": "done",
+      "seconds": 0.467553,
+      "folder": "08-detrend-helper"
+    },
+    {
+      "label": "detrend",
+      "menu": "menu_prewhiten",
+      "role": "analyzer",
+      "status": "ok",
+      "completion": "done",
+      "seconds": 0.568313,
+      "folder": "09-detrend"
+    },
+    {
+      "label": "detrend-plot",
+      "menu": "menu_prewhiten",
+      "role": "plotter",
+      "status": "ok",
+      "completion": "done",
+      "seconds": 0.980834,
+      "folder": "10-detrend-plot"
+    },
+    {
+      "label": "master-detrend-helper",
+      "menu": "menu_prewhiten",
+      "role": "helper",
+      "status": "ok",
+      "completion": "done",
+      "seconds": 0.470662,
+      "folder": "11-master-detrend-helper"
+    },
+    {
+      "label": "master-detrend",
+      "menu": "menu_prewhiten",
+      "role": "analyzer",
+      "status": "ok",
+      "completion": "done",
+      "seconds": 0.822367,
+      "folder": "12-master-detrend"
+    },
+    {
+      "label": "mtm-helper",
+      "menu": "menu_power",
+      "role": "helper",
+      "status": "ok",
+      "completion": "done",
+      "seconds": 0.603008,
+      "folder": "13-mtm-helper"
+    },
+    {
+      "label": "mtm",
+      "menu": "menu_power",
+      "role": "analyzer",
+      "status": "ok",
+      "completion": "done",
+      "seconds": 0.93309,
+      "folder": "14-mtm"
+    },
+    {
+      "label": "mtm-plot",
+      "menu": "menu_power",
+      "role": "plotter",
+      "status": "ok",
+      "completion": "done",
+      "seconds": 2.051985,
+      "folder": "15-mtm-plot"
+    },
+    {
+      "label": "mtm-replay",
+      "menu": "menu_power",
+      "role": "replay",
+      "status": "ok",
+      "completion": "done",
+      "seconds": 0.583525,
+      "folder": "16-mtm-replay"
+    },
+    {
+      "label": "master-mtm-helper",
+      "menu": "menu_power",
+      "role": "helper",
+      "status": "ok",
+      "completion": "done",
+      "seconds": 1.000841,
+      "folder": "17-master-mtm-helper"
+    },
+    {
+      "label": "master-mtm",
+      "menu": "menu_power",
+      "role": "analyzer",
+      "status": "ok",
+      "completion": "done",
+      "seconds": 0.806068,
+      "folder": "18-master-mtm"
+    },
+    {
+      "label": "master-mtm-plot",
+      "menu": "menu_power",
+      "role": "plotter",
+      "status": "ok",
+      "completion": "done",
+      "seconds": 1.5362,
+      "folder": "19-master-mtm-plot"
+    },
+    {
+      "label": "mtm-linear-fit-diagnostic-helper",
+      "menu": "menu_power",
+      "role": "helper",
+      "status": "ok",
+      "completion": "done",
+      "seconds": 0.498641,
+      "folder": "20-mtm-linear-fit-diagnostic-helper"
+    },
+    {
+      "label": "mtm-linear-fit-diagnostic",
+      "menu": "menu_power",
+      "role": "analyzer",
+      "status": "ok",
+      "completion": "done",
+      "seconds": 0.546613,
+      "folder": "21-mtm-linear-fit-diagnostic"
+    },
+    {
+      "label": "mtm-linear-fit-diagnostic-plot",
+      "menu": "menu_power",
+      "role": "plotter",
+      "status": "ok",
+      "completion": "done",
+      "seconds": 1.277829,
+      "folder": "22-mtm-linear-fit-diagnostic-plot"
+    },
+    {
+      "label": "mtm-panel-diagnostic-helper",
+      "menu": "menu_power",
+      "role": "helper",
+      "status": "ok",
+      "completion": "done",
+      "seconds": 0.486438,
+      "folder": "23-mtm-panel-diagnostic-helper"
+    },
+    {
+      "label": "mtm-panel-diagnostic",
+      "menu": "menu_power",
+      "role": "analyzer",
+      "status": "ok",
+      "completion": "done",
+      "seconds": 0.55257,
+      "folder": "24-mtm-panel-diagnostic"
+    },
+    {
+      "label": "mtm-panel-diagnostic-plot",
+      "menu": "menu_power",
+      "role": "plotter",
+      "status": "ok",
+      "completion": "done",
+      "seconds": 1.245671,
+      "folder": "25-mtm-panel-diagnostic-plot"
+    },
+    {
+      "label": "evolution-helper",
+      "menu": "menu_period",
+      "role": "helper",
+      "status": "ok",
+      "completion": "done",
+      "seconds": 0.478967,
+      "folder": "26-evolution-helper"
+    },
+    {
+      "label": "evolution",
+      "menu": "menu_period",
+      "role": "analyzer",
+      "status": "ok",
+      "completion": "done",
+      "seconds": 0.55276,
+      "folder": "27-evolution"
+    },
+    {
+      "label": "evolution-plot",
+      "menu": "menu_period",
+      "role": "plotter",
+      "status": "ok",
+      "completion": "done",
+      "seconds": 1.770239,
+      "folder": "28-evolution-plot"
+    },
+    {
+      "label": "filter-helper",
+      "menu": "menu_filter",
+      "role": "helper",
+      "status": "ok",
+      "completion": "done",
+      "seconds": 0.483633,
+      "folder": "29-filter-helper"
+    },
+    {
+      "label": "filter",
+      "menu": "menu_filter",
+      "role": "analyzer",
+      "status": "ok",
+      "completion": "done",
+      "seconds": 0.510421,
+      "folder": "30-filter"
+    },
+    {
+      "label": "filter-plot",
+      "menu": "menu_filter",
+      "role": "plotter",
+      "status": "ok",
+      "completion": "done",
+      "seconds": 1.041298,
+      "folder": "31-filter-plot"
+    },
+    {
+      "label": "age-model-helper",
+      "menu": "menu_agebuild",
+      "role": "helper",
+      "status": "ok",
+      "completion": "done",
+      "seconds": 0.48464,
+      "folder": "32-age-model-helper"
+    },
+    {
+      "label": "age-model",
+      "menu": "menu_agebuild",
+      "role": "analyzer",
+      "status": "ok",
+      "completion": "done",
+      "seconds": 0.478462,
+      "folder": "33-age-model"
+    },
+    {
+      "label": "age-model-plot",
+      "menu": "menu_agebuild",
+      "role": "plotter",
+      "status": "ok",
+      "completion": "done",
+      "seconds": 1.04224,
+      "folder": "34-age-model-plot"
+    },
+    {
+      "label": "tuning-helper",
+      "menu": "menu_age",
+      "role": "helper",
+      "status": "ok",
+      "completion": "done",
+      "seconds": 0.463864,
+      "folder": "35-tuning-helper"
+    },
+    {
+      "label": "tuning",
+      "menu": "menu_age",
+      "role": "analyzer",
+      "status": "ok",
+      "completion": "done",
+      "seconds": 0.477293,
+      "folder": "36-tuning"
+    },
+    {
+      "label": "tuning-plot",
+      "menu": "menu_age",
+      "role": "plotter",
+      "status": "ok",
+      "completion": "done",
+      "seconds": 0.840924,
+      "folder": "37-tuning-plot"
+    },
+    {
+      "label": "target-helper",
+      "menu": "menu_ecoco",
+      "role": "helper",
+      "status": "ok",
+      "completion": "done",
+      "seconds": 0.475174,
+      "folder": "38-target-helper"
+    },
+    {
+      "label": "target",
+      "menu": "menu_ecoco",
+      "role": "analyzer",
+      "status": "ok",
+      "completion": "done",
+      "seconds": 0.551603,
+      "folder": "39-target"
+    },
+    {
+      "label": "coco-helper",
+      "menu": "menu_ecoco",
+      "role": "helper",
+      "status": "ok",
+      "completion": "done",
+      "seconds": 0.477195,
+      "folder": "40-coco-helper"
+    },
+    {
+      "label": "coco",
+      "menu": "menu_ecoco",
+      "role": "analyzer",
+      "status": "ok",
+      "completion": "done",
+      "seconds": 67.672553,
+      "folder": "41-coco"
+    },
+    {
+      "label": "coco-replay",
+      "menu": "menu_ecoco",
+      "role": "replay",
+      "status": "ok",
+      "completion": "done",
+      "seconds": 66.776741,
+      "folder": "42-coco-replay"
+    },
+    {
+      "label": "ecoco-padding-helper",
+      "menu": "menu_period",
+      "role": "helper",
+      "status": "ok",
+      "completion": "done",
+      "seconds": 0.501937,
+      "folder": "43-ecoco-padding-helper"
+    },
+    {
+      "label": "ecoco-padding",
+      "menu": "menu_period",
+      "role": "analyzer",
+      "status": "ok",
+      "completion": "done",
+      "seconds": 0.457643,
+      "folder": "44-ecoco-padding"
+    },
+    {
+      "label": "ecoco-helper",
+      "menu": "menu_ecoco",
+      "role": "helper",
+      "status": "ok",
+      "completion": "done",
+      "seconds": 0.464267,
+      "folder": "45-ecoco-helper"
+    },
+    {
+      "label": "ecoco",
+      "menu": "menu_ecoco",
+      "role": "analyzer",
+      "status": "ok",
+      "completion": "done",
+      "seconds": 105.977689,
+      "folder": "46-ecoco"
+    },
+    {
+      "label": "ecoco-plot",
+      "menu": "menu_ecoco",
+      "role": "plotter",
+      "status": "ok",
+      "completion": "done",
+      "seconds": 32.914251,
+      "folder": "47-ecoco-plot"
+    }
+  ],
+  "checks": [
+    {
+      "name": "sorted_finite_unique",
+      "passed": true,
+      "detail": [
+        499,
+        2
+      ]
+    },
+    {
+      "name": "sampling-plot_figure_created",
+      "passed": true,
+      "detail": "figure_01.png"
+    },
+    {
+      "name": "sampling-plot_figure_created",
+      "passed": true,
+      "detail": "figure_02.png"
+    },
+    {
+      "name": "guide_median_spacing",
+      "passed": true,
+      "detail": 0.3333334000000008
+    },
+    {
+      "name": "guide_mean_spacing",
+      "passed": true,
+      "detail": 0.3534136546184741
+    },
+    {
+      "name": "detrend-plot_figure_created",
+      "passed": true,
+      "detail": "figure_01.png"
+    },
+    {
+      "name": "master_detrend_equivalence",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "detrend_reconstruction",
+      "passed": true,
+      "detail": 0
+    },
+    {
+      "name": "mtm-plot_figure_created",
+      "passed": true,
+      "detail": "figure_01.png"
+    },
+    {
+      "name": "mtm-plot_figure_created",
+      "passed": true,
+      "detail": "figure_02.png"
+    },
+    {
+      "name": "guide_peak_33.9",
+      "passed": true,
+      "detail": {
+        "expected": 33.9,
+        "observed": 33.888461538461364,
+        "frequency_error": 1.0043760665372214e-05,
+        "tolerance": 0.005674724775848401,
+        "rayleigh_pass": true,
+        "rounding_pass": true,
+        "passed": true
+      }
+    },
+    {
+      "name": "guide_peak_10",
+      "passed": true,
+      "detail": {
+        "expected": 10,
+        "observed": 9.68241758241753,
+        "frequency_error": 0.0032799909204409006,
+        "tolerance": 0.005674724775848401,
+        "rayleigh_pass": true,
+        "rounding_pass": true,
+        "passed": true
+      }
+    },
+    {
+      "name": "guide_peak_7",
+      "passed": true,
+      "detail": {
+        "expected": 7,
+        "observed": 6.830232558139499,
+        "frequency_error": 0.0035507563597459157,
+        "tolerance": 0.005674724775848401,
+        "rayleigh_pass": true,
+        "rounding_pass": true,
+        "passed": true
+      }
+    },
+    {
+      "name": "guide_peak_2.6",
+      "passed": true,
+      "detail": {
+        "expected": 2.6,
+        "observed": 2.5838709677419223,
+        "frequency_error": 0.002400845097476345,
+        "tolerance": 0.005674724775848401,
+        "rayleigh_pass": true,
+        "rounding_pass": true,
+        "passed": true
+      }
+    },
+    {
+      "name": "guide_peak_1.8",
+      "passed": true,
+      "detail": {
+        "expected": 1.8,
+        "observed": 1.8204545454545358,
+        "frequency_error": 0.006242197253430337,
+        "tolerance": 0.005674724775848401,
+        "rayleigh_pass": false,
+        "rounding_pass": true,
+        "passed": true
+      }
+    },
+    {
+      "name": "mtm_exact_replay",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "master-mtm-plot_figure_created",
+      "passed": true,
+      "detail": "figure_01.png"
+    },
+    {
+      "name": "master_mtm_frequency_equivalence",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "master_mtm_power_equivalence",
+      "passed": true,
+      "detail": 0
+    },
+    {
+      "name": "guide_peak_33.9_above_95",
+      "passed": true,
+      "detail": {
+        "power": 299326.9929256444,
+        "threshold95": 212327.00984044463,
+        "ratio": 1.4097452469687055
+      }
+    },
+    {
+      "name": "guide_peak_10_above_95",
+      "passed": true,
+      "detail": {
+        "power": 249069.71824125206,
+        "threshold95": 165693.8265312584,
+        "ratio": 1.5031925054507969
+      }
+    },
+    {
+      "name": "guide_peak_7_above_95",
+      "passed": true,
+      "detail": {
+        "power": 178075.7548652706,
+        "threshold95": 133661.1973248506,
+        "ratio": 1.3322920819905175
+      }
+    },
+    {
+      "name": "guide_peak_2.6_above_95",
+      "passed": true,
+      "detail": {
+        "power": 45787.62914736506,
+        "threshold95": 41887.105595970126,
+        "ratio": 1.093119911149225
+      }
+    },
+    {
+      "name": "guide_peak_1.8_above_95",
+      "passed": true,
+      "detail": {
+        "power": 58506.069289092644,
+        "threshold95": 24186.52594109623,
+        "ratio": 2.418952991908722
+      }
+    },
+    {
+      "name": "mtm-linear-fit-diagnostic-plot_figure_created",
+      "passed": true,
+      "detail": "figure_01.png"
+    },
+    {
+      "name": "mtm-linear-fit-diagnostic-plot_figure_created",
+      "passed": true,
+      "detail": "figure_02.png"
+    },
+    {
+      "name": "mtm-panel-diagnostic-plot_figure_created",
+      "passed": true,
+      "detail": "figure_01.png"
+    },
+    {
+      "name": "mtm-panel-diagnostic-plot_figure_created",
+      "passed": true,
+      "detail": "figure_02.png"
+    },
+    {
+      "name": "evolution-plot_figure_created",
+      "passed": true,
+      "detail": "figure_01.png"
+    },
+    {
+      "name": "evolution_finite_power",
+      "passed": true,
+      "detail": [
+        534,
+        112
+      ]
+    },
+    {
+      "name": "filter-plot_figure_created",
+      "passed": true,
+      "detail": "figure_01.png"
+    },
+    {
+      "name": "age-model-plot_figure_created",
+      "passed": true,
+      "detail": "figure_01.png"
+    },
+    {
+      "name": "age-model-plot_figure_created",
+      "passed": true,
+      "detail": "figure_02.png"
+    },
+    {
+      "name": "age_tiepoint_spacing_405",
+      "passed": true,
+      "detail": [
+        [
+          -165.77,
+          405
+        ],
+        [
+          -129.47,
+          810
+        ],
+        [
+          -93.83,
+          1215
+        ],
+        [
+          -58.51999999999999,
+          1620
+        ],
+        [
+          -24.199999999999985,
+          2025
+        ]
+      ]
+    },
+    {
+      "name": "age_tiepoints_monotonic",
+      "passed": true,
+      "detail": [
+        5,
+        2
+      ]
+    },
+    {
+      "name": "tuning-plot_figure_created",
+      "passed": true,
+      "detail": "figure_01.png"
+    },
+    {
+      "name": "tuning_preserves_proxy",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "tuned_time_monotonic",
+      "passed": true,
+      "detail": [
+        290.8636363636365,
+        2310.576923076923
+      ]
+    },
+    {
+      "name": "coco_exact_replay",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "coco_rate_near_8_1",
+      "passed": true,
+      "detail": {
+        "rate": 8.094053177257525,
+        "correlation": 0.47866679805752577,
+        "p": 0,
+        "simulations": 1000,
+        "rate_count": 300,
+        "mc_exceedances": 0,
+        "empirical_p_add_one": 0.000999000999000999
+      }
+    },
+    {
+      "name": "coco_guide_p_at_most_0_001",
+      "passed": true,
+      "detail": {
+        "rate": 8.094053177257525,
+        "correlation": 0.47866679805752577,
+        "p": 0,
+        "simulations": 1000,
+        "rate_count": 300,
+        "mc_exceedances": 0,
+        "empirical_p_add_one": 0.000999000999000999
+      }
+    },
+    {
+      "name": "ecoco_nonempty_finite",
+      "passed": true,
+      "detail": [
+        300,
+        534
+      ]
+    },
+    {
+      "name": "ecoco_simulation_available",
+      "passed": true,
+      "detail": [
+        300,
+        534
+      ]
+    },
+    {
+      "name": "ecoco-plot_figure_created",
+      "passed": true,
+      "detail": "figure_01.png"
+    },
+    {
+      "name": "ecoco-plot_figure_created",
+      "passed": true,
+      "detail": "figure_02.png"
+    }
+  ],
+  "fatal": [],
+  "input_file": "Example-WayaoCarnianGR0.txt",
+  "sampling": {
+    "median": 0.3333334000000008,
+    "mean": 0.3534136546184741
+  },
+  "peaks": [
+    {
+      "expected": 33.9,
+      "observed": 33.888461538461364,
+      "frequency_error": 1.0043760665372214e-05,
+      "tolerance": 0.005674724775848401,
+      "rayleigh_pass": true,
+      "rounding_pass": true,
+      "passed": true
+    },
+    {
+      "expected": 10,
+      "observed": 9.68241758241753,
+      "frequency_error": 0.0032799909204409006,
+      "tolerance": 0.005674724775848401,
+      "rayleigh_pass": true,
+      "rounding_pass": true,
+      "passed": true
+    },
+    {
+      "expected": 7,
+      "observed": 6.830232558139499,
+      "frequency_error": 0.0035507563597459157,
+      "tolerance": 0.005674724775848401,
+      "rayleigh_pass": true,
+      "rounding_pass": true,
+      "passed": true
+    },
+    {
+      "expected": 2.6,
+      "observed": 2.5838709677419223,
+      "frequency_error": 0.002400845097476345,
+      "tolerance": 0.005674724775848401,
+      "rayleigh_pass": true,
+      "rounding_pass": true,
+      "passed": true
+    },
+    {
+      "expected": 1.8,
+      "observed": 1.8204545454545358,
+      "frequency_error": 0.006242197253430337,
+      "tolerance": 0.005674724775848401,
+      "rayleigh_pass": false,
+      "rounding_pass": true,
+      "passed": true
+    }
+  ],
+  "wayao_primary": {
+    "nfft": 2670,
+    "fit_model": 2,
+    "source": "guide prose: 5x padding, log power fit"
+  },
+  "evolution": {
+    "window": 40,
+    "step": 0.33,
+    "size": [
+      534,
+      112
+    ],
+    "frequency_bounds": [
+      0,
+      0.7
+    ]
+  },
+  "age_model_edge": {
+    "historical": [
+      404.0830888888889,
+      2027.0414044444444
+    ],
+    "linear_extrapolation": [
+      290.8636363636365,
+      2309.2788461538457
+    ],
+    "max_difference": 282.2374417094013
+  },
+  "coco": {
+    "rate": 8.094053177257525,
+    "correlation": 0.47866679805752577,
+    "p": 0,
+    "simulations": 1000,
+    "rate_count": 300,
+    "mc_exceedances": 0,
+    "empirical_p_add_one": 0.000999000999000999
+  },
+  "ecoco": {
+    "simulations": 500,
+    "window": 45,
+    "step_in_samples": 1,
+    "size": [
+      300,
+      534
+    ]
+  },
+  "execution_ok": true,
+  "criteria_ok": true
+}

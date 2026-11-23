@@ -1,0 +1,208 @@
+[
+  {
+    "attempt": 1,
+    "commit": "87f512dbe494abe83bd31fb656cf6baa3ede3eb9",
+    "workflow_run": 45176422469,
+    "case_id": "etp",
+    "execution_ok": true,
+    "criteria_ok": false,
+    "failed_steps": [],
+    "failed_checks": [
+      {
+        "name": "guide_peak_41",
+        "passed": false,
+        "detail": {
+          "expected": 41,
+          "observed": 40.019999999999996,
+          "frequency_error": 0.0005972623444375387,
+          "tolerance": 0.0004997501249375312,
+          "passed": false
+        }
+      },
+      {
+        "name": "guide_peak_22.4",
+        "passed": false,
+        "detail": {
+          "expected": 22.4,
+          "observed": 22.73863636363636,
+          "frequency_error": 0.000664846148354388,
+          "tolerance": 0.0004997501249375312,
+          "passed": false
+        }
+      }
+    ]
+  },
+  {
+    "attempt": 1,
+    "commit": "87f512dbe494abe83bd31fb656cf6baa3ede3eb9",
+    "workflow_run": 45176422469,
+    "case_id": "insolation",
+    "execution_ok": true,
+    "criteria_ok": false,
+    "failed_steps": [],
+    "failed_checks": [
+      {
+        "name": "guide_peak_22.4",
+        "passed": false,
+        "detail": {
+          "expected": 22.4,
+          "observed": 22.73863636363636,
+          "frequency_error": 0.000664846148354388,
+          "tolerance": 0.0004997501249375312,
+          "passed": false
+        }
+      }
+    ]
+  },
+  {
+    "attempt": 1,
+    "commit": "87f512dbe494abe83bd31fb656cf6baa3ede3eb9",
+    "workflow_run": 45176422469,
+    "case_id": "wayao",
+    "execution_ok": false,
+    "criteria_ok": false,
+    "failed_steps": [
+      {
+        "label": "sampling-plot",
+        "error": {
+          "identifier": "MATLAB:nonExistentField",
+          "message": "Unrecognized field name \"dat_name\"."
+        }
+      },
+      {
+        "label": "ecoco-plot",
+        "error": {
+          "identifier": "MATLAB:UndefinedFunction",
+          "message": "Unrecognized function or variable 'main_unit_selection'."
+        }
+      }
+    ],
+    "failed_checks": [
+      {
+        "name": "guide_peak_1.8",
+        "passed": false,
+        "detail": {
+          "expected": 1.8,
+          "observed": 1.8204545454545358,
+          "frequency_error": 0.006242197253430337,
+          "tolerance": 0.005674724775848401,
+          "passed": false
+        }
+      }
+    ]
+  },
+  {
+    "attempt": 2,
+    "commit": "e4bde393b39e7fa5ed7ccb3c7d16eaebdbf28b3c",
+    "workflow_run": 45176914634,
+    "case_id": "etp",
+    "execution_ok": true,
+    "criteria_ok": false,
+    "failed_steps": [],
+    "failed_checks": [
+      {
+        "name": "guide_peak_41",
+        "passed": false,
+        "detail": {
+          "expected": 41,
+          "observed": 40.019999999999996,
+          "frequency_error": 0.0005972623444375387,
+          "tolerance": 0.0004997501249375312,
+          "passed": false
+        }
+      },
+      {
+        "name": "guide_peak_22.4",
+        "passed": false,
+        "detail": {
+          "expected": 22.4,
+          "observed": 22.73863636363636,
+          "frequency_error": 0.000664846148354388,
+          "tolerance": 0.0004997501249375312,
+          "passed": false
+        }
+      }
+    ]
+  },
+  {
+    "attempt": 2,
+    "commit": "e4bde393b39e7fa5ed7ccb3c7d16eaebdbf28b3c",
+    "workflow_run": 45176914634,
+    "case_id": "insolation",
+    "execution_ok": true,
+    "criteria_ok": false,
+    "failed_steps": [],
+    "failed_checks": [
+      {
+        "name": "guide_peak_22.4",
+        "passed": false,
+        "detail": {
+          "expected": 22.4,
+          "observed": 22.73863636363636,
+          "frequency_error": 0.000664846148354388,
+          "tolerance": 0.0004997501249375312,
+          "passed": false
+        }
+      }
+    ]
+  },
+  {
+    "attempt": 2,
+    "commit": "e4bde393b39e7fa5ed7ccb3c7d16eaebdbf28b3c",
+    "workflow_run": 45176914634,
+    "case_id": "wayao",
+    "execution_ok": false,
+    "criteria_ok": false,
+    "failed_steps": [
+      {
+        "label": "ecoco-plot",
+        "error": {
+          "identifier": "MATLAB:UndefinedFunction",
+          "message": "Unrecognized function or variable 'main_unit_selection'."
+        }
+      }
+    ],
+    "failed_checks": [
+      {
+        "name": "guide_peak_1.8",
+        "passed": false,
+        "detail": {
+          "expected": 1.8,
+          "observed": 1.8204545454545358,
+          "frequency_error": 0.006242197253430337,
+          "tolerance": 0.005674724775848401,
+          "passed": false
+        }
+      },
+      {
+        "name": "guide_peak_2.6_above_95",
+        "passed": false,
+        "detail": {
+          "power": 45787.62914736517,
+          "threshold95": 47776.32838406972,
+          "ratio": 0.9583747997393696
+        }
+      }
+    ]
+  },
+  {
+    "attempt": 3,
+    "commit": "336f75835f16f059d70c2fcaf04a3a47eee89c9d",
+    "workflow_run": 45177349511,
+    "case_id": "wayao",
+    "execution_ok": true,
+    "criteria_ok": false,
+    "failed_steps": [],
+    "failed_checks": [
+      {
+        "name": "guide_peak_2.6_above_95",
+        "passed": false,
+        "detail": {
+          "power": 45787.62914736506,
+          "threshold95": 47776.328377997,
+          "ratio": 0.9583747998611837
+        }
+      }
+    ]
+  }
+]

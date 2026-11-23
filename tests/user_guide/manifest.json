@@ -20,6 +20,10 @@
     "data/Examples/Example-WayaoCarnianGR0.txt": {
       "sha256": "f39dcc29be09cd5a07ef1dcdd20c6fa30499213c204ce4897ac02d9f6f086c21",
       "bytes": 7206
+    },
+    "data/La04.mat": {
+      "sha256": "0c3de663b1c9229fff2bcbf628cdfac83162bdaa15f7e93f8886d85c314a518f",
+      "bytes": 5731698
     }
   },
   "acceptance": {

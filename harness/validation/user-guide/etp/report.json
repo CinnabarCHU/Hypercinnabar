@@ -1,0 +1,632 @@
+{
+  "case_id": "etp",
+  "matlab": "24.2.0.3361896 (R2024b) Update 10",
+  "seed": 20261123.0,
+  "scope": "Chapter 6; real Harness MATLAB bridge; no LLM in this runner",
+  "steps": [
+    {
+      "label": "sort-helper",
+      "menu": "menu_sort",
+      "role": "helper",
+      "status": "ok",
+      "completion": "done",
+      "seconds": 1.44241,
+      "folder": "01-sort-helper"
+    },
+    {
+      "label": "sort",
+      "menu": "menu_sort",
+      "role": "analyzer",
+      "status": "ok",
+      "completion": "done",
+      "seconds": 0.40218,
+      "folder": "02-sort"
+    },
+    {
+      "label": "demean-helper",
+      "menu": "menu_prewhiten",
+      "role": "helper",
+      "status": "ok",
+      "completion": "done",
+      "seconds": 0.418172,
+      "folder": "03-demean-helper"
+    },
+    {
+      "label": "demean",
+      "menu": "menu_prewhiten",
+      "role": "analyzer",
+      "status": "ok",
+      "completion": "done",
+      "seconds": 0.410704,
+      "folder": "04-demean"
+    },
+    {
+      "label": "demean-plot",
+      "menu": "menu_prewhiten",
+      "role": "plotter",
+      "status": "ok",
+      "completion": "done",
+      "seconds": 3.949007,
+      "folder": "05-demean-plot"
+    },
+    {
+      "label": "master-detrend-helper",
+      "menu": "menu_prewhiten",
+      "role": "helper",
+      "status": "ok",
+      "completion": "done",
+      "seconds": 0.417086,
+      "folder": "06-master-detrend-helper"
+    },
+    {
+      "label": "master-detrend",
+      "menu": "menu_prewhiten",
+      "role": "analyzer",
+      "status": "ok",
+      "completion": "done",
+      "seconds": 0.672444,
+      "folder": "07-master-detrend"
+    },
+    {
+      "label": "mtm-helper",
+      "menu": "menu_power",
+      "role": "helper",
+      "status": "ok",
+      "completion": "done",
+      "seconds": 0.599279,
+      "folder": "08-mtm-helper"
+    },
+    {
+      "label": "mtm",
+      "menu": "menu_power",
+      "role": "analyzer",
+      "status": "ok",
+      "completion": "done",
+      "seconds": 0.469714,
+      "folder": "09-mtm"
+    },
+    {
+      "label": "mtm-plot",
+      "menu": "menu_power",
+      "role": "plotter",
+      "status": "ok",
+      "completion": "done",
+      "seconds": 0.781979,
+      "folder": "10-mtm-plot"
+    },
+    {
+      "label": "mtm-5x-diagnostic-helper",
+      "menu": "menu_power",
+      "role": "helper",
+      "status": "ok",
+      "completion": "done",
+      "seconds": 0.427819,
+      "folder": "11-mtm-5x-diagnostic-helper"
+    },
+    {
+      "label": "mtm-5x-diagnostic",
+      "menu": "menu_power",
+      "role": "analyzer",
+      "status": "ok",
+      "completion": "done",
+      "seconds": 0.421221,
+      "folder": "12-mtm-5x-diagnostic"
+    },
+    {
+      "label": "mtm-5x-diagnostic-plot",
+      "menu": "menu_power",
+      "role": "plotter",
+      "status": "ok",
+      "completion": "done",
+      "seconds": 0.658532,
+      "folder": "13-mtm-5x-diagnostic-plot"
+    },
+    {
+      "label": "mtm-replay",
+      "menu": "menu_power",
+      "role": "replay",
+      "status": "ok",
+      "completion": "done",
+      "seconds": 0.429895,
+      "folder": "14-mtm-replay"
+    },
+    {
+      "label": "master-mtm-helper",
+      "menu": "menu_power",
+      "role": "helper",
+      "status": "ok",
+      "completion": "done",
+      "seconds": 0.894047,
+      "folder": "15-master-mtm-helper"
+    },
+    {
+      "label": "master-mtm",
+      "menu": "menu_power",
+      "role": "analyzer",
+      "status": "ok",
+      "completion": "done",
+      "seconds": 0.647936,
+      "folder": "16-master-mtm"
+    },
+    {
+      "label": "master-mtm-plot",
+      "menu": "menu_power",
+      "role": "plotter",
+      "status": "ok",
+      "completion": "done",
+      "seconds": 1.500168,
+      "folder": "17-master-mtm-plot"
+    },
+    {
+      "label": "evolution-helper",
+      "menu": "menu_period",
+      "role": "helper",
+      "status": "ok",
+      "completion": "done",
+      "seconds": 0.419436,
+      "folder": "18-evolution-helper"
+    },
+    {
+      "label": "evolution",
+      "menu": "menu_period",
+      "role": "analyzer",
+      "status": "ok",
+      "completion": "done",
+      "seconds": 0.45843,
+      "folder": "19-evolution"
+    },
+    {
+      "label": "evolution-plot",
+      "menu": "menu_period",
+      "role": "plotter",
+      "status": "ok",
+      "completion": "done",
+      "seconds": 1.847849,
+      "folder": "20-evolution-plot"
+    },
+    {
+      "label": "wavelet-helper",
+      "menu": "menu_waveletGUI",
+      "role": "helper",
+      "status": "ok",
+      "completion": "done",
+      "seconds": 0.522105,
+      "folder": "21-wavelet-helper"
+    },
+    {
+      "label": "wavelet",
+      "menu": "menu_waveletGUI",
+      "role": "analyzer",
+      "status": "ok",
+      "completion": "done",
+      "seconds": 0.65108,
+      "folder": "22-wavelet"
+    },
+    {
+      "label": "wavelet-plot",
+      "menu": "menu_waveletGUI",
+      "role": "plotter",
+      "status": "ok",
+      "completion": "done",
+      "seconds": 2.768876,
+      "folder": "23-wavelet-plot"
+    }
+  ],
+  "checks": [
+    {
+      "name": "sorted_finite_unique",
+      "passed": true,
+      "detail": [
+        2001,
+        2
+      ]
+    },
+    {
+      "name": "demean-plot_figure_created",
+      "passed": true,
+      "detail": "figure_01.png"
+    },
+    {
+      "name": "master_detrend_equivalence",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "detrend_reconstruction",
+      "passed": true,
+      "detail": 0
+    },
+    {
+      "name": "mtm-plot_figure_created",
+      "passed": true,
+      "detail": "figure_01.png"
+    },
+    {
+      "name": "guide_peak_405",
+      "passed": true,
+      "detail": {
+        "expected": 405,
+        "observed": 500.25,
+        "frequency_error": 0.0004701353027190109,
+        "tolerance": 0.0004997501249375312,
+        "rayleigh_pass": true,
+        "rounding_pass": false,
+        "passed": true
+      }
+    },
+    {
+      "name": "guide_peak_125",
+      "passed": true,
+      "detail": {
+        "expected": 125,
+        "observed": 117.70588235294116,
+        "frequency_error": 0.0004957521239380321,
+        "tolerance": 0.0004997501249375312,
+        "rayleigh_pass": true,
+        "rounding_pass": false,
+        "passed": true
+      }
+    },
+    {
+      "name": "guide_peak_95",
+      "passed": true,
+      "detail": {
+        "expected": 95,
+        "observed": 95.28571428571426,
+        "frequency_error": 3.156316578552601e-05,
+        "tolerance": 0.0004997501249375312,
+        "rayleigh_pass": true,
+        "rounding_pass": true,
+        "passed": true
+      }
+    },
+    {
+      "name": "guide_peak_41",
+      "passed": false,
+      "detail": {
+        "expected": 41,
+        "observed": 40.019999999999996,
+        "frequency_error": 0.0005972623444375387,
+        "tolerance": 0.0004997501249375312,
+        "rayleigh_pass": false,
+        "rounding_pass": false,
+        "passed": false
+      }
+    },
+    {
+      "name": "guide_peak_23.7",
+      "passed": true,
+      "detail": {
+        "expected": 23.7,
+        "observed": 23.821428571428566,
+        "frequency_error": 0.00021508233225158574,
+        "tolerance": 0.0004997501249375312,
+        "rayleigh_pass": true,
+        "rounding_pass": false,
+        "passed": true
+      }
+    },
+    {
+      "name": "guide_peak_22.4",
+      "passed": false,
+      "detail": {
+        "expected": 22.4,
+        "observed": 22.73863636363636,
+        "frequency_error": 0.000664846148354388,
+        "tolerance": 0.0004997501249375312,
+        "rayleigh_pass": false,
+        "rounding_pass": false,
+        "passed": false
+      }
+    },
+    {
+      "name": "guide_peak_19",
+      "passed": true,
+      "detail": {
+        "expected": 19,
+        "observed": 19.057142857142857,
+        "frequency_error": 0.00015781582892764046,
+        "tolerance": 0.0004997501249375312,
+        "rayleigh_pass": true,
+        "rounding_pass": false,
+        "passed": true
+      }
+    },
+    {
+      "name": "mtm-5x-diagnostic-plot_figure_created",
+      "passed": true,
+      "detail": "figure_01.png"
+    },
+    {
+      "name": "diagnostic_5x_guide_peak_405",
+      "passed": true,
+      "detail": {
+        "expected": 405,
+        "observed": 400.2,
+        "frequency_error": 2.9614822218520555e-05,
+        "tolerance": 0.0004997501249375312,
+        "rayleigh_pass": true,
+        "rounding_pass": false,
+        "passed": true
+      }
+    },
+    {
+      "name": "diagnostic_5x_guide_peak_125",
+      "passed": true,
+      "detail": {
+        "expected": 125,
+        "observed": 125.0625,
+        "frequency_error": 3.998000999500678e-06,
+        "tolerance": 0.0004997501249375312,
+        "rayleigh_pass": true,
+        "rounding_pass": true,
+        "passed": true
+      }
+    },
+    {
+      "name": "diagnostic_5x_guide_peak_95",
+      "passed": true,
+      "detail": {
+        "expected": 95,
+        "observed": 95.28571428571426,
+        "frequency_error": 3.156316578552601e-05,
+        "tolerance": 0.0004997501249375312,
+        "rayleigh_pass": true,
+        "rounding_pass": true,
+        "passed": true
+      }
+    },
+    {
+      "name": "diagnostic_5x_guide_peak_41",
+      "passed": true,
+      "detail": {
+        "expected": 41,
+        "observed": 41.00409836065574,
+        "frequency_error": 2.437805487500583e-06,
+        "tolerance": 0.0004997501249375312,
+        "rayleigh_pass": true,
+        "rounding_pass": true,
+        "passed": true
+      }
+    },
+    {
+      "name": "diagnostic_5x_guide_peak_23.7",
+      "passed": true,
+      "detail": {
+        "expected": 23.7,
+        "observed": 23.708530805687204,
+        "frequency_error": 1.5182282276579584e-05,
+        "tolerance": 0.0004997501249375312,
+        "rayleigh_pass": true,
+        "rounding_pass": true,
+        "passed": true
+      }
+    },
+    {
+      "name": "diagnostic_5x_guide_peak_22.4",
+      "passed": true,
+      "detail": {
+        "expected": 22.4,
+        "observed": 22.38255033557047,
+        "frequency_error": 3.4804026558143963e-05,
+        "tolerance": 0.0004997501249375312,
+        "rayleigh_pass": true,
+        "rounding_pass": true,
+        "passed": true
+      }
+    },
+    {
+      "name": "diagnostic_5x_guide_peak_19",
+      "passed": true,
+      "detail": {
+        "expected": 19,
+        "observed": 18.98481973434535,
+        "frequency_error": 4.208422104737958e-05,
+        "tolerance": 0.0004997501249375312,
+        "rayleigh_pass": true,
+        "rounding_pass": true,
+        "passed": true
+      }
+    },
+    {
+      "name": "mtm_exact_replay",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "master-mtm-plot_figure_created",
+      "passed": true,
+      "detail": "figure_01.png"
+    },
+    {
+      "name": "master_mtm_frequency_equivalence",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "master_mtm_power_equivalence",
+      "passed": true,
+      "detail": 0
+    },
+    {
+      "name": "evolution-plot_figure_created",
+      "passed": true,
+      "detail": "figure_01.png"
+    },
+    {
+      "name": "evolution_finite_power",
+      "passed": true,
+      "detail": [
+        668,
+        161
+      ]
+    },
+    {
+      "name": "wavelet-plot_figure_created",
+      "passed": true,
+      "detail": "figure_01.png"
+    },
+    {
+      "name": "wavelet_finite_power",
+      "passed": true,
+      "detail": [
+        91,
+        2001
+      ]
+    }
+  ],
+  "fatal": [],
+  "input_file": "Example-La2004-1E.5T-1P-0-2000.txt",
+  "peaks": [
+    {
+      "expected": 405,
+      "observed": 500.25,
+      "frequency_error": 0.0004701353027190109,
+      "tolerance": 0.0004997501249375312,
+      "rayleigh_pass": true,
+      "rounding_pass": false,
+      "passed": true
+    },
+    {
+      "expected": 125,
+      "observed": 117.70588235294116,
+      "frequency_error": 0.0004957521239380321,
+      "tolerance": 0.0004997501249375312,
+      "rayleigh_pass": true,
+      "rounding_pass": false,
+      "passed": true
+    },
+    {
+      "expected": 95,
+      "observed": 95.28571428571426,
+      "frequency_error": 3.156316578552601e-05,
+      "tolerance": 0.0004997501249375312,
+      "rayleigh_pass": true,
+      "rounding_pass": true,
+      "passed": true
+    },
+    {
+      "expected": 41,
+      "observed": 40.019999999999996,
+      "frequency_error": 0.0005972623444375387,
+      "tolerance": 0.0004997501249375312,
+      "rayleigh_pass": false,
+      "rounding_pass": false,
+      "passed": false
+    },
+    {
+      "expected": 23.7,
+      "observed": 23.821428571428566,
+      "frequency_error": 0.00021508233225158574,
+      "tolerance": 0.0004997501249375312,
+      "rayleigh_pass": true,
+      "rounding_pass": false,
+      "passed": true
+    },
+    {
+      "expected": 22.4,
+      "observed": 22.73863636363636,
+      "frequency_error": 0.000664846148354388,
+      "tolerance": 0.0004997501249375312,
+      "rayleigh_pass": false,
+      "rounding_pass": false,
+      "passed": false
+    },
+    {
+      "expected": 19,
+      "observed": 19.057142857142857,
+      "frequency_error": 0.00015781582892764046,
+      "tolerance": 0.0004997501249375312,
+      "rayleigh_pass": true,
+      "rounding_pass": false,
+      "passed": true
+    }
+  ],
+  "peaks_5x_diagnostic": [
+    {
+      "expected": 405,
+      "observed": 400.2,
+      "frequency_error": 2.9614822218520555e-05,
+      "tolerance": 0.0004997501249375312,
+      "rayleigh_pass": true,
+      "rounding_pass": false,
+      "passed": true
+    },
+    {
+      "expected": 125,
+      "observed": 125.0625,
+      "frequency_error": 3.998000999500678e-06,
+      "tolerance": 0.0004997501249375312,
+      "rayleigh_pass": true,
+      "rounding_pass": true,
+      "passed": true
+    },
+    {
+      "expected": 95,
+      "observed": 95.28571428571426,
+      "frequency_error": 3.156316578552601e-05,
+      "tolerance": 0.0004997501249375312,
+      "rayleigh_pass": true,
+      "rounding_pass": true,
+      "passed": true
+    },
+    {
+      "expected": 41,
+      "observed": 41.00409836065574,
+      "frequency_error": 2.437805487500583e-06,
+      "tolerance": 0.0004997501249375312,
+      "rayleigh_pass": true,
+      "rounding_pass": true,
+      "passed": true
+    },
+    {
+      "expected": 23.7,
+      "observed": 23.708530805687204,
+      "frequency_error": 1.5182282276579584e-05,
+      "tolerance": 0.0004997501249375312,
+      "rayleigh_pass": true,
+      "rounding_pass": true,
+      "passed": true
+    },
+    {
+      "expected": 22.4,
+      "observed": 22.38255033557047,
+      "frequency_error": 3.4804026558143963e-05,
+      "tolerance": 0.0004997501249375312,
+      "rayleigh_pass": true,
+      "rounding_pass": true,
+      "passed": true
+    },
+    {
+      "expected": 19,
+      "observed": 18.98481973434535,
+      "frequency_error": 4.208422104737958e-05,
+      "tolerance": 0.0004997501249375312,
+      "rayleigh_pass": true,
+      "rounding_pass": true,
+      "passed": true
+    }
+  ],
+  "evolution": {
+    "window": 400,
+    "step": 3.2,
+    "size": [
+      668,
+      161
+    ],
+    "frequency_bounds": [
+      0,
+      0.1
+    ]
+  },
+  "wavelet": {
+    "method_sel": 3,
+    "period_max_setting": 700,
+    "size": [
+      91,
+      2001
+    ]
+  },
+  "execution_ok": true,
+  "criteria_ok": false
+}

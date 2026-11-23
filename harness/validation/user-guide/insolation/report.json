@@ -1,0 +1,408 @@
+{
+  "case_id": "insolation",
+  "matlab": "24.2.0.3361896 (R2024b) Update 10",
+  "seed": 20261123.0,
+  "scope": "Chapter 6; real Harness MATLAB bridge; no LLM in this runner",
+  "steps": [
+    {
+      "label": "sort-helper",
+      "menu": "menu_sort",
+      "role": "helper",
+      "status": "ok",
+      "completion": "done",
+      "seconds": 1.945541,
+      "folder": "01-sort-helper"
+    },
+    {
+      "label": "sort",
+      "menu": "menu_sort",
+      "role": "analyzer",
+      "status": "ok",
+      "completion": "done",
+      "seconds": 0.46029,
+      "folder": "02-sort"
+    },
+    {
+      "label": "demean-helper",
+      "menu": "menu_prewhiten",
+      "role": "helper",
+      "status": "ok",
+      "completion": "done",
+      "seconds": 0.446635,
+      "folder": "03-demean-helper"
+    },
+    {
+      "label": "demean",
+      "menu": "menu_prewhiten",
+      "role": "analyzer",
+      "status": "ok",
+      "completion": "done",
+      "seconds": 0.415686,
+      "folder": "04-demean"
+    },
+    {
+      "label": "demean-plot",
+      "menu": "menu_prewhiten",
+      "role": "plotter",
+      "status": "ok",
+      "completion": "done",
+      "seconds": 6.182441,
+      "folder": "05-demean-plot"
+    },
+    {
+      "label": "master-detrend-helper",
+      "menu": "menu_prewhiten",
+      "role": "helper",
+      "status": "ok",
+      "completion": "done",
+      "seconds": 0.476951,
+      "folder": "06-master-detrend-helper"
+    },
+    {
+      "label": "master-detrend",
+      "menu": "menu_prewhiten",
+      "role": "analyzer",
+      "status": "ok",
+      "completion": "done",
+      "seconds": 0.813073,
+      "folder": "07-master-detrend"
+    },
+    {
+      "label": "mtm-helper",
+      "menu": "menu_power",
+      "role": "helper",
+      "status": "ok",
+      "completion": "done",
+      "seconds": 0.826466,
+      "folder": "08-mtm-helper"
+    },
+    {
+      "label": "mtm",
+      "menu": "menu_power",
+      "role": "analyzer",
+      "status": "ok",
+      "completion": "done",
+      "seconds": 0.564002,
+      "folder": "09-mtm"
+    },
+    {
+      "label": "mtm-plot",
+      "menu": "menu_power",
+      "role": "plotter",
+      "status": "ok",
+      "completion": "done",
+      "seconds": 1.030817,
+      "folder": "10-mtm-plot"
+    },
+    {
+      "label": "mtm-5x-diagnostic-helper",
+      "menu": "menu_power",
+      "role": "helper",
+      "status": "ok",
+      "completion": "done",
+      "seconds": 0.442976,
+      "folder": "11-mtm-5x-diagnostic-helper"
+    },
+    {
+      "label": "mtm-5x-diagnostic",
+      "menu": "menu_power",
+      "role": "analyzer",
+      "status": "ok",
+      "completion": "done",
+      "seconds": 0.438934,
+      "folder": "12-mtm-5x-diagnostic"
+    },
+    {
+      "label": "mtm-5x-diagnostic-plot",
+      "menu": "menu_power",
+      "role": "plotter",
+      "status": "ok",
+      "completion": "done",
+      "seconds": 0.843191,
+      "folder": "13-mtm-5x-diagnostic-plot"
+    },
+    {
+      "label": "mtm-replay",
+      "menu": "menu_power",
+      "role": "replay",
+      "status": "ok",
+      "completion": "done",
+      "seconds": 0.430544,
+      "folder": "14-mtm-replay"
+    },
+    {
+      "label": "master-mtm-helper",
+      "menu": "menu_power",
+      "role": "helper",
+      "status": "ok",
+      "completion": "done",
+      "seconds": 0.874405,
+      "folder": "15-master-mtm-helper"
+    },
+    {
+      "label": "master-mtm",
+      "menu": "menu_power",
+      "role": "analyzer",
+      "status": "ok",
+      "completion": "done",
+      "seconds": 0.710507,
+      "folder": "16-master-mtm"
+    },
+    {
+      "label": "master-mtm-plot",
+      "menu": "menu_power",
+      "role": "plotter",
+      "status": "ok",
+      "completion": "done",
+      "seconds": 1.940401,
+      "folder": "17-master-mtm-plot"
+    },
+    {
+      "label": "evolution-helper",
+      "menu": "menu_period",
+      "role": "helper",
+      "status": "ok",
+      "completion": "done",
+      "seconds": 0.439805,
+      "folder": "18-evolution-helper"
+    },
+    {
+      "label": "evolution",
+      "menu": "menu_period",
+      "role": "analyzer",
+      "status": "ok",
+      "completion": "done",
+      "seconds": 0.522953,
+      "folder": "19-evolution"
+    },
+    {
+      "label": "evolution-plot",
+      "menu": "menu_period",
+      "role": "plotter",
+      "status": "ok",
+      "completion": "done",
+      "seconds": 2.250659,
+      "folder": "20-evolution-plot"
+    }
+  ],
+  "checks": [
+    {
+      "name": "sorted_finite_unique",
+      "passed": true,
+      "detail": [
+        2001,
+        2
+      ]
+    },
+    {
+      "name": "demean-plot_figure_created",
+      "passed": true,
+      "detail": "figure_01.png"
+    },
+    {
+      "name": "master_detrend_equivalence",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "detrend_reconstruction",
+      "passed": true,
+      "detail": 0
+    },
+    {
+      "name": "mtm-plot_figure_created",
+      "passed": true,
+      "detail": "figure_01.png"
+    },
+    {
+      "name": "guide_peak_23.7",
+      "passed": true,
+      "detail": {
+        "expected": 23.7,
+        "observed": 23.821428571428566,
+        "frequency_error": 0.00021508233225158574,
+        "tolerance": 0.0004997501249375312,
+        "rayleigh_pass": true,
+        "rounding_pass": false,
+        "passed": true
+      }
+    },
+    {
+      "name": "guide_peak_22.4",
+      "passed": false,
+      "detail": {
+        "expected": 22.4,
+        "observed": 22.73863636363636,
+        "frequency_error": 0.000664846148354388,
+        "tolerance": 0.0004997501249375312,
+        "rayleigh_pass": false,
+        "rounding_pass": false,
+        "passed": false
+      }
+    },
+    {
+      "name": "guide_peak_19",
+      "passed": true,
+      "detail": {
+        "expected": 19,
+        "observed": 19.057142857142857,
+        "frequency_error": 0.00015781582892764046,
+        "tolerance": 0.0004997501249375312,
+        "rayleigh_pass": true,
+        "rounding_pass": false,
+        "passed": true
+      }
+    },
+    {
+      "name": "mtm-5x-diagnostic-plot_figure_created",
+      "passed": true,
+      "detail": "figure_01.png"
+    },
+    {
+      "name": "diagnostic_5x_guide_peak_23.7",
+      "passed": true,
+      "detail": {
+        "expected": 23.7,
+        "observed": 23.708530805687204,
+        "frequency_error": 1.5182282276579584e-05,
+        "tolerance": 0.0004997501249375312,
+        "rayleigh_pass": true,
+        "rounding_pass": true,
+        "passed": true
+      }
+    },
+    {
+      "name": "diagnostic_5x_guide_peak_22.4",
+      "passed": true,
+      "detail": {
+        "expected": 22.4,
+        "observed": 22.38255033557047,
+        "frequency_error": 3.4804026558143963e-05,
+        "tolerance": 0.0004997501249375312,
+        "rayleigh_pass": true,
+        "rounding_pass": true,
+        "passed": true
+      }
+    },
+    {
+      "name": "diagnostic_5x_guide_peak_19",
+      "passed": true,
+      "detail": {
+        "expected": 19,
+        "observed": 18.98481973434535,
+        "frequency_error": 4.208422104737958e-05,
+        "tolerance": 0.0004997501249375312,
+        "rayleigh_pass": true,
+        "rounding_pass": true,
+        "passed": true
+      }
+    },
+    {
+      "name": "mtm_exact_replay",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "master-mtm-plot_figure_created",
+      "passed": true,
+      "detail": "figure_01.png"
+    },
+    {
+      "name": "master_mtm_frequency_equivalence",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "master_mtm_power_equivalence",
+      "passed": true,
+      "detail": 0
+    },
+    {
+      "name": "evolution-plot_figure_created",
+      "passed": true,
+      "detail": "figure_01.png"
+    },
+    {
+      "name": "evolution_finite_power",
+      "passed": true,
+      "detail": [
+        668,
+        97
+      ]
+    }
+  ],
+  "fatal": [],
+  "input_file": "Example-Insol-t-0-2000ka-day-80-lat-65-meandaily-La04.txt",
+  "peaks": [
+    {
+      "expected": 23.7,
+      "observed": 23.821428571428566,
+      "frequency_error": 0.00021508233225158574,
+      "tolerance": 0.0004997501249375312,
+      "rayleigh_pass": true,
+      "rounding_pass": false,
+      "passed": true
+    },
+    {
+      "expected": 22.4,
+      "observed": 22.73863636363636,
+      "frequency_error": 0.000664846148354388,
+      "tolerance": 0.0004997501249375312,
+      "rayleigh_pass": false,
+      "rounding_pass": false,
+      "passed": false
+    },
+    {
+      "expected": 19,
+      "observed": 19.057142857142857,
+      "frequency_error": 0.00015781582892764046,
+      "tolerance": 0.0004997501249375312,
+      "rayleigh_pass": true,
+      "rounding_pass": false,
+      "passed": true
+    }
+  ],
+  "peaks_5x_diagnostic": [
+    {
+      "expected": 23.7,
+      "observed": 23.708530805687204,
+      "frequency_error": 1.5182282276579584e-05,
+      "tolerance": 0.0004997501249375312,
+      "rayleigh_pass": true,
+      "rounding_pass": true,
+      "passed": true
+    },
+    {
+      "expected": 22.4,
+      "observed": 22.38255033557047,
+      "frequency_error": 3.4804026558143963e-05,
+      "tolerance": 0.0004997501249375312,
+      "rayleigh_pass": true,
+      "rounding_pass": true,
+      "passed": true
+    },
+    {
+      "expected": 19,
+      "observed": 18.98481973434535,
+      "frequency_error": 4.208422104737958e-05,
+      "tolerance": 0.0004997501249375312,
+      "rayleigh_pass": true,
+      "rounding_pass": true,
+      "passed": true
+    }
+  ],
+  "evolution": {
+    "window": 400,
+    "step": 3.2,
+    "size": [
+      668,
+      97
+    ],
+    "frequency_bounds": [
+      0,
+      0.06
+    ]
+  },
+  "execution_ok": true,
+  "criteria_ok": false
+}

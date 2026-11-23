@@ -1,0 +1,356 @@
+{
+  "cases": [
+    {
+      "case_id": "etp",
+      "execution_ok": true,
+      "criteria_ok": false,
+      "steps": 23,
+      "checks": 28,
+      "passed_checks": 26,
+      "failed_steps": [],
+      "failed_checks": [
+        {
+          "name": "guide_peak_41",
+          "passed": false,
+          "detail": {
+            "expected": 41,
+            "observed": 40.019999999999996,
+            "frequency_error": 0.0005972623444375387,
+            "tolerance": 0.0004997501249375312,
+            "rayleigh_pass": false,
+            "rounding_pass": false,
+            "passed": false
+          }
+        },
+        {
+          "name": "guide_peak_22.4",
+          "passed": false,
+          "detail": {
+            "expected": 22.4,
+            "observed": 22.73863636363636,
+            "frequency_error": 0.000664846148354388,
+            "tolerance": 0.0004997501249375312,
+            "rayleigh_pass": false,
+            "rounding_pass": false,
+            "passed": false
+          }
+        }
+      ],
+      "fatal": [],
+      "peaks": [
+        {
+          "expected": 405,
+          "observed": 500.25,
+          "frequency_error": 0.0004701353027190109,
+          "tolerance": 0.0004997501249375312,
+          "rayleigh_pass": true,
+          "rounding_pass": false,
+          "passed": true
+        },
+        {
+          "expected": 125,
+          "observed": 117.70588235294116,
+          "frequency_error": 0.0004957521239380321,
+          "tolerance": 0.0004997501249375312,
+          "rayleigh_pass": true,
+          "rounding_pass": false,
+          "passed": true
+        },
+        {
+          "expected": 95,
+          "observed": 95.28571428571426,
+          "frequency_error": 3.156316578552601e-05,
+          "tolerance": 0.0004997501249375312,
+          "rayleigh_pass": true,
+          "rounding_pass": true,
+          "passed": true
+        },
+        {
+          "expected": 41,
+          "observed": 40.019999999999996,
+          "frequency_error": 0.0005972623444375387,
+          "tolerance": 0.0004997501249375312,
+          "rayleigh_pass": false,
+          "rounding_pass": false,
+          "passed": false
+        },
+        {
+          "expected": 23.7,
+          "observed": 23.821428571428566,
+          "frequency_error": 0.00021508233225158574,
+          "tolerance": 0.0004997501249375312,
+          "rayleigh_pass": true,
+          "rounding_pass": false,
+          "passed": true
+        },
+        {
+          "expected": 22.4,
+          "observed": 22.73863636363636,
+          "frequency_error": 0.000664846148354388,
+          "tolerance": 0.0004997501249375312,
+          "rayleigh_pass": false,
+          "rounding_pass": false,
+          "passed": false
+        },
+        {
+          "expected": 19,
+          "observed": 19.057142857142857,
+          "frequency_error": 0.00015781582892764046,
+          "tolerance": 0.0004997501249375312,
+          "rayleigh_pass": true,
+          "rounding_pass": false,
+          "passed": true
+        }
+      ],
+      "peaks_5x_diagnostic": [
+        {
+          "expected": 405,
+          "observed": 400.2,
+          "frequency_error": 2.9614822218520555e-05,
+          "tolerance": 0.0004997501249375312,
+          "rayleigh_pass": true,
+          "rounding_pass": false,
+          "passed": true
+        },
+        {
+          "expected": 125,
+          "observed": 125.0625,
+          "frequency_error": 3.998000999500678e-06,
+          "tolerance": 0.0004997501249375312,
+          "rayleigh_pass": true,
+          "rounding_pass": true,
+          "passed": true
+        },
+        {
+          "expected": 95,
+          "observed": 95.28571428571426,
+          "frequency_error": 3.156316578552601e-05,
+          "tolerance": 0.0004997501249375312,
+          "rayleigh_pass": true,
+          "rounding_pass": true,
+          "passed": true
+        },
+        {
+          "expected": 41,
+          "observed": 41.00409836065574,
+          "frequency_error": 2.437805487500583e-06,
+          "tolerance": 0.0004997501249375312,
+          "rayleigh_pass": true,
+          "rounding_pass": true,
+          "passed": true
+        },
+        {
+          "expected": 23.7,
+          "observed": 23.708530805687204,
+          "frequency_error": 1.5182282276579584e-05,
+          "tolerance": 0.0004997501249375312,
+          "rayleigh_pass": true,
+          "rounding_pass": true,
+          "passed": true
+        },
+        {
+          "expected": 22.4,
+          "observed": 22.38255033557047,
+          "frequency_error": 3.4804026558143963e-05,
+          "tolerance": 0.0004997501249375312,
+          "rayleigh_pass": true,
+          "rounding_pass": true,
+          "passed": true
+        },
+        {
+          "expected": 19,
+          "observed": 18.98481973434535,
+          "frequency_error": 4.208422104737958e-05,
+          "tolerance": 0.0004997501249375312,
+          "rayleigh_pass": true,
+          "rounding_pass": true,
+          "passed": true
+        }
+      ],
+      "coco": null,
+      "ecoco": null,
+      "age_model_edge": null
+    },
+    {
+      "case_id": "insolation",
+      "execution_ok": true,
+      "criteria_ok": false,
+      "steps": 20,
+      "checks": 18,
+      "passed_checks": 17,
+      "failed_steps": [],
+      "failed_checks": [
+        {
+          "name": "guide_peak_22.4",
+          "passed": false,
+          "detail": {
+            "expected": 22.4,
+            "observed": 22.73863636363636,
+            "frequency_error": 0.000664846148354388,
+            "tolerance": 0.0004997501249375312,
+            "rayleigh_pass": false,
+            "rounding_pass": false,
+            "passed": false
+          }
+        }
+      ],
+      "fatal": [],
+      "peaks": [
+        {
+          "expected": 23.7,
+          "observed": 23.821428571428566,
+          "frequency_error": 0.00021508233225158574,
+          "tolerance": 0.0004997501249375312,
+          "rayleigh_pass": true,
+          "rounding_pass": false,
+          "passed": true
+        },
+        {
+          "expected": 22.4,
+          "observed": 22.73863636363636,
+          "frequency_error": 0.000664846148354388,
+          "tolerance": 0.0004997501249375312,
+          "rayleigh_pass": false,
+          "rounding_pass": false,
+          "passed": false
+        },
+        {
+          "expected": 19,
+          "observed": 19.057142857142857,
+          "frequency_error": 0.00015781582892764046,
+          "tolerance": 0.0004997501249375312,
+          "rayleigh_pass": true,
+          "rounding_pass": false,
+          "passed": true
+        }
+      ],
+      "peaks_5x_diagnostic": [
+        {
+          "expected": 23.7,
+          "observed": 23.708530805687204,
+          "frequency_error": 1.5182282276579584e-05,
+          "tolerance": 0.0004997501249375312,
+          "rayleigh_pass": true,
+          "rounding_pass": true,
+          "passed": true
+        },
+        {
+          "expected": 22.4,
+          "observed": 22.38255033557047,
+          "frequency_error": 3.4804026558143963e-05,
+          "tolerance": 0.0004997501249375312,
+          "rayleigh_pass": true,
+          "rounding_pass": true,
+          "passed": true
+        },
+        {
+          "expected": 19,
+          "observed": 18.98481973434535,
+          "frequency_error": 4.208422104737958e-05,
+          "tolerance": 0.0004997501249375312,
+          "rayleigh_pass": true,
+          "rounding_pass": true,
+          "passed": true
+        }
+      ],
+      "coco": null,
+      "ecoco": null,
+      "age_model_edge": null
+    },
+    {
+      "case_id": "wayao",
+      "execution_ok": true,
+      "criteria_ok": true,
+      "steps": 47,
+      "checks": 45,
+      "passed_checks": 45,
+      "failed_steps": [],
+      "failed_checks": [],
+      "fatal": [],
+      "peaks": [
+        {
+          "expected": 33.9,
+          "observed": 33.888461538461364,
+          "frequency_error": 1.0043760665372214e-05,
+          "tolerance": 0.005674724775848401,
+          "rayleigh_pass": true,
+          "rounding_pass": true,
+          "passed": true
+        },
+        {
+          "expected": 10,
+          "observed": 9.68241758241753,
+          "frequency_error": 0.0032799909204409006,
+          "tolerance": 0.005674724775848401,
+          "rayleigh_pass": true,
+          "rounding_pass": true,
+          "passed": true
+        },
+        {
+          "expected": 7,
+          "observed": 6.830232558139499,
+          "frequency_error": 0.0035507563597459157,
+          "tolerance": 0.005674724775848401,
+          "rayleigh_pass": true,
+          "rounding_pass": true,
+          "passed": true
+        },
+        {
+          "expected": 2.6,
+          "observed": 2.5838709677419223,
+          "frequency_error": 0.002400845097476345,
+          "tolerance": 0.005674724775848401,
+          "rayleigh_pass": true,
+          "rounding_pass": true,
+          "passed": true
+        },
+        {
+          "expected": 1.8,
+          "observed": 1.8204545454545358,
+          "frequency_error": 0.006242197253430337,
+          "tolerance": 0.005674724775848401,
+          "rayleigh_pass": false,
+          "rounding_pass": true,
+          "passed": true
+        }
+      ],
+      "peaks_5x_diagnostic": null,
+      "coco": {
+        "rate": 8.094053177257525,
+        "correlation": 0.47866679805752577,
+        "p": 0,
+        "simulations": 1000,
+        "rate_count": 300,
+        "mc_exceedances": 0,
+        "empirical_p_add_one": 0.000999000999000999
+      },
+      "ecoco": {
+        "simulations": 500,
+        "window": 45,
+        "step_in_samples": 1,
+        "size": [
+          300,
+          534
+        ]
+      },
+      "age_model_edge": {
+        "historical": [
+          404.0830888888889,
+          2027.0414044444444
+        ],
+        "linear_extrapolation": [
+          290.8636363636365,
+          2309.2788461538457
+        ],
+        "max_difference": 282.2374417094013
+      }
+    }
+  ],
+  "tested_commit": "d5f28906e91c4d102163cf1b9acbe1d77742863e",
+  "workflow_run": 45177609814,
+  "plugin_ci_run": 45177609765,
+  "scope": "Real MATLAB R2024b Harness bridge and menu interfaces; deterministic driver, not autonomous DeepSeek planning.",
+  "total_calls": 90,
+  "total_checks": 91,
+  "passed_checks": 88
+}

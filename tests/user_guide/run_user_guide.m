@@ -209,7 +209,7 @@ if ~isempty(report.fatal), fprintf('%s: %s\n',report.fatal.identifier,report.fat
         v=aclog.read(j,fin.info.retval);
     end
     function check(name,passed,detail)
-        checks{end+1}=struct('name',name,'passed',logical(passed),'detail',detail);
+        checks{end+1}=struct('name',name,'passed',logical(passed),'detail',{detail});
     end
     function p=peakChecks(f,power,expected,tol,prefix)
         if nargin<5, prefix=''; end
