@@ -1,23 +1,17 @@
 {
-  "case": "wayao",
-  "run_id": "20261123T141856Z-fc598622dc8a",
+  "case": "etp",
+  "run_id": "20261123T141904Z-dd3c2a2555c7",
   "operation": "analyze",
-  "input_sha256": "f39dcc29be09cd5a07ef1dcdd20c6fa30499213c204ce4897ac02d9f6f086c21",
+  "input_sha256": "9653ac0d10ea7e4bad40afd4b553bacc3901b9c38e88b3da598e12f23565354f",
   "parameters": {
-    "detrend": "lowess",
-    "span": 0.45454,
-    "dt": 0.33,
-    "mtm_nw": 2,
-    "nfft": 2670,
-    "fmax": 1,
+    "coordinate_unit": "kyr",
+    "detrend": "mean",
+    "dt": 1,
     "evolution": true,
-    "evolution_window": 40,
-    "evolution_step": 0.33,
-    "filter_band": [
-      0.022,
-      0.034
-    ],
-    "filter_method": "gaussian",
-    "coordinate_unit": "m"
+    "evolution_step": 3.2,
+    "evolution_window": 400,
+    "fmax": 0.1,
+    "mtm_nw": 2,
+    "nfft": 10005
   }
 }
