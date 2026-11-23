@@ -1,0 +1,1062 @@
+[
+  {
+    "case": "insolation",
+    "calls": 20,
+    "execution_ok": true,
+    "checks_passed": 17,
+    "checks_total": 18,
+    "check_outcomes_match_bridge": true,
+    "bridge_raw_check_rows": 18,
+    "science": {
+      "evolution": {
+        "window": 400,
+        "step": 3.2,
+        "size": [
+          668,
+          97
+        ],
+        "frequency_bounds": [
+          0,
+          0.06
+        ]
+      }
+    },
+    "failed_checks": [
+      "guide_peak_22.4"
+    ],
+    "trace": [
+      {
+        "step": "sort-helper",
+        "tool": "acycle_menu_helper",
+        "selector": "SortUnique_legacy",
+        "run_id": "20261123T142509Z-3269c0ff8248",
+        "source_runs": [],
+        "figures": 0,
+        "journal_sha256": "b0b783b875592bbd04c8ba78bbdd5a140904aaed8fafc47c8b6967141539cdd0"
+      },
+      {
+        "step": "sort",
+        "tool": "acycle_menu_analyzer",
+        "selector": "SortUnique_legacy",
+        "run_id": "20261123T142517Z-98efaffc6eec",
+        "source_runs": [
+          "20261123T142509Z-3269c0ff8248"
+        ],
+        "figures": 0,
+        "journal_sha256": "6c288c4a9a67e2183a43ac9d101aec8a2c5be36a1891f5b6a78a3d44c2944fee"
+      },
+      {
+        "step": "demean-helper",
+        "tool": "acycle_menu_helper",
+        "selector": "Detrending_legacy",
+        "run_id": "20261123T142524Z-f1b4f9704af0",
+        "source_runs": [],
+        "figures": 0,
+        "journal_sha256": "0cd40ac69b143a309724e7389174b13d81c3fb8e84531e1e3c67652334374c86"
+      },
+      {
+        "step": "demean",
+        "tool": "acycle_menu_analyzer",
+        "selector": "Detrending_legacy",
+        "run_id": "20261123T142532Z-c4c2f57503f4",
+        "source_runs": [
+          "20261123T142524Z-f1b4f9704af0"
+        ],
+        "figures": 0,
+        "journal_sha256": "23ec5e4ab338bbf8479902284b98002aacd32bf5c40d4656b306fe7459f49e74"
+      },
+      {
+        "step": "demean-plot",
+        "tool": "acycle_menu_plotter",
+        "selector": "Detrending_legacy",
+        "run_id": "20261123T142539Z-cada09c1cc40",
+        "source_runs": [
+          "20261123T142524Z-f1b4f9704af0",
+          "20261123T142532Z-c4c2f57503f4"
+        ],
+        "figures": 1,
+        "journal_sha256": "62d3a8db16ba401dc500fd580a618354d0ad7eb789e0a03359a70a5a6e353c50"
+      },
+      {
+        "step": "master-detrend-helper",
+        "tool": "acycle_menu_helper",
+        "selector": "Detrending",
+        "run_id": "20261123T142550Z-541a35d32db3",
+        "source_runs": [],
+        "figures": 0,
+        "journal_sha256": "0cd40ac69b143a309724e7389174b13d81c3fb8e84531e1e3c67652334374c86"
+      },
+      {
+        "step": "master-detrend",
+        "tool": "acycle_menu_analyzer",
+        "selector": "Detrending",
+        "run_id": "20261123T142557Z-974cacc01da9",
+        "source_runs": [
+          "20261123T142550Z-541a35d32db3"
+        ],
+        "figures": 0,
+        "journal_sha256": "23ec5e4ab338bbf8479902284b98002aacd32bf5c40d4656b306fe7459f49e74"
+      },
+      {
+        "step": "mtm-helper",
+        "tool": "acycle_menu_helper",
+        "selector": "PowerSpectrum_legacy",
+        "run_id": "20261123T142604Z-fb7290fe0129",
+        "source_runs": [],
+        "figures": 0,
+        "journal_sha256": "27c3d80550e7e4f692abf60dfff13d0b1073e5bd0dd6aa41127d6bc7143e9ad9"
+      },
+      {
+        "step": "mtm",
+        "tool": "acycle_menu_analyzer",
+        "selector": "PowerSpectrum_legacy",
+        "run_id": "20261123T142611Z-5c6fb6d4f872",
+        "source_runs": [
+          "20261123T142604Z-fb7290fe0129"
+        ],
+        "figures": 0,
+        "journal_sha256": "b88c6739e10f1a21405f38a97de81af40487030595026666ea4a332c4e84d69a"
+      },
+      {
+        "step": "mtm-plot",
+        "tool": "acycle_menu_plotter",
+        "selector": "PowerSpectrum_legacy",
+        "run_id": "20261123T142618Z-759e676e547d",
+        "source_runs": [
+          "20261123T142604Z-fb7290fe0129",
+          "20261123T142611Z-5c6fb6d4f872"
+        ],
+        "figures": 1,
+        "journal_sha256": "02d1f2471c0d16deae00171101031157fdf2bf636f007d17964baad6283d59bd"
+      },
+      {
+        "step": "mtm-5x-diagnostic-helper",
+        "tool": "acycle_menu_helper",
+        "selector": "PowerSpectrum_legacy",
+        "run_id": "20261123T142628Z-23226770caba",
+        "source_runs": [],
+        "figures": 0,
+        "journal_sha256": "27c3d80550e7e4f692abf60dfff13d0b1073e5bd0dd6aa41127d6bc7143e9ad9"
+      },
+      {
+        "step": "mtm-5x-diagnostic",
+        "tool": "acycle_menu_analyzer",
+        "selector": "PowerSpectrum_legacy",
+        "run_id": "20261123T142635Z-60de855924a6",
+        "source_runs": [
+          "20261123T142628Z-23226770caba"
+        ],
+        "figures": 0,
+        "journal_sha256": "b88c6739e10f1a21405f38a97de81af40487030595026666ea4a332c4e84d69a"
+      },
+      {
+        "step": "mtm-5x-diagnostic-plot",
+        "tool": "acycle_menu_plotter",
+        "selector": "PowerSpectrum_legacy",
+        "run_id": "20261123T142642Z-d8530052873a",
+        "source_runs": [
+          "20261123T142628Z-23226770caba",
+          "20261123T142635Z-60de855924a6"
+        ],
+        "figures": 1,
+        "journal_sha256": "02d1f2471c0d16deae00171101031157fdf2bf636f007d17964baad6283d59bd"
+      },
+      {
+        "step": "mtm-replay",
+        "tool": "acycle_menu_replay",
+        "selector": "PowerSpectrum_legacy",
+        "run_id": "20261123T142652Z-0c2a98029f79",
+        "source_runs": [
+          "20261123T142611Z-5c6fb6d4f872"
+        ],
+        "figures": 0,
+        "journal_sha256": "b88c6739e10f1a21405f38a97de81af40487030595026666ea4a332c4e84d69a"
+      },
+      {
+        "step": "master-mtm-helper",
+        "tool": "acycle_menu_helper",
+        "selector": "PowerSpectrum",
+        "run_id": "20261123T142659Z-a294f0998dbc",
+        "source_runs": [],
+        "figures": 0,
+        "journal_sha256": "27c3d80550e7e4f692abf60dfff13d0b1073e5bd0dd6aa41127d6bc7143e9ad9"
+      },
+      {
+        "step": "master-mtm",
+        "tool": "acycle_menu_analyzer",
+        "selector": "PowerSpectrum",
+        "run_id": "20261123T142706Z-24864691f8b9",
+        "source_runs": [
+          "20261123T142659Z-a294f0998dbc"
+        ],
+        "figures": 0,
+        "journal_sha256": "b88c6739e10f1a21405f38a97de81af40487030595026666ea4a332c4e84d69a"
+      },
+      {
+        "step": "master-mtm-plot",
+        "tool": "acycle_menu_plotter",
+        "selector": "PowerSpectrum",
+        "run_id": "20261123T142713Z-7d3e4906cdec",
+        "source_runs": [
+          "20261123T142659Z-a294f0998dbc",
+          "20261123T142706Z-24864691f8b9"
+        ],
+        "figures": 1,
+        "journal_sha256": "02d1f2471c0d16deae00171101031157fdf2bf636f007d17964baad6283d59bd"
+      },
+      {
+        "step": "evolution-helper",
+        "tool": "acycle_menu_helper",
+        "selector": "EvolutionarySpectrum_legacy",
+        "run_id": "20261123T142722Z-cae983fa8f07",
+        "source_runs": [],
+        "figures": 0,
+        "journal_sha256": "f509c2f59161743096fdc63ac63b2d9e8cbc2e2da121ca77563c2a2c96ef1640"
+      },
+      {
+        "step": "evolution",
+        "tool": "acycle_menu_analyzer",
+        "selector": "EvolutionarySpectrum_legacy",
+        "run_id": "20261123T142729Z-144b4ca0e3e1",
+        "source_runs": [
+          "20261123T142722Z-cae983fa8f07"
+        ],
+        "figures": 0,
+        "journal_sha256": "822a22744ef933db303bedda70c345472c95e24af1d55c16c03fab2dca543bfc"
+      },
+      {
+        "step": "evolution-plot",
+        "tool": "acycle_menu_plotter",
+        "selector": "EvolutionarySpectrum_legacy",
+        "run_id": "20261123T142736Z-030ee18b1e2d",
+        "source_runs": [
+          "20261123T142722Z-cae983fa8f07",
+          "20261123T142729Z-144b4ca0e3e1"
+        ],
+        "figures": 1,
+        "journal_sha256": "2a063efc2461c72e650461508705797f984f85c1e06111bbd27909e9b9c9f62a"
+      }
+    ]
+  },
+  {
+    "case": "etp",
+    "calls": 23,
+    "execution_ok": true,
+    "checks_passed": 26,
+    "checks_total": 28,
+    "check_outcomes_match_bridge": true,
+    "bridge_raw_check_rows": 28,
+    "science": {
+      "evolution": {
+        "window": 400,
+        "step": 3.2,
+        "size": [
+          668,
+          161
+        ],
+        "frequency_bounds": [
+          0,
+          0.1
+        ]
+      },
+      "wavelet": {
+        "method_sel": 3,
+        "period_max_setting": 700,
+        "size": [
+          91,
+          2001
+        ]
+      }
+    },
+    "failed_checks": [
+      "guide_peak_41",
+      "guide_peak_22.4"
+    ],
+    "trace": [
+      {
+        "step": "sort-helper",
+        "tool": "acycle_menu_helper",
+        "selector": "SortUnique_legacy",
+        "run_id": "20261123T142501Z-80356e20fed5",
+        "source_runs": [],
+        "figures": 0,
+        "journal_sha256": "b0b783b875592bbd04c8ba78bbdd5a140904aaed8fafc47c8b6967141539cdd0"
+      },
+      {
+        "step": "sort",
+        "tool": "acycle_menu_analyzer",
+        "selector": "SortUnique_legacy",
+        "run_id": "20261123T142509Z-15665147a2db",
+        "source_runs": [
+          "20261123T142501Z-80356e20fed5"
+        ],
+        "figures": 0,
+        "journal_sha256": "6c288c4a9a67e2183a43ac9d101aec8a2c5be36a1891f5b6a78a3d44c2944fee"
+      },
+      {
+        "step": "demean-helper",
+        "tool": "acycle_menu_helper",
+        "selector": "Detrending_legacy",
+        "run_id": "20261123T142516Z-44fe78c808e0",
+        "source_runs": [],
+        "figures": 0,
+        "journal_sha256": "0cd40ac69b143a309724e7389174b13d81c3fb8e84531e1e3c67652334374c86"
+      },
+      {
+        "step": "demean",
+        "tool": "acycle_menu_analyzer",
+        "selector": "Detrending_legacy",
+        "run_id": "20261123T142523Z-715ea9ee1c1e",
+        "source_runs": [
+          "20261123T142516Z-44fe78c808e0"
+        ],
+        "figures": 0,
+        "journal_sha256": "23ec5e4ab338bbf8479902284b98002aacd32bf5c40d4656b306fe7459f49e74"
+      },
+      {
+        "step": "demean-plot",
+        "tool": "acycle_menu_plotter",
+        "selector": "Detrending_legacy",
+        "run_id": "20261123T142529Z-23ddc7687a19",
+        "source_runs": [
+          "20261123T142516Z-44fe78c808e0",
+          "20261123T142523Z-715ea9ee1c1e"
+        ],
+        "figures": 1,
+        "journal_sha256": "62d3a8db16ba401dc500fd580a618354d0ad7eb789e0a03359a70a5a6e353c50"
+      },
+      {
+        "step": "master-detrend-helper",
+        "tool": "acycle_menu_helper",
+        "selector": "Detrending",
+        "run_id": "20261123T142539Z-1b4fa3c83361",
+        "source_runs": [],
+        "figures": 0,
+        "journal_sha256": "0cd40ac69b143a309724e7389174b13d81c3fb8e84531e1e3c67652334374c86"
+      },
+      {
+        "step": "master-detrend",
+        "tool": "acycle_menu_analyzer",
+        "selector": "Detrending",
+        "run_id": "20261123T142546Z-4b4b2bc54be2",
+        "source_runs": [
+          "20261123T142539Z-1b4fa3c83361"
+        ],
+        "figures": 0,
+        "journal_sha256": "23ec5e4ab338bbf8479902284b98002aacd32bf5c40d4656b306fe7459f49e74"
+      },
+      {
+        "step": "mtm-helper",
+        "tool": "acycle_menu_helper",
+        "selector": "PowerSpectrum_legacy",
+        "run_id": "20261123T142554Z-baa98616a420",
+        "source_runs": [],
+        "figures": 0,
+        "journal_sha256": "27c3d80550e7e4f692abf60dfff13d0b1073e5bd0dd6aa41127d6bc7143e9ad9"
+      },
+      {
+        "step": "mtm",
+        "tool": "acycle_menu_analyzer",
+        "selector": "PowerSpectrum_legacy",
+        "run_id": "20261123T142601Z-120ebd7598c7",
+        "source_runs": [
+          "20261123T142554Z-baa98616a420"
+        ],
+        "figures": 0,
+        "journal_sha256": "b88c6739e10f1a21405f38a97de81af40487030595026666ea4a332c4e84d69a"
+      },
+      {
+        "step": "mtm-plot",
+        "tool": "acycle_menu_plotter",
+        "selector": "PowerSpectrum_legacy",
+        "run_id": "20261123T142608Z-8e989d5cdc48",
+        "source_runs": [
+          "20261123T142554Z-baa98616a420",
+          "20261123T142601Z-120ebd7598c7"
+        ],
+        "figures": 1,
+        "journal_sha256": "02d1f2471c0d16deae00171101031157fdf2bf636f007d17964baad6283d59bd"
+      },
+      {
+        "step": "mtm-5x-diagnostic-helper",
+        "tool": "acycle_menu_helper",
+        "selector": "PowerSpectrum_legacy",
+        "run_id": "20261123T142618Z-c4122a9a3a56",
+        "source_runs": [],
+        "figures": 0,
+        "journal_sha256": "27c3d80550e7e4f692abf60dfff13d0b1073e5bd0dd6aa41127d6bc7143e9ad9"
+      },
+      {
+        "step": "mtm-5x-diagnostic",
+        "tool": "acycle_menu_analyzer",
+        "selector": "PowerSpectrum_legacy",
+        "run_id": "20261123T142626Z-deef13b9418b",
+        "source_runs": [
+          "20261123T142618Z-c4122a9a3a56"
+        ],
+        "figures": 0,
+        "journal_sha256": "b88c6739e10f1a21405f38a97de81af40487030595026666ea4a332c4e84d69a"
+      },
+      {
+        "step": "mtm-5x-diagnostic-plot",
+        "tool": "acycle_menu_plotter",
+        "selector": "PowerSpectrum_legacy",
+        "run_id": "20261123T142633Z-4d7c5164192b",
+        "source_runs": [
+          "20261123T142618Z-c4122a9a3a56",
+          "20261123T142626Z-deef13b9418b"
+        ],
+        "figures": 1,
+        "journal_sha256": "02d1f2471c0d16deae00171101031157fdf2bf636f007d17964baad6283d59bd"
+      },
+      {
+        "step": "mtm-replay",
+        "tool": "acycle_menu_replay",
+        "selector": "PowerSpectrum_legacy",
+        "run_id": "20261123T142643Z-915ed8c00f1e",
+        "source_runs": [
+          "20261123T142601Z-120ebd7598c7"
+        ],
+        "figures": 0,
+        "journal_sha256": "b88c6739e10f1a21405f38a97de81af40487030595026666ea4a332c4e84d69a"
+      },
+      {
+        "step": "master-mtm-helper",
+        "tool": "acycle_menu_helper",
+        "selector": "PowerSpectrum",
+        "run_id": "20261123T142650Z-b271ab3b4fb4",
+        "source_runs": [],
+        "figures": 0,
+        "journal_sha256": "27c3d80550e7e4f692abf60dfff13d0b1073e5bd0dd6aa41127d6bc7143e9ad9"
+      },
+      {
+        "step": "master-mtm",
+        "tool": "acycle_menu_analyzer",
+        "selector": "PowerSpectrum",
+        "run_id": "20261123T142658Z-6d3424944a27",
+        "source_runs": [
+          "20261123T142650Z-b271ab3b4fb4"
+        ],
+        "figures": 0,
+        "journal_sha256": "b88c6739e10f1a21405f38a97de81af40487030595026666ea4a332c4e84d69a"
+      },
+      {
+        "step": "master-mtm-plot",
+        "tool": "acycle_menu_plotter",
+        "selector": "PowerSpectrum",
+        "run_id": "20261123T142705Z-3737a62846bf",
+        "source_runs": [
+          "20261123T142650Z-b271ab3b4fb4",
+          "20261123T142658Z-6d3424944a27"
+        ],
+        "figures": 1,
+        "journal_sha256": "02d1f2471c0d16deae00171101031157fdf2bf636f007d17964baad6283d59bd"
+      },
+      {
+        "step": "evolution-helper",
+        "tool": "acycle_menu_helper",
+        "selector": "EvolutionarySpectrum_legacy",
+        "run_id": "20261123T142717Z-5cd94a5e0181",
+        "source_runs": [],
+        "figures": 0,
+        "journal_sha256": "f509c2f59161743096fdc63ac63b2d9e8cbc2e2da121ca77563c2a2c96ef1640"
+      },
+      {
+        "step": "evolution",
+        "tool": "acycle_menu_analyzer",
+        "selector": "EvolutionarySpectrum_legacy",
+        "run_id": "20261123T142724Z-9bb16d198f80",
+        "source_runs": [
+          "20261123T142717Z-5cd94a5e0181"
+        ],
+        "figures": 0,
+        "journal_sha256": "822a22744ef933db303bedda70c345472c95e24af1d55c16c03fab2dca543bfc"
+      },
+      {
+        "step": "evolution-plot",
+        "tool": "acycle_menu_plotter",
+        "selector": "EvolutionarySpectrum_legacy",
+        "run_id": "20261123T142731Z-f207e3f32a0f",
+        "source_runs": [
+          "20261123T142717Z-5cd94a5e0181",
+          "20261123T142724Z-9bb16d198f80"
+        ],
+        "figures": 1,
+        "journal_sha256": "2a063efc2461c72e650461508705797f984f85c1e06111bbd27909e9b9c9f62a"
+      },
+      {
+        "step": "wavelet-helper",
+        "tool": "acycle_menu_helper",
+        "selector": "WaveletSpectrum_legacy",
+        "run_id": "20261123T142742Z-d2946348424f",
+        "source_runs": [],
+        "figures": 0,
+        "journal_sha256": "6729620e8f041b61ceb6455b48fb4e347feeacf71517bdfbc543f47b3cc34110"
+      },
+      {
+        "step": "wavelet",
+        "tool": "acycle_menu_analyzer",
+        "selector": "WaveletSpectrum_legacy",
+        "run_id": "20261123T142749Z-794b0f548fe3",
+        "source_runs": [
+          "20261123T142742Z-d2946348424f"
+        ],
+        "figures": 0,
+        "journal_sha256": "21defc1b7eeb343cfdf3843a433bf0ecf024dd0758af13d0fbae986433b32bfa"
+      },
+      {
+        "step": "wavelet-plot",
+        "tool": "acycle_menu_plotter",
+        "selector": "WaveletSpectrum_legacy",
+        "run_id": "20261123T142756Z-45a11aa25a5b",
+        "source_runs": [
+          "20261123T142742Z-d2946348424f",
+          "20261123T142749Z-794b0f548fe3"
+        ],
+        "figures": 1,
+        "journal_sha256": "4927916cd3c52a19ece417da3db42c64d69d1e7faf5a2403895d416e9cb794f0"
+      }
+    ]
+  },
+  {
+    "case": "wayao",
+    "calls": 47,
+    "execution_ok": true,
+    "checks_passed": 39,
+    "checks_total": 39,
+    "check_outcomes_match_bridge": true,
+    "bridge_raw_check_rows": 45,
+    "science": {
+      "sampling": {
+        "median": 0.3333334000000008,
+        "mean": 0.3534136546184741
+      },
+      "coco": {
+        "rate": 8.094053177257525,
+        "correlation": 0.4786667980575245,
+        "p": 0,
+        "simulations": 1000,
+        "rate_count": 300,
+        "mc_exceedances": 0,
+        "empirical_p_add_one": 0.000999000999000999
+      },
+      "evolution": {
+        "window": 40,
+        "step": 0.33,
+        "size": [
+          534,
+          112
+        ],
+        "frequency_bounds": [
+          0,
+          0.7
+        ]
+      },
+      "age_model_edge": {
+        "historical": [
+          404.0830888888889,
+          2027.0414044444444
+        ],
+        "linear_extrapolation": [
+          290.8636363636365,
+          2309.2788461538457
+        ],
+        "max_difference": 282.2374417094013
+      }
+    },
+    "failed_checks": [],
+    "trace": [
+      {
+        "step": "sort-helper",
+        "tool": "acycle_menu_helper",
+        "selector": "SortUnique_legacy",
+        "run_id": "20261123T142451Z-aedfd6fd5b58",
+        "source_runs": [],
+        "figures": 0,
+        "journal_sha256": "b0b783b875592bbd04c8ba78bbdd5a140904aaed8fafc47c8b6967141539cdd0"
+      },
+      {
+        "step": "sort",
+        "tool": "acycle_menu_analyzer",
+        "selector": "SortUnique_legacy",
+        "run_id": "20261123T142501Z-572e7867ea6b",
+        "source_runs": [
+          "20261123T142451Z-aedfd6fd5b58"
+        ],
+        "figures": 0,
+        "journal_sha256": "6c288c4a9a67e2183a43ac9d101aec8a2c5be36a1891f5b6a78a3d44c2944fee"
+      },
+      {
+        "step": "sampling-helper",
+        "tool": "acycle_menu_helper",
+        "selector": "SamplingRate_legacy",
+        "run_id": "20261123T142511Z-d3be567d2517",
+        "source_runs": [],
+        "figures": 0,
+        "journal_sha256": "582c6e4a2499c0b6177c892768039a49099c294923236c234f920a57a1740435"
+      },
+      {
+        "step": "sampling",
+        "tool": "acycle_menu_analyzer",
+        "selector": "SamplingRate_legacy",
+        "run_id": "20261123T142520Z-46183546d1a9",
+        "source_runs": [
+          "20261123T142511Z-d3be567d2517"
+        ],
+        "figures": 0,
+        "journal_sha256": "77ac72d6b5e33c41cc9d9e03cb2b0f08dfde9673d0f1777c082ed6726619bc8c"
+      },
+      {
+        "step": "sampling-plot",
+        "tool": "acycle_menu_plotter",
+        "selector": "SamplingRate_legacy",
+        "run_id": "20261123T142530Z-d0d3e8201e42",
+        "source_runs": [
+          "20261123T142511Z-d3be567d2517",
+          "20261123T142520Z-46183546d1a9"
+        ],
+        "figures": 2,
+        "journal_sha256": "a5a3be8706c4c5ac07a6f05e21cc91253feb38c846881939c8094624c287d66f"
+      },
+      {
+        "step": "interpolate-helper",
+        "tool": "acycle_menu_helper",
+        "selector": "interpolate_legacy",
+        "run_id": "20261123T142546Z-3e3a3d6ceef3",
+        "source_runs": [],
+        "figures": 0,
+        "journal_sha256": "3c36065d47643ecdb80cc06cd6afe231eb7609d6d67fbe91e62f7433438a91ff"
+      },
+      {
+        "step": "interpolate",
+        "tool": "acycle_menu_analyzer",
+        "selector": "interpolate_legacy",
+        "run_id": "20261123T142556Z-d4fc96b526e8",
+        "source_runs": [
+          "20261123T142546Z-3e3a3d6ceef3"
+        ],
+        "figures": 0,
+        "journal_sha256": "ea09419eaaf5c443818f7978a62b2e03bd7a893307bb68f94fe723837a37ee61"
+      },
+      {
+        "step": "detrend-helper",
+        "tool": "acycle_menu_helper",
+        "selector": "Detrending_legacy",
+        "run_id": "20261123T142605Z-7810e93cf92f",
+        "source_runs": [],
+        "figures": 0,
+        "journal_sha256": "0cd40ac69b143a309724e7389174b13d81c3fb8e84531e1e3c67652334374c86"
+      },
+      {
+        "step": "detrend",
+        "tool": "acycle_menu_analyzer",
+        "selector": "Detrending_legacy",
+        "run_id": "20261123T142615Z-ff3bd170fe61",
+        "source_runs": [
+          "20261123T142605Z-7810e93cf92f"
+        ],
+        "figures": 0,
+        "journal_sha256": "23ec5e4ab338bbf8479902284b98002aacd32bf5c40d4656b306fe7459f49e74"
+      },
+      {
+        "step": "detrend-plot",
+        "tool": "acycle_menu_plotter",
+        "selector": "Detrending_legacy",
+        "run_id": "20261123T142625Z-d9b5c7991a9d",
+        "source_runs": [
+          "20261123T142605Z-7810e93cf92f",
+          "20261123T142615Z-ff3bd170fe61"
+        ],
+        "figures": 1,
+        "journal_sha256": "62d3a8db16ba401dc500fd580a618354d0ad7eb789e0a03359a70a5a6e353c50"
+      },
+      {
+        "step": "master-detrend-helper",
+        "tool": "acycle_menu_helper",
+        "selector": "Detrending",
+        "run_id": "20261123T142640Z-f9e1a6595e35",
+        "source_runs": [],
+        "figures": 0,
+        "journal_sha256": "0cd40ac69b143a309724e7389174b13d81c3fb8e84531e1e3c67652334374c86"
+      },
+      {
+        "step": "master-detrend",
+        "tool": "acycle_menu_analyzer",
+        "selector": "Detrending",
+        "run_id": "20261123T142650Z-7476c37903e5",
+        "source_runs": [
+          "20261123T142640Z-f9e1a6595e35"
+        ],
+        "figures": 0,
+        "journal_sha256": "23ec5e4ab338bbf8479902284b98002aacd32bf5c40d4656b306fe7459f49e74"
+      },
+      {
+        "step": "mtm-helper",
+        "tool": "acycle_menu_helper",
+        "selector": "PowerSpectrum_legacy",
+        "run_id": "20261123T142700Z-7490d34bb172",
+        "source_runs": [],
+        "figures": 0,
+        "journal_sha256": "27c3d80550e7e4f692abf60dfff13d0b1073e5bd0dd6aa41127d6bc7143e9ad9"
+      },
+      {
+        "step": "mtm",
+        "tool": "acycle_menu_analyzer",
+        "selector": "PowerSpectrum_legacy",
+        "run_id": "20261123T142710Z-fa5b85cd8d47",
+        "source_runs": [
+          "20261123T142700Z-7490d34bb172"
+        ],
+        "figures": 0,
+        "journal_sha256": "37573358fafff68564883fda10d71cc30fa7d66cb101d1047b503adec4eb7756"
+      },
+      {
+        "step": "mtm-plot",
+        "tool": "acycle_menu_plotter",
+        "selector": "PowerSpectrum_legacy",
+        "run_id": "20261123T142720Z-19d9d2c4099f",
+        "source_runs": [
+          "20261123T142700Z-7490d34bb172",
+          "20261123T142710Z-fa5b85cd8d47"
+        ],
+        "figures": 2,
+        "journal_sha256": "02d1f2471c0d16deae00171101031157fdf2bf636f007d17964baad6283d59bd"
+      },
+      {
+        "step": "mtm-replay",
+        "tool": "acycle_menu_replay",
+        "selector": "PowerSpectrum_legacy",
+        "run_id": "20261123T142736Z-67d3bc8938c2",
+        "source_runs": [
+          "20261123T142710Z-fa5b85cd8d47"
+        ],
+        "figures": 0,
+        "journal_sha256": "37573358fafff68564883fda10d71cc30fa7d66cb101d1047b503adec4eb7756"
+      },
+      {
+        "step": "master-mtm-helper",
+        "tool": "acycle_menu_helper",
+        "selector": "PowerSpectrum",
+        "run_id": "20261123T142747Z-3374a24a0da3",
+        "source_runs": [],
+        "figures": 0,
+        "journal_sha256": "27c3d80550e7e4f692abf60dfff13d0b1073e5bd0dd6aa41127d6bc7143e9ad9"
+      },
+      {
+        "step": "master-mtm",
+        "tool": "acycle_menu_analyzer",
+        "selector": "PowerSpectrum",
+        "run_id": "20261123T142757Z-3976be479cb1",
+        "source_runs": [
+          "20261123T142747Z-3374a24a0da3"
+        ],
+        "figures": 0,
+        "journal_sha256": "37573358fafff68564883fda10d71cc30fa7d66cb101d1047b503adec4eb7756"
+      },
+      {
+        "step": "master-mtm-plot",
+        "tool": "acycle_menu_plotter",
+        "selector": "PowerSpectrum",
+        "run_id": "20261123T142807Z-b0fc3a7116dc",
+        "source_runs": [
+          "20261123T142747Z-3374a24a0da3",
+          "20261123T142757Z-3976be479cb1"
+        ],
+        "figures": 1,
+        "journal_sha256": "02d1f2471c0d16deae00171101031157fdf2bf636f007d17964baad6283d59bd"
+      },
+      {
+        "step": "mtm-linear-fit-diagnostic-helper",
+        "tool": "acycle_menu_helper",
+        "selector": "PowerSpectrum_legacy",
+        "run_id": "20261123T142823Z-75be57bfc9b9",
+        "source_runs": [],
+        "figures": 0,
+        "journal_sha256": "27c3d80550e7e4f692abf60dfff13d0b1073e5bd0dd6aa41127d6bc7143e9ad9"
+      },
+      {
+        "step": "mtm-linear-fit-diagnostic",
+        "tool": "acycle_menu_analyzer",
+        "selector": "PowerSpectrum_legacy",
+        "run_id": "20261123T142833Z-62d12b476e2e",
+        "source_runs": [
+          "20261123T142823Z-75be57bfc9b9"
+        ],
+        "figures": 0,
+        "journal_sha256": "37573358fafff68564883fda10d71cc30fa7d66cb101d1047b503adec4eb7756"
+      },
+      {
+        "step": "mtm-linear-fit-diagnostic-plot",
+        "tool": "acycle_menu_plotter",
+        "selector": "PowerSpectrum_legacy",
+        "run_id": "20261123T142843Z-285028386fa0",
+        "source_runs": [
+          "20261123T142823Z-75be57bfc9b9",
+          "20261123T142833Z-62d12b476e2e"
+        ],
+        "figures": 2,
+        "journal_sha256": "02d1f2471c0d16deae00171101031157fdf2bf636f007d17964baad6283d59bd"
+      },
+      {
+        "step": "mtm-panel-diagnostic-helper",
+        "tool": "acycle_menu_helper",
+        "selector": "PowerSpectrum_legacy",
+        "run_id": "20261123T142900Z-55c0415e8590",
+        "source_runs": [],
+        "figures": 0,
+        "journal_sha256": "27c3d80550e7e4f692abf60dfff13d0b1073e5bd0dd6aa41127d6bc7143e9ad9"
+      },
+      {
+        "step": "mtm-panel-diagnostic",
+        "tool": "acycle_menu_analyzer",
+        "selector": "PowerSpectrum_legacy",
+        "run_id": "20261123T142910Z-6d23020d31d4",
+        "source_runs": [
+          "20261123T142900Z-55c0415e8590"
+        ],
+        "figures": 0,
+        "journal_sha256": "37573358fafff68564883fda10d71cc30fa7d66cb101d1047b503adec4eb7756"
+      },
+      {
+        "step": "mtm-panel-diagnostic-plot",
+        "tool": "acycle_menu_plotter",
+        "selector": "PowerSpectrum_legacy",
+        "run_id": "20261123T142920Z-bfac6e043b2d",
+        "source_runs": [
+          "20261123T142900Z-55c0415e8590",
+          "20261123T142910Z-6d23020d31d4"
+        ],
+        "figures": 2,
+        "journal_sha256": "02d1f2471c0d16deae00171101031157fdf2bf636f007d17964baad6283d59bd"
+      },
+      {
+        "step": "evolution-helper",
+        "tool": "acycle_menu_helper",
+        "selector": "EvolutionarySpectrum_legacy",
+        "run_id": "20261123T142936Z-35028db6d873",
+        "source_runs": [],
+        "figures": 0,
+        "journal_sha256": "f509c2f59161743096fdc63ac63b2d9e8cbc2e2da121ca77563c2a2c96ef1640"
+      },
+      {
+        "step": "evolution",
+        "tool": "acycle_menu_analyzer",
+        "selector": "EvolutionarySpectrum_legacy",
+        "run_id": "20261123T142946Z-dba4810579dd",
+        "source_runs": [
+          "20261123T142936Z-35028db6d873"
+        ],
+        "figures": 0,
+        "journal_sha256": "822a22744ef933db303bedda70c345472c95e24af1d55c16c03fab2dca543bfc"
+      },
+      {
+        "step": "evolution-plot",
+        "tool": "acycle_menu_plotter",
+        "selector": "EvolutionarySpectrum_legacy",
+        "run_id": "20261123T142955Z-3b05c1ee4a41",
+        "source_runs": [
+          "20261123T142936Z-35028db6d873",
+          "20261123T142946Z-dba4810579dd"
+        ],
+        "figures": 1,
+        "journal_sha256": "2a063efc2461c72e650461508705797f984f85c1e06111bbd27909e9b9c9f62a"
+      },
+      {
+        "step": "filter-helper",
+        "tool": "acycle_menu_helper",
+        "selector": "Bandpass_legacy",
+        "run_id": "20261123T143011Z-adf649f2eff2",
+        "source_runs": [],
+        "figures": 0,
+        "journal_sha256": "29f69783a7335673cd3601f99894a62a862d3505bbd5692a53a5badf557b2078"
+      },
+      {
+        "step": "filter",
+        "tool": "acycle_menu_analyzer",
+        "selector": "Bandpass_legacy",
+        "run_id": "20261123T143021Z-6ed8573c5719",
+        "source_runs": [
+          "20261123T143011Z-adf649f2eff2"
+        ],
+        "figures": 0,
+        "journal_sha256": "4e2f6954c39c575c8f6e1354da4eb0d7a8e76f2c3c1d2f17e76924ae4dd2b335"
+      },
+      {
+        "step": "filter-plot",
+        "tool": "acycle_menu_plotter",
+        "selector": "Bandpass_legacy",
+        "run_id": "20261123T143031Z-a308f02e8b2c",
+        "source_runs": [
+          "20261123T143011Z-adf649f2eff2",
+          "20261123T143021Z-6ed8573c5719"
+        ],
+        "figures": 1,
+        "journal_sha256": "6faf53bcde1bd2e38ffd87c432e3b3874641b694e4cbf55ab5b89b75092b9657"
+      },
+      {
+        "step": "age-model-helper",
+        "tool": "acycle_menu_helper",
+        "selector": "BuildAgeModel_legacy",
+        "run_id": "20261123T143046Z-cb1db5c55ad9",
+        "source_runs": [],
+        "figures": 0,
+        "journal_sha256": "a90f20d04544ba062962af2e2e8239a4d1c917b4b857aee1a91296bed495171b"
+      },
+      {
+        "step": "age-model",
+        "tool": "acycle_menu_analyzer",
+        "selector": "BuildAgeModel_legacy",
+        "run_id": "20261123T143055Z-bbf36c364e06",
+        "source_runs": [
+          "20261123T143046Z-cb1db5c55ad9"
+        ],
+        "figures": 0,
+        "journal_sha256": "580046b0c2ab97a7aa5281726b8c0db56bb6c635939fc17e84d6662c04766289"
+      },
+      {
+        "step": "age-model-plot",
+        "tool": "acycle_menu_plotter",
+        "selector": "BuildAgeModel_legacy",
+        "run_id": "20261123T143105Z-a86950c23f80",
+        "source_runs": [
+          "20261123T143046Z-cb1db5c55ad9",
+          "20261123T143055Z-bbf36c364e06"
+        ],
+        "figures": 2,
+        "journal_sha256": "c0a7accf4b143db03e695426115b0821fd35f84628a3abf9af1d94a92cf8f795"
+      },
+      {
+        "step": "tuning-helper",
+        "tool": "acycle_menu_helper",
+        "selector": "AgeScale_legacy",
+        "run_id": "20261123T143120Z-80e8ef7a219f",
+        "source_runs": [],
+        "figures": 0,
+        "journal_sha256": "2be06ec5b4834376e5787e3b8d477ec5b2959fc072a2170cd88bf159f5e3454a"
+      },
+      {
+        "step": "tuning",
+        "tool": "acycle_menu_analyzer",
+        "selector": "AgeScale_legacy",
+        "run_id": "20261123T143130Z-908cda776e8e",
+        "source_runs": [
+          "20261123T143120Z-80e8ef7a219f"
+        ],
+        "figures": 0,
+        "journal_sha256": "9123f8e08794c228c921d01c473f9db4d61570f841d6ff1430980e3c43ea55e0"
+      },
+      {
+        "step": "tuning-plot",
+        "tool": "acycle_menu_plotter",
+        "selector": "AgeScale_legacy",
+        "run_id": "20261123T143139Z-a3fb30997f56",
+        "source_runs": [
+          "20261123T143120Z-80e8ef7a219f",
+          "20261123T143130Z-908cda776e8e"
+        ],
+        "figures": 1,
+        "journal_sha256": "9e3a140da65cae6f601f6bdc1bd88a13a9986073caa4c221cd9a8d4e3b53ea46"
+      },
+      {
+        "step": "target-helper",
+        "tool": "acycle_menu_helper",
+        "selector": "gentarget_legacy",
+        "run_id": "20261123T143154Z-5698284f6048",
+        "source_runs": [],
+        "figures": 0,
+        "journal_sha256": "e30a026c6616b140d23dd5153c354d282b943f76d60b3e550b7852a70ecf9766"
+      },
+      {
+        "step": "target",
+        "tool": "acycle_menu_analyzer",
+        "selector": "gentarget_legacy",
+        "run_id": "20261123T143203Z-cdcfba20e8cd",
+        "source_runs": [
+          "20261123T143154Z-5698284f6048"
+        ],
+        "figures": 0,
+        "journal_sha256": "4c93cccae79eb528106e225318cbab928964bbf23a3b788840426bd2af3b3f57"
+      },
+      {
+        "step": "coco-helper",
+        "tool": "acycle_menu_helper",
+        "selector": "corrcoefslices_rank_legacy",
+        "run_id": "20261123T143213Z-680e4911d541",
+        "source_runs": [],
+        "figures": 0,
+        "journal_sha256": "e30a026c6616b140d23dd5153c354d282b943f76d60b3e550b7852a70ecf9766"
+      },
+      {
+        "step": "coco",
+        "tool": "acycle_menu_analyzer",
+        "selector": "corrcoefslices_rank_legacy",
+        "run_id": "20261123T143223Z-b126e9da97e4",
+        "source_runs": [
+          "20261123T143213Z-680e4911d541"
+        ],
+        "figures": 0,
+        "journal_sha256": "984c6b97268e0d1fcea3af550ab975615ce5b68fe88fbb3408b58f3b67da9637"
+      },
+      {
+        "step": "coco-replay",
+        "tool": "acycle_menu_replay",
+        "selector": "corrcoefslices_rank_legacy",
+        "run_id": "20261123T143330Z-1ee48e485f21",
+        "source_runs": [
+          "20261123T143223Z-b126e9da97e4"
+        ],
+        "figures": 0,
+        "journal_sha256": "984c6b97268e0d1fcea3af550ab975615ce5b68fe88fbb3408b58f3b67da9637"
+      },
+      {
+        "step": "ecoco-padding-helper",
+        "tool": "acycle_menu_helper",
+        "selector": "zeropad2_legacy",
+        "run_id": "20261123T143439Z-7ed487a144f0",
+        "source_runs": [],
+        "figures": 0,
+        "journal_sha256": "f509c2f59161743096fdc63ac63b2d9e8cbc2e2da121ca77563c2a2c96ef1640"
+      },
+      {
+        "step": "ecoco-padding",
+        "tool": "acycle_menu_analyzer",
+        "selector": "zeropad2_legacy",
+        "run_id": "20261123T143448Z-091ce4e81ff8",
+        "source_runs": [
+          "20261123T143439Z-7ed487a144f0"
+        ],
+        "figures": 0,
+        "journal_sha256": "822a22744ef933db303bedda70c345472c95e24af1d55c16c03fab2dca543bfc"
+      },
+      {
+        "step": "ecoco-helper",
+        "tool": "acycle_menu_helper",
+        "selector": "ecoco_legacy",
+        "run_id": "20261123T143457Z-47f5e35b7fe8",
+        "source_runs": [],
+        "figures": 0,
+        "journal_sha256": "e30a026c6616b140d23dd5153c354d282b943f76d60b3e550b7852a70ecf9766"
+      },
+      {
+        "step": "ecoco",
+        "tool": "acycle_menu_analyzer",
+        "selector": "ecoco_legacy",
+        "run_id": "20261123T143507Z-1424859d71ee",
+        "source_runs": [
+          "20261123T143457Z-47f5e35b7fe8"
+        ],
+        "figures": 0,
+        "journal_sha256": "ea136e990ea619cc9233babfe1bc29a3b8da94361261d6cc09d7376227859f23"
+      },
+      {
+        "step": "ecoco-plot",
+        "tool": "acycle_menu_plotter",
+        "selector": "ecocoplot_legacy",
+        "run_id": "20261123T143659Z-3ca4254d9faf",
+        "source_runs": [],
+        "figures": 2,
+        "journal_sha256": "93aae302b802d0961ee135baebfe94745695afbb9abad1565343e6f5782306f9"
+      }
+    ]
+  }
+]

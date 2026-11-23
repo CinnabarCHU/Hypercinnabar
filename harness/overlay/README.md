@@ -4,6 +4,10 @@ Version 0.6.0 adds versioned menu discovery, MATLAB helper, analyzer and plotter
 
 MATLAB-first cyclostratigraphy tools for the official [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness). Numerical processing, spectra, significance, filters, envelopes, age conversion, figures, CSV and MAT output execute in MATLAB, calling original [Acycle](https://github.com/mingsongli/acycle) functions. Python handles tool schemas, input snapshots, orchestration, provenance and model communication. There is no automatic Python numerical fallback.
 
+## MATLAB Runtime support
+
+The published client and catalog can start without local MATLAB. Local numerical runs call a licensed MATLAB executable with `-batch` and load Acycle source files. This distribution has no MATLAB Compiler standalone dispatcher: installing **MATLAB Runtime alone** does not enable local helpers, analyzers, plotters, or journal replay. A compiled Acycle desktop executable cannot substitute for this JSON dispatcher. Some high-level operations can use the configured GitHub backend (MATLAB runs remotely); versioned menu roles and native calls currently require the local backend.
+
 ## Install and run
 
 Requires Python 3.10+, MATLAB with Signal Processing, Statistics and Machine Learning, and Curve Fitting toolboxes, and an Acycle source checkout. Validated upstream reference: `dcba4279168745b563e0535b954297023dd62fc7`.

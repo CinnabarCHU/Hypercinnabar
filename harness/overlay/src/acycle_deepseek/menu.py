@@ -409,14 +409,14 @@ def schemas():
         ),
         spec(
             "helper",
-            "Resolve a menu input into params, plt and dat. Select a version in input.operation or override.params.operation. Only helper accepts override. Its run_id retains full typed values.",
+            "Resolve a menu input into params, plt and dat. Select a version in input.operation or override.params.operation. For numeric text pass input_path, input_kind=matrix and the actual numeric field (usually data). The path kind passes a filename string to MATLAB without reading any numbers. Its run_id retains full typed values.",
             {
                 "menu": string,
                 "input": obj,
                 "override": obj,
                 "input_path": string,
-                "input_field": string,
-                "input_kind": {"enum": ["matrix", "image", "path"], "type": "string"},
+                "input_field": {"type": "string", "description": "Destination MATLAB field, e.g. data for a series or inputfile for a method requiring a filename."},
+                "input_kind": {"enum": ["matrix", "image", "path"], "type": "string", "description": "matrix reads numeric columns (default); image reads pixels; path passes only the filename string."},
             },
             ["menu"],
         ),

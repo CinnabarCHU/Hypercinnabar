@@ -94,7 +94,9 @@ def _execute(request):
         raise ValueError('ACYCLE_BACKEND must be local or github; no Python science fallback exists')
     executable = os.environ.get('MATLAB_EXECUTABLE', 'matlab')
     if not shutil.which(executable):
-        raise RuntimeError('MATLAB is required. Set MATLAB_EXECUTABLE or ACYCLE_BACKEND=github. No Python numerical fallback is used.')
+        if request.get('operation') in {'native', 'menu'}:
+            raise RuntimeError('MATLAB is required. Set MATLAB_EXECUTABLE to a licensed MATLAB installation for local menu/native calls. MATLAB Runtime alone is not a supported backend. No Python numerical fallback is used.')
+        raise RuntimeError('MATLAB is required. Set MATLAB_EXECUTABLE or configure ACYCLE_BACKEND=github for remote execution. MATLAB Runtime alone is not a supported backend. No Python numerical fallback is used.')
     if not request.get('acycle_root'):
         raise RuntimeError('Set ACYCLE_ROOT to an Acycle source checkout')
     output = Path(request['output_dir'])
@@ -450,7 +452,7 @@ def dispatch(name, args, workspace='.'):
         return run(root, args)
     if name == 'acycle_capabilities':
         remote = os.environ.get('ACYCLE_BACKEND','local') == 'github'
-        return {'version':'0.6.0', 'menu_interfaces':menu.capabilities(), 'scientific_backend':'MATLAB/Acycle',
+        return {'version':'0.6.0', 'menu_interfaces':menu.capabilities(), 'scientific_backend':'MATLAB/Acycle', 'compiled_matlab_runtime_backend':False,
                 'backend':os.environ.get('ACYCLE_BACKEND','local'),
                 'matlab_available':bool(shutil.which(os.environ.get('MATLAB_EXECUTABLE','matlab'))),
                 'acycle_root':os.environ.get('ACYCLE_ROOT'),

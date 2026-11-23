@@ -1,0 +1,53 @@
+{
+  "scope": "Official dsh-tools registry, no matlab or mcc executable. The MathWorks Runtime was not installed in this probe.",
+  "plugin": "0.6.0",
+  "acycle_capabilities": {
+    "ok": true,
+    "matlab_available": false,
+    "compiled_matlab_runtime_backend": false
+  },
+  "acycle_menu_catalog": {
+    "ok": true,
+    "menu": "menu_power",
+    "versions": [
+      "Desktop",
+      "Desktop_legacy",
+      "MtmTaperCount",
+      "PowerSpectrum",
+      "PowerSpectrum_legacy",
+      "SWA",
+      "SWA_legacy",
+      "SpectralBendingPowerLaw",
+      "SpectralBendingPowerLaw_legacy",
+      "SpectralPowerLaw",
+      "SpectralPowerLaw_legacy",
+      "ftestmtm",
+      "ftestmtmML",
+      "ftestmtmML_legacy",
+      "ftestmtm_legacy",
+      "minirho",
+      "minirho_legacy",
+      "minirhos0",
+      "minirhos0_legacy",
+      "mtmdofs",
+      "mtmdofs_legacy",
+      "plomb_robustar1",
+      "plomb_robustar1_legacy",
+      "redconfML",
+      "redconfML_legacy",
+      "redconf_any",
+      "redconf_any_legacy",
+      "redconfchi2",
+      "redconfchi2_legacy",
+      "redconftabtchi",
+      "redconftabtchi_legacy",
+      "spectralswafdr",
+      "spectralswafdr_legacy"
+    ]
+  },
+  "acycle_menu_helper": {
+    "ok": false,
+    "diagnostic": "MATLAB is required. Set MATLAB_EXECUTABLE to a licensed MATLAB installation for local menu/native calls. MATLAB Runtime alone is not a supported backend. No Python numerical fallback is used.",
+    "run_id": "20261123T144032Z-058ed1420432"
+  }
+}

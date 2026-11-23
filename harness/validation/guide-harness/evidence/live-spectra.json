@@ -1,0 +1,707 @@
+{
+  "insolation": {
+    "model": "deepseek-flash",
+    "official_sdk": "0.2.1-rc.3",
+    "session": "session-f5eb053e76b240369d52ba234b3fa42e",
+    "attachment_sha256": "6397fd514c2efba370c59a28cb10224b96d3e498469aa0e80bb0eb3d1bc6933c",
+    "shell_tools_disabled": true,
+    "sdk_status": "execution_failed",
+    "input_text": "附件是指南 6.1 的日照量示例，第一列是 kyr BP，第二列是日照量。请通过 Acycle Harness 实际分析并报告主要谱峰、单位、实际演化谱步长和可查看的产物。排序、去均值，1 kyr 等间隔，2π MTM (NW=2)，这次取 5 倍零填充 NFFT=10005，与指南结果图对照；演化谱采用 LAH FFT、400 kyr 窗口、请求步长 3.2 kyr、图上频率上限 0.06 cycles/kyr。可用高层一次完成；如果其选项和指南有差别，请明确指出。",
+    "tools": [
+      {
+        "tool": "skill",
+        "outcome": "ok"
+      },
+      {
+        "tool": "skill",
+        "outcome": "ok"
+      },
+      {
+        "tool": "skill",
+        "outcome": "ok"
+      },
+      {
+        "tool": "acycle_capabilities",
+        "outcome": "ok"
+      },
+      {
+        "tool": "acycle_inspect",
+        "outcome": "ok"
+      },
+      {
+        "tool": "working_directory",
+        "outcome": "ok"
+      },
+      {
+        "tool": "acycle_catalog",
+        "outcome": "ok"
+      },
+      {
+        "tool": "acycle_menu_catalog",
+        "outcome": "ok"
+      },
+      {
+        "tool": "acycle_catalog",
+        "outcome": "ok"
+      },
+      {
+        "tool": "acycle_menu_catalog",
+        "outcome": "ok"
+      },
+      {
+        "tool": "acycle_menu_catalog",
+        "outcome": "ok"
+      },
+      {
+        "tool": "acycle_native",
+        "outcome": "error",
+        "reason": "Native request did not specify a registered public entrypoint"
+      },
+      {
+        "tool": "acycle_analyze",
+        "outcome": "ok"
+      },
+      {
+        "tool": "acycle_get_run",
+        "outcome": "ok"
+      },
+      {
+        "tool": "read_image",
+        "outcome": "ok"
+      },
+      {
+        "tool": "read_image",
+        "outcome": "ok"
+      },
+      {
+        "tool": "read_image",
+        "outcome": "ok"
+      },
+      {
+        "tool": "acycle_catalog",
+        "outcome": "ok"
+      },
+      {
+        "tool": "acycle_menu_catalog",
+        "outcome": "ok"
+      },
+      {
+        "tool": "acycle_menu_catalog",
+        "outcome": "ok"
+      },
+      {
+        "tool": "acycle_catalog",
+        "outcome": "ok"
+      },
+      {
+        "tool": "acycle_inspect",
+        "outcome": "ok"
+      },
+      {
+        "tool": "acycle_inspect",
+        "outcome": "ok"
+      },
+      {
+        "tool": "acycle_inspect",
+        "outcome": "ok"
+      },
+      {
+        "tool": "acycle_rerun",
+        "outcome": "ok"
+      },
+      {
+        "tool": "read_image",
+        "outcome": "ok"
+      }
+    ],
+    "runs": [
+      {
+        "id": "20261123T141915Z-31885f311f05",
+        "parent": null,
+        "operation": "analyze",
+        "worker_sha": "1e8c533386d51eb046cf987e305d24f0dab11ef9",
+        "workflow_run": "45193155366",
+        "matlab": "2024b",
+        "requested_parameters": {
+          "coordinate_unit": "kyr",
+          "detrend": "mean",
+          "dt": 1,
+          "evolution": true,
+          "evolution_step": 3.2,
+          "evolution_window": 400,
+          "fmax": 0.06,
+          "mtm_nw": 2,
+          "nfft": 10005
+        },
+        "comparison": {
+          "rows": 2001,
+          "processed_max_absolute_difference": 0.0,
+          "nfft": 10005,
+          "spectrum_bins": 5003,
+          "frequency_max_absolute_difference": 0.0,
+          "power_max_absolute_difference_over_reference_max": 3.6936438753393765e-15,
+          "check_periods": [
+            23.7,
+            22.4,
+            19.0
+          ],
+          "closest_local_peak_live": [
+            23.70853080568722,
+            22.382550335570464,
+            18.98481973434535
+          ],
+          "closest_local_peak_reference": [
+            23.70853080568722,
+            22.382550335570464,
+            18.98481973434535
+          ],
+          "model_visible_top10_periods": [
+            23.376168224299068,
+            18.98481973434535,
+            19.166666666666668,
+            18.80639097744361,
+            23.992805755395683,
+            23.708530805687204,
+            22.687074829931973,
+            22.38255033557047,
+            22.13495575221239,
+            23
+          ],
+          "effective_smooth_fraction": 0.25,
+          "evolution_step_actual": 3
+        },
+        "artifact_sha256": {
+          "cleaned_csv": "7e5645d836ccb803ac9bc7a270af33ff3d431a6aa85e94eb4a2c50ff8108d941",
+          "prepared_csv": "7e5645d836ccb803ac9bc7a270af33ff3d431a6aa85e94eb4a2c50ff8108d941",
+          "processed_csv": "3d66a438c29da03feb39bc7f983f2bb0f625fd49c29d5b461990f84b510c0108",
+          "preprocess_png": "98d8ec53b4dfcf47ae1dceb8ee0fa7b1c1b45e0bc95428e1e3b1b5daa616b7c0",
+          "spectrum_png": "172d93b855ba3edcc71a3e74e613ce4e7cd7aff75f2b29739b6aede2bf87c2e2",
+          "robust_spectrum_csv": "b9680c13b28378fa58b545c7a810a259af6a701057c1d0e17f900932b8a64b1e",
+          "classic_spectrum_csv": "e1b5ca029b267952e56fb93799fde2c4e76f3d30203c76fc61219f5ea78fb38d",
+          "evolution_png": "caf74d91961756846021dc9c2cfd22c543153ee67db7043a84bf60d4979cf7dd",
+          "evolution_csv": "582cc8c2f997167a56108b002739033b41edb828d881f8930479f057fb7d88c0",
+          "preprocess_fig": "8038978f266ea4d70d4886173dfd2d358f6e9712a010bb26ef7340376da148a9",
+          "spectrum_fig": "7da6c8c0383e730064a71351af9776ac2f60a4e558c0dc0c991194b15b437745",
+          "evolution_fig": "1ebae1e151058649f2b28fbec62d7f5c766f3d09eec493928cc1be7167dc9cb6",
+          "analysis_mat": "a5cb2eddd648c5eab159aff74ac6adaf20ea61a8ced9dbdfbd5a03616c7b2636",
+          "provenance_json": "af9dbb37dc51fa58ae8c837321f4c57b7b5f778d45427ff18c9b047009d53993"
+        }
+      },
+      {
+        "id": "20261123T142402Z-68d9e30f6701",
+        "parent": "20261123T141915Z-31885f311f05",
+        "operation": "analyze",
+        "worker_sha": "b3a9d7c8ccd8722a693eb15b56d9d43540c52582",
+        "workflow_run": "45193979882",
+        "matlab": "2024b",
+        "requested_parameters": {
+          "coordinate_unit": "kyr",
+          "detrend": "mean",
+          "dt": 1,
+          "evolution": false,
+          "evolution_step": 3.2,
+          "evolution_window": 400,
+          "fmax": 0.03,
+          "mtm_nw": 2,
+          "nfft": 10005,
+          "span": 0.35,
+          "smooth_fraction": 0.25,
+          "fit_fmax": 0.5
+        },
+        "comparison": {
+          "rows": 2001,
+          "processed_max_absolute_difference": 0.0,
+          "nfft": 10005,
+          "spectrum_bins": 5003,
+          "frequency_max_absolute_difference": 0.0,
+          "power_max_absolute_difference_over_reference_max": 4.024346986869895e-16,
+          "check_periods": [
+            23.7,
+            22.4,
+            19.0
+          ],
+          "closest_local_peak_live": [
+            23.70853080568722,
+            22.382550335570464,
+            18.98481973434535
+          ],
+          "closest_local_peak_reference": [
+            23.70853080568722,
+            22.382550335570464,
+            18.98481973434535
+          ],
+          "model_visible_top10_periods": [
+            95.28571428571426,
+            100.05,
+            526.578947368421,
+            333.5,
+            400.2,
+            126.64556962025317,
+            133.4,
+            119.10714285714285,
+            1111.6666666666667,
+            10005
+          ],
+          "effective_smooth_fraction": 0.25,
+          "evolution_step_actual": null
+        },
+        "artifact_sha256": {
+          "cleaned_csv": "7e5645d836ccb803ac9bc7a270af33ff3d431a6aa85e94eb4a2c50ff8108d941",
+          "prepared_csv": "7e5645d836ccb803ac9bc7a270af33ff3d431a6aa85e94eb4a2c50ff8108d941",
+          "processed_csv": "3d66a438c29da03feb39bc7f983f2bb0f625fd49c29d5b461990f84b510c0108",
+          "preprocess_png": "51ddfc9f5fa0d6639a342893455fb2295392041144353af2d6c2bd1299ac1b48",
+          "spectrum_png": "d162c80a9cadcb749a990609650cb94f97ecac05d5c1fcd887f8475fee921bfa",
+          "robust_spectrum_csv": "2f7da51c377c77c96532538159527bea97c34c7744a165c050eb76e30a3695ce",
+          "classic_spectrum_csv": "3a710388289ac5a4c8041ef107efb97d246c8ccb21abd4bd605eba9d331ae48f",
+          "preprocess_fig": "4a34465fc2995ecb8951f3f2e6be85236b22bb7617ab06cf6c446698245bcd89",
+          "spectrum_fig": "834f3db084a8ee5f531499e43838433c8ebac57fbec4cc1b4374dfeebe09d7ea",
+          "analysis_mat": "a21cc872f215d728c8cfbabd700b0d1059b6c50787bfbf746cebeeecb0622c5a",
+          "provenance_json": "e280a2e4050dbcf03b926de51266b281b22af244eb5eef3b2797ea527b9b45bc"
+        }
+      }
+    ],
+    "tool_calls": 26,
+    "returned_text": true,
+    "final_response_sha256": "4de0f441300889a1733bd7ce88e630554b514dbd5ae1342d24b3dc3af4c75a4c"
+  },
+  "etp": {
+    "model": "deepseek-flash",
+    "official_sdk": "0.2.1-rc.3",
+    "session": "session-cc773f4e23a54a77b22c0d0630f782df",
+    "attachment_sha256": "9653ac0d10ea7e4bad40afd4b553bacc3901b9c38e88b3da598e12f23565354f",
+    "shell_tools_disabled": true,
+    "sdk_status": "execution_failed",
+    "input_text": "附件是指南 6.2 自带的 La2004 ETP 示例，第一列 kyr BP，第二列为 ETP。请先通过 Acycle Harness 完成去均值、2π MTM (NW=2)、5 倍零填充 NFFT=10005、LAH 演化谱；采样为 1 kyr，窗 400 kyr，请求步长 3.2 kyr，图上频率上限 0.1 cycles/kyr。可用高层一次完成。报告实际算出的周期和实际步长、运行编号。这个回合先做这些，小波另做。",
+    "tools": [
+      {
+        "tool": "skill",
+        "outcome": "ok"
+      },
+      {
+        "tool": "skill",
+        "outcome": "ok"
+      },
+      {
+        "tool": "acycle_import_attachment",
+        "outcome": "ok"
+      },
+      {
+        "tool": "acycle_capabilities",
+        "outcome": "ok"
+      },
+      {
+        "tool": "acycle_analyze",
+        "outcome": "error",
+        "reason": "Unknown MATLAB parameter: method"
+      },
+      {
+        "tool": "acycle_analyze",
+        "outcome": "ok"
+      },
+      {
+        "tool": "acycle_get_run",
+        "outcome": "ok"
+      },
+      {
+        "tool": "read_image",
+        "outcome": "ok"
+      },
+      {
+        "tool": "read_image",
+        "outcome": "ok"
+      },
+      {
+        "tool": "acycle_inspect",
+        "outcome": "ok"
+      }
+    ],
+    "runs": [
+      {
+        "id": "20261123T141904Z-dd3c2a2555c7",
+        "parent": null,
+        "operation": "analyze",
+        "worker_sha": "710953f73d8337e587f7b3d28f66b3981d539e87",
+        "workflow_run": "45193115937",
+        "matlab": "2024b",
+        "requested_parameters": {
+          "coordinate_unit": "kyr",
+          "detrend": "mean",
+          "dt": 1,
+          "evolution": true,
+          "evolution_step": 3.2,
+          "evolution_window": 400,
+          "fmax": 0.1,
+          "mtm_nw": 2,
+          "nfft": 10005
+        },
+        "comparison": {
+          "rows": 2001,
+          "processed_max_absolute_difference": 0.0,
+          "nfft": 10005,
+          "spectrum_bins": 5003,
+          "frequency_max_absolute_difference": 0.0,
+          "power_max_absolute_difference_over_reference_max": 2.6944087714742274e-15,
+          "check_periods": [
+            405,
+            125,
+            95,
+            41,
+            23.7,
+            22.4,
+            19.0
+          ],
+          "closest_local_peak_live": [
+            400.19999999999936,
+            125.0625,
+            95.2857142857139,
+            41.004098360655775,
+            23.70853080568722,
+            22.382550335570464,
+            18.98481973434535
+          ],
+          "closest_local_peak_reference": [
+            400.19999999999936,
+            125.0625,
+            95.2857142857139,
+            41.004098360655775,
+            23.70853080568722,
+            22.382550335570464,
+            18.98481973434535
+          ],
+          "model_visible_top10_periods": [
+            23.376168224299068,
+            101.06060606060606,
+            95.28571428571426,
+            18.98481973434535,
+            91.78899082568807,
+            19.166666666666668,
+            18.80639097744361,
+            22.687074829931973,
+            23.992805755395683,
+            23.708530805687204
+          ],
+          "effective_smooth_fraction": 0.25,
+          "evolution_step_actual": 3
+        },
+        "artifact_sha256": {
+          "cleaned_csv": "3da9264c5a06f57d0494f0d526fa1c00eab14add8012c2aa0a1216f275562f58",
+          "prepared_csv": "3da9264c5a06f57d0494f0d526fa1c00eab14add8012c2aa0a1216f275562f58",
+          "processed_csv": "32244c243095208e4501f284042840815ad487953b5a29522fd85368b4f1df0d",
+          "preprocess_png": "065bc975e537d317620222da64de687a09eb5b13f3d70ca413f6f1c71afb0384",
+          "spectrum_png": "e92e9633c20fe5028bd002b209e9f502218d53834c79baeb0cff2962ab4609b8",
+          "robust_spectrum_csv": "612565e50b18c0e8e9c83859df12d6e5807a8749611e7c61850b48a61ad78f65",
+          "classic_spectrum_csv": "611ba5d6360faeb415cd3a1fb6aa5c42482cc89ec831dc699352be6f2f122514",
+          "evolution_png": "77537482703af840ee4fe26da909fc8d15056f40414fa2ac538d0ba8c1c1ef25",
+          "evolution_csv": "abe89faf97edf3501134f90ca2c98912d9db3e25145ce5633d9e479418df318e",
+          "preprocess_fig": "8d05c3ce7b1e558ca471df66022e25ccd57db8b0229af10126d5efd5d5102275",
+          "spectrum_fig": "2ab41ddb7b25042b2eee3df05706f72202961bb693794040e245a51c108bced5",
+          "evolution_fig": "2fba3a5a962fc7d3fb6afc9601004ae26f3304f6cd6267c78e0cd93ccc50e75c",
+          "analysis_mat": "5a021a01c3bc182e6b2e2f178be88b6750917865159dcd1e735f1f0af7cae286",
+          "provenance_json": "47ab1a99e24d244fe6388e7b06b9307a092b0a3967e9b1c4be008741bae0b0af"
+        }
+      }
+    ],
+    "tool_calls": 10,
+    "returned_text": true,
+    "final_response_sha256": "aef6db4db59ca664014fb36dc5ff09f01e4a2d0055d9be8e82badcaaf1929a1e"
+  },
+  "wayao": {
+    "model": "deepseek-flash",
+    "official_sdk": "0.2.1-rc.3",
+    "session": "session-6df497e7662e461b907a30ef56121ea0",
+    "attachment_sha256": "f39dcc29be09cd5a07ef1dcdd20c6fa30499213c204ce4897ac02d9f6f086c21",
+    "shell_tools_disabled": true,
+    "sdk_status": "completed",
+    "input_text": "附件是指南 6.3 瓦窑剖面自然伽马，第一列深度 m，第二列 GR。请通过 Acycle Harness 实际完成预处理、谱分析、演化谱和滤波并交付产物：排序去重、线性插值 0.33 m、80 m LOWESS 去趋势（均匀网格跨度 175.89 m，比例取 80/175.89），2π MTM (NW=2)，5 倍零填充 NFFT=2670，拟合稳健 AR1、对数功率、20% 中值平滑；谱分析图频率上限 1 cycle/m。LAH 演化谱窗口 40 m、步长 0.33 m；高斯带通 0.022–0.034 cycles/m。可用高层一次完成。请说明实际主要周期、运行号、哪些设置不能独立控制。这个回合先不做 COCO 和调谐。",
+    "tools": [
+      {
+        "tool": "skill",
+        "outcome": "ok"
+      },
+      {
+        "tool": "skill",
+        "outcome": "ok"
+      },
+      {
+        "tool": "skill",
+        "outcome": "ok"
+      },
+      {
+        "tool": "acycle_capabilities",
+        "outcome": "ok"
+      },
+      {
+        "tool": "acycle_import_attachment",
+        "outcome": "ok"
+      },
+      {
+        "tool": "acycle_inspect",
+        "outcome": "ok"
+      },
+      {
+        "tool": "acycle_analyze",
+        "outcome": "ok"
+      },
+      {
+        "tool": "acycle_catalog",
+        "outcome": "ok"
+      },
+      {
+        "tool": "acycle_rerun",
+        "outcome": "ok"
+      },
+      {
+        "tool": "read_image",
+        "outcome": "ok"
+      },
+      {
+        "tool": "read_image",
+        "outcome": "ok"
+      },
+      {
+        "tool": "read_image",
+        "outcome": "ok"
+      },
+      {
+        "tool": "read_image",
+        "outcome": "ok"
+      },
+      {
+        "tool": "acycle_get_run",
+        "outcome": "ok"
+      },
+      {
+        "tool": "acycle_inspect",
+        "outcome": "ok"
+      },
+      {
+        "tool": "acycle_inspect",
+        "outcome": "ok"
+      },
+      {
+        "tool": "acycle_menu_catalog",
+        "outcome": "ok"
+      },
+      {
+        "tool": "acycle_catalog",
+        "outcome": "ok"
+      },
+      {
+        "tool": "acycle_menu_catalog",
+        "outcome": "ok"
+      },
+      {
+        "tool": "acycle_catalog",
+        "outcome": "error",
+        "reason": "Tool returned an error; raw output omitted"
+      },
+      {
+        "tool": "acycle_catalog",
+        "outcome": "ok"
+      },
+      {
+        "tool": "acycle_catalog",
+        "outcome": "ok"
+      },
+      {
+        "tool": "acycle_menu_catalog",
+        "outcome": "ok"
+      }
+    ],
+    "runs": [
+      {
+        "id": "20261123T141856Z-fc598622dc8a",
+        "parent": null,
+        "operation": "analyze",
+        "worker_sha": "bd5d890b05a24bc485f3d531dcc47a35cc719ee2",
+        "workflow_run": "45193069922",
+        "matlab": "2024b",
+        "requested_parameters": {
+          "detrend": "lowess",
+          "span": 0.45454,
+          "dt": 0.33,
+          "mtm_nw": 2,
+          "nfft": 2670,
+          "fmax": 1,
+          "evolution": true,
+          "evolution_window": 40,
+          "evolution_step": 0.33,
+          "filter_band": [
+            0.022,
+            0.034
+          ],
+          "filter_method": "gaussian",
+          "coordinate_unit": "m"
+        },
+        "comparison": {
+          "rows": 534,
+          "processed_max_absolute_difference": 1.199040866595169e-12,
+          "nfft": 2670,
+          "spectrum_bins": 1336,
+          "frequency_max_absolute_difference": 9.992007221626409e-15,
+          "power_max_absolute_difference_over_reference_max": 0.02309625852118863,
+          "check_periods": [
+            33.9,
+            10,
+            7,
+            2.6,
+            1.8
+          ],
+          "closest_local_peak_live": [
+            33.88846153846135,
+            9.682417582417521,
+            6.830232558139488,
+            2.583870967741922,
+            1.8204545454545367
+          ],
+          "closest_local_peak_reference": [
+            33.88846153846135,
+            9.682417582417521,
+            6.830232558139488,
+            2.583870967741922,
+            1.8204545454545367
+          ],
+          "model_visible_top10_periods": [
+            46.373684210526086,
+            28.422580645161144,
+            33.888461538461364,
+            9.682417582417534,
+            10.365882352941123,
+            6.8302325581395,
+            9.08350515463913,
+            12.957352941176403,
+            14.211290322580572,
+            12.06986301369857
+          ],
+          "effective_smooth_fraction": 0.25,
+          "evolution_step_actual": 0.3299999999999983,
+          "gaussian_filter": {
+            "curve_correlation": 0.9946151872011636,
+            "max_absolute_difference": 23.068617440878306,
+            "points": 534
+          },
+          "robust95_shared_bins": 1335,
+          "robust95_max_abs_diff_over_reference_max": 0.12191232846100598
+        },
+        "artifact_sha256": {
+          "cleaned_csv": "648f7e23b1d3728f08e122c473121fad2e3f5f153b305e6edf0955ed1001d16b",
+          "prepared_csv": "1cfbc3f0b1b27dd3aec4f8b920ff097be06fce8af8a2698ab618ac221f9b0488",
+          "processed_csv": "b0c4deb247c9580c012cda8d09016bba3f0b103fda2c1c691a3ab388c8c5e04c",
+          "preprocess_png": "35a8d5f07c2d11db6fcd90976c26a65517d2a92359ba547480e71327338bb02b",
+          "spectrum_png": "98250f099b459f29015eebcfa60ba2e667f55c31c11e693c039d02a542c57b0f",
+          "robust_spectrum_csv": "d9d0e2c8140b5369a0887ff7fd025a9deaa8c649dc2cf4918cf73ea5ae1cba87",
+          "classic_spectrum_csv": "fc23a3c65f4a2c186dd7219569efa2660007db75e3901099d46b9497851fadcb",
+          "evolution_png": "505e60efe9f5db43d66b1fe224e2620b62ed5e7689a5a306dc0143cb5e93d82f",
+          "evolution_csv": "0010692226ad4778eebe79ff7e1bb64aa83ea14281b0df6e3d3e090516f2117d",
+          "filtered_csv": "5237668e8659753c580d218322bcf7d3632f20d42aa488c81cfaa1e3a9001ef4",
+          "filter_png": "345ca47dc5683cb3de7d71cb91b8aab7bc179f3853be992622366293e9557c3b",
+          "preprocess_fig": "97824f6b3c23d7a82954ab4ac5003e250ecb55c0460332e0180f1751e757f81e",
+          "spectrum_fig": "107cc3ecd092640b7f9d8a277910134c47d6f547cbc45a8a006c8851e4ecde08",
+          "evolution_fig": "0bde2389be9301382607879fed4ee0c4e54eda03a971f5c50350e4fbf2575b67",
+          "filter_fig": "802894ce8a414297906f40c418b1f931cae927e2a38bbbe71381317d7cb1796b",
+          "analysis_mat": "b67a855a57e6e58b8c1c4358b65a4c37ce77a6c4132c811f609476cffc4d4a15",
+          "provenance_json": "4483b5336ae447804790f9c8591926c83adec3e0103b29bd5dd09d8dee48a9cb"
+        }
+      },
+      {
+        "id": "20261123T142251Z-e3fba05ce55b",
+        "parent": "20261123T141856Z-fc598622dc8a",
+        "operation": "analyze",
+        "worker_sha": "400ae998bb17ddb5abe2b21f42d64ffb2f564133",
+        "workflow_run": "45193938744",
+        "matlab": "2024b",
+        "requested_parameters": {
+          "detrend": "lowess",
+          "span": 0.4548299,
+          "dt": 0.33,
+          "mtm_nw": 2,
+          "nfft": 2670,
+          "fmax": 1,
+          "evolution": true,
+          "evolution_window": 40,
+          "evolution_step": 0.33,
+          "filter_band": [
+            0.022,
+            0.034
+          ],
+          "filter_method": "gaussian",
+          "coordinate_unit": "m",
+          "smooth_fraction": 0.2,
+          "fit_fmax": 1.515151515151523
+        },
+        "comparison": {
+          "rows": 534,
+          "processed_max_absolute_difference": 0.0,
+          "nfft": 2670,
+          "spectrum_bins": 1336,
+          "frequency_max_absolute_difference": 9.992007221626409e-15,
+          "power_max_absolute_difference_over_reference_max": 0.023096258521188923,
+          "check_periods": [
+            33.9,
+            10,
+            7,
+            2.6,
+            1.8
+          ],
+          "closest_local_peak_live": [
+            33.88846153846135,
+            9.682417582417521,
+            6.830232558139488,
+            2.583870967741922,
+            1.8204545454545367
+          ],
+          "closest_local_peak_reference": [
+            33.88846153846135,
+            9.682417582417521,
+            6.830232558139488,
+            2.583870967741922,
+            1.8204545454545367
+          ],
+          "model_visible_top10_periods": [
+            46.373684210526086,
+            28.422580645161144,
+            33.888461538461364,
+            9.682417582417534,
+            10.365882352941123,
+            6.8302325581395,
+            9.08350515463913,
+            12.957352941176403,
+            14.211290322580572,
+            12.06986301369857
+          ],
+          "effective_smooth_fraction": 0.2,
+          "evolution_step_actual": 0.3299999999999983,
+          "gaussian_filter": {
+            "curve_correlation": 0.9946151872011636,
+            "max_absolute_difference": 23.068617440878405,
+            "points": 534
+          },
+          "robust95_shared_bins": 1335,
+          "robust95_max_abs_diff_over_reference_max": 0.006953548160612473
+        },
+        "artifact_sha256": {
+          "cleaned_csv": "648f7e23b1d3728f08e122c473121fad2e3f5f153b305e6edf0955ed1001d16b",
+          "prepared_csv": "1cfbc3f0b1b27dd3aec4f8b920ff097be06fce8af8a2698ab618ac221f9b0488",
+          "processed_csv": "db77e41a6a6a43d7ef37a3908e32fb083874a359e48264831e204791570fd6cf",
+          "preprocess_png": "3319f9de3f7792a1898c7dbaf4864662b8f042a24321186286c856d0eb2b8adc",
+          "spectrum_png": "29655daf7f6bdd4300c44664078de20388ca434f82009837ef11c3319418dc39",
+          "robust_spectrum_csv": "c081013c577b83b004d2ec5d0974186932e468a3ab490a962b0f44d2ba798851",
+          "classic_spectrum_csv": "ab49c82f1c71b6978b9d51b59512dcc4ada0454366f796715576f7b45b7d294d",
+          "evolution_png": "5b8c95da899e14ea800dba47bf9e3e5d6bfda5df1445e794eb4ce5af21b49289",
+          "evolution_csv": "99d4d1a85b2ecede3102d7128462d3a263f85b95fdc0989c66c1768afb0ff83b",
+          "filtered_csv": "a586a73c75a14050f63ff953b239208134bddd16a3d9effdbc9b7f2776d9b382",
+          "filter_png": "1f643d00881f6b6b85a8b448b7e3c1b35b3cc5e8ce8a4ff7856dc9a2e3751b23",
+          "preprocess_fig": "be17cf677ede914e92fdb840311766706d3269226be20a1c7033616fd949a8a3",
+          "spectrum_fig": "f9fe7680184d43eee42dd73836c43bef49ca5ee997a9fc5041b7cc0d37e9b82b",
+          "evolution_fig": "5c660ab575115f0b8d96973be5aab1f7082d4cfdc81ff8bc95df6f024d95e62c",
+          "filter_fig": "235aa93f1237c5a81b6c1594daf88f30f594d9f109820840d4b7ce16f36ac685",
+          "analysis_mat": "da52acdcba281df6ec8eef00ac016e0b75f6251ddce000e6bc73623ef987ab42",
+          "provenance_json": "4483b5336ae447804790f9c8591926c83adec3e0103b29bd5dd09d8dee48a9cb"
+        }
+      }
+    ],
+    "tool_calls": 23,
+    "returned_text": true,
+    "final_response_sha256": "1889eb9acbcd3830c9ed546cb5d26ccdc45906a65c9368fecebab24af2d8f215"
+  }
+}
