@@ -1,13 +1,15 @@
 function testModuleInventoryLayout()
-% Verify the flat interface/private lookup and representative existing Core candidates.
+% Verify the interface lookup for ordinary and private directories and representative existing Core candidates.
 root = fileparts(fileparts(fileparts(mfilename('fullpath'))));
 oldPath = path;
 tempRoot = tempname;
 mkdir(tempRoot);
 cleanup = onCleanup(@() acInventoryRestoreFixture(oldPath,tempRoot)); %#ok<NASGU>
+setup_migration();
+assert(any(strcmp(strsplit(path,pathsep),fullfile(root,'code','method'))));
 codeDir = fullfile(tempRoot,'code');
 privateDir = fullfile(codeDir,'private');
-ordinaryDir = fullfile(codeDir,'acprivate');
+ordinaryDir = fullfile(codeDir,'method');
 interfaceDir = fullfile(codeDir,'interface','Interpolation');
 mkdir(privateDir);
 mkdir(ordinaryDir);

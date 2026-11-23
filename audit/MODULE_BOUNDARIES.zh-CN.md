@@ -30,7 +30,9 @@
 
 有两个可对照的历史入口。3.1.1 的 `RegularInterpolation.helper` 提供 `MaximumPoints` 和 `MaximumElements`，其 `analyzer` 对两项逐一检查并显式传给原函数。GUIDE 的 `PowerSpectrum-v1.0/analyzer` 则在 `noise` 缺失时跳过背景模型，现有回归样例也用这种省略方式。这是一个确切的待迁移点。归并后的公开功率谱接口应要求所有模型开关，缺失立即报错。旧日志须按记录的版本解释，不能据此为新运行补参。旧包的回归通过只验证其旧行为。可用删掉激活分支的一个字段来验收新的接口，同时检查 Logger 收到错误。[3.1.1 插值 Helper](../matlab/+acmaster/+RegularInterpolation/helper.m) · [3.1.1 插值 Analyzer](../matlab/+acmaster/+RegularInterpolation/analyzer.m) · [GUIDE 功率谱](../matlab/+acmethods/+PowerSpectrum/analyzer.m#L60) · [历史用例](../tests/test_scientific_methods.m#L30)
 
-## 建议的维护边界
+逐项修订及各操作角色见[新版归并表](MODULE_CONSOLIDATION.zh-CN.md)，包括统计检验、图像工具、Mini-Robot 和研究验证的具体去向。
+
+## 第一轮建议的维护边界
 
 下表是对 62 项归属的修订建议。每个旧入口、回调或可重放的操作标识可以继续追踪。多项放入一个维护目录时，仍可保留原函数、方法入口和有意义的不同返回类型。只有共享输入和产物的分支才适合用同一个 `analyzer` 依 `params` 分派。
 
@@ -63,9 +65,9 @@ GUIDE 基线在 `ac.m` 的第 74 行调用 `addpath(genpath(path_root))`，3.1.1
 
 | 搜索方式 | MATLAB R2024b Update 10 | Octave 10.3.0 |
 | --- | --- | --- |
-| `genpath(code)` 加入普通 `code/acprivate/` 和接口子目录 | 接口能直接调用 | 接口能直接调用 |
+| `genpath(code)` 加入普通实现目录和接口子目录 | 接口能直接调用 | 接口能直接调用 |
 | `genpath(code)` 加入字面名 `code/private/` | 该目录被跳过 | 该目录被跳过 |
 | 显式 `addpath(privateDir)` 后由接口按名调用 | 警告 `MATLAB:mpath:privateDirectoriesNotAllowedOnPath`，目录未加入，随后报 `MATLAB:UndefinedFunction` | 目录加入，接口能调用 |
 | 由 `code/` 中的函数取得私有函数句柄，再由接口调用 | 能调用 | 能调用 |
 
-**初版建议选普通目录 `code/acprivate/`**，集中放新拆出的内部实现。启动时枚举当前选用版本的 `code/` 一次即可，接口可以直接按全项目唯一名称调用。内部函数在搜索路径上普通可见，是否属于稳定公开 API 由接口目录与登记清单界定。若目录名必须严格为 `code/private/`，父目录句柄方式仍能保留 MATLAB 原生的私有可见性。两份快照有同名不同实现，枚举应限定到本次所选版本；当前迁移分支已有按版本临时切换和还原路径的代码。[实际目录测试](tests/testModuleInventoryLayout.m) · [MATLAB 原生运行日志](https://github.com/CinnabarCHU/Hypercinnabar/actions/runs/45088757933/job/137413266416) · [原有版本路径隔离](../matlab/+accompat/masterPath.m)
+**初版采用普通目录 `code/method/`**，集中放新拆出的内部实现，接口按全项目唯一名称直接调用。原测试的普通目录名为 `acprivate`，当前测试用确定的名字 `method`，也检查仓库实际启动路径。稳定公开入口由接口目录与登记清单界定。两份快照有同名不同实现，枚举应限定到选用的版本并保留路径还原。[实际目录测试](tests/testModuleInventoryLayout.m) · [MATLAB 原生运行日志](https://github.com/CinnabarCHU/Hypercinnabar/actions/runs/45088757933/job/137413266416) · [原有版本路径隔离](../matlab/+accompat/masterPath.m)

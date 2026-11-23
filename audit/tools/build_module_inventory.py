@@ -7,6 +7,7 @@ import sys
 from collections import Counter, defaultdict, deque
 from pathlib import Path
 
+from module_consolidation import consolidation, render_plan
 from module_source_facts import ROOT, snapshots
 
 sys.path.insert(0, str(ROOT))
@@ -184,7 +185,6 @@ def role_tables(owners, all_facts):
             m = re.match(r'^\s*function\s+(?:[^=]+=\s*)?(\w+)\s*\(',line)
             if m:
                 existing_names.add(m[1].casefold())
-    assert 'acprivatefunctions' not in existing_names
     proposed = {}
     for module in owners.families:
         for role in ROLE_NAMES:
@@ -460,6 +460,20 @@ def validate_and_emit(all_facts, write):
     role_rows = result['roles'][1]
     assert len({r[2] for r in role_rows}) == len(role_rows)
     result.update(count_crosswalks(owners,role_rows))
+    plan = read(OUT/'consolidation.tsv')
+    packages = result['package_to_modules'][1]
+    menus = result['menu_to_modules'][1]
+    index = consolidation(owners.families,plan,packages,menus,role_rows)
+    result['consolidation_index'] = (
+        'kind name source_modules proposed_operations guide_route_or_coverage guide_roles_or_visibility master_route master_roles_or_visibility',
+        index)
+    document = ROOT/'audit/MODULE_CONSOLIDATION.zh-CN.md'
+    counts = {'menu': len(menus), 'package': len(packages), 'role': len(role_rows)}
+    rendered = render_plan(owners.families,plan,counts)
+    if write:
+        document.write_text(rendered,encoding='utf-8')
+    elif not document.is_file() or document.read_text(encoding='utf-8') != rendered:
+        raise SystemExit('Outdated consolidation plan: '+str(document))
     decisions = {r['function'] for r in read(OUT/'core_review.tsv')}
     assert decisions <= {r[1] for r in result['shared_functions'][1]}
     selections = read(OUT/'selection_values.tsv')

@@ -4,6 +4,8 @@
 
 这 62 项覆盖科学操作、GUI、工作流与工程验证。95 个 GUIDE 科学或数据菜单和 286 个 3.1.1 包使用另外的计数单位。逐项对应、建议的公开边界及其依据见[菜单、兼容包与公开方法](MODULE_BOUNDARIES.zh-CN.md)。
 
+当前归并方案逐项列出维护位置、可独立调用的操作、角色以及旧操作的对应关系。下表保留第一轮的源码归属和计数。[新版逐项方案](MODULE_CONSOLIDATION.zh-CN.md) · [接口实测与评审](METHOD_ROLE_REVIEW.zh-CN.md)
+
 ## 62 项源码归属
 
 | 范围 | 模块及其登记标识 |
@@ -57,9 +59,7 @@
 
 `datapreproc` 会删除行、排序、归并、重采样，并用 `warndlg` 通知用户。处理后的数据和实际采取的动作都需要传出，单纯关闭提醒会丢掉解释。`smoothciML` 在第 35–42 行完成 Bootstrap 汇总，第 46、61 行无条件开图，这给出了计算与绘图的拆点。基线 `corrcoefslices_rank` 的 `plotn` 能控制结果图，Monte Carlo 分支仍然创建 `waitbar` 并读取 GUI 状态。[数据预处理](https://github.com/mingsongli/acycle/blob/b52ea9f510f3be00bde9a0238b9898a1e2315b74/code/misc/datapreproc.m) · [Bootstrap 源码](https://github.com/mingsongli/acycle/blob/b52ea9f510f3be00bde9a0238b9898a1e2315b74/code/seriesanalysis/smoothciML.m#L35-L63) · [eCOCO 源码](https://github.com/mingsongli/acycle/blob/b52ea9f510f3be00bde9a0238b9898a1e2315b74/code/corrcoef/corrcoefslices_rank.m)
 
-公开入口拟用 `code/interface/<模块>/ac<模块>_<角色>.m`。例如 `acInterpolation_helper.m`、`acInterpolation_analyzer.m`、`acInterpolation_plotter.m`。新文件与主函数同名，新建的局部及私有函数也取项目内唯一的名字。新拆出的内部函数可集中在普通目录 `code/acprivate/` 后随所选版本枚举。若采用 MATLAB 字面名 `code/private/` 则由父目录绑定。例如可以给插值 Pro 的网格处理取名 `acInterpolationProGrid.m`。旧独立函数与第三方目录原位保留。生成器已将拟用公开名称与两棵源树和旧迁移接口做了忽略大小写的冲突检查。
-
-MATLAB 的 `private` 只能由直接上级目录中的代码按名访问，`code/interface/Interpolation/` 不具备这个作用域。若选用字面私有目录，一种办法是在 `code/acPrivateFunctions.m` 中返回显式具名函数句柄。接口在需要某个新私有实现时取相应句柄，普通原函数继续直接调用。这个文件只负责 MATLAB 名称绑定，各模块解释自己的科学选项。回放保存版本化 `op` 和普通参数，执行时再绑定句柄。目录测试也验证了普通 `code/acprivate/` 可由接口直接调用，初版建议采用这种布局。[两种运行时的实测结果](MODULE_BOUNDARIES.zh-CN.md#初版可以沿用-acycle-的目录枚举)。[MATLAB 私有函数](https://www.mathworks.com/help/matlab/matlab_prog/private-functions.html) · [函数句柄](https://www.mathworks.com/help/matlab/matlab_prog/creating-a-function-handle.html) · [目录与数值测试](tests/testModuleInventoryLayout.m)
+公开入口拟用 `code/interface/<维护组>/ac<操作>_<角色>.m`。例如 `acInterpolation_helper.m`、`acInterpolation_analyzer.m`、`acInterpolation_plotter.m`。新文件与主函数同名，新声明的名称在项目内唯一。需要抽出的内部实现集中在普通目录 `code/method/`。原有独立函数和第三方目录原位保留。注册操作和旧日志按版本绑定。原来的拟用名称仅供核对第一轮的源码归属，新的操作边界见逐项方案。[内部实现存放约定](../code/method/README.md) · [新版归并表](MODULE_CONSOLIDATION.zh-CN.md) · [目录与数值测试](tests/testModuleInventoryLayout.m)
 
 ## 建议归 Core 的通用函数
 

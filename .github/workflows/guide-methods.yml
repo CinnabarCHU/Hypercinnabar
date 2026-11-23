@@ -24,6 +24,7 @@ jobs:
           python audit/tools/build_module_inventory.py
       - name: Export standalone methods from the pinned sources
         run: |
+          python audit/tests/test_method_directory_export.py
           python migration/export_method.py Bandpass TimeOpt Undatable --output "$RUNNER_TEMP/acycle-methods"
           python migration/export_method.py --revision master Bandpass RegularInterpolation DigitizeTrace --output "$RUNNER_TEMP/acycle-master-methods"
           (cd "$RUNNER_TEMP/acycle-master-methods" && sha256sum --check --quiet SHA256SUMS)
@@ -35,4 +36,4 @@ jobs:
           products: Signal_Processing_Toolbox Statistics_and_Machine_Learning_Toolbox Image_Processing_Toolbox Curve_Fitting_Toolbox Optimization_Toolbox Wavelet_Toolbox
       - uses: matlab-actions/run-command@v2
         with:
-          command: addpath(fullfile(pwd,'tests')); test_migration; test_desktop_methods; test_scientific_methods; test_package_portability; test_recovered_methods; test_analysis_views; test_exported_methods; test_master_migration; test_master_export; test_master_native_menu; addpath(fullfile(pwd,'audit','tests')); testModuleInventoryLayout
+          command: addpath(fullfile(pwd,'tests')); test_migration; test_desktop_methods; test_scientific_methods; test_package_portability; test_recovered_methods; test_analysis_views; test_exported_methods; test_master_migration; test_master_export; test_master_native_menu; addpath(fullfile(pwd,'audit','tests')); testModuleInventoryLayout; probeMethodRoleContracts

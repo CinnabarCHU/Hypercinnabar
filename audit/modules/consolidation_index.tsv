@@ -1,0 +1,433 @@
+kind	name	source_modules	proposed_operations	guide_route_or_coverage	guide_roles_or_visibility	master_route	master_roles_or_visibility
+package	ANOVA	HypothesisTests	ANOVA	family-entry	analyzer	family-entry	analyzer
+package	AR1Prewhitening	Prewhitening	AR1Prewhitening	family-entry	analyzer helper plotter	family-entry	analyzer
+package	AddGaps	SeriesEditing	EditInterval	family-entry	analyzer	family-entry	analyzer
+package	AgeScale	Tuning	AgeScale	family-entry	analyzer helper plotter	family-entry	analyzer
+package	AmplitudeModulation	Modulation	AmplitudeModulation	family-entry	analyzer helper	family-entry	analyzer
+package	AnDarksamtest	HypothesisTests	TwoSampleTests	expert-compatibility	analyzer	expert-compatibility	analyzer
+package	AstronomicalSolution	OrbitSolution	OrbitSolution	family-entry	analyzer helper plotter	family-entry	analyzer
+package	Bandpass	Filtering	FixedFiltering	family-entry	analyzer helper plotter	family-entry	analyzer helper plotter
+package	Bispectral	Bispectrum	Bispectrum			family-entry	analyzer helper plotter
+package	BispectralExport	Bispectrum	BispectralExport			product-io	plotter
+package	BispectralView	Bispectrum	Bispectrum			family-entry	helper
+package	BootstrapSmooth	Smoothing	BootstrapSmoothing	family-entry	analyzer helper plotter	family-entry	analyzer helper plotter
+package	BuildAgeModel	BuildAgeModel	BuildAgeModel	family-entry	analyzer helper plotter	family-entry	analyzer helper plotter
+package	CENOGRID	ReferenceSeries	ReferenceSeries	family-entry	analyzer plotter	family-entry	analyzer plotter
+package	CE_NS70	SummaryStatistics	SummaryStatistics	expert-compatibility	analyzer	expert-compatibility	analyzer
+package	CircularSpectrum	CircularSpectrum	CircularSpectrum	family-entry	analyzer helper plotter	family-entry	analyzer
+package	Clipping	SeriesEditing	ClipValues	family-entry	analyzer helper	family-entry	analyzer helper
+package	Coherence	Coherence	Coherence	family-entry	analyzer	family-entry	analyzer
+package	ColumnManipulation	Columns	Columns	family-entry	analyzer helper plotter	family-entry	analyzer plotter
+package	Columns	Columns	Columns	family-entry	analyzer	family-entry	analyzer
+package	Correlation	Association	Correlation	family-entry	analyzer	family-entry	analyzer
+package	Covariance	Association	Covariance	family-entry	analyzer helper	family-entry	analyzer helper
+package	DYNOT	DYNOT	DYNOT	family-entry	analyzer helper plotter	family-entry	analyzer helper plotter
+package	DataDistribution	Distribution	DistributionView	family-entry	plotter	family-entry	plotter
+package	DataTransform	Transform	Transform	family-entry	analyzer helper plotter	family-entry	analyzer plotter
+package	Derivative	Derivative	Derivative	family-entry	analyzer helper	family-entry	analyzer helper
+package	Desktop	Desktop	DesktopNavigation			family-entry	plotter
+package	DetrendSignalPP	Detrending	Detrending	expert-compatibility	analyzer	expert-compatibility	analyzer
+package	Detrending	Detrending	Detrending	family-entry	analyzer helper plotter	family-entry	analyzer plotter
+package	Digitize	Digitizer	Digitize	family-entry	analyzer	family-entry	analyzer
+package	DigitizeTrace	Digitizer	DigitizeTrace	family-entry	analyzer helper plotter	family-entry	analyzer helper plotter
+package	DistributionTest	HypothesisTests	DistributionTest	family-entry	analyzer	family-entry	analyzer
+package	DynamicFiltering	Filtering	DynamicFiltering	family-entry	analyzer helper plotter	family-entry	analyzer
+package	EMD	EMD	EMD	family-entry	analyzer helper plotter	family-entry	analyzer helper
+package	EnsembleEMD	EMD	EMD	family-entry	analyzer helper plotter	family-entry	analyzer helper
+package	EvolutionarySpectrum	EvolutionarySpectrum	EvolutionarySpectrum	family-entry	analyzer helper plotter	family-entry	analyzer plotter
+package	EvolutionaryTimeOpt	EvolutionaryTimeOpt	EvolutionaryTimeOpt	family-entry	analyzer helper plotter		""
+package	EvolutionaryWorkbook	EvolutionarySpectrum	EvolutionaryWorkbook			product-io	plotter
+package	ExampleDigitizer	Examples	ExampleCatalog	family-entry	analyzer plotter	family-entry	analyzer plotter
+package	ExampleExtinction	Examples	ExampleCatalog	family-entry	analyzer plotter	family-entry	analyzer plotter
+package	ExampleGuandao	Examples	ExampleCatalog	family-entry	analyzer plotter	family-entry	analyzer plotter
+package	ExampleInsolation	Examples	ExampleCatalog	family-entry	analyzer plotter	family-entry	analyzer plotter
+package	ExampleLa2004	Examples	ExampleCatalog	family-entry	analyzer plotter	family-entry	analyzer plotter
+package	ExampleMars	Examples	ExampleCatalog	family-entry	analyzer plotter	family-entry	analyzer plotter
+package	ExampleMaunaLoa	Examples	ExampleCatalog	family-entry	analyzer plotter	family-entry	analyzer plotter
+package	ExampleNewark	Examples	ExampleCatalog	family-entry	analyzer plotter	family-entry	analyzer plotter
+package	ExampleRedNoise	Examples	ExampleCatalog	family-entry	analyzer plotter	family-entry	analyzer plotter
+package	ExampleSphalerite	Examples	ExampleCatalog	family-entry	analyzer plotter	family-entry	analyzer plotter
+package	ExampleSvalbardPETM	Examples	ExampleCatalog	family-entry	analyzer plotter	family-entry	analyzer plotter
+package	ExampleWayao	Examples	ExampleCatalog	family-entry	analyzer plotter	family-entry	analyzer plotter
+package	Extrema	Extrema	Extrema	family-entry	analyzer helper	family-entry	analyzer helper
+package	FixedMovingMean	Smoothing	MovingSummary	family-entry	analyzer helper	family-entry	analyzer
+package	FixedMovingMedian	Smoothing	MovingSummary	family-entry	analyzer helper	family-entry	analyzer
+package	ImageProfile	ImageProfile	ImageProfile	family-entry	analyzer	family-entry	analyzer
+package	ImageTransect	ImageProfile	ImageProfile	family-entry	analyzer plotter	family-entry	analyzer plotter
+package	InsolLatDayGif	Insolation	Insolation	family-entry	plotter	family-entry	plotter
+package	Insolation	Insolation	Insolation	family-entry	analyzer		""
+package	InterpolateSeries	Interpolation	InterpolateSeries	family-entry	analyzer plotter	family-entry	analyzer
+package	InterpolationPro	Interpolation	Interpolation	family-entry	analyzer helper plotter	family-entry	analyzer plotter
+package	LR04	ReferenceSeries	ReferenceSeries	family-entry	analyzer helper plotter	family-entry	analyzer helper plotter
+package	Lag1	LagOne	LagOne	family-entry	analyzer	family-entry	analyzer
+package	Lag1MonteCarlo	LagOne	LagOne	family-entry	analyzer helper plotter	family-entry	analyzer helper plotter
+package	Lag1V2	LagOne	LagOne	family-entry	analyzer		""
+package	Lag1V2MonteCarlo	LagOne	LagOne	family-entry	analyzer helper plotter		""
+package	LeadLag	LeadLag	LeadLag			family-entry	analyzer
+package	LinearRegression	Regression	LinearRegression	family-entry	analyzer helper plotter	family-entry	analyzer plotter
+package	Log10	Transform	Transform	family-entry	analyzer	family-entry	analyzer
+package	Lyapunov	Lyapunov	Lyapunov	family-entry	analyzer helper plotter		""
+package	LyapunovMonteCarlo	Lyapunov	Lyapunov	family-entry	analyzer helper plotter		""
+package	MatlabWaveletCoherence	WaveletCoherence	WaveletCoherence	family-entry	analyzer helper plotter	family-entry	analyzer plotter
+package	MergeSeries	SeriesArithmetic	MergeSeries	family-entry	analyzer	family-entry	analyzer
+package	MilankovitchCal	OrbitalPeriods	OrbitalPeriods	family-entry	analyzer	family-entry	analyzer
+package	MovingGaussian	Smoothing	GaussianSmoothing	family-entry	analyzer helper plotter	family-entry	analyzer
+package	MovingMean	Smoothing	MovingSummary	family-entry	analyzer helper plotter	family-entry	analyzer
+package	MovingMedian	Smoothing	MovingSummary	family-entry	analyzer helper plotter	family-entry	analyzer
+package	MtmTaperCount	PowerSpectrum	PowerSpectrum			expert-compatibility	analyzer
+package	MultiplySeries	SeriesArithmetic	MultiplySeries	family-entry	analyzer	family-entry	analyzer
+package	Normality	HypothesisTests	Normality	family-entry	analyzer	family-entry	analyzer
+package	OneSampleT	HypothesisTests	OneSampleT	family-entry	analyzer plotter	family-entry	analyzer plotter
+package	PCA	PCA	PCA	family-entry	analyzer helper	family-entry	analyzer helper
+package	PassFilter	Filtering	FixedFiltering	family-entry	analyzer helper plotter	family-entry	analyzer plotter
+package	PlotAdv	SeriesPlot	SeriesPlot	family-entry	helper plotter	family-entry	plotter
+package	PlotPro	SeriesPlot	SeriesPlot	family-entry	helper plotter	family-entry	helper plotter
+package	PowerDecomposition	PowerDecomposition	PowerDecomposition	family-entry	analyzer helper plotter	family-entry	analyzer
+package	PowerSpectrum	PowerSpectrum	PowerSpectrum	family-entry	analyzer helper plotter	family-entry	analyzer helper plotter
+package	RGBToGray	ImageColor	ImageColor	family-entry	analyzer plotter	family-entry	analyzer plotter
+package	RGBToLab	ImageColor	ImageColor	family-entry	analyzer plotter	family-entry	analyzer plotter
+package	Recurrence	Recurrence	Recurrence	family-entry	analyzer helper plotter	family-entry	analyzer
+package	RegularInterpolation	Interpolation	Interpolation			family-entry	analyzer helper
+package	RemoveSections	SeriesEditing	EditInterval	family-entry	analyzer	family-entry	analyzer
+package	SWA	SWA	SWA	family-entry	analyzer helper plotter	family-entry	helper plotter
+package	SamplingGrid	Sampling	SamplingGrid			family-entry	analyzer helper
+package	SamplingRate	Sampling	SamplingRate	family-entry	analyzer plotter	family-entry	analyzer plotter
+package	SedimentationRateToAge	BuildAgeModel	SedimentationRateToAge	family-entry	analyzer	family-entry	analyzer
+package	SeriesGenerator	SeriesGenerator	SeriesGenerator	family-entry	analyzer helper plotter	family-entry	analyzer
+package	SeriesSound	Sound	SeriesSound	family-entry	analyzer helper	family-entry	analyzer helper
+package	ShowImage	ImageDisplay	ImageView	family-entry	plotter	family-entry	plotter
+package	SimpleFunction	Transform	AffineAxes	family-entry	analyzer helper	family-entry	analyzer helper
+package	SimplePlot	SeriesPlot	SeriesPlot	family-entry	plotter	family-entry	plotter
+package	SortUnique	SortUnique	SortUnique	family-entry	analyzer helper	family-entry	analyzer helper
+package	SpectralBendingPowerLaw	PowerSpectrum	PowerSpectrum	family-entry	analyzer plotter	family-entry	analyzer
+package	SpectralMoments	SpectralMoments	SpectralMoments			family-entry	analyzer
+package	SpectralPowerLaw	PowerSpectrum	PowerSpectrum	family-entry	analyzer plotter	family-entry	analyzer
+package	Standardize	Transform	Transform	family-entry	analyzer	family-entry	analyzer
+package	StratigraphicCorrelation	StratCorrelation	StratCorrelation	family-entry	analyzer helper plotter	family-entry	analyzer
+package	SummaryStatistics	SummaryStatistics	SummaryStatistics	family-entry	analyzer	family-entry	analyzer
+package	TimeOpt	TimeOpt	TimeOpt	family-entry	analyzer helper plotter		""
+package	TwoSampleTests	HypothesisTests	TwoSampleTests	family-entry	analyzer	family-entry	analyzer
+package	Undatable	Undatable	Undatable	family-entry	analyzer helper plotter	family-entry	plotter
+package	WaveletCoherence	WaveletCoherence	WaveletCoherence	family-entry	analyzer helper plotter	family-entry	analyzer plotter
+package	WaveletSpectrum	Wavelet	WaveletSpectrum	family-entry	analyzer helper plotter	family-entry	analyzer plotter
+package	ac_sort_dir_entries	Workspace	WorkspaceIO			expert-compatibility	analyzer
+package	ar1nv	Wavelet	WaveletSpectrum	expert-compatibility	analyzer	expert-compatibility	analyzer
+package	ar1spectrum	Wavelet	WaveletSpectrum	expert-compatibility	analyzer	expert-compatibility	analyzer
+package	bayes_cpt	Changepoint	Changepoint	family-entry	analyzer helper plotter	family-entry	analyzer helper plotter
+package	bayes_cpt_r2	Changepoint	Changepoint	family-entry	analyzer helper plotter	family-entry	analyzer helper plotter
+package	bispectralEstimate	Bispectrum	Bispectrum			expert-compatibility	analyzer
+package	bispectralLocalDataValidation	MethodValidation	BispectralLocalDataStudy			verification	analyzer
+package	bispectralPreprocess	Bispectrum	Bispectrum			expert-compatibility	analyzer
+package	bispectralReadDataFile	Bispectrum	Bispectrum			expert-compatibility	analyzer
+package	bispectralSelfTest	MethodValidation	BispectralSelfTest			verification	analyzer
+package	bispectralSignificance	Bispectrum	Bispectrum			expert-compatibility	analyzer
+package	bispectralSurrogate	Bispectrum	Bispectrum			expert-compatibility	analyzer
+package	bispectralValidateExamples	MethodValidation	BispectralExamples			verification	analyzer
+package	boxcoxML	Transform	Transform	family-entry	analyzer	family-entry	analyzer
+package	boxpdf	WaveletCoherence	WaveletCoherence	expert-compatibility	analyzer	expert-compatibility	analyzer
+package	calculateRhoM	LagOne	LagOne			expert-compatibility	analyzer
+package	calculate_orbit9	OrbitalPeriods	OrbitalPeriods			expert-compatibility	analyzer
+package	chisquare_inv	Wavelet	WaveletSpectrum	expert-compatibility	analyzer	expert-compatibility	analyzer
+package	chisquare_solve	Wavelet	WaveletSpectrum	expert-compatibility	analyzer	expert-compatibility	analyzer
+package	circularspec	CircularSpectrum	CircularSpectrum	expert-compatibility	analyzer helper plotter	expert-compatibility	analyzer
+package	cocoAdaptiveEvaluate	Coco	Coco			expert-compatibility	analyzer helper
+package	cocoAdaptivePublicationReport	Coco	Coco			expert-compatibility	analyzer
+package	cocoAllPeriodRateRange	Coco	Coco			expert-compatibility	analyzer
+package	cocoConclusionReport	Coco	Coco			expert-compatibility	analyzer
+package	cocoFixedTargetWeights	Coco	Coco			expert-compatibility	analyzer
+package	cocoGetPower	Coco	Coco			expert-compatibility	analyzer
+package	cocoGetPowerNew	Coco	Coco			expert-compatibility	analyzer
+package	cocoIsNonfatalResolutionError	Coco	Coco			expert-compatibility	analyzer
+package	cocoNonnegativeLeakageSolve	Coco	Coco			expert-compatibility	analyzer
+package	cocoOrbitGroups	Coco	Coco			expert-compatibility	analyzer
+package	cocoPrepareRegularData	Coco	Coco			expert-compatibility	analyzer helper
+package	cocoPublicationPrepareData	Coco	Coco			expert-compatibility	analyzer
+package	cocoResolvedDetrendedVariance	Coco	Coco			expert-compatibility	analyzer
+package	cocoSamplingTolerance	Coco	Coco			expert-compatibility	analyzer
+package	cocoTargetSpectrum	Coco	Coco			expert-compatibility	analyzer
+package	cohac	Coherence	Coherence	expert-compatibility	analyzer helper plotter	expert-compatibility	analyzer helper plotter
+package	corrcoefsig	Coco	Coco	family-entry	analyzer helper	family-entry	analyzer helper
+package	corrcoefslices	EvolutionaryCoco	EvolutionaryCoco	expert-compatibility	analyzer helper	expert-compatibility	analyzer helper
+package	corrcoefslices_rank	EvolutionaryCoco	EvolutionaryCoco	expert-compatibility	analyzer helper		""
+package	corrcoefslices_rankNew	EvolutionaryCoco	EvolutionaryCoco			expert-compatibility	analyzer helper
+package	corrsig	Coco	Coco	expert-compatibility	analyzer helper	expert-compatibility	analyzer helper
+package	crp_core	Recurrence	Recurrence	expert-compatibility	analyzer helper	expert-compatibility	analyzer helper
+package	crp_pdist	Recurrence	Recurrence	expert-compatibility	analyzer helper	expert-compatibility	analyzer helper
+package	cvcoco	Coco	Coco			family-entry	analyzer helper
+package	cvcoco2	Coco	Coco			family-entry	analyzer helper
+package	cvcoco9	Coco	Coco			family-entry	analyzer helper
+package	cvcoco9A	Coco	Coco			family-entry	analyzer helper
+package	cvcoco9B	Coco	Coco			family-entry	analyzer helper
+package	cvcocoLegacy	Coco	Coco			family-entry	analyzer helper
+package	cyclecorr	Coco	Coco	expert-compatibility	analyzer helper	expert-compatibility	analyzer helper
+package	cyclecorr4	Coco	Coco	expert-compatibility	analyzer	expert-compatibility	analyzer
+package	cyclecorr4sig	Coco	Coco	expert-compatibility	analyzer	expert-compatibility	analyzer
+package	cyclecorr5	Coco	Coco	expert-compatibility	analyzer	expert-compatibility	analyzer
+package	cyclecorrNew	Coco	Coco			expert-compatibility	analyzer
+package	cyclecorr_rank	Coco	Coco	expert-compatibility	analyzer	expert-compatibility	analyzer
+package	cyclecorrsig	Coco	Coco	expert-compatibility	analyzer helper		""
+package	cyclecorrsigNew	Coco	Coco			expert-compatibility	analyzer
+package	cyclesig_rank	Coco	Coco	expert-compatibility	analyzer	expert-compatibility	analyzer
+package	data_slices	EvolutionaryCoco	EvolutionaryCoco	expert-compatibility	analyzer	expert-compatibility	analyzer
+package	datapreproc	SortUnique	SortUnique	expert-compatibility	analyzer helper	expert-compatibility	analyzer helper
+package	depeaks	SeriesEditing	Depeak	family-entry	analyzer helper	family-entry	analyzer helper
+package	depthtotime	Tuning	AgeScale	expert-compatibility	analyzer	expert-compatibility	analyzer
+package	dl_all	Recurrence	Recurrence	expert-compatibility	analyzer	expert-compatibility	analyzer
+package	domaintrans	Tuning	AgeScale	expert-compatibility	analyzer	expert-compatibility	analyzer
+package	dynamic_filter	Filtering	DynamicFiltering			expert-compatibility	plotter
+package	dynamic_filter_lang	Filtering	DynamicFiltering			expert-compatibility	plotter
+package	dynotIterationWorker	DYNOT	DYNOT			expert-compatibility	analyzer
+package	dynotPercentilePlan	DYNOT	DYNOT			expert-compatibility	analyzer
+package	ebrief	Coco	Coco	expert-compatibility	analyzer helper	expert-compatibility	analyzer helper
+package	eccount	Coco	Coco	expert-compatibility	analyzer	expert-compatibility	analyzer
+package	eccpeaks	Coco	Coco	expert-compatibility	analyzer helper	expert-compatibility	analyzer helper
+package	ecoco	EvolutionaryCoco	EvolutionaryCoco	family-entry	analyzer	family-entry	analyzer helper
+package	ecocoAdaptiveCore	EvolutionaryCoco	EvolutionaryCoco			family-entry	analyzer helper
+package	ecocoCrossfitCore	EvolutionaryCoco	EvolutionaryCoco			family-entry	analyzer helper
+package	ecocoEstimateAr1	EvolutionaryCoco	EvolutionaryCoco			expert-compatibility	analyzer
+package	ecocoInterleavedCore	EvolutionaryCoco	EvolutionaryCoco			family-entry	analyzer helper
+package	ecocoPhysicalCenters	EvolutionaryCoco	EvolutionaryCoco			expert-compatibility	analyzer
+package	ecocoPhysicalWindowValues	EvolutionaryCoco	EvolutionaryCoco			expert-compatibility	analyzer helper
+package	ecocoWindowSpectra	EvolutionaryCoco	EvolutionaryCoco			expert-compatibility	analyzer
+package	ecocoplot	EvolutionaryCoco	EvolutionaryCoco	expert-compatibility	plotter	expert-compatibility	plotter
+package	ecocoplots	EvolutionaryCoco	EvolutionaryCoco	expert-compatibility	plotter	expert-compatibility	plotter
+package	ecocos	EvolutionaryCoco	EvolutionaryCoco	expert-compatibility	analyzer	expert-compatibility	analyzer
+package	ecocotrack	EvolutionaryCoco	EvolutionaryCoco	expert-compatibility	analyzer plotter	expert-compatibility	analyzer plotter
+package	ecocotrackn	EvolutionaryCoco	EvolutionaryCoco	expert-compatibility	analyzer	expert-compatibility	analyzer
+package	eemd	EMD	EMD	expert-compatibility	analyzer	expert-compatibility	analyzer
+package	ellipse_s	Insolation	Insolation	expert-compatibility	analyzer	expert-compatibility	analyzer
+package	emdNL	EMD	EMD	expert-compatibility	analyzer	expert-compatibility	analyzer
+package	erhoAR1	LagOne	LagOne	expert-compatibility	analyzer	expert-compatibility	analyzer
+package	evofft	EvolutionarySpectrum	EvolutionarySpectrum	expert-compatibility	analyzer	expert-compatibility	analyzer
+package	evofftML	EvolutionarySpectrum	EvolutionarySpectrum	expert-compatibility	analyzer	expert-compatibility	analyzer
+package	evoperiodogram	EvolutionarySpectrum	EvolutionarySpectrum	expert-compatibility	analyzer	expert-compatibility	analyzer
+package	evoplomb	EvolutionarySpectrum	EvolutionarySpectrum	expert-compatibility	analyzer	expert-compatibility	analyzer
+package	evopmtm	EvolutionarySpectrum	EvolutionarySpectrum	expert-compatibility	analyzer	expert-compatibility	analyzer
+package	evopmtmML	EvolutionarySpectrum	EvolutionarySpectrum	expert-compatibility	analyzer plotter	expert-compatibility	plotter
+package	find_extrema	EMD	EMD	expert-compatibility	analyzer	expert-compatibility	analyzer
+package	findduplicate	SortUnique	SortUnique	expert-compatibility	analyzer	expert-compatibility	analyzer
+package	findnpk	Extrema	Extrema	expert-compatibility	analyzer helper	expert-compatibility	analyzer helper
+package	findperct	Coco	Coco	expert-compatibility	analyzer	expert-compatibility	analyzer
+package	formatts	WaveletCoherence	WaveletCoherence	expert-compatibility	analyzer	expert-compatibility	analyzer
+package	freq2target	Coco	Coco	expert-compatibility	analyzer		""
+package	freq2targetFixed	Coco	Coco			expert-compatibility	analyzer
+package	freq2targetNew	Coco	Coco			expert-compatibility	analyzer
+package	ftestmtm	PowerSpectrum	PowerSpectrum	expert-compatibility	analyzer	expert-compatibility	analyzer
+package	ftestmtmML	PowerSpectrum	PowerSpectrum	expert-compatibility	analyzer plotter	expert-compatibility	analyzer plotter
+package	gammcf	SWA	SWA	expert-compatibility	analyzer	expert-compatibility	analyzer
+package	gammln	SWA	SWA	expert-compatibility	analyzer	expert-compatibility	analyzer
+package	gammp	SWA	SWA	expert-compatibility	analyzer	expert-compatibility	analyzer
+package	gamser	SWA	SWA	expert-compatibility	analyzer	expert-compatibility	analyzer
+package	gaussfilter	Filtering	FixedFiltering	expert-compatibility	analyzer	expert-compatibility	analyzer
+package	gaussmf	Filtering	FixedFiltering	expert-compatibility	analyzer	expert-compatibility	analyzer
+package	gentarget	Coco	Coco	expert-compatibility	analyzer	expert-compatibility	analyzer
+package	getBerger89Period	OrbitalPeriods	OrbitalPeriods	expert-compatibility	analyzer	expert-compatibility	analyzer
+package	getchi2	SWA	SWA	expert-compatibility	analyzer	expert-compatibility	analyzer
+package	getpks	Extrema	Extrema	expert-compatibility	analyzer	expert-compatibility	analyzer
+package	hpsort	SWA	SWA	expert-compatibility	analyzer	expert-compatibility	analyzer
+package	imscrollpanel_ac	ImageDisplay	ImageView	expert-compatibility	plotter	expert-compatibility	plotter
+package	insoML	Insolation	Insolation	expert-compatibility	analyzer helper	expert-compatibility	analyzer helper
+package	interleavedcvcoco	Coco	Coco			family-entry	analyzer helper
+package	interpolate	Interpolation	Interpolation	family-entry	analyzer helper	family-entry	analyzer helper
+package	interpolate_rand	Interpolation	Interpolation	expert-compatibility	analyzer	expert-compatibility	analyzer
+package	invprctile	SummaryStatistics	SummaryStatistics	expert-compatibility	analyzer	expert-compatibility	analyzer
+package	lodla04	OrbitalPeriods	OrbitalPeriods	expert-compatibility	analyzer	expert-compatibility	analyzer
+package	minirho	PowerSpectrum	PowerSpectrum	expert-compatibility	analyzer helper	expert-compatibility	analyzer helper
+package	minirhos0	PowerSpectrum	PowerSpectrum	expert-compatibility	analyzer helper	expert-compatibility	analyzer helper
+package	mmdd2dayi	Insolation	Insolation	expert-compatibility	analyzer	expert-compatibility	analyzer
+package	monthday2dayi	Insolation	Insolation	expert-compatibility	analyzer	expert-compatibility	analyzer
+package	moveMedian	Smoothing	MovingSummary	expert-compatibility	analyzer	expert-compatibility	analyzer
+package	movemean	Smoothing	MovingSummary	expert-compatibility	analyzer	expert-compatibility	analyzer
+package	movmeanfbw	Smoothing	MovingSummary	expert-compatibility	analyzer helper	expert-compatibility	analyzer
+package	mtmdofs	PowerSpectrum	PowerSpectrum	expert-compatibility	analyzer	expert-compatibility	analyzer
+package	nCk	Changepoint	Changepoint	expert-compatibility	analyzer	expert-compatibility	analyzer
+package	norbits	Coco	Coco	expert-compatibility	analyzer	expert-compatibility	analyzer
+package	numorbit	Coco	Coco	expert-compatibility	analyzer helper	expert-compatibility	analyzer helper
+package	partition_fn	Changepoint	Changepoint	expert-compatibility	analyzer	expert-compatibility	analyzer
+package	pda	PowerDecomposition	PowerDecomposition	expert-compatibility	analyzer	expert-compatibility	analyzer
+package	pdan	DYNOT	DYNOT	expert-compatibility	analyzer helper	expert-compatibility	analyzer
+package	period	SWA	SWA	expert-compatibility	analyzer	expert-compatibility	analyzer
+package	period2spectrum	Coco	Coco	expert-compatibility	analyzer	expert-compatibility	analyzer
+package	period2spectrumB	Coco	Coco	expert-compatibility	analyzer		""
+package	pick_k1	Changepoint	Changepoint	expert-compatibility	analyzer	expert-compatibility	analyzer
+package	plomb_robustar1	PowerSpectrum	PowerSpectrum	expert-compatibility	analyzer helper plotter	expert-compatibility	analyzer plotter
+package	plotAdaptiveCocoPublication	Coco	Coco			expert-compatibility	helper plotter
+package	plotcvcoco	Coco	Coco			expert-compatibility	helper plotter
+package	prewhitening	Prewhitening	AR1Prewhitening	expert-compatibility	analyzer	expert-compatibility	analyzer
+package	randspec_sin	Coco	Coco	expert-compatibility	analyzer	expert-compatibility	analyzer
+package	recplot	Recurrence	Recurrence	expert-compatibility	analyzer helper plotter	expert-compatibility	analyzer helper plotter
+package	redNoisePeriodogramMC	Coco	Coco			expert-compatibility	analyzer helper
+package	redconfML	PowerSpectrum	PowerSpectrum	expert-compatibility	analyzer helper plotter	expert-compatibility	analyzer helper
+package	redconf_any	PowerSpectrum	PowerSpectrum	expert-compatibility	analyzer	expert-compatibility	analyzer
+package	redconfchi2	PowerSpectrum	PowerSpectrum	expert-compatibility	analyzer	expert-compatibility	analyzer
+package	redconftabtchi	PowerSpectrum	PowerSpectrum	expert-compatibility	analyzer	expert-compatibility	analyzer
+package	redmark	SeriesGenerator	SeriesGenerator	expert-compatibility	analyzer	expert-compatibility	analyzer
+package	rednoise	Wavelet	WaveletSpectrum	expert-compatibility	analyzer helper	expert-compatibility	analyzer helper
+package	reexportCocoPublicationPdfs	Coco	Coco			expert-compatibility	analyzer
+package	rho	SWA	SWA	expert-compatibility	analyzer	expert-compatibility	analyzer
+package	rhoAR1	LagOne	LagOne	expert-compatibility	analyzer	expert-compatibility	analyzer
+package	rhoAR1ML	LagOne	LagOne	expert-compatibility	analyzer	expert-compatibility	analyzer
+package	rmse4leadlag	LeadLag	LeadLag	family-entry	analyzer helper plotter	family-entry	analyzer plotter
+package	runCocoEightMethodExperiment	MethodValidation	CocoEightMethodExperiment			verification	analyzer
+package	runCocoPublicationValidation	MethodValidation	CocoPublicationValidation			verification	analyzer
+package	runEcocoTwoMethodExperiment	MethodValidation	EcocoTwoMethodExperiment			verification	analyzer
+package	runInterleavedCvCocoComparison	MethodValidation	InterleavedCvCocoComparison			verification	analyzer
+package	runSyn3FourMethodPublicationStudy	MethodValidation	Syn3FourMethodStudy			verification	analyzer
+package	select_interval	SeriesEditing	EditInterval	family-entry	analyzer helper	family-entry	analyzer helper
+package	smoothbestSpan	Smoothing	BootstrapSmoothing	expert-compatibility	analyzer	expert-compatibility	analyzer
+package	smoothbestSpanRand	Smoothing	BootstrapSmoothing	expert-compatibility	analyzer	expert-compatibility	analyzer
+package	smoothci	Smoothing	BootstrapSmoothing	expert-compatibility	analyzer	expert-compatibility	analyzer
+package	smoothciML	Smoothing	BootstrapSmoothing	expert-compatibility	analyzer helper	expert-compatibility	analyzer helper
+package	smoothwavelet	WaveletCoherence	WaveletCoherence	expert-compatibility	analyzer	expert-compatibility	analyzer
+package	solve	SWA	SWA	expert-compatibility	analyzer	expert-compatibility	analyzer
+package	specswa	SWA	SWA	expert-compatibility	analyzer	expert-compatibility	analyzer
+package	spectralmoments	SpectralMoments	SpectralMoments	family-entry	analyzer helper plotter	family-entry	analyzer helper
+package	spectralswafdr	SWA	SWA	expert-compatibility	analyzer helper	expert-compatibility	analyzer helper
+package	strAssign	SWA	SWA	expert-compatibility	analyzer	expert-compatibility	analyzer
+package	strrep2	Workspace	WorkspaceIO			expert-compatibility	analyzer
+package	swtest	HypothesisTests	Normality	expert-compatibility	analyzer	expert-compatibility	analyzer
+package	tanerhilbertML	Filtering	FixedFiltering	expert-compatibility	analyzer helper	expert-compatibility	analyzer
+package	targetadj_real	Coco	Coco	expert-compatibility	analyzer	expert-compatibility	analyzer
+package	targetrebuilt	Coco	Coco	expert-compatibility	analyzer	expert-compatibility	analyzer
+package	theoredar1ML	Coco	Coco	expert-compatibility	analyzer	expert-compatibility	analyzer
+package	validateCocoPublicationValidation	MethodValidation	CocoPublicationCheck			verification	analyzer
+package	wave_bases	Wavelet	WaveletSpectrum	expert-compatibility	analyzer	expert-compatibility	analyzer
+package	wave_signif	Wavelet	WaveletSpectrum	expert-compatibility	analyzer helper	expert-compatibility	analyzer helper
+package	wavelet	Wavelet	WaveletSpectrum	expert-compatibility	analyzer helper	expert-compatibility	analyzer helper
+package	wtcsignif	WaveletCoherence	WaveletCoherence	expert-compatibility	analyzer	expert-compatibility	analyzer
+package	zeropad2	EvolutionarySpectrum	EvolutionarySpectrum	expert-compatibility	analyzer helper	expert-compatibility	analyzer helper
+menu	Menu_EMDmenu	Desktop	DesktopNavigation	heading	visible	menu	visible
+menu	linegenerator	SeriesGenerator	SeriesGenerator	method	visible	menu	visible
+menu	menu_AM	Modulation	AmplitudeModulation	method	visible	menu	visible
+menu	menu_CSA	CircularSpectrum	CircularSpectrum	method	visible	menu	visible
+menu	menu_LOD	OrbitalPeriods	OrbitalPeriods	method	visible	menu	visible
+menu	menu_LR04	ReferenceSeries	ReferenceSeries	method	visible	menu	visible
+menu	menu_NewDataTable	Workspace	WorkspaceUI	desktop	visible	menu	visible
+menu	menu_add	SeriesArithmetic	MergeSeries	method	visible	menu	visible
+menu	menu_age	Tuning	AgeScale	method	visible	menu	visible
+menu	menu_agebuild	BuildAgeModel	BuildAgeModel	method	visible	menu	visible
+menu	menu_anova	HypothesisTests	ANOVA	method	visible	menu	visible
+menu	menu_basic	Desktop	DesktopNavigation	heading	visible	menu	visible
+menu	menu_bispectral	Bispectrum	Bispectrum	absent	absent	menu	visible
+menu	menu_bivariate	Desktop	DesktopNavigation	heading	visible	menu	visible
+menu	menu_bootstrap	Smoothing	BootstrapSmoothing	method	visible	menu	visible
+menu	menu_cenogrid	ReferenceSeries	ReferenceSeries	method	visible	menu	visible
+menu	menu_chi2gof	HypothesisTests	DistributionTest	method	visible	menu	visible
+menu	menu_clip	SeriesEditing	ClipValues	method	visible	menu	visible
+menu	menu_coh	Coherence	Coherence	method	visible	menu	visible
+menu	menu_colman	Columns	Columns	method	visible	menu	visible
+menu	menu_contact	SettingsHelp	SettingsHelpUI	desktop	visible	menu	visible
+menu	menu_copy	Workspace	WorkspaceUI	desktop	visible	menu	visible
+menu	menu_corr	Association	Correlation	method	visible	menu	visible
+menu	menu_correlation	StratCorrelation	StratCorrelation	method	visible	menu	visible
+menu	menu_covariance	Association	Covariance	method	visible	menu	visible
+menu	menu_cpt	Changepoint	Changepoint	method	visible	menu	visible
+menu	menu_cut	Workspace	WorkspaceUI	desktop	visible	menu	visible
+menu	menu_datadistri	Distribution	DistributionView	method	visible	menu	visible
+menu	menu_datatransf	Transform	Transform	method	visible	menu	visible
+menu	menu_delete	Workspace	WorkspaceUI	desktop	visible	menu	visible
+menu	menu_depeaks	SeriesEditing	Depeak	method	visible	menu	visible
+menu	menu_derivative	Derivative	Derivative	method	visible	menu	visible
+menu	menu_desection	SeriesEditing	EditInterval	method	visible	menu	visible
+menu	menu_digitizer	Digitizer	Digitize DigitizeTrace	alternative	visible	menu	visible
+menu	menu_dynfilter	Filtering	DynamicFiltering	method	visible	menu	visible
+menu	menu_dynos	DYNOT	DYNOT	method	visible	menu	visible
+menu	menu_dynot_v2	DYNOT	DYNOT	method	visible	menu	absent
+menu	menu_eTimeOpt	EvolutionaryTimeOpt	EvolutionaryTimeOpt	method	visible	menu	absent
+menu	menu_ecoco	Coco EvolutionaryCoco	Coco EvolutionaryCoco	method	visible	menu	visible
+menu	menu_edit	Desktop	DesktopNavigation	heading	visible	menu	visible
+menu	menu_eemd	EMD	EMD	method	visible	menu	visible
+menu	menu_email	SettingsHelp	SettingsHelpUI	desktop	visible	menu	visible
+menu	menu_emd	EMD	EMD	method	visible	menu	visible
+menu	menu_example_GD2GR	Examples	ExampleCatalog	method	visible	menu	visible
+menu	menu_example_Newark	Examples	ExampleCatalog	method	visible	menu	visible
+menu	menu_example_PETM	Examples	ExampleCatalog	method	visible	menu	visible
+menu	menu_example_hawaiiCO2	Examples	ExampleCatalog	method	visible	menu	visible
+menu	menu_example_inso2Ma	Examples	ExampleCatalog	method	visible	menu	visible
+menu	menu_example_la04etp	Examples	ExampleCatalog	method	visible	menu	visible
+menu	menu_example_marsimage	Examples	ExampleCatalog	method	visible	menu	visible
+menu	menu_example_plotdigitizer	Examples	ExampleCatalog	method	visible	menu	visible
+menu	menu_example_redp7	Examples	ExampleCatalog	method	visible	menu	visible
+menu	menu_example_sphalerite	Examples	ExampleCatalog	method	visible	menu	visible
+menu	menu_example_wayao	Examples	ExampleCatalog	method	visible	menu	visible
+menu	menu_examples	Desktop	DesktopNavigation	heading	visible	menu	visible
+menu	menu_extinction_CSA	Examples	ExampleCatalog	method	visible	menu	visible
+menu	menu_extract	Columns	Columns	method	visible	menu	visible
+menu	menu_file	Desktop	DesktopNavigation	heading	visible	menu	visible
+menu	menu_filter	Filtering	FixedFiltering	method	visible	menu	visible
+menu	menu_findupdates	SettingsHelp	SettingsHelpUI	desktop	visible	menu	visible
+menu	menu_folder	Workspace	WorkspaceUI	desktop	visible	menu	visible
+menu	menu_function	Transform	AffineAxes	method	visible	menu	visible
+menu	menu_gap	SeriesEditing	EditInterval	method	visible	menu	visible
+menu	menu_help	Desktop	DesktopNavigation	heading	visible	menu	visible
+menu	menu_image	Desktop	DesktopNavigation	heading	visible	menu	visible
+menu	menu_improfile	ImageProfile	ImageProfile	method	visible	menu	visible
+menu	menu_imshow	ImageDisplay	ImageView	method	visible	menu	visible
+menu	menu_insol	Insolation	Insolation	method	visible	menu	visible
+menu	menu_interp	Interpolation	Interpolation	method	visible	menu	visible
+menu	menu_interpolationGUI	Interpolation	Interpolation	method	visible	menu	visible
+menu	menu_interpseries	Interpolation	InterpolateSeries	method	visible	menu	visible
+menu	menu_lang	SettingsHelp	SettingsHelpUI	desktop	visible	menu	absent
+menu	menu_laskar	OrbitSolution	OrbitSolution	method	visible	menu	visible
+menu	menu_leadlag	LeadLag	LeadLag	method	visible	menu	visible
+menu	menu_linearReg	Regression	LinearRegression	archival	visible	menu	visible
+menu	menu_log10	Transform	Transform	absent	absent	menu	hidden
+menu	menu_lyapunov	Lyapunov	Lyapunov	method	visible	menu	absent
+menu	menu_manuals	SettingsHelp	SettingsHelpUI	desktop	visible	menu	visible
+menu	menu_math	Desktop	DesktopNavigation	heading	visible	menu	visible
+menu	menu_maxmin	Extrema	Extrema	method	visible	menu	visible
+menu	menu_movGauss	Smoothing	GaussianSmoothing	method	visible	menu	visible
+menu	menu_movmeanfbw	Smoothing	MovingSummary	method	visible	menu	visible
+menu	menu_movmedian	Smoothing	MovingSummary	method	visible	menu	visible
+menu	menu_movmedian_option	Desktop	DesktopNavigation	heading	visible	menu	visible
+menu	menu_movmedianfbw	Smoothing	MovingSummary	method	visible	menu	visible
+menu	menu_multiply	SeriesArithmetic	MultiplySeries	method	visible	menu	visible
+menu	menu_multivariate1	Desktop	DesktopNavigation	heading	visible	menu	hidden
+menu	menu_newtxt	Workspace	WorkspaceUI	desktop	visible	menu	visible
+menu	menu_norm	Transform	Transform	absent	absent	menu	hidden
+menu	menu_normaltest	HypothesisTests	Normality	method	visible	menu	visible
+menu	menu_open	Workspace	WorkspaceUI	desktop	hidden	menu	absent
+menu	menu_opendir	Workspace	WorkspaceUI	desktop	visible	menu	hidden
+menu	menu_paste	Workspace	WorkspaceUI	desktop	visible	menu	visible
+menu	menu_pca	PCA	PCA	method	visible	menu	visible
+menu	menu_pda	PowerDecomposition	PowerDecomposition	method	visible	menu	visible
+menu	menu_period	EvolutionarySpectrum	EvolutionarySpectrum	method	visible	menu	visible
+menu	menu_plot	SeriesPlot	SeriesPlot	method	visible	menu	visible
+menu	menu_plotadv	SeriesPlot	SeriesPlot	method	visible	menu	visible
+menu	menu_plotall	Desktop	DesktopNavigation	heading	visible	menu	visible
+menu	menu_plotn	SeriesPlot	SeriesPlot	method	visible	menu	visible
+menu	menu_plotn2	SeriesPlot	SeriesPlot	method	visible	menu	visible
+menu	menu_plotpro_2d	SeriesPlot	SeriesPlot	method	visible	menu	visible
+menu	menu_power	PowerSpectrum	PowerSpectrum	method	visible	menu	visible
+menu	menu_prewhiten	Detrending	Detrending	method	visible	menu	visible
+menu	menu_read	SettingsHelp	SettingsHelpUI	desktop	visible	menu	visible
+menu	menu_recplot	Recurrence	Recurrence	method	visible	menu	visible
+menu	menu_refreshlist	Workspace	WorkspaceUI	desktop	visible	menu	visible
+menu	menu_rename	Workspace	WorkspaceUI	desktop	visible	menu	visible
+menu	menu_rgb2gray	ImageColor	ImageColor	method	visible	menu	visible
+menu	menu_rgb2lab	ImageColor	ImageColor	method	visible	menu	visible
+menu	menu_rho	LagOne	LagOne	method	visible	menu	visible
+menu	menu_rhov2	LagOne	LagOne	method	visible	menu	absent
+menu	menu_samplerate	Sampling	SamplingRate	method	visible	menu	visible
+menu	menu_savefig	Workspace	WorkspaceUI	desktop	visible	menu	visible
+menu	menu_sednoise	Desktop	DesktopNavigation	heading	visible	menu	visible
+menu	menu_selectinterval	SeriesEditing	EditInterval	method	visible	menu	visible
+menu	menu_settings	SettingsHelp	SettingsHelpUI	absent	absent	menu	visible
+menu	menu_smooth	Smoothing	MovingSummary	method	visible	menu	visible
+menu	menu_smooth1	Desktop	DesktopNavigation	heading	visible	menu	visible
+menu	menu_smooth_option	Desktop	DesktopNavigation	heading	visible	menu	visible
+menu	menu_sort	SortUnique	SortUnique	method	visible	menu	visible
+menu	menu_sound	Sound	SeriesSound	method	visible	menu	visible
+menu	menu_specmoments	SpectralMoments	SpectralMoments	method	visible	menu	visible
+menu	menu_sr2age	BuildAgeModel	SedimentationRateToAge	method	visible	menu	visible
+menu	menu_statsummary	SummaryStatistics	SummaryStatistics	method	visible	menu	visible
+menu	menu_swa	SWA	SWA	method	visible	menu	visible
+menu	menu_timeOpt	TimeOpt	TimeOpt	method	visible	menu	absent
+menu	menu_ttest	HypothesisTests	OneSampleT	method	visible	menu	visible
+menu	menu_undatable	Undatable	Undatable	method	visible	menu	visible
+menu	menu_uni2SamTest	HypothesisTests	TwoSampleTests	method	visible	menu	visible
+menu	menu_univariate	Desktop	DesktopNavigation	heading	visible	menu	visible
+menu	menu_utilities	Desktop	DesktopNavigation	absent	absent	menu	hidden
+menu	menu_waveletGUI	Wavelet WaveletCoherence	WaveletSpectrum WaveletCoherence	method	visible	menu	visible
+menu	menu_whiten	Prewhitening	AR1Prewhitening	method	visible	menu	visible
+menu	menuac	Desktop	DesktopNavigation	heading	visible	menu	visible

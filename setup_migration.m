@@ -11,5 +11,6 @@ addpath(genpath(fullfile(source, 'code')));
 addpath(genpath(fullfile(source, 'data')));
 extra = getenv('ACYCLE_REFERENCE_DATA');
 if ~isempty(extra), addpath(extra); end
+addpath(genpath(fullfile(root, 'code', 'method')));
 addpath(fullfile(root, 'matlab'));
 end

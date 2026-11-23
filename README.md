@@ -1,5 +1,6 @@
 # Acycle GUIDE method migration
 
+[逐项归并方案（62 项源码归属）](audit/MODULE_CONSOLIDATION.zh-CN.md) · [helper / analyzer / plotter 契约评审](audit/METHOD_ROLE_REVIEW.zh-CN.md)
 
 The pinned Acycle 3.1.1 implementation is available beside GUIDE through `acmaster`. [两版功能对照与并行调用](migration/master/README.zh-CN.md) · [master methods](migration/master/methods.tsv) · [menu changes](migration/master/menus.tsv)
 

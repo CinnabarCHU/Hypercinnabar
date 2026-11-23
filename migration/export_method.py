@@ -17,7 +17,7 @@ FILES = re.compile(r'[\w.()+-]+\.(?:mat|txt|csv|dat|jpg|png|xlsx|fig|14c)\b', re
 
 SETUP = """function setup_method()
 root=fileparts(mfilename('fullpath'));
-dirs={'upstream/recovered/code','upstream/acycle/code','upstream/acycle/data'};
+dirs={'upstream/recovered/code','upstream/acycle/code','upstream/acycle/data','code/method'};
 for i=1:numel(dirs)
     folder=fullfile(root,dirs{i});
     if isfolder(folder), addpath(genpath(folder)); end
@@ -62,7 +62,7 @@ def executable(text):
 def dependencies(methods):
     sourcefiles = defaultdict(list)
     resources = defaultdict(list)
-    for directory in (BASE / 'code', BASE / 'data', HIST):
+    for directory in (BASE / 'code', BASE / 'data', HIST, ROOT / 'code' / 'method'):
         for p in files_under(directory):
             if p.suffix.lower() in {'.m', '.p'}:
                 sourcefiles[p.stem].append(p)
@@ -142,6 +142,9 @@ def master_dependencies(methods):
     # Keep its original directory layout and licensed dependencies intact in a standalone export.
     for folder in ('code', 'data'):
         files.update(files_under(source / folder))
+    method_dir = ROOT / 'code' / 'method'
+    if any(method_dir.rglob('*.m')):
+        files.update(files_under(method_dir))
     files.update([ROOT / 'matlab' / 'logger.m', ROOT / 'LICENSE', source / 'README.md', source / 'ac.m'])
     if 'Desktop' in selected and (source / 'doc').is_dir():
         files.update(files_under(source / 'doc'))
