@@ -14,7 +14,7 @@ const MAX_OUTPUT = 16 * 1024 * 1024
 const TERMINATION_GRACE_MS = 20_000
 const WORKFLOW_POLICY = `Acycle research workflow
 For methods outside the high-level tools, discover exact pinned entrypoints with acycle_catalog and execute typed local MATLAB steps with acycle_native. Read the source help before selecting positional arguments. Prefer calculation cores over GUI actions. Native source/API coverage does not establish headless GUI parity or numerical validation. Import each native input attachment explicitly, then use its frozen workspace path. Preserve explicit units and scientific assumptions.
-Use acycle_menu_catalog to find scientific menu roles. Select master or the _legacy GUIDE operation during acycle_menu_helper. Pass the helper run_id to acycle_menu_analyzer and both run IDs to acycle_menu_plotter. To reproduce a role use acycle_menu_replay with the saved run_id. A role marked incomplete has partial results. Desktop-only commands need the original window.
+Use acycle_menu_catalog to find scientific menu roles. Its operation records document the wrappers; do not look up wrapper operation names in the separate acycle_catalog of native source files. If the user only requests discovery, stop after catalogue queries: helper creates a recorded MATLAB invocation. Select master or the _legacy GUIDE operation during acycle_menu_helper. Pass the helper run_id to acycle_menu_analyzer and both run IDs to acycle_menu_plotter. To reproduce a role use acycle_menu_replay with the saved run_id. A role marked incomplete has partial results. Desktop-only commands need the original window.
 Use Acycle's original MATLAB implementation for its scientific quality assessment, numerical analysis, statistics, and plotting. Python may handle attachment bytes, checksums, file-format structure, transport, and functions Acycle does not implement; bridge scientific work back to MATLAB wherever possible. Do not replace available Acycle scientific QA or calculations with shell/Python statistics. The default MATLAB analysis pipeline already performs scientific QA; external numerical pre-analysis is unnecessary.
 Choose methods from the user's research question, documented data meaning, and applicable Acycle skills. For sedimentation-rate, age, or orbital interpretations, verify the required coordinate units, geological age constraints, orbital targets, and scientifically reasonable search range. If required information is missing, ask the user a concise clarification and wait before starting scientific analysis. Never infer units, age, or a rate range from a filename, numerical magnitudes, or a sample count. Structural attachment import and byte preview can proceed while clarification is pending.
 For conversational changes to a completed run, prefer acycle_rerun with the requested changes together in parameter_patch. Preserve the saved input, operation, method, and effective settings except for changes the user requested. Do not restart a generic analysis that silently changes the original method. Retrieve completed outputs for display instead of recalculating them.
@@ -27,9 +27,15 @@ export function runBridge(request, { python = process.env.ACYCLE_PYTHON || 'pyth
                                      timeoutMs = 3_600_000, environment = {} } = {}) {
   return new Promise((fulfill, reject) => {
     if (signal?.aborted) return reject(new Error('Acycle call cancelled'))
+    // The model provider owns this credential; numerical workers never need it.
+    // Remove it after applying overrides so config cannot reintroduce it.
+    const childEnvironment = { ...process.env, ...environment }
+    const secrets = [...new Set([process.env.DEEPSEEK_API_KEY, environment.DEEPSEEK_API_KEY].filter(Boolean))]
+    const redact = value => secrets.reduce((text, secret) => text.replaceAll(secret, '[REDACTED]'), value)
+    delete childEnvironment.DEEPSEEK_API_KEY
     const child = spawn(python, ['-m', 'acycle_deepseek.harness_bridge'], {
       stdio: ['pipe', 'pipe', 'pipe'], shell: false, detached: process.platform !== 'win32',
-      env: { ...process.env, ...environment },
+      env: childEnvironment,
     })
     let stdout = '', stderr = '', failure, forceTimer
     const stop = (reason) => {
@@ -63,16 +69,15 @@ export function runBridge(request, { python = process.env.ACYCLE_PYTHON || 'pyth
       clean()
       if (failure) return reject(failure)
       if (code !== 0) {
-        const secret = process.env.DEEPSEEK_API_KEY
         let record
         try { record = JSON.parse(stdout) } catch { /* Interpreter/startup failures may only reach stderr. */ }
         const structuredFailure = record && typeof record === 'object' &&
           (record.status === 'failed' || record.error) ? JSON.stringify(record) : null
         const raw = structuredFailure ?? stderr.slice(-4000)
-        const detail = secret ? raw.replaceAll(secret, '[REDACTED]') : raw
+        const detail = redact(raw)
         return reject(new Error(`Acycle bridge exited ${code}: ${detail}`))
       }
-      try { fulfill(JSON.parse(stdout)) }
+      try { fulfill(JSON.parse(redact(stdout))) }
       catch { reject(new Error('Acycle bridge returned invalid JSON')) }
     })
     child.stdin.on('error', () => {})

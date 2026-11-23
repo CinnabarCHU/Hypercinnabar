@@ -619,7 +619,7 @@ def tool_schemas():
         'description':'Change only parameters supported by the baseline operation. Omitted values and the operation/method stay fixed. null removes optional fields or restores their MATLAB default, but cannot reset method/detrend. Select method/detrend explicitly. Mutually exclusive targets and detrending windows are replaced with a recorded explanation.'}
     specs = [
         ('acycle_capabilities','Inspect configured MATLAB backend and supported Acycle core. No numerical Python fallback.',{},[]),
-        ('acycle_inspect','Inspect exact input bytes, checksum, universal-newline logical line count and preview. CR-only data is supported without conversion. MATLAB performs all numerical QA.',{'input_path':string},['input_path']),
+        ('acycle_inspect','Inspect numeric TEXT files: exact bytes, checksum, universal-newline logical line count and preview. Do not call for images, MAT, Excel or other binary files; import those and use the appropriate typed menu helper. CR-only data is supported without conversion. MATLAB performs all numerical QA.',{'input_path':string},['input_path']),
         ('acycle_analyze','Run Acycle original MATLAB computation and MATLAB plots. Creates immutable run with source provenance.',
          {'input_path':string,'parameters':parameter_schema,'label':string,'parent_run_id':parent_id,
           'tuning_run_id':{'type':'string','description':'Apply the saved age model and covered depth range of a completed tune run to the ORIGINAL proxy. Do not use the already bandpassed/tuned curve as independent confirmation of its imposed period. Omit age_model, sedimentation_rate and coordinate_range when using this reference.'}},['input_path']),

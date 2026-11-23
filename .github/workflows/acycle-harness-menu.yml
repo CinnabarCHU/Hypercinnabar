@@ -34,7 +34,7 @@ jobs:
         run: |
           cd "$RUNNER_TEMP/acycle-harness-src"
           ACYCLE_TEST_SOURCE="$GITHUB_WORKSPACE/upstream/master" python -m pytest -q tests
-          node --test plugin/tests/{plugin,attachments}.test.mjs
+          node --test plugin/tests/{plugin,attachments,credential-boundary}.test.mjs
       - name: Mount installed plugin in both official tool runtimes
         run: |
           for version in 0.2.1-rc.3 0.2.2-rc.5; do

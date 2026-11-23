@@ -398,7 +398,7 @@ def schemas():
     return [
         spec(
             "catalog",
-            "Find a GUI menu by query. With menu, list version choices. With menu and operation, inspect required fields and roles. GUIDE choices end in _legacy.",
+            "Find a GUI menu with one case-insensitive literal substring of its English label, tag, or operation (e.g. rgb, image, interp). No translation or multi-keyword search; omit query to list all. With menu, list version choices. With menu and operation, inspect required fields and roles. GUIDE choices end in _legacy.",
             {
                 "query": string,
                 "menu": string,
