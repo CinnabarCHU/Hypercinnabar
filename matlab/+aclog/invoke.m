@@ -28,6 +28,10 @@ if entry.bytes ~= 0, error('Acycle:Logger:Reuse', 'This id already has an invoca
 ref = aclog.store(id, 'params', params);
 aclog.store(id, 'rng', rng);
 logger(id, 'init', struct('op', op, 'params', ref));
+if isfile([id,'.source.mat'])
+    upstream = load([id,'.source.mat'],'value');
+    logger(id,'source',upstream.value);
+end
 try
     % The expression is constant. The method is a function handle, and parameters stay as MATLAB values.
     transcript = evalc('[retval, status, caught] = runMethod(implementation, params);');
