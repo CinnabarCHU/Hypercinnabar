@@ -28,7 +28,7 @@
 | --- | --- | --- |
 | `acycle_gui_inspect` | 可选 `window_id` | 当前协作窗口，或指定窗的序列、单位、参数、面板、可编辑字段、修订号与 Core 记录 ID |
 | `acycle_gui_open` | `feature` 取 `filter` 或 `image_profile`，另给 `input_path` | 用户可见窗口的状态。灰度和 RGB 栅格图像可用于点选剖线 |
-| `acycle_gui_update` | `window_id`、`expected_revision`，以及部分 `params` 或 `plt` | 带通支持 `flow/fhigh` 与两个面板共有的 `x_1/x_2/y_1/y_2`。频带编辑更新保存按钮使用的数据。仅改显示范围复用同一个 Analyzer |
+| `acycle_gui_update` | `window_id`、`expected_revision`，以及部分 `params` 或 `plt` | 带通支持 `flow/fhigh` 与原窗口的轴限控件 `x_1/x_2/y_1/y_2`。FFT 和 MTM 共享频率横轴。频带编辑更新保存按钮使用的数据。仅改显示范围复用同一个 Analyzer |
 | `acycle_gui_events` | 可选 `after` 与 `window_id` | 自游标以来的提交、关闭、剖线完成或取消事件。最近 256 个事件保存在该 MATLAB 会话中，过期游标返回 `resync` |
 
 共享会话的生命周期由用户控制。关闭 Acycle 主窗口会撤销共享，重开后复制新的会话目录。窗口 ID 只在当前 MATLAB 会话中有意义。Core 分析 ID 用来重放数值工作，批处理的 Harness `run_id` 用来查其独立运行记录。参数冲突返回 `conflict` 和最新状态。窗口关闭返回 `closed`。读取事件是一次立即返回的查询，用户可以在完成点选后让助手继续。

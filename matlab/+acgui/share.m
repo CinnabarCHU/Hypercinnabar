@@ -14,7 +14,7 @@ end
 folder = char(java.nio.file.Files.createTempDirectory(base.toPath(),'acycle-gui-',attrs).toString());
 clock = timer('ExecutionMode','fixedSpacing','Period',.15,'BusyMode','drop','TimerFcn',@(~,~)poll(folder));
 try
-    writeText(fullfile(folder,'session.json'),jsonencode(struct('protocol',1)));
+    accore.io('writeText',fullfile(folder,'session.json'),jsonencode(struct('protocol',1)),'UTF-8');
     listener = addlistener(fig,'ObjectBeingDestroyed',@(~,~)dispose(clock,folder));
     setappdata(fig,key,struct('folder',folder,'clock',clock,'listener',listener));
     start(clock);
@@ -35,7 +35,7 @@ for k = 1:min(numel(requests),4)
     [claimed,~] = movefile(fullfile(folder,name),working);
     if ~claimed, continue; end
     try
-        q = jsondecode(fileread(working));
+        q = jsondecode(accore.io('readText',working));
         validateattributes(q.deadline,{'numeric'},{'real','scalar','finite'});
         if q.deadline<posixtime(datetime('now','TimeZone','UTC'))
             error('Acycle:GUI:Expired','This desktop request expired before it started.');
@@ -47,17 +47,10 @@ for k = 1:min(numel(requests),4)
     end
     if ~isfolder(folder), return; end
     tmp = [prefix,'.reply.tmp'];
-    writeText(tmp,jsonencode(reply));
+    accore.io('writeText',tmp,jsonencode(reply),'UTF-8');
     movefile(tmp,[prefix,'.reply.json']);
     delete(working);
 end
-end
-
-function writeText(file,value)
-[fid,msg] = fopen(file,'w','n','UTF-8');
-if fid<0, error('Acycle:GUI:File','%s',msg); end
-finish = onCleanup(@()fclose(fid)); %#ok<NASGU>
-fprintf(fid,'%s',value);
 end
 
 function dispose(clock,folder)

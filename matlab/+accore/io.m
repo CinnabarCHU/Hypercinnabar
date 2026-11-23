@@ -27,11 +27,15 @@ case 'read'
     value = load(varargin{1});
 case 'readImage'
     value = imread(varargin{1});
+case 'imageInfo'
+    value = imfinfo(varargin{1});
+case 'readText'
+    value = fileread(varargin{1});
 case 'writeMatrix'
     dlmwrite(varargin{:});
     value = varargin{1};
 case 'writeText'
-    [fid,msg] = fopen(varargin{1},'w');
+    [fid,msg] = fopen(varargin{1},'w','n',varargin{3:end});
     if fid < 0, error('Acycle:IO:Open','%s',msg); end
     closeFile = onCleanup(@()fclose(fid)); %#ok<NASGU>
     fprintf(fid,'%s',varargin{2});

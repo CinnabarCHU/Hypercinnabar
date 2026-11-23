@@ -1,6 +1,6 @@
 function fig = transectWindow(file)
 % Nonblocking image transect for human selection in the shared desktop.
-imageData = accore.io('readImage',file); info = imfinfo(file); color = info(1).ColorType;
+imageData = accore.io('readImage',file); info = accore.io('imageInfo',file); color = info(1).ColorType;
 if ~ismember(color,{'grayscale','truecolor'})
     error('Acycle:GUI:Image','This interactive picker supports grayscale and RGB images.');
 end
