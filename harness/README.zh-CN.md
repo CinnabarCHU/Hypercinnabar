@@ -1,5 +1,7 @@
 # Acycle 的 DeepSeek Harness 插件
 
+本分支 0.7.0 通过指定的本机 MATLAB Engine 接入可见桌面。[实时滤波和图像剖面](../migration/poc/HARNESS.zh-CN.md)
+
 这个分支把 Acycle 的菜单接口装进 DeepSeek Harness。Python 负责传递参数、保存每次运行和交付文件，科学计算和绘图仍由已有的 MATLAB 方法完成。GUI 和 CLI 可以独立调用同一组接口。
 
 ## 安装
@@ -18,10 +20,10 @@ python -m pip install build
 mkdir -p ../acycle-harness-src/dist
 python -m build --wheel --outdir ../acycle-harness-src/dist ../acycle-harness-src
 (cd ../acycle-harness-src/plugin && npm pack --pack-destination ../dist)
-python -m pip install ../acycle-harness-src/dist/acycle_deepseek-0.6.0-py3-none-any.whl
+python -m pip install ../acycle-harness-src/dist/acycle_deepseek-0.7.0-py3-none-any.whl
 ```
 
-在 DeepSeek Harness 所在的 npm 项目中安装本地 `dsh-acycle-0.6.0.tgz`，然后把下面条目加入现有 Agent preset 的插件列表。请将四个绝对路径换成本机的值。原 Web 部署脚本继续使用它固定的 `0.2.1-rc.3` 组合，支持 `--menu-root`。在 `0.2.2-rc.5` 的宿主中，使用已启用官方 native tool executor 的 preset。
+在 DeepSeek Harness 所在的 npm 项目中安装本地 `dsh-acycle-0.7.0.tgz`，然后把下面条目加入现有 Agent preset 的插件列表。请将四个绝对路径换成本机的值。原 Web 部署脚本继续使用它固定的 `0.2.1-rc.3` 组合，支持 `--menu-root`。在 `0.2.2-rc.5` 的宿主中，使用已启用官方 native tool executor 的 preset。
 
 ```json
 {

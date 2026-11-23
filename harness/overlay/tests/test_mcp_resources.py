@@ -56,7 +56,7 @@ def rpc(workspace, method, params=None, dispatcher=None):
 def test_initialize_advertises_resources_without_subscription(tmp_path):
     response = rpc(tmp_path, "initialize")["result"]
     assert response["capabilities"]["resources"] == {"subscribe": False, "listChanged": False}
-    assert response["serverInfo"]["version"] == "0.6.0"
+    assert response["serverInfo"]["version"] == "0.7.0"
     assert rpc(tmp_path, "resources/list")["result"] == {"resources": []}
 
 

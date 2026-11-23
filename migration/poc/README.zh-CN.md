@@ -1,5 +1,7 @@
 # Acycle 代码式桌面 PoC
 
+本分支含本地 Harness 协作测试版，可连接正在运行的滤波窗口或打开图像剖面选择器。[连接步骤和测试工具](HARNESS.zh-CN.md)
+
 发行包解压后，在 MATLAB 中进入解压目录，运行 `ac`。用 `ac('/path/to/data')` 可以直接打开某个数据目录。命令行脚本先运行 `setup_acycle`。桌面和科学函数的参考版本分别是移除 GUIDE 前的 `b52ea9f` 和 master 的 `dcba427`。
 
 从迁移仓库构建需要 Python、NumPy、SciPy 和两个已初始化的子模块。构建器输出独立目录。将其复制到另一台安装了 MATLAB 及对应工具箱的计算机后即可使用。

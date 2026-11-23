@@ -61,7 +61,7 @@ def main() -> int:
     parser.add_argument('--menu-root', default=os.environ.get('ACYCLE_MENU_ROOT'), help='Pinned Acycle menu interface checkout')
     parser.add_argument('--matlab', default=os.environ.get('MATLAB_EXECUTABLE', 'matlab'))
     parser.add_argument('--plugin', help='Explicit native index.mjs for development; default is installed dsh-acycle')
-    parser.add_argument('--package', help='Native tgz for --install; default is dist/dsh-acycle-0.6.0.tgz')
+    parser.add_argument('--package', help='Native tgz for --install; default is dist/dsh-acycle-0.7.0.tgz')
     parser.add_argument('--install', action='store_true', help='Install pinned npm runtime and local native package into the deployment only')
     parser.add_argument('--newark-demo', action='store_true', help='Explicitly mount the public Newark demonstration skill in the actual agent preset')
     parser.add_argument('--port', type=int, default=3080)
@@ -90,7 +90,7 @@ def main() -> int:
         npm = shutil.which('npm')
         if npm is None:
             parser.error('npm is required for --install')
-        archive = Path(args.package).expanduser().resolve() if args.package else bundle/'dist/dsh-acycle-0.6.0.tgz'
+        archive = Path(args.package).expanduser().resolve() if args.package else bundle/'dist/dsh-acycle-0.7.0.tgz'
         if not archive.is_file():
             parser.error(f'Native release package missing: {archive}')
         runtime.mkdir(parents=True, exist_ok=True)
@@ -125,7 +125,7 @@ def main() -> int:
             {'id': 'deepseek-flash', 'name': 'DeepSeek Flash', 'inputModalities': ['text', 'image'], 'systemPromptUpdate': 'in-history'}]}},
         {'insert': [{'id': 'preset-acycle', 'name': '@deepseek-ai/dsh-agent-preset', 'config': preset}]},
     ]
-    deployment = {'schema_version': 1, 'acycle_version': '0.6.0', 'expected_native_tools': 20,
+    deployment = {'schema_version': 1, 'acycle_version': '0.7.0', 'expected_native_tools': 20,
                   'expected_skills': 10, 'harness_version': HARNESS_VERSION, 'profile': 'web', 'preset': 'acycle',
                   'expected_total_skills': 11 if args.newark_demo else 10, 'newark_demo': demo,
                   'workspace': str(workspace), 'directory': str(directory), 'runtime': str(runtime),

@@ -75,14 +75,31 @@ def integrate(dest, tree):
     f = gui/"ft.m"
     s = f.read_text()
     s = section(s,"data_s = varargin{1}.current_data;","handles.data_name =",
-                """handles.bandpassSession = accli.run('menu_filter',varargin{1}.current_data);
+                """if isfield(varargin{1},'savedBandpass')
+    handles.bandpassSession = varargin{1}.savedBandpass;
+else
+    handles.bandpassSession = accli.run('menu_filter',varargin{1}.current_data);
+end
 data_s = handles.bandpassSession.params.data;
 handles.current_data = data_s;""")
+    s = replace(s,"handles.data_name = varargin{1}.data_name;", "handles.data_name = varargin{1}.data_name;\nhandles.openedFrom = handles.data_name;")
     s = section(s,"[po2,w2] = pmtm(","set(handles.edit10,", """po2 = handles.bandpassSession.dat.po2; fd2 = handles.bandpassSession.dat.fd2;
 f = handles.bandpassSession.res.f; P1 = handles.bandpassSession.res.P1;
 style = handles.bandpassSession.plt;
 handles.x_1 = style.x_1; handles.x_2 = style.x_2; handles.y_1 = style.y_1;
 handles.y_2 = style.y_2; handles.y_3 = style.y_3;""")
+    for field in ("x_1","x_2","y_1","y_2","filt_flow","filt_fhigh"):
+        s = s.replace(f"num2str(handles.{field})",f"num2str(handles.{field},17)")
+    s = replace(s,"handles.filt_flow = fq_deft * 0.8;", "handles.filt_flow = handles.bandpassSession.params.flow;")
+    s = replace(s,"handles.filt_fhigh = fq_deft * 1.2;", "handles.filt_fhigh = handles.bandpassSession.params.fhigh;")
+    s = replace(s,"handles.filter = 'Gaussian';","""handles.filter = handles.bandpassSession.params.filter;
+if isfield(handles.bandpassSession.params,'taner_c')
+    handles.taner_c = handles.bandpassSession.params.taner_c;
+    set(handles.edit18,'String',num2str(log10(handles.taner_c),17));
+end""")
+    s = replace(s,"set(handles.popupmenu4,'Value',5)", """choices = cellstr(get(handles.popupmenu4,'String'));
+chosen = find(strcmp(choices,handles.filter),1);
+if ~isempty(chosen), set(handles.popupmenu4,'Value',chosen); end""")
     f.write_text(s)
     f = misc/"update_filter_axes.m"
     s = f.read_text()
@@ -110,6 +127,17 @@ else
     xlim([x_1 x_2]); ylim([y_1 y_2]);
     xlim(handles.ft_axes4,[x_1 x_2]);
 end""")
+    s += """\nif isempty(handles.data_filterout)
+    setappdata(ancestor(handles.ft_axes3,'figure'),'AcycleAnalysis',[]);
+    acgui.liveMark(ancestor(handles.ft_axes3,'figure'),'filter','no_result','changed',struct());
+else
+    session = handles.bandpassSession;
+    session.source_name = handles.data_name;
+    handles.bandpassSession = session;
+    acgui.state(hObject,handles);
+    setappdata(ancestor(handles.ft_axes3,'figure'),'AcycleAnalysis',session);
+    acgui.liveMark(ancestor(handles.ft_axes3,'figure'),'filter','ready','changed',struct('analyzer_id',session.ids.analyzer));
+end\n"""
     f.write_text(s)
     # The alternative high/low/stop filter controls keep their native filenames.
     f = misc/"update_filter_axes4.m"
@@ -130,6 +158,12 @@ end""")
 else
     add_list = ''; data_filterout = [];
 end""")
+    s += """\nif isempty(handles.data_filterout)
+    setappdata(ancestor(handles.ft_axes3,'figure'),'AcycleAnalysis',[]);
+    acgui.liveMark(ancestor(handles.ft_axes3,'figure'),'filter','no_result','changed',struct());
+else
+    acgui.liveMark(ancestor(handles.ft_axes3,'figure'),'filter','ready','changed',struct('analyzer_id',result.ids.analyzer));
+end\n"""
     f.write_text(s)
     # Multiselect overlays and the export-column ordering stay in the old desktop.
     # Each trend is computed through the registered analyzer and persists separately.

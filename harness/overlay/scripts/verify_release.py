@@ -27,7 +27,7 @@ def digest(path: Path) -> str:
 def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--workspace', default=str(Path(__file__).resolve().parents[1]))
-    parser.add_argument('--version', default='0.6.0')
+    parser.add_argument('--version', default='0.7.0')
     parser.add_argument('--plugin-root', required=True, help='Extracted package/ from the npm tarball')
     parser.add_argument('--runtime', help='Official Harness package installation for native-registry smoke')
     parser.add_argument('--output', default='validation/release-verification.json')

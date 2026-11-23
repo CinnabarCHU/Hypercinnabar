@@ -20,6 +20,9 @@ for k = 1:numel(catalog.menus)
     end
 end
 robot = findall(fig,'Tag','push_robot');
+uimenu(h.menu_help,'Label','Connect to Acycle Harness...', ...
+    'Tag','acycle_connect_harness','Separator','on', ...
+    'Callback',@(~,~)msgbox(['MATLAB Engine: ',acgui.share()],'Acycle Harness'));
 if isscalar(robot)
     original = robot.Callback;
     robot.Callback = @(obj,evt)accore.dispatchMenu('push_robot',@()original(obj,evt));

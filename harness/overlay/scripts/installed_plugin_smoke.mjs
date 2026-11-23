@@ -32,9 +32,10 @@ try {
   }
   await ctx.plugin(SkillRegistry)
   await ctx.plugin(WorkingDirectoryFixture)
-  const fiber = await ctx.plugin(plugin, { workspace })
+  const live = process.argv.includes('--gui-live')
+  const fiber = await ctx.plugin(plugin, { workspace, ...(live ? { guiEngine: 'AcycleDesktopTest' } : {}) })
   const tools = ctx.tools.schemas()
-  assert.equal(tools.length, 20)
+  assert.equal(tools.length, live ? 24 : 20)
   const skills = await ctx.skills.list()
   assert.equal(skills.length, 10)
   for (const skill of skills) assert.ok((await ctx.skills.get(skill.name)).content.length > 100)
@@ -55,6 +56,10 @@ try {
   if (process.argv.includes('--menu-matlab')) {
     const { verifyMenuScience } = await import('./menu_science_smoke.mjs')
     await verifyMenuScience(call, workspace)
+  }
+  if (live) {
+    const { verifyLiveGui } = await import('./live_gui_smoke.mjs')
+    await verifyLiveGui(call, workspace)
   }
   await fiber.dispose()
   assert.equal(ctx.tools.schemas().length, 0)

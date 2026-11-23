@@ -437,6 +437,9 @@ def dispatch(name, args, workspace='.'):
     if extras or missing:
         raise ValueError(f'Invalid arguments: unknown={sorted(extras)}, missing={sorted(missing)}')
     root = _root(workspace)
+    from . import gui
+    if name.startswith(gui.PREFIX):
+        return gui.run(root,name[len(gui.PREFIX):],args)
     from . import menu
     if name == 'acycle_menu_catalog':
         return menu.discover(args)
@@ -450,7 +453,7 @@ def dispatch(name, args, workspace='.'):
         return run(root, args)
     if name == 'acycle_capabilities':
         remote = os.environ.get('ACYCLE_BACKEND','local') == 'github'
-        return {'version':'0.6.0', 'menu_interfaces':menu.capabilities(), 'scientific_backend':'MATLAB/Acycle',
+        return {'version':'0.7.0', 'menu_interfaces':menu.capabilities(), 'scientific_backend':'MATLAB/Acycle',
                 'backend':os.environ.get('ACYCLE_BACKEND','local'),
                 'matlab_available':bool(shutil.which(os.environ.get('MATLAB_EXECUTABLE','matlab'))),
                 'acycle_root':os.environ.get('ACYCLE_ROOT'),
@@ -642,6 +645,7 @@ def tool_schemas():
         ('acycle_get_run','Retrieve a saved run with outputs, parameters and provenance.',{'run_id':string},['run_id'])]
     from .native import schemas as native_schemas
     from .menu import schemas as menu_schemas
-    return menu_schemas() + native_schemas() + [{'type':'function','function':{'name':name,'description':description,
+    from .gui import schemas as gui_schemas
+    return gui_schemas() + menu_schemas() + native_schemas() + [{'type':'function','function':{'name':name,'description':description,
              'parameters':{'type':'object','properties':properties,'required':required,'additionalProperties':False}}}
             for name,description,properties,required in specs]

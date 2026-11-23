@@ -44,8 +44,8 @@ def main() -> int:
         from acycle_deepseek.tools import _matlab_dir, tool_schemas
         report['package_version'] = importlib.metadata.version('acycle-deepseek')
         report['registered_tools'] = [tool['function']['name'] for tool in tool_schemas()]
-        if report['package_version'] != '0.6.0' or len(report['registered_tools']) != 19:
-            report['errors'].append('This handoff requires matching acycle-deepseek 0.6.0 with 19 shared tools')
+        if report['package_version'] != '0.7.0' or len(report['registered_tools']) != 19:
+            report['errors'].append('This handoff requires matching acycle-deepseek 0.7.0 with 19 shared tools')
         bridge = _matlab_dir()
         report['matlab_bridge'] = str(bridge)
     except (ImportError, RuntimeError, importlib.metadata.PackageNotFoundError) as error:

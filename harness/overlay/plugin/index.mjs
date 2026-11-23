@@ -115,6 +115,7 @@ export async function apply(ctx, config = {}) {
   if (config.acycleRoot) environment.ACYCLE_ROOT = resolve(config.acycleRoot)
   if (config.matlabExecutable) environment.MATLAB_EXECUTABLE = config.matlabExecutable
   if (config.backend) environment.ACYCLE_BACKEND = config.backend
+  if (config.guiEngine) environment.ACYCLE_GUI_ENGINE = config.guiEngine
   const options = { python, timeoutMs: config.timeoutMs || 3_600_000, environment }
   const delivery = deliveryConfig(config)
   ctx.systemPrompt.section({ name: 'acycle:research-workflow', order: 3200,
@@ -122,6 +123,10 @@ export async function apply(ctx, config = {}) {
   const workspaceFor = async exec => resolve(configuredWorkspace || (exec.agent
     ? await ctx.workingDirectory.ensure(exec.agent, exec.signal) : process.cwd()))
   const schemas = await runBridge({ action: 'schemas' }, options)
+  if (schemas.some(s => s.function.name === 'acycle_gui_inspect')) {
+    ctx.systemPrompt.section({ name: 'acycle:live-desktop', order: 3201, interpolate: false,
+      text: 'For the user’s currently open Acycle window, use acycle_gui_inspect. Preserve its coordinate units and submit changes with its returned window_id and revision. On conflict report the current state. A filter display change uses plt. For an image profile open the picker and invite the user to mark the vertices and choose Finish profile. Check acycle_gui_events on the next turn. A GUI analysis ID is a Core journal ID, distinct from a batch Harness run_id.' })
+  }
   for (const schema of schemas) {
     const fn = schema.function
     ctx.tools.register({

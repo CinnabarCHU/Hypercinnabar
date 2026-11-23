@@ -73,6 +73,7 @@ def assemble(dest):
         shutil.copyfile(ROOT/name,dest/name)
     shutil.copyfile(ROOT/"migration/poc/native.m",dest/"code/method/acMenuNative.m")
     shutil.copyfile(ROOT/"migration/poc/README.zh-CN.md",dest/"README.zh-CN.md")
+    shutil.copyfile(ROOT/"migration/poc/HARNESS.zh-CN.md",dest/"HARNESS.zh-CN.md")
     # Function-specific MATLAB wrappers for all menus, generated from the same register.
     catalog = json.loads((dest/"code/interface/catalogue.json").read_text())
     for menu in catalog["menus"]:

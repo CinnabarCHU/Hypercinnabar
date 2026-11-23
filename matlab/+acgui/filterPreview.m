@@ -1,6 +1,11 @@
 function h = filterPreview(h,p,style)
 % Keep both original axes and the export data associated with the last successful fit.
 s = h.bandpassSession;
+if ~strcmp(p.filter,'Taner-Hilbert')
+    p = rmfield(p,'taner_c');
+elseif isfield(s.params,'taner_c') && str2double(h.edit18.String)==log10(s.params.taner_c)
+    p.taner_c = s.params.taner_c;
+end
 names = fieldnames(p);
 same = all(cellfun(@(key)isfield(s.params,key) && isequaln(s.params.(key),p.(key)),names));
 if ~same

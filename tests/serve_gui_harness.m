@@ -3,11 +3,18 @@ function serve_gui_harness()
 root = getenv('RUNNER_TEMP');
 setup_acycle();
 setenv('ACYCLE_LOG_DIR',fullfile(root,'gui-journals'));
-main = ac(fullfile(root,'study'));
-matlab.engine.shareEngine('AcycleDesktopTest');
+study = fullfile(root,'study');
+t = (0:255)'; data = [t,sin(2*pi*t/20)+.2*cos(2*pi*t/5)];
+writematrix(data,fullfile(study,'series.csv'));
+writematrix([t,cos(2*pi*t/17)],fullfile(study,'second.csv'));
+imwrite(reshape(uint8(1:100),10,10),fullfile(study,'core.png'));
+main = ac(study); h = acgui.state(main);
+h.listbox_acmain.Value = find(strcmp(cellstr(h.listbox_acmain.String),'series.csv'));
+cb = h.menu_filter.Callback; cb(h.menu_filter,[]);
+assert(strcmp(acgui.share('AcycleDesktopTest'),'AcycleDesktopTest'));
 fid = fopen(fullfile(root,'gui-ready'),'w'); fclose(fid);
 deadline = tic;
-while ~isfile(fullfile(root,'gui-done')) && toc(deadline)<200
+while ~isfile(fullfile(root,'gui-done')) && toc(deadline)<420
     drawnow;
     pause(.05);
 end
