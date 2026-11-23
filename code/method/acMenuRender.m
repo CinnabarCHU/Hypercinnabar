@@ -17,8 +17,8 @@ if ismember(engine.package,{'OneSampleT','SWA','ColumnManipulation','DataTransfo
     end
 end
 createdTarget=[];
-keepTarget=false;
-cleanup=onCleanup(@restoreFigures);
+renderId=sequence;
+cleanup=onCleanup(@()acMenuRestoreFigures(before,previous,visibility,names,renderId));
 set(groot,'DefaultFigureVisible','off');
 figure('Visible','off','HandleVisibility','on');
 [value,status]=acMenuOriginal(engine,'plotter',p,journal);
@@ -78,9 +78,10 @@ else
         colormap(children,colormap(source));
     else
         % Copy related axes, legends and colorbars together, preserving associations.
-        children=copyobj(flipud(figs(1).Children),target);
+        original=flipud(figs(1).Children);
+        children=copyobj(original,target);
         for i=1:numel(children)
-            if isgraphics(children(i),'axes'), colormap(children(i),colormap(figs(1))); end
+            if isgraphics(children(i),'axes'), colormap(children(i),colormap(original(i))); end
         end
     end
     if isappdata(target,'acMenuRenderedChildren')
@@ -88,20 +89,27 @@ else
     end
     setappdata(target,'acMenuRenderedChildren',children);
 end
-keepTarget=true;
+if ~isempty(createdTarget), setappdata(createdTarget,'acMenuRetainFigure',renderId); end
 clear cleanup
+end
 
-    function restoreFigures()
-        allFigs=findall(groot,'Type','figure');
-        remove=~ismember(allFigs,before);
-        if keepTarget && ~isempty(createdTarget), remove=remove & allFigs~=createdTarget; end
-        delete(allFigs(remove));
-        for i=1:size(names,1)
-            if isgraphics(names{i,1}), set(names{i,1},'Name',names{i,2},'Tag',names{i,3}); end
-        end
-        set(groot,'DefaultFigureVisible',visibility);
-        if ~isempty(previous) && isgraphics(previous), set(groot,'CurrentFigure',previous); end
+function acMenuRestoreFigures(before,previous,visibility,names,renderId)
+% onCleanup captures these values before rendering. They remain usable on a thrown error.
+allFigs=findall(groot,'Type','figure');
+new=allFigs(~ismember(allFigs,before));
+for i=1:numel(new)
+    f=new(i);
+    if isappdata(f,'acMenuRetainFigure') && isequal(getappdata(f,'acMenuRetainFigure'),renderId)
+        rmappdata(f,'acMenuRetainFigure');
+    elseif isgraphics(f)
+        delete(f);
     end
+end
+for i=1:size(names,1)
+    if isgraphics(names{i,1}), set(names{i,1},'Name',names{i,2},'Tag',names{i,3}); end
+end
+set(groot,'DefaultFigureVisible',visibility);
+if ~isempty(previous) && isgraphics(previous), set(groot,'CurrentFigure',previous); end
 end
 
 function acMenuCopyAxes(source,target)
