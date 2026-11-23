@@ -266,7 +266,24 @@ if isfield(m,'robust')
                 legend('Power',smthwin,'Robust AR(1) median',...
                     'Robust AR(1) 90%','Robust AR(1) 95%','Robust AR(1) 99%')
 %% End copied source
+%% Copied from mingsongli/acycle@b52ea9f510f3be00bde9a0238b9898a1e2315b74 code/guicode/spectrum.m:L533-L534
+            xlabel(['Frequency (cycles/',num2str(unit),')'])
+            title([num2str(nw),'\pi-MTM-Robust-AR(1): \rho = ',num2str(rhoM),'. S0 = ',num2str(s0M),'; bw = ',num2str(bw)])
+%% End copied source
+%% Copied from mingsongli/acycle@b52ea9f510f3be00bde9a0238b9898a1e2315b74 code/guicode/spectrum.m:L541-L552
             xlim([fmin fmax]);
+            set(gcf,'Name',[dat_name,ext,' ',num2str(nw),'pi MTM'])
+            set(gca,'XMinorTick','on','YMinorTick','on')
+            set(gcf,'Color', 'white')
+            if handles.linlogY == 1
+                set(gca, 'YScale', 'log')
+            else
+                set(gca, 'YScale', 'linear')
+            end
+            if handles.logfreq == 1
+                set(gca,'xscale','log')
+            end
+%% End copied source
         end
     else
         f=z.f; po=z.po; pxxsmooth=z.pth(1,:); theored1=z.pth(2,:); chi90=z.pth(3,:); chi95=z.pth(4,:); chi99=z.pth(5,:);

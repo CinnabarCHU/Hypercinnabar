@@ -27,7 +27,7 @@
     "coco_rate": "8.1 +/- 0.6 cm/kyr",
     "coco_p": "<=0.001, evaluated independently of the rate",
     "master_mtm": "same frequency vector and relative power error below 1e-10",
-    "replay": "exact MTM arrays; stochastic COCO not claimed bitwise reproducible",
+    "replay": "Exact MTM arrays and exact COCO arrays, with the journal restoring initial RNG state.",
     "plotting": "each registered plotter must execute and create output",
     "qualitative": "405-kyr modulation, visual eCOCO pattern and visual wavelet bands require additional inspection; finite arrays alone do not verify these claims"
   },

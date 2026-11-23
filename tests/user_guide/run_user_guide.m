@@ -24,7 +24,8 @@ try
     data=sorted.data; raw=data;
     check('sorted_finite_unique',all(isfinite(data),'all') && all(diff(data(:,1))>0),size(data));
     if strcmp(caseId,'wayao')
-        [s,~,~]=run('sampling','menu_samplerate','SamplingRate_legacy',struct('data_filterout',data),struct(),true);
+        [s,~,~]=run('sampling','menu_samplerate','SamplingRate_legacy',struct('data_filterout',data),struct(),true, ...
+            struct('dat_name',caseId,'ext','.txt','unit','m','unit_type',1));
         report.sampling=struct('median',median(s.dt),'mean',mean(s.dt));
         check('guide_median_spacing',abs(median(s.dt)-0.3333)<0.0001,median(s.dt));
         check('guide_mean_spacing',abs(mean(s.dt)-0.35341)<0.0001,mean(s.dt));
@@ -36,6 +37,9 @@ try
         d=run('demean','menu_prewhiten','Detrending_legacy',struct('data',data),struct('method','mean'),true);
     end
     series=[d.datax,d.residual];
+    md=run('master-detrend','menu_prewhiten','Detrending', ...
+        struct('data',data,'method',d.method,'span',80/range(data(:,1)),'degree',3),struct(),false);
+    check('master_detrend_equivalence',isequaln(md,d),[]);
     check('detrend_reconstruction',max(abs(d.trend+d.residual-d.datay))<1e-9,max(abs(d.trend+d.residual-d.datay)));
     writematrix(series,fullfile(out,'prepared-series.csv'));
     if strcmp(caseId,'wayao'), fmax=1; factor=5; periods=[33.9 10 7 2.6 1.8]; else
@@ -48,11 +52,22 @@ try
         'nzeropad',factor*size(series,1),'fmax',fmax,'noise',noise);
     % padtimes=5 selects the historical explicit-nfft branch, including when
     % the manual nfft field is N. See the documented GUIDE callback ambiguity.
-    [power,pj,ph]=run('mtm','menu_power','PowerSpectrum_legacy',struct('data',series),opts,true, ...
+    [power,pj,~]=run('mtm','menu_power','PowerSpectrum_legacy',struct('data',series),opts,true, ...
         struct('fmax',fmax,'linlogY',0,'unit',unit()));
     writematrix([power.fd1,power.po],fullfile(out,'mtm.csv'));
     peakRows=peakChecks(power.fd1,power.po,periods,1/(size(series,1)*median(diff(series(:,1)))));
     report.peaks=peakRows;
+    if ~strcmp(caseId,'wayao')
+        % The guide's labelled frequencies (e.g. 0.0421788) lie on the 5*N
+        % grid, not the N=2001 grid shown in its settings screenshot.
+        % Keep this diagnostic separate: it cannot turn a failed literal
+        % screenshot check into a pass.
+        altOpts=opts; altOpts.nzeropad=5*size(series,1);
+        alt=run('mtm-5x-diagnostic','menu_power','PowerSpectrum_legacy',struct('data',series),altOpts,true, ...
+            struct('fmax',fmax,'linlogY',0,'unit',unit()));
+        writematrix([alt.fd1,alt.po],fullfile(out,'mtm-5x-diagnostic.csv'));
+        report.peaks_5x_diagnostic=peakChecks(alt.fd1,alt.po,periods,1/(size(series,1)*median(diff(series(:,1)))),'diagnostic_5x_');
+    end
     [repeated,~]=call('mtm-replay','menu_power','replay',struct('replay_journal',pj));
     check('mtm_exact_replay',isequaln(power,repeated),[]);
     models=struct('robust',noise.robust,'classic',false,'ftest',false,'swa',false,'powerLaw',false,'bendingPowerLaw',false);
@@ -66,9 +81,15 @@ try
     if strcmp(caseId,'wayao')
         window=40; step=.33; evoMax=.7;
         if isfield(power,'models') && isfield(power.models,'robust')
-            report.robust_model=power.models.robust;
-            rb=power.models.robust.redconfAR1;
+            rb=power.models.robust.redconfML96;
             writematrix(rb,fullfile(out,'robust-ar1.csv'));
+            for kk=1:numel(peakRows)
+                fq=1/peakRows(kk).observed;
+                threshold=interp1(rb(:,1),rb(:,5),fq);
+                value=interp1(power.fd1,power.po,fq);
+                check(sprintf('guide_peak_%g_above_95',periods(kk)),value>threshold, ...
+                    struct('power',value,'threshold95',threshold,'ratio',value/threshold));
+            end
         end
     else
         window=400; step=3.2; evoMax=.1;
@@ -83,7 +104,7 @@ try
     if strcmp(caseId,'etp')
         [wave,~,~]=run('wavelet','menu_waveletGUI','WaveletSpectrum_legacy',struct('data',series,'pt1',10), ...
             struct('pt2',700,'dss',.1,'pad',1,'mother','MORLET','param',6,'method_sel',3,'data_standardize',0),true, ...
-            struct('unit','kyr','unit_type',1,'plot_flipy',1,'Yticks',[20 41 95 125 405]));
+            struct('unit','kyr','unit_type',2,'plot_flipy',1,'Yticks',[20 41 95 125 405]));
         check('wavelet_finite_power',all(isfinite(wave.power),'all'),size(wave.power));
         report.wavelet=struct('method_sel',3,'period_max_setting',700,'size',size(wave.power));
     elseif strcmp(caseId,'wayao')
@@ -115,11 +136,13 @@ try
         common=struct('target',target.target,'orbit7',orbit7,'dt',mean(diff(series(:,1))), ...
             'pad',5000,'sr1',4.29,'sr2',43.5111,'srstep',.13074,'adjust',0,'red',1,'nsim',1000,'slices',1);
         q=common; q.dat=series; q.method='Pearson';
-        [coco,~,~]=run('coco','menu_ecoco','corrcoefslices_rank_legacy',q,struct(),false);
+        [coco,cj,~]=run('coco','menu_ecoco','corrcoefslices_rank_legacy',q,struct(),false);
         [~,best]=max(coco.corrCI(:,2));
         report.coco=struct('rate',coco.corrCI(best,1),'correlation',coco.corrCI(best,2), ...
             'p',coco.corr_h0(best,1),'simulations',1000,'rate_count',size(coco.corrCI,1));
         writematrix([coco.corrCI,coco.corr_h0],fullfile(out,'coco.csv'));
+        repeatedCoco=call('coco-replay','menu_ecoco','replay',struct('replay_journal',cj));
+        check('coco_exact_replay',isequaln(coco,repeatedCoco),[]);
         check('coco_rate_near_8_1',abs(coco.corrCI(best,1)-8.1)<.6,report.coco);
         check('coco_guide_p_at_most_0_001',coco.corr_h0(best,1)<=.001,report.coco);
         padded=run('ecoco-padding','menu_period','zeropad2_legacy',struct('data',series,'win',45,'padding',1),struct(),false);
@@ -136,7 +159,7 @@ catch err
     report.fatal=struct('identifier',err.identifier,'message',err.message,'stack',{err.stack});
 end
 report.steps=steps; report.checks=checks;
-report.execution_ok=isempty(report.fatal) && all(cellfun(@(x)strcmp(x.status,'ok'),steps));
+report.execution_ok=isempty(report.fatal) && all(cellfun(@(x)strcmp(x.status,'ok') && strcmp(x.completion,'done'),steps));
 report.criteria_ok=all(cellfun(@(x)x.passed,checks));
 writejson(fullfile(out,'report.json'),report);
 fprintf('GUIDE %s: execution=%d criteria=%d steps=%d checks=%d\n',caseId,report.execution_ok,report.criteria_ok,numel(steps),numel(checks));
@@ -148,7 +171,9 @@ if ~isempty(report.fatal), fprintf('%s: %s\n',report.fatal.identifier,report.fat
         [h,hj]=call([label,'-helper'],menu,'helper',struct('input',input,'override',struct('params',options,'plt',style)));
         [r,j]=call(label,menu,'analyzer',struct('helper_journal',hj));
         if draw
-            plotCall([label,'-plot'],menu,struct('helper_journal',hj,'analyzer_journal',j,'target_kind','none'));
+            payload=struct('helper_journal',hj,'analyzer_journal',j,'target_kind','none');
+            if strcmp(label,'wavelet'), h.dat.pt1=10; payload.dat=h.dat; end
+            plotCall([label,'-plot'],menu,payload);
         end
     end
     function plotCall(label,menu,p)
@@ -165,19 +190,21 @@ if ~isempty(report.fatal), fprintf('%s: %s\n',report.fatal.identifier,report.fat
         if isfield(reply,'error'), record.error=reply.error; end
         steps{end+1}=record;
         if ~strcmp(reply.status,'ok'), error(reply.error.identifier,'%s',reply.error.message); end
+        if strcmp(role,'plotter'), check([label,'_figure_created'],~isempty(reply.files),reply.files); end
         j=fullfile(folder,reply.journal); lines=splitlines(strtrim(fileread(j))); fin=jsondecode(lines{end});
         v=aclog.read(j,fin.info.retval);
     end
     function check(name,passed,detail)
         checks{end+1}=struct('name',name,'passed',logical(passed),'detail',detail);
     end
-    function p=peakChecks(f,power,expected,tol)
+    function p=peakChecks(f,power,expected,tol,prefix)
+        if nargin<5, prefix=''; end
         ispeak=false(size(power)); ispeak(2:end-1)=power(2:end-1)>power(1:end-2) & power(2:end-1)>=power(3:end);
         ix=find(ispeak); p=struct('expected',{},'observed',{},'frequency_error',{},'tolerance',{},'passed',{});
         for kk=1:numel(expected)
             [delta,jj]=min(abs(f(ix)-1/expected(kk))); found=ix(jj);
             p(kk)=struct('expected',expected(kk),'observed',1/f(found),'frequency_error',delta,'tolerance',tol,'passed',delta<=tol);
-            check(sprintf('guide_peak_%g',expected(kk)),delta<=tol,p(kk));
+            check([prefix,sprintf('guide_peak_%g',expected(kk))],delta<=tol,p(kk));
         end
     end
     function u=unit()
