@@ -40,6 +40,7 @@
     "Wayao text calls 40 m 1.5-2 times 33.9 m, which is arithmetically inconsistent. Use the explicit 40 m.",
     "COCO screenshot shows 500 simulations, subsequent filename 1000. Use 1000, explicitly allowed by prose. eCOCO uses screenshot 500.",
     "COCO displayed 301 rates but rounded endpoints/step give 300; preserve entered decimals.",
-    "AgeScale receives saved age tiepoints, not the historical full model edge extrapolation. Both are retained for diagnosis."
+    "AgeScale receives saved age tiepoints, not the historical full model edge extrapolation. Both are retained for diagnosis.",
+    "Wayao p.122 prose specifies 5x padding and log power fit (model 2), but its settings screenshot shows NFFT=534 and model 1 (linear power). The main run follows the prose; additional diagnostics preserve 5N/linear and N/linear settings. Initial audit attempts used 5N/linear."
   ]
 }

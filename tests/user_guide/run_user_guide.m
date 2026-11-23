@@ -46,7 +46,7 @@ try
         factor=1; fmax=.08; periods=[405 125 95 41 23.7 22.4 19];
         if strcmp(caseId,'insolation'), fmax=.06; periods=[23.7 22.4 19]; end
     end
-    noise=struct('classic',false,'robust',strcmp(caseId,'wayao'),'smoothwin',.2,'linlog',1, ...
+    noise=struct('classic',false,'robust',strcmp(caseId,'wayao'),'smoothwin',.2,'linlog',2, ...
         'biascorr',false,'powerlaw',false,'bending',false,'ftest',false,'swa',false);
     opts=struct('method','Multi-taper method','nw',2,'padtimes',5, ...
         'nzeropad',factor*size(series,1),'fmax',fmax,'noise',noise);
@@ -73,7 +73,7 @@ try
     models=struct('robust',noise.robust,'classic',false,'ftest',false,'swa',false,'powerLaw',false,'bendingPowerLaw',false);
     [current,~,~]=run('master-mtm','menu_power','PowerSpectrum',struct('data',series), ...
         struct('nfft',opts.nzeropad,'nw',2,'fmin',0,'fmax',fmax,'models',models, ...
-        'fitModel',1,'smoothFraction',.2,'fitMaximum',1/(2*median(diff(series(:,1))))),true, ...
+        'fitModel',2,'smoothFraction',.2,'fitMaximum',1/(2*median(diff(series(:,1))))),true, ...
         struct('logPower',false,'fmax',fmax));
     check('master_mtm_frequency_equivalence',isequaln(current.frequency,power.fd1),[]);
     check('master_mtm_power_equivalence',max(abs(current.power-power.po))/max(power.po)<1e-10,max(abs(current.power-power.po))/max(power.po));
@@ -91,6 +91,18 @@ try
                     struct('power',value,'threshold95',threshold,'ratio',value/threshold));
             end
         end
+        report.wayao_primary=struct('nfft',opts.nzeropad,'fit_model',2,'source','guide prose: 5x padding, log power fit');
+        % p.122 settings conflict with the prose: NFFT=534 and fit model 1.
+        % p.123's annotated peak uses a 5*N grid. Retain both alternatives.
+        altOpts=opts; altOpts.noise.linlog=1;
+        al=run('mtm-linear-fit-diagnostic','menu_power','PowerSpectrum_legacy',struct('data',series),altOpts,true, ...
+            struct('fmax',fmax,'linlogY',0,'unit','m'));
+        writematrix(al.models.robust.redconfML96,fullfile(out,'linear-fit-diagnostic.csv'));
+        altOpts.nzeropad=size(series,1);
+        ap=run('mtm-panel-diagnostic','menu_power','PowerSpectrum_legacy',struct('data',series),altOpts,true, ...
+            struct('fmax',fmax,'linlogY',0,'unit','m'));
+        writematrix([ap.fd1,ap.po],fullfile(out,'mtm-panel-diagnostic.csv'));
+        writematrix(ap.models.robust.redconfML96,fullfile(out,'panel-background-diagnostic.csv'));
     else
         window=400; step=3.2; evoMax=.1;
         if strcmp(caseId,'insolation'), evoMax=.06; end
