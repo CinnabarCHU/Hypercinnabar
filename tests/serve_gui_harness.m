@@ -14,7 +14,9 @@ cb = h.menu_filter.Callback; cb(h.menu_filter,[]);
 assert(strcmp(acgui.share('AcycleDesktopTest'),'AcycleDesktopTest'));
 fid = fopen(fullfile(root,'gui-ready'),'w'); fclose(fid);
 deadline = tic;
-while ~isfile(fullfile(root,'gui-done')) && toc(deadline)<420
+timeLimit = 420;
+if ~isempty(getenv('ACYCLE_PROVIDER_FIXTURE')), timeLimit = 900; end
+while ~isfile(fullfile(root,'gui-done')) && toc(deadline)<timeLimit
     drawnow;
     pause(.05);
 end

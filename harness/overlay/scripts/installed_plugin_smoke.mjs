@@ -60,6 +60,11 @@ try {
   if (live) {
     const { verifyLiveGui } = await import('./live_gui_smoke.mjs')
     await verifyLiveGui(call, workspace)
+    if (process.env.ACYCLE_PROVIDER_FIXTURE) {
+      const fixture = resolve(process.env.GITHUB_WORKSPACE, 'tests/provider_gui_smoke.mjs')
+      const { verifyProviderAction } = await import(pathToFileURL(fixture).href)
+      await verifyProviderAction(call)
+    }
   }
   await fiber.dispose()
   assert.equal(ctx.tools.schemas().length, 0)
@@ -67,5 +72,5 @@ try {
   console.log(JSON.stringify({ status: 'passed', dsh_tools_version: version, plugin_path: pluginPath,
     registered_tools: tools.map(x => x.name), registered_skills: skills.map(x => x.name),
     capabilities, disposal: 'passed',
-    scope: 'Official Cordis, tools and skills registries with fixed workspace fixture; not a full GUI session.' }, null, 2))
+    scope: live ? 'Installed official native tool runtime connected to a shared MATLAB desktop.' : 'Installed official tool and skill registries with a workspace fixture.' }, null, 2))
 } finally { await ctx.fiber.dispose() }

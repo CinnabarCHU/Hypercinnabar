@@ -22,7 +22,7 @@ try:
     runtime = root / "official-dsh"; src = root / "harness-src"
     subprocess.run(["node", str(src / "scripts/installed_plugin_smoke.mjs"), str(runtime),
                     str(root / "study"), str(runtime / "node_modules/dsh-acycle/index.mjs"),
-                    "--gui-live"], check=True, timeout=320)
+                    "--gui-live"], check=True, timeout=800 if os.environ.get("ACYCLE_PROVIDER_FIXTURE") else 320)
 except BaseException:
     (root / "gui-done").write_text("failed")
     raise
