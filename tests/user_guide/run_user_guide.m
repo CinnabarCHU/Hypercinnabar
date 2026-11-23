@@ -1,7 +1,9 @@
-function report = run_user_guide(repo,out,caseId)
+function report = run_user_guide(repo,out,caseId,transport)
 % Execute the v2.8 guide's Chapter 6 examples through the production Harness
 % MATLAB bridge. Scientific work stays in the registered Acycle interfaces.
 % Driver-only code reads/writes fixtures, connects return values, and checks them.
+if nargin<4, transport='bridge'; end
+assert(ismember(transport,{'bridge','installed'}));
 addpath(repo); setup_migration();
 addpath(fullfile(repo,'harness','overlay','matlab'));
 if ~isfolder(out), mkdir(out); end
@@ -11,6 +13,9 @@ steps={}; checks={}; serial=0;
 report=struct('case_id',caseId,'matlab',version,'seed',20261123, ...
     'scope','Chapter 6; real Harness MATLAB bridge; no LLM in this runner', ...
     'steps',{{}},'checks',{{}},'fatal',[]);
+if strcmp(transport,'installed')
+    report.scope='Chapter 6; public tools of installed Acycle Harness, fixed recipe, no model';
+end
 try
     names=struct('insolation','Example-Insol-t-0-2000ka-day-80-lat-65-meandaily-La04.txt', ...
         'etp','Example-La2004-1E.5T-1P-0-2000.txt','wayao','Example-WayaoCarnianGR0.txt');
@@ -199,13 +204,20 @@ if ~isempty(report.fatal), fprintf('%s: %s\n',report.fatal.identifier,report.fat
         serial=serial+1; folder=fullfile(out,sprintf('%02d-%s',serial,label)); mkdir(folder);
         request=struct('operation','menu','acycle_root',repo,'menu',menu,'role',role,'payload',p,'output_dir',folder);
         requestFile=fullfile(folder,'request.json'); responseFile=fullfile(folder,'response.json'); writejson(requestFile,request);
-        started=tic; acycle_harness_menu(requestFile,responseFile); reply=jsondecode(fileread(responseFile));
+        started=tic;
+        if strcmp(transport,'installed')
+            [reply,journalFile,publicRunId]=registered_guide_call(menu,role,p,folder);
+        else
+            acycle_harness_menu(requestFile,responseFile); reply=jsondecode(fileread(responseFile));
+            publicRunId=''; journalFile=fullfile(folder,reply.journal);
+        end
         record=struct('label',label,'menu',menu,'role',role,'status',reply.status,'completion',reply.completion,'seconds',toc(started),'folder',folder);
+        if ~isempty(publicRunId), record.harness_run_id=publicRunId; end
         if isfield(reply,'error'), record.error=reply.error; end
         steps{end+1}=record;
         if ~strcmp(reply.status,'ok'), error(reply.error.identifier,'%s',reply.error.message); end
         if strcmp(role,'plotter'), check([label,'_figure_created'],~isempty(reply.files),reply.files); end
-        j=fullfile(folder,reply.journal); lines=splitlines(strtrim(fileread(j))); fin=jsondecode(lines{end});
+        j=journalFile; lines=splitlines(strtrim(fileread(j))); fin=jsondecode(lines{end});
         v=aclog.read(j,fin.info.retval);
     end
     function check(name,passed,detail)

@@ -1,0 +1,34 @@
+name: Public User Guide science for live Harness
+on:
+  push:
+    branches: [acycle-guide-harness-jobs]
+    paths: [harness/validation/guide-harness/work.json]
+permissions:
+  contents: read
+jobs:
+  science:
+    runs-on: ubuntu-latest
+    timeout-minutes: 35
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          submodules: true
+          persist-credentials: false
+      - name: Validate the public request and pinned data
+        run: |
+          python harness/build.py "$RUNNER_TEMP/source"
+          PYTHONPATH="$RUNNER_TEMP/source/src" python harness/validation/guide-harness/prepare_science.py harness/validation/guide-harness/work.json "$RUNNER_TEMP/study/outputs"
+      - uses: matlab-actions/setup-matlab@v2
+        with:
+          release: R2024b
+          products: Signal_Processing_Toolbox Statistics_and_Machine_Learning_Toolbox Curve_Fitting_Toolbox
+      - name: Run the installed MATLAB dispatcher
+        uses: matlab-actions/run-command@37b454c384483087929a3d652be474ba585a9659
+        with:
+          command: addpath(fullfile(getenv('RUNNER_TEMP'),'source','matlab')); d=fullfile(getenv('RUNNER_TEMP'),'study'); acycle_batch(fullfile(d,'request.json'),fullfile(d,'outputs','response.json'));
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: scientific-result
+          path: ${{ runner.temp }}/study/outputs/
+          if-no-files-found: error

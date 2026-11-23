@@ -1,0 +1,76 @@
+name: User Guide through installed Acycle Harness tools
+on:
+  workflow_dispatch:
+  push:
+    branches: [acycle-harness-menu]
+    paths:
+      - '.github/workflows/acycle-guide-installed-tools.yml'
+      - 'tests/user_guide/registered*'
+      - 'tests/user_guide/run_user_guide.m'
+      - 'harness/overlay/plugin/**'
+      - 'harness/overlay/src/**'
+      - 'harness/overlay/matlab/**'
+permissions:
+  contents: read
+jobs:
+  installed_guide:
+    strategy:
+      fail-fast: false
+      matrix:
+        example: [insolation, etp, wayao]
+    runs-on: ubuntu-latest
+    timeout-minutes: 80
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          submodules: true
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+      - name: Install both distributable packages and official native DSH executor
+        run: |
+          python tests/user_guide/verify_fixtures.py
+          python harness/build.py "$RUNNER_TEMP/source"
+          python -m pip install "$RUNNER_TEMP/source"
+          mkdir -p "$RUNNER_TEMP/bundle" "$RUNNER_TEMP/ws"
+          (cd "$RUNNER_TEMP/source/plugin" && npm pack --pack-destination "$RUNNER_TEMP/bundle")
+          npm install --prefix "$RUNNER_TEMP/dsh" --no-audit --no-fund @deepseek-ai/dsh-tools@0.2.2-rc.5 @deepseek-ai/dsh-system-prompt@0.2.2-rc.5 @deepseek-ai/dsh-skill@0.2.2-rc.5 @deepseek-ai/dsh-tool-executor-native@0.2.2-rc.5 "$RUNNER_TEMP"/bundle/*.tgz
+      - uses: matlab-actions/setup-matlab@v2
+        with:
+          release: R2024b
+          products: Signal_Processing_Toolbox Statistics_and_Machine_Learning_Toolbox Curve_Fitting_Toolbox
+      - uses: actions/checkout@v4
+        with:
+          repository: matlab-actions/run-command
+          ref: 37b454c384483087929a3d652be474ba585a9659
+          path: .ci-mathworks
+          persist-credentials: false
+      - name: Run fixed guide client using only registered science tools
+        env:
+          EXAMPLE: ${{ matrix.example }}
+          MW_BATCH_LICENSING_ONLINE: 'true'
+        run: |
+          export ACYCLE_MW="$GITHUB_WORKSPACE/.ci-mathworks/dist/bin/glnxa64/run-matlab-command"
+          chmod +x "$ACYCLE_MW"
+          export MATLAB_EXECUTABLE="$RUNNER_TEMP/acycle-matlab" ACYCLE_PYTHON="$(command -v python)" ACYCLE_HARNESS_RUNTIME="$RUNNER_TEMP/dsh" ACYCLE_WORKSPACE="$RUNNER_TEMP/ws" ACYCLE_MENU_ROOT="$GITHUB_WORKSPACE" ACYCLE_ROOT="$GITHUB_WORKSPACE/upstream/master"
+          cat > "$MATLAB_EXECUTABLE" <<'SH'
+          #!/usr/bin/env bash
+          set -eu
+          [[ $# -eq 2 && $1 == -batch ]]
+          exec "$ACYCLE_MW" "rng(20261123,'twister'); $2"
+          SH
+          chmod +x "$MATLAB_EXECUTABLE"
+          "$ACYCLE_MW" "addpath('tests/user_guide'); r=run_user_guide(pwd,fullfile(getenv('RUNNER_TEMP'),'graded'),getenv('EXAMPLE'),'installed'); assert(r.execution_ok && r.criteria_ok,'Inspect report and retained public calls');"
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: installed-guide-${{ matrix.example }}
+          path: |
+            ${{ runner.temp }}/graded/
+            ${{ runner.temp }}/ws/.acycle/runs/
+          include-hidden-files: true
+          if-no-files-found: warn
