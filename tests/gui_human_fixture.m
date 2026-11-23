@@ -6,6 +6,7 @@ switch action
     case 'verify_export'
         h = acgui.state(fig); s = getappdata(fig,'AcycleAnalysis');
         assert(str2double(h.edit1.String)==s.params.flow && str2double(h.edit2.String)==s.params.fhigh);
+        assert(strcmp(h.edit1.String,jsonencode(s.params.flow)) && strcmp(h.edit2.String,jsonencode(s.params.fhigh)));
         assert(isequal(s.res.data_filterout,h.data_filterout));
         original = accore.io('read',h.data_name);
         original = sortrows(original);
@@ -25,7 +26,7 @@ switch action
     case 'close_filter'
         delete(fig);
     case 'capture_filter'
-        fig.Units = 'pixels'; fig.Position = [110 170 1100 620]; figure(fig); drawnow;
+        fig.Units = 'pixels'; fig.Position = [90 170 1360 570]; figure(fig); drawnow;
     case 'first_image_point'
         pick = findall(groot,'Tag','aclive_transect');
         raster = findobj(pick,'Tag','aclive_image');

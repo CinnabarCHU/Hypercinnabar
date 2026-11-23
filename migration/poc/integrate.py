@@ -89,13 +89,13 @@ style = handles.bandpassSession.plt;
 handles.x_1 = style.x_1; handles.x_2 = style.x_2; handles.y_1 = style.y_1;
 handles.y_2 = style.y_2; handles.y_3 = style.y_3;""")
     for field in ("x_1","x_2","y_1","y_2","filt_flow","filt_fhigh"):
-        s = s.replace(f"num2str(handles.{field})",f"num2str(handles.{field},17)")
+        s = s.replace(f"num2str(handles.{field})",f"acgui.numberText(handles.{field})")
     s = replace(s,"handles.filt_flow = fq_deft * 0.8;", "handles.filt_flow = handles.bandpassSession.params.flow;")
     s = replace(s,"handles.filt_fhigh = fq_deft * 1.2;", "handles.filt_fhigh = handles.bandpassSession.params.fhigh;")
     s = replace(s,"handles.filter = 'Gaussian';","""handles.filter = handles.bandpassSession.params.filter;
 if isfield(handles.bandpassSession.params,'taner_c')
     handles.taner_c = handles.bandpassSession.params.taner_c;
-    set(handles.edit18,'String',num2str(log10(handles.taner_c),17));
+    set(handles.edit18,'String',acgui.numberText(log10(handles.taner_c)));
 end""")
     s = replace(s,"set(handles.popupmenu4,'Value',5)", """choices = cellstr(get(handles.popupmenu4,'String'));
 chosen = find(strcmp(choices,handles.filter),1);

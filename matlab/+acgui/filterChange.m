@@ -19,7 +19,7 @@ widgets = [h.edit1,h.edit2,h.edit10,h.edit11,h.edit12,h.edit13];
 values = [p.flow,p.fhigh,plt.x_1,plt.x_2,plt.y_1,plt.y_2];
 previous = get(widgets,'String'); center = h.text3.String; passMode = h.popupmenu5.Value;
 try
-    for k = 1:numel(values), widgets(k).String = num2str(values(k),17); end
+    for k = 1:numel(values), widgets(k).String = acgui.numberText(values(k)); end
     hObject = fig; handles = h; %#ok<NASGU>
     update_filter_axes
 catch err
