@@ -24,7 +24,15 @@ def integrate(dest, tree):
         s = f.read_text()
         s = replace(s, "options.ProgressFcn = @updateProgress;\n            result = bispectralAnalyze(app.Data,options);",
                     "[candidateSession,result] = acgui.bispectral(app.Data,options,@updateProgress);")
-        s = replace(s,"app.LastResult = result;","app.LastResult = result;\n            setappdata(app.UIFigure,'AcycleAnalysis',candidateSession);")
+        s = replace(s,"result,candidateInferenceMethod,false);","result,candidateInferenceMethod,false,candidateSession);")
+        s = replace(s,"resultForPlot,displayInferenceMethod,publishAfter)","resultForPlot,displayInferenceMethod,publishAfter,activeSession)")
+        s = replace(s,"app.IsRendering = true;","if nargin < 4, activeSession = getappdata(app.UIFigure,'AcycleAnalysis'); end\n        app.IsRendering = true;")
+        s = replace(s,"[newFigure,newHandles] = bispectralPlot(resultForPlot, ...","[newFigure,newHandles,renderedSession] = acgui.bispectralFigure(activeSession, ...")
+        s = replace(s,"app.LastFigure = newFigure;","app.LastFigure = newFigure;\n        setappdata(app.UIFigure,'AcycleAnalysis',renderedSession);")
+        f.write_text(s)
+        f = code/"package/bispectral/bispectralPlot.m"
+        s = replace(f.read_text(),"setappdata(fig,'BispectralPlotComplete',true);",
+                    "setappdata(fig,'AcycleBispectralHandles',plotHandles);\nsetappdata(fig,'BispectralPlotComplete',true);")
         f.write_text(s)
         return
 
@@ -33,11 +41,14 @@ def integrate(dest, tree):
         raw = f.read_bytes()
         raw = raw.replace(b"fileread('ac_pwd.txt')", b"accore.io('workspace')")
         raw = raw.replace(b"which('ac_pwd.txt')", b"accore.io('workspaceFile')")
+        raw = raw.replace(b"load('ac_lang.txt')",b"accore.preferences('getLanguage')")
         f.write_bytes(raw)
     # Preserve real file-dialog and per-window selection behavior. Numeric reads
     # from files chosen in the main list go through the same I/O entry as the CLI.
     f = gui/"AC.m"
     s = f.read_text()
+    s = replace(s,"set(h2,'FontUnits','points','FontSize',11.5);",
+                "set(h2,'FontUnits','points','FontSize',accore.preferences('getFontSize'));")
     s = section(s,"if exist('ac_pwd.txt', 'file') == 2","handles.sortdata", "cd(accore.io('workspace'));")
     s = re.sub(r"\bload\((data_name|plot_filter_s|handles\.plot_s\{\d+\})\)",
                r"accore.io('read',\1)",s)
@@ -54,6 +65,10 @@ def integrate(dest, tree):
                             data = sample.res.data; czp = sample.res.czp;
                             xi = sample.res.xi; yi = sample.res.yi;""")
     s = s[:a] + profile + s[b:]
+    f.write_text(s)
+    f = gui/"languageGUI.m"
+    s = section(f.read_text(),"    fid = fopen(which('ac_lang.txt')","    % set default language",
+                "    accore.preferences('save',accore.preferences('getFontSize'),lang_choice);")
     f.write_text(s)
     (misc/"refreshcolor.m").write_text("acgui.refresh(handles,pwd);\n")
     # Preserve the original frequency prompts, range repair and output naming.

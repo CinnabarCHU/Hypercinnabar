@@ -22,6 +22,7 @@ case 'menu_bispectral'
     acgui.state(fig,h);
     bispectralGUI(h);
 case 'menu_settings'
+    h.SettingsRestartFcn = @()restart(fig);
     settingsGUI(h);
 case 'push_robot'
     AC('push_robot_clbk',findall(fig,'Tag',tag),[],h);
@@ -29,4 +30,9 @@ otherwise
     AC('AC_dispatch',[tag,'_Callback'],findall(fig,'Tag',tag),[]);
 end
 acgui.scopeMaster(before);
+end
+
+function restart(fig)
+delete(fig);
+acgui.desktop();
 end

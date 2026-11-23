@@ -1,4 +1,8 @@
-# Acycle GUIDE method migration
+# Acycle GUIDE-free desktop PoC
+
+The runnable distribution contains a code-defined desktop, a versioned Core and a MATLAB CLI. Unpack the workflow artifact, open its folder in MATLAB and run `ac`. The source checkout can produce the same distribution with `python migration/poc/build.py --output .acycle-runtime` after initializing both submodules. [中文说明及示例](migration/poc/README.zh-CN.md) · [MATLAB desktop checks and downloads](https://github.com/CinnabarCHU/Hypercinnabar/actions/workflows/acycle-poc.yml?query=branch%3Aacycle-guide-free-poc)
+
+## Migration baseline
 
 [按当前 GUI 菜单调用 GUIDE 和 master](migration/menu/README.zh-CN.md) · [全部菜单及版本选择值](migration/menu/MENUS.md)
 

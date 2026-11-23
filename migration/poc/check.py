@@ -49,6 +49,16 @@ def check(out):
                 if parent is not None:
                     header += f"'Parent',{parent},"
                 assert header in code, (layout,node.type,parent)
+                line = next(line for line in code.splitlines() if line.startswith(header))
+                position = getattr(node.properties,"Position",None)
+                if position is not None:
+                    match = re.search(r"'Position',\[([^\]]+)\]",line)
+                    assert match and np.allclose(np.fromstring(match[1],sep=" "),position,rtol=1e-14,atol=1e-14), (layout,node.type,"Position")
+                for prop in ("Label","Style","Units","Separator","Accelerator","Checked","Enable","Visible"):
+                    raw = getattr(node.properties,prop,None)
+                    if isinstance(raw,str) and raw and not (parent is None and prop=="Visible"):
+                        literal = "'" + raw.replace("'","''") + "'"
+                        assert f"'{prop}',{literal}" in line, (layout,node.type,prop,raw)
                 tag = getattr(node.properties,"Tag",None)
                 if isinstance(tag,str) and re.fullmatch(r"[A-Za-z]\w*",tag):
                     assert f"h.{tag} = {symbol};" in code, (layout,tag)

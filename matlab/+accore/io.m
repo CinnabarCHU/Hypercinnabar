@@ -25,6 +25,8 @@ case 'list'
     value = table2struct(t);
 case 'read'
     value = load(varargin{1});
+case 'readImage'
+    value = imread(varargin{1});
 case 'writeMatrix'
     dlmwrite(varargin{:});
     value = varargin{1};
