@@ -25,6 +25,14 @@ if ~isempty(menu)
     if isempty(which('acMenuExecute'))
         error('Acycle:Replay:Unavailable','Install the recorded menu interface to replay this invocation.');
     end
+    % The master bispectrum includes a creation timestamp in its result.
+    % Older menu journals have it in the return snapshot. Preserve it on replay.
+    if strcmp(menu{1},'menu_bispectral') && strcmp(menu{2},'analyzer') && ...
+            ~isempty(params.args) && isstruct(params.args{1}) && isfield(params.args{1},'operation') && ...
+            isequal(params.args{1}.operation,'Bispectral') && isfile([id,'.retval.mat'])
+        original = load([id,'.retval.mat'],'value');
+        if isfield(original.value,'Created'), params.bispectralCreated = original.value.Created; end
+    end
     newId=aclog.newId();
     retval=acMenuExecute(menu{1},menu{2},params,newId,[]);
     return

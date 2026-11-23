@@ -25,6 +25,8 @@ plot(app.AxesTop,f,P1,'Color',[0.2 0.65 0.95]); hold(app.AxesTop,'on');
                     max(P1)*filtered.response_gain,'r-');
                 data_filterout = [time,filtered.filtered,filtered.envelope];
 %% End copied source
-subplot(2,1,2); plot(time,data_filterout(:,2),time,data_filterout(:,3));
+seriesAxis = subplot(2,1,2);
+plot(seriesAxis,time,data_filterout(:,2),time,data_filterout(:,3));
+app.AxesTop.Tag = 'fft'; seriesAxis.Tag = 'filtered';
 r = [];
 end

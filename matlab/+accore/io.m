@@ -41,13 +41,15 @@ case 'save'
     folder = fileparts(file); if isempty(folder), folder = pwd; end
     tmp = [tempname(folder),'.mat'];
     cleanup = onCleanup(@()discard(tmp)); %#ok<NASGU>
-    save(tmp,'session','-v7.3');
+    [session,records] = accore.exchange(session);
+    save(tmp,'session','records','-v7.3');
     [ok,msg] = movefile(tmp,file,'f');
     if ~ok, error('Acycle:IO:Save','%s',msg); end
     value = file;
 case 'load'
-    payload = load(varargin{1},'session');
+    payload = load(varargin{1});
     value = payload.session;
+    if isfield(payload,'records'), value = accore.exchange(value,payload.records); end
 otherwise
     error('Acycle:IO:Action','Unknown I/O operation %s.',action);
 end

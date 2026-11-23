@@ -13,7 +13,7 @@ switch method
 case 'raw'
 trend=zeros(size(datay));
 case 'mean'
-dataymean=mean(datay); npts=numel(datay);
+dataymean=mean(datay,'omitnan'); npts=numel(datay);
 %% Copied from mingsongli/acycle@b52ea9f510f3be00bde9a0238b9898a1e2315b74 code/misc/update_detrend_plot_fig.m:L116-L116
     datamean = dataymean * ones(npts,1);
 %% End copied source

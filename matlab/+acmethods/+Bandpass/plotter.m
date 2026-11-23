@@ -18,7 +18,7 @@ y_3 = p.y_3;
 unit = p.unit;
 handles = struct('x_1',x_1,'x_2',x_2,'y_1',y_1,'y_3',y_3,'unit',unit);
 figure;
-subplot(2,1,2);
+mtmAxis = subplot(2,1,2);
 %% Copied from mingsongli/acycle@b52ea9f510f3be00bde9a0238b9898a1e2315b74 code/guicode/ft.m:L168-L170
 plot(fd2,po2);
 xlim([handles.x_1 handles.x_2])
@@ -27,7 +27,7 @@ ylim([handles.y_1 handles.y_3])
 %% Copied from mingsongli/acycle@b52ea9f510f3be00bde9a0238b9898a1e2315b74 code/guicode/ft.m:L173-L173
     xlabel(['Frequency (cycles/' handles.unit,')'])
 %% End copied source
-subplot(2,1,1);
+fftAxis = subplot(2,1,1);
 f = result.f; P1 = result.P1;
 %% Copied from mingsongli/acycle@b52ea9f510f3be00bde9a0238b9898a1e2315b74 code/misc/update_filter_axes.m:L80-L81
     plot(f,P1)
@@ -49,5 +49,7 @@ end
     ylim([y_1, y_2])
     hold off
 %% End copied source
+mtmAxis.Tag = 'mtm';
+fftAxis.Tag = 'fft';
 r = [];
 end

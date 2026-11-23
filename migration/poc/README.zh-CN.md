@@ -26,12 +26,13 @@ s = accli.filter(x);
 m = accli.filter(x,'Operation','Bandpass');
 s2 = accli.rerun(s,struct('flow',.04,'fhigh',.06));
 ax = axes('Parent',figure);
-s2 = accli.replot(s2,struct('panel',1),ax);
+s2 = accli.replot(s2,struct('panel','fft'),ax);
 s3 = accli.apply(s2,[t,cos(2*pi*t/21)]);
 s3 = accli.restyle(s2,s3,ax);
 res = accore.replay(s2.ids.analyzer);
 accore.io('save','analysis.mat',s2);
 s2 = accore.io('load','analysis.mat');
+res = accore.replay('analysis.mat','analyzer');
 ```
 
 每个菜单提供一个具名 CLI 包装函数，例如 `accli.filter`、`accli.prewhiten`、`accli.bispectral`。显式输入结构适用于多序列、图像及标定点。可用 `accli.run(tag,input,...)` 按菜单执行。有 Analyzer 时默认只取结果，传入 `'Plot',true` 或目标轴即可出图。只有 Plotter 的入口默认执行其绘图或桌面动作。旧式纯桌面操作需要打开主窗口。仍依赖外部数据库或工具箱的方法沿用原有运行条件。
@@ -49,4 +50,4 @@ again = accore.replay(r.id);
 
 两个固定版本的 RobotGUI 都调用了发行时缺失的 `waveletML`。PoC 恢复上游最后一次删除前的同名函数，保留其 Morlet、AR(1) 显著性及失败后将最大周期减半再试的约定。构建时校验原始 Git blob。[上游历史源码](https://github.com/mingsongli/acycle/blob/aacef8571055b14cbc77ec61efb0e8f7875810dd/code/package/wavelet/waveletML.m)
 
-交互窗口可用 `getappdata(window,'AcycleAnalysis')` 取得上次成功的分析。CLI 可从这份数据改参数或只改图。可交换 MAT 文件包含实参、数据、分析结果及显式设置。按 id 精确重放还需要相应的日志和快照。
+交互窗口可用 `getappdata(window,'AcycleAnalysis')` 取得上次成功的分析。CLI 可从这份数据改参数或只改图。带通的 `fft` 面板在两版都有，旧版的第二个面板为 `mtm`，master 对应位置展示 `filtered`。可交换 MAT 文件包含实参、数据、结果、显式设置和本次各角色的日志与快照。换到新的日志目录后，用 `accore.replay('analysis.mat','analyzer')` 可从包内恢复原始参数和随机状态。Mini-Robot 对应的角色名为 `workflow`。

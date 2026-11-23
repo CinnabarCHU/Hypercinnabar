@@ -15,10 +15,10 @@ originalChoices = s.explicit.plt;
 for k = reshape(fieldnames(style),1,[])
     if ~isfield(s.plt,k{1}) || ~isequaln(style.(k{1}),s.plt.(k{1})), originalChoices.(k{1}) = style.(k{1}); end
 end
-style.panel = 1;
+style.panel = 'fft';
 s = accli.replot(s,style,h.ft_axes3);
 s.panels.fft = s.ids.plotter;
-style.panel = 2;
+style.panel = 'mtm';
 s = accli.replot(s,style,h.ft_axes4);
 s.panels.mtm = s.ids.plotter;
 s.plt = rmfield(s.plt,'panel');

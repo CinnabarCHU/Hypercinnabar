@@ -16,6 +16,9 @@ value=aclog.invoke(op,request,journal,@dispatch);
             p=rmfield(s.params,'operation');
             acMenuValidate(engine,p);
             [out,status]=acMenuOriginal(engine,'analyzer',p,journal);
+            if strcmp(engine.operation,'Bispectral') && isfield(stored,'bispectralCreated')
+                out.Created = stored.bispectralCreated;
+            end
         case 'plotter'
             if isfield(s.plt,'operation'), selector=s.plt.operation;
             elseif isfield(s.params,'operation'), selector=s.params.operation;
