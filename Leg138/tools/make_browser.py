@@ -5,6 +5,7 @@ import gzip
 import json
 from collections import Counter, defaultdict
 from pathlib import Path
+from edition_browser import build_portal
 
 
 def load_rows(root, name):
@@ -105,6 +106,8 @@ def build(root, data, output):
     data_object = dict(sites=sites, proposals=proposals, search=search, carbon_fields=carbon_fields,
                        positions=json.loads((data/'modern_positions.geojson').read_text())['features'],
                        coast=json.loads((data/'modern_coast.json').read_text())['lines'])
+    expedition=build_portal(root,output.parent)
+    data_object['portal_keys']=[[tab,row[0],row[2]] for tab,entries in expedition.items() for row in entries]
     template = Path(__file__).with_name('browser_template.html').read_text()
     payload=json.dumps(data_object,ensure_ascii=False,separators=(',',':')).replace('<','\\u003c')
     output.write_text(template.replace('@DATA@',payload),encoding='utf-8')

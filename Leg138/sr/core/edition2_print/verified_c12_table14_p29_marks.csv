@@ -1,0 +1,23 @@
+item_id,source,pdf_page,print_page,visible_mark_index,printed_column,printed_mark,bbox_pt,sample_assignment
+SR.C12.TABLE14,official/VOLUME/CHAPTERS/sr138_12.pdf,29,261,1,Thoracosphaera,R,"[64.67, 149.67, 69.0, 155.0]",unassigned_lateral_continuation
+SR.C12.TABLE14,official/VOLUME/CHAPTERS/sr138_12.pdf,29,261,2,Thoracosphaera,R,"[65.0, 280.67, 69.33, 286.0]",unassigned_lateral_continuation
+SR.C12.TABLE14,official/VOLUME/CHAPTERS/sr138_12.pdf,29,261,3,Umbilicosphaera spp,R,"[202.67, 371.33, 206.67, 376.67]",unassigned_lateral_continuation
+SR.C12.TABLE14,official/VOLUME/CHAPTERS/sr138_12.pdf,29,261,4,Umbilicosphaera spp,F,"[203.0, 378.0, 206.67, 383.67]",unassigned_lateral_continuation
+SR.C12.TABLE14,official/VOLUME/CHAPTERS/sr138_12.pdf,29,261,5,Umbilicosphaera spp,R,"[202.67, 406.33, 207.0, 411.67]",unassigned_lateral_continuation
+SR.C12.TABLE14,official/VOLUME/CHAPTERS/sr138_12.pdf,29,261,6,Umbilicosphaera spp,F,"[203.33, 448.33, 207.0, 453.67]",unassigned_lateral_continuation
+SR.C12.TABLE14,official/VOLUME/CHAPTERS/sr138_12.pdf,29,261,7,Umbilicosphaera spp,F,"[203.33, 469.33, 207.0, 474.67]",unassigned_lateral_continuation
+SR.C12.TABLE14,official/VOLUME/CHAPTERS/sr138_12.pdf,29,261,8,Umbilicosphaera spp,F,"[203.33, 476.0, 206.67, 481.67]",unassigned_lateral_continuation
+SR.C12.TABLE14,official/VOLUME/CHAPTERS/sr138_12.pdf,29,261,9,Umbilicosphaera spp,F,"[203.33, 483.33, 206.67, 488.67]",unassigned_lateral_continuation
+SR.C12.TABLE14,official/VOLUME/CHAPTERS/sr138_12.pdf,29,261,10,Umbilicosphaera spp,F,"[203.33, 490.0, 207.0, 495.67]",unassigned_lateral_continuation
+SR.C12.TABLE14,official/VOLUME/CHAPTERS/sr138_12.pdf,29,261,11,Umbilicosphaera spp,F,"[203.33, 497.0, 207.0, 502.67]",unassigned_lateral_continuation
+SR.C12.TABLE14,official/VOLUME/CHAPTERS/sr138_12.pdf,29,261,12,T. serratus,F,"[148.67, 573.33, 153.0, 579.0]",unassigned_lateral_continuation
+SR.C12.TABLE14,official/VOLUME/CHAPTERS/sr138_12.pdf,29,261,13,T. serratus,R,"[148.33, 580.67, 152.67, 586.0]",unassigned_lateral_continuation
+SR.C12.TABLE14,official/VOLUME/CHAPTERS/sr138_12.pdf,29,261,14,T. serratus,C,"[148.0, 587.67, 152.0, 593.0]",unassigned_lateral_continuation
+SR.C12.TABLE14,official/VOLUME/CHAPTERS/sr138_12.pdf,29,261,15,T. serratus,F,"[148.67, 594.33, 153.0, 600.0]",unassigned_lateral_continuation
+SR.C12.TABLE14,official/VOLUME/CHAPTERS/sr138_12.pdf,29,261,16,T. serratus,F,"[148.67, 601.33, 152.33, 606.67]",unassigned_lateral_continuation
+SR.C12.TABLE14,official/VOLUME/CHAPTERS/sr138_12.pdf,29,261,17,Thoracosphaera,R,"[65.67, 608.33, 70.0, 614.0]",unassigned_lateral_continuation
+SR.C12.TABLE14,official/VOLUME/CHAPTERS/sr138_12.pdf,29,261,18,T. serratus,C,"[148.0, 608.67, 151.33, 613.67]",unassigned_lateral_continuation
+SR.C12.TABLE14,official/VOLUME/CHAPTERS/sr138_12.pdf,29,261,19,T. serratus,F,"[149.0, 622.33, 152.33, 627.67]",unassigned_lateral_continuation
+SR.C12.TABLE14,official/VOLUME/CHAPTERS/sr138_12.pdf,29,261,20,Thoracosphaera,R,"[66.0, 650.33, 70.0, 655.67]",unassigned_lateral_continuation
+SR.C12.TABLE14,official/VOLUME/CHAPTERS/sr138_12.pdf,29,261,21,Thoracosphaera,R,"[66.0, 678.0, 70.33, 683.33]",unassigned_lateral_continuation
+SR.C12.TABLE14,official/VOLUME/CHAPTERS/sr138_12.pdf,29,261,22,T. milowi,R,"[110.0, 685.0, 114.0, 690.67]",unassigned_lateral_continuation

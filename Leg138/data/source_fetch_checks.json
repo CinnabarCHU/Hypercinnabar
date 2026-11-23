@@ -1,0 +1,82 @@
+{
+  "registry_paths": 5434,
+  "individual_source_urls": 5433,
+  "legacy_paths": 5425,
+  "external_comparison_witnesses": 9,
+  "all_sources_offline": 5434,
+  "source_bytes_original": 1400428809,
+  "directory_snapshot_paths": 15,
+  "collection_counts": {
+    "CORE_PLATES": 618,
+    "SHIPBOARD_CD": 4383,
+    "SP_PR_IR": 232,
+    "SR": 201
+  },
+  "book_sources": 322,
+  "book_primary_pdfs": 76,
+  "book_original_tables": 246,
+  "book_public_downloads": {
+    "fetched": 322
+  },
+  "book_verified_pages": 1922,
+  "four_collections_public_smoke_test": [
+    {
+      "local_path": "disc/primary/COREDATA/844.ADJ",
+      "status": "fetched",
+      "bytes": "4028",
+      "sha256": "01f4db2a70244cd4c371a9d0e3e2322baff22e0b173bef40679370d583a412b6",
+      "detail": ""
+    },
+    {
+      "local_path": "ir/primary/VOLUME/DATA/TABLES/CHAP_6/TABLE.2",
+      "status": "fetched",
+      "bytes": "2070",
+      "sha256": "7daaf63e7abeb026a1b7a6302e7cb7d61260df6f2d6ceeb215ea2aabfc26c48c",
+      "detail": ""
+    },
+    {
+      "local_path": "plates/primary/VOLUME/CHAPTERS/cor_0854.pdf",
+      "status": "fetched",
+      "bytes": "2332753",
+      "sha256": "9412ef0e3147b779a743c71ea92e1d50c78a4d6b6e130ed1eba7e726bb545d8e",
+      "detail": ""
+    },
+    {
+      "local_path": "sppr/primary/SP.pdf",
+      "status": "fetched",
+      "bytes": "8102837",
+      "sha256": "7934144bec5ec839c5a95c113cec9a266ac2ad5ef4b97b50cd44ffad3d534e37",
+      "detail": ""
+    },
+    {
+      "local_path": "sr/core/edition2/witnesses/PANGAEA.808122.txt.gz",
+      "status": "fetched",
+      "bytes": "8361",
+      "sha256": "cfe72a8d4c0dd85ed977ba072695ad5dead17e52e6d4de00eadc7112e6301193",
+      "detail": ""
+    },
+    {
+      "local_path": "sr/primary/official/39_02.txt",
+      "status": "fetched",
+      "bytes": "149089",
+      "sha256": "666e1f848bc6233c7dd888173f61586f6a615136df748b4e2a4aadbac12e56ce",
+      "detail": ""
+    }
+  ],
+  "checks": [
+    "HTTP gzip decoded before hashing",
+    "local gzip verified on decompressed bytes",
+    "concurrent writes preserve one verified witness",
+    "invalid downloaded source bytes rejected",
+    "changed server directory snapshot classified independently",
+    "existing differing witness preserved",
+    "temporary partial outputs cleaned",
+    "first release registry exactly matches independent SQLite archive path / bytes / SHA-256 / URL",
+    "book inputs exactly match source paths referenced by the reconstructed edition",
+    "all registered offline witnesses rehashed",
+    "all four collections downloaded and rehashed from the public publishers",
+    "the nine external witnesses verified against the published original bytes",
+    "fresh public origins furnished every source required for the complete edition",
+    "PDF page counts read from all 76 newly downloaded report witnesses"
+  ]
+}

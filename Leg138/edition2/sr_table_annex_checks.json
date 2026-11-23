@@ -1,0 +1,32 @@
+{
+  "items": 177,
+  "segments": 251,
+  "geometry_status_counts": {
+    "unverified_positional_ocr": 211,
+    "visually_mapped_named_rows": 2,
+    "reviewed_geometry_with_candidate_readings": 10,
+    "checked_matrix_geometry_unresolved_column_meaning": 26,
+    "visible_marks_without_sample_assignment": 1,
+    "checked_formula_layout_unresolved_semantics": 1
+  },
+  "items_with_positional_cells": 177,
+  "candidate_body_cells": 71641,
+  "physical_body_rows": 10033,
+  "independent_vertical_header_candidates": 1093,
+  "field_mapped_named_rows": 44,
+  "separately_transcribed_unassigned_marks": 22,
+  "items_with_field_mapped_named_rows": 2,
+  "segments_in_typeset_evidence_supplement": 13,
+  "new_chapter_pdf_pages": 29,
+  "input_digests": {
+    "coverage.csv": "3facde8669437d1a694709f0ba80334397600d2e8f9f8c0ca666e4cfbddef00e",
+    "segments.csv": "5244f41f59a146f25ad89873d965f6019de02fc586a503763219c4a656709cb0",
+    "cells.jsonl.gz": "f686c7861ad6a509454e5dc0fce9bf96e9d0f96f74dd153e627b5da0eb73d3bf",
+    "field_dictionary.csv.gz": "b5a0a300e0edeb55c2085c7fbf080adf941cbd63e49bfa72c582505c8a73d115",
+    "verified_c04_table2.csv": "e35a51c0a957af8586a6a428ab444aa35d51111deaffab554af36611000335f8",
+    "verified_c12_table14_p29_marks.csv": "31c1e505cf632512d7eb071b583754c05af6ad84e05afee42d8e3400c4096dc4",
+    "verified_c21_table2.csv": "e25571e992c00f62a531d271e21b67bc79c4e2334ea0cadf7695e907d8c87185",
+    "visual_regions.csv": "9f1792764b758c765555a9a137fa2df1ded7c6c3501509b02290e77969b6b8fb",
+    "vertical_header_candidates.csv.gz": "6979655d14d57543adc8296b9d9fc18ff89f8ca3db84efc61753b5805c6dfd56"
+  }
+}

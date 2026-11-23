@@ -1,18 +1,25 @@
-# Ocean Drilling Program · Leg 138
+# ODP Leg 138 · 赤道东太平洋
 
-Leg 138 于 1991 年在赤道东太平洋钻探 Sites 844–854。本分支按航前计划、航后初报、Initial Reports、Scientific Results 和随盘材料维护可校读的数字版本。原站号、孔号、图表号、发布版本、源行和页码都可以作为查询入口。
+本分支整理 1991 年 Ocean Drilling Program Leg 138 的航前计划、航后初报、Initial Reports、Scientific Results 和随盘材料。12 个拟钻站、11 个实钻站、42 个孔，以及各章自己的图表和原页都是独立检索入口。
 
-- [84 页现代校读本](Leg138/publication/ODP138_Leg_Report_Edition.pdf) 包含逐站阅读、原图与重绘对照、岩芯取色示范和出版差异的校记。
-- [使用与复建说明](Leg138/README.md) 列出离线浏览、全文检索、API、按出处导出以及复核方式。
-- [分发件的校验记录](Leg138/data/source_package_checks.json) 登记 5,425 项原件。底本可从原分发站按需拉取，在本地按已登记的哈希核对。
-- [ODP 官方卷目录](https://www-odp.tamu.edu/publications/138_IR/main.htm) 与 [Scientific Results](https://www-odp.tamu.edu/publications/138_SR/main.htm) 提供原始出版信息。引用数据时请连同对象所列的章节、表和发布版本引用原作者。
+| 入口 | 内容 |
+|---|---|
+| [现代版分册目录](Leg138/publication/chapters/catalog.csv) | 76 份 PDF 共 3,622 页、合计约 15.2 MiB，按来源页保留现代正文、具名表和已核的图件对照。选取 [Site 846 站章](Leg138/publication/chapters/IR.C11.pdf)、[航前计划](Leg138/publication/chapters/SP.pdf)、[初报](Leg138/publication/chapters/PR.pdf) 或 [Shackleton 等的年代学章](Leg138/publication/chapters/SR.C06.pdf) 即可直接翻阅。章内原刊链接使用原来源物理页号。 |
+| [84 页逐站校读本](Leg138/publication/ODP138_Leg_Report_Edition.pdf) | 航次与站点、12 张拟钻站卡、11 站速率图对校、碳酸盐重复测量、岩芯与标尺分离。 |
+| [11 站复合地层柱图](Leg138/figures/core/composite_v2/Leg138_PR_Composite_Atlas.pdf) | 22 个原图页与独立重画并排，含 66 个密度、磁化率与反射率面板。图旁区分发布值、显示滤波及原刊解释层。 |
+| [使用、导出和复建](Leg138/README.md) | 双击离线浏览，或启动本机 JSON／CSV API。可按某一站、图表、孔、数据发布版本或文件 SHA-256 回溯。 |
+| [逐图验收与证据](Leg138/data/FIGURES.md) | 1,206 幅正式编号图逐幅登记原页、可用数据、重绘范围和待核状态，各站的岩性解释层和物性层分项说明。 |
+| [原分发件索引](Leg138/data/source_package_checks.json) | 5,425 项基础来源的文件长度和哈希能逐件核对。原件可按章、载体和前缀获取，新增外部对勘见证单列。 |
 
 ```sh
 git clone --single-branch --branch odp-leg138 https://github.com/CinnabarCHU/Hypercinnabar.git
 cd Hypercinnabar/Leg138
 python tools/build_catalog.py
 python tools/verify_catalog.py
+python tools/verify_edition2_catalog.py
 python tools/serve.py
 ```
 
-服务入口为 <http://127.0.0.1:8138/>。无需 Python 服务也可直接用浏览器打开解压或检出到本地的 `Leg138/browse.html`，按站浏览和导出。原出版物和数据保留来源、署名与原有权利说明。
+本地服务入口为 <http://127.0.0.1:8138/>。也可直接双击 `Leg138/browse.html` 按站查询和导出，或双击 `Leg138/catalog.html` 查看全航次的图表、岩芯和古位置。GitHub 在线浏览文件时可以直接查看分册 PDF。原底本和嵌入整页见证的重排大卷可在本地独立重建。
+
+报告的刊值、推测的 OCR 读法、重复测定、修订版本和从图面取出的值各有独立标记。例如 Site 853 原刊两次 CaCO₃ 读数为 87.90% 与 87.07%，原表差栏为 0.17 个百分点；校记另给复算差 0.83。引用某项数据时请一并引用该条的作者、章节、表号和发布版本。来源站提供[卷目与书目](https://www-odp.tamu.edu/publications/citations/cite138.html)。本仓库的代码许可与原出版物各自的署名、权利说明分别保留。

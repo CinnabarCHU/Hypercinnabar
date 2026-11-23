@@ -1,0 +1,27 @@
+{
+  "numbered_figures_by_series": {
+    "IR": 652,
+    "SR": 515,
+    "SP": 3,
+    "PR": 36
+  },
+  "numbered_statuses": {
+    "published_image_or_caption": 1080,
+    "documented_source_lead": 101,
+    "data_code_redraw": 24,
+    "print_derived_partial_redraw": 1
+  },
+  "numbered_extent": {
+    "none": 1181,
+    "all_published_data_panels": 2,
+    "physical_property_panels_only": 11,
+    "interval_curves_or_selected_marks": 11,
+    "printed_backtrack_only": 1
+  },
+  "all_rows": 1231,
+  "related_unnumbered_graphics": 25,
+  "resolved_source_pages": 1231,
+  "ir_foldout_items": 13,
+  "sites_with_physical_and_interpretive_notes": 11,
+  "historical_PR_20_point_filter_exactly_reproduced": 0
+}

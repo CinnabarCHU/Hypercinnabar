@@ -1,0 +1,2 @@
+site,source_program,source_sha256,published_path,published_rows,replay_rows,shared_complete_rows_multiset,ordered_rows_equal,replay_only_rows,published_only_rows,exact_numeric_row_sequence,byte_identical_after_LF,compiler_version,stage
+847,PROGRAMS/SPLICE.F,f92bafa7dca8fd2283c0db0c7f2fe091a7f9bd320ff9549767f3da55175770b5,SITE_847/SUS/SUS847.MCD,4263,4301,4251,3951,50,12,False,False,GNU Fortran (Debian 14.2.0-19) 14.2.0,hole-switch splice before PR figure smoothing

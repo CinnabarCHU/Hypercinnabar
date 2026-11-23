@@ -1,0 +1,33 @@
+{
+  "file_scheme_witness_switches": {
+    "SP": {
+      "source": 14,
+      "witness_uri": "../pdf/SP.pdf#page=37"
+    },
+    "IR.C09": {
+      "source": 2,
+      "witness_uri": "../pdf/IR.C09.pdf#page=8"
+    },
+    "SR.C41": {
+      "source": 2,
+      "witness_uri": "../pdf/SR.C41.pdf#page=8"
+    },
+    "SR.138_corx": {
+      "source": 1,
+      "witness_uri": "../pdf/SR.138_corx.pdf#page=2"
+    }
+  },
+  "cell_decisions_and_sr_registry": {
+    "ir_pending_cells_verified_on_page": "IR.C02 p9",
+    "ir853_corrected_named_fields": "IR18.T12",
+    "sr_new_print_checked": "SR.C01.TABLE1",
+    "sr_withdrawn_reference_checked": "SR.C17.FIGURE15A"
+  },
+  "sr_annex_and_composite": {
+    "named_regression_and_biohorizon_readers": 2,
+    "unassigned_mark_chapter_reader": true,
+    "missing_cells_witness_page_checked": false,
+    "composite_atlas_html_link_checked": true,
+    "missing_cells_witness_page_applicable": false
+  }
+}

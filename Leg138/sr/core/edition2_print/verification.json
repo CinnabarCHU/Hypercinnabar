@@ -1,0 +1,37 @@
+{
+  "active_tables": 230,
+  "tables_with_prior_datasets": 53,
+  "previously_unstructured_tables": 177,
+  "all_anchored_segments": 306,
+  "identified_continuation_segments": 76,
+  "segments_with_actual_body_cells": 306,
+  "previously_unstructured_with_body_cells": 177,
+  "addressed_body_cells": 88600,
+  "body_source_tokens": 109125,
+  "physical_body_baselines": 12517,
+  "header_plus_body_cells": 93454,
+  "position_columns_spanned_by_glyph_extents": 841,
+  "source_pdfs": 41,
+  "source_basis_counts_header_and_body": {
+    "publisher_pdf_word_layer": 93188,
+    "publisher_headers_and_manual_raster_marks": 26,
+    "rotated_scan_tesseract": 240
+  },
+  "segment_review": {
+    "pending_visual_review": 263,
+    "sample_geometry_checked": 15,
+    "matrix_region_checked_column_headings_need_review": 27,
+    "formula_layout_checked_semantics_pending": 1
+  },
+  "named_fully_read_datasets": {
+    "verified_c04_table2.csv": 7,
+    "verified_c21_table2.csv": 37
+  },
+  "named_partial_printed_mark_datasets": {
+    "verified_c12_table14_p29_marks.csv": 22
+  },
+  "vertical_header_candidate_readings": 1093,
+  "segments_with_vertical_readings": 26,
+  "matrix_ruling_candidates": 1111,
+  "matrix_row_span_candidates": 93
+}

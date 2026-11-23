@@ -1,0 +1,12 @@
+{
+  "file_count": 3581,
+  "sha256sums_sha256": "405f48816ec8cc7e0d19cbb99efd15695986fe86e1ef233ee18d490f4f935c1f",
+  "publication_manifest_sha256": "135710e021c936b636cea6d1f205e8ac377539fea883cc7e51c35e0d04eca1d3",
+  "rate_plot_lineage_sha256": "7f91f90c1c8e2a3cefc947f30d278f429b835b0f75795b4c4841759aad95386d",
+  "PR_pdf_sha256": "0a3613f553c841cf4acd8730773e13eb9774b8b8d0e2e519ef99470a76a85dda",
+  "site853_pdf_sha256": "a73bb159112f4e02ba0a6c5089526ea5c64fead946139d700396ad21844dceb9",
+  "site853_svg_sha256": "a2df40659241c4fdc49d73351cbefae54b610e2d21db7fdf5968190d923ad3a7",
+  "sr_table_catalog_sha256": "7dfe812c26e406796263e34980629df60e78b38bd14f11e479fed0924ca47a0b",
+  "sr_table_annex_sha256": "26a5c39e1dd75247b63aa5aa5dfd68873ec85d8d9bdccaa3ba3df0adc14fced8",
+  "pr_composite_atlas_sha256": "6cc65a32786e1a042cbcd2e2ce7b28d14af05e36bb903bb77b1ec8bce9605016"
+}

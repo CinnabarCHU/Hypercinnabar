@@ -1,0 +1,38 @@
+item_id,source,pdf_page,print_page,row_in_print,horizon_number_printed,taxon_label_printed,event_code_printed,event_definition_in_note,row_bbox_pt,status
+SR.C21.TABLE2,official/VOLUME/CHAPTERS/sr138_21.pdf,3,481,1,37,Discoaster quinqueramus,LO,last occurrence,"[360.0, 412.3, 460.03, 419.41]",visually_read_and_field_mapped
+SR.C21.TABLE2,official/VOLUME/CHAPTERS/sr138_21.pdf,3,481,2,36,Amaurolithus amplificus,LO,last occurrence,"[360.18, 419.86, 456.79, 426.97]",visually_read_and_field_mapped
+SR.C21.TABLE2,official/VOLUME/CHAPTERS/sr138_21.pdf,3,481,3,35,Amaurolithus amplificus,FO,first occurrence,"[360.18, 427.06, 455.65, 434.17]",visually_read_and_field_mapped
+SR.C21.TABLE2,official/VOLUME/CHAPTERS/sr138_21.pdf,3,481,4,34,Amaurolithus primus,FO,first occurrence,"[360.18, 434.26, 445.94, 441.37]",visually_read_and_field_mapped
+SR.C21.TABLE2,official/VOLUME/CHAPTERS/sr138_21.pdf,3,481,5,33,Discoaster surculus,FCO,first common occurrence,"[360.18, 441.46, 447.01, 448.57]",visually_read_and_field_mapped
+SR.C21.TABLE2,official/VOLUME/CHAPTERS/sr138_21.pdf,3,481,6,32,Discoaster berggrenii,FO,first occurrence,"[360.18, 448.66, 448.28, 455.77]",visually_read_and_field_mapped
+SR.C21.TABLE2,official/VOLUME/CHAPTERS/sr138_21.pdf,3,481,7,31,Discoaster pentaradiatus,FO,first occurrence,"[360.18, 455.32, 457.45, 462.43]",visually_read_and_field_mapped
+SR.C21.TABLE2,official/VOLUME/CHAPTERS/sr138_21.pdf,3,481,8,30,Discoaster neorectus,FO,first occurrence,"[360.18, 463.06, 445.93, 470.17]",visually_read_and_field_mapped
+SR.C21.TABLE2,official/VOLUME/CHAPTERS/sr138_21.pdf,3,481,9,29,Discoaster loeblichii,FO,first occurrence,"[360.18, 469.54, 445.21, 476.83]",visually_read_and_field_mapped
+SR.C21.TABLE2,official/VOLUME/CHAPTERS/sr138_21.pdf,3,481,10,28,Discoaster bollii,LO,last occurrence,"[360.0, 476.74, 434.08, 483.85]",visually_read_and_field_mapped
+SR.C21.TABLE2,official/VOLUME/CHAPTERS/sr138_21.pdf,3,481,11,27,Mynilitha convallis,FO,first occurrence,"[360.0, 484.12, 440.72, 491.41]",visually_read_and_field_mapped
+SR.C21.TABLE2,official/VOLUME/CHAPTERS/sr138_21.pdf,3,481,12,26,Discoaster hamatus,LO,last occurrence,"[360.0, 491.86, 444.03, 498.97]",visually_read_and_field_mapped
+SR.C21.TABLE2,official/VOLUME/CHAPTERS/sr138_21.pdf,3,481,13,25,Discoaster neohamatus,FO,first occurrence,"[360.0, 498.52, 452.41, 505.63]",visually_read_and_field_mapped
+SR.C21.TABLE2,official/VOLUME/CHAPTERS/sr138_21.pdf,3,481,14,24,Discoaster prepentaradiatus,FO,first occurrence,"[360.0, 505.54, 466.28, 512.83]",visually_read_and_field_mapped
+SR.C21.TABLE2,official/VOLUME/CHAPTERS/sr138_21.pdf,3,481,15,23,Catinaster calyculus,LO,last occurrence,"[360.0, 513.46, 445.39, 520.57]",visually_read_and_field_mapped
+SR.C21.TABLE2,official/VOLUME/CHAPTERS/sr138_21.pdf,3,481,16,22,Catinaster coalitus,LO,last occurrence,"[360.0, 520.66, 440.38, 527.77]",visually_read_and_field_mapped
+SR.C21.TABLE2,official/VOLUME/CHAPTERS/sr138_21.pdf,3,481,17,21,Discoaster hamatus,FO,first occurrence,"[360.0, 527.14, 442.51, 534.43]",visually_read_and_field_mapped
+SR.C21.TABLE2,official/VOLUME/CHAPTERS/sr138_21.pdf,3,481,18,20,Catinaster calyculus,FO,first occurrence,"[360.0, 535.06, 444.31, 542.17]",visually_read_and_field_mapped
+SR.C21.TABLE2,official/VOLUME/CHAPTERS/sr138_21.pdf,3,481,19,19,Coccolithus miopelagicus,LO,last occurrence,"[360.72, 542.26, 459.1, 549.37]",visually_read_and_field_mapped
+SR.C21.TABLE2,official/VOLUME/CHAPTERS/sr138_21.pdf,3,481,20,18,Discoaster bellus group,FO,first occurrence,"[360.72, 549.46, 453.14, 556.57]",visually_read_and_field_mapped
+SR.C21.TABLE2,official/VOLUME/CHAPTERS/sr138_21.pdf,3,481,21,17,Discoaster exilis,LCO,last common occurrence,"[360.72, 556.66, 438.37, 563.77]",visually_read_and_field_mapped
+SR.C21.TABLE2,official/VOLUME/CHAPTERS/sr138_21.pdf,3,481,22,16,Discoaster calcaris,FO,first occurrence,"[360.72, 563.14, 440.9, 570.25]",visually_read_and_field_mapped
+SR.C21.TABLE2,official/VOLUME/CHAPTERS/sr138_21.pdf,3,481,23,15,Catinaster coalitus,FO,first occurrence,"[360.72, 570.34, 439.82, 577.45]",visually_read_and_field_mapped
+SR.C21.TABLE2,official/VOLUME/CHAPTERS/sr138_21.pdf,3,481,24,14,Discoaster kugleri,LO,last occurrence,"[360.72, 577.54, 438.76, 584.65]",visually_read_and_field_mapped
+SR.C21.TABLE2,official/VOLUME/CHAPTERS/sr138_21.pdf,3,481,25,13,Discoaster kugleri,LCO,last common occurrence,"[360.54, 585.46, 443.23, 592.57]",visually_read_and_field_mapped
+SR.C21.TABLE2,official/VOLUME/CHAPTERS/sr138_21.pdf,3,481,26,12,Discoaster bollii,FO,first occurrence,"[360.54, 591.94, 433.34, 599.05]",visually_read_and_field_mapped
+SR.C21.TABLE2,official/VOLUME/CHAPTERS/sr138_21.pdf,3,481,27,11,Discoaster kugleri,FCO,first common occurrence,"[360.54, 599.14, 442.87, 606.25]",visually_read_and_field_mapped
+SR.C21.TABLE2,official/VOLUME/CHAPTERS/sr138_21.pdf,3,481,28,10,Discoaster kugleri,FO,first occurrence,"[360.72, 607.06, 438.37, 614.17]",visually_read_and_field_mapped
+SR.C21.TABLE2,official/VOLUME/CHAPTERS/sr138_21.pdf,3,481,29,9,Calcidiscus macintyrei,FO,first occurrence,"[363.06, 613.54, 450.25, 620.65]",visually_read_and_field_mapped
+SR.C21.TABLE2,official/VOLUME/CHAPTERS/sr138_21.pdf,3,481,30,8,Coronocyclus nitescens,LO,last occurrence,"[376.74, 621.1, 452.62, 628.21]",visually_read_and_field_mapped
+SR.C21.TABLE2,official/VOLUME/CHAPTERS/sr138_21.pdf,3,481,31,7,Triquetrorhabdulus serratus,LO,last occurrence,"[363.06, 628.3, 467.35, 635.41]",visually_read_and_field_mapped
+SR.C21.TABLE2,official/VOLUME/CHAPTERS/sr138_21.pdf,3,481,32,6,Calcidiscus premacintyrei,LCO,last common occurrence,"[363.06, 635.5, 464.47, 642.61]",visually_read_and_field_mapped
+SR.C21.TABLE2,official/VOLUME/CHAPTERS/sr138_21.pdf,3,481,33,5,Triquetrorhabdulus rugosus,FCO,first common occurrence,"[363.06, 642.7, 469.51, 649.81]",visually_read_and_field_mapped
+SR.C21.TABLE2,official/VOLUME/CHAPTERS/sr138_21.pdf,3,481,34,4,Discoaster signus,LO,last occurrence,"[362.88, 649.9, 437.5, 657.01]",visually_read_and_field_mapped
+SR.C21.TABLE2,official/VOLUME/CHAPTERS/sr138_21.pdf,3,481,35,3,Cyclicargolithus floridanus,LCO,last common occurrence,"[363.06, 657.1, 467.89, 664.21]",visually_read_and_field_mapped
+SR.C21.TABLE2,official/VOLUME/CHAPTERS/sr138_21.pdf,3,481,36,2,Reticulofenestra pseudoumbilicus,FO,first occurrence,"[363.06, 664.3, 479.96, 671.41]",visually_read_and_field_mapped
+SR.C21.TABLE2,official/VOLUME/CHAPTERS/sr138_21.pdf,3,481,37,1,Sphenolithus heteromorphus,LO,last occurrence,"[363.6, 671.5, 466.48, 678.61]",visually_read_and_field_mapped

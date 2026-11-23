@@ -4,6 +4,7 @@ import csv
 import gzip
 import json
 import re
+import tempfile
 import sqlite3
 from pathlib import Path
 
@@ -50,9 +51,21 @@ CREATE INDEX fields_by_dataset ON field_notes(dataset_id);
 CREATE TABLE native_ir(item_id TEXT,line_number INTEGER,source_path TEXT,raw_text TEXT,line_ending TEXT,tokens_with_positions TEXT,PRIMARY KEY(item_id,line_number)) WITHOUT ROWID;
 """
 def build(root,edited,dest):
-    root=root.resolve()
-    tmp=dest.with_suffix('.building.sqlite');tmp.unlink(missing_ok=True)
-    db=sqlite3.connect(tmp);db.execute('PRAGMA foreign_keys=ON');db.executescript(SCHEMA)
+    dest=dest.resolve()
+    with tempfile.NamedTemporaryFile(prefix=dest.stem+'.building-',suffix='.sqlite',dir=dest.parent,delete=False) as stream:
+        tmp=Path(stream.name)
+    db=sqlite3.connect(tmp)
+    try:
+        populate(root.resolve(),edited,db)
+        db.commit()
+        db.close()
+        tmp.replace(dest)
+    finally:
+        db.close()
+        tmp.unlink(missing_ok=True)
+
+def populate(root,edited,db):
+    db.execute('PRAGMA foreign_keys=ON');db.executescript(SCHEMA)
     mod=lambda name:root/name/'core'
     def add(table,*values):
         db.execute('INSERT INTO '+table+' VALUES ('+','.join('?' for _ in values)+')',values)
@@ -194,10 +207,11 @@ def build(root,edited,dest):
             add('field_notes','CD.FAMILY.'+r['family'].upper(),field,r['record_role'],r['interpretation'],'disc/core/field_notes.csv')
     for field,role in [('run_1_carbonate_pct','first_published_run'),('run_2_carbonate_pct','second_published_run'),('run_3_carbonate_pct','third_published_run_when_present'),('published_absolute_difference_pct','published_summary_statistic')]:
         add('field_notes','IR.carbonate_repeat_samples',field,role,'Values retained as published','ir/core/carbonate_repeat_sources.csv')
+    from catalog_edition2 import install
+    install(db,root,aliases,csv_set)
     db.execute("INSERT INTO page_fts(page_fts) VALUES ('rebuild')")
     assert db.execute('PRAGMA integrity_check').fetchone()==('ok',)
     assert not list(db.execute('PRAGMA foreign_key_check'))
-    db.commit();db.close();tmp.replace(dest)
 
 if __name__=='__main__':
     parser=argparse.ArgumentParser(description=__doc__)

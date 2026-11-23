@@ -1,0 +1,74 @@
+{
+  "844": {
+    "nonempty_org_c": 67,
+    "source_rows": 187,
+    "repeat_sample_rows": 12
+  },
+  "845": {
+    "nonempty_org_c": 133,
+    "source_rows": 223,
+    "repeat_sample_rows": 13
+  },
+  "846": {
+    "nonempty_org_c": 147,
+    "source_rows": 318,
+    "repeat_sample_rows": 61
+  },
+  "847": {
+    "nonempty_org_c": 26,
+    "source_rows": 260,
+    "repeat_sample_rows": 43
+  },
+  "848": {
+    "nonempty_org_c": 20,
+    "source_rows": 127,
+    "repeat_sample_rows": 18
+  },
+  "849": {
+    "nonempty_org_c": 75,
+    "source_rows": 278,
+    "repeat_sample_rows": 42
+  },
+  "850": {
+    "nonempty_org_c": 79,
+    "source_rows": 294,
+    "repeat_sample_rows": 37
+  },
+  "851": {
+    "nonempty_org_c": 67,
+    "source_rows": 266,
+    "repeat_sample_rows": 25
+  },
+  "852": {
+    "nonempty_org_c": 44,
+    "source_rows": 187,
+    "repeat_sample_rows": 35
+  },
+  "853": {
+    "nonempty_org_c": 8,
+    "source_rows": 93,
+    "repeat_sample_rows": 24
+  },
+  "854": {
+    "nonempty_org_c": 0,
+    "source_rows": 63,
+    "repeat_sample_rows": 8
+  },
+  "whole_leg": {
+    "record_counts": {
+      "books": 76,
+      "ir": 911,
+      "sr": 809,
+      "photos": 593,
+      "smear": 1156,
+      "geo": 191
+    },
+    "named_IR_tables": 259,
+    "photo_regions": 12989,
+    "smear_cells": 25194,
+    "station_filters_and_CSV_downloads_checked": 11,
+    "local_paths_checked": 231,
+    "compact_PDFs_opened_and_hash_checked": 76,
+    "network_disabled": true
+  }
+}

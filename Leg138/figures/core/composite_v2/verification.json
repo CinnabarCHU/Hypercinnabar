@@ -1,0 +1,19 @@
+{
+  "stations": 11,
+  "published_figures": 11,
+  "source_figure_pages": 22,
+  "independent_physical_panels": 66,
+  "vector_traces": 110,
+  "source_row_counts": {
+    "grape": 121065,
+    "susceptibility": 42943,
+    "reflectance": 61575
+  },
+  "source_files_hashed": 106,
+  "retained_interpretive_and_axis_layers": 55,
+  "proven_PR_twenty_point_filter_reproductions": 0,
+  "printed_single_track_comparisons": 44,
+  "panel_geometry": "printed tick calibration and original page coordinates",
+  "reference_source_sha256": "48f7d7e22f672f499c38d610d995ad713874cfd01bc29516cf6b2f4cbe6d18c5",
+  "atlas_sha256": "6cc65a32786e1a042cbcd2e2ce7b28d14af05e36bb903bb77b1ec8bce9605016"
+}

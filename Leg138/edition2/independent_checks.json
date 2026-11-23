@@ -1,0 +1,11 @@
+{
+  "documents": 76,
+  "source_pages": 1922,
+  "intact_source_image_stream_references": 1893,
+  "source_line_segments_checked": 347324,
+  "source_ocr_page_equality": 1922,
+  "pdf_table_representations": 201,
+  "checked_local_chapter_links": 10501,
+  "resource_relations": 692,
+  "distinct_companion_files": 681
+}

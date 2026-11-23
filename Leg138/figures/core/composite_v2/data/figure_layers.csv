@@ -1,0 +1,67 @@
+site,pr_figure,pdf_page,panel,curves,source_samples_in_depth_window,status,historical_20_point_filter_reproduced,plot_values,vector_page,source_index
+844,PR.F3,33,grape,1,6908,independent_data_redraw,no,published MCD smoothed uncorrected GRAPE,vector/PR_F3_p033.pdf,data/source_tracks.csv
+844,PR.F3,33,susceptibility,1,1815,independent_data_redraw,no,independently displayed magnetic susceptibility at 0.63 × instrument units,vector/PR_F3_p033.pdf,data/source_tracks.csv
+844,PR.F3,33,reflectance,3,4053,independent_data_redraw,no,"independently displayed 450–500, 650–700, 850–900 nm reflectances",vector/PR_F3_p033.pdf,data/source_tracks.csv
+844,PR.F3,34,grape,1,5557,independent_data_redraw,no,published MCD smoothed uncorrected GRAPE,vector/PR_F3_p034.pdf,data/source_tracks.csv
+844,PR.F3,34,susceptibility,1,301,independent_data_redraw,no,independently displayed magnetic susceptibility at 0.63 × instrument units,vector/PR_F3_p034.pdf,data/source_tracks.csv
+844,PR.F3,34,reflectance,3,2302,independent_data_redraw,no,"independently displayed 450–500, 650–700, 850–900 nm reflectances",vector/PR_F3_p034.pdf,data/source_tracks.csv
+845,PR.F6,37,grape,1,7337,independent_data_redraw,no,published MCD smoothed uncorrected GRAPE,vector/PR_F6_p037.pdf,data/source_tracks.csv
+845,PR.F6,37,susceptibility,1,2995,independent_data_redraw,no,independently displayed magnetic susceptibility at 0.63 × instrument units,vector/PR_F6_p037.pdf,data/source_tracks.csv
+845,PR.F6,37,reflectance,3,3665,independent_data_redraw,no,"independently displayed 450–500, 650–700, 850–900 nm reflectances",vector/PR_F6_p037.pdf,data/source_tracks.csv
+845,PR.F6,38,grape,1,6048,independent_data_redraw,no,published MCD smoothed uncorrected GRAPE,vector/PR_F6_p038.pdf,data/source_tracks.csv
+845,PR.F6,38,susceptibility,1,1855,independent_data_redraw,no,independently displayed magnetic susceptibility at 0.63 × instrument units,vector/PR_F6_p038.pdf,data/source_tracks.csv
+845,PR.F6,38,reflectance,3,1864,independent_data_redraw,no,"independently displayed 450–500, 650–700, 850–900 nm reflectances",vector/PR_F6_p038.pdf,data/source_tracks.csv
+846,PR.F9,41,grape,1,7044,independent_data_redraw,no,published MCD smoothed uncorrected GRAPE,vector/PR_F9_p041.pdf,data/source_tracks.csv
+846,PR.F9,41,susceptibility,1,2268,independent_data_redraw,no,independently displayed magnetic susceptibility at 0.63 × instrument units,vector/PR_F9_p041.pdf,data/source_tracks.csv
+846,PR.F9,41,reflectance,3,3161,independent_data_redraw,no,"independently displayed 450–500, 650–700, 850–900 nm reflectances",vector/PR_F9_p041.pdf,data/source_tracks.csv
+846,PR.F9,42,grape,1,5744,independent_data_redraw,no,published MCD smoothed uncorrected GRAPE,vector/PR_F9_p042.pdf,data/source_tracks.csv
+846,PR.F9,42,susceptibility,1,735,independent_data_redraw,no,independently displayed magnetic susceptibility at 0.63 × instrument units,vector/PR_F9_p042.pdf,data/source_tracks.csv
+846,PR.F9,42,reflectance,3,2834,independent_data_redraw,no,"independently displayed 450–500, 650–700, 850–900 nm reflectances",vector/PR_F9_p042.pdf,data/source_tracks.csv
+846,PR.F9,43,grape,1,4525,independent_data_redraw,no,published MCD smoothed uncorrected GRAPE,vector/PR_F9_p043.pdf,data/source_tracks.csv
+846,PR.F9,43,susceptibility,1,716,independent_data_redraw,no,independently displayed magnetic susceptibility at 0.63 × instrument units,vector/PR_F9_p043.pdf,data/source_tracks.csv
+846,PR.F9,43,reflectance,3,1445,independent_data_redraw,no,"independently displayed 450–500, 650–700, 850–900 nm reflectances",vector/PR_F9_p043.pdf,data/source_tracks.csv
+847,PR.F12,46,grape,1,7307,independent_data_redraw,no,published MCD smoothed uncorrected GRAPE,vector/PR_F12_p046.pdf,data/source_tracks.csv
+847,PR.F12,46,susceptibility,1,3017,independent_data_redraw,no,independently displayed magnetic susceptibility at 0.63 × instrument units,vector/PR_F12_p046.pdf,data/source_tracks.csv
+847,PR.F12,46,reflectance,3,3693,independent_data_redraw,no,"independently displayed 450–500, 650–700, 850–900 nm reflectances",vector/PR_F12_p046.pdf,data/source_tracks.csv
+847,PR.F12,47,grape,1,4525,independent_data_redraw,no,published MCD smoothed uncorrected GRAPE,vector/PR_F12_p047.pdf,data/source_tracks.csv
+847,PR.F12,47,susceptibility,1,1246,independent_data_redraw,no,independently displayed magnetic susceptibility at 0.63 × instrument units,vector/PR_F12_p047.pdf,data/source_tracks.csv
+847,PR.F12,47,reflectance,3,2444,independent_data_redraw,no,"independently displayed 450–500, 650–700, 850–900 nm reflectances",vector/PR_F12_p047.pdf,data/source_tracks.csv
+848,PR.F16,51,grape,1,5082,independent_data_redraw,no,published MCD smoothed uncorrected GRAPE,vector/PR_F16_p051.pdf,data/source_tracks.csv
+848,PR.F16,51,susceptibility,1,2100,independent_data_redraw,no,independently displayed magnetic susceptibility at 0.63 × instrument units,vector/PR_F16_p051.pdf,data/source_tracks.csv
+848,PR.F16,51,reflectance,3,2535,independent_data_redraw,no,"independently displayed 450–500, 650–700, 850–900 nm reflectances",vector/PR_F16_p051.pdf,data/source_tracks.csv
+849,PR.F19,54,grape,1,7150,independent_data_redraw,no,published MCD smoothed uncorrected GRAPE,vector/PR_F19_p054.pdf,data/source_tracks.csv
+849,PR.F19,54,susceptibility,1,2825,independent_data_redraw,no,independently displayed magnetic susceptibility at 0.63 × instrument units,vector/PR_F19_p054.pdf,data/source_tracks.csv
+849,PR.F19,54,reflectance,3,3462,independent_data_redraw,no,"independently displayed 450–500, 650–700, 850–900 nm reflectances",vector/PR_F19_p054.pdf,data/source_tracks.csv
+849,PR.F19,55,grape,1,6808,independent_data_redraw,no,published MCD smoothed uncorrected GRAPE,vector/PR_F19_p055.pdf,data/source_tracks.csv
+849,PR.F19,55,susceptibility,1,1942,independent_data_redraw,no,independently displayed magnetic susceptibility at 0.63 × instrument units,vector/PR_F19_p055.pdf,data/source_tracks.csv
+849,PR.F19,55,reflectance,3,2409,independent_data_redraw,no,"independently displayed 450–500, 650–700, 850–900 nm reflectances",vector/PR_F19_p055.pdf,data/source_tracks.csv
+849,PR.F19,56,grape,1,3823,independent_data_redraw,no,published MCD smoothed uncorrected GRAPE,vector/PR_F19_p056.pdf,data/source_tracks.csv
+849,PR.F19,56,susceptibility,1,683,independent_data_redraw,no,independently displayed magnetic susceptibility at 0.63 × instrument units,vector/PR_F19_p056.pdf,data/source_tracks.csv
+849,PR.F19,56,reflectance,3,1095,independent_data_redraw,no,"independently displayed 450–500, 650–700, 850–900 nm reflectances",vector/PR_F19_p056.pdf,data/source_tracks.csv
+850,PR.F22,59,grape,1,7187,independent_data_redraw,no,published MCD smoothed uncorrected GRAPE,vector/PR_F22_p059.pdf,data/source_tracks.csv
+850,PR.F22,59,susceptibility,1,2938,independent_data_redraw,no,independently displayed magnetic susceptibility at 0.63 × instrument units,vector/PR_F22_p059.pdf,data/source_tracks.csv
+850,PR.F22,59,reflectance,3,3660,independent_data_redraw,no,"independently displayed 450–500, 650–700, 850–900 nm reflectances",vector/PR_F22_p059.pdf,data/source_tracks.csv
+850,PR.F22,60,grape,1,7036,independent_data_redraw,no,published MCD smoothed uncorrected GRAPE,vector/PR_F22_p060.pdf,data/source_tracks.csv
+850,PR.F22,60,susceptibility,1,2922,independent_data_redraw,no,independently displayed magnetic susceptibility at 0.63 × instrument units,vector/PR_F22_p060.pdf,data/source_tracks.csv
+850,PR.F22,60,reflectance,3,3577,independent_data_redraw,no,"independently displayed 450–500, 650–700, 850–900 nm reflectances",vector/PR_F22_p060.pdf,data/source_tracks.csv
+850,PR.F22,61,grape,1,4564,independent_data_redraw,no,published MCD smoothed uncorrected GRAPE,vector/PR_F22_p061.pdf,data/source_tracks.csv
+850,PR.F22,61,susceptibility,1,1895,independent_data_redraw,no,independently displayed magnetic susceptibility at 0.63 × instrument units,vector/PR_F22_p061.pdf,data/source_tracks.csv
+850,PR.F22,61,reflectance,3,2261,independent_data_redraw,no,"independently displayed 450–500, 650–700, 850–900 nm reflectances",vector/PR_F22_p061.pdf,data/source_tracks.csv
+851,PR.F25,64,grape,1,3758,independent_data_redraw,no,published MCD smoothed uncorrected GRAPE,vector/PR_F25_p064.pdf,data/source_tracks.csv
+851,PR.F25,64,susceptibility,1,2565,independent_data_redraw,no,independently displayed magnetic susceptibility at 0.63 × instrument units,vector/PR_F25_p064.pdf,data/source_tracks.csv
+851,PR.F25,64,reflectance,3,4154,independent_data_redraw,no,"independently displayed 450–500, 650–700, 850–900 nm reflectances",vector/PR_F25_p064.pdf,data/source_tracks.csv
+851,PR.F25,65,grape,1,3615,independent_data_redraw,no,published MCD smoothed uncorrected GRAPE,vector/PR_F25_p065.pdf,data/source_tracks.csv
+851,PR.F25,65,susceptibility,1,2733,independent_data_redraw,no,independently displayed magnetic susceptibility at 0.63 × instrument units,vector/PR_F25_p065.pdf,data/source_tracks.csv
+851,PR.F25,65,reflectance,3,3502,independent_data_redraw,no,"independently displayed 450–500, 650–700, 850–900 nm reflectances",vector/PR_F25_p065.pdf,data/source_tracks.csv
+851,PR.F25,66,grape,1,1620,independent_data_redraw,no,published MCD smoothed uncorrected GRAPE,vector/PR_F25_p066.pdf,data/source_tracks.csv
+851,PR.F25,66,susceptibility,1,1098,independent_data_redraw,no,independently displayed magnetic susceptibility at 0.63 × instrument units,vector/PR_F25_p066.pdf,data/source_tracks.csv
+851,PR.F25,66,reflectance,3,1341,independent_data_redraw,no,"independently displayed 450–500, 650–700, 850–900 nm reflectances",vector/PR_F25_p066.pdf,data/source_tracks.csv
+852,PR.F28,69,grape,1,6766,independent_data_redraw,no,published MCD smoothed uncorrected GRAPE,vector/PR_F28_p069.pdf,data/source_tracks.csv
+852,PR.F28,69,susceptibility,1,2528,independent_data_redraw,no,independently displayed magnetic susceptibility at 0.63 × instrument units,vector/PR_F28_p069.pdf,data/source_tracks.csv
+852,PR.F28,69,reflectance,3,3994,independent_data_redraw,no,"independently displayed 450–500, 650–700, 850–900 nm reflectances",vector/PR_F28_p069.pdf,data/source_tracks.csv
+853,PR.F31,72,grape,1,4331,independent_data_redraw,no,published MCD smoothed uncorrected GRAPE,vector/PR_F31_p072.pdf,data/source_tracks.csv
+853,PR.F31,72,susceptibility,1,2063,independent_data_redraw,no,independently displayed magnetic susceptibility at 0.63 × instrument units,vector/PR_F31_p072.pdf,data/source_tracks.csv
+853,PR.F31,72,reflectance,3,2397,independent_data_redraw,no,"independently displayed 450–500, 650–700, 850–900 nm reflectances",vector/PR_F31_p072.pdf,data/source_tracks.csv
+854,PR.F34,75,grape,1,3596,independent_data_redraw,no,published MCD smoothed uncorrected GRAPE,vector/PR_F34_p075.pdf,data/source_tracks.csv
+854,PR.F34,75,susceptibility,1,1606,independent_data_redraw,no,independently displayed magnetic susceptibility at 0.63 × instrument units,vector/PR_F34_p075.pdf,data/source_tracks.csv
+854,PR.F34,75,reflectance,3,1602,independent_data_redraw,no,"independently displayed 450–500, 650–700, 850–900 nm reflectances",vector/PR_F34_p075.pdf,data/source_tracks.csv

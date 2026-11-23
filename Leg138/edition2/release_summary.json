@@ -1,0 +1,52 @@
+{
+  "documents": 76,
+  "source_pages": 1922,
+  "typeset_pages": 3596,
+  "paired_pdf_pages": 5544,
+  "witness_pages_checked": 1922,
+  "column_profile_pages": 923,
+  "cards_and_figure_comparisons": 26,
+  "source_line_segments": 347324,
+  "resource_relations": 692,
+  "resource_kinds": {
+    "table": 201,
+    "card": 12,
+    "figure": 14,
+    "svg": 11,
+    "file": 246,
+    "csv": 208
+  },
+  "sr_print_annex_pages": 29,
+  "series": {
+    "SP": {
+      "documents": 1,
+      "source_pages": 55,
+      "edition_pages": 130
+    },
+    "PR": {
+      "documents": 1,
+      "source_pages": 110,
+      "edition_pages": 286
+    },
+    "IR": {
+      "documents": 23,
+      "source_pages": 822,
+      "edition_pages": 2405
+    },
+    "SR": {
+      "documents": 51,
+      "source_pages": 935,
+      "edition_pages": 2723
+    }
+  },
+  "rendered_table_representations": 201,
+  "new_rendered_tables": 162,
+  "source_regions": 2139,
+  "region_previews": 1970,
+  "site853_corrected_graft": "a73bb159112f4e02ba0a6c5089526ea5c64fead946139d700396ad21844dceb9",
+  "sr_additional_print_tables": 177,
+  "sr_print_tables_with_positional_candidates": 177,
+  "sr_appendix_pages": 29,
+  "pr_composite_companion_pages": 22,
+  "pr_composite_companion_sha256": "6cc65a32786e1a042cbcd2e2ce7b28d14af05e36bb903bb77b1ec8bce9605016"
+}

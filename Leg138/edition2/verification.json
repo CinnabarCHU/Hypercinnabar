@@ -1,0 +1,20 @@
+{
+  "documents": 76,
+  "source_pages": 1922,
+  "typeset_pages": 3596,
+  "paired_pdf_pages": 5544,
+  "witness_pages_checked": 1922,
+  "column_profile_pages": 923,
+  "cards_and_figure_comparisons": 26,
+  "source_line_segments": 347324,
+  "resource_relations": 692,
+  "resource_kinds": {
+    "table": 201,
+    "card": 12,
+    "figure": 14,
+    "svg": 11,
+    "file": 246,
+    "csv": 208
+  },
+  "sr_print_annex_pages": 29
+}

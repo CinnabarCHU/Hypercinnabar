@@ -1,63 +1,66 @@
-# ODP Leg 138 航次档案
-在解压出的 `Leg138` 目录中双击 **browse.html**。浏览器可离线选择 Site 844–854，查看航前代号和实钻孔、筛选逐行碳分析、打开图件、比较校记。网页引用的官方底本链接需联网。各数据目录内的 CSV、PNG、SVG、SQLite 和 PDF 可直接用普通软件打开。
+# Leg 138 航次资料与数字校读版
 
-[ODP138_Leg_Report_Edition.pdf](publication/ODP138_Leg_Report_Edition.pdf) 是 84 页现代排版校读本。页 1–30 为航次与逐站初报，31–66 为航前拟钻站，67–77 为初报速率图，78 为 SR 年代学图对校，79–82 为照片取色窗口，83 为古位置图读，84 为可点击目录。全卷逐页索引与精校覆盖率见下文。
+双击 [站点浏览](browse.html) 或 [全卷目录](catalog.html)。两者都可离线使用。网页按报告自身的组织关系检索。某个编号来自航前拟钻、某个值来自后来的重复测量、某个图是现代复算，都能从对应条目分辨。分册 PDF 可从[离线分册索引](publication/chapters/index.html)打开；独立的[84 页站点校读本](publication/ODP138_Leg_Report_Edition.pdf)适合先通读。
 
-## 本地 API 与全文检索
+## 本地检索
 
-首次检出时先在 `Leg138` 目录运行 `python tools/build_catalog.py`，生成本机索引，再运行 `python tools/serve.py`，打开 <http://127.0.0.1:8138/>。服务、导出和重建 SQLite 使用 Python 标准库。SQLite 需启用 FTS5。浏览目录、PDF 或 CSV 无需启动服务。
+首次检出运行以下命令。数据库由分支内的结构化文件构建，检索与导出使用 Python 标准库和支持 FTS5 的 SQLite。以下命令以 Python 3.12 检验。
 
-| 查询 | 可运行的相对路径 |
-|---|---|
-| Site 850 的航中新增记录 | `/api/sites?site=850` |
-| 12 个拟钻站及实钻对应 | `/api/plans` |
-| Site 852 的 IR 表与出处 | `/api/items?site=852&series=IR&kind=table` |
-| Site 846 的页内检索 | `/api/search?q=organic%20carbon&site=846` |
-| 图版册的原页文字层 | `/api/search?q=ooze&series=PLATES&site=845` |
-| 已知的 IR 第 17 章第一页 | `/api/page?doc=IR.C17&page=1` |
-| 查询某刊载项有哪些数据表示 | `/api/datasets?item=IR11.T11` |
-| 导出 Site 851 的有机碳，含刊载脚注和原行号 | `/api/rows?dataset=IR.ORGANIC_C&site=851&format=csv&limit=1000` |
-| Site 852 的 PR–IR 作业字段对校 | `/api/rows?dataset=PR.IR.CORING&site=852` |
-| 查询一张表已登记的原字段含义与测量／计算角色 | `/api/fields?dataset=SR.C39.TABLE2.CORRECTED` |
-| SR 第 39 章表 2 的勘误版，限定 Site 846 | `/api/rows?dataset=SR.C39.TABLE2.CORRECTED&site=846&limit=1000` |
-| 全航次明确标为第 1、2、3 次的碳酸盐重复分析 | `/api/rows?dataset=IR.carbonate_repeat_runs&limit=1000` |
-| GRAPE 刊载产品与孔文件的双向行号 | `/api/rows?dataset=CD.GRAPE_SOURCE_ROWS&site=844&limit=20` |
-
-各列表均可选 `limit=1…1000`、`offset` 及 `format=csv`；站与计划是小型完整列表。`/api/documents`、`/api/items`、`/api/evidence`、`/api/sources` 和 `/api/datasets` 提供稳定的章、图表、证据、文件及数据集标识。行查询用 `dataset` 精确指定发布版本。全文检索的默认范围是四种出版物，图版附册用 `series=PLATES`。页码为 PDF 物理页，从 1 起算；印页单列，机器识别的页脚在 `basis` 下有注明。站点过滤返回有明确关联的记录；SR 中页面提到、题名、图注和电子表中真正出现站号分别保存在 `evidence.role`。候选图注可据原 PDF 复查。
-
-## 每个模块维护的材料
-
-| 目录 | 内容与核验范围 |
-|---|---|
-| `sppr/core` | 两份官方报告的文字层、12 张精校拟钻站卡、22 个实钻站科学／作业段落、11 站图注所述的数据处理。船上新设 Site 850，与未钻的 EEQ-4A、EEQ-5 都有独立记录。 |
-| `ir/core` | 全 20 章、652 个编号图和 259 个编号表。179 份随盘章表可由 17,835 条文字行及原换行完整还原。其中 104 张编号表已有具名字段，155 张仍待字段化。11 站的 CaCO₃ 重复实验表共 318 个样品、645 次具名测量，出版的逐样差与均差另列。原随盘表目录列有但未取得 ASCII 的第 6 章表 1、3、4 和第 12 章表 6 已从刊载页另建转录。不推定未找到文件的字节内容。 |
-| `sr/core` | 全卷 47 章，最后一章为期刊重印。67 份电子表或其修订版本，刊载行 124,288；其中 124,280 行完成字段映射，8 行另存未能确定的原文。13 份已转录印表为 2,255 行。791 个图表、附录或图版条目中 721 个是待校的自动图注候选。站点证据与正式勘误单列。 |
-| `disc/core` | 随盘站点数据、COREDATA、原程序、原目录证据、字段说明与复算表。原仪器文件的路径、已校准量、站点拼接产品、从曲线上读的值用各自来源说明。原分发只提供路径的中间件仍标未取得。 |
-| `plates/core` | 593 张独立彩照的内嵌 JPEG 目录，592 页岩芯描述、26 页涂片和两张折页。每站一张照片有两块已核验原像素裁片（沉积物与标尺），另有原像素坐标。其余照片可定位与提取，但尚未逐张分割、深度配准或校色。 |
-| `figures/core` | 11 站 PR 速率图的原图／重绘对照、54 个面板、230 条带原行号的 IR 区间、图面读值与未决区间。来自 IR 数据的重算线和由 PR 图面提取的点各有标签。 |
-| `data` | 76 份主体出版物共 1,922 页的索引文字、现代站位、全航次碳分析样例、逐孔差异、分册和校验。图版附册另索引 620 页。古地理仅提供 PR 图 15 所刊轨迹的独立图读，原图点位误差与页图同存。 |
-
-CaCO₃ 重复实验表单列 `sample_row_id` 和 `run_record_id`，两者的范围均限定于该份发布表。Site 853 第 22 个样品的两次刊值为 87.90% 与 87.07%，出版差栏为 0.17，复算差为 0.83 个百分点。三个刊载字段均可直接回到 IR 印页 1049。
-
-这里的有机碳是 IR 原表明确给出的字段。2,296 个取样行中有 666 行有数，跨十站；空值、仅有无机碳、脚注均值、重复标签及负值均保留。有机碳质量百分数与质量累积速率分别记录。`data/carbon_distribution_comparison.csv` 只在取样键唯一时才比对两份分发文件的数值。Site 851 两条相同取样标识的记录不会被自动归并为一次测量或两次独立测量。
-
-## 底本及复建
-
-四个 `ODP138_Sources_*.zip` 均可按需展开至与本包相同的父目录，合并其中的 `Leg138` 目录。源 PDF、图像、程序、纯文本按原分发路径保存在 `*/primary`。每个包带有逐文件 SHA-256 和完整文件清单；一共 5,425 项，包括两份目录快照。它们是现存数字分发的独立备份，后续如获得新的载体，可用新见证记录补入。主包的 `SHA256SUMS` 覆盖主包内其他全部文件。也可按路径单独拉取某份底本，例如 `python tools/fetch_source.py ir/primary/VOLUME/CHAPTERS/ir138_17.pdf`。程序会核验字节数和哈希，遇到源站改版则保留本地已有见证。原 Site 846 的独立 IR、SR 试点成果随包保留于 `previous/ir` 与 `previous/sr846`。
-
-```bash
+```sh
 python tools/build_catalog.py
-python tools/make_browser.py --help
 python tools/verify_catalog.py
+python tools/verify_edition2_catalog.py
+python tools/verify_publication.py
+python tools/serve.py
 ```
 
-SQLite 可从主包附带的逐页文字和编目表重建。涉及原始图像提取、从 PDF 抽取源文字、或随盘软件全流程复算时，先展开相应底本包。各模块 README 给出模块自己的构建命令。主编版面分别使用 Noto CJK 字体排中文、Liberation Serif 排重排的英文正文、DejaVu Sans 排数值与图标。PR 与 SR 原刊对照图各自沿用原图版式和黑白样式，来源截图、后配文字和代码重绘各有标记。
+访问 <http://127.0.0.1:8138/>。常用查询如下，所有站号、页号均使用报告标识。
 
-```bash
-python tools/carbon.py . data
-python tools/compare_carbon.py . data
-python tools/edition.py . data publication/Station_reader.pdf
-python tools/merge_edition.py . ODP138_Leg_Report_Edition.pdf
+| 目标 | 本机 API 示例 |
+|---|---|
+| 查询 Site 850 的计划对应关系 | `/api/sites?site=850` |
+| 在 Site 846 有证据关联的页中检索有机碳 | `/api/search?q=organic%20carbon&site=846` |
+| 区分两次测定和刊物计算字段 | `/api/rows?dataset=IR.carbonate_repeat_runs&site=853&format=csv` |
+| 导出 Site 851 的刊载有机碳和脚注 | `/api/rows?dataset=IR.ORGANIC_C&site=851&format=csv` |
+| 获取 IR 第 2 章表 1 的字段、图面来源和读数 | `/api/ir-tables?item=IR02.T01`、`/api/item-rows?item=IR02.T01`、`/api/print-cells?item=IR02.T01&row=1` |
+| 比较 SR 的刊载对象与撤回的目录候选 | `/api/sr-objects?status=rejected` |
+| SR 第 39 章表 2 勘误版中属于 Site 846 的值 | `/api/rows?dataset=SR.C39.TABLE2.CORRECTED&site=846&limit=1000` |
+| 查 SR 印表位置以及逐页分栏的原词证据 | `/api/sr-tables?item=SR.C04.TABLE2`、`/api/sr-table-cells?item=SR.C04.TABLE2` |
+| SR 第 35 章附录 B 的疑行校记 | `/api/sr-apparatus?dataset=SR.C35.APPENDIXB&line=2065` |
+| 查询岩芯标尺的源图位置 | `/api/roi?core=844A1H&role=printed_ruler` |
+| 读取具名测井数值 | `/api/rows?dataset=CD.E2.LOG.844.ACT_GST&limit=10` |
+| 查历史古位置与作者的模型参数 | `/api/geography?site=846&age=5`、`/api/rotation-stages?site=846` |
+| 查原件与发布字段的描述 | `/api/sources?path=ir/primary/VOLUME/CHAPTERS/ir138_17.pdf`、`/api/fields?dataset=SR.C39.TABLE2.CORRECTED` |
+
+通用列表的分页使用 `limit` 和 `offset`。表行可加 `format=csv`。全文索引以 PDF 物理页定位，刊载印页和机器判读的页脚另列。SR 的页内提及、图表范围和数据行中出现站号是三种不同的证据。
+
+## 可核验的覆盖
+
+| 对象 | 本分支覆盖与读法 |
+|---|---|
+| SP、PR | 12 张拟钻站卡和全部实钻站的段落边界已校读；42 孔保留计划、作业和最终刊载的不同来源。 |
+| IR | 20 章、652 图、259 表。259 个表号现均有具名字段读法。179 张电子原表有可逆逐行见证；原随盘目录中另列的 4 张有印页转录。第二轮新增 92 张电子表和 63 张印表，后者覆盖 6,273 个字段位置，其中 907 个经人工逐格核读，957 个仍有待判。空格、跨行标签与两个读取方式一致的格子单列。 |
+| SR | 46 篇论文加 1 篇期刊重印。公开电子表或修订版本 67 份、124,288 个刊载行。原先 721 个候选逐项查原页，确认 718，撤回 3，另补 21 个附录；现有 809 个有效对象。230 张有效印表均定位到表体，含 76 个显式续段，共 306 段、88,600 个表体位置候选格。先前无字段资料的 177 个表号也已纳入。电子表疑行、栏位置与人工精校字段各自标注。 |
+| 船上数据 | 随盘 4,383 份来源可按文件回取。明确实验记录、校准后数据、拼接产品与后算图读各自保留。65 份测井产品已逐格回读，11 站的 149 个孔隙水记录逐行与章表配对。Site 844 二进制颜色表成功定位 57,969 个值的字节地址。 |
+| 岩芯、涂片、地理 | 593 张彩照均核过原生 JPEG、标尺及背景。592 张有可用的沉积物候选区域，43 张做过人工整板抽查。涂片 26 页、1,156 行、25,194 格可定位；93 格为逐格人审读法。现代站位与 IR 古位置各有自己的来源。Site 844/845 的 36 个古年龄行只刊纬度；Site 854 章内题作 851 的 9 行保留两个身份，默认不在地图上放点。 |
+| 原刊全文与图件 | 76 个分册、1,922 个主体来源页留有逐页证据。紧凑版共 3,622 页；另嵌入 1,922 张来源原页后组成 5,544 页的全卷对读版。现代正文取自来源文字层，栏序与段落是编辑推定，原刊页可直接回看。[逐图验收](data/FIGURES.md)覆盖 1,206 个正式编号图以及 25 个附属图件。代码重绘与结构化数据同存，扫描、图面读数、复算和待校图注明确区分。 |
+
+[电子原表校记](ir/core/edition2_native/README.md) · [IR 印表单元格](ir/core/edition2_print/README.md) · [SR 对象与异文](sr/core/edition2/README.md) · [SR 印表图面与单元格](sr/core/edition2_print/README.md) · [随盘工作流、反射光谱与测井](disc/core/edition2/README.md) · [原像素区域与涂片](plates/core/edition2/README.md) · [11 站速率图复建](figures/core/README.md) · [复合地层图与 106 份随盘来源](figures/core/composite_v2/README.md)
+
+## 获取原件和重新出版
+
+底本索引和材料获取无需本机数据库。已存在的本地文件会先做字节校验。若源站后来替换了文件，程序会报告差异，可作为另一份发布见证留存。[按需下载说明](data/SOURCES.md)
+
+```sh
+python -m pip install -r publication/requirements.txt
+python tools/fetch_sources.py --doc IR.C11 --list
+python tools/fetch_sources.py --book --workers 8
+python edition2/build_edition.py . build/full --workers 4
+python edition2/verify_edition.py . build/full
+python edition2/verify_regions.py build/full
+python tools/publish_readers.py build/full build/chapters --workers 4
 ```
 
-重画、PDF 文本提取和排版分别用到 matplotlib、PyMuPDF、Poppler 的 pdftotext 与 WeasyPrint。光谱对校使用 NumPy。复跑原 Fortran 程序需要 GNU Fortran 及模块所列兼容性补丁。核对以来源文件哈希、记录值、选行、页定位与图件为单位；PDF 字体依赖和编译器版本可能改变再次生成文件的字节哈希。
+`build/full/index.html` 能离线阅读 HTML 与 PDF。每个来源页有现代文本，配合相关的字段表、图件，再附完整的原刊见证。紧凑分册除去重复的见证页，保留指向原版物理页的链接。指定 `--doc IR.C11` 可单独生成 Site 846 章。图书构建使用 PyMuPDF、ReportLab、Pillow 及模块所列 DejaVu 字体；图件和原 Fortran 工作流的要求见各模块 README。原始软件的重放、低置信 OCR 与图面校记都能在新的底本出现后单独复核。[全卷出版说明](edition2/README.md)
+
+以前的 846 试点表与代码保存在 `previous/ir`、`previous/sr846`，旧的统计解释可按 Git 提交恢复。原出版物的作者、原测数据单位和发表版本在来源条目中独立保留。

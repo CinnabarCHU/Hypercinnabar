@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="zh-CN"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Leg 138 · 全航次出版与数据</title>
+<style>
+:root{--ink:#203634;--sea:#175d54;--soft:#ebf2ed;--line:#c9d7cf;--muted:#526b63;--paper:#f8f9f4}
+*{box-sizing:border-box}body{margin:0;color:var(--ink);background:var(--paper);font:15px/1.5 system-ui,"Noto Sans CJK SC","Microsoft YaHei",sans-serif}header{background:#133c3b;color:#f4f6eb;padding:23px max(5%,calc((100vw - 1170px)/2)) 26px}header a{color:#d1e7d8;font-size:13px}header h1,h2{font-family:Georgia,"Noto Serif CJK SC",serif}header h1{font-size:clamp(28px,4vw,43px);line-height:1.15;margin:12px 0 7px}header p{margin:0;color:#e2eee2}.wrap{max-width:1240px;margin:auto;padding:20px 28px 50px}.tabs,.bar,.links,.pages{display:flex;align-items:center;gap:7px;flex-wrap:wrap}.tabs{border-bottom:1px solid var(--line);padding-bottom:13px;margin-bottom:14px}input,select,button{font:inherit;color:inherit}input,select,button,a.btn{border-radius:5px;border:1px solid #9db3a7;background:white;padding:6px 10px}input[type=search]{width:min(420px,100%)}button,a.btn{cursor:pointer}button[aria-pressed=true],.go{background:var(--sea);color:white}button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible{outline:3px solid #c26830;outline-offset:2px}a{color:#155d4f;text-underline-offset:3px}.links{gap:4px 15px;margin:8px 0}.bar label{font-weight:600;font-size:13px;margin-right:2px}.hint,.sub,small,summary{color:var(--muted)}.hint{margin:9px 0 16px;font-size:13px}.shell{display:grid;grid-template-columns:minmax(300px,.8fr) minmax(360px,1.2fr);gap:15px;align-items:start}.pane{background:white;min-width:0;border:1px solid var(--line);border-radius:7px;padding:14px}.pane h2{font-size:24px;margin:4px 0 6px;overflow-wrap:anywhere}.pane h3{font-size:15px;margin:17px 0 7px}.record{display:block;text-align:left;background:white;border:0;border-bottom:1px solid #dee7df;border-radius:0;width:100%;padding:7px}.record[aria-current=true]{background:#e5f1e8;box-shadow:inset 3px 0 var(--sea)}.record strong,.record span{display:block}.record span{font-size:12px;color:var(--muted);text-overflow:ellipsis;white-space:nowrap;overflow:hidden}.pages{margin-top:9px;justify-content:space-between;font-size:13px}.sub{font-size:13px}.scroll{max-height:380px;overflow:auto;border:1px solid var(--line);margin:8px 0}table{border-collapse:collapse;width:100%;font-size:12.5px}td,th{text-align:left;vertical-align:top;border-bottom:1px solid #e2e9e3;padding:5px 8px;overflow-wrap:anywhere}thead{position:sticky;top:0;background:var(--soft)}.wide table{width:max-content;min-width:100%;max-width:3000px}.wide td{max-width:320px;white-space:normal}details{border-top:1px solid var(--line);padding:8px 0;margin-top:12px}summary{cursor:pointer}code,pre{font:12px/1.6 ui-monospace,monospace}pre{white-space:pre-wrap;overflow-wrap:anywhere;background:#f1f4ee;padding:9px;border-radius:4px}.file,.local{font-size:12px}.visually-hidden{position:absolute;clip:rect(0,0,0,0);width:1px;height:1px;overflow:hidden}.badge{font-size:12px;color:var(--muted)} #status{margin-bottom:7px} .export{margin:5px 0}
+@media(max-width:760px){.wrap{padding:14px}.shell{grid-template-columns:1fr}.bar input{width:100%}.record{padding:6px}.pane h2{font-size:21px}.tabs{gap:4px}.tabs button{font-size:13px;padding:5px 7px}}
+#geoMap{border:1px solid var(--line);border-radius:6px;background:white;margin:0 0 15px;padding:12px 15px}.geoInner{display:grid;grid-template-columns:minmax(260px,1fr) minmax(185px,.45fr);gap:15px;align-items:center}.geoInner svg{width:100%;height:auto;background:#f5f8f3}.geoInner p{font-size:13px}.geoInner input{width:100%} @media(max-width:630px){.geoInner{grid-template-columns:1fr}}</style></head><body>
+<header><a href="browse.html">← 航次站点档案</a><h1>Leg 138 全卷目录</h1><p>东赤道太平洋 · 分册、图表、岩芯照片与涂片记录</p></header>
+<main class="wrap">
+<nav class="tabs" id="tabs" aria-label="资料类别"></nav>
+<div class="bar"><label for="site">站点</label><select id="site"></select><label for="kind">类别</label><select id="kind"></select><label for="find">检索</label><input type="search" id="find" placeholder="章号、图表号、芯号、样品编号或题名"></div>
+<p id="hint" class="hint"></p>
+<div id="geoMap" hidden></div><div class="shell"><section class="pane" id="listing" aria-label="检索结果"><div id="status" role="status" class="sub"></div><div id="hits"></div><div id="pagination" class="pages"></div></section>
+<section class="pane" id="record" aria-live="polite" aria-label="选中资料"></section></div>
+<details id="rebuild"><summary>全卷现代版与原刊见证如何打开或重建</summary>
+<p>轻目录随附 76 个现代排版分册，以及站点校读本。含完整原刊页的版本需要原件；合并来源包后，在 Leg138 根目录运行以下命令。</p>
+<div class="links"><a href="publication/chapters/index.html">现代分册首页</a><a href="publication/ODP138_Leg_Report_Edition.pdf">84 页航次合刊</a><a href="edition2/documents.csv">分册与来源清单 CSV</a><a href="edition2/README.md">完整重建说明</a></div>
+<pre>python edition2/build_edition.py . full_edition --workers 4
+python edition2/verify_edition.py . full_edition
+python edition2/verify_regions.py full_edition</pre><p>重建后双击 <code>full_edition/index.html</code>。每册提供同页重排与原刊见证、来源坐标和核对资料。</p></details>
+</main><script type="application/json" id="payload">@CATALOG@</script><script>
+"use strict";
+const data=JSON.parse(document.querySelector('#payload').textContent),$=id=>document.getElementById(id);
+const esc=v=>String(v??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const link=(url,label)=>'<a href="'+esc(url)+'" target="_blank" rel="noopener">'+esc(label)+'</a>';
+const links=arr=>'<div class="links">'+arr.filter(Boolean).join('')+'</div>';
+const labels={books:'出版分册',ir:'IR 图表',sr:'SR 有效对象',photos:'岩芯区域',smear:'涂片行',geo:'地理与古位置'};
+const kinds={books:{SP:'航前计划 SP',PR:'初报 PR',IR:'初始报告 IR',SR:'科学成果 SR'},ir:{table:'具名表格',figure:'插图与折页'},sr:{table:'表格',figure:'插图',plate:'图版',appendix:'附录'},photos:{photo:'彩照'},smear:{smear:'涂片表行'},geo:{modern:'现代实钻孔',ready:'完整古位置',longitude_not_published:'仅纬度',caption_site_conflict:'原题站号冲突'}};
+const hints={books:'76 个现代排版分册可直接离线阅读。站点筛选同时纳入航前、初报，以及有该站图表证据的 SR 章节。',ir:'11 个站章和其余卷内章节共 911 项，其中 259 张表可预览具名字段、导出单表并追溯刊载位置。',sr:'本版已核准 809 项。站点筛选依据有站号的图注、表行或既有精校记录；全卷可查未能归到某一站的对象。',photos:'593 张分发版彩照的几何与来源可离线查阅。区域坐标取自原生 JPEG，自动候选区的材料判读需回看照片。',smear:'26 页、1,156 行涂片记录。按印刷分组查看栏目、OCR 原读和当前读法。空格、星号与零各自保留。',geo:'42 个现代孔与 149 行刊载古位置。104 行有完整经纬度与一致站号，36 行只刊纬度，9 行所属 854 章、原题却写作 851。滑块按原表年龄选点。'};
+const roles={printed_ruler:'厘米尺',board_background:'底板背景',photographed_liner:'管列照片',sediment_candidate:'候选沉积物',reviewed_non_sediment_band:'人工排除带'};
+const datasets={},pending={};let tab='books',site='',kind='',query='',id='',pageNo=0,age=-1,epoch=0,filtered=[];
+window.registerStation=(station,contents)=>{datasets[station]=contents};
+function shard(station){station=station||'all';if(datasets[station])return Promise.resolve(datasets[station]);if(pending[station])return pending[station];pending[station]=new Promise((res,rej)=>{const script=document.createElement('script');script.src='browse-data/'+station+'.js';script.onload=()=>datasets[station]?res(datasets[station]):rej(Error('索引未注册'));script.onerror=()=>{delete pending[station];rej(Error('找不到离线数据文件 browse-data/'+station+'.js'))};document.head.append(script)});return pending[station]}
+const normalize=s=>String(s).toLowerCase().replace(/[\s._–-]/g,'');
+const docId=(series,ch)=>series+'.C'+String(ch).padStart(2,'0');
+const readbook=id=>link('publication/chapters/'+id+'.pdf','读现代分册 PDF');
+const arrTable=(keys,rs,wide=false)=>'<div class="scroll '+(wide?'wide':'')+'"><table><thead><tr>'+keys.map(h=>'<th>'+esc(h)+'</th>').join('')+'</tr></thead><tbody>'+rs.map(row=>'<tr>'+row.map(v=>'<td>'+esc(v===''?'':v)+'</td>').join('')+'</tr>').join('')+'</tbody></table></div>';
+const sitelist=r=>String(r[2]).split(',').filter(Boolean);
+const srChapters={};for(const r of data.sr)for(const s of sitelist(r))(srChapters[s]??=new Set()).add(docId('SR',r[10]));
+function inStation(r){if(!site)return true;if(sitelist(r).includes(site))return true;return tab==='books'&&(['PR','SP'].includes(r[3])||srChapters[site]?.has(r[0]))}
+function option(value,label){return '<option value="'+esc(value)+'">'+esc(label)+'</option>'}
+function fillFilters(){ $('tabs').innerHTML=Object.keys(labels).map(t=>'<button type="button" data-tab="'+t+'" aria-pressed="'+(tab===t)+'">'+labels[t]+' '+data[t].length+'</button>').join('');
+ $('site').innerHTML=option('','全部站点')+Array.from({length:11},(_,i)=>option(i+844,'Site '+(844+i))).join('');$('site').value=site;
+ $('kind').innerHTML=option('','全部类别')+Object.entries(kinds[tab]).map(([k,v])=>option(k,v)).join('');$('kind').value=kind;$('find').value=query;$('hint').textContent=hints[tab];}
+function updateHash(){const h=new URLSearchParams({tab});if(site)h.set('site',site);if(kind)h.set('kind',kind);if(query)h.set('q',query);if(id)h.set('id',id);if(tab==='geo')h.set('age',age);history.replaceState(null,'','#'+h)}
+function reset(){id='';pageNo=0;fillFilters();render()}
+function render(){
+ const q=normalize(query),qShort=q.replace(/^138(?=[89]\d\d[abcde])/,'');
+ filtered=data[tab].filter(r=>inStation(r)&&(tab!=='geo'||r[5]===age)&&(!kind||r[3]===kind)&&(!q||normalize(r[0]+' '+r[1]+' '+r[2]).includes(qShort)));
+ if(!filtered.some(r=>r[0]===id))id=filtered[0]?.[0]||'';
+ const index=filtered.findIndex(r=>r[0]===id);if(index>=0)pageNo=Math.floor(index/12);
+ const start=pageNo*12,entries=filtered.slice(start,start+12);
+ $('status').textContent=filtered.length?(start+1)+'–'+(start+entries.length)+' / '+filtered.length+' 项':'没有匹配记录';
+ $('hits').innerHTML=entries.map(r=>'<button class="record" data-hit="'+esc(r[0])+'" aria-current="'+(r[0]===id)+'"><strong>'+esc(r[0])+'</strong><span>'+esc(tab==='photos'?(r[5]+' 个管列 · '+r[6]+' 个材料候选区'):r[1])+'</span></button>').join('');
+ $('pagination').innerHTML=filtered.length>12?'<button id="prev" '+(pageNo===0?'disabled':'')+'>上一页</button><span>第 '+(pageNo+1)+' / '+Math.ceil(filtered.length/12)+' 页</span><button id="next" '+(start+12>=filtered.length?'disabled':'')+'>下一页</button>':'';
+ updateHash();geography();detail(filtered[index]);}
+function download(filename,headers,rows){const quote=v=>'"'+String(v??'').replace(/"/g,'""')+'"';const blob=new Blob(['\ufeff'+[headers,...rows].map(r=>r.map(quote).join(',')).join('\r\n')+'\r\n'],{type:'text/csv;charset=utf-8'});const u=URL.createObjectURL(blob),a=document.createElement('a');a.href=u;a.download=filename;a.click();setTimeout(()=>URL.revokeObjectURL(u),1000)}
+function exporter(name,headers,rows,label){const b=document.createElement('button');b.className='export';b.id='csvExport';b.textContent=label;b.onclick=()=>download(name+'.csv',headers,rows);$('slot').append(b)}
+function geography(){
+ const wrap=$('geoMap');wrap.hidden=tab!=='geo';if(wrap.hidden){wrap.innerHTML='';return}
+ const W=620,H=205,X=lon=>45+(lon+116)*545/29,Y=lat=>15+(12-lat)*154/19;
+ let marks='';for(const lon of [-115,-110,-105,-100,-95,-90])marks+='<path d="M'+X(lon)+' 15V169" stroke="#d3e1d6"/><text x="'+X(lon)+'" y="188" text-anchor="middle" font-size="10">'+(-lon)+'°W</text>';
+ for(const lat of [-5,0,5,10])marks+='<path d="M45 '+Y(lat)+'H590" stroke="#d3e1d6"/><text x="39" y="'+(Y(lat)+3)+'" text-anchor="end" font-size="10">'+Math.abs(lat)+'°'+(lat>0?'N':lat<0?'S':'')+'</text>';
+ const located=filtered.filter(r=>r[13]&&r[7]!==null),labelled=new Set();for(const r of located){const x=X(r[7]),y=Y(r[6]),name=r[2];marks+='<circle cx="'+x+'" cy="'+y+'" r="'+(r[0]===id?4.6:2.8)+'" fill="'+(r[0]===id?'#9f5e2e':'#1a6b5e')+'"><title>'+esc(r[0])+'</title></circle>';if(!labelled.has(name)){labelled.add(name);marks+='<text x="'+(x+5)+'" y="'+(y+1)+'" font-size="9" fill="#24483d">'+esc(name)+'</text>'}}
+ if(!$('ageSlider')){
+  wrap.innerHTML='<div class="geoInner"><svg id="geoPlot" viewBox="0 0 '+W+' '+H+'" role="img" aria-label="经纬坐标分布"></svg><div><label for="ageSlider"><strong id="ageDisplay"></strong></label><input id="ageSlider" type="range" min="-1" max="17" step="1"><p id="geoEvidence"></p>'+link('ir/core/edition2_print/data/leg138_geography.geojson','下载全部 GeoJSON')+'</div></div>';
+  $('ageSlider').oninput=e=>{age=Number(e.target.value);id='';pageNo=0;render()};
+ }
+ $('geoPlot').innerHTML=marks;
+ $('ageDisplay').textContent=age<0?'现代实钻孔':age+' Ma';
+ $('ageSlider').value=String(age);
+ $('geoEvidence').textContent='图中 '+located.length+' 个有完整经纬坐标且站号一致的刊值。当前列表共 '+filtered.length+' 行。空缺的经度和待定归属保留在条目里。';
+}
+async function detail(r){
+ const mine=++epoch,out=$('record');if(!r){out.innerHTML='<h2>没有匹配记录</h2><p>换用其他站点、题名或编号。</p>';return}
+ const heading='<div class="badge">'+esc(labels[tab]+' · '+(r[2]?'Site '+r[2]:'全航次'))+'</div><h2>'+esc(r[0])+'</h2>';
+ let content=heading;const source=link(r[4],'原刊 PDF · 联网');
+ if(tab==='books'){content+='<p>'+esc(r[1])+'</p><p>来源 '+r[5]+' 页 · 轻量现代分册 '+r[7]+' 页 · 含见证合版 '+r[6]+' 页。</p>'+links([readbook(r[0]),source,link('edition2/documents.csv','全卷版本清单 CSV')])+'<p class="sub">完整合版重建后随原刊逐页对照。下方列出重建命令。</p>';out.innerHTML=content;return}
+ if(tab==='geo'){const signed=v=>v===null?'原表未刊':String(v);content+='<p>'+esc(kinds.geo[r[3]])+' · '+esc(r[5]<0?'现代':r[5]+' Ma')+'</p>'+arrTable(['栏目','刊载表达','统一方向（北、东为正）'],[['纬度',r[8],signed(r[6])],['经度',r[9],signed(r[7])]])+(r[3]==='caption_site_conflict'?'<p>所属站章为 '+esc(r[11])+'，印刷表题写作 '+esc(r[10])+'。本站筛选依据章归属，图面未将该点归给任一站。</p>':'')+links([source,r[5]>=0?'<a href="#tab=ir&id='+esc(r[12])+'">查看具名原表</a>':null,link('ir/core/edition2_print/data/leg138_geography.geojson','全部出版地理记录 GeoJSON')]);}
+ if(tab==='ir'){content+='<p>'+esc(r[1])+'</p><p>'+esc(kinds.ir[r[3]]+(r[5]?' · 印页 '+r[5]:''))+'</p>'+links([source,r[10]?link(r[10],'随盘原表 · 联网'):null,readbook(docId('IR',r[9])),link('ir/core/chapter_items.csv','图表总索引 CSV')]);if(r[3]==='table'){content+='<h3>'+esc(r[8])+' · '+r[6]+' 行</h3><div id="slot">载入具名字段…</div><details><summary>数据版本与原表字段</summary>'+links(r[7].map(v=>link(v[1],v[0])))+'</details>'}}
+ if(tab==='sr'){const ev=Object.entries(r[7]).map(([s,t])=>[s,t.join(', ')]);content+='<p>'+esc(r[1])+'</p><p>'+esc(kinds.sr[r[3]]+' · 来源 PDF 第 '+r[6]+' 页'+(r[5]?' · 印页 '+r[5]:''))+'</p>'+links([source,readbook(docId('SR',r[10])),r[8]?link(r[8],'图注定位校样'):null,r[9]?link(r[9],'本表逐行 CSV'):null,link('sr/core/edition2/data/objects.csv','对象与校记 CSV')])+(ev.length?'<h3>站点关联证据</h3>'+arrTable(['站点','证据类型'],ev):'<p class="sub">当前对象缺少明确站点关联。</p>')+(r[11]?'<p>'+esc(r[11])+'</p>':'');if(r[12]?.length){content+='<h3>刊载数据版本</h3>'+arrTable(['数据编号','数据行'],r[12].map(v=>[v[0],v[1]]))+links([link('sr/core/records.jsonl.gz','电子记录 JSONL.gz'),...r[12].filter(v=>v[2]).map(v=>link(v[2],v[0]+' · 来源'))])}}
+ if(tab==='photos'){content+='<p>原生 '+r[8]+' × '+r[9]+' px · '+r[5]+' 个已定位管列 · '+r[6]+' 个候选沉积物区域。</p><p class="sub">'+esc(r[11]?'已抽检整板。'+r[12]:'几何状态 '+r[7]+'；本照片未列入人工整板抽检。')+'</p>'+links([source,link('plates/core/edition2/examples/Leg138_optical_segmentation.pdf','六张分区对照'),link('plates/core/edition2/data/roi_rgb_checksums.csv.gz','每个区域像素哈希')])+'<div id="slot">载入区域…</div><details><summary>导出未经缩放的 PNG</summary><pre>python plates/core/edition2/tools/export_regions.py plates/primary output --core '+esc(r[0])+' --role sediment_candidate</pre><code>JPEG SHA-256 '+esc(r[10])+'</code></details>'}
+ if(tab==='smear'){content+='<p>样品 '+esc(r[1])+' · 深度 '+esc(r[6])+' mbsf · 岩性 '+esc(r[7])+' · 印页 '+esc(r[5])+'</p>'+links([source,link('plates/core/edition2/data/smear_cells.csv.gz','全卷单元格 CSV.gz'),link('plates/core/edition2/data/smear_field_dictionary.csv','逐站字段字典')])+'<div id="slot">载入本行…</div>'}
+ out.innerHTML=content;if(!$('slot'))return;
+ try{const loaded=await shard(r[2]);if(mine!==epoch)return;$('slot').textContent='';
+ if(tab==='ir'){const [headers,rs]=loaded.tables[r[0]];exporter(r[0],headers,rs,'导出此表 '+rs.length+' 行 CSV');$('slot').insertAdjacentHTML('beforeend','<p class="sub">预览前 '+Math.min(rs.length,5)+' 行。导出含所有具名字段与来源列。</p>'+arrTable(headers,rs.slice(0,5),true))}
+ else if(tab==='photos'){const rs=loaded.regions[r[0]];const heads=['roi_id','lane_ordinal','role','left_px','top_px','right_px_exclusive','bottom_px_exclusive'];exporter(r[0]+'_regions',[...heads,'source_url','jpeg_sha256'],rs.map(v=>[...v,r[4],r[10]]),'导出此芯全部区域 CSV');$('slot').insertAdjacentHTML('beforeend','<p class="sub">原点在原 JPEG 左上，右、下边界不计入。管列序号按图面自左向右。</p>'+arrTable(['区域角色','管列','左','上','右','下'],rs.map(v=>[roles[v[2]],v[1]||'—',...v.slice(3)])))}
+ else if(tab==='smear'){const rs=loaded.smear[r[0]];const header=['field_key','edition_reading','source_ocr','status','reading_evidence','x0_pt','y0_pt','x1_pt','y1_pt'];exporter(r[0],[...header,'row_id','source_url'],rs.map(v=>[...v,r[0],r[4]]),'导出本行单元格 CSV');$('slot').insertAdjacentHTML('beforeend',arrTable(['印刷栏目','当前读法','OCR 原读','证据'],rs.map(v=>[loaded.smearLabels[v[0]],v[1],v[2],v[4].startsWith('second-edition')?'本版人工核读':v[4].startsWith('inherited')?'已有人工核读':v[3]]))+'<p class="sub">空字符保留为空。星号依原表保存，逐格回查坐标在导出文件中。</p>')}
+ }catch(err){if(mine===epoch)$('slot').textContent=err.message}
+}
+function loadHash(){const p=new URLSearchParams(location.hash.substring(1));tab=Object.hasOwn(labels,p.get('tab'))?p.get('tab'):'books';site=/^8(4[4-9]|5[0-4])$/.test(p.get('site'))?p.get('site'):'';kind=Object.hasOwn(kinds[tab],p.get('kind'))?p.get('kind'):'';age=p.has('age')?Math.max(-1,Math.min(17,Number(p.get('age'))||0)):-1;id=p.get('id')||'';if(tab==='geo'&&id&&!p.has('age'))age=data.geo.find(r=>r[0]===id)?.[5]??-1;query=p.get('q')||'';fillFilters();render()}
+$('tabs').onclick=e=>{const t=e.target.closest('[data-tab]');if(t){tab=t.dataset.tab;kind='';query='';reset()}};
+$('site').onchange=e=>{site=e.target.value;reset()};$('kind').onchange=e=>{kind=e.target.value;reset()};$('find').oninput=e=>{query=e.target.value;id='';pageNo=0;render()};
+$('hits').onclick=e=>{const b=e.target.closest('[data-hit]');if(b){id=b.dataset.hit;render();if(innerWidth<760)$('record').scrollIntoView({block:'start'})}};
+$('pagination').onclick=e=>{if(e.target.id==='prev'||e.target.id==='next'){const target=pageNo+(e.target.id==='prev'?-1:1);id=filtered[12*target][0];render()}};
+window.addEventListener('hashchange',loadHash);loadHash();
+</script></body></html>

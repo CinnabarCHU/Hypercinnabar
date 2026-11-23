@@ -34,3 +34,13 @@ python tools/verify.py /path/to/ir_primary
 ```
 
 判读以原印面为最终见证。官方 PDF 文字层和对同一扫描像素的 Tesseract 读法属于同一个出版版本。两种机器读法一致不等于人工精校。图像阈值只用于区分空区与未转录墨迹。物理行和单元位置适合检索与回查，多行表在进一步整合前还应保留一个科学家可审阅的逻辑行分组。
+
+## 地理和古位置
+
+data/leg138_geography.geojson 包含 PR 表 1 中的 42 个实际孔位，以及 IR 各站章中 11 张古位置表的 149 个年龄行，包括此前精校的 Site 846。data/geography_sources.csv 逐表标明刊题、印页、PDF 链接、哈希及坐标约定。GeoJSON 点统一为东经正、北纬正，经度在前；原刊数值和南北纬约定一并保留。
+
+其中 104 个古位置行同时有经纬度且题名与站章一致，适合默认地图。Sites 844 和 845 仅刊古纬度，共 36 行，未给这些行补经度。Site 854 章表 15 的 9 行属于题名冲突，机器接口中 site 为空，chapter_site 为 854，printed_caption_site 为 851。两类记录的 geometry 为空，来源表的实刊数值可通过 properties 读取。孔位按孔保存，古位置按站章出版表保存。
+
+```bash
+python tools/geography.py /path/to/ir_primary /path/to/sppr/core
+```

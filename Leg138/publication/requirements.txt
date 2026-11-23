@@ -1,0 +1,4 @@
+# Reproduce the modern paired and compact reading editions with Python 3.12.
+PyMuPDF==1.26.6
+reportlab==4.4.9
+Pillow==13.0.0

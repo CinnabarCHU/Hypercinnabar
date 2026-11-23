@@ -1,0 +1,8 @@
+item_id,source,pdf_page,print_page,row,row_bbox_pt,site_or_summary_printed,slope,slope_plusminus,y_intercept,y_intercept_plusminus,correlation,status
+SR.C04.TABLE2,official/VOLUME/CHAPTERS/sr138_04.pdf,8,54,1,"[84.78, 397.58, 259.98, 405.98]",846,−2.91,0.14,0.81,0.02,0.89,visually_read_and_field_mapped
+SR.C04.TABLE2,official/VOLUME/CHAPTERS/sr138_04.pdf,8,54,2,"[84.78, 404.78, 260.26, 413.18]",847,−2.86,0.16,0.82,0.03,0.84,visually_read_and_field_mapped
+SR.C04.TABLE2,official/VOLUME/CHAPTERS/sr138_04.pdf,8,54,3,"[84.78, 411.98, 260.32, 420.38]",849,−1.74,0.21,0.55,0.04,0.54,visually_read_and_field_mapped
+SR.C04.TABLE2,official/VOLUME/CHAPTERS/sr138_04.pdf,8,54,4,"[84.78, 419.18, 260.92, 427.58]",850,−2.52,0.12,0.68,0.02,0.88,visually_read_and_field_mapped
+SR.C04.TABLE2,official/VOLUME/CHAPTERS/sr138_04.pdf,8,54,5,"[84.78, 426.38, 260.17, 434.78]",851,−1.81,0.15,0.54,0.03,0.72,visually_read_and_field_mapped
+SR.C04.TABLE2,official/VOLUME/CHAPTERS/sr138_04.pdf,8,54,6,"[74.16, 440.56, 260.19, 447.2]",Average of all sites,−2.37,0.08,0.68,0.01,0.73,visually_read_and_field_mapped
+SR.C04.TABLE2,official/VOLUME/CHAPTERS/sr138_04.pdf,8,54,7,"[74.34, 453.16, 260.28, 459.8]","Average of 846, 847, 850",−2.76,0.09,0.77,0.02,0.85,visually_read_and_field_mapped

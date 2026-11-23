@@ -1,0 +1,28 @@
+{
+  "checks": "passed",
+  "table_counts": {
+    "ir_table_review": 259,
+    "ir_named": 18660,
+    "ir_print_cells": 6273,
+    "item_reviews": 812,
+    "sr_apparatus": 8,
+    "optical_roi": 12989,
+    "datasets": 844,
+    "sr_print_review": 230,
+    "sr_segments": 306,
+    "sr_slot_fields": 2401,
+    "sr_print_slots": 93454,
+    "sr_slot_rows": 13358
+  },
+  "ir_tables_with_named_rows_and_review_states": 259,
+  "sr_accepted": 809,
+  "sr_rejected_kept": 3,
+  "rotation_stages": 30,
+  "reported_geographical_features": 191,
+  "missing_longitude_nulls": 36,
+  "conflicting_caption_nulls": 9,
+  "sr_effective_print_tables_indexed": 230,
+  "sr_physical_print_body_cells": 88600,
+  "sr_position_candidates_separate_from_named_verified_scientific_rows": true,
+  "read_only_http_and_csv_verified": true
+}

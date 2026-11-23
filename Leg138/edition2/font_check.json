@@ -1,0 +1,21 @@
+{
+  "scope": "source OCR packets selected as modern body, heading or caption; no claim about semantic OCR accuracy",
+  "fonts": {
+    "body": {
+      "ttf": "DejaVuSerif.ttf",
+      "sha256": "8cb29f7db250ebb2551a6ce2c1e0bfd5a0eb520e9e233370db0493e82e1f36f7",
+      "distinct_codepoints": 145
+    },
+    "caption": {
+      "ttf": "DejaVuSans.ttf",
+      "sha256": "57f73e11f51999432bf7ab22ce55b6f945d5eca1bf824404cfa9ec2e3718c84e",
+      "distinct_codepoints": 114
+    },
+    "heading": {
+      "ttf": "DejaVuSans-Bold.ttf",
+      "sha256": "a4c5bc453ca281d90ea079e596da7ae0dfeb5777497c29ec254e76d97ff6f890",
+      "distinct_codepoints": 118
+    }
+  },
+  "missing_codepoints": []
+}
