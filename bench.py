@@ -15,6 +15,7 @@ from scipy.io import loadmat
 from fixtures import case_tables, detection_panel, lr04_data, rate_section
 from records import ROOT, catalog, digest, record_bytes
 from scoring import read_json, score_case, score_task
+from study_sources import verify_classic_sources
 
 
 def dump(directory, name, value):
@@ -32,6 +33,11 @@ def prepare_case(case, target):
         csv_table(target, "data", case["input_columns"], raw)
     if "controls" in case["fixture"]:
         csv_table(target, "controls", ["depth_m", "age_ka"], case["fixture"]["controls"])
+    for stem, spec in case["fixture"].get("aux_tables", {}).items():
+        source = np.loadtxt(ROOT / spec["table"], delimiter=",", skiprows=1, ndmin=2)
+        csv_table(target, stem, spec["columns"], source[:, spec["indices"]])
+    for source in case["fixture"].get("packet_files", []):
+        shutil.copyfile(ROOT / source, target / Path(source).name)
     return {key: case[key] for key in ("operation", "description", "params", "input_columns", "output_columns")}
 
 
@@ -80,6 +86,8 @@ def execute(args):
         for name, rec in catalog("records").items():
             if args.sources or "file" in rec:
                 record_bytes(name, rebuild=args.sources)
+        if args.sources:
+            verify_classic_sources(tasks)
         print("Verified frozen files" + (" and reconstructed upstream inputs." if args.sources else "."))
         return 0
     if args.command == "dataset":

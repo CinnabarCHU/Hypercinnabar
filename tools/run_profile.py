@@ -12,18 +12,19 @@ def entries(name):
 
 def run(args):
     cases,tasks=entries("cases"),entries("tasks")
-    ops={"python":{"linear","integrate_rate","tune","constant_rate","periodogram"},
-         "r":{"linear","integrate_rate","tune","constant_rate","ar1"},
+    ops={"python":{"linear","integrate_rate","tune","constant_rate","periodogram","cip_accumulation",
+                   "segmented_clock","rate_step_proxy","weak_band","hilbert_envelope","imbrie_continuous","imbrie_euler"},
+         "r":{"linear","integrate_rate","tune","constant_rate","ar1","segmented_clock","hilbert_envelope","imbrie_euler"},
          "rpy2":{"linear","integrate_rate","tune","constant_rate","ar1"},
          "warp":{"integrate_rate","tune","constant_rate"},
-         "matlab":{"linear","periodogram","swa","gaussian"}}
+         "matlab":{"linear","periodogram","swa","gaussian","segmented_clock","hilbert_envelope"}}
     ids=[name for name,case in cases.items() if case["operation"] in ops[args.backend]]
     if args.backend=="matlab":
         ids=[name for name in ids if not name.startswith("cenogrid-") or f"-{args.profile}-" in name]
     if args.backend=="python":
         ids += list(tasks)
     if args.backend=="r":
-        ids.append("odp926b-timeopt")
+        ids.extend(["odp926b-timeopt","xiamaling-precession","walvis1262-precession"])
     if args.ids:
         if set(args.ids)-set(ids):
             raise SystemExit("Unsupported IDs for this profile: "+str(sorted(set(args.ids)-set(ids))))

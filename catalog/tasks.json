@@ -795,5 +795,420 @@
       "fixtures/chronology/laurin-weak-band/input/queries.csv",
       "fixtures/chronology/laurin-weak-band/input/windows.csv"
     ]
+  },
+  "hays76-simplex": {
+    "title": "Hays, Imbrie & Shackleton (1976) \u2014 two-core SIMPLEX frequency test",
+    "kind": "literature_comparison",
+    "inputs": {
+      "rc11": "hays-rc11-summer",
+      "e49": "hays-e49-oxygen"
+    },
+    "params": {
+      "protocol": "Use the two separate linear age models in Table 2. Estimate three periods for each channel; Table 3 uses unprewhitened spectra. The later archive includes repeated depths. Report how they were combined.",
+      "ties_depth_m_age_ka": {
+        "rc11": [
+          [
+            0,
+            0
+          ],
+          [
+            4.4,
+            127
+          ]
+        ],
+        "e49": [
+          [
+            4.9,
+            127
+          ],
+          [
+            14.05,
+            440
+          ]
+        ]
+      },
+      "time_grid": {
+        "rc11": [
+          0,
+          3,
+          91
+        ],
+        "e49": [
+          127,
+          3,
+          121
+        ]
+      },
+      "grid_convention": "[first age ka, spacing ka, number of points]. Historical lag truncations are 40 and 50.",
+      "period_search_ka": {
+        "long": [
+          65,
+          145
+        ],
+        "obliquity": [
+          30,
+          55
+        ],
+        "precession": [
+          17,
+          28
+        ]
+      },
+      "question": "Report the three band maxima for each core; the scorer also compares the within-core ratio of obliquity to precession periods to the published ratio test."
+    },
+    "output_fields": {
+      "rc11_long_ka": "Estimated long peak period (ka) on the rc11 SIMPLEX chronology.",
+      "rc11_obliquity_ka": "Estimated obliquity peak period (ka) on the rc11 SIMPLEX chronology.",
+      "rc11_precession_ka": "Estimated precession peak period (ka) on the rc11 SIMPLEX chronology.",
+      "e49_long_ka": "Estimated long peak period (ka) on the e49 SIMPLEX chronology.",
+      "e49_obliquity_ka": "Estimated obliquity peak period (ka) on the e49 SIMPLEX chronology.",
+      "e49_precession_ka": "Estimated precession peak period (ka) on the e49 SIMPLEX chronology."
+    },
+    "metrics": [
+      {
+        "field": "rc11_long_ka",
+        "kind": "distance",
+        "reference": 87,
+        "unit": "ka"
+      },
+      {
+        "field": "rc11_obliquity_ka",
+        "kind": "distance",
+        "reference": 38,
+        "unit": "ka"
+      },
+      {
+        "field": "rc11_precession_ka",
+        "kind": "distance",
+        "reference": 21,
+        "unit": "ka"
+      },
+      {
+        "field": "e49_long_ka",
+        "kind": "distance",
+        "reference": 109,
+        "unit": "ka"
+      },
+      {
+        "field": "e49_obliquity_ka",
+        "kind": "distance",
+        "reference": 47,
+        "unit": "ka"
+      },
+      {
+        "field": "e49_precession_ka",
+        "kind": "distance",
+        "reference": 24,
+        "unit": "ka"
+      },
+      {
+        "kind": "period_ratio",
+        "field": "rc11_obliquity_to_precession",
+        "numerator": "rc11_obliquity_ka",
+        "denominator": "rc11_precession_ka",
+        "reference": 1.8,
+        "unit": "1",
+        "comparison": "Hays et al. (1976), Table 3, reported band b/c ratio"
+      },
+      {
+        "kind": "period_ratio",
+        "field": "e49_obliquity_to_precession",
+        "numerator": "e49_obliquity_ka",
+        "denominator": "e49_precession_ka",
+        "reference": 1.9,
+        "unit": "1",
+        "comparison": "Hays et al. (1976), Table 3, reported band b/c ratio"
+      }
+    ],
+    "source": "https://doi.org/10.1126/science.194.4270.1121",
+    "interpretation": "Table 3 values are individual core and proxy estimates. RC11-120 summer SST and E49-18 planktonic oxygen isotopes have different best periods. The 1976 SIMPLEX chronology is held fixed."
+  },
+  "rossello-precession": {
+    "title": "Lourens et al. (1996) \u2014 Rossello Mediterranean cycle correlation",
+    "kind": "literature_comparison",
+    "inputs": {
+      "insolation": "la04-summer-rossello"
+    },
+    "params": {
+      "section": "Capo Rossello composite; unstarred Table 1 levels at heights 40\u2013128 m. Height decreases as age increases.",
+      "question": "Assign ages to all listed sedimentary cycle levels using the two endpoint ages and orbital pacing. Allow unexpressed cycles. Candidate data omit published ages, cycle codes and insolation-cycle numbers.",
+      "orbital_input": "Alternative La2004 65\u00b0N summer insolation in W/m\u00b2. Published chronology uses La90(1,1); record the orbital solution and response lag used.",
+      "reported_lag_ka": 3,
+      "lag_convention": "Table 1 horizon ages lag the corresponding insolation maxima by 3 kyr in forward time, i.e. subtract 3 kyr from peak ages in ka BP."
+    },
+    "output_fields": {
+      "prediction.csv": "Return segment,coordinate_m,time_ka in query order. The optional ensemble uses the same coordinates."
+    },
+    "metrics": [
+      {
+        "kind": "clock",
+        "field": "prediction.csv",
+        "unit": "ka"
+      }
+    ],
+    "source": "https://doi.org/10.1029/96PA01125",
+    "interpretation": "Absolute age deviations from the published Table 1 correlation on retained horizons. The older section with the duplicated 37.860 m entry lies outside this interval. The fixed endpoints are part of the question.",
+    "reference_file": "fixtures/chronology/rossello-precession/reference.csv",
+    "reference_record": "rossello-ties",
+    "packet_files": [
+      "fixtures/chronology/rossello-precession/input/queries.csv",
+      "fixtures/chronology/rossello-precession/input/anchors.csv"
+    ]
+  },
+  "odp846-published-clock": {
+    "title": "Shackleton, Hall & Pate (1995) \u2014 eastern Pacific Site 846 benthic isotope tuning",
+    "kind": "literature_comparison",
+    "inputs": {
+      "oxygen": "odp846-1995-oxygen",
+      "carbon": "odp846-1995-carbon",
+      "insolation": "la04-summer-846"
+    },
+    "params": {
+      "section": "63.43\u201396.00 m revised composite depth (rmcd). Use the isotope records, two terminal ages and optional La2004 65\u00b0N summer insolation.",
+      "question": "Recover an increasing age-depth model in ka BP. Coordinates are ordered by revised composite depth. Carbon measurements have three missing values in this selection; oxygen measurements are complete."
+    },
+    "output_fields": {
+      "prediction.csv": "Return segment,coordinate_m,time_ka in query order. The optional ensemble uses the same coordinates."
+    },
+    "metrics": [
+      {
+        "kind": "clock",
+        "field": "prediction.csv",
+        "unit": "ka"
+      }
+    ],
+    "source": "https://doi.org/10.2973/odp.proc.sr.138.117.1995",
+    "interpretation": "Empirical Table 5 chronology. Printed Table 5 and Table 7 establish the oxygen/carbon interpretation; the PANGAEA Table 5 text headers reverse it. The supplied modern forcing is optional. The historical age model also drew on the Leg 138 regional chronology.",
+    "reference_file": "fixtures/chronology/odp846-published-clock/reference.csv",
+    "reference_record": "odp846-1995-ties",
+    "packet_files": [
+      "fixtures/chronology/odp846-published-clock/input/queries.csv",
+      "fixtures/chronology/odp846-published-clock/input/anchors.csv"
+    ]
+  },
+  "newark-long-eccentricity": {
+    "title": "Olsen & Kent (1999) \u2014 Newark long eccentricity modulation",
+    "kind": "literature_comparison",
+    "inputs": {
+      "data": "newark-tuned-rank"
+    },
+    "params": {
+      "section": "Nursery through Martinsville, Lockatong\u2013Passaic composite tuned depth ranks.",
+      "calibration_ka": 404,
+      "anchor_wavelength_native": [
+        145,
+        280
+      ],
+      "modulation_ratio_search": [
+        2.5,
+        7.0
+      ],
+      "question": "Estimate the wavelength of the McLaughlin carrier and the long modulation in the same archive coordinate. Convert their ratio to ka using the stated 404 ka calibration and report the long period. The file begins at a nonzero tuned depth."
+    },
+    "output_fields": {
+      "modulation_ka": "Long period of depth ranks in ka on the 404 ka scale."
+    },
+    "metrics": [
+      {
+        "field": "modulation_ka",
+        "kind": "distance",
+        "reference": 1750,
+        "unit": "ka"
+      }
+    ],
+    "source": "https://doi.org/10.1098/rsta.1999.0400",
+    "interpretation": "The circa 1.75 Myr article-level interpretation is a comparison target conditional on an already tuned scale. The ratio calculation cancels the units of the archive coordinate."
+  },
+  "xiamaling-precession": {
+    "title": "Xiamaling Cu/Al at 1.4 Ga \u2014 joint rate and axial precession",
+    "kind": "literature_comparison",
+    "inputs": {
+      "data": "xiamaling"
+    },
+    "params": {
+      "age_ma": 1400,
+      "rate_search_cm_per_ka": [
+        0.3,
+        0.4
+      ],
+      "precession_search_arcsec_yr": [
+        78,
+        94
+      ],
+      "interpolation_step_m": 0.012,
+      "question": "Jointly estimate accumulation rate and the axial precession frequency. Document the orbital model, any frequency priors and the conversion of k to sidereal day length."
+    },
+    "output_fields": {
+      "rate_cm_per_ka": "Mean accumulation rate in cm/ka; give the posterior mean if available.",
+      "precession_arcsec_yr": "Axial precession frequency k (arcsec/year); give the posterior mean if available.",
+      "lod_h": "Derived sidereal length of day in hours, or null.",
+      "rate_ci95": "Optional 95% interval [low,high] in cm/ka or null.",
+      "precession_ci95": "Optional 95% interval [low,high] in arcsec/year or null."
+    },
+    "metrics": [
+      {
+        "field": "rate_cm_per_ka",
+        "kind": "distance",
+        "reference": 0.353,
+        "unit": "cm/ka",
+        "comparison": "Malinverno & Meyers (2024), Table 3, TimeOptB posterior mean"
+      },
+      {
+        "field": "precession_arcsec_yr",
+        "kind": "distance",
+        "reference": 87.74,
+        "unit": "arcsec/yr",
+        "comparison": "Malinverno & Meyers (2024), Table 3, TimeOptB posterior mean"
+      },
+      {
+        "field": "lod_h",
+        "kind": "distance",
+        "reference": 18.47,
+        "unit": "h",
+        "optional": true,
+        "comparison": "Malinverno & Meyers (2024), Table 3, TimeOptB posterior mean"
+      },
+      {
+        "field": "rate_ci95",
+        "kind": "interval",
+        "unit": "cm/ka",
+        "reference_bounds": [
+          0.343,
+          0.365
+        ],
+        "comparison": "2024 Table 3, TimeOptB 95% credible interval"
+      },
+      {
+        "field": "precession_ci95",
+        "kind": "interval",
+        "unit": "arcsec/yr",
+        "reference_bounds": [
+          85.37,
+          90.81
+        ],
+        "comparison": "2024 Table 3, TimeOptB 95% credible interval"
+      },
+      {
+        "field": "rate_cm_per_ka",
+        "kind": "distance",
+        "reference": 0.357,
+        "unit": "cm/ka",
+        "comparison": "Meyers & Malinverno (2018), Table 2, TimeOptMCMC posterior mean"
+      },
+      {
+        "field": "precession_arcsec_yr",
+        "kind": "distance",
+        "reference": 85.79,
+        "unit": "arcsec/yr",
+        "comparison": "Meyers & Malinverno (2018), Table 2, TimeOptMCMC posterior mean"
+      },
+      {
+        "field": "lod_h",
+        "kind": "distance",
+        "reference": 18.68,
+        "unit": "h",
+        "optional": true,
+        "comparison": "Meyers & Malinverno (2018), Table 2, TimeOptMCMC posterior mean"
+      }
+    ],
+    "source": "https://doi.org/10.1029/2023GC011176",
+    "interpretation": "Published posterior estimates are method dependent. The 2018 and 2024 Earth\u2013Moon models have different assumptions. Credible bounds are compared descriptively; they are not an empirical coverage test.",
+    "historical_source": "https://doi.org/10.1073/pnas.1717689115"
+  },
+  "walvis1262-precession": {
+    "title": "Walvis Ridge Site 1262 reflectance a* at 55 Ma \u2014 joint rate and axial precession",
+    "kind": "literature_comparison",
+    "inputs": {
+      "data": "odp1262-a"
+    },
+    "params": {
+      "age_ma": 55,
+      "rate_search_cm_per_ka": [
+        1.2,
+        1.4
+      ],
+      "precession_search_arcsec_yr": [
+        49,
+        53
+      ],
+      "interpolation_step_m": 0.02,
+      "question": "Jointly estimate accumulation rate and the axial precession frequency. Document the orbital model, any frequency priors and the conversion of k to sidereal day length."
+    },
+    "output_fields": {
+      "rate_cm_per_ka": "Mean accumulation rate in cm/ka; give the posterior mean if available.",
+      "precession_arcsec_yr": "Axial precession frequency k (arcsec/year); give the posterior mean if available.",
+      "lod_h": "Derived sidereal length of day in hours, or null.",
+      "rate_ci95": "Optional 95% interval [low,high] in cm/ka or null.",
+      "precession_ci95": "Optional 95% interval [low,high] in arcsec/year or null."
+    },
+    "metrics": [
+      {
+        "field": "rate_cm_per_ka",
+        "kind": "distance",
+        "reference": 1.309,
+        "unit": "cm/ka",
+        "comparison": "Malinverno & Meyers (2024), Table 3, TimeOptB posterior mean"
+      },
+      {
+        "field": "precession_arcsec_yr",
+        "kind": "distance",
+        "reference": 51.25,
+        "unit": "arcsec/yr",
+        "comparison": "Malinverno & Meyers (2024), Table 3, TimeOptB posterior mean"
+      },
+      {
+        "field": "lod_h",
+        "kind": "distance",
+        "reference": 23.75,
+        "unit": "h",
+        "optional": true,
+        "comparison": "Malinverno & Meyers (2024), Table 3, TimeOptB posterior mean"
+      },
+      {
+        "field": "rate_ci95",
+        "kind": "interval",
+        "unit": "cm/ka",
+        "reference_bounds": [
+          1.297,
+          1.32
+        ],
+        "comparison": "2024 Table 3, TimeOptB 95% credible interval"
+      },
+      {
+        "field": "precession_ci95",
+        "kind": "interval",
+        "unit": "arcsec/yr",
+        "reference_bounds": [
+          50.7,
+          51.81
+        ],
+        "comparison": "2024 Table 3, TimeOptB 95% credible interval"
+      },
+      {
+        "field": "rate_cm_per_ka",
+        "kind": "distance",
+        "reference": 1.316,
+        "unit": "cm/ka",
+        "comparison": "Meyers & Malinverno (2018), Table 2, TimeOptMCMC posterior mean"
+      },
+      {
+        "field": "precession_arcsec_yr",
+        "kind": "distance",
+        "reference": 51.28091,
+        "unit": "arcsec/yr",
+        "comparison": "Meyers & Malinverno (2018), Table 2, TimeOptMCMC posterior mean"
+      },
+      {
+        "field": "lod_h",
+        "kind": "distance",
+        "reference": 23.80485,
+        "unit": "h",
+        "optional": true,
+        "comparison": "Meyers & Malinverno (2018), Table 2, TimeOptMCMC posterior mean"
+      }
+    ],
+    "source": "https://doi.org/10.1029/2023GC011176",
+    "interpretation": "Published posterior estimates are method dependent. The 2018 and 2024 Earth\u2013Moon models have different assumptions. Credible bounds are compared descriptively; they are not an empirical coverage test.",
+    "historical_source": "https://doi.org/10.1073/pnas.1717689115"
   }
 }

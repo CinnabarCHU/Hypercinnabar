@@ -312,6 +312,152 @@
     }
   },
   {
+    "id": "cip-case3-inverse-clock",
+    "candidate": {
+      "method": "astrochron",
+      "version": "1.8",
+      "runtime": "R version 4.5.0 (2025-04-11)"
+    },
+    "status": "match",
+    "rows": 2631,
+    "columns": {
+      "elapsed_ka": {
+        "max_abs_error": 5.4569682106375694e-12,
+        "failures": 0,
+        "max_error_row": 2492,
+        "atol": 1e-12,
+        "rtol": 1e-11
+      },
+      "marker_m": {
+        "max_abs_error": 0.0,
+        "failures": 0,
+        "max_error_row": 1,
+        "atol": 1e-09,
+        "rtol": 1e-11
+      }
+    }
+  },
+  {
+    "id": "odp846-segmented-clock-original",
+    "candidate": {
+      "method": "astrochron",
+      "version": "1.8",
+      "runtime": "R version 4.5.0 (2025-04-11)",
+      "operation": "stats::approx within each sedimentary segment"
+    },
+    "status": "match",
+    "rows": 420,
+    "columns": {
+      "segment": {
+        "max_abs_error": 0.0,
+        "failures": 0,
+        "max_error_row": 1,
+        "atol": 1e-12,
+        "rtol": 1e-11
+      },
+      "depth_m": {
+        "max_abs_error": 4.973799150320701e-14,
+        "failures": 0,
+        "max_error_row": 191,
+        "atol": 1e-09,
+        "rtol": 1e-11
+      },
+      "oracle_age_ka": {
+        "max_abs_error": 5.002220859751105e-12,
+        "failures": 0,
+        "max_error_row": 16,
+        "atol": 1e-09,
+        "rtol": 1e-11
+      }
+    }
+  },
+  {
+    "id": "odp846-segmented-clock-reduced",
+    "candidate": {
+      "method": "astrochron",
+      "version": "1.8",
+      "runtime": "R version 4.5.0 (2025-04-11)",
+      "operation": "stats::approx within each sedimentary segment"
+    },
+    "status": "match",
+    "rows": 420,
+    "columns": {
+      "segment": {
+        "max_abs_error": 0.0,
+        "failures": 0,
+        "max_error_row": 1,
+        "atol": 1e-12,
+        "rtol": 1e-11
+      },
+      "depth_m": {
+        "max_abs_error": 4.973799150320701e-14,
+        "failures": 0,
+        "max_error_row": 156,
+        "atol": 1e-09,
+        "rtol": 1e-11
+      },
+      "oracle_age_ka": {
+        "max_abs_error": 5.002220859751105e-12,
+        "failures": 0,
+        "max_error_row": 12,
+        "atol": 1e-09,
+        "rtol": 1e-11
+      }
+    }
+  },
+  {
+    "id": "am-hilbert-envelope",
+    "candidate": {
+      "method": "astrochron",
+      "version": "1.8",
+      "runtime": "R version 4.5.0 (2025-04-11)"
+    },
+    "status": "match",
+    "rows": 256,
+    "columns": {
+      "sample": {
+        "max_abs_error": 0.0,
+        "failures": 0,
+        "max_error_row": 1,
+        "atol": 1e-12,
+        "rtol": 1e-11
+      },
+      "instantaneous_amplitude": {
+        "max_abs_error": 2.375877272697835e-14,
+        "failures": 0,
+        "max_error_row": 166,
+        "atol": 1e-09,
+        "rtol": 1e-11
+      }
+    }
+  },
+  {
+    "id": "imbrie-response-euler",
+    "candidate": {
+      "method": "astrochron",
+      "version": "1.8",
+      "runtime": "R version 4.5.0 (2025-04-11)"
+    },
+    "status": "match",
+    "rows": 96,
+    "columns": {
+      "age_ka": {
+        "max_abs_error": 0.0,
+        "failures": 0,
+        "max_error_row": 1,
+        "atol": 1e-12,
+        "rtol": 1e-11
+      },
+      "ice_response": {
+        "max_abs_error": 5.684341886080802e-14,
+        "failures": 0,
+        "max_error_row": 60,
+        "atol": 1e-09,
+        "rtol": 1e-11
+      }
+    }
+  },
+  {
     "id": "odp926b-timeopt",
     "candidate": {
       "method": "astrochron",
@@ -327,6 +473,190 @@
         "unit": "cm/ka",
         "reference": 3.02,
         "absolute_difference": 0.0022033305109587786
+      }
+    ]
+  },
+  {
+    "id": "xiamaling-precession",
+    "candidate": {
+      "method": "astrochron",
+      "version": "1.8",
+      "runtime": "R version 4.5.0 (2025-04-11)",
+      "operation": "timeOptB 61 by 61 grid, marginal means, alodfromk evaluated at mean k"
+    },
+    "status": "scored",
+    "metrics": [
+      {
+        "field": "rate_cm_per_ka",
+        "quantity": "distance",
+        "value": 0.35249,
+        "comparison": "Malinverno & Meyers (2024), Table 3, TimeOptB posterior mean",
+        "unit": "cm/ka",
+        "reference": 0.353,
+        "absolute_difference": 0.0005099999999999549
+      },
+      {
+        "field": "precession_arcsec_yr",
+        "quantity": "distance",
+        "value": 87.66426,
+        "comparison": "Malinverno & Meyers (2024), Table 3, TimeOptB posterior mean",
+        "unit": "arcsec/yr",
+        "reference": 87.74,
+        "absolute_difference": 0.07573999999999614
+      },
+      {
+        "field": "lod_h",
+        "quantity": "distance",
+        "value": 18.477246234979834,
+        "comparison": "Malinverno & Meyers (2024), Table 3, TimeOptB posterior mean",
+        "unit": "h",
+        "reference": 18.47,
+        "absolute_difference": 0.007246234979835009
+      },
+      {
+        "field": "rate_ci95",
+        "quantity": "interval",
+        "value": [
+          0.34208,
+          0.36445
+        ],
+        "comparison": "2024 Table 3, TimeOptB 95% credible interval",
+        "unit": "cm/ka",
+        "width": 0.02237,
+        "lower_difference": -0.0009200000000000319,
+        "upper_difference": -0.0005499999999999949
+      },
+      {
+        "field": "precession_ci95",
+        "quantity": "interval",
+        "value": [
+          85.10797,
+          90.79365
+        ],
+        "comparison": "2024 Table 3, TimeOptB 95% credible interval",
+        "unit": "arcsec/yr",
+        "width": 5.685680000000005,
+        "lower_difference": -0.26203000000001,
+        "upper_difference": -0.01635000000000275
+      },
+      {
+        "field": "rate_cm_per_ka",
+        "quantity": "distance",
+        "value": 0.35249,
+        "comparison": "Meyers & Malinverno (2018), Table 2, TimeOptMCMC posterior mean",
+        "unit": "cm/ka",
+        "reference": 0.357,
+        "absolute_difference": 0.0045099999999999585
+      },
+      {
+        "field": "precession_arcsec_yr",
+        "quantity": "distance",
+        "value": 87.66426,
+        "comparison": "Meyers & Malinverno (2018), Table 2, TimeOptMCMC posterior mean",
+        "unit": "arcsec/yr",
+        "reference": 85.79,
+        "absolute_difference": 1.8742599999999925
+      },
+      {
+        "field": "lod_h",
+        "quantity": "distance",
+        "value": 18.477246234979834,
+        "comparison": "Meyers & Malinverno (2018), Table 2, TimeOptMCMC posterior mean",
+        "unit": "h",
+        "reference": 18.68,
+        "absolute_difference": 0.20275376502016584
+      }
+    ]
+  },
+  {
+    "id": "walvis1262-precession",
+    "candidate": {
+      "method": "astrochron",
+      "version": "1.8",
+      "runtime": "R version 4.5.0 (2025-04-11)",
+      "operation": "timeOptB 61 by 61 grid, marginal means, alodfromk evaluated at mean k"
+    },
+    "status": "scored",
+    "metrics": [
+      {
+        "field": "rate_cm_per_ka",
+        "quantity": "distance",
+        "value": 1.31069,
+        "comparison": "Malinverno & Meyers (2024), Table 3, TimeOptB posterior mean",
+        "unit": "cm/ka",
+        "reference": 1.309,
+        "absolute_difference": 0.0016899999999999693
+      },
+      {
+        "field": "precession_arcsec_yr",
+        "quantity": "distance",
+        "value": 51.30595,
+        "comparison": "Malinverno & Meyers (2024), Table 3, TimeOptB posterior mean",
+        "unit": "arcsec/yr",
+        "reference": 51.25,
+        "absolute_difference": 0.05595000000000283
+      },
+      {
+        "field": "lod_h",
+        "quantity": "distance",
+        "value": 23.73207422239583,
+        "comparison": "Malinverno & Meyers (2024), Table 3, TimeOptB posterior mean",
+        "unit": "h",
+        "reference": 23.75,
+        "absolute_difference": 0.01792577760416947
+      },
+      {
+        "field": "rate_ci95",
+        "quantity": "interval",
+        "value": [
+          1.29713,
+          1.32119
+        ],
+        "comparison": "2024 Table 3, TimeOptB 95% credible interval",
+        "unit": "cm/ka",
+        "width": 0.024060000000000192,
+        "lower_difference": 0.00012999999999996348,
+        "upper_difference": 0.0011900000000000244
+      },
+      {
+        "field": "precession_ci95",
+        "quantity": "interval",
+        "value": [
+          50.72103,
+          51.85265
+        ],
+        "comparison": "2024 Table 3, TimeOptB 95% credible interval",
+        "unit": "arcsec/yr",
+        "width": 1.131619999999998,
+        "lower_difference": 0.021029999999996107,
+        "upper_difference": 0.04264999999999475
+      },
+      {
+        "field": "rate_cm_per_ka",
+        "quantity": "distance",
+        "value": 1.31069,
+        "comparison": "Meyers & Malinverno (2018), Table 2, TimeOptMCMC posterior mean",
+        "unit": "cm/ka",
+        "reference": 1.316,
+        "absolute_difference": 0.005310000000000148
+      },
+      {
+        "field": "precession_arcsec_yr",
+        "quantity": "distance",
+        "value": 51.30595,
+        "comparison": "Meyers & Malinverno (2018), Table 2, TimeOptMCMC posterior mean",
+        "unit": "arcsec/yr",
+        "reference": 51.28091,
+        "absolute_difference": 0.02504000000000417
+      },
+      {
+        "field": "lod_h",
+        "quantity": "distance",
+        "value": 23.73207422239583,
+        "comparison": "Meyers & Malinverno (2018), Table 2, TimeOptMCMC posterior mean",
+        "unit": "h",
+        "reference": 23.80485,
+        "absolute_difference": 0.07277577760416776
       }
     ]
   }

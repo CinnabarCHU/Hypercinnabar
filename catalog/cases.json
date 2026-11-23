@@ -5004,5 +5004,353 @@
         "atol": 1e-05
       }
     }
+  },
+  "cip-case3-forward-clock": {
+    "operation": "cip_accumulation",
+    "fixture": {
+      "table": "fixtures/synthetic/cip-generator.csv.gz",
+      "input_indices": [
+        0
+      ],
+      "output_indices": [
+        0,
+        1,
+        2
+      ]
+    },
+    "input_columns": [
+      "elapsed_ka"
+    ],
+    "output_columns": [
+      "elapsed_ka",
+      "height_m",
+      "rate_cm_per_ka"
+    ],
+    "params": {
+      "mean_cm_per_ka": 4.5,
+      "amplitude_cm_per_ka": 1.5,
+      "period_ka": 1200,
+      "initial_height_m": 0,
+      "integration": "right endpoint on each supplied time step"
+    },
+    "description": "Recreate the published CIP Case 3 sinusoidal accumulation law and its sampled height curve.",
+    "origin": "https://doi.org/10.1016/j.earscirev.2019.102965",
+    "rtol": 1e-11,
+    "atol": 1e-09
+  },
+  "cip-case3-inverse-clock": {
+    "operation": "tune",
+    "fixture": {
+      "table": "fixtures/chronology/cip1-case3/reference.csv",
+      "input_indices": [
+        1,
+        1
+      ],
+      "output_indices": [
+        2,
+        1
+      ],
+      "aux_tables": {
+        "controls": {
+          "table": "fixtures/synthetic/cip-generator.csv.gz",
+          "indices": [
+            1,
+            0
+          ],
+          "columns": [
+            "depth_m",
+            "age_ka"
+          ]
+        }
+      }
+    },
+    "input_columns": [
+      "height_m",
+      "marker_m"
+    ],
+    "output_columns": [
+      "elapsed_ka",
+      "marker_m"
+    ],
+    "params": {
+      "extrapolate": false
+    },
+    "description": "Invert the supplied generator clock at all native CIP observation heights. Preserve the marker column.",
+    "origin": "https://doi.org/10.1016/j.earscirev.2019.102965",
+    "rtol": 1e-11,
+    "atol": 1e-09
+  },
+  "odp846-segmented-clock-original": {
+    "operation": "segmented_clock",
+    "fixture": {
+      "table": "fixtures/synthetic/odp846-original-oracle.csv.gz",
+      "input_indices": [
+        0,
+        1
+      ],
+      "output_indices": [
+        0,
+        1,
+        2
+      ],
+      "packet_files": [
+        "fixtures/chronology/odp846-oracle-original/input/controls.csv"
+      ]
+    },
+    "input_columns": [
+      "segment",
+      "depth_m"
+    ],
+    "output_columns": [
+      "segment",
+      "depth_m",
+      "oracle_age_ka"
+    ],
+    "params": {
+      "method": "Linear interpolation independently within segment. Coincident depths on opposite sides of a hiatus retain different ages."
+    },
+    "description": "Evaluate the archived original piecewise-linear oracle on the two sides of each gap.",
+    "origin": "Obliquity_Oracle_Benchmark_Bundle, seed 117, original_oracle_ka",
+    "rtol": 1e-11,
+    "atol": 1e-09
+  },
+  "odp846-segmented-clock-reduced": {
+    "operation": "segmented_clock",
+    "fixture": {
+      "table": "fixtures/synthetic/odp846-reduced-oracle.csv.gz",
+      "input_indices": [
+        0,
+        1
+      ],
+      "output_indices": [
+        0,
+        1,
+        2
+      ],
+      "packet_files": [
+        "fixtures/chronology/odp846-oracle-reduced/input/controls.csv"
+      ]
+    },
+    "input_columns": [
+      "segment",
+      "depth_m"
+    ],
+    "output_columns": [
+      "segment",
+      "depth_m",
+      "oracle_age_ka"
+    ],
+    "params": {
+      "method": "Linear interpolation independently within segment. Coincident depths on opposite sides of a hiatus retain different ages."
+    },
+    "description": "Evaluate the archived reduced piecewise-linear oracle on the two sides of each gap.",
+    "origin": "Obliquity_Oracle_Benchmark_Bundle, seed 117, reduced_oracle_ka",
+    "rtol": 1e-11,
+    "atol": 1e-09
+  },
+  "laurin-weak-band-forward": {
+    "operation": "weak_band",
+    "fixture": {
+      "table": "fixtures/synthetic/laurin-weak.csv.gz",
+      "input_indices": [
+        0
+      ],
+      "output_indices": [
+        0,
+        1
+      ],
+      "aux_tables": {
+        "controls": {
+          "table": "fixtures/synthetic/laurin-phase-knots.csv",
+          "indices": [
+            0,
+            1
+          ],
+          "columns": [
+            "depth_m",
+            "cycle"
+          ]
+        }
+      }
+    },
+    "input_columns": [
+      "depth_m"
+    ],
+    "output_columns": [
+      "depth_m",
+      "clean_proxy"
+    ],
+    "params": {
+      "cycle_center": 6,
+      "envelope_sigma_cycles": 0.8,
+      "attenuation": 0.8,
+      "phase_rule": "piecewise-linear cycles from controls.csv, linear continuation at the ends",
+      "waveform": "(1 - attenuation * exp(-0.5*((cycle-center)/sigma)^2)) * cos(2*pi*cycle)"
+    },
+    "description": "Generate the clean weak-band proxy including the complete-trend buffers at both ends.",
+    "origin": "laurin_trial/external/complete_trend/results/synthetic_weak_band_truth.npz",
+    "rtol": 1e-11,
+    "atol": 1e-09
+  },
+  "two-rate-forward-proxy": {
+    "operation": "rate_step_proxy",
+    "fixture": {
+      "table": "fixtures/synthetic/two-rate.csv.gz",
+      "input_indices": [
+        0,
+        1
+      ],
+      "output_indices": [
+        0,
+        2,
+        3,
+        4
+      ]
+    },
+    "input_columns": [
+      "depth_m",
+      "innovation"
+    ],
+    "output_columns": [
+      "depth_m",
+      "elapsed_ka",
+      "clean_proxy",
+      "observed_proxy"
+    ],
+    "params": {
+      "break_m": 40,
+      "rates_cm_per_ka": [
+        4,
+        6
+      ],
+      "harmonics": [
+        [
+          23,
+          0.8,
+          0.4
+        ],
+        [
+          41,
+          0.9,
+          1.1
+        ],
+        [
+          100,
+          0.65,
+          -0.7
+        ]
+      ],
+      "harmonic_columns": [
+        "period_ka",
+        "amplitude",
+        "phase_rad"
+      ],
+      "ar1_rho": 0.65,
+      "noise_scale": 0.42,
+      "noise_initial": "first innovation; subsequent innovation scale sqrt(1-rho^2)"
+    },
+    "description": "Reproduce the clock, noiseless orbital signal and perturbed observations of the public rate-step task from its actual innovations.",
+    "origin": "synthetic-rate-step, NumPy PCG64 seed 9017",
+    "rtol": 1e-11,
+    "atol": 1e-09
+  },
+  "am-hilbert-envelope": {
+    "operation": "hilbert_envelope",
+    "fixture": {
+      "table": "fixtures/synthetic/am-envelope.csv.gz",
+      "input_indices": [
+        0,
+        1
+      ],
+      "output_indices": [
+        0,
+        2
+      ]
+    },
+    "input_columns": [
+      "sample",
+      "am_signal"
+    ],
+    "output_columns": [
+      "sample",
+      "instantaneous_amplitude"
+    ],
+    "params": {
+      "pad_factor": 1,
+      "demean": false,
+      "periodic": true
+    },
+    "description": "Recover the positive analytical amplitude on all 256 samples of a periodic amplitude-modulated carrier.",
+    "origin": "Bin-centred AM carrier and two sidebands, exact analytic signal.",
+    "rtol": 1e-11,
+    "atol": 1e-09
+  },
+  "imbrie-response-continuous": {
+    "operation": "imbrie_continuous",
+    "fixture": {
+      "table": "fixtures/synthetic/imbrie-blocks.csv.gz",
+      "input_indices": [
+        0,
+        1
+      ],
+      "output_indices": [
+        0,
+        2
+      ]
+    },
+    "input_columns": [
+      "age_ka",
+      "insolation"
+    ],
+    "output_columns": [
+      "age_ka",
+      "ice_response"
+    ],
+    "params": {
+      "tm_ka": 17.0,
+      "b": 0.6,
+      "initial": 3.0,
+      "orientation": "Evolve from oldest to youngest. Target x = mean(insolation) - insolation; keep x fixed to the older sample in each interval.",
+      "growth_decay": "dy/dt = (x-y)*(1-b)/Tm for x>y, else (x-y)*(1+b)/Tm",
+      "step_rule": "exact piecewise-constant ODE solution"
+    },
+    "description": "Asymmetric Imbrie ice response under block forcing, exact continuous solution.",
+    "origin": "https://doi.org/10.1126/science.207.4434.943",
+    "rtol": 1e-11,
+    "atol": 1e-09
+  },
+  "imbrie-response-euler": {
+    "operation": "imbrie_euler",
+    "fixture": {
+      "table": "fixtures/synthetic/imbrie-blocks.csv.gz",
+      "input_indices": [
+        0,
+        1
+      ],
+      "output_indices": [
+        0,
+        3
+      ]
+    },
+    "input_columns": [
+      "age_ka",
+      "insolation"
+    ],
+    "output_columns": [
+      "age_ka",
+      "ice_response"
+    ],
+    "params": {
+      "tm_ka": 17.0,
+      "b": 0.6,
+      "initial": 3.0,
+      "orientation": "Evolve from oldest to youngest. Target x = mean(insolation) - insolation; keep x fixed to the older sample in each interval.",
+      "growth_decay": "dy/dt = (x-y)*(1-b)/Tm for x>y, else (x-y)*(1+b)/Tm",
+      "step_rule": "one explicit forward Euler update per 1 ka, burnin=1, standardize=false"
+    },
+    "description": "Asymmetric Imbrie ice response under block forcing, astrochron one-kyr discretization.",
+    "origin": "https://doi.org/10.1126/science.207.4434.943",
+    "rtol": 1e-11,
+    "atol": 1e-09
   }
 }

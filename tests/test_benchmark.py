@@ -136,6 +136,92 @@ class BenchmarkTests(unittest.TestCase):
         np.testing.assert_allclose(np.diff(section[:, 0]), .05, atol=2e-14, rtol=0)
         self.assertNotIn("4-to-6", json.dumps(packet))
 
+    def test_cip_forward_and_inverse_share_the_geological_clock(self):
+        _, generator = case_tables(self.cases["cip-case3-forward-clock"])
+        times, heights, rates = generator.T
+        np.testing.assert_allclose(np.diff(heights), np.diff(times)*rates[1:]/100, atol=1e-10, rtol=0)
+        trap = np.r_[0., np.cumsum(np.diff(times)*(rates[:-1]+rates[1:])/200)]
+        self.assertGreater(np.max(np.abs(trap-heights)), .01)
+        _, inv = case_tables(self.cases["cip-case3-inverse-clock"])
+        observed = np.loadtxt(ROOT/self.tasks["cip1-case3"]["reference_file"], delimiter=",", skiprows=1)
+        np.testing.assert_array_equal(inv[:, 1], observed[:, 1])
+        np.testing.assert_allclose(np.interp(inv[:, 1], heights, times), observed[:, 2], atol=1e-8, rtol=0)
+        np.testing.assert_array_equal(inv[:, 0], observed[:, 2])
+
+    def test_two_sides_of_hiatus_survive_and_discretizations_differ(self):
+        for variant in ("original","reduced"):
+            _, clock = case_tables(self.cases["odp846-segmented-clock-"+variant])
+            changes = np.flatnonzero(np.diff(clock[:, 0]))
+            self.assertEqual(len(changes), 2)
+            np.testing.assert_allclose(clock[changes,1], clock[changes+1,1], atol=1e-12, rtol=0)
+            self.assertTrue(np.all(clock[changes+1,2]-clock[changes,2] > 15))
+        continuous = self.cases["imbrie-response-continuous"]
+        cin, cref = case_tables(continuous)
+        ein, eref = case_tables(self.cases["imbrie-response-euler"])
+        np.testing.assert_array_equal(cin, ein)
+        self.assertGreater(np.max(np.abs(cref[:,1]-eref[:,1])), .1)
+        csv_table(self.dir,"result",continuous["output_columns"],eref)
+        self.assertEqual(score_case(continuous,self.dir)["status"],"mismatch")
+
+    def test_analytic_envelope_block_response_and_rate_proxy_truth(self):
+        raw, ref = case_tables(self.cases["am-hilbert-envelope"])
+        phase = 2*np.pi*raw[:,0]/256
+        envelope = 1.4 + .35*np.cos(3*phase+.21)
+        np.testing.assert_allclose(raw[:,1], envelope*np.cos(32*phase+.4), atol=1e-12, rtol=0)
+        np.testing.assert_allclose(ref[:,1], envelope, atol=1e-12, rtol=0)
+        for name, decay in (("continuous", np.exp(-.4/17)), ("euler", 1-.4/17)):
+            forcing, ice = case_tables(self.cases["imbrie-response-"+name])
+            drive = np.mean(forcing[:,1])-forcing[-1,1]
+            n = np.arange(14)
+            expected = drive+(3-drive)*decay**n
+            np.testing.assert_allclose(ice[::-1][:14,1],expected,rtol=0,atol=1e-12)
+        from fixtures import rate_section
+        _, ref = case_tables(self.cases["two-rate-forward-proxy"])
+        np.testing.assert_array_equal(ref[:,[0,3]],rate_section())
+
+    def test_empirical_clock_reports_errors_on_unknown_levels(self):
+        for name, count in (("rossello-precession",76),("odp846-published-clock",322)):
+            task = self.tasks[name]
+            clock = np.loadtxt(ROOT/task["reference_file"], delimiter=",", skiprows=1)
+            self.assertEqual(len(clock),count)
+            self.assertTrue(np.all(np.diff(clock[:,2]) >= 0))
+            for path in task["packet_files"]:
+                if Path(path).name == "queries.csv":
+                    self.assertEqual((ROOT/path).read_text().splitlines()[0],"segment,coordinate_m")
+                else:
+                    data = np.loadtxt(ROOT/path, delimiter=",", skiprows=1)
+                    np.testing.assert_array_equal(data,clock[[0,-1],1:])
+            self.assertNotIn(task["reference_record"],task["inputs"].values())
+            clock[1:-1,2] += .25
+            csv_table(self.dir,"prediction",["segment","coordinate_m","time_ka"],clock)
+            metrics = score_task(task,self.dir)["metrics"]
+            self.assertEqual(metrics["interior_rows"],count-2)
+            self.assertAlmostEqual(metrics["interior_rmse_ka"],.25)
+            self.assertEqual(metrics["endpoint_errors_ka"],[0.,0.])
+
+    def test_timeopt_publications_have_distinct_comparisons(self):
+        sample = dict(rate_cm_per_ka=.353, precession_arcsec_yr=87.74, lod_h=None,
+                      rate_ci95=[.343,.365],precession_ci95=None)
+        (self.dir/"result.json").write_text(json.dumps(sample))
+        scores = score_task(self.tasks["xiamaling-precession"],self.dir)["metrics"]
+        peaks = [s for s in scores if s["field"]=="precession_arcsec_yr"]
+        self.assertEqual([s["reference"] for s in peaks],[87.74,85.79])
+        self.assertNotEqual(peaks[0]["comparison"],peaks[1]["comparison"])
+        self.assertTrue(all(not s["available"] for s in scores if s["field"]=="lod_h"))
+        sample["rate_ci95"] = [.365,.343]
+        (self.dir/"result.json").write_text(json.dumps(sample))
+        with self.assertRaises(ValueError): score_task(self.tasks["xiamaling-precession"],self.dir)
+
+    def test_hays_ratio_uses_the_same_core_and_is_scale_invariant(self):
+        task = self.tasks["hays76-simplex"]
+        periods = {k:v for k,v in zip(task["output_fields"], [87,38,21,109,47,24])}
+        for factor in (1,2):
+            (self.dir/"result.json").write_text(json.dumps({k:factor*v for k,v in periods.items()}))
+            result = score_task(task,self.dir)["metrics"]
+            ratios = [m for m in result if m["quantity"]=="period_ratio"]
+            np.testing.assert_allclose([m["value"] for m in ratios],[38/21,47/24])
+            self.assertEqual([m["reference"] for m in ratios],[1.8,1.9])
+
     def test_nonfinite_duplicate_and_wrong_type_json(self):
         f=self.dir/"result.json"
         for payload in ['{"rate_cm_per_ka":NaN}','{"rate_cm_per_ka":2,"rate_cm_per_ka":3}']:

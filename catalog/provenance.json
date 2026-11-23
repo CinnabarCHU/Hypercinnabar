@@ -29,9 +29,10 @@
       "members": {
         "CIP_challenge_scout/scout_analysis.py": "01aa391acdb2bd74d67b409c6b24b2f5f3da5c0286a6e4b0dafddabf5bd771c3",
         "CIP_challenge_scout/sources/Case3_signal.csv": "e9567bc54c28c6425774c4c0969712ff654bc86af1d7729cfd1603dd67fc2440",
-        "CIP_challenge_scout/validation_only/CIP1_Case3_true_time_at_observations.csv": "7f41810bff8469462856024195e120f7593294e194b306328744f036232e6783"
+        "CIP_challenge_scout/validation_only/CIP1_Case3_true_time_at_observations.csv": "7f41810bff8469462856024195e120f7593294e194b306328744f036232e6783",
+        "CIP_challenge_scout/validation_only/CIP1_Case3_generator_time_depth.csv": "922da806edc66fc17b60ddd229884b71e516d64c04e79241e3d94158d414971c"
       },
-      "derivation": "The scorer uses the public generator clock at the native metre observation heights. The method receives the proxy and query heights."
+      "derivation": "The scorer uses the public generator clock at the native metre observation heights. The method receives the proxy and query heights. The forward case uses all generator rows. The inverse case gives all clock knots and checks all native observation heights."
     },
     {
       "collection": "Laurin_external_benchmark_reproducibility.zip",
@@ -45,7 +46,7 @@
         "laurin_trial/external/complete_trend/results/synthetic_weak_band_0_importance.npz": "b0d4c3cf295bc11c4e500fd5680c155b88eace9e3864901075cb98c42b358cbb",
         "laurin_trial/external/complete_trend/results/synthetic_weak_band_truth.npz": "20c6a399bf65371c7254dd8b0bbf4acae6b70e4687c97b971c3829b58f02359b"
       },
-      "derivation": "Use z and the y array of noisy replicate 0, p0/lower/upper, and ztest. The first three entries of truth are adjacent interval durations in kyr."
+      "derivation": "Use z and the y array of noisy replicate 0, p0/lower/upper, and ztest. The first three entries of truth are adjacent interval durations in kyr. The weak-band forward case uses the clean y array and the original complete-trend phase knots including the extension cycles."
     },
     {
       "collection": "Obliquity_Oracle_Benchmark_Bundle.zip",
@@ -56,7 +57,7 @@
         "outputs/benchmark_curves.npz": "f87ec631e54a7ba5301249ee5bccc7606378db24cd2a408207fddad26439df98",
         "outputs/blocks.json": "279cdbc2b3759a3794fc5296d685c0f477a0695d5d7f53cfefeefdac16d3e7fe"
       },
-      "derivation": "Use original and reduced depth/age arrays from the frozen seed. Group nodes by the age limits of each segment in blocks.json. Evaluate the dense generator clock on multiples of 0.05 m plus both segment ends."
+      "derivation": "Use original and reduced depth/age arrays from the frozen seed. Group nodes by the age limits of each segment in blocks.json. Evaluate the dense generator clock on multiples of 0.05 m plus both segment ends. The functional reference uses the separate *_oracle_ka arrays, sampled every 400 observations within segment plus both endpoints. The task uses *_age_ka."
     },
     {
       "collection": "Li_Tuning_Wavelet_Reproducibility.zip",

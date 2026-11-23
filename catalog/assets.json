@@ -46,5 +46,37 @@
   "cip-case3": {
     "url": "https://www.cyclostratigraphy.org/fileadmin/user_upload/Microsite_Cyclostratigraphy/CIP_cases/Case3/Case-3-Signal.csv",
     "sha256": "e9567bc54c28c6425774c4c0969712ff654bc86af1d7729cfd1603dd67fc2440"
+  },
+  "hays-sst": {
+    "url": "https://doi.pangaea.de/10.1594/PANGAEA.52223?format=textfile",
+    "sha256": "819c3238aa7ac40602b37a6a8dd08599193c139dbcff57be86454b4a51ea73c7"
+  },
+  "hays-e49": {
+    "url": "https://doi.pangaea.de/10.1594/PANGAEA.52207?format=textfile",
+    "sha256": "3109496f13edb41c15bb638b77a4063042959a5c8ee3025670370252715553fb"
+  },
+  "med": {
+    "url": "https://doi.pangaea.de/10.1594/PANGAEA.790776?format=textfile",
+    "sha256": "ad24d81fb82dbe3728b9a0db3d1454f54891d26cdbeed59aab84c0702dba9ab3"
+  },
+  "846table": {
+    "url": "https://doi.pangaea.de/10.1594/PANGAEA.696449?format=textfile",
+    "sha256": "6ae23007ee38973c183d7211e21ec549c9041036313d6559d131440a76e8f130"
+  },
+  "newark": {
+    "url": "https://www.ldeo.columbia.edu/~polsen/nbcp/dr_i05_400k.tsv",
+    "sha256": "69f0881dd5af42b61bef373d7d3ad8763536ce52458c44351586cf44d4f434d7"
+  },
+  "la04-insol": {
+    "url": "https://raw.githubusercontent.com/srmeyers2/getData/56de9938d728b04627b2f08fc66cc60ce31f1b38/insolation.txt.bz2",
+    "sha256": "266516886b57446dedd57f454b5c70b6c39eac52a7f5c6da0e3c3d6327a2b9dc"
+  },
+  "846table3": {
+    "url": "https://doi.pangaea.de/10.1594/PANGAEA.696447?format=textfile",
+    "sha256": "d2f132c021456ee3735de4f6c5097a45e558a8fa497565c43ba45d640b11b5f2"
+  },
+  "846table7": {
+    "url": "https://doi.pangaea.de/10.1594/PANGAEA.696451?format=textfile",
+    "sha256": "eeb9e6055718d3928ca8aa8e340f4eb4d97f87dbfd1b7366eee544626be3c81a"
   }
 }

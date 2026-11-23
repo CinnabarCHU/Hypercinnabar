@@ -53,7 +53,7 @@ jobs:
             any::jsonlite
             any::hdf5r
           needs: ''
-      - name: Native R cases and Site 926B TimeOpt
+      - name: Native R cases, Site 926B TimeOpt and two TimeOptB studies
         run: python tools/run_profile.py r .results/r
       - name: Replay the original R journals
         run: |

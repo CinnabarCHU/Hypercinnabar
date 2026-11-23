@@ -9,6 +9,9 @@ from records import ROOT, record_array
 
 def case_tables(case):
     fixture = case["fixture"]
+    if "table" in fixture:
+        table = np.loadtxt(ROOT / fixture["table"], delimiter=",", skiprows=1, ndmin=2)
+        return table[:, fixture["input_indices"]], table[:, fixture["output_indices"]]
     if "mat" not in fixture:
         return np.asarray(fixture["data"]), np.asarray(fixture["expected"])
     data = loadmat(ROOT / fixture["mat"], variable_names=["raw", "dat", "y", "t", "sp", "g"])

@@ -13,6 +13,17 @@ switch q.operation
     case 'periodogram'
         [power,f] = periodogram(d(:,2),[],p.nfft,1/p.sample_interval);
         result = [f,power];
+    case 'hilbert_envelope'
+        result = [d(:,1), abs(hilbert(d(:,2)))];
+    case 'segmented_clock'
+        nodes = readmatrix(fullfile(requestDir,'controls.csv'),'NumHeaderLines',1);
+        ages = zeros(size(d,1),1);
+        for s = unique(d(:,1))'
+            queries = d(:,1)==s;
+            n = nodes(:,1)==s;
+            ages(queries) = interp1(nodes(n,2),nodes(n,3),d(queries,2),'linear');
+        end
+        result = [d,ages];
     case 'swa'
         d(:,2) = d(:,2)-mean(d(:,2));
         sp = spectralswafdr(d,p.method,p.nw,p.padding,0);
@@ -36,6 +47,8 @@ priorDir = pwd; restoreDir = onCleanup(@() cd(priorDir));
 cd(acycleRoot); [status,revision] = system('git rev-parse HEAD'); cd(priorDir);
 if status~=0, revision='unversioned'; end
 meta = struct('method','Acycle','version',strtrim(revision),'runtime',version);
+if strcmp(q.operation,'hilbert_envelope'), meta.operation='MATLAB Signal Processing Toolbox hilbert'; end
+if strcmp(q.operation,'segmented_clock'), meta.operation='MATLAB interp1 within each sedimentary segment'; end
 fid = fopen(fullfile(outputDir,'method.json'),'w'); assert(fid>=0);
 closer = onCleanup(@() fclose(fid)); fprintf(fid,'%s\n',jsonencode(meta));
 end

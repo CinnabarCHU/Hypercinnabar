@@ -206,5 +206,31 @@
         "rtol": 0
       }
     }
+  },
+  {
+    "id": "cip-case3-inverse-clock",
+    "candidate": {
+      "method": "astrochron-warp",
+      "version": "0.2.0",
+      "astrochron": "1.8"
+    },
+    "status": "match",
+    "rows": 2631,
+    "columns": {
+      "elapsed_ka": {
+        "max_abs_error": 0.0,
+        "failures": 0,
+        "max_error_row": 1,
+        "atol": 1e-12,
+        "rtol": 1e-11
+      },
+      "marker_m": {
+        "max_abs_error": 0.0,
+        "failures": 0,
+        "max_error_row": 1,
+        "atol": 1e-09,
+        "rtol": 1e-11
+      }
+    }
   }
 ]

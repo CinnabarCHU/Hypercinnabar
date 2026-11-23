@@ -21,6 +21,8 @@ The reference unit for software parity is a complete output for a named version,
 
 ## Data provenance
 
+The six historical study tasks and nine known-truth cases have a dedicated guide with the original papers, table numbers, selected intervals and field corrections. The Site 846 chronology and Rossello calibration rows are reconstructed from the source deposits during `verify --sources`. [Classic studies and forward models](classic-studies.md)
+
 All ten previously prepared uninterpolated XY series from the geological benchmark collection are registered by content hash. Preserve the source coordinate, original row order and duplicates. Run `python bench.py dataset dsdp607 607.csv` to export one. On first use, externally hosted sources are fetched by SHA-256 and transformed according to the record definition. Set `CYCLOBENCH_CACHE` to a persistent directory to use the same raw bytes offline. `python bench.py verify --sources` checks all local fixtures and reconstructs every externally defined table. [Record definitions](../catalog/records.json) · [Remote source digests](../catalog/assets.json) · [Freeze provenance](../catalog/provenance.json)
 
 | Material | Source and interpretation |

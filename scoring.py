@@ -132,6 +132,10 @@ def score_task(task, submission):
         stats = dict(rmse_ka=float(np.sqrt(np.mean(delta**2))), max_abs_ka=float(np.max(np.abs(delta))),
                      mae_ka=float(np.mean(np.abs(delta))),
                      end_minus_start_error_ka=float(delta[-1]-delta[0]), rows=len(ref))
+        if "reference_record" in task:
+            stats["endpoint_errors_ka"] = delta[[0,-1]].tolist()
+            stats["interior_rmse_ka"] = float(np.sqrt(np.mean(delta[1:-1]**2)))
+            stats["interior_rows"] = len(ref)-2
         if (submission / "ensemble.csv").is_file():
             stats["ensemble"] = clock_ensemble(submission / "ensemble.csv", ref)
         if task.get("params", {}).get("target_ka") == 405:
@@ -156,8 +160,17 @@ def score_task(task, submission):
     results = []
     for metric in metrics:
         key, kind = metric["field"], metric["kind"]
-        value = values[key]
+        if kind == "period_ratio":
+            numerator = number(values[metric["numerator"]], metric["numerator"])
+            denominator = number(values[metric["denominator"]], metric["denominator"])
+            if numerator <= 0 or denominator <= 0:
+                raise ValueError("Periods used in the frequency ratio test must be positive")
+            value = numerator / denominator
+        else:
+            value = values[key]
         out = {"field": key, "quantity": kind, "value": value}
+        if "comparison" in metric:
+            out["comparison"] = metric["comparison"]
         results.append(out)
         if kind == "p_value":
             if value is not None and not 0 <= number(value, key) <= 1:
@@ -173,12 +186,18 @@ def score_task(task, submission):
                 if not isinstance(value, list) or len(value) != 2:
                     raise ValueError(f"{key} must contain two ordered numbers")
                 lo, hi = [number(v, key) for v in value]
-                if not lo <= values[metric["center_field"]] <= hi:
+                if lo > hi:
+                    raise ValueError(f"{key} endpoints must be ordered")
+                if "center_field" in metric and not lo <= values[metric["center_field"]] <= hi:
                     raise ValueError("Declared interval must contain the reported median")
                 rlo, rhi = metric["reference_bounds"]
                 out.update(width=hi-lo, lower_difference=lo-rlo, upper_difference=hi-rhi)
             continue
         out["unit"] = metric["unit"]
+        if metric.get("optional") and value is None:
+            out["available"] = False
+            out["reference"] = metric["reference"]
+            continue
         if key == "wavelength_m" and value is None:
             out["met"] = False
             continue

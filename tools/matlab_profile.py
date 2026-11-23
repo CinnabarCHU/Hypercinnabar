@@ -12,7 +12,7 @@ parser.add_argument("profile",choices=["current","v28"])
 parser.add_argument("folder",type=Path)
 args=parser.parse_args()
 cases=json.loads((root/"catalog/cases.json").read_text())
-ids=[k for k,c in cases.items() if c["operation"] in {"linear","gaussian","swa","periodogram"} and
+ids=[k for k,c in cases.items() if c["operation"] in {"linear","gaussian","swa","periodogram","segmented_clock","hilbert_envelope"} and
      (not k.startswith("cenogrid-") or f"-{args.profile}-" in k)]
 scores=[]
 for name in ids:

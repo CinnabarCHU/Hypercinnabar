@@ -300,6 +300,266 @@
     }
   },
   {
+    "id": "cip-case3-forward-clock",
+    "candidate": {
+      "method": "portable-baseline",
+      "version": "NumPy 2.3.5, SciPy 1.17.0"
+    },
+    "status": "match",
+    "rows": 2902,
+    "columns": {
+      "elapsed_ka": {
+        "max_abs_error": 0.0,
+        "failures": 0,
+        "max_error_row": 1,
+        "atol": 1e-12,
+        "rtol": 1e-11
+      },
+      "height_m": {
+        "max_abs_error": 0.0,
+        "failures": 0,
+        "max_error_row": 1,
+        "atol": 1e-09,
+        "rtol": 1e-11
+      },
+      "rate_cm_per_ka": {
+        "max_abs_error": 0.0,
+        "failures": 0,
+        "max_error_row": 1,
+        "atol": 1e-09,
+        "rtol": 1e-11
+      }
+    }
+  },
+  {
+    "id": "cip-case3-inverse-clock",
+    "candidate": {
+      "method": "portable-baseline",
+      "version": "NumPy 2.3.5, SciPy 1.17.0"
+    },
+    "status": "match",
+    "rows": 2631,
+    "columns": {
+      "elapsed_ka": {
+        "max_abs_error": 0.0,
+        "failures": 0,
+        "max_error_row": 1,
+        "atol": 1e-12,
+        "rtol": 1e-11
+      },
+      "marker_m": {
+        "max_abs_error": 0.0,
+        "failures": 0,
+        "max_error_row": 1,
+        "atol": 1e-09,
+        "rtol": 1e-11
+      }
+    }
+  },
+  {
+    "id": "odp846-segmented-clock-original",
+    "candidate": {
+      "method": "portable-baseline",
+      "version": "NumPy 2.3.5, SciPy 1.17.0"
+    },
+    "status": "match",
+    "rows": 420,
+    "columns": {
+      "segment": {
+        "max_abs_error": 0.0,
+        "failures": 0,
+        "max_error_row": 1,
+        "atol": 1e-12,
+        "rtol": 1e-11
+      },
+      "depth_m": {
+        "max_abs_error": 0.0,
+        "failures": 0,
+        "max_error_row": 1,
+        "atol": 1e-09,
+        "rtol": 1e-11
+      },
+      "oracle_age_ka": {
+        "max_abs_error": 0.0,
+        "failures": 0,
+        "max_error_row": 1,
+        "atol": 1e-09,
+        "rtol": 1e-11
+      }
+    }
+  },
+  {
+    "id": "odp846-segmented-clock-reduced",
+    "candidate": {
+      "method": "portable-baseline",
+      "version": "NumPy 2.3.5, SciPy 1.17.0"
+    },
+    "status": "match",
+    "rows": 420,
+    "columns": {
+      "segment": {
+        "max_abs_error": 0.0,
+        "failures": 0,
+        "max_error_row": 1,
+        "atol": 1e-12,
+        "rtol": 1e-11
+      },
+      "depth_m": {
+        "max_abs_error": 0.0,
+        "failures": 0,
+        "max_error_row": 1,
+        "atol": 1e-09,
+        "rtol": 1e-11
+      },
+      "oracle_age_ka": {
+        "max_abs_error": 0.0,
+        "failures": 0,
+        "max_error_row": 1,
+        "atol": 1e-09,
+        "rtol": 1e-11
+      }
+    }
+  },
+  {
+    "id": "laurin-weak-band-forward",
+    "candidate": {
+      "method": "portable-baseline",
+      "version": "NumPy 2.3.5, SciPy 1.17.0"
+    },
+    "status": "match",
+    "rows": 294,
+    "columns": {
+      "depth_m": {
+        "max_abs_error": 0.0,
+        "failures": 0,
+        "max_error_row": 1,
+        "atol": 1e-12,
+        "rtol": 1e-11
+      },
+      "clean_proxy": {
+        "max_abs_error": 1.4210854715202004e-14,
+        "failures": 0,
+        "max_error_row": 225,
+        "atol": 1e-09,
+        "rtol": 1e-11
+      }
+    }
+  },
+  {
+    "id": "two-rate-forward-proxy",
+    "candidate": {
+      "method": "portable-baseline",
+      "version": "NumPy 2.3.5, SciPy 1.17.0"
+    },
+    "status": "match",
+    "rows": 2000,
+    "columns": {
+      "depth_m": {
+        "max_abs_error": 0.0,
+        "failures": 0,
+        "max_error_row": 1,
+        "atol": 1e-12,
+        "rtol": 1e-11
+      },
+      "elapsed_ka": {
+        "max_abs_error": 2.2737367544323206e-13,
+        "failures": 0,
+        "max_error_row": 958,
+        "atol": 1e-09,
+        "rtol": 1e-11
+      },
+      "clean_proxy": {
+        "max_abs_error": 1.4421797089880783e-13,
+        "failures": 0,
+        "max_error_row": 2000,
+        "atol": 1e-09,
+        "rtol": 1e-11
+      },
+      "observed_proxy": {
+        "max_abs_error": 1.4410694859634532e-13,
+        "failures": 0,
+        "max_error_row": 2000,
+        "atol": 1e-09,
+        "rtol": 1e-11
+      }
+    }
+  },
+  {
+    "id": "am-hilbert-envelope",
+    "candidate": {
+      "method": "portable-baseline",
+      "version": "NumPy 2.3.5, SciPy 1.17.0"
+    },
+    "status": "match",
+    "rows": 256,
+    "columns": {
+      "sample": {
+        "max_abs_error": 0.0,
+        "failures": 0,
+        "max_error_row": 1,
+        "atol": 1e-12,
+        "rtol": 1e-11
+      },
+      "instantaneous_amplitude": {
+        "max_abs_error": 2.020605904817785e-14,
+        "failures": 0,
+        "max_error_row": 167,
+        "atol": 1e-09,
+        "rtol": 1e-11
+      }
+    }
+  },
+  {
+    "id": "imbrie-response-continuous",
+    "candidate": {
+      "method": "portable-baseline",
+      "version": "NumPy 2.3.5, SciPy 1.17.0"
+    },
+    "status": "match",
+    "rows": 96,
+    "columns": {
+      "age_ka": {
+        "max_abs_error": 0.0,
+        "failures": 0,
+        "max_error_row": 1,
+        "atol": 1e-12,
+        "rtol": 1e-11
+      },
+      "ice_response": {
+        "max_abs_error": 1.0658141036401503e-14,
+        "failures": 0,
+        "max_error_row": 2,
+        "atol": 1e-09,
+        "rtol": 1e-11
+      }
+    }
+  },
+  {
+    "id": "imbrie-response-euler",
+    "candidate": {
+      "method": "portable-baseline",
+      "version": "NumPy 2.3.5, SciPy 1.17.0"
+    },
+    "status": "match",
+    "rows": 96,
+    "columns": {
+      "age_ka": {
+        "max_abs_error": 0.0,
+        "failures": 0,
+        "max_error_row": 1,
+        "atol": 1e-12,
+        "rtol": 1e-11
+      },
+      "ice_response": {
+        "max_abs_error": 2.653433028854124e-14,
+        "failures": 0,
+        "max_error_row": 49,
+        "atol": 1e-09,
+        "rtol": 1e-11
+      }
+    }
+  },
+  {
     "id": "lavernock",
     "candidate": {
       "method": "portable-baseline",
@@ -814,6 +1074,304 @@
         "unit": "ka",
         "reference": 41.361220827879066,
         "absolute_difference": 1.3555724128934514
+      }
+    ]
+  },
+  {
+    "id": "hays76-simplex",
+    "candidate": {
+      "method": "portable-baseline",
+      "version": "NumPy 2.3.5, SciPy 1.17.0",
+      "operation": "Mean at repeated depths; SIMPLEX age interpolation; linear detrend, Hann spectrum and 16x padding."
+    },
+    "status": "scored",
+    "metrics": [
+      {
+        "field": "rc11_long_ka",
+        "quantity": "distance",
+        "value": 82.41509433962264,
+        "unit": "ka",
+        "reference": 87,
+        "absolute_difference": 4.584905660377359
+      },
+      {
+        "field": "rc11_obliquity_ka",
+        "quantity": "distance",
+        "value": 34.666666666666664,
+        "unit": "ka",
+        "reference": 38,
+        "absolute_difference": 3.3333333333333357
+      },
+      {
+        "field": "rc11_precession_ka",
+        "quantity": "distance",
+        "value": 23.61081081081081,
+        "unit": "ka",
+        "reference": 21,
+        "absolute_difference": 2.6108108108108112
+      },
+      {
+        "field": "e49_long_ka",
+        "quantity": "distance",
+        "value": 101.89473684210526,
+        "unit": "ka",
+        "reference": 109,
+        "absolute_difference": 7.10526315789474
+      },
+      {
+        "field": "e49_obliquity_ka",
+        "quantity": "distance",
+        "value": 46.095238095238095,
+        "unit": "ka",
+        "reference": 47,
+        "absolute_difference": 0.9047619047619051
+      },
+      {
+        "field": "e49_precession_ka",
+        "quantity": "distance",
+        "value": 25.699115044247783,
+        "unit": "ka",
+        "reference": 24,
+        "absolute_difference": 1.6991150442477831
+      },
+      {
+        "field": "rc11_obliquity_to_precession",
+        "quantity": "period_ratio",
+        "value": 1.4682539682539681,
+        "comparison": "Hays et al. (1976), Table 3, reported band b/c ratio",
+        "unit": "1",
+        "reference": 1.8,
+        "absolute_difference": 0.3317460317460319
+      },
+      {
+        "field": "e49_obliquity_to_precession",
+        "quantity": "period_ratio",
+        "value": 1.793650793650794,
+        "comparison": "Hays et al. (1976), Table 3, reported band b/c ratio",
+        "unit": "1",
+        "reference": 1.9,
+        "absolute_difference": 0.10634920634920597
+      }
+    ]
+  },
+  {
+    "id": "rossello-precession",
+    "candidate": {
+      "method": "portable-baseline",
+      "version": "NumPy 2.3.5, SciPy 1.17.0",
+      "operation": "Ordered La2004 summer-insolation maxima with the published 3 kyr lag and fixed terminal ages; minimize squared fractional deviations from endpoint-derived interval durations."
+    },
+    "status": "scored",
+    "metrics": {
+      "rmse_ka": 22.627126244957914,
+      "max_abs_ka": 50.0,
+      "mae_ka": 12.381578947368421,
+      "end_minus_start_error_ka": 0.0,
+      "rows": 76,
+      "endpoint_errors_ka": [
+        0.0,
+        0.0
+      ],
+      "interior_rmse_ka": 22.930859650792083,
+      "interior_rows": 74
+    }
+  },
+  {
+    "id": "odp846-published-clock",
+    "candidate": {
+      "method": "portable-baseline",
+      "version": "NumPy 2.3.5, SciPy 1.17.0",
+      "operation": "Linear interpolation between the two terminal ages; the isotope measurements and forcing are unused in this comparator."
+    },
+    "status": "scored",
+    "metrics": {
+      "rmse_ka": 12.305676731785756,
+      "max_abs_ka": 31.494458128078804,
+      "mae_ka": 10.092244056543178,
+      "end_minus_start_error_ka": 0.0,
+      "rows": 322,
+      "endpoint_errors_ka": [
+        0.0,
+        0.0
+      ],
+      "interior_rmse_ka": 12.344072072299864,
+      "interior_rows": 320
+    }
+  },
+  {
+    "id": "newark-long-eccentricity",
+    "candidate": {
+      "method": "portable-baseline",
+      "version": "NumPy 2.3.5, SciPy 1.17.0",
+      "operation": "Linear detrend and Hann depth-rank periodogram, 4x padding; ratio of long and carrier wavelengths scaled to 404 ka."
+    },
+    "status": "scored",
+    "metrics": [
+      {
+        "field": "modulation_ka",
+        "quantity": "distance",
+        "value": 1731.428571428571,
+        "unit": "ka",
+        "reference": 1750,
+        "absolute_difference": 18.571428571428896
+      }
+    ]
+  },
+  {
+    "id": "xiamaling-precession",
+    "candidate": {
+      "method": "portable-baseline",
+      "version": "NumPy 2.3.5, SciPy 1.17.0",
+      "operation": "101 sedimentation rates by 121 axial precession frequencies; equal log-power weights within each band family, fixed present-day g frequencies, sidereal length of day from the alodfromk conversion; point estimates only."
+    },
+    "status": "scored",
+    "metrics": [
+      {
+        "field": "rate_cm_per_ka",
+        "quantity": "distance",
+        "value": 0.385,
+        "comparison": "Malinverno & Meyers (2024), Table 3, TimeOptB posterior mean",
+        "unit": "cm/ka",
+        "reference": 0.353,
+        "absolute_difference": 0.03200000000000003
+      },
+      {
+        "field": "precession_arcsec_yr",
+        "quantity": "distance",
+        "value": 93.86666666666667,
+        "comparison": "Malinverno & Meyers (2024), Table 3, TimeOptB posterior mean",
+        "unit": "arcsec/yr",
+        "reference": 87.74,
+        "absolute_difference": 6.126666666666679
+      },
+      {
+        "field": "lod_h",
+        "quantity": "distance",
+        "value": 17.96143355753202,
+        "comparison": "Malinverno & Meyers (2024), Table 3, TimeOptB posterior mean",
+        "unit": "h",
+        "reference": 18.47,
+        "absolute_difference": 0.5085664424679806
+      },
+      {
+        "field": "rate_ci95",
+        "quantity": "interval",
+        "value": null,
+        "comparison": "2024 Table 3, TimeOptB 95% credible interval",
+        "unit": "cm/ka"
+      },
+      {
+        "field": "precession_ci95",
+        "quantity": "interval",
+        "value": null,
+        "comparison": "2024 Table 3, TimeOptB 95% credible interval",
+        "unit": "arcsec/yr"
+      },
+      {
+        "field": "rate_cm_per_ka",
+        "quantity": "distance",
+        "value": 0.385,
+        "comparison": "Meyers & Malinverno (2018), Table 2, TimeOptMCMC posterior mean",
+        "unit": "cm/ka",
+        "reference": 0.357,
+        "absolute_difference": 0.028000000000000025
+      },
+      {
+        "field": "precession_arcsec_yr",
+        "quantity": "distance",
+        "value": 93.86666666666667,
+        "comparison": "Meyers & Malinverno (2018), Table 2, TimeOptMCMC posterior mean",
+        "unit": "arcsec/yr",
+        "reference": 85.79,
+        "absolute_difference": 8.076666666666668
+      },
+      {
+        "field": "lod_h",
+        "quantity": "distance",
+        "value": 17.96143355753202,
+        "comparison": "Meyers & Malinverno (2018), Table 2, TimeOptMCMC posterior mean",
+        "unit": "h",
+        "reference": 18.68,
+        "absolute_difference": 0.7185664424679814
+      }
+    ]
+  },
+  {
+    "id": "walvis1262-precession",
+    "candidate": {
+      "method": "portable-baseline",
+      "version": "NumPy 2.3.5, SciPy 1.17.0",
+      "operation": "101 sedimentation rates by 121 axial precession frequencies; equal log-power weights within each band family, fixed present-day g frequencies, sidereal length of day from the alodfromk conversion; point estimates only."
+    },
+    "status": "scored",
+    "metrics": [
+      {
+        "field": "rate_cm_per_ka",
+        "quantity": "distance",
+        "value": 1.29,
+        "comparison": "Malinverno & Meyers (2024), Table 3, TimeOptB posterior mean",
+        "unit": "cm/ka",
+        "reference": 1.309,
+        "absolute_difference": 0.018999999999999906
+      },
+      {
+        "field": "precession_arcsec_yr",
+        "quantity": "distance",
+        "value": 50.233333333333334,
+        "comparison": "Malinverno & Meyers (2024), Table 3, TimeOptB posterior mean",
+        "unit": "arcsec/yr",
+        "reference": 51.25,
+        "absolute_difference": 1.0166666666666657
+      },
+      {
+        "field": "lod_h",
+        "quantity": "distance",
+        "value": 23.994817580137468,
+        "comparison": "Malinverno & Meyers (2024), Table 3, TimeOptB posterior mean",
+        "unit": "h",
+        "reference": 23.75,
+        "absolute_difference": 0.24481758013746813
+      },
+      {
+        "field": "rate_ci95",
+        "quantity": "interval",
+        "value": null,
+        "comparison": "2024 Table 3, TimeOptB 95% credible interval",
+        "unit": "cm/ka"
+      },
+      {
+        "field": "precession_ci95",
+        "quantity": "interval",
+        "value": null,
+        "comparison": "2024 Table 3, TimeOptB 95% credible interval",
+        "unit": "arcsec/yr"
+      },
+      {
+        "field": "rate_cm_per_ka",
+        "quantity": "distance",
+        "value": 1.29,
+        "comparison": "Meyers & Malinverno (2018), Table 2, TimeOptMCMC posterior mean",
+        "unit": "cm/ka",
+        "reference": 1.316,
+        "absolute_difference": 0.026000000000000023
+      },
+      {
+        "field": "precession_arcsec_yr",
+        "quantity": "distance",
+        "value": 50.233333333333334,
+        "comparison": "Meyers & Malinverno (2018), Table 2, TimeOptMCMC posterior mean",
+        "unit": "arcsec/yr",
+        "reference": 51.28091,
+        "absolute_difference": 1.0475766666666644
+      },
+      {
+        "field": "lod_h",
+        "quantity": "distance",
+        "value": 23.994817580137468,
+        "comparison": "Meyers & Malinverno (2018), Table 2, TimeOptMCMC posterior mean",
+        "unit": "h",
+        "reference": 23.80485,
+        "absolute_difference": 0.18996758013746984
       }
     ]
   }

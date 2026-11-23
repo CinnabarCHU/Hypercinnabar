@@ -63,22 +63,33 @@ def decode_source(data, record):
             rows = list(book.worksheets[record["sheet"]].values)
         finally:
             book.close()
-    elif reader == "bz2-whitespace":
+    elif reader in ("bz2-whitespace", "bz2-indexed"):
         rows = (line.split() for line in bz2.decompress(data).decode().splitlines()[1:])
+        if reader == "bz2-indexed":
+            rows = ((i, *values) for i, values in enumerate(rows))
     elif reader == "pangaea":
         body = data.decode().split("*/", 1)[1].strip().splitlines()
         rows = csv.reader(body[1:], delimiter="\t")
     else:
-        rows = csv.reader(data.decode("utf-8-sig", errors="replace").splitlines()[1:])
+        rows = csv.reader(data.decode("utf-8-sig", errors="replace").splitlines()[1:],
+                          delimiter=record.get("delimiter", ","))
     selected = []
     bounds = record.get("selection")
     for row in rows:
+        match = record.get("row_equals")
+        if match and row[match["index"]] != match["value"]:
+            continue
+        suffix = record.get("exclude_suffix")
+        if suffix and row[suffix["index"]].endswith(suffix["value"]):
+            continue
         try:
             values = [float(row[i]) for i in record["indices"]]
         except (IndexError, ValueError, TypeError):
             continue
         if np.isfinite(values).all() and (bounds is None or bounds[0] <= values[0] <= bounds[1]):
             selected.append(values)
+    if record.get("sort_first"):
+        selected.sort(key=lambda values: values[0], reverse=record["sort_first"] == "descending")
     return numeric_csv(record["columns"], selected)
 
 

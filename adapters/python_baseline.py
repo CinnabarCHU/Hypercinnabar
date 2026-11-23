@@ -8,6 +8,8 @@ import scipy
 from scipy.interpolate import interp1d
 from scipy.signal import detrend, find_peaks, lombscargle, periodogram
 from scipy.stats import chi2
+import classic_studies
+import synthetic_models
 
 
 def read(folder, name="data"):
@@ -20,7 +22,11 @@ def write(folder, filename, labels, values):
 
 def numerical(req, folder):
     op, params = req["operation"], req["params"]
-    x, y = read(folder).T
+    data = read(folder)
+    if op in synthetic_models.OPERATIONS:
+        controls = read(folder, "controls") if op in {"segmented_clock", "weak_band"} else None
+        return synthetic_models.evaluate(op, data, params, controls)
+    x, y = data.T
     if op == "linear":
         n = int(np.floor((x[-1]-x[0])/params["step"] + 1e-10)) + 1
         g = x[0] + np.arange(n) * params["step"]
@@ -72,6 +78,8 @@ def calibrated_detection(y):
 
 def science(req, folder, out):
     name, p = req["id"], req["params"]
+    if name in classic_studies.TASK_IDS:
+        return classic_studies.evaluate(name, folder, out, p)
     if name in ("cip1-case3","meishan-tuning") or name.startswith("odp846-oracle-"):
         queries=read(folder,"queries")
         if name.startswith("odp846-oracle-"):
@@ -167,7 +175,10 @@ def main():
         result=science(req,a.request,a.submission)
         if result is not None:
             (a.submission/"result.json").write_text(json.dumps(result,allow_nan=False)+"\n")
-    (a.submission/"method.json").write_text(json.dumps({"method":"portable-baseline","version":f"NumPy {np.__version__}, SciPy {scipy.__version__}"})+"\n")
+    meta = {"method":"portable-baseline","version":f"NumPy {np.__version__}, SciPy {scipy.__version__}"}
+    if req["id"] in classic_studies.TASK_IDS:
+        meta["operation"] = classic_studies.METHOD_DETAILS.get(req["id"], classic_studies.JOINT_SCAN)
+    (a.submission/"method.json").write_text(json.dumps(meta)+"\n")
 
 
 if __name__=="__main__":

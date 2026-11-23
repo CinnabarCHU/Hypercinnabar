@@ -1,21 +1,23 @@
 # 基线实测结果
 
-每份 JSON 都记录实现版本、逐项状态、误差与单位。Acycle 的两份结果取自同一次 GitHub Actions 原生运行。两个版本与 astrochron 的适用案例合起来覆盖全部 21 个功能案例。下表中同一案例可由多个实现运行。[首次原生验证](https://github.com/CinnabarCHU/Hypercinnabar/actions/runs/45166578863)
+每份 JSON 都记录实现版本、逐项状态、误差与单位。各实现的适用案例合计覆盖全部 30 个功能案例。同一案例可由多个实现运行。[首版的原生验证](https://github.com/CinnabarCHU/Hypercinnabar/actions/runs/45166578863) · [本分支的持续验证](https://github.com/CinnabarCHU/Hypercinnabar/actions/workflows/benchmark.yml?query=branch%3Acyclostratigraphy-benchmark)
 
 | 实现 | 功能案例 | 科学任务与其他验证 |
 |---|---:|---|
-| [Acycle v2.8](acycle-v28.json) | 8/8 符合容差 | MATLAB R2024b，包含两个同位素的插值、Gaussian 滤波及完整 SWA 谱 |
-| [Acycle master 固定提交](acycle-current.json) | 6/6 符合容差 | MATLAB R2024b，上游双谱自检也通过 |
-| [R astrochron 1.8](astrochron.json) | 12/12 符合容差 | R 4.5.0，运行 ODP 926B TimeOpt 并重放两份原始 R journal |
-| [astrochron-rpy2 0.1.0](astrochron-rpy2.json) | 12/12 符合容差 | 通过原型的 11 项测试，含真实 R 调用 |
-| [astrochron-warp 0.2.0](astrochron-warp.json) | 8/8 符合容差 | 使用默认子进程后端，通过原型的 17 项测试，含真实 R 调用 |
-| [独立 Python 基线](python.json) | 12/12 符合容差 | 运行全部 20 个科学任务。16 项输出连续指标，4 项未满足预设判据 |
+| [Acycle v2.8](acycle-v28.json) | 首版 8/8 符合容差 | MATLAB R2024b，包含两个同位素的插值、Gaussian 滤波及完整 SWA 谱 |
+| [Acycle master 固定提交](acycle-current.json) | 首版 6/6 符合容差 | MATLAB R2024b，上游双谱自检也通过 |
+| [R astrochron 1.8](astrochron.json) | 17/17 符合容差 | R 4.5.0。运行 ODP 926B TimeOpt、下马岭和 Walvis Ridge TimeOptB。分段插值调用 R 的 stats::approx |
+| [astrochron-rpy2 0.1.0](astrochron-rpy2.json) | 13/13 符合容差 | 含完整 CIP 反插值。原型的 11 项测试含真实 R 调用 |
+| [astrochron-warp 0.2.0](astrochron-warp.json) | 9/9 符合容差 | 含完整 CIP 反插值。默认子进程后端，原型的 17 项测试含真实 R 调用 |
+| [独立 Python 基线](python.json) | 21/21 符合容差 | 运行全部 26 个科学任务。22 项输出连续指标，4 项未满足预设判据 |
 
 ODP 926B 的原生 TimeOpt 在 100 个候选速率中给出 3.02220 cm/kyr。文献比较值为 3.02 cm/kyr，使用的 LOESS 窗宽约定见适配器。[完整速率扫描](odp926b-timeopt.csv) · [R 实现](../adapters/astrochron.R) · [Meyers, 2015](https://doi.org/10.1002/2015PA002850)
 
 Python 基线在 Lavernock 找到目标窗内的峰，但没有给出该峰的 5% FDR 阈值。Howards Tract 两种协议下的最优沉积速率及 La Thure 的估计值均落在预定区间外。这四项保留各自的数值和判定。[本次数值](python.json) · [早期 Harness 的独立运行](../catalog/historical-results.json)
 
 对于 CIP Case 3，恒速基线的总时长偏差为 +2.31 kyr，整条年龄曲线的 RMSE 为 57.84 kyr，269.85–343.95 m 区间的历时偏差为 +71.96 kyr。三个指标可分别检验终点约束、逐点年代和局部旋回计数。[CIP 任务与评分规则](../catalog/tasks.json)
+
+在 Newark 的 404 kyr 标定上，便携示例从两条谱峰的波长比得到 1.731 Myr，原文比较量约为 1.75 Myr。Rossello 的 La2004 峰位有序匹配在 74 个内部层位上的 RMSE 为 22.93 kyr。在下马岭，同一批 Cu/Al 观测上的简易谱功率搜索给出 93.87 角秒/年的地轴岁差频率，原生 TimeOptB 给出 87.66 角秒/年，2024 年论文参照为 87.74 角秒/年。[经典案例的参数、数据与出处](../docs/classic-studies.md)
 
 ## 既有工作流记录
 

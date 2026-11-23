@@ -210,5 +210,74 @@
       "bridge-meyers-dates",
       "bridge-updated-dates"
     ]
-  }
+  },
+  "classic_studies": [
+    {
+      "task": "hays76-simplex",
+      "papers": [
+        "https://doi.org/10.1126/science.194.4270.1121"
+      ],
+      "reference_location": "1976 Tables 2 and 3, independent SIMPLEX signal estimates and ratios",
+      "observations": {
+        "rc11": "hays-rc11-summer",
+        "e49": "hays-e49-oxygen"
+      }
+    },
+    {
+      "task": "rossello-precession",
+      "papers": [
+        "https://doi.org/10.1029/96PA01125"
+      ],
+      "reference_location": "1996 Table 1 and its PANGAEA event/asterisk metadata",
+      "observations": {
+        "insolation": "la04-summer-rossello"
+      },
+      "scoring_record": "rossello-ties"
+    },
+    {
+      "task": "odp846-published-clock",
+      "papers": [
+        "https://doi.org/10.2973/odp.proc.sr.138.117.1995"
+      ],
+      "reference_location": "1995 Tables 3, 5 and 7",
+      "observations": {
+        "oxygen": "odp846-1995-oxygen",
+        "carbon": "odp846-1995-carbon",
+        "insolation": "la04-summer-846"
+      },
+      "scoring_record": "odp846-1995-ties"
+    },
+    {
+      "task": "newark-long-eccentricity",
+      "papers": [
+        "https://doi.org/10.1098/rsta.1999.0400"
+      ],
+      "reference_location": "1999 404 ka calibration and long modulation in depth ranks",
+      "observations": {
+        "data": "newark-tuned-rank"
+      }
+    },
+    {
+      "task": "xiamaling-precession",
+      "papers": [
+        "https://doi.org/10.1029/2023GC011176",
+        "https://doi.org/10.1073/pnas.1717689115"
+      ],
+      "reference_location": "2018 Table 2 and 2024 Table 3",
+      "observations": {
+        "data": "xiamaling"
+      }
+    },
+    {
+      "task": "walvis1262-precession",
+      "papers": [
+        "https://doi.org/10.1029/2023GC011176",
+        "https://doi.org/10.1073/pnas.1717689115"
+      ],
+      "reference_location": "2018 Table 2 and 2024 Table 3",
+      "observations": {
+        "data": "odp1262-a"
+      }
+    }
+  ]
 }

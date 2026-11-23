@@ -315,5 +315,190 @@
     "rows": 2631,
     "sha256": "fb36ffe3a4aaee90cff43d91713620048eb28da721ad7e55b7d8c756b0003478",
     "citation": "https://doi.org/10.1016/j.earscirev.2019.102965"
+  },
+  "hays-rc11-summer": {
+    "columns": [
+      "depth_m",
+      "summer_sst_deg_c"
+    ],
+    "unit": "m",
+    "asset": "hays-sst",
+    "reader": "pangaea",
+    "indices": [
+      0,
+      2
+    ],
+    "citation": "https://doi.org/10.1594/PANGAEA.52223",
+    "rows": 184,
+    "sha256": "500aaff0e77c14bc2352e027b538a53ebce2ccc409b9a19e691783479a90f657"
+  },
+  "hays-e49-oxygen": {
+    "columns": [
+      "depth_m",
+      "planktic_d18o_permil"
+    ],
+    "unit": "m",
+    "asset": "hays-e49",
+    "reader": "pangaea",
+    "indices": [
+      0,
+      1
+    ],
+    "citation": "https://doi.org/10.1594/PANGAEA.52207",
+    "selection": [
+      4.9,
+      15.5
+    ],
+    "rows": 105,
+    "sha256": "3105a5d02218baa9c9dee63b9fba5696d6152573f83b5de67d4df1ca8c996242"
+  },
+  "rossello-ties": {
+    "columns": [
+      "height_m",
+      "published_age_ka"
+    ],
+    "unit": "m",
+    "asset": "med",
+    "reader": "pangaea",
+    "indices": [
+      3,
+      4
+    ],
+    "citation": "https://doi.org/10.1594/PANGAEA.790776",
+    "selection": [
+      40,
+      128
+    ],
+    "row_equals": {
+      "index": 0,
+      "value": "Capo_Rossello"
+    },
+    "exclude_suffix": {
+      "index": 1,
+      "value": "*"
+    },
+    "sort_first": "descending",
+    "rows": 76,
+    "sha256": "1a6b86741bad795df90c8bd34b1933ab8cc64285de6021af5994a1176b32d32c"
+  },
+  "odp846-1995-ties": {
+    "columns": [
+      "rmcd_m",
+      "published_age_ka"
+    ],
+    "unit": "m",
+    "asset": "846table",
+    "reader": "pangaea",
+    "indices": [
+      2,
+      1
+    ],
+    "citation": "https://doi.org/10.1594/PANGAEA.696449",
+    "selection": [
+      63.43,
+      96
+    ],
+    "sort_first": "ascending",
+    "rows": 322,
+    "sha256": "a5dbde2b4d9afd9fe966ee96f4a4cd926bc368d31bb203457f0d49962a6fc5c5"
+  },
+  "odp846-1995-oxygen": {
+    "columns": [
+      "rmcd_m",
+      "benthic_d18o_permil"
+    ],
+    "unit": "m",
+    "asset": "846table",
+    "reader": "pangaea",
+    "indices": [
+      2,
+      3
+    ],
+    "citation": "https://doi.org/10.1594/PANGAEA.696449",
+    "selection": [
+      63.43,
+      96
+    ],
+    "sort_first": "ascending",
+    "rows": 322,
+    "sha256": "b188c654d760ebc3d30c257a9835166ea7658215cc1cd6777bbd94499e2eb354"
+  },
+  "odp846-1995-carbon": {
+    "columns": [
+      "rmcd_m",
+      "benthic_d13c_permil"
+    ],
+    "unit": "m",
+    "asset": "846table",
+    "reader": "pangaea",
+    "indices": [
+      2,
+      4
+    ],
+    "citation": "https://doi.org/10.1594/PANGAEA.696449",
+    "selection": [
+      63.43,
+      96
+    ],
+    "sort_first": "ascending",
+    "rows": 319,
+    "sha256": "21d3eb9531c0b0be4a66da8367576b84127a7e9357a8f70a401dbe8345c89379"
+  },
+  "newark-tuned-rank": {
+    "columns": [
+      "tuned_coordinate",
+      "depth_rank"
+    ],
+    "unit": "source tuned-depth units",
+    "asset": "newark",
+    "reader": "delimited",
+    "indices": [
+      0,
+      1
+    ],
+    "citation": "https://www.ldeo.columbia.edu/~polsen/nbcp/data.html",
+    "delimiter": "\t",
+    "rows": 22581,
+    "sha256": "badee362ccb373e9ff750de43711041665f4211f009d64f615fd5ec5ee6869fc"
+  },
+  "la04-summer-rossello": {
+    "columns": [
+      "age_ka",
+      "summer_insolation_w_m2"
+    ],
+    "unit": "ka",
+    "asset": "la04-insol",
+    "reader": "bz2-indexed",
+    "indices": [
+      0,
+      1
+    ],
+    "citation": "https://doi.org/10.1051/0004-6361:20041335",
+    "selection": [
+      2550,
+      4440
+    ],
+    "rows": 1891,
+    "sha256": "be72a8f292a0dd630ed3331d1a84dd55852d3d4d80cb4abf8d8b8995c02502f0"
+  },
+  "la04-summer-846": {
+    "columns": [
+      "age_ka",
+      "summer_insolation_w_m2"
+    ],
+    "unit": "ka",
+    "asset": "la04-insol",
+    "reader": "bz2-indexed",
+    "indices": [
+      0,
+      1
+    ],
+    "citation": "https://doi.org/10.1051/0004-6361:20041335",
+    "selection": [
+      1720,
+      2550
+    ],
+    "rows": 831,
+    "sha256": "963e664af5d08617dd53936fadab1e569280117b171d9dd32ee035cb667c6edd"
   }
 }
