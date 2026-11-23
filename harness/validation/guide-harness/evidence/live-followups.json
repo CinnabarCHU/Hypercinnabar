@@ -1,0 +1,621 @@
+{
+  "etp-wavelet": {
+    "session_id": "session-635639393417441783e066e63b1d9352",
+    "session_status": "failed",
+    "model": "deepseek-flash",
+    "input_text": "这是刚才指南 6.2 的真实输出：三列依次为 kyr BP、已去均值的 ETP、移除的趋势。本回合请用 Acycle GUIDE 旧版本菜单完成小波变换和绘图（使用前两列）；这是同一个案例的下一阶段。采用未修正的 Torrence–Compo Morlet，ω0=6、填充、尺度间隔 0.1，周期 10–700 kyr，不再标准化。请实际完成参数准备、计算、绘图，报告矩阵大小和图件。通过 Acycle 菜单接口，先查操作目录。矩阵须从附件导入；不要把长数组写进对话。",
+    "attachment_sha256": "32244c243095208e4501f284042840815ad487953b5a29522fd85368b4f1df0d",
+    "derived_from": {
+      "actual_run": "20261123T141904Z-dd3c2a2555c7",
+      "artifact": "processed_csv"
+    },
+    "tool_calls": 26,
+    "scientific_calls": [
+      "acycle_menu_helper",
+      "acycle_native",
+      "acycle_menu_helper",
+      "acycle_menu_helper",
+      "acycle_menu_helper",
+      "acycle_menu_helper",
+      "acycle_menu_helper",
+      "acycle_menu_analyzer",
+      "acycle_menu_analyzer",
+      "acycle_menu_analyzer",
+      "acycle_menu_helper"
+    ],
+    "requests": [
+      {
+        "id": "20261123T143226Z-174b49a7cd80",
+        "menu": "menu_waveletGUI",
+        "role": "helper",
+        "settings": {
+          "input": {
+            "operation": "WaveletSpectrum_legacy"
+          }
+        },
+        "sources": {
+          "file_input": {
+            "mode": "path",
+            "field": "data",
+            "source": {
+              "kind": "artifact",
+              "workflow": "45193115937",
+              "sha": "710953f73d8337e587f7b3d28f66b3981d539e87",
+              "run_id": "20261123T141904Z-dd3c2a2555c7",
+              "member": "processed.csv",
+              "digest": "32244c243095208e4501f284042840815ad487953b5a29522fd85368b4f1df0d"
+            }
+          }
+        },
+        "workflow": "45195766849",
+        "worker_commit": "85bbf302bfb168790ac85b44f3dad00844ead500",
+        "matlab_status": "failed",
+        "completion": "cancelled",
+        "error": {
+          "identifier": "MATLAB:UndefinedFunction",
+          "message": "Unrecognized function or variable 'fourier_factor'."
+        },
+        "logged_status": "cancelled"
+      },
+      {
+        "id": "20261123T143712Z-a816bd32bff2",
+        "menu": "menu_waveletGUI",
+        "role": "helper",
+        "settings": {
+          "input": {
+            "operation": "WaveletSpectrum_legacy",
+            "data_standardize": false,
+            "dss": 1,
+            "method_sel": "FFT",
+            "mother": "Morlet",
+            "pad": 1,
+            "param": 6,
+            "pt1": 10,
+            "pt2": 700
+          }
+        },
+        "sources": {
+          "file_input": {
+            "mode": "path",
+            "field": "data",
+            "source": {
+              "kind": "artifact",
+              "workflow": "45193115937",
+              "sha": "710953f73d8337e587f7b3d28f66b3981d539e87",
+              "run_id": "20261123T141904Z-dd3c2a2555c7",
+              "member": "processed.csv",
+              "digest": "32244c243095208e4501f284042840815ad487953b5a29522fd85368b4f1df0d"
+            }
+          }
+        },
+        "workflow": "45196211148",
+        "worker_commit": "277d7c5b78f1effa0ebc8db4dd8c6b5d91bada90",
+        "matlab_status": "failed",
+        "completion": "cancelled",
+        "error": {
+          "identifier": "MATLAB:UndefinedFunction",
+          "message": "Unrecognized function or variable 'fourier_factor'."
+        },
+        "logged_status": "cancelled"
+      },
+      {
+        "id": "20261123T143950Z-18e7b011675c",
+        "menu": "menu_waveletGUI",
+        "role": "helper",
+        "settings": {
+          "input": {
+            "operation": "WaveletSpectrum",
+            "data_standardize": false,
+            "dss": 1,
+            "method_sel": "FFT",
+            "mother": "Morlet",
+            "pad": 1,
+            "param": 6,
+            "pt1": 10,
+            "pt2": 700
+          }
+        },
+        "sources": {
+          "file_input": {
+            "mode": "path",
+            "field": "data",
+            "source": {
+              "kind": "artifact",
+              "workflow": "45193115937",
+              "sha": "710953f73d8337e587f7b3d28f66b3981d539e87",
+              "run_id": "20261123T141904Z-dd3c2a2555c7",
+              "member": "processed.csv",
+              "digest": "32244c243095208e4501f284042840815ad487953b5a29522fd85368b4f1df0d"
+            }
+          }
+        },
+        "workflow": "45196681255",
+        "worker_commit": "20f21a7ce0c2a7458f24fa8da74b94d7fa3f8fa7",
+        "matlab_status": "ok",
+        "completion": "done",
+        "returned_fields": [
+          "params",
+          "plt",
+          "dat"
+        ],
+        "figures": [],
+        "return_shapes": {
+          "params": [
+            1,
+            1
+          ],
+          "plt": [
+            1,
+            1
+          ],
+          "dat": [
+            1,
+            1
+          ]
+        },
+        "prepared_data": {
+          "data": {
+            "class": "char",
+            "size": [
+              1,
+              73
+            ]
+          }
+        },
+        "prepared_settings": {
+          "operation": "WaveletSpectrum",
+          "data_standardize": false,
+          "dss": 1,
+          "method_sel": "FFT",
+          "mother": "Morlet",
+          "pad": 1,
+          "param": 6,
+          "pt2": 700
+        },
+        "logged_status": "done"
+      },
+      {
+        "id": "20261123T144243Z-c558faf54bb4",
+        "menu": "menu_waveletGUI",
+        "role": "helper",
+        "settings": {
+          "input": {
+            "data_standardize": false,
+            "dss": 1,
+            "method_sel": "FFT",
+            "mother": "Morlet",
+            "operation": "WaveletSpectrum",
+            "pad": 1,
+            "param": 6,
+            "pt2": 700
+          }
+        },
+        "sources": {
+          "file_input": {
+            "mode": "matrix",
+            "field": "data",
+            "source": {
+              "kind": "artifact",
+              "workflow": "45193115937",
+              "sha": "710953f73d8337e587f7b3d28f66b3981d539e87",
+              "run_id": "20261123T141904Z-dd3c2a2555c7",
+              "member": "processed.csv",
+              "digest": "32244c243095208e4501f284042840815ad487953b5a29522fd85368b4f1df0d"
+            }
+          }
+        },
+        "workflow": "45197180319",
+        "worker_commit": "fe34903b033dc68c451e9f20288fe5dc8588e154",
+        "matlab_status": "ok",
+        "completion": "done",
+        "returned_fields": [
+          "params",
+          "plt",
+          "dat"
+        ],
+        "figures": [],
+        "return_shapes": {
+          "params": [
+            1,
+            1
+          ],
+          "plt": [
+            1,
+            1
+          ],
+          "dat": [
+            1,
+            1
+          ]
+        },
+        "prepared_data": {
+          "data": {
+            "class": "double",
+            "size": [
+              2001,
+              3
+            ]
+          }
+        },
+        "prepared_settings": {
+          "operation": "WaveletSpectrum",
+          "data_standardize": false,
+          "dss": 1,
+          "method_sel": "FFT",
+          "mother": "Morlet",
+          "pad": 1,
+          "param": 6,
+          "pt2": 700
+        },
+        "logged_status": "done"
+      },
+      {
+        "id": "20261123T144457Z-77d8a5c5cf89",
+        "menu": "menu_waveletGUI",
+        "role": "helper",
+        "settings": {
+          "input": {
+            "data_standardize": false,
+            "dss": 1,
+            "method_sel": "FFT",
+            "mother": "Morlet",
+            "operation": "WaveletSpectrum_legacy",
+            "pad": 1,
+            "param": 6,
+            "pt1": 10,
+            "pt2": 700
+          }
+        },
+        "sources": {
+          "file_input": {
+            "mode": "matrix",
+            "field": "data",
+            "source": {
+              "kind": "artifact",
+              "workflow": "45193115937",
+              "sha": "710953f73d8337e587f7b3d28f66b3981d539e87",
+              "run_id": "20261123T141904Z-dd3c2a2555c7",
+              "member": "processed.csv",
+              "digest": "32244c243095208e4501f284042840815ad487953b5a29522fd85368b4f1df0d"
+            }
+          }
+        },
+        "workflow": "45197573273",
+        "worker_commit": "7fa3812764c43a7af1794ed587a24a9f9e9ac171",
+        "matlab_status": "ok",
+        "completion": "done",
+        "returned_fields": [
+          "params",
+          "plt",
+          "dat"
+        ],
+        "figures": [],
+        "return_shapes": {
+          "params": [
+            1,
+            1
+          ],
+          "plt": [
+            1,
+            1
+          ],
+          "dat": [
+            1,
+            1
+          ]
+        },
+        "prepared_data": {
+          "data": {
+            "class": "double",
+            "size": [
+              2001,
+              3
+            ]
+          }
+        },
+        "prepared_settings": {
+          "operation": "WaveletSpectrum_legacy",
+          "data_standardize": false,
+          "dss": 1,
+          "method_sel": "FFT",
+          "mother": "Morlet",
+          "pad": 1,
+          "param": 6,
+          "pt2": 700
+        },
+        "logged_status": "done"
+      },
+      {
+        "id": "20261123T144852Z-f13897519900",
+        "menu": "menu_waveletGUI",
+        "role": "analyzer",
+        "settings": {},
+        "sources": {
+          "helper_journal": {
+            "kind": "artifact",
+            "workflow": "45197573273",
+            "sha": "7fa3812764c43a7af1794ed587a24a9f9e9ac171",
+            "run_id": "20261123T144457Z-77d8a5c5cf89",
+            "member": "journals/registered/1795445311301/events.jsonl",
+            "digest": "6729620e8f041b61ceb6455b48fb4e347feeacf71517bdfbc543f47b3cc34110"
+          }
+        },
+        "workflow": "45198284023",
+        "worker_commit": "e363e1506cf7f792a702c39659cac20ad5ea0985",
+        "matlab_status": "ok",
+        "completion": "done",
+        "returned_fields": [
+          "datax",
+          "datay",
+          "wave",
+          "period",
+          "scale",
+          "coi",
+          "power",
+          "sig95",
+          "global_ws",
+          "global_signif",
+          "dt",
+          "method_sel",
+          "variance"
+        ],
+        "figures": [],
+        "return_shapes": {
+          "datax": [
+            2001,
+            1
+          ],
+          "datay": [
+            2001,
+            1
+          ],
+          "wave": [
+            10,
+            2001
+          ],
+          "period": [
+            1,
+            10
+          ],
+          "scale": [
+            1,
+            10
+          ],
+          "coi": [
+            1,
+            2001
+          ],
+          "power": [
+            10,
+            2001
+          ],
+          "sig95": [
+            10,
+            2001
+          ],
+          "global_ws": [
+            1,
+            10
+          ],
+          "global_signif": [
+            1,
+            10
+          ],
+          "dt": [
+            1,
+            1
+          ],
+          "method_sel": [
+            1,
+            3
+          ],
+          "variance": [
+            1,
+            1
+          ]
+        },
+        "logged_status": "done"
+      }
+    ],
+    "completed_run_ids": null,
+    "returned_tool_errors_count": 9,
+    "tool_budget_exceeded": true,
+    "returned_final_text": false,
+    "guide_wavelet_or_agebuild": {
+      "matching_helper_runs": [],
+      "matching_analyzer_runs": [],
+      "matching_plotter_runs": []
+    }
+  },
+  "wayao-next": {
+    "session_id": "session-9651fd12c45a4b26b3023f7c2c95dbc4",
+    "session_status": "failed",
+    "model": "deepseek-flash",
+    "input_text": "这是刚才指南 6.3 瓦窑计算的带通结果：深度 m、0.022–0.034 cycles/m 的滤波值、包络。请用 GUIDE 旧版 Acycle 菜单依据滤波峰建立 405 kyr 年龄模型（选峰、非谷），绘制年龄模型，再把这些真实控制点用于原始伽马曲线，完成调谐和绘图。原始输入以原始字节另存于这个工作区的 Wayao-original.txt；原 GR 的单位和次序均不可改变。先查菜单，说明实际控制点数、年龄范围、是否覆盖或外推端部。如果接口不能传递返回值，请准确指出卡住的一步。这个回合不重做频谱，也不以其他 COCO 变体代替指南。",
+    "attachment_sha256": "a586a73c75a14050f63ff953b239208134bddd16a3d9effdbc9b7f2776d9b382",
+    "derived_from": {
+      "actual_run": "20261123T142251Z-e3fba05ce55b",
+      "artifact": "filtered_csv"
+    },
+    "tool_calls": 39,
+    "scientific_calls": [
+      "acycle_menu_helper",
+      "acycle_menu_helper",
+      "acycle_native",
+      "acycle_native",
+      "acycle_menu_helper",
+      "acycle_menu_analyzer",
+      "acycle_native",
+      "acycle_native",
+      "acycle_native",
+      "acycle_native"
+    ],
+    "requests": [
+      {
+        "id": "20261123T143300Z-457d8b5998fc",
+        "menu": "menu_age",
+        "role": "helper",
+        "settings": {
+          "input": {
+            "operation": "AgeScale_legacy"
+          }
+        },
+        "sources": {
+          "file_input": {
+            "mode": "path",
+            "field": "inputfile",
+            "source": {
+              "kind": "artifact",
+              "workflow": "45193938744",
+              "sha": "400ae998bb17ddb5abe2b21f42d64ffb2f564133",
+              "run_id": "20261123T142251Z-e3fba05ce55b",
+              "member": "filtered.csv",
+              "digest": "a586a73c75a14050f63ff953b239208134bddd16a3d9effdbc9b7f2776d9b382"
+            }
+          }
+        },
+        "workflow": "45195817096",
+        "worker_commit": "264e1af0369bb020ecc7287312f6cbf6132d4962",
+        "matlab_status": "failed",
+        "completion": "cancelled",
+        "error": {
+          "identifier": "MATLAB:nonExistentField",
+          "message": "Unrecognized field name \"data\"."
+        },
+        "logged_status": "cancelled"
+      },
+      {
+        "id": "20261123T143716Z-c256c535b577",
+        "menu": "menu_age",
+        "role": "helper",
+        "settings": {
+          "input": {
+            "operation": "AgeScale_legacy"
+          }
+        },
+        "sources": {
+          "file_input": {
+            "mode": "path",
+            "field": "data",
+            "source": {
+              "kind": "artifact",
+              "workflow": "45193938744",
+              "sha": "400ae998bb17ddb5abe2b21f42d64ffb2f564133",
+              "run_id": "20261123T142251Z-e3fba05ce55b",
+              "member": "filtered.csv",
+              "digest": "a586a73c75a14050f63ff953b239208134bddd16a3d9effdbc9b7f2776d9b382"
+            }
+          }
+        },
+        "workflow": "45196274212",
+        "worker_commit": "8c49bb4515bef6e4111d07ffd791b75c0e1af331",
+        "matlab_status": "failed",
+        "completion": "cancelled",
+        "error": {
+          "identifier": "MATLAB:invalidType",
+          "message": "Expected input to be one of these types:\n\ndouble, single, uint8, uint16, uint32, uint64, int8, int16, int32, int64"
+        },
+        "logged_status": "cancelled"
+      },
+      {
+        "id": "20261123T144035Z-b96bedb26cb1",
+        "menu": "menu_agebuild",
+        "role": "helper",
+        "settings": {
+          "input": {
+            "operation": "BuildAgeModel_legacy",
+            "period": 405,
+            "pkstrough": "peaks"
+          }
+        },
+        "sources": {
+          "file_input": {
+            "mode": "path",
+            "field": "data",
+            "source": {
+              "kind": "artifact",
+              "workflow": "45193938744",
+              "sha": "400ae998bb17ddb5abe2b21f42d64ffb2f564133",
+              "run_id": "20261123T142251Z-e3fba05ce55b",
+              "member": "filtered.csv",
+              "digest": "a586a73c75a14050f63ff953b239208134bddd16a3d9effdbc9b7f2776d9b382"
+            }
+          }
+        },
+        "workflow": "45196818579",
+        "worker_commit": "02fb0d4e118aaacb48ad126a49b3b455c944373f",
+        "matlab_status": "ok",
+        "completion": "done",
+        "returned_fields": [
+          "params",
+          "plt",
+          "dat"
+        ],
+        "figures": [],
+        "return_shapes": {
+          "params": [
+            1,
+            1
+          ],
+          "plt": [
+            1,
+            1
+          ],
+          "dat": [
+            1,
+            1
+          ]
+        },
+        "prepared_data": {
+          "data": {
+            "class": "char",
+            "size": [
+              1,
+              72
+            ]
+          }
+        },
+        "prepared_settings": {
+          "operation": "BuildAgeModel_legacy",
+          "period": 405,
+          "pkstrough": "peaks"
+        },
+        "logged_status": "done"
+      },
+      {
+        "id": "20261123T144249Z-0aefb9fdc383",
+        "menu": "menu_agebuild",
+        "role": "analyzer",
+        "settings": {},
+        "sources": {
+          "helper_journal": {
+            "kind": "artifact",
+            "workflow": "45196818579",
+            "sha": "02fb0d4e118aaacb48ad126a49b3b455c944373f",
+            "run_id": "20261123T144035Z-b96bedb26cb1",
+            "member": "journals/registered/1795444951812/events.jsonl",
+            "digest": "a90f20d04544ba062962af2e2e8239a4d1c917b4b857aee1a91296bed495171b"
+          }
+        },
+        "workflow": "45197241390",
+        "worker_commit": "f10b776b04ad28082395511a194c3d378f5204b1",
+        "matlab_status": "failed",
+        "completion": "cancelled",
+        "error": {
+          "identifier": "MATLAB:UndefinedFunction",
+          "message": "Unrecognized function or variable 'datapksx'."
+        },
+        "logged_status": "cancelled"
+      }
+    ],
+    "completed_run_ids": null,
+    "returned_tool_errors_count": 10,
+    "tool_budget_exceeded": true,
+    "returned_final_text": false,
+    "guide_wavelet_or_agebuild": {
+      "matching_helper_runs": [],
+      "matching_analyzer_runs": [],
+      "matching_plotter_runs": []
+    }
+  }
+}
