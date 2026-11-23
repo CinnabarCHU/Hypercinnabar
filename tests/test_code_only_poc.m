@@ -135,7 +135,7 @@ end
 function checkRobot(fig,h,data,folder)
 settings = struct('spacing',2,'trend','linear','spectrum',false,'evolutionary',false,'wavelet',true,'maxPeriod',32);
 ro = accli.miniRobot(data,'Settings',settings,'Unit','m','UnitType',1);
-rm = accli.miniRobot(data,'Operation','Robot','Settings',settings,'Unit','m','UnitType',1);
+rm = accli.robot(struct('data',data,'unit','m','unitType',1),'Operation','Robot','Params',settings);
 assert(isempty(ro.res.resampled) && size(rm.res.resampled,1)<size(data,1));
 assert(~isempty(ro.res.wavelet) && isequaln(ro.res,accore.replay(ro.id)));
 second = fullfile(folder,'second.txt'); writematrix(data,second,'Delimiter','tab');

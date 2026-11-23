@@ -32,5 +32,5 @@ p = struct('operation',options.Operation,'data',data,'name',options.Name,'unit',
 host = struct('plot',options.Plot,'save',options.Save);
 if ~isempty(options.Folder), host.folder = options.Folder; end
 id = acMenuNewId();
-session = struct('params',p,'res',accore.robot(p,id,host),'id',id);
+session = struct('params',p,'res',accore.run('push_robot','workflow',p,id,host),'id',id);
 end

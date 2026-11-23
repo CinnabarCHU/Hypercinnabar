@@ -2,6 +2,10 @@ function value = run(tag,role,varargin)
 % Execute one public interface. Each call accepts the interface's original id.
 menu = accore.register(tag);
 role = char(role);
+if strcmp(role,'workflow') && ~isempty(menu.workflow)
+    value = feval(menu.workflow,varargin{:});
+    return
+end
 if isempty(menu.entry) || ~ismember(role,strsplit(menu.roles))
     error('Acycle:Core:Role','%s does not provide %s.',menu.tag,role);
 end

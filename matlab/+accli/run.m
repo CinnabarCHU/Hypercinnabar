@@ -20,6 +20,22 @@ if isstruct(input) && isfield(input,'operation') && isempty(opts.Operation)
     opts.Operation = input.operation;
 end
 [menu,engine] = accore.register(tag,opts.Operation);
+if ~isempty(menu.workflow) && (~isstruct(input) || isfield(input,'data'))
+    if ~isempty(opts.Target) || ~isempty(fieldnames(opts.Plt))
+        error('Acycle:CLI:RobotPlot','Mini-Robot manages several figures. Select Plot to display them.');
+    end
+    meta = {};
+    if isstruct(input)
+        for key = {'Name','Unit','UnitType'}
+            field = key{1}; field(1) = lower(field(1));
+            if isfield(input,field), meta = [meta,key,{input.(field)}]; end %#ok<AGROW>
+        end
+        input = input.data;
+    end
+    s = accli.miniRobot(input,'Operation',engine.operation,'Settings',opts.Params, ...
+        'Plot',~isempty(opts.Plot) && opts.Plot,meta{:});
+    return
+end
 input = accli.inputFor(engine,input);
 input.operation = engine.operation;
 over = struct('params',opts.Params,'plt',opts.Plt);

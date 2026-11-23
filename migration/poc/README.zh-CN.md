@@ -4,6 +4,8 @@
 
 从迁移仓库构建需要 Python、NumPy、SciPy 和两个已初始化的子模块。构建器输出独立目录。将其复制到另一台安装了 MATLAB 及对应工具箱的计算机后即可使用。
 
+使用外置轨道参考表时，在 `setup_acycle` 或 `ac` 之前设置 `ACYCLE_REFERENCE_DATA`。原有参考表目录可以继续使用。
+
 ```sh
 git submodule update --init
 python -m pip install numpy scipy

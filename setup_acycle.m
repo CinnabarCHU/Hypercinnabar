@@ -12,6 +12,8 @@ addpath(genpath(fullfile(root,'upstream','recovered','code')));
 addpath(genpath(fullfile(source,'code')));
 addpath(genpath(fullfile(source,'data')));
 addpath(fullfile(source,'doc'));
+referenceData = getenv('ACYCLE_REFERENCE_DATA');
+if ~isempty(referenceData) && isfolder(referenceData), addpath(referenceData); end
 addpath(genpath(fullfile(root,'code','method')));
 addpath(genpath(fullfile(root,'code','interface')));
 addpath(fullfile(root,'matlab'));

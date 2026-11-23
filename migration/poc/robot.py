@@ -61,6 +61,6 @@ def extract(dest, tree):
     gui = (settings+"\n        host = struct('plot',true,'save',logical(robot_savedata),'pause',robot_pause, ...\n"
            f"            'folder',accore.io('workspace'),'refresh',{owner});\n"
            f"        p = struct('operation','{op}','data',data,'name',dat_name,'unit',unit,'unitType',unit_type,'settings',settings);\n"
-           "        id = acMenuNewId(); result = accore.robot(p,id,host);\n"
+           "        id = acMenuNewId(); result = accore.run('push_robot','workflow',p,id,host);\n"
            "        setappdata(h_robot,'AcycleWorkflow',struct('params',p,'res',result,'id',id));\n")
     path.write_text(src[:start]+gui+src[end:])
