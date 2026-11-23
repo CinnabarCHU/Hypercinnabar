@@ -51,6 +51,17 @@ if ~isfile(file), error('Acycle:GUI:Input','Input file does not exist.'); end
 if strcmp(feature,'image_profile')
     fig = acgui.transectWindow(file);
 elseif strcmp(feature,'filter')
+    target = member(q,'window_id','');
+    if ~isempty(target)
+        bound = lookup(target);
+        if isempty(bound), reply = closed(target); return; end
+        current = snapshot(bound);
+        if ~strcmp(current.feature,'filter') || member(q,'expected_revision',-1)~=current.revision
+            reply = struct('status','conflict','current',current); return;
+        end
+    elseif isfield(q,'expected_revision')
+        error('Acycle:GUI:Revision','Bind a revision to its window_id.');
+    end
     windows = liveWindows();
     for k = 1:numel(windows)
         m = getappdata(windows(k),'AcycleLive');
@@ -101,7 +112,7 @@ if strcmp(out.feature,'filter')
     end
 else
     h = getappdata(fig,'AcycleTransect');
-    out.input_path = h.file; out.points = h.points; out.unit = 'pixel';
+    out.input_path = h.file; out.points = num2cell(h.points,2); out.unit = 'pixel';
     if isstruct(s), out.result_size = size(s.res.data); end
 end
 if isstruct(s), out.operation = s.operation; out.analysis_ids = s.ids; end

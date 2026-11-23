@@ -26,10 +26,13 @@ switch action
         delete(fig);
     case 'capture_filter'
         fig.Units = 'pixels'; fig.Position = [110 170 1100 620]; figure(fig); drawnow;
-    case 'finish_image'
+    case 'first_image_point'
         pick = findall(groot,'Tag','aclive_transect');
         raster = findobj(pick,'Tag','aclive_image');
         raster.ButtonDownFcn(raster,struct('IntersectionPoint',[2 3 0]));
+    case 'finish_image'
+        pick = findall(groot,'Tag','aclive_transect');
+        raster = findobj(pick,'Tag','aclive_image');
         raster.ButtonDownFcn(raster,struct('IntersectionPoint',[7 4 0]));
         invoke(findobj(pick,'Tag','aclive_undo'));
         raster.ButtonDownFcn(raster,struct('IntersectionPoint',[9 7 0]));
