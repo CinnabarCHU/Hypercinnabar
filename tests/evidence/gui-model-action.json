@@ -1,10 +1,11 @@
 {
-  "run": "45192053821",
+  "run": "45193226531",
   "model": "deepseek-flash",
+  "frequency_unit": "cycles/m",
   "call": {
     "name": "acycle_gui_update",
     "arguments": {
-      "window_id": "2401c83b-22c6-409b-95ff-f179f53410da",
+      "window_id": "effb9884-cfed-42d5-9542-e14114a1afbd",
       "expected_revision": 1,
       "params": {
         "flow": 0.035,
