@@ -28,6 +28,8 @@ def extract(dest, tree):
         assert n == 5, n
     else:
         old = old.replace("refreshRobotMainList(pwd);","host.refresh();")
+        old = old.replace("set(spectral_fmaxedit,'String',num2str(fmax));","host.setMaxFrequency(fmax);")
+        old = old.replace("set(wavelet_period1,'String',num2str(wavep1));","host.setMinPeriod(wavep1);")
     old = old.replace("ac_working_directory('get',pwd)","host.folder")
     old = old.replace("accore.io('workspace')","host.folder")
     old = old.replace("warndlg(", "host.warning(").replace("errordlg(", "host.problem(")
@@ -37,7 +39,7 @@ def extract(dest, tree):
     old = old.replace("dati = interpolate(dat,robot_sr);",
                       "dati = interpolate(dat,robot_sr); out.resampled = dati;")
     old = old.replace("dat = dats;", "dat = dats; out.detrended = dat;")
-    old = old.replace("%% power spectrum", "out.series = dat;\n%% power spectrum")
+    old = old.replace("%% power spectrum", "out.series = dat; out.maxFrequency = fmax; out.minPeriod = wavep1;\n%% power spectrum")
     old = old.replace("xlim([0,fmax])","out.spectrum = struct('classic',redconfAR1,'robust',redconfML96);\n        xlim([0,fmax])",1)
     old = old.replace("legend('Power','Median',", "out.spectrum = struct('frequency',f,'power',p,'background',theored, ...\n            'confidence',[tabtchi90,tabtchi95,tabtchi99,tabtchi999]);\n        legend('Power','Median',")
     old = old.replace("[s,x_grid,y_grid] = evofft(dat,winevofft,step,dt,0,fn,1);",
@@ -47,6 +49,9 @@ def extract(dest, tree):
     old = old.replace("wavep1,1/2*wavep2);","wavep1,1/2*wavep2); out.wavelet = struct('power',power,'period',period,'lag1',lag1,'maxPeriod',wavep2/2);")
     for marker in ("out.prepared =","out.series =","out.detrended =","out.evolutionary =","out.wavelet ="):
         assert marker in old, (name,marker)
+    controls = re.findall(r"(?m)^\s*(\w+)\s*=\s*(?:uicontrol|uipanel)\(",src[:start])
+    for control in controls:
+        assert not re.search(r"\b"+control+r"\b",old), (name,control)
     fields = "\n".join(f"{local} = p.settings.{option};" for local,option in FIELDS.items())
     header = (f"function out = {name}(p,host)\n% Workflow extracted from the pinned RobotGUI.m.\n"
               "data = p.data; dat_name = p.name; unit = p.unit; unit_type = p.unitType;\n"
@@ -59,7 +64,9 @@ def extract(dest, tree):
     owner = ("@()refreshRobotMainList(accore.io('workspace'))" if tree=="master"
              else "@()acgui.refresh(acgui.state(listbox_acmain),accore.io('workspace'))")
     gui = (settings+"\n        host = struct('plot',true,'save',logical(robot_savedata),'pause',robot_pause, ...\n"
-           f"            'folder',accore.io('workspace'),'refresh',{owner});\n"
+           f"            'folder',accore.io('workspace'),'refresh',{owner}, ...\n"
+           "            'setMaxFrequency',@(v)set(spectral_fmaxedit,'String',num2str(v)), ...\n"
+           "            'setMinPeriod',@(v)set(wavelet_period1,'String',num2str(v)));\n"
            f"        p = struct('operation','{op}','data',data,'name',dat_name,'unit',unit,'unitType',unit_type,'settings',settings);\n"
            "        id = acMenuNewId(); result = accore.run('push_robot','workflow',p,id,host);\n"
            "        setappdata(h_robot,'AcycleWorkflow',struct('params',p,'res',result,'id',id));\n")

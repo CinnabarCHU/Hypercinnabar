@@ -137,6 +137,7 @@ settings = struct('spacing',2,'trend','linear','spectrum',false,'evolutionary',f
 ro = accli.miniRobot(data,'Settings',settings,'Unit','m','UnitType',1);
 rm = accli.robot(struct('data',data,'unit','m','unitType',1),'Operation','Robot','Params',settings);
 assert(isempty(ro.res.resampled) && size(rm.res.resampled,1)<size(data,1));
+assert(rm.res.maxFrequency==.25 && rm.res.minPeriod==4);
 assert(~isempty(ro.res.wavelet) && isequaln(ro.res,accore.replay(ro.id)));
 second = fullfile(folder,'second.txt'); writematrix(data,second,'Delimiter','tab');
 acgui.refresh(h,folder);

@@ -3,7 +3,8 @@ function out = robot(p,id,host)
 if nargin < 2 || isempty(id), id = acMenuNewId(); end
 if nargin < 3, host = struct(); end
 [~,engine] = accore.register('push_robot',p.operation);
-base = struct('plot',false,'save',false,'pause',0,'folder',accore.io('workspace'),'refresh',@()[]);
+base = struct('plot',false,'save',false,'pause',0,'folder',accore.io('workspace'),'refresh',@()[], ...
+    'setMaxFrequency',@(~)[],'setMinPeriod',@(~)[]);
 host = acMenuMerge(base,host);
 if host.plot
     host.warning = @warndlg; host.problem = @errordlg;
