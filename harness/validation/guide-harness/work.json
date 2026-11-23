@@ -1,8 +1,8 @@
 {
-  "case": "etp",
-  "run_id": "20261123T141904Z-dd3c2a2555c7",
+  "case": "insolation",
+  "run_id": "20261123T141915Z-31885f311f05",
   "operation": "analyze",
-  "input_sha256": "9653ac0d10ea7e4bad40afd4b553bacc3901b9c38e88b3da598e12f23565354f",
+  "input_sha256": "6397fd514c2efba370c59a28cb10224b96d3e498469aa0e80bb0eb3d1bc6933c",
   "parameters": {
     "coordinate_unit": "kyr",
     "detrend": "mean",
@@ -10,7 +10,7 @@
     "evolution": true,
     "evolution_step": 3.2,
     "evolution_window": 400,
-    "fmax": 0.1,
+    "fmax": 0.06,
     "mtm_nw": 2,
     "nfft": 10005
   }
