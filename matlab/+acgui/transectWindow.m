@@ -16,7 +16,7 @@ state = struct('file',file,'points',zeros(0,2));
 setappdata(fig,'AcycleTransect',state);
 raster.Tag = 'aclive_image'; raster.HitTest = 'on'; raster.PickableParts = 'all'; raster.ButtonDownFcn = @pick;
 acgui.liveMark(fig,'image_profile','awaiting_input','opened',struct('input_path',file));
-fig.Visible = 'on';
+fig.Visible = 'on'; figure(fig); drawnow;
 
     function pick(~,evt)
         point = evt.IntersectionPoint(1:2);

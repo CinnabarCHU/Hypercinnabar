@@ -68,6 +68,7 @@ export async function verifyLiveGui(call, workspace) {
   assert.deepEqual(finished.detail.points,img.points); assert.equal(finished.detail.analyzer_id,img.analysis_ids.analyzer)
   capture(img.title,'live-image-profile.png'); human('close_images')
   const next = await invoke('open',{feature:'image_profile',input_path:'core.png'})
+  human('focus_image')
   execFileSync('python',[join(testRoot,'capture_acycle_window.py'),'--click-center'],{
     stdio:'inherit',env:{...process.env,ACYCLE_CAPTURE_TITLE:next.title}
   })

@@ -27,6 +27,9 @@ switch action
         delete(fig);
     case 'capture_filter'
         fig.Units = 'pixels'; fig.Position = [90 170 1360 570]; figure(fig); drawnow;
+    case 'focus_image'
+        pick = findall(groot,'Tag','aclive_transect');
+        pick.Units='pixels'; pick.Position=[180 150 880 660]; figure(pick); drawnow;
     case 'first_image_point'
         pick = findall(groot,'Tag','aclive_transect');
         raster = findobj(pick,'Tag','aclive_image');

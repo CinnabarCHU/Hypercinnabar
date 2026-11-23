@@ -3,6 +3,7 @@ import os
 import re
 import subprocess
 import sys
+import time
 
 from PIL import ImageGrab
 
@@ -20,11 +21,15 @@ def geometry(window):
 
 def main():
     title = os.environ["ACYCLE_CAPTURE_TITLE"]
-    tree = xwininfo("-root", "-tree")
-    named = re.findall(r'^\s*(0x[0-9a-fA-F]+) "([^"]*)"', tree, re.M)
-    matches = [geometry(window) for window, name in named if title and title in name]
-    frames = [rect for rect in matches if rect and rect[2] > 100 and rect[3] > 100]
-    if not frames:
+    for _ in range(60):
+        tree = xwininfo("-root", "-tree")
+        named = re.findall(r'^\s*(0x[0-9a-fA-F]+) "([^"]*)"', tree, re.M)
+        matches = [geometry(window) for window, name in named if title and title in name]
+        frames = [rect for rect in matches if rect and rect[2] > 100 and rect[3] > 100]
+        if frames:
+            break
+        time.sleep(.15)
+    else:
         raise RuntimeError(f"No visible window for {title!r}. X11 titles: {[name for _,name in named]}")
     x, y, width, height = max(frames, key=lambda rect: rect[2] * rect[3])
     if sys.argv[1:] == ["--click-center"]:
