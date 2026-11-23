@@ -410,6 +410,42 @@ def check_table(name, fields, rows, write):
     print(f'{name}: {len(rows)}')
 
 
+def count_crosswalks(owners, roles):
+    """Connect menu tags and versioned package names without inferring GUI calls."""
+    guide = {r['guide_tag']: r for r in read(ROOT/'migration/menus.tsv')}
+    science_tags = defaultdict(set)
+    menu_rows = []
+    for tag, menu in sorted(owners.menus.items()):
+        old = guide.get(tag, {})
+        coverage = old.get('coverage','absent')
+        packages = old.get('packages','').split()
+        if coverage in {'method','alternative','archival'}:
+            for name in packages:
+                science_tags[name].add(tag)
+        menu_rows.append([tag, coverage, menu['guide_initial'], menu['guide_menu'],
+                          menu['master_initial'], menu['master_menu'], joined(owners.tags[tag]),
+                          joined(packages)])
+    package_groups = defaultdict(set)
+    package_roles = defaultdict(set)
+    package_routes = defaultdict(set)
+    for revision, module, _, name, role, route, *_ in roles:
+        package_groups[name].add(module)
+        package_roles[revision,name].add(role)
+        package_routes[revision,name].add(route)
+    assert all(package_roles['guide',name] for name in science_tags)
+    package_rows = []
+    for name, groups in sorted(package_groups.items()):
+        assert len(groups)==1, (name, groups)
+        row = [name, next(iter(groups)), joined(science_tags[name])]
+        for revision in ('guide','master'):
+            row.extend([joined(package_routes[revision,name]), joined(package_roles[revision,name])])
+        package_rows.append(row)
+    return {
+        'menu_to_modules': ('tag guide_coverage guide_initial guide_menu master_initial master_menu modules guide_listed_packages',menu_rows),
+        'package_to_modules': ('package module guide_science_menu_tags guide_route guide_roles master_route master_roles',package_rows),
+    }
+
+
 def validate_and_emit(all_facts, write):
     owners = Ownership()
     result, infra_use = produce(owners, all_facts)
@@ -423,6 +459,7 @@ def validate_and_emit(all_facts, write):
         assert set(all_facts[revision]) == expected, revision
     role_rows = result['roles'][1]
     assert len({r[2] for r in role_rows}) == len(role_rows)
+    result.update(count_crosswalks(owners,role_rows))
     decisions = {r['function'] for r in read(OUT/'core_review.tsv')}
     assert decisions <= {r[1] for r in result['shared_functions'][1]}
     selections = read(OUT/'selection_values.tsv')

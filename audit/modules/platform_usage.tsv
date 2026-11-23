@@ -16,4 +16,4 @@ matlab/+accompat/swaWorkspace.m	SWA	domain-adapter	2	1	SWA	隔离 SWA 原有的�
 matlab/+accompat/tanerWorkspace.m	Filtering	domain-adapter	2	0	EvolutionaryTimeOpt TimeOpt	兼容旧 Taner 实现写入的 base-workspace 变量。
 setup_migration.m	Bootstrap	bootstrap	0	0		装入固定上游和恢复文件。
 (proposed register)	Register	proposed	0	0		按版本化 op 和角色找到模块；选择值来自 params，旧别名保留原绑定。
-(proposed code/acPrivateFunctions.m)	Register	proposed	0	0		在 code 父目录用显式句柄表提供全项目共用 private 的合法访问点；模块仍管理自己的选择项。
+(proposed code/acPrivateFunctions.m)	Register	proposed	0	0		保留字面名 code/private 时可由父目录绑定句柄。初版推荐普通 code/acprivate 随所选版本枚举并直接调用，此布局无需该绑定函数。

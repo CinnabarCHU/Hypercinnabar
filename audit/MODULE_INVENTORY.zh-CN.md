@@ -2,7 +2,9 @@
 
 本清单以 GUIDE 移除前的 `b52ea9f` 为基线，同时保留 Acycle 3.1.1 的 `dcba427`、已考证的恢复文件和显式兼容入口。可以先确定维护归属，继续从现有位置调用原函数。逐模块查入口、参数选项、产物与两版覆盖，见[模块总表](modules/modules.tsv)。按旧操作标识查去向，见[全部公开角色](modules/roles.tsv)。[基线源码](https://github.com/mingsongli/acycle/tree/b52ea9f510f3be00bde9a0238b9898a1e2315b74) · [3.1.1 源码](https://github.com/mingsongli/acycle/tree/dcba4279168745b563e0535b954297023dd62fc7) · [Li 的 User’s Guide](https://acycle.org/docs/Acycle_Users_Guide.pdf)
 
-## 62 个维护模块
+这 62 项覆盖科学操作、GUI、工作流与工程验证。95 个 GUIDE 科学或数据菜单和 286 个 3.1.1 包使用另外的计数单位。逐项对应、建议的公开边界及其依据见[菜单、兼容包与公开方法](MODULE_BOUNDARIES.zh-CN.md)。
+
+## 62 项源码归属
 
 | 范围 | 模块及其登记标识 |
 | --- | --- |
@@ -29,7 +31,7 @@
 
 两版主菜单共 135 个不同 tag，旧包名并集 297 个，789 条版本化角色均有归属。112 个非 MATLAB 路径按两棵 Git 树的并集登记，含 GUIDE 图窗、校准数据、二进制及文档。桌面、Mini-Robot 与验证工具都有维护位置，可直接组合分析角色或保留其原入口。声音转换已有返回波形和采样率的接口。[源文件](modules/sources.tsv) · [函数与回调](modules/declarations.tsv) · [资源](modules/assets.tsv) · [恢复文件来源](../migration/recovered.tsv)
 
-总表的 `proposed_filenames` 是规划。两个 `*_workflow_roles` 只列该版本中本组已有工作流入口所提供的角色，特定变体以角色表为准。`*_shared_declarations` 标明暂时只能共同归属的窗口声明，例如混合了全段和滑窗操作的 eCOCO 窗口。全库合计时每条声明只计一次。3.1.1 的独立 SWA 已有专门的 `helper`、`plotter`，对应 `analyzer` 仍待补齐。TimeOpt、演化 TimeOpt 和 Lyapunov 的基线角色及恢复来源继续单独登记。桌面转发能证明窗口可以打开，Harness 重放需要另行确认是否有入参齐全且能独立运行的角色。[角色与参数](modules/roles.tsv) · [逐菜单评审](MODULE_GROUPING.zh-CN.md)
+总表的 `proposed_filenames` 是第一版逐项预留的名称；多个操作归到同一维护目录时，实际公开入口按操作契约确定。两个 `*_workflow_roles` 只列该版本中本组已有工作流入口所提供的角色，特定变体以角色表为准。`*_shared_declarations` 标明暂时只能共同归属的窗口声明，例如混合了全段和滑窗操作的 eCOCO 窗口。全库合计时每条声明只计一次。3.1.1 的独立 SWA 已有专门的 `helper`、`plotter`，对应 `analyzer` 仍待补齐。TimeOpt、演化 TimeOpt 和 Lyapunov 的基线角色及恢复来源继续单独登记。桌面转发能证明窗口可以打开，Harness 重放需要另行确认是否有入参齐全且能独立运行的角色。[角色与参数](modules/roles.tsv) · [逐菜单评审](MODULE_GROUPING.zh-CN.md)
 
 ## 选择属于每次调用的 params
 
@@ -39,7 +41,7 @@
 | Data Transform | `j` 取 16 个已实现的值之一，`checkid` 给出作用列。例如 `j=2` 使用 `edit1`、`edit2` 指定归一化区间。 | 变换模块维护旧编号及各分支所需字段。编号不连续。 |
 | 功率谱 | `method` 决定三种谱估计器之一，另有六个可组合开关。例如基线的 `noise.powerlaw` 对应 3.1.1 的 `models.powerLaw`。 | 功率谱模块维护适用条件。F 检验是 MTM 的诊断，有效组合按版本处理。 |
 
-模块维护“允许选什么、怎样解释旧值”所需的最小定义。原函数已经分派时，直接传值即可。GUI 需要展示选项时可读同一份定义。Helper 给出推荐和解析结果，Analyzer 接受用户最后确认的整份参数，并向原函数逐项传足，Plotter 接受确定的结果与显示参数。Registry 只需登记版本化操作及其入口。[上述选择的完整编号与字段对照](modules/selection_values.tsv)
+模块维护“允许选什么、怎样解释旧值”所需的最小定义。原函数已经分派时，直接传值即可。GUI 需要展示选项时可读同一份定义。只有 Helper 可以补齐科学参数。Analyzer 只接受本次操作及其激活分支的完整合法入参，缺字段、非法值或触发底层缺省的空值应在计算前报错。原函数所需选项逐项传足。Plotter 接受确定的结果与显示参数。Registry 只需登记版本化操作及其入口。[上述选择的完整编号与字段对照](modules/selection_values.tsv)
 
 `init.params` 引用本角色收到的入参。Helper 的 `fin.retval` 引用它给出的参数。GUI 修改后，Analyzer 的 `init.params` 引用实际提交的版本。Plotter 同样记录结果引用、面板、坐标和单位等可重建的配置。当前窗口或 axes 句柄由显示适配器在运行时传入。Logger 保持 `logger(id,attr,info)` 的约定，`fin` 使用 `status` 和 `retval`，状态为 `done`、`incomplete`、`cancelled`。私有函数掌握调用者无法得知的诊断时，可以向该次调用追加 `event`、`msg` 或 `error`。[现有调用记录实现](../matlab/+aclog/invoke.m)
 
@@ -55,9 +57,9 @@
 
 `datapreproc` 会删除行、排序、归并、重采样，并用 `warndlg` 通知用户。处理后的数据和实际采取的动作都需要传出，单纯关闭提醒会丢掉解释。`smoothciML` 在第 35–42 行完成 Bootstrap 汇总，第 46、61 行无条件开图，这给出了计算与绘图的拆点。基线 `corrcoefslices_rank` 的 `plotn` 能控制结果图，Monte Carlo 分支仍然创建 `waitbar` 并读取 GUI 状态。[数据预处理](https://github.com/mingsongli/acycle/blob/b52ea9f510f3be00bde9a0238b9898a1e2315b74/code/misc/datapreproc.m) · [Bootstrap 源码](https://github.com/mingsongli/acycle/blob/b52ea9f510f3be00bde9a0238b9898a1e2315b74/code/seriesanalysis/smoothciML.m#L35-L63) · [eCOCO 源码](https://github.com/mingsongli/acycle/blob/b52ea9f510f3be00bde9a0238b9898a1e2315b74/code/corrcoef/corrcoefslices_rank.m)
 
-公开入口拟用 `code/interface/<模块>/ac<模块>_<角色>.m`。例如 `acInterpolation_helper.m`、`acInterpolation_analyzer.m`、`acInterpolation_plotter.m`。新文件与主函数同名，新建的局部及私有函数也取项目内唯一的名字。新拆出的私有函数暂存 `code/private/`，例如可以给插值 Pro 的网格处理取名 `acInterpolationProGrid.m`。旧独立函数与第三方目录原位保留。生成器已将拟用公开名称与两棵源树和旧迁移接口做了忽略大小写的冲突检查。
+公开入口拟用 `code/interface/<模块>/ac<模块>_<角色>.m`。例如 `acInterpolation_helper.m`、`acInterpolation_analyzer.m`、`acInterpolation_plotter.m`。新文件与主函数同名，新建的局部及私有函数也取项目内唯一的名字。新拆出的内部函数可集中在普通目录 `code/acprivate/` 后随所选版本枚举。若采用 MATLAB 字面名 `code/private/` 则由父目录绑定。例如可以给插值 Pro 的网格处理取名 `acInterpolationProGrid.m`。旧独立函数与第三方目录原位保留。生成器已将拟用公开名称与两棵源树和旧迁移接口做了忽略大小写的冲突检查。
 
-MATLAB 的 `private` 只能由直接上级目录中的代码按名访问，`code/interface/Interpolation/` 不具备这个作用域。保留上述布局的一种办法是在 `code/acPrivateFunctions.m` 中返回显式具名函数句柄。接口在需要某个新私有实现时取相应句柄，普通原函数继续直接调用。这个文件只负责 MATLAB 名称绑定，各模块解释自己的科学选项。回放保存版本化 `op` 和普通参数，执行时再绑定句柄。目录测试验证了跨层直接调用不可用、父目录取得句柄可以执行。[MATLAB 私有函数](https://www.mathworks.com/help/matlab/matlab_prog/private-functions.html) · [函数句柄](https://www.mathworks.com/help/matlab/matlab_prog/creating-a-function-handle.html) · [目录与数值测试](tests/testModuleInventoryLayout.m)
+MATLAB 的 `private` 只能由直接上级目录中的代码按名访问，`code/interface/Interpolation/` 不具备这个作用域。若选用字面私有目录，一种办法是在 `code/acPrivateFunctions.m` 中返回显式具名函数句柄。接口在需要某个新私有实现时取相应句柄，普通原函数继续直接调用。这个文件只负责 MATLAB 名称绑定，各模块解释自己的科学选项。回放保存版本化 `op` 和普通参数，执行时再绑定句柄。目录测试也验证了普通 `code/acprivate/` 可由接口直接调用，初版建议采用这种布局。[两种运行时的实测结果](MODULE_BOUNDARIES.zh-CN.md#初版可以沿用-acycle-的目录枚举)。[MATLAB 私有函数](https://www.mathworks.com/help/matlab/matlab_prog/private-functions.html) · [函数句柄](https://www.mathworks.com/help/matlab/matlab_prog/creating-a-function-handle.html) · [目录与数值测试](tests/testModuleInventoryLayout.m)
 
 ## 建议归 Core 的通用函数
 

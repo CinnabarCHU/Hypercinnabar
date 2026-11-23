@@ -1,0 +1,298 @@
+package	module	guide_science_menu_tags	guide_route	guide_roles	master_route	master_roles
+ANOVA	HypothesisTests	menu_anova	family-entry	analyzer	family-entry	analyzer
+AR1Prewhitening	Prewhitening	menu_whiten	family-entry	analyzer helper plotter	family-entry	analyzer
+AddGaps	SeriesEditing	menu_gap	family-entry	analyzer	family-entry	analyzer
+AgeScale	Tuning	menu_age	family-entry	analyzer helper plotter	family-entry	analyzer
+AmplitudeModulation	Modulation	menu_AM	family-entry	analyzer helper	family-entry	analyzer
+AnDarksamtest	HypothesisTests		expert-compatibility	analyzer	expert-compatibility	analyzer
+AstronomicalSolution	OrbitSolution	menu_laskar	family-entry	analyzer helper plotter	family-entry	analyzer
+Bandpass	Filtering	menu_filter	family-entry	analyzer helper plotter	family-entry	analyzer helper plotter
+Bispectral	Bispectrum				family-entry	analyzer helper plotter
+BispectralExport	Bispectrum				product-io	plotter
+BispectralView	Bispectrum				family-entry	helper
+BootstrapSmooth	Smoothing	menu_bootstrap	family-entry	analyzer helper plotter	family-entry	analyzer helper plotter
+BuildAgeModel	BuildAgeModel	menu_agebuild	family-entry	analyzer helper plotter	family-entry	analyzer helper plotter
+CENOGRID	ReferenceSeries	menu_cenogrid	family-entry	analyzer plotter	family-entry	analyzer plotter
+CE_NS70	SummaryStatistics		expert-compatibility	analyzer	expert-compatibility	analyzer
+CircularSpectrum	CircularSpectrum	menu_CSA	family-entry	analyzer helper plotter	family-entry	analyzer
+Clipping	SeriesEditing	menu_clip	family-entry	analyzer helper	family-entry	analyzer helper
+Coherence	Coherence	menu_coh	family-entry	analyzer	family-entry	analyzer
+ColumnManipulation	Columns	menu_colman	family-entry	analyzer helper plotter	family-entry	analyzer plotter
+Columns	Columns	menu_extract	family-entry	analyzer	family-entry	analyzer
+Correlation	Association	menu_corr	family-entry	analyzer	family-entry	analyzer
+Covariance	Association	menu_covariance	family-entry	analyzer helper	family-entry	analyzer helper
+DYNOT	DYNOT	menu_dynos menu_dynot_v2	family-entry	analyzer helper plotter	family-entry	analyzer helper plotter
+DataDistribution	Distribution	menu_datadistri	family-entry	plotter	family-entry	plotter
+DataTransform	Transform	menu_datatransf	family-entry	analyzer helper plotter	family-entry	analyzer plotter
+Derivative	Derivative	menu_derivative	family-entry	analyzer helper	family-entry	analyzer helper
+Desktop	Desktop				family-entry	plotter
+DetrendSignalPP	Detrending	menu_prewhiten	expert-compatibility	analyzer	expert-compatibility	analyzer
+Detrending	Detrending	menu_prewhiten	family-entry	analyzer helper plotter	family-entry	analyzer plotter
+Digitize	Digitizer	menu_digitizer	family-entry	analyzer	family-entry	analyzer
+DigitizeTrace	Digitizer	menu_digitizer	family-entry	analyzer helper plotter	family-entry	analyzer helper plotter
+DistributionTest	HypothesisTests	menu_chi2gof	family-entry	analyzer	family-entry	analyzer
+DynamicFiltering	Filtering	menu_dynfilter	family-entry	analyzer helper plotter	family-entry	analyzer
+EMD	EMD	menu_emd	family-entry	analyzer helper plotter	family-entry	analyzer helper
+EnsembleEMD	EMD	menu_eemd	family-entry	analyzer helper plotter	family-entry	analyzer helper
+EvolutionarySpectrum	EvolutionarySpectrum	menu_period	family-entry	analyzer helper plotter	family-entry	analyzer plotter
+EvolutionaryTimeOpt	EvolutionaryTimeOpt	menu_eTimeOpt	family-entry	analyzer helper plotter		""
+EvolutionaryWorkbook	EvolutionarySpectrum				product-io	plotter
+ExampleDigitizer	Examples	menu_example_plotdigitizer	family-entry	analyzer plotter	family-entry	analyzer plotter
+ExampleExtinction	Examples	menu_extinction_CSA	family-entry	analyzer plotter	family-entry	analyzer plotter
+ExampleGuandao	Examples	menu_example_GD2GR	family-entry	analyzer plotter	family-entry	analyzer plotter
+ExampleInsolation	Examples	menu_example_inso2Ma	family-entry	analyzer plotter	family-entry	analyzer plotter
+ExampleLa2004	Examples	menu_example_la04etp	family-entry	analyzer plotter	family-entry	analyzer plotter
+ExampleMars	Examples	menu_example_marsimage	family-entry	analyzer plotter	family-entry	analyzer plotter
+ExampleMaunaLoa	Examples	menu_example_hawaiiCO2	family-entry	analyzer plotter	family-entry	analyzer plotter
+ExampleNewark	Examples	menu_example_Newark	family-entry	analyzer plotter	family-entry	analyzer plotter
+ExampleRedNoise	Examples	menu_example_redp7	family-entry	analyzer plotter	family-entry	analyzer plotter
+ExampleSphalerite	Examples	menu_example_sphalerite	family-entry	analyzer plotter	family-entry	analyzer plotter
+ExampleSvalbardPETM	Examples	menu_example_PETM	family-entry	analyzer plotter	family-entry	analyzer plotter
+ExampleWayao	Examples	menu_example_wayao	family-entry	analyzer plotter	family-entry	analyzer plotter
+Extrema	Extrema	menu_maxmin	family-entry	analyzer helper	family-entry	analyzer helper
+FixedMovingMean	Smoothing	menu_movmeanfbw	family-entry	analyzer helper	family-entry	analyzer
+FixedMovingMedian	Smoothing	menu_movmedianfbw	family-entry	analyzer helper	family-entry	analyzer
+ImageProfile	ImageProfile	menu_improfile	family-entry	analyzer	family-entry	analyzer
+ImageTransect	ImageProfile	menu_improfile	family-entry	analyzer plotter	family-entry	analyzer plotter
+InsolLatDayGif	Insolation	menu_insol	family-entry	plotter	family-entry	plotter
+Insolation	Insolation	menu_insol	family-entry	analyzer		""
+InterpolateSeries	Interpolation	menu_interpseries	family-entry	analyzer plotter	family-entry	analyzer
+InterpolationPro	Interpolation	menu_interpolationGUI	family-entry	analyzer helper plotter	family-entry	analyzer plotter
+LR04	ReferenceSeries	menu_LR04	family-entry	analyzer helper plotter	family-entry	analyzer helper plotter
+Lag1	LagOne	menu_rho	family-entry	analyzer	family-entry	analyzer
+Lag1MonteCarlo	LagOne	menu_rho	family-entry	analyzer helper plotter	family-entry	analyzer helper plotter
+Lag1V2	LagOne	menu_rhov2	family-entry	analyzer		""
+Lag1V2MonteCarlo	LagOne	menu_rhov2	family-entry	analyzer helper plotter		""
+LeadLag	LeadLag				family-entry	analyzer
+LinearRegression	Regression	menu_linearReg	family-entry	analyzer helper plotter	family-entry	analyzer plotter
+Log10	Transform		family-entry	analyzer	family-entry	analyzer
+Lyapunov	Lyapunov	menu_lyapunov	family-entry	analyzer helper plotter		""
+LyapunovMonteCarlo	Lyapunov	menu_lyapunov	family-entry	analyzer helper plotter		""
+MatlabWaveletCoherence	WaveletCoherence	menu_waveletGUI	family-entry	analyzer helper plotter	family-entry	analyzer plotter
+MergeSeries	SeriesArithmetic	menu_add	family-entry	analyzer	family-entry	analyzer
+MilankovitchCal	OrbitalPeriods	menu_LOD	family-entry	analyzer	family-entry	analyzer
+MovingGaussian	Smoothing	menu_movGauss	family-entry	analyzer helper plotter	family-entry	analyzer
+MovingMean	Smoothing	menu_smooth	family-entry	analyzer helper plotter	family-entry	analyzer
+MovingMedian	Smoothing	menu_movmedian	family-entry	analyzer helper plotter	family-entry	analyzer
+MtmTaperCount	PowerSpectrum				expert-compatibility	analyzer
+MultiplySeries	SeriesArithmetic	menu_multiply	family-entry	analyzer	family-entry	analyzer
+Normality	HypothesisTests	menu_normaltest	family-entry	analyzer	family-entry	analyzer
+OneSampleT	HypothesisTests	menu_ttest	family-entry	analyzer plotter	family-entry	analyzer plotter
+PCA	PCA	menu_pca	family-entry	analyzer helper	family-entry	analyzer helper
+PassFilter	Filtering	menu_filter	family-entry	analyzer helper plotter	family-entry	analyzer plotter
+PlotAdv	SeriesPlot	menu_plotadv	family-entry	helper plotter	family-entry	plotter
+PlotPro	SeriesPlot	menu_plotpro_2d	family-entry	helper plotter	family-entry	helper plotter
+PowerDecomposition	PowerDecomposition	menu_pda	family-entry	analyzer helper plotter	family-entry	analyzer
+PowerSpectrum	PowerSpectrum	menu_power	family-entry	analyzer helper plotter	family-entry	analyzer helper plotter
+RGBToGray	ImageColor	menu_rgb2gray	family-entry	analyzer plotter	family-entry	analyzer plotter
+RGBToLab	ImageColor	menu_rgb2lab	family-entry	analyzer plotter	family-entry	analyzer plotter
+Recurrence	Recurrence	menu_recplot	family-entry	analyzer helper plotter	family-entry	analyzer
+RegularInterpolation	Interpolation				family-entry	analyzer helper
+RemoveSections	SeriesEditing	menu_desection	family-entry	analyzer	family-entry	analyzer
+SWA	SWA	menu_power menu_swa	family-entry	analyzer helper plotter	family-entry	helper plotter
+SamplingGrid	Sampling				family-entry	analyzer helper
+SamplingRate	Sampling	menu_samplerate	family-entry	analyzer plotter	family-entry	analyzer plotter
+SedimentationRateToAge	BuildAgeModel	menu_sr2age	family-entry	analyzer	family-entry	analyzer
+SeriesGenerator	SeriesGenerator	linegenerator	family-entry	analyzer helper plotter	family-entry	analyzer
+SeriesSound	Sound	menu_sound	family-entry	analyzer helper	family-entry	analyzer helper
+ShowImage	ImageDisplay	menu_imshow	family-entry	plotter	family-entry	plotter
+SimpleFunction	Transform	menu_function	family-entry	analyzer helper	family-entry	analyzer helper
+SimplePlot	SeriesPlot	menu_plot menu_plotn menu_plotn2	family-entry	plotter	family-entry	plotter
+SortUnique	SortUnique	menu_sort	family-entry	analyzer helper	family-entry	analyzer helper
+SpectralBendingPowerLaw	PowerSpectrum	menu_power	family-entry	analyzer plotter	family-entry	analyzer
+SpectralMoments	SpectralMoments				family-entry	analyzer
+SpectralPowerLaw	PowerSpectrum	menu_power	family-entry	analyzer plotter	family-entry	analyzer
+Standardize	Transform	menu_plotn menu_plotn2	family-entry	analyzer	family-entry	analyzer
+StratigraphicCorrelation	StratCorrelation	menu_correlation	family-entry	analyzer helper plotter	family-entry	analyzer
+SummaryStatistics	SummaryStatistics	menu_statsummary	family-entry	analyzer	family-entry	analyzer
+TimeOpt	TimeOpt	menu_timeOpt	family-entry	analyzer helper plotter		""
+TwoSampleTests	HypothesisTests	menu_uni2SamTest	family-entry	analyzer	family-entry	analyzer
+Undatable	Undatable	menu_undatable	family-entry	analyzer helper plotter	family-entry	plotter
+WaveletCoherence	WaveletCoherence	menu_waveletGUI	family-entry	analyzer helper plotter	family-entry	analyzer plotter
+WaveletSpectrum	Wavelet	menu_waveletGUI	family-entry	analyzer helper plotter	family-entry	analyzer plotter
+ac_sort_dir_entries	Workspace				expert-compatibility	analyzer
+ar1nv	Wavelet		expert-compatibility	analyzer	expert-compatibility	analyzer
+ar1spectrum	Wavelet		expert-compatibility	analyzer	expert-compatibility	analyzer
+bayes_cpt	Changepoint	menu_cpt	family-entry	analyzer helper plotter	family-entry	analyzer helper plotter
+bayes_cpt_r2	Changepoint	menu_cpt	family-entry	analyzer helper plotter	family-entry	analyzer helper plotter
+bispectralEstimate	Bispectrum				expert-compatibility	analyzer
+bispectralLocalDataValidation	MethodValidation				verification	analyzer
+bispectralPreprocess	Bispectrum				expert-compatibility	analyzer
+bispectralReadDataFile	Bispectrum				expert-compatibility	analyzer
+bispectralSelfTest	MethodValidation				verification	analyzer
+bispectralSignificance	Bispectrum				expert-compatibility	analyzer
+bispectralSurrogate	Bispectrum				expert-compatibility	analyzer
+bispectralValidateExamples	MethodValidation				verification	analyzer
+boxcoxML	Transform	menu_datatransf	family-entry	analyzer	family-entry	analyzer
+boxpdf	WaveletCoherence		expert-compatibility	analyzer	expert-compatibility	analyzer
+calculateRhoM	LagOne				expert-compatibility	analyzer
+calculate_orbit9	OrbitalPeriods				expert-compatibility	analyzer
+chisquare_inv	Wavelet		expert-compatibility	analyzer	expert-compatibility	analyzer
+chisquare_solve	Wavelet		expert-compatibility	analyzer	expert-compatibility	analyzer
+circularspec	CircularSpectrum		expert-compatibility	analyzer helper plotter	expert-compatibility	analyzer
+cocoAdaptiveEvaluate	Coco				expert-compatibility	analyzer helper
+cocoAdaptivePublicationReport	Coco				expert-compatibility	analyzer
+cocoAllPeriodRateRange	Coco				expert-compatibility	analyzer
+cocoConclusionReport	Coco				expert-compatibility	analyzer
+cocoFixedTargetWeights	Coco				expert-compatibility	analyzer
+cocoGetPower	Coco				expert-compatibility	analyzer
+cocoGetPowerNew	Coco				expert-compatibility	analyzer
+cocoIsNonfatalResolutionError	Coco				expert-compatibility	analyzer
+cocoNonnegativeLeakageSolve	Coco				expert-compatibility	analyzer
+cocoOrbitGroups	Coco				expert-compatibility	analyzer
+cocoPrepareRegularData	Coco				expert-compatibility	analyzer helper
+cocoPublicationPrepareData	Coco				expert-compatibility	analyzer
+cocoResolvedDetrendedVariance	Coco				expert-compatibility	analyzer
+cocoSamplingTolerance	Coco				expert-compatibility	analyzer
+cocoTargetSpectrum	Coco				expert-compatibility	analyzer
+cohac	Coherence	menu_coh	expert-compatibility	analyzer helper plotter	expert-compatibility	analyzer helper plotter
+corrcoefsig	Coco		family-entry	analyzer helper	family-entry	analyzer helper
+corrcoefslices	EvolutionaryCoco	menu_ecoco	expert-compatibility	analyzer helper	expert-compatibility	analyzer helper
+corrcoefslices_rank	EvolutionaryCoco	menu_ecoco	expert-compatibility	analyzer helper		""
+corrcoefslices_rankNew	EvolutionaryCoco				expert-compatibility	analyzer helper
+corrsig	Coco		expert-compatibility	analyzer helper	expert-compatibility	analyzer helper
+crp_core	Recurrence	menu_recplot	expert-compatibility	analyzer helper	expert-compatibility	analyzer helper
+crp_pdist	Recurrence	menu_recplot	expert-compatibility	analyzer helper	expert-compatibility	analyzer helper
+cvcoco	Coco				family-entry	analyzer helper
+cvcoco2	Coco				family-entry	analyzer helper
+cvcoco9	Coco				family-entry	analyzer helper
+cvcoco9A	Coco				family-entry	analyzer helper
+cvcoco9B	Coco				family-entry	analyzer helper
+cvcocoLegacy	Coco				family-entry	analyzer helper
+cyclecorr	Coco		expert-compatibility	analyzer helper	expert-compatibility	analyzer helper
+cyclecorr4	Coco		expert-compatibility	analyzer	expert-compatibility	analyzer
+cyclecorr4sig	Coco		expert-compatibility	analyzer	expert-compatibility	analyzer
+cyclecorr5	Coco		expert-compatibility	analyzer	expert-compatibility	analyzer
+cyclecorrNew	Coco				expert-compatibility	analyzer
+cyclecorr_rank	Coco		expert-compatibility	analyzer	expert-compatibility	analyzer
+cyclecorrsig	Coco		expert-compatibility	analyzer helper		""
+cyclecorrsigNew	Coco				expert-compatibility	analyzer
+cyclesig_rank	Coco		expert-compatibility	analyzer	expert-compatibility	analyzer
+data_slices	EvolutionaryCoco		expert-compatibility	analyzer	expert-compatibility	analyzer
+datapreproc	SortUnique		expert-compatibility	analyzer helper	expert-compatibility	analyzer helper
+depeaks	SeriesEditing	menu_depeaks	family-entry	analyzer helper	family-entry	analyzer helper
+depthtotime	Tuning		expert-compatibility	analyzer	expert-compatibility	analyzer
+dl_all	Recurrence		expert-compatibility	analyzer	expert-compatibility	analyzer
+domaintrans	Tuning		expert-compatibility	analyzer	expert-compatibility	analyzer
+dynamic_filter	Filtering				expert-compatibility	plotter
+dynamic_filter_lang	Filtering				expert-compatibility	plotter
+dynotIterationWorker	DYNOT				expert-compatibility	analyzer
+dynotPercentilePlan	DYNOT				expert-compatibility	analyzer
+ebrief	Coco		expert-compatibility	analyzer helper	expert-compatibility	analyzer helper
+eccount	Coco		expert-compatibility	analyzer	expert-compatibility	analyzer
+eccpeaks	Coco		expert-compatibility	analyzer helper	expert-compatibility	analyzer helper
+ecoco	EvolutionaryCoco	menu_ecoco	family-entry	analyzer	family-entry	analyzer helper
+ecocoAdaptiveCore	EvolutionaryCoco				family-entry	analyzer helper
+ecocoCrossfitCore	EvolutionaryCoco				family-entry	analyzer helper
+ecocoEstimateAr1	EvolutionaryCoco				expert-compatibility	analyzer
+ecocoInterleavedCore	EvolutionaryCoco				family-entry	analyzer helper
+ecocoPhysicalCenters	EvolutionaryCoco				expert-compatibility	analyzer
+ecocoPhysicalWindowValues	EvolutionaryCoco				expert-compatibility	analyzer helper
+ecocoWindowSpectra	EvolutionaryCoco				expert-compatibility	analyzer
+ecocoplot	EvolutionaryCoco	menu_ecoco	expert-compatibility	plotter	expert-compatibility	plotter
+ecocoplots	EvolutionaryCoco	menu_ecoco	expert-compatibility	plotter	expert-compatibility	plotter
+ecocos	EvolutionaryCoco		expert-compatibility	analyzer	expert-compatibility	analyzer
+ecocotrack	EvolutionaryCoco	menu_ecoco	expert-compatibility	analyzer plotter	expert-compatibility	analyzer plotter
+ecocotrackn	EvolutionaryCoco	menu_ecoco	expert-compatibility	analyzer	expert-compatibility	analyzer
+eemd	EMD		expert-compatibility	analyzer	expert-compatibility	analyzer
+ellipse_s	Insolation		expert-compatibility	analyzer	expert-compatibility	analyzer
+emdNL	EMD		expert-compatibility	analyzer	expert-compatibility	analyzer
+erhoAR1	LagOne		expert-compatibility	analyzer	expert-compatibility	analyzer
+evofft	EvolutionarySpectrum		expert-compatibility	analyzer	expert-compatibility	analyzer
+evofftML	EvolutionarySpectrum		expert-compatibility	analyzer	expert-compatibility	analyzer
+evoperiodogram	EvolutionarySpectrum		expert-compatibility	analyzer	expert-compatibility	analyzer
+evoplomb	EvolutionarySpectrum		expert-compatibility	analyzer	expert-compatibility	analyzer
+evopmtm	EvolutionarySpectrum		expert-compatibility	analyzer	expert-compatibility	analyzer
+evopmtmML	EvolutionarySpectrum		expert-compatibility	analyzer plotter	expert-compatibility	plotter
+find_extrema	EMD		expert-compatibility	analyzer	expert-compatibility	analyzer
+findduplicate	SortUnique		expert-compatibility	analyzer	expert-compatibility	analyzer
+findnpk	Extrema		expert-compatibility	analyzer helper	expert-compatibility	analyzer helper
+findperct	Coco		expert-compatibility	analyzer	expert-compatibility	analyzer
+formatts	WaveletCoherence		expert-compatibility	analyzer	expert-compatibility	analyzer
+freq2target	Coco		expert-compatibility	analyzer		""
+freq2targetFixed	Coco				expert-compatibility	analyzer
+freq2targetNew	Coco				expert-compatibility	analyzer
+ftestmtm	PowerSpectrum		expert-compatibility	analyzer	expert-compatibility	analyzer
+ftestmtmML	PowerSpectrum	menu_power	expert-compatibility	analyzer plotter	expert-compatibility	analyzer plotter
+gammcf	SWA		expert-compatibility	analyzer	expert-compatibility	analyzer
+gammln	SWA		expert-compatibility	analyzer	expert-compatibility	analyzer
+gammp	SWA		expert-compatibility	analyzer	expert-compatibility	analyzer
+gamser	SWA		expert-compatibility	analyzer	expert-compatibility	analyzer
+gaussfilter	Filtering		expert-compatibility	analyzer	expert-compatibility	analyzer
+gaussmf	Filtering		expert-compatibility	analyzer	expert-compatibility	analyzer
+gentarget	Coco		expert-compatibility	analyzer	expert-compatibility	analyzer
+getBerger89Period	OrbitalPeriods	menu_LOD	expert-compatibility	analyzer	expert-compatibility	analyzer
+getchi2	SWA		expert-compatibility	analyzer	expert-compatibility	analyzer
+getpks	Extrema		expert-compatibility	analyzer	expert-compatibility	analyzer
+hpsort	SWA		expert-compatibility	analyzer	expert-compatibility	analyzer
+imscrollpanel_ac	ImageDisplay		expert-compatibility	plotter	expert-compatibility	plotter
+insoML	Insolation	menu_insol	expert-compatibility	analyzer helper	expert-compatibility	analyzer helper
+interleavedcvcoco	Coco				family-entry	analyzer helper
+interpolate	Interpolation	menu_interp	family-entry	analyzer helper	family-entry	analyzer helper
+interpolate_rand	Interpolation		expert-compatibility	analyzer	expert-compatibility	analyzer
+invprctile	SummaryStatistics		expert-compatibility	analyzer	expert-compatibility	analyzer
+lodla04	OrbitalPeriods	menu_LOD	expert-compatibility	analyzer	expert-compatibility	analyzer
+minirho	PowerSpectrum		expert-compatibility	analyzer helper	expert-compatibility	analyzer helper
+minirhos0	PowerSpectrum		expert-compatibility	analyzer helper	expert-compatibility	analyzer helper
+mmdd2dayi	Insolation		expert-compatibility	analyzer	expert-compatibility	analyzer
+monthday2dayi	Insolation		expert-compatibility	analyzer	expert-compatibility	analyzer
+moveMedian	Smoothing		expert-compatibility	analyzer	expert-compatibility	analyzer
+movemean	Smoothing		expert-compatibility	analyzer	expert-compatibility	analyzer
+movmeanfbw	Smoothing		expert-compatibility	analyzer helper	expert-compatibility	analyzer
+mtmdofs	PowerSpectrum		expert-compatibility	analyzer	expert-compatibility	analyzer
+nCk	Changepoint		expert-compatibility	analyzer	expert-compatibility	analyzer
+norbits	Coco		expert-compatibility	analyzer	expert-compatibility	analyzer
+numorbit	Coco		expert-compatibility	analyzer helper	expert-compatibility	analyzer helper
+partition_fn	Changepoint		expert-compatibility	analyzer	expert-compatibility	analyzer
+pda	PowerDecomposition		expert-compatibility	analyzer	expert-compatibility	analyzer
+pdan	DYNOT		expert-compatibility	analyzer helper	expert-compatibility	analyzer
+period	SWA		expert-compatibility	analyzer	expert-compatibility	analyzer
+period2spectrum	Coco		expert-compatibility	analyzer	expert-compatibility	analyzer
+period2spectrumB	Coco		expert-compatibility	analyzer		""
+pick_k1	Changepoint		expert-compatibility	analyzer	expert-compatibility	analyzer
+plomb_robustar1	PowerSpectrum	menu_power	expert-compatibility	analyzer helper plotter	expert-compatibility	analyzer plotter
+plotAdaptiveCocoPublication	Coco				expert-compatibility	helper plotter
+plotcvcoco	Coco				expert-compatibility	helper plotter
+prewhitening	Prewhitening		expert-compatibility	analyzer	expert-compatibility	analyzer
+randspec_sin	Coco		expert-compatibility	analyzer	expert-compatibility	analyzer
+recplot	Recurrence		expert-compatibility	analyzer helper plotter	expert-compatibility	analyzer helper plotter
+redNoisePeriodogramMC	Coco				expert-compatibility	analyzer helper
+redconfML	PowerSpectrum	menu_power	expert-compatibility	analyzer helper plotter	expert-compatibility	analyzer helper
+redconf_any	PowerSpectrum		expert-compatibility	analyzer	expert-compatibility	analyzer
+redconfchi2	PowerSpectrum	menu_power	expert-compatibility	analyzer	expert-compatibility	analyzer
+redconftabtchi	PowerSpectrum		expert-compatibility	analyzer	expert-compatibility	analyzer
+redmark	SeriesGenerator		expert-compatibility	analyzer	expert-compatibility	analyzer
+rednoise	Wavelet		expert-compatibility	analyzer helper	expert-compatibility	analyzer helper
+reexportCocoPublicationPdfs	Coco				expert-compatibility	analyzer
+rho	SWA		expert-compatibility	analyzer	expert-compatibility	analyzer
+rhoAR1	LagOne		expert-compatibility	analyzer	expert-compatibility	analyzer
+rhoAR1ML	LagOne		expert-compatibility	analyzer	expert-compatibility	analyzer
+rmse4leadlag	LeadLag	menu_leadlag	family-entry	analyzer helper plotter	family-entry	analyzer plotter
+runCocoEightMethodExperiment	MethodValidation				verification	analyzer
+runCocoPublicationValidation	MethodValidation				verification	analyzer
+runEcocoTwoMethodExperiment	MethodValidation				verification	analyzer
+runInterleavedCvCocoComparison	MethodValidation				verification	analyzer
+runSyn3FourMethodPublicationStudy	MethodValidation				verification	analyzer
+select_interval	SeriesEditing	menu_selectinterval	family-entry	analyzer helper	family-entry	analyzer helper
+smoothbestSpan	Smoothing		expert-compatibility	analyzer	expert-compatibility	analyzer
+smoothbestSpanRand	Smoothing	menu_bootstrap	expert-compatibility	analyzer	expert-compatibility	analyzer
+smoothci	Smoothing		expert-compatibility	analyzer	expert-compatibility	analyzer
+smoothciML	Smoothing		expert-compatibility	analyzer helper	expert-compatibility	analyzer helper
+smoothwavelet	WaveletCoherence		expert-compatibility	analyzer	expert-compatibility	analyzer
+solve	SWA		expert-compatibility	analyzer	expert-compatibility	analyzer
+specswa	SWA		expert-compatibility	analyzer	expert-compatibility	analyzer
+spectralmoments	SpectralMoments	menu_specmoments	family-entry	analyzer helper plotter	family-entry	analyzer helper
+spectralswafdr	SWA	menu_power	expert-compatibility	analyzer helper	expert-compatibility	analyzer helper
+strAssign	SWA		expert-compatibility	analyzer	expert-compatibility	analyzer
+strrep2	Workspace				expert-compatibility	analyzer
+swtest	HypothesisTests		expert-compatibility	analyzer	expert-compatibility	analyzer
+tanerhilbertML	Filtering		expert-compatibility	analyzer helper	expert-compatibility	analyzer
+targetadj_real	Coco		expert-compatibility	analyzer	expert-compatibility	analyzer
+targetrebuilt	Coco		expert-compatibility	analyzer	expert-compatibility	analyzer
+theoredar1ML	Coco		expert-compatibility	analyzer	expert-compatibility	analyzer
+validateCocoPublicationValidation	MethodValidation				verification	analyzer
+wave_bases	Wavelet		expert-compatibility	analyzer	expert-compatibility	analyzer
+wave_signif	Wavelet		expert-compatibility	analyzer helper	expert-compatibility	analyzer helper
+wavelet	Wavelet		expert-compatibility	analyzer helper	expert-compatibility	analyzer helper
+wtcsignif	WaveletCoherence		expert-compatibility	analyzer	expert-compatibility	analyzer
+zeropad2	EvolutionarySpectrum		expert-compatibility	analyzer helper	expert-compatibility	analyzer helper

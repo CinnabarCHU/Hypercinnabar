@@ -1,6 +1,6 @@
 # Acycle 方法模块归并评审
 
-后续的[完整模块清单与实施约定](MODULE_INVENTORY.zh-CN.md)将本页的案例扩展到两个固定版本的全部源码，给出了共用 `code/private`、全项目唯一的新名字及旧操作标识的对应关系。实施时以完整清单为准。
+后续的[完整模块清单与实施约定](MODULE_INVENTORY.zh-CN.md)将本页的案例扩展到两个固定版本的全部源码，给出了共用内部目录、全项目唯一的新名字及旧操作标识的对应关系。实施时以完整清单为准。
 
 评审对象是 `acycle-guide-migration` 的 `6a1a00e`，其中 `acmethods` 对应移除 GUIDE 前的 `b52ea9f`，`acmaster` 对应 `dcba427`（Acycle 3.1.1）。以 Li 的 v2.8 User’s Guide 第 4.6、4.7 节识别用户做的分析，再沿每一版实际回调确认数据、参数和产物。[迁移分支快照][review] · [User’s Guide][manual] · [两版菜单与变更](../migration/master/menus.tsv)
 

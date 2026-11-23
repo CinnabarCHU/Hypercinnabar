@@ -1,0 +1,136 @@
+tag	guide_coverage	guide_initial	guide_menu	master_initial	master_menu	modules	guide_listed_packages
+Menu_EMDmenu	heading	visible	Timeseries > Empirical Mode Decomposition	visible	Timeseries > Empirical Mode Decomposition	Desktop	""
+linegenerator	method	visible	Basic Series > Signal/Noise Generator	visible	Basic Series > Signal/Noise Generator	SeriesGenerator	SeriesGenerator
+menu_AM	method	visible	Timeseries > Amplitude Modulation	visible	Timeseries > Amplitude Modulation	Modulation	AmplitudeModulation
+menu_CSA	method	visible	Timeseries > Circular Spectral Analysis	visible	Timeseries > Circular Spectral Analysis	CircularSpectrum	CircularSpectrum
+menu_LOD	method	visible	Basic Series > Milankovitch Calculator	visible	Basic Series > Milankovitch Calculator	OrbitalPeriods	MilankovitchCal getBerger89Period lodla04
+menu_LR04	method	visible	Basic Series > LR04 Stack	visible	Basic Series > LR04 Stack	ReferenceSeries	LR04
+menu_NewDataTable	desktop	visible	File > New Data Table	visible	File > Create Data Table	Workspace	""
+menu_add	method	visible	Math > Merge Series	visible	Math > Merge Series	SeriesArithmetic	MergeSeries
+menu_age	method	visible	Timeseries > Age Scale | Tuning	visible	Timeseries > Age Scale | Tuning	Tuning	AgeScale
+menu_agebuild	method	visible	Timeseries > Build Age Model	visible	Timeseries > Build Age Model	BuildAgeModel	BuildAgeModel
+menu_anova	method	visible	Univariate > ANOVA	visible	Bivariate > ANOVA	HypothesisTests	ANOVA
+menu_basic	heading	visible	Basic Series	visible	Basic Series	Desktop	""
+menu_bispectral	absent	absent		visible	Timeseries > Bispectral Analysis	Bispectrum	""
+menu_bivariate	heading	visible	Bivariate	visible	Bivariate	Desktop	""
+menu_bootstrap	method	visible	Timeseries > Smoothing > Bootstrap	visible	Timeseries > Smoothing > Bootstrap	Smoothing	BootstrapSmooth smoothbestSpanRand
+menu_cenogrid	method	visible	Basic Series > CENOGRID	visible	Basic Series > CENOGRID	ReferenceSeries	CENOGRID
+menu_chi2gof	method	visible	Univariate > Distribution Test	visible	Bivariate > Chi-square GOF	HypothesisTests	DistributionTest
+menu_clip	method	visible	Math > Clipping	visible	Math > Clipping	SeriesEditing	Clipping
+menu_coh	method	visible	Timeseries > Coherence & Phase	visible	Timeseries > Coherence & Phase	Coherence	Coherence cohac
+menu_colman	method	visible	Math > Column Manipulate	visible	Math > Column Manipulate	Columns	ColumnManipulation
+menu_contact	desktop	visible	Help > Copyright	visible	Help > Copyright	SettingsHelp	""
+menu_copy	desktop	visible	Edit > Copy	visible	Edit > Copy	Workspace	""
+menu_corr	method	visible	Bivariate > Correlation	visible	Bivariate > Correlation	Association	Correlation
+menu_correlation	method	visible	Timeseries > Stratigraphic Correlation	visible	Timeseries > Stratigraphic Correlation	StratCorrelation	StratigraphicCorrelation
+menu_covariance	method	visible	Bivariate > Covariance	visible	Bivariate > Covariance	Association	Covariance
+menu_cpt	method	visible	Math > Changepoint	visible	Math > Changepoint	Changepoint	bayes_cpt bayes_cpt_r2
+menu_cut	desktop	visible	Edit > Cut	visible	Edit > Cut	Workspace	""
+menu_datadistri	method	visible	Plot > Data Distribution	visible	Plot > Data Distribution	Distribution	DataDistribution
+menu_datatransf	method	visible	Math > Data Transformations	visible	Math > Data Transformations	Transform	DataTransform boxcoxML
+menu_delete	desktop	visible	Edit > Delete	visible	Edit > Delete	Workspace	""
+menu_depeaks	method	visible	Math > Remove Peaks	visible	Math > Remove Peaks	SeriesEditing	depeaks
+menu_derivative	method	visible	Math > Derivative	visible	Math > Derivative	Derivative	Derivative
+menu_desection	method	visible	Math > Remove Parts	visible	Math > Remove Parts	SeriesEditing	RemoveSections
+menu_digitizer	alternative	visible	Math > Plot Digitizer	visible	Math > Plot Digitizer	Digitizer	Digitize DigitizeTrace
+menu_dynfilter	method	visible	Timeseries > Dynamic Filtering	visible	Timeseries > Dynamic Filtering	Filtering	DynamicFiltering
+menu_dynos	method	visible	Timeseries > Sedimentary Noise Model > Dynamic noise after orbital tuning (DYNOT)	visible	Timeseries > Sedimentary Noise Model > Dynamic noise after orbital tuning (DYNOT)	DYNOT	DYNOT
+menu_dynot_v2	method	visible	Timeseries > Sedimentary Noise Model > Dynamic noise after orbital tuning (DYNOT) v2	absent		DYNOT	DYNOT
+menu_eTimeOpt	method	visible	Timeseries > eTimeOpt	absent		EvolutionaryTimeOpt	EvolutionaryTimeOpt
+menu_ecoco	method	visible	Timeseries > Correlation Coefficient (COCO/eCOCO)	visible	Timeseries > Correlation Coefficient (COCO/eCOCO)	Coco EvolutionaryCoco	corrcoefslices corrcoefslices_rank ecoco ecocoplot ecocoplots ecocotrack ecocotrackn
+menu_edit	heading	visible	Edit	visible	Edit	Desktop	""
+menu_eemd	method	visible	Timeseries > Empirical Mode Decomposition > Ensemble Empirical Mode Decomposition (EEMD)	visible	Timeseries > Empirical Mode Decomposition > Ensemble Empirical Mode Decomposition (EEMD)	EMD	EnsembleEMD
+menu_email	desktop	visible	Help > Contact	visible	Help > Contact	SettingsHelp	""
+menu_emd	method	visible	Timeseries > Empirical Mode Decomposition > Empirical Mode Decomposition (EMD)	visible	Timeseries > Empirical Mode Decomposition > Empirical Mode Decomposition (EMD)	EMD	EMD
+menu_example_GD2GR	method	visible	Basic Series > Examples > Middle Triassic Guandao2 gamma ray	visible	Basic Series > Examples > Middle Triassic Guandao2 gamma ray	Examples	ExampleGuandao
+menu_example_Newark	method	visible	Basic Series > Examples > Late Triassic Newark Depth Rank	visible	Basic Series > Examples > Late Triassic Newark Depth Rank	Examples	ExampleNewark
+menu_example_PETM	method	visible	Basic Series > Examples > PETM Svalbard logFe	visible	Basic Series > Examples > PETM Svalbard logFe	Examples	ExampleSvalbardPETM
+menu_example_hawaiiCO2	method	visible	Basic Series > Examples > Mauna Loa CO2 monthly mean	visible	Basic Series > Examples > Mauna Loa CO2 monthly mean	Examples	ExampleMaunaLoa
+menu_example_inso2Ma	method	visible	Basic Series > Examples > Insolation 0-2Ma 65N Jun22	visible	Basic Series > Examples > Insolation 0-2Ma 65N Jun22	Examples	ExampleInsolation
+menu_example_la04etp	method	visible	Basic Series > Examples > La2004 0-2Ma ETP	visible	Basic Series > Examples > La2004 0-2Ma ETP	Examples	ExampleLa2004
+menu_example_marsimage	method	visible	Basic Series > Examples > Image from Mars' HiRISE camera	visible	Basic Series > Examples > Image from Mars'' HiRISE camera	Examples	ExampleMars
+menu_example_plotdigitizer	method	visible	Basic Series > Examples > Image for Plot Digitizer	visible	Basic Series > Examples > Image for Plot Digitizer	Examples	ExampleDigitizer
+menu_example_redp7	method	visible	Basic Series > Examples > Red Noise rho=0.7 2000 points	visible	Basic Series > Examples > Red Noise rho=0.7 2000 points	Examples	ExampleRedNoise
+menu_example_sphalerite	method	visible	Basic Series > Examples > Image Sphalerite	visible	Basic Series > Examples > Image Sphalerite	Examples	ExampleSphalerite
+menu_example_wayao	method	visible	Basic Series > Examples > Late Triassic Wayao gamma ray	visible	Basic Series > Examples > Late Triassic Wayao gamma ray	Examples	ExampleWayao
+menu_examples	heading	visible	Basic Series > Examples	visible	Basic Series > Examples	Desktop	""
+menu_extinction_CSA	method	visible	Basic Series > Examples > Example extinction	visible	Basic Series > Examples > Example extinction	Examples	ExampleExtinction
+menu_extract	method	visible	File > Extract Data	visible	File > Extract Data	Columns	Columns
+menu_file	heading	visible	File	visible	File	Desktop	""
+menu_filter	method	visible	Timeseries > Filtering	visible	Timeseries > Filtering	Filtering	Bandpass PassFilter
+menu_findupdates	desktop	visible	Help > Find Updates	visible	Help > Find Updates	SettingsHelp	""
+menu_folder	desktop	visible	File > New Folder	visible	File > New Folder	Workspace	""
+menu_function	method	visible	Math > Simple Function	visible	Math > Simple Function	Transform	SimpleFunction
+menu_gap	method	visible	Math > Add Gaps	visible	Math > Add Gaps	SeriesEditing	AddGaps
+menu_help	heading	visible	Help	visible	Help	Desktop	""
+menu_image	heading	visible	Math > Image	visible	Math > Image	Desktop	""
+menu_improfile	method	visible	Math > Image > Image Profile	visible	Math > Image > Image Profile	ImageProfile	ImageProfile ImageTransect
+menu_imshow	method	visible	Math > Image > Show Image	visible	Math > Image > Show Image	ImageDisplay	ShowImage
+menu_insol	method	visible	Basic Series > Insolation	visible	Basic Series > Insolation	Insolation	InsolLatDayGif Insolation insoML
+menu_interp	method	visible	Math > Interpolation	visible	Math > Interpolation	Interpolation	interpolate
+menu_interpolationGUI	method	visible	Math > Interpolation Pro	visible	Math > Interpolation Pro	Interpolation	InterpolationPro
+menu_interpseries	method	visible	Math > Interpolate Series	visible	Math > Interpolate Series	Interpolation	InterpolateSeries
+menu_lang	desktop	visible	Help > 文A/语言选择(language)	absent		SettingsHelp	""
+menu_laskar	method	visible	Basic Series > Astronomical Solution	visible	Basic Series > Astronomical Solution	OrbitSolution	AstronomicalSolution
+menu_leadlag	method	visible	Timeseries > Lead-lag Relationship	visible	Timeseries > Lead-lag Relationship	LeadLag	rmse4leadlag
+menu_linearReg	archival	visible	Bivariate > Linear Regression	visible	Bivariate > Linear Regression	Regression	LinearRegression
+menu_log10	absent	absent		hidden	Math > menu_log10	Transform	""
+menu_lyapunov	method	visible	Timeseries > Sedimentary Noise Model > Lyapunov exponent	absent		Lyapunov	Lyapunov LyapunovMonteCarlo
+menu_manuals	desktop	visible	Help > Manual	visible	Help > Manual	SettingsHelp	""
+menu_math	heading	visible	Math	visible	Math	Desktop	""
+menu_maxmin	method	visible	Math > Find Max/Min	visible	Math > Find Max/Min	Extrema	Extrema
+menu_movGauss	method	visible	Timeseries > Smoothing > Moving Gaussian	visible	Timeseries > Smoothing > Moving Gaussian	Smoothing	MovingGaussian
+menu_movmeanfbw	method	visible	Timeseries > Smoothing > Moving Average > Fixed Bandwidth	visible	Timeseries > Smoothing > Moving Average > Fixed Bandwidth	Smoothing	FixedMovingMean
+menu_movmedian	method	visible	Timeseries > Smoothing > Moving Median > K-Nearest Neighbor (KNN)	visible	Timeseries > Smoothing > Moving Median > Fixed Count (K-point)	Smoothing	MovingMedian
+menu_movmedian_option	heading	visible	Timeseries > Smoothing > Moving Median	visible	Timeseries > Smoothing > Moving Median	Desktop	""
+menu_movmedianfbw	method	visible	Timeseries > Smoothing > Moving Median > Fixed Bandwidth	visible	Timeseries > Smoothing > Moving Median > Fixed Bandwidth	Smoothing	FixedMovingMedian
+menu_multiply	method	visible	Math > Multiply Series	visible	Math > Multiply Series	SeriesArithmetic	MultiplySeries
+menu_multivariate1	heading	visible	Multivariate	hidden	Multivariate	Desktop	""
+menu_newtxt	desktop	visible	File > New Text File	visible	File > New Text File	Workspace	""
+menu_norm	absent	absent		hidden	Math > menu_norm	Transform	""
+menu_normaltest	method	visible	Univariate > Normality Test	visible	Bivariate > Normality Test	HypothesisTests	Normality
+menu_open	desktop	hidden	File > Open *.fig File	absent		Workspace	""
+menu_opendir	desktop	visible	File > Open Working Directory	hidden	File > Open Directory	Workspace	""
+menu_paste	desktop	visible	Edit > Paste	visible	Edit > Paste	Workspace	""
+menu_pca	method	visible	Multivariate > Principal Component	visible	Math > Principal Component	PCA	PCA
+menu_pda	method	visible	Timeseries > Power Decomposition Analysis	visible	Timeseries > Power Decomposition Analysis	PowerDecomposition	PowerDecomposition
+menu_period	method	visible	Timeseries > Evolutionary Spectral Analysis	visible	Timeseries > Evolutionary Spectral Analysis	EvolutionarySpectrum	EvolutionarySpectrum
+menu_plot	method	visible	Plot > Plot	visible	Plot > Plot	SeriesPlot	SimplePlot
+menu_plotadv	method	visible	Plot > Plot Adv	visible	Plot > Plot Adv	SeriesPlot	PlotAdv
+menu_plotall	heading	visible	Plot	visible	Plot	Desktop	""
+menu_plotn	method	visible	Plot > Plot Standardized	visible	Plot > Plot Standardized	SeriesPlot	SimplePlot Standardize
+menu_plotn2	method	visible	Plot > Plot Standardized + 2	visible	Plot > Plot Standardized + 2	SeriesPlot	SimplePlot Standardize
+menu_plotpro_2d	method	visible	Plot > Plot Pro	visible	Plot > Plot Pro	SeriesPlot	PlotPro
+menu_power	method	visible	Timeseries > Spectral Analysis	visible	Timeseries > Spectral Analysis	PowerSpectrum	PowerSpectrum SWA SpectralBendingPowerLaw SpectralPowerLaw ftestmtmML plomb_robustar1 redconfML redconfchi2 spectralswafdr
+menu_prewhiten	method	visible	Timeseries > Detrending | Curve Fitting	visible	Timeseries > Detrending | Curve Fitting	Detrending	DetrendSignalPP Detrending
+menu_read	desktop	visible	Help > What's New	visible	Help > What''s New	SettingsHelp	""
+menu_recplot	method	visible	Timeseries > Recurrence Plot	visible	Timeseries > Recurrence Plot	Recurrence	Recurrence crp_core crp_pdist
+menu_refreshlist	desktop	visible	Edit > Refresh	visible	Edit > Refresh	Workspace	""
+menu_rename	desktop	visible	Edit > Rename	visible	Edit > Rename	Workspace	""
+menu_rgb2gray	method	visible	Math > Image > RGB to Grayscale	visible	Math > Image > RGB to Grayscale	ImageColor	RGBToGray
+menu_rgb2lab	method	visible	Math > Image > RGB to CIE Lab	visible	Math > Image > RGB to CIE Lab	ImageColor	RGBToLab
+menu_rho	method	visible	Timeseries > Sedimentary Noise Model > Lag-1 autocorrelation coefficient (ρ1)	visible	Timeseries > Sedimentary Noise Model > Lag-1 autocorrelation coefficient (\rho1)	LagOne	Lag1 Lag1MonteCarlo
+menu_rhov2	method	visible	Timeseries > Sedimentary Noise Model > Lag-1 autocorrelation coefficient (ρ1) v2	absent		LagOne	Lag1V2 Lag1V2MonteCarlo
+menu_samplerate	method	visible	Plot > Sampling Rate	visible	Plot > Sampling Rate	Sampling	SamplingRate
+menu_savefig	desktop	visible	File > Save *.AC.fig	visible	File > Save *.AC.fig	Workspace	""
+menu_sednoise	heading	visible	Timeseries > Sedimentary Noise Model	visible	Timeseries > Sedimentary Noise Model	Desktop	""
+menu_selectinterval	method	visible	Math > Select Parts	visible	Math > Select Parts	SeriesEditing	select_interval
+menu_settings	absent	absent		visible	Help > Setting...	SettingsHelp	""
+menu_smooth	method	visible	Timeseries > Smoothing > Moving Average > K-Nearest Neighbor (KNN)	visible	Timeseries > Smoothing > Moving Average > Fixed Count (K-point)	Smoothing	MovingMean
+menu_smooth1	heading	visible	Timeseries > Smoothing	visible	Timeseries > Smoothing	Desktop	""
+menu_smooth_option	heading	visible	Timeseries > Smoothing > Moving Average	visible	Timeseries > Smoothing > Moving Average	Desktop	""
+menu_sort	method	visible	Math > Sort/Unique/Delete-empty	visible	Math > Sort/Unique/Delete-empty	SortUnique	SortUnique
+menu_sound	method	visible	Plot > Convert to sound	visible	Plot > Convert to sound	Sound	SeriesSound
+menu_specmoments	method	visible	Timeseries > Spectral Moments	visible	Timeseries > Spectral Moments	SpectralMoments	spectralmoments
+menu_sr2age	method	visible	Timeseries > Sed. Rate to Age Model	visible	Timeseries > Sed. Rate to Age Model	BuildAgeModel	SedimentationRateToAge
+menu_statsummary	method	visible	Univariate > Summary Statistics	visible	Univariate > Stat Summary	SummaryStatistics	SummaryStatistics
+menu_swa	method	visible	Timeseries > Spectral Analysis (SWA)	visible	Timeseries > Spectral Analysis (SWA)	SWA	SWA
+menu_timeOpt	method	visible	Timeseries > TimeOpt	absent		TimeOpt	TimeOpt
+menu_ttest	method	visible	Univariate > One-sample test (t test)	visible	Univariate > t-Test	HypothesisTests	OneSampleT
+menu_undatable	method	visible	Timeseries > Undatable	visible	Timeseries > Undatable	Undatable	Undatable
+menu_uni2SamTest	method	visible	Univariate > Two Sample Tests	visible	Bivariate > 1-2 Sample Test	HypothesisTests	TwoSampleTests
+menu_univariate	heading	visible	Univariate	visible	Univariate	Desktop	""
+menu_utilities	absent	absent		hidden	Math > menu_utilities	Desktop	""
+menu_waveletGUI	method	visible	Timeseries > Wavelet	visible	Timeseries > Wavelet	Wavelet WaveletCoherence	MatlabWaveletCoherence WaveletCoherence WaveletSpectrum
+menu_whiten	method	visible	Timeseries > Pre-whitening	visible	Timeseries > Pre-whitening	Prewhitening	AR1Prewhitening
+menuac	heading	visible	Timeseries	visible	Timeseries	Desktop	""
