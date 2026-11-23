@@ -34,6 +34,19 @@ accore.io('save','analysis.mat',s2);
 s2 = accore.io('load','analysis.mat');
 ```
 
-每个菜单提供一个具名 CLI 包装函数，例如 `accli.filter`、`accli.prewhiten`、`accli.bispectral`。显式输入结构适用于多序列、图像及标定点。可用 `accli.run(tag,input,...)` 按菜单执行。运行默认只取结果，传入 `'Plot',true` 或目标轴即可出图。旧式纯桌面操作需要打开主窗口。仍依赖外部数据库或工具箱的方法沿用原有运行条件。
+每个菜单提供一个具名 CLI 包装函数，例如 `accli.filter`、`accli.prewhiten`、`accli.bispectral`。显式输入结构适用于多序列、图像及标定点。可用 `accli.run(tag,input,...)` 按菜单执行。有 Analyzer 时默认只取结果，传入 `'Plot',true` 或目标轴即可出图。只有 Plotter 的入口默认执行其绘图或桌面动作。旧式纯桌面操作需要打开主窗口。仍依赖外部数据库或工具箱的方法沿用原有运行条件。
+
+### Mini-Robot
+
+工具栏对选中的每个文件打开一个独立设置窗。运行按钮与 `accli.miniRobot` 执行同一个单序列流程。准备、插值、去趋势、全段谱、演化谱、小波依次按设置运行。旧版只在间距不均时插值，master 在请求改变目标间距时也会插值。CLI 默认隐藏过程图并返回各阶段的数值结果。保存和绘图可分别开启。
+
+```matlab
+opts = struct('trend','linear','spectrum',false,'evolutionary',false,'wavelet',true);
+r = accli.miniRobot(x,'Settings',opts,'Unit','m','UnitType',1);
+r2 = accli.miniRobot(x,'Operation','Robot','Settings',opts);
+again = accore.replay(r.id);
+```
+
+两个固定版本的 RobotGUI 都调用了发行时缺失的 `waveletML`。PoC 恢复上游最后一次删除前的同名函数，保留其 Morlet、AR(1) 显著性及失败后将最大周期减半再试的约定。构建时校验原始 Git blob。[上游历史源码](https://github.com/mingsongli/acycle/blob/aacef8571055b14cbc77ec61efb0e8f7875810dd/code/package/wavelet/waveletML.m)
 
 交互窗口可用 `getappdata(window,'AcycleAnalysis')` 取得上次成功的分析。CLI 可从这份数据改参数或只改图。可交换 MAT 文件包含实参、数据、分析结果及显式设置。按 id 精确重放还需要相应的日志和快照。

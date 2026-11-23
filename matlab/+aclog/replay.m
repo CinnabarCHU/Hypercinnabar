@@ -15,6 +15,11 @@ if isfile(saved)
     state = load(saved,'value');
     rng(state.value);
 end
+if ismember(entry.info.op,{'Workflow_Robot-v1','Workflow_Robot_legacy-v1'})
+    newId = acMenuNewId();
+    retval = accore.robot(params,newId);
+    return
+end
 menu = regexp(entry.info.op,'^Menu_(\w+)-v1/(helper|analyzer|plotter)$','tokens','once');
 if ~isempty(menu)
     if isempty(which('acMenuExecute'))

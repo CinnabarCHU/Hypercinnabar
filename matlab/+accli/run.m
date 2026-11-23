@@ -6,7 +6,7 @@ arguments
     opts.Operation = ''
     opts.Params (1,1) struct = struct()
     opts.Plt (1,1) struct = struct()
-    opts.Plot (1,1) logical = false
+    opts.Plot = []
     opts.Target = []
 end
 if isfield(opts.Params,'operation')
@@ -25,12 +25,24 @@ input.operation = engine.operation;
 over = struct('params',opts.Params,'plt',opts.Plt);
 ids = struct('helper',acMenuNewId(),'analyzer',[],'plotter',[]);
 h = accore.run(menu.tag,'helper','input',input,'override',over,'id',ids.helper);
-s = struct('tag',menu.tag,'operation',engine.operation,'input',input,'explicit',over, ...
+raw = {'operation','data','data_r','data_s','data_even','data_new','data_filterout','selectedData', ...
+    'dat','dat1','dat2','dataCell','im_name','I','image','series','reference','inputfile','input_bytes','result','CursorInfo_value'};
+science = setdiff(intersect(fieldnames(input),strsplit(engine.fields)),raw);
+styles = setdiff(intersect(fieldnames(input),strsplit(engine.styles)),{'filename','dat_name','color_type'});
+explicit = struct('params',acMenuMerge(keep(input,science),opts.Params), ...
+    'plt',acMenuMerge(keep(input,styles),opts.Plt));
+s = struct('tag',menu.tag,'operation',engine.operation,'input',input,'explicit',explicit, ...
     'params',h.params,'plt',h.plt,'dat',h.dat,'res',[],'ids',ids);
 if ismember('analyzer',strsplit(engine.roles))
     s.ids.analyzer = acMenuNewId();
     accore.source(s.ids.analyzer,struct('helper',s.ids.helper));
     s.res = accore.run(s.tag,'analyzer',s.params,s.ids.analyzer);
 end
-if opts.Plot || ~isempty(opts.Target), s = accli.replot(s,struct(),opts.Target); end
+plot = opts.Plot;
+if isempty(plot), plot = isempty(s.ids.analyzer) && ismember('plotter',strsplit(engine.roles)); end
+if plot || ~isempty(opts.Target), s = accli.replot(s,struct(),opts.Target); end
+end
+
+function out = keep(s,keys)
+out = rmfield(s,setdiff(fieldnames(s),keys));
 end

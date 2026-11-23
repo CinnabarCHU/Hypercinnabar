@@ -25,6 +25,9 @@ case 'list'
     value = table2struct(t);
 case 'read'
     value = load(varargin{1});
+case 'writeMatrix'
+    dlmwrite(varargin{:});
+    value = varargin{1};
 case 'writeText'
     [fid,msg] = fopen(varargin{1},'w');
     if fid < 0, error('Acycle:IO:Open','%s',msg); end

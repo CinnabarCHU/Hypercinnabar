@@ -12,6 +12,8 @@ if isempty(fig)
     show = get(groot,'DefaultFigureVisible');
     [fig,h,init] = layout();
     try
+        handleVisibility = fig.HandleVisibility;
+        fig.HandleVisibility = 'on';
         setappdata(fig,'AcycleWindowName',name);
         acgui.state(fig,h);
         for k = 1:numel(init), init{k}(); end
@@ -20,13 +22,24 @@ if isempty(fig)
         if strcmp(name,'AC')
             acgui.extendDesktop(fig);
         end
-        if isgraphics(fig), set(fig,'Visible',show); end
+        if isgraphics(fig), set(fig,'HandleVisibility',handleVisibility,'Visible',show); end
     catch err
         if isgraphics(fig), delete(fig); end
         if isgraphics(before), set(groot,'CurrentFigure',before); end
         rethrow(err)
     end
 else
+    if ~isempty(varargin)
+        % A new file selection rebinds this singleton's scientific state.
+        h = acgui.state(fig);
+        if isfield(h,'trendSessions'), h = rmfield(h,'trendSessions'); end
+        if isfield(h,'detrendfig') && isgraphics(h.detrendfig), delete(h.detrendfig); end
+        previous = fig.HandleVisibility;
+        guard = onCleanup(@()restoreVisibility(fig,previous)); %#ok<NASGU>
+        fig.HandleVisibility = 'on';
+        set(groot,'CurrentFigure',fig);
+        opening(fig,[],h,varargin{:});
+    end
     if strcmp(get(groot,'DefaultFigureVisible'),'on'), figure(fig); end
 end
 if nargout
@@ -36,4 +49,8 @@ if nargout
         varargout = repmat({[]},1,nargout);
     end
 end
+end
+
+function restoreVisibility(fig,previous)
+if isgraphics(fig), fig.HandleVisibility = previous; end
 end

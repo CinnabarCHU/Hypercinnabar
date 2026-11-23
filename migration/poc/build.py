@@ -1,5 +1,6 @@
 """Build a portable, code-only Acycle distribution from two pinned revisions."""
 import argparse
+import hashlib
 import json
 from pathlib import Path
 import re
@@ -9,6 +10,7 @@ import tempfile
 
 from layout import emit_layout
 from integrate import integrate
+from robot import extract
 
 ROOT = Path(__file__).resolve().parents[2]
 PINS = {"acycle": "b52ea9f510f3be00bde9a0238b9898a1e2315b74", "master": "dcba4279168745b563e0535b954297023dd62fc7"}
@@ -47,6 +49,13 @@ end
         if re.search(rb"(?im)^\s*[^%\r\n]*\bgui_mainfcn\s*\(",raw):
             raise ValueError(f"GUIDE launcher escaped conversion: {f}")
     integrate(dest,tree)
+    extract(dest,tree)
+    recovered = ROOT/"migration/poc/recovered/waveletML.m"
+    data = recovered.read_bytes().replace(b"\r\n",b"\n").replace(b"\n",b"\r\n")
+    blob = hashlib.sha1(b"blob "+str(len(data)).encode()+b"\0"+data).hexdigest()
+    if blob != "c363df1e0851dd9fc5236f017bdea41ac1cca05f":
+        raise ValueError("Historical Mini-Robot wavelet source differs from the pinned blob")
+    (dest/"code/package/wavelet/waveletML.m").write_bytes(data)
     return inventory
 
 

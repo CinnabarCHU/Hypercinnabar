@@ -76,7 +76,7 @@ def emit_layout(fig_file, output):
             if not hasattr(p, key):
                 continue
             value = getattr(p, key)
-            if key == "TooltipString" and not np.size(value):
+            if key in ("TooltipString","FontName","FontSize") and not np.size(value):
                 continue
             v = expression(value, key)
             if key == "ColumnEditable":

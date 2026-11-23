@@ -72,6 +72,11 @@ sw2 = getappdata(swaFig,'AcycleAnalysis'); assert(sw.ids.analyzer==sw2.ids.analy
 list=cellstr(h.listbox_acmain.String); h.listbox_acmain.Value=find(strcmp(list,'test-series.txt'));
 click(h.menu_bispectral);
 bs = accli.bispectral(data); assert(strcmp(bs.operation,'Bispectral') && isstruct(bs.res));
+settings = struct('spacing',2,'trend','linear','spectrum',false,'evolutionary',false,'wavelet',true,'maxPeriod',32);
+ro = accli.miniRobot(data,'Settings',settings,'Unit','m','UnitType',1);
+rm = accli.miniRobot(data,'Operation','Robot','Settings',settings,'Unit','m','UnitType',1);
+assert(isempty(ro.res.resampled) && size(rm.res.resampled,1)<size(data,1));
+assert(~isempty(ro.res.wavelet) && isequaln(ro.res,accore.replay(ro.id)));
 screenshot = fullfile(getenv('RUNNER_TEMP'),'acycle-preview.png');
 if ~isempty(getenv('RUNNER_TEMP'))
     set(fig,'Visible','on'); drawnow;
