@@ -42,8 +42,8 @@ def materialize(s,is_journal):
     return str(dest/n)
 for k,s in e['sources'].items():
     if k=='file_input':
-        assert s['mode']=='matrix' and re.fullmatch(r'[A-Za-z]\w{0,62}',s['field'])
-        p[k]={'kind':'matrix','field':s['field'],'path':materialize(s['source'],False)}
+        assert s['mode'] in ('matrix','path') and re.fullmatch(r'[A-Za-z]\w{0,62}',s['field'])
+        p[k]={'kind':s['mode'],'field':s['field'],'path':materialize(s['source'],False)}
     else:p[k]=materialize(s,True)
 q=dict(operation='menu',acycle_root=str(repo),output_dir=str(out),menu=e['menu'],role=e['role'],payload=p)
 (root/'request.json').write_text(json.dumps(q))
