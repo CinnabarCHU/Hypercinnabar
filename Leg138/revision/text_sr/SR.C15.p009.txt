@@ -1,0 +1,40 @@
+PLIOCENE STABLE ISOTOPE STRATIGRAPHY
+
+Figure 4. Cross-spectral analyses of the GRAPE density record of Site 846 (dashed line) vs. a stacked GRAPE
+density record of Sites 849, 850 and 851 (solid line, from Shackleton et al., this volume). A. 1.76 to 3 Ma. B.
+3 to 4 Ma. C. 4 to 5 Ma. D. 5 to 6 Ma. In each panel, variance is shown on a log scale; the lowest line
+(dashed/dotted) shows coherency with the 80% confidence limit. Phase estimates have been plotted only
+where coherency is significant.
+
+stage K1 (without prejudging the precise position of the top of the
+Kaena, but making the arbitrary decision that in order for each new
+series to count down from a warm stage 1 at the top, the lowest stage
+in the series above must be an even-numbered cold stage).
+
+The value of reorganizing the nomenclature becomes clear should
+one attempt to use the scheme of Sarnthein and Tiedemann (1989); in
+their Figure 6, they indicated the top of the Kaena in stage 122 in Site
+606 and in stage 126 in Site 552A and implicitly in stage 124 in Site
+658. It is not clear to the detail of a single stage how these sites should
+be correlated at that point. By the level of the base of the Gauss, we
+might define 150 stages, whereas Tiedemann (1992) defined only
+140; yet the glacial stage he named stage 142 can be unequivocally
+recognized in the record of Site 846; we re-designated this as stage
+Gi2. Thus, careful use of this scheme avoids cumulative uncertainties.
+We have aimed not to define more stages than appears useful, bearing
+in mind that the purpose of the exercise is communication; should
+further subdivision be required in the future for either discussion or
+for correlation purposes, lettered substages analogous to 5a to 5e in
+the late Pleistocene may be used.
+
+The data from Figure 5 are shown with isotope stage numbers and
+a magnetostratigraphy in Figure 7. The magnetostratigraphy was
+developed in Sites 850 and 851 (for the Gauss) and Site 852 (for
+the Gilbert). Correlation between Site 846 and these other sites has
+been based on tuning each of the GRAPE density records to the
+orbital insolation record of Berger and Loutre (1991), as discussed in
+Shackleton et al. (this volume). Note that the time scale shown here
+for the magnetostratigraphy is the one developed by Shackleton,
+Berger, and Peltier (1990), henceforth SBP90, and by Shackleton et
+
+345

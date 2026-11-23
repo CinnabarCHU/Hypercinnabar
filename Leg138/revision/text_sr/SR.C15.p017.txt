@@ -1,0 +1,146 @@
+PLIOCENE STABLE ISOTOPE STRATIGRAPHY
+
+REFERENCES*
+
+Becker, K., Sakai, H., et al., 1988. Proc. ODP, Init. Repts., 111: College Station,
+TX (Ocean Drilling Program).
+
+Berger, A., and Loutre, M.F., 1991. Insolation values for the climate of the last
+10 million years. Quat. Sci. Rev., 10:297–317.
+
+Berggren, W.A., Kent, D.V., and Flynn, J.J., 1985. Jurassic to Paleogene: Part
+2. Paleogene geochronology and chronostratigraphy. In Snelling, N.J.
+(Ed.), The Chronology of the Geological Record. Geol. Soc. London
+Mem., 10:141–195.
+
+Clapperton, C.M., and Sugden, D.E., 1990. Late Cenozoic glacial history of
+the Ross Embayment, Antarctica. Quat. Sci. Rev., 9:253–272.
+
+Coplen, T.B., 1988. Normalization of oxygen and hydrogen isotope data.
+Chem. Geol. (Isotope Geosci. Sect.), 72:293–297.
+
+Emiliani, C., 1955. Pleistocene temperatures. J. Geol., 63:538–578.
+
+Farrell, J.W., 1991. Late Neogene palaeoceanography of the central equatorial
+Pacific: evidence from carbonate preservation and stable isotopes [Ph.D.
+thesis]. Brown Univ., Providence, RI.
+
+Hagelberg, T., Shackleton, N., Pisias, N., and Shipboard Scientific Party, 1992.
+Development of composite depth sections for Sites 844 through 854. In
+Mayer, L., Pisias, N., Janecek, T., et al., Proc. ODP, Init. Repts., 138 (Pt.
+1): College Station, TX (Ocean Drilling Program), 79–85.
+
+Hays, J.D., Saito, T., Opdyke, N.D., and Burckle, L.H., 1969. Pliocene-Pleis-
+tocene sediments of the equatorial Pacific: their paleomagnetic, biostrati-
+graphic, and climatic record. Geol. Soc. Am. Bull., 80:1481–1513.
+
+Hilgen, F.J., 1991. Extension of the astronomically calibrated (polarity) time
+scale to the Miocene-Pliocene boundary. Earth Planet. Sci. Lett., 107:349–
+368.
+
+Hodell, D.A., and Venz, K., 1992. Toward a high-resolution stable isotopic
+record of the Southern Ocean during the Pliocene-Pleistocene (4.8 to 0.8
+Ma). In Kennett, J.P., Warnke, D.A. (Eds.), The Antarctic Paleoenviron-
+ment: A Perspective on Global Change (Pt. 1). Antarc. Res. Ser., 56:265–
+310.
+
+Houghton, J.T., Jenkins, G.J., and Ephraums, J.J. (Eds.), 1990. Climate Change:
+The IPCC Scientific Assessment: Cambridge (Cambridge Univ. Press).
+
+Jenkins, G.M., and Watts, D.G., 1968. Spectral Analysis and Its Applications:
+San Francisco (Holden Day).
+
+Kastens, K.A., 1992. Did glacio-eustatic sea level drop trigger the Messinian
+salinity crisis? New evidence from Ocean Drilling Program Site 654 in the
+Tyrrhenian Sea. Paleoceanography, 7:333–356.
+
+Keigwin, L.D., 1987. North Pacific deep water formation during the latest
+glaciation. Nature, 330:363–364.
+
+Kennett, J.P., Houtz, R.E., et al., 1974. Init. Repts. DSDP, 29: Washington (U.S.
+Govt. Printing Office).
+
+Loubere, P., and Moss, K., 1986. Late Pliocene climatic change and the onset
+of Northern Hemisphere glaciation as recorded in the northeast Atlantic
+Ocean. Geol. Soc. Am. Bull., 97:818–828.
+
+Marchant, D.R., Swisher, C.C., III, Lux, D.R., West, D.P., Jr., and Denton,
+G.H., 1993. Pliocene paleoclimate and East Antarctic ice-sheet history
+from surficial ash deposits. Science, 260:667–670.
+
+Mayer, L., Pisias, N., Janecek, T., et al., 1992. Proc. ODP, Init. Repts., 138
+(Pts. 1 and 2): College Station, TX (Ocean Drilling Program).
+
+Mix, A.C., Pisias, N.G., Zahn, R., Rugh, W., Lopez, C., and Nelson, K., 1991.
+Carbon 13 in Pacific deep and intermediate waters, 0–370 Ka: implications
+for ocean circulation and Pleistocene CO₂. Paleoceanography, 6:205–226.
+
+Raymo, M.E., Hodell, D., and Jansen, E., 1992. Response of deep ocean
+circulation to initiation of Northern Hemisphere glaciation (3–2 Ma).
+Paleoceanography, 7:645–672.
+
+Raymo, M.E., Ruddiman, W.F., Backman, J., Clement, B.M., and Martinson,
+D.G., 1989. Late Pliocene variation in Northern Hemisphere ice sheets and
+North Atlantic deep water circulation. Paleoceanography, 4:413–446.
+
+Sarnthein, M., and Fenner, J., 1988. Global wind-induced change of deep-sea
+sediment budgets, new ocean production and CO₂ reservoirs ca. 3.3–2.35
+Ma BP. Philos. Trans. R. Soc. London, 318:487–504.
+
+Sarnthein, M., and Tiedemann, R., 1989. Toward a high-resolution stable
+isotope stratigraphy of the last 3.4 million years: Sites 658 and 659 off
+northwest Africa. In Ruddiman, W., Sarnthein, M., et al., Proc. ODP, Sci.
+Results, 108: College Station, TX (Ocean Drilling Program), 167–185.
+
+Shackleton, N.J., 1987. Oxygen isotopes, ice volume, and sea level. Quat. Sci.
+Rev., 6:183–190.
+
+Shackleton, N.J., Berger, A., and Peltier, W.R., 1990. An alternative astronomi-
+cal calibration of the lower Pleistocene timescale based on ODP Site 677.
+Trans. R. Soc. Edinburgh, Earth Sci., 81:251–261.
+
+Shackleton, N.J., and Hall, M.A., 1984. Oxygen and carbon isotope stratigra-
+phy of Deep Sea Drilling Project Hole 552A: Plio-Pleistocene glacial
+history. In Roberts, D.G., Schnitker, D., et al., Init. Repts. DSDP, 81:
+Washington (U.S. Govt. Printing Office), 599–609.
+
+Shackleton, N.J., and Hall, M.A., 1989. Stable isotope history of the Pleisto-
+cene at ODP Site 677. In Becker, K., Sakai, H., et al., Proc. ODP, Sci.
+Results, 111: College Station, TX (Ocean Drilling Program), 295–316.
+
+Shackleton, N.J., and Imbrie, J., 1990. The δ¹⁸O spectrum of oceanic deep
+water over a five-decade band. Clim. Change, 16:217–230.
+
+Shackleton, N.J., and Opdyke, N.D., 1973. Oxygen isotope and paleomagnetic
+stratigraphy of equatorial Pacific core V28-238: oxygen isotope tempera-
+tures and ice volumes on a 10⁵ year and 10⁶ year scale. Quat. Res. (N.Y.),
+3:39–55.
+
+Shackleton, N.J., and Pisias, N.G., 1985. Atmospheric carbon dioxide, orbital
+forcing, and climate. In Sundquist, E.T., and Broecker, W.S. (Eds.), The
+Carbon Cycle and Atmospheric CO²: Natural Variations Archean to
+Present. Am. Geophys. Union Monogr., 32:303–317.
+
+Tiedemann, R., 1992. Astronomic tuning of the high-resolution benthic records
+from ODP Sites 658 and 659 for the last 5 million years vs. non-linear
+climate dynamics. GEOMAR Rep., 15:282. (Abstract)
+
+Vincent, E., 1981. Neogene carbonate stratigraphy of Hess Rise (central North
+Pacific) and paleoceanographic implications. In Thiede, J., Vallier, T.L., et
+al., Init. Repts. DSDP, 62: Washington (U.S. Govt. Printing Office),
+571–606.
+
+Webb, P.-N., and Harwood, D.M., 1991. Late Cenozoic glacial history of the
+Ross Embayment, Antarctica. Quat. Sci. Rev., 10:215–223.
+
+* Abbreviations for names of organizations and publication titles in ODP reference lists
+follow the style given in Chemical Abstracts Service Source Index (published by
+American Chemical Society).
+
+Date of initial receipt: 17 February 1993
+
+Date of acceptance: 8 October 1993
+
+Ms 138SR-117
+
+353

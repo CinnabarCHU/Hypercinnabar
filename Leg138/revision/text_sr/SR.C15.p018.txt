@@ -1,0 +1,43 @@
+N.J. SHACKLETON, M.A. HALL, D. PATE
+
+Table 7. Interpolated time series of δ¹⁸O and δ¹³C data for Site 846 as used for time series analysis.
+
+Note: For cross spectral analysis the phase between insolation and negative δ¹⁸O is
+calculated.
+
+Table 8. Results of cross spectral analysis.
+
+	41k.y.	23 k.y.	19 k.y.
+
+	Interval	Coh.	Ph.	Coh.	Ph.	Coh.	Ph.
+
+846 GRAPE vs. stack GRAPE	1.8–3	0.82	4±14	0.84	1±13	0.75	−14±17
+
+	3–4	0.87	−7±12	0.85	−3±04	0.83	−25±15
+
+	4–5	0.87	5±12	0.89	3±11	0.71	18±21
+
+	5–6	0.55	−13±31	0.91	7±10	0.76	51±9
+
+846 δ¹⁸O vs. insolation	1.8–3	0.98	56±04	0.71	−8±19	0.56	−6±27
+
+	3–4	0.85	83±14	0.66	−39±25	0.32	
+
+	4–5	0.87	21±13	0.51	−6±30	0.57	24±29
+
+	5–6	0.32		0.25		0.60	−60±29
+
+846 δ¹³C vs. insolation	1.8–3	0.94	60±07	0.59	42±26	0.24	
+
+	3–4	0.89	58±11	0.38		0.14	
+
+	4.4–5	0.66		0.58		0.28	
+
+	5–6	0.48		0.27		0.74	
+
+846 δ¹⁸O vs. 846 GRAPE	3.5–4.5	0.93	51±9	0.82	−26±15	0.72	8±21
+
+Note: Coherency (Coh.) is given at the central orbital frequency, and a figure for the phase (Ph.) is only given if the
+coherency is significant.
+
+354

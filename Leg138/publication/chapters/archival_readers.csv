@@ -1,0 +1,3 @@
+doc_id,series,chapter,title,source_url,source_pages,reading_pages,links,local_path,bytes,sha256,paired_baseline_sha256,branch_baseline_commit
+SP,SP,,Leg 138 Scientific Prospectus,https://www-odp.tamu.edu/publications/prosp/digital/138prosp.pdf,55,75,138,SP.pdf,335312,0208281de020ef330a903cc30a06003815d15bb867c6c03b67dca33af3ea358c,8cd4d28794f6585826fd1a09b284edd414c44593819c5072af17f605f4f32e64,65b069987d0e0aae31f61ec7633feaa8fa062ba0
+PR,PR,,Leg 138 Preliminary Report,https://www-odp.tamu.edu/publications/prelim/138PREL.PDF,110,176,328,PR.pdf,803875,d885ce335517d6a3ee916bccd8f3425018c4f20f7044c6d26da0b61154b3bff3,0a3613f553c841cf4acd8730773e13eb9774b8b8d0e2e519ef99470a76a85dda,65b069987d0e0aae31f61ec7633feaa8fa062ba0

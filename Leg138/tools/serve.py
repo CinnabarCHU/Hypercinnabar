@@ -12,6 +12,7 @@ from http.server import SimpleHTTPRequestHandler, ThreadingHTTPServer
 from itertools import islice
 from pathlib import Path
 from urllib.parse import parse_qs,urlsplit
+from collation_api import lookup as collated_page, query as collation_query
 from edition2_api import NAMES as V2_ENDPOINTS, retrieve, find_named, matches_site
 
 def list_rows(db,sql,params=()):
@@ -29,6 +30,8 @@ def endpoint(db,root,name,q):
         allowed_sites.update(('84','495','503','677'))
     if name=='sr-apparatus' or (name=='rows' and q.get('dataset')=='SR.C15.TABLE9'):allowed_sites.add('677')
     if site and site not in allowed_sites:raise ValueError('Unsupported site for this endpoint')
+    if name in ('collations','figure-reproductions'):
+        return collation_query(root,name,q,limit,offset,db)
     v2_ready=db.execute("SELECT 1 FROM sqlite_master WHERE name='item_reviews' AND type='table'").fetchone() is not None
     if not v2_ready and (name in V2_ENDPOINTS or (name=='rows' and q.get('item') and not q.get('dataset'))):
         raise ValueError('Rebuild the second-edition catalogue to use this endpoint')
@@ -75,8 +78,11 @@ def endpoint(db,root,name,q):
         for r in records:r['fields']=json.loads(r.pop('fields_json') or '[]')
         return records
     if name=='page':
-        return list_rows(db,"""SELECT p.doc_id,p.pdf_page,p.printed_page,p.basis,p.text,d.url,d.local_source
-            FROM pages p JOIN documents d USING(doc_id) WHERE p.doc_id=? AND p.pdf_page=?""",(q.get('doc',''),int(q.get('page','1'))))
+        doc=q.get('doc','');n=int(q.get('page','1'))
+        rows=list_rows(db,"""SELECT p.doc_id,p.pdf_page,p.printed_page,p.basis,p.text,d.url,d.local_source
+            FROM pages p JOIN documents d USING(doc_id) WHERE p.doc_id=? AND p.pdf_page=?""",(doc,n))
+        if rows:rows[0].update(collated_page(root,doc,n))
+        return rows
     if name=='search':
         words=re.findall(r'[^\W_]+',q.get('q',''),re.UNICODE)
         if not words:raise ValueError('q must contain at least one search term')

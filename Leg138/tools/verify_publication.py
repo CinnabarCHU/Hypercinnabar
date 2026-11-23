@@ -19,12 +19,18 @@ def check(root,inspect_pdfs):
     summaries={r['doc_id']:r for r in documents}
     if len(readers)!=76 or set(summaries)!={r['doc_id'] for r in readers}:
         raise ValueError('The publication and the source catalogue contain different volumes')
+    archival_file=root/'publication/chapters/archival_readers.csv'
+    archival={r['doc_id']:r for r in read(archival_file)} if archival_file.is_file() else {}
+    retained=[]
     total_source=total_reader=total_links=0
     for r in readers:
         d=summaries[r['doc_id']]
         src=int(r['source_pages']);count=int(r['reading_pages']);file=root/'publication/chapters'/r['local_path']
         assert int(d['source_pdf_pages'])==src
-        assert int(d['edition_pdf_pages'])==src+count
+        if r['doc_id'] in archival and r['sha256']==archival[r['doc_id']]['sha256']:
+            retained.append(r['doc_id'])
+            assert count==int(archival[r['doc_id']]['reading_pages'])
+        else:assert int(d['edition_pdf_pages'])==src+count
         assert r['source_url']==d['source_url']
         assert file.stat().st_size==int(r['bytes']) and sha(file)==r['sha256'],file
         if inspect_pdfs:
@@ -46,7 +52,7 @@ def check(root,inspect_pdfs):
     for part in proof['parts']:
         assert sha(root/part['path'])==part['input_sha256'],part['path']
     return {'checked_compact_volumes':len(readers),'source_pages':total_source,'compact_reading_pages':total_reader,
-            'paired_edition_pages':total_reader+total_source,'compact_pdf_links':total_links,
+            'paired_edition_pages':sum(int(r['edition_pdf_pages']) for r in documents),'prior_public_readers':retained,'compact_pdf_links':total_links,
             'compact_pdf_bytes':sum(int(r['bytes']) for r in readers),'station_reader_pages':proof['total_pages'],
             'reference_pages_online':True,'inspected_internal_pdf_links':inspect_pdfs}
 

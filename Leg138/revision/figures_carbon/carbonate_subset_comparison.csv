@@ -1,0 +1,5 @@
+item_id,selection,rows,mean_curve_to_scan_px,mean_scan_to_curve_px,max_curve_to_scan_px,scan_interior_ink_pixels
+IR16.F33,all_numeric_rows,266,1.6435,0.9096,10.4403,1653
+IR16.F33,omit_carbonate_where_Corg_is_a_late_or_inferred_addition,230,1.5349,0.9157,10.4403,1653
+IR17.F28,all_numeric_rows,187,0.8994,0.6850,10.2956,2328
+IR17.F28,omit_carbonate_where_Corg_is_a_late_or_inferred_addition,154,0.5350,0.6736,4.1231,2328

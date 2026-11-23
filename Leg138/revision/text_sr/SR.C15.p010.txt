@@ -1,0 +1,8 @@
+N.J. SHACKLETON, M.A. HALL, D. PATE
+
+Figure 5. Oxygen isotope record from Site 846 vs. age. The line shows an interpolation at 3-k.y. intervals smoothed
+using a Gaussian filter having a total width of 8.99 k.y. The data points show the average where replicate analyses
+were made in the same sample. Gaps in the line show where no measurement falls within the interpolation window;
+note that the time series analysis was performed using a narrower smoothing window than that used for this figure.
+
+346

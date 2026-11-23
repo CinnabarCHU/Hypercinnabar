@@ -1,0 +1,149 @@
+PLIOCENE STABLE ISOTOPE STRATIGRAPHY
+
+distributed normally. For example, a mislabeled sample, a mental
+aberration whereby planktonic foraminifers were selected instead of
+benthic foraminifers, or a single, large reworked specimen might all
+give rise to a deviation from the expected measurement, whose prob-
+ability cannot be predicted from the Gaussian distribution of the vast
+majority of deviations.
+
+BIOSTRATIGRAPHY
+
+The high quality shipboard biostratigraphy of Site 846 is given in
+the site chapter (Mayer, Pisias, Janecek, et al. 1992). In addition, we
+determined several foraminiferal datums while picking samples for
+isotope analysis. In view of the relatively small number of individual
+foraminifers in a 10-cm³ sample, by comparison with the three other
+microfossil groups, a considerable advantage can be gained from the
+opportunity to examine such a large number of samples. Many of the
+species extinction datums observed can be determined between adja-
+cent samples; however, the reliability of an extinction datum that is
+based on the first downhole observation of one or two specimens of
+an extinct species can be assessed only by observing the consistency
+of its presence in subsequent samples down the section. Table 2 gives
+the foraminiferal biostratigraphic datums for Site 846 that we ob-
+served. The relationship of biostratigraphic events to the oxygen iso-
+tope stratigraphy is discussed in Shackleton et al. (this volume).
+
+RESULTS
+
+All analytical data are given in Table 3. In addition to the ODP
+conventional sample identifier, each sample has been assigned three
+depths. First is the conventional depth below seafloor, as estimated by
+the length of pipe and position in core; the conventional abbreviation
+“mbsf” (meters below seafloor) has been used. Second is “mcd”
+(meters composite depth), as derived aboard the ship by constructing
+a continuous composite section taking into account documented over-
+lapping between several holes at the site (Hagelberg et al., 1992).
+Typically, mcd values exceed mbsf values by more than 10%, with the
+offset being by definition constant for each core in the hole. It is
+absolutely essential to use this adjustment to construct a continuous
+section for time series analysis. Third is “rmcd” (revised meters
+composite depth), which has been derived to take into account distor-
+tions within cores (Hagelberg et al., this volume). Differences be-
+tween rmcd and mcd seldom exceed 20 cm in sediments recovered
+using the APC. Making these adjustments (which are based primarily
+on examination of the GRAPE density data), improves the continuity
+of the δ¹⁸O values and is desirable if comparisons are to be made with
+time series of other parameters (such as GRAPE density), which are
+based on data not from Hole 846D. In all the discussion in the
+remainder of this chapter, “depth” may be taken to imply “rmcd,”
+unless otherwise stated.
+
+To illustrate and process the data in Table 3, adjustments were
+made to take into account taxon-dependent departures from isotopic
+equilibrium using the adjustment factors given in Table 4. Note that
+several taxa are regarded as unreliable with regard to δ¹³C, so that the
+final data set is somewhat more limited for δ¹³C than for δ¹⁸O. Figure
+1 shows the δ¹⁸O measurements vs. depth. All individual measure-
+ments have been plotted, including data for overlapping intervals
+from different holes. To guide the eye, a line representing a Gaussian
+smoothing of the data has been drawn; this is for illustrative purposes
+only. Figure 2 shows the raw δ¹³C data as a function of depth, simi-
+larly with a smooth line to guide the eye.
+
+Table 2. Foraminiferal biostratigraphic datums in Site 846.
+
+Datum	Upper limit	Lower limit
+
+Globigerinoides fistulosus LAD	846B 5/CC	846B 6/1/76
+
+Globorotalia limbata LAD	846D 8/3/136	846D 8/3/146
+
+Globoquadrina altispira LAD	846D 12/6/56	846D 12/6/66
+
+Globigerinoides fistulosus FAD	846D 12/4/25	846D 12/4/106
+
+Sphaeroidinellopsis seminulina LAD	846D 12/6/76	846D 12/6/86
+
+Pulleniatina spectabilis LAD	846D 16/2/106	846D 16/2/116
+
+Globoquadrina dehiscens LAD	846D 20/6/36	846D 20/6/46
+
+Note: LAD = last appearance datum; FAD = first appearance datum.
+
+CHRONOLOGY
+
+To develop a time series from the data shown in Figures 1 and 2,
+a few unreliable measurements were excluded and the remaining
+replicates in each sample averaged (see discussion above). In inter-
+vals where sampling led to overlapping between adjacent holes, the
+noisier of the two overlapping portions was eliminated unless the
+congruence was excellent. Table 5 gives the depth series that was used
+for the time series construction.
+
+The age model for Site 846 that we use here is presented in Table
+6. Its derivation is given in Shackleton et al. (this volume) in the
+context of age models for all the sites drilled during Leg 138. As
+shown in that chapter, it has been possible to construct age models by
+correlating GRAPE density (reflecting percentage of carbonate) to
+variations in Northern Hemisphere summer insolation, as computed
+by Berger and Loutre (1991). However, it is appropriate to point out
+here that although it is possible by examining Figure 1 to discern
+more-or-less regular cycles (which emerge as orbital tilt cycles) hav-
+ing a wavelength that averages a little under 2 m between the top of
+the δ¹⁸O record and about 130 mcd, below this depth these cycles
+cannot easily be followed continuously. Thus, it would have been
+relatively straightforward to develop a time scale based only on the
+δ¹⁸O record down to this point (about 16 tilt cycles below the Gauss/
+Matuyama boundary). Below that depth, patches are seen where the
+signal-to-noise ratio in the δ¹⁸O record is so low that it is not always
+clear whether tilt cycles are being registered, so that tuning could not
+have been achieved reliably on the basis of the δ¹⁸O record alone.
+
+Shackleton et al. (this volume), show cross spectra of a stacked
+GRAPE density record for Sites 849, 850, and 851 vs. insolation at
+65°N. The GRAPE density record for Site 846 and for the stacked
+record are shown in Figure 3, together with the age control points that
+were used to construct the time scale for Site 846. To validate the
+transfer of the time scale to Site 846, we show in Figure 4 cross
+spectra of GRAPE density for Site 846 vs. the stacked record of Sites
+849, 850, and 851. For the interval 5 to 6 Ma, coherencies are poor
+and we regard the time scale for Site 846 as suspect in detail in that
+interval. A possible reason is that in this site the lowest part of the
+Pliocene was cored using the XCB, and the composite depth section
+may be imperfect.
+
+For each of the time intervals (1.7–3, 3–4, and 4–5 Ma), coherency
+between the GRAPE density record of Site 846 and the stacked record
+is high in the precession band, and the phase spectrum is also flat at
+zero phase. This is to be expected because it is the characteristic
+amplitude modulation of the precession signal that helped us when
+tuning the GRAPE density records to the orbital signal. In each of the
+same intervals, the phase spectrum is also flat at zero phase across the
+obliquity frequency band. Although not unexpected, this might not
+necessarily have been the case. In the older intervals, the two spectra
+compared are broadly similar, but in the youngest interval, 1.7–3 Ma,
+Site 846 has significantly more power concentrated in the obliquity
+band. Note that even in this interval, the phase spectrum shows
+GRAPE density in phase with 65°N insolation in the obliquity band.
+
+The age model discussed above was applied to the isotope data by
+interpolating linearly on “rmcd” depth between the control points. The
+isotope data are shown in Figures 5 and 6 after interpolating at 3 k.y.
+intervals and smoothing with a Gaussian filter. The data points plotted
+after averaging replicate measurements from the same sample. Gaps in
+the line show where no interpolated value is present because no valid
+measurement falls within the 8.99 k.y. smoothing window.
+
+339

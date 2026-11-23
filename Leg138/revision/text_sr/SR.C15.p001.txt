@@ -1,0 +1,114 @@
+Pisias, N.G., Mayer, L.A., Janecek, T.R., Palmer-Julson, A., and van Andel, T.H. (Eds.), 1995
+Proceedings of the Ocean Drilling Program, Scientific Results, Vol. 138
+
+15. PLIOCENE STABLE ISOTOPE STRATIGRAPHY OF SITE 846¹
+
+N.J. Shackleton,² M.A. Hall,² and D. Pate²
+
+ABSTRACT
+
+Oxygen and carbon isotope ratios were measured in benthic foraminifers from the entire Pliocene and latest Miocene sections
+of Site 846, a 180-m section, at a sampling interval of 10 cm. This provides a temporal resolution of about 2500 yr. The documented
+continuity of the record is excellent. Using the time scale that was developed on the basis of orbital tuning of GRAPE density
+records, we observed a fairly constant phase relationship between δ¹⁸O and variations in the obliquity of Earth’s rotational axis.
+A new numbering scheme for Pliocene isotope stages is proposed.
+
+This high-resolution δ¹⁸O record clarifies several interesting aspects of late Neogene climatic evolution, including a “glacial”
+event that may have caused the final Messinian desiccation of the Mediterranean Sea; one or more “interglacial” events that might
+have caused refilling of the Mediterranean; a well-resolved couplet of glacial events at about the age of the Sidujfall Subchron;
+interglacial extremes in the early part of the Gauss that could have resulted from either significant deglaciation on Antarctica or
+from warming of deep water; and a gradual ramp of increasingly extreme “glacial” events, starting at about the Kaena Subchron
+and culminating with δ¹⁸O stage 100 in the earliest Matuyama.
+
+INTRODUCTION
+
+In the Pacific Ocean, the best high-resolution δ¹⁸O record available
+at the time of Ocean Drilling Program (ODP) Leg 138 was Site 677
+(Becker, Sakai, et al., 1988). Double APC-coring at Site 677 was
+limited to the last 2.5 m.y.; over this interval, a high-resolution δ¹⁸O
+record was obtained (Shackleton and Hall, 1989; Appendix) that per-
+mitted an astronomical calibration of the δ¹⁸O record and, hence, of the
+geological time scale since 2.5 Ma (Shackleton et al., 1990). One
+objective of Leg 138 was to extend this astronomical age calibration of
+the δ¹⁸O record as far as possible into the Neogene. Of the 11 sites
+drilled during Leg 138, Site 846 was selected as offering an excellent
+opportunity for obtaining an extended high-resolution benthic δ¹⁸O
+record. The Pleistocene section was analyzed in Oregon by Mix (see
+Le et al., this volume); in this chapter, we discuss the Pliocene and latest
+Miocene sections. Shipboard analysis indicated that the sedimentation
+rate was about 40 m/m.y., so that the site is capable of providing good
+resolution of variability in the range of Earth’s orbital variations (peri-
+ods 20 to 100 k.y.). Site 846 is located to the south of the Galapagos
+Islands, at 3°5.80′S, 90°49.07′W in a water depth of 3296 m.
+
+METHODS
+
+The continuity of the sedimentary sequence at Site 846 was estab-
+lished aboard the JOIDES Resolution by constructing composite sec-
+tions on the basis of gamma-ray attenuation porosity evaluator (GRAPE)
+density, color, and magnetic-susceptibility records (Hagelberg et al.,
+1992) in the overlapping holes that were cored. On the basis of the
+composite depth sections developed by Hagelberg et al. (1992), the site
+was sampled at 10-cm intervals to provide a continuous record, using
+Hole 846D where possible, and incorporating sections from Holes
+846B and 846C to cover stratigraphic gaps between successive cores
+in Hole 846D. This strategy enabled us to obtain a complete section
+without significant stratigraphic duplication (which wastes both valu-
+able core material and laboratory time). Shipboard examination of
+core-catcher material indicated that 10-cm³ samples generally should
+provide sufficient benthic foraminifers for isotopic analysis, and this
+proved to be the case.
+
+In Cambridge, samples were washed on a 150-µm sieve using
+distilled water, oven-dried on the sieves at 60°C, and then weighed.
+The fine fraction was collected and settled overnight, after which the
+water was siphoned off to just above the sediment surface. The
+residue was dried and weighed so that the percentage over 150 µm
+could be determined. Because the coarse fraction contains some
+pyrite and radiolarian skeletons, the weight over 150 µm only pro-
+vides a rough estimate of weight of foraminiferal material over a
+cutoff of this size; the data are given in Table 1. (Note: Tables 1, 3, 5,
+6, 7, and 9 can be found on the CD ROM at the back of the volume
+and are not printed here.)
+
+Specimens for isotopic analysis were selected under a low-power
+(×25) binocular microscope. Species were picked with a first priority
+being the generation of a reliable δ¹⁸O record; to maintain consistency
+with other δ¹⁸O records from the eastern Pacific Ocean, Uvigerina
+spp. were selected where they were sufficiently abundant. To maxi-
+mize the value of the δ¹³C record from Uvigerina, we tried to select
+only the larger specimens of U. senticosa that are characteristic of the
+high-productivity eastern Pacific Ocean, where this was possible.
+Shackleton and Pisias (1985) used this species for developing the
+δ¹³C record of Core V19-30 and Mix et al. (1991) showed that this
+species reliably records δ¹³C in the eastern equatorial Pacific. At
+intervals throughout the sequence, specimens of Cibicidoides wuel-
+lerstorfi and/or of C. kullenbergi were chosen in parallel to Uvigerina
+spp. to check on the consistency of the interspecific isotopic differ-
+ences. Several studies have verified the δ¹⁸O and δ¹³C differences
+between Uvigerina spp. and C. wuellerstorfi obtained by Shackleton
+and Opdyke (1973). Farrell (1991) made a careful evaluation that
+shows that for isotopic purposes, C. wuellerstorfi and C. kullenbergi
+are interchangeable. Where it was not possible to select the above
+species, Oridorsalis umbonifera, Globobulimina pacifica, Sphaeroi-
+dina bulloides, Globocassidulina subglobosa, or mixtures of the above
+were selected, while accepting that the δ¹³C data might be valueless.
+
+Wherever possible, between 6 and 12 specimens were selected for
+each analysis. However, for many of the analyses of G. pacifica, as few
+as three specimens were used. Specimens showing anomalous preser-
+vation were avoided on the basis that they may have been reworked, as
+were abnormally large specimens. The selected specimens were lightly
+crushed and soaked in hydrogen peroxide (10 vols) to remove any pos-
+sible organic contaminants. Analytical grade acetone was then added,
+and the samples cleaned ultrasonically, after which the excess liquid
+was siphoned off. The samples were dried in an oven at 60°C before
+being transferred to small glass boats ready for analysis. Carbon diox-
+
+¹ Pisias, N.G., Mayer, L.A., Janecek, T.R., Palmer-Julson, A., and van Andel, T.H.
+(Eds.), 1995. Proc. ODP, Sci. Results, 138: College Station, TX (Ocean Drilling Program).
+
+² University of Cambridge, Godwin Laboratory, Free School Lane, Cambridge CB2
+3RS, United Kingdom.
+
+337

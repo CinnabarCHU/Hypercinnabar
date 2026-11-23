@@ -1,0 +1,524 @@
+[
+  {
+    "item_id": "IR09.F33",
+    "site": 844,
+    "source_page": 45,
+    "source_sha256": "6926c3d1ddb3d8b2020f7edeeb4adfdd9b20d79f85d0db9ca26e8e8b303f075b",
+    "depth_max": 300,
+    "depth_tick": 50,
+    "panels": [
+      {
+        "field": "carbonate_pct",
+        "x_max": 100,
+        "tick": 25,
+        "frame": [
+          83.81,
+          126.49,
+          248.41,
+          962.48
+        ],
+        "heading": "CaCO₃ (%)"
+      },
+      {
+        "field": "organic_c_pct",
+        "x_max": 1.5,
+        "tick": 0.5,
+        "frame": [
+          266.05,
+          126.53,
+          430.46,
+          962.43
+        ],
+        "heading": "Organic carbon (%)"
+      }
+    ],
+    "caption": [
+      {
+        "text": "Figure 33. Records of percentages of CaCO₃ and Corg vs. ODP depth for",
+        "x": 37.54,
+        "baseline_y": 995.52,
+        "width": 396.18
+      },
+      {
+        "text": "Holes 844A (triangles), 844B (crosses), 844C (circles), and 844D (squares).",
+        "x": 37.54,
+        "baseline_y": 1011.2,
+        "width": 392.49
+      }
+    ]
+  },
+  {
+    "item_id": "IR10.F41",
+    "site": 845,
+    "source_page": 48,
+    "source_sha256": "d0d0b2fa4295e70c498c6872676128190ec09a4be69126ec5aa438da40d5b28b",
+    "depth_max": 300,
+    "depth_tick": 50,
+    "panels": [
+      {
+        "field": "carbonate_pct",
+        "x_max": 100,
+        "tick": 25,
+        "frame": [
+          127.57,
+          124.0,
+          291.96,
+          963.66
+        ],
+        "heading": "CaCO₃ (%)"
+      },
+      {
+        "field": "organic_c_pct",
+        "x_max": 2.5,
+        "tick": 0.5,
+        "frame": [
+          309.98,
+          124.0,
+          473.96,
+          963.62
+        ],
+        "heading": "Organic carbon (%)"
+      }
+    ],
+    "caption": [
+      {
+        "text": "Figure 41. Downhole profile of percentages of CaCO₃ and Corg vs. ODP depth",
+        "x": 87.41,
+        "baseline_y": 995.49,
+        "width": 398.1
+      },
+      {
+        "text": "(data from Hole 845A).",
+        "x": 87.7,
+        "baseline_y": 1011.19,
+        "width": 121.17
+      }
+    ]
+  },
+  {
+    "item_id": "IR11.F28",
+    "site": 846,
+    "source_page": 38,
+    "source_sha256": "9029db07c07283a3d30eb8ddb9ed4c075771f31cc48927876a5d6ee9f4cbc268",
+    "depth_max": 450,
+    "depth_tick": 50,
+    "panels": [
+      {
+        "field": "carbonate_pct",
+        "x_max": 100,
+        "tick": 50,
+        "frame": [
+          133.59,
+          129.49,
+          295.56,
+          968.0
+        ],
+        "heading": "CaCO₃ (%)"
+      },
+      {
+        "field": "organic_c_pct",
+        "x_max": 2,
+        "tick": 1,
+        "frame": [
+          313.55,
+          129.61,
+          475.12,
+          968.0
+        ],
+        "heading": "Organic carbon (%)"
+      }
+    ],
+    "caption": [
+      {
+        "text": "Figure 28. Downhole records of percentages of CaCO₃ and Corg vs. ODP depth",
+        "x": 89.7,
+        "baseline_y": 1002.8,
+        "width": 392.71
+      },
+      {
+        "text": "(mbsf). Data from Hole 846B.",
+        "x": 90.27,
+        "baseline_y": 1018.76,
+        "width": 153.66
+      }
+    ]
+  },
+  {
+    "item_id": "IR12.F26",
+    "site": 847,
+    "source_page": 29,
+    "source_sha256": "59b5825c2dd4ed42c5708b221b48503d6c67d5446ff00c1a2adbb72ba7327973",
+    "depth_max": 250,
+    "depth_tick": 50,
+    "panels": [
+      {
+        "field": "carbonate_pct",
+        "x_max": 100,
+        "tick": 25,
+        "frame": [
+          82.53,
+          128.64,
+          245.0,
+          969.0
+        ],
+        "heading": "CaCO₃ (%)"
+      },
+      {
+        "field": "organic_c_pct",
+        "x_max": 2,
+        "tick": 0.5,
+        "frame": [
+          263.0,
+          129.0,
+          425.5,
+          969.37
+        ],
+        "heading": "Corg (%)"
+      }
+    ],
+    "caption": [
+      {
+        "text": "Figure 26. Downhole records of percentages of CaCO₃ and Corg vs. ODP depth",
+        "x": 36.52,
+        "baseline_y": 998.6,
+        "width": 397.33
+      },
+      {
+        "text": "(mbsf) for Hole 847A (open circles) and 847B.",
+        "x": 36.52,
+        "baseline_y": 1012.04,
+        "width": 240.31
+      }
+    ]
+  },
+  {
+    "item_id": "IR13.F36",
+    "site": 848,
+    "source_page": 42,
+    "source_sha256": "64b8797d9272eac513c8902245a2638f23f6c4cd2c67719453ac0d47915da67d",
+    "depth_max": 100,
+    "depth_tick": 10,
+    "panels": [
+      {
+        "field": "carbonate_pct",
+        "x_max": 100,
+        "tick": 25,
+        "frame": [
+          350.49,
+          114.37,
+          514.55,
+          954.0
+        ],
+        "heading": "CaCO₃ (%)"
+      },
+      {
+        "field": "organic_c_pct",
+        "x_max": 0.5,
+        "tick": 0.1,
+        "frame": [
+          515.52,
+          114.4,
+          679.78,
+          954.0
+        ],
+        "heading": "Organic carbon (%)"
+      }
+    ],
+    "caption": [
+      {
+        "text": "Figure 36. Downhole records of percentages of CaCO₃ (Hole 848D =",
+        "x": 313.11,
+        "baseline_y": 985.99,
+        "width": 363.34
+      },
+      {
+        "text": "open circles; Hole 848B = line) and Corg vs. ODP depth (mbsf) for Hole",
+        "x": 313.11,
+        "baseline_y": 1001.4,
+        "width": 363.45
+      },
+      {
+        "text": "848B.",
+        "x": 313.4,
+        "baseline_y": 1016.8,
+        "width": 30.1
+      }
+    ]
+  },
+  {
+    "item_id": "IR14.F30",
+    "site": 849,
+    "source_page": 49,
+    "source_sha256": "ef3fbecb6234b0bfd6dc001b93e41435d5d161a3aaac95c7c882349bea4560dd",
+    "depth_max": 350,
+    "depth_tick": 50,
+    "panels": [
+      {
+        "field": "carbonate_pct",
+        "x_max": 100,
+        "tick": 25,
+        "frame": [
+          277.52,
+          119.0,
+          441.52,
+          959.0
+        ],
+        "heading": "CaCO₃ (%)"
+      },
+      {
+        "field": "organic_c_pct",
+        "x_max": 0.5,
+        "tick": 0.1,
+        "frame": [
+          459.81,
+          119.0,
+          622.87,
+          959.0
+        ],
+        "heading": "Organic carbon (%)"
+      }
+    ],
+    "caption": [
+      {
+        "text": "Figure 30. Downhole records of percentages of CaCO₃ and Corg vs. ODP depth",
+        "x": 237.06,
+        "baseline_y": 993.56,
+        "width": 398.16
+      },
+      {
+        "text": "for Hole 849B.",
+        "x": 237.06,
+        "baseline_y": 1008.96,
+        "width": 77.5
+      }
+    ]
+  },
+  {
+    "item_id": "IR15.F41",
+    "site": 850,
+    "source_page": 55,
+    "source_sha256": "39ef17eb6d939154a6bc4ff127750146cf4a4e1eed621977f4bb734c7d953a19",
+    "depth_max": 400,
+    "depth_tick": 50,
+    "panels": [
+      {
+        "field": "carbonate_pct",
+        "x_max": 100,
+        "tick": 50,
+        "frame": [
+          285.49,
+          130.58,
+          450.0,
+          971.69
+        ],
+        "heading": "CaCO₃ (%)"
+      },
+      {
+        "field": "organic_c_pct",
+        "x_max": 0.5,
+        "tick": 0.2,
+        "frame": [
+          467.66,
+          130.63,
+          631.65,
+          972.0
+        ],
+        "heading": "Organic carbon (%)"
+      }
+    ],
+    "caption": [
+      {
+        "text": "Figure 41. Downhole records of percentages of CaCO₃ and Corg vs. ODP depth",
+        "x": 240.1,
+        "baseline_y": 1005.3,
+        "width": 398.29
+      },
+      {
+        "text": "for Holes 850A (crosses) and 850B (no symbols).",
+        "x": 240.1,
+        "baseline_y": 1021.01,
+        "width": 255.66
+      }
+    ]
+  },
+  {
+    "item_id": "IR16.F33",
+    "site": 851,
+    "source_page": 49,
+    "source_sha256": "1724238ff3fe5c02d2a3bacc7153e3d6bfbb1e67e3b48294f99abb7170252825",
+    "depth_max": 350,
+    "depth_tick": 50,
+    "panels": [
+      {
+        "field": "carbonate_pct",
+        "x_max": 100,
+        "tick": 25,
+        "frame": [
+          496.39,
+          124.57,
+          660.62,
+          963.66
+        ],
+        "heading": "CaCO₃"
+      },
+      {
+        "field": "organic_c_pct",
+        "x_max": 0.5,
+        "tick": 0.1,
+        "frame": [
+          678.54,
+          124.0,
+          842.3,
+          963.0
+        ],
+        "heading": "Organic carbon (%)"
+      }
+    ],
+    "caption": [
+      {
+        "text": "Figure 33. Downhole records of percentages of CaCO₃ and Corg vs. ODP depth",
+        "x": 447.7,
+        "baseline_y": 994.42,
+        "width": 397.05
+      },
+      {
+        "text": "for Site 851.",
+        "x": 447.7,
+        "baseline_y": 1010.93,
+        "width": 64.51
+      }
+    ]
+  },
+  {
+    "item_id": "IR17.F28",
+    "site": 852,
+    "source_page": 34,
+    "source_sha256": "8de86b3f766ad908d3019173e06ff30b259fca8b763b7f170e0b19e614c037b4",
+    "depth_max": 120,
+    "depth_tick": 10,
+    "panels": [
+      {
+        "field": "carbonate_pct",
+        "x_max": 100,
+        "tick": 25,
+        "frame": [
+          553.0,
+          123.41,
+          707.29,
+          929.66
+        ],
+        "heading": "CaCO₃ (%)"
+      },
+      {
+        "field": "organic_c_pct",
+        "x_max": 0.5,
+        "tick": 0.1,
+        "frame": [
+          741.62,
+          122.34,
+          896.35,
+          928.55
+        ],
+        "heading": "Organic carbon (%)"
+      }
+    ],
+    "caption": [
+      {
+        "text": "Figure 28. Downhole records of percentages of CaCO₃ and Corg vs. ODP depth",
+        "x": 511.28,
+        "baseline_y": 960.09,
+        "width": 390.65
+      },
+      {
+        "text": "for Site 852.",
+        "x": 511.56,
+        "baseline_y": 976.93,
+        "width": 62.73
+      }
+    ]
+  },
+  {
+    "item_id": "IR18.F25",
+    "site": 853,
+    "source_page": 28,
+    "source_sha256": "fc4d0141abea57e04e33b82a1b0da8a97e4054fb47cc616b236471b4b6d77565",
+    "depth_max": 70,
+    "depth_tick": 10,
+    "panels": [
+      {
+        "field": "carbonate_pct",
+        "x_max": 100,
+        "tick": 25,
+        "frame": [
+          335.0,
+          130.0,
+          495.35,
+          968.39
+        ],
+        "heading": "CaCO₃ (%)"
+      },
+      {
+        "field": "organic_c_pct",
+        "x_max": 0.5,
+        "tick": 0.1,
+        "frame": [
+          513.0,
+          130.0,
+          672.0,
+          968.0
+        ],
+        "heading": "Organic carbon (%)"
+      }
+    ],
+    "caption": [
+      {
+        "text": "Figure 25. Downhole records of percentages of CaCO₃ and Corg vs. ODP depth",
+        "x": 296.12,
+        "baseline_y": 996.38,
+        "width": 387.39
+      },
+      {
+        "text": "(mbsf) for Site 853.",
+        "x": 296.4,
+        "baseline_y": 1011.77,
+        "width": 98.64
+      }
+    ]
+  },
+  {
+    "item_id": "IR19.F25",
+    "site": 854,
+    "source_page": 24,
+    "source_sha256": "69bbe00324aefe3eab9eb4467cf92cc3bae0d388676cbc6a318fda260dc2b1dd",
+    "depth_max": 50,
+    "depth_tick": 10,
+    "panels": [
+      {
+        "field": "carbonate_pct",
+        "x_max": 100,
+        "tick": 50,
+        "frame": [
+          625.61,
+          127.53,
+          786.41,
+          968.0
+        ],
+        "heading": "CaCO₃ (%)"
+      }
+    ],
+    "caption": [
+      {
+        "text": "Figure 25. Downhole record of percentages of CaCO₃ vs. ODP depth (mbsf)",
+        "x": 507.57,
+        "baseline_y": 1008.66,
+        "width": 386.84
+      },
+      {
+        "text": "for Site 854.",
+        "x": 507.85,
+        "baseline_y": 1024.94,
+        "width": 62.66
+      }
+    ]
+  }
+]

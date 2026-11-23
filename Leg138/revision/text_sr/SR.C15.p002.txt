@@ -1,0 +1,80 @@
+N.J. SHACKLETON, M.A. HALL, D. PATE
+
+Table 1. Percentage of coarse fraction data for Site 846.
+
+Only the first page of this table is reproduced here. The entire
+table appears on the CD-ROM (backpocket).
+
+ide for isotopic analysis was released using orthophosphoric acid at
+90°C in a VG Isocarb common acid bath system and analyzed on line
+in a VG Isotech PRISM triple collector mass spectrometer. Each run
+comprised five standard marble aliquots, a blank (empty container), 20
+foraminiferal samples, and five additional aliquots of standard marble.
+The blank is fully processed and provides an estimate of the residual
+memory of the previous sample. The laboratory standard Carrara mar-
+ble was calibrated to PDB through NBS 19, using the values −2.20%
+for δ¹⁸O and +1.95% for δ¹³C, as recommended by Coplen (1988).
+Analytical reproducibility (as indicated by the marble analyses) typi-
+cally was about ±0.06% (1-σ) for δ¹⁸O and somewhat better for δ¹³C.
+Unfortunately, reproducibility does appear to be variable; presumably,
+reproducibility depends on the level of contamination in the vacuum
+lines, which may vary on a daily or weekly basis.
+
+The strategy for treating “bad” measurements is seldom discussed,
+yet the appropriate strategy does depend both on the overall objec-
+tives and on the methods that are being used to achieve them. For
+example, if a conclusion is to be supported visually, it is appropriate
+to show “unacceptable” data with an indication that the eye should
+ignore them; on the other hand, numerical analysis should generally
+be performed on the best rendition of the data. If, as is the case with
+this research, time series analysis is to be applied, the objective of the
+measurements is to derive the most likely time series (of equilibrium
+calcite δ¹⁸O and δ¹³C) for the location. The measurements of percent-
+age of coarse fraction provide an example where alternative require-
+ments are clear: were one presenting measurements to derive a time
+series for foraminiferal dissolution, one might prefer to screen the
+samples visually to eliminate coarse fraction estimates for samples
+containing volcanic ash or terrigenous sand; on the other hand, were
+one using these same data to seek ash layers or turbidites, one obvi-
+ously would wish to use all these data.
+
+Unfortunately, it is the case that on rare occasions, unacceptable
+numbers are output from the mass spectrometer; the following discus-
+sion outlines the procedure that we adopted when this was suspected.
+The easiest situation to deal with is when a whole sequence of samples
+has yielded aberrant values, and a clear malfunction in the system can
+be identified. In this case, these values are rejected outright and are not
+tabulated. A situation that arose during this work was that a valve near
+the freezing trap in the carbonate preparation line malfunctioned,
+which caused gases to fractionate isotopically during transfer; in this
+case, the entire run of analyses was rejected. Also, occasional measure-
+ments that were unacceptable because the quantity of carbon dioxide
+was insufficient for a reliable measurement were rejected outright.
+
+Should an isolated sample deviate from the adjacent measure-
+ments in the sediment sequence, our practice was to re-pick the sam-
+ple, ideally for more than one additional measurement. If the original
+measurement deviated both from the adjacent samples in the core and
+from two replicate analyses, we eliminated it from the mean. Mea-
+surements that have been rejected on this basis are tabulated, but have
+been marked. Sometimes, no useful specimens were available for a
+replicate measurement and, in this case, probably some compromise
+was necessary to obtain specimens for the first analysis, and thus, one
+may be justified in rejecting that first measurement, even though it
+cannot be replicated. Of 2765 δ¹⁸O measurements tabulated, eight
+have been rejected; of these, one was in the top of a core (138-846B-
+21X-1, 45–47 cm) and clearly represents contamination.
+
+This discussion clarifies the importance of achieving a close sam-
+pling density. Experience gained over many years shows that if one
+samples a deep-sea sediment sequence at intervals comparable with
+the bioturbation depth, the difference between successive samples is
+almost identical to the difference between replicate measurements in
+the same sample and thus provides the geologically best criterion by
+which to evaluate data reliability (Shackleton and Opdyke, 1973).
+Thus, if (but only if) the sequence is sampled this closely, one does
+have a statistical criterion by which to eliminate a single aberrant
+measurement. One may argue that statistical analysis is biased by
+such a procedure, but the fact is that in reality, not all variability is
+
+338

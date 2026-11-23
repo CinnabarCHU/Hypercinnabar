@@ -1,0 +1,11 @@
+PLIOCENE STABLE ISOTOPE STRATIGRAPHY
+
+Table 9. Data listing for Site 677 with proper ODP identifiers as spliced for time-series analysis
+(Shackleton, Berger, and Peltier, 1990).
+
+Note: The figure delta (m) is added to the depth mbsf to generate a depth mcd (meters composite depth) as was done
+for the Leg 138 data (Hagelberg et al., this volume). The benthic δ¹⁸O and δ¹³C data shown are averages of all
+analyses in the sample, adjusted for species-dependent departures from isotopic equilibrium. Balance of table
+on CD-ROM.
+
+355

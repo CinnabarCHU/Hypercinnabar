@@ -1,0 +1,851 @@
+{
+  "5": {
+    "pdf_page": 8,
+    "dataset": "SR.C35.APPENDIXC",
+    "field": "abundance",
+    "x0": 109,
+    "x13": 651,
+    "interval_header": 67,
+    "label": "Nannofossil abundance",
+    "caption": "The semiquantitative abundance of nannofossils in the floral assemblage vs. age in the Leg 138 sites. The abundance scale ranges from 0 to 4, with higher values indicating greater abundance. The record is subdivided into five intervals.",
+    "baseline_by_site": [
+      452.0,
+      397.0,
+      358.0,
+      340.0,
+      325.0,
+      306.0,
+      288.0,
+      272.0,
+      218.0,
+      179,
+      126.0
+    ],
+    "y_pixels_per_unit": [
+      12.152,
+      12.152,
+      12.276,
+      12.276,
+      12.648,
+      12.152,
+      12.028,
+      12.276,
+      11.904,
+      12.4,
+      12.028
+    ],
+    "site_label_centers": [
+      [
+        611,
+        395
+      ],
+      [
+        612,
+        342
+      ],
+      [
+        613,
+        302
+      ],
+      [
+        402,
+        290
+      ],
+      [
+        589,
+        278
+      ],
+      [
+        607,
+        256
+      ],
+      [
+        619,
+        240
+      ],
+      [
+        623,
+        211
+      ],
+      [
+        596,
+        170
+      ],
+      [
+        491,
+        136
+      ],
+      [
+        536,
+        123
+      ]
+    ]
+  },
+  "6": {
+    "pdf_page": 9,
+    "dataset": "SR.C35.APPENDIXC",
+    "field": "preservation",
+    "x0": 73,
+    "x13": 606,
+    "interval_header": 78,
+    "label": "Nannofossil preservation",
+    "caption": "The semiquantitative preservation state of nannofossils in the floral assemblage vs. age in the Leg 138 sites. Higher values indicate better preservation.",
+    "baseline_by_site": [
+      481.5,
+      429.0,
+      388.0,
+      360.0,
+      333.0,
+      313.0,
+      286.0,
+      269.0,
+      225.0,
+      184.0,
+      132.0
+    ],
+    "y_pixels_per_unit": [
+      11.907,
+      11.907,
+      12.0285,
+      12.15,
+      12.2715,
+      12.15,
+      12.15,
+      12.15,
+      12.393,
+      12.0285,
+      12.15
+    ],
+    "site_label_centers": [
+      [
+        578,
+        436
+      ],
+      [
+        578,
+        377
+      ],
+      [
+        569,
+        342
+      ],
+      [
+        359,
+        333
+      ],
+      [
+        550,
+        310
+      ],
+      [
+        557,
+        286
+      ],
+      [
+        574,
+        258
+      ],
+      [
+        581,
+        224
+      ],
+      [
+        553,
+        200
+      ],
+      [
+        448,
+        161
+      ],
+      [
+        492,
+        130
+      ]
+    ]
+  },
+  "7": {
+    "pdf_page": 10,
+    "dataset": "SR.C35.APPENDIXC",
+    "field": "etching",
+    "x0": 95,
+    "x13": 636,
+    "interval_header": 68,
+    "label": "Nannofossil etching",
+    "caption": "The semiquantitative evaluation of the degree of etching of the nannofossils in the floral assemblage vs. age in the Leg 138 sites. Higher values indicate increased etching.",
+    "baseline_by_site": [
+      469.0,
+      413.5,
+      359.5,
+      331.0,
+      300.5,
+      270.5,
+      240.5,
+      206.5,
+      176.5,
+      147.0,
+      126.0
+    ],
+    "y_pixels_per_unit": [
+      12.4,
+      11.78,
+      11.904,
+      11.78,
+      11.904,
+      12.152,
+      11.78,
+      11.78,
+      11.78,
+      12.152,
+      12.276
+    ],
+    "site_label_centers": [
+      [
+        581,
+        454
+      ],
+      [
+        582,
+        403
+      ],
+      [
+        581,
+        344
+      ],
+      [
+        388,
+        324
+      ],
+      [
+        577,
+        291
+      ],
+      [
+        589,
+        267
+      ],
+      [
+        603,
+        235
+      ],
+      [
+        611,
+        201
+      ],
+      [
+        578,
+        166
+      ],
+      [
+        475,
+        136
+      ],
+      [
+        518,
+        84
+      ]
+    ]
+  },
+  "8": {
+    "pdf_page": 11,
+    "dataset": "SR.C35.APPENDIXC",
+    "field": "overgrowth",
+    "x0": 69,
+    "x13": 609,
+    "interval_header": 68,
+    "label": "Nannofossil overgrowth",
+    "caption": "The semiquantitative evaluation of calcite overgrowth observed on the nannofossils in the floral assemblage vs. age in the Leg 138 sites. Higher values indicate increased overgrowth.",
+    "baseline_by_site": [
+      422.0,
+      389.0,
+      348.0,
+      330.5,
+      290.5,
+      251.0,
+      211.0,
+      183.0,
+      153.0,
+      121.0,
+      90.5
+    ],
+    "y_pixels_per_unit": [
+      12.3,
+      11.808,
+      12.423,
+      11.931,
+      12.3,
+      12.423,
+      12.423,
+      12.423,
+      12.3,
+      12.423,
+      11.808
+    ],
+    "site_label_centers": [
+      [
+        545,
+        403
+      ],
+      [
+        545,
+        375
+      ],
+      [
+        545,
+        322
+      ],
+      [
+        360,
+        309
+      ],
+      [
+        550,
+        264
+      ],
+      [
+        560,
+        236
+      ],
+      [
+        569,
+        201
+      ],
+      [
+        578,
+        177
+      ],
+      [
+        554,
+        130
+      ],
+      [
+        445,
+        107
+      ],
+      [
+        493,
+        89
+      ]
+    ]
+  },
+  "9": {
+    "pdf_page": 12,
+    "dataset": "SR.C35.APPENDIXA",
+    "field": "caco3_pct",
+    "x0": 128,
+    "x13": 669,
+    "interval_header": 67,
+    "label": "%CaCO₃",
+    "caption": "Percentage of CaCO₃ in bulk sediments vs. age in the Leg 138 sites.",
+    "baseline_by_site": [
+      500.0,
+      454.5,
+      415.0,
+      381.0,
+      341.0,
+      302.0,
+      256.5,
+      220.5,
+      188.0,
+      167.5,
+      107.5
+    ],
+    "y_pixels_per_unit": [
+      0.721,
+      0.707,
+      0.693,
+      0.672,
+      0.672,
+      0.7,
+      0.693,
+      0.693,
+      0.679,
+      0.665,
+      0.665
+    ],
+    "site_label_centers": [
+      [
+        658,
+        432
+      ],
+      [
+        655,
+        389
+      ],
+      [
+        655,
+        355
+      ],
+      [
+        419,
+        339
+      ],
+      [
+        613,
+        279
+      ],
+      [
+        620,
+        254
+      ],
+      [
+        632,
+        208
+      ],
+      [
+        635,
+        159
+      ],
+      [
+        570,
+        143
+      ],
+      [
+        495,
+        117
+      ],
+      [
+        535,
+        104
+      ]
+    ]
+  },
+  "10": {
+    "pdf_page": 13,
+    "dataset": "SR.C35.APPENDIXB",
+    "field": "opal_pct",
+    "x0": 89,
+    "x13": 629,
+    "interval_header": 80,
+    "label": "%opal",
+    "caption": "Percentage of opal in bulk sediments vs. age in the Leg 138 sites.",
+    "baseline_by_site": [
+      501.0,
+      453.0,
+      422.5,
+      368.5,
+      313.0,
+      288.0,
+      243.5,
+      167.5,
+      133.0,
+      109.5,
+      105.0
+    ],
+    "y_pixels_per_unit": [
+      1.3837,
+      1.3974,
+      1.3289,
+      1.3152,
+      1.3563,
+      1.37,
+      1.37,
+      1.37,
+      1.4385,
+      1.4385,
+      1.3426
+    ],
+    "site_label_centers": [
+      [
+        613,
+        476
+      ],
+      [
+        611,
+        435
+      ],
+      [
+        610,
+        389
+      ],
+      [
+        381,
+        346
+      ],
+      [
+        577,
+        309
+      ],
+      [
+        582,
+        274
+      ],
+      [
+        597,
+        222
+      ],
+      [
+        596,
+        134
+      ],
+      [
+        528,
+        118
+      ],
+      [
+        461,
+        110
+      ],
+      [
+        503,
+        98
+      ]
+    ]
+  },
+  "11": {
+    "pdf_page": 15,
+    "dataset": "SR.C35.APPENDIXB",
+    "field": "terrigenous_pct",
+    "x0": 89,
+    "x13": 629,
+    "interval_header": 279,
+    "label": "%terrigenous (=100%−opal%−CaCO₃%)",
+    "caption": "Estimated %terrigenous material in bulk sediments vs. age in the Leg 138 sites.",
+    "baseline_by_site": [
+      700.0,
+      673.5,
+      587.0,
+      560.5,
+      513.5,
+      476.0,
+      437.5,
+      398.0,
+      383.0,
+      366.5,
+      352.0
+    ],
+    "y_pixels_per_unit": [
+      0.7171,
+      0.71,
+      0.7029,
+      0.6816,
+      0.6958,
+      0.6745,
+      0.6816,
+      0.6745,
+      0.71,
+      0.6887,
+      0.6816
+    ],
+    "site_label_centers": [
+      [
+        615,
+        686
+      ],
+      [
+        616,
+        655
+      ],
+      [
+        587,
+        566
+      ],
+      [
+        381,
+        549
+      ],
+      [
+        572,
+        510
+      ],
+      [
+        581,
+        470
+      ],
+      [
+        595,
+        427
+      ],
+      [
+        598,
+        377
+      ],
+      [
+        529,
+        363
+      ],
+      [
+        455,
+        353
+      ],
+      [
+        505,
+        291
+      ]
+    ]
+  },
+  "12": {
+    "pdf_page": 16,
+    "dataset": "SR.C35.APPENDIXA",
+    "field": "caco3_mar",
+    "x0": 108,
+    "x13": 646,
+    "interval_header": 71,
+    "label": "CaCO₃ MAR (g/cm² k.y.)",
+    "caption": "CaCO₃ MAR vs. age in the Leg 138 sites.",
+    "baseline_by_site": [
+      473.5,
+      448.5,
+      425.5,
+      375.0,
+      311.0,
+      303.0,
+      247.0,
+      186.0,
+      118.5,
+      103.0,
+      91.0
+    ],
+    "y_pixels_per_unit": [
+      8.888,
+      9.24,
+      8.36,
+      8.448,
+      8.536,
+      8.536,
+      8.448,
+      8.712,
+      8.976,
+      8.36,
+      8.36
+    ],
+    "site_label_centers": [
+      [
+        536,
+        465
+      ],
+      [
+        536,
+        443
+      ],
+      [
+        535,
+        414
+      ],
+      [
+        398,
+        356
+      ],
+      [
+        599,
+        310
+      ],
+      [
+        601,
+        299
+      ],
+      [
+        612,
+        233
+      ],
+      [
+        618,
+        166
+      ],
+      [
+        546,
+        116
+      ],
+      [
+        474,
+        101
+      ],
+      [
+        526,
+        91
+      ]
+    ]
+  },
+  "13": {
+    "pdf_page": 17,
+    "dataset": "SR.C35.APPENDIXB",
+    "field": "opal_mar",
+    "x0": 69,
+    "x13": 609,
+    "interval_header": 84,
+    "label": "Opal MAR (g/cm² k.y.)",
+    "caption": "Opal MAR vs. age in the Leg 138 sites.",
+    "baseline_by_site": [
+      507.5,
+      488.5,
+      479.0,
+      435.0,
+      388.0,
+      381.5,
+      299.0,
+      196.0,
+      115.5,
+      107.5,
+      102.5
+    ],
+    "y_pixels_per_unit": [
+      37.065,
+      37.065,
+      34.947,
+      34.241,
+      37.065,
+      33.535,
+      34.594,
+      34.594,
+      33.888,
+      35.3,
+      37.065
+    ],
+    "site_label_centers": [
+      [
+        497,
+        497
+      ],
+      [
+        497,
+        481
+      ],
+      [
+        497,
+        468
+      ],
+      [
+        362,
+        419
+      ],
+      [
+        552,
+        390
+      ],
+      [
+        558,
+        378
+      ],
+      [
+        577,
+        291
+      ],
+      [
+        581,
+        176
+      ],
+      [
+        509,
+        115
+      ],
+      [
+        434,
+        109
+      ],
+      [
+        481,
+        99
+      ]
+    ]
+  },
+  "14": {
+    "pdf_page": 18,
+    "dataset": "SR.C35.APPENDIXB",
+    "field": "terrigenous_mar",
+    "x0": 128,
+    "x13": 668,
+    "interval_header": 67,
+    "label": "Terrigenous MAR (g/cm² k.y.)",
+    "caption": "Terrigenous MAR vs. age in the Leg 138 sites.",
+    "baseline_by_site": [
+      475.5,
+      453.0,
+      429.0,
+      384.0,
+      324.5,
+      319.0,
+      254.5,
+      192.5,
+      122.0,
+      110.5,
+      95.0
+    ],
+    "y_pixels_per_unit": [
+      36.256,
+      34.848,
+      33.44,
+      33.44,
+      33.44,
+      35.2,
+      33.792,
+      36.256,
+      33.44,
+      36.96,
+      36.96
+    ],
+    "site_label_centers": [
+      [
+        656,
+        456
+      ],
+      [
+        656,
+        430
+      ],
+      [
+        654,
+        414
+      ],
+      [
+        419,
+        362
+      ],
+      [
+        613,
+        324
+      ],
+      [
+        620,
+        306
+      ],
+      [
+        635,
+        241
+      ],
+      [
+        638,
+        169
+      ],
+      [
+        569,
+        114
+      ],
+      [
+        496,
+        101
+      ],
+      [
+        540,
+        91
+      ]
+    ]
+  },
+  "15": {
+    "pdf_page": 19,
+    "dataset": "SR.C35.APPENDIXA",
+    "fields": [
+      "caco3_pct",
+      "caco3_mar"
+    ],
+    "sites": [
+      845,
+      844,
+      846,
+      849
+    ],
+    "x0": 109,
+    "x16": 593,
+    "top": [
+      61,
+      220,
+      379,
+      539
+    ],
+    "bottom": [
+      207,
+      365,
+      525,
+      685
+    ],
+    "caption": "Time series of %CaCO₃ and CaCO₃ MAR from Sites 845, 844, 846, and 849 highlighting the carbonate crash centered at 9.5 Ma. The time series were smoothed with a five-point moving average."
+  }
+}

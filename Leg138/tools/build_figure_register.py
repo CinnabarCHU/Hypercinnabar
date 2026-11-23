@@ -175,6 +175,25 @@ def index(root):
         if not row['evidence_file']:row['evidence_file']='ir/core/chapter_items.csv#'+item
         if item in fold:add(row,'evidence_file','plates/core/data/foldouts.csv#'+item)
         if row['status']==PRINT and not row['qualification']:row['qualification']='Published image or caption located. No identified figure-specific data-to-output link in this register.'
+    # Each new entry carries its own renderer, native data and witness-page checks.
+    import sys
+    sys.path.insert(0,str(root/'edition2'))
+    from revisions import figure_edits
+    for item,edit in figure_edits(root).items():
+        row=register[item]
+        if not set((edit.get('source_pages') or edit['source_page']).split('|')).issubset(row['source_pdf_pages'].split('|')):
+            raise ValueError(f'Witness page mismatch for {item}')
+        # Historical qualifications are available in the previous register version.
+        # Report the conclusions of this actual comparison, not the earlier unresolved lead.
+        row['qualification']=''
+        qualify(row,DATA,edit['inputs'].split('|'),edit['evidence_file']+'#'+item,
+            edit['redraw_extent'],edit['qualification'],edit['renderer'],edit['output'])
+        row['source_kind']=edit['source_kind']
+        add(row,'table_ids',*edit['table_ids'].split('|'))
+    for site_row in bysite:
+        ir_figure=register[site_row['ir_composite_figure']]
+        site_row['ir_composite_redraw_extent']=ir_figure['redraw_extent']
+        site_row['ir_composite_redraw_output']=ir_figure['output']
     return list(register.values()),bysite,sources
 
 

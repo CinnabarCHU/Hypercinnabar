@@ -1,0 +1,71 @@
+N.J. SHACKLETON, M.A. HALL, D. PATE
+
+Figure 10. Oxygen isotope record of benthic foraminifers in Site 846 vs. age,
+compared with range expected under today’s conditions and with no change
+other than returning the ice presently stored in Antarctica and Greenland to the
+ocean. Above: 2.5 to 3.5 Ma. Below: 3.5 to 4.5 Ma.
+
+Figure 11. Cross-spectral analysis of δ¹⁸O (dashed line) vs. GRAPE density
+(solid line) for Site 846, 3.5 to 4.5 Ma. Coherency is indicated by the lower
+(dashed/dotted) line. On the phase plot, the main obliquity frequency is marked.
+
+by obliquity variations (period about 41 k.y.) to exhibit a significant
+phase lag, such as one might expect for a continental-scale ice sheet.
+We draw attention in particular to the interval from 3.5 to 4.5 Ma,
+because in this interval, the δ¹⁸O values are almost entirely lower than
+present-day values, so that any phase lag cannot readily be explained
+by variations in global ice volume above the present total, excluding
+Northern Hemisphere ice sheets from consideration. Hodell and Venz
+(1992) drew attention to the fact that the δ¹⁸O fluctuation can be
+interpreted only in terms of Antarctic glacial cycles if ocean deep
+water remained very cold. The production of an ocean bottom water
+of 0°C does not absolutely require an ice sheet extending to the
+continental margin and generating ice shelves; on the other hand, it
+may require conditions that are inconsistent with the postulated vege-
+tation. The field evidence against a temperate interval during the
+Pliocene is also strong (Marchant et al., 1993). Thus, it seems most
+likely that the δ¹⁸O fluctuations shown in Figure 10 in reality reflect
+a combination of small variations in Antarctic ice volume and associ-
+ated variations in deep water temperature.
+
+CONCLUSIONS
+
+An oxygen isotope stratigraphy for the entire Pliocene section of
+Site 846 has been constructed with an average sampling interval of
+less than 3 k.y. Much of this record is based on analyses of Uvigerina,
+so that a fairly reliable carbon isotope record also is available. In
+certain sections, Cibicidoides was analyzed so that the reliability of
+the δ¹³C record could be evaluated. The δ¹⁸O record appears to be
+dominated by variability at the obliquity frequency back to the early
+Gauss. Below this level, variability is less regular, but there is suffi-
+cient variability to justify high-frequency analysis in additional sites.
+In the lower part of the record, the values are predominantly in the
+range between modern values and values of about 0.6% lighter; this
+may be explained either by warmer Pacific Ocean Deep Water (by
+about 2°C), by reductions in Antarctic ice volume (to less than one-
+half its present volume), or, most likely, a combination of these two
+factors. Cross-spectral analysis shows during the mid-Pliocene the
+climate system included a component having a long time constant,
+strengthening the case for the existence of cyclic fluctuations in the
+size of the Antarctic ice sheet during that interval.
+
+ACKNOWLEDGMENTS
+
+We are grateful to NERC for support, without which, such a major
+commitment of stable isotope measurements to a single sequence
+would have been impossible. We thank Chris Mato, John Miller, and
+other staff of the Gulf Coast Core Repository at Texas A&M Univer-
+sity for enabling us to conduct intensive sampling during our Leg 138
+post-cruise meeting, as well as for supplying additional ‘fill-in’ sam-
+ples subsequently. We thank Simon Crowhurst for a great deal of help
+in data handling, and Terri Hagelberg for providing such excellent
+primary GRAPE density stratigraphy. We are grateful to Maureen
+Raymo and Ralph Tiedemann for valuable discussion of the extension
+of the formal oxygen isotope stratigraphy. Discussions and corre-
+spondence with Lloyd Burckle, George Denton, Dave Harwood,
+Dave Hodell, Jim Kennett and Peter Webb, have improved our under-
+standing of the controversy surrounding Pliocene events in Antarc-
+tica. We thank Dave Hodell and Eystein Jansen for their careful
+reviews of the submitted manuscript.
+
+352

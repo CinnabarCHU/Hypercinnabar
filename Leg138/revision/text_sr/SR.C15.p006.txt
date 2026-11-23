@@ -1,0 +1,36 @@
+N.J. SHACKLETON, M.A. HALL, D. PATE
+
+Figure 2. Carbon isotope record for benthic foraminifers from Site 846 vs. depth rmcd. All data are shown; the line
+(as Fig. 1) is to guide the eye.
+
+so marked that the recognition of the isotope stages in the planktonic
+record is difficult. In parts of the record, it appears that the benthic
+record of Site 677 resembles the benthic record of Site 607 more
+closely than its own planktonic record. The reason for this may be that
+variability in deep-water temperature makes up a greater proportion
+of the overall δ¹⁸O range in the Pliocene than in the Pleistocene. Thus,
+we recommend that the Pliocene isotope stages be regarded formally
+as being defined in a benthic δ¹⁸O record.
+
+Some scientists have extended the stage numbering scheme even
+farther; for example, Raymo et al. (1989) gave numbers to stage 116
+at 2.73 Ma; Raymo et al. (1992) extended the numbering in Site 607
+to 126; Sarnthein and Tiedemann (1989) gave numbers to stage 137
+at about 3.3 Ma, and Tiedemann (1992) tentatively proposed numbers
+to stage 172 at almost 4.5 Ma. We consider that these numbers are
+increasingly difficult to use effectively and that it may be more
+appropriate to erect a scheme analogous to that used by Hays et al.
+(1969) for Pacific Ocean carbonate cycles, whereby numbering re-
+starts with each major change in magnetic field polarity. Hays et al.
+(1969) and Vincent (1981) used for carbonate cycles a scheme where
+numbering is re-initialized in each polarity chron. Because the rec-
+ords available today have higher resolution than those available in
+the late 1960s, we propose re-initializing at each magnetic polarity
+chron and subchron. Thus, we postulate that stage 105 becomes stage
+G1 (G for the section of Gauss to the Kaena; names of the form
+C3n.1n.δ¹⁸O.1 would be excessively clumsy but may become neces-
+sary if we extend the scheme into the Miocene). The cool stage that
+by counting downward in Site 846 would have been stage 126 be-
+comes stage G22 in this new scheme. The preceding stage becomes
+
+342

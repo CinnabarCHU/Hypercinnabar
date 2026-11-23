@@ -215,8 +215,13 @@ def main():
     parser.add_argument('originals', type=Path, help='directory containing original SP.pdf and PR.pdf')
     parser.add_argument('--out', type=Path, default=HERE)
     parser.add_argument('--check', action='store_true', help='compare against the committed collation without rewriting it')
+    parser.add_argument('--doc',choices=('SP','PR'),action='append',help='Select a publication; use a separate output for a subset')
     args=parser.parse_args(); pages=[];variants=[]
+    selected=set(args.doc or GROUPS)
+    if len(selected)<2 and args.out.resolve()==HERE:
+        parser.error('Specify --out for a single-publication build')
     for key in GROUPS:
+        if key not in selected:continue
         witness=(args.originals/f'{key}.pdf').read_bytes()
         if sha(witness)!=DIGEST[key]: raise ValueError(f'Unexpected {key} digital edition')
         with fitz.open(stream=witness,filetype='pdf') as pdf:
@@ -226,6 +231,7 @@ def main():
     buf=io.StringIO();cs=csv.writer(buf,lineterminator='\n');cs.writerow(['doc_id','source_page','pdf_line','reader_block','publisher_reading','print_reading','decision']);cs.writerows(variants)
     docs={}
     for key in GROUPS:
+        if key not in selected:continue
         read=[p for p in pages if p['doc_id']==key]; blocks=[b for p in read for b in p['blocks']];
         docs[key]={'pages':len(read),'source_pages':[p['source_page'] for p in read], 'blocks':len(blocks),
               'printed_lines':sum(len(b['source_lines']) for b in blocks), 'variant_entries':sum(v[0]==key for v in variants),

@@ -7,6 +7,7 @@ import fitz
 from companions import read,write,prepare,digest
 from modern_pdf import Reader,merge
 from page_text import runs,reflow
+from revisions import readings, reader_blocks, styled_text, checked_lines, partially_collated, page_blocks
 from structured_updates import value
 
 E=html.escape
@@ -16,6 +17,7 @@ TITLES={'IR.138ir':'Initial Reports · front matter and contents','IR.ir138_pane
 'SR.138_corx':'Scientific Results · published corrections','SR.sr138_f21':'Scientific Results · separately distributed foldout',
 'SR.138NDX':'Scientific Results · volume index'}
 CSS="""*{box-sizing:border-box}body{margin:0;color:#233937;background:#f9faf5;font:16px/1.57 system-ui,sans-serif}main{max-width:990px;margin:auto;padding:28px 32px 80px}h1,h2,h3{font-family:Georgia,serif;line-height:1.24;color:#174e46}h1{font-size:clamp(32px,5vw,57px);margin:14px 0 10px}h2{font-size:30px;margin:18px 0 10px}h3{font-size:19px;margin:12px 0 8px}a{color:#206858;text-underline-offset:3px}p{margin:.46em 0}section{background:white;border-top:2px solid #92b2a3;padding:14px 21px 20px;margin:22px 0}small,.meta,figcaption{font:13px/1.45 system-ui,sans-serif;color:#506b63}.article p{font:18px/1.55 Georgia,serif;max-width:80ch}.article p.caption{font:14px/1.48 system-ui;color:#335b4d}.bar,summary{color:#296656;font-weight:600}.bar a{margin-right:15px}details{margin:8px 0}summary{cursor:pointer}table{width:100%;text-align:left;border-collapse:collapse;font-size:13px}tr{border-bottom:1px solid #d9e4da}td,th{padding:5px 7px;vertical-align:top}th{background:#eef3eb;position:sticky;top:0}.scroll{overflow:auto;max-height:450px}figure{margin:15px 0}figure img{max-width:100%;max-height:560px}iframe{width:100%;height:75vh;border:1px solid #a9b7ad}header{border-bottom:1px solid #a9b7ad;padding-bottom:14px}.folio{margin-bottom:12px}.list{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:20px}code{font-size:12px;overflow-wrap:anywhere}@media(max-width:700px){main{padding:16px}section{padding:12px}.scroll{max-width:100%}}"""
+CSS += '.script-pair{display:inline-grid;grid-template-columns:max-content;vertical-align:-.22em;line-height:.78;align-items:start;text-align:left}.script-pair>sup,.script-pair>sub{font-size:.68em;position:static;vertical-align:baseline;line-height:1;grid-column:1}.script-pair>sup{grid-row:1}.script-pair>sub{grid-row:2}'
 def link(url,label):return f'<a href="{E(str(url),quote=True)}">{E(str(label))}</a>'
 def header(title):
     return '<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>'+E(title)+'</title><style>'+CSS+'</style><body><main>'
@@ -48,6 +50,9 @@ def build_document(job):
     root,out,record,folios,assets,cards,fonts=job;docid=record['doc_id'];title=record['title'] or TITLES.get(docid,docid)
     source_path=root/record['local_source'];source=fitz.open(source_path)
     if len(source)!=int(record['pdf_pages']):raise ValueError(docid)
+    proof=readings(root,docid);line_checks=checked_lines(root,docid);source_hash=digest(source_path)
+    if any(k[1]<1 or k[1]>len(source) or v['witness_sha256']!=source_hash for k,v in proof.items()):
+        raise ValueError(f'Witness differs from the collated source: {docid}')
     reader=Reader(docid,title,fonts);sections=[];pageindex=[]
     grouped=defaultdict(list)
     for a in assets:grouped[a['source_page']].append(a)
@@ -61,11 +66,23 @@ def build_document(job):
             iscard=(docid=='SP' and src in cards)
             if iscard:reading=card_content(cards[src])
             part=grouped[src];mode='collated prospectus site card' if iscard else 'publisher OCR; reading order inferred'
+            collated=proof.get((docid,src))
+            field_checks=line_checks.get((docid,src),{})
+            if field_checks:
+                reading=partially_collated(packets,field_checks,source_hash)
+                mode=f'{len(field_checks)} visually checked hole-header lines (operations, coordinates, depths and recovery). Other text uses the publisher OCR.'
+            if collated:
+                visible=page_blocks(collated,packets,field_checks)
+                reading=reader_blocks({'blocks':visible})
+                mode='Visually collated against the source scan. '+collated['review_scope']
             reader.header(src,folio,url)
             start=reader.num
-            reader.paragraph('Collated site-card fields. The original page follows the reading text.' if iscard else NOTICE,'notice')
+            reader.paragraph('Collated site-card fields. The original page follows the reading text.' if iscard else (mode if collated or field_checks else NOTICE),'notice')
             if not reading:reader.paragraph(NOPROSE,'notice')
-            for k,t in reading:reader.paragraph(t,k)
+            for j,(k,t) in enumerate(reading):
+                if collated and visible[j].get('inline_styles'):
+                    reader.styled_paragraph(styled_text(visible[j]),k,fonts)
+                else:reader.paragraph(t,k)
             if part:
                 reader.paragraph('Page-linked data and editorial comparisons','heading')
                 for a in part:
@@ -77,8 +94,10 @@ def build_document(job):
                         reader.table(a,read(out/a['file']))
             last=reader.num;reader.end()
             chunks=[]
-            for k,t in reading:
-                tag='h3' if k=='heading' else 'p';chunks.append(f'<{tag} class="{k}">{E(t)}</{tag}>')
+            for j,(k,t) in enumerate(reading):
+                tag='h3' if k=='heading' else 'p'
+                content=styled_text(visible[j],html=True) if collated else E(t)
+                chunks.append(f'<{tag} class="{k}">{content}</{tag}>')
             if not reading:chunks.append(note(NOPROSE))
             positioned=[(pk,ln) for pk in packets if pk['role']=='positioned' for ln in pk['lines']]
             if positioned:
@@ -94,10 +113,10 @@ def build_document(job):
                    source_line_segments=lines,reading_packets=len(reading),positioned_packets=sum(pk['role']=='positioned' for pk in packets),
                    source_width_pt=p.rect.width,source_height_pt=p.rect.height,reading_text_status=mode,
                    graphics=[a for a in part if a['kind'] in ('figure','card')],pdf_table_assets=sum(a['kind']=='table' for a in part))
-            ledger.write(json.dumps(dict(doc_id=docid,source_page=src,status=mode,gutter_pt=r['assigned_gutter_pt'],packets=packets),ensure_ascii=False,separators=(',',':'))+'\n')
+            ledger.write(json.dumps(dict(doc_id=docid,source_page=src,status=mode,gutter_pt=r['assigned_gutter_pt'],packets=packets,**({'visual_collation':collated} if collated else {}),**({'line_collations':list(field_checks.values())} if field_checks else {})),ensure_ascii=False,separators=(',',':'))+'\n')
             pageindex.append(r)
     outpdf=out/'pdf'/(docid+'.pdf');merge(reader.finish(),source,outpdf,pageindex,out)
-    hr=[header(title),'<header>'+link('../index.html','Leg 138 · catalogue')+'<h1>'+E(title)+'</h1><p>'+E(docid)+' · '+link('../pdf/'+docid+'.pdf','Paired PDF edition')+' · '+link(record['url'],'Publisher PDF')+' · '+link('../audit/'+docid+'.jsonl.gz','Positioned source text (JSONL.gz)')+'</p>'+note(NOTICE)+'</header>']
+    hr=[header(title),'<header>'+link('../index.html','Leg 138 · catalogue')+'<h1>'+E(title)+'</h1><p>'+E(docid)+' · '+link('../pdf/'+docid+'.pdf','Paired PDF edition')+' · '+link(record['url'],'Publisher PDF')+' · '+link('../audit/'+docid+'.jsonl.gz','Positioned source text (JSONL.gz)')+'</p>'+note('Visual collations are marked on individual pages. Other reading pages use the publisher text layer.')+'</header>']
     hr.append('<details><summary>Browse '+str(len(pageindex))+' source pages</summary><p>'+ ' · '.join(link('#p'+str(i),i) for i in range(1,len(pageindex)+1))+'</p></details>')
     target=fitz.open(outpdf)
     sample_pages={1,(len(source)+1)//2,len(source)}

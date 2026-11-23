@@ -1,0 +1,332 @@
+doc_id,source_page,pdf_line,reader_block,publisher_reading,print_reading,decision
+IR.C11,1,3,IR.C11.p001.b02,8461,846¹,printed_reading
+IR.C11,1,4,IR.C11.p001.b03,Party2,Party²,printed_reading
+IR.C11,1,9,IR.C11.p001.b08,'S,′S,printed_reading
+IR.C11,1,9,IR.C11.p001.b08,'W,′W,printed_reading
+IR.C11,1,27,IR.C11.p001.b24,'S,′S,printed_reading
+IR.C11,1,27,IR.C11.p001.b24,'W,′W,printed_reading
+IR.C11,1,51,IR.C11.p001.b42,'S,′S,printed_reading
+IR.C11,1,51,IR.C11.p001.b42,'W,′W,printed_reading
+IR.C11,1,69,IR.C11.p001.b58,'S,′S,printed_reading
+IR.C11,1,69,IR.C11.p001.b58,'W,′W,printed_reading
+IR.C11,1,83,IR.C11.p001.b70,Leg 138's,Leg 138’s,printed_reading
+IR.C11,1,44,IR.C11.p001.b71,1 Mayer,¹ Mayer,printed_reading
+IR.C11,1,46,IR.C11.p001.b72,Shipboard,² Shipboard,printed_reading
+IR.C11,2,19,IR.C11.p002.b03,0-317,0–317,printed_reading
+IR.C11,2,21,IR.C11.p002.b03,317.0-419.2,317.0–419.2,printed_reading
+IR.C11,2,48,IR.C11.p002.b06,"""soft""",“soft”,printed_reading
+IR.C11,2,63,IR.C11.p002.b08,H2S,H₂S,printed_reading
+IR.C11,3,2,IR.C11.p003.b02,"""Leadsville""",“Leadsville”,printed_reading
+IR.C11,3,2,IR.C11.p003.b02,Paleomagnetism,paleomagnetism,printed_reading
+IR.C11,3,6,IR.C11.p003.b02,"""platinum mine""",“platinum mine”,printed_reading
+IR.C11,3,79,IR.C11.p003.b16,197.0-206.5,197.0–206.5,printed_reading
+IR.C11,3,83,IR.C11.p003.b17,BOOL,1300L,printed_reading
+IR.C11,3,84,IR.C11.p003.b17,206.5^18.6,206.5–418.6,printed_reading
+IR.C11,3,109,IR.C11.p003.b21,"""hot spots""",“hot spots”,printed_reading
+IR.C11,4,11,IR.C11.p004.b02,Chile Current,= Chile Current,printed_reading
+IR.C11,4,17,IR.C11.p004.b04,2.5-31.0,2.5–31.0,printed_reading
+IR.C11,4,31,IR.C11.p004.b07,(4.0-,(4.0–,printed_reading
+IR.C11,5,23,IR.C11.p005.b04,%CaCO3,%CaCO₃,printed_reading
+IR.C11,5,33,IR.C11.p005.b04,4-8 cm,4–8 cm,printed_reading
+IR.C11,5,46,IR.C11.p005.b05,<l %,<1%,printed_reading
+IR.C11,5,56,IR.C11.p005.b14,0-317.0,0–317.0,printed_reading
+IR.C11,5,57,IR.C11.p005.b15,0-10.6,0–10.6,printed_reading
+IR.C11,5,64,IR.C11.p005.b16,7.0-10.6,7.0–10.6,printed_reading
+IR.C11,6,13,IR.C11.p006.b04,0-262.7,0–262.7,printed_reading
+IR.C11,6,14,IR.C11.p006.b05,0-7.0,0–7.0,printed_reading
+IR.C11,6,20,IR.C11.p006.b06,Cores 1-6,Cores 1–6,printed_reading
+IR.C11,6,22,IR.C11.p006.b06,(-50%,(~50%,printed_reading
+IR.C11,6,28,IR.C11.p006.b07,Cores 6-9,Cores 6–9,printed_reading
+IR.C11,6,30,IR.C11.p006.b07,10%-40%,10%–40%,printed_reading
+IR.C11,6,32,IR.C11.p006.b07,Plagioclase,plagioclase,printed_reading
+IR.C11,6,36,IR.C11.p006.b08,Cores 9-22,Cores 9–22,printed_reading
+IR.C11,6,39,IR.C11.p006.b08,50%-80%,50%–80%,printed_reading
+IR.C11,6,41,IR.C11.p006.b08,"""Organic Geochemistry""",“Organic Geochemistry”,printed_reading
+IR.C11,6,45,IR.C11.p006.b09,22X-25X,22X–25X,printed_reading
+IR.C11,6,45,IR.C11.p006.b09,22H-26X,22H–26X,printed_reading
+IR.C11,6,47,IR.C11.p006.b09,Plagioclase,plagioclase,printed_reading
+IR.C11,7,8,IR.C11.p007.b02,Seismic Line,Figure 4. Seismic Line,printed_reading
+IR.C11,7,8,IR.C11.p007.b02,80-in.,80-in.³,printed_reading
+IR.C11,7,126,IR.C11.p007.b08,262.7-317.0,262.7–317.0,printed_reading
+IR.C11,7,127,IR.C11.p007.b09,7.0-10.6,7.0–10.6,printed_reading
+IR.C11,7,131,IR.C11.p007.b10,262.7-290,262.7–290,printed_reading
+IR.C11,7,132,IR.C11.p007.b10,-3IX,-31X,printed_reading
+IR.C11,7,140,IR.C11.p007.b11,10%-30%,10%–30%,printed_reading
+IR.C11,10,,IR.C11.p010.b01,,SITE 846,supplied_from_scan
+IR.C11,10,,IR.C11.p010.b03,,274,supplied_from_scan
+IR.C11,11,23,IR.C11.p011.b06,"4,110","4, 110",printed_reading
+IR.C11,11,24,IR.C11.p011.b07,317.0-419.2,317.0–419.2,printed_reading
+IR.C11,11,25,IR.C11.p011.b08,10.6-16.5,10.6–16.5,printed_reading
+IR.C11,11,27,IR.C11.p011.b09,HA,IIA,printed_reading
+IR.C11,11,28,IR.C11.p011.b09,HB,IIB,printed_reading
+IR.C11,11,31,IR.C11.p011.b09,HB,IIB,printed_reading
+IR.C11,11,32,IR.C11.p011.b10,HA,IIA,printed_reading
+IR.C11,11,34,IR.C11.p011.b12,"4,110","4, 110",printed_reading
+IR.C11,11,35,IR.C11.p011.b13,317.0-370.5,317.0–370.5,printed_reading
+IR.C11,11,36,IR.C11.p011.b14,10.6-14.1,10.6–14.1,printed_reading
+IR.C11,11,37,IR.C11.p011.b15,DA,IIA,printed_reading
+IR.C11,11,42,IR.C11.p011.b15,30%-70%,30%–70%,printed_reading
+IR.C11,11,43,IR.C11.p011.b15,60%-80%,60%–80%,printed_reading
+IR.C11,11,46,IR.C11.p011.b15,HA,IIA,printed_reading
+IR.C11,11,47,IR.C11.p011.b15,"1,20","1, 20",printed_reading
+IR.C11,11,48,IR.C11.p011.b15,< 1 %,<1%,printed_reading
+IR.C11,11,49,IR.C11.p011.b16,HB,IIB,printed_reading
+IR.C11,11,52,IR.C11.p011.b19,370.5-419.2,370.5–419.2,printed_reading
+IR.C11,11,53,IR.C11.p011.b20,14.1-16.5,14.1–16.5,printed_reading
+IR.C11,11,54,IR.C11.p011.b21,HB,IIB,printed_reading
+IR.C11,11,59,IR.C11.p011.b21,"""Downhole Measurements""",“Downhole Measurements”,printed_reading
+IR.C11,11,69,IR.C11.p011.b22,HB,IIB,printed_reading
+IR.C11,11,70,IR.C11.p011.b22,5 YR,5YR,printed_reading
+IR.C11,13,,IR.C11.p013.b01,,SITE 846,supplied_from_scan
+IR.C11,13,,IR.C11.p013.b03,,277,supplied_from_scan
+IR.C11,16,64,IR.C11.p016.b02,30-150,30–150,printed_reading
+IR.C11,16,65,IR.C11.p016.b02,450-500,450–500,printed_reading
+IR.C11,16,65,IR.C11.p016.b02,650-,650–,printed_reading
+IR.C11,16,66,IR.C11.p016.b02,850-900,850–900,printed_reading
+IR.C11,16,3,IR.C11.p016.b03,Plagioclase,plagioclase,printed_reading
+IR.C11,16,5,IR.C11.p016.b03,0-63,0–63,printed_reading
+IR.C11,16,30,IR.C11.p016.b06,Unit HB,Unit IIB,printed_reading
+IR.C11,16,40,IR.C11.p016.b08,0.1-10,0.1–10,printed_reading
+IR.C11,16,43,IR.C11.p016.b08,"1,30-150","1, 30–150",printed_reading
+IR.C11,16,51,IR.C11.p016.b09,1-10,1–10,printed_reading
+IR.C11,16,55,IR.C11.p016.b09,1-10,1–10,printed_reading
+IR.C11,16,56,IR.C11.p016.b09,"""Milankovitch""",“Milankovitch”,printed_reading
+IR.C11,17,8,IR.C11.p017.b02,650-700,650–700,printed_reading
+IR.C11,17,38,IR.C11.p017.b03,57-87,57–87,printed_reading
+IR.C11,17,25,IR.C11.p017.b06,10-30,10–30,printed_reading
+IR.C11,17,25,IR.C11.p017.b06,40-50,40–50,printed_reading
+IR.C11,17,40,IR.C11.p017.b07,1-2,1–2,printed_reading
+IR.C11,17,42,IR.C11.p017.b07,10-40,10–40,printed_reading
+IR.C11,17,43,IR.C11.p017.b07,15-25,15–25,printed_reading
+IR.C11,17,57,IR.C11.p017.b09,0.5-1.0,0.5–1.0,printed_reading
+IR.C11,18,14,IR.C11.p018.b02,846B-3H-lat50-96cm.,846B-3H-1 at 50–96 cm.,printed_reading
+IR.C11,18,26,IR.C11.p018.b03,20-62,20–62,printed_reading
+IR.C11,18,37,IR.C11.p018.b05,< 3 mm,<3 mm,printed_reading
+IR.C11,19,20,IR.C11.p019.b02,95-148,95–148,printed_reading
+IR.C11,19,22,IR.C11.p019.b03,63-84,63–84,printed_reading
+IR.C11,19,28,IR.C11.p019.b04,through-3 IX,through-31X,printed_reading
+IR.C11,20,13,IR.C11.p020.b02,41-80,41–80,printed_reading
+IR.C11,20,29,IR.C11.p020.b03,Subunit HB,Subunit IIB,printed_reading
+IR.C11,20,30,IR.C11.p020.b03,4-27,4–27,printed_reading
+IR.C11,21,4,IR.C11.p021.b02,"""Organic",“Organic,printed_reading
+IR.C11,21,5,IR.C11.p021.b02,"chemistry""",chemistry”,printed_reading
+IR.C11,21,13,IR.C11.p021.b04,"""Liesegang""",“Liesegang”,printed_reading
+IR.C11,21,17,IR.C11.p021.b05,"40X-l,0-20cm,-41X-l,0-5","40X-1, 0–20 cm, -41X-1, 0–5",printed_reading
+IR.C11,21,18,IR.C11.p021.b05,"1,0-5","1, 0–5",printed_reading
+IR.C11,21,22,IR.C11.p021.b05,Subunit HB,Subunit IIB,printed_reading
+IR.C11,21,48,IR.C11.p021.b08,50-80,50–80,printed_reading
+IR.C11,21,49,IR.C11.p021.b08,262.7-317,262.7–317,printed_reading
+IR.C11,21,51,IR.C11.p021.b08,200-262.7,200–262.7,printed_reading
+IR.C11,21,52,IR.C11.p021.b08,317-408.9,317–408.9,printed_reading
+IR.C11,21,54,IR.C11.p021.b08,-39 m,~39 m,printed_reading
+IR.C11,22,182,IR.C11.p022.b07,"2,40","2, 40",printed_reading
+IR.C11,22,182,IR.C11.p022.b07,"2,120","2, 120",printed_reading
+IR.C11,22,189,IR.C11.p022.b08,"6,40","6, 40",printed_reading
+IR.C11,22,195,IR.C11.p022.b09,discoastends,discoasterids,printed_reading
+IR.C11,22,199,IR.C11.p022.b09,. the Pliocene,the Pliocene,printed_reading
+IR.C11,22,203,IR.C11.p022.b09,"4,50cm,and-21H-5,50cm.","4, 50 cm, and -21H-5, 50 cm.",printed_reading
+IR.C11,22,216,IR.C11.p022.b10,(NNlO/NNll),(NN10/NN11),printed_reading
+IR.C11,22,222,IR.C11.p022.b11,"5,60","5, 60",printed_reading
+IR.C11,22,227,IR.C11.p022.b12,NN7-NN6,NN7–NN6,printed_reading
+IR.C11,23,,IR.C11.p023.b01,,SITE 846,supplied_from_scan
+IR.C11,23,1,IR.C11.p023.b02,846-,846.,printed_reading
+IR.C11,23,,IR.C11.p023.b04,,287,supplied_from_scan
+IR.C11,24,,IR.C11.p024.b01,,SITE 846,supplied_from_scan
+IR.C11,24,,IR.C11.p024.b04,,288,supplied_from_scan
+IR.C11,25,,IR.C11.p025.b01,,SITE 846,supplied_from_scan
+IR.C11,25,,IR.C11.p025.b03,,289,supplied_from_scan
+IR.C11,26,534,IR.C11.p026.b02,rnbsf,mbsf,printed_reading
+IR.C11,26,536,IR.C11.p026.b02,A=abundant,A = abundant,printed_reading
+IR.C11,27,217,IR.C11.p027.b04,"et al,","et al.,",printed_reading
+IR.C11,27,223,IR.C11.p027.b06,-UH,-11H,printed_reading
+IR.C11,28,10,IR.C11.p028.b02,{Globorotalia,(Globorotalia,printed_reading
+IR.C11,28,24,IR.C11.p028.b04,Blow's (,Blow’s (,printed_reading
+IR.C11,28,24,IR.C11.p028.b04,Blow's zonal,Blow’s zonal,printed_reading
+IR.C11,28,29,IR.C11.p028.b04,NI8,N18,printed_reading
+IR.C11,28,32,IR.C11.p028.b04,Globorotaliaplesiotumida,Globorotalia plesiotumida,printed_reading
+IR.C11,28,32,IR.C11.p028.b04,NI7,N17,printed_reading
+IR.C11,28,55,IR.C11.p028.b06,Dorcadospyrisalata,Dorcadospyris alata,printed_reading
+IR.C11,28,57,IR.C11.p028.b06,{Collosphaera,(Collosphaera,printed_reading
+IR.C11,28,69,IR.C11.p028.b07,Spongasterpentas,Spongaster pentas,printed_reading
+IR.C11,28,85,IR.C11.p028.b09,"""Sedimentation Rates""",“Sedimentation Rates”,printed_reading
+IR.C11,28,96,IR.C11.p028.b11,846A-846D,846A–846D,printed_reading
+IR.C11,28,129,IR.C11.p028.b15,"2,90","2, 90",printed_reading
+IR.C11,28,129,IR.C11.p028.b15,"4,90","4, 90",printed_reading
+IR.C11,28,130,IR.C11.p028.b15,-1 OH-CC,-10H-CC,printed_reading
+IR.C11,28,131,IR.C11.p028.b15,theft praebergonii,the R. praebergonii,printed_reading
+IR.C11,28,131,IR.C11.p028.b15,"2,90","2, 90",printed_reading
+IR.C11,29,5,IR.C11.p029.b02,mis zone,this zone,printed_reading
+IR.C11,29,7,IR.C11.p029.b02,"4,90","4, 90",printed_reading
+IR.C11,29,7,IR.C11.p029.b02,Aon,A on,printed_reading
+IR.C11,29,14,IR.C11.p029.b04,"4,70","4, 70",printed_reading
+IR.C11,29,21,IR.C11.p029.b04,"4,70","4, 70",printed_reading
+IR.C11,29,22,IR.C11.p029.b04,Aof,A of,printed_reading
+IR.C11,29,23,IR.C11.p029.b04,"4,70","4, 70",printed_reading
+IR.C11,29,25,IR.C11.p029.b04,TV. miocenica,N. miocenica,printed_reading
+IR.C11,29,50,IR.C11.p029.b06,"5,103","5, 103",printed_reading
+IR.C11,29,71,IR.C11.p029.b11,"I0""4",10⁻⁴,printed_reading
+IR.C11,29,83,IR.C11.p029.b12,"""soft""",“soft”,printed_reading
+IR.C11,30,61,IR.C11.p030.b06,Nitschiajouseae,Nitschia jouseae,printed_reading
+IR.C11,31,545,IR.C11.p031.b06,40-50,40–50,printed_reading
+IR.C11,33,30,IR.C11.p033.b04,"""Lithostratigraphy""",“Lithostratigraphy”,printed_reading
+IR.C11,33,34,IR.C11.p033.b04,370.3-379.9,370.3–379.9,printed_reading
+IR.C11,33,49,IR.C11.p033.b05,H2S,H₂S,printed_reading
+IR.C11,33,50,IR.C11.p033.b06,H2S,H₂S,printed_reading
+IR.C11,33,52,IR.C11.p033.b06,H2S,H₂S,printed_reading
+IR.C11,33,54,IR.C11.p033.b07,25 A,25A,printed_reading
+IR.C11,33,96,IR.C11.p033.b09,846A- 1H,846A-1H,printed_reading
+IR.C11,33,102,IR.C11.p033.b09,H2S,H₂S,printed_reading
+IR.C11,35,13,IR.C11.p035.b04,27 A,27A,printed_reading
+IR.C11,35,47,IR.C11.p035.b07,"""Organic Geochemistry""",“Organic Geochemistry”,printed_reading
+IR.C11,36,24,IR.C11.p036.b03,"""Biostratigraphy""",“Biostratigraphy”,printed_reading
+IR.C11,36,28,IR.C11.p036.b03,"""Downhole Measurements""",“Downhole Measurements”,printed_reading
+IR.C11,36,37,IR.C11.p036.b05,H2S,H₂S,printed_reading
+IR.C11,36,48,IR.C11.p036.b08,%CaCO3,%CaCO₃,printed_reading
+IR.C11,36,49,IR.C11.p036.b08,"""Explanatory Notes""",“Explanatory Notes”,printed_reading
+IR.C11,36,53,IR.C11.p036.b08,"""Sedimentation Rates""",“Sedimentation Rates”,printed_reading
+IR.C11,36,54,IR.C11.p036.b08,%CaCO3,%CaCO₃,printed_reading
+IR.C11,36,56,IR.C11.p036.b08,%CaCO3,%CaCO₃,printed_reading
+IR.C11,36,58,IR.C11.p036.b08,"""Sedimentation Rates""",“Sedimentation Rates”,printed_reading
+IR.C11,36,59,IR.C11.p036.b08,%CaCO3,%CaCO₃,printed_reading
+IR.C11,36,61,IR.C11.p036.b09,"""Lithostratigraphy""",“Lithostratigraphy”,printed_reading
+IR.C11,36,64,IR.C11.p036.b09,%CaCO3,%CaCO₃,printed_reading
+IR.C11,36,65,IR.C11.p036.b09,846B-IH,846B-1H,printed_reading
+IR.C11,36,70,IR.C11.p036.b10,"6,30cm,to-34X-4,110","6, 30 cm, to -34X-4, 110",printed_reading
+IR.C11,36,71,IR.C11.p036.b10,%CaCO3,%CaCO₃,printed_reading
+IR.C11,36,72,IR.C11.p036.b10,%CaCO3,%CaCO₃,printed_reading
+IR.C11,37,2,IR.C11.p037.b02,CaCO3,CaCO₃,printed_reading
+IR.C11,37,391,IR.C11.p037.b03,%CaCO3,%CaCO₃,printed_reading
+IR.C11,37,395,IR.C11.p037.b04,CaCO3,CaCO₃,printed_reading
+IR.C11,37,403,IR.C11.p037.b06,CaCO3,CaCO₃,printed_reading
+IR.C11,37,405,IR.C11.p037.b06,CaCO3,CaCO₃,printed_reading
+IR.C11,37,406,IR.C11.p037.b06,de sity,density,editorial_restoration
+IR.C11,37,407,IR.C11.p037.b06,CdCO3,CaCO₃,printed_reading
+IR.C11,37,415,IR.C11.p037.b06,the CaCO3,the CaCO₃,printed_reading
+IR.C11,37,415,IR.C11.p037.b06,non-CaCO3,non-CaCO₃,printed_reading
+IR.C11,37,416,IR.C11.p037.b06,MAR's,MAR’s,printed_reading
+IR.C11,37,420,IR.C11.p037.b06,CaCO3,CaCO₃,printed_reading
+IR.C11,38,9,IR.C11.p038.b02,CaCO3,CaCO₃,printed_reading
+IR.C11,38,13,IR.C11.p038.b04,cm3,cm³,printed_reading
+IR.C11,38,14,IR.C11.p038.b04,"""Explanatory Notes""",“Explanatory Notes”,printed_reading
+IR.C11,38,27,IR.C11.p038.b05,"""Inorganic",“Inorganic,printed_reading
+IR.C11,38,28,IR.C11.p038.b05,"Geochemistry""",Geochemistry”,printed_reading
+IR.C11,38,55,IR.C11.p038.b08,Uf7,UK′37,printed_reading
+IR.C11,38,67,IR.C11.p038.b09,"""Explanatory Notes""",“Explanatory Notes”,printed_reading
+IR.C11,39,25,IR.C11.p039.b02,CaCO3 and C,CaCO₃ and Corg,printed_reading
+IR.C11,39,28,IR.C11.p039.b03,"""alkenones""",“alkenones”,printed_reading
+IR.C11,39,33,IR.C11.p039.b03,U^',UK′37,printed_reading
+IR.C11,40,137,IR.C11.p040.b03,"""Sedimentation Rates""",“Sedimentation Rates”,printed_reading
+IR.C11,40,144,IR.C11.p040.b05,U^,UK′37,printed_reading
+IR.C11,40,145,IR.C11.p040.b05,U^',UK′37,printed_reading
+IR.C11,40,147,IR.C11.p040.b05,Ufj,UK′37,printed_reading
+IR.C11,40,151,IR.C11.p040.b05,Phyloge-,phyloge-,printed_reading
+IR.C11,40,158,IR.C11.p040.b06,"3,","³,",printed_reading
+IR.C11,40,160,IR.C11.p040.b06,Vfη,UK′37,printed_reading
+IR.C11,40,167,IR.C11.p040.b06,3.,³.,printed_reading
+IR.C11,40,167,IR.C11.p040.b06,u £,UK′37,printed_reading
+IR.C11,40,182,IR.C11.p040.b06,U|C,UK′37,printed_reading
+IR.C11,40,184,IR.C11.p040.b06,U37,UK′37,printed_reading
+IR.C11,40,214,IR.C11.p040.b12,"""Organic Geochemistry""",“Organic Geochemistry”,printed_reading
+IR.C11,40,219,IR.C11.p040.b12,"3,","³,",printed_reading
+IR.C11,40,221,IR.C11.p040.b12,3 (,³ (,printed_reading
+IR.C11,41,45,IR.C11.p041.b02,CaCO3 (B),CaCO₃ (B),printed_reading
+IR.C11,41,45,IR.C11.p041.b02,non-CaCO3,non-CaCO₃,printed_reading
+IR.C11,41,45,IR.C11.p041.b02,C o r g,Corg,printed_reading
+IR.C11,42,9,IR.C11.p042.b02,C. CaCO3,C. CaCO₃,printed_reading
+IR.C11,42,9,IR.C11.p042.b02,Non-CaCO3,Non-CaCO₃,printed_reading
+IR.C11,42,11,IR.C11.p042.b02,3 IB,31B,printed_reading
+IR.C11,42,29,IR.C11.p042.b07,203-207,203–207,printed_reading
+IR.C11,42,29,IR.C11.p042.b07,272-283,272–283,printed_reading
+IR.C11,42,30,IR.C11.p042.b07,312-322,312–322,printed_reading
+IR.C11,42,31,IR.C11.p042.b07,40%-60%,40%–60%,printed_reading
+IR.C11,42,31,IR.C11.p042.b07,"""Biostratigraphy""",“Biostratigraphy”,printed_reading
+IR.C11,42,36,IR.C11.p042.b09,m K,m • K,printed_reading
+IR.C11,43,44,IR.C11.p043.b08,278.2-278.7,278.2–278.7,printed_reading
+IR.C11,43,44,IR.C11.p043.b08,281-281.5,281–281.5,printed_reading
+IR.C11,43,57,IR.C11.p043.b10,"""Lithostratigraphy""",“Lithostratigraphy”,printed_reading
+IR.C11,44,40,IR.C11.p044.b02,U37,UK′37,printed_reading
+IR.C11,44,45,IR.C11.p044.b04,0-262,0–262,printed_reading
+IR.C11,44,45,IR.C11.p044.b04,0-7,0–7,printed_reading
+IR.C11,44,55,IR.C11.p044.b06,262-320,262–320,printed_reading
+IR.C11,44,55,IR.C11.p044.b06,7.0-10.5,7.0–10.5,printed_reading
+IR.C11,44,60,IR.C11.p044.b07,"""Lithostratigraphy""",“Lithostratigraphy”,printed_reading
+IR.C11,44,65,IR.C11.p044.b08,mbsf-base,mbsf–base,printed_reading
+IR.C11,44,66,IR.C11.p044.b08,Ma-about,Ma–about,printed_reading
+IR.C11,44,87,IR.C11.p044.b11,CORP AC,CORPAC,printed_reading
+IR.C11,46,28,IR.C11.p046.b03,shows mat,shows that,printed_reading
+IR.C11,47,21,IR.C11.p047.b03,848-854,848–854,printed_reading
+IR.C11,47,31,IR.C11.p047.b07,77.4-391.2,77.4–391.2,printed_reading
+IR.C11,47,31,IR.C11.p047.b07,75.4-390.5,75.4–390.5,printed_reading
+IR.C11,47,31,IR.C11.p047.b07,"""Downhole Measurements""",“Downhole Measurements”,printed_reading
+IR.C11,47,33,IR.C11.p047.b07,-0.7,−0.7,printed_reading
+IR.C11,47,34,IR.C11.p047.b07,0-75.4,0–75.4,printed_reading
+IR.C11,47,36,IR.C11.p047.b07,g/cm3,g/cm³,printed_reading
+IR.C11,47,40,IR.C11.p047.b08,72.4-390.6,72.4–390.6,printed_reading
+IR.C11,47,46,IR.C11.p047.b08,390.6-422.4,390.6–422.4,printed_reading
+IR.C11,48,21,IR.C11.p048.b03,g/cm3,g/cm³,printed_reading
+IR.C11,48,26,IR.C11.p048.b03,70-250,70–250,printed_reading
+IR.C11,48,54,IR.C11.p048.b08,1-8,1–8,printed_reading
+IR.C11,49,36,IR.C11.p049.b05,138's,138’s,printed_reading
+IR.C11,49,44,IR.C11.p049.b05,APC's,APC’s,printed_reading
+IR.C11,50,57,IR.C11.p050.b05,Chern,Chem,printed_reading
+IR.C11,50,66,IR.C11.p050.b06,Zone-Hey,Zone–Hey,printed_reading
+IR.C11,52,20,IR.C11.p052.b02,262-320,262–320,printed_reading
+IR.C11,52,48,IR.C11.p052.b04,"""dissolution event""",“dissolution event”,printed_reading
+IR.C11,52,50,IR.C11.p052.b04,Miocene-a,Miocene–a,printed_reading
+IR.C11,52,53,IR.C11.p052.b05,40-60,40–60,printed_reading
+IR.C11,52,62,IR.C11.p052.b05,H2S,H₂S,printed_reading
+IR.C11,53,16,IR.C11.p053.b02,=1:1,= 1:1,printed_reading
+IR.C11,53,22,IR.C11.p053.b04,10.5-7,10.5–7,printed_reading
+IR.C11,53,36,IR.C11.p053.b06,"Theyer, E,","Theyer, F.,",printed_reading
+IR.C11,53,37,IR.C11.p053.b06,413-456,413–456,printed_reading
+IR.C11,53,40,IR.C11.p053.b07,199-421,199–421,printed_reading
+IR.C11,53,41,IR.C11.p053.b08,"S. C,","S. C.,",printed_reading
+IR.C11,53,41,IR.C11.p053.b08,"I. T,","I. T.,",printed_reading
+IR.C11,53,42,IR.C11.p053.b08,129-133,129–133,printed_reading
+IR.C11,53,43,IR.C11.p053.b09,"E. C,","E. C.,",printed_reading
+IR.C11,53,44,IR.C11.p053.b09,218-232,218–232,printed_reading
+IR.C11,53,47,IR.C11.p053.b10,99-140,99–140,printed_reading
+IR.C11,53,49,IR.C11.p053.b11,493-497,493–497,printed_reading
+IR.C11,53,51,IR.C11.p053.b12,433-394,433–394,printed_reading
+IR.C11,53,54,IR.C11.p053.b13,"Lett,","Lett.,",printed_reading
+IR.C11,53,54,IR.C11.p053.b13,229-235,229–235,printed_reading
+IR.C11,53,60,IR.C11.p053.b14,603-613,603–613,printed_reading
+IR.C11,53,62,IR.C11.p053.b15,"Bull,","Bull.,",printed_reading
+IR.C11,53,62,IR.C11.p053.b15,1404-1420,1404–1420,printed_reading
+IR.C11,53,64,IR.C11.p053.b16,1385-1403,1385–1403,printed_reading
+IR.C11,53,65,IR.C11.p053.b17,"J. C,","J. C.,",printed_reading
+IR.C11,53,68,IR.C11.p053.b17,623-632,623–632,printed_reading
+IR.C11,53,70,IR.C11.p053.b18,andEthington,and Ethington,printed_reading
+IR.C11,53,72,IR.C11.p053.b18,87-110,87–110,printed_reading
+IR.C11,53,73,IR.C11.p053.b19,"I. T,","I. T.,",printed_reading
+IR.C11,53,73,IR.C11.p053.b19,"S. C,","S. C.,",printed_reading
+IR.C11,53,73,IR.C11.p053.b19,"J. C,","J. C.,",printed_reading
+IR.C11,53,75,IR.C11.p053.b19,Chern. Geol.,Chem. Geol.,printed_reading
+IR.C11,53,75,IR.C11.p053.b19,349-375,349–375,printed_reading
+IR.C11,53,76,IR.C11.p053.b20,"J. C,","J. C.,",printed_reading
+IR.C11,53,79,IR.C11.p053.b20,633-638,633–638,printed_reading
+IR.C11,53,82,IR.C11.p053.b21,739-785,739–785,printed_reading
+IR.C11,53,83,IR.C11.p053.b22,"Menke, W,","Menke, W.,",printed_reading
+IR.C11,53,84,IR.C11.p053.b22,/. Geophys.,J. Geophys.,printed_reading
+IR.C11,53,84,IR.C11.p053.b22,4807-4818,4807–4818,printed_reading
+IR.C11,53,87,IR.C11.p053.b23,"Theyer, E,","Theyer, F.,",printed_reading
+IR.C11,53,88,IR.C11.p053.b23,947-970,947–970,printed_reading
+IR.C11,53,90,IR.C11.p053.b24,Oceanographic,oceanographic,printed_reading
+IR.C11,53,90,IR.C11.p053.b24,761-764,761–764,printed_reading
+IR.C11,53,93,IR.C11.p053.b25,1705—1713,1705–1713,printed_reading
+IR.C11,53,96,IR.C11.p053.b26,321-325,321–325,printed_reading
+IR.C11,53,99,IR.C11.p053.b27,434-437,434–437,printed_reading
+IR.C11,53,102,IR.C11.p053.b28,2303-2310,2303–2310,printed_reading
+IR.C11,53,108,IR.C11.p053.b30,"L. C,","L. C.,",printed_reading
+IR.C11,53,109,IR.C11.p053.b30,175-235,175–235,printed_reading
+IR.C11,54,2,IR.C11.p054.b02,"""barrel sheets""",“barrel sheets”,printed_reading
+IR.C11,55,82,IR.C11.p055.b02,lef t,left,printed_reading
+IR.C11,57,214,IR.C11.p057.b04,0-12,0–12,printed_reading
+IR.C11,57,215,IR.C11.p057.b04,12-17,12–17,printed_reading
+IR.C11,57,217,IR.C11.p057.b05,-O.75,-0.75,printed_reading
+IR.C11,63,,IR.C11.p063.b01,,SITE 846,supplied_from_scan
+IR.C11,63,,IR.C11.p063.b03,,327,supplied_from_scan
+IR.C11,68,,IR.C11.p068.b01,,SITE 846,supplied_from_scan
+IR.C11,68,,IR.C11.p068.b03,,332,supplied_from_scan
+IR.C11,69,,IR.C11.p069.b01,,SITE 846,supplied_from_scan
+IR.C11,69,,IR.C11.p069.b03,,333,supplied_from_scan

@@ -1,0 +1,13 @@
+item_id,source_page,panel,calculation,scan_depths_tested,spearman_r,median_abs_axis_units,median_abs_percent_span
+IR11.F07,12,grape,displayed,126,0.922,0.126,17.95
+IR11.F07,12,grape,"GRAPECOR.F, corrected density",101,0.859,0.203,28.98
+IR11.F07,12,susceptibility,displayed,121,0.870,0.229,3.27
+IR11.F07,12,susceptibility,without SI conversion,121,0.870,0.314,4.48
+IR11.F07,13,grape,displayed,112,0.878,0.132,18.82
+IR11.F07,13,grape,"GRAPECOR.F, corrected density",112,0.878,0.203,29.06
+IR11.F07,13,susceptibility,displayed,86,0.771,0.173,2.48
+IR11.F07,13,susceptibility,without SI conversion,86,0.771,0.287,4.10
+IR11.F07,14,grape,displayed,78,0.954,0.154,22.02
+IR11.F07,14,grape,"GRAPECOR.F, corrected density",54,0.951,0.229,32.75
+IR11.F07,14,susceptibility,displayed,78,0.907,3.337,4.77
+IR11.F07,14,susceptibility,without SI conversion,78,0.907,0.735,1.05

@@ -1,0 +1,113 @@
+Pisias, N.G., Mayer, L.A., Janecek, T.R., Palmer-Julson, A., and van Andel, T.H. (Eds.), 1995
+Proceedings of the Ocean Drilling Program, Scientific Results, Vol. 138
+
+30. ORIGINS AND PALEOCEANOGRAPHIC SIGNIFICANCE OF LAMINATED DIATOM
+OOZE FROM THE EASTERN EQUATORIAL PACIFIC OCEAN¹
+
+Alan E.S. Kemp,² Jack G. Baldauf,³ and Richard B. Pearce²
+
+ABSTRACT
+
+Laminated diatom ooze (LDO) has been recovered from several Ocean Drilling Program (ODP) Leg 138 sites and, now, is
+also recognized from several Deep Sea Drilling Project (DSDP) Leg 85 sites. These remarkable sediments are the result of massive
+and episodic flux of mats of the diatom Thalassiothrix longissima. By analogy with the Rhizosolenia diatom mat-forming events
+monitored by the Joint Global Ocean Flux Study (JGOFS) in the equatorial Pacific Ocean during cooling conditions in Fall 1992
+(Barber, 1992; Barber et al., in press), these episodes of massive flux of T. longissima mats may represent the “fall out” from major
+frontal systems generated during La Niña (anti-El Niño) events. Laminations were preserved in the mat deposits because of the
+rapid mat deposition and high strength of the diatom mat meshwork, which subjugated benthic activity. This new mechanism of
+preservation of lamination in marine sediments has wide implications for other laminated sequences. The sustained periods of mat
+deposition documented in Neogene sediments of the eastern equatorial Pacific Ocean are part of the major cycles in the relative
+abundance of carbonate and silica in the region and, possibly, in the case of some intervals, also in the Atlantic Ocean.
+
+INTRODUCTION
+
+The eastern equatorial Pacific Ocean is a region deemed responsi-
+ble for up to half of global “new” production and is a continuing focus
+for studies of modern oceanic and climatic processes, including most
+recently, the U.S. JGOFS program (Wyrtki, 1981; Chavez and Barber,
+1987; Chavez et al., 1990; Barber, 1992; Barber et al., in press).
+Furthermore, changes in its sedimentary record have often recorded
+important paleoceanographic events and heralded major reorganiza-
+tions in ocean and climate history (van Andel et al., 1975; Mayer,
+Theyer, Thomas, et al., 1985; Mayer, Pisias, Janecek, et al., 1992).
+ODP Leg 138 furnished a high-resolution record of the last 10- to
+15-m.y. depositional history of the eastern equatorial Pacific between
+90° and 110°W (Fig. 1). The intervals of greatest diatom abundance are
+recorded by near-monospecific assemblages of the pennate diatom
+Thalassiothrix longissima that occur in LDOs, which have been inter-
+preted as diatom mat deposits (Kemp and Baldauf, 1993). The detailed
+sedimentology, micropaleontology, and microfacies of the LDO are
+discussed elsewhere (Pearce et al., this volume). The purpose of this
+study is to review evidence for the origins and paleoceanographic
+significance of these remarkable sediments. The time scale used below
+is that of Berggren et al. (1985), as rendered in the Leg 138 “Explana-
+tory Notes” chapter of Mayer, Pisias, Janecek, et al. (1992).
+
+The discovery of these laminated diatom mat deposits comes
+against an increasing awareness of both (1) the importance of rela-
+tively rare events in contributing a major proportion of flux to the
+seabed (e.g., Smith et al., 1992) and (2) the significance of buoyant
+diatom mats and individual large diatoms for nutrient-cycling within
+the ocean surface layer (Villareal et al., 1993) and as agents of rapid
+flux to the seafloor (Sancetta et al., 1991).
+
+SUMMARY OF GEOGRAPHIC AND TEMPORAL
+DISTRIBUTION OF LDO
+
+LDO was recovered from Leg 138 Sites 844, 847, 849, 850, and
+851. Investigation of DSDP Leg 85 cores established the presence of
+laminated diatom ooze in Sites 572, 573, and 574 (Fig. 2). Thus, the
+latitudinal extent of the LDO ranges from 90° to 133°W. LDO was
+deposited intermittently at the above sites from 15 to 4.4 Ma, but is
+concentrated at about 15, 13–12, 11, 10–9.5, 6.3–6.1, and 4.4 Ma. A
+less widespread interval confined to Sites 847 and 849 occurred
+between 5.8 and 5.1 Ma. No laminated sediments occur after 4.4 Ma.
+A plot of LDO intervals on a plate motion backtracked chart (Fig. 3)
+shows that almost all were deposited when sites lay between 0° and
+2°S, although mat fragments are present in deposits farther north
+(Sites 851, 852). An exception is Site 844, which contains several
+early to middle Miocene age LDO intervals. The LDO and mat
+fragments (see Kemp, this volume) at Sites 844 and 845 may record
+the presence of a center of mat formation, separated from the equato-
+rial region.
+
+Within laminated episodes, individual beds may be correlated over
+great distances. For example, the distinctive 60-cm bed of LDO that
+occurs at the base of the 4.4-Ma interval is present at Sites 847, 849,
+850, and 572, and so may be correlated over a longitudinal extent of at
+least 2000 km. As well as the close similarity of the sequences, corre-
+lation is based on biostratigraphy and continuous gamma-ray attenu-
+ation porosity evaluator (GRAPE) data (Mayer, Pisias, Janecek, et al.,
+1992; Mayer, 1991). The coincidence of the laminated intervals with
+abrupt changes in sediment density; hence, seismic impedance contrast
+should provide a means of correlating depositional events over great
+distances from seismic records (Mayer et al., 1985; Bloomer et al., this
+volume) in a critical area of the ocean basins.
+
+ECOLOGICAL SIGNIFICANCE OF Thalassiothrix
+
+Micropaleontological studies of the LDO indicate that Thalas-
+siothrix longissima is the dominant species, although several different
+varieties or subspecies occur (see Pearce et al., this volume). The pres-
+ence of Thalassiothrix in Neogene sediments from the eastern equato-
+rial Pacific has been widely used as an indicator of significant up-
+welling and high primary production (Sancetta, 1982, 1983). Thalas-
+siothrix longissima is characterized by long straight to twisted cells,
+between 1.5 and 5 µm wide, but up to 4 mm long. Previous researchers
+have described it as a cosmopolitan species having a distribution that
+ranges from the Southern Ocean to the North Pacific, North Atlantic,
+and the Norwegian Sea (Hendey, 1937; Smayda, 1958; Hasle and
+Semina, 1987). However, this apparent wide-ranging distribution may
+result from differences in species definition and the assignment of
+other forms of Thalassiothrix sp. (e.g., T. antarctica, T. acuta, or
+
+¹ Pisias, N.G., Mayer, L.A., Janecek, T.R., Palmer-Julson, A., and van Andel, T.H.
+(Eds.), 1995. Proc. ODP, Sci. Results, 138: College Station, TX (Ocean Drilling Program).
+
+² Department of Oceanography, University of Southampton, Southampton SO9 5NH,
+United Kingdom.
+
+³ Department of Oceanography and Ocean Drilling Program, Texas A&M University,
+College Station, TX 77845, U.S.A.
+
+641

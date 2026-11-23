@@ -1,0 +1,119 @@
+{
+  "calibration_table": "SR.C15.TABLE7",
+  "full_support_ma": 0.00599,
+  "display_widths_source": "Chapter 15 captions, Figures 1 and 5",
+  "informative_grid_rule": "Published numeric value with at least two Table 5 contributors within \u00b12.995 kyr.",
+  "metric": "Absolute error below 0.006 per mil on printed Table 7 values (0.01 per mil precision).",
+  "series": {
+    "d18o": {
+      "grid_rows": 1463,
+      "presence_mask_disagreements": 59,
+      "sigma_to_full_width": {
+        "1/8": {
+          "multisample_points": 1085,
+          "fraction_within_0.006": 0.38065,
+          "median_absolute_error_permil": 0.008067,
+          "younger_than_4Ma_fraction": 0.41081,
+          "4Ma_or_older_fraction": 0.34906
+        },
+        "1/7": {
+          "multisample_points": 1085,
+          "fraction_within_0.006": 0.53641,
+          "median_absolute_error_permil": 0.00539,
+          "younger_than_4Ma_fraction": 0.58739,
+          "4Ma_or_older_fraction": 0.48302
+        },
+        "1/6": {
+          "multisample_points": 1085,
+          "fraction_within_0.006": 0.87926,
+          "median_absolute_error_permil": 0.002844,
+          "younger_than_4Ma_fraction": 0.98739,
+          "4Ma_or_older_fraction": 0.76604
+        },
+        "1/5": {
+          "multisample_points": 1085,
+          "fraction_within_0.006": 0.52166,
+          "median_absolute_error_permil": 0.00585,
+          "younger_than_4Ma_fraction": 0.56396,
+          "4Ma_or_older_fraction": 0.47736
+        },
+        "1/4": {
+          "multisample_points": 1085,
+          "fraction_within_0.006": 0.36774,
+          "median_absolute_error_permil": 0.010325,
+          "younger_than_4Ma_fraction": 0.4036,
+          "4Ma_or_older_fraction": 0.33019
+        },
+        "1/3": {
+          "multisample_points": 1085,
+          "fraction_within_0.006": 0.3106,
+          "median_absolute_error_permil": 0.014648,
+          "younger_than_4Ma_fraction": 0.34234,
+          "4Ma_or_older_fraction": 0.27736
+        },
+        "1/2": {
+          "multisample_points": 1085,
+          "fraction_within_0.006": 0.29032,
+          "median_absolute_error_permil": 0.017694,
+          "younger_than_4Ma_fraction": 0.32252,
+          "4Ma_or_older_fraction": 0.2566
+        }
+      }
+    },
+    "d13c": {
+      "grid_rows": 1463,
+      "presence_mask_disagreements": 93,
+      "sigma_to_full_width": {
+        "1/8": {
+          "multisample_points": 950,
+          "fraction_within_0.006": 0.39158,
+          "median_absolute_error_permil": 0.007804,
+          "younger_than_4Ma_fraction": 0.40307,
+          "4Ma_or_older_fraction": 0.37762
+        },
+        "1/7": {
+          "multisample_points": 950,
+          "fraction_within_0.006": 0.55158,
+          "median_absolute_error_permil": 0.00528,
+          "younger_than_4Ma_fraction": 0.57198,
+          "4Ma_or_older_fraction": 0.52681
+        },
+        "1/6": {
+          "multisample_points": 950,
+          "fraction_within_0.006": 0.86947,
+          "median_absolute_error_permil": 0.003172,
+          "younger_than_4Ma_fraction": 0.98273,
+          "4Ma_or_older_fraction": 0.73193
+        },
+        "1/5": {
+          "multisample_points": 950,
+          "fraction_within_0.006": 0.53053,
+          "median_absolute_error_permil": 0.005609,
+          "younger_than_4Ma_fraction": 0.55662,
+          "4Ma_or_older_fraction": 0.49883
+        },
+        "1/4": {
+          "multisample_points": 950,
+          "fraction_within_0.006": 0.36842,
+          "median_absolute_error_permil": 0.010391,
+          "younger_than_4Ma_fraction": 0.40307,
+          "4Ma_or_older_fraction": 0.32634
+        },
+        "1/3": {
+          "multisample_points": 950,
+          "fraction_within_0.006": 0.31684,
+          "median_absolute_error_permil": 0.015086,
+          "younger_than_4Ma_fraction": 0.33781,
+          "4Ma_or_older_fraction": 0.29138
+        },
+        "1/2": {
+          "multisample_points": 950,
+          "fraction_within_0.006": 0.30211,
+          "median_absolute_error_permil": 0.017794,
+          "younger_than_4Ma_fraction": 0.32438,
+          "4Ma_or_older_fraction": 0.27506
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,55 @@
+PLIOCENE STABLE ISOTOPE STRATIGRAPHY
+
+Figure 1. Oxygen isotope record for benthic foraminifers from Site 846 vs. depth rmcd. All data are shown; the
+line, a Gaussian interpolation at 10 cm with a 59.99 cm window, is solely to guide the eye.
+
+OXYGEN ISOTOPE STAGES
+
+Emiliani (1955) first devised the numerical scheme that is now
+almost universally used to designate successively older glacial and
+interglacial episodes indicated in the marine δ¹⁸O record. This scheme
+was firmly codified by Shackleton and Opdyke (1973), when they
+showed that the record for the last several million years can reliably
+be taken as a global picture that is dominated by the effect of major
+fluctuations in the volume of ice on the northern continents.
+
+Raymo et al. (1989) and Shackleton et al. (1990) erected a numeri-
+cal scheme that extended to stage 104 at about the Gauss/Matuyama
+boundary and that had demonstrable utility in the sense that every one
+of these stages can be recognized clearly in both DSDP Site 607 in the
+Atlantic Ocean and ODP Site 677 in the Pacific Ocean. However, the
+difference between the benthic and planktonic records of Site 677 is
+
+Table 4. Adjustment factors for δ¹⁸O, using Uvigerina as
+standard, and for δ¹³C, using Cibicidoides wuellerstorfi as
+standard, applied to raw data in Table 3 before merging.
+
+Abbreviation	Species	δ¹⁸O	δ¹³C
+
+UVIG	Uvigerina sp.	0.00	0.90
+
+HELEG	Hoeglundina elegans	−0.40	−1.30
+
+PWUELL	Cibicidoides wuellerstorfi	0.64	0.00
+
+CIBKULL	C. kullenbergi	0.64	0.00
+
+ORID	Oridorsalis sp.	0.00	1.00
+
+GLOBOCAS	Globocassidulina subglobosa	−0.10	0.50
+
+WUELKULL	C. kull. and C. wuell.	0.64	0.00
+
+NUTT	Nuttalides sp.	0.35	0.00
+
+NUTTCIB	Nuttalides and Cib.	0.40	0.00
+
+SBULL	Sphaeroidina bulloides	−0.10	−0.10
+
+CIB	Cibicidoides spp.	0.50	0.00
+
+GYROID	Gyroidina sp.	0.00	0.00
+
+GLOBOBUL	Globobulimina pacifica	0.00	NA
+
+341

@@ -6,14 +6,23 @@
     "PR": 36
   },
   "numbered_statuses": {
-    "published_image_or_caption": 1080,
-    "documented_source_lead": 101,
-    "data_code_redraw": 24,
+    "published_image_or_caption": 1014,
+    "documented_source_lead": 82,
+    "data_code_redraw": 109,
     "print_derived_partial_redraw": 1
   },
   "numbered_extent": {
-    "none": 1181,
-    "all_published_data_panels": 2,
+    "none": 1096,
+    "published_table_reconstruction_with_print_notes": 14,
+    "all quantitative panels": 30,
+    "all published panels": 9,
+    "grape_and_susceptibility_tracks_only": 1,
+    "all_published_data_panels": 10,
+    "all quantitative panels; censored marks omitted": 3,
+    "carbonate panel; organic-carbon panel with inferred source-row selection": 1,
+    "both panels; carbonate subset inferred from print comparison": 1,
+    "quantitative_panels_with_independent_filter": 4,
+    "complete_quantitative_panels": 14,
     "physical_property_panels_only": 11,
     "interval_curves_or_selected_marks": 11,
     "printed_backtrack_only": 1

@@ -1,0 +1,113 @@
+A.E.S. KEMP, J.G. BALDAUF, R.B. PEARCE
+
+Figure 6. Correlation of the GRAPE records of Sites 850 and 851 through the
+4.4-Ma mat deposition episode. Although the rest of the GRAPE signal corre-
+lates excellently, no record is seen of the ~8-m-thick diatom mat deposits of the
+4.4-Ma interval at Site 851. Note that mat deposition is preceded by a carbonate
+maximum (P). (O) = onset of intense diatom mat deposition at Site 850.
+
+of laminated oozes of the giant diatom Bruniopsis mirabilis in Mes-
+sinian sediments from the South Atlantic relate to periods of (implau-
+sible) deep-sea, reduced bottom-water oxygenation. Gombos (1984)
+ascribed a similar origin to laminated oozes of the giant diatom
+Ethmodiscus rex at DSDP Site 520. Interestingly, E. rex is a diatom
+that, like the Rhizosolenia mats, is also capable of positive buoyancy.
+Furthermore, dead Ethmodiscus cells sink at speeds of up to 510 m/
+day (Villareal, 1992). Whether the E. rex sank as aggregates or as sin-
+gle cells, the mass sinking of this giant diatom may have led to the
+preservation of lamination by physical suppression of benthos, and
+obviates the need to appeal to an unlikely and ad hoc period of
+reduced bottom-water oxygenation. Interestingly, many of the Atlan-
+tic Quaternary E. rex ooze deposits are in sites beneath or near local-
+ized, recurring frontal zones, and the timing of some of the major, late
+Quaternary equatorial Atlantic E. rex oozes, coincide with glacial
+build-up (Stabell, 1986) when more intense frontal system develop-
+ment would be driven by increased wind strength.
+
+Intriguingly, the timing of the E. rex ooze deposition at Site 520 and
+the B. mirabilis deposition at Site 701 appear to be coeval with the most
+intense period of mat deposition in the eastern equatorial Pacific: the
+6.3- to 6.1-Ma event. This might suggest that general physical oceanic
+conditions favored mat production/flux at this time, perhaps implying
+high pole-to-equator gradients and enhanced formation of stronger
+oceanic frontal systems.
+
+IMPLICATIONS FOR CARBONATE/SILICA
+VARIATION IN SEDIMENTS
+
+The T. longissima mat deposits, which are the direct result of
+surface processes, are clear evidence that surface processes, not disso-
+lution at depth, controlled many of the major changes in the relative
+abundance of carbonate and silica during the Neogene, at least in the
+equatorial Pacific. After extensive scanning electron microscope
+(SEM) studies of the laminated mat deposits, we found no evidence
+that carbonate dissolution has occurred preferentially in the monospe-
+cific T. longissima diatom meshwork (Pearce et al., this volume).
+Individual, well-preserved coccoliths (calcareous nannoplankton) oc-
+cur occasionally, but persistently, through most of the mat deposits
+examined thus far. Planktonic and benthic foraminifers may show
+some effects of dissolution, but no more in the T. longissima lamina-
+tions than in the carbonate-rich laminations. A synthesis of regional
+sedimentology shows that the episodes of diatom mat deposition do
+not coincide with major episodes of carbonate dissolution (Kemp,
+this volume).
+
+The episodic mass sinking of diatoms distorts the normal carbon-
+ate-silica cyclicity observed. Because the mats have been deposited
+much more rapidly than the surrounding nannofossil ooze, the usual
+assumptions of uniform sedimentation rates between age “picks,”
+upon which most paleoceanographic techniques rely, are invalid. In-
+deed, the signal from the mat-flux episodes may have to be filtered or
+“squeezed” out to permit conventional Milankovitch band analysis or
+production of “tuned” GRAPE-based time scales (see Shackleton et
+al., this volume).
+
+The GRAPE record (giving carbonate-opal variation, Mayer, 1991)
+generally shows excellent correlation between equatorial sites (Lyle et
+al., 1992). However, when comparing intervals where one site has
+significant LDO and another has none, this correlation breaks down.
+For example, at two closely spaced sites (Sites 850 and 851; Fig. 6),
+the 4.4-Ma mat deposits are present at Site 850, but not at Site 851.
+Although the rest of the GRAPE signal correlates excellently, no
+record of the approximately 8-m-thick diatom mat deposits can be seen
+at Site 851. This major difference in the sedimentary record of the two
+sites highlights the geographically restricted distribution of the lami-
+nated diatom ooze.
+
+DISCUSSION
+
+Inspection of the GRAPE signals, (e.g., in Fig. 6), also reveals
+another intriguing aspect of these episodes of mat deposition. The
+peaks (indicated by “P”) represent the purest carbonate sediments
+having a minimum opal content. Each major interval of laminated
+diatom mat deposits is underlain by such a carbonate maximum.
+These carbonate maxima do not immediately precede the abrupt onset
+of mat deposition (O in Fig. 6), but appear to be consistently followed
+by the same distinctive pattern of decrease, then increase, then abrupt
+decrease in carbonate content. Together, these major cycles represent
+the most abrupt and largest magnitude changes in carbonate-silica
+cyclicity in the equatorial Pacific. These major cycles currently are
+being investigated using a range of interdisciplinary sedimentologi-
+cal, micropaleontological, and isotopic techniques.
+
+The intervals of mat deposition between 14.6 and 9.5 Ma occurred
+during a period of many major episodes of ocean cooling and reor-
+ganization, including a shift in the main locus of silica deposition
+from the Atlantic to the Pacific Ocean (Baldauf and Barron, 1990;
+Barron and Baldauf, 1990). The 6.3 to 6.1 Ma interval represents the
+most rapid burst of mat deposition and opal export in the eastern
+equatorial Pacific. The timing of this (during the early Messinian) and
+the apparently synchronous deposition of LDO at high sedimentation
+rates in the South Atlantic (see above) raise questions about major
+variations in the silica cycle and the relation of these to major oceano-
+graphic events. Attempts to quantify opal fluxes during this period
+currently are underway.
+
+The cessation of laminated sediment deposition after 4.37 Ma coin-
+cides with a shift in silica production from the equatorial Pacific to the
+Antarctic circum-polar ocean (Leinen, 1979; Brewster, 1980) with the
+continued growth of the ice sheets and approximates the closure of the
+Pan-American Seaway (Keigwin, 1982). At present, one can only
+speculate as to the cause of this cessation. Possible mechanisms range
+
+644

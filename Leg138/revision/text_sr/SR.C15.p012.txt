@@ -1,0 +1,145 @@
+N.J. SHACKLETON, M.A. HALL, D. PATE
+
+al. (this volume), henceforth referred to as SCHPS94. This time scale
+is significantly different from those used over the past few years (e.g.,
+Berggren et al., 1985), having ages typically 5% to 7% older.
+
+From the base of the Pleistocene to stage 104, the stage numbers in
+Figure 7 are as used by Raymo et al. (1989) and by Shackleton et al.
+(1990). Stage G1 is equivalent to stage 105 of Raymo et al. (1989). It
+appears from an examination of Raymo et al. (1992, their Fig. 3A) that
+our numbering is equivalent on a one-to-one basis to theirs for DSDP
+Site 607, with our G22 being their 126 immediately above the Kaena.
+
+In this scheme, the Kaena includes only two stages: stage KM1
+straddles the base of the Kaena and stage KM6 straddles the top of the
+Mammoth. Again, the Mammoth includes only two stages, with MG1
+straddling its base. In this interval, cool stages KM2, M2, and GM2
+attain δ¹⁸O values similar to those of the cool stages in the upper
+Gauss. The δ¹⁸O signal in the lower part of the Gauss is of low
+amplitude, and it is difficult to subdivide it in great detail on the basis
+of the Site 846 record.
+
+From the top stage of the Gilbert to the Cochiti, we defined stages
+Gi1 to Gi22. Within the Cochiti, there is a clear cool extreme that we
+call Co2, but it is not clear whether further subdivision is warranted.
+Between the Cochiti and the Nunivak, we defined a clear, warm CN1
+and a broad, cool CN2; stage N1 straddles the top of the Nunivak,
+which is characterized by regular cycles N2 to N6. These more-or-less
+regular cycles continue as NS1 to NS8 and Si1 to Si6. Between the
+Sidujfall and the Thvera, we recognized two stages, while the Thvera
+includes stages T1 to T8. Stage TG1 is almost entirely within the
+Thvera, below which we defined stages to Stage TG24.
+
+TIME-SERIES ANALYSIS
+
+Time-series analysis was performed in million-year intervals us-
+ing standard methods (Jenkins and Watts, 1968) on the data shown in
+Figures 5 and 6. Those data have been interpolated at 3-k.y. intervals
+by using a Gaussian weighting filter (Shackleton and Imbrie, 1990)
+with a total width 5.99 k.y. (this is narrower than the window used
+for Figures 5 and 6). This interpolation method inserts a gap code
+(-9999.00) at each age point for which no data are available within the
+window. The time series analyzed is given in Table 7. In the age
+interval 1.8 to 6.0 Ma, 72 points are missing in the δ¹⁸O record (about
+5% of the record). For the δ¹³C record, the situation is much less
+favorable. The 4 to 4.4 Ma interval was not analyzed because more
+than half of the data points are missing; in the rest of the record, there
+are 120 gaps (about 10%).
+
+Cross spectra of δ¹⁸O vs. insolation at 65°N are shown in Figure
+8. For these analyses, the sign of δ¹⁸O was reversed, just as the data
+are, following the convention established by Emiliani (1955), plotted
+with lighter values upward, because more negative δ¹⁸O values are
+associated with warmer climate. Figure 8A covers the interval from
+1.7 to 3.0 Ma. Coherency in the obliquity bandwidth is high, and there
+is a marked concentration of variance seen in this band. There is no
+well-marked concentration of variance in the precession band. δ¹⁸O
+(reversed) lags insolation in the obliquity bandwidth by about 50°. In
+the 3 to 4 Ma interval (Fig. 8B), the result is similar. Again, δ¹⁸O
+variability is concentrated in the obliquity bandwidth, with high co-
+herency and a lag of about 80° against insolation. In the interval 4 to
+5 Ma (Fig. 8C), there is again only significant coherency between
+δ¹⁸O and insolation in the obliquity band; the overall spectrum is
+similar to the spectrum of insolation at 65°N, but this is probably an
+illusion (in view of the low coherency). In the interval from 5 to 6 Ma
+(Fig. 8D), there is no concentration of power at orbital frequencies. In
+view of the visual character of the record, this is not altogether
+surprising; the signal is noisy, irregular, and of low amplitude.
+
+Figure 9 shows cross-spectral analysis for the δ¹³C data. Figure 9A
+covers the interval from 1.7 to 3 Ma. A well-marked spectral peak can
+be observed at the obliquity frequency that is highly coherent. At the
+obliquity frequency, δ¹³C lags insolation at 65°N by about 50°. This
+confirms that isotopically lighter δ¹³C values are associated with
+more positive δ¹⁸O values (more glacial ice and/or colder deep water),
+as is the case in the Pleistocene (Shackleton and Pisias, 1985). In the
+interval from 3 to 4 Ma (Fig. 9B), δ¹³C is again coherent with 65°N
+insolation in the obliquity bandwidth, again with a lag of about 50°.
+Because of the large number of gaps in the interval 4 to 4.4 Ma, this
+part was not analyzed by cross-spectral analysis. Instead, we exam-
+ined only the interval 4.4 to 5 Ma (Fig. 9C) but in contrast with Fig.
+8C, no coherency is present despite the spectral peak in the obliquity
+band. In the 5 to 6 Ma (Fig. 9D) interval, where the data cover is good,
+the absence of coherent power in the obliquity band may be a real
+feature of the record.
+
+DISCUSSION
+
+The Messinian
+
+The question of the possible influence of glacial events during the
+latest Miocene on the isolation of the Mediterranean Sea has been
+aired many times; Kastens (1992) reviewed the question carefully.
+Kastens discussed the evidence for a glacial event early in the Gilbert
+that may have directly caused the final isolation of the Mediterranean.
+In the record of Site 846, the δ¹⁸O data show a clear pair of glacial
+stages, TG20 and TG22, near the top of the Miocene. During the
+Gilbert, the only other glacial events of comparable magnitude were
+those at stages Si4 and Si6, between about 4.8 and 4.9 Ma; more
+positive glacial events were not observed again before the upper part
+of the Gauss. Keigwin (1987) gave an age of about 5.3 Ma for the
+glacial event discussed by Kastens (1992); our age of 5.75 Ma for
+TG22 is equivalent to 5.22 Ma on the time scale of Berggren et al.
+(1985), very close to Keigwin’s age estimate. Clearly, this was indeed
+a globally significant event, strengthening the arguments put forward
+by Kastens (1992) for its having caused the final isolation of the
+Mediterranean. Whether it was truly a glacial event with the sea-level
+implication required by Kastens (1992), depends partly on the valid-
+ity of arguments for a measure of deglaciation on Antarctica during
+late Miocene and Pliocene time. If these arguments are accepted, the
+magnitude of the fall in sea level at the base of stage TG22 could have
+been on the order of 50 m.
+
+The Miocene/Pliocene Boundary
+
+Hilgen (1991) gave an astronomically calibrated age for the base
+of the Pliocene (as defined by the base of the Trubi in Sicily) of 5.32
+Ma. His estimate is based on a short extension of the astronomical
+calibration below the base of the Thvera. Because we obtained an
+identical estimate as Hilgen (1991) for the age of the base of the
+Thvera, a correlation between the base of the Trubi in Sicily and
+stage TG5 should be accurate to the resolution of the stages, as indi-
+cated in Figure 7.
+
+Kastens (1992) suggested that a relatively extreme interglacial
+event associated with a rise in sea level might be expected to have
+created the inflow of open marine water that marked the base of the
+Pliocene. In Site 846, stage TG9 at an age of about 5.46 Ma is a more
+significant interglacial event than stage TG5. This suggests that the
+association of the most extreme interglacial of the lower Gilbert with
+the base of the Trubi in Sicily may be incorrect and, therefore, that its
+association with the final relinking of the Mediterranean with the
+open ocean is unproven. However, it does remain possible that either
+(1) the main cycles recognized in the basal part of the Trubi are
+associated with obliquity, in which case the base of the Trubi would
+correlate to about the position of the interglacial at 5.46 Ma; (2)
+sedimentation of the Trubi in Sicily did not start until about 100 k.y.
+after the open-ocean connection was resumed; (3) there was not
+enough erosion of the sill where the first connection to the open ocean
+was re-established at 5.46 Ma to prevent renewed desiccation during
+the next couple of glacial extremes, or (4) that the erratic data in stage
+TG9 are misleading and it was not characterized by significantly
+isotopically lighter δ¹⁸O values than stage TG5, or finally (6) our
+
+348

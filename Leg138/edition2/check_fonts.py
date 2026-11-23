@@ -16,11 +16,17 @@ def check(out,fonts):
                     role=block['role']
                     if role in cmaps:
                         for line in block['lines']:used[role].update(ord(c) for c in line['text'])
+                visual=record.get('visual_collation')
+                if visual:
+                    from revisions import reader_blocks
+                    for role,text in reader_blocks(visual):
+                        target=role if role in used else 'caption'
+                        used[target].update(map(ord,text))
     missing=[]
     for role in file_names:
         for code,count in used[role].items():
             if not cmaps[role].get(code,0):missing.append(dict(role=role,unicode=f'U+{code:04X}',count=count))
-    return dict(scope='source OCR packets selected as modern body, heading or caption; no claim about semantic OCR accuracy',
+    return dict(scope='Unicode coverage of source OCR packets and visually collated strings using the base reader typefaces. Inline bold and italic runs are also inspected in rendered samples.',
                 fonts={k:{'ttf':v,'sha256':digest(fonts/v),'distinct_codepoints':len(used[k])} for k,v in file_names.items()},
                 missing_codepoints=missing)
 if __name__=='__main__':

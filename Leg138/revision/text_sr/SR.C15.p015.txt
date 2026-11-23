@@ -1,0 +1,40 @@
+PLIOCENE STABLE ISOTOPE STRATIGRAPHY
+
+Figure 9. Cross-spectral analyses of δ¹³O record from Figure 6 (dashed line) vs. insolation at 65°N (solid line,
+data from Berger and Loutre, 1991). A. 1.76 to 3 Ma. B. 3 to 4 Ma. C. 4.4 to 5 Ma. D. 5 to 6 Ma. In each panel,
+variance is shown on a log scale; the dashed/dotted line shows coherency with a line at the 80% confidence
+limit. Phase estimates are only plotted where coherency is significant; heavy arrows show meaningful phase
+estimates in the obliquity band.
+
+(Fig. 10). This value does not permit total deglaciation of Antarctica
+and only permits major decreases in Antarctic ice volume, if these
+were accompanied by deep ocean temperatures no warmer than those
+of today. However, spectral analysis of our data does make a new
+contribution. Figure 8 shows a cross-spectral analysis of δ¹⁸O vs.
+insolation at 65°N. At the period of obliquity variation, a well-defined
+phase lag of 82±9° is seen for 3 to 4 Ma. In itself, this lag estimate
+should be treated with great caution, because of the inherent uncer-
+tainty in the exact relationship between precession and obliquity
+cycles in the older part of the record presented by Berger and Loutre
+(1991). A more robust estimate is that of the phase relationship be-
+tween GRAPE density and δ¹⁸O in the same core. Figure 11 shows
+cross spectra of GRAPE density in Site 846 vs. δ¹⁸O in Site 846. Figure
+11 shows that in the interval 3.5 to 4.5 Ma, illustrated in Figure 10A,
+the δ¹⁸O spectrum is still significantly different from the GRAPE
+density spectrum, with proportionally more power in the obliquity
+band. Figure 11 also shows that between 3.5 and 4.5 Ma, there was
+still a significant phase lag of (negative) δ¹⁸O behind GRAPE density,
+implying that a significant component of the climate system still
+responded with a long time constant. A large ice sheet has to be
+regarded as the first candidate as a component of the climate system
+that has such a long time constant, and the figure estimated seems
+consistent with a fluctuating Antarctic ice sheet. Of course, we cannot
+exclude the possibility that the long time constant arises from some
+aspect of the operation of the global carbon system. However, we
+postulate that the most plausible explanation for the results presented
+is that during most of the Pliocene, the equatorial Pacific Ocean
+carbonate system responded directly to orbital forcing (presumably
+through atmospheric circulation changes), while in high southern
+latitudes, the Antarctic ice sheet underwent cyclic fluctuations forced
+
+351

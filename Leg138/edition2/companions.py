@@ -94,4 +94,11 @@ def prepare(root,out,selected):
             old.unlink();a['file']='resources/'+shared.name
     from structured_updates import attach
     attach(root,items,add)
+    from revisions import figure_edits
+    for key,row in figure_edits(root).items():
+        doc=('IR.C'+key[2:4]) if key.startswith('IR') else key.split('.FIGURE')[0]
+        source_pages=[int(v) for v in (row.get('source_pages') or row['source_page']).split('|')]
+        for asset_page,source_page in enumerate(source_pages,1):
+            add(doc,source_page,key,'data reconstruction',root/row['output'],'figure',
+                asset_page=asset_page,representation='source_data_replot',note=row['qualification'])
     return assets

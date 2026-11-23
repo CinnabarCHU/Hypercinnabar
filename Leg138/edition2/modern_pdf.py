@@ -1,5 +1,7 @@
 """Per-chapter PDF compositor. Each witness leaf is grafted without cropping or resampling."""
 import io, re, textwrap
+from copy import copy
+from types import SimpleNamespace
 from pathlib import Path
 from reportlab.lib.colors import HexColor
 from reportlab.pdfbase import pdfmetrics
@@ -10,11 +12,51 @@ from structured_updates import value
 
 SERIF='LegSerif';SANS='LegSans';BOLD='LegBold'
 W,H=595.28,841.89
+
+
+def draw_script_overlay(canvas, kind, label):
+    """Paint the shorter script in the paragraph text object, preserving extraction order."""
+    fragment, offset = label
+    tx = canvas._curr_tx_info['tx']
+    old_font = tx._fontname or canvas._curr_tx_info['xs'].style.fontName
+    old_size = tx._fontsize or canvas._curr_tx_info['xs'].style.fontSize
+    old_rise, leading = tx._rise, tx._leading
+    tx.setFont(fragment.fontName, fragment.fontSize, leading)
+    tx.setRise(fragment.rise)
+    width = pdfmetrics.stringWidth(fragment.text, fragment.fontName, fragment.fontSize)
+    # A positive number in a PDF TJ array moves left in thousandths of one em.
+    # Emit in the same BT/ET as the paragraph so searches see U, K′, 37 in order.
+    tx._code.append('[%.6f] TJ' % (-1000 * offset / fragment.fontSize))
+    tx._textOut(fragment.text)
+    tx._code.append('[%.6f] TJ' % (1000 * (width + offset) / fragment.fontSize))
+    tx.setFont(old_font, old_size, leading)
+    tx.setRise(old_rise)
+
+
+def stack_adjacent_scripts(paragraph):
+    """Give a simultaneous super/subscript pair the width of its longer member."""
+    fragments = paragraph.frags
+    for i in range(len(fragments) - 1):
+        upper, lower = fragments[i:i+2]
+        if not (upper.text and lower.text and upper.rise > 0 > lower.rise):
+            continue
+        upper_width = pdfmetrics.stringWidth(upper.text, upper.fontName, upper.fontSize)
+        lower_width = pdfmetrics.stringWidth(lower.text, lower.fontName, lower.fontSize)
+        # The longer fragment already reserves enough space for both. Paint its
+        # neighbour at the same x, at zero extra advance. No image substitution.
+        pos, offset = (i, 0.0) if upper_width <= lower_width else (i+1, -upper_width)
+        overlay = copy(fragments[pos])
+        overlay.cbDefn = SimpleNamespace(kind='onDraw', name='leg_script', label=(fragments[pos], offset))
+        overlay.text = ''
+        fragments[pos] = overlay
+
+
 class Reader:
     def __init__(self,docid,title,fonts):
         for key,name in [(SERIF,'DejaVuSerif.ttf'),(SANS,'DejaVuSans.ttf'),(BOLD,'DejaVuSans-Bold.ttf')]:
             if key not in pdfmetrics.getRegisteredFontNames():pdfmetrics.registerFont(TTFont(key,str(fonts/name)))
         self.buffer=io.BytesIO();self.cv=canvas.Canvas(self.buffer,pagesize=(W,H),pageCompression=1,invariant=1)
+        self.cv.setNamedCB('leg_script',draw_script_overlay)
         self.cv.setTitle(docid+' · '+title);self.cv.setAuthor('Ocean Drilling Program / Leg 138 digital edition')
         self.docid=docid;self.title=title;self.num=0;self.y=0;self.source=0
     def label(self,x,y,txt,font,size,c='#1e3638'):
@@ -45,6 +87,44 @@ class Reader:
         lines=wrap(txt,font,size,W-96);self.room(lead*min(2,len(lines))+4)
         for line in lines:
             self.room(lead);self.line(line,font,size,color);self.y-=lead
+        self.y-=6 if role=='body' else 4
+    def styled_paragraph(self,markup,role,fonts):
+        """Lay out manuscript emphasis and script positions across page boundaries."""
+        from reportlab.lib.styles import ParagraphStyle
+        from reportlab.platypus import Paragraph
+        for family,stem,suffix,bolditalic in [(SERIF,'DejaVuSerif','Italic','BoldItalic'),
+                                               (SANS,'DejaVuSans','Oblique','BoldOblique')]:
+            for key,ttf in [(family+'Bold','Bold'),(family+'Italic',suffix),(family+'BoldItalic',bolditalic)]:
+                if key not in pdfmetrics.getRegisteredFontNames():
+                    pdfmetrics.registerFont(TTFont(key,str(fonts/(stem+'-'+ttf+'.ttf'))))
+            pdfmetrics.registerFontFamily(family,normal=family,bold=family+'Bold',
+                italic=family+'Italic',boldItalic=family+'BoldItalic')
+        face,size,lead,color={'body':(SERIF,11.0,15.2,'#243335'),'heading':(SANS,10.2,14.5,'#173f40'),
+            'caption':(SANS,9,12.8,'#305752'),'notice':(SANS,8.6,12,'#536a65')}[role]
+        if role=='heading':markup='<b>'+markup+'</b>'
+        style=ParagraphStyle('collation',fontName=face,fontSize=size,leading=lead,textColor=HexColor(color),
+            allowWidows=1,allowOrphans=1,splitLongWords=1)
+        small=0.69*size
+        markup=markup.replace('<sup>',f'<sup rise="{size*.36:g}" size="{small:g}">')
+        markup=markup.replace('<sub>',f'<sub rise="{size*.19:g}" size="{small:g}">')
+        paragraph=Paragraph(markup,style)
+        stack_adjacent_scripts(paragraph)
+        work=[paragraph];width=W-96
+        while work:
+            para=work.pop(0)
+            self.room(2*lead+3)
+            available=self.y-55
+            _,height=para.wrap(width,available)
+            if height>available:
+                pieces=para.split(width,available)
+                if len(pieces)<2:
+                    if self.y==713:raise ValueError('Paragraph cannot fit on an empty page')
+                    self.renew();work.insert(0,para);continue
+                para=pieces[0];work=pieces[1:]+work
+                _,height=para.wrap(width,available)
+            para.drawOn(self.cv,48,self.y-height+size)
+            self.y-=height
+            if work:self.renew()
         self.y-=6 if role=='body' else 4
     def table(self,asset,rows):
         cols=asset['display_columns'] or [c for c in rows[0] if c not in ('item_id','pdf_page','print_page')]

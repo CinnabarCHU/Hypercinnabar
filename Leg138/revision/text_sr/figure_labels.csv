@@ -1,0 +1,33 @@
+object_id,source_page,printed_page,witness_sha256,label_group,review_region_pt,labels_json,status
+SR.C30.FIGURE1,2,642,3b374885d08b1cc78a532aa0f75f969679e3f652a469df258c22b03240f1983b,map.latitude,"[48,72,67,212]","[""20°N"",""0°"",""20°S""]",visually_read_label_group
+SR.C30.FIGURE1,2,642,3b374885d08b1cc78a532aa0f75f969679e3f652a469df258c22b03240f1983b,map.longitude,"[53,206,280,220]","[""160°W"",""140°"",""120°"",""100°"",""80°""]",visually_read_label_group
+SR.C30.FIGURE1,2,642,3b374885d08b1cc78a532aa0f75f969679e3f652a469df258c22b03240f1983b,map.currents,"[70,51,280,204]","[""CAC"",""NEC"",""NECC"",""EUC"",""SEC"",""CHC"",""PC""]",visually_read_label_group
+SR.C30.FIGURE1,2,642,3b374885d08b1cc78a532aa0f75f969679e3f652a469df258c22b03240f1983b,map.sites,"[158,99,267,167]","[""854"",""853"",""852"",""851"",""850"",""849"",""848"",""845"",""844"",""847"",""846""]",visually_read_label_group
+SR.C30.FIGURE2,2,642,3b374885d08b1cc78a532aa0f75f969679e3f652a469df258c22b03240f1983b,A.panel,"[52,292,65,305]","[""A""]",visually_read_label_group
+SR.C30.FIGURE2,2,642,3b374885d08b1cc78a532aa0f75f969679e3f652a469df258c22b03240f1983b,A.latitude,"[48,304,68,401]","[""20°N"",""10°N"",""0"",""10°S""]",visually_read_label_group
+SR.C30.FIGURE2,2,642,3b374885d08b1cc78a532aa0f75f969679e3f652a469df258c22b03240f1983b,A.longitude,"[68,403,173,416]","[""130°"",""120°"",""110°"",""100°"",""90°"",""80°""]",visually_read_label_group
+SR.C30.FIGURE2,2,642,3b374885d08b1cc78a532aa0f75f969679e3f652a469df258c22b03240f1983b,A.sites,"[68,327,169,381]","[""574"",""573"",""572"",""854"",""853"",""852"",""851"",""850"",""849"",""848"",""845"",""844"",""158"",""847"",""846""]",visually_read_label_group
+SR.C30.FIGURE2,2,642,3b374885d08b1cc78a532aa0f75f969679e3f652a469df258c22b03240f1983b,A.legend,"[68,415,171,440]","[""Sites with laminated diatom ooze"",""Sites without laminated diatom ooze""]",visually_read_label_group
+SR.C30.FIGURE2,2,642,3b374885d08b1cc78a532aa0f75f969679e3f652a469df258c22b03240f1983b,B.panel,"[174,291,186,305]","[""B""]",visually_read_label_group
+SR.C30.FIGURE2,2,642,3b374885d08b1cc78a532aa0f75f969679e3f652a469df258c22b03240f1983b,B.sites,"[184,293,276,309]","[""574"",""573"",""572"",""849"",""850"",""851"",""847"",""844"",""158""]",visually_read_label_group
+SR.C30.FIGURE2,2,642,3b374885d08b1cc78a532aa0f75f969679e3f652a469df258c22b03240f1983b,B.age,"[277,301,301,427]","[""0"",""5"",""Ma"",""10"",""15""]",visually_read_label_group
+SR.C30.FIGURE2,2,642,3b374885d08b1cc78a532aa0f75f969679e3f652a469df258c22b03240f1983b,B.question_marks,"[266,368,279,392]","[""?"",""?""]",visually_read_label_group
+SR.C30.FIGURE3,2,642,3b374885d08b1cc78a532aa0f75f969679e3f652a469df258c22b03240f1983b,map.latitude,"[307,44,329,231]","[""25°N"",""20°N"",""15°N"",""10°N"",""5°N"",""0"",""5°S""]",visually_read_label_group
+SR.C30.FIGURE3,2,642,3b374885d08b1cc78a532aa0f75f969679e3f652a469df258c22b03240f1983b,map.longitude,"[308,224,556,242]","[""115°W"",""110°W"",""105°W"",""100°W"",""95°W"",""90°W"",""85°W"",""80°W""]",visually_read_label_group
+SR.C30.FIGURE3,2,642,3b374885d08b1cc78a532aa0f75f969679e3f652a469df258c22b03240f1983b,map.sites,"[336,121,485,221]","[""854"",""853"",""852"",""851"",""850"",""849"",""848"",""845"",""844"",""847"",""846""]",visually_read_label_group
+SR.C30.FIGURE3,2,642,3b374885d08b1cc78a532aa0f75f969679e3f652a469df258c22b03240f1983b,map.legend,"[328,241,546,256]","[""Laminated diatom ooze"",""Near-monospecific burrow fills +/- mat fragments""]",visually_read_label_group
+SR.C30.FIGURE4,3,643,3b374885d08b1cc78a532aa0f75f969679e3f652a469df258c22b03240f1983b,compass,"[198,43,261,79]","[""S"",""W"",""E"",""N""]",visually_read_label_group
+SR.C30.FIGURE4,3,643,3b374885d08b1cc78a532aa0f75f969679e3f652a469df258c22b03240f1983b,front,"[186,81,232,105]","[""Front""]",visually_read_label_group
+SR.C30.FIGURE4,3,643,3b374885d08b1cc78a532aa0f75f969679e3f652a469df258c22b03240f1983b,water.surface,"[98,97,270,129]","[""Cooler water"",""Warmer water""]",visually_read_label_group
+SR.C30.FIGURE4,3,643,3b374885d08b1cc78a532aa0f75f969679e3f652a469df258c22b03240f1983b,mats,"[24,170,57,194]","[""Diatom mats""]",visually_read_label_group
+SR.C30.FIGURE4,3,643,3b374885d08b1cc78a532aa0f75f969679e3f652a469df258c22b03240f1983b,subducting_water,"[55,198,139,236]","[""Cooler water descending beneath warmer water""]",visually_read_label_group
+SR.C30.FIGURE4,3,643,3b374885d08b1cc78a532aa0f75f969679e3f652a469df258c22b03240f1983b,buoyant_mats,"[183,206,266,261]","[""Buoyant mats rise to surface and are concentrated immediately beneath the surface""]",visually_read_label_group
+SR.C30.FIGURE5,3,643,3b374885d08b1cc78a532aa0f75f969679e3f652a469df258c22b03240f1983b,background,"[286,43,374,76]","[""\""Normal\"" deposition of calcareous nannofossils/foraminifers/diatoms""]",visually_read_label_group
+SR.C30.FIGURE5,3,643,3b374885d08b1cc78a532aa0f75f969679e3f652a469df258c22b03240f1983b,mat_event,"[290,114,368,157]","[""Deposition of many diatom mats from a single \""mat-forming\"" event""]",visually_read_label_group
+SR.C30.FIGURE6,4,644,3b374885d08b1cc78a532aa0f75f969679e3f652a469df258c22b03240f1983b,heading,"[148,37,181,56]","[""GRAPE""]",visually_read_label_group
+SR.C30.FIGURE6,4,644,3b374885d08b1cc78a532aa0f75f969679e3f652a469df258c22b03240f1983b,sites,"[122,57,209,75]","[""850"",""851""]",visually_read_label_group
+SR.C30.FIGURE6,4,644,3b374885d08b1cc78a532aa0f75f969679e3f652a469df258c22b03240f1983b,depth.axis,"[80,75,111,326]","[""60"",""70"",""80"",""90"",""100"",""110"",""Depth"",""(mbsf)""]",visually_read_label_group
+SR.C30.FIGURE6,4,644,3b374885d08b1cc78a532aa0f75f969679e3f652a469df258c22b03240f1983b,sediment,"[68,212,102,258]","[""Diatom mat deposits""]",visually_read_label_group
+SR.C30.FIGURE6,4,644,3b374885d08b1cc78a532aa0f75f969679e3f652a469df258c22b03240f1983b,absence,"[226,195,273,227]","[""No diatom mat deposits at Site 851""]",visually_read_label_group
+SR.C30.FIGURE6,4,644,3b374885d08b1cc78a532aa0f75f969679e3f652a469df258c22b03240f1983b,trace_annotations,"[110,123,258,306]","[""*"",""*"",""O"",""P"",""P"",""@"",""@""]",visually_read_label_group
+SR.C30.FIGURE6,4,644,3b374885d08b1cc78a532aa0f75f969679e3f652a469df258c22b03240f1983b,datum_legend,"[125,304,217,338]","[""*"",""@"",""Nannofossil datums""]",visually_read_label_group

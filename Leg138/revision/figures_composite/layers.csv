@@ -1,0 +1,25 @@
+source_page,layer,role,samples,stage
+12,grape,independent data + code curve,7044,"column 2 of GR846.MCD, measured density with independent 20-point display Gaussian"
+12,susceptibility,independent data + code curve,2268,"FIN values, independent published-control splice, 20-point display Gaussian and 0.63 conversion"
+12,color reflectance,retained IR print layer,,three overlapping printed bands and their legend; no independently identified band-by-band scan readings
+12,magnetics,retained IR print layer,,published polarity/indeterminacy interpretation
+12,age,retained IR print layer,,printed epoch and numeric boundary interpretation
+12,lithology,retained IR print layer,,shipboard authorial graphic lithology
+12,lithologic unit,retained IR print layer,,printed divisions and unit labels
+12,"frame, headers, captions",retained IR print layer,,"original visible typography, page-specific ticks and legend"
+13,grape,independent data + code curve,5744,"column 2 of GR846.MCD, measured density with independent 20-point display Gaussian"
+13,susceptibility,independent data + code curve,735,"FIN values, independent published-control splice, 20-point display Gaussian and 0.63 conversion"
+13,color reflectance,retained IR print layer,,three overlapping printed bands and their legend; no independently identified band-by-band scan readings
+13,magnetics,retained IR print layer,,published polarity/indeterminacy interpretation
+13,age,retained IR print layer,,printed epoch and numeric boundary interpretation
+13,lithology,retained IR print layer,,shipboard authorial graphic lithology
+13,lithologic unit,retained IR print layer,,printed divisions and unit labels
+13,"frame, headers, captions",retained IR print layer,,"original visible typography, page-specific ticks and legend"
+14,grape,independent data + code curve,4525,"column 2 of GR846.MCD, measured density with independent 20-point display Gaussian"
+14,susceptibility,independent data + code curve,716,"FIN values, independent published-control splice, 20-point display Gaussian and 0.63 conversion"
+14,color reflectance,retained IR print layer,,three overlapping printed bands and their legend; no independently identified band-by-band scan readings
+14,magnetics,retained IR print layer,,published polarity/indeterminacy interpretation
+14,age,retained IR print layer,,printed epoch and numeric boundary interpretation
+14,lithology,retained IR print layer,,shipboard authorial graphic lithology
+14,lithologic unit,retained IR print layer,,printed divisions and unit labels
+14,"frame, headers, captions",retained IR print layer,,"original visible typography, page-specific ticks and legend"
