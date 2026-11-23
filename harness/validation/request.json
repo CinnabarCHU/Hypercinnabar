@@ -1,0 +1,30 @@
+{
+  "schema": 1,
+  "run_id": "20261123T115727Z-7f4853b8b4c1",
+  "workspace": "/tmp/acycle-live-secure/workspace",
+  "request": {
+    "operation": "menu",
+    "acycle_root": "/workspace/scratch/582c5a5c1c7f/acycle-harness-menu",
+    "menu": "menu_rgb2gray",
+    "role": "helper",
+    "payload": {
+      "input": {
+        "operation": "RGBToGray"
+      },
+      "file_input": {
+        "path": "/tmp/acycle-live-secure/workspace/.acycle/runs/20261123T115727Z-7f4853b8b4c1/inputs/rgb.png",
+        "kind": "image",
+        "field": "im_name"
+      }
+    },
+    "output_dir": "/tmp/acycle-live-secure/workspace/.acycle/runs/20261123T115727Z-7f4853b8b4c1/outputs"
+  },
+  "files": {
+    ".acycle/runs/20261123T115727Z-7f4853b8b4c1/inputs/rgb.png": {
+      "sha256": "ab58defac30c269842e840e945ac1dd789151fcd85fbd9c8c9ccb0af9eb55cf4",
+      "base64": "iVBORw0KGgoAAAANSUhEUgAAAAMAAAACCAIAAAASFvFNAAAAGElEQVR4nAXBAQEAAAjDIIz+5BOE0KHa9j7oB3+xZADCAAAAAElFTkSuQmCC"
+    }
+  },
+  "provider_credential_absent": true
+}
+
