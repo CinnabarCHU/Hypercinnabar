@@ -21,11 +21,12 @@ if isempty(fig)
         opening(fig,[],acgui.state(fig),varargin{:});
         if strcmp(name,'AC')
             acgui.extendDesktop(fig);
-            % The original monitor scale applies to the origin as well as the
-            % size, which can put the menu bar and right edge off-screen.
-            movegui(fig,'onscreen');
         end
         if isgraphics(fig), set(fig,'HandleVisibility',handleVisibility,'Visible',show); end
+        if strcmp(name,'AC')
+            drawnow;
+            fitDesktop(fig);
+        end
     catch err
         if isgraphics(fig), delete(fig); end
         if isgraphics(before), set(groot,'CurrentFigure',before); end
@@ -52,6 +53,21 @@ if nargout
         varargout = repmat({[]},1,nargout);
     end
 end
+end
+
+function fitDesktop(fig)
+% AC's original size and origin use the scale of the first monitor.
+root = groot;
+rootUnits = root.Units; figureUnits = fig.Units;
+restoreRoot = onCleanup(@()set(root,'Units',rootUnits)); %#ok<NASGU>
+restoreFigure = onCleanup(@()set(fig,'Units',figureUnits)); %#ok<NASGU>
+root.Units = 'pixels'; fig.Units = 'pixels';
+monitor = root.MonitorPositions(1,:);
+outer = fig.OuterPosition;
+margin = 8;
+extent = min(outer(3:4),monitor(3:4)-2*margin);
+origin = max(monitor(1:2)+margin,min(outer(1:2),monitor(1:2)+monitor(3:4)-margin-extent));
+if ~isequal(outer,[origin extent]), fig.OuterPosition = [origin extent]; end
 end
 
 function restoreVisibility(fig,previous)

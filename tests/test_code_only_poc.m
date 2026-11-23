@@ -30,12 +30,17 @@ end
 t = (0:255)'; data = [t,sin(2*pi*t/20)+.2*cos(2*pi*t/5)];
 file = fullfile(folder,'test-series.txt'); writematrix(data,file,'Delimiter','tab');
 data = accore.io('read',file);
-fig = ac(folder); h = acgui.state(fig);
+if ~isempty(getenv('DISPLAY')), set(groot,'DefaultFigureVisible','on'); end
+fig = ac(folder);
+set(groot,'DefaultFigureVisible','off'); h = acgui.state(fig);
 assert(isequal(fig,ac()) && strcmp(h.menu_anova.Parent.Tag,'menu_univariate'));
 assert(strcmp(h.menu_open.Parent.Tag,'menu_file') && strcmp(h.menu_bispectral.Parent.Tag,'menuac'));
 assert(strcmp(h.menu_settings.Parent.Tag,'menu_help') && isgraphics(findall(fig,'Tag','push_robot')));
 assert(strcmp(h.menu_multivariate1.Visible,'on') && strcmp(h.menu_pca.Parent.Tag,'menu_multivariate1'));
 assert(strcmp(h.menu_open.Visible,'off') && strcmp(h.menu_opendir.Visible,'on'));
+if ~isempty(getenv('RUNNER_TEMP'))
+    captureDesktop(fig,fullfile(getenv('RUNNER_TEMP'),'acycle-preview.png'));
+end
 cases = {@()checkFilter(h,data,folder,t),@()checkDetrend(h,data),@()checkImage(data,folder), ...
     @()checkSwa(h),@()checkBispectral(h,data),@()checkRobot(fig,h,data,folder)};
 failures = {};
@@ -52,9 +57,6 @@ for k = 1:numel(cases)
     end
 end
 assert(isempty(failures),'Cases failed: %s',strjoin(failures,', '));
-if ~isempty(getenv('RUNNER_TEMP'))
-    captureDesktop(fig,fullfile(getenv('RUNNER_TEMP'),'acycle-preview.png'));
-end
 fprintf('All 33 layouts, desktop selection, filter/detrend/SWA previews, Mini-Robot, master bispectrum, exchange and replay passed.\n');
 end
 
@@ -154,20 +156,18 @@ set(otherWindows(otherWindows~=fig),'Visible','off');
 set(fig,'Visible','on'); figure(fig); drawnow; pause(.5);
 if isunix && ~ismac && ~isempty(getenv('DISPLAY'))
     setenv('ACYCLE_CAPTURE_TITLE',fig.Name); setenv('ACYCLE_CAPTURE_PNG',destination);
-    % Capture the X11 window together with its actual menus and toolbar.
-    cmd = 'xwininfo -name "$ACYCLE_CAPTURE_TITLE" >/dev/null 2>&1 && timeout 15 import -silent -window "$ACYCLE_CAPTURE_TITLE" "$ACYCLE_CAPTURE_PNG"';
-    [code,~] = system(cmd);
-    if code~=0
-        [code,msg] = system('timeout 15 import -silent -window root -trim +repage "$ACYCLE_CAPTURE_PNG"');
-        assert(code==0,'X11 capture failed: %s',msg);
-    end
+    script = fullfile(fileparts(mfilename('fullpath')),'capture_acycle_window.py');
+    setenv('ACYCLE_CAPTURE_SCRIPT',script);
+    [code,msg] = system('python "$ACYCLE_CAPTURE_SCRIPT"'); fprintf('%s\n',msg);
+    assert(code==0,'X11 capture failed: %s',msg);
 else
     frame = getframe(fig); imwrite(frame.cdata,destination);
 end
 img = imread(destination);
 assert(size(img,1)>100 && size(img,2)>100 && any(img(:)~=img(1)),'Empty desktop capture.');
 client = getpixelposition(fig);
-assert(size(img,1)>=client(4)-2 && size(img,2)>=client(3)-2,'Part of the desktop is outside the display.');
+assert(size(img,1)>=client(4)-2 && size(img,2)>=client(3)-2, ...
+    'MATLAB client %s, captured image %s.',mat2str(client),mat2str(size(img)));
 end
 
 function click(obj)
