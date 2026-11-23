@@ -20,6 +20,7 @@ export async function verifyLiveGui(call, workspace) {
   assert.equal(windows.length, 1)
   let f = windows[0]
   assert.equal(f.operation, 'Bandpass_legacy')
+  assert.equal(f.unit,'m'); assert.equal(f.frequency_unit,'cycles/m')
   const id = f.window_id
   const update = (rev, values) => invoke('update', { window_id: id, expected_revision: rev, ...values })
   const firstAnalyzer = f.analysis_ids.analyzer

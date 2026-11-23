@@ -9,6 +9,8 @@ writematrix(data,fullfile(study,'series.csv'));
 writematrix([t,cos(2*pi*t/17)],fullfile(study,'second.csv'));
 imwrite(reshape(uint8(1:100),10,10),fullfile(study,'core.png'));
 main = ac(study); h = acgui.state(main);
+h.popupmenu1.Value = find(strcmp(cellstr(h.popupmenu1.String),'m'));
+unitCallback = h.popupmenu1.Callback; unitCallback(h.popupmenu1,[]);
 h.listbox_acmain.Value = find(strcmp(cellstr(h.listbox_acmain.String),'series.csv'));
 cb = h.menu_filter.Callback; cb(h.menu_filter,[]);
 session = acgui.share(main); assert(strcmp(acgui.share(main),session));

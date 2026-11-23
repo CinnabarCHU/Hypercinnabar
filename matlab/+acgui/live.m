@@ -102,6 +102,7 @@ s = getappdata(fig,'AcycleAnalysis');
 if strcmp(out.feature,'filter')
     h = acgui.state(fig);
     out.input_path = h.data_name; out.unit = h.unit;
+    out.frequency_unit = ['cycles/',char(h.unit)];
     out.opened_from = member(h,'openedFrom',h.data_name);
     if isstruct(s) && strcmp(s.operation,'Bandpass_legacy')
         out.params = struct('flow',s.params.flow,'fhigh',s.params.fhigh,'filter',s.params.filter);

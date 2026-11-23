@@ -74,6 +74,11 @@ def integrate(dest, tree):
     # Preserve the original frequency prompts, range repair and output naming.
     f = gui/"ft.m"
     s = f.read_text()
+    # Allow both words of the original power limit labels to fit when wrapped.
+    s = replace(s,"set(handles.text18,'position',[0.074,0.4,0.4,0.094])",
+                  "set(handles.text18,'position',[0.02,0.362,0.47,0.159])")
+    s = replace(s,"set(handles.text17,'position',[0.074,0.22,0.4,0.094])",
+                  "set(handles.text17,'position',[0.02,0.181,0.47,0.159])")
     s = section(s,"data_s = varargin{1}.current_data;","handles.data_name =",
                 """if isfield(varargin{1},'savedBandpass')
     handles.bandpassSession = varargin{1}.savedBandpass;

@@ -58,7 +58,7 @@ def schemas():
         return {"type": "object", "additionalProperties": False, "minProperties": 1,
                 "properties": {key: {"type": "number"} for key in names}}
     specs = [
-        ("inspect", "List the live Acycle windows or inspect one window's committed parameters, units, revision and scientific record IDs.",
+        ("inspect", "List the live Acycle windows or inspect one window's committed parameters, units, revision and scientific record IDs. For filters, unit describes the series coordinate; frequency_unit describes flow, fhigh and the spectrum horizontal axis.",
          {"window_id": text}, []),
         ("open", "Open the filter or nonblocking image-profile picker on the user's visible MATLAB desktop using a workspace file. Filter accepts a legacy bandpass MAT exchange. Rebinding the open filter requires its current window_id and expected_revision.",
          {"feature": {"type": "string", "enum": ["filter", "image_profile"]}, "input_path": text,

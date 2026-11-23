@@ -40,6 +40,7 @@ export async function verifyProviderAction(call) {
   assert.equal(result.params.flow, .035)
   assert.equal(result.params.fhigh, .055)
   assert.equal(result.plt.x_2, .13)
+  assert.equal(result.unit,'m'); assert.equal(result.frequency_unit,'cycles/m')
   assert.notEqual(result.analysis_ids.analyzer, before.analysis_ids.analyzer)
   execFileSync('python', [join(repo, 'tests/gui_human.py'), 'verify_export'], { stdio: 'inherit' })
   const after = await call('acycle_gui_inspect', {window_id: before.window_id})
