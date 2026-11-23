@@ -7,8 +7,10 @@ mkdir(tempRoot);
 cleanup = onCleanup(@() acInventoryRestoreFixture(oldPath,tempRoot)); %#ok<NASGU>
 codeDir = fullfile(tempRoot,'code');
 privateDir = fullfile(codeDir,'private');
+ordinaryDir = fullfile(codeDir,'acprivate');
 interfaceDir = fullfile(codeDir,'interface','Interpolation');
 mkdir(privateDir);
+mkdir(ordinaryDir);
 mkdir(interfaceDir);
 acInventoryWriteFixture(privateDir,'acInventoryFixtureKernel', ...
     'function y=acInventoryFixtureKernel(x), y=x+1; end');
@@ -18,7 +20,15 @@ acInventoryWriteFixture(interfaceDir,'acInventoryFixture_analyzer', ...
     'function y=acInventoryFixture_analyzer(x), fn=acInventoryFixtureLookup(); y=fn(x); end');
 acInventoryWriteFixture(interfaceDir,'acInventoryFixtureDirect', ...
     'function y=acInventoryFixtureDirect(x), y=acInventoryFixtureKernel(x); end');
-addpath(codeDir,interfaceDir);
+acInventoryWriteFixture(ordinaryDir,'acInventoryFixtureShared', ...
+    'function y=acInventoryFixtureShared(x), y=2*x; end');
+acInventoryWriteFixture(interfaceDir,'acInventoryFixtureOrdinary', ...
+    'function y=acInventoryFixtureOrdinary(x), y=acInventoryFixtureShared(x); end');
+folders = strsplit(genpath(codeDir),pathsep);
+assert(any(strcmp(folders,ordinaryDir)) && any(strcmp(folders,interfaceDir)));
+assert(~any(strcmp(folders,privateDir)));
+addpath(genpath(codeDir));
+assert(acInventoryFixtureOrdinary(21)==42);
 assert(acInventoryFixture_analyzer(41)==42);
 directWasHidden = false;
 try
@@ -27,6 +37,23 @@ catch err
     directWasHidden = ~isempty(strfind(err.message,'acInventoryFixtureKernel')); %#ok<STREMP>
 end
 assert(directWasHidden,'The interface directory should not see code/private directly.');
+% Probe manual enumeration separately from the documented genpath behaviour.
+% MATLAB and Octave need not agree on an explicit addpath of a private folder.
+beforeExplicit = path;
+lastwarn('');
+explicitCalled = false;
+errorID = '';
+try
+    addpath(privateDir);
+    explicitCalled = acInventoryFixtureDirect(41)==42;
+catch err
+    errorID = err.identifier;
+end
+[~,warningID] = lastwarn;
+explicitListed = any(strcmp(strsplit(path,pathsep),privateDir));
+fprintf('Acycle path probe %s | genpath private=0 | ordinary=1 | explicit listed=%d called=%d | warning=%s error=%s\n', ...
+    version,explicitListed,explicitCalled,warningID,errorID);
+path(beforeExplicit);
 for revision = {'acycle','master'}
     native = fullfile(root,'upstream',revision{1},'code','seriesanalysis');
     addpath(native);
