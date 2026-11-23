@@ -2,6 +2,7 @@
 import os
 import re
 import subprocess
+import sys
 
 from PIL import ImageGrab
 
@@ -26,6 +27,9 @@ def main():
     if not frames:
         raise RuntimeError(f"No visible window for {title!r}. X11 titles: {[name for _,name in named]}")
     x, y, width, height = max(frames, key=lambda rect: rect[2] * rect[3])
+    if sys.argv[1:] == ["--click-center"]:
+        subprocess.run(["xdotool","mousemove",str(x + width // 2),str(y + height // 2),"click","1"],check=True)
+        return
     screen = ImageGrab.grab(xdisplay=os.environ["DISPLAY"])
     box = (max(0, x), max(0, y), min(screen.width, x + width), min(screen.height, y + height))
     print(f"X11 window {title!r} at {(x, y, width, height)}, screen {screen.size}, visible box {box}")

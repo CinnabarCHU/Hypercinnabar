@@ -14,7 +14,7 @@ finish = uicontrol(fig,'Style','pushbutton','String','Finish profile','Tag','acl
 uicontrol(fig,'Style','pushbutton','String','Close','Tag','aclive_close','Units','normalized','Position',[.66 .03 .21 .07],'Callback',@(~,~)delete(fig));
 state = struct('file',file,'points',zeros(0,2));
 setappdata(fig,'AcycleTransect',state);
-raster.Tag = 'aclive_image'; raster.ButtonDownFcn = @pick;
+raster.Tag = 'aclive_image'; raster.HitTest = 'on'; raster.PickableParts = 'all'; raster.ButtonDownFcn = @pick;
 acgui.liveMark(fig,'image_profile','awaiting_input','opened',struct('input_path',file));
 fig.Visible = 'on';
 

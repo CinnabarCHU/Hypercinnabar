@@ -13,6 +13,7 @@ export async function verifyLiveGui(call, workspace) {
   async function invoke(name, args) {
     const res = await call('acycle_gui_' + name, args)
     evidence.push({ name, arguments: args, result: res })
+    await writeFile(join(process.env.RUNNER_TEMP,'gui-receipts.json'),JSON.stringify(evidence,null,2))
     return res
   }
   const { windows } = await invoke('inspect', {})
@@ -67,9 +68,19 @@ export async function verifyLiveGui(call, workspace) {
   assert.deepEqual(finished.detail.points,img.points); assert.equal(finished.detail.analyzer_id,img.analysis_ids.analyzer)
   capture(img.title,'live-image-profile.png'); human('close_images')
   const next = await invoke('open',{feature:'image_profile',input_path:'core.png'})
+  execFileSync('python',[join(testRoot,'capture_acycle_window.py'),'--click-center'],{
+    stdio:'inherit',env:{...process.env,ACYCLE_CAPTURE_TITLE:next.title}
+  })
+  let picked
+  for (let attempt=0; attempt<10; attempt++) {
+    picked = await invoke('inspect',{window_id:next.window_id})
+    if (picked.points.length) break
+    await new Promise(resolve => setTimeout(resolve,150))
+  }
+  assert.equal(picked.points.length,1)
+  assert.ok(picked.points[0].length===2 && picked.points[0].every(v=>v>=1 && v<=10))
   human('close_images')
   stream = await invoke('events',{window_id:next.window_id,after:stream.cursor})
   assert.ok(stream.events.some(e=>e.kind==='cancelled'))
-  await writeFile(join(process.env.RUNNER_TEMP,'gui-receipts.json'),JSON.stringify(evidence,null,2))
-  console.log('PASS GUI attach, rerun, restyle, exported numbers, manual edit, stale/invalid edits, rebind, close, MAT reopen, human image picks and cancellation')
+  console.log('PASS GUI attach, rerun, restyle, exported numbers, manual edit, stale/invalid edits, rebind, close, MAT reopen, native image picks, X11 pointer input and cancellation')
 }
