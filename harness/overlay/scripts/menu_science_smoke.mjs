@@ -1,5 +1,6 @@
 /** Known RGB primaries exercise typed MATLAB results through the installed DSH tool executor. */
 import assert from 'node:assert/strict'
+import { execFileSync } from 'node:child_process'
 import { createHash } from 'node:crypto'
 import { readFile, writeFile } from 'node:fs/promises'
 import { join } from 'node:path'
@@ -28,12 +29,29 @@ export async function verifyMenuScience(call, workspace) {
     const png = await readFile(p.artifacts.figure_01)
     assert.equal(png.subarray(0, 8).toString('hex'), '89504e470d0a1a0a')
     assert.equal((await readFile(a.artifacts.journal_zip)).subarray(0, 2).toString(), 'PK')
+    if (operation === 'RGBToGray') {
+      const again = await call('acycle_menu_replay', { run_id: h.run_id })
+      assert.deepEqual(again.summary, h.summary)
+      const redrawn = await call('acycle_menu_replay', { run_id: p.run_id })
+      assert.equal(redrawn.completion, 'done')
+      assert.equal((await readFile(redrawn.artifacts.figure_01)).subarray(0, 8).toString('hex'), '89504e470d0a1a0a')
+    }
+    execFileSync(process.env.ACYCLE_PYTHON || 'python3', ['-c', [
+      'import json, sys, zipfile',
+      'z = zipfile.ZipFile(sys.argv[1])',
+      'assert z.testzip() is None',
+      'rows = [json.loads(line) for line in z.read("events.jsonl").splitlines()]',
+      'assert rows[0]["attr"] == "init" and rows[-1]["attr"] == "fin"',
+      'assert rows[0]["info"]["params"] in z.namelist() and rows[-1]["info"]["retval"] in z.namelist()',
+      'assert "events.jsonl.rng.mat" in z.namelist()',
+    ].join('\n'), a.artifacts.journal_zip])
     runs.push({ operation, helper: h.run_id, analyzer: a.run_id, plotter: p.run_id, replay: replay.run_id })
   }
   const series = 'series.csv'
   await writeFile(join(workspace, series), '0,0\n2,4\n4,8\n')
   const prep = await call('acycle_menu_helper', { menu: 'menu_interp', input_path: series,
     input: { operation: 'RegularInterpolation', samplingInterval: 1 } })
+  assert.equal(prep.summary.preview.params.preview.options.preview.MaximumPoints.value, 1e6)
   const interpolated = await call('acycle_menu_analyzer', { menu: 'menu_interp', helper_run_id: prep.run_id })
   assert.deepEqual(interpolated.summary.preview.interpolated.value, [[0,0],[1,2],[2,4],[3,6],[4,8]])
   runs.push({ operation: 'RegularInterpolation', helper: prep.run_id, analyzer: interpolated.run_id })

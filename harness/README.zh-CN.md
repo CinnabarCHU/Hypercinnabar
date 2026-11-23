@@ -64,7 +64,7 @@ python -m pip install ../acycle-harness-src/dist/acycle_deepseek-0.6.0-py3-none-
 
 若要对照 GUIDE，在查询结果中选择带 `_legacy` 的选择符，例如在 `menu_rgb2gray` 下选择 `RGBToGray_legacy`。同名菜单的两组运行各有独立记录。数值矩阵可用 CSV/TXT/DAT/TSV，图像使用 `input_kind: "image"` 以保留像素类型，接收文件名的方法使用 `input_kind: "path"` 并指定 `input_field`。输入文件会复制到该次运行并计算 SHA-256。读取额外文件或目录的方法重放时仍需要对应资源可用。
 
-工具返回的摘要有尺寸、MATLAB 类型和短预览。完整输入、结果和随机状态可在 `.acycle/runs/<run_id>/outputs/acycle-journal.zip` 中取得。该 ZIP 包含 journal 和相邻 MAT 引用文件，可解压后在相应检出目录设置 MATLAB 路径，调用 `aclog.replay` 重放。出错时可用原有的 `acycle_get_run` 取回诊断和已落盘的日志。菜单执行和按 ID 重放使用本地 MATLAB 后端。两版科学方法的差异、可用绘图角色、桌面交互和工具箱要求由菜单和原方法决定。桌面启动器仍可查询；需要桌面或人工交互的功能应在具备相应上下文的宿主运行。
+工具返回的摘要展示 MATLAB 类型、尺寸和数值预览，也能看到嵌套在 options 中的推荐参数。较大的结构体会标记省略的字段数。完整输入、结果和随机状态可在 `.acycle/runs/<run_id>/outputs/acycle-journal.zip` 中取得。该 ZIP 包含 journal 和相邻 MAT 引用文件，可解压后在相应检出目录设置 MATLAB 路径，调用 `aclog.replay` 重放。出错时可用原有的 `acycle_get_run` 取回诊断和已落盘的日志。菜单执行和按 ID 重放使用本地 MATLAB 后端。两版科学方法的差异、可用绘图角色、桌面交互和工具箱要求由菜单和原方法决定。桌面启动器仍可查询；需要桌面或人工交互的功能应在具备相应上下文的宿主运行。
 
 原有的 `acycle_analyze`、`acycle_swa`、`acycle_coco` 等快捷工具，以及 `acycle_catalog`、`acycle_native` 均可继续使用。为已有原生 Harness 安装升级时，应同时替换插件和 Python wheel。科研计算仍按本机 MATLAB 许可执行。
 

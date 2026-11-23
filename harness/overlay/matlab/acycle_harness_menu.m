@@ -61,7 +61,7 @@ try
     r.completion=fin.info.status;
     r.journal=acHarnessRelative(out,journal);
     if endsWith(init.info.op,'/helper'), r.plot_selector=value.plt.operation; end
-    r.summary=acHarnessSummary(value,0);
+    r.summary=acHarnessSummary(value,0,192);
     if endsWith(init.info.op,'/plotter')
         figs=flipud(findall(groot,'Type','figure'));
         figs=figs(~ismember(figs,existing)); drawnow;
@@ -114,17 +114,25 @@ if ~startsWith(path,prefix), error('Acycle:Harness:Journal','Unexpected journal 
 rel=strrep(path(numel(prefix)+1:end),filesep,'/');
 end
 
-function s = acHarnessSummary(value,depth)
+function [s,remaining] = acHarnessSummary(value,depth,remaining)
+% Show nested helper recommendations while bounding the agent's JSON response.
+remaining=remaining-1;
 s=struct('class',class(value),'size',size(value));
 if isstruct(value) && isscalar(value)
     keys=fieldnames(value);
-    s.fields=keys;
-    if depth<2
+    s.fields=keys(1:min(64,numel(keys)));
+    visited=0;
+    if depth<4
         s.preview=struct();
-        for k=1:min(24,numel(keys))
-            key=keys{k}; s.preview.(key)=acHarnessSummary(value.(key),depth+1);
+        for k=1:min(32,numel(keys))
+            if remaining<=0, break; end
+            key=keys{k};
+            [item,remaining]=acHarnessSummary(value.(key),depth+1,remaining);
+            s.preview.(key)=item;
+            visited=k;
         end
     end
+    if visited<numel(keys), s.omitted_fields=numel(keys)-visited; end
 elseif (isnumeric(value) || islogical(value)) && isreal(value) && ~issparse(value)
     if numel(value)<=32, s.value=value; else, s.first=value(1:6); end
 elseif ischar(value) && isrow(value)
