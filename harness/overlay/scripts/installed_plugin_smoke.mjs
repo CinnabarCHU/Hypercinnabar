@@ -33,7 +33,7 @@ try {
   await ctx.plugin(SkillRegistry)
   await ctx.plugin(WorkingDirectoryFixture)
   const live = process.argv.includes('--gui-live')
-  const fiber = await ctx.plugin(plugin, { workspace, ...(live ? { guiEngine: 'AcycleDesktopTest' } : {}) })
+  const fiber = await ctx.plugin(plugin, { workspace, ...(live ? { guiSession: process.env.ACYCLE_GUI_SESSION } : {}) })
   const tools = ctx.tools.schemas()
   assert.equal(tools.length, live ? 24 : 20)
   const skills = await ctx.skills.list()

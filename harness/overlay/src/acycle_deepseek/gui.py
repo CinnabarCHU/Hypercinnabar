@@ -1,9 +1,9 @@
-"""Typed Harness requests for an existing named MATLAB desktop."""
-from io import StringIO
+"""Typed requests to the local session folder opened by the user's desktop."""
 import json
 import os
 from pathlib import Path
-import re
+import time
+import uuid
 
 PREFIX = "acycle_gui_"
 NUMERIC_FILES = {".txt", ".csv", ".dat", ".tsv", ".mat"}
@@ -11,9 +11,12 @@ IMAGE_FILES = {".png", ".jpg", ".jpeg", ".bmp", ".tif", ".tiff", ".gif"}
 
 
 def run(workspace, action, args):
-    name = os.environ.get("ACYCLE_GUI_ENGINE", "")
-    if not re.fullmatch(r"[A-Za-z][A-Za-z0-9_]{0,62}", name):
-        raise ValueError("Configure guiEngine with the name displayed by the Acycle desktop.")
+    session = Path(os.environ.get("ACYCLE_GUI_SESSION", ""))
+    marker = session / "session.json"
+    if not session.is_absolute() or not marker.is_file():
+        raise ValueError("Open Connect to Acycle Harness and set guiSession to its local folder.")
+    if json.loads(marker.read_text(encoding="utf-8")).get("protocol") != 1:
+        raise ValueError("Unsupported Acycle desktop protocol.")
     q = dict(args)
     if action == "open":
         file = (workspace / Path(q["input_path"])).resolve()
@@ -21,22 +24,33 @@ def run(workspace, action, args):
         if not file.is_relative_to(workspace) or not file.is_file() or file.suffix.lower() not in allowed:
             raise ValueError("Choose a supported input file inside the active Harness workspace.")
         q["input_path"] = str(file)
+    token = uuid.uuid4().hex
+    temporary = session / (token + ".tmp")
+    request = session / (token + ".request.json")
+    response = session / (token + ".reply.json")
+    timeout = 90
     try:
-        import matlab.engine as matlab_engine
-    except ImportError as err:
-        raise RuntimeError("Install the MATLAB Engine for Python matching your desktop release.") from err
-    # Naming is deliberate. An unspecified name may start a different MATLAB.
-    engine = matlab_engine.connect_matlab(name)
-    try:
-        value = engine.feval("acgui.live", action, json.dumps(q, allow_nan=False), nargout=1,
-                             stdout=StringIO(), stderr=StringIO())
-        return json.loads(value)
+        temporary.write_text(json.dumps({"action": action, "arguments": q, "deadline": time.time() + timeout},
+                                        allow_nan=False), encoding="utf-8")
+        temporary.replace(request)
+        end = time.monotonic() + timeout
+        while time.monotonic() < end:
+            if response.is_file():
+                result = json.loads(response.read_text(encoding="utf-8"))
+                if not result["ok"]:
+                    raise RuntimeError(result["identifier"] + " " + result["message"])
+                return json.loads(result["json"])
+            if not marker.is_file():
+                raise RuntimeError("The shared Acycle desktop closed.")
+            time.sleep(.075)
+        raise TimeoutError("The desktop did not reply in time. Inspect the window before retrying.")
     finally:
-        engine.quit()  # Detach this client from the user-owned shared session.
+        for file in (temporary, request, response):
+            file.unlink(missing_ok=True)
 
 
 def schemas():
-    if not os.environ.get("ACYCLE_GUI_ENGINE"):
+    if not os.environ.get("ACYCLE_GUI_SESSION"):
         return []
     text = {"type": "string"}
     revision = {"type": "integer", "minimum": 1}

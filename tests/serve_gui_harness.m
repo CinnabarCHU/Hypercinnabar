@@ -11,17 +11,34 @@ imwrite(reshape(uint8(1:100),10,10),fullfile(study,'core.png'));
 main = ac(study); h = acgui.state(main);
 h.listbox_acmain.Value = find(strcmp(cellstr(h.listbox_acmain.String),'series.csv'));
 cb = h.menu_filter.Callback; cb(h.menu_filter,[]);
-assert(strcmp(acgui.share('AcycleDesktopTest'),'AcycleDesktopTest'));
-fid = fopen(fullfile(root,'gui-ready'),'w'); fclose(fid);
+session = acgui.share(main); assert(strcmp(acgui.share(main),session));
+ready = fullfile(root,'gui-ready'); put([ready,'.tmp'],session); movefile([ready,'.tmp'],ready);
 deadline = tic;
 timeLimit = 420;
 if ~isempty(getenv('ACYCLE_PROVIDER_FIXTURE')), timeLimit = 900; end
 while ~isfile(fullfile(root,'gui-done')) && toc(deadline)<timeLimit
     drawnow;
+    command = fullfile(root,'gui-human-request');
+    if isfile(command)
+        action = fileread(command); delete(command);
+        try
+            result = gui_human_fixture(action);
+        catch err
+            result = getReport(err,'extended','hyperlinks','off');
+        end
+        file = fullfile(root,'gui-human-response'); put([file,'.tmp'],result); movefile([file,'.tmp'],file);
+    end
     pause(.05);
 end
 assert(isfile(fullfile(root,'gui-done')),'The external client did not finish.');
 assert(strcmp(strtrim(fileread(fullfile(root,'gui-done'))),'ok'),'The external client reported an error.');
 assert(isgraphics(main,'figure'),'Detaching the client closed the desktop.');
 delete(findall(groot,'Type','figure'));
+assert(~isfolder(session),'Closing Acycle should disconnect this shared session.');
+end
+
+function put(file,text)
+fid = fopen(file,'w','n','UTF-8');
+finish = onCleanup(@()fclose(fid)); %#ok<NASGU>
+fprintf(fid,'%s',text);
 end

@@ -115,7 +115,7 @@ export async function apply(ctx, config = {}) {
   if (config.acycleRoot) environment.ACYCLE_ROOT = resolve(config.acycleRoot)
   if (config.matlabExecutable) environment.MATLAB_EXECUTABLE = config.matlabExecutable
   if (config.backend) environment.ACYCLE_BACKEND = config.backend
-  if (config.guiEngine) environment.ACYCLE_GUI_ENGINE = config.guiEngine
+  if (config.guiSession) environment.ACYCLE_GUI_SESSION = resolve(config.guiSession)
   const options = { python, timeoutMs: config.timeoutMs || 3_600_000, environment }
   const delivery = deliveryConfig(config)
   ctx.systemPrompt.section({ name: 'acycle:research-workflow', order: 3200,

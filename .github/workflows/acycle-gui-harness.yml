@@ -47,13 +47,8 @@ jobs:
         with:
           release: R2024b
           products: Signal_Processing_Toolbox Statistics_and_Machine_Learning_Toolbox Image_Processing_Toolbox Curve_Fitting_Toolbox Optimization_Toolbox Wavelet_Toolbox
-      - name: Install the matching Python Engine and start X11
+      - name: Start the virtual display for native windows
         run: |
-          matlab_root="$(dirname "$(dirname "$(readlink -f "$(command -v matlab)")")")"
-          export LD_LIBRARY_PATH="$matlab_root/bin/glnxa64:${LD_LIBRARY_PATH:-}"
-          python -m pip install matlabengine==24.2.2
-          python -c 'import matlab.engine'
-          echo "ACYCLE_ENGINE_LIB=$matlab_root/bin/glnxa64" >> "$GITHUB_ENV"
           Xvfb :93 -screen 0 1600x1000x24 -ac -nolisten tcp > "$RUNNER_TEMP/xvfb.log" 2>&1 &
           echo 'DISPLAY=:93' >> "$GITHUB_ENV"
       - name: Install the synthetic window snapshot publisher
@@ -72,7 +67,6 @@ jobs:
             core.exportVariable('ACYCLE_PROVIDER_FIXTURE', '1');
       - name: Launch the external client
         run: |
-          export LD_LIBRARY_PATH="$ACYCLE_ENGINE_LIB:${LD_LIBRARY_PATH:-}"
           python -u tests/live_gui_client.py > "$RUNNER_TEMP/gui-client.log" 2>&1 &
       - name: Exercise the same MATLAB desktop across client calls
         uses: matlab-actions/run-command@v2

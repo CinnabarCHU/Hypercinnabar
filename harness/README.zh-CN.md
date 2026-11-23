@@ -1,6 +1,6 @@
 # Acycle 的 DeepSeek Harness 插件
 
-本分支 0.7.0 通过指定的本机 MATLAB Engine 接入可见桌面。[实时滤波和图像剖面](../migration/poc/HARNESS.zh-CN.md)
+本分支 0.7.0 通过 MATLAB 桌面提供的本机会话目录接入可见窗口。[实时滤波和图像剖面](../migration/poc/HARNESS.zh-CN.md)
 
 这个分支把 Acycle 的菜单接口装进 DeepSeek Harness。Python 负责传递参数、保存每次运行和交付文件，科学计算和绘图仍由已有的 MATLAB 方法完成。GUI 和 CLI 可以独立调用同一组接口。
 
