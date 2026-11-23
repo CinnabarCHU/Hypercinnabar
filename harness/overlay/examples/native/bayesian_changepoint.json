@@ -1,0 +1,44 @@
+{
+  "inputs": {
+    "proxy": "proxy.csv"
+  },
+  "steps": [
+    {
+      "id": "changepoint",
+      "entrypoint": "code/package/bayes_changepoint/bayes_cpt.m",
+      "arguments": [
+        {
+          "kind": "input",
+          "name": "proxy",
+          "format": "matrix"
+        },
+        {
+          "kind": "literal",
+          "value": 10
+        },
+        {
+          "kind": "literal",
+          "value": 4
+        },
+        {
+          "kind": "literal",
+          "value": 0.01
+        },
+        {
+          "kind": "literal",
+          "value": 1
+        },
+        {
+          "kind": "literal",
+          "value": 1
+        },
+        {
+          "kind": "literal",
+          "value": 1000
+        }
+      ],
+      "nargout": 3
+    }
+  ],
+  "seed": 1
+}

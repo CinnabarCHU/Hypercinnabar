@@ -4,3 +4,6 @@
 [submodule "upstream/master"]
 	path = upstream/master
 	url = https://github.com/mingsongli/acycle.git
+[submodule "upstream/harness"]
+	path = upstream/harness
+	url = https://github.com/JFjifang/Acycle_Harness.git

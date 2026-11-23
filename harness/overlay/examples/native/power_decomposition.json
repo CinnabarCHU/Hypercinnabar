@@ -1,0 +1,41 @@
+{
+  "inputs": {
+    "proxy": "proxy.csv"
+  },
+  "steps": [
+    {
+      "id": "power",
+      "entrypoint": "code/seriesanalysis/acyclePowerDecomposition.m",
+      "arguments": [
+        {
+          "kind": "input",
+          "name": "proxy",
+          "format": "matrix"
+        },
+        {
+          "kind": "literal",
+          "value": [
+            [
+              0.02,
+              0.03
+            ]
+          ]
+        },
+        {
+          "kind": "literal",
+          "value": {
+            "window_length": 100,
+            "step_length": 10,
+            "time_bandwidth": 2,
+            "fft_length": 512,
+            "total_band": [
+              0.005,
+              0.1
+            ]
+          }
+        }
+      ],
+      "nargout": 3
+    }
+  ]
+}

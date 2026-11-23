@@ -1,0 +1,28 @@
+{
+  "inputs": {
+    "proxy": "proxy.csv"
+  },
+  "steps": [
+    {
+      "id": "moments",
+      "entrypoint": "code/seriesanalysis/acycleSpectralMoments.m",
+      "arguments": [
+        {
+          "kind": "input",
+          "name": "proxy",
+          "format": "matrix"
+        },
+        {
+          "kind": "literal",
+          "value": {
+            "window_length": 100,
+            "step_length": 10,
+            "zero_padding_factor": 5,
+            "edge_padding": "none"
+          }
+        }
+      ],
+      "nargout": 2
+    }
+  ]
+}

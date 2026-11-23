@@ -1,0 +1,93 @@
+name: Acycle DeepSeek Harness plugin
+on:
+  push:
+    branches: [acycle-harness-menu]
+  workflow_dispatch:
+permissions:
+  contents: read
+
+jobs:
+  plugin:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          submodules: true
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+      - name: Assemble, build and install release packages
+        run: |
+          python harness/build.py "$RUNNER_TEMP/acycle-harness-src"
+          mkdir -p "$RUNNER_TEMP/release" "$RUNNER_TEMP/study"
+          python -m pip install pytest build
+          python -m build --wheel --outdir "$RUNNER_TEMP/release" "$RUNNER_TEMP/acycle-harness-src"
+          python -m pip install "$RUNNER_TEMP"/release/*.whl
+          cd "$RUNNER_TEMP/acycle-harness-src/plugin"
+          npm pack --pack-destination "$RUNNER_TEMP/release"
+      - name: Test Python interfaces and native plugin
+        run: |
+          cd "$RUNNER_TEMP/acycle-harness-src"
+          ACYCLE_TEST_SOURCE="$GITHUB_WORKSPACE/upstream/master" python -m pytest -q tests
+          node --test plugin/tests/{plugin,attachments}.test.mjs
+      - name: Mount installed plugin in both official tool runtimes
+        run: |
+          for version in 0.2.1-rc.3 0.2.2-rc.5; do
+            runtime="$RUNNER_TEMP/dsh-$version"
+            extra=()
+            if [[ "$version" == 0.2.2-rc.5 ]]; then
+              extra+=("@deepseek-ai/dsh-tool-executor-native@$version")
+            fi
+            npm install --prefix "$runtime" --no-fund --no-audit "@deepseek-ai/dsh-tools@$version" "@deepseek-ai/dsh-system-prompt@$version" "@deepseek-ai/dsh-skill@$version" "${extra[@]}" "$RUNNER_TEMP"/release/*.tgz
+            node "$RUNNER_TEMP/acycle-harness-src/scripts/installed_plugin_smoke.mjs" "$runtime" "$RUNNER_TEMP/study" "$runtime/node_modules/dsh-acycle/index.mjs"
+          done
+      - uses: matlab-actions/setup-matlab@v2
+        with:
+          release: R2024b
+          products: Image_Processing_Toolbox Signal_Processing_Toolbox Statistics_and_Machine_Learning_Toolbox
+      - name: Obtain the public GitHub MATLAB batch launcher
+        uses: actions/checkout@v4
+        with:
+          repository: matlab-actions/run-command
+          ref: 37b454c384483087929a3d652be474ba585a9659
+          path: .ci-mathworks
+          persist-credentials: false
+      - name: Run installed tools through Python and real MATLAB
+        env:
+          MW_BATCH_LICENSING_ONLINE: 'true'
+        run: |
+          launcher="$GITHUB_WORKSPACE/.ci-mathworks/dist/bin/glnxa64/run-matlab-command"
+          chmod +x "$launcher"
+          export ACYCLE_MATHWORKS_LAUNCHER="$launcher"
+          cat > "$RUNNER_TEMP/acycle-matlab" <<'SH'
+          #!/usr/bin/env bash
+          set -eu
+          [[ $# -eq 2 && $1 == -batch ]]
+          exec "$ACYCLE_MATHWORKS_LAUNCHER" "$2"
+          SH
+          chmod +x "$RUNNER_TEMP/acycle-matlab"
+          export MATLAB_EXECUTABLE="$RUNNER_TEMP/acycle-matlab" ACYCLE_MENU_ROOT="$GITHUB_WORKSPACE" ACYCLE_ROOT="$GITHUB_WORKSPACE/upstream/master"
+          runtime="$RUNNER_TEMP/dsh-0.2.2-rc.5"
+          node "$RUNNER_TEMP/acycle-harness-src/scripts/installed_plugin_smoke.mjs" "$runtime" "$RUNNER_TEMP/study" "$runtime/node_modules/dsh-acycle/index.mjs" --menu-matlab
+      - name: Upload failed MATLAB diagnostics
+        if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: matlab-diagnostics
+          path: ${{ runner.temp }}/study/.acycle/runs/
+          include-hidden-files: true
+          if-no-files-found: ignore
+      - uses: actions/upload-artifact@v4
+        with:
+          name: acycle-harness-0.6.0
+          path: ${{ runner.temp }}/release/
+      - uses: actions/upload-artifact@v4
+        with:
+          name: menu-science-examples
+          path: ${{ runner.temp }}/study/.acycle/runs/
+          include-hidden-files: true

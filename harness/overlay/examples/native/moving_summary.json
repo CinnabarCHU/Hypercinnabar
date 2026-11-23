@@ -1,0 +1,32 @@
+{
+  "inputs": {
+    "proxy": "proxy.csv"
+  },
+  "steps": [
+    {
+      "id": "summary",
+      "entrypoint": "code/seriesanalysis/acycleFixedBandwidthSummary.m",
+      "arguments": [
+        {
+          "kind": "input",
+          "name": "proxy",
+          "format": "matrix"
+        },
+        {
+          "kind": "literal",
+          "value": "mean"
+        },
+        {
+          "kind": "literal",
+          "value": {
+            "window_length": 20,
+            "step": 1,
+            "endpoint_policy": "complete",
+            "alpha": 0.05
+          }
+        }
+      ],
+      "nargout": 2
+    }
+  ]
+}

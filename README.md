@@ -1,5 +1,7 @@
 # Acycle GUIDE method migration
 
+[DeepSeek Harness 插件 0.6.0 安装、菜单调用及重放](harness/README.zh-CN.md)
+
 [按当前 GUI 菜单调用 GUIDE 和 master](migration/menu/README.zh-CN.md) · [全部菜单及版本选择值](migration/menu/MENUS.md)
 
 [逐项归并方案（62 项源码归属）](audit/MODULE_CONSOLIDATION.zh-CN.md) · [helper / analyzer / plotter 契约评审](audit/METHOD_ROLE_REVIEW.zh-CN.md)
