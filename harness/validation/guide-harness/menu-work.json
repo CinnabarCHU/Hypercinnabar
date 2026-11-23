@@ -1,0 +1,25 @@
+{
+  "case": "etp",
+  "run_id": "20261123T143226Z-174b49a7cd80",
+  "role": "helper",
+  "menu": "menu_waveletGUI",
+  "settings": {
+    "input": {
+      "operation": "WaveletSpectrum_legacy"
+    }
+  },
+  "sources": {
+    "file_input": {
+      "mode": "path",
+      "field": "data",
+      "source": {
+        "kind": "artifact",
+        "workflow": "45193115937",
+        "sha": "710953f73d8337e587f7b3d28f66b3981d539e87",
+        "run_id": "20261123T141904Z-dd3c2a2555c7",
+        "member": "processed.csv",
+        "digest": "32244c243095208e4501f284042840815ad487953b5a29522fd85368b4f1df0d"
+      }
+    }
+  }
+}
