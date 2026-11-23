@@ -1,10 +1,14 @@
 {
   "checked_compact_volumes": 76,
   "source_pages": 1922,
-  "compact_reading_pages": 3622,
-  "paired_edition_pages": 5544,
-  "compact_pdf_links": 7215,
-  "compact_pdf_bytes": 15926506,
+  "compact_reading_pages": 3708,
+  "paired_edition_pages": 5629,
+  "prior_public_readers": [
+    "SP",
+    "PR"
+  ],
+  "compact_pdf_links": 7213,
+  "compact_pdf_bytes": 18651610,
   "station_reader_pages": 84,
   "reference_pages_online": true,
   "inspected_internal_pdf_links": true

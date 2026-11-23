@@ -51,6 +51,16 @@ def stack_adjacent_scripts(paragraph):
         fragments[pos] = overlay
 
 
+def register_styled_fonts(fonts):
+    for family,stem,suffix,bolditalic in [(SERIF,'DejaVuSerif','Italic','BoldItalic'),
+                                           (SANS,'DejaVuSans','Oblique','BoldOblique')]:
+        for key,ttf in [(family+'Bold','Bold'),(family+'Italic',suffix),(family+'BoldItalic',bolditalic)]:
+            if key not in pdfmetrics.getRegisteredFontNames():
+                pdfmetrics.registerFont(TTFont(key,str(fonts/(stem+'-'+ttf+'.ttf'))))
+        pdfmetrics.registerFontFamily(family,normal=family,bold=family+'Bold',
+            italic=family+'Italic',boldItalic=family+'BoldItalic')
+
+
 class Reader:
     def __init__(self,docid,title,fonts):
         for key,name in [(SERIF,'DejaVuSerif.ttf'),(SANS,'DejaVuSans.ttf'),(BOLD,'DejaVuSans-Bold.ttf')]:
@@ -92,13 +102,7 @@ class Reader:
         """Lay out manuscript emphasis and script positions across page boundaries."""
         from reportlab.lib.styles import ParagraphStyle
         from reportlab.platypus import Paragraph
-        for family,stem,suffix,bolditalic in [(SERIF,'DejaVuSerif','Italic','BoldItalic'),
-                                               (SANS,'DejaVuSans','Oblique','BoldOblique')]:
-            for key,ttf in [(family+'Bold','Bold'),(family+'Italic',suffix),(family+'BoldItalic',bolditalic)]:
-                if key not in pdfmetrics.getRegisteredFontNames():
-                    pdfmetrics.registerFont(TTFont(key,str(fonts/(stem+'-'+ttf+'.ttf'))))
-            pdfmetrics.registerFontFamily(family,normal=family,bold=family+'Bold',
-                italic=family+'Italic',boldItalic=family+'BoldItalic')
+        register_styled_fonts(fonts)
         face,size,lead,color={'body':(SERIF,11.0,15.2,'#243335'),'heading':(SANS,10.2,14.5,'#173f40'),
             'caption':(SANS,9,12.8,'#305752'),'notice':(SANS,8.6,12,'#536a65')}[role]
         if role=='heading':markup='<b>'+markup+'</b>'
@@ -126,6 +130,54 @@ class Reader:
             self.y-=height
             if work:self.renew()
         self.y-=6 if role=='body' else 4
+    def printed_table(self,caption,rows,fonts):
+        """Render the collated print cells, their grouped headings and their caption together."""
+        from reportlab.lib.enums import TA_LEFT, TA_CENTER
+        from reportlab.lib.styles import ParagraphStyle
+        from reportlab.platypus import Paragraph, Table, TableStyle
+        register_styled_fonts(fonts)
+        width=W-96
+        ncols=sum(cell['span'] for cell in rows[0][1])
+        widths=[0.0]*ncols;data=[];spans=[]
+        for rownum,(is_header,cells) in enumerate(rows):
+            row=['']*ncols;col=0
+            for cell in cells:
+                span=cell['span']
+                align=TA_LEFT if col==0 else TA_CENTER
+                if ncols==4 and col==1:align=TA_LEFT  # species names in SR.C15 table 4
+                if cell.get('align'):align={'left':TA_LEFT,'center':TA_CENTER}[cell['align']]
+                style=ParagraphStyle('print-cell',fontName=SERIF,fontSize=9.2,leading=11.5,
+                                     textColor=HexColor('#243335'),alignment=align)
+                markup=cell['pdf'];row[col]=Paragraph(markup,style)
+                natural=pdfmetrics.stringWidth(cell['text'],SERIF,9.2)
+                if span==1:widths[col]=max(widths[col],natural+10)
+                else:
+                    start,end=(col,rownum),(col+span-1,rownum)
+                    spans.extend([('SPAN',start,end),('LINEBELOW',start,end,.35,HexColor('#a2b5a9'))])
+                col+=span
+            data.append(row)
+        total=sum(widths)
+        widths=[w*width/total for w in widths]
+        header_end=sum(is_header for is_header,_ in rows)-1
+        commands=[('VALIGN',(0,0),(-1,-1),'MIDDLE'),('TOPPADDING',(0,0),(-1,-1),2.4),
+                  ('BOTTOMPADDING',(0,0),(-1,-1),2.4),('LEFTPADDING',(0,0),(-1,-1),4),
+                  ('RIGHTPADDING',(0,0),(-1,-1),4),('BACKGROUND',(0,0),(-1,header_end),HexColor('#edf4ef')),
+                  ('LINEBELOW',(0,header_end),(-1,header_end),.65,HexColor('#6c8c82')),
+                  ('LINEBELOW',(0,-1),(-1,-1),.5,HexColor('#6c8c82'))]+spans
+        table=Table(data,colWidths=widths,style=TableStyle(commands))
+        _,height=table.wrap(width,H)
+        if caption:
+            title=Paragraph(caption,ParagraphStyle('print-caption',fontName=SANS,fontSize=9,leading=12.8,
+                                                  textColor=HexColor('#305752')))
+            _,title_height=title.wrap(width,H)
+            self.room(height+title_height+8)
+            title.drawOn(self.cv,48,self.y-title_height+9)
+            self.y-=title_height+4
+        else:
+            self.room(height+8)
+        table.drawOn(self.cv,48,self.y-height+6)
+        self.y-=height+9
+
     def table(self,asset,rows):
         cols=asset['display_columns'] or [c for c in rows[0] if c not in ('item_id','pdf_page','print_page')]
         cols=[c for c in cols if c in rows[0]]

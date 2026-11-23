@@ -32,14 +32,69 @@ def read_manifest(path):
     return rows
 
 
+def figure_witnesses(rows, identifiers):
+    """Return original-witness paths, including each figure's printed comparator."""
+    registered = {row['local_path']: row for row in rows}
+    with (ROOT/'data/figure_reproduction.csv').open(encoding='utf-8', newline='') as src:
+        figures = {row['item_id']: row for row in csv.DictReader(src)}
+    entries = {}
+    for manifest in sorted((ROOT/'revision').glob('figures_*/manifest.csv')):
+        with manifest.open(encoding='utf-8', newline='') as src:
+            for row in csv.DictReader(src):
+                key = row['item_id'].upper()
+                if key in entries:
+                    raise ValueError('Duplicate figure in revision manifests: '+key)
+                entries[key] = row
+    requested = {ident.upper() for ident in identifiers}
+    unknown = requested - entries.keys() - {'ALL'}
+    if unknown:
+        raise ValueError('Unknown revision figure '+', '.join(sorted(unknown)))
+    if 'ALL' in requested:
+        requested = set(entries)
+    expected = set()
+
+    def require(path, digest, key):
+        if path not in registered:
+            raise ValueError(f'{key}: original witness absent from supplied source registry: {path}')
+        if digest and registered[path]['sha256'] != digest:
+            raise ValueError(f'{key}: original witness SHA-256 disagrees with figure manifest: {path}')
+        expected.add(path)
+
+    for key in sorted(requested):
+        row = entries[key]
+        pdf_path = figures[key]['source_path']
+        if row.get('source_path') and row['source_path'] != pdf_path:
+            raise ValueError(f'{key}: conflicting source PDF paths')
+        require(pdf_path, row.get('source_pdf_sha256') or row.get('source_sha256'), key)
+        inputs = row['inputs'].split('|')
+        hashes = row.get('input_sha256','').split('|') if row.get('input_sha256') else ['']*len(inputs)
+        if len(inputs) != len(hashes):
+            raise ValueError(f'{key}: unexpected number of input hashes')
+        for path, digest in zip(inputs,hashes):
+            if path in registered or 'primary' in Path(path).parts:
+                if path.startswith('ir/primary/'):
+                    digest = digest or row.get('ir_table_sha256')
+                if path.startswith('disc/primary/') and '/CHEM/' in path:
+                    digest = digest or row.get('chem_sha256')
+                require(path, digest, key)
+            elif not (ROOT/path).is_file():
+                raise ValueError(f'{key}: bundled plotting input is missing: {path}')
+        for src_field, hash_field in [('native_source','native_sha256'), ('calibration_source','calibration_sha256')]:
+            if row.get(src_field):
+                require(row[src_field], row.get(hash_field), key)
+    return expected
+
+
 def select(rows,options):
     cols={c.upper().replace('-','_') for c in options.collection}
     unknown=cols-COLLECTIONS-SERIES
     if unknown:raise ValueError('Unknown collection '+', '.join(sorted(unknown)))
     docs={d.casefold() for d in options.doc};known={r['report_id'].casefold() for r in rows if r['report_id']}
     if docs-known:raise ValueError('Unknown document '+', '.join(sorted(docs-known)))
+    wanted = figure_witnesses(rows, options.figure) if getattr(options,'figure',None) else None
     found=[]
     for r in rows:
+        if wanted is not None and r['local_path'] not in wanted:continue
         related = {r['report_id'].casefold()} if options.pdf_only else {x.casefold() for x in r['doc_ids'].split('|')}
         if cols and r['collection'] not in cols and r['series'] not in cols:continue
         if docs and docs.isdisjoint(related):continue
@@ -102,9 +157,15 @@ def install(r,path,timeout):
 
 def process(r,root,offline,attempts,timeout):
     try:
-        path=(root/r['local_path']).resolve();path.relative_to(root)
+        relative = Path(r['local_path'])
+        if relative.is_absolute() or '..' in relative.parts:
+            raise ValueError('Registry path must be relative and stay within the source root')
+        path = root/relative
+        # Existing read-only archive mounts can be checked in either mode.
+        # Never install a missing file through a symlink outside the chosen root.
         if path.exists():return check_local(r,path)
         if offline:return result(r,'missing',detail='File absent from local source root')
+        path.resolve().relative_to(root)
         for attempt in range(attempts):
             try:return install(r,path,timeout)
             except HTTPError as err:
@@ -122,6 +183,7 @@ def main(argv=None):
     p.add_argument('--manifest',type=Path,default=INVENTORY,help='Alternative source-inventory CSV or CSV.gz')
     p.add_argument('--collection',action='append',default=[],help='SP_PR_IR, SR, CORE_PLATES or SHIPBOARD_CD (also SP/PR/IR/CD/PLATES). Repeat for a union.')
     p.add_argument('--doc',action='append',default=[],help='A report ID, e.g. IR.C11; includes associated chapter sources. Repeat for a union.')
+    p.add_argument('--figure',action='append',default=[],metavar='ITEM',help='Original PDF and numerical witnesses of a newly redrawn figure, e.g. IR11.F07. Repeat for a union, or use ALL for the whole revision.')
     p.add_argument('--prefix',action='append',default=[],help='Case-sensitive local-path prefix. Repeat for a union.')
     p.add_argument('--pdf-only',action='store_true',help='Only the indexed main PDFs; --doc selects just that document PDF')
     p.add_argument('--book',action='store_true',help='All 76 report PDFs plus all 246 electronic table witnesses used in the book')
@@ -135,7 +197,7 @@ def main(argv=None):
     p.add_argument('--report',type=Path,help='Write one CSV result per selected path')
     p.add_argument('--verbose',action='store_true',help='Print successful paths as well as errors')
     a=p.parse_args(argv)
-    if not any((a.collection,a.doc,a.prefix,a.pdf_only,a.book,a.all,a.list,a.offline)):p.error('Choose --doc, --collection, --prefix, --pdf-only, --book or --all. Use --list to inspect the registry.')
+    if not any((a.collection,a.doc,a.figure,a.prefix,a.pdf_only,a.book,a.all,a.list,a.offline)):p.error('Choose --figure, --doc, --collection, --prefix, --pdf-only, --book or --all. Use --list to inspect the registry.')
     if min(a.workers,a.attempts,a.timeout)<=0:p.error('workers, attempts and timeout must be positive')
     try:chosen=select(read_manifest(a.manifest),a)
     except (OSError,ValueError,KeyError) as err:p.error(str(err))

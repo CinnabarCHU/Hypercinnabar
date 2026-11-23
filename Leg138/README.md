@@ -1,6 +1,6 @@
 # Leg 138 航次资料与数字校读版
 
-双击 [站点浏览](browse.html) 或 [全卷目录](catalog.html)。两者都可离线使用。网页按报告自身的组织关系检索。某个编号来自航前拟钻、某个值来自后来的重复测量、某个图是现代复算，都能从对应条目分辨。分册 PDF 可从[离线分册索引](publication/chapters/index.html)打开；独立的[84 页站点校读本](publication/ODP138_Leg_Report_Edition.pdf)适合先通读。
+双击 [站点浏览](browse.html) 或 [全卷目录](catalog.html)。两者都可离线使用。网页按报告自身的组织关系检索。某个编号来自航前拟钻、某个值来自后来的重复测量、某个图是现代复算，都能从对应条目分辨。分册 PDF 可从[离线分册索引](publication/chapters/index.html)打开；独立的[84 页站点校读本](publication/ODP138_Leg_Report_Edition.pdf)适合先通读。新增的[逐章校记与图件对照](revision/README.md)包含 Site 846 站章全部正文与题注的影像校读、42 孔的 546 项刊载字段和 85 个新重绘图号。
 
 ## 本地检索
 
@@ -30,6 +30,8 @@ python tools/serve.py
 | 查询岩芯标尺的源图位置 | `/api/roi?core=844A1H&role=printed_ruler` |
 | 读取具名测井数值 | `/api/rows?dataset=CD.E2.LOG.844.ACT_GST&limit=10` |
 | 查历史古位置与作者的模型参数 | `/api/geography?site=846&age=5`、`/api/rotation-stages?site=846` |
+| 对看印本 OCR、校订段落和孔摘要字段 | `/api/page?doc=IR.C11&page=3`、`/api/collations?doc=SR.C15&q=raw` |
+| 查 Site 846 图 7 的轨道、输入文件、绘图代码和校记 | `/api/figure-reproductions?item=IR11.F07` |
 | 查原件与发布字段的描述 | `/api/sources?path=ir/primary/VOLUME/CHAPTERS/ir138_17.pdf`、`/api/fields?dataset=SR.C39.TABLE2.CORRECTED` |
 
 通用列表的分页使用 `limit` 和 `offset`。表行可加 `format=csv`。全文索引以 PDF 物理页定位，刊载印页和机器判读的页脚另列。SR 的页内提及、图表范围和数据行中出现站号是三种不同的证据。
@@ -43,7 +45,7 @@ python tools/serve.py
 | SR | 46 篇论文加 1 篇期刊重印。公开电子表或修订版本 67 份、124,288 个刊载行。原先 721 个候选逐项查原页，确认 718，撤回 3，另补 21 个附录；现有 809 个有效对象。230 张有效印表均定位到表体，含 76 个显式续段，共 306 段、88,600 个表体位置候选格。先前无字段资料的 177 个表号也已纳入。电子表疑行、栏位置与人工精校字段各自标注。 |
 | 船上数据 | 随盘 4,383 份来源可按文件回取。明确实验记录、校准后数据、拼接产品与后算图读各自保留。65 份测井产品已逐格回读，11 站的 149 个孔隙水记录逐行与章表配对。Site 844 二进制颜色表成功定位 57,969 个值的字节地址。 |
 | 岩芯、涂片、地理 | 593 张彩照均核过原生 JPEG、标尺及背景。592 张有可用的沉积物候选区域，43 张做过人工整板抽查。涂片 26 页、1,156 行、25,194 格可定位；93 格为逐格人审读法。现代站位与 IR 古位置各有自己的来源。Site 844/845 的 36 个古年龄行只刊纬度；Site 854 章内题作 851 的 9 行保留两个身份，默认不在地图上放点。 |
-| 原刊全文与图件 | 76 个分册、1,922 个主体来源页留有逐页证据。紧凑版共 3,622 页；另嵌入 1,922 张来源原页后组成 5,544 页的全卷对读版。现代正文取自来源文字层，栏序与段落是编辑推定，原刊页可直接回看。[逐图验收](data/FIGURES.md)覆盖 1,206 个正式编号图以及 25 个附属图件。代码重绘与结构化数据同存，扫描、图面读数、复算和待校图注明确区分。 |
+| 原刊全文与图件 | 76 个分册、1,922 个主体来源页。153 页有明确范围的逐行影像校读，另有跨站孔摘要，合计 165 个不重复来源页。Site 846 的 IR 正文、SR 第 15 和 30 章的正文与图注已完成本轮。1,206 个原图号中，109 个已有数据及绘图代码。[逐图验收](data/FIGURES.md)和[离线图文索引](revision/index.html)均可核查材料、图表版本及尚存差异。 |
 
 [电子原表校记](ir/core/edition2_native/README.md) · [IR 印表单元格](ir/core/edition2_print/README.md) · [SR 对象与异文](sr/core/edition2/README.md) · [SR 印表图面与单元格](sr/core/edition2_print/README.md) · [随盘工作流、反射光谱与测井](disc/core/edition2/README.md) · [原像素区域与涂片](plates/core/edition2/README.md) · [11 站速率图复建](figures/core/README.md) · [复合地层图与 106 份随盘来源](figures/core/composite_v2/README.md) · [原图、图注裁取及黑白 SVG 描摹](figures/core/published_artwork/README.md)
 
@@ -76,3 +78,5 @@ cp -R edition2 build/release-index
 python edition2/finish_release.py build/full build/release-index
 python tools/package_edition.py build/full build/Leg138_Full_Edition.zip
 ```
+
+本次公开分支更新 IR、SR 分册。SP、PR 的公开 PDF 沿用先前发行版，各自的新校记和本地重建代码见 [SP、PR 说明](revision/text_sp/README.md)。完整对读本包含这两册的新排版。读者自用时运行 `tools/publish_readers.py` 的默认模式即可为所有 76 册导出紧凑 PDF。

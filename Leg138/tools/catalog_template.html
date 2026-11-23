@@ -16,7 +16,7 @@
 <section class="pane" id="record" aria-live="polite" aria-label="选中资料"></section></div>
 <details id="rebuild"><summary>全卷现代版与原刊见证如何打开或重建</summary>
 <p>轻目录随附 76 个现代排版分册，以及站点校读本。含完整原刊页的版本需要原件；合并来源包后，在 Leg138 根目录运行以下命令。</p>
-<div class="links"><a href="publication/chapters/index.html">现代分册首页</a><a href="publication/ODP138_Leg_Report_Edition.pdf">84 页航次合刊</a><a href="edition2/documents.csv">分册与来源清单 CSV</a><a href="edition2/README.md">完整重建说明</a></div>
+<div class="links"><a href="publication/chapters/index.html">现代分册首页</a><a href="revision/index.html">正文校记与 85 幅新增重绘</a><a href="publication/ODP138_Leg_Report_Edition.pdf">84 页航次合刊</a><a href="edition2/documents.csv">分册与来源清单 CSV</a><a href="edition2/README.md">完整重建说明</a></div>
 <pre>python edition2/build_edition.py . full_edition --workers 4
 python edition2/verify_edition.py . full_edition
 python edition2/verify_regions.py full_edition</pre><p>重建后双击 <code>full_edition/index.html</code>。每册提供同页重排与原刊见证、来源坐标和核对资料。</p></details>

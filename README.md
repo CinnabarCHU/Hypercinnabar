@@ -4,7 +4,8 @@
 
 | 入口 | 内容 |
 |---|---|
-| [现代版分册目录](Leg138/publication/chapters/catalog.csv) | 76 份 PDF 共 3,622 页、合计约 15.2 MiB，按来源页保留现代正文、具名表和已核的图件对照。选取 [Site 846 站章](Leg138/publication/chapters/IR.C11.pdf)、[航前计划](Leg138/publication/chapters/SP.pdf)、[初报](Leg138/publication/chapters/PR.pdf) 或 [Shackleton 等的年代学章](Leg138/publication/chapters/SR.C06.pdf) 即可直接翻阅。章内原刊链接使用原来源物理页号。 |
+| [现代版分册目录](Leg138/publication/chapters/catalog.csv) | 76 份 PDF 共 3,708 页、合计约 17.8 MiB，按来源页保留现代正文、具名表和已核的图件对照。选取 [Site 846 站章](Leg138/publication/chapters/IR.C11.pdf)、[航前计划](Leg138/publication/chapters/SP.pdf)、[初报](Leg138/publication/chapters/PR.pdf) 或 [Shackleton 等的年代学章](Leg138/publication/chapters/SR.C06.pdf) 即可直接翻阅。章内原刊链接使用原来源物理页号。 |
+| [正文校记与数据重绘](Leg138/revision/README.md) | 153 页按范围校读正文、标题和题注，另校 42 孔摘要。109 幅编号图已有数值与程序，其中 85 幅为本轮新增。可直接看 [Site 846 综合地层图三页对照](Leg138/revision/figures_composite/IR11_F07_Comparison.pdf) 和 [SR 岸上研究 18 幅对照](Leg138/revision/figures_sr/comparison.pdf)。 |
 | [84 页逐站校读本](Leg138/publication/ODP138_Leg_Report_Edition.pdf) | 航次与站点、12 张拟钻站卡、11 站速率图对校、碳酸盐重复测量、岩芯与标尺分离。 |
 | [11 站复合地层柱图](Leg138/figures/core/composite_v2/Leg138_PR_Composite_Atlas.pdf) | 22 个原图页与独立重画并排，含 66 个密度、磁化率与反射率面板。图旁区分发布值、显示滤波及原刊解释层。 |
 | [使用、导出和复建](Leg138/README.md) | 双击离线浏览，或启动本机 JSON／CSV API。可按某一站、图表、孔、数据发布版本或文件 SHA-256 回溯。 |

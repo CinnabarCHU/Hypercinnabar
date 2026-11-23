@@ -1,5 +1,9 @@
 """Build all Leg 138 paired PDF/HTML readers, or selected documents, from a merged archive."""
 import argparse,csv,gzip,html,io,json,os,shutil,sys
+import filecmp
+import tempfile
+from uuid import uuid4
+from contextlib import contextmanager
 from collections import Counter,defaultdict
 from concurrent.futures import ProcessPoolExecutor
 from pathlib import Path
@@ -18,6 +22,7 @@ TITLES={'IR.138ir':'Initial Reports · front matter and contents','IR.ir138_pane
 'SR.138NDX':'Scientific Results · volume index'}
 CSS="""*{box-sizing:border-box}body{margin:0;color:#233937;background:#f9faf5;font:16px/1.57 system-ui,sans-serif}main{max-width:990px;margin:auto;padding:28px 32px 80px}h1,h2,h3{font-family:Georgia,serif;line-height:1.24;color:#174e46}h1{font-size:clamp(32px,5vw,57px);margin:14px 0 10px}h2{font-size:30px;margin:18px 0 10px}h3{font-size:19px;margin:12px 0 8px}a{color:#206858;text-underline-offset:3px}p{margin:.46em 0}section{background:white;border-top:2px solid #92b2a3;padding:14px 21px 20px;margin:22px 0}small,.meta,figcaption{font:13px/1.45 system-ui,sans-serif;color:#506b63}.article p{font:18px/1.55 Georgia,serif;max-width:80ch}.article p.caption{font:14px/1.48 system-ui;color:#335b4d}.bar,summary{color:#296656;font-weight:600}.bar a{margin-right:15px}details{margin:8px 0}summary{cursor:pointer}table{width:100%;text-align:left;border-collapse:collapse;font-size:13px}tr{border-bottom:1px solid #d9e4da}td,th{padding:5px 7px;vertical-align:top}th{background:#eef3eb;position:sticky;top:0}.scroll{overflow:auto;max-height:450px}figure{margin:15px 0}figure img{max-width:100%;max-height:560px}iframe{width:100%;height:75vh;border:1px solid #a9b7ad}header{border-bottom:1px solid #a9b7ad;padding-bottom:14px}.folio{margin-bottom:12px}.list{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:20px}code{font-size:12px;overflow-wrap:anywhere}@media(max-width:700px){main{padding:16px}section{padding:12px}.scroll{max-width:100%}}"""
 CSS += '.script-pair{display:inline-grid;grid-template-columns:max-content;vertical-align:-.22em;line-height:.78;align-items:start;text-align:left}.script-pair>sup,.script-pair>sub{font-size:.68em;position:static;vertical-align:baseline;line-height:1;grid-column:1}.script-pair>sup{grid-row:1}.script-pair>sub{grid-row:2}'
+CSS += '.table-scroll{overflow-x:auto}.collated-table{width:auto;max-width:100%;margin:.7em 0 1em;font-variant-numeric:tabular-nums}.collated-table caption{text-align:left;padding:0 0 .5em;font-weight:600;color:#335b4d}.collated-table th{position:static;text-align:center}.collated-table td,.collated-table th{white-space:nowrap}.collated-table td{text-align:center}.collated-table td:first-child,.collated-table th:first-child,.collated-table[data-columns="4"] :is(td,th):nth-child(2){text-align:left}.collated-table th[colspan]{border-bottom:1px solid #a2b5a9}'
 def link(url,label):return f'<a href="{E(str(url),quote=True)}">{E(str(label))}</a>'
 def header(title):
     return '<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>'+E(title)+'</title><style>'+CSS+'</style><body><main>'
@@ -46,6 +51,55 @@ def html_assets(resources,out):
             for i,r in enumerate(rows,1):chunks.append('<tr><td>'+str(i)+'</td>'+''.join('<td>'+E(value(r,k))+'</td>' for k in cols)+'</tr>')
             chunks.append('</tbody></table></div></details>')
     return ''.join(chunks)
+def printed_table_rows(blocks):
+    """Split addressed print readings into cells without discarding empty fields."""
+    rows=[]
+    alignments=blocks[0].get('column_alignments')
+    for block in blocks:
+        fields=block['text'].split('\t')
+        # The printed 41 k.y. heading and its rule also span the Interval column.
+        spans=(1,3,2,2) if block['id']=='SR.C15.p018.b005' else [1]*len(fields)
+        if len(spans)!=len(fields):raise ValueError(block['id'])
+        cells=[];offset=0
+        for field,span in zip(fields,spans):
+            end=offset+len(field)
+            marks=[dict(style=x['style'],begin=max(offset,x['begin'])-offset,end=min(end,x['end'])-offset)
+                   for x in block.get('inline_styles',[]) if max(offset,x['begin'])<min(end,x['end'])]
+            cell=dict(id=block['id'],text=field,inline_styles=marks)
+            cells.append(dict(text=field,span=span,pdf=styled_text(cell),html=styled_text(cell,html=True)))
+            if alignments:
+                cells[-1]['align']=alignments[len(cells)-1]
+            offset=end+1
+        rows.append((block['role']=='table_header',cells))
+    if len({sum(cell['span'] for cell in row) for _,row in rows})!=1:
+        raise ValueError('Inconsistent printed table column counts')
+    return rows
+
+
+def printed_table_html(caption,rows,labelled_by=None):
+    columns=sum(cell['span'] for cell in rows[0][1])
+    label=f' aria-labelledby="{E(labelled_by,quote=True)}"' if labelled_by else ''
+    parts=[f'<div class="table-scroll"><table class="collated-table" data-columns="{columns}"{label}>']
+    if caption:
+        parts.extend(['<caption>',styled_text(caption,html=True),'</caption>'])
+    parts.append('<thead>')
+    header=True
+    for is_header,cells in rows:
+        if header and not is_header:
+            parts.append('</thead><tbody>');header=False
+        opening='th' if is_header else 'td'
+        columns=[]
+        for cell in cells:
+            span=cell['span'];attrs=(f' colspan="{span}"' if span>1 else '')
+            if is_header:attrs+=(' scope="colgroup"' if span>1 else ' scope="col"')
+            if cell.get('align'):attrs+=f' style="text-align:{cell["align"]}"'
+            columns.append(f'<{opening}{attrs}>{cell["html"]}</{opening}>')
+        # Whitespace between cells also preserves the addressed tab-delimited reading.
+        parts.append('<tr>'+'\t'.join(columns)+'</tr>')
+    parts.append(('</thead>' if header else '</tbody>')+'</table></div>')
+    return ''.join(parts)
+
+
 def build_document(job):
     root,out,record,folios,assets,cards,fonts=job;docid=record['doc_id'];title=record['title'] or TITLES.get(docid,docid)
     source_path=root/record['local_source'];source=fitz.open(source_path)
@@ -79,10 +133,29 @@ def build_document(job):
             start=reader.num
             reader.paragraph('Collated site-card fields. The original page follows the reading text.' if iscard else (mode if collated or field_checks else NOTICE),'notice')
             if not reading:reader.paragraph(NOPROSE,'notice')
-            for j,(k,t) in enumerate(reading):
+            chunks=[];j=0
+            while j<len(reading):
+                k,t=reading[j]
+                captioned=collated and k=='caption' and j+1<len(visible) and visible[j+1]['role']=='table_header'
+                if collated and (captioned or visible[j]['role']=='table_header'):
+                    first=j+1 if captioned else j
+                    end=first
+                    while end<len(visible) and visible[end]['role'] in ('table_header','table_row'):end+=1
+                    rows=printed_table_rows(visible[first:end])
+                    caption=visible[j] if captioned else None
+                    intro=visible[j-1]['id'] if j and visible[j-1].get('introduces_table') else None
+                    reader.printed_table(styled_text(caption) if caption else None,rows,fonts)
+                    chunks.append(printed_table_html(caption,rows,intro))
+                    j=end
+                    continue
                 if collated and visible[j].get('inline_styles'):
                     reader.styled_paragraph(styled_text(visible[j]),k,fonts)
                 else:reader.paragraph(t,k)
+                tag='h3' if k=='heading' else 'p'
+                content=styled_text(visible[j],html=True) if collated else E(t)
+                anchor=f' id="{E(visible[j]["id"],quote=True)}"' if collated and visible[j].get('introduces_table') else ''
+                chunks.append(f'<{tag} class="{k}"{anchor}>{content}</{tag}>')
+                j+=1
             if part:
                 reader.paragraph('Page-linked data and editorial comparisons','heading')
                 for a in part:
@@ -93,11 +166,6 @@ def build_document(job):
                         reader.end();reader.header(src,folio,url,'Structured evidence')
                         reader.table(a,read(out/a['file']))
             last=reader.num;reader.end()
-            chunks=[]
-            for j,(k,t) in enumerate(reading):
-                tag='h3' if k=='heading' else 'p'
-                content=styled_text(visible[j],html=True) if collated else E(t)
-                chunks.append(f'<{tag} class="{k}">{content}</{tag}>')
             if not reading:chunks.append(note(NOPROSE))
             positioned=[(pk,ln) for pk in packets if pk['role']=='positioned' for ln in pk['lines']]
             if positioned:
@@ -145,10 +213,8 @@ def build_document(job):
     target.close();source.close()
     return summary,pageindex
 
-def main():
-    ap=argparse.ArgumentParser(description=__doc__);ap.add_argument('root',type=Path);ap.add_argument('output',type=Path);ap.add_argument('--doc',action='append')
-    ap.add_argument('--workers',type=int,default=3);ap.add_argument('--fonts',type=Path,default=Path('/usr/share/fonts/truetype/dejavu'))
-    a=ap.parse_args();root=a.root.resolve();out=a.output.resolve();datadir=root/'data' if (root/'data/documents.csv').exists() else root/'integration/core/data'
+def build(a,root,out):
+    datadir=root/'data' if (root/'data/documents.csv').exists() else root/'integration/core/data'
     docs=read(datadir/'documents.csv');selected={r['doc_id'] for r in docs} if not a.doc else set(a.doc)
     if selected-{r['doc_id'] for r in docs}:raise ValueError('Unknown document ID')
     for name in ('pdf','html','audit','resources'): (out/name).mkdir(parents=True,exist_ok=True)
@@ -188,5 +254,109 @@ def main():
     from composite_companion import add as add_composite
     composite=add_composite(root,out)
     if composite:(out/'composite_companion_checks.json').write_text(json.dumps(composite,indent=2)+'\n')
+
+def check_destination(out):
+    """Only replace a previous paired edition or an empty directory."""
+    if out.is_symlink() or (out.exists() and not out.is_dir()):
+        raise ValueError(f'Output must be a real directory: {out}')
+    if not out.exists() or not any(out.iterdir()):
+        return
+    try:
+        verification=json.loads((out/'verification.json').read_text(encoding='utf8'))
+        documents=read(out/'documents.csv')
+        if (verification['documents']==len(documents) and documents and
+                {'doc_id','source_pdf_sha256','edition_pdf_sha256'}<=documents[0].keys() and
+                all((out/k).is_dir() for k in ('pdf','html','audit','resources'))):
+            return
+    except (OSError,KeyError,ValueError):
+        pass
+    raise ValueError(f'Directory contains files outside a recognizable paired edition: {out}')
+
+
+@contextmanager
+def publish_lock(out):
+    """Serialize the short recover/swap step across builders sharing one output."""
+    name=out.parent/f'.{out.name}.edition.lock'
+    with name.open('a+b') as lock:
+        if os.name=='nt':
+            import msvcrt
+            if lock.tell()==0:
+                lock.write(b'0');lock.flush()
+            lock.seek(0)
+            msvcrt.locking(lock.fileno(),msvcrt.LK_LOCK,1)
+        else:
+            import fcntl
+            fcntl.flock(lock,fcntl.LOCK_EX)
+        # Closing the descriptor releases either OS lock, including after a crash.
+        yield
+
+
+def same_files(previous,out):
+    paths={p.relative_to(previous) for p in previous.rglob('*')}
+    if paths!={p.relative_to(out) for p in out.rglob('*')}:
+        return False
+    for rel in paths:
+        old,new=previous/rel,out/rel
+        if old.is_symlink() or new.is_symlink():return False
+        if old.is_dir() and new.is_dir():continue
+        if not (old.is_file() and new.is_file() and filecmp.cmp(old,new,shallow=False)):
+            return False
+    return True
+
+
+def recover_previous(out,previous):
+    if not previous.exists():
+        return
+    check_destination(previous)
+    if not out.exists():
+        previous.rename(out)
+    elif not any(previous.iterdir()):
+        previous.rmdir()
+    elif same_files(previous,out):
+        # Once deletion starts this copy can no longer restore an edition.
+        # Rename it first so a killed cleanup cannot block the next build.
+        obsolete=out.with_name(f'.{out.name}.edition-discard-{uuid4().hex}')
+        previous.rename(obsolete)
+        try:
+            shutil.rmtree(obsolete)
+        except OSError as error:
+            print(f'Edition published; identical old copy remains at {obsolete}: {error}',file=sys.stderr)
+    else:
+        backup=out.with_name(f'{out.name}.previous-{uuid4().hex}')
+        previous.rename(backup)
+        print(f'Previous edition and additional files retained at {backup}',flush=True)
+
+
+def main():
+    ap=argparse.ArgumentParser(description=__doc__);ap.add_argument('root',type=Path);ap.add_argument('output',type=Path);ap.add_argument('--doc',action='append')
+    ap.add_argument('--workers',type=int,default=3);ap.add_argument('--fonts',type=Path,default=Path('/usr/share/fonts/truetype/dejavu'))
+    a=ap.parse_args();root=a.root.resolve()
+    if a.output.is_symlink():
+        raise ValueError(f'Output cannot be a symlink: {a.output}')
+    out=a.output.resolve()
+    if out==root or out in root.parents:
+        raise ValueError('An edition output cannot contain its source directory')
+    out.parent.mkdir(parents=True,exist_ok=True)
+    previous=out.with_name(f'.{out.name}.edition-previous')
+    with publish_lock(out):
+        recover_previous(out,previous)
+        check_destination(out)
+    with tempfile.TemporaryDirectory(prefix=f'.{out.name}.building-',dir=out.parent) as work:
+        staged=Path(work)/'edition'
+        staged.mkdir()
+        build(a,root,staged)
+        with publish_lock(out):
+            recover_previous(out,previous)
+            check_destination(out)
+            if out.exists():
+                staged.chmod(out.stat().st_mode & 0o7777)
+                out.rename(previous)
+            try:
+                staged.rename(out)
+            except BaseException:
+                recover_previous(out,previous)
+                raise
+            recover_previous(out,previous)
+
 
 if __name__=='__main__':main()

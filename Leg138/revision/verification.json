@@ -1,0 +1,41 @@
+{
+  "verification": "passed",
+  "pixel_test_dpi": 144,
+  "comparison": "RGB bitmap byte equality with annotations hidden",
+  "revised_numbered_figures": 85,
+  "documents": 76,
+  "public_archival_readers": [
+    "PR",
+    "SP"
+  ],
+  "blank_collated_table_cells_checked_in_html": 23,
+  "branch_pdfs_intact": 76,
+  "collated_table_rows_checked_in_html": 43,
+  "hole_header_pages": 13,
+  "hole_header_pages_without_page_level_collation": 12,
+  "inline_style_spans_in_source_ledger": 783,
+  "inline_style_spans_verified_in_html": 783,
+  "ir_epoch_rows_verified_in_html_csv_and_paired_pdf": 5,
+  "ir_epoch_rows_verified_in_public_pdf": 5,
+  "paired_replot_grafts_pixel_identical": 87,
+  "partial_overlay_pages": 5,
+  "partial_overlay_source_addresses_checked": 223,
+  "public_replot_grafts_pixel_identical": 87,
+  "source_image_streams_preserved": 1893,
+  "source_witness_pages_preserved": 1922,
+  "visually_checked_hole_header_lines": 546,
+  "visually_collated_blocks_checked_in_html_and_audit": 1513,
+  "visually_collated_pages_with_stated_scope": 153,
+  "visually_collated_pages_by_document": {
+    "IR.C11": 69,
+    "PR": 53,
+    "SP": 7,
+    "SR.C15": 19,
+    "SR.C30": 5
+  },
+  "coverage_kinds_where_declared": {
+    "all_narrative_and_captions": 64,
+    "all_printed_text": 5
+  },
+  "accounting": "Scoped page collations include partial overlays. Hole-header lines and their pages are counted separately."
+}

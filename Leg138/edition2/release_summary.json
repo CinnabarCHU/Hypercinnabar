@@ -1,17 +1,17 @@
 {
   "documents": 76,
   "source_pages": 1922,
-  "typeset_pages": 3596,
-  "paired_pdf_pages": 5544,
+  "typeset_pages": 3594,
+  "paired_pdf_pages": 5629,
   "witness_pages_checked": 1922,
   "column_profile_pages": 923,
-  "cards_and_figure_comparisons": 26,
+  "cards_and_figure_comparisons": 113,
   "source_line_segments": 347324,
-  "resource_relations": 692,
+  "resource_relations": 779,
   "resource_kinds": {
     "table": 201,
     "card": 12,
-    "figure": 14,
+    "figure": 101,
     "svg": 11,
     "file": 246,
     "csv": 208
@@ -26,17 +26,17 @@
     "PR": {
       "documents": 1,
       "source_pages": 110,
-      "edition_pages": 286
+      "edition_pages": 285
     },
     "IR": {
       "documents": 23,
       "source_pages": 822,
-      "edition_pages": 2405
+      "edition_pages": 2472
     },
     "SR": {
       "documents": 51,
       "source_pages": 935,
-      "edition_pages": 2723
+      "edition_pages": 2742
     }
   },
   "rendered_table_representations": 201,

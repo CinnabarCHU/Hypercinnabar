@@ -2,11 +2,29 @@
   "documents": 76,
   "identical_pdf_files": 76,
   "source_pages": 1922,
-  "edition_pages": 5544,
-  "reference_catalog_sha256": "135710e021c936b636cea6d1f205e8ac377539fea883cc7e51c35e0d04eca1d3",
+  "edition_pages": 5629,
+  "reference_catalog_sha256": "d0cedb2154eb04438f5940f56eeb2cbf0ac06982ddac8cccea2ffdffbccca1bb",
   "differences": [],
   "source_files_fetched_independently_for_book": 322,
   "full_publication_sources": 76,
   "electronic_table_source_files": 246,
-  "sqlite_from_clean_public_branch_checkout_sha256": "f7da6a2963cb56b733c5ca912173f7467120b5d46ece3a95ea2273d7a4d803e6"
+  "sqlite_from_clean_public_branch_checkout_sha256": "70032f14c9f70f0f6fbf3372b47d750510458f0db2c9c0eb7f47157ddef064f7",
+  "independent_build_batches": {
+    "full_build_unchanged_products": 74,
+    "SR.C15_after_structured_table_typesetting": 1,
+    "IR.C11_after_structured_table_typesetting": 1
+  },
+  "sqlite_python_hash_seeds_verified": [
+    59,
+    117
+  ],
+  "new_figures_external_source_witnesses": 69,
+  "new_figures_external_witness_bytes": 137004681,
+  "new_figures_additional_sources_beyond_book_inputs": 17,
+  "complete_independent_build": {
+    "pdf_files_with_identical_bytes": 76,
+    "html_files_with_identical_bytes": 76,
+    "positioned_and_collated_ledgers_with_identical_bytes": 76,
+    "chapter_catalog_bytes_identical": true
+  }
 }

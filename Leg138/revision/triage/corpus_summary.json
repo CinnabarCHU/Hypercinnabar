@@ -1,0 +1,16 @@
+{
+  "mode": "all_eligible",
+  "documents": 76,
+  "pages_indexed": 1922,
+  "pages_with_sample": 1882,
+  "eligible_segments": 75633,
+  "sampled_segments": 75633,
+  "states": {
+    "literal_agreement": 42363,
+    "empty_new_reading": 2973,
+    "disagreement": 30297
+  },
+  "engine": "tesseract 5.5.0",
+  "pymupdf": "1.26.6",
+  "render_dpi": 240
+}

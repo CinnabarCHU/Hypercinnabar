@@ -1,11 +1,11 @@
 doc_id,source_page,printed_page,reader_first,reader_last,assigned_gutter_pt,column_mode,source_line_segments,reading_packets,positioned_packets,source_width_pt,source_height_pt,reading_text_status,pdf_table_assets,edition_first,edition_reading_last,edition_witness,graphics_count,render_check_dpi,witness_render_md5
-SP,1,,1,1,,single_or_unresolved,32,9,1,613.0,794.0,publisher OCR; reading order inferred,0,1,1,2,0,25.92,ce155a805b0c485e533852bee5f5822b
-SP,2,,2,2,,single_or_unresolved,38,11,1,614.0,794.0,publisher OCR; reading order inferred,0,3,3,4,0,25.92,563fb5c6a9cd9c8b842194d2f5e50a5c
-SP,3,3,3,4,,single_or_unresolved,40,10,2,612.0,794.0,publisher OCR; reading order inferred,0,5,6,7,0,25.92,58056d36404bb330a35fd3e901c56192
-SP,4,4,5,6,,single_or_unresolved,43,14,0,613.0,793.0,publisher OCR; reading order inferred,0,8,9,10,0,25.92,6b37d31f9425a6ec396859278ce9c0f6
-SP,5,5,7,7,,single_or_unresolved,41,7,2,612.0,794.0,publisher OCR; reading order inferred,0,11,11,12,0,25.92,678db0d719a56bfabedf8132257ac1ae
-SP,6,6,8,8,,single_or_unresolved,38,8,1,613.0,793.0,publisher OCR; reading order inferred,0,13,13,14,0,25.92,a8ed3e0dc83bfefd91d87b27d90782cc
-SP,7,7,9,9,,single_or_unresolved,10,4,3,612.0,792.0,publisher OCR; reading order inferred,0,15,15,16,0,25.92,e9d167b87f3075e61c0b7ac118692749
+SP,1,,1,1,,single_or_unresolved,32,10,1,613.0,794.0,Visually collated against the source scan. all printed text; three manuscript signatures retained in witness only,0,1,1,2,0,25.92,ce155a805b0c485e533852bee5f5822b
+SP,2,,2,3,,single_or_unresolved,38,15,1,614.0,794.0,Visually collated against the source scan. all printed text,0,3,4,5,0,25.92,563fb5c6a9cd9c8b842194d2f5e50a5c
+SP,3,3,4,4,,single_or_unresolved,40,9,2,612.0,794.0,Visually collated against the source scan. all printed text,0,6,6,7,0,25.92,58056d36404bb330a35fd3e901c56192
+SP,4,4,5,6,,single_or_unresolved,43,13,0,613.0,793.0,Visually collated against the source scan. all printed text,0,8,9,10,0,25.92,6b37d31f9425a6ec396859278ce9c0f6
+SP,5,5,7,7,,single_or_unresolved,41,8,2,612.0,794.0,Visually collated against the source scan. all printed text,0,11,11,12,0,25.92,678db0d719a56bfabedf8132257ac1ae
+SP,6,6,8,8,,single_or_unresolved,38,6,1,613.0,793.0,Visually collated against the source scan. all printed text,0,13,13,14,0,25.92,a8ed3e0dc83bfefd91d87b27d90782cc
+SP,7,7,9,9,,single_or_unresolved,10,5,3,612.0,792.0,Visually collated against the source scan. all printed text,0,15,15,16,0,25.92,e9d167b87f3075e61c0b7ac118692749
 SP,8,8,10,13,,single_or_unresolved,141,24,95,614.0,795.0,publisher OCR; reading order inferred,3,17,20,21,0,25.92,37f3d88178953650df9f9d78250b34bf
 SP,9,9,14,16,,single_or_unresolved,64,17,36,614.0,795.0,publisher OCR; reading order inferred,2,22,24,25,0,25.92,909d3f8e1e60f3254d5d0a019ca62606
 SP,10,10,17,18,,single_or_unresolved,148,16,105,612.0,794.0,publisher OCR; reading order inferred,1,26,27,28,0,25.92,3399570f7b962517dc770897a5a53eec
@@ -59,29 +59,29 @@ PR,2,,2,2,,single_or_unresolved,29,6,1,612.0,792.0,publisher OCR; reading order 
 PR,3,,3,3,,single_or_unresolved,1,1,0,611.0,792.0,publisher OCR; reading order inferred,0,5,5,6,0,25.92,6f949a949b03567ad65963b2470c2242
 PR,4,4,4,4,,single_or_unresolved,51,3,0,612.0,793.0,publisher OCR; reading order inferred,0,7,7,8,0,25.92,81ba615ad91ad8012c776b33ba9f453d
 PR,5,5,5,5,,single_or_unresolved,18,2,0,613.0,793.0,publisher OCR; reading order inferred,0,9,9,10,0,25.92,46e76e9c899f32ed0b1ee41f2d225bce
-PR,6,,6,7,,single_or_unresolved,39,13,0,611.0,792.0,publisher OCR; reading order inferred,0,11,12,13,0,25.92,19ec8aff2420bfe7a08bb3ab7f3d066c
-PR,7,8,8,9,,single_or_unresolved,41,11,0,613.0,793.0,publisher OCR; reading order inferred,0,14,15,16,0,25.92,2134cf337a2588dbcc27a90b5727c802
-PR,8,9,10,11,,single_or_unresolved,47,7,0,611.0,792.0,publisher OCR; reading order inferred,0,17,18,19,0,25.92,bfbe641ddef008b460e19469038b267f
-PR,9,10,12,13,,single_or_unresolved,47,7,0,611.0,793.0,publisher OCR; reading order inferred,0,20,21,22,0,25.92,4a057ca95d556ea136a60392abb08532
-PR,10,11,14,15,,single_or_unresolved,48,6,0,613.0,793.0,publisher OCR; reading order inferred,0,23,24,25,0,25.92,a1056c1d50c9e68467719380d0f7cd20
-PR,11,12,16,17,,single_or_unresolved,47,7,0,611.0,793.0,publisher OCR; reading order inferred,0,26,27,28,0,25.92,6678adbb075cd471b99836ca365c0672
-PR,12,13,18,19,,single_or_unresolved,48,6,0,611.0,792.0,publisher OCR; reading order inferred,0,29,30,31,0,25.92,80ba3376b98ef91be4c9f522b7002c96
-PR,13,14,20,21,,single_or_unresolved,48,6,0,611.0,792.0,publisher OCR; reading order inferred,0,32,33,34,0,25.92,b6ad16e4f66352aa9d61e1658b2846f3
-PR,14,15,22,23,,single_or_unresolved,47,5,0,611.0,792.0,publisher OCR; reading order inferred,0,35,36,37,0,25.92,6703aee8602df27503d46b0be0254893
-PR,15,16,24,25,,single_or_unresolved,48,6,0,612.0,793.0,publisher OCR; reading order inferred,0,38,39,40,0,25.92,ccfc4ba682a401efe9b87ec197fd7e9e
-PR,16,17,26,27,,single_or_unresolved,46,8,0,613.0,793.0,publisher OCR; reading order inferred,0,41,42,43,0,25.92,5730da4c409c12949b0406471a69b9dc
-PR,17,18,28,29,,single_or_unresolved,48,6,0,612.0,792.0,publisher OCR; reading order inferred,0,44,45,46,0,25.92,06f17bcb8323681f231e7d9293196f06
-PR,18,19,30,31,,single_or_unresolved,47,7,0,612.0,792.0,publisher OCR; reading order inferred,0,47,48,49,0,25.92,9af378eb8c876044410ba15fdd79a721
-PR,19,20,32,33,,single_or_unresolved,47,7,0,612.0,792.0,publisher OCR; reading order inferred,0,50,51,52,0,25.92,5ac81116c023eb989d3b8cd5221e1807
-PR,20,21,34,35,,single_or_unresolved,48,5,0,613.0,793.0,publisher OCR; reading order inferred,0,53,54,55,0,25.92,9d645c41005de357fc39935f48f8f36f
-PR,21,22,36,37,,single_or_unresolved,48,6,0,613.0,793.0,publisher OCR; reading order inferred,0,56,57,58,0,25.92,c66855d7b412a4b0a2d306362cdfe8fc
-PR,22,23,38,39,,single_or_unresolved,45,8,0,612.0,792.0,publisher OCR; reading order inferred,0,59,60,61,0,25.92,ae81c58f791e9f680b8f83ed69c10753
-PR,23,24,40,41,,single_or_unresolved,46,8,0,613.0,793.0,publisher OCR; reading order inferred,0,62,63,64,0,25.92,d3917dc188f283ad506ee523756b166c
-PR,24,25,42,43,,single_or_unresolved,46,7,0,612.0,792.0,publisher OCR; reading order inferred,0,65,66,67,0,25.92,226555f44e06c641d30ce7c8eaed766b
-PR,25,26,44,45,,single_or_unresolved,47,7,0,613.0,793.0,publisher OCR; reading order inferred,0,68,69,70,0,25.92,be1cdc627407500c42fb4a8b8650aa09
-PR,26,27,46,47,,single_or_unresolved,42,6,0,612.0,792.0,publisher OCR; reading order inferred,0,71,72,73,0,25.92,8cafec5db8abf4f2b54ef037417987f5
-PR,27,28,48,49,,single_or_unresolved,52,3,0,612.0,793.0,publisher OCR; reading order inferred,0,74,75,76,0,25.92,a7eaf3007109a56218ca6ad88bdb628b
-PR,28,29,50,50,,single_or_unresolved,15,2,0,614.0,794.0,publisher OCR; reading order inferred,0,77,77,78,0,25.92,e40c5ec8bd2d915631a40ef7d6a01c76
+PR,6,,6,7,,single_or_unresolved,39,13,0,611.0,792.0,Visually collated against the source scan. all printed text,0,11,12,13,0,25.92,19ec8aff2420bfe7a08bb3ab7f3d066c
+PR,7,8,8,9,,single_or_unresolved,41,12,0,613.0,793.0,Visually collated against the source scan. all printed text,0,14,15,16,0,25.92,2134cf337a2588dbcc27a90b5727c802
+PR,8,9,10,11,,single_or_unresolved,47,7,0,611.0,792.0,Visually collated against the source scan. all printed text,0,17,18,19,0,25.92,bfbe641ddef008b460e19469038b267f
+PR,9,10,12,13,,single_or_unresolved,47,8,0,611.0,793.0,Visually collated against the source scan. all printed text,0,20,21,22,0,25.92,4a057ca95d556ea136a60392abb08532
+PR,10,11,14,15,,single_or_unresolved,48,6,0,613.0,793.0,Visually collated against the source scan. all printed text,0,23,24,25,0,25.92,a1056c1d50c9e68467719380d0f7cd20
+PR,11,12,16,17,,single_or_unresolved,47,8,0,611.0,793.0,Visually collated against the source scan. all printed text,0,26,27,28,0,25.92,6678adbb075cd471b99836ca365c0672
+PR,12,13,18,19,,single_or_unresolved,48,6,0,611.0,792.0,Visually collated against the source scan. all printed text,0,29,30,31,0,25.92,80ba3376b98ef91be4c9f522b7002c96
+PR,13,14,20,21,,single_or_unresolved,48,7,0,611.0,792.0,Visually collated against the source scan. all printed text,0,32,33,34,0,25.92,b6ad16e4f66352aa9d61e1658b2846f3
+PR,14,15,22,23,,single_or_unresolved,47,5,0,611.0,792.0,Visually collated against the source scan. all printed text,0,35,36,37,0,25.92,6703aee8602df27503d46b0be0254893
+PR,15,16,24,25,,single_or_unresolved,48,6,0,612.0,793.0,Visually collated against the source scan. all printed text,0,38,39,40,0,25.92,ccfc4ba682a401efe9b87ec197fd7e9e
+PR,16,17,26,27,,single_or_unresolved,46,9,0,613.0,793.0,Visually collated against the source scan. all printed text,0,41,42,43,0,25.92,5730da4c409c12949b0406471a69b9dc
+PR,17,18,28,29,,single_or_unresolved,48,7,0,612.0,792.0,Visually collated against the source scan. all printed text,0,44,45,46,0,25.92,06f17bcb8323681f231e7d9293196f06
+PR,18,19,30,31,,single_or_unresolved,47,8,0,612.0,792.0,Visually collated against the source scan. all printed text,0,47,48,49,0,25.92,9af378eb8c876044410ba15fdd79a721
+PR,19,20,32,33,,single_or_unresolved,47,7,0,612.0,792.0,Visually collated against the source scan. all printed text,0,50,51,52,0,25.92,5ac81116c023eb989d3b8cd5221e1807
+PR,20,21,34,35,,single_or_unresolved,48,5,0,613.0,793.0,Visually collated against the source scan. all printed text,0,53,54,55,0,25.92,9d645c41005de357fc39935f48f8f36f
+PR,21,22,36,37,,single_or_unresolved,48,7,0,613.0,793.0,Visually collated against the source scan. all printed text,0,56,57,58,0,25.92,c66855d7b412a4b0a2d306362cdfe8fc
+PR,22,23,38,39,,single_or_unresolved,45,9,0,612.0,792.0,Visually collated against the source scan. all printed text,0,59,60,61,0,25.92,ae81c58f791e9f680b8f83ed69c10753
+PR,23,24,40,41,,single_or_unresolved,46,10,0,613.0,793.0,Visually collated against the source scan. all printed text,0,62,63,64,0,25.92,d3917dc188f283ad506ee523756b166c
+PR,24,25,42,43,,single_or_unresolved,46,7,0,612.0,792.0,Visually collated against the source scan. all printed text,0,65,66,67,0,25.92,226555f44e06c641d30ce7c8eaed766b
+PR,25,26,44,45,,single_or_unresolved,47,8,0,613.0,793.0,Visually collated against the source scan. all printed text,0,68,69,70,0,25.92,be1cdc627407500c42fb4a8b8650aa09
+PR,26,27,46,47,,single_or_unresolved,42,6,0,612.0,792.0,Visually collated against the source scan. all printed text,0,71,72,73,0,25.92,8cafec5db8abf4f2b54ef037417987f5
+PR,27,28,48,49,,single_or_unresolved,52,22,0,612.0,793.0,Visually collated against the source scan. all printed text,0,74,75,76,0,25.92,a7eaf3007109a56218ca6ad88bdb628b
+PR,28,29,50,50,,single_or_unresolved,15,5,0,614.0,794.0,Visually collated against the source scan. all printed text,0,77,77,78,0,25.92,e40c5ec8bd2d915631a40ef7d6a01c76
 PR,29,30,51,55,,single_or_unresolved,412,11,126,792.0,611.0,publisher OCR; reading order inferred,1,79,83,84,0,25.92,275e6cd510de2a5dc837206862461056
 PR,30,31,56,56,,single_or_unresolved,451,21,207,793.0,611.0,publisher OCR; reading order inferred,0,85,85,86,0,25.92,b3ba416a80ab605696df157fd1d7715c
 PR,31,32,57,57,,single_or_unresolved,15,2,2,616.0,796.0,publisher OCR; reading order inferred,0,87,87,88,0,25.92,dc9f013d66b41bce2d42feeb08ab0e35
@@ -131,39 +131,39 @@ PR,74,76,101,101,,single_or_unresolved,32,2,14,612.0,793.0,publisher OCR; readin
 PR,75,77,102,102,,single_or_unresolved,20,5,1,611.0,793.0,publisher OCR; reading order inferred,0,187,187,188,0,25.92,58d3e9bf20d14411530cd616e94c5230
 PR,76,,103,103,,single_or_unresolved,29,1,14,799.0,620.0,publisher OCR; reading order inferred,0,189,189,190,0,25.92,123e7911db26f16d4ade9357c450502c
 PR,77,79,104,104,,single_or_unresolved,28,4,12,613.0,793.0,publisher OCR; reading order inferred,0,191,191,193,1,25.92,ee64a46d85ad726a459d9348a55e27c7
-PR,78,,105,105,,single_or_unresolved,1,1,0,611.0,792.0,publisher OCR; reading order inferred,0,194,194,195,0,25.92,e456bbca734691d9d1497b9a7a9fa6d8
-PR,79,82,106,106,,single_or_unresolved,9,3,0,611.0,792.0,publisher OCR; reading order inferred,0,196,196,197,0,25.92,b58a5dcbab0fbed6352c30a508724594
-PR,80,,107,108,,single_or_unresolved,44,10,0,613.0,794.0,publisher OCR; reading order inferred,0,198,199,200,0,25.92,f9f17c8083750714020972909aa8a74f
-PR,81,84,109,110,,single_or_unresolved,41,9,0,612.0,793.0,publisher OCR; reading order inferred,0,201,202,203,0,25.92,a82326be1876e78c779376f6915132bd
-PR,82,85,111,112,,single_or_unresolved,44,9,0,611.0,792.0,publisher OCR; reading order inferred,0,204,205,206,0,25.92,b25fde39014e9a420fa5812102bd880d
-PR,83,86,113,114,,single_or_unresolved,42,9,0,611.0,792.0,publisher OCR; reading order inferred,0,207,208,209,0,25.92,761517929147786512dfe1421c05f413
-PR,84,87,115,116,,single_or_unresolved,44,10,0,612.0,792.0,publisher OCR; reading order inferred,0,210,211,212,0,25.92,b6600a546532899d1fc5bc32b48c0326
-PR,85,88,117,118,,single_or_unresolved,41,10,0,611.0,792.0,publisher OCR; reading order inferred,0,213,214,215,0,25.92,eae6ba6e03e830cf6f62846178de6910
-PR,86,89,119,120,,single_or_unresolved,45,9,0,613.0,793.0,publisher OCR; reading order inferred,0,216,217,218,0,25.92,ca555adb2ac32a617a0f5461ea3c1696
-PR,87,90,121,122,,single_or_unresolved,40,11,0,613.0,794.0,publisher OCR; reading order inferred,0,219,220,221,0,25.92,8949e78e70d7f0bf9912b7430ef03df1
-PR,88,91,123,124,,single_or_unresolved,44,9,0,611.0,792.0,publisher OCR; reading order inferred,0,222,223,224,0,25.92,4571cf200ffa21fa8c26127a2c35b4f9
-PR,89,92,125,126,,single_or_unresolved,42,10,0,611.0,792.0,publisher OCR; reading order inferred,0,225,226,227,0,25.92,a967f9d76d3b8a1ff891928f6f286f46
-PR,90,93,127,128,,single_or_unresolved,43,9,0,613.0,793.0,publisher OCR; reading order inferred,0,228,229,230,0,25.92,25413775fa9cdc356aa9e7128f89b3bc
-PR,91,94,129,130,,single_or_unresolved,42,10,0,612.0,793.0,publisher OCR; reading order inferred,0,231,232,233,0,25.92,a3edb6667577e75e9e05dfd6e2a87e39
-PR,92,95,131,132,,single_or_unresolved,42,10,0,612.0,792.0,publisher OCR; reading order inferred,0,234,235,236,0,25.92,2e61648cb38e0d47e83d9d1df2d8a9aa
-PR,93,96,133,134,,single_or_unresolved,43,11,0,612.0,792.0,publisher OCR; reading order inferred,0,237,238,239,0,25.92,9b6792c79794cc715693fc203d5a8bd1
-PR,94,97,135,136,,single_or_unresolved,42,10,0,613.0,794.0,publisher OCR; reading order inferred,0,240,241,242,0,25.92,85fb4d7c5114181fda0e3feeca08c30a
-PR,95,98,137,138,,single_or_unresolved,41,10,0,612.0,793.0,publisher OCR; reading order inferred,0,243,244,245,0,25.92,04554a619c583f29d59b22a9cc739c8c
-PR,96,99,139,140,,single_or_unresolved,42,11,0,612.0,792.0,publisher OCR; reading order inferred,0,246,247,248,0,25.92,5e6e9ee5af62fb7c84d96977953d0c98
-PR,97,100,141,142,,single_or_unresolved,41,8,0,612.0,793.0,publisher OCR; reading order inferred,0,249,250,251,0,25.92,faea1b3a3ae9544c27bd4e3e9586c1f3
-PR,98,101,143,143,,single_or_unresolved,6,3,0,612.0,792.0,publisher OCR; reading order inferred,0,252,252,253,0,25.92,f0ba5f7194730ef000b471271646f340
+PR,78,,105,105,,single_or_unresolved,1,1,0,611.0,792.0,Visually collated against the source scan. all printed text,0,194,194,195,0,25.92,e456bbca734691d9d1497b9a7a9fa6d8
+PR,79,82,106,106,,single_or_unresolved,9,4,0,611.0,792.0,Visually collated against the source scan. all printed text,0,196,196,197,0,25.92,b58a5dcbab0fbed6352c30a508724594
+PR,80,,107,108,,single_or_unresolved,44,12,0,613.0,794.0,Visually collated against the source scan. all printed text,0,198,199,200,0,25.92,f9f17c8083750714020972909aa8a74f
+PR,81,84,109,110,,single_or_unresolved,41,13,0,612.0,793.0,Visually collated against the source scan. all printed text,0,201,202,203,0,25.92,a82326be1876e78c779376f6915132bd
+PR,82,85,111,112,,single_or_unresolved,44,12,0,611.0,792.0,Visually collated against the source scan. all printed text,0,204,205,206,0,25.92,b25fde39014e9a420fa5812102bd880d
+PR,83,86,113,114,,single_or_unresolved,42,11,0,611.0,792.0,Visually collated against the source scan. all printed text,0,207,208,209,0,25.92,761517929147786512dfe1421c05f413
+PR,84,87,115,116,,single_or_unresolved,44,13,0,612.0,792.0,Visually collated against the source scan. all printed text,0,210,211,212,0,25.92,b6600a546532899d1fc5bc32b48c0326
+PR,85,88,117,118,,single_or_unresolved,41,12,0,611.0,792.0,Visually collated against the source scan. all printed text,0,213,214,215,0,25.92,eae6ba6e03e830cf6f62846178de6910
+PR,86,89,119,120,,single_or_unresolved,45,11,0,613.0,793.0,Visually collated against the source scan. all printed text,0,216,217,218,0,25.92,ca555adb2ac32a617a0f5461ea3c1696
+PR,87,90,121,122,,single_or_unresolved,40,14,0,613.0,794.0,Visually collated against the source scan. all printed text,0,219,220,221,0,25.92,8949e78e70d7f0bf9912b7430ef03df1
+PR,88,91,123,124,,single_or_unresolved,44,12,0,611.0,792.0,Visually collated against the source scan. all printed text,0,222,223,224,0,25.92,4571cf200ffa21fa8c26127a2c35b4f9
+PR,89,92,125,126,,single_or_unresolved,42,13,0,611.0,792.0,Visually collated against the source scan. all printed text,0,225,226,227,0,25.92,a967f9d76d3b8a1ff891928f6f286f46
+PR,90,93,127,128,,single_or_unresolved,43,11,0,613.0,793.0,Visually collated against the source scan. all printed text,0,228,229,230,0,25.92,25413775fa9cdc356aa9e7128f89b3bc
+PR,91,94,129,130,,single_or_unresolved,42,13,0,612.0,793.0,Visually collated against the source scan. all printed text,0,231,232,233,0,25.92,a3edb6667577e75e9e05dfd6e2a87e39
+PR,92,95,131,132,,single_or_unresolved,42,13,0,612.0,792.0,Visually collated against the source scan. all printed text,0,234,235,236,0,25.92,2e61648cb38e0d47e83d9d1df2d8a9aa
+PR,93,96,133,134,,single_or_unresolved,43,14,0,612.0,792.0,Visually collated against the source scan. all printed text,0,237,238,239,0,25.92,9b6792c79794cc715693fc203d5a8bd1
+PR,94,97,135,136,,single_or_unresolved,42,13,0,613.0,794.0,Visually collated against the source scan. all printed text,0,240,241,242,0,25.92,85fb4d7c5114181fda0e3feeca08c30a
+PR,95,98,137,138,,single_or_unresolved,41,13,0,612.0,793.0,Visually collated against the source scan. all printed text,0,243,244,245,0,25.92,04554a619c583f29d59b22a9cc739c8c
+PR,96,99,139,140,,single_or_unresolved,42,15,0,612.0,792.0,Visually collated against the source scan. all printed text,0,246,247,248,0,25.92,5e6e9ee5af62fb7c84d96977953d0c98
+PR,97,100,141,142,,single_or_unresolved,41,11,0,612.0,793.0,Visually collated against the source scan. all printed text,0,249,250,251,0,25.92,faea1b3a3ae9544c27bd4e3e9586c1f3
+PR,98,101,143,143,,single_or_unresolved,6,3,0,612.0,792.0,Visually collated against the source scan. all printed text,0,252,252,253,0,25.92,f0ba5f7194730ef000b471271646f340
 PR,99,102,144,145,,single_or_unresolved,53,3,2,614.0,794.0,publisher OCR; reading order inferred,1,254,255,256,0,25.92,9540ea267dcb3bbb63fa17c5a794a0bf
 PR,100,103,146,147,,single_or_unresolved,10,5,0,612.0,795.0,publisher OCR; reading order inferred,1,257,258,259,0,25.92,39d7562de77072cf415852bae7260a17
-PR,101,,148,148,,single_or_unresolved,1,1,0,611.0,791.0,publisher OCR; reading order inferred,0,260,260,261,0,25.92,2868d6df2f27a17139572e2f0158169f
-PR,102,106,149,149,,single_or_unresolved,33,21,1,612.0,792.0,publisher OCR; reading order inferred,0,262,262,263,0,25.92,17117ca7c10e0de46d40a7e4dfac9878
-PR,103,,150,151,,single_or_unresolved,42,11,0,612.0,793.0,publisher OCR; reading order inferred,0,264,265,266,0,25.92,031eb3980cf5788b7cfe7d8ce980a1d3
-PR,104,108,152,153,,single_or_unresolved,42,10,0,612.0,792.0,publisher OCR; reading order inferred,0,267,268,269,0,25.92,94920f6c6542feb10c075e9a83f443cc
-PR,105,109,154,155,,single_or_unresolved,46,8,0,612.0,793.0,publisher OCR; reading order inferred,0,270,271,272,0,25.92,2ff77fe1b51758f1f870aeb05680431d
-PR,106,110,156,157,,single_or_unresolved,39,13,0,611.0,792.0,publisher OCR; reading order inferred,0,273,274,275,0,25.92,2160d862d0acb7321e4002ef1684ed13
-PR,107,111,158,159,,single_or_unresolved,37,14,0,613.0,793.0,publisher OCR; reading order inferred,0,276,277,278,0,25.92,bd0032cc81b0d7cb019f620b8fd2e6a9
-PR,108,112,160,161,,single_or_unresolved,37,13,0,613.0,793.0,publisher OCR; reading order inferred,0,279,280,281,0,25.92,ec5addb1f7aa589e801e4b1336e7876d
-PR,109,113,162,162,,single_or_unresolved,33,11,0,611.0,792.0,publisher OCR; reading order inferred,0,282,282,283,0,25.92,ca65583f3a4d2af6f0dd2b605977307c
-PR,110,114,163,164,,single_or_unresolved,54,10,3,612.0,792.0,publisher OCR; reading order inferred,1,284,285,286,0,25.92,41fbbebc79b98e1f782d6c4146f549f0
+PR,101,,148,148,,single_or_unresolved,1,1,0,611.0,791.0,Visually collated against the source scan. all printed text,0,260,260,261,0,25.92,2868d6df2f27a17139572e2f0158169f
+PR,102,106,149,149,,single_or_unresolved,33,12,1,612.0,792.0,Visually collated against the source scan. all printed text,0,262,262,263,0,25.92,17117ca7c10e0de46d40a7e4dfac9878
+PR,103,,150,151,,single_or_unresolved,42,11,0,612.0,793.0,Visually collated against the source scan. all printed text,0,264,265,266,0,25.92,031eb3980cf5788b7cfe7d8ce980a1d3
+PR,104,108,152,153,,single_or_unresolved,42,10,0,612.0,792.0,Visually collated against the source scan. all printed text,0,267,268,269,0,25.92,94920f6c6542feb10c075e9a83f443cc
+PR,105,109,154,155,,single_or_unresolved,46,8,0,612.0,793.0,Visually collated against the source scan. all printed text,0,270,271,272,0,25.92,2ff77fe1b51758f1f870aeb05680431d
+PR,106,110,156,157,,single_or_unresolved,39,13,0,611.0,792.0,Visually collated against the source scan. all printed text,0,273,274,275,0,25.92,2160d862d0acb7321e4002ef1684ed13
+PR,107,111,158,159,,single_or_unresolved,37,14,0,613.0,793.0,Visually collated against the source scan. all printed text,0,276,277,278,0,25.92,bd0032cc81b0d7cb019f620b8fd2e6a9
+PR,108,112,160,160,,single_or_unresolved,37,13,0,613.0,793.0,Visually collated against the source scan. all printed text,0,279,279,280,0,25.92,ec5addb1f7aa589e801e4b1336e7876d
+PR,109,113,161,161,,single_or_unresolved,33,11,0,611.0,792.0,Visually collated against the source scan. all printed text,0,281,281,282,0,25.92,ca65583f3a4d2af6f0dd2b605977307c
+PR,110,114,162,163,,single_or_unresolved,54,10,3,612.0,792.0,publisher OCR; reading order inferred,1,283,284,285,0,25.92,41fbbebc79b98e1f782d6c4146f549f0
 IR.138ir,1,,1,1,,single_or_unresolved,32,21,2,597.0,800.0,publisher OCR; reading order inferred,0,1,1,2,0,25.92,6a7434116818474a490a170bc3a1c39b
 IR.138ir,2,,2,3,,single_or_unresolved,48,22,2,594.0,798.0,publisher OCR; reading order inferred,0,3,4,5,0,25.92,3c1aa402d796aab26ca0509fde23e58c
 IR.138ir,3,,4,5,,single_or_unresolved,55,7,0,593.0,798.0,publisher OCR; reading order inferred,0,6,7,8,0,25.92,73a40419f41df7e741a0286e8478ae5e
@@ -294,7 +294,7 @@ IR.C08,12,112,16,16,,single_or_unresolved,53,2,7,591.0,797.0,publisher OCR; read
 IR.C08,13,113,17,17,,single_or_unresolved,10,2,4,595.0,800.0,publisher OCR; reading order inferred,0,29,29,30,0,25.92,e330114b3720eabdd1c779e195a3840c
 IR.C08,14,114,18,18,,single_or_unresolved,46,1,6,591.0,797.0,publisher OCR; reading order inferred,0,31,31,32,0,25.92,16b2f608b71fb13895760656bbee75de
 IR.C08,15,115,19,19,,single_or_unresolved,15,2,9,591.0,798.0,publisher OCR; reading order inferred,0,33,33,34,0,25.92,82ca0f69af18dd8aac58a839313a6f49
-IR.C09,1,119,1,3,257.3,two_column_bands,91,66,9,583.0,797.0,publisher OCR; reading order inferred,0,1,3,4,0,25.92,aa95053fa53c1e20bb33857126d2fcce
+IR.C09,1,119,1,3,257.3,two_column_bands,91,70,9,583.0,797.0,"52 visually checked hole-header lines (operations, coordinates, depths and recovery). Other text uses the publisher OCR.",0,1,3,4,0,25.92,aa95053fa53c1e20bb33857126d2fcce
 IR.C09,2,120,4,6,309.5,two_column_bands,127,26,3,581.0,795.0,publisher OCR; reading order inferred,0,5,7,8,0,25.92,74f914666f3e90f79ecfd5804af582e5
 IR.C09,3,121,7,8,275.2,two_column_bands,58,10,4,581.0,795.0,publisher OCR; reading order inferred,0,9,10,11,0,25.92,ceec307e3d9523252d81a9679d163339
 IR.C09,4,122,9,10,306.75,two_column_bands,90,18,18,582.0,796.0,publisher OCR; reading order inferred,0,12,13,14,0,25.92,dacfdaf690d271fb98332df4366fa73e
@@ -333,38 +333,38 @@ IR.C09,36,154,78,78,,single_or_unresolved,72,4,60,581.0,795.0,publisher OCR; rea
 IR.C09,37,155,79,83,,single_or_unresolved,349,8,30,583.0,796.0,publisher OCR; reading order inferred,1,115,119,120,0,25.92,6483d1473afdc0e3694b140edd1eb9f0
 IR.C09,38,156,84,87,306.35,two_column_bands,381,19,99,581.0,795.0,publisher OCR; reading order inferred,1,121,124,125,0,25.92,66b002178efcc5db8cf4678857dc8305
 IR.C09,39,157,88,88,,single_or_unresolved,25,6,11,581.0,795.0,publisher OCR; reading order inferred,0,126,126,127,0,25.92,c8068ed358bd5084f95a21c9d65a1340
-IR.C09,40,158,89,91,,single_or_unresolved,354,16,60,581.0,795.0,publisher OCR; reading order inferred,1,128,130,131,0,25.92,be2633fe2539d4210aa6a80d5aa101ce
-IR.C09,41,159,92,93,273.92,two_column_bands,76,14,14,581.0,796.0,publisher OCR; reading order inferred,0,132,133,134,0,25.92,5ad7d2887228ee6978418fc7f07b9da4
-IR.C09,42,160,94,95,307.24,two_column_bands,73,13,4,583.0,797.0,publisher OCR; reading order inferred,0,135,136,137,0,25.92,610ab9cdc5cef19affd067025127f34f
-IR.C09,43,161,96,97,273.79,two_column_bands,73,11,12,581.0,796.0,publisher OCR; reading order inferred,0,138,139,140,0,25.92,1d272b5ca3d8f83263382b943fa45526
-IR.C09,44,162,98,101,305.41,two_column_bands,180,20,33,581.0,796.0,publisher OCR; reading order inferred,1,141,144,145,0,25.92,707a64440f5e4ea2787694347b9fa4a3
-IR.C09,45,163,102,103,,single_or_unresolved,65,11,3,583.0,797.0,publisher OCR; reading order inferred,0,146,147,148,0,25.92,c679cfc457681c12ab323a6303af5d1a
-IR.C09,46,164,104,104,,single_or_unresolved,30,2,12,581.0,795.0,publisher OCR; reading order inferred,0,149,149,150,0,25.92,9cf2f3d0fa0415a661a265b79c0c12e4
-IR.C09,47,165,105,108,272.73,two_column_bands,218,16,151,581.0,796.0,publisher OCR; reading order inferred,1,151,154,155,0,25.92,cd1002971ff218180fc582e29b096333
-IR.C09,48,166,109,109,,single_or_unresolved,36,2,17,581.0,796.0,publisher OCR; reading order inferred,0,156,156,157,0,25.92,dc2d1f842e56fa4e22c019a1d54f7973
-IR.C09,49,167,110,111,272.08,two_column_bands,52,13,4,581.0,795.0,publisher OCR; reading order inferred,0,158,159,160,0,25.92,9b4f4fb963c2848a2f573cb368ad9cfc
-IR.C09,50,168,112,113,307.51,two_column_bands,71,20,18,581.0,796.0,publisher OCR; reading order inferred,0,161,162,163,0,25.92,7bf95cb1609ff44a32bf726f7435fe0a
-IR.C09,51,169,114,114,271.37,two_column_bands,68,17,19,581.0,796.0,publisher OCR; reading order inferred,0,164,164,165,0,25.92,9f4209b31be40219ad8b0d6107d6a387
-IR.C09,52,170,115,115,,single_or_unresolved,38,4,14,581.0,796.0,publisher OCR; reading order inferred,0,166,166,167,0,25.92,e63c9570882a3c06c2230259e4a692d1
-IR.C09,53,171,116,116,,single_or_unresolved,42,5,14,582.0,796.0,publisher OCR; reading order inferred,0,168,168,169,0,25.92,9ace377359e634b709364f86b091cbbd
-IR.C09,54,172,117,117,,single_or_unresolved,65,3,35,582.0,796.0,publisher OCR; reading order inferred,0,170,170,171,0,25.92,5616987a31080e51e04967f6579b866a
-IR.C09,55,173,118,118,,single_or_unresolved,105,4,74,583.0,797.0,publisher OCR; reading order inferred,0,172,172,173,0,25.92,f52991e25b43b73e71128b2ed4a665ad
-IR.C09,56,174,119,119,,single_or_unresolved,22,3,7,581.0,795.0,publisher OCR; reading order inferred,0,174,174,175,0,25.92,e831f347659e5252570d0af1ef0fa600
-IR.C09,57,175,120,120,,single_or_unresolved,36,4,15,583.0,797.0,publisher OCR; reading order inferred,0,176,176,177,0,25.92,c4086994723d79e324f88bc2c754043f
-IR.C09,58,176,121,121,,single_or_unresolved,12,2,3,585.0,799.0,publisher OCR; reading order inferred,0,178,178,179,0,25.92,fab01cfd162ad9b002bb80c01eea511d
-IR.C09,59,177,122,122,,single_or_unresolved,14,2,3,582.0,795.0,publisher OCR; reading order inferred,0,180,180,181,0,25.92,01dd93b0d184b5edf699ee8c663e7879
-IR.C09,60,178,123,123,310.12,two_column_bands,47,4,17,583.0,796.0,publisher OCR; reading order inferred,0,182,182,183,0,25.92,9db28b6bde560719492ab36a9a4f2db5
-IR.C09,61,179,124,124,,single_or_unresolved,25,2,8,583.0,797.0,publisher OCR; reading order inferred,0,184,184,185,0,25.92,2279fcc1b2e163023d191ae97ac58284
-IR.C09,62,180,125,125,,single_or_unresolved,31,3,7,583.0,797.0,publisher OCR; reading order inferred,0,186,186,187,0,25.92,aa98fd96ee9d812c125d4d4189f7e060
-IR.C09,63,181,126,126,,single_or_unresolved,24,4,13,582.0,795.0,publisher OCR; reading order inferred,0,188,188,189,0,25.92,206ea760d3ff858eba8c71a05d7da17a
-IR.C09,64,182,127,131,,single_or_unresolved,276,12,34,581.0,795.0,publisher OCR; reading order inferred,3,190,194,195,0,25.92,b5ade184a94a9d4c710449dd74db78c7
-IR.C09,65,183,132,132,,single_or_unresolved,80,11,34,582.0,797.0,publisher OCR; reading order inferred,0,196,196,197,0,25.92,bc99aa67a434da058938cd17a38fe6ea
-IR.C09,66,184,133,133,,single_or_unresolved,62,8,29,583.0,797.0,publisher OCR; reading order inferred,0,198,198,199,0,25.92,9f7901bbee910d0641af3e825b7d8d6f
-IR.C09,67,185,134,134,,single_or_unresolved,84,15,41,584.0,797.0,publisher OCR; reading order inferred,0,200,200,201,0,25.92,95910f09ba4c809cfe1397ef0d66d273
-IR.C09,68,186,135,135,,single_or_unresolved,62,6,25,581.0,795.0,publisher OCR; reading order inferred,0,202,202,203,0,25.92,380b76ce2060c9e31e2bc133eaf99bfb
-IR.C09,69,187,136,136,,single_or_unresolved,70,13,52,582.0,796.0,publisher OCR; reading order inferred,0,204,204,205,0,25.92,8d1a42d8cd97db51fa17f4a911e42fe4
-IR.C09,70,,137,137,,single_or_unresolved,39,1,2,581.0,796.0,publisher OCR; reading order inferred,0,206,206,207,0,25.92,185ce0a8abe79d679bb5901b70a4bcc5
-IR.C10,1,189,1,3,264.14,two_column_bands,94,49,10,581.0,796.0,publisher OCR; reading order inferred,0,1,3,4,0,25.92,664e4808d09d9dfee83eddc266487adc
+IR.C09,40,158,89,91,,single_or_unresolved,354,16,60,581.0,795.0,publisher OCR; reading order inferred,1,128,130,133,2,25.92,be2633fe2539d4210aa6a80d5aa101ce
+IR.C09,41,159,92,93,273.92,two_column_bands,76,14,14,581.0,796.0,publisher OCR; reading order inferred,0,134,135,137,1,25.92,5ad7d2887228ee6978418fc7f07b9da4
+IR.C09,42,160,94,95,307.24,two_column_bands,73,13,4,583.0,797.0,publisher OCR; reading order inferred,0,138,139,141,1,25.92,610ab9cdc5cef19affd067025127f34f
+IR.C09,43,161,96,97,273.79,two_column_bands,73,11,12,581.0,796.0,publisher OCR; reading order inferred,0,142,143,145,1,25.92,1d272b5ca3d8f83263382b943fa45526
+IR.C09,44,162,98,101,305.41,two_column_bands,180,20,33,581.0,796.0,publisher OCR; reading order inferred,1,146,149,150,0,25.92,707a64440f5e4ea2787694347b9fa4a3
+IR.C09,45,163,102,103,,single_or_unresolved,65,11,3,583.0,797.0,publisher OCR; reading order inferred,0,151,152,154,1,25.92,c679cfc457681c12ab323a6303af5d1a
+IR.C09,46,164,104,104,,single_or_unresolved,30,2,12,581.0,795.0,publisher OCR; reading order inferred,0,155,155,156,0,25.92,9cf2f3d0fa0415a661a265b79c0c12e4
+IR.C09,47,165,105,108,272.73,two_column_bands,218,16,151,581.0,796.0,publisher OCR; reading order inferred,1,157,160,161,0,25.92,cd1002971ff218180fc582e29b096333
+IR.C09,48,166,109,109,,single_or_unresolved,36,2,17,581.0,796.0,publisher OCR; reading order inferred,0,162,162,163,0,25.92,dc2d1f842e56fa4e22c019a1d54f7973
+IR.C09,49,167,110,111,272.08,two_column_bands,52,13,4,581.0,795.0,publisher OCR; reading order inferred,0,164,165,166,0,25.92,9b4f4fb963c2848a2f573cb368ad9cfc
+IR.C09,50,168,112,113,307.51,two_column_bands,71,20,18,581.0,796.0,publisher OCR; reading order inferred,0,167,168,169,0,25.92,7bf95cb1609ff44a32bf726f7435fe0a
+IR.C09,51,169,114,114,271.37,two_column_bands,68,17,19,581.0,796.0,publisher OCR; reading order inferred,0,170,170,171,0,25.92,9f4209b31be40219ad8b0d6107d6a387
+IR.C09,52,170,115,115,,single_or_unresolved,38,4,14,581.0,796.0,publisher OCR; reading order inferred,0,172,172,173,0,25.92,e63c9570882a3c06c2230259e4a692d1
+IR.C09,53,171,116,116,,single_or_unresolved,42,5,14,582.0,796.0,publisher OCR; reading order inferred,0,174,174,175,0,25.92,9ace377359e634b709364f86b091cbbd
+IR.C09,54,172,117,117,,single_or_unresolved,65,3,35,582.0,796.0,publisher OCR; reading order inferred,0,176,176,177,0,25.92,5616987a31080e51e04967f6579b866a
+IR.C09,55,173,118,118,,single_or_unresolved,105,4,74,583.0,797.0,publisher OCR; reading order inferred,0,178,178,179,0,25.92,f52991e25b43b73e71128b2ed4a665ad
+IR.C09,56,174,119,119,,single_or_unresolved,22,3,7,581.0,795.0,publisher OCR; reading order inferred,0,180,180,181,0,25.92,e831f347659e5252570d0af1ef0fa600
+IR.C09,57,175,120,120,,single_or_unresolved,36,4,15,583.0,797.0,publisher OCR; reading order inferred,0,182,182,183,0,25.92,c4086994723d79e324f88bc2c754043f
+IR.C09,58,176,121,121,,single_or_unresolved,12,2,3,585.0,799.0,publisher OCR; reading order inferred,0,184,184,185,0,25.92,fab01cfd162ad9b002bb80c01eea511d
+IR.C09,59,177,122,122,,single_or_unresolved,14,2,3,582.0,795.0,publisher OCR; reading order inferred,0,186,186,187,0,25.92,01dd93b0d184b5edf699ee8c663e7879
+IR.C09,60,178,123,123,310.12,two_column_bands,47,4,17,583.0,796.0,publisher OCR; reading order inferred,0,188,188,189,0,25.92,9db28b6bde560719492ab36a9a4f2db5
+IR.C09,61,179,124,124,,single_or_unresolved,25,2,8,583.0,797.0,publisher OCR; reading order inferred,0,190,190,191,0,25.92,2279fcc1b2e163023d191ae97ac58284
+IR.C09,62,180,125,125,,single_or_unresolved,31,3,7,583.0,797.0,publisher OCR; reading order inferred,0,192,192,193,0,25.92,aa98fd96ee9d812c125d4d4189f7e060
+IR.C09,63,181,126,126,,single_or_unresolved,24,4,13,582.0,795.0,publisher OCR; reading order inferred,0,194,194,195,0,25.92,206ea760d3ff858eba8c71a05d7da17a
+IR.C09,64,182,127,131,,single_or_unresolved,276,12,34,581.0,795.0,publisher OCR; reading order inferred,3,196,200,201,0,25.92,b5ade184a94a9d4c710449dd74db78c7
+IR.C09,65,183,132,132,,single_or_unresolved,80,11,34,582.0,797.0,publisher OCR; reading order inferred,0,202,202,203,0,25.92,bc99aa67a434da058938cd17a38fe6ea
+IR.C09,66,184,133,133,,single_or_unresolved,62,8,29,583.0,797.0,publisher OCR; reading order inferred,0,204,204,205,0,25.92,9f7901bbee910d0641af3e825b7d8d6f
+IR.C09,67,185,134,134,,single_or_unresolved,84,15,41,584.0,797.0,publisher OCR; reading order inferred,0,206,206,207,0,25.92,95910f09ba4c809cfe1397ef0d66d273
+IR.C09,68,186,135,135,,single_or_unresolved,62,6,25,581.0,795.0,publisher OCR; reading order inferred,0,208,208,209,0,25.92,380b76ce2060c9e31e2bc133eaf99bfb
+IR.C09,69,187,136,136,,single_or_unresolved,70,13,52,582.0,796.0,publisher OCR; reading order inferred,0,210,210,211,0,25.92,8d1a42d8cd97db51fa17f4a911e42fe4
+IR.C09,70,,137,137,,single_or_unresolved,39,1,2,581.0,796.0,publisher OCR; reading order inferred,0,212,212,213,0,25.92,185ce0a8abe79d679bb5901b70a4bcc5
+IR.C10,1,189,1,3,264.14,two_column_bands,94,55,10,581.0,796.0,"39 visually checked hole-header lines (operations, coordinates, depths and recovery). Other text uses the publisher OCR.",0,1,3,4,0,25.92,664e4808d09d9dfee83eddc266487adc
 IR.C10,2,190,4,6,307.39,two_column_bands,125,27,1,582.0,797.0,publisher OCR; reading order inferred,0,5,7,8,0,25.92,0168730ea61895a14690504e0d199d4b
 IR.C10,3,191,7,8,275.01,two_column_bands,77,16,16,583.0,796.0,publisher OCR; reading order inferred,0,9,10,11,0,25.92,636b7d42ac95b9fa07bdb30f43482e3a
 IR.C10,4,192,9,9,306.51,two_column_bands,53,10,9,583.0,796.0,publisher OCR; reading order inferred,0,12,12,13,0,25.92,0dff8ef1a6a3d690c9a4b0c5c4f4f454
@@ -405,110 +405,110 @@ IR.C10,38,226,74,74,,single_or_unresolved,51,4,43,581.0,796.0,publisher OCR; rea
 IR.C10,39,227,75,80,,single_or_unresolved,387,7,26,583.0,797.0,publisher OCR; reading order inferred,1,113,118,119,0,25.92,388d75339857e499cdcecbeb9d7e935e
 IR.C10,40,228,81,83,307.39,two_column_bands,194,19,17,581.0,796.0,publisher OCR; reading order inferred,0,120,122,123,0,25.92,36b86570e73ff1d56e1735efcfb03159
 IR.C10,41,229,84,87,274.78,two_column_bands,445,15,53,581.0,796.0,publisher OCR; reading order inferred,1,124,127,128,0,25.92,8a7449ebe7ae1b75daacc0187b3b9ef1
-IR.C10,42,230,88,89,306.76,two_column_bands,62,16,2,582.0,796.0,publisher OCR; reading order inferred,0,129,130,131,0,25.92,18cc22b86c74564498345223fae98f35
-IR.C10,43,231,90,93,274.12,two_column_bands,275,22,47,582.0,797.0,publisher OCR; reading order inferred,1,132,135,136,0,25.92,bf89101b8a234cbefe1865aa27d280fc
-IR.C10,44,232,94,94,304.86,two_column_bands,89,15,19,581.0,796.0,publisher OCR; reading order inferred,0,137,137,138,0,25.92,b85a7f1687c8df13bb7acf2a78a45ab3
-IR.C10,45,233,95,96,273.85,two_column_bands,73,11,9,581.0,796.0,publisher OCR; reading order inferred,0,139,140,141,0,25.92,b1f30c73325c872ae2ee785a5fc8d9d2
-IR.C10,46,234,97,98,304.72,two_column_bands,87,9,14,581.0,796.0,publisher OCR; reading order inferred,0,142,143,144,0,25.92,f67858a4c4d89a54aa157fe8c80ae0a4
-IR.C10,47,235,99,104,274.4,two_column_bands,379,22,64,581.0,795.0,publisher OCR; reading order inferred,2,145,150,151,0,25.92,e026333d0416422a8e4a81fb226af78d
-IR.C10,48,236,105,106,306.86,two_column_bands,86,13,4,583.0,796.0,publisher OCR; reading order inferred,0,152,153,154,0,25.92,0e7bfbf290e4fc18a4cb4583bfe08f69
-IR.C10,49,237,107,107,,single_or_unresolved,24,3,3,585.0,797.0,publisher OCR; reading order inferred,0,155,155,156,0,25.92,e86304c4bd744e615ca4476437e489f3
-IR.C10,50,238,108,108,,single_or_unresolved,31,2,10,582.0,795.0,publisher OCR; reading order inferred,0,157,157,158,0,25.92,17dd37332c4a86270c6ade3de9b49cda
-IR.C10,51,239,109,110,271.76,two_column_bands,93,18,24,582.0,796.0,publisher OCR; reading order inferred,1,159,160,161,0,25.92,dffe829d09b0183cff71676a551676c2
-IR.C10,52,240,111,111,306.64,two_column_bands,69,9,20,581.0,796.0,publisher OCR; reading order inferred,0,162,162,163,0,25.92,451700b69500f8e365eb663e2997ab7a
-IR.C10,53,241,112,112,269.82,two_column_bands,54,6,7,582.0,797.0,publisher OCR; reading order inferred,0,164,164,165,0,25.92,b8c8da1c67ae751a56bcbc9ccb333af1
-IR.C10,54,242,113,113,309.54,two_column_bands,80,9,22,581.0,796.0,publisher OCR; reading order inferred,0,166,166,167,0,25.92,623f91e0ea21f7064f78eecd2f008ea7
-IR.C10,55,243,114,114,271.13,two_column_bands,91,5,24,581.0,796.0,publisher OCR; reading order inferred,0,168,168,169,0,25.92,e611eb1b5cc691b3e6f8592d18ca9440
-IR.C10,56,244,115,115,310.84,two_column_bands,72,7,21,583.0,797.0,publisher OCR; reading order inferred,0,170,170,171,0,25.92,5c161d8b2c532b94c053ff1acaa761d5
-IR.C10,57,245,116,116,274.41,two_column_bands,105,9,38,582.0,796.0,publisher OCR; reading order inferred,0,172,172,173,0,25.92,c85f1290b67bd0392c04ae4a36197f40
-IR.C10,58,246,117,121,306.46,two_column_bands,178,41,30,581.0,796.0,publisher OCR; reading order inferred,2,174,178,179,0,25.92,7a2f4779c7727afcb51fbc04e8c817c8
-IR.C10,59,247,122,126,,single_or_unresolved,209,9,31,581.0,796.0,publisher OCR; reading order inferred,3,180,184,185,0,25.92,2dd03626c815d241629940c428b9edd6
-IR.C10,60,248,127,127,,single_or_unresolved,34,3,16,583.0,797.0,publisher OCR; reading order inferred,0,186,186,187,0,25.92,ab7dbc81179d1c9fda1b0193dc9b2ac8
-IR.C10,61,249,128,128,,single_or_unresolved,31,3,16,583.0,797.0,publisher OCR; reading order inferred,0,188,188,189,0,25.92,aed999e82fb5166b49e5d33a7ac35ea0
-IR.C10,62,250,129,129,,single_or_unresolved,13,2,4,581.0,795.0,publisher OCR; reading order inferred,0,190,190,191,0,25.92,ba514967fbd4d8d488e9b3bab3ea700e
-IR.C10,63,251,130,131,,single_or_unresolved,78,7,26,582.0,797.0,publisher OCR; reading order inferred,1,192,193,194,0,25.92,c76ec7e77fda1889e666012701c91745
-IR.C10,64,252,132,132,,single_or_unresolved,107,6,56,581.0,796.0,publisher OCR; reading order inferred,0,195,195,196,0,25.92,3363783a887d4d0e3307b81de9c93d38
-IR.C10,65,253,133,133,,single_or_unresolved,11,2,4,581.0,795.0,publisher OCR; reading order inferred,0,197,197,198,0,25.92,48dbff4dc523a4f0908cc3067b40b5fa
-IR.C10,66,254,134,134,,single_or_unresolved,34,3,12,586.0,800.0,publisher OCR; reading order inferred,0,199,199,200,0,25.92,02c69548d2e3fd59e052877bf7af8e57
-IR.C10,67,255,135,135,,single_or_unresolved,28,3,7,582.0,796.0,publisher OCR; reading order inferred,0,201,201,202,0,25.92,2f799f6ff8533196644b186ec27ecfd3
-IR.C10,68,256,136,136,,single_or_unresolved,34,4,16,583.0,796.0,publisher OCR; reading order inferred,0,203,203,204,0,25.92,fb93c5b6dea888f968ec2396c7298b03
-IR.C10,69,257,137,137,,single_or_unresolved,57,4,20,583.0,798.0,publisher OCR; reading order inferred,0,205,205,206,0,25.92,9e9e91465d4b30c520602b89678281b3
-IR.C10,70,258,138,138,,single_or_unresolved,72,7,25,582.0,797.0,publisher OCR; reading order inferred,0,207,207,208,0,25.92,fe8eb9c49f4c6a5112e66020439ff6c9
-IR.C10,71,259,139,139,,single_or_unresolved,57,8,26,583.0,797.0,publisher OCR; reading order inferred,0,209,209,210,0,25.92,e1478e3356fba32b94e2752bbde3ddb0
-IR.C10,72,,140,140,,single_or_unresolved,66,2,3,582.0,796.0,publisher OCR; reading order inferred,0,211,211,212,0,25.92,0fd6c7b87012bb0e85380855a83cc62b
-IR.C10,73,261,141,141,,single_or_unresolved,60,9,26,581.0,795.0,publisher OCR; reading order inferred,0,213,213,214,0,25.92,a259b80b131be0d7387ce71248226a15
-IR.C10,74,,142,142,,single_or_unresolved,43,1,2,583.0,796.0,publisher OCR; reading order inferred,0,215,215,216,0,25.92,69067026ee4a0de9721b198e60f47f9e
-IR.C10,75,,143,143,,single_or_unresolved,43,1,1,583.0,797.0,publisher OCR; reading order inferred,0,217,217,218,0,25.92,d68eb978f13d817960fb63b167eccafe
-IR.C11,1,265,1,3,257.08,two_column_bands,90,62,13,581.0,796.0,publisher OCR; reading order inferred,0,1,3,4,0,25.92,4b73c6cca0f16caf024fc21f22177a07
-IR.C11,2,266,4,5,,single_or_unresolved,701,12,130,583.0,797.0,publisher OCR; reading order inferred,0,5,6,7,0,25.92,98b26c37cf52bc239cc54c3f304e3d40
-IR.C11,3,267,6,8,271.91,two_column_bands,122,24,1,582.0,796.0,publisher OCR; reading order inferred,0,8,10,11,0,25.92,2d5dc9efc1e5164beec13a3c4b4cfa7f
-IR.C11,4,268,9,10,307.3,two_column_bands,56,16,5,582.0,796.0,publisher OCR; reading order inferred,0,12,13,14,0,25.92,cdf4d017b2f6e9a2e06af24e3ade3592
-IR.C11,5,269,11,12,268.6,two_column_bands,72,14,14,581.0,796.0,publisher OCR; reading order inferred,0,15,16,17,0,25.92,af977359e5803256609ee7a695eeba80
-IR.C11,6,270,13,13,309.87,two_column_bands,50,8,7,582.0,797.0,publisher OCR; reading order inferred,0,18,18,19,0,25.92,c1ac937653478a0bb1b71d5809753db6
-IR.C11,7,271,14,15,270.23,two_column_bands,142,13,31,581.0,796.0,publisher OCR; reading order inferred,0,20,21,22,0,25.92,88ec49cef44ae97cf41f246d66c23dae
-IR.C11,8,272,16,16,,single_or_unresolved,185,8,110,582.0,797.0,publisher OCR; reading order inferred,0,23,23,24,0,25.92,5302e9a5f1f77b956ddb05769e922b46
-IR.C11,9,273,17,17,,single_or_unresolved,143,5,55,581.0,796.0,publisher OCR; reading order inferred,0,25,25,26,0,25.92,9c9b87cd4809d9aa145a2ccbd05a77a5
-IR.C11,10,,18,18,,single_or_unresolved,130,1,14,581.0,795.0,publisher OCR; reading order inferred,0,27,27,28,0,25.92,5d611f7dd0a0a3403d41ecdd9c9c0bfc
-IR.C11,11,275,19,20,271.98,two_column_bands,72,13,8,581.0,796.0,publisher OCR; reading order inferred,0,29,30,31,0,25.92,3a82d7319b6893de115fd03789ea9da8
-IR.C11,12,276,21,21,,single_or_unresolved,697,10,228,582.0,796.0,publisher OCR; reading order inferred,0,32,32,33,0,25.92,e947fc9283d33aa766a005823b83ff55
-IR.C11,13,,22,22,,single_or_unresolved,34,1,3,582.0,796.0,publisher OCR; reading order inferred,0,34,34,35,0,25.92,163579d7f2e656afbb3ec3851390c376
-IR.C11,14,278,23,23,,single_or_unresolved,5,2,3,583.0,797.0,publisher OCR; reading order inferred,0,36,36,37,0,25.92,4a4e75ba72117c6d3b70640dba6ee214
-IR.C11,15,279,24,24,,single_or_unresolved,43,2,33,581.0,795.0,publisher OCR; reading order inferred,0,38,38,39,0,25.92,dd02346b0090dd660d29b45669ce29a4
-IR.C11,16,280,25,26,308.84,two_column_bands,69,11,3,581.0,795.0,publisher OCR; reading order inferred,0,40,41,42,0,25.92,5b14bfd5327603683d8b3453acd16cd5
-IR.C11,17,281,27,27,271.6,two_column_bands,61,9,11,582.0,797.0,publisher OCR; reading order inferred,0,43,43,44,0,25.92,ce6c5a585c2e272658cdb8724f44b684
-IR.C11,18,282,28,28,,single_or_unresolved,39,7,23,581.0,796.0,publisher OCR; reading order inferred,0,45,45,46,0,25.92,367cf044b94b59075b1d56fb41af921e
-IR.C11,19,283,29,29,,single_or_unresolved,29,4,18,581.0,796.0,publisher OCR; reading order inferred,0,47,47,48,0,25.92,2bedad17862318f1ba122cd1bf2f150c
-IR.C11,20,284,30,30,,single_or_unresolved,31,6,15,582.0,796.0,publisher OCR; reading order inferred,0,49,49,50,0,25.92,95cdd37effb865607df7b6f0a9fc5bc8
-IR.C11,21,285,31,33,272.78,two_column_bands,147,21,6,583.0,797.0,publisher OCR; reading order inferred,0,51,53,54,0,25.92,044e5adbd3ddd0f7aaa0e73a084987ef
-IR.C11,22,286,34,36,307.41,two_column_bands,238,23,31,581.0,796.0,publisher OCR; reading order inferred,0,55,57,58,0,25.92,58d0236d25a70468097f972b035bc619
-IR.C11,23,,37,37,,single_or_unresolved,248,7,50,797.0,583.0,publisher OCR; reading order inferred,0,59,59,60,0,25.92,d8c2a3c88689a64cb0517ba20b7dccec
-IR.C11,24,,38,38,,single_or_unresolved,235,8,23,796.0,582.0,publisher OCR; reading order inferred,0,61,61,62,0,25.92,35149d6877750d2f882e288295f91bba
-IR.C11,25,,39,39,,single_or_unresolved,246,2,21,582.0,796.0,publisher OCR; reading order inferred,0,63,63,64,0,25.92,f47556e1ceb7d3eea62c296ab25148de
-IR.C11,26,290,40,40,,single_or_unresolved,538,7,264,583.0,796.0,publisher OCR; reading order inferred,0,65,65,66,0,25.92,d37a27989501579975fea536015d33fe
-IR.C11,27,291,41,41,275.91,two_column_bands,234,16,153,581.0,796.0,publisher OCR; reading order inferred,0,67,67,68,0,25.92,5dc1b92ee0c7ef5b5e590917776be22a
-IR.C11,28,292,42,44,306.33,two_column_bands,134,20,1,583.0,797.0,publisher OCR; reading order inferred,0,69,71,72,0,25.92,afe083875a9a0f383604c60302844398
-IR.C11,29,293,45,47,277.82,two_column_bands,127,20,1,581.0,796.0,publisher OCR; reading order inferred,0,73,75,76,0,25.92,a9b6058beedb32843137946679cedf28
-IR.C11,30,294,48,49,307.62,two_column_bands,77,11,12,581.0,796.0,publisher OCR; reading order inferred,0,77,78,79,0,25.92,fd1dedeb8d329e46390009bcaf6f4a49
-IR.C11,31,295,50,51,,single_or_unresolved,568,19,93,583.0,798.0,publisher OCR; reading order inferred,0,80,81,82,0,25.92,521c742c5f5dd80271cbdc259a106223
-IR.C11,32,296,52,52,,single_or_unresolved,38,2,13,581.0,796.0,publisher OCR; reading order inferred,0,83,83,84,0,25.92,68d25d65e409b55f2b59ef0f02ca0f47
-IR.C11,33,297,53,54,275.44,two_column_bands,103,13,34,590.0,796.0,publisher OCR; reading order inferred,0,85,86,87,0,25.92,c4d77c2b82b7b26d353f9ed5288baeac
-IR.C11,34,298,55,55,,single_or_unresolved,313,14,72,590.0,796.0,publisher OCR; reading order inferred,0,88,88,89,0,25.92,379a4358db9c740f29fd66461fb4cfa2
-IR.C11,35,299,56,57,276.25,two_column_bands,64,9,7,592.0,798.0,publisher OCR; reading order inferred,0,90,91,92,0,25.92,8baea6647d8ddd033a17cb35c6ab2ebd
-IR.C11,36,300,58,59,310.46,two_column_bands,74,12,8,592.0,797.0,publisher OCR; reading order inferred,0,93,94,95,0,25.92,50b176d9cfb9f69354b99980770e453a
-IR.C11,37,301,60,63,278.43,two_column_bands,422,11,50,592.0,798.0,publisher OCR; reading order inferred,1,96,99,100,0,25.92,9305fd01078661b3399c4e49819a9ccd
-IR.C11,38,302,64,65,,single_or_unresolved,68,12,4,591.0,797.0,publisher OCR; reading order inferred,0,101,102,103,0,25.92,a15cb2267eb6510f8c02f7818e1b89d3
-IR.C11,39,303,66,66,278.13,two_column_bands,39,5,16,591.0,796.0,publisher OCR; reading order inferred,0,104,104,105,0,25.92,5948a300c24ec21c93175606d53ef426
-IR.C11,40,304,67,69,307.58,two_column_bands,223,19,115,590.0,795.0,publisher OCR; reading order inferred,0,106,108,109,0,25.92,9e5cd5c4121cd3198e3960c12d902c3e
-IR.C11,41,305,70,70,,single_or_unresolved,48,3,13,592.0,798.0,publisher OCR; reading order inferred,0,110,110,111,0,25.92,bf58dc71d8ed875f0d3e481f6628ece7
-IR.C11,42,306,71,71,306.68,two_column_bands,37,11,4,591.0,797.0,publisher OCR; reading order inferred,0,112,112,113,0,25.92,9ad8b0a99bcdaceb6680025d947a73f0
-IR.C11,43,307,72,72,276.61,two_column_bands,58,10,7,590.0,796.0,publisher OCR; reading order inferred,0,114,114,115,0,25.92,c2650e6933c08fb9161682aa1a2c0303
-IR.C11,44,308,73,74,310.42,two_column_bands,115,15,29,595.0,800.0,publisher OCR; reading order inferred,0,116,117,118,0,25.92,bd47d7111e04cc34a9420046164feeb9
-IR.C11,45,309,75,75,279.26,two_column_bands,50,9,12,590.0,796.0,publisher OCR; reading order inferred,0,119,119,120,0,25.92,89432c3e83a2e458f45c29dae84160be
-IR.C11,46,310,76,76,306.52,two_column_bands,57,10,12,590.0,797.0,publisher OCR; reading order inferred,0,121,121,122,0,25.92,252393a9e893eb769fc005cdc5143379
-IR.C11,47,311,77,77,278.1,two_column_bands,53,10,6,595.0,799.0,publisher OCR; reading order inferred,0,123,123,124,0,25.92,fd21698060617c6c99655af384734194
-IR.C11,48,312,78,78,307.93,two_column_bands,55,10,10,593.0,797.0,publisher OCR; reading order inferred,0,125,125,126,0,25.92,12ec740f08d241ea796eb7d5a8d5d14c
-IR.C11,49,313,79,79,281.66,two_column_bands,60,7,10,591.0,798.0,publisher OCR; reading order inferred,0,127,127,128,0,25.92,4c794c4a77bd0d8d6d77e5a879bebacd
-IR.C11,50,314,80,80,,single_or_unresolved,72,9,18,593.0,799.0,publisher OCR; reading order inferred,0,129,129,130,0,25.92,de337fe7944e91a27013c3e0242427cf
-IR.C11,51,315,81,82,278.77,two_column_bands,118,17,31,589.0,796.0,publisher OCR; reading order inferred,0,131,132,133,0,25.92,af0ebf245bf6a475d08516d3240ae1c8
-IR.C11,52,316,83,83,303.56,two_column_bands,67,5,17,590.0,796.0,publisher OCR; reading order inferred,0,134,134,135,0,25.92,d7f5ffca78477b42fa70fb0a8aae3578
-IR.C11,53,317,84,86,277.5,two_column_bands,111,32,7,590.0,797.0,publisher OCR; reading order inferred,0,136,138,139,0,25.92,071682f4f0a7c4033528017c61adeca0
-IR.C11,54,318,87,87,,single_or_unresolved,37,4,15,590.0,796.0,publisher OCR; reading order inferred,0,140,140,141,0,25.92,e06165bb0de7a779739dd7aed883f903
-IR.C11,55,319,88,88,277.46,two_column_bands,88,6,18,591.0,797.0,publisher OCR; reading order inferred,0,142,142,143,0,25.92,908f4ce355ed65a9b51ba9701138cea0
-IR.C11,56,320,89,89,,single_or_unresolved,23,2,6,590.0,797.0,publisher OCR; reading order inferred,0,144,144,145,0,25.92,d5385b4aa7f2e314f11aefcb8189f305
-IR.C11,57,321,90,90,,single_or_unresolved,219,8,94,590.0,797.0,publisher OCR; reading order inferred,0,146,146,147,0,25.92,0ccc3090e11410f9cf3f9ee5cd37cb35
-IR.C11,58,322,91,91,,single_or_unresolved,13,3,3,589.0,796.0,publisher OCR; reading order inferred,0,148,148,149,0,25.92,b24f6bce84dd9009167f2e139a4a76ce
-IR.C11,59,323,92,92,,single_or_unresolved,27,2,12,591.0,798.0,publisher OCR; reading order inferred,0,150,150,151,0,25.92,6fac755f8d32e4b0d746353b836efd3e
-IR.C11,60,324,93,93,,single_or_unresolved,42,4,15,589.0,797.0,publisher OCR; reading order inferred,0,152,152,153,0,25.92,af549b25977dd034ce813d2f6d3fe94f
-IR.C11,61,325,94,94,,single_or_unresolved,53,12,27,591.0,798.0,publisher OCR; reading order inferred,0,154,154,155,0,25.92,35dab694c00a4bb04ff7e05d4826af49
-IR.C11,62,326,95,95,,single_or_unresolved,71,13,36,592.0,799.0,publisher OCR; reading order inferred,0,156,156,157,0,25.92,8bef39b8b37c4e67180b602499ff873e
-IR.C11,63,,96,96,,single_or_unresolved,46,3,3,590.0,797.0,publisher OCR; reading order inferred,0,158,158,159,0,25.92,1d73627aedcdc91e0b024c717c33119d
-IR.C11,64,328,97,97,,single_or_unresolved,84,11,33,589.0,797.0,publisher OCR; reading order inferred,0,160,160,161,0,25.92,5e1d8606287927a5801c0d2ff505db5a
-IR.C11,65,329,98,98,,single_or_unresolved,73,12,37,593.0,798.0,publisher OCR; reading order inferred,0,162,162,163,0,25.92,e6dbc6678254f3f5822ed91d572bbf60
-IR.C11,66,330,99,99,,single_or_unresolved,60,12,20,590.0,796.0,publisher OCR; reading order inferred,0,164,164,165,0,25.92,a887ccf4a988ce6cf0404312919b4542
-IR.C11,67,331,100,100,,single_or_unresolved,57,4,32,593.0,798.0,publisher OCR; reading order inferred,0,166,166,167,0,25.92,59bebcb4f15862c5dc9aafef29144630
-IR.C11,68,,101,101,,single_or_unresolved,45,1,1,592.0,797.0,publisher OCR; reading order inferred,0,168,168,169,0,25.92,73032e7d7a496c79a05dfef4b4d8c431
-IR.C11,69,,102,102,,single_or_unresolved,41,1,1,594.0,798.0,publisher OCR; reading order inferred,0,170,170,171,0,25.92,3e182ecbc41b75282ea913c91b93581d
-IR.C12,1,335,1,3,258.09,two_column_bands,91,62,15,589.0,796.0,publisher OCR; reading order inferred,0,1,3,4,0,25.92,fd88e79964426c2d8c75beac6dad8a52
+IR.C10,42,230,88,89,306.76,two_column_bands,62,16,2,582.0,796.0,publisher OCR; reading order inferred,0,129,130,132,1,25.92,18cc22b86c74564498345223fae98f35
+IR.C10,43,231,90,93,274.12,two_column_bands,275,22,47,582.0,797.0,publisher OCR; reading order inferred,1,133,136,138,1,25.92,bf89101b8a234cbefe1865aa27d280fc
+IR.C10,44,232,94,94,304.86,two_column_bands,89,15,19,581.0,796.0,publisher OCR; reading order inferred,0,139,139,141,1,25.92,b85a7f1687c8df13bb7acf2a78a45ab3
+IR.C10,45,233,95,96,273.85,two_column_bands,73,11,9,581.0,796.0,publisher OCR; reading order inferred,0,142,143,145,1,25.92,b1f30c73325c872ae2ee785a5fc8d9d2
+IR.C10,46,234,97,98,304.72,two_column_bands,87,9,14,581.0,796.0,publisher OCR; reading order inferred,0,146,147,149,1,25.92,f67858a4c4d89a54aa157fe8c80ae0a4
+IR.C10,47,235,99,104,274.4,two_column_bands,379,22,64,581.0,795.0,publisher OCR; reading order inferred,2,150,155,156,0,25.92,e026333d0416422a8e4a81fb226af78d
+IR.C10,48,236,105,106,306.86,two_column_bands,86,13,4,583.0,796.0,publisher OCR; reading order inferred,0,157,158,160,1,25.92,0e7bfbf290e4fc18a4cb4583bfe08f69
+IR.C10,49,237,107,107,,single_or_unresolved,24,3,3,585.0,797.0,publisher OCR; reading order inferred,0,161,161,162,0,25.92,e86304c4bd744e615ca4476437e489f3
+IR.C10,50,238,108,108,,single_or_unresolved,31,2,10,582.0,795.0,publisher OCR; reading order inferred,0,163,163,164,0,25.92,17dd37332c4a86270c6ade3de9b49cda
+IR.C10,51,239,109,110,271.76,two_column_bands,93,18,24,582.0,796.0,publisher OCR; reading order inferred,1,165,166,167,0,25.92,dffe829d09b0183cff71676a551676c2
+IR.C10,52,240,111,111,306.64,two_column_bands,69,9,20,581.0,796.0,publisher OCR; reading order inferred,0,168,168,169,0,25.92,451700b69500f8e365eb663e2997ab7a
+IR.C10,53,241,112,112,269.82,two_column_bands,54,6,7,582.0,797.0,publisher OCR; reading order inferred,0,170,170,171,0,25.92,b8c8da1c67ae751a56bcbc9ccb333af1
+IR.C10,54,242,113,113,309.54,two_column_bands,80,9,22,581.0,796.0,publisher OCR; reading order inferred,0,172,172,173,0,25.92,623f91e0ea21f7064f78eecd2f008ea7
+IR.C10,55,243,114,114,271.13,two_column_bands,91,5,24,581.0,796.0,publisher OCR; reading order inferred,0,174,174,175,0,25.92,e611eb1b5cc691b3e6f8592d18ca9440
+IR.C10,56,244,115,115,310.84,two_column_bands,72,7,21,583.0,797.0,publisher OCR; reading order inferred,0,176,176,177,0,25.92,5c161d8b2c532b94c053ff1acaa761d5
+IR.C10,57,245,116,116,274.41,two_column_bands,105,9,38,582.0,796.0,publisher OCR; reading order inferred,0,178,178,179,0,25.92,c85f1290b67bd0392c04ae4a36197f40
+IR.C10,58,246,117,121,306.46,two_column_bands,178,41,30,581.0,796.0,publisher OCR; reading order inferred,2,180,184,185,0,25.92,7a2f4779c7727afcb51fbc04e8c817c8
+IR.C10,59,247,122,126,,single_or_unresolved,209,9,31,581.0,796.0,publisher OCR; reading order inferred,3,186,190,191,0,25.92,2dd03626c815d241629940c428b9edd6
+IR.C10,60,248,127,127,,single_or_unresolved,34,3,16,583.0,797.0,publisher OCR; reading order inferred,0,192,192,193,0,25.92,ab7dbc81179d1c9fda1b0193dc9b2ac8
+IR.C10,61,249,128,128,,single_or_unresolved,31,3,16,583.0,797.0,publisher OCR; reading order inferred,0,194,194,195,0,25.92,aed999e82fb5166b49e5d33a7ac35ea0
+IR.C10,62,250,129,129,,single_or_unresolved,13,2,4,581.0,795.0,publisher OCR; reading order inferred,0,196,196,197,0,25.92,ba514967fbd4d8d488e9b3bab3ea700e
+IR.C10,63,251,130,131,,single_or_unresolved,78,7,26,582.0,797.0,publisher OCR; reading order inferred,1,198,199,200,0,25.92,c76ec7e77fda1889e666012701c91745
+IR.C10,64,252,132,132,,single_or_unresolved,107,6,56,581.0,796.0,publisher OCR; reading order inferred,0,201,201,202,0,25.92,3363783a887d4d0e3307b81de9c93d38
+IR.C10,65,253,133,133,,single_or_unresolved,11,2,4,581.0,795.0,publisher OCR; reading order inferred,0,203,203,204,0,25.92,48dbff4dc523a4f0908cc3067b40b5fa
+IR.C10,66,254,134,134,,single_or_unresolved,34,3,12,586.0,800.0,publisher OCR; reading order inferred,0,205,205,206,0,25.92,02c69548d2e3fd59e052877bf7af8e57
+IR.C10,67,255,135,135,,single_or_unresolved,28,3,7,582.0,796.0,publisher OCR; reading order inferred,0,207,207,208,0,25.92,2f799f6ff8533196644b186ec27ecfd3
+IR.C10,68,256,136,136,,single_or_unresolved,34,4,16,583.0,796.0,publisher OCR; reading order inferred,0,209,209,210,0,25.92,fb93c5b6dea888f968ec2396c7298b03
+IR.C10,69,257,137,137,,single_or_unresolved,57,4,20,583.0,798.0,publisher OCR; reading order inferred,0,211,211,212,0,25.92,9e9e91465d4b30c520602b89678281b3
+IR.C10,70,258,138,138,,single_or_unresolved,72,7,25,582.0,797.0,publisher OCR; reading order inferred,0,213,213,214,0,25.92,fe8eb9c49f4c6a5112e66020439ff6c9
+IR.C10,71,259,139,139,,single_or_unresolved,57,8,26,583.0,797.0,publisher OCR; reading order inferred,0,215,215,216,0,25.92,e1478e3356fba32b94e2752bbde3ddb0
+IR.C10,72,,140,140,,single_or_unresolved,66,2,3,582.0,796.0,publisher OCR; reading order inferred,0,217,217,218,0,25.92,0fd6c7b87012bb0e85380855a83cc62b
+IR.C10,73,261,141,141,,single_or_unresolved,60,9,26,581.0,795.0,publisher OCR; reading order inferred,0,219,219,220,0,25.92,a259b80b131be0d7387ce71248226a15
+IR.C10,74,,142,142,,single_or_unresolved,43,1,2,583.0,796.0,publisher OCR; reading order inferred,0,221,221,222,0,25.92,69067026ee4a0de9721b198e60f47f9e
+IR.C10,75,,143,143,,single_or_unresolved,43,1,1,583.0,797.0,publisher OCR; reading order inferred,0,223,223,224,0,25.92,d68eb978f13d817960fb63b167eccafe
+IR.C11,1,265,1,3,257.08,two_column_bands,90,73,13,581.0,796.0,Visually collated against the source scan. all printed text,0,1,3,4,0,25.92,4b73c6cca0f16caf024fc21f22177a07
+IR.C11,2,266,4,5,,single_or_unresolved,701,10,130,583.0,797.0,"Visually collated against the source scan. all narrative, captions, headings, running head and folio; excludes Table 1 body and its column headings",0,5,6,7,0,25.92,98b26c37cf52bc239cc54c3f304e3d40
+IR.C11,3,267,6,8,271.91,two_column_bands,122,24,1,582.0,796.0,Visually collated against the source scan. all printed text,0,8,10,11,0,25.92,2d5dc9efc1e5164beec13a3c4b4cfa7f
+IR.C11,4,268,9,10,307.3,two_column_bands,56,13,5,582.0,796.0,"Visually collated against the source scan. all narrative, captions, headings, running head and folio; excludes Figure 1 interior, including map labels",0,12,13,14,0,25.92,cdf4d017b2f6e9a2e06af24e3ade3592
+IR.C11,5,269,11,12,268.6,two_column_bands,72,22,14,581.0,796.0,"Visually collated against the source scan. all narrative, captions, headings, running head and folio; excludes Figure 2 interior, including map labels",0,15,16,17,0,25.92,af977359e5803256609ee7a695eeba80
+IR.C11,6,270,13,13,309.87,two_column_bands,50,10,7,582.0,797.0,"Visually collated against the source scan. all narrative, captions, headings, running head and folio; excludes Figure 3 interior, including map labels",0,18,18,19,0,25.92,c1ac937653478a0bb1b71d5809753db6
+IR.C11,7,271,14,14,270.23,two_column_bands,142,12,31,581.0,796.0,"Visually collated against the source scan. all narrative, captions, headings, running head and folio; excludes Figure 4 interior; Table 2 body and its column headings",0,20,20,21,0,25.92,88ec49cef44ae97cf41f246d66c23dae
+IR.C11,8,272,15,15,,single_or_unresolved,185,3,110,582.0,797.0,"Visually collated against the source scan. all narrative, captions, headings, running head and folio; excludes Figure 5 interior",0,22,22,23,0,25.92,5302e9a5f1f77b956ddb05769e922b46
+IR.C11,9,273,16,16,,single_or_unresolved,143,3,55,581.0,796.0,"Visually collated against the source scan. all narrative, captions, headings, running head and folio; excludes Figure 5 interior",0,24,24,25,0,25.92,9c9b87cd4809d9aa145a2ccbd05a77a5
+IR.C11,10,,17,17,,single_or_unresolved,130,3,14,581.0,795.0,"Visually collated against the source scan. all narrative, captions, headings, running head and folio; excludes Figure 5 interior",0,26,26,27,0,25.92,5d611f7dd0a0a3403d41ecdd9c9c0bfc
+IR.C11,11,275,18,19,271.98,two_column_bands,72,23,8,581.0,796.0,"Visually collated against the source scan. all narrative, captions, headings, running head and folio; excludes Figure 6 interior",0,28,29,30,0,25.92,3a82d7319b6893de115fd03789ea9da8
+IR.C11,12,276,20,20,,single_or_unresolved,697,3,228,582.0,796.0,"Visually collated against the source scan. all narrative, captions, headings, running head and folio; excludes Figure 7 interior",0,31,31,33,1,25.92,e947fc9283d33aa766a005823b83ff55
+IR.C11,13,,21,21,,single_or_unresolved,34,3,3,582.0,796.0,"Visually collated against the source scan. all narrative, captions, headings, running head and folio; excludes Figure 7 interior",0,34,34,36,1,25.92,163579d7f2e656afbb3ec3851390c376
+IR.C11,14,278,22,22,,single_or_unresolved,5,3,3,583.0,797.0,"Visually collated against the source scan. all narrative, captions, headings, running head and folio; excludes Figure 7 interior",0,37,37,39,1,25.92,4a4e75ba72117c6d3b70640dba6ee214
+IR.C11,15,279,23,23,,single_or_unresolved,43,3,33,581.0,795.0,"Visually collated against the source scan. all narrative, captions, headings, running head and folio; excludes Figure 8 interior",0,40,40,41,0,25.92,dd02346b0090dd660d29b45669ce29a4
+IR.C11,16,280,24,25,308.84,two_column_bands,69,10,3,581.0,795.0,"Visually collated against the source scan. all narrative, captions, headings, running head and folio; excludes Figure 9 interior",0,42,43,44,0,25.92,5b14bfd5327603683d8b3453acd16cd5
+IR.C11,17,281,26,27,271.6,two_column_bands,61,10,11,582.0,797.0,"Visually collated against the source scan. all narrative, captions, headings, running head and folio; excludes Figures 10 and 11 interiors",0,45,46,47,0,25.92,ce6c5a585c2e272658cdb8724f44b684
+IR.C11,18,282,28,28,,single_or_unresolved,39,6,23,581.0,796.0,"Visually collated against the source scan. all narrative, captions, headings, running head and folio; excludes Figures 12 and 13 interiors",0,48,48,49,0,25.92,367cf044b94b59075b1d56fb41af921e
+IR.C11,19,283,29,29,,single_or_unresolved,29,5,18,581.0,796.0,"Visually collated against the source scan. all narrative, captions, headings, running head and folio; excludes Figures 14 and 15 interiors",0,50,50,51,0,25.92,2bedad17862318f1ba122cd1bf2f150c
+IR.C11,20,284,30,30,,single_or_unresolved,31,7,15,582.0,796.0,"Visually collated against the source scan. all narrative, captions, headings, running head and folio; excludes Figures 16 and 17 interiors",0,52,52,53,0,25.92,95cdd37effb865607df7b6f0a9fc5bc8
+IR.C11,21,285,31,33,272.78,two_column_bands,147,25,6,583.0,797.0,Visually collated against the source scan. all printed text,0,54,56,57,0,25.92,044e5adbd3ddd0f7aaa0e73a084987ef
+IR.C11,22,286,34,35,307.41,two_column_bands,238,13,31,581.0,796.0,"Visually collated against the source scan. all narrative, captions, headings, running head and folio; excludes Tables 3 and 4 interiors",0,58,59,60,0,25.92,58d0236d25a70468097f972b035bc619
+IR.C11,23,,36,36,,single_or_unresolved,248,4,50,797.0,583.0,"Visually collated against the source scan. all narrative, captions, headings, running head and folio; excludes Table 5 body and column headings",0,61,61,62,0,25.92,d8c2a3c88689a64cb0517ba20b7dccec
+IR.C11,24,,37,37,,single_or_unresolved,235,4,23,796.0,582.0,"Visually collated against the source scan. all narrative, captions, headings, running head and folio; excludes Table 6 body and column headings",0,63,63,64,0,25.92,35149d6877750d2f882e288295f91bba
+IR.C11,25,,38,38,,single_or_unresolved,246,3,21,582.0,796.0,"Visually collated against the source scan. all narrative, captions, headings, running head and folio; excludes Figure 18 interior",0,65,65,66,0,25.92,f47556e1ceb7d3eea62c296ab25148de
+IR.C11,26,290,39,39,,single_or_unresolved,538,3,264,583.0,796.0,"Visually collated against the source scan. all narrative, captions, headings, running head and folio; excludes Figure 18 interior",0,67,67,68,0,25.92,d37a27989501579975fea536015d33fe
+IR.C11,27,291,40,40,275.91,two_column_bands,234,8,153,581.0,796.0,"Visually collated against the source scan. all narrative, captions, headings, running head and folio; excludes Figure 18 interior",0,69,69,70,0,25.92,5dc1b92ee0c7ef5b5e590917776be22a
+IR.C11,28,292,41,43,306.33,two_column_bands,134,16,1,583.0,797.0,Visually collated against the source scan. all printed text,0,71,73,74,0,25.92,afe083875a9a0f383604c60302844398
+IR.C11,29,293,44,46,277.82,two_column_bands,127,18,1,581.0,796.0,Visually collated against the source scan. all printed text,0,75,77,78,0,25.92,a9b6058beedb32843137946679cedf28
+IR.C11,30,294,47,47,307.62,two_column_bands,77,7,12,581.0,796.0,"Visually collated against the source scan. all narrative, captions, headings, running head and folio; excludes Figures 19 and 20 interiors",0,79,79,80,0,25.92,fd1dedeb8d329e46390009bcaf6f4a49
+IR.C11,31,295,48,49,,single_or_unresolved,568,9,93,583.0,798.0,"Visually collated against the source scan. all narrative, captions, headings, running head and folio; excludes Tables 7 and 8 bodies and headers; Table 8 note is included",0,81,82,83,0,25.92,521c742c5f5dd80271cbdc259a106223
+IR.C11,32,296,50,50,,single_or_unresolved,38,3,13,581.0,796.0,"Visually collated against the source scan. all narrative, captions, headings, running head and folio; excludes Figure 22 interior",0,84,84,85,0,25.92,68d25d65e409b55f2b59ef0f02ca0f47
+IR.C11,33,297,51,52,275.44,two_column_bands,103,10,34,590.0,796.0,"Visually collated against the source scan. all narrative, captions, headings, running head and folio; excludes Figures 23 and 24 interiors",0,86,87,90,2,25.92,c4d77c2b82b7b26d353f9ed5288baeac
+IR.C11,34,298,53,53,,single_or_unresolved,313,4,72,590.0,796.0,"Visually collated against the source scan. all narrative, captions, headings, running head and folio; excludes Table 9 body and headers; Figure 25 interior",0,91,91,93,1,25.92,379a4358db9c740f29fd66461fb4cfa2
+IR.C11,35,299,54,55,276.25,two_column_bands,64,9,7,592.0,798.0,"Visually collated against the source scan. all narrative, captions, headings, running head and folio; excludes Figure 26 interior",0,94,95,97,1,25.92,8baea6647d8ddd033a17cb35c6ab2ebd
+IR.C11,36,300,56,57,310.46,two_column_bands,74,11,8,592.0,797.0,"Visually collated against the source scan. all narrative, captions, headings, running head and folio; excludes Figure 27 interior",0,98,99,101,1,25.92,50b176d9cfb9f69354b99980770e453a
+IR.C11,37,301,58,61,278.43,two_column_bands,422,7,50,592.0,798.0,"Visually collated against the source scan. all narrative, captions, headings, running head and folio; excludes Table 11 body and headers",1,102,105,106,0,25.92,9305fd01078661b3399c4e49819a9ccd
+IR.C11,38,302,62,63,,single_or_unresolved,68,10,4,591.0,797.0,"Visually collated against the source scan. all narrative, captions, headings, running head and folio; excludes Figure 28 interior",0,107,108,110,1,25.92,a15cb2267eb6510f8c02f7818e1b89d3
+IR.C11,39,303,64,64,278.13,two_column_bands,39,4,16,591.0,796.0,"Visually collated against the source scan. all narrative, captions, headings, running head and folio; excludes Figure 29 interior",0,111,111,112,0,25.92,5948a300c24ec21c93175606d53ef426
+IR.C11,40,304,65,66,307.58,two_column_bands,223,13,115,590.0,795.0,"Visually collated against the source scan. all narrative, captions, headings, running head and folio; excludes Table 12 body and headers",0,113,114,115,0,25.92,9e5cd5c4121cd3198e3960c12d902c3e
+IR.C11,41,305,67,67,,single_or_unresolved,48,3,13,592.0,798.0,"Visually collated against the source scan. all narrative, captions, headings, running head and folio; excludes Figure 30 interior",0,116,116,117,0,25.92,bf58dc71d8ed875f0d3e481f6628ece7
+IR.C11,42,306,68,68,306.68,two_column_bands,37,10,4,591.0,797.0,"Visually collated against the source scan. all narrative, captions, headings, running head and folio; excludes Figure 31 interior",0,118,118,119,0,25.92,9ad8b0a99bcdaceb6680025d947a73f0
+IR.C11,43,307,69,69,276.61,two_column_bands,58,11,7,590.0,796.0,"Visually collated against the source scan. all narrative, captions, headings, running head and folio; excludes Figure 32 interior",0,120,120,121,0,25.92,c2650e6933c08fb9161682aa1a2c0303
+IR.C11,44,308,70,71,310.42,two_column_bands,115,16,29,595.0,800.0,"Visually collated against the source scan. all narrative, captions, headings, running head and folio; excludes Figure 33 interior",0,122,123,124,0,25.92,bd47d7111e04cc34a9420046164feeb9
+IR.C11,45,309,72,72,279.26,two_column_bands,50,7,12,590.0,796.0,"Visually collated against the source scan. all narrative, captions, headings, running head and folio; excludes Figure 34 interior",0,125,125,126,0,25.92,89432c3e83a2e458f45c29dae84160be
+IR.C11,46,310,73,73,306.52,two_column_bands,57,8,12,590.0,797.0,"Visually collated against the source scan. all narrative, captions, headings, running head and folio; excludes Figure 35 interior",0,127,127,128,0,25.92,252393a9e893eb769fc005cdc5143379
+IR.C11,47,311,74,74,278.1,two_column_bands,53,10,6,595.0,799.0,"Visually collated against the source scan. all narrative, captions, headings, running head and folio; excludes Figure 36 interior",0,129,129,130,0,25.92,fd21698060617c6c99655af384734194
+IR.C11,48,312,75,75,307.93,two_column_bands,55,9,10,593.0,797.0,"Visually collated against the source scan. all narrative, captions, headings, running head and folio; excludes Figure 37 interior",0,131,131,132,0,25.92,12ec740f08d241ea796eb7d5a8d5d14c
+IR.C11,49,313,76,76,281.66,two_column_bands,60,7,10,591.0,798.0,"Visually collated against the source scan. all narrative, captions, headings, running head and folio; excludes Figure 38 interior",0,133,133,134,0,25.92,4c794c4a77bd0d8d6d77e5a879bebacd
+IR.C11,50,314,77,77,,single_or_unresolved,72,8,18,593.0,799.0,"Visually collated against the source scan. all narrative, captions, headings, running head and folio; excludes Figures 39 and 40 interiors; Table 19 body and column headers",0,135,135,136,0,25.92,de337fe7944e91a27013c3e0242427cf
+IR.C11,51,315,78,79,278.77,two_column_bands,118,7,31,589.0,796.0,"Visually collated against the source scan. all narrative, captions, headings, running head and folio; excludes Figures 41 and 42 interiors",0,137,138,139,0,25.92,af0ebf245bf6a475d08516d3240ae1c8
+IR.C11,52,316,80,80,303.56,two_column_bands,67,6,17,590.0,796.0,"Visually collated against the source scan. all narrative, captions, headings, running head and folio; excludes Figures 43 and 44 interiors",0,140,140,141,0,25.92,d7f5ffca78477b42fa70fb0a8aae3578
+IR.C11,53,317,81,83,277.5,two_column_bands,111,32,7,590.0,797.0,"Visually collated against the source scan. all narrative, captions, headings, running head and folio; excludes Figure 45 interior",0,142,144,145,0,25.92,071682f4f0a7c4033528017c61adeca0
+IR.C11,54,318,84,84,,single_or_unresolved,37,5,15,590.0,796.0,"Visually collated against the source scan. all narrative, captions, headings, running head and folio; excludes Figure 46 interior",0,146,146,147,0,25.92,e06165bb0de7a779739dd7aed883f903
+IR.C11,55,319,85,85,277.46,two_column_bands,88,4,18,591.0,797.0,"Visually collated against the source scan. all narrative, captions, headings, running head and folio; excludes Figures 47 and 48 interiors",0,148,148,149,0,25.92,908f4ce355ed65a9b51ba9701138cea0
+IR.C11,56,320,86,86,,single_or_unresolved,23,3,6,590.0,797.0,"Visually collated against the source scan. all narrative, captions, headings, running head and folio; excludes Figure 49 interior",0,150,150,151,0,25.92,d5385b4aa7f2e314f11aefcb8189f305
+IR.C11,57,321,87,87,,single_or_unresolved,219,6,94,590.0,797.0,"Visually collated against the source scan. all narrative, captions, headings, running head and folio; excludes Tables 20 and 21 bodies and column headings",0,152,152,153,0,25.92,0ccc3090e11410f9cf3f9ee5cd37cb35
+IR.C11,58,322,88,88,,single_or_unresolved,13,3,3,589.0,796.0,"Visually collated against the source scan. all narrative, captions, headings, running head and folio; excludes Figure 50 interior",0,154,154,155,0,25.92,b24f6bce84dd9009167f2e139a4a76ce
+IR.C11,59,323,89,89,,single_or_unresolved,27,3,12,591.0,798.0,"Visually collated against the source scan. all narrative, captions, headings, running head and folio; excludes Figure 51 interior",0,156,156,157,0,25.92,6fac755f8d32e4b0d746353b836efd3e
+IR.C11,60,324,90,90,,single_or_unresolved,42,3,15,589.0,797.0,"Visually collated against the source scan. all narrative, captions, headings, running head and folio; excludes Figure 52 interior",0,158,158,159,0,25.92,af549b25977dd034ce813d2f6d3fe94f
+IR.C11,61,325,91,91,,single_or_unresolved,53,3,27,591.0,798.0,"Visually collated against the source scan. all narrative, captions, headings, running head and folio; excludes log-summary interiors",0,160,160,161,0,25.92,35dab694c00a4bb04ff7e05d4826af49
+IR.C11,62,326,92,92,,single_or_unresolved,71,3,36,592.0,799.0,"Visually collated against the source scan. all narrative, captions, headings, running head and folio; excludes log-summary interiors",0,162,162,163,0,25.92,8bef39b8b37c4e67180b602499ff873e
+IR.C11,63,,93,93,,single_or_unresolved,46,3,3,590.0,797.0,"Visually collated against the source scan. all narrative, captions, headings, running head and folio; excludes log-summary interior",0,164,164,165,0,25.92,1d73627aedcdc91e0b024c717c33119d
+IR.C11,64,328,94,94,,single_or_unresolved,84,3,33,589.0,797.0,"Visually collated against the source scan. all narrative, captions, headings, running head and folio; excludes log-summary interiors",0,166,166,167,0,25.92,5e1d8606287927a5801c0d2ff505db5a
+IR.C11,65,329,95,95,,single_or_unresolved,73,3,37,593.0,798.0,"Visually collated against the source scan. all narrative, captions, headings, running head and folio; excludes log-summary interiors",0,168,168,169,0,25.92,e6dbc6678254f3f5822ed91d572bbf60
+IR.C11,66,330,96,96,,single_or_unresolved,60,3,20,590.0,796.0,"Visually collated against the source scan. all narrative, captions, headings, running head and folio; excludes log-summary interiors",0,170,170,171,0,25.92,a887ccf4a988ce6cf0404312919b4542
+IR.C11,67,331,97,97,,single_or_unresolved,57,3,32,593.0,798.0,"Visually collated against the source scan. all narrative, captions, headings, running head and folio; excludes log-summary interiors",0,172,172,173,0,25.92,59bebcb4f15862c5dc9aafef29144630
+IR.C11,68,,98,98,,single_or_unresolved,45,3,1,592.0,797.0,"Visually collated against the source scan. all narrative, captions, headings, running head and folio; excludes log-summary interior",0,174,174,175,0,25.92,73032e7d7a496c79a05dfef4b4d8c431
+IR.C11,69,,99,99,,single_or_unresolved,41,3,1,594.0,798.0,"Visually collated against the source scan. all narrative, captions, headings, running head and folio; excludes log-summary interior",0,176,176,177,0,25.92,3e182ecbc41b75282ea913c91b93581d
+IR.C12,1,335,1,3,258.09,two_column_bands,91,70,15,589.0,796.0,"52 visually checked hole-header lines (operations, coordinates, depths and recovery). Other text uses the publisher OCR.",0,1,3,4,0,25.92,fd88e79964426c2d8c75beac6dad8a52
 IR.C12,2,336,4,6,309.41,two_column_bands,128,22,3,590.0,797.0,publisher OCR; reading order inferred,0,5,7,8,0,25.92,ccafbfecfde21cca4fda25accafafaf5
 IR.C12,3,337,7,8,274.36,two_column_bands,61,12,4,593.0,799.0,publisher OCR; reading order inferred,0,9,10,11,0,25.92,314a52a7b215f1c64656d85a9d5b0833
 IR.C12,4,338,9,10,310.27,two_column_bands,82,20,10,591.0,797.0,publisher OCR; reading order inferred,0,12,13,14,0,25.92,c91f4bf9cb0e2308a2e5865d9dc9811a
@@ -532,42 +532,42 @@ IR.C12,21,355,47,48,282.13,two_column_bands,307,16,144,592.0,798.0,publisher OCR
 IR.C12,22,356,49,49,302.77,two_column_bands,397,8,36,589.0,796.0,publisher OCR; reading order inferred,0,70,70,71,0,25.92,ce0ab3189e1338dcc79bb620bfee610d
 IR.C12,23,357,50,52,277.85,two_column_bands,125,18,43,594.0,800.0,publisher OCR; reading order inferred,1,72,74,75,0,25.92,75f31aa93d30fca4bc9864d341cfe6ff
 IR.C12,24,358,53,53,,single_or_unresolved,26,2,12,592.0,798.0,publisher OCR; reading order inferred,0,76,76,77,0,25.92,8496dd43ded2ec16b74da36ceb07a8ff
-IR.C12,25,359,54,55,275.91,two_column_bands,127,11,42,591.0,797.0,publisher OCR; reading order inferred,0,78,79,80,0,25.92,37fde71e50f941006bca92e7badc99a5
-IR.C12,26,360,56,57,308.23,two_column_bands,87,16,11,592.0,797.0,publisher OCR; reading order inferred,0,81,82,83,0,25.92,94510db3424e3c0d69fbab466bba42c0
-IR.C12,27,361,58,61,276.92,two_column_bands,238,22,60,591.0,797.0,publisher OCR; reading order inferred,1,84,87,88,0,25.92,284aee647a918b8d4ba86a2aba682d87
-IR.C12,28,362,62,63,307.75,two_column_bands,85,11,20,592.0,798.0,publisher OCR; reading order inferred,0,89,90,91,0,25.92,cdbb9a5af5d33a23b3c8f735cdce5d2d
-IR.C12,29,363,64,67,,single_or_unresolved,306,12,44,590.0,797.0,publisher OCR; reading order inferred,1,92,95,96,0,25.92,332518fd9e645b61d1ac0684d842cbee
-IR.C12,30,364,68,68,,single_or_unresolved,17,2,9,590.0,796.0,publisher OCR; reading order inferred,0,97,97,98,0,25.92,cf9026afbeeebedc3e0a606f7030810d
-IR.C12,31,365,69,69,,single_or_unresolved,31,2,14,593.0,798.0,publisher OCR; reading order inferred,0,99,99,100,0,25.92,e9c6d76365a84d43b1be9300ff7ed94d
-IR.C12,32,366,70,70,307.75,two_column_bands,47,7,3,589.0,796.0,publisher OCR; reading order inferred,0,101,101,102,0,25.92,061d445c0ef63222fe1b53cb01201fb3
-IR.C12,33,367,71,72,276.66,two_column_bands,81,9,14,594.0,799.0,publisher OCR; reading order inferred,0,103,104,105,0,25.92,2eebe3d2be4d527174c30b0555a5928c
-IR.C12,34,368,73,78,312.8,two_column_bands,398,16,206,595.0,800.0,publisher OCR; reading order inferred,2,106,111,112,0,25.92,17a5b96aabced8656962fbc77fccffe4
-IR.C12,35,369,79,80,274.18,two_column_bands,93,11,15,589.0,796.0,publisher OCR; reading order inferred,0,113,114,115,0,25.92,7211feae66e727ab09e0a560c87cafe6
-IR.C12,36,370,81,82,310.42,two_column_bands,101,13,15,591.0,797.0,publisher OCR; reading order inferred,0,116,117,118,0,25.92,7b6e229e75659ff5e8c00740aec2ad63
-IR.C12,37,371,83,83,272.81,two_column_bands,66,11,15,589.0,796.0,publisher OCR; reading order inferred,0,119,119,120,0,25.92,9a097eaaa86f4f63fd89e7fbc6f52688
-IR.C12,38,372,84,87,308.16,two_column_bands,144,16,7,590.0,797.0,publisher OCR; reading order inferred,1,121,124,125,0,25.92,81ab9aeb30073c8724d7a3fec694896a
-IR.C12,39,373,88,88,274.54,two_column_bands,79,9,21,590.0,796.0,publisher OCR; reading order inferred,0,126,126,127,0,25.92,a116251697e40f0e954ec79fbd80753a
-IR.C12,40,374,89,90,307.99,two_column_bands,86,13,30,590.0,797.0,publisher OCR; reading order inferred,0,128,129,130,0,25.92,6d2b19ea809ddb1c6d3c1ae07c9284fe
-IR.C12,41,375,91,92,,single_or_unresolved,70,18,16,592.0,799.0,publisher OCR; reading order inferred,0,131,132,133,0,25.92,403212cc0241f99909a358bd2bb412fb
-IR.C12,42,376,93,95,,single_or_unresolved,132,16,48,590.0,797.0,publisher OCR; reading order inferred,2,134,136,137,0,25.92,22c3924c4adb472b51d2770c15aa2863
-IR.C12,43,377,96,96,,single_or_unresolved,24,2,10,590.0,797.0,publisher OCR; reading order inferred,0,138,138,139,0,25.92,cda79636322274c1dbbe772de0389a09
-IR.C12,44,378,97,99,,single_or_unresolved,184,6,50,590.0,797.0,publisher OCR; reading order inferred,1,140,142,143,0,25.92,ae1e2d1a993f7ec516a7df1288c5cf3f
-IR.C12,45,379,100,100,,single_or_unresolved,21,3,13,595.0,800.0,publisher OCR; reading order inferred,0,144,144,145,0,25.92,80124089d1b3d0558c59eeaacedd8e8d
-IR.C12,46,380,101,101,,single_or_unresolved,38,3,20,589.0,796.0,publisher OCR; reading order inferred,0,146,146,147,0,25.92,6685f10c438fd8618727a54862bcf291
-IR.C12,47,381,102,103,,single_or_unresolved,55,7,13,590.0,797.0,publisher OCR; reading order inferred,1,148,149,150,0,25.92,23ad4fb252747f182ff18171327b36f5
-IR.C12,48,382,104,104,,single_or_unresolved,52,5,28,589.0,796.0,publisher OCR; reading order inferred,0,151,151,152,0,25.92,0b26b24163f2a0a3912082fcdd52c49a
-IR.C12,49,383,105,105,,single_or_unresolved,69,4,25,589.0,795.0,publisher OCR; reading order inferred,0,153,153,154,0,25.92,e5be7362ef423cbf58d7bc5feb52d011
-IR.C12,50,384,106,106,,single_or_unresolved,25,4,13,590.0,796.0,publisher OCR; reading order inferred,0,155,155,156,0,25.92,66be2ec1bb931e79b53e9153e4bf1988
-IR.C12,51,385,107,107,,single_or_unresolved,48,2,6,590.0,796.0,publisher OCR; reading order inferred,0,157,157,158,0,25.92,047c3b3b65c03b07fdc15cf8a3398b3a
-IR.C12,52,386,108,108,,single_or_unresolved,31,1,10,590.0,796.0,publisher OCR; reading order inferred,0,159,159,160,0,25.92,f1a96341f61fd1cf39fd979947bfd493
-IR.C12,53,387,109,109,,single_or_unresolved,14,4,2,590.0,796.0,publisher OCR; reading order inferred,0,161,161,162,0,25.92,e18e3fa818bf1770055c9a2545b492b1
-IR.C12,54,,110,110,,single_or_unresolved,47,3,4,593.0,799.0,publisher OCR; reading order inferred,0,163,163,164,0,25.92,7f21eedd8a92125b471a394974ff364c
-IR.C12,55,389,111,111,,single_or_unresolved,52,10,18,590.0,797.0,publisher OCR; reading order inferred,0,165,165,166,0,25.92,497840de06df4b2126e7d28db3642576
-IR.C12,56,,112,112,,single_or_unresolved,48,2,2,594.0,800.0,publisher OCR; reading order inferred,0,167,167,168,0,25.92,a4fd8ce570d462a917f9f2b466f73123
-IR.C12,57,,113,113,,single_or_unresolved,58,2,2,590.0,797.0,publisher OCR; reading order inferred,0,169,169,170,0,25.92,3b83aa06fd37b9a269288c99604bc3c1
-IR.C12,58,,114,114,,single_or_unresolved,44,1,1,592.0,798.0,publisher OCR; reading order inferred,0,171,171,172,0,25.92,68867d890468bfe661794c821c260f16
-IR.C12,59,393,115,115,,single_or_unresolved,55,4,17,594.0,798.0,publisher OCR; reading order inferred,0,173,173,174,0,25.92,61e1909baba0c8db49eb730725f8a004
-IR.C13,1,677,1,3,264.21,two_column_bands,87,64,9,591.0,797.0,publisher OCR; reading order inferred,0,1,3,4,0,25.92,a4ae0b85aa7aea8b4edba61f4d2372e0
+IR.C12,25,359,54,55,275.91,two_column_bands,127,11,42,591.0,797.0,publisher OCR; reading order inferred,0,78,79,82,2,25.92,37fde71e50f941006bca92e7badc99a5
+IR.C12,26,360,56,57,308.23,two_column_bands,87,16,11,592.0,797.0,publisher OCR; reading order inferred,0,83,84,86,1,25.92,94510db3424e3c0d69fbab466bba42c0
+IR.C12,27,361,58,61,276.92,two_column_bands,238,22,60,591.0,797.0,publisher OCR; reading order inferred,1,87,90,92,1,25.92,284aee647a918b8d4ba86a2aba682d87
+IR.C12,28,362,62,63,307.75,two_column_bands,85,11,20,592.0,798.0,publisher OCR; reading order inferred,0,93,94,96,1,25.92,cdbb9a5af5d33a23b3c8f735cdce5d2d
+IR.C12,29,363,64,67,,single_or_unresolved,306,12,44,590.0,797.0,publisher OCR; reading order inferred,1,97,100,102,1,25.92,332518fd9e645b61d1ac0684d842cbee
+IR.C12,30,364,68,68,,single_or_unresolved,17,2,9,590.0,796.0,publisher OCR; reading order inferred,0,103,103,104,0,25.92,cf9026afbeeebedc3e0a606f7030810d
+IR.C12,31,365,69,69,,single_or_unresolved,31,2,14,593.0,798.0,publisher OCR; reading order inferred,0,105,105,106,0,25.92,e9c6d76365a84d43b1be9300ff7ed94d
+IR.C12,32,366,70,70,307.75,two_column_bands,47,7,3,589.0,796.0,publisher OCR; reading order inferred,0,107,107,108,0,25.92,061d445c0ef63222fe1b53cb01201fb3
+IR.C12,33,367,71,72,276.66,two_column_bands,81,9,14,594.0,799.0,publisher OCR; reading order inferred,0,109,110,111,0,25.92,2eebe3d2be4d527174c30b0555a5928c
+IR.C12,34,368,73,78,312.8,two_column_bands,398,16,206,595.0,800.0,publisher OCR; reading order inferred,2,112,117,118,0,25.92,17a5b96aabced8656962fbc77fccffe4
+IR.C12,35,369,79,80,274.18,two_column_bands,93,11,15,589.0,796.0,publisher OCR; reading order inferred,0,119,120,121,0,25.92,7211feae66e727ab09e0a560c87cafe6
+IR.C12,36,370,81,82,310.42,two_column_bands,101,13,15,591.0,797.0,publisher OCR; reading order inferred,0,122,123,124,0,25.92,7b6e229e75659ff5e8c00740aec2ad63
+IR.C12,37,371,83,83,272.81,two_column_bands,66,11,15,589.0,796.0,publisher OCR; reading order inferred,0,125,125,126,0,25.92,9a097eaaa86f4f63fd89e7fbc6f52688
+IR.C12,38,372,84,87,308.16,two_column_bands,144,16,7,590.0,797.0,publisher OCR; reading order inferred,1,127,130,131,0,25.92,81ab9aeb30073c8724d7a3fec694896a
+IR.C12,39,373,88,88,274.54,two_column_bands,79,9,21,590.0,796.0,publisher OCR; reading order inferred,0,132,132,133,0,25.92,a116251697e40f0e954ec79fbd80753a
+IR.C12,40,374,89,90,307.99,two_column_bands,86,13,30,590.0,797.0,publisher OCR; reading order inferred,0,134,135,136,0,25.92,6d2b19ea809ddb1c6d3c1ae07c9284fe
+IR.C12,41,375,91,92,,single_or_unresolved,70,18,16,592.0,799.0,publisher OCR; reading order inferred,0,137,138,139,0,25.92,403212cc0241f99909a358bd2bb412fb
+IR.C12,42,376,93,95,,single_or_unresolved,132,16,48,590.0,797.0,publisher OCR; reading order inferred,2,140,142,143,0,25.92,22c3924c4adb472b51d2770c15aa2863
+IR.C12,43,377,96,96,,single_or_unresolved,24,2,10,590.0,797.0,publisher OCR; reading order inferred,0,144,144,145,0,25.92,cda79636322274c1dbbe772de0389a09
+IR.C12,44,378,97,99,,single_or_unresolved,184,6,50,590.0,797.0,publisher OCR; reading order inferred,1,146,148,149,0,25.92,ae1e2d1a993f7ec516a7df1288c5cf3f
+IR.C12,45,379,100,100,,single_or_unresolved,21,3,13,595.0,800.0,publisher OCR; reading order inferred,0,150,150,151,0,25.92,80124089d1b3d0558c59eeaacedd8e8d
+IR.C12,46,380,101,101,,single_or_unresolved,38,3,20,589.0,796.0,publisher OCR; reading order inferred,0,152,152,153,0,25.92,6685f10c438fd8618727a54862bcf291
+IR.C12,47,381,102,103,,single_or_unresolved,55,7,13,590.0,797.0,publisher OCR; reading order inferred,1,154,155,156,0,25.92,23ad4fb252747f182ff18171327b36f5
+IR.C12,48,382,104,104,,single_or_unresolved,52,5,28,589.0,796.0,publisher OCR; reading order inferred,0,157,157,158,0,25.92,0b26b24163f2a0a3912082fcdd52c49a
+IR.C12,49,383,105,105,,single_or_unresolved,69,4,25,589.0,795.0,publisher OCR; reading order inferred,0,159,159,160,0,25.92,e5be7362ef423cbf58d7bc5feb52d011
+IR.C12,50,384,106,106,,single_or_unresolved,25,4,13,590.0,796.0,publisher OCR; reading order inferred,0,161,161,162,0,25.92,66be2ec1bb931e79b53e9153e4bf1988
+IR.C12,51,385,107,107,,single_or_unresolved,48,2,6,590.0,796.0,publisher OCR; reading order inferred,0,163,163,164,0,25.92,047c3b3b65c03b07fdc15cf8a3398b3a
+IR.C12,52,386,108,108,,single_or_unresolved,31,1,10,590.0,796.0,publisher OCR; reading order inferred,0,165,165,166,0,25.92,f1a96341f61fd1cf39fd979947bfd493
+IR.C12,53,387,109,109,,single_or_unresolved,14,4,2,590.0,796.0,publisher OCR; reading order inferred,0,167,167,168,0,25.92,e18e3fa818bf1770055c9a2545b492b1
+IR.C12,54,,110,110,,single_or_unresolved,47,3,4,593.0,799.0,publisher OCR; reading order inferred,0,169,169,170,0,25.92,7f21eedd8a92125b471a394974ff364c
+IR.C12,55,389,111,111,,single_or_unresolved,52,10,18,590.0,797.0,publisher OCR; reading order inferred,0,171,171,172,0,25.92,497840de06df4b2126e7d28db3642576
+IR.C12,56,,112,112,,single_or_unresolved,48,2,2,594.0,800.0,publisher OCR; reading order inferred,0,173,173,174,0,25.92,a4fd8ce570d462a917f9f2b466f73123
+IR.C12,57,,113,113,,single_or_unresolved,58,2,2,590.0,797.0,publisher OCR; reading order inferred,0,175,175,176,0,25.92,3b83aa06fd37b9a269288c99604bc3c1
+IR.C12,58,,114,114,,single_or_unresolved,44,1,1,592.0,798.0,publisher OCR; reading order inferred,0,177,177,178,0,25.92,68867d890468bfe661794c821c260f16
+IR.C12,59,393,115,115,,single_or_unresolved,55,4,17,594.0,798.0,publisher OCR; reading order inferred,0,179,179,180,0,25.92,61e1909baba0c8db49eb730725f8a004
+IR.C13,1,677,1,3,264.21,two_column_bands,87,68,9,591.0,797.0,"52 visually checked hole-header lines (operations, coordinates, depths and recovery). Other text uses the publisher OCR.",0,1,3,4,0,25.92,a4ae0b85aa7aea8b4edba61f4d2372e0
 IR.C13,2,678,4,6,312.59,two_column_bands,128,23,1,590.0,797.0,publisher OCR; reading order inferred,0,5,7,8,0,25.92,9cb988741962d77fd5a1b6d65bdfc025
 IR.C13,3,679,7,8,279.66,two_column_bands,58,13,4,594.0,799.0,publisher OCR; reading order inferred,0,9,10,11,0,25.92,e5ace0b9f07f5730c4d86619a927e36b
 IR.C13,4,680,9,9,311.28,two_column_bands,28,8,6,593.0,798.0,publisher OCR; reading order inferred,0,12,12,13,0,25.92,be2f14b8cb3442f3bf99aa180e3c12d7
@@ -599,33 +599,33 @@ IR.C13,29,705,62,64,297.25,two_column_bands,225,15,50,595.0,798.0,publisher OCR;
 IR.C13,30,706,65,65,,single_or_unresolved,63,3,9,596.0,798.0,publisher OCR; reading order inferred,0,94,94,95,0,25.92,12a42229797985a916ad5b93bdbc586e
 IR.C13,31,707,66,66,,single_or_unresolved,91,2,21,593.0,796.0,publisher OCR; reading order inferred,0,96,96,97,0,25.92,362a8b34a3ea833df21838cd7c05874a
 IR.C13,32,708,67,72,,single_or_unresolved,394,7,40,595.0,798.0,publisher OCR; reading order inferred,1,98,103,104,0,25.92,f03963181a74e6dcefbd9acabb3ec358
-IR.C13,33,709,73,73,277.43,two_column_bands,163,10,49,595.0,798.0,publisher OCR; reading order inferred,0,105,105,106,0,25.92,b12e7a8ab7d4f96555b20922cf15971f
-IR.C13,34,710,74,75,310.45,two_column_bands,77,11,7,595.0,798.0,publisher OCR; reading order inferred,0,107,108,109,0,25.92,64cfa0317728feeb5788726ee355c3a2
-IR.C13,35,711,76,77,279.36,two_column_bands,100,16,26,597.0,800.0,publisher OCR; reading order inferred,0,110,111,112,0,25.92,b8a04c7ff5f49bef7b505af76a8bfe9b
-IR.C13,36,712,78,78,,single_or_unresolved,234,11,51,596.0,799.0,publisher OCR; reading order inferred,0,113,113,114,0,25.92,c5c120423418dc55bd6552685d6f45e0
-IR.C13,37,713,79,80,278.23,two_column_bands,119,10,14,592.0,798.0,publisher OCR; reading order inferred,0,115,116,117,0,25.92,f4e89e8d29c596b1bbd0685fd4e7eb93
-IR.C13,38,714,81,82,310.65,two_column_bands,101,16,5,591.0,798.0,publisher OCR; reading order inferred,0,118,119,120,0,25.92,9bc0e6cb3b5dac7ff99c4d729399fbb7
-IR.C13,39,715,83,85,277.31,two_column_bands,226,22,27,594.0,798.0,publisher OCR; reading order inferred,1,121,123,124,0,25.92,e21b8a5068f710e5ab43fadec1838788
-IR.C13,40,716,86,88,,single_or_unresolved,166,14,43,593.0,797.0,publisher OCR; reading order inferred,1,125,127,128,0,25.92,4ebf6f358e2a5690728359433e2924ef
-IR.C13,41,717,89,93,,single_or_unresolved,390,18,93,592.0,797.0,publisher OCR; reading order inferred,2,129,133,134,0,25.92,831a98c3df2b78b6f783338ed3909c13
-IR.C13,42,718,94,94,,single_or_unresolved,19,2,5,592.0,797.0,publisher OCR; reading order inferred,0,135,135,136,0,25.92,e069142d5585814fe13784991edb5f87
-IR.C13,43,719,95,95,,single_or_unresolved,28,2,5,591.0,797.0,publisher OCR; reading order inferred,0,137,137,138,0,25.92,bc9bb4cc743a3c3fffd3dbc7e5e0f540
-IR.C13,44,720,96,96,,single_or_unresolved,41,2,26,590.0,796.0,publisher OCR; reading order inferred,0,139,139,140,0,25.92,35cd88f3b6fdbe9f4d717273626a5086
-IR.C13,45,721,97,98,,single_or_unresolved,171,4,31,594.0,797.0,publisher OCR; reading order inferred,1,141,142,143,0,25.92,74706602d88cdaa3682dd42da282523b
-IR.C13,46,722,99,99,,single_or_unresolved,93,5,20,593.0,797.0,publisher OCR; reading order inferred,0,144,144,145,0,25.92,a06b412fd0791771e12bb37102e26b15
-IR.C13,47,723,100,102,,single_or_unresolved,298,4,63,593.0,797.0,publisher OCR; reading order inferred,1,146,148,149,0,25.92,bdce38d5e7cb96f13ec35f43b53cf239
-IR.C13,48,724,103,103,,single_or_unresolved,103,5,30,600.0,802.0,publisher OCR; reading order inferred,0,150,150,151,0,25.92,9df4f1609cbc579dc2fe85b38ac42e5d
-IR.C13,49,725,104,104,,single_or_unresolved,22,3,8,594.0,797.0,publisher OCR; reading order inferred,0,152,152,153,0,25.92,23d50466048f6b11be37624632c5beda
-IR.C13,50,726,105,107,,single_or_unresolved,346,6,154,595.0,798.0,publisher OCR; reading order inferred,1,154,156,157,0,25.92,76bd336258a4c3deb8aa2d5ca3f87cb4
-IR.C13,51,727,108,108,,single_or_unresolved,30,3,7,595.0,799.0,publisher OCR; reading order inferred,0,158,158,159,0,25.92,cc502e166fb99f3546fc93860cd4ec21
-IR.C13,52,728,109,113,,single_or_unresolved,422,9,105,596.0,799.0,publisher OCR; reading order inferred,2,160,164,165,0,25.92,c4d48471bdaedccead59e35b2624a9fe
-IR.C13,53,729,114,115,,single_or_unresolved,49,6,14,590.0,797.0,publisher OCR; reading order inferred,1,166,167,168,0,25.92,4242c71c21f0a888c9866487320d0cc3
-IR.C13,54,730,116,118,,single_or_unresolved,167,6,38,590.0,797.0,publisher OCR; reading order inferred,1,169,171,172,0,25.92,acc0c50da70662089df4cef8141bd9c4
-IR.C13,55,731,119,120,,single_or_unresolved,73,5,9,592.0,796.0,publisher OCR; reading order inferred,1,173,174,175,0,25.92,cca331f4389f4eac4b53af48f8644930
-IR.C13,56,732,121,121,,single_or_unresolved,17,3,5,593.0,797.0,publisher OCR; reading order inferred,0,176,176,177,0,25.92,59cc0de6c1c1963d1f3139c6e3b06e23
-IR.C13,57,733,122,122,,single_or_unresolved,45,4,19,594.0,799.0,publisher OCR; reading order inferred,0,178,178,179,0,25.92,395454569a9cdba6baa76032dd78d33c
-IR.C13,58,,123,123,,single_or_unresolved,37,2,2,592.0,798.0,publisher OCR; reading order inferred,0,180,180,181,0,25.92,89a87073788d1d00c42b7876ed8c67de
-IR.C14,1,735,1,3,258.56,two_column_bands,93,62,15,592.0,797.0,publisher OCR; reading order inferred,0,1,3,4,0,25.92,af2ebfc95b5edd44980e680435dfd2ab
+IR.C13,33,709,73,73,277.43,two_column_bands,163,10,49,595.0,798.0,publisher OCR; reading order inferred,0,105,105,108,2,25.92,b12e7a8ab7d4f96555b20922cf15971f
+IR.C13,34,710,74,75,310.45,two_column_bands,77,11,7,595.0,798.0,publisher OCR; reading order inferred,0,109,110,112,1,25.92,64cfa0317728feeb5788726ee355c3a2
+IR.C13,35,711,76,77,279.36,two_column_bands,100,16,26,597.0,800.0,publisher OCR; reading order inferred,0,113,114,116,1,25.92,b8a04c7ff5f49bef7b505af76a8bfe9b
+IR.C13,36,712,78,78,,single_or_unresolved,234,11,51,596.0,799.0,publisher OCR; reading order inferred,0,117,117,119,1,25.92,c5c120423418dc55bd6552685d6f45e0
+IR.C13,37,713,79,80,278.23,two_column_bands,119,10,14,592.0,798.0,publisher OCR; reading order inferred,0,120,121,122,0,25.92,f4e89e8d29c596b1bbd0685fd4e7eb93
+IR.C13,38,714,81,82,310.65,two_column_bands,101,16,5,591.0,798.0,publisher OCR; reading order inferred,0,123,124,125,0,25.92,9bc0e6cb3b5dac7ff99c4d729399fbb7
+IR.C13,39,715,83,85,277.31,two_column_bands,226,22,27,594.0,798.0,publisher OCR; reading order inferred,1,126,128,129,0,25.92,e21b8a5068f710e5ab43fadec1838788
+IR.C13,40,716,86,88,,single_or_unresolved,166,14,43,593.0,797.0,publisher OCR; reading order inferred,1,130,132,133,0,25.92,4ebf6f358e2a5690728359433e2924ef
+IR.C13,41,717,89,93,,single_or_unresolved,390,18,93,592.0,797.0,publisher OCR; reading order inferred,2,134,138,139,0,25.92,831a98c3df2b78b6f783338ed3909c13
+IR.C13,42,718,94,94,,single_or_unresolved,19,2,5,592.0,797.0,publisher OCR; reading order inferred,0,140,140,142,1,25.92,e069142d5585814fe13784991edb5f87
+IR.C13,43,719,95,95,,single_or_unresolved,28,2,5,591.0,797.0,publisher OCR; reading order inferred,0,143,143,144,0,25.92,bc9bb4cc743a3c3fffd3dbc7e5e0f540
+IR.C13,44,720,96,96,,single_or_unresolved,41,2,26,590.0,796.0,publisher OCR; reading order inferred,0,145,145,146,0,25.92,35cd88f3b6fdbe9f4d717273626a5086
+IR.C13,45,721,97,98,,single_or_unresolved,171,4,31,594.0,797.0,publisher OCR; reading order inferred,1,147,148,149,0,25.92,74706602d88cdaa3682dd42da282523b
+IR.C13,46,722,99,99,,single_or_unresolved,93,5,20,593.0,797.0,publisher OCR; reading order inferred,0,150,150,151,0,25.92,a06b412fd0791771e12bb37102e26b15
+IR.C13,47,723,100,102,,single_or_unresolved,298,4,63,593.0,797.0,publisher OCR; reading order inferred,1,152,154,155,0,25.92,bdce38d5e7cb96f13ec35f43b53cf239
+IR.C13,48,724,103,103,,single_or_unresolved,103,5,30,600.0,802.0,publisher OCR; reading order inferred,0,156,156,157,0,25.92,9df4f1609cbc579dc2fe85b38ac42e5d
+IR.C13,49,725,104,104,,single_or_unresolved,22,3,8,594.0,797.0,publisher OCR; reading order inferred,0,158,158,159,0,25.92,23d50466048f6b11be37624632c5beda
+IR.C13,50,726,105,107,,single_or_unresolved,346,6,154,595.0,798.0,publisher OCR; reading order inferred,1,160,162,163,0,25.92,76bd336258a4c3deb8aa2d5ca3f87cb4
+IR.C13,51,727,108,108,,single_or_unresolved,30,3,7,595.0,799.0,publisher OCR; reading order inferred,0,164,164,165,0,25.92,cc502e166fb99f3546fc93860cd4ec21
+IR.C13,52,728,109,113,,single_or_unresolved,422,9,105,596.0,799.0,publisher OCR; reading order inferred,2,166,170,171,0,25.92,c4d48471bdaedccead59e35b2624a9fe
+IR.C13,53,729,114,115,,single_or_unresolved,49,6,14,590.0,797.0,publisher OCR; reading order inferred,1,172,173,174,0,25.92,4242c71c21f0a888c9866487320d0cc3
+IR.C13,54,730,116,118,,single_or_unresolved,167,6,38,590.0,797.0,publisher OCR; reading order inferred,1,175,177,178,0,25.92,acc0c50da70662089df4cef8141bd9c4
+IR.C13,55,731,119,120,,single_or_unresolved,73,5,9,592.0,796.0,publisher OCR; reading order inferred,1,179,180,181,0,25.92,cca331f4389f4eac4b53af48f8644930
+IR.C13,56,732,121,121,,single_or_unresolved,17,3,5,593.0,797.0,publisher OCR; reading order inferred,0,182,182,183,0,25.92,59cc0de6c1c1963d1f3139c6e3b06e23
+IR.C13,57,733,122,122,,single_or_unresolved,45,4,19,594.0,799.0,publisher OCR; reading order inferred,0,184,184,185,0,25.92,395454569a9cdba6baa76032dd78d33c
+IR.C13,58,,123,123,,single_or_unresolved,37,2,2,592.0,798.0,publisher OCR; reading order inferred,0,186,186,187,0,25.92,89a87073788d1d00c42b7876ed8c67de
+IR.C14,1,735,1,3,258.56,two_column_bands,93,70,15,592.0,797.0,"52 visually checked hole-header lines (operations, coordinates, depths and recovery). Other text uses the publisher OCR.",0,1,3,4,0,25.92,af2ebfc95b5edd44980e680435dfd2ab
 IR.C14,2,736,4,6,311.22,two_column_bands,128,16,2,593.0,797.0,publisher OCR; reading order inferred,0,5,7,8,0,25.92,e1ff89cb286d44e340047ffeeda892d2
 IR.C14,3,737,7,8,273.94,two_column_bands,63,15,7,593.0,797.0,publisher OCR; reading order inferred,0,9,10,11,0,25.92,1f31d0f7b31cc65db4ba7659662353b0
 IR.C14,4,738,9,9,309.11,two_column_bands,29,7,6,592.0,797.0,publisher OCR; reading order inferred,0,12,12,13,0,25.92,605c3002f66ac468dd8b45acfbeb52f1
@@ -664,41 +664,41 @@ IR.C14,36,770,78,78,,single_or_unresolved,52,7,40,584.0,796.0,publisher OCR; rea
 IR.C14,37,771,79,79,,single_or_unresolved,27,3,3,584.0,796.0,publisher OCR; reading order inferred,0,115,115,116,0,25.92,dfa2217da6459721010cf763d3f0d752
 IR.C14,38,772,80,81,,single_or_unresolved,495,12,57,586.0,797.0,publisher OCR; reading order inferred,1,117,118,119,0,25.92,80bbc2f8f84d3a317b11f8e57058c59d
 IR.C14,39,773,82,82,,single_or_unresolved,51,1,4,587.0,798.0,publisher OCR; reading order inferred,0,120,120,121,0,25.92,35369cb1eb4a5e98f4d34e7b2c232dbc
-IR.C14,40,774,83,85,,single_or_unresolved,300,16,68,584.0,796.0,publisher OCR; reading order inferred,1,122,124,125,0,25.92,bf30e7132ca6ee67aedcd1964693898c
-IR.C14,41,775,86,86,,single_or_unresolved,136,7,30,584.0,796.0,publisher OCR; reading order inferred,0,126,126,127,0,25.92,37f17f52bb744664a5c86c954a86836c
-IR.C14,42,776,87,87,,single_or_unresolved,49,2,18,585.0,797.0,publisher OCR; reading order inferred,0,128,128,129,0,25.92,c9001bf9198cc80d122082a0fc91833b
-IR.C14,43,777,88,88,,single_or_unresolved,25,2,6,582.0,796.0,publisher OCR; reading order inferred,0,130,130,131,0,25.92,aedd6823ecb498e29016740e3fcc0b48
-IR.C14,44,778,89,89,,single_or_unresolved,25,2,9,584.0,797.0,publisher OCR; reading order inferred,0,132,132,133,0,25.92,5b12b2f269e1daac1bff937191ed04be
-IR.C14,45,779,90,90,,single_or_unresolved,18,2,11,583.0,795.0,publisher OCR; reading order inferred,0,134,134,135,0,25.92,4de7cde4b794870a30645c559a393663
-IR.C14,46,780,91,91,,single_or_unresolved,28,2,13,585.0,797.0,publisher OCR; reading order inferred,0,136,136,137,0,25.92,962227b3cec3e192b0431573db123978
-IR.C14,47,781,92,95,,single_or_unresolved,323,6,39,585.0,796.0,publisher OCR; reading order inferred,1,138,141,142,0,25.92,179acfdb66d3b82b0c4466608e9ebd39
-IR.C14,48,782,96,100,,single_or_unresolved,341,13,156,586.0,797.0,publisher OCR; reading order inferred,3,143,147,148,0,25.92,63e3a54fd84c335b80e031b18a21c2b9
-IR.C14,49,783,101,101,,single_or_unresolved,25,2,11,585.0,797.0,publisher OCR; reading order inferred,0,149,149,150,0,25.92,75b30107f5eed0bd61375577148e5233
-IR.C14,50,784,102,102,,single_or_unresolved,35,2,11,588.0,799.0,publisher OCR; reading order inferred,0,151,151,152,0,25.92,181221ebd3f800bc3681d24ed717fc73
-IR.C14,51,785,103,103,,single_or_unresolved,42,3,15,584.0,796.0,publisher OCR; reading order inferred,0,153,153,154,0,25.92,17c5dc27caf2e7684542daf0477fff56
-IR.C14,52,786,104,105,,single_or_unresolved,104,5,44,590.0,801.0,publisher OCR; reading order inferred,1,155,156,157,0,25.92,0a6c8de0504c9f6429d31dd96d772042
-IR.C14,53,787,106,107,,single_or_unresolved,89,8,25,589.0,799.0,publisher OCR; reading order inferred,1,158,159,160,0,25.92,762964b403255f4ca7b627a9e8ff6168
-IR.C14,54,788,108,108,,single_or_unresolved,74,5,21,590.0,799.0,publisher OCR; reading order inferred,0,161,161,162,0,25.92,3809c62fb11687e1ce72f67588923b33
-IR.C14,55,789,109,111,,single_or_unresolved,244,8,46,584.0,796.0,publisher OCR; reading order inferred,1,163,165,166,0,25.92,63a59953273f662870bd7a3398229830
-IR.C14,56,790,112,113,,single_or_unresolved,71,6,18,590.0,801.0,publisher OCR; reading order inferred,1,167,168,169,0,25.92,2aa42c76a5b44cb9b0ed83f86e57388b
-IR.C14,57,791,114,114,,single_or_unresolved,22,2,12,584.0,798.0,publisher OCR; reading order inferred,0,170,170,171,0,25.92,e7be6b2742a4ec26753eb54080269111
-IR.C14,58,792,115,115,,single_or_unresolved,15,2,5,585.0,799.0,publisher OCR; reading order inferred,0,172,172,173,0,25.92,ddf91dd5147cea4b0b6ec472dd79a1fd
-IR.C14,59,793,116,116,,single_or_unresolved,21,2,7,585.0,797.0,publisher OCR; reading order inferred,0,174,174,175,0,25.92,a339db7095269a0748d5603887aefd28
-IR.C14,60,794,117,117,,single_or_unresolved,35,2,18,585.0,798.0,publisher OCR; reading order inferred,0,176,176,177,0,25.92,54d2002ae9f7cc0cff8c17110f3166d1
-IR.C14,61,795,118,118,,single_or_unresolved,19,3,9,584.0,796.0,publisher OCR; reading order inferred,0,178,178,179,0,25.92,2acaf1a5a20d9ba1625768ae8fbff1f2
-IR.C14,62,796,119,119,,single_or_unresolved,24,2,7,585.0,796.0,publisher OCR; reading order inferred,0,180,180,181,0,25.92,f6a3244ba60411b57f4ed5df541fdf79
-IR.C14,63,797,120,120,,single_or_unresolved,27,3,7,583.0,797.0,publisher OCR; reading order inferred,0,182,182,183,0,25.92,bf6fcc6b76705b86d71af8046a6c011f
-IR.C14,64,798,121,121,,single_or_unresolved,36,2,8,582.0,796.0,publisher OCR; reading order inferred,0,184,184,185,0,25.92,04bdeee761902d07c32b28b8b40595d3
-IR.C14,65,799,122,122,,single_or_unresolved,22,4,15,585.0,796.0,publisher OCR; reading order inferred,0,186,186,187,0,25.92,4d9c7ccd205edcddac8e6bf86da57383
-IR.C14,66,800,123,123,,single_or_unresolved,30,2,15,584.0,795.0,publisher OCR; reading order inferred,0,188,188,189,0,25.92,761c4182c6845aa913cd7a074a0723c4
-IR.C14,67,801,124,124,,single_or_unresolved,60,2,12,585.0,797.0,publisher OCR; reading order inferred,0,190,190,191,0,25.92,ea39a20f9393c61a380480a7e51daa99
-IR.C14,68,802,125,125,,single_or_unresolved,56,7,20,590.0,800.0,publisher OCR; reading order inferred,0,192,192,193,0,25.92,10ccbdecb01dd962fdf649b8a3d3d39b
-IR.C14,69,803,126,126,,single_or_unresolved,68,9,26,584.0,796.0,publisher OCR; reading order inferred,0,194,194,195,0,25.92,d0e890cde57527ae3da566e0b16c5783
-IR.C14,70,804,127,127,,single_or_unresolved,71,5,22,584.0,796.0,publisher OCR; reading order inferred,0,196,196,197,0,25.92,9ed1d6ad2c645efe35991d83a73455df
-IR.C14,71,805,128,128,,single_or_unresolved,70,8,36,587.0,798.0,publisher OCR; reading order inferred,0,198,198,199,0,25.92,8eed48e2cbf96dc942b2527bca4fc106
-IR.C14,72,806,129,129,,single_or_unresolved,60,8,23,584.0,796.0,publisher OCR; reading order inferred,0,200,200,201,0,25.92,dab79ad5b2e1e1a3fb061337c770570e
-IR.C14,73,,130,130,,single_or_unresolved,41,1,2,586.0,797.0,publisher OCR; reading order inferred,0,202,202,203,0,25.92,e63886d6b2284fa7ed4b46b06d992cf6
-IR.C15,1,809,1,3,275.29,two_column_bands,104,39,7,584.0,796.0,publisher OCR; reading order inferred,0,1,3,4,0,25.92,b8e0f72a5af1bdb650085f0d743eb7eb
+IR.C14,40,774,83,85,,single_or_unresolved,300,16,68,584.0,796.0,publisher OCR; reading order inferred,1,122,124,127,2,25.92,bf30e7132ca6ee67aedcd1964693898c
+IR.C14,41,775,86,86,,single_or_unresolved,136,7,30,584.0,796.0,publisher OCR; reading order inferred,0,128,128,130,1,25.92,37f17f52bb744664a5c86c954a86836c
+IR.C14,42,776,87,87,,single_or_unresolved,49,2,18,585.0,797.0,publisher OCR; reading order inferred,0,131,131,133,1,25.92,c9001bf9198cc80d122082a0fc91833b
+IR.C14,43,777,88,88,,single_or_unresolved,25,2,6,582.0,796.0,publisher OCR; reading order inferred,0,134,134,136,1,25.92,aedd6823ecb498e29016740e3fcc0b48
+IR.C14,44,778,89,89,,single_or_unresolved,25,2,9,584.0,797.0,publisher OCR; reading order inferred,0,137,137,138,0,25.92,5b12b2f269e1daac1bff937191ed04be
+IR.C14,45,779,90,90,,single_or_unresolved,18,2,11,583.0,795.0,publisher OCR; reading order inferred,0,139,139,140,0,25.92,4de7cde4b794870a30645c559a393663
+IR.C14,46,780,91,91,,single_or_unresolved,28,2,13,585.0,797.0,publisher OCR; reading order inferred,0,141,141,142,0,25.92,962227b3cec3e192b0431573db123978
+IR.C14,47,781,92,95,,single_or_unresolved,323,6,39,585.0,796.0,publisher OCR; reading order inferred,1,143,146,147,0,25.92,179acfdb66d3b82b0c4466608e9ebd39
+IR.C14,48,782,96,100,,single_or_unresolved,341,13,156,586.0,797.0,publisher OCR; reading order inferred,3,148,152,153,0,25.92,63e3a54fd84c335b80e031b18a21c2b9
+IR.C14,49,783,101,101,,single_or_unresolved,25,2,11,585.0,797.0,publisher OCR; reading order inferred,0,154,154,156,1,25.92,75b30107f5eed0bd61375577148e5233
+IR.C14,50,784,102,102,,single_or_unresolved,35,2,11,588.0,799.0,publisher OCR; reading order inferred,0,157,157,158,0,25.92,181221ebd3f800bc3681d24ed717fc73
+IR.C14,51,785,103,103,,single_or_unresolved,42,3,15,584.0,796.0,publisher OCR; reading order inferred,0,159,159,160,0,25.92,17c5dc27caf2e7684542daf0477fff56
+IR.C14,52,786,104,105,,single_or_unresolved,104,5,44,590.0,801.0,publisher OCR; reading order inferred,1,161,162,163,0,25.92,0a6c8de0504c9f6429d31dd96d772042
+IR.C14,53,787,106,107,,single_or_unresolved,89,8,25,589.0,799.0,publisher OCR; reading order inferred,1,164,165,166,0,25.92,762964b403255f4ca7b627a9e8ff6168
+IR.C14,54,788,108,108,,single_or_unresolved,74,5,21,590.0,799.0,publisher OCR; reading order inferred,0,167,167,168,0,25.92,3809c62fb11687e1ce72f67588923b33
+IR.C14,55,789,109,111,,single_or_unresolved,244,8,46,584.0,796.0,publisher OCR; reading order inferred,1,169,171,172,0,25.92,63a59953273f662870bd7a3398229830
+IR.C14,56,790,112,113,,single_or_unresolved,71,6,18,590.0,801.0,publisher OCR; reading order inferred,1,173,174,175,0,25.92,2aa42c76a5b44cb9b0ed83f86e57388b
+IR.C14,57,791,114,114,,single_or_unresolved,22,2,12,584.0,798.0,publisher OCR; reading order inferred,0,176,176,177,0,25.92,e7be6b2742a4ec26753eb54080269111
+IR.C14,58,792,115,115,,single_or_unresolved,15,2,5,585.0,799.0,publisher OCR; reading order inferred,0,178,178,179,0,25.92,ddf91dd5147cea4b0b6ec472dd79a1fd
+IR.C14,59,793,116,116,,single_or_unresolved,21,2,7,585.0,797.0,publisher OCR; reading order inferred,0,180,180,181,0,25.92,a339db7095269a0748d5603887aefd28
+IR.C14,60,794,117,117,,single_or_unresolved,35,2,18,585.0,798.0,publisher OCR; reading order inferred,0,182,182,183,0,25.92,54d2002ae9f7cc0cff8c17110f3166d1
+IR.C14,61,795,118,118,,single_or_unresolved,19,3,9,584.0,796.0,publisher OCR; reading order inferred,0,184,184,185,0,25.92,2acaf1a5a20d9ba1625768ae8fbff1f2
+IR.C14,62,796,119,119,,single_or_unresolved,24,2,7,585.0,796.0,publisher OCR; reading order inferred,0,186,186,187,0,25.92,f6a3244ba60411b57f4ed5df541fdf79
+IR.C14,63,797,120,120,,single_or_unresolved,27,3,7,583.0,797.0,publisher OCR; reading order inferred,0,188,188,189,0,25.92,bf6fcc6b76705b86d71af8046a6c011f
+IR.C14,64,798,121,121,,single_or_unresolved,36,2,8,582.0,796.0,publisher OCR; reading order inferred,0,190,190,191,0,25.92,04bdeee761902d07c32b28b8b40595d3
+IR.C14,65,799,122,122,,single_or_unresolved,22,4,15,585.0,796.0,publisher OCR; reading order inferred,0,192,192,193,0,25.92,4d9c7ccd205edcddac8e6bf86da57383
+IR.C14,66,800,123,123,,single_or_unresolved,30,2,15,584.0,795.0,publisher OCR; reading order inferred,0,194,194,195,0,25.92,761c4182c6845aa913cd7a074a0723c4
+IR.C14,67,801,124,124,,single_or_unresolved,60,2,12,585.0,797.0,publisher OCR; reading order inferred,0,196,196,197,0,25.92,ea39a20f9393c61a380480a7e51daa99
+IR.C14,68,802,125,125,,single_or_unresolved,56,7,20,590.0,800.0,publisher OCR; reading order inferred,0,198,198,199,0,25.92,10ccbdecb01dd962fdf649b8a3d3d39b
+IR.C14,69,803,126,126,,single_or_unresolved,68,9,26,584.0,796.0,publisher OCR; reading order inferred,0,200,200,201,0,25.92,d0e890cde57527ae3da566e0b16c5783
+IR.C14,70,804,127,127,,single_or_unresolved,71,5,22,584.0,796.0,publisher OCR; reading order inferred,0,202,202,203,0,25.92,9ed1d6ad2c645efe35991d83a73455df
+IR.C14,71,805,128,128,,single_or_unresolved,70,8,36,587.0,798.0,publisher OCR; reading order inferred,0,204,204,205,0,25.92,8eed48e2cbf96dc942b2527bca4fc106
+IR.C14,72,806,129,129,,single_or_unresolved,60,8,23,584.0,796.0,publisher OCR; reading order inferred,0,206,206,207,0,25.92,dab79ad5b2e1e1a3fb061337c770570e
+IR.C14,73,,130,130,,single_or_unresolved,41,1,2,586.0,797.0,publisher OCR; reading order inferred,0,208,208,209,0,25.92,e63886d6b2284fa7ed4b46b06d992cf6
+IR.C15,1,809,1,3,275.29,two_column_bands,104,43,7,584.0,796.0,"26 visually checked hole-header lines (operations, coordinates, depths and recovery). Other text uses the publisher OCR.",0,1,3,4,0,25.92,b8e0f72a5af1bdb650085f0d743eb7eb
 IR.C15,2,810,4,6,308.73,two_column_bands,127,26,2,584.0,796.0,publisher OCR; reading order inferred,0,5,7,8,0,25.92,e0783d331265767e20b38f1034b634f7
 IR.C15,3,811,7,8,270.72,two_column_bands,73,16,12,586.0,797.0,publisher OCR; reading order inferred,0,9,10,11,0,25.92,45b39cf8872dca1faa2cc689a36000f3
 IR.C15,4,812,9,9,310.27,two_column_bands,30,8,5,588.0,799.0,publisher OCR; reading order inferred,0,12,12,13,0,25.92,695e51dae26911bd79d393a0ba2e4b94
@@ -737,50 +737,50 @@ IR.C15,36,844,81,83,309.55,two_column_bands,196,26,25,584.0,796.0,publisher OCR;
 IR.C15,37,845,84,84,,single_or_unresolved,21,2,5,584.0,796.0,publisher OCR; reading order inferred,0,120,120,121,0,25.92,c80a94e071f6e8f51353321fc302f775
 IR.C15,38,846,85,89,311.72,two_column_bands,681,10,84,585.0,797.0,publisher OCR; reading order inferred,1,122,126,127,0,25.92,b97acbbdfd496ab0034df471b9c65a6b
 IR.C15,39,847,90,94,267.27,two_column_bands,636,11,71,586.0,796.0,publisher OCR; reading order inferred,1,128,132,133,0,25.92,bd309fd910e84d7dd7ad9d3b12758ac3
-IR.C15,40,848,95,96,309.56,two_column_bands,77,16,4,588.0,797.0,publisher OCR; reading order inferred,0,134,135,136,0,25.92,f17dc56102d3a7a89b112cb69672b192
-IR.C15,41,849,97,100,268.6,two_column_bands,492,11,64,587.0,798.0,publisher OCR; reading order inferred,1,137,140,141,0,25.92,8e00ea07d49ac1691c5e270ca6f4822e
-IR.C15,42,850,101,105,311.62,two_column_bands,284,17,36,588.0,799.0,publisher OCR; reading order inferred,1,142,146,147,0,25.92,f395d1c9822407731fbb882fa9af8b7b
-IR.C15,43,851,106,107,267.7,two_column_bands,84,14,16,584.0,796.0,publisher OCR; reading order inferred,0,148,149,150,0,25.92,779dccaec353ca19b99ca0911c9b5c34
-IR.C15,44,852,108,109,308.05,two_column_bands,74,22,16,584.0,796.0,publisher OCR; reading order inferred,0,151,152,153,0,25.92,00a97d78efbeedb688a19c2da192934d
-IR.C15,45,853,110,111,268.94,two_column_bands,65,21,7,585.0,796.0,publisher OCR; reading order inferred,0,154,155,156,0,25.92,7db3bdae61519c70d1834b87459c5d0f
-IR.C15,46,854,112,112,,single_or_unresolved,39,2,20,585.0,796.0,publisher OCR; reading order inferred,0,157,157,158,0,25.92,a6c9bb982ab0e766a79b029a7ee19abf
-IR.C15,47,855,113,113,,single_or_unresolved,34,2,14,587.0,798.0,publisher OCR; reading order inferred,0,159,159,160,0,25.92,cc6406544432fa2138eb1e12bb4f92b2
-IR.C15,48,856,114,114,,single_or_unresolved,16,2,6,583.0,796.0,publisher OCR; reading order inferred,0,161,161,162,0,25.92,9106b7bf8309891a159a14ebfdd5e9ec
-IR.C15,49,857,115,115,,single_or_unresolved,72,13,11,585.0,797.0,publisher OCR; reading order inferred,0,163,163,164,0,25.92,6105c08ef8717fd43b8437fdfec127e5
-IR.C15,50,858,116,116,,single_or_unresolved,33,5,11,584.0,796.0,publisher OCR; reading order inferred,0,165,165,166,0,25.92,46109555c8b3c28d22d3804ff056d88d
-IR.C15,51,859,117,121,,single_or_unresolved,318,12,46,585.0,797.0,publisher OCR; reading order inferred,3,167,171,172,0,25.92,35985c43167fc599e22e12e55725755e
-IR.C15,52,860,122,122,,single_or_unresolved,15,2,8,587.0,798.0,publisher OCR; reading order inferred,0,173,173,174,0,25.92,1b63ea60384ad22a55dc3b03a6afd299
-IR.C15,53,,123,123,,single_or_unresolved,35,6,10,795.0,583.0,publisher OCR; reading order inferred,0,175,175,176,0,25.92,6f2eee865423a0e0227fa3949f6725d1
-IR.C15,54,862,124,124,,single_or_unresolved,32,2,6,586.0,797.0,publisher OCR; reading order inferred,0,177,177,178,0,25.92,91fd9206e83e0ec9fa8fd4359a0408f8
-IR.C15,55,863,125,125,,single_or_unresolved,12,2,6,584.0,796.0,publisher OCR; reading order inferred,0,179,179,180,0,25.92,b0cdcfc5d97005d07409863351d8df3d
-IR.C15,56,864,126,126,,single_or_unresolved,37,2,13,586.0,797.0,publisher OCR; reading order inferred,0,181,181,182,0,25.92,110110c8cfcd01adc83386d546f04012
-IR.C15,57,865,127,127,,single_or_unresolved,27,2,9,584.0,795.0,publisher OCR; reading order inferred,0,183,183,184,0,25.92,6d535274f19d8acb028e2fa2bbbc970d
-IR.C15,58,866,128,128,,single_or_unresolved,24,3,13,584.0,795.0,publisher OCR; reading order inferred,0,185,185,186,0,25.92,2c8acc047ffb0074ea76a96e1ae3c328
-IR.C15,59,867,129,129,,single_or_unresolved,71,6,26,584.0,795.0,publisher OCR; reading order inferred,0,187,187,188,0,25.92,8f97d7d5f12c9465fc4f4ef51923f5e2
-IR.C15,60,,130,130,,single_or_unresolved,77,6,27,585.0,796.0,publisher OCR; reading order inferred,0,189,189,190,0,25.92,e090aa90d5e3696f493e884f895b78bf
-IR.C15,61,869,131,131,,single_or_unresolved,19,3,7,585.0,797.0,publisher OCR; reading order inferred,0,191,191,192,0,25.92,ef17a55b7daf823d9479ab1390c0d479
-IR.C15,62,870,132,132,,single_or_unresolved,23,2,8,589.0,800.0,publisher OCR; reading order inferred,0,193,193,194,0,25.92,52726e4a9e3925c97a04b8c08e1fe25d
-IR.C15,63,871,133,133,,single_or_unresolved,18,3,9,586.0,798.0,publisher OCR; reading order inferred,0,195,195,196,0,25.92,e6fcbc3a82e481f9ccf7b137e78f5c05
-IR.C15,64,872,134,134,,single_or_unresolved,29,2,15,584.0,797.0,publisher OCR; reading order inferred,0,197,197,198,0,25.92,8167753a09e582fcf2dc6270e6bb076f
-IR.C15,65,873,135,135,,single_or_unresolved,31,5,14,587.0,798.0,publisher OCR; reading order inferred,0,199,199,200,0,25.92,70b37b57b624ce8e2d28aba111f8e3ae
-IR.C15,66,874,136,136,,single_or_unresolved,20,3,9,584.0,796.0,publisher OCR; reading order inferred,0,201,201,202,0,25.92,5eb74736c2f539b8d0b6c4c342a93a02
-IR.C15,67,875,137,137,,single_or_unresolved,25,3,11,586.0,797.0,publisher OCR; reading order inferred,0,203,203,204,0,25.92,454d6fb1ccbdd174f1be2f197d6c56bf
-IR.C15,68,876,138,138,,single_or_unresolved,33,3,12,585.0,797.0,publisher OCR; reading order inferred,0,205,205,206,0,25.92,03974ef43486c89ad6098b7447083c1d
-IR.C15,69,877,139,139,,single_or_unresolved,42,4,23,585.0,797.0,publisher OCR; reading order inferred,0,207,207,208,0,25.92,fa0f5126bca3e2be346a66f81a04c489
-IR.C15,70,,140,140,,single_or_unresolved,13,3,2,587.0,798.0,publisher OCR; reading order inferred,0,209,209,210,0,25.92,9e718892b5c5dbc6bc69659b2c27eab5
-IR.C15,71,879,141,141,,single_or_unresolved,22,4,14,584.0,796.0,publisher OCR; reading order inferred,0,211,211,212,0,25.92,8fdf93f2802c58eaf2bf3039111e085f
-IR.C15,72,880,142,142,,single_or_unresolved,53,4,20,589.0,800.0,publisher OCR; reading order inferred,0,213,213,214,0,25.92,e2c393de559de8e8159798c0091bfa6e
-IR.C15,73,881,143,143,,single_or_unresolved,70,8,26,584.0,796.0,publisher OCR; reading order inferred,0,215,215,216,0,25.92,bf359063a596934e2a68a321aa8277b6
-IR.C15,74,882,144,144,,single_or_unresolved,59,13,30,588.0,799.0,publisher OCR; reading order inferred,0,217,217,218,0,25.92,401bddf2201a2c7c8dbb51ce9a72dabd
-IR.C15,75,883,145,145,,single_or_unresolved,49,10,18,585.0,797.0,publisher OCR; reading order inferred,0,219,219,220,0,25.92,7736e75d6227d989ef487d8a91c6809c
-IR.C15,76,884,146,146,,single_or_unresolved,67,11,25,583.0,796.0,publisher OCR; reading order inferred,0,221,221,222,0,25.92,fcc808b4b6ed1bdbc55312b508a91431
-IR.C15,77,,147,147,,single_or_unresolved,51,3,2,585.0,798.0,publisher OCR; reading order inferred,0,223,223,224,0,25.92,656adaf05a993473227ac09fe3bb5fb3
-IR.C15,78,,148,148,,single_or_unresolved,59,11,19,582.0,797.0,publisher OCR; reading order inferred,0,225,225,226,0,25.92,45873c61287db34522c71d334dbe01cc
-IR.C15,79,,149,149,,single_or_unresolved,37,1,1,587.0,797.0,publisher OCR; reading order inferred,0,227,227,228,0,25.92,1d42061961c7098342aa97e7aedab8f4
-IR.C15,80,888,150,150,,single_or_unresolved,50,7,16,584.0,795.0,publisher OCR; reading order inferred,0,229,229,230,0,25.92,c663cdf7e04bb43483ddd697761d8164
-IR.C15,81,,151,151,,single_or_unresolved,44,1,1,584.0,796.0,publisher OCR; reading order inferred,0,231,231,232,0,25.92,d0be2f292f693f4ce4edbe0cda57beff
-IR.C16,1,891,1,3,263.5,two_column_bands,88,69,8,584.0,796.0,publisher OCR; reading order inferred,0,1,3,4,0,25.92,27d34c0d81b8449b24bca4511db8440a
-IR.C16,2,892,4,6,311.57,two_column_bands,127,28,3,584.0,796.0,publisher OCR; reading order inferred,0,5,7,8,0,25.92,c67b562d27e4bb65e491eceb0da16969
+IR.C15,40,848,95,96,309.56,two_column_bands,77,16,4,588.0,797.0,publisher OCR; reading order inferred,0,134,135,138,2,25.92,f17dc56102d3a7a89b112cb69672b192
+IR.C15,41,849,97,100,268.6,two_column_bands,492,11,64,587.0,798.0,publisher OCR; reading order inferred,1,139,142,143,0,25.92,8e00ea07d49ac1691c5e270ca6f4822e
+IR.C15,42,850,101,105,311.62,two_column_bands,284,17,36,588.0,799.0,publisher OCR; reading order inferred,1,144,148,149,0,25.92,f395d1c9822407731fbb882fa9af8b7b
+IR.C15,43,851,106,107,267.7,two_column_bands,84,14,16,584.0,796.0,publisher OCR; reading order inferred,0,150,151,153,1,25.92,779dccaec353ca19b99ca0911c9b5c34
+IR.C15,44,852,108,109,308.05,two_column_bands,74,22,16,584.0,796.0,publisher OCR; reading order inferred,0,154,155,157,1,25.92,00a97d78efbeedb688a19c2da192934d
+IR.C15,45,853,110,111,268.94,two_column_bands,65,21,7,585.0,796.0,publisher OCR; reading order inferred,0,158,159,161,1,25.92,7db3bdae61519c70d1834b87459c5d0f
+IR.C15,46,854,112,112,,single_or_unresolved,39,2,20,585.0,796.0,publisher OCR; reading order inferred,0,162,162,163,0,25.92,a6c9bb982ab0e766a79b029a7ee19abf
+IR.C15,47,855,113,113,,single_or_unresolved,34,2,14,587.0,798.0,publisher OCR; reading order inferred,0,164,164,165,0,25.92,cc6406544432fa2138eb1e12bb4f92b2
+IR.C15,48,856,114,114,,single_or_unresolved,16,2,6,583.0,796.0,publisher OCR; reading order inferred,0,166,166,167,0,25.92,9106b7bf8309891a159a14ebfdd5e9ec
+IR.C15,49,857,115,115,,single_or_unresolved,72,13,11,585.0,797.0,publisher OCR; reading order inferred,0,168,168,169,0,25.92,6105c08ef8717fd43b8437fdfec127e5
+IR.C15,50,858,116,116,,single_or_unresolved,33,5,11,584.0,796.0,publisher OCR; reading order inferred,0,170,170,171,0,25.92,46109555c8b3c28d22d3804ff056d88d
+IR.C15,51,859,117,121,,single_or_unresolved,318,12,46,585.0,797.0,publisher OCR; reading order inferred,3,172,176,177,0,25.92,35985c43167fc599e22e12e55725755e
+IR.C15,52,860,122,122,,single_or_unresolved,15,2,8,587.0,798.0,publisher OCR; reading order inferred,0,178,178,179,0,25.92,1b63ea60384ad22a55dc3b03a6afd299
+IR.C15,53,,123,123,,single_or_unresolved,35,6,10,795.0,583.0,publisher OCR; reading order inferred,0,180,180,181,0,25.92,6f2eee865423a0e0227fa3949f6725d1
+IR.C15,54,862,124,124,,single_or_unresolved,32,2,6,586.0,797.0,publisher OCR; reading order inferred,0,182,182,183,0,25.92,91fd9206e83e0ec9fa8fd4359a0408f8
+IR.C15,55,863,125,125,,single_or_unresolved,12,2,6,584.0,796.0,publisher OCR; reading order inferred,0,184,184,186,1,25.92,b0cdcfc5d97005d07409863351d8df3d
+IR.C15,56,864,126,126,,single_or_unresolved,37,2,13,586.0,797.0,publisher OCR; reading order inferred,0,187,187,188,0,25.92,110110c8cfcd01adc83386d546f04012
+IR.C15,57,865,127,127,,single_or_unresolved,27,2,9,584.0,795.0,publisher OCR; reading order inferred,0,189,189,190,0,25.92,6d535274f19d8acb028e2fa2bbbc970d
+IR.C15,58,866,128,128,,single_or_unresolved,24,3,13,584.0,795.0,publisher OCR; reading order inferred,0,191,191,192,0,25.92,2c8acc047ffb0074ea76a96e1ae3c328
+IR.C15,59,867,129,129,,single_or_unresolved,71,6,26,584.0,795.0,publisher OCR; reading order inferred,0,193,193,194,0,25.92,8f97d7d5f12c9465fc4f4ef51923f5e2
+IR.C15,60,,130,130,,single_or_unresolved,77,6,27,585.0,796.0,publisher OCR; reading order inferred,0,195,195,196,0,25.92,e090aa90d5e3696f493e884f895b78bf
+IR.C15,61,869,131,131,,single_or_unresolved,19,3,7,585.0,797.0,publisher OCR; reading order inferred,0,197,197,198,0,25.92,ef17a55b7daf823d9479ab1390c0d479
+IR.C15,62,870,132,132,,single_or_unresolved,23,2,8,589.0,800.0,publisher OCR; reading order inferred,0,199,199,200,0,25.92,52726e4a9e3925c97a04b8c08e1fe25d
+IR.C15,63,871,133,133,,single_or_unresolved,18,3,9,586.0,798.0,publisher OCR; reading order inferred,0,201,201,202,0,25.92,e6fcbc3a82e481f9ccf7b137e78f5c05
+IR.C15,64,872,134,134,,single_or_unresolved,29,2,15,584.0,797.0,publisher OCR; reading order inferred,0,203,203,204,0,25.92,8167753a09e582fcf2dc6270e6bb076f
+IR.C15,65,873,135,135,,single_or_unresolved,31,5,14,587.0,798.0,publisher OCR; reading order inferred,0,205,205,206,0,25.92,70b37b57b624ce8e2d28aba111f8e3ae
+IR.C15,66,874,136,136,,single_or_unresolved,20,3,9,584.0,796.0,publisher OCR; reading order inferred,0,207,207,208,0,25.92,5eb74736c2f539b8d0b6c4c342a93a02
+IR.C15,67,875,137,137,,single_or_unresolved,25,3,11,586.0,797.0,publisher OCR; reading order inferred,0,209,209,210,0,25.92,454d6fb1ccbdd174f1be2f197d6c56bf
+IR.C15,68,876,138,138,,single_or_unresolved,33,3,12,585.0,797.0,publisher OCR; reading order inferred,0,211,211,212,0,25.92,03974ef43486c89ad6098b7447083c1d
+IR.C15,69,877,139,139,,single_or_unresolved,42,4,23,585.0,797.0,publisher OCR; reading order inferred,0,213,213,214,0,25.92,fa0f5126bca3e2be346a66f81a04c489
+IR.C15,70,,140,140,,single_or_unresolved,13,3,2,587.0,798.0,publisher OCR; reading order inferred,0,215,215,216,0,25.92,9e718892b5c5dbc6bc69659b2c27eab5
+IR.C15,71,879,141,141,,single_or_unresolved,22,4,14,584.0,796.0,publisher OCR; reading order inferred,0,217,217,218,0,25.92,8fdf93f2802c58eaf2bf3039111e085f
+IR.C15,72,880,142,142,,single_or_unresolved,53,4,20,589.0,800.0,publisher OCR; reading order inferred,0,219,219,220,0,25.92,e2c393de559de8e8159798c0091bfa6e
+IR.C15,73,881,143,143,,single_or_unresolved,70,8,26,584.0,796.0,publisher OCR; reading order inferred,0,221,221,222,0,25.92,bf359063a596934e2a68a321aa8277b6
+IR.C15,74,882,144,144,,single_or_unresolved,59,13,30,588.0,799.0,publisher OCR; reading order inferred,0,223,223,224,0,25.92,401bddf2201a2c7c8dbb51ce9a72dabd
+IR.C15,75,883,145,145,,single_or_unresolved,49,10,18,585.0,797.0,publisher OCR; reading order inferred,0,225,225,226,0,25.92,7736e75d6227d989ef487d8a91c6809c
+IR.C15,76,884,146,146,,single_or_unresolved,67,11,25,583.0,796.0,publisher OCR; reading order inferred,0,227,227,228,0,25.92,fcc808b4b6ed1bdbc55312b508a91431
+IR.C15,77,,147,147,,single_or_unresolved,51,3,2,585.0,798.0,publisher OCR; reading order inferred,0,229,229,230,0,25.92,656adaf05a993473227ac09fe3bb5fb3
+IR.C15,78,,148,148,,single_or_unresolved,59,11,19,582.0,797.0,publisher OCR; reading order inferred,0,231,231,232,0,25.92,45873c61287db34522c71d334dbe01cc
+IR.C15,79,,149,149,,single_or_unresolved,37,1,1,587.0,797.0,publisher OCR; reading order inferred,0,233,233,234,0,25.92,1d42061961c7098342aa97e7aedab8f4
+IR.C15,80,888,150,150,,single_or_unresolved,50,7,16,584.0,795.0,publisher OCR; reading order inferred,0,235,235,236,0,25.92,c663cdf7e04bb43483ddd697761d8164
+IR.C15,81,,151,151,,single_or_unresolved,44,1,1,584.0,796.0,publisher OCR; reading order inferred,0,237,237,238,0,25.92,d0be2f292f693f4ce4edbe0cda57beff
+IR.C16,1,891,1,3,263.5,two_column_bands,88,73,8,584.0,796.0,"56 visually checked hole-header lines (operations, coordinates, depths and recovery). Other text uses the publisher OCR.",0,1,3,4,0,25.92,27d34c0d81b8449b24bca4511db8440a
+IR.C16,2,892,4,6,311.57,two_column_bands,127,29,3,584.0,796.0,"9 visually checked hole-header lines (operations, coordinates, depths and recovery). Other text uses the publisher OCR.",0,5,7,8,0,25.92,c67b562d27e4bb65e491eceb0da16969
 IR.C16,3,893,7,8,264.95,two_column_bands,56,15,4,585.0,797.0,publisher OCR; reading order inferred,0,9,10,11,0,25.92,4ec763567c93ac593494578cde3cef70
 IR.C16,4,894,9,9,309.81,two_column_bands,31,7,7,584.0,796.0,publisher OCR; reading order inferred,0,12,12,13,0,25.92,71faca0c57b110ada800274742fbaade
 IR.C16,5,895,10,10,263.22,two_column_bands,44,14,6,584.0,796.0,publisher OCR; reading order inferred,0,14,14,15,0,25.92,5a8ac804995f12fb6f188234a11ce0b4
@@ -823,38 +823,38 @@ IR.C16,41,931,87,90,264.87,two_column_bands,176,16,14,588.0,800.0,publisher OCR;
 IR.C16,42,932,91,96,310.45,two_column_bands,407,19,68,584.0,796.0,publisher OCR; reading order inferred,2,132,137,138,0,25.92,6d5356217666b844a52e446fa6534a3b
 IR.C16,43,933,97,100,265.81,two_column_bands,313,23,67,587.0,799.0,publisher OCR; reading order inferred,1,139,142,143,0,25.92,053cf4c91e85488d2dd1f786f6520db9
 IR.C16,44,934,101,101,,single_or_unresolved,49,2,14,586.0,798.0,publisher OCR; reading order inferred,0,144,144,145,0,25.92,48e4bc7385d5261b27c287a7fde087e8
-IR.C16,45,935,102,103,266.87,two_column_bands,90,19,21,584.0,797.0,publisher OCR; reading order inferred,0,146,147,148,0,25.92,c2ceaffdc5b97f1abf0be541957e36c8
-IR.C16,46,936,104,104,,single_or_unresolved,26,2,5,586.0,798.0,publisher OCR; reading order inferred,0,149,149,150,0,25.92,cffdbd5fe39739436427fb5385ac9477
-IR.C16,47,937,105,105,,single_or_unresolved,26,2,16,586.0,798.0,publisher OCR; reading order inferred,0,151,151,152,0,25.92,afaf4267660a9f785393c07c80935eb2
-IR.C16,48,938,106,106,,single_or_unresolved,16,2,8,586.0,799.0,publisher OCR; reading order inferred,0,153,153,154,0,25.92,72d1434f86959712e8243df01f1333de
-IR.C16,49,939,107,108,,single_or_unresolved,164,7,43,584.0,798.0,publisher OCR; reading order inferred,1,155,156,157,0,25.92,68bc7cfd494544f9a033fc7aadaf3533
-IR.C16,50,940,109,109,,single_or_unresolved,37,2,12,584.0,797.0,publisher OCR; reading order inferred,0,158,158,159,0,25.92,f966d86acbd018a6f653ea22c5062ba7
-IR.C16,51,941,110,110,,single_or_unresolved,38,2,13,586.0,798.0,publisher OCR; reading order inferred,0,160,160,161,0,25.92,56462773af8294d9dba504c44b63b717
-IR.C16,52,942,111,112,,single_or_unresolved,40,6,9,587.0,799.0,publisher OCR; reading order inferred,1,162,163,164,0,25.92,787361455fff46e8ffcace7eabd42729
-IR.C16,53,943,113,116,,single_or_unresolved,217,8,26,584.0,796.0,publisher OCR; reading order inferred,2,165,168,169,0,25.92,fe4ee7572e90b5f4093c7e30372f5ce8
-IR.C16,54,944,117,117,,single_or_unresolved,39,3,8,587.0,798.0,publisher OCR; reading order inferred,0,170,170,171,0,25.92,60d36b5f78b108e5cb0dd1265f836f89
-IR.C16,55,945,118,118,,single_or_unresolved,107,3,25,588.0,799.0,publisher OCR; reading order inferred,0,172,172,173,0,25.92,af8afd133883081b5ed51128e8cca8d0
-IR.C16,56,946,119,120,,single_or_unresolved,89,8,26,588.0,800.0,publisher OCR; reading order inferred,1,174,175,176,0,25.92,cf37582d37a979166705f6d30d02e600
-IR.C16,57,947,121,121,,single_or_unresolved,37,2,11,586.0,797.0,publisher OCR; reading order inferred,0,177,177,178,0,25.92,3387a649396c3bc142bca55087f99e73
-IR.C16,58,948,122,122,,single_or_unresolved,25,3,11,584.0,796.0,publisher OCR; reading order inferred,0,179,179,180,0,25.92,226fad09451e041c52fe4486e3296faf
-IR.C16,59,949,123,123,,single_or_unresolved,18,3,7,588.0,799.0,publisher OCR; reading order inferred,0,181,181,182,0,25.92,d6ecac82aa003810a401180d027d1910
-IR.C16,60,950,124,124,,single_or_unresolved,31,2,15,584.0,796.0,publisher OCR; reading order inferred,0,183,183,184,0,25.92,ccbfd8bf52036ec23c8035b1ead35b5a
-IR.C16,61,951,125,125,,single_or_unresolved,40,2,14,588.0,799.0,publisher OCR; reading order inferred,0,185,185,186,0,25.92,8a45595c136ef40f5466a4b1e8030158
-IR.C16,62,952,126,126,,single_or_unresolved,47,2,19,584.0,796.0,publisher OCR; reading order inferred,0,187,187,188,0,25.92,bb461ed23e1f79c213909f3bacdc3d11
-IR.C16,63,953,127,127,,single_or_unresolved,30,2,13,578.0,796.0,publisher OCR; reading order inferred,0,189,189,190,0,25.92,8f4aa2b421c9e63aca650e78f5e9ea21
-IR.C16,64,954,128,128,,single_or_unresolved,12,2,8,578.0,795.0,publisher OCR; reading order inferred,0,191,191,192,0,25.92,999937724d09d7735bfa3a78bc62f1f4
-IR.C16,65,955,129,129,261.27,two_column_bands,45,5,20,574.0,797.0,publisher OCR; reading order inferred,0,193,193,194,0,25.92,9d23610c6c9a4d994fb60334f98bf4dd
-IR.C16,66,956,130,130,,single_or_unresolved,38,7,18,573.0,796.0,publisher OCR; reading order inferred,0,195,195,196,0,25.92,00fdd74a78ebd273518865b19896561b
-IR.C16,67,957,131,131,,single_or_unresolved,33,3,9,583.0,799.0,publisher OCR; reading order inferred,0,197,197,198,0,25.92,d798f9152cd82bf73c1ed39ec6aa9387
-IR.C16,68,958,132,132,,single_or_unresolved,55,4,23,580.0,797.0,publisher OCR; reading order inferred,0,199,199,200,0,25.92,4a484512a48be69d2fa0b8f1490ff32c
-IR.C16,69,959,133,133,,single_or_unresolved,32,3,15,573.0,796.0,publisher OCR; reading order inferred,0,201,201,202,0,25.92,3d5d334438debdf8ad4baad8a9d81b2d
-IR.C16,70,960,134,134,,single_or_unresolved,61,12,22,577.0,799.0,publisher OCR; reading order inferred,0,203,203,204,0,25.92,d59db2b3be463b1794f898f88422afe9
-IR.C16,71,961,135,135,,single_or_unresolved,53,10,27,574.0,797.0,publisher OCR; reading order inferred,0,205,205,206,0,25.92,fe43045f8cf9652e524ddd90563e3042
-IR.C16,72,962,136,136,,single_or_unresolved,59,8,25,573.0,796.0,publisher OCR; reading order inferred,0,207,207,208,0,25.92,cb2291454598171550e95ab041ea421b
-IR.C16,73,963,137,137,,single_or_unresolved,63,8,22,573.0,797.0,publisher OCR; reading order inferred,0,209,209,210,0,25.92,6029eecc7e97bca563b14e8a2d03f84c
-IR.C16,74,964,138,138,,single_or_unresolved,62,9,27,577.0,799.0,publisher OCR; reading order inferred,0,211,211,212,0,25.92,032d95a08f617a287ad3909383748693
-IR.C16,75,,139,139,,single_or_unresolved,42,1,2,578.0,801.0,publisher OCR; reading order inferred,0,213,213,214,0,25.92,155a794588be7374fed82a6a43b74e63
-IR.C17,1,967,1,3,274.94,two_column_bands,85,64,9,595.0,794.0,publisher OCR; reading order inferred,0,1,3,4,0,25.92,8beda46ba8058ce3ceda507c0b8d36ad
+IR.C16,45,935,102,103,266.87,two_column_bands,90,19,21,584.0,797.0,publisher OCR; reading order inferred,0,146,147,150,2,25.92,c2ceaffdc5b97f1abf0be541957e36c8
+IR.C16,46,936,104,104,,single_or_unresolved,26,2,5,586.0,798.0,publisher OCR; reading order inferred,0,151,151,153,1,25.92,cffdbd5fe39739436427fb5385ac9477
+IR.C16,47,937,105,105,,single_or_unresolved,26,2,16,586.0,798.0,publisher OCR; reading order inferred,0,154,154,156,1,25.92,afaf4267660a9f785393c07c80935eb2
+IR.C16,48,938,106,106,,single_or_unresolved,16,2,8,586.0,799.0,publisher OCR; reading order inferred,0,157,157,159,1,25.92,72d1434f86959712e8243df01f1333de
+IR.C16,49,939,107,108,,single_or_unresolved,164,7,43,584.0,798.0,publisher OCR; reading order inferred,1,160,161,163,1,25.92,68bc7cfd494544f9a033fc7aadaf3533
+IR.C16,50,940,109,109,,single_or_unresolved,37,2,12,584.0,797.0,publisher OCR; reading order inferred,0,164,164,165,0,25.92,f966d86acbd018a6f653ea22c5062ba7
+IR.C16,51,941,110,110,,single_or_unresolved,38,2,13,586.0,798.0,publisher OCR; reading order inferred,0,166,166,167,0,25.92,56462773af8294d9dba504c44b63b717
+IR.C16,52,942,111,112,,single_or_unresolved,40,6,9,587.0,799.0,publisher OCR; reading order inferred,1,168,169,170,0,25.92,787361455fff46e8ffcace7eabd42729
+IR.C16,53,943,113,116,,single_or_unresolved,217,8,26,584.0,796.0,publisher OCR; reading order inferred,2,171,174,175,0,25.92,fe4ee7572e90b5f4093c7e30372f5ce8
+IR.C16,54,944,117,117,,single_or_unresolved,39,3,8,587.0,798.0,publisher OCR; reading order inferred,0,176,176,177,0,25.92,60d36b5f78b108e5cb0dd1265f836f89
+IR.C16,55,945,118,118,,single_or_unresolved,107,3,25,588.0,799.0,publisher OCR; reading order inferred,0,178,178,179,0,25.92,af8afd133883081b5ed51128e8cca8d0
+IR.C16,56,946,119,120,,single_or_unresolved,89,8,26,588.0,800.0,publisher OCR; reading order inferred,1,180,181,182,0,25.92,cf37582d37a979166705f6d30d02e600
+IR.C16,57,947,121,121,,single_or_unresolved,37,2,11,586.0,797.0,publisher OCR; reading order inferred,0,183,183,184,0,25.92,3387a649396c3bc142bca55087f99e73
+IR.C16,58,948,122,122,,single_or_unresolved,25,3,11,584.0,796.0,publisher OCR; reading order inferred,0,185,185,186,0,25.92,226fad09451e041c52fe4486e3296faf
+IR.C16,59,949,123,123,,single_or_unresolved,18,3,7,588.0,799.0,publisher OCR; reading order inferred,0,187,187,188,0,25.92,d6ecac82aa003810a401180d027d1910
+IR.C16,60,950,124,124,,single_or_unresolved,31,2,15,584.0,796.0,publisher OCR; reading order inferred,0,189,189,190,0,25.92,ccbfd8bf52036ec23c8035b1ead35b5a
+IR.C16,61,951,125,125,,single_or_unresolved,40,2,14,588.0,799.0,publisher OCR; reading order inferred,0,191,191,192,0,25.92,8a45595c136ef40f5466a4b1e8030158
+IR.C16,62,952,126,126,,single_or_unresolved,47,2,19,584.0,796.0,publisher OCR; reading order inferred,0,193,193,194,0,25.92,bb461ed23e1f79c213909f3bacdc3d11
+IR.C16,63,953,127,127,,single_or_unresolved,30,2,13,578.0,796.0,publisher OCR; reading order inferred,0,195,195,196,0,25.92,8f4aa2b421c9e63aca650e78f5e9ea21
+IR.C16,64,954,128,128,,single_or_unresolved,12,2,8,578.0,795.0,publisher OCR; reading order inferred,0,197,197,198,0,25.92,999937724d09d7735bfa3a78bc62f1f4
+IR.C16,65,955,129,129,261.27,two_column_bands,45,5,20,574.0,797.0,publisher OCR; reading order inferred,0,199,199,200,0,25.92,9d23610c6c9a4d994fb60334f98bf4dd
+IR.C16,66,956,130,130,,single_or_unresolved,38,7,18,573.0,796.0,publisher OCR; reading order inferred,0,201,201,202,0,25.92,00fdd74a78ebd273518865b19896561b
+IR.C16,67,957,131,131,,single_or_unresolved,33,3,9,583.0,799.0,publisher OCR; reading order inferred,0,203,203,204,0,25.92,d798f9152cd82bf73c1ed39ec6aa9387
+IR.C16,68,958,132,132,,single_or_unresolved,55,4,23,580.0,797.0,publisher OCR; reading order inferred,0,205,205,206,0,25.92,4a484512a48be69d2fa0b8f1490ff32c
+IR.C16,69,959,133,133,,single_or_unresolved,32,3,15,573.0,796.0,publisher OCR; reading order inferred,0,207,207,208,0,25.92,3d5d334438debdf8ad4baad8a9d81b2d
+IR.C16,70,960,134,134,,single_or_unresolved,61,12,22,577.0,799.0,publisher OCR; reading order inferred,0,209,209,210,0,25.92,d59db2b3be463b1794f898f88422afe9
+IR.C16,71,961,135,135,,single_or_unresolved,53,10,27,574.0,797.0,publisher OCR; reading order inferred,0,211,211,212,0,25.92,fe43045f8cf9652e524ddd90563e3042
+IR.C16,72,962,136,136,,single_or_unresolved,59,8,25,573.0,796.0,publisher OCR; reading order inferred,0,213,213,214,0,25.92,cb2291454598171550e95ab041ea421b
+IR.C16,73,963,137,137,,single_or_unresolved,63,8,22,573.0,797.0,publisher OCR; reading order inferred,0,215,215,216,0,25.92,6029eecc7e97bca563b14e8a2d03f84c
+IR.C16,74,964,138,138,,single_or_unresolved,62,9,27,577.0,799.0,publisher OCR; reading order inferred,0,217,217,218,0,25.92,032d95a08f617a287ad3909383748693
+IR.C16,75,,139,139,,single_or_unresolved,42,1,2,578.0,801.0,publisher OCR; reading order inferred,0,219,219,220,0,25.92,155a794588be7374fed82a6a43b74e63
+IR.C17,1,967,1,3,274.94,two_column_bands,85,68,9,595.0,794.0,"52 visually checked hole-header lines (operations, coordinates, depths and recovery). Other text uses the publisher OCR.",0,1,3,4,0,25.92,8beda46ba8058ce3ceda507c0b8d36ad
 IR.C17,2,968,4,6,305.77,two_column_bands,128,21,2,596.0,795.0,publisher OCR; reading order inferred,0,5,7,8,0,25.92,7d93beaf1b084d62deaa50b7a146ea9c
 IR.C17,3,969,7,8,283.18,two_column_bands,51,14,3,596.0,796.0,publisher OCR; reading order inferred,0,9,10,11,0,25.92,f95312d31f8fc5d230cbed6ea7233f9f
 IR.C17,4,970,9,9,312.12,two_column_bands,33,8,8,596.0,796.0,publisher OCR; reading order inferred,0,12,12,13,0,25.92,5a986fbbaf2d4d499e502a039c60be4a
@@ -883,34 +883,34 @@ IR.C17,26,992,64,64,308.86,two_column_bands,62,15,20,596.0,796.0,publisher OCR; 
 IR.C17,27,993,65,65,,single_or_unresolved,82,3,8,596.0,795.0,publisher OCR; reading order inferred,0,91,91,92,0,25.92,7dd762058d1bb8bae6fe0b5b6d5d5cd2
 IR.C17,28,994,66,66,313.02,two_column_bands,67,10,12,596.0,795.0,publisher OCR; reading order inferred,0,93,93,94,0,25.92,d5d8b3109d3de1f29fbe9aee92799e88
 IR.C17,29,995,67,67,,single_or_unresolved,77,4,42,596.0,795.0,publisher OCR; reading order inferred,0,95,95,96,0,25.92,4533f87a06b0c0323dda9bb36dbaa066
-IR.C17,30,996,68,69,311.01,two_column_bands,73,15,6,597.0,796.0,publisher OCR; reading order inferred,0,97,98,99,0,25.92,acd770f296fd51d09afd44162c1bfeec
-IR.C17,31,997,70,73,286.25,two_column_bands,268,22,79,595.0,795.0,publisher OCR; reading order inferred,1,100,103,104,0,25.92,1f3aedf16c63fc0449ace63d30f8fce4
-IR.C17,32,998,74,75,310.24,two_column_bands,79,18,14,596.0,796.0,publisher OCR; reading order inferred,0,105,106,107,0,25.92,00c99cff7ece35607a3f52339914f704
-IR.C17,33,999,76,77,286.89,two_column_bands,63,11,6,599.0,798.0,publisher OCR; reading order inferred,0,108,109,110,0,25.92,f478c5a152a6434714b4525b2594a9d7
-IR.C17,34,1000,78,78,311.72,two_column_bands,50,10,8,595.0,795.0,publisher OCR; reading order inferred,0,111,111,112,0,25.92,1189f281896865f156ace9441fa0a8ce
-IR.C17,35,1001,79,82,289.63,two_column_bands,277,12,29,597.0,797.0,publisher OCR; reading order inferred,1,113,116,117,0,25.92,cc6957bd91d3ec6aa11d24e4a1c4eb07
-IR.C17,36,1002,83,83,309.28,two_column_bands,48,6,10,597.0,797.0,publisher OCR; reading order inferred,0,118,118,119,0,25.92,65a019ddd425e283f29ffe8d22eb00aa
-IR.C17,37,1003,84,88,290.26,two_column_bands,374,16,65,599.0,797.0,publisher OCR; reading order inferred,2,120,124,125,0,25.92,f49b40ce6cb1f554646571e019d151d3
-IR.C17,38,1004,89,89,,single_or_unresolved,39,2,15,596.0,795.0,publisher OCR; reading order inferred,0,126,126,127,0,25.92,57000e3e6dedd5e02008bb82cb9d5d59
-IR.C17,39,1005,90,90,289.03,two_column_bands,47,10,10,601.0,799.0,publisher OCR; reading order inferred,0,128,128,129,0,25.92,2c878151a22dcac9e6e5b1889ba8d808
-IR.C17,40,1006,91,93,,single_or_unresolved,163,10,35,595.0,795.0,publisher OCR; reading order inferred,2,130,132,133,0,25.92,6749a08855b7ec57b6170606cdf13089
-IR.C17,41,1007,94,94,288.94,two_column_bands,58,7,5,596.0,796.0,publisher OCR; reading order inferred,0,134,134,135,0,25.92,a090263160543019906ad8c5140493d6
-IR.C17,42,1008,95,96,308.47,two_column_bands,64,14,6,595.0,795.0,publisher OCR; reading order inferred,0,136,137,138,0,25.92,86428d81007900e3da9bf02629b2f920
-IR.C17,43,1009,97,97,284.9,two_column_bands,54,16,7,600.0,798.0,publisher OCR; reading order inferred,0,139,139,140,0,25.92,96014fa1380e6f91f2c57480f70e2287
-IR.C17,44,1010,98,98,,single_or_unresolved,32,11,7,595.0,794.0,publisher OCR; reading order inferred,0,141,141,142,0,25.92,c43300314b59dccf2a2340a40d147840
-IR.C17,45,1011,99,99,,single_or_unresolved,21,3,5,597.0,797.0,publisher OCR; reading order inferred,0,143,143,144,0,25.92,052189dc105ab4e312de97a44e79bd5d
-IR.C17,46,1012,100,100,,single_or_unresolved,29,2,3,595.0,795.0,publisher OCR; reading order inferred,0,145,145,146,0,25.92,3d8dcd148c111a7f09f28fa28f5932d7
-IR.C17,47,1013,101,101,286.28,two_column_bands,40,4,11,596.0,795.0,publisher OCR; reading order inferred,0,147,147,148,0,25.92,d1758605d47a56eb98c3aee3dc32841d
-IR.C17,48,1014,102,102,,single_or_unresolved,22,4,8,596.0,796.0,publisher OCR; reading order inferred,0,149,149,150,0,25.92,f90fef13b70e82cb02159e6fdbc2822d
-IR.C17,49,1015,103,103,,single_or_unresolved,114,2,42,599.0,798.0,publisher OCR; reading order inferred,0,151,151,152,0,25.92,574a1bb0296ca786ec33230402c7a457
-IR.C17,50,1016,104,104,,single_or_unresolved,43,3,5,595.0,795.0,publisher OCR; reading order inferred,0,153,153,154,0,25.92,bafc389c2422d685307ee612c3a3ade7
-IR.C17,51,1017,105,105,,single_or_unresolved,3,2,1,596.0,795.0,publisher OCR; reading order inferred,0,155,155,156,0,25.92,7735189cdd092056aa59c27492380dc3
-IR.C17,52,1018,106,106,,single_or_unresolved,27,4,9,595.0,795.0,publisher OCR; reading order inferred,0,157,157,158,0,25.92,4e97b09e38f13105107517789348773e
-IR.C17,53,1019,107,107,,single_or_unresolved,17,2,3,595.0,795.0,publisher OCR; reading order inferred,0,159,159,160,0,25.92,a1d2565d422a906383e62e796f43e58b
-IR.C17,54,1020,108,108,,single_or_unresolved,47,6,20,598.0,797.0,publisher OCR; reading order inferred,0,161,161,162,0,25.92,69a3c7bc0bd5a0494541a11623ffb71f
-IR.C17,55,1021,109,109,,single_or_unresolved,49,4,24,596.0,795.0,publisher OCR; reading order inferred,0,163,163,164,0,25.92,5501ee791320c10e8aeac98aa92a6c1d
-IR.C18,1,1023,1,3,274.74,two_column_bands,83,61,13,599.0,796.0,publisher OCR; reading order inferred,0,1,3,4,0,25.92,b45b54ef414af155a6a1226b2d31bcc3
-IR.C18,2,1024,4,6,309.22,two_column_bands,122,30,5,598.0,795.0,publisher OCR; reading order inferred,0,5,7,8,0,25.92,fe9095a4d556b32d5f9512f48ae9ea7e
+IR.C17,30,996,68,69,311.01,two_column_bands,73,15,6,597.0,796.0,publisher OCR; reading order inferred,0,97,98,101,2,25.92,acd770f296fd51d09afd44162c1bfeec
+IR.C17,31,997,70,73,286.25,two_column_bands,268,22,79,595.0,795.0,publisher OCR; reading order inferred,1,102,105,106,0,25.92,1f3aedf16c63fc0449ace63d30f8fce4
+IR.C17,32,998,74,75,310.24,two_column_bands,79,18,14,596.0,796.0,publisher OCR; reading order inferred,0,107,108,110,1,25.92,00c99cff7ece35607a3f52339914f704
+IR.C17,33,999,76,77,286.89,two_column_bands,63,11,6,599.0,798.0,publisher OCR; reading order inferred,0,111,112,114,1,25.92,f478c5a152a6434714b4525b2594a9d7
+IR.C17,34,1000,78,78,311.72,two_column_bands,50,10,8,595.0,795.0,publisher OCR; reading order inferred,0,115,115,118,2,25.92,1189f281896865f156ace9441fa0a8ce
+IR.C17,35,1001,79,82,289.63,two_column_bands,277,12,29,597.0,797.0,publisher OCR; reading order inferred,1,119,122,123,0,25.92,cc6957bd91d3ec6aa11d24e4a1c4eb07
+IR.C17,36,1002,83,83,309.28,two_column_bands,48,6,10,597.0,797.0,publisher OCR; reading order inferred,0,124,124,125,0,25.92,65a019ddd425e283f29ffe8d22eb00aa
+IR.C17,37,1003,84,88,290.26,two_column_bands,374,16,65,599.0,797.0,publisher OCR; reading order inferred,2,126,130,131,0,25.92,f49b40ce6cb1f554646571e019d151d3
+IR.C17,38,1004,89,89,,single_or_unresolved,39,2,15,596.0,795.0,publisher OCR; reading order inferred,0,132,132,133,0,25.92,57000e3e6dedd5e02008bb82cb9d5d59
+IR.C17,39,1005,90,90,289.03,two_column_bands,47,10,10,601.0,799.0,publisher OCR; reading order inferred,0,134,134,135,0,25.92,2c878151a22dcac9e6e5b1889ba8d808
+IR.C17,40,1006,91,93,,single_or_unresolved,163,10,35,595.0,795.0,publisher OCR; reading order inferred,2,136,138,139,0,25.92,6749a08855b7ec57b6170606cdf13089
+IR.C17,41,1007,94,94,288.94,two_column_bands,58,7,5,596.0,796.0,publisher OCR; reading order inferred,0,140,140,141,0,25.92,a090263160543019906ad8c5140493d6
+IR.C17,42,1008,95,96,308.47,two_column_bands,64,14,6,595.0,795.0,publisher OCR; reading order inferred,0,142,143,144,0,25.92,86428d81007900e3da9bf02629b2f920
+IR.C17,43,1009,97,97,284.9,two_column_bands,54,16,7,600.0,798.0,publisher OCR; reading order inferred,0,145,145,146,0,25.92,96014fa1380e6f91f2c57480f70e2287
+IR.C17,44,1010,98,98,,single_or_unresolved,32,11,7,595.0,794.0,publisher OCR; reading order inferred,0,147,147,148,0,25.92,c43300314b59dccf2a2340a40d147840
+IR.C17,45,1011,99,99,,single_or_unresolved,21,3,5,597.0,797.0,publisher OCR; reading order inferred,0,149,149,150,0,25.92,052189dc105ab4e312de97a44e79bd5d
+IR.C17,46,1012,100,100,,single_or_unresolved,29,2,3,595.0,795.0,publisher OCR; reading order inferred,0,151,151,152,0,25.92,3d8dcd148c111a7f09f28fa28f5932d7
+IR.C17,47,1013,101,101,286.28,two_column_bands,40,4,11,596.0,795.0,publisher OCR; reading order inferred,0,153,153,154,0,25.92,d1758605d47a56eb98c3aee3dc32841d
+IR.C17,48,1014,102,102,,single_or_unresolved,22,4,8,596.0,796.0,publisher OCR; reading order inferred,0,155,155,156,0,25.92,f90fef13b70e82cb02159e6fdbc2822d
+IR.C17,49,1015,103,103,,single_or_unresolved,114,2,42,599.0,798.0,publisher OCR; reading order inferred,0,157,157,158,0,25.92,574a1bb0296ca786ec33230402c7a457
+IR.C17,50,1016,104,104,,single_or_unresolved,43,3,5,595.0,795.0,publisher OCR; reading order inferred,0,159,159,160,0,25.92,bafc389c2422d685307ee612c3a3ade7
+IR.C17,51,1017,105,105,,single_or_unresolved,3,2,1,596.0,795.0,publisher OCR; reading order inferred,0,161,161,162,0,25.92,7735189cdd092056aa59c27492380dc3
+IR.C17,52,1018,106,106,,single_or_unresolved,27,4,9,595.0,795.0,publisher OCR; reading order inferred,0,163,163,164,0,25.92,4e97b09e38f13105107517789348773e
+IR.C17,53,1019,107,107,,single_or_unresolved,17,2,3,595.0,795.0,publisher OCR; reading order inferred,0,165,165,166,0,25.92,a1d2565d422a906383e62e796f43e58b
+IR.C17,54,1020,108,108,,single_or_unresolved,47,6,20,598.0,797.0,publisher OCR; reading order inferred,0,167,167,168,0,25.92,69a3c7bc0bd5a0494541a11623ffb71f
+IR.C17,55,1021,109,109,,single_or_unresolved,49,4,24,596.0,795.0,publisher OCR; reading order inferred,0,169,169,170,0,25.92,5501ee791320c10e8aeac98aa92a6c1d
+IR.C18,1,1023,1,3,274.74,two_column_bands,83,69,13,599.0,796.0,"54 visually checked hole-header lines (operations, coordinates, depths and recovery). Other text uses the publisher OCR.",0,1,3,4,0,25.92,b45b54ef414af155a6a1226b2d31bcc3
+IR.C18,2,1024,4,6,309.22,two_column_bands,122,32,5,598.0,795.0,"11 visually checked hole-header lines (operations, coordinates, depths and recovery). Other text uses the publisher OCR.",0,5,7,8,0,25.92,fe9095a4d556b32d5f9512f48ae9ea7e
 IR.C18,3,1025,7,8,285.84,two_column_bands,66,17,9,595.0,795.0,publisher OCR; reading order inferred,0,9,10,11,0,25.92,5e908a19e7d33ce693754cd5beafb5b2
 IR.C18,4,1026,9,9,311.89,two_column_bands,29,7,4,597.0,796.0,publisher OCR; reading order inferred,0,12,12,13,0,25.92,3d88ec5952459eec82df7f7de59ff662
 IR.C18,5,1027,10,10,,single_or_unresolved,34,8,9,600.0,796.0,publisher OCR; reading order inferred,0,14,14,15,0,25.92,3ff567b577779021cfe2c39a4ab308fc
@@ -931,24 +931,24 @@ IR.C18,19,1041,38,38,,single_or_unresolved,49,2,41,598.0,795.0,publisher OCR; re
 IR.C18,20,1042,39,42,312.77,two_column_bands,230,20,43,600.0,797.0,publisher OCR; reading order inferred,1,58,61,62,0,25.92,c51ffa506b83ef6e33fb48b3fb8b076f
 IR.C18,21,1043,43,48,,single_or_unresolved,502,6,34,596.0,796.0,publisher OCR; reading order inferred,1,63,68,69,0,25.92,bddd51a514e413847628778869e40ee3
 IR.C18,22,1044,49,52,,single_or_unresolved,294,30,125,595.0,795.0,publisher OCR; reading order inferred,1,70,73,74,0,25.92,5925392cddf55507e4a374f5c0f37bce
-IR.C18,23,1045,53,54,287.85,two_column_bands,65,16,3,598.0,795.0,publisher OCR; reading order inferred,0,75,76,77,0,25.92,3883cb3d399e498b0d4f1859b389f991
-IR.C18,24,1046,55,56,311.98,two_column_bands,99,14,2,598.0,796.0,publisher OCR; reading order inferred,0,78,79,80,0,25.92,9c7f0d17c4e02341bf8f20ad9756e250
-IR.C18,25,1047,57,59,287.5,two_column_bands,209,20,38,596.0,796.0,publisher OCR; reading order inferred,1,81,83,84,0,25.92,61ebc8dad48a0b0764d0843e40bf3b76
-IR.C18,26,1048,60,61,313.53,two_column_bands,68,19,19,596.0,796.0,publisher OCR; reading order inferred,0,85,86,87,0,25.92,7bb5278b6ac77ee677de8ac146a007c6
-IR.C18,27,1049,62,64,,single_or_unresolved,177,6,29,597.0,796.0,publisher OCR; reading order inferred,1,88,90,91,0,25.92,0fdcae7811010f8e6713320ba4950fa4
-IR.C18,28,1050,65,65,,single_or_unresolved,19,2,4,600.0,798.0,publisher OCR; reading order inferred,0,92,92,93,0,25.92,91cc3477b100386f2f1ce14e30919f65
-IR.C18,29,1051,66,66,,single_or_unresolved,25,2,5,598.0,795.0,publisher OCR; reading order inferred,0,94,94,95,0,25.92,4a3947dbf090dd6ce29d0809789be61a
-IR.C18,30,1052,67,70,,single_or_unresolved,267,8,244,599.0,795.0,publisher OCR; reading order inferred,1,96,99,100,0,25.92,af4c2a4c503d18bcb95aef53e2c2d0f9
-IR.C18,31,1053,71,71,,single_or_unresolved,32,3,8,597.0,796.0,publisher OCR; reading order inferred,0,101,101,102,0,25.92,866f0d3ac43ad50577408049b6181046
-IR.C18,32,1054,72,72,,single_or_unresolved,8,2,3,597.0,796.0,publisher OCR; reading order inferred,0,103,103,104,0,25.92,d1daaf0b25766bb06c41eaa845363194
-IR.C18,33,1055,73,73,,single_or_unresolved,57,3,14,595.0,795.0,publisher OCR; reading order inferred,0,105,105,106,0,25.92,016a9fe3cff01b243669d4f6a3b23bcf
-IR.C18,34,1056,74,74,,single_or_unresolved,26,4,4,595.0,794.0,publisher OCR; reading order inferred,0,107,107,108,0,25.92,c8c5dbba25e173329db2dbaba7760147
-IR.C18,35,1057,75,75,,single_or_unresolved,382,3,25,597.0,796.0,publisher OCR; reading order inferred,0,109,109,110,0,25.92,463fd507e35e1ed336fbfe40c518ea8e
-IR.C18,36,1058,76,76,,single_or_unresolved,31,3,17,595.0,795.0,publisher OCR; reading order inferred,0,111,111,112,0,25.92,26a6068ef86c8fe5b28ede2b91c39c07
-IR.C18,37,1059,77,79,,single_or_unresolved,164,10,29,596.0,795.0,publisher OCR; reading order inferred,2,113,115,116,0,25.92,32eb6e80c56f7983936befa84a03ac09
-IR.C18,38,1060,80,80,,single_or_unresolved,17,4,7,596.0,795.0,publisher OCR; reading order inferred,0,117,117,118,0,25.92,7aae2ab446c5c2e1ecd84375cec34dae
-IR.C18,39,1061,81,81,,single_or_unresolved,22,2,6,595.0,795.0,publisher OCR; reading order inferred,0,119,119,120,0,25.92,b2e25e590830409981778f30019f2ecd
-IR.C19,1,1063,1,3,284.75,two_column_bands,93,50,10,597.0,796.0,publisher OCR; reading order inferred,0,1,3,4,0,25.92,7a37035401f198c4e0b926c56481f264
+IR.C18,23,1045,53,54,287.85,two_column_bands,65,16,3,598.0,795.0,publisher OCR; reading order inferred,0,75,76,78,1,25.92,3883cb3d399e498b0d4f1859b389f991
+IR.C18,24,1046,55,57,311.98,two_column_bands,99,14,2,598.0,796.0,publisher OCR; reading order inferred,0,79,81,83,1,25.92,9c7f0d17c4e02341bf8f20ad9756e250
+IR.C18,25,1047,58,60,287.5,two_column_bands,209,20,38,596.0,796.0,publisher OCR; reading order inferred,1,84,86,88,1,25.92,61ebc8dad48a0b0764d0843e40bf3b76
+IR.C18,26,1048,61,62,313.53,two_column_bands,68,19,19,596.0,796.0,publisher OCR; reading order inferred,0,89,90,92,1,25.92,7bb5278b6ac77ee677de8ac146a007c6
+IR.C18,27,1049,63,65,,single_or_unresolved,177,6,29,597.0,796.0,publisher OCR; reading order inferred,1,93,95,97,1,25.92,0fdcae7811010f8e6713320ba4950fa4
+IR.C18,28,1050,66,66,,single_or_unresolved,19,2,4,600.0,798.0,publisher OCR; reading order inferred,0,98,98,100,1,25.92,91cc3477b100386f2f1ce14e30919f65
+IR.C18,29,1051,67,67,,single_or_unresolved,25,2,5,598.0,795.0,publisher OCR; reading order inferred,0,101,101,102,0,25.92,4a3947dbf090dd6ce29d0809789be61a
+IR.C18,30,1052,68,71,,single_or_unresolved,267,8,244,599.0,795.0,publisher OCR; reading order inferred,1,103,106,107,0,25.92,af4c2a4c503d18bcb95aef53e2c2d0f9
+IR.C18,31,1053,72,72,,single_or_unresolved,32,3,8,597.0,796.0,publisher OCR; reading order inferred,0,108,108,109,0,25.92,866f0d3ac43ad50577408049b6181046
+IR.C18,32,1054,73,73,,single_or_unresolved,8,2,3,597.0,796.0,publisher OCR; reading order inferred,0,110,110,111,0,25.92,d1daaf0b25766bb06c41eaa845363194
+IR.C18,33,1055,74,74,,single_or_unresolved,57,3,14,595.0,795.0,publisher OCR; reading order inferred,0,112,112,113,0,25.92,016a9fe3cff01b243669d4f6a3b23bcf
+IR.C18,34,1056,75,75,,single_or_unresolved,26,4,4,595.0,794.0,publisher OCR; reading order inferred,0,114,114,115,0,25.92,c8c5dbba25e173329db2dbaba7760147
+IR.C18,35,1057,76,76,,single_or_unresolved,382,3,25,597.0,796.0,publisher OCR; reading order inferred,0,116,116,117,0,25.92,463fd507e35e1ed336fbfe40c518ea8e
+IR.C18,36,1058,77,77,,single_or_unresolved,31,3,17,595.0,795.0,publisher OCR; reading order inferred,0,118,118,119,0,25.92,26a6068ef86c8fe5b28ede2b91c39c07
+IR.C18,37,1059,78,80,,single_or_unresolved,164,10,29,596.0,795.0,publisher OCR; reading order inferred,2,120,122,123,0,25.92,32eb6e80c56f7983936befa84a03ac09
+IR.C18,38,1060,81,81,,single_or_unresolved,17,4,7,596.0,795.0,publisher OCR; reading order inferred,0,124,124,125,0,25.92,7aae2ab446c5c2e1ecd84375cec34dae
+IR.C18,39,1061,82,82,,single_or_unresolved,22,2,6,595.0,795.0,publisher OCR; reading order inferred,0,126,126,127,0,25.92,b2e25e590830409981778f30019f2ecd
+IR.C19,1,1063,1,3,284.75,two_column_bands,93,56,10,597.0,796.0,"39 visually checked hole-header lines (operations, coordinates, depths and recovery). Other text uses the publisher OCR.",0,1,3,4,0,25.92,7a37035401f198c4e0b926c56481f264
 IR.C19,2,1064,4,6,308.05,two_column_bands,122,23,2,595.0,795.0,publisher OCR; reading order inferred,0,5,7,8,0,25.92,a92150ed6f27dc63a3179b6a9d112f94
 IR.C19,3,1065,7,8,292.38,two_column_bands,57,11,8,598.0,797.0,publisher OCR; reading order inferred,0,9,10,11,0,25.92,7912d005e5bc4b12251060f40a6f8c81
 IR.C19,4,1066,9,9,310.12,two_column_bands,29,7,4,595.0,795.0,publisher OCR; reading order inferred,0,12,12,13,0,25.92,da12e6a712a674486e30d7a7e1680f9e
@@ -967,17 +967,17 @@ IR.C19,16,1078,29,29,,single_or_unresolved,25,3,8,596.0,796.0,publisher OCR; rea
 IR.C19,17,1079,30,36,,single_or_unresolved,507,18,42,596.0,796.0,publisher OCR; reading order inferred,1,46,52,53,0,25.92,906fc46e2ef2dc6c63f56bcb82582ef3
 IR.C19,18,1080,37,37,,single_or_unresolved,71,2,21,595.0,795.0,publisher OCR; reading order inferred,0,54,54,55,0,25.92,4a6c57e6de7a7a140e1bd6f518f5bbbe
 IR.C19,19,1081,38,41,292.75,two_column_bands,298,22,34,597.0,797.0,publisher OCR; reading order inferred,1,56,59,60,0,25.92,e290c9bfa702bbd4830bb4d72d1df04c
-IR.C19,20,1082,42,44,311.48,two_column_bands,193,23,62,595.0,795.0,publisher OCR; reading order inferred,1,61,63,64,0,25.92,0c6814c2b3806d7f8df384400c205b57
-IR.C19,21,1083,45,47,285.21,two_column_bands,98,24,2,599.0,797.0,publisher OCR; reading order inferred,0,65,67,68,0,25.92,9eaad4e457e0320a2429654d94229379
-IR.C19,22,1084,48,49,310.13,two_column_bands,116,11,36,596.0,795.0,publisher OCR; reading order inferred,1,69,70,71,0,25.92,4dca6cbacdc2f5f92f487b339f11cbd0
-IR.C19,23,1085,50,51,283.17,two_column_bands,84,15,14,598.0,795.0,publisher OCR; reading order inferred,0,72,73,74,0,25.92,9875e69ee6ee8cd67ceb39ac1a126bc7
-IR.C19,24,1086,52,52,,single_or_unresolved,44,7,13,598.0,795.0,publisher OCR; reading order inferred,0,75,75,76,0,25.92,b0df034d95c8eee59ad9dbab0350c257
-IR.C19,25,1087,53,53,,single_or_unresolved,31,3,11,598.0,797.0,publisher OCR; reading order inferred,0,77,77,78,0,25.92,5e554621f43a1b6fd24c4217650f9d3b
-IR.C19,26,1088,54,58,310.4,two_column_bands,267,9,226,595.0,795.0,publisher OCR; reading order inferred,1,79,83,84,0,25.92,475aacbff59732eefa57e131f75757a3
-IR.C19,27,1089,59,60,281.21,two_column_bands,75,11,19,598.0,797.0,publisher OCR; reading order inferred,1,85,86,87,0,25.92,c3d06dc8b320628d122a9a4f97e31ab8
-IR.C19,28,1090,61,62,310.06,two_column_bands,88,20,23,595.0,795.0,publisher OCR; reading order inferred,0,88,89,90,0,25.92,8362af1c548de82f0531a94572787f1a
-IR.C19,29,1091,63,63,284.06,two_column_bands,36,11,6,599.0,798.0,publisher OCR; reading order inferred,0,91,91,92,0,25.92,d35cc8e73be8ea08b305962f7b750d4c
-IR.C19,30,1092,64,64,,single_or_unresolved,24,7,7,597.0,796.0,publisher OCR; reading order inferred,0,93,93,94,0,25.92,e06f760b5d8e71483fdbf2551c242efe
+IR.C19,20,1082,42,44,311.48,two_column_bands,193,23,62,595.0,795.0,publisher OCR; reading order inferred,1,61,63,65,1,25.92,0c6814c2b3806d7f8df384400c205b57
+IR.C19,21,1083,45,47,285.21,two_column_bands,98,24,2,599.0,797.0,publisher OCR; reading order inferred,0,66,68,70,1,25.92,9eaad4e457e0320a2429654d94229379
+IR.C19,22,1084,48,49,310.13,two_column_bands,116,11,36,596.0,795.0,publisher OCR; reading order inferred,1,71,72,74,1,25.92,4dca6cbacdc2f5f92f487b339f11cbd0
+IR.C19,23,1085,50,51,283.17,two_column_bands,84,15,14,598.0,795.0,publisher OCR; reading order inferred,0,75,76,78,1,25.92,9875e69ee6ee8cd67ceb39ac1a126bc7
+IR.C19,24,1086,52,52,,single_or_unresolved,44,7,13,598.0,795.0,publisher OCR; reading order inferred,0,79,79,82,2,25.92,b0df034d95c8eee59ad9dbab0350c257
+IR.C19,25,1087,53,53,,single_or_unresolved,31,3,11,598.0,797.0,publisher OCR; reading order inferred,0,83,83,84,0,25.92,5e554621f43a1b6fd24c4217650f9d3b
+IR.C19,26,1088,54,58,310.4,two_column_bands,267,9,226,595.0,795.0,publisher OCR; reading order inferred,1,85,89,90,0,25.92,475aacbff59732eefa57e131f75757a3
+IR.C19,27,1089,59,60,281.21,two_column_bands,75,11,19,598.0,797.0,publisher OCR; reading order inferred,1,91,92,93,0,25.92,c3d06dc8b320628d122a9a4f97e31ab8
+IR.C19,28,1090,61,62,310.06,two_column_bands,88,20,23,595.0,795.0,publisher OCR; reading order inferred,0,94,95,96,0,25.92,8362af1c548de82f0531a94572787f1a
+IR.C19,29,1091,63,63,284.06,two_column_bands,36,11,6,599.0,798.0,publisher OCR; reading order inferred,0,97,97,98,0,25.92,d35cc8e73be8ea08b305962f7b750d4c
+IR.C19,30,1092,64,64,,single_or_unresolved,24,7,7,597.0,796.0,publisher OCR; reading order inferred,0,99,99,100,0,25.92,e06f760b5d8e71483fdbf2551c242efe
 IR.C20,1,1095,1,3,260.68,two_column_bands,106,30,1,573.0,796.0,publisher OCR; reading order inferred,0,1,3,4,0,25.92,7a2a1d8403c143a00f488a4e31a215cd
 IR.C20,2,1096,4,6,310.74,two_column_bands,113,17,6,572.0,796.0,publisher OCR; reading order inferred,0,5,7,8,0,25.92,f876de006def280a82db4b127fa80016
 IR.ir138_panels,1,1457,1,4,,single_or_unresolved,159,120,27,594.0,797.0,publisher OCR; reading order inferred,0,1,4,5,0,25.92,6bde41a6c02c5dc3fd6d9cc7d561b0f4
@@ -1325,25 +1325,25 @@ SR.C14,13,333,26,27,278.93,two_column_bands,143,10,35,618.0,795.0,publisher OCR;
 SR.C14,14,334,28,30,306.77,two_column_bands,133,11,1,619.0,795.0,publisher OCR; reading order inferred,0,41,43,44,0,25.92,6baa18f9699f209f942d3361e9747a44
 SR.C14,15,335,31,33,280.76,two_column_bands,128,22,2,620.0,795.0,publisher OCR; reading order inferred,0,45,47,48,0,25.92,33512e0e88e666df64f1028811b4e005
 SR.C14,16,336,34,36,306.69,two_column_bands,124,43,3,618.0,794.0,publisher OCR; reading order inferred,0,49,51,52,0,25.92,0e3904f8704d187b57216e10cbe97fa2
-SR.C15,1,337,1,3,279.4,two_column_bands,120,18,4,619.0,795.0,publisher OCR; reading order inferred,0,1,3,4,0,25.92,23b437c6e4d8902ded4f9748a898c3b5
-SR.C15,2,338,4,5,292.39,two_column_bands,700,9,32,620.0,796.0,publisher OCR; reading order inferred,0,5,6,7,0,25.92,cf711b4caa484eae314b026be60b54ac
-SR.C15,3,339,6,9,279.34,two_column_bands,152,16,2,618.0,795.0,publisher OCR; reading order inferred,1,8,11,12,0,25.92,f2851c90cd29fe76474892061ece5e52
-SR.C15,4,340,10,10,,single_or_unresolved,918,8,36,618.0,795.0,publisher OCR; reading order inferred,0,13,13,14,0,25.92,bc3c93135a857047e809eeaaa318cad9
-SR.C15,5,341,11,12,,single_or_unresolved,122,10,34,621.0,797.0,publisher OCR; reading order inferred,1,15,16,17,0,25.92,42a0b365a69e81768056ca2ca42a433e
-SR.C15,6,342,13,13,304.57,two_column_bands,73,5,23,619.0,795.0,publisher OCR; reading order inferred,0,18,18,19,0,25.92,2397ddb02dcb14a705043a1ae4dab0c0
-SR.C15,7,343,14,14,267.6,two_column_bands,579,9,23,623.0,803.0,publisher OCR; reading order inferred,0,20,20,21,0,25.92,2cd65c742f785411d696ff875289859a
-SR.C15,8,344,15,15,,single_or_unresolved,52,2,6,621.0,801.0,publisher OCR; reading order inferred,0,22,22,23,0,25.92,d9d55fbe26ce71cc34a9e971043689e8
-SR.C15,9,345,16,16,282.01,two_column_bands,82,8,35,619.0,795.0,publisher OCR; reading order inferred,0,24,24,25,0,25.92,59f527f42fb9996a116f1c5599e43a12
-SR.C15,10,346,17,17,,single_or_unresolved,52,2,28,618.0,794.0,publisher OCR; reading order inferred,0,26,26,27,0,25.92,9f89501dea7db0332212156ac0d752b3
-SR.C15,11,347,18,18,,single_or_unresolved,49,2,37,620.0,796.0,publisher OCR; reading order inferred,0,28,28,29,0,25.92,ad9362bd2d66ea60eaeff42e10ec80ec
-SR.C15,12,348,19,21,303.5,two_column_bands,146,17,0,619.0,795.0,publisher OCR; reading order inferred,0,30,32,33,0,25.92,6fc0888fee34ef7dba5c8edd0bea4267
-SR.C15,13,349,22,23,281.35,two_column_bands,201,13,70,619.0,795.0,publisher OCR; reading order inferred,0,34,35,36,0,25.92,763104450c6e78eb07fde941a30263f4
-SR.C15,14,350,24,24,303.98,two_column_bands,63,7,8,618.0,794.0,publisher OCR; reading order inferred,0,37,37,38,0,25.92,87caf2c7e3fa9c4bada1b4cba43031b0
-SR.C15,15,351,25,25,281.18,two_column_bands,70,5,9,619.0,795.0,publisher OCR; reading order inferred,0,39,39,40,0,25.92,1b2b4211f32c2b69d4d0aefccccf888e
-SR.C15,16,352,26,27,304.09,two_column_bands,88,9,11,618.0,794.0,publisher OCR; reading order inferred,0,41,42,43,0,25.92,87426484d9afc2324ea48862db8fed76
-SR.C15,17,353,28,30,282.59,two_column_bands,106,40,2,620.0,796.0,publisher OCR; reading order inferred,0,44,46,47,0,25.92,ec73dbe54e249c33964d9f4b020329bf
-SR.C15,18,354,31,32,,single_or_unresolved,368,10,77,618.0,795.0,publisher OCR; reading order inferred,1,48,49,50,0,25.92,d420ff581ef424b8b39c046be2e42002
-SR.C15,19,355,33,33,,single_or_unresolved,719,9,53,621.0,797.0,publisher OCR; reading order inferred,0,51,51,52,0,25.92,b2116754da222d3cd99f74e0915ef7e9
+SR.C15,1,337,1,3,279.4,two_column_bands,120,16,4,619.0,795.0,"Visually collated against the source scan. Complete printed article text, captions, notes and running matter on this leaf.",0,1,3,4,0,25.92,23b437c6e4d8902ded4f9748a898c3b5
+SR.C15,2,338,4,5,292.39,two_column_bands,700,9,32,620.0,796.0,"Visually collated against the source scan. Complete printed article text, captions, notes and running matter on this leaf. Table 1 cell contents outside this reading; native text remains accessible.",0,5,6,7,0,25.92,cf711b4caa484eae314b026be60b54ac
+SR.C15,3,339,6,9,279.34,two_column_bands,152,24,2,618.0,795.0,"Visually collated against the source scan. Entire visible page, including the two columns, running matter and Table 2 with seven rows and note.",1,8,11,12,0,25.92,f2851c90cd29fe76474892061ece5e52
+SR.C15,4,340,10,10,,single_or_unresolved,918,8,36,618.0,795.0,"Visually collated against the source scan. Complete printed article text, captions, notes and running matter on this leaf. Table 3 cell contents outside this reading; native text remains accessible.",0,13,13,14,0,25.92,bc3c93135a857047e809eeaaa318cad9
+SR.C15,5,341,11,12,,single_or_unresolved,122,21,34,621.0,797.0,"Visually collated against the source scan. Complete article text, Figure 1 caption and Table 4 with thirteen rows. Figure 1 graph, axes and internal labels excluded.",1,15,16,18,1,25.92,42a0b365a69e81768056ca2ca42a433e
+SR.C15,6,342,13,13,304.57,two_column_bands,73,5,23,619.0,795.0,"Visually collated against the source scan. Complete article text and Figure 2 caption. Figure 2 graph, axes and internal labels excluded.",0,19,19,21,1,25.92,2397ddb02dcb14a705043a1ae4dab0c0
+SR.C15,7,343,14,14,267.6,two_column_bands,579,7,23,623.0,803.0,"Visually collated against the source scan. Complete printed article text, captions, notes and running matter on this leaf. Table 5/6 cell contents outside this reading; native text remains accessible.",0,22,22,23,0,25.92,2cd65c742f785411d696ff875289859a
+SR.C15,8,344,15,15,,single_or_unresolved,52,3,6,621.0,801.0,"Visually collated against the source scan. Complete printed article text, captions, notes and running matter on this leaf. Figure 3 interiors with axes and labels outside the transcription.",0,24,24,25,0,25.92,d9d55fbe26ce71cc34a9e971043689e8
+SR.C15,9,345,16,16,282.01,two_column_bands,82,6,35,619.0,795.0,"Visually collated against the source scan. Complete printed article text, captions, notes and running matter on this leaf. Figure 4 interiors with axes and labels outside the transcription.",0,26,26,27,0,25.92,59f527f42fb9996a116f1c5599e43a12
+SR.C15,10,346,17,17,,single_or_unresolved,52,3,28,618.0,794.0,"Visually collated against the source scan. Complete printed article text, captions, notes and running matter on this leaf. Figure 5 interiors with axes and labels outside the transcription.",0,28,28,30,1,25.92,9f89501dea7db0332212156ac0d752b3
+SR.C15,11,347,18,18,,single_or_unresolved,49,3,37,620.0,796.0,"Visually collated against the source scan. Complete printed article text, captions, notes and running matter on this leaf. Figure 6 interiors with axes and labels outside the transcription.",0,31,31,33,1,25.92,ad9362bd2d66ea60eaeff42e10ec80ec
+SR.C15,12,348,19,21,303.5,two_column_bands,146,16,0,619.0,795.0,"Visually collated against the source scan. Complete printed article text, captions, notes and running matter on this leaf.",0,34,36,37,0,25.92,6fc0888fee34ef7dba5c8edd0bea4267
+SR.C15,13,349,22,23,281.35,two_column_bands,201,8,70,619.0,795.0,"Visually collated against the source scan. Complete printed article text, captions, notes and running matter on this leaf. Figure 7 interiors with axes and labels outside the transcription.",0,38,39,40,0,25.92,763104450c6e78eb07fde941a30263f4
+SR.C15,14,350,24,24,303.98,two_column_bands,63,6,8,618.0,794.0,"Visually collated against the source scan. Complete printed article text, captions, notes and running matter on this leaf. Figure 8 interiors with axes and labels outside the transcription.",0,41,41,42,0,25.92,87caf2c7e3fa9c4bada1b4cba43031b0
+SR.C15,15,351,25,25,281.18,two_column_bands,70,4,9,619.0,795.0,"Visually collated against the source scan. Complete printed article text, captions, notes and running matter on this leaf. Figure 9 interiors with axes and labels outside the transcription.",0,43,43,44,0,25.92,1b2b4211f32c2b69d4d0aefccccf888e
+SR.C15,16,352,26,27,304.09,two_column_bands,88,9,11,618.0,794.0,"Visually collated against the source scan. Complete printed article text, captions, notes and running matter on this leaf. Figure 10/11 interiors with axes and labels outside the transcription.",0,45,46,47,0,25.92,87426484d9afc2324ea48862db8fed76
+SR.C15,17,353,28,30,282.59,two_column_bands,106,41,2,620.0,796.0,"Visually collated against the source scan. Complete printed article text, captions, notes and running matter on this leaf.",0,48,50,51,0,25.92,ec73dbe54e249c33964d9f4b020329bf
+SR.C15,18,354,31,32,,single_or_unresolved,368,21,77,618.0,795.0,"Visually collated against the source scan. Complete captions and printed notes to Tables 7 and 8, the two-tier Table 8 header, all thirteen Table 8 rows, running heading and folio. Table 7 printed excerpt cells outside the reading.",1,52,53,54,0,25.92,d420ff581ef424b8b39c046be2e42002
+SR.C15,19,355,33,33,,single_or_unresolved,719,9,53,621.0,797.0,"Visually collated against the source scan. Complete printed article text, captions, notes and running matter on this leaf. Table 9 cell contents outside this reading; native text remains accessible.",0,55,55,56,0,25.92,b2116754da222d3cd99f74e0915ef7e9
 SR.C16,1,357,1,3,279.73,two_column_bands,93,18,2,618.0,795.0,publisher OCR; reading order inferred,0,1,3,4,0,25.92,a14f374d80e378390de14a0db9d8f6e6
 SR.C16,2,358,4,5,305.77,two_column_bands,105,19,12,619.0,796.0,publisher OCR; reading order inferred,0,5,6,7,0,25.92,432056b9ca8dce31437a65846f293da4
 SR.C16,3,359,6,7,280.76,two_column_bands,501,29,153,618.0,795.0,publisher OCR; reading order inferred,0,8,9,10,0,25.92,6800215f32c7a5d47aac9e00cf113e42
@@ -1618,11 +1618,11 @@ SR.C29,10,636,21,21,,single_or_unresolved,15,2,1,621.0,797.0,publisher OCR; read
 SR.C29,11,637,22,22,,single_or_unresolved,14,2,1,621.0,798.0,publisher OCR; reading order inferred,0,32,32,33,0,25.92,0b9918444857545dd80b8275952a5164
 SR.C29,12,638,23,23,,single_or_unresolved,12,2,1,621.0,798.0,publisher OCR; reading order inferred,0,34,34,35,0,25.92,9e639080d46bec14b851968f79542912
 SR.C29,13,639,24,24,,single_or_unresolved,46,4,33,617.0,796.0,publisher OCR; reading order inferred,0,36,36,37,0,25.92,ec889e15b7aa03c7f7aa756b9c50f8e8
-SR.C30,1,641,1,3,278.5,two_column_bands,97,22,2,619.0,797.0,publisher OCR; reading order inferred,0,1,3,4,0,25.92,91e67201c9d656c82ff1d7420a7dff34
-SR.C30,2,642,4,5,304.19,two_column_bands,131,16,29,618.0,796.0,publisher OCR; reading order inferred,0,5,6,7,0,25.92,0131695257ab5110d93af7020e4a0eb6
-SR.C30,3,643,6,7,277.69,two_column_bands,108,21,2,618.0,795.0,publisher OCR; reading order inferred,0,8,9,10,0,25.92,79bd910959f45102d63ee2fb8d6731cc
-SR.C30,4,644,8,10,303.71,two_column_bands,109,15,5,618.0,795.0,publisher OCR; reading order inferred,0,11,13,14,0,25.92,60cb364a145141efb1244806e1fbc0da
-SR.C30,5,645,11,14,277.51,two_column_bands,137,51,2,619.0,796.0,publisher OCR; reading order inferred,0,15,18,19,0,25.92,a2517b358aa1dfaf37b5cec49f7d8394
+SR.C30,1,641,1,3,278.5,two_column_bands,97,17,2,619.0,797.0,"Visually collated against the source scan. Complete article text, including running matter, all captions, bibliography, affiliations and notes. In-figure labels are inventoried separately.",0,1,3,4,0,25.92,91e67201c9d656c82ff1d7420a7dff34
+SR.C30,2,642,4,5,304.19,two_column_bands,131,12,29,618.0,796.0,"Visually collated against the source scan. Complete article text, including running matter, all captions, bibliography, affiliations and notes. In-figure labels are inventoried separately.",0,5,6,7,0,25.92,0131695257ab5110d93af7020e4a0eb6
+SR.C30,3,643,6,7,277.69,two_column_bands,108,13,2,618.0,795.0,"Visually collated against the source scan. Complete article text, including running matter, all captions, bibliography, affiliations and notes. In-figure labels are inventoried separately.",0,8,9,10,0,25.92,79bd910959f45102d63ee2fb8d6731cc
+SR.C30,4,644,8,10,303.71,two_column_bands,109,13,5,618.0,795.0,"Visually collated against the source scan. Complete article text, including running matter, all captions, bibliography, affiliations and notes. In-figure labels are inventoried separately.",0,11,13,14,0,25.92,60cb364a145141efb1244806e1fbc0da
+SR.C30,5,645,11,14,277.51,two_column_bands,137,51,2,619.0,796.0,"Visually collated against the source scan. Complete article text, including running matter, all captions, bibliography, affiliations and notes. In-figure labels are inventoried separately.",0,15,18,19,0,25.92,a2517b358aa1dfaf37b5cec49f7d8394
 SR.C31,1,647,1,3,278.32,two_column_bands,94,21,3,619.0,796.0,publisher OCR; reading order inferred,0,1,3,4,0,25.92,88d78c532e1ad3a1d7f8299b738803a8
 SR.C31,2,648,4,6,304.2,two_column_bands,103,21,2,618.0,795.0,publisher OCR; reading order inferred,0,5,7,8,0,25.92,6c467fec76f4cac5bd163bd1e0974d28
 SR.C31,3,649,7,7,,single_or_unresolved,30,5,9,620.0,797.0,publisher OCR; reading order inferred,0,9,9,10,0,25.92,b469df9da341363a46bdefe93e007b0a
@@ -1691,43 +1691,43 @@ SR.C34,20,714,38,38,,single_or_unresolved,1191,2,11,613.0,798.0,publisher OCR; r
 SR.C35,1,717,1,3,275.53,two_column_bands,96,23,2,602.0,795.0,publisher OCR; reading order inferred,0,1,3,4,0,25.92,2d576300d8fa58a0baf6dd6c80fe5206
 SR.C35,2,718,4,5,307.25,two_column_bands,117,10,25,601.0,795.0,publisher OCR; reading order inferred,0,5,6,7,0,25.92,c81cecc86f4508e73afb8a2911ca6ea3
 SR.C35,3,719,6,8,276.97,two_column_bands,221,26,36,604.0,799.0,publisher OCR; reading order inferred,0,8,10,11,0,25.92,ef5486e8e9759edb8fff299d45f4823b
-SR.C35,4,720,9,9,307.16,two_column_bands,146,20,52,601.0,796.0,publisher OCR; reading order inferred,0,12,12,13,0,25.92,e7fb91a53ab202e38bde71a05296fd44
-SR.C35,5,721,10,11,275.06,two_column_bands,53,12,3,601.0,796.0,publisher OCR; reading order inferred,0,14,15,16,0,25.92,4e9169786f7c29833783d339f02c4376
-SR.C35,6,722,12,14,305.59,two_column_bands,123,20,5,601.0,796.0,publisher OCR; reading order inferred,0,17,19,20,0,25.92,2a8d926b9cd3ecaab5f52f2545d8d749
-SR.C35,7,723,15,16,278.26,two_column_bands,143,17,47,603.0,796.0,publisher OCR; reading order inferred,0,21,22,23,0,25.92,4ed579ef9e7e7aafb2192a17c9fa4467
-SR.C35,8,724,17,18,304.56,two_column_bands,75,16,5,601.0,795.0,publisher OCR; reading order inferred,0,24,25,26,0,25.92,9a643df04d6a3a62264e6308be61590e
-SR.C35,9,725,19,20,276.44,two_column_bands,65,18,4,603.0,796.0,publisher OCR; reading order inferred,0,27,28,29,0,25.92,bc4b70e572a86b872ad1e9d6ef401b4f
-SR.C35,10,726,21,22,306.5,two_column_bands,77,15,5,602.0,795.0,publisher OCR; reading order inferred,0,30,31,32,0,25.92,78417141d87291c3449201bfc46dbdbb
-SR.C35,11,727,23,24,277.6,two_column_bands,86,15,8,598.0,796.0,publisher OCR; reading order inferred,0,33,34,35,0,25.92,0671ee2dbadba6d374a98d42eb146d7b
-SR.C35,12,728,25,26,306.58,two_column_bands,67,10,10,601.0,798.0,publisher OCR; reading order inferred,0,36,37,38,0,25.92,6e3977f3842143b11868c8661f981a48
-SR.C35,13,729,27,28,278.81,two_column_bands,68,9,10,602.0,797.0,publisher OCR; reading order inferred,0,39,40,41,0,25.92,d68290036141e962f9a2c80d684b55fb
-SR.C35,14,730,29,29,,single_or_unresolved,575,7,155,602.0,797.0,publisher OCR; reading order inferred,0,42,42,43,0,25.92,f085f49b7fddbc8255b07585ca7e710e
-SR.C35,15,731,30,30,277.36,two_column_bands,130,18,34,598.0,796.0,publisher OCR; reading order inferred,0,44,44,45,0,25.92,c6135589de85e3e6fd4cc1622cd9cf2c
-SR.C35,16,732,31,32,304.68,two_column_bands,67,15,9,599.0,797.0,publisher OCR; reading order inferred,0,46,47,48,0,25.92,694cda277a242cc6f501cc8640b1f23a
-SR.C35,17,733,33,34,277.17,two_column_bands,69,12,7,601.0,796.0,publisher OCR; reading order inferred,0,49,50,51,0,25.92,ce3046e536dab0b985c7e2fe3ade22db
-SR.C35,18,734,35,36,304.15,two_column_bands,63,12,6,601.0,796.0,publisher OCR; reading order inferred,0,52,53,54,0,25.92,f11c5d6ad4bf307d745413fe8c9a565e
-SR.C35,19,735,37,37,278.09,two_column_bands,53,7,16,603.0,797.0,publisher OCR; reading order inferred,0,55,55,56,0,25.92,a1c3d8714014f2dac9ea548dc5ad7af5
-SR.C35,20,736,38,38,,single_or_unresolved,30,3,10,602.0,797.0,publisher OCR; reading order inferred,0,57,57,58,0,25.92,23662b811cf706a63a6604a8397b9d65
-SR.C35,21,737,39,39,,single_or_unresolved,24,3,4,604.0,797.0,publisher OCR; reading order inferred,0,59,59,60,0,25.92,385c95b4c597aca60da18d332cceaa23
-SR.C35,22,738,40,40,,single_or_unresolved,48,2,20,603.0,797.0,publisher OCR; reading order inferred,0,61,61,62,0,25.92,d7252cd0a6c8b5af1a51ed4d86fed4ec
-SR.C35,23,739,41,41,,single_or_unresolved,25,3,6,604.0,798.0,publisher OCR; reading order inferred,0,63,63,64,0,25.92,db163fc30d43c5dc35e22d334becc824
-SR.C35,24,740,42,42,,single_or_unresolved,41,4,22,602.0,795.0,publisher OCR; reading order inferred,0,65,65,66,0,25.92,18884f2384a5842d343c488b394a1812
-SR.C35,25,741,43,43,,single_or_unresolved,25,3,7,601.0,795.0,publisher OCR; reading order inferred,0,67,67,68,0,25.92,50c2676b1b0df61a0b517601c0aeb23b
-SR.C35,26,742,44,44,,single_or_unresolved,52,3,25,600.0,795.0,publisher OCR; reading order inferred,0,69,69,70,0,25.92,76006b03d442cee65778b582090882e0
-SR.C35,27,743,45,46,277.96,two_column_bands,64,10,5,604.0,798.0,publisher OCR; reading order inferred,0,71,72,73,0,25.92,51bded8fb9d74555a7cb37e1c207e11e
-SR.C35,28,744,47,49,,single_or_unresolved,133,41,38,601.0,796.0,publisher OCR; reading order inferred,0,74,76,77,0,25.92,b391aab99160a7e76493c3a6f7237433
-SR.C35,29,745,50,50,276.52,two_column_bands,81,11,32,601.0,795.0,publisher OCR; reading order inferred,0,78,78,79,0,25.92,6931b1455498bd26a92891253959edc0
-SR.C35,30,746,51,52,305.48,two_column_bands,84,13,12,602.0,795.0,publisher OCR; reading order inferred,0,80,81,82,0,25.92,5cc2197f83a21723fee48582e209af42
-SR.C35,31,747,53,55,276.23,two_column_bands,135,14,1,602.0,796.0,publisher OCR; reading order inferred,0,83,85,86,0,25.92,96d8b693d8f6e43bde008e5fe8d796b9
-SR.C35,32,748,56,58,306.61,two_column_bands,128,15,2,602.0,796.0,publisher OCR; reading order inferred,0,87,89,90,0,25.92,169504ab9ad48b0efd2b84542e180450
-SR.C35,33,749,59,60,275.92,two_column_bands,90,9,11,605.0,799.0,publisher OCR; reading order inferred,0,91,92,93,0,25.92,ebac1fecde70a68fae2edaf2f983e823
-SR.C35,34,750,61,62,308.88,two_column_bands,58,8,3,602.0,797.0,publisher OCR; reading order inferred,0,94,95,96,0,25.92,100189fa3ac541fc0346b2641f80cf2c
-SR.C35,35,751,63,66,275.41,two_column_bands,142,49,2,602.0,796.0,publisher OCR; reading order inferred,0,97,100,101,0,25.92,a48834fc7c4ee637805ba7268404e351
-SR.C35,36,752,67,70,308.26,two_column_bands,146,51,2,602.0,797.0,publisher OCR; reading order inferred,0,102,105,106,0,25.92,469efaf67a43609e72add85b5ad59b1c
-SR.C35,37,753,71,71,275.88,two_column_bands,41,16,2,603.0,797.0,publisher OCR; reading order inferred,0,107,107,108,0,25.92,dd9efa99b0c399998e337842e0f34f06
-SR.C35,38,754,72,72,,single_or_unresolved,728,8,48,607.0,800.0,publisher OCR; reading order inferred,0,109,109,110,0,25.92,ee36fefdf441e6326d90939ebf429774
-SR.C35,39,755,73,73,,single_or_unresolved,1057,2,2,602.0,797.0,publisher OCR; reading order inferred,0,111,111,112,0,25.92,33062fabf539777c7c0358e95899efbf
-SR.C35,40,756,74,74,,single_or_unresolved,576,9,56,601.0,797.0,publisher OCR; reading order inferred,0,113,113,114,0,25.92,10dea94a56525006fa33a2a567e7f4d9
+SR.C35,4,720,9,10,307.16,two_column_bands,146,20,52,601.0,796.0,publisher OCR; reading order inferred,0,12,13,15,1,25.92,e7fb91a53ab202e38bde71a05296fd44
+SR.C35,5,721,11,12,275.06,two_column_bands,53,12,3,601.0,796.0,publisher OCR; reading order inferred,0,16,17,18,0,25.92,4e9169786f7c29833783d339f02c4376
+SR.C35,6,722,13,15,305.59,two_column_bands,123,20,5,601.0,796.0,publisher OCR; reading order inferred,0,19,21,22,0,25.92,2a8d926b9cd3ecaab5f52f2545d8d749
+SR.C35,7,723,16,17,278.26,two_column_bands,143,17,47,603.0,796.0,publisher OCR; reading order inferred,0,23,24,25,0,25.92,4ed579ef9e7e7aafb2192a17c9fa4467
+SR.C35,8,724,18,19,304.56,two_column_bands,75,16,5,601.0,795.0,publisher OCR; reading order inferred,0,26,27,29,1,25.92,9a643df04d6a3a62264e6308be61590e
+SR.C35,9,725,20,21,276.44,two_column_bands,65,18,4,603.0,796.0,publisher OCR; reading order inferred,0,30,31,33,1,25.92,bc4b70e572a86b872ad1e9d6ef401b4f
+SR.C35,10,726,22,23,306.5,two_column_bands,77,15,5,602.0,795.0,publisher OCR; reading order inferred,0,34,35,37,1,25.92,78417141d87291c3449201bfc46dbdbb
+SR.C35,11,727,24,25,277.6,two_column_bands,86,15,8,598.0,796.0,publisher OCR; reading order inferred,0,38,39,41,1,25.92,0671ee2dbadba6d374a98d42eb146d7b
+SR.C35,12,728,26,27,306.58,two_column_bands,67,10,10,601.0,798.0,publisher OCR; reading order inferred,0,42,43,45,1,25.92,6e3977f3842143b11868c8661f981a48
+SR.C35,13,729,28,29,278.81,two_column_bands,68,9,10,602.0,797.0,publisher OCR; reading order inferred,0,46,47,49,1,25.92,d68290036141e962f9a2c80d684b55fb
+SR.C35,14,730,30,30,,single_or_unresolved,575,7,155,602.0,797.0,publisher OCR; reading order inferred,0,50,50,51,0,25.92,f085f49b7fddbc8255b07585ca7e710e
+SR.C35,15,731,31,31,277.36,two_column_bands,130,18,34,598.0,796.0,publisher OCR; reading order inferred,0,52,52,54,1,25.92,c6135589de85e3e6fd4cc1622cd9cf2c
+SR.C35,16,732,32,33,304.68,two_column_bands,67,15,9,599.0,797.0,publisher OCR; reading order inferred,0,55,56,58,1,25.92,694cda277a242cc6f501cc8640b1f23a
+SR.C35,17,733,34,35,277.17,two_column_bands,69,12,7,601.0,796.0,publisher OCR; reading order inferred,0,59,60,62,1,25.92,ce3046e536dab0b985c7e2fe3ade22db
+SR.C35,18,734,36,37,304.15,two_column_bands,63,12,6,601.0,796.0,publisher OCR; reading order inferred,0,63,64,66,1,25.92,f11c5d6ad4bf307d745413fe8c9a565e
+SR.C35,19,735,38,38,278.09,two_column_bands,53,7,16,603.0,797.0,publisher OCR; reading order inferred,0,67,67,69,1,25.92,a1c3d8714014f2dac9ea548dc5ad7af5
+SR.C35,20,736,39,39,,single_or_unresolved,30,3,10,602.0,797.0,publisher OCR; reading order inferred,0,70,70,71,0,25.92,23662b811cf706a63a6604a8397b9d65
+SR.C35,21,737,40,40,,single_or_unresolved,24,3,4,604.0,797.0,publisher OCR; reading order inferred,0,72,72,73,0,25.92,385c95b4c597aca60da18d332cceaa23
+SR.C35,22,738,41,41,,single_or_unresolved,48,2,20,603.0,797.0,publisher OCR; reading order inferred,0,74,74,75,0,25.92,d7252cd0a6c8b5af1a51ed4d86fed4ec
+SR.C35,23,739,42,42,,single_or_unresolved,25,3,6,604.0,798.0,publisher OCR; reading order inferred,0,76,76,77,0,25.92,db163fc30d43c5dc35e22d334becc824
+SR.C35,24,740,43,43,,single_or_unresolved,41,4,22,602.0,795.0,publisher OCR; reading order inferred,0,78,78,79,0,25.92,18884f2384a5842d343c488b394a1812
+SR.C35,25,741,44,44,,single_or_unresolved,25,3,7,601.0,795.0,publisher OCR; reading order inferred,0,80,80,81,0,25.92,50c2676b1b0df61a0b517601c0aeb23b
+SR.C35,26,742,45,45,,single_or_unresolved,52,3,25,600.0,795.0,publisher OCR; reading order inferred,0,82,82,83,0,25.92,76006b03d442cee65778b582090882e0
+SR.C35,27,743,46,47,277.96,two_column_bands,64,10,5,604.0,798.0,publisher OCR; reading order inferred,0,84,85,86,0,25.92,51bded8fb9d74555a7cb37e1c207e11e
+SR.C35,28,744,48,50,,single_or_unresolved,133,41,38,601.0,796.0,publisher OCR; reading order inferred,0,87,89,90,0,25.92,b391aab99160a7e76493c3a6f7237433
+SR.C35,29,745,51,51,276.52,two_column_bands,81,11,32,601.0,795.0,publisher OCR; reading order inferred,0,91,91,92,0,25.92,6931b1455498bd26a92891253959edc0
+SR.C35,30,746,52,53,305.48,two_column_bands,84,13,12,602.0,795.0,publisher OCR; reading order inferred,0,93,94,95,0,25.92,5cc2197f83a21723fee48582e209af42
+SR.C35,31,747,54,56,276.23,two_column_bands,135,14,1,602.0,796.0,publisher OCR; reading order inferred,0,96,98,99,0,25.92,96d8b693d8f6e43bde008e5fe8d796b9
+SR.C35,32,748,57,59,306.61,two_column_bands,128,15,2,602.0,796.0,publisher OCR; reading order inferred,0,100,102,103,0,25.92,169504ab9ad48b0efd2b84542e180450
+SR.C35,33,749,60,61,275.92,two_column_bands,90,9,11,605.0,799.0,publisher OCR; reading order inferred,0,104,105,107,1,25.92,ebac1fecde70a68fae2edaf2f983e823
+SR.C35,34,750,62,63,308.88,two_column_bands,58,8,3,602.0,797.0,publisher OCR; reading order inferred,0,108,109,111,1,25.92,100189fa3ac541fc0346b2641f80cf2c
+SR.C35,35,751,64,67,275.41,two_column_bands,142,49,2,602.0,796.0,publisher OCR; reading order inferred,0,112,115,116,0,25.92,a48834fc7c4ee637805ba7268404e351
+SR.C35,36,752,68,71,308.26,two_column_bands,146,51,2,602.0,797.0,publisher OCR; reading order inferred,0,117,120,121,0,25.92,469efaf67a43609e72add85b5ad59b1c
+SR.C35,37,753,72,72,275.88,two_column_bands,41,16,2,603.0,797.0,publisher OCR; reading order inferred,0,122,122,123,0,25.92,dd9efa99b0c399998e337842e0f34f06
+SR.C35,38,754,73,73,,single_or_unresolved,728,8,48,607.0,800.0,publisher OCR; reading order inferred,0,124,124,125,0,25.92,ee36fefdf441e6326d90939ebf429774
+SR.C35,39,755,74,74,,single_or_unresolved,1057,2,2,602.0,797.0,publisher OCR; reading order inferred,0,126,126,127,0,25.92,33062fabf539777c7c0358e95899efbf
+SR.C35,40,756,75,75,,single_or_unresolved,576,9,56,601.0,797.0,publisher OCR; reading order inferred,0,128,128,129,0,25.92,10dea94a56525006fa33a2a567e7f4d9
 SR.C36,1,757,1,3,276.67,two_column_bands,86,20,4,603.0,796.0,publisher OCR; reading order inferred,0,1,3,4,0,25.92,80baf474ef670644ec8a375ab05eec8c
 SR.C36,2,758,4,7,307.03,two_column_bands,149,17,15,603.0,796.0,publisher OCR; reading order inferred,1,5,8,9,0,25.92,2601824d4714066e69e366078278b622
 SR.C36,3,759,8,10,276.3,two_column_bands,140,31,24,601.0,796.0,publisher OCR; reading order inferred,0,10,12,13,0,25.92,9ddd7e9e8c966ad5ea9860641dba4133

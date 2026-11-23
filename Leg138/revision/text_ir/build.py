@@ -225,10 +225,19 @@ def compile_page(doc, n):
                               witness_sha256=SHA,order=len(lines)+1))
             if pdf_ordinal is not None: ids.append(pdf_ordinal)
             block_lines.append(value.replace('density','de□sity') if (n,*key[:2])==(37,58,2) else value);boxes.append(original['bbox']);addresses.append(list(key))
+        if group[0]=='k':
+            boundary,hole,depth,depth_unit,composite,composite_unit,event=block_lines
+            text='\t'.join((boundary,hole,f'{depth} {depth_unit}',f'{composite} {composite_unit}',event))
+        elif group[0]=='q':
+            text='\t'.join(block_lines)
         box=[fn(v[i] for v in boxes) for i,fn in enumerate([min,min,max,max])]
         blocks.append(dict(id=block_id,role=ROLE[group[0]],text=text,source_lines=block_lines,
                            line_ordinals=ids,line_bboxes_pt=boxes,source_addresses=addresses,
                            bbox_pt=box,inline_styles=inline_styles(n,group,text)))
+        if n==21 and group=='p14':
+            blocks[-1]['introduces_table']=True
+        if group[0]=='k':
+            blocks[-1]['column_alignments']=['left','center','center','center','left']
     missing=set(EDITS.get(n,{}))-{k[:2] for k in used}
     assert not missing,missing
     if not EXCLUSIONS[n]: assert set(physical)==used,(n,set(physical)-used)

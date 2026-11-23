@@ -89,7 +89,8 @@ def populate(root,edited,db):
         sites=set(re.findall(r'(?<!\d)(84[4-9]|85[0-4])(?!\d)',r['scope']))
         for proposed in re.findall(r'\b[EW]EQ-\d+A?\b',r['scope']+' '+key):
             if known.get(proposed):sites.add(known[proposed])
-        for site in sites:evidence(site,doc,key,'published_scope',dpaths[doc],r['pdf_first'])
+        for site in sorted(sites):
+            evidence(site,doc,key,'published_scope',dpaths[doc],r['pdf_first'])
     for r in rows(sp/'pr_coring.csv'):
         if r['row_kind']=='hole':
             evidence(r['site'],'PR','PR.T1','published_hole_row',dpaths['PR'],r['pdf_page'],excerpt=r['hole'])

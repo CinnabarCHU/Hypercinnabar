@@ -4,7 +4,7 @@ import hashlib
 import os
 import tempfile
 from pathlib import Path
-from zipfile import ZIP_DEFLATED, ZipFile
+from zipfile import ZIP_DEFLATED, ZipFile, ZipInfo
 
 def pack(source,output):
     source=source.resolve()
@@ -26,7 +26,10 @@ def pack(source,output):
                 data=(source/name).read_bytes()
                 if name in sums and hashlib.sha256(data).hexdigest()!=sums[name]:
                     raise ValueError('Source file changed: '+name)
-                book.writestr('Leg138_Full_Edition/'+name,data)
+                entry=ZipInfo('Leg138_Full_Edition/'+name, date_time=(1980,1,1,0,0,0))
+                entry.create_system=3
+                entry.external_attr=0o100644 << 16
+                book.writestr(entry,data,compress_type=ZIP_DEFLATED,compresslevel=4)
         with ZipFile(tmp) as book:
             if book.testzip():raise ValueError('Archive CRC check failed')
         tmp.replace(output)

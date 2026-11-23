@@ -1,0 +1,15 @@
+{
+  "engine": [
+    "tesseract 5.5.0",
+    " leptonica-1.84.1"
+  ],
+  "engine_sha256": "74b76a5b994adcc18be362bf64ed5118082b2401d5d9a35242e92fc4c62e2b4b",
+  "language_model": "eng.traineddata",
+  "language_model_sha256": "7d4322bd2a7749724879683fc3912cb542f19906c83bcc1a52132556427170b2",
+  "pymupdf": "1.26.6",
+  "pillow": "13.0.0",
+  "dpi": 240,
+  "language": "eng",
+  "page_segmentation_mode": 6,
+  "lines_per_sheet": 24
+}
