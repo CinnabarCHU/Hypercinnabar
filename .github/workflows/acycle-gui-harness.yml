@@ -49,7 +49,16 @@ jobs:
           products: Signal_Processing_Toolbox Statistics_and_Machine_Learning_Toolbox Image_Processing_Toolbox Curve_Fitting_Toolbox Optimization_Toolbox Wavelet_Toolbox
       - name: Start the virtual display for native windows
         run: |
+          if ! command -v Xvfb >/dev/null || ! command -v xwininfo >/dev/null; then
+            sudo apt-get update -qq
+            sudo apt-get install -y --no-install-recommends xvfb x11-utils
+          fi
           Xvfb :93 -screen 0 1600x1000x24 -ac -nolisten tcp > "$RUNNER_TEMP/xvfb.log" 2>&1 &
+          for attempt in {1..30}; do
+            if xdpyinfo -display :93 >/dev/null 2>&1; then break; fi
+            sleep 1
+          done
+          xdpyinfo -display :93 >/dev/null
           echo 'DISPLAY=:93' >> "$GITHUB_ENV"
       - name: Install the synthetic window snapshot publisher
         if: inputs.provider_fixture || contains(github.event.head_commit.message, '[gui-provider]')
