@@ -1,5 +1,32 @@
 [
   {
+    "id": "am-hilbert-envelope",
+    "candidate": {
+      "method": "Acycle",
+      "version": "dcba4279168745b563e0535b954297023dd62fc7",
+      "runtime": "24.2.0.3361896 (R2024b) Update 10",
+      "operation": "MATLAB Signal Processing Toolbox hilbert"
+    },
+    "status": "match",
+    "rows": 256,
+    "columns": {
+      "sample": {
+        "max_abs_error": 0.0,
+        "failures": 0,
+        "max_error_row": 1,
+        "atol": 1e-12,
+        "rtol": 1e-11
+      },
+      "instantaneous_amplitude": {
+        "max_abs_error": 2.375877272697835e-14,
+        "failures": 0,
+        "max_error_row": 166,
+        "atol": 1e-09,
+        "rtol": 1e-11
+      }
+    }
+  },
+  {
     "id": "cenogrid-carbon-current-gaussian",
     "candidate": {
       "method": "Acycle",
@@ -196,6 +223,74 @@
         "max_error_row": 1,
         "atol": 1e-12,
         "rtol": 2e-11
+      }
+    }
+  },
+  {
+    "id": "odp846-segmented-clock-original",
+    "candidate": {
+      "method": "Acycle",
+      "version": "dcba4279168745b563e0535b954297023dd62fc7",
+      "runtime": "24.2.0.3361896 (R2024b) Update 10",
+      "operation": "MATLAB interp1 within each sedimentary segment"
+    },
+    "status": "match",
+    "rows": 420,
+    "columns": {
+      "segment": {
+        "max_abs_error": 0.0,
+        "failures": 0,
+        "max_error_row": 1,
+        "atol": 1e-12,
+        "rtol": 1e-11
+      },
+      "depth_m": {
+        "max_abs_error": 4.973799150320701e-14,
+        "failures": 0,
+        "max_error_row": 191,
+        "atol": 1e-09,
+        "rtol": 1e-11
+      },
+      "oracle_age_ka": {
+        "max_abs_error": 5.229594535194337e-12,
+        "failures": 0,
+        "max_error_row": 249,
+        "atol": 1e-09,
+        "rtol": 1e-11
+      }
+    }
+  },
+  {
+    "id": "odp846-segmented-clock-reduced",
+    "candidate": {
+      "method": "Acycle",
+      "version": "dcba4279168745b563e0535b954297023dd62fc7",
+      "runtime": "24.2.0.3361896 (R2024b) Update 10",
+      "operation": "MATLAB interp1 within each sedimentary segment"
+    },
+    "status": "match",
+    "rows": 420,
+    "columns": {
+      "segment": {
+        "max_abs_error": 0.0,
+        "failures": 0,
+        "max_error_row": 1,
+        "atol": 1e-12,
+        "rtol": 1e-11
+      },
+      "depth_m": {
+        "max_abs_error": 4.973799150320701e-14,
+        "failures": 0,
+        "max_error_row": 156,
+        "atol": 1e-09,
+        "rtol": 1e-11
+      },
+      "oracle_age_ka": {
+        "max_abs_error": 5.229594535194337e-12,
+        "failures": 0,
+        "max_error_row": 228,
+        "atol": 1e-09,
+        "rtol": 1e-11
       }
     }
   },

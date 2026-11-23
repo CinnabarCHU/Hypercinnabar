@@ -1,15 +1,17 @@
 # 基线实测结果
 
-每份 JSON 都记录实现版本、逐项状态、误差与单位。各实现的适用案例合计覆盖全部 30 个功能案例。同一案例可由多个实现运行。[首版的原生验证](https://github.com/CinnabarCHU/Hypercinnabar/actions/runs/45166578863) · [本分支的持续验证](https://github.com/CinnabarCHU/Hypercinnabar/actions/workflows/benchmark.yml?query=branch%3Acyclostratigraphy-benchmark)
+每份 JSON 都记录实现版本、逐项状态、误差与单位。各实现的适用案例合计覆盖全部 30 个功能案例。同一案例可由多个实现运行。[首版的原生验证](https://github.com/CinnabarCHU/Hypercinnabar/actions/runs/45166578863) · [本次原生验证](https://github.com/CinnabarCHU/Hypercinnabar/actions/runs/45188607014)
 
 | 实现 | 功能案例 | 科学任务与其他验证 |
 |---|---:|---|
-| [Acycle v2.8](acycle-v28.json) | 首版 8/8 符合容差 | MATLAB R2024b，包含两个同位素的插值、Gaussian 滤波及完整 SWA 谱 |
-| [Acycle master 固定提交](acycle-current.json) | 首版 6/6 符合容差 | MATLAB R2024b，上游双谱自检也通过 |
+| [Acycle v2.8](acycle-v28.json) | 11/11 符合容差 | MATLAB R2024b，含两个同位素的插值、Gaussian 滤波、完整 SWA 谱、Hilbert 包络和两套分段时标 |
+| [Acycle master 固定提交](acycle-current.json) | 9/9 符合容差 | MATLAB R2024b，含 Hilbert 包络和两套分段时标，上游双谱自检也通过 |
 | [R astrochron 1.8](astrochron.json) | 17/17 符合容差 | R 4.5.0。运行 ODP 926B TimeOpt、下马岭和 Walvis Ridge TimeOptB。分段插值调用 R 的 stats::approx |
 | [astrochron-rpy2 0.1.0](astrochron-rpy2.json) | 13/13 符合容差 | 含完整 CIP 反插值。原型的 11 项测试含真实 R 调用 |
 | [astrochron-warp 0.2.0](astrochron-warp.json) | 9/9 符合容差 | 含完整 CIP 反插值。默认子进程后端，原型的 17 项测试含真实 R 调用 |
 | [独立 Python 基线](python.json) | 21/21 符合容差 | 运行全部 26 个科学任务。22 项输出连续指标，4 项未满足预设判据 |
+
+两个 Acycle 环境均调用 MATLAB Signal Processing Toolbox 的 Hilbert 算子和 MATLAB 的分段线性插值。评分 JSON 记录 Acycle 提交、MATLAB 版本及上述两个算子的来源。
 
 ODP 926B 的原生 TimeOpt 在 100 个候选速率中给出 3.02220 cm/kyr。文献比较值为 3.02 cm/kyr，使用的 LOESS 窗宽约定见适配器。[完整速率扫描](odp926b-timeopt.csv) · [R 实现](../adapters/astrochron.R) · [Meyers, 2015](https://doi.org/10.1002/2015PA002850)
 

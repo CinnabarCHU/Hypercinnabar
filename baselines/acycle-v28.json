@@ -1,5 +1,32 @@
 [
   {
+    "id": "am-hilbert-envelope",
+    "candidate": {
+      "method": "Acycle",
+      "version": "e3553eb00b4890c0071ef64b213df34db5670de5",
+      "runtime": "24.2.0.3361896 (R2024b) Update 10",
+      "operation": "MATLAB Signal Processing Toolbox hilbert"
+    },
+    "status": "match",
+    "rows": 256,
+    "columns": {
+      "sample": {
+        "max_abs_error": 0.0,
+        "failures": 0,
+        "max_error_row": 1,
+        "atol": 1e-12,
+        "rtol": 1e-11
+      },
+      "instantaneous_amplitude": {
+        "max_abs_error": 2.375877272697835e-14,
+        "failures": 0,
+        "max_error_row": 166,
+        "atol": 1e-09,
+        "rtol": 1e-11
+      }
+    }
+  },
+  {
     "id": "cenogrid-carbon-v28-gaussian",
     "candidate": {
       "method": "Acycle",
@@ -76,30 +103,30 @@
         "rtol": 1e-11
       },
       "power": {
-        "max_abs_error": 5.551115123125783e-15,
+        "max_abs_error": 4.884981308350689e-15,
         "failures": 0,
-        "max_error_row": 54,
+        "max_error_row": 11,
         "atol": 1e-11,
         "rtol": 2e-06
       },
       "swa": {
-        "max_abs_error": 7.216449660063518e-16,
+        "max_abs_error": 4.996003610813204e-16,
         "failures": 0,
-        "max_error_row": 267,
+        "max_error_row": 4,
         "atol": 1e-11,
         "rtol": 2e-06
       },
       "chi95": {
-        "max_abs_error": 1.0547118733938987e-15,
+        "max_abs_error": 4.996003610813204e-16,
         "failures": 0,
-        "max_error_row": 248,
+        "max_error_row": 134,
         "atol": 1e-11,
         "rtol": 2e-06
       },
       "chi99": {
-        "max_abs_error": 1.27675647831893e-15,
+        "max_abs_error": 4.996003610813204e-16,
         "failures": 0,
-        "max_error_row": 269,
+        "max_error_row": 216,
         "atol": 1e-11,
         "rtol": 2e-06
       },
@@ -248,6 +275,74 @@
         "max_error_row": 1,
         "atol": 1e-12,
         "rtol": 2e-11
+      }
+    }
+  },
+  {
+    "id": "odp846-segmented-clock-original",
+    "candidate": {
+      "method": "Acycle",
+      "version": "e3553eb00b4890c0071ef64b213df34db5670de5",
+      "runtime": "24.2.0.3361896 (R2024b) Update 10",
+      "operation": "MATLAB interp1 within each sedimentary segment"
+    },
+    "status": "match",
+    "rows": 420,
+    "columns": {
+      "segment": {
+        "max_abs_error": 0.0,
+        "failures": 0,
+        "max_error_row": 1,
+        "atol": 1e-12,
+        "rtol": 1e-11
+      },
+      "depth_m": {
+        "max_abs_error": 4.973799150320701e-14,
+        "failures": 0,
+        "max_error_row": 191,
+        "atol": 1e-09,
+        "rtol": 1e-11
+      },
+      "oracle_age_ka": {
+        "max_abs_error": 5.229594535194337e-12,
+        "failures": 0,
+        "max_error_row": 249,
+        "atol": 1e-09,
+        "rtol": 1e-11
+      }
+    }
+  },
+  {
+    "id": "odp846-segmented-clock-reduced",
+    "candidate": {
+      "method": "Acycle",
+      "version": "e3553eb00b4890c0071ef64b213df34db5670de5",
+      "runtime": "24.2.0.3361896 (R2024b) Update 10",
+      "operation": "MATLAB interp1 within each sedimentary segment"
+    },
+    "status": "match",
+    "rows": 420,
+    "columns": {
+      "segment": {
+        "max_abs_error": 0.0,
+        "failures": 0,
+        "max_error_row": 1,
+        "atol": 1e-12,
+        "rtol": 1e-11
+      },
+      "depth_m": {
+        "max_abs_error": 4.973799150320701e-14,
+        "failures": 0,
+        "max_error_row": 156,
+        "atol": 1e-09,
+        "rtol": 1e-11
+      },
+      "oracle_age_ka": {
+        "max_abs_error": 5.229594535194337e-12,
+        "failures": 0,
+        "max_error_row": 228,
+        "atol": 1e-09,
+        "rtol": 1e-11
       }
     }
   },
