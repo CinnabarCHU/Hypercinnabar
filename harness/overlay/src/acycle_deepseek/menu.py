@@ -8,7 +8,6 @@ import json
 import os
 from pathlib import Path, PureWindowsPath
 import re
-import shutil
 from uuid import uuid4
 from zipfile import ZipFile, ZIP_DEFLATED
 from . import tools
@@ -17,6 +16,7 @@ REVISION = "74082d52da4b2800068577bd1e66a5a026d470c1"
 DESKTOP = {"Desktop", "Robot"}
 ROLES = ("helper", "analyzer", "plotter")
 PREFIX = "acycle_menu_"
+DESTINATIONS = {"outputfile", "outputroot", "outputparent", "outputdirectory", "writedir", "basename"}
 
 
 @lru_cache(maxsize=1)
@@ -152,6 +152,7 @@ def _input(root, args, payload):
         or not isinstance(field, str)
         or not re.fullmatch(r"[A-Za-z]\w{0,62}", field)
         or field == "operation"
+        or field.lower() in DESTINATIONS
     ):
         raise ValueError("Invalid input kind or MATLAB field")
     if field in payload.get("input", {}):
@@ -178,14 +179,7 @@ def _check_paths(root, node):
     for key, value in node.items():
         field = key.lower()
         if isinstance(value, str) and value:
-            if field in {
-                "outputfile",
-                "outputroot",
-                "outputparent",
-                "outputdirectory",
-                "writedir",
-                "basename",
-            }:
+            if field in DESTINATIONS:
                 path = PureWindowsPath(value)
                 if path.anchor or ".." in path.parts or (field == "basename" and len(path.parts) != 1):
                     raise ValueError(f"{key} must be a relative product name inside this run")
@@ -325,8 +319,12 @@ def run(root, role, args):
             staging = directory / "inputs"
             staging.mkdir()
             frozen = staging / path.name
-            shutil.copyfile(path, frozen)
-            record["input_sha256"] = hashlib.sha256(frozen.read_bytes()).hexdigest()
+            digest = hashlib.sha256()
+            with path.open("rb") as original, frozen.open("xb") as snapshot:
+                for chunk in iter(lambda: original.read(1024 * 1024), b""):
+                    snapshot.write(chunk)
+                    digest.update(chunk)
+            record["input_sha256"] = digest.hexdigest()
             payload["file_input"] = {"path": str(frozen), "kind": kind, "field": field}
         response = tools._execute(
             {

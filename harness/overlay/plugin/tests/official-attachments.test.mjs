@@ -40,12 +40,24 @@ async function setup(t, { importLimit, withAttachments = true } = {}) {
     async ensure() { return workspace }
   }
   await ctx.plugin(SystemPrompt)
-  await ctx.plugin(ToolRuntime, { mode: 'native' })
+  const version = JSON.parse(await readFile(require.resolve('@deepseek-ai/dsh-tools/package.json'),'utf8')).version
+  const batched = version !== '0.2.1-rc.3'
+  if (batched) {
+    await ctx.plugin(ToolRuntime)
+    await ctx.plugin(await load('@deepseek-ai/dsh-tool-executor-native'))
+  } else {
+    await ctx.plugin(ToolRuntime, { mode: 'native' })
+  }
   await ctx.plugin(SkillRegistry)
   await ctx.plugin(SessionStore)
   await ctx.plugin(SessionQuery, { path: join(root, 'sessions.sqlite'), openAt: 'never' })
   await ctx.plugin(SessionProjections)
-  ctx.sessionProjections.register(turnBoundaryProjectionDefinition)
+  if (batched) {
+    const { default: AgentRegistry } = await load('@deepseek-ai/dsh-agent')
+    await ctx.plugin(AgentRegistry)
+  } else {
+    ctx.sessionProjections.register(turnBoundaryProjectionDefinition)
+  }
   if (withAttachments) await ctx.plugin(AttachmentStore, { dshHome: join(root, 'dsh') })
   await ctx.plugin(LocalFs, { cwd: workspace })
   await ctx.plugin(WorkingDirectory)
@@ -63,7 +75,12 @@ async function setup(t, { importLimit, withAttachments = true } = {}) {
       content: refs.map(attachment => ({ type: 'file', attachment })) }, { surfaceOp: 'append' })
     return id
   }
-  function execute(name, args = {}, owner = agent) {
+  async function execute(name, args = {}, owner = agent) {
+    if (batched) {
+      const result = await ctx.tools.execute({ calls: [{ type: 'tool-call', name, id: 'call-' + (++number),
+        arguments: JSON.stringify(args) }], agent: owner, signal: new AbortController().signal })
+      return result.results[0].result
+    }
     return ctx.tools.execute({ name, arguments: args, agent: owner, callId: `call-${++number}`, signal: new AbortController().signal })
   }
   function anotherAgent() {
@@ -300,6 +317,26 @@ test('official image/file refs and present deliver both spectrum and evolution w
   for (const item of result.value.presentation.files) {
     assert.deepEqual(await readFile(f.ctx.attachments.fileHostPath(item.attachment)), await readFile(item.path))
   }
+})
+
+test('a menu journal ZIP is delivered intact through the official Session', official, async t => {
+  const f = await setup(t)
+  const output = join(f.workspace, '.acycle', 'runs', runId, 'outputs')
+  await mkdir(output, { recursive: true })
+  const path = join(output, 'acycle-journal.zip')
+  const emptyZip = Buffer.alloc(22)
+  emptyZip.writeUInt32LE(0x06054b50)
+  await writeFile(path, emptyZip)
+  f.ctx.tools.register({ name: 'fixture_menu_journal', description: 'Deliver a transport fixture', parameters: {},
+    output: { schema: { type: 'object', additionalProperties: true }, render: renderResult },
+    execute: (_args, exec) => attachOutputs(f.ctx, { run_id: runId, artifacts: { journal_zip: path } },
+      f.workspace, exec, deliveryConfig()),
+  })
+  const outcome = await f.execute('fixture_menu_journal')
+  assert.equal(outcome.isError, false, JSON.stringify(outcome))
+  assert.equal(outcome.value.presentation.delivery.status, 'presented')
+  const ref = outcome.value.presentation.files[0].attachment
+  assert.deepEqual(await readFile(f.ctx.attachments.fileHostPath(ref)), emptyZip)
 })
 
 test('path intake remains usable without attachments; attachment import gives an actionable error', official, async t => {

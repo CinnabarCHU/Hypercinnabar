@@ -43,7 +43,8 @@ jobs:
             if [[ "$version" == 0.2.2-rc.5 ]]; then
               extra+=("@deepseek-ai/dsh-tool-executor-native@$version")
             fi
-            npm install --prefix "$runtime" --no-fund --no-audit "@deepseek-ai/dsh-tools@$version" "@deepseek-ai/dsh-system-prompt@$version" "@deepseek-ai/dsh-skill@$version" "${extra[@]}" "$RUNNER_TEMP"/release/*.tgz
+            npm install --prefix "$runtime" --no-fund --no-audit "@deepseek-ai/dsh-tools@$version" "@deepseek-ai/dsh-system-prompt@$version" "@deepseek-ai/dsh-skill@$version" "@deepseek-ai/dsh-session-query-sqlite@$version" "@deepseek-ai/dsh-attachment-local@$version" "@deepseek-ai/dsh-fs-local@$version" "@deepseek-ai/dsh-tool-present@$version" "@deepseek-ai/dsh-agent-loop@$version" "${extra[@]}" "$RUNNER_TEMP"/release/*.tgz
+            ACYCLE_HARNESS_RUNTIME="$runtime" node --test "$RUNNER_TEMP/acycle-harness-src/plugin/tests/official-attachments.test.mjs"
             node "$RUNNER_TEMP/acycle-harness-src/scripts/installed_plugin_smoke.mjs" "$runtime" "$RUNNER_TEMP/study" "$runtime/node_modules/dsh-acycle/index.mjs"
           done
       - uses: matlab-actions/setup-matlab@v2

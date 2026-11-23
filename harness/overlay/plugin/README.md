@@ -1,16 +1,15 @@
-# Acycle 0.5.1 for DeepSeek Harness
+# Acycle 0.6.0 for DeepSeek Harness
 
 Version 0.6.0 exposes the unified Acycle menu catalogue, helper, analyzer, plotter and journal replay. Install the matching Python wheel and configure `menuRoot` alongside `acycleRoot` in the plugin preset. See the [installation instructions and working example](https://github.com/CinnabarCHU/Hypercinnabar/blob/acycle-harness-menu/harness/README.zh-CN.md).
-
 
 This native Cordis bundle registers Acycle tools and packaged research skills. Python
 transports requests to MATLAB; Acycle original functions perform the scientific work.
 A missing MATLAB backend is an error, never a request to substitute Python numerics.
-The shared Python/MCP interface has twelve tools; this native package adds
-`acycle_import_attachment` for thirteen Harness tools and ten skills.
+The shared Python/MCP interface has nineteen tools; this native package adds
+`acycle_import_attachment` for twenty Harness tools and ten skills.
 
-1. Install the matching `acycle_deepseek-0.5.1-py3-none-any.whl` in a Python virtual environment.
-2. In the current Harness **0.2.1-rc.3 Desktop**, add `dsh-acycle-0.5.1.tgz` through its plugin manager. The bundle supplies a selectable **Acycle MATLAB** agent preset.
+1. Install the matching `acycle_deepseek-0.6.0-py3-none-any.whl` in a Python virtual environment.
+2. In Harness **0.2.1-rc.3 Desktop**, add `dsh-acycle-0.6.0.tgz` through its plugin manager. The bundle supplies a selectable **Acycle MATLAB** agent preset.
 3. From the full handoff, run `local/render_config.py --workspace . --acycle-root /path/to/acycle --matlab /path/to/matlab`. Quit Desktop and merge its generated `local/generated/desktop.preset.patch.yml` entries into `~/.dsh/profiles/desktop/cordis.patch.yml` (or your configured `DSH_HOME`), preserving other entries. Reopen Desktop and select the Acycle agent. The generated paths belong to this preset; they do not change other agents.
 4. Alternatively use `local/deploy_harness.py --install` and `local/launch_harness.py` for the official project-local Web application. The standalone Web runtime needs Node.js >=24.9.0. Run `local/doctor.py --run-matlab` to verify the local MATLAB installation.
 
@@ -59,7 +58,7 @@ the current session/message provenance without replacing earlier receipts.
 Attachment import uses the official attachment and session-query services. When
 they are unavailable, workspace-path analysis remains available and import reports
 the missing dependency. An ID from another session or an arbitrary filesystem path
-does not grant attachment access. Codex MCP uses the twelve shared tools and workspace
+does not grant attachment access. Codex MCP uses the nineteen shared tools and workspace
 paths; this Harness-specific import tool is not part of MCP.
 
 `acycle_rerun({run_id, parameter_patch, label?})` applies a conversational change to

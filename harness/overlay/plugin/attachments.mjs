@@ -263,16 +263,20 @@ export async function attachOutputs(ctx, value, workspace, exec, config, fetchRu
   presentation.display_markdown = [...imageLines, ...fileLines].join('\n\n')
   presentation.warnings.push('This tool returns offloaded previews, not image pixels for model inspection. If a vision-capable route and read_image are available, explicitly read the existing PNG for visual review; otherwise state that visual review was not completed. Include key display_markdown PNG images in the final Chat answer with captions, and retain original-file links. A successful present event alone does not prove an inline Chat image was displayed.')
   if (presentation.skipped.length) presentation.status = 'partial'
-  if (config.presentOutputs && exec.agent && ctx.tools.get('present', exec.agent)) {
+  if (config.presentOutputs && exec.agent && ctx.tools.get('present', exec.agent, exec.toolSet)) {
     const pngPaths = presentation.images.map(item => item.path)
-    const usefulFiles = presentation.files.filter(item => ['.csv', '.mat'].includes(extname(item.path).toLowerCase()))
+    const usefulFiles = presentation.files.filter(item => ['.csv', '.mat', '.zip'].includes(extname(item.path).toLowerCase()))
       .sort((a, b) => Number(b.path.endsWith('.mat')) - Number(a.path.endsWith('.mat'))).map(item => item.path)
     const paths = [...new Set([...pngPaths.slice(0, 3), ...usefulFiles])].slice(0, 4)
     if (paths.length) {
       try {
-        const result = await ctx.tools.execute({ callId: `acycle-present-${randomUUID()}`, name: 'present',
-          arguments: { files: paths.map(path => ({ path, description: 'Acycle original MATLAB output' })) },
-          agent: exec.agent, parent: exec.token, rootCallId: exec.rootCallId, signal: exec.signal })
+        const callId = `acycle-present-${randomUUID()}`
+        const args = { files: paths.map(path => ({ path, description: 'Acycle original MATLAB output' })) }
+        const result = typeof ctx.tools.setExecutor === 'function'
+          ? (await ctx.tools.execute({ calls: [{ type: 'tool-call', id: callId, name: 'present', arguments: JSON.stringify(args) }],
+              agent: exec.agent, signal: exec.signal, toolSet: exec.toolSet })).results[0].result
+          : await ctx.tools.execute({ callId, name: 'present', arguments: args,
+              agent: exec.agent, parent: exec.token, rootCallId: exec.rootCallId, signal: exec.signal })
         presentation.delivery = result.isError ? { status: 'failed', error: result.error ?? result.content } : { status: 'presented', paths }
         if (result.isError) { presentation.status = 'partial'; presentation.warnings.push('The official Harness deliverable presentation failed; use the returned file links.') }
       } catch (error) {
