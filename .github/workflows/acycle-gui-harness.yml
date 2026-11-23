@@ -7,7 +7,7 @@ permissions:
   contents: read
 jobs:
   desktop:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     timeout-minutes: 40
     steps:
       - uses: actions/checkout@v4
@@ -61,7 +61,7 @@ jobs:
           command: addpath(fullfile(pwd,'tests')); cd(fullfile(getenv('RUNNER_TEMP'),'acycle')); serve_gui_harness;
       - name: Show client results
         if: always()
-        run: cat "$RUNNER_TEMP/gui-client.log"
+        run: if test -f "$RUNNER_TEMP/gui-client.log"; then cat "$RUNNER_TEMP/gui-client.log"; fi
       - name: Run the desktop regression suite
         uses: matlab-actions/run-command@v2
         with:
