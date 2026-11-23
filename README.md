@@ -66,4 +66,6 @@ python tools/suites.py list
 python tools/suites.py run harness-cases --case paper-petm-coco-published-protocol
 ```
 
+已安装我们之前的 Python 接口原型时，可用 `python tools/run_profile.py rpy2 .results/rpy2` 或 `python tools/run_profile.py warp .results/warp` 将其输出与同一份参照逐项比较。两条命令分别调用薄封装和默认使用独立进程的领域接口。[各实现逐项结果](baselines/README.md)
+
 原生 Harness 命令需要 MATLAB 和已安装的上游运行依赖。对新方法，同一个科学任务可以直接复用现有输入和评分器，只需增加候选输出。加入功能案例时，应给出独立参照、坐标单位、完整参数和容差；加入科学任务时，应写明待估量、论文或真值来源、比较指标，以及哪些偏差属于协议差异。[运行条件、数据署名与覆盖边界](docs/sources.md)

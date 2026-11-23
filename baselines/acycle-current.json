@@ -1,0 +1,228 @@
+[
+  {
+    "id": "cenogrid-carbon-current-gaussian",
+    "candidate": {
+      "method": "Acycle",
+      "version": "dcba4279168745b563e0535b954297023dd62fc7",
+      "runtime": "24.2.0.3361896 (R2024b) Update 10"
+    },
+    "status": "match",
+    "rows": 7324,
+    "columns": {
+      "age_ka": {
+        "max_abs_error": 7.275957614183426e-12,
+        "failures": 0,
+        "max_error_row": 9,
+        "atol": 1e-12,
+        "rtol": 1e-11
+      },
+      "band_1": {
+        "max_abs_error": 4.996003610813204e-16,
+        "failures": 0,
+        "max_error_row": 2758,
+        "atol": 1e-11,
+        "rtol": 2e-09
+      },
+      "band_2": {
+        "max_abs_error": 4.996003610813204e-16,
+        "failures": 0,
+        "max_error_row": 3767,
+        "atol": 1e-11,
+        "rtol": 2e-09
+      }
+    }
+  },
+  {
+    "id": "cenogrid-carbon-current-swa",
+    "candidate": {
+      "method": "Acycle",
+      "version": "dcba4279168745b563e0535b954297023dd62fc7",
+      "runtime": "24.2.0.3361896 (R2024b) Update 10"
+    },
+    "status": "match",
+    "rows": 18311,
+    "columns": {
+      "frequency_per_ka": {
+        "max_abs_error": 4.996003610813204e-16,
+        "failures": 0,
+        "max_error_row": 12564,
+        "atol": 1e-12,
+        "rtol": 1e-11
+      },
+      "power": {
+        "max_abs_error": 4.884981308350689e-15,
+        "failures": 0,
+        "max_error_row": 11,
+        "atol": 1e-11,
+        "rtol": 2e-06
+      },
+      "swa": {
+        "max_abs_error": 4.996003610813204e-16,
+        "failures": 0,
+        "max_error_row": 108,
+        "atol": 1e-11,
+        "rtol": 2e-06
+      },
+      "chi95": {
+        "max_abs_error": 4.884981308350689e-15,
+        "failures": 0,
+        "max_error_row": 7,
+        "atol": 1e-11,
+        "rtol": 2e-06
+      },
+      "chi99": {
+        "max_abs_error": 4.884981308350689e-15,
+        "failures": 0,
+        "max_error_row": 75,
+        "atol": 1e-11,
+        "rtol": 2e-06
+      },
+      "fdr05": {
+        "max_abs_error": 4.884981308350689e-15,
+        "failures": 0,
+        "max_error_row": 23,
+        "atol": 1e-11,
+        "rtol": 2e-06
+      }
+    }
+  },
+  {
+    "id": "cenogrid-oxygen-current-gaussian",
+    "candidate": {
+      "method": "Acycle",
+      "version": "dcba4279168745b563e0535b954297023dd62fc7",
+      "runtime": "24.2.0.3361896 (R2024b) Update 10"
+    },
+    "status": "match",
+    "rows": 7324,
+    "columns": {
+      "age_ka": {
+        "max_abs_error": 7.275957614183426e-12,
+        "failures": 0,
+        "max_error_row": 9,
+        "atol": 1e-12,
+        "rtol": 1e-11
+      },
+      "band_1": {
+        "max_abs_error": 4.996003610813204e-16,
+        "failures": 0,
+        "max_error_row": 4830,
+        "atol": 1e-11,
+        "rtol": 2e-09
+      },
+      "band_2": {
+        "max_abs_error": 4.996003610813204e-16,
+        "failures": 0,
+        "max_error_row": 90,
+        "atol": 1e-11,
+        "rtol": 2e-09
+      }
+    }
+  },
+  {
+    "id": "cenogrid-oxygen-current-swa",
+    "candidate": {
+      "method": "Acycle",
+      "version": "dcba4279168745b563e0535b954297023dd62fc7",
+      "runtime": "24.2.0.3361896 (R2024b) Update 10"
+    },
+    "status": "match",
+    "rows": 18311,
+    "columns": {
+      "frequency_per_ka": {
+        "max_abs_error": 4.996003610813204e-16,
+        "failures": 0,
+        "max_error_row": 12564,
+        "atol": 1e-12,
+        "rtol": 1e-11
+      },
+      "power": {
+        "max_abs_error": 3.552713678800501e-15,
+        "failures": 0,
+        "max_error_row": 65,
+        "atol": 1e-11,
+        "rtol": 2e-06
+      },
+      "swa": {
+        "max_abs_error": 4.996003610813204e-16,
+        "failures": 0,
+        "max_error_row": 14,
+        "atol": 1e-11,
+        "rtol": 2e-06
+      },
+      "chi95": {
+        "max_abs_error": 4.996003610813204e-16,
+        "failures": 0,
+        "max_error_row": 79,
+        "atol": 1e-11,
+        "rtol": 2e-06
+      },
+      "chi99": {
+        "max_abs_error": 5.551115123125783e-16,
+        "failures": 0,
+        "max_error_row": 95,
+        "atol": 1e-11,
+        "rtol": 2e-06
+      },
+      "fdr05": {
+        "max_abs_error": 4.884981308350689e-15,
+        "failures": 0,
+        "max_error_row": 59,
+        "atol": 1e-11,
+        "rtol": 2e-06
+      }
+    }
+  },
+  {
+    "id": "linear-irregular",
+    "candidate": {
+      "method": "Acycle",
+      "version": "dcba4279168745b563e0535b954297023dd62fc7",
+      "runtime": "24.2.0.3361896 (R2024b) Update 10"
+    },
+    "status": "match",
+    "rows": 7,
+    "columns": {
+      "depth_m": {
+        "max_abs_error": 0.0,
+        "failures": 0,
+        "max_error_row": 1,
+        "atol": 1e-12,
+        "rtol": 1e-11
+      },
+      "proxy": {
+        "max_abs_error": 0.0,
+        "failures": 0,
+        "max_error_row": 1,
+        "atol": 1e-12,
+        "rtol": 2e-11
+      }
+    }
+  },
+  {
+    "id": "periodogram-lines",
+    "candidate": {
+      "method": "Acycle",
+      "version": "dcba4279168745b563e0535b954297023dd62fc7",
+      "runtime": "24.2.0.3361896 (R2024b) Update 10"
+    },
+    "status": "match",
+    "rows": 33,
+    "columns": {
+      "frequency_per_ka": {
+        "max_abs_error": 0.0,
+        "failures": 0,
+        "max_error_row": 1,
+        "atol": 1e-12,
+        "rtol": 1e-11
+      },
+      "psd": {
+        "max_abs_error": 1.021405182655144e-14,
+        "failures": 0,
+        "max_error_row": 33,
+        "atol": 1e-12,
+        "rtol": 2e-11
+      }
+    }
+  }
+]

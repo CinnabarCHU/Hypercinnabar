@@ -58,7 +58,9 @@ def main():
     out.mkdir(parents=True,exist_ok=True)
     env=dict(os.environ,CYCLO_SUITE_OUT=str(out))
     def run(cmd): subprocess.run(cmd,cwd=repo,env=env,check=True)
-    if key=="guide-master":
+    if key=="migration-audit":
+        run([sys.executable,"-m","unittest","discover","-s","audit/tests","-v"])
+    elif key=="guide-master":
         for script in [["migration/check.py","--figures"],["migration/master/compare.py"],
                        ["migration/menu/build.py"],["audit/tools/build_module_inventory.py"]]:
             run([sys.executable,*script])

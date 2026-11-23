@@ -3,12 +3,14 @@ import sys
 import tempfile
 import unittest
 from pathlib import Path
+from types import SimpleNamespace
+from unittest.mock import patch
 
 import numpy as np
 from scipy.io import loadmat
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
-from bench import csv_table, prepare_case, prepare_task
+from bench import csv_table, execute, prepare_case, prepare_task
 from fixtures import case_tables, lr04_data
 from records import ROOT, catalog, digest, record_bytes
 from scoring import clock_ensemble, read_json, score_case, score_task
@@ -21,6 +23,23 @@ class BenchmarkTests(unittest.TestCase):
         self.dir = Path(temp.name)
         self.cases = catalog("cases")
         self.tasks = catalog("tasks")
+
+    def test_interrupted_prepare_can_be_retried(self):
+        target = self.dir / "request"
+        target.mkdir()
+        args = SimpleNamespace(command="prepare", id="tune-knots", directory=target)
+
+        def interrupted(case, folder):
+            (folder / "data.csv").write_text("partial")
+            raise OSError("interrupted")
+
+        with patch("bench.prepare_case", side_effect=interrupted), self.assertRaises(OSError):
+            execute(args)
+        self.assertEqual(list(target.iterdir()), [])
+        self.assertEqual(execute(args), 0)
+        self.assertEqual(json.loads((target / "request.json").read_text())["id"], "tune-knots")
+        with self.assertRaises(ValueError):
+            execute(args)
 
     def test_every_reference_rejects_a_changed_value(self):
         for name, case in self.cases.items():

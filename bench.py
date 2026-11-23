@@ -6,6 +6,7 @@ import argparse
 import json
 import shutil
 import sys
+import tempfile
 from pathlib import Path
 
 import numpy as np
@@ -91,9 +92,15 @@ def execute(args):
         target = args.directory
         if target.exists() and any(target.iterdir()):
             raise ValueError(f"Request directory {target} must be new or empty")
-        target.mkdir(parents=True, exist_ok=True)
-        packet = prepare_case(cases[args.id], target) if is_case else prepare_task(args.id, tasks[args.id], target)
-        dump(target, "request.json", {"schema_version":1, "id":args.id, "track":"case" if is_case else "task", **packet})
+        target.parent.mkdir(parents=True, exist_ok=True)
+        with tempfile.TemporaryDirectory(dir=target.parent) as stage:
+            packet_dir = Path(stage) / "request"
+            packet_dir.mkdir()
+            packet = prepare_case(cases[args.id], packet_dir) if is_case else prepare_task(args.id, tasks[args.id], packet_dir)
+            dump(packet_dir, "request.json", {"schema_version":1, "id":args.id, "track":"case" if is_case else "task", **packet})
+            if target.exists():
+                target.rmdir()
+            packet_dir.rename(target)
         return 0
     candidate = metadata(args.directory)
     result = score_case(cases[args.id], args.directory) if is_case else score_task(tasks[args.id], args.directory)

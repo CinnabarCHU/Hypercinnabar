@@ -1,4 +1,9 @@
 {
+  "migration-audit": {
+    "repository": "CinnabarCHU/Hypercinnabar",
+    "commit": "b1dc57554e2016249fb4be7c74ce5c1722326d07",
+    "scope": "15 dependency-graph and core tracing assertions for the Acycle migration inventory."
+  },
   "guide-master": {
     "repository": "CinnabarCHU/Hypercinnabar",
     "commit": "74082d52da4b2800068577bd1e66a5a026d470c1",

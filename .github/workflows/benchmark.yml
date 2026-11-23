@@ -14,11 +14,19 @@ jobs:
         with:
           python-version: '3.12'
       - run: python -m pip install -r requirements.txt
-      - run: python bench.py verify
+      - name: Cache external research data by content hash
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/cyclobench
+          key: cyclobench-sources-${{ hashFiles('catalog/assets.json') }}
+      - run: python bench.py verify --sources
       - run: python -m unittest discover -s tests -v
-      - name: Independent numerical and geological baselines on bundled inputs
+      - name: Independent numerical baseline and all geological tasks
+        run: python tools/run_profile.py python .results/python
+      - name: Test the original Acycle migration inventory tools
         run: |
-          python tools/run_profile.py python .results/python tune-knots tune-clip tune-extrapolate constant-sedrate sedrate-to-time sedrate-variable linear-irregular periodogram-lines r-tune-replay meishan-recovered-clock cenogrid-carbon-v28-linear cenogrid-oxygen-v28-linear lavernock petm-broad petm-published odp926b-timeopt la-thure-coco lr04-gaps synthetic-rate-step synthetic-detection cenogrid-modulation meishan-tuning odp846-oracle-original odp846-oracle-reduced laurin-stable laurin-variable-rate laurin-weak-band
+          python -m pip install miss-hit-core==0.9.44
+          python tools/suites.py run migration-audit
       - uses: actions/upload-artifact@v4
         if: always()
         with:

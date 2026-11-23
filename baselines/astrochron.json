@@ -1,0 +1,333 @@
+[
+  {
+    "id": "tune-knots",
+    "candidate": {
+      "method": "astrochron",
+      "version": "1.8",
+      "runtime": "R version 4.5.0 (2025-04-11)"
+    },
+    "status": "match",
+    "rows": 4,
+    "columns": {
+      "time_ka": {
+        "max_abs_error": 0.0,
+        "failures": 0,
+        "max_error_row": 1,
+        "atol": 1e-12,
+        "rtol": 1e-11
+      },
+      "proxy": {
+        "max_abs_error": 0.0,
+        "failures": 0,
+        "max_error_row": 1,
+        "atol": 1e-12,
+        "rtol": 2e-11
+      }
+    }
+  },
+  {
+    "id": "tune-clip",
+    "candidate": {
+      "method": "astrochron",
+      "version": "1.8",
+      "runtime": "R version 4.5.0 (2025-04-11)"
+    },
+    "status": "match",
+    "rows": 4,
+    "columns": {
+      "time_ka": {
+        "max_abs_error": 0.0,
+        "failures": 0,
+        "max_error_row": 1,
+        "atol": 1e-12,
+        "rtol": 1e-11
+      },
+      "proxy": {
+        "max_abs_error": 0.0,
+        "failures": 0,
+        "max_error_row": 1,
+        "atol": 1e-12,
+        "rtol": 2e-11
+      }
+    }
+  },
+  {
+    "id": "tune-extrapolate",
+    "candidate": {
+      "method": "astrochron",
+      "version": "1.8",
+      "runtime": "R version 4.5.0 (2025-04-11)"
+    },
+    "status": "match",
+    "rows": 6,
+    "columns": {
+      "time_ka": {
+        "max_abs_error": 0.0,
+        "failures": 0,
+        "max_error_row": 1,
+        "atol": 1e-12,
+        "rtol": 1e-11
+      },
+      "proxy": {
+        "max_abs_error": 0.0,
+        "failures": 0,
+        "max_error_row": 1,
+        "atol": 1e-12,
+        "rtol": 2e-11
+      }
+    }
+  },
+  {
+    "id": "constant-sedrate",
+    "candidate": {
+      "method": "astrochron",
+      "version": "1.8",
+      "runtime": "R version 4.5.0 (2025-04-11)"
+    },
+    "status": "match",
+    "rows": 3,
+    "columns": {
+      "time_ka": {
+        "max_abs_error": 0.0,
+        "failures": 0,
+        "max_error_row": 1,
+        "atol": 1e-12,
+        "rtol": 1e-11
+      },
+      "proxy": {
+        "max_abs_error": 0.0,
+        "failures": 0,
+        "max_error_row": 1,
+        "atol": 1e-12,
+        "rtol": 2e-11
+      }
+    }
+  },
+  {
+    "id": "sedrate-to-time",
+    "candidate": {
+      "method": "astrochron",
+      "version": "1.8",
+      "runtime": "R version 4.5.0 (2025-04-11)"
+    },
+    "status": "match",
+    "rows": 3,
+    "columns": {
+      "depth_m": {
+        "max_abs_error": 0.0,
+        "failures": 0,
+        "max_error_row": 1,
+        "atol": 1e-12,
+        "rtol": 1e-11
+      },
+      "time_ka": {
+        "max_abs_error": 0.0,
+        "failures": 0,
+        "max_error_row": 1,
+        "atol": 1e-12,
+        "rtol": 2e-11
+      }
+    }
+  },
+  {
+    "id": "sedrate-variable",
+    "candidate": {
+      "method": "astrochron",
+      "version": "1.8",
+      "runtime": "R version 4.5.0 (2025-04-11)"
+    },
+    "status": "match",
+    "rows": 3,
+    "columns": {
+      "depth_m": {
+        "max_abs_error": 0.0,
+        "failures": 0,
+        "max_error_row": 1,
+        "atol": 1e-12,
+        "rtol": 1e-11
+      },
+      "time_ka": {
+        "max_abs_error": 0.0,
+        "failures": 0,
+        "max_error_row": 1,
+        "atol": 1e-12,
+        "rtol": 2e-11
+      }
+    }
+  },
+  {
+    "id": "linear-irregular",
+    "candidate": {
+      "method": "astrochron",
+      "version": "1.8",
+      "runtime": "R version 4.5.0 (2025-04-11)"
+    },
+    "status": "match",
+    "rows": 7,
+    "columns": {
+      "depth_m": {
+        "max_abs_error": 0.0,
+        "failures": 0,
+        "max_error_row": 1,
+        "atol": 1e-12,
+        "rtol": 1e-11
+      },
+      "proxy": {
+        "max_abs_error": 0.0,
+        "failures": 0,
+        "max_error_row": 1,
+        "atol": 1e-12,
+        "rtol": 2e-11
+      }
+    }
+  },
+  {
+    "id": "r-tune-replay",
+    "candidate": {
+      "method": "astrochron",
+      "version": "1.8",
+      "runtime": "R version 4.5.0 (2025-04-11)"
+    },
+    "status": "match",
+    "rows": 81,
+    "columns": {
+      "time_ka": {
+        "max_abs_error": 1.4210854715202004e-14,
+        "failures": 0,
+        "max_error_row": 58,
+        "atol": 1e-12,
+        "rtol": 1e-11
+      },
+      "proxy": {
+        "max_abs_error": 4.996003610813204e-16,
+        "failures": 0,
+        "max_error_row": 64,
+        "atol": 1e-12,
+        "rtol": 2e-11
+      }
+    }
+  },
+  {
+    "id": "r-ar1-replay",
+    "candidate": {
+      "method": "astrochron",
+      "version": "1.8",
+      "runtime": "R version 4.5.0 (2025-04-11)"
+    },
+    "status": "match",
+    "rows": 32,
+    "columns": {
+      "index": {
+        "max_abs_error": 0.0,
+        "failures": 0,
+        "max_error_row": 1,
+        "atol": 1e-12,
+        "rtol": 1e-11
+      },
+      "noise": {
+        "max_abs_error": 4.884981308350689e-15,
+        "failures": 0,
+        "max_error_row": 5,
+        "atol": 1e-12,
+        "rtol": 2e-11
+      }
+    }
+  },
+  {
+    "id": "cenogrid-carbon-v28-linear",
+    "candidate": {
+      "method": "astrochron",
+      "version": "1.8",
+      "runtime": "R version 4.5.0 (2025-04-11)"
+    },
+    "status": "match",
+    "rows": 7324,
+    "columns": {
+      "age_ka": {
+        "max_abs_error": 7.275957614183426e-12,
+        "failures": 0,
+        "max_error_row": 9,
+        "atol": 1e-12,
+        "rtol": 1e-11
+      },
+      "isotope": {
+        "max_abs_error": 6.391172313602311e-12,
+        "failures": 0,
+        "max_error_row": 4040,
+        "atol": 1e-11,
+        "rtol": 2e-09
+      }
+    }
+  },
+  {
+    "id": "cenogrid-oxygen-v28-linear",
+    "candidate": {
+      "method": "astrochron",
+      "version": "1.8",
+      "runtime": "R version 4.5.0 (2025-04-11)"
+    },
+    "status": "match",
+    "rows": 7324,
+    "columns": {
+      "age_ka": {
+        "max_abs_error": 7.275957614183426e-12,
+        "failures": 0,
+        "max_error_row": 9,
+        "atol": 1e-12,
+        "rtol": 1e-11
+      },
+      "isotope": {
+        "max_abs_error": 7.802591905914369e-12,
+        "failures": 0,
+        "max_error_row": 4040,
+        "atol": 1e-11,
+        "rtol": 2e-09
+      }
+    }
+  },
+  {
+    "id": "meishan-recovered-clock",
+    "candidate": {
+      "method": "astrochron",
+      "version": "1.8",
+      "runtime": "R version 4.5.0 (2025-04-11)"
+    },
+    "status": "match",
+    "rows": 288,
+    "columns": {
+      "relative_time_ka": {
+        "max_abs_error": 6.685689868390909e-07,
+        "failures": 0,
+        "max_error_row": 282,
+        "atol": 1e-05,
+        "rtol": 0
+      },
+      "U_cpm": {
+        "max_abs_error": 0.0,
+        "failures": 0,
+        "max_error_row": 1,
+        "atol": 1e-12,
+        "rtol": 0
+      }
+    }
+  },
+  {
+    "id": "odp926b-timeopt",
+    "candidate": {
+      "method": "astrochron",
+      "version": "1.8",
+      "runtime": "R version 4.5.0 (2025-04-11)"
+    },
+    "status": "scored",
+    "metrics": [
+      {
+        "field": "rate_cm_per_ka",
+        "quantity": "distance",
+        "value": 3.022203330510959,
+        "unit": "cm/ka",
+        "reference": 3.02,
+        "absolute_difference": 0.0022033305109587786
+      }
+    ]
+  }
+]

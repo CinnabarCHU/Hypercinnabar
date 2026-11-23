@@ -1,0 +1,210 @@
+[
+  {
+    "id": "tune-knots",
+    "candidate": {
+      "method": "astrochron-warp",
+      "version": "0.2.0",
+      "astrochron": "1.8"
+    },
+    "status": "match",
+    "rows": 4,
+    "columns": {
+      "time_ka": {
+        "max_abs_error": 0.0,
+        "failures": 0,
+        "max_error_row": 1,
+        "atol": 1e-12,
+        "rtol": 1e-11
+      },
+      "proxy": {
+        "max_abs_error": 0.0,
+        "failures": 0,
+        "max_error_row": 1,
+        "atol": 1e-12,
+        "rtol": 2e-11
+      }
+    }
+  },
+  {
+    "id": "tune-clip",
+    "candidate": {
+      "method": "astrochron-warp",
+      "version": "0.2.0",
+      "astrochron": "1.8"
+    },
+    "status": "match",
+    "rows": 4,
+    "columns": {
+      "time_ka": {
+        "max_abs_error": 0.0,
+        "failures": 0,
+        "max_error_row": 1,
+        "atol": 1e-12,
+        "rtol": 1e-11
+      },
+      "proxy": {
+        "max_abs_error": 0.0,
+        "failures": 0,
+        "max_error_row": 1,
+        "atol": 1e-12,
+        "rtol": 2e-11
+      }
+    }
+  },
+  {
+    "id": "tune-extrapolate",
+    "candidate": {
+      "method": "astrochron-warp",
+      "version": "0.2.0",
+      "astrochron": "1.8"
+    },
+    "status": "match",
+    "rows": 6,
+    "columns": {
+      "time_ka": {
+        "max_abs_error": 0.0,
+        "failures": 0,
+        "max_error_row": 1,
+        "atol": 1e-12,
+        "rtol": 1e-11
+      },
+      "proxy": {
+        "max_abs_error": 0.0,
+        "failures": 0,
+        "max_error_row": 1,
+        "atol": 1e-12,
+        "rtol": 2e-11
+      }
+    }
+  },
+  {
+    "id": "constant-sedrate",
+    "candidate": {
+      "method": "astrochron-warp",
+      "version": "0.2.0",
+      "astrochron": "1.8"
+    },
+    "status": "match",
+    "rows": 3,
+    "columns": {
+      "time_ka": {
+        "max_abs_error": 0.0,
+        "failures": 0,
+        "max_error_row": 1,
+        "atol": 1e-12,
+        "rtol": 1e-11
+      },
+      "proxy": {
+        "max_abs_error": 0.0,
+        "failures": 0,
+        "max_error_row": 1,
+        "atol": 1e-12,
+        "rtol": 2e-11
+      }
+    }
+  },
+  {
+    "id": "sedrate-to-time",
+    "candidate": {
+      "method": "astrochron-warp",
+      "version": "0.2.0",
+      "astrochron": "1.8"
+    },
+    "status": "match",
+    "rows": 3,
+    "columns": {
+      "depth_m": {
+        "max_abs_error": 0.0,
+        "failures": 0,
+        "max_error_row": 1,
+        "atol": 1e-12,
+        "rtol": 1e-11
+      },
+      "time_ka": {
+        "max_abs_error": 0.0,
+        "failures": 0,
+        "max_error_row": 1,
+        "atol": 1e-12,
+        "rtol": 2e-11
+      }
+    }
+  },
+  {
+    "id": "sedrate-variable",
+    "candidate": {
+      "method": "astrochron-warp",
+      "version": "0.2.0",
+      "astrochron": "1.8"
+    },
+    "status": "match",
+    "rows": 3,
+    "columns": {
+      "depth_m": {
+        "max_abs_error": 0.0,
+        "failures": 0,
+        "max_error_row": 1,
+        "atol": 1e-12,
+        "rtol": 1e-11
+      },
+      "time_ka": {
+        "max_abs_error": 0.0,
+        "failures": 0,
+        "max_error_row": 1,
+        "atol": 1e-12,
+        "rtol": 2e-11
+      }
+    }
+  },
+  {
+    "id": "r-tune-replay",
+    "candidate": {
+      "method": "astrochron-warp",
+      "version": "0.2.0",
+      "astrochron": "1.8"
+    },
+    "status": "match",
+    "rows": 81,
+    "columns": {
+      "time_ka": {
+        "max_abs_error": 0.0,
+        "failures": 0,
+        "max_error_row": 1,
+        "atol": 1e-12,
+        "rtol": 1e-11
+      },
+      "proxy": {
+        "max_abs_error": 0.0,
+        "failures": 0,
+        "max_error_row": 1,
+        "atol": 1e-12,
+        "rtol": 2e-11
+      }
+    }
+  },
+  {
+    "id": "meishan-recovered-clock",
+    "candidate": {
+      "method": "astrochron-warp",
+      "version": "0.2.0",
+      "astrochron": "1.8"
+    },
+    "status": "match",
+    "rows": 288,
+    "columns": {
+      "relative_time_ka": {
+        "max_abs_error": 6.685693278996041e-07,
+        "failures": 0,
+        "max_error_row": 282,
+        "atol": 1e-05,
+        "rtol": 0
+      },
+      "U_cpm": {
+        "max_abs_error": 0.0,
+        "failures": 0,
+        "max_error_row": 1,
+        "atol": 1e-12,
+        "rtol": 0
+      }
+    }
+  }
+]
