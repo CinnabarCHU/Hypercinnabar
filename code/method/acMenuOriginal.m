@@ -3,6 +3,12 @@ function [value,status] = acMenuOriginal(engine,role,p,journal)
 if ~ismember(role,strsplit(engine.roles))
     error('Acycle:Menu:Role','%s has no %s in the selected snapshot.',engine.operation,role);
 end
+if strcmp(role,'analyzer') && (strcmp(engine.package,'redmark') || ...
+        (strcmp(engine.package,'SeriesGenerator') && strcmp(p.kind,'red')))
+    value=acMenuRedNoise(engine,p);
+    status='done';
+    return
+end
 if strcmp(engine.revision,'guide')
     guard=acMenuGuidePath(); %#ok<NASGU>
     ns='acmethods';

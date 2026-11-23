@@ -1,4 +1,4 @@
-function h = acMenuPrepare(menu,input,override,journal)
+function h = acMenuPrepare(menu,input,override,journal,request)
 % Resolve the menu's original recommendations and keep settings separate from plot data.
 bad=setdiff(fieldnames(override),{'params','plt'});
 if ~isempty(bad), error('Acycle:Menu:Override','Unknown override branch %s.',bad{1}); end
@@ -44,13 +44,9 @@ elseif strcmp(engine.operation,'Bispectral') && isfield(values,'options') && ~is
     [settings,~]=acMenuOriginal(view,'helper',struct('result',struct('Options',values.options)),journal);
     values.settings=settings.settings;
 end
-if strcmp(engine.package,'interpolate') && isfield(values,'data') && ~isfield(values,'interpolate_rate')
-    data=values.data;
-%% Copied from mingsongli/acycle@dcba4279168745b563e0535b954297023dd62fc7 code/guicode/AC.m:L3235-L3236
-                time = data(:,1);
-                srmedian = median(diff(time));
-%% End copied source
-    values.interpolate_rate=srmedian;
+if strcmp(engine.package,'redmark') || (strcmp(engine.package,'SeriesGenerator') && ...
+        isfield(values,'kind') && strcmp(values.kind,'red'))
+    if ~isfield(values,'seed'), values.seed=request.redNoiseSeed; end
 end
 if strcmp(engine.package,'SimplePlot')
     values.standardized=~strcmp(menu.tag,'menu_plot');

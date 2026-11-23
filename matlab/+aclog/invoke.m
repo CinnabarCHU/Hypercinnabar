@@ -1,10 +1,14 @@
 function [retval, id] = invoke(op, params, id, implementation)
 % Call one method role, preserving the original MATLAB exception.
+current=acActiveMenuJournal();
+if isempty(id) && ~isempty(current), id=struct('acycleParentJournal',current); end
 if isstruct(id) && isscalar(id) && isfield(id,'acycleParentJournal')
     parent = id.acycleParentJournal;
     if ~ischar(parent) || ~isfile(parent) || ~isfolder([parent,'.lock'])
         error('Acycle:Logger:Parent','Expected an active enclosing menu invocation.');
     end
+    previous=acActiveMenuJournal(parent);
+    restoreParent=onCleanup(@()acActiveMenuJournal(previous)); %#ok<NASGU>
     [retval,status,caught] = runMethod(implementation,params);
     if ~isempty(caught), rethrow(caught); end
     id = struct('status',status);
@@ -61,4 +65,11 @@ try
 catch err
     caught = err;
 end
+end
+
+function previous = acActiveMenuJournal(varargin)
+% Nested compatibility calls with no explicit id belong to the enclosing public role.
+persistent current
+previous=current;
+if nargin, current=varargin{1}; end
 end

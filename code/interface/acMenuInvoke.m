@@ -34,5 +34,9 @@ for k=1:numel(args)
     end
 end
 request=struct('args',{args});
+if strcmp(tag,'linegenerator') && strcmp(role,'helper')
+    % Capture the seed expression from both pinned redmark.m files, line 21.
+    request.redNoiseSeed=sum(100*clock); %#ok<CLOCK>
+end
 value=acMenuExecute(tag,role,request,journal,live);
 end

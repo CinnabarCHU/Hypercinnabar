@@ -18,6 +18,7 @@ FILES = re.compile(r'[\w.()+-]+\.(?:mat|txt|csv|dat|jpg|png|xlsx|fig|14c)\b', re
 
 SETUP = """function setup_method()
 root=fileparts(mfilename('fullpath'));
+if isfile(fullfile(root,'upstream','acycle','ac.m')), addpath(fullfile(root,'upstream','acycle')); end
 dirs={'upstream/recovered/code','upstream/acycle/code','upstream/acycle/data','code/method','code/interface'};
 for i=1:numel(dirs)
     folder=fullfile(root,dirs{i});

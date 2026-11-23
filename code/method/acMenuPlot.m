@@ -26,12 +26,13 @@ for name={'panel','figureIndex','operation'}
 end
 p=acMenuMerge(p,display);
 if isfield(p,'operation'), p=rmfield(p,'operation'); end
-if ~isempty(engine.plotFields)
-    % Data-dependent legacy branches may leave inactive fields absent; the original
-    % renderer reads them only when selected. Never fill in missing scientific inputs.
-    if strcmp(engine.package,'SimplePlot')
-        missing=setdiff(strsplit(engine.plotFields),fieldnames(p));
-        if ~isempty(missing), error('Acycle:Menu:MissingOption','Missing plot field %s.',missing{1}); end
+if strcmp(engine.package,'SimplePlot')
+    missing=setdiff(strsplit(engine.plotFields),fieldnames(p));
+    if ~isempty(missing), error('Acycle:Menu:MissingOption','Missing plot field %s.',missing{1}); end
+elseif strcmp(engine.package,'WaveletSpectrum')
+    flags=isfield(p,{'plot_series','plot_spectrum','plot_swap'});
+    if any(flags) && ~all(flags)
+        error('Acycle:Menu:MissingOption','Supply all three wavelet panel switches.');
     end
 end
 if targeted

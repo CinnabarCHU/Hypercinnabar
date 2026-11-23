@@ -67,7 +67,7 @@ case 'SeriesGenerator'
     case {'white','red','gaussian','uniform'}
         if legacy, acMenuRequire(p,{'mean','std'}); else, acMenuRequire(p,{'mu','sigma'}); end
         if strcmp(p.kind,'white'), acMenuRequire(p,{'distribution'}); end
-        if strcmp(p.kind,'red'), acMenuRequire(p,{'alpha'}); end
+        if strcmp(p.kind,'red'), acMenuRequire(p,{'alpha','seed'}); end
     end
 case 'Recurrence'
     if isempty(p.threshold) || isempty(p.normFlag) || isempty(p.method_use)

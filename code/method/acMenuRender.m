@@ -72,12 +72,21 @@ if isempty(target)
 end
 if strcmp(kind,'axes')
     acMenuCopyAxes(source,target);
-elseif ~isempty(panel)
-    copyobj(source,target);
 else
-    % Copy related axes, legends, and colorbars together, keeping their associations.
-    copyobj(flipud(figs(1).Children),target);
-    colormap(target,colormap(figs(1)));
+    if ~isempty(panel)
+        children=copyobj(source,target);
+        colormap(children,colormap(source));
+    else
+        % Copy related axes, legends and colorbars together, preserving associations.
+        children=copyobj(flipud(figs(1).Children),target);
+        for i=1:numel(children)
+            if isgraphics(children(i),'axes'), colormap(children(i),colormap(figs(1))); end
+        end
+    end
+    if isappdata(target,'acMenuRenderedChildren')
+        old=getappdata(target,'acMenuRenderedChildren'); delete(old(isgraphics(old)));
+    end
+    setappdata(target,'acMenuRenderedChildren',children);
 end
 keepTarget=true;
 clear cleanup
@@ -102,7 +111,8 @@ copied=gobjects(0);
 try
     copied=copyobj(flipud(source.Children),target);
     for key={'XScale','YScale','ZScale','XDir','YDir','ZDir','View','Box','Color', ...
-            'XMinorTick','YMinorTick','ZMinorTick','XGrid','YGrid','ZGrid','CLim','XLim','YLim','ZLim'}
+            'XMinorTick','YMinorTick','ZMinorTick','XGrid','YGrid','ZGrid','CLim','XLim','YLim','ZLim', ...
+            'ColorScale','Projection','LineWidth','Visible','TickDir'}
         target.(key{1})=source.(key{1});
     end
     for key={'XTick','YTick','ZTick','XTickLabel','YTickLabel','ZTickLabel', ...

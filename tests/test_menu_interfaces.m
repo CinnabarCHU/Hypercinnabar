@@ -22,6 +22,9 @@ for k=1:numel(catalog.engines)
     for role=strsplit(e.roles)
         assert(~isempty(which([ns,'.',e.package,'.',role{1}])),e.operation);
         original=original+1;
+        if strcmp(role{1},'analyzer') && ~isempty(e.required)
+            acMenuExpect(@()acMenuValidate(e,struct()),'Acycle:Menu:MissingOption');
+        end
     end
 end
 assert(original==789);
@@ -49,6 +52,12 @@ acMenuExpect(@()acMenuSound_analyzer(struct('override',struct())),'Acycle:Menu:O
 acMenuExpect(@()acMenuImshow_plotter('override',struct()),'Acycle:Menu:Arguments');
 provisional=evalc('acMenuSound_helper(''input'',struct(''data'',data),''id'',-3);');
 assert(contains(provisional,'"attr":"init"') && contains(provisional,'"attr":"fin"') && contains(provisional,'"id":'));
+% A GUIDE helper delegates to another historical helper; both share the public record.
+base=aclog.interfaceId(acMenuNewId(),true);
+logRoot=fileparts(fileparts(fileparts(base)));
+beforeLogs=numel(dir(fullfile(logRoot,'**','events.jsonl')));
+acMenuFilter_helper(struct('data',data,'operation','PassFilter_legacy'),'id',acMenuNewId());
+assert(numel(dir(fullfile(logRoot,'**','events.jsonl')))==beforeLogs+1);
 % Two distinct interpolation interfaces remain available from the same menu.
 a=acMenuInterp_helper(struct('data',data),'id',acMenuNewId());
 assert(a.params.interpolate_rate==1 && strcmp(a.params.operation,'interpolate'));
@@ -78,9 +87,14 @@ assert(strcmp(h.params.mode,'Strict') && isequal(h.params.existingPixels,[2 3]))
 for v={'SeriesGenerator','SeriesGenerator_legacy'}
     inp=struct('operation',v{1},'x',x,'kind','red','alpha',0.4);
     if endsWith(v{1},'_legacy'), inp.mean=0; inp.std=1; else, inp.mu=0; inp.sigma=1; end
-    h=acMenuLinegenerator_helper(inp,'id',acMenuNewId());
+    prep=acMenuNewId(); h=acMenuLinegenerator_helper(inp,'id',prep);
+    assert(isfield(h.params,'seed') && isequaln(h,aclog.replay(prep)));
+    bad=rmfield(h.params,'seed');
+    acMenuExpect(@()acMenuLinegenerator_analyzer(bad,acMenuNewId()),'Acycle:Menu:MissingOption');
     id=acMenuNewId(); r=acMenuLinegenerator_analyzer(h.params,id);
-    state=rng; assert(isequaln(r,aclog.replay(id)) && isequaln(rng,state));
+    state=rng; repeated=aclog.replay(id);
+    assert(isequaln(r,repeated),'%s changed on replay.',v{1});
+    assert(isequaln(rng,state),'%s replay changed the caller RNG.',v{1});
 end
 % Plot into the requested axes. Check the panel data and the live host separately.
 visibility=get(groot,'DefaultFigureVisible'); set(groot,'DefaultFigureVisible','off');
@@ -109,6 +123,10 @@ h.plt.panel=2; acMenuRgb2lab_plotter(h.plt,'res',r,'target',a1,'id',acMenuNewId(
 assert(strcmp(a1.Title.String,'a*') && isequal(findobj(a1,'Type','image').CData,r.I(:,:,2)) && isgraphics(sentinel));
 f=figure('Visible','off'); acMenuRgb2lab_plotter(rmfield(h.plt,'panel'),'res',r,'target',f,'id',acMenuNewId());
 assert(numel(findall(f,'Type','axes'))==3);
+acMenuRgb2lab_plotter(rmfield(h.plt,'panel'),'res',r,'target',f,'id',acMenuNewId());
+assert(numel(findall(f,'Type','axes'))==3);
+badPlot=h.plt; badPlot.I=zeros(5);
+acMenuExpect(@()acMenuRgb2lab_plotter(badPlot,'res',r,'target',a1,'id',acMenuNewId()),'Acycle:Menu:PlotOption');
 q=acMenuCatalog('menu_timeOpt'); assert(strcmp(q.default,'TimeOpt_legacy') && isempty(q.master));
 q=acMenuCatalog('menu_swa'); assert(ismember('SWA',strsplit(q.choices)));
 acMenuExpect(@()acMenuSwa_analyzer(struct('operation','SWA'),acMenuNewId()),'Acycle:Menu:Role');

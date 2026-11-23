@@ -78,6 +78,9 @@ def scientific_fields(selector, package, row):
     base = re.sub(r'\([^)]*\)', '', base).split()
     required = CONDITIONAL.get(selector,CONDITIONAL.get(package,' '.join(base))).split()
     all_fields = plain_fields(row) | set(required)
+    if package in ('redmark','SeriesGenerator'):
+        all_fields.add('seed')
+        if package=='redmark': required.append('seed')
     if package=='Lyapunov':
         all_fields.update('data data_even interpolate_rate padtype'.split())
     if 'optional legacyTarget' in desc:

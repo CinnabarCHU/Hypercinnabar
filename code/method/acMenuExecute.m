@@ -9,7 +9,7 @@ value=aclog.invoke(op,request,journal,@dispatch);
         status='done';
         switch role
         case 'helper'
-            out=acMenuPrepare(menu,s.input,s.override,journal);
+            out=acMenuPrepare(menu,s.input,s.override,journal,stored);
         case 'analyzer'
             if ~isfield(s.params,'operation'), error('Acycle:Menu:MissingOption','Missing params.operation.'); end
             engine=acMenuEngine(menu,s.params.operation);
