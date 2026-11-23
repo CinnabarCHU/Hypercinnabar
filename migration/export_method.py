@@ -162,7 +162,7 @@ def menu_dependencies(tags):
         raise ValueError('Unknown or non-executable menu: '+', '.join(sorted(unknown)))
     choices={s for m in menus for s in m['choices'].split()}
     engines=[e for e in cat['engines'] if e['operation'] in choices]
-    files={api/'acMenuInvoke.m',api/'acMenuNewId.m',api/'acMenuCatalog.m'}
+    files={api/'acMenuInvoke.m',api/'acMenuExecute.m',api/'acMenuNewId.m',api/'acMenuCatalog.m'}
     files.update(files_under(ROOT/'code/method'))
     for m in menus:
         files.update(api/m['folder']/(m['entry']+'_'+role+'.m') for role in m['roles'].split())

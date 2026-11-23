@@ -17,6 +17,9 @@ if isfile(saved)
 end
 menu = regexp(entry.info.op,'^Menu_(\w+)-v1/(helper|analyzer|plotter)$','tokens','once');
 if ~isempty(menu)
+    if isempty(which('acMenuExecute'))
+        error('Acycle:Replay:Unavailable','Install the recorded menu interface to replay this invocation.');
+    end
     newId=aclog.newId();
     retval=acMenuExecute(menu{1},menu{2},params,newId,[]);
     return

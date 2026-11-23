@@ -20,7 +20,7 @@ disp(engine.required)
 
 | GUI 中的实际位置 | 此版如何调用 |
 |---|---|
-| Math → Interpolation / Interpolation Pro | 保留主窗口的两个入口。普通插值默认 `interpolate`，GUIDE 为 `interpolate_legacy`。同一菜单的 `RegularInterpolation` 允许多列输入，返回结果同时含元数据和采样网格上限设置。 |
+| Math → Interpolation / Interpolation Pro | 保留主窗口的两个入口。普通插值默认 `interpolate`，GUIDE 为 `interpolate_legacy`。同一菜单的 `RegularInterpolation` 允许多列输入，可设置采样网格上限，结果附带网格元数据。 |
 | Math → Data Transformations | 同一接口内，`params.operation` 选快照或独立变换，`params.j` 等字段保持原变换的含义。 |
 | Timeseries → Spectral Analysis / Filter | 前者在同一版 `PowerSpectrum` 下传估计器和背景模型选择，后者保留 `Bandpass`、`PassFilter` 及相关核函数。[两版谱差异](../master/README.zh-CN.md) |
 | Univariate / Bivariate | 跟随 master 的菜单位置。单样本 t、双样本、正态性、卡方、ANOVA、相关、协方差和回归可以分别定位。 |

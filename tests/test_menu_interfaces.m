@@ -92,7 +92,13 @@ for v={'SeriesGenerator','SeriesGenerator_legacy'}
     bad=rmfield(h.params,'seed');
     acMenuExpect(@()acMenuLinegenerator_analyzer(bad,acMenuNewId()),'Acycle:Menu:MissingOption');
     id=acMenuNewId(); r=acMenuLinegenerator_analyzer(h.params,id);
-    state=rng; repeated=aclog.replay(id);
+    state=rng;
+    randn('state',h.params.seed); %#ok<RAND>
+    expected=zscore(filter(1,[1;-inp.alpha],randn(numel(x),1)));
+    rng(state);
+    if endsWith(v{1},'_legacy'), assert(isequal(r.x,x) && isequal(r.y,expected));
+    else, assert(isequal(r,[x,expected])); end
+    repeated=aclog.replay(id);
     assert(isequaln(r,repeated),'%s changed on replay.',v{1});
     assert(isequaln(rng,state),'%s replay changed the caller RNG.',v{1});
 end
@@ -118,7 +124,9 @@ for v={'RGBToGray','RGBToGray_legacy'}
 end
 h=acMenuRgb2lab_helper(struct('im_name',im),'id',acMenuNewId());
 r=acMenuRgb2lab_analyzer(h.params,acMenuNewId());
+figureCount=numel(findall(groot,'Type','figure'));
 acMenuExpect(@()acMenuRgb2lab_plotter(h.plt,'res',r,'target',a1,'id',acMenuNewId()),'Acycle:Menu:Panel');
+assert(numel(findall(groot,'Type','figure'))==figureCount && isgraphics(sentinel));
 h.plt.panel=2; acMenuRgb2lab_plotter(h.plt,'res',r,'target',a1,'id',acMenuNewId());
 assert(strcmp(a1.Title.String,'a*') && isequal(findobj(a1,'Type','image').CData,r.I(:,:,2)) && isgraphics(sentinel));
 f=figure('Visible','off'); acMenuRgb2lab_plotter(rmfield(h.plt,'panel'),'res',r,'target',f,'id',acMenuNewId());
