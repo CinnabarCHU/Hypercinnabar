@@ -1,17 +1,25 @@
 {
-  "case": "insolation",
-  "run_id": "20261123T141915Z-31885f311f05",
+  "case": "wayao",
+  "run_id": "20261123T142251Z-e3fba05ce55b",
   "operation": "analyze",
-  "input_sha256": "6397fd514c2efba370c59a28cb10224b96d3e498469aa0e80bb0eb3d1bc6933c",
+  "input_sha256": "f39dcc29be09cd5a07ef1dcdd20c6fa30499213c204ce4897ac02d9f6f086c21",
   "parameters": {
-    "coordinate_unit": "kyr",
-    "detrend": "mean",
-    "dt": 1,
-    "evolution": true,
-    "evolution_step": 3.2,
-    "evolution_window": 400,
-    "fmax": 0.06,
+    "detrend": "lowess",
+    "span": 0.4548299,
+    "dt": 0.33,
     "mtm_nw": 2,
-    "nfft": 10005
+    "nfft": 2670,
+    "fmax": 1,
+    "evolution": true,
+    "evolution_window": 40,
+    "evolution_step": 0.33,
+    "filter_band": [
+      0.022,
+      0.034
+    ],
+    "filter_method": "gaussian",
+    "coordinate_unit": "m",
+    "smooth_fraction": 0.2,
+    "fit_fmax": 1.515151515151523
   }
 }
