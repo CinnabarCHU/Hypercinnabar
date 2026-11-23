@@ -8,3 +8,4 @@ __pycache__/
 /Leg138/*.building.sqlite-*
 /Leg138/Leg138.sqlite-*
 /Leg138/full_edition/
+/Leg138/Leg138.building-*.sqlite*

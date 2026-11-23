@@ -1,0 +1,34 @@
+item_id,source_pdf_page,sampling,verdict,exterior_dark_pixels,adjacent_horizontal_band_dark_pixels
+IR10.F32,37,"16 per series IR/SR; shuffled candidate ID and leaf lists, random seed 138846",body visually accepted,0,0
+IR03.F15,16,"16 per series IR/SR; shuffled candidate ID and leaf lists, random seed 138846",body visually accepted,0,0
+IR17.F36,44,"16 per series IR/SR; shuffled candidate ID and leaf lists, random seed 138846",body visually accepted,0,0
+IR10.F07,12,"16 per series IR/SR; shuffled candidate ID and leaf lists, random seed 138846",body visually accepted,0,0
+IR12.F52,51,"16 per series IR/SR; shuffled candidate ID and leaf lists, random seed 138846",body visually accepted,0,0
+IR12.F28,31,"16 per series IR/SR; shuffled candidate ID and leaf lists, random seed 138846",body visually accepted,0,0
+IR17.F18,27,"16 per series IR/SR; shuffled candidate ID and leaf lists, random seed 138846",body visually accepted,0,0
+IR19.F09,10,"16 per series IR/SR; shuffled candidate ID and leaf lists, random seed 138846",body visually accepted,0,0
+IR16.F23,37,"16 per series IR/SR; shuffled candidate ID and leaf lists, random seed 138846",body visually accepted,0,0
+IR15.F33,47,"16 per series IR/SR; shuffled candidate ID and leaf lists, random seed 138846",body visually accepted,0,0
+IR11.F49,56,"16 per series IR/SR; shuffled candidate ID and leaf lists, random seed 138846",body visually accepted,0,0
+IR14.F21,39,"16 per series IR/SR; shuffled candidate ID and leaf lists, random seed 138846",body visually accepted,0,0
+IR18.F25,28,"16 per series IR/SR; shuffled candidate ID and leaf lists, random seed 138846",body visually accepted,0,0
+IR14.F06,16,"16 per series IR/SR; shuffled candidate ID and leaf lists, random seed 138846",body visually accepted,0,0
+IR09.F31,42,"16 per series IR/SR; shuffled candidate ID and leaf lists, random seed 138846",body visually accepted,0,0
+IR09.F37,49,"16 per series IR/SR; shuffled candidate ID and leaf lists, random seed 138846",body visually accepted,0,0
+SR.C31.FIGURE3,4,"16 per series IR/SR; shuffled candidate ID and leaf lists, random seed 138846",body visually accepted,0,0
+SR.C25.FIGURE20,24,"16 per series IR/SR; shuffled candidate ID and leaf lists, random seed 138846",body visually accepted,0,0
+SR.C44.FIGURE17,26,"16 per series IR/SR; shuffled candidate ID and leaf lists, random seed 138846",body visually accepted,0,0
+SR.C06.FIGURE1,15,"16 per series IR/SR; shuffled candidate ID and leaf lists, random seed 138846",body visually accepted,0,0
+SR.C18.FIGURE2,3,"16 per series IR/SR; shuffled candidate ID and leaf lists, random seed 138846",body visually accepted,0,0
+SR.C31.FIGURE4,6,"16 per series IR/SR; shuffled candidate ID and leaf lists, random seed 138846",body visually accepted,0,0
+SR.C11.FIGURE9,30,"16 per series IR/SR; shuffled candidate ID and leaf lists, random seed 138846",body visually accepted,0,0
+SR.C11.FIGURE8,28,"16 per series IR/SR; shuffled candidate ID and leaf lists, random seed 138846",body visually accepted,0,0
+SR.C44.FIGURE5,7,"16 per series IR/SR; shuffled candidate ID and leaf lists, random seed 138846",body visually accepted,0,0
+SR.C11.FIGURE4,14,"16 per series IR/SR; shuffled candidate ID and leaf lists, random seed 138846",body visually accepted,0,0
+SR.C25.FIGURE11,15,"16 per series IR/SR; shuffled candidate ID and leaf lists, random seed 138846",body visually accepted,0,0
+SR.C17.FIGURE8,10,"16 per series IR/SR; shuffled candidate ID and leaf lists, random seed 138846",body visually accepted,0,0
+SR.C35.FIGURE22,26,"16 per series IR/SR; shuffled candidate ID and leaf lists, random seed 138846",body visually accepted,0,0
+SR.C38.FIGURE6,9,"16 per series IR/SR; shuffled candidate ID and leaf lists, random seed 138846",body visually accepted,0,0
+SR.C33.FIGURE7,6,"16 per series IR/SR; shuffled candidate ID and leaf lists, random seed 138846",body visually accepted,0,0
+SR.C25.FIGURE18,22,"16 per series IR/SR; shuffled candidate ID and leaf lists, random seed 138846",body visually accepted,0,0
+IR10.F05,9,separately targeted possible unread running header; outside random sample,initial body included running header; top edge corrected manually,,

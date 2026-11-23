@@ -1,0 +1,96 @@
+[
+  {
+    "item_id": "SP.F2",
+    "source_path": "sppr/primary/SP.pdf",
+    "source_pdf_page": 12,
+    "source_url": "https://www-odp.tamu.edu/publications/prosp/digital/138prosp.pdf#page=12",
+    "source_pdf_sha256": "7934144bec5ec839c5a95c113cec9a266ac2ad5ef4b97b50cd44ffad3d534e37",
+    "body_evidence": "visual_confirmed",
+    "caption_scope": "visually_confirmed_caption",
+    "media_class": "black_white_line_art",
+    "reading_note": "Axes, labels, arrows or station marks belong to the artwork.",
+    "files": {
+      "body": {
+        "file": "SP.F2.p012.body.png",
+        "sha256": "783d088daf73c711e91fb668a30838c21984a5a95cb0543dd94fea3324a76fdb",
+        "decoded_sha256": "4c5754a6219a01d6345f54596d4529ec34e66abeca9073fd60244003e9707afb",
+        "mode": "RGB",
+        "requested_bbox_pt": [
+          48.5,
+          175.5,
+          559.0,
+          351.0
+        ],
+        "pixel_basis": "native_embedded_image",
+        "xref": 44,
+        "stream_sha256": "242523a009ecc2b6293d6e4e5616934b8f84c1ab08fb168b66a59122b258b077",
+        "source_size": [
+          1279,
+          1654
+        ],
+        "source_mode": "RGB",
+        "pdf_image_transform": [
+          613.6799926757812,
+          0.0,
+          -0.0,
+          793.9199829101562,
+          0.0,
+          -0.79998779296875
+        ],
+        "source_pixel_bbox": [
+          101,
+          367,
+          1166,
+          733
+        ]
+      },
+      "trace": {
+        "file": "SP.F2.p012.ink.svg",
+        "source_crop_decoded_sha256": "4c5754a6219a01d6345f54596d4529ec34e66abeca9073fd60244003e9707afb",
+        "pixel_width": 1065,
+        "pixel_height": 366,
+        "black_pixels": 22214,
+        "rectangles": 2166,
+        "threshold": "Pillow L < 128",
+        "mask_sha256": "fad1c328349c01c57f5010a3ea3765d0e9bd1e1e957ab646a81a12688f0d63c2",
+        "rendered_mask_sha256": "fad1c328349c01c57f5010a3ea3765d0e9bd1e1e957ab646a81a12688f0d63c2",
+        "mismatch_pixels": 0,
+        "svg_sha256": "bc7be7cd6d910aaa42c31b68b9962e01bae590fb71a74d84dfb687ba4ce6c9bf"
+      },
+      "caption": {
+        "file": "SP.F2.p012.caption.png",
+        "sha256": "3f65b89abac10265c7892dbf64f33663cfc5f3c9fbd0dbecb4169a31cc6f9876",
+        "decoded_sha256": "e992a1f8d469c1b91284b86a83a9139c7fa2cc37d74ffdbca94438bdaa4ac624",
+        "mode": "RGB",
+        "requested_bbox_pt": [
+          71.5,
+          413.0,
+          527.0,
+          560.5
+        ],
+        "pixel_basis": "native_embedded_image",
+        "xref": 44,
+        "stream_sha256": "242523a009ecc2b6293d6e4e5616934b8f84c1ab08fb168b66a59122b258b077",
+        "source_size": [
+          1279,
+          1654
+        ],
+        "source_mode": "RGB",
+        "pdf_image_transform": [
+          613.6799926757812,
+          0.0,
+          -0.0,
+          793.9199829101562,
+          0.0,
+          -0.79998779296875
+        ],
+        "source_pixel_bbox": [
+          149,
+          862,
+          1099,
+          1170
+        ]
+      }
+    }
+  }
+]

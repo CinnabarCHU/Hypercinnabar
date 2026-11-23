@@ -1,0 +1,17 @@
+{
+  "numbered_figures": 1206,
+  "located_figure_pages": 1289,
+  "individual_source_leaves": 1045,
+  "source_pdfs_checked": 70,
+  "body_evidence": {
+    "page_only": 753,
+    "machine_candidate": 424,
+    "visual_confirmed": 112
+  },
+  "body_identifiers_with_one_or_more_boxes": 483,
+  "body_identifiers_with_all_located_pages": 458,
+  "trace_approved_leaves": 70,
+  "embedded_source_modes": {
+    "native_raster": 1289
+  }
+}

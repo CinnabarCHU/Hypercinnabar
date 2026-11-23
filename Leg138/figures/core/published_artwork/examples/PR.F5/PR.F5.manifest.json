@@ -1,0 +1,100 @@
+[
+  {
+    "item_id": "PR.F5",
+    "source_path": "sppr/primary/PR.pdf",
+    "source_pdf_page": 36,
+    "source_url": "https://www-odp.tamu.edu/publications/prelim/138PREL.PDF#page=36",
+    "source_pdf_sha256": "48f7d7e22f672f499c38d610d995ad713874cfd01bc29516cf6b2f4cbe6d18c5",
+    "body_evidence": "visual_confirmed",
+    "caption_scope": "visually_confirmed_caption",
+    "media_class": "black_white_line_plot",
+    "reading_note": "Contains published thin and thick lines, plotted symbols, axes and ticks. mask_caption_in_body: The original caption is in the lower-left empty panel. Exclude its rectangle when exporting the complete five-panel body.",
+    "files": {
+      "body": {
+        "file": "PR.F5.p036.body.png",
+        "sha256": "e039064c83c2bb064b73916178b9af1b1c43ef6ef402299d6b482c878e4ad8f6",
+        "decoded_sha256": "3f02ba2b2d4899c23fc32f85727380601c88fe181916d0b2f35fbe865ff2ae7a",
+        "mode": "RGB",
+        "requested_bbox_pt": [
+          75.0,
+          132.0,
+          503.0,
+          721.5
+        ],
+        "pixel_basis": "native_embedded_image",
+        "xref": 105,
+        "stream_sha256": "e35b9703e4b472e3d7ddc875597b100dfd5eed3578fa1da35d273122f1e40c87",
+        "source_size": [
+          1278,
+          1655
+        ],
+        "source_mode": "RGB",
+        "pdf_image_transform": [
+          613.4400024414062,
+          0.0,
+          -0.0,
+          794.1599731445312,
+          0.0,
+          -0.97998046875
+        ],
+        "source_pixel_bbox": [
+          156,
+          277,
+          1048,
+          1506
+        ],
+        "caption_overlap_pt": [
+          75.0,
+          617.0,
+          304.0,
+          704.0
+        ]
+      },
+      "body_alpha": {
+        "file": "PR.F5.p036.body-alpha.png",
+        "sha256": "1fff28553f5a8a916f4a6afa58e4ef49af215f71af1e897bf983a2a05f183e94",
+        "body_relative_caption_bbox_px": [
+          0,
+          1010,
+          478,
+          1193
+        ],
+        "convention": "0 hides embedded caption, 255 retains original raster"
+      },
+      "caption": {
+        "file": "PR.F5.p036.caption.png",
+        "sha256": "69b02554952809518d2f0b436f942bb118d9fc37c22c5723a2619f2e4eda85d5",
+        "decoded_sha256": "68d4902a87af83ca6f95ed8af6dd4b3c9198ed2dffa31cdd87bb0730e7cc721b",
+        "mode": "RGB",
+        "requested_bbox_pt": [
+          71.5,
+          617.0,
+          304.0,
+          704.0
+        ],
+        "pixel_basis": "native_embedded_image",
+        "xref": 105,
+        "stream_sha256": "e35b9703e4b472e3d7ddc875597b100dfd5eed3578fa1da35d273122f1e40c87",
+        "source_size": [
+          1278,
+          1655
+        ],
+        "source_mode": "RGB",
+        "pdf_image_transform": [
+          613.4400024414062,
+          0.0,
+          -0.0,
+          794.1599731445312,
+          0.0,
+          -0.97998046875
+        ],
+        "source_pixel_bbox": [
+          148,
+          1287,
+          634,
+          1470
+        ]
+      }
+    }
+  }
+]

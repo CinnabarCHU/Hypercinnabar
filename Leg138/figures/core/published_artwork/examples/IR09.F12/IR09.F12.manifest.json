@@ -1,0 +1,83 @@
+[
+  {
+    "item_id": "IR09.F12",
+    "source_path": "ir/primary/VOLUME/CHAPTERS/ir138_09.pdf",
+    "source_pdf_page": 19,
+    "source_url": "https://www-odp.tamu.edu/publications/138_IR/VOLUME/CHAPTERS/ir138_09.pdf#page=19",
+    "source_pdf_sha256": "6926c3d1ddb3d8b2020f7edeeb4adfdd9b20d79f85d0db9ca26e8e8b303f075b",
+    "body_evidence": "visual_confirmed",
+    "caption_scope": "visually_confirmed_caption",
+    "media_class": "halftone_photograph",
+    "reading_note": "Native grayscale/halftone core photograph with its own printed centimetre scale. Preserve continuous-tone image as raster; avoid binary tracing. This figure-level crop is not a calibrated optical-only sample.",
+    "files": {
+      "body": {
+        "file": "IR09.F12.p019.body.png",
+        "sha256": "45e027d5fdfbf7bed952a5c13fe30162bfa244c837d106032c019e2ca680cf40",
+        "decoded_sha256": "bc7ed155c1588d3486726a8393e25ee487e5a3e3a867541e90a253f36480dec4",
+        "mode": "RGB",
+        "requested_bbox_pt": [
+          57.0,
+          66.0,
+          241.0,
+          611.5
+        ],
+        "pixel_basis": "native_embedded_image",
+        "xref": 72,
+        "stream_sha256": "74406e187516c2a1b364d2675c22cd59008d265b02f5296a1928f8fb573a1109",
+        "source_size": [
+          1212,
+          1660
+        ],
+        "source_mode": "RGB",
+        "pdf_image_transform": [
+          581.760009765625,
+          0.0,
+          -0.0,
+          796.5599975585938,
+          0.0,
+          -0.5
+        ],
+        "source_pixel_bbox": [
+          118,
+          138,
+          503,
+          1276
+        ]
+      },
+      "caption": {
+        "file": "IR09.F12.p019.caption.png",
+        "sha256": "734d5f7e6d4f085cf874b236c1ecc97586902a0da9a260e929af7bd1e1693601",
+        "decoded_sha256": "97e241cb72854a6d41bc35386209c3b57781c67bca82d21762f6eacdc67a2a6b",
+        "mode": "RGB",
+        "requested_bbox_pt": [
+          20.0,
+          612.0,
+          270.0,
+          658.0
+        ],
+        "pixel_basis": "native_embedded_image",
+        "xref": 72,
+        "stream_sha256": "74406e187516c2a1b364d2675c22cd59008d265b02f5296a1928f8fb573a1109",
+        "source_size": [
+          1212,
+          1660
+        ],
+        "source_mode": "RGB",
+        "pdf_image_transform": [
+          581.760009765625,
+          0.0,
+          -0.0,
+          796.5599975585938,
+          0.0,
+          -0.5
+        ],
+        "source_pixel_bbox": [
+          41,
+          1276,
+          563,
+          1373
+        ]
+      }
+    }
+  }
+]

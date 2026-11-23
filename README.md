@@ -8,6 +8,7 @@
 | [84 页逐站校读本](Leg138/publication/ODP138_Leg_Report_Edition.pdf) | 航次与站点、12 张拟钻站卡、11 站速率图对校、碳酸盐重复测量、岩芯与标尺分离。 |
 | [11 站复合地层柱图](Leg138/figures/core/composite_v2/Leg138_PR_Composite_Atlas.pdf) | 22 个原图页与独立重画并排，含 66 个密度、磁化率与反射率面板。图旁区分发布值、显示滤波及原刊解释层。 |
 | [使用、导出和复建](Leg138/README.md) | 双击离线浏览，或启动本机 JSON／CSV API。可按某一站、图表、孔、数据发布版本或文件 SHA-256 回溯。 |
+| [出版图件提取](Leg138/figures/core/published_artwork/README.md) | 逐图分列原页、已核图框和机器候选。可从原 PDF 裁出岩芯照片与图注，并把经验证的黑白线图描成可缩放的 SVG。 |
 | [逐图验收与证据](Leg138/data/FIGURES.md) | 1,206 幅正式编号图逐幅登记原页、可用数据、重绘范围和待核状态，各站的岩性解释层和物性层分项说明。 |
 | [原分发件索引](Leg138/data/source_package_checks.json) | 5,425 项基础来源的文件长度和哈希能逐件核对。原件可按章、载体和前缀获取，新增外部对勘见证单列。 |
 

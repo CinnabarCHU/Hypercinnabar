@@ -1,0 +1,22 @@
+{
+  "figures": 1206,
+  "figure_leaves": 1289,
+  "unique_source_leaves": 1045,
+  "checked_source_pdfs": 70,
+  "figure_statuses": {
+    "source_pages_only": 723,
+    "candidates_only": 388,
+    "complete_confirmed": 88,
+    "partial_confirmed": 7
+  },
+  "leaf_statuses": {
+    "page_only": 753,
+    "machine_candidate": 424,
+    "visual_confirmed": 112
+  },
+  "native_source_image_leaves": 1289,
+  "trace_approved_leaves": 70,
+  "native_trace_renders_checked": 70,
+  "native_trace_render_mismatch_pixels": 0,
+  "embedded_caption_masks": 10
+}

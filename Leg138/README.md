@@ -45,7 +45,7 @@ python tools/serve.py
 | 岩芯、涂片、地理 | 593 张彩照均核过原生 JPEG、标尺及背景。592 张有可用的沉积物候选区域，43 张做过人工整板抽查。涂片 26 页、1,156 行、25,194 格可定位；93 格为逐格人审读法。现代站位与 IR 古位置各有自己的来源。Site 844/845 的 36 个古年龄行只刊纬度；Site 854 章内题作 851 的 9 行保留两个身份，默认不在地图上放点。 |
 | 原刊全文与图件 | 76 个分册、1,922 个主体来源页留有逐页证据。紧凑版共 3,622 页；另嵌入 1,922 张来源原页后组成 5,544 页的全卷对读版。现代正文取自来源文字层，栏序与段落是编辑推定，原刊页可直接回看。[逐图验收](data/FIGURES.md)覆盖 1,206 个正式编号图以及 25 个附属图件。代码重绘与结构化数据同存，扫描、图面读数、复算和待校图注明确区分。 |
 
-[电子原表校记](ir/core/edition2_native/README.md) · [IR 印表单元格](ir/core/edition2_print/README.md) · [SR 对象与异文](sr/core/edition2/README.md) · [SR 印表图面与单元格](sr/core/edition2_print/README.md) · [随盘工作流、反射光谱与测井](disc/core/edition2/README.md) · [原像素区域与涂片](plates/core/edition2/README.md) · [11 站速率图复建](figures/core/README.md) · [复合地层图与 106 份随盘来源](figures/core/composite_v2/README.md)
+[电子原表校记](ir/core/edition2_native/README.md) · [IR 印表单元格](ir/core/edition2_print/README.md) · [SR 对象与异文](sr/core/edition2/README.md) · [SR 印表图面与单元格](sr/core/edition2_print/README.md) · [随盘工作流、反射光谱与测井](disc/core/edition2/README.md) · [原像素区域与涂片](plates/core/edition2/README.md) · [11 站速率图复建](figures/core/README.md) · [复合地层图与 106 份随盘来源](figures/core/composite_v2/README.md) · [原图、图注裁取及黑白 SVG 描摹](figures/core/published_artwork/README.md)
 
 ## 获取原件和重新出版
 
@@ -58,9 +58,21 @@ python tools/fetch_sources.py --book --workers 8
 python edition2/build_edition.py . build/full --workers 4
 python edition2/verify_edition.py . build/full
 python edition2/verify_regions.py build/full
+python tools/compare_editions.py build/full
 python tools/publish_readers.py build/full build/chapters --workers 4
 ```
 
 `build/full/index.html` 能离线阅读 HTML 与 PDF。每个来源页有现代文本，配合相关的字段表、图件，再附完整的原刊见证。紧凑分册除去重复的见证页，保留指向原版物理页的链接。指定 `--doc IR.C11` 可单独生成 Site 846 章。图书构建使用 PyMuPDF、ReportLab、Pillow 及模块所列 DejaVu 字体；图件和原 Fortran 工作流的要求见各模块 README。原始软件的重放、低置信 OCR 与图面校记都能在新的底本出现后单独复核。[全卷出版说明](edition2/README.md)
 
 以前的 846 试点表与代码保存在 `previous/ir`、`previous/sr846`，旧的统计解释可按 Git 提交恢复。原出版物的作者、原测数据单位和发表版本在来源条目中独立保留。
+
+复建完成后，可生成经过逐文件验证的离线 ZIP。将校读说明复制到构建目录，使本地生成的版本信息独立保存。
+
+```sh
+python edition2/check_fonts.py build/full
+python edition2/verify_updates.py . build/full
+python edition2/verify_sr_annex.py . build/full
+cp -R edition2 build/release-index
+python edition2/finish_release.py build/full build/release-index
+python tools/package_edition.py build/full build/Leg138_Full_Edition.zip
+```
