@@ -166,6 +166,8 @@ else
 end
 img = imread(destination);
 assert(size(img,1)>100 && size(img,2)>100 && any(img(:)~=img(1)),'Empty desktop capture.');
+client = getpixelposition(fig);
+assert(size(img,1)>=client(4)-2 && size(img,2)>=client(3)-2,'Part of the desktop is outside the display.');
 end
 
 function click(obj)

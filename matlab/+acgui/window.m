@@ -21,6 +21,9 @@ if isempty(fig)
         opening(fig,[],acgui.state(fig),varargin{:});
         if strcmp(name,'AC')
             acgui.extendDesktop(fig);
+            % The original monitor scale applies to the origin as well as the
+            % size, which can put the menu bar and right edge off-screen.
+            movegui(fig,'onscreen');
         end
         if isgraphics(fig), set(fig,'HandleVisibility',handleVisibility,'Visible',show); end
     catch err
