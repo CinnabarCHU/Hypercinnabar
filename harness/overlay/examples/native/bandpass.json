@@ -1,0 +1,27 @@
+{
+  "inputs": {
+    "proxy": "proxy.csv"
+  },
+  "steps": [
+    {
+      "id": "filter",
+      "entrypoint": "code/seriesanalysis/acycleBandpassFilter.m",
+      "arguments": [
+        {
+          "kind": "input",
+          "name": "proxy",
+          "format": "matrix"
+        },
+        {
+          "kind": "literal",
+          "value": {
+            "method": "gaussian",
+            "lower_frequency": 0.02,
+            "upper_frequency": 0.03
+          }
+        }
+      ],
+      "nargout": 2
+    }
+  ]
+}

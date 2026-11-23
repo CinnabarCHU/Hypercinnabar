@@ -1,0 +1,38 @@
+{
+  "inputs": {
+    "proxy": "proxy.csv",
+    "lower": "lower_band.csv",
+    "upper": "upper_band.csv"
+  },
+  "steps": [
+    {
+      "id": "dynamic",
+      "entrypoint": "code/seriesanalysis/acycleDynamicFilter.m",
+      "arguments": [
+        {
+          "kind": "input",
+          "name": "proxy",
+          "format": "matrix"
+        },
+        {
+          "kind": "input",
+          "name": "lower",
+          "format": "matrix"
+        },
+        {
+          "kind": "input",
+          "name": "upper",
+          "format": "matrix"
+        },
+        {
+          "kind": "literal",
+          "value": {
+            "window_length": 100,
+            "step_length": 10
+          }
+        }
+      ],
+      "nargout": 3
+    }
+  ]
+}

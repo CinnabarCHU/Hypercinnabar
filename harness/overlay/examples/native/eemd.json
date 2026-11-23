@@ -1,0 +1,29 @@
+{
+  "inputs": {
+    "proxy": "proxy.csv"
+  },
+  "steps": [
+    {
+      "id": "eemd",
+      "entrypoint": "code/seriesanalysis/acycleEmpiricalModeDecomposition.m",
+      "arguments": [
+        {
+          "kind": "input",
+          "name": "proxy",
+          "format": "matrix"
+        },
+        {
+          "kind": "literal",
+          "value": {
+            "method": "eemd",
+            "max_num_imf": 5,
+            "ensemble_count": 100,
+            "noise_amplitude": 0.2,
+            "random_seed": 1
+          }
+        }
+      ],
+      "nargout": 2
+    }
+  ]
+}

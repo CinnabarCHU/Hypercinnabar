@@ -1,0 +1,34 @@
+{
+  "inputs": {
+    "reference": "reference.csv",
+    "target": "target.csv"
+  },
+  "steps": [
+    {
+      "id": "coherence",
+      "entrypoint": "code/seriesanalysis/acycleCoherencePhase.m",
+      "arguments": [
+        {
+          "kind": "input",
+          "name": "reference",
+          "format": "matrix"
+        },
+        {
+          "kind": "input",
+          "name": "target",
+          "format": "matrix"
+        },
+        {
+          "kind": "literal",
+          "value": {
+            "window_samples": 64,
+            "overlap_samples": 32,
+            "nfft": 256,
+            "alpha": 0.05
+          }
+        }
+      ],
+      "nargout": 2
+    }
+  ]
+}

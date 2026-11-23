@@ -1,0 +1,45 @@
+{
+  "inputs": {
+    "proxy": "proxy.csv"
+  },
+  "steps": [
+    {
+      "id": "analysis",
+      "entrypoint": "code/package/bispectral/bispectralAnalyze.m",
+      "arguments": [
+        {
+          "kind": "input",
+          "name": "proxy",
+          "format": "matrix"
+        },
+        {
+          "kind": "literal",
+          "value": {
+            "SignificanceMethod": "none"
+          }
+        }
+      ],
+      "nargout": 1
+    },
+    {
+      "id": "plot",
+      "entrypoint": "code/package/bispectral/bispectralPlot.m",
+      "arguments": [
+        {
+          "kind": "ref",
+          "step": "analysis",
+          "output": 1
+        },
+        {
+          "kind": "literal",
+          "value": "Visible"
+        },
+        {
+          "kind": "literal",
+          "value": "off"
+        }
+      ],
+      "nargout": 2
+    }
+  ]
+}

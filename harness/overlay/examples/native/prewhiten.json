@@ -1,0 +1,25 @@
+{
+  "inputs": {
+    "proxy": "proxy.csv"
+  },
+  "steps": [
+    {
+      "id": "prewhiten",
+      "entrypoint": "code/seriesanalysis/acyclePrewhitenSeries.m",
+      "arguments": [
+        {
+          "kind": "input",
+          "name": "proxy",
+          "format": "matrix"
+        },
+        {
+          "kind": "literal",
+          "value": {
+            "rho_source": "classic"
+          }
+        }
+      ],
+      "nargout": 2
+    }
+  ]
+}

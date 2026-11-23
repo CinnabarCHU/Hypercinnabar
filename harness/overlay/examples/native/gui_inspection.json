@@ -1,0 +1,22 @@
+{
+  "inputs": {
+    "proxy": "proxy.csv"
+  },
+  "steps": [
+    {
+      "id": "launch",
+      "entrypoint": "code/guicode/AC.m",
+      "arguments": [],
+      "nargout": 1
+    },
+    {
+      "id": "inspect",
+      "action": "ui_inspect",
+      "target": {
+        "kind": "ref",
+        "step": "launch",
+        "output": 1
+      }
+    }
+  ]
+}

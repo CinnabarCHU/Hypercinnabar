@@ -1,0 +1,37 @@
+{
+  "inputs": {
+    "reference": "reference.csv",
+    "target": "target.csv"
+  },
+  "steps": [
+    {
+      "id": "leadlag",
+      "entrypoint": "code/seriesanalysis/acycleLeadLagRmse.m",
+      "arguments": [
+        {
+          "kind": "input",
+          "name": "reference",
+          "format": "matrix"
+        },
+        {
+          "kind": "input",
+          "name": "target",
+          "format": "matrix"
+        },
+        {
+          "kind": "literal",
+          "value": 10
+        },
+        {
+          "kind": "literal",
+          "value": 0.5
+        },
+        {
+          "kind": "literal",
+          "value": "small_is_young"
+        }
+      ],
+      "nargout": 2
+    }
+  ]
+}
