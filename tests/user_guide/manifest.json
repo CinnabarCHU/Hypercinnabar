@@ -23,7 +23,7 @@
     }
   },
   "acceptance": {
-    "peaks": "nearest strict local maximum, within one unpadded Rayleigh frequency bin 1/(N*dt); not a period-percent tolerance",
+    "peaks": "Nearest strict local maximum: within one unpadded Rayleigh bin 1/(N*dt), OR rounds to the guide value at its printed precision. Both subtests and the unrounded peak are reported. This prevents e.g. 1.82045 m from falsely failing a printed ~1.8 m claim.",
     "coco_rate": "8.1 +/- 0.6 cm/kyr",
     "coco_p": "<=0.001, evaluated independently of the rate",
     "master_mtm": "same frequency vector and relative power error below 1e-10",

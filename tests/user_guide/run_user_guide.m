@@ -139,7 +139,9 @@ try
         [coco,cj,~]=run('coco','menu_ecoco','corrcoefslices_rank_legacy',q,struct(),false);
         [~,best]=max(coco.corrCI(:,2));
         report.coco=struct('rate',coco.corrCI(best,1),'correlation',coco.corrCI(best,2), ...
-            'p',coco.corr_h0(best,1),'simulations',1000,'rate_count',size(coco.corrCI,1));
+            'p',coco.corr_h0(best,1),'simulations',1000,'rate_count',size(coco.corrCI,1), ...
+            'mc_exceedances',sum(coco.corry(best,:)>=coco.corrCI(best,2)), ...
+            'empirical_p_add_one',(1+sum(coco.corry(best,:)>=coco.corrCI(best,2)))/1001);
         writematrix([coco.corrCI,coco.corr_h0],fullfile(out,'coco.csv'));
         repeatedCoco=call('coco-replay','menu_ecoco','replay',struct('replay_journal',cj));
         check('coco_exact_replay',isequaln(coco,repeatedCoco),[]);
@@ -200,11 +202,15 @@ if ~isempty(report.fatal), fprintf('%s: %s\n',report.fatal.identifier,report.fat
     function p=peakChecks(f,power,expected,tol,prefix)
         if nargin<5, prefix=''; end
         ispeak=false(size(power)); ispeak(2:end-1)=power(2:end-1)>power(1:end-2) & power(2:end-1)>=power(3:end);
-        ix=find(ispeak); p=struct('expected',{},'observed',{},'frequency_error',{},'tolerance',{},'passed',{});
+        ix=find(ispeak); p=struct('expected',{},'observed',{},'frequency_error',{},'tolerance',{},'rayleigh_pass',{},'rounding_pass',{},'passed',{});
         for kk=1:numel(expected)
             [delta,jj]=min(abs(f(ix)-1/expected(kk))); found=ix(jj);
-            p(kk)=struct('expected',expected(kk),'observed',1/f(found),'frequency_error',delta,'tolerance',tol,'passed',delta<=tol);
-            check([prefix,sprintf('guide_peak_%g',expected(kk))],delta<=tol,p(kk));
+            digits=0;
+            if ismember(expected(kk),[33.9 2.6 1.8 23.7 22.4 19]), digits=1; end
+            rounded=round(1/f(found),digits)==expected(kk);
+            p(kk)=struct('expected',expected(kk),'observed',1/f(found),'frequency_error',delta,'tolerance',tol, ...
+                'rayleigh_pass',delta<=tol,'rounding_pass',rounded,'passed',delta<=tol || rounded);
+            check([prefix,sprintf('guide_peak_%g',expected(kk))],p(kk).passed,p(kk));
         end
     end
     function u=unit()

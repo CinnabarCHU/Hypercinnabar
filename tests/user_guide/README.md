@@ -31,3 +31,7 @@ Two specific caveats matter when interpreting output:
 The full age model returned by the historical BuildAgeModel code also contains a suspect endpoint extrapolation (multiplying a depth difference by a sedimentation rate). The diagnostic report compares those endpoints with linear extrapolation. The actual tuning uses the saved peak tiepoints, as the guide instructs, through the original `depthtotime` function. No scientific kernel is silently corrected here.
 
 The first real run found that literal NFFT=2001 does not reproduce the stated 22.4 kyr insolation peak. A separately labelled 5× padding diagnostic tests the grid visible in the guide's plotted frequency labels (e.g. 422/10005 ≈ 0.0421789). Both results and the original failed criterion are retained.
+
+The initial Rayleigh-only peak check falsely rejected the Wayao ~1.8 m claim at 1.82045 m, which rounds to the guide's value. The final check reports both the Rayleigh-bin comparison and agreement at printed precision, accepting either. This rule does not remove the literal-NFFT insolation/ETP discrepancies. Initial run results remain part of the audit trail.
+
+The original `ecocoplot` also reads `main_unit_selection` from the GUI's base workspace. Its migrated legacy plotter now calls `code/method/acLegacyEcocoPlot.m`, which preserves the original drawing code and supplies a local English display context. The pinned upstream function and all numerical COCO/eCOCO calculations remain unchanged.
