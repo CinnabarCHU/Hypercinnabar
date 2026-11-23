@@ -1,19 +1,11 @@
 {
-  "case": "etp",
-  "run_id": "20261123T143712Z-a816bd32bff2",
+  "case": "wayao",
+  "run_id": "20261123T143716Z-c256c535b577",
   "role": "helper",
-  "menu": "menu_waveletGUI",
+  "menu": "menu_age",
   "settings": {
     "input": {
-      "operation": "WaveletSpectrum_legacy",
-      "data_standardize": false,
-      "dss": 1,
-      "method_sel": "FFT",
-      "mother": "Morlet",
-      "pad": 1,
-      "param": 6,
-      "pt1": 10,
-      "pt2": 700
+      "operation": "AgeScale_legacy"
     }
   },
   "sources": {
@@ -22,11 +14,11 @@
       "field": "data",
       "source": {
         "kind": "artifact",
-        "workflow": "45193115937",
-        "sha": "710953f73d8337e587f7b3d28f66b3981d539e87",
-        "run_id": "20261123T141904Z-dd3c2a2555c7",
-        "member": "processed.csv",
-        "digest": "32244c243095208e4501f284042840815ad487953b5a29522fd85368b4f1df0d"
+        "workflow": "45193938744",
+        "sha": "400ae998bb17ddb5abe2b21f42d64ffb2f564133",
+        "run_id": "20261123T142251Z-e3fba05ce55b",
+        "member": "filtered.csv",
+        "digest": "a586a73c75a14050f63ff953b239208134bddd16a3d9effdbc9b7f2776d9b382"
       }
     }
   }
