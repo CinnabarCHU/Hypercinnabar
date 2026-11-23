@@ -1,0 +1,18 @@
+doc_id,source_page,pdf_lines,printed_reading,editorial_note
+SP,6,5–6,6 May 1990,The planned Panama departure in this imprint precedes the planned July 1991 San Diego arrival by over a year. The text retains both dates.
+SP,6,30,WEQ- 5,The source has an internal space in this site identifier.
+PR,12,2,Scientific Report,Running heads alternate across the scientific narrative. This heading is printed on this page.
+PR,13,19,foraminfers,The spelling in the scan is retained.
+PR,24,44,15 m.y.,The surrounding passage describes a sedimentation rate. The source prints a time unit and supplies no rate numerator here.
+PR,26,40,of of,Both instances of the preposition appear in print.
+PR,81,20–24,844D-1H / 844A-1H,"In the Hole 844D account, the name of the retrieved core changes within the paragraph."
+PR,84,32–34,846H-4H,The Hole 846C section gives this identifier where the surrounding identifiers use 846C.
+PR,84,42,1846D-17H,The identifier begins with an extra digit in the Hole 846D account.
+PR,85,5–6,846B-18 / 846C-26X,The paragraph about coring in Hole 846D prints other hole letters for both intervals.
+PR,85,33–37,847C-15H / 846B-16X / 846B-26X,The Hole 847B account prints identifiers from other holes.
+PR,90,24–25,839C-4H,The identifier occurs in the Hole 849C account and is split across two lines.
+PR,91,23,850B-11H,The report describes a switch to XCB and prints a core identifier with an H suffix.
+PR,94,36,852B-12H,This identifier occurs in the Hole 852C account.
+PR,103,"2,19",30 May 1991 / 5 May,The port-call narrative prints a departure from Texas later than the ship’s departure from Panama.
+PR,104,22,1500 on 4 July,The technical report gives the first-line time. PR p. 98 line 6 records arrival at the dock at 1530. The report describes the two events separately.
+PR,106,14,absorbtion,The scan uses this spelling in the chemistry instrument description.

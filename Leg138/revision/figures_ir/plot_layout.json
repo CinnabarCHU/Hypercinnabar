@@ -1,0 +1,3195 @@
+[
+  {
+    "item_id": "IR09.F30",
+    "site": 844,
+    "caption": [
+      "Figure 30. Interstitial-water geochemical data vs. depths (mbsf) for Holes 844A (open circle) and 884B (solid circles). A. Sodium. B. Chloride. C. Alkalinity.",
+      "D. Sulfate."
+    ],
+    "source_page": 41,
+    "source_sha256": "6926c3d1ddb3d8b2020f7edeeb4adfdd9b20d79f85d0db9ca26e8e8b303f075b",
+    "y_max": 350,
+    "y_step": 50,
+    "symbol_diameter": 4.8,
+    "panels": [
+      {
+        "letter": "A",
+        "field": "sodium",
+        "unit": "mM",
+        "source_frame_950x1240": [
+          82.8,
+          136,
+          262.8,
+          638
+        ],
+        "x_min": 450,
+        "x_max": 500,
+        "tick_interval": 25,
+        "label_endpoints": true,
+        "letter_origin": [
+          83,
+          98
+        ],
+        "heading_baseline": 115.59
+      },
+      {
+        "letter": "B",
+        "field": "chloride",
+        "unit": "mM",
+        "source_frame_950x1240": [
+          280.8,
+          136,
+          460.2,
+          638
+        ],
+        "x_min": 500,
+        "x_max": 600,
+        "tick_interval": 50,
+        "label_endpoints": true,
+        "letter_origin": [
+          287,
+          99
+        ],
+        "heading_baseline": 116.43
+      },
+      {
+        "letter": "C",
+        "field": "alkalinity",
+        "unit": "mM",
+        "source_frame_950x1240": [
+          479.9,
+          136,
+          659.7,
+          638
+        ],
+        "x_min": 1,
+        "x_max": 5,
+        "tick_interval": 1,
+        "label_endpoints": true,
+        "letter_origin": [
+          482,
+          99
+        ],
+        "heading_baseline": 116.15
+      },
+      {
+        "letter": "D",
+        "field": "sulfate",
+        "unit": "mM",
+        "source_frame_950x1240": [
+          679.4,
+          136,
+          858.8,
+          637
+        ],
+        "x_min": 25,
+        "x_max": 30,
+        "tick_interval": 1,
+        "label_endpoints": true,
+        "letter_origin": [
+          678,
+          98
+        ],
+        "heading_baseline": 115.59
+      }
+    ],
+    "caption_geometry": [
+      [
+        32.67,
+        667.7,
+        833.44
+      ],
+      [
+        32.67,
+        683.68,
+        55.75
+      ]
+    ]
+  },
+  {
+    "item_id": "IR09.F31",
+    "site": 844,
+    "caption": [
+      "Figure 31. Interstitial-water geochemical data vs. depths (mbsf) for Holes 844A (open circles) and 844B (solid circles). A. Magnesium. B. Calcium. C. Potassium.",
+      "D. Silica."
+    ],
+    "source_page": 42,
+    "source_sha256": "6926c3d1ddb3d8b2020f7edeeb4adfdd9b20d79f85d0db9ca26e8e8b303f075b",
+    "y_max": 350,
+    "y_step": 50,
+    "symbol_diameter": 4.8,
+    "panels": [
+      {
+        "letter": "A",
+        "field": "magnesium",
+        "unit": "mM",
+        "source_frame_950x1240": [
+          137.5,
+          138,
+          316.5,
+          639
+        ],
+        "x_min": 25,
+        "x_max": 75,
+        "tick_interval": 10,
+        "label_endpoints": true,
+        "letter_origin": [
+          138,
+          100
+        ],
+        "heading_baseline": 115.6
+      },
+      {
+        "letter": "B",
+        "field": "calcium",
+        "unit": "mM",
+        "source_frame_950x1240": [
+          334.5,
+          139,
+          514.3,
+          639
+        ],
+        "x_min": 5,
+        "x_max": 15,
+        "tick_interval": 5,
+        "label_endpoints": true,
+        "letter_origin": [
+          341,
+          101
+        ],
+        "heading_baseline": 115.6
+      },
+      {
+        "letter": "C",
+        "field": "potassium",
+        "unit": "mM",
+        "source_frame_950x1240": [
+          533.6,
+          138,
+          712.5,
+          639
+        ],
+        "x_min": 5,
+        "x_max": 20,
+        "tick_interval": 5,
+        "label_endpoints": true,
+        "letter_origin": [
+          536,
+          101
+        ],
+        "heading_baseline": 115.04
+      },
+      {
+        "letter": "D",
+        "field": "silica",
+        "unit": "µM",
+        "source_frame_950x1240": [
+          732.2,
+          138,
+          910.5,
+          639
+        ],
+        "x_min": 400,
+        "x_max": 1200,
+        "tick_interval": 400,
+        "label_endpoints": true,
+        "letter_origin": [
+          732,
+          101
+        ],
+        "heading_baseline": 115.04
+      }
+    ],
+    "caption_geometry": [
+      [
+        87.41,
+        668.14,
+        827.76
+      ],
+      [
+        87.41,
+        683.54,
+        48.140000000000015
+      ]
+    ]
+  },
+  {
+    "item_id": "IR09.F32",
+    "site": 844,
+    "caption": [
+      "Figure 32. Interstitial-water geochemcial data vs. depths (mbsf) for Holes 844A",
+      "(open circles) and 844B (solid circles). A. Lithium. B. Strontium."
+    ],
+    "source_page": 43,
+    "source_sha256": "6926c3d1ddb3d8b2020f7edeeb4adfdd9b20d79f85d0db9ca26e8e8b303f075b",
+    "y_max": 350,
+    "y_step": 50,
+    "symbol_diameter": 4.8,
+    "panels": [
+      {
+        "letter": "A",
+        "field": "lithium",
+        "unit": "µM",
+        "source_frame_950x1240": [
+          289.5,
+          140,
+          465.7,
+          643
+        ],
+        "x_min": 0,
+        "x_max": 50,
+        "tick_interval": 10,
+        "label_endpoints": true,
+        "letter_origin": [
+          291,
+          101
+        ],
+        "heading_baseline": 116.99
+      },
+      {
+        "letter": "B",
+        "field": "strontium",
+        "unit": "µM",
+        "source_frame_950x1240": [
+          480.5,
+          140,
+          656.7,
+          643
+        ],
+        "x_min": 0,
+        "x_max": 200,
+        "tick_interval": 50,
+        "label_endpoints": true,
+        "letter_origin": [
+          480,
+          102
+        ],
+        "heading_baseline": 117.55
+      }
+    ],
+    "caption_geometry": [
+      [
+        237.22,
+        669.38,
+        420.49
+      ],
+      [
+        237.52,
+        685.08,
+        341.72
+      ]
+    ]
+  },
+  {
+    "item_id": "IR10.F38",
+    "site": 845,
+    "caption": [
+      "Figure 38. Interstitial-water geochemical data vs. depth (mbsf) for Holes 845A (solid circles) and 845C (open circles). A. Sodium. B. Chloride. C. Alkalinity.",
+      "D. Sulfate."
+    ],
+    "source_page": 44,
+    "source_sha256": "d0d0b2fa4295e70c498c6872676128190ec09a4be69126ec5aa438da40d5b28b",
+    "y_max": 300,
+    "y_step": 50,
+    "symbol_diameter": 8.6,
+    "panels": [
+      {
+        "letter": "A",
+        "field": "sodium",
+        "unit": "mM",
+        "source_frame_950x1240": [
+          125.6,
+          581,
+          302.0,
+          1084
+        ],
+        "x_min": 450,
+        "x_max": 500,
+        "tick_interval": 25,
+        "label_endpoints": true,
+        "letter_origin": [
+          119,
+          560
+        ],
+        "heading_baseline": 559
+      },
+      {
+        "letter": "B",
+        "field": "chloride",
+        "unit": "mM",
+        "source_frame_950x1240": [
+          320.8,
+          581,
+          500.0,
+          1084
+        ],
+        "x_min": 500,
+        "x_max": 600,
+        "tick_interval": 50,
+        "label_endpoints": true,
+        "letter_origin": [
+          319,
+          563
+        ],
+        "heading_baseline": 559
+      },
+      {
+        "letter": "C",
+        "field": "alkalinity",
+        "unit": "mM",
+        "source_frame_950x1240": [
+          519.0,
+          581,
+          693.6,
+          1084
+        ],
+        "x_min": 1,
+        "x_max": 5,
+        "tick_interval": 1,
+        "label_endpoints": true,
+        "letter_origin": [
+          519,
+          564
+        ],
+        "heading_baseline": 559
+      },
+      {
+        "letter": "D",
+        "field": "sulfate",
+        "unit": "mM",
+        "source_frame_950x1240": [
+          713.6,
+          580,
+          892.4,
+          1083
+        ],
+        "x_min": 25,
+        "x_max": 30,
+        "tick_interval": 1,
+        "label_endpoints": true,
+        "letter_origin": [
+          710,
+          563
+        ],
+        "heading_baseline": 558
+      }
+    ],
+    "caption_geometry": [
+      [
+        84.47,
+        1114.38,
+        812.0699999999999
+      ],
+      [
+        84.47,
+        1129.24,
+        55.370000000000005
+      ]
+    ]
+  },
+  {
+    "item_id": "IR10.F39",
+    "site": 845,
+    "caption": [
+      "Figure 39. Interstitial-water geochemical data vs. depth (mbsf) for Holes 845A (solid circles) and 845C (open circles).",
+      "A. Lithium. B. Strontium. C. Ammonia."
+    ],
+    "source_page": 45,
+    "source_sha256": "d0d0b2fa4295e70c498c6872676128190ec09a4be69126ec5aa438da40d5b28b",
+    "y_max": 300,
+    "y_step": 50,
+    "symbol_diameter": 8.6,
+    "panels": [
+      {
+        "letter": "A",
+        "field": "lithium",
+        "unit": "µM",
+        "source_frame_950x1240": [
+          185.2,
+          114,
+          364.3,
+          621
+        ],
+        "x_min": 0,
+        "x_max": 50,
+        "tick_interval": 10,
+        "label_endpoints": true,
+        "letter_origin": [
+          177,
+          97
+        ],
+        "heading_baseline": 95.96
+      },
+      {
+        "letter": "B",
+        "field": "strontium",
+        "unit": "µM",
+        "source_frame_950x1240": [
+          380.7,
+          115,
+          553.6,
+          621
+        ],
+        "x_min": 0,
+        "x_max": 200,
+        "tick_interval": 50,
+        "label_endpoints": true,
+        "letter_origin": [
+          378,
+          97
+        ],
+        "heading_baseline": 95.96
+      },
+      {
+        "letter": "C",
+        "field": "ammonia",
+        "unit": "µM",
+        "source_frame_950x1240": [
+          568.7,
+          114,
+          748.4,
+          621
+        ],
+        "x_min": 0,
+        "x_max": 200,
+        "tick_interval": 50,
+        "label_endpoints": true,
+        "letter_origin": [
+          564,
+          98
+        ],
+        "heading_baseline": 95.96
+      }
+    ],
+    "caption_geometry": [
+      [
+        145.1,
+        655.64,
+        606.34
+      ],
+      [
+        145.1,
+        670.78,
+        207.23999999999998
+      ]
+    ]
+  },
+  {
+    "item_id": "IR10.F40",
+    "site": 845,
+    "caption": [
+      "Figure 40. Interstitial-water geochemical data vs. depth (mbsf) for Holes 845A (solid circles) and 845C (open circles). A. Magnesium. B. Calcium. C.",
+      "Potassium. D. Silica."
+    ],
+    "source_page": 46,
+    "source_sha256": "d0d0b2fa4295e70c498c6872676128190ec09a4be69126ec5aa438da40d5b28b",
+    "y_max": 300,
+    "y_step": 50,
+    "symbol_diameter": 8.6,
+    "panels": [
+      {
+        "letter": "A",
+        "field": "magnesium",
+        "unit": "mM",
+        "source_frame_950x1240": [
+          139.6,
+          120,
+          319.0,
+          626
+        ],
+        "x_min": 25,
+        "x_max": 75,
+        "tick_interval": 10,
+        "label_endpoints": true,
+        "letter_origin": [
+          132,
+          100
+        ],
+        "heading_baseline": 101.29
+      },
+      {
+        "letter": "B",
+        "field": "calcium",
+        "unit": "mM",
+        "source_frame_950x1240": [
+          332.1,
+          120,
+          511.6,
+          626
+        ],
+        "x_min": 5,
+        "x_max": 15,
+        "tick_interval": 5,
+        "label_endpoints": true,
+        "letter_origin": [
+          330,
+          101
+        ],
+        "heading_baseline": 101.29
+      },
+      {
+        "letter": "C",
+        "field": "potassium",
+        "unit": "mM",
+        "source_frame_950x1240": [
+          525.5,
+          119,
+          704.9,
+          626
+        ],
+        "x_min": 5,
+        "x_max": 20,
+        "tick_interval": 5,
+        "label_endpoints": true,
+        "letter_origin": [
+          522,
+          101
+        ],
+        "heading_baseline": 101.29
+      },
+      {
+        "letter": "D",
+        "field": "silica",
+        "unit": "µM",
+        "source_frame_950x1240": [
+          718.8,
+          119,
+          894.5,
+          625
+        ],
+        "x_min": 400,
+        "x_max": 1200,
+        "tick_interval": 400,
+        "label_endpoints": true,
+        "letter_origin": [
+          717,
+          100
+        ],
+        "heading_baseline": 100.45
+      }
+    ],
+    "caption_geometry": [
+      [
+        98.3,
+        653.68,
+        802.6700000000001
+      ],
+      [
+        98.3,
+        669.38,
+        107.76
+      ]
+    ]
+  },
+  {
+    "item_id": "IR11.F25",
+    "site": 846,
+    "caption": [
+      "Figure 25. Interstitial-water geochemical data vs. depths (mbsf) for Holes 846A (open circles) and 846C (solid circles). A. Sodium. B. Chloride. C. Alkalinity.",
+      "D. Sulfate."
+    ],
+    "source_page": 34,
+    "source_sha256": "9029db07c07283a3d30eb8ddb9ed4c075771f31cc48927876a5d6ee9f4cbc268",
+    "y_max": 450,
+    "y_step": 50,
+    "symbol_diameter": 8.4,
+    "panels": [
+      {
+        "letter": "A",
+        "field": "sodium",
+        "unit": "mM",
+        "source_frame_950x1240": [
+          134.4,
+          463,
+          307.8,
+          965
+        ],
+        "x_min": 450,
+        "x_max": 500,
+        "tick_interval": 25,
+        "label_endpoints": true,
+        "letter_origin": [
+          90,
+          426
+        ],
+        "heading_baseline": 440.57
+      },
+      {
+        "letter": "B",
+        "field": "chloride",
+        "unit": "mM",
+        "source_frame_950x1240": [
+          331.3,
+          464,
+          504.9,
+          965
+        ],
+        "x_min": 500,
+        "x_max": 600,
+        "tick_interval": 50,
+        "label_endpoints": true,
+        "letter_origin": [
+          324,
+          426
+        ],
+        "heading_baseline": 440.57
+      },
+      {
+        "letter": "C",
+        "field": "alkalinity",
+        "unit": "mM",
+        "source_frame_950x1240": [
+          528.5,
+          463,
+          701.6,
+          965
+        ],
+        "x_min": 0,
+        "x_max": 10,
+        "tick_interval": 2,
+        "label_endpoints": true,
+        "letter_origin": [
+          525,
+          426
+        ],
+        "heading_baseline": 440.57
+      },
+      {
+        "letter": "D",
+        "field": "sulfate",
+        "unit": "mM",
+        "source_frame_950x1240": [
+          725.6,
+          463,
+          898.4,
+          965
+        ],
+        "x_min": 15,
+        "x_max": 30,
+        "tick_interval": 5,
+        "label_endpoints": true,
+        "letter_origin": [
+          720,
+          426
+        ],
+        "heading_baseline": 440.01
+      }
+    ],
+    "caption_geometry": [
+      [
+        89.56,
+        993.81,
+        817.79
+      ],
+      [
+        89.56,
+        1008.67,
+        54.599999999999994
+      ]
+    ]
+  },
+  {
+    "item_id": "IR11.F26",
+    "site": 846,
+    "caption": [
+      "Figure 26. Interstitial-water geochemical data vs. depths (mbsf) for Holes 846A (open circles) and 846C (solid circles).",
+      "A. Lithium. B. Strontium. C. Ammonia."
+    ],
+    "source_page": 35,
+    "source_sha256": "9029db07c07283a3d30eb8ddb9ed4c075771f31cc48927876a5d6ee9f4cbc268",
+    "y_max": 450,
+    "y_step": 50,
+    "symbol_diameter": 8.4,
+    "panels": [
+      {
+        "letter": "A",
+        "field": "lithium",
+        "unit": "µM",
+        "source_frame_950x1240": [
+          179.8,
+          538,
+          352.9,
+          1038
+        ],
+        "x_min": 10,
+        "x_max": 40,
+        "tick_interval": 10,
+        "label_endpoints": true,
+        "letter_origin": [
+          135,
+          500
+        ],
+        "heading_baseline": 515.3
+      },
+      {
+        "letter": "B",
+        "field": "strontium",
+        "unit": "µM",
+        "source_frame_950x1240": [
+          376.6,
+          539,
+          549.5,
+          1038
+        ],
+        "x_min": 0,
+        "x_max": 400,
+        "tick_interval": 200,
+        "label_endpoints": true,
+        "letter_origin": [
+          369,
+          501
+        ],
+        "heading_baseline": 515.58
+      },
+      {
+        "letter": "C",
+        "field": "ammonia",
+        "unit": "µM",
+        "source_frame_950x1240": [
+          572.7,
+          538,
+          745.5,
+          1037
+        ],
+        "x_min": 0,
+        "x_max": 800,
+        "tick_interval": 200,
+        "label_endpoints": true,
+        "letter_origin": [
+          569,
+          501
+        ],
+        "heading_baseline": 514.74
+      }
+    ],
+    "caption_geometry": [
+      [
+        137.2,
+        1072.18,
+        622.22
+      ],
+      [
+        136.92,
+        1088.12,
+        203.38000000000002
+      ]
+    ]
+  },
+  {
+    "item_id": "IR11.F27",
+    "site": 846,
+    "caption": [
+      "Figure 27. Interstitial-water geochemical data vs. depths (mbsf) for Holes 846A (open circles) and 846C (solid circles). A. Magnesium. B. Calcium. C. Potassium.",
+      "D. Silica."
+    ],
+    "source_page": 36,
+    "source_sha256": "9029db07c07283a3d30eb8ddb9ed4c075771f31cc48927876a5d6ee9f4cbc268",
+    "y_max": 450,
+    "y_step": 50,
+    "symbol_diameter": 8.4,
+    "panels": [
+      {
+        "letter": "A",
+        "field": "magnesium",
+        "unit": "mM",
+        "source_frame_950x1240": [
+          138.2,
+          140,
+          311.1,
+          642
+        ],
+        "x_min": 40,
+        "x_max": 60,
+        "tick_interval": 10,
+        "label_endpoints": true,
+        "letter_origin": [
+          94,
+          102
+        ],
+        "heading_baseline": 117.56
+      },
+      {
+        "letter": "B",
+        "field": "calcium",
+        "unit": "mM",
+        "source_frame_950x1240": [
+          334.8,
+          140,
+          507.8,
+          643
+        ],
+        "x_min": 5,
+        "x_max": 20,
+        "tick_interval": 5,
+        "label_endpoints": true,
+        "letter_origin": [
+          328,
+          102
+        ],
+        "heading_baseline": 117.0
+      },
+      {
+        "letter": "C",
+        "field": "potassium",
+        "unit": "mM",
+        "source_frame_950x1240": [
+          531.4,
+          140,
+          704.2,
+          642
+        ],
+        "x_min": 0,
+        "x_max": 15,
+        "tick_interval": 5,
+        "label_endpoints": true,
+        "letter_origin": [
+          528,
+          102
+        ],
+        "heading_baseline": 117.0
+      },
+      {
+        "letter": "D",
+        "field": "silica",
+        "unit": "µM",
+        "source_frame_950x1240": [
+          727.9,
+          139,
+          900.3,
+          641
+        ],
+        "x_min": 0,
+        "x_max": 1500,
+        "tick_interval": 500,
+        "label_endpoints": true,
+        "letter_origin": [
+          722,
+          101
+        ],
+        "heading_baseline": 117.0
+      }
+    ],
+    "caption_geometry": [
+      [
+        92.14,
+        675.42,
+        806.42
+      ],
+      [
+        92.43,
+        691.1,
+        47.120000000000005
+      ]
+    ]
+  },
+  {
+    "item_id": "IR12.F23",
+    "site": 847,
+    "caption": [
+      "Figure 23. Interstitial water geochemical data vs. depths (mbsf) for Holes 847A (open circles) and 847B (closed circles). A. Sodium. B. Chloride. C. Alkalinity.",
+      "D. Sulfate."
+    ],
+    "source_page": 26,
+    "source_sha256": "59b5825c2dd4ed42c5708b221b48503d6c67d5446ff00c1a2adbb72ba7327973",
+    "y_max": 250,
+    "y_step": 50,
+    "symbol_diameter": 8.0,
+    "panels": [
+      {
+        "letter": "A",
+        "field": "sodium",
+        "unit": "mM",
+        "source_frame_950x1240": [
+          134.5,
+          136,
+          307.4,
+          637
+        ],
+        "x_min": 475,
+        "x_max": 495,
+        "tick_interval": 5,
+        "label_endpoints": true,
+        "letter_origin": [
+          90,
+          100
+        ],
+        "heading_baseline": 115.32
+      },
+      {
+        "letter": "B",
+        "field": "chloride",
+        "unit": "mM",
+        "source_frame_950x1240": [
+          330.9,
+          136,
+          504.0,
+          637
+        ],
+        "x_min": 550,
+        "x_max": 570,
+        "tick_interval": 5,
+        "label_endpoints": true,
+        "letter_origin": [
+          324,
+          100
+        ],
+        "heading_baseline": 115.32
+      },
+      {
+        "letter": "C",
+        "field": "alkalinity",
+        "unit": "mM",
+        "source_frame_950x1240": [
+          527.8,
+          135,
+          700.6,
+          636
+        ],
+        "x_min": 2,
+        "x_max": 6,
+        "tick_interval": 1,
+        "label_endpoints": true,
+        "letter_origin": [
+          523,
+          100
+        ],
+        "heading_baseline": 114.48
+      },
+      {
+        "letter": "D",
+        "field": "sulfate",
+        "unit": "mM",
+        "source_frame_950x1240": [
+          723.7,
+          134,
+          896.3,
+          636
+        ],
+        "x_min": 25,
+        "x_max": 30,
+        "tick_interval": 1,
+        "label_endpoints": true,
+        "letter_origin": [
+          718,
+          99
+        ],
+        "heading_baseline": 113.64
+      }
+    ],
+    "caption_geometry": [
+      [
+        88.68,
+        667.02,
+        816.6600000000001
+      ],
+      [
+        88.39,
+        682.7,
+        55.89
+      ]
+    ]
+  },
+  {
+    "item_id": "IR12.F24",
+    "site": 847,
+    "caption": [
+      "Figure 24. Interstitial water geochemical data vs. depths (mbsf) for Holes 847A(open circles) and 847B (closed circles). A. Lithium.",
+      "B. Strontium. C. Ammonia."
+    ],
+    "source_page": 27,
+    "source_sha256": "59b5825c2dd4ed42c5708b221b48503d6c67d5446ff00c1a2adbb72ba7327973",
+    "y_max": 250,
+    "y_step": 50,
+    "symbol_diameter": 8.0,
+    "panels": [
+      {
+        "letter": "A",
+        "field": "lithium",
+        "unit": "µM",
+        "source_frame_950x1240": [
+          173.2,
+          137,
+          346.6,
+          639
+        ],
+        "x_min": 0,
+        "x_max": 30,
+        "tick_interval": 10,
+        "label_endpoints": true,
+        "letter_origin": [
+          128,
+          101
+        ],
+        "heading_baseline": 116.44
+      },
+      {
+        "letter": "B",
+        "field": "strontium",
+        "unit": "µM",
+        "source_frame_950x1240": [
+          381.3,
+          138,
+          554.7,
+          640
+        ],
+        "x_min": 50,
+        "x_max": 250,
+        "tick_interval": 50,
+        "label_endpoints": true,
+        "letter_origin": [
+          374,
+          102
+        ],
+        "heading_baseline": 116.44
+      },
+      {
+        "letter": "C",
+        "field": "ammonia",
+        "unit": "µM",
+        "source_frame_950x1240": [
+          589.3,
+          137,
+          762.2,
+          639
+        ],
+        "x_min": 0,
+        "x_max": 400,
+        "tick_interval": 100,
+        "label_endpoints": true,
+        "letter_origin": [
+          585,
+          102
+        ],
+        "heading_baseline": 116.44
+      }
+    ],
+    "caption_geometry": [
+      [
+        120.08,
+        667.58,
+        655.86
+      ],
+      [
+        120.08,
+        682.98,
+        140.94
+      ]
+    ]
+  },
+  {
+    "item_id": "IR12.F25",
+    "site": 847,
+    "caption": [
+      "Figure 25. Interstitial water geochemical data vs. depths (mbsf) for Holes 847A (open circles) and 847B (closed circles). A. Magnesium. B. Calcium. C. Potassium.",
+      "D. Silica."
+    ],
+    "source_page": 28,
+    "source_sha256": "59b5825c2dd4ed42c5708b221b48503d6c67d5446ff00c1a2adbb72ba7327973",
+    "y_max": 250,
+    "y_step": 50,
+    "symbol_diameter": 8.0,
+    "panels": [
+      {
+        "letter": "A",
+        "field": "magnesium",
+        "unit": "mM",
+        "source_frame_950x1240": [
+          131.3,
+          138,
+          304.2,
+          641
+        ],
+        "x_min": 50,
+        "x_max": 60,
+        "tick_interval": 5,
+        "label_endpoints": true,
+        "letter_origin": [
+          87,
+          102
+        ],
+        "heading_baseline": 117.57
+      },
+      {
+        "letter": "B",
+        "field": "calcium",
+        "unit": "mM",
+        "source_frame_950x1240": [
+          327.5,
+          138,
+          500.5,
+          641
+        ],
+        "x_min": 5,
+        "x_max": 15,
+        "tick_interval": 5,
+        "label_endpoints": true,
+        "letter_origin": [
+          321,
+          103
+        ],
+        "heading_baseline": 117.29
+      },
+      {
+        "letter": "C",
+        "field": "potassium",
+        "unit": "mM",
+        "source_frame_950x1240": [
+          524.3,
+          138,
+          696.8,
+          640
+        ],
+        "x_min": 9,
+        "x_max": 12,
+        "tick_interval": 1,
+        "label_endpoints": true,
+        "letter_origin": [
+          520,
+          103
+        ],
+        "heading_baseline": 117.29
+      },
+      {
+        "letter": "D",
+        "field": "silica",
+        "unit": "µM",
+        "source_frame_950x1240": [
+          720.0,
+          137,
+          892.6,
+          640
+        ],
+        "x_min": 500,
+        "x_max": 2000,
+        "tick_interval": 500,
+        "label_endpoints": true,
+        "letter_origin": [
+          715,
+          102
+        ],
+        "heading_baseline": 117.29
+      }
+    ],
+    "caption_geometry": [
+      [
+        87.81,
+        668.02,
+        815.75
+      ],
+      [
+        88.1,
+        683.96,
+        47.120000000000005
+      ]
+    ]
+  },
+  {
+    "item_id": "IR13.F28",
+    "site": 848,
+    "caption": [
+      "Figure 28. Interstitial-water geochemical data vs. depths (mbsf) for Holes 848A (open circles) and 848B (closed circles). A. Sodium. B. Chloride. C. Alkalinity. D. Sulfate."
+    ],
+    "source_page": 34,
+    "source_sha256": "64b8797d9272eac513c8902245a2638f23f6c4cd2c67719453ac0d47915da67d",
+    "y_max": 100,
+    "y_step": 10,
+    "symbol_diameter": 7.6,
+    "panels": [
+      {
+        "letter": "A",
+        "field": "sodium",
+        "unit": "mM",
+        "source_frame_950x1240": [
+          131.5,
+          115,
+          303.6,
+          621
+        ],
+        "x_min": 460,
+        "x_max": 500,
+        "tick_interval": 10,
+        "label_endpoints": false,
+        "letter_origin": [
+          119,
+          101
+        ],
+        "heading_baseline": 99.95
+      },
+      {
+        "letter": "B",
+        "field": "chloride",
+        "unit": "mM",
+        "source_frame_950x1240": [
+          326.2,
+          116,
+          501.4,
+          621
+        ],
+        "x_min": 540,
+        "x_max": 580,
+        "tick_interval": 10,
+        "label_endpoints": false,
+        "letter_origin": [
+          316,
+          101
+        ],
+        "heading_baseline": 100.51
+      },
+      {
+        "letter": "C",
+        "field": "alkalinity",
+        "unit": "mM",
+        "source_frame_950x1240": [
+          522.7,
+          115,
+          692.7,
+          621
+        ],
+        "x_min": 2,
+        "x_max": 4,
+        "tick_interval": 0.5,
+        "label_endpoints": false,
+        "letter_origin": [
+          512,
+          101
+        ],
+        "heading_baseline": 99.95
+      },
+      {
+        "letter": "D",
+        "field": "sulfate",
+        "unit": "mM",
+        "source_frame_950x1240": [
+          713.7,
+          115,
+          888.3,
+          620
+        ],
+        "x_min": 26,
+        "x_max": 30,
+        "tick_interval": 1,
+        "label_endpoints": false,
+        "letter_origin": [
+          704,
+          101
+        ],
+        "heading_baseline": 99.39
+      }
+    ],
+    "caption_geometry": [
+      [
+        92.83,
+        652.63,
+        803.68
+      ]
+    ]
+  },
+  {
+    "item_id": "IR13.F29",
+    "site": 848,
+    "caption": [
+      "Figure 29. Interstitial-water geochemical data vs. depths (mbsf) for Holes 848A (open circles) and 848B (closed circles). A. Magnesium. B. Calcium. C. Potassium. D. Silica."
+    ],
+    "source_page": 35,
+    "source_sha256": "64b8797d9272eac513c8902245a2638f23f6c4cd2c67719453ac0d47915da67d",
+    "y_max": 100,
+    "y_step": 10,
+    "symbol_diameter": 7.6,
+    "panels": [
+      {
+        "letter": "A",
+        "field": "magnesium",
+        "unit": "mM",
+        "source_frame_950x1240": [
+          76.5,
+          117,
+          251.4,
+          621
+        ],
+        "x_min": 50,
+        "x_max": 58,
+        "tick_interval": 2,
+        "label_endpoints": false,
+        "letter_origin": [
+          54,
+          101
+        ],
+        "heading_baseline": 101.96
+      },
+      {
+        "letter": "B",
+        "field": "calcium",
+        "unit": "mM",
+        "source_frame_950x1240": [
+          274.0,
+          117,
+          448.2,
+          621
+        ],
+        "x_min": 5,
+        "x_max": 15,
+        "tick_interval": 5,
+        "label_endpoints": true,
+        "letter_origin": [
+          261,
+          102
+        ],
+        "heading_baseline": 101.12
+      },
+      {
+        "letter": "C",
+        "field": "potassium",
+        "unit": "mM",
+        "source_frame_950x1240": [
+          469.6,
+          117,
+          643.7,
+          621
+        ],
+        "x_min": 9,
+        "x_max": 12,
+        "tick_interval": 1,
+        "label_endpoints": false,
+        "letter_origin": [
+          456,
+          102
+        ],
+        "heading_baseline": 100.56
+      },
+      {
+        "letter": "D",
+        "field": "silica",
+        "unit": "µM",
+        "source_frame_950x1240": [
+          667.9,
+          116,
+          838.9,
+          621
+        ],
+        "x_min": 0,
+        "x_max": 1500,
+        "tick_interval": 500,
+        "label_endpoints": false,
+        "letter_origin": [
+          655,
+          101
+        ],
+        "heading_baseline": 99.73
+      }
+    ],
+    "caption_geometry": [
+      [
+        41.25,
+        654.38,
+        814.34
+      ]
+    ]
+  },
+  {
+    "item_id": "IR13.F30",
+    "site": 848,
+    "caption": [
+      "Figure 30. Interstitial-water geochemical data vs. depths (mbsf) for Holes",
+      "848A (open circles) and 848B (closed circles). A. Lithium. B. Strontium."
+    ],
+    "source_page": 36,
+    "source_sha256": "64b8797d9272eac513c8902245a2638f23f6c4cd2c67719453ac0d47915da67d",
+    "y_max": 100,
+    "y_step": 10,
+    "symbol_diameter": 7.6,
+    "panels": [
+      {
+        "letter": "A",
+        "field": "lithium",
+        "unit": "µM",
+        "source_frame_950x1240": [
+          119.4,
+          118,
+          294.0,
+          622
+        ],
+        "x_min": 15,
+        "x_max": 35,
+        "tick_interval": 5,
+        "label_endpoints": true,
+        "letter_origin": [
+          107,
+          103
+        ],
+        "heading_baseline": 101.93
+      },
+      {
+        "letter": "B",
+        "field": "strontium",
+        "unit": "µM",
+        "source_frame_950x1240": [
+          309.1,
+          118,
+          476.9,
+          623
+        ],
+        "x_min": 0,
+        "x_max": 200,
+        "tick_interval": 50,
+        "label_endpoints": true,
+        "letter_origin": [
+          296,
+          103
+        ],
+        "heading_baseline": 102.21
+      }
+    ],
+    "caption_geometry": [
+      [
+        93.53,
+        654.76,
+        389.28999999999996
+      ],
+      [
+        94.11,
+        670.41,
+        370.08
+      ]
+    ]
+  },
+  {
+    "item_id": "IR14.F24",
+    "site": 849,
+    "caption": [
+      "Figure 24. Interstitial-water geochemical data vs. depths (mbsf) for Holes 849A (open circles) and 849B (filled circles). A. Sodium. B. Chloride. C. Alkalinity.",
+      "D. Sulfate."
+    ],
+    "source_page": 41,
+    "source_sha256": "ef3fbecb6234b0bfd6dc001b93e41435d5d161a3aaac95c7c882349bea4560dd",
+    "y_max": 350,
+    "y_step": 50,
+    "symbol_diameter": 9.2,
+    "panels": [
+      {
+        "letter": "A",
+        "field": "sodium",
+        "unit": "mM",
+        "source_frame_950x1240": [
+          83.0,
+          121,
+          258.6,
+          621
+        ],
+        "x_min": 470,
+        "x_max": 500,
+        "tick_interval": 10,
+        "label_endpoints": true,
+        "letter_origin": [
+          84,
+          99
+        ],
+        "heading_baseline": 99.32
+      },
+      {
+        "letter": "B",
+        "field": "chloride",
+        "unit": "mM",
+        "source_frame_950x1240": [
+          285.2,
+          121,
+          463.1,
+          621
+        ],
+        "x_min": 540,
+        "x_max": 580,
+        "tick_interval": 10,
+        "label_endpoints": true,
+        "letter_origin": [
+          287,
+          99
+        ],
+        "heading_baseline": 99.32
+      },
+      {
+        "letter": "C",
+        "field": "alkalinity",
+        "unit": "mM",
+        "source_frame_950x1240": [
+          481.8,
+          121,
+          655.6,
+          621
+        ],
+        "x_min": 0,
+        "x_max": 8,
+        "tick_interval": 2,
+        "label_endpoints": true,
+        "letter_origin": [
+          478,
+          99
+        ],
+        "heading_baseline": 99.32
+      },
+      {
+        "letter": "D",
+        "field": "sulfate",
+        "unit": "mM",
+        "source_frame_950x1240": [
+          677.5,
+          120,
+          854.8,
+          620
+        ],
+        "x_min": 20,
+        "x_max": 30,
+        "tick_interval": 5,
+        "label_endpoints": true,
+        "letter_origin": [
+          676,
+          98
+        ],
+        "heading_baseline": 98.2
+      }
+    ],
+    "caption_geometry": [
+      [
+        38.65,
+        649.47,
+        818.44
+      ],
+      [
+        38.65,
+        664.9,
+        55.669999999999995
+      ]
+    ]
+  },
+  {
+    "item_id": "IR14.F25",
+    "site": 849,
+    "caption": [
+      "Figure 25. Interstitial-water geochemical data vs. depths (mbsf) for Holes 849A (open circles) and 849B (filled circles). A. Magnesium. B. Calcium. C. Potassium.",
+      "D. Silica."
+    ],
+    "source_page": 42,
+    "source_sha256": "ef3fbecb6234b0bfd6dc001b93e41435d5d161a3aaac95c7c882349bea4560dd",
+    "y_max": 350,
+    "y_step": 50,
+    "symbol_diameter": 9.2,
+    "panels": [
+      {
+        "letter": "A",
+        "field": "magnesium",
+        "unit": "mM",
+        "source_frame_950x1240": [
+          138.1,
+          123,
+          316.6,
+          628
+        ],
+        "x_min": 45,
+        "x_max": 60,
+        "tick_interval": 5,
+        "label_endpoints": true,
+        "letter_origin": [
+          139,
+          100
+        ],
+        "heading_baseline": 100.76
+      },
+      {
+        "letter": "B",
+        "field": "calcium",
+        "unit": "mM",
+        "source_frame_950x1240": [
+          334.6,
+          123,
+          513.2,
+          628
+        ],
+        "x_min": 8,
+        "x_max": 12,
+        "tick_interval": 2,
+        "label_endpoints": true,
+        "letter_origin": [
+          336,
+          101
+        ],
+        "heading_baseline": 100.2
+      },
+      {
+        "letter": "C",
+        "field": "potassium",
+        "unit": "mM",
+        "source_frame_950x1240": [
+          536.3,
+          123,
+          714.6,
+          627
+        ],
+        "x_min": 8,
+        "x_max": 14,
+        "tick_interval": 2,
+        "label_endpoints": true,
+        "letter_origin": [
+          535,
+          101
+        ],
+        "heading_baseline": 100.2
+      },
+      {
+        "letter": "D",
+        "field": "silica",
+        "unit": "µM",
+        "source_frame_950x1240": [
+          734.1,
+          122,
+          909.1,
+          627
+        ],
+        "x_min": 500,
+        "x_max": 1500,
+        "tick_interval": 500,
+        "label_endpoints": true,
+        "letter_origin": [
+          735,
+          100
+        ],
+        "heading_baseline": 100.2
+      }
+    ],
+    "caption_geometry": [
+      [
+        95.58,
+        660.58,
+        817.4699999999999
+      ],
+      [
+        95.29,
+        675.7,
+        48.269999999999996
+      ]
+    ]
+  },
+  {
+    "item_id": "IR14.F26",
+    "site": 849,
+    "caption": [
+      "Figure 26. Interstitial-water geochemical data vs. depths (mbsf) for Holes 849A (open circles) and 849B (filled circles). A. Lithium.",
+      "B. Strontium. C. Ammonia."
+    ],
+    "source_page": 43,
+    "source_sha256": "ef3fbecb6234b0bfd6dc001b93e41435d5d161a3aaac95c7c882349bea4560dd",
+    "y_max": 350,
+    "y_step": 50,
+    "symbol_diameter": 9.2,
+    "panels": [
+      {
+        "letter": "A",
+        "field": "lithium",
+        "unit": "µM",
+        "source_frame_950x1240": [
+          142.5,
+          117,
+          321.8,
+          618
+        ],
+        "x_min": 0,
+        "x_max": 40,
+        "tick_interval": 10,
+        "label_endpoints": true,
+        "letter_origin": [
+          122,
+          100
+        ],
+        "heading_baseline": 95.96
+      },
+      {
+        "letter": "B",
+        "field": "strontium",
+        "unit": "µM",
+        "source_frame_950x1240": [
+          370.5,
+          117,
+          543.5,
+          618
+        ],
+        "x_min": 0,
+        "x_max": 600,
+        "tick_interval": 200,
+        "label_endpoints": true,
+        "letter_origin": [
+          352,
+          101
+        ],
+        "heading_baseline": 98.2
+      },
+      {
+        "letter": "C",
+        "field": "ammonia",
+        "unit": "µM",
+        "source_frame_950x1240": [
+          592.8,
+          117,
+          771.6,
+          618
+        ],
+        "x_min": 0,
+        "x_max": 400,
+        "tick_interval": 100,
+        "label_endpoints": true,
+        "letter_origin": [
+          571,
+          101
+        ],
+        "heading_baseline": 96.8
+      }
+    ],
+    "caption_geometry": [
+      [
+        98.72,
+        651.44,
+        683.74
+      ],
+      [
+        98.72,
+        666.86,
+        143.42
+      ]
+    ]
+  },
+  {
+    "item_id": "IR15.F29",
+    "site": 850,
+    "caption": [
+      "Figure 29. Interstitial-water geochemical data with sub-bottom depths (mbsf) for Holes 850A (open circle) and 850B (solid circles). A. Sodium. B. Chloride.",
+      "C. Alkalinity. D. Sulfate."
+    ],
+    "source_page": 43,
+    "source_sha256": "39ef17eb6d939154a6bc4ff127750146cf4a4e1eed621977f4bb734c7d953a19",
+    "y_max": 400,
+    "y_step": 100,
+    "symbol_diameter": 5.8,
+    "panels": [
+      {
+        "letter": "A",
+        "field": "sodium",
+        "unit": "µM",
+        "source_frame_950x1240": [
+          80.8,
+          152,
+          247.3,
+          625
+        ],
+        "x_min": 470,
+        "x_max": 500,
+        "tick_interval": 10,
+        "label_endpoints": true,
+        "letter_origin": [
+          50,
+          106
+        ],
+        "heading_baseline": 127.65
+      },
+      {
+        "letter": "B",
+        "field": "chloride",
+        "unit": "mM",
+        "source_frame_950x1240": [
+          276.8,
+          153,
+          443.3,
+          625
+        ],
+        "x_min": 540,
+        "x_max": 580,
+        "tick_interval": 10,
+        "label_endpoints": true,
+        "letter_origin": [
+          268,
+          107
+        ],
+        "heading_baseline": 128.21
+      },
+      {
+        "letter": "C",
+        "field": "alkalinity",
+        "unit": "mM",
+        "source_frame_950x1240": [
+          472.8,
+          152,
+          639.4,
+          625
+        ],
+        "x_min": 0,
+        "x_max": 8,
+        "tick_interval": 4,
+        "label_endpoints": true,
+        "letter_origin": [
+          468,
+          107
+        ],
+        "heading_baseline": 127.93
+      },
+      {
+        "letter": "D",
+        "field": "sulfate",
+        "unit": "mM",
+        "source_frame_950x1240": [
+          669.1,
+          151,
+          835.6,
+          624
+        ],
+        "x_min": 20,
+        "x_max": 30,
+        "tick_interval": 5,
+        "label_endpoints": true,
+        "letter_origin": [
+          663,
+          106
+        ],
+        "heading_baseline": 127.08
+      }
+    ],
+    "caption_geometry": [
+      [
+        32.79,
+        652.84,
+        808.19
+      ],
+      [
+        33.38,
+        668.26,
+        128.29
+      ]
+    ]
+  },
+  {
+    "item_id": "IR15.F30",
+    "site": 850,
+    "caption": [
+      "Figure 30. Interstitial-water geochemical data with sub-bottom depths (mbsf) for Holes 850A (open circle) and 850B (solid circles). A. Magnesium. B.",
+      "Calcium. C. Potassium. D. Silica."
+    ],
+    "source_page": 44,
+    "source_sha256": "39ef17eb6d939154a6bc4ff127750146cf4a4e1eed621977f4bb734c7d953a19",
+    "y_max": 400,
+    "y_step": 100,
+    "symbol_diameter": 5.8,
+    "panels": [
+      {
+        "letter": "A",
+        "field": "magnesium",
+        "unit": "mM",
+        "source_frame_950x1240": [
+          149.6,
+          140,
+          323.0,
+          631
+        ],
+        "x_min": 45,
+        "x_max": 60,
+        "tick_interval": 5,
+        "label_endpoints": true,
+        "letter_origin": [
+          108,
+          105
+        ],
+        "heading_baseline": 122.04
+      },
+      {
+        "letter": "B",
+        "field": "calcium",
+        "unit": "mM",
+        "source_frame_950x1240": [
+          337.0,
+          140,
+          510.4,
+          631
+        ],
+        "x_min": 8,
+        "x_max": 12,
+        "tick_interval": 2,
+        "label_endpoints": true,
+        "letter_origin": [
+          336,
+          108
+        ],
+        "heading_baseline": 122.32
+      },
+      {
+        "letter": "C",
+        "field": "potassium",
+        "unit": "mM",
+        "source_frame_950x1240": [
+          526.4,
+          140,
+          699.4,
+          631
+        ],
+        "x_min": 8,
+        "x_max": 14,
+        "tick_interval": 2,
+        "label_endpoints": true,
+        "letter_origin": [
+          524,
+          109
+        ],
+        "heading_baseline": 122.32
+      },
+      {
+        "letter": "D",
+        "field": "silica",
+        "unit": "µM",
+        "source_frame_950x1240": [
+          715.5,
+          139,
+          885.5,
+          630
+        ],
+        "x_min": 500,
+        "x_max": 1500,
+        "tick_interval": 500,
+        "label_endpoints": true,
+        "letter_origin": [
+          712,
+          108
+        ],
+        "heading_baseline": 122.04
+      }
+    ],
+    "caption_geometry": [
+      [
+        104.24,
+        659.85,
+        798.53
+      ],
+      [
+        104.24,
+        675.55,
+        173.67000000000002
+      ]
+    ]
+  },
+  {
+    "item_id": "IR15.F31",
+    "site": 850,
+    "caption": [
+      "Figure 31. Interstitial-water geochemical data with sub-bottom depths (mbsf)",
+      "for Holes 850A (open circle) and 850B (solid circles). A. Lithium. B. Stron-",
+      "tium. C. Ammonia."
+    ],
+    "source_page": 45,
+    "source_sha256": "39ef17eb6d939154a6bc4ff127750146cf4a4e1eed621977f4bb734c7d953a19",
+    "y_max": 400,
+    "y_step": 100,
+    "symbol_diameter": 5.8,
+    "panels": [
+      {
+        "letter": "A",
+        "field": "lithium",
+        "unit": "µM",
+        "source_frame_950x1240": [
+          67.7,
+          140,
+          165.5,
+          626
+        ],
+        "x_min": 0,
+        "x_max": 30,
+        "tick_interval": 10,
+        "label_endpoints": true,
+        "letter_origin": [
+          29,
+          105
+        ],
+        "heading_baseline": 120.92
+      },
+      {
+        "letter": "B",
+        "field": "strontium",
+        "unit": "µM",
+        "source_frame_950x1240": [
+          174.6,
+          141,
+          278.8,
+          627
+        ],
+        "x_min": 0,
+        "x_max": 500,
+        "tick_interval": 200,
+        "label_endpoints": true,
+        "letter_origin": [
+          173,
+          106
+        ],
+        "heading_baseline": 120.92
+      },
+      {
+        "letter": "C",
+        "field": "ammonia",
+        "unit": "µM",
+        "source_frame_950x1240": [
+          289.3,
+          141,
+          418.2,
+          627
+        ],
+        "x_min": 0,
+        "x_max": 450,
+        "tick_interval": 150,
+        "label_endpoints": true,
+        "letter_origin": [
+          286,
+          107
+        ],
+        "heading_baseline": 122.32
+      }
+    ],
+    "caption_geometry": [
+      [
+        25.43,
+        659.85,
+        397.49
+      ],
+      [
+        25.72,
+        674.99,
+        397.16999999999996
+      ],
+      [
+        25.72,
+        690.13,
+        102.93
+      ]
+    ]
+  },
+  {
+    "item_id": "IR16.F29",
+    "site": 851,
+    "caption": [
+      "Figure 29. Interstitial-water geochemical data with sub-bottom depths for Holes 851A (open circles) and 851B (solid circles). A. Sodium. B. Chloride. C. Alkalinity.",
+      "D. Sulfate."
+    ],
+    "source_page": 46,
+    "source_sha256": "1724238ff3fe5c02d2a3bacc7153e3d6bfbb1e67e3b48294f99abb7170252825",
+    "y_max": 350,
+    "y_step": 50,
+    "symbol_diameter": 9.6,
+    "panels": [
+      {
+        "letter": "A",
+        "field": "sodium",
+        "unit": "mM",
+        "source_frame_950x1240": [
+          143.4,
+          139,
+          318.5,
+          640
+        ],
+        "x_min": 470,
+        "x_max": 500,
+        "tick_interval": 10,
+        "label_endpoints": true,
+        "letter_origin": [
+          96,
+          106
+        ],
+        "heading_baseline": 120.92
+      },
+      {
+        "letter": "B",
+        "field": "chloride",
+        "unit": "mM",
+        "source_frame_950x1240": [
+          340.9,
+          140,
+          517.5,
+          640
+        ],
+        "x_min": 540,
+        "x_max": 580,
+        "tick_interval": 10,
+        "label_endpoints": true,
+        "letter_origin": [
+          335,
+          107
+        ],
+        "heading_baseline": 120.92
+      },
+      {
+        "letter": "C",
+        "field": "alkalinity",
+        "unit": "mM",
+        "source_frame_950x1240": [
+          539.5,
+          139,
+          712.6,
+          639
+        ],
+        "x_min": 2,
+        "x_max": 5,
+        "tick_interval": 1,
+        "label_endpoints": true,
+        "letter_origin": [
+          536,
+          107
+        ],
+        "heading_baseline": 115.33
+      },
+      {
+        "letter": "D",
+        "field": "sulfate",
+        "unit": "mM",
+        "source_frame_950x1240": [
+          735.1,
+          139,
+          911.3,
+          638
+        ],
+        "x_min": 24,
+        "x_max": 30,
+        "tick_interval": 1,
+        "label_endpoints": true,
+        "letter_origin": [
+          730,
+          106
+        ],
+        "heading_baseline": 115.33
+      }
+    ],
+    "caption_geometry": [
+      [
+        87.83,
+        669.41,
+        826.5999999999999
+      ],
+      [
+        87.83,
+        685.08,
+        55.480000000000004
+      ]
+    ]
+  },
+  {
+    "item_id": "IR16.F30",
+    "site": 851,
+    "caption": [
+      "Figure 30. Interstitial-water geochemical data with sub-bottom depths for Holes 851A (open circles) and 851B (solid circles). A. Magnesium. B. Calcium.",
+      "C. Potassium. D. Silica."
+    ],
+    "source_page": 47,
+    "source_sha256": "1724238ff3fe5c02d2a3bacc7153e3d6bfbb1e67e3b48294f99abb7170252825",
+    "y_max": 350,
+    "y_step": 50,
+    "symbol_diameter": 9.6,
+    "panels": [
+      {
+        "letter": "A",
+        "field": "magnesium",
+        "unit": "mM",
+        "source_frame_950x1240": [
+          71.4,
+          141,
+          244.5,
+          638
+        ],
+        "x_min": 45,
+        "x_max": 60,
+        "tick_interval": 5,
+        "label_endpoints": true,
+        "letter_origin": [
+          36,
+          105
+        ],
+        "heading_baseline": 116.73
+      },
+      {
+        "letter": "B",
+        "field": "calcium",
+        "unit": "mM",
+        "source_frame_950x1240": [
+          269.6,
+          143,
+          444.2,
+          639
+        ],
+        "x_min": 8,
+        "x_max": 12,
+        "tick_interval": 2,
+        "label_endpoints": true,
+        "letter_origin": [
+          266,
+          106
+        ],
+        "heading_baseline": 118.41
+      },
+      {
+        "letter": "C",
+        "field": "potassium",
+        "unit": "mM",
+        "source_frame_950x1240": [
+          469.0,
+          142,
+          640.4,
+          639
+        ],
+        "x_min": 8,
+        "x_max": 14,
+        "tick_interval": 2,
+        "label_endpoints": true,
+        "letter_origin": [
+          466,
+          107
+        ],
+        "heading_baseline": 118.41
+      },
+      {
+        "letter": "D",
+        "field": "silica",
+        "unit": "µM",
+        "source_frame_950x1240": [
+          665.6,
+          142,
+          840.3,
+          639
+        ],
+        "x_min": 500,
+        "x_max": 1500,
+        "tick_interval": 500,
+        "label_endpoints": true,
+        "letter_origin": [
+          657,
+          106
+        ],
+        "heading_baseline": 118.41
+      }
+    ],
+    "caption_geometry": [
+      [
+        16.34,
+        669.13,
+        824.6899999999999
+      ],
+      [
+        16.63,
+        683.96,
+        123.18
+      ]
+    ]
+  },
+  {
+    "item_id": "IR16.F31",
+    "site": 851,
+    "caption": [
+      "Figure 31. Interstitial water geochemical data with sub-bottom depths for Holes 851A (open circles) and 851B (solid circles). A. Lithium.",
+      "B. Strontium. C. Ammonia."
+    ],
+    "source_page": 48,
+    "source_sha256": "1724238ff3fe5c02d2a3bacc7153e3d6bfbb1e67e3b48294f99abb7170252825",
+    "y_max": 350,
+    "y_step": 50,
+    "symbol_diameter": 9.6,
+    "panels": [
+      {
+        "letter": "A",
+        "field": "lithium",
+        "unit": "µM",
+        "source_frame_950x1240": [
+          225.2,
+          134,
+          402.2,
+          635
+        ],
+        "x_min": 0,
+        "x_max": 40,
+        "tick_interval": 10,
+        "label_endpoints": true,
+        "letter_origin": [
+          190,
+          98
+        ],
+        "heading_baseline": 109.75
+      },
+      {
+        "letter": "B",
+        "field": "strontium",
+        "unit": "µM",
+        "source_frame_950x1240": [
+          451.3,
+          135,
+          622.3,
+          635
+        ],
+        "x_min": 0,
+        "x_max": 250,
+        "tick_interval": 100,
+        "label_endpoints": true,
+        "letter_origin": [
+          445,
+          98
+        ],
+        "heading_baseline": 109.75
+      },
+      {
+        "letter": "C",
+        "field": "ammonia",
+        "unit": "µM",
+        "source_frame_950x1240": [
+          672.4,
+          134,
+          849.2,
+          635
+        ],
+        "x_min": 0,
+        "x_max": 150,
+        "tick_interval": 50,
+        "label_endpoints": true,
+        "letter_origin": [
+          668,
+          98
+        ],
+        "heading_baseline": 109.47
+      }
+    ],
+    "caption_geometry": [
+      [
+        162.83,
+        669.29,
+        688.1899999999999
+      ],
+      [
+        162.54,
+        684.65,
+        142.73
+      ]
+    ]
+  },
+  {
+    "item_id": "IR17.F25",
+    "site": 852,
+    "caption": [
+      "Figure 25. Interstitial-water geochemical data with sub-bottom depths for Holes 852A(open circles), 852B (solid circles), and 852C (open squares). A. Sodium.",
+      "B. Chloride. C. Alkalinity. D. Sulfate."
+    ],
+    "source_page": 32,
+    "source_sha256": "8de86b3f766ad908d3019173e06ff30b259fca8b763b7f170e0b19e614c037b4",
+    "y_max": 125,
+    "y_step": 25,
+    "symbol_diameter": 5.4,
+    "panels": [
+      {
+        "letter": "A",
+        "field": "sodium",
+        "unit": "mM",
+        "source_frame_950x1240": [
+          129.4,
+          142,
+          294.4,
+          623
+        ],
+        "x_min": 470,
+        "x_max": 490,
+        "tick_interval": 10,
+        "label_endpoints": true,
+        "letter_origin": [
+          130,
+          103
+        ],
+        "heading_baseline": 114.19
+      },
+      {
+        "letter": "B",
+        "field": "chloride",
+        "unit": "mM",
+        "source_frame_950x1240": [
+          328.1,
+          142,
+          492.5,
+          622
+        ],
+        "x_min": 540,
+        "x_max": 580,
+        "tick_interval": 10,
+        "label_endpoints": true,
+        "letter_origin": [
+          327,
+          103
+        ],
+        "heading_baseline": 117.55
+      },
+      {
+        "letter": "C",
+        "field": "alkalinity",
+        "unit": "mM",
+        "source_frame_950x1240": [
+          526.5,
+          141,
+          690.6,
+          622
+        ],
+        "x_min": 2,
+        "x_max": 4,
+        "tick_interval": 1,
+        "label_endpoints": true,
+        "letter_origin": [
+          526,
+          103
+        ],
+        "heading_baseline": 113.63
+      },
+      {
+        "letter": "D",
+        "field": "sulfate",
+        "unit": "mM",
+        "source_frame_950x1240": [
+          724.5,
+          141,
+          888.9,
+          620
+        ],
+        "x_min": 26,
+        "x_max": 30,
+        "tick_interval": 1,
+        "label_endpoints": true,
+        "letter_origin": [
+          721,
+          102
+        ],
+        "heading_baseline": 111.66
+      }
+    ],
+    "caption_geometry": [
+      [
+        88.94,
+        653.12,
+        812.7
+      ],
+      [
+        88.94,
+        669.66,
+        193.39
+      ]
+    ]
+  },
+  {
+    "item_id": "IR17.F26",
+    "site": 852,
+    "caption": [
+      "Figure 26. Interstitial-water geochemical data with sub-bottom depths for Holes 852A (open circles), 852B (solid circles), and 852C (open squares). A. Magnesium.",
+      "B. Calcium. C. Potassium. D. Silica."
+    ],
+    "source_page": 33,
+    "source_sha256": "8de86b3f766ad908d3019173e06ff30b259fca8b763b7f170e0b19e614c037b4",
+    "y_max": 125,
+    "y_step": 25,
+    "symbol_diameter": 5.4,
+    "panels": [
+      {
+        "letter": "A",
+        "field": "magnesium",
+        "unit": "mM",
+        "source_frame_950x1240": [
+          104.6,
+          139,
+          268.5,
+          618
+        ],
+        "x_min": 50,
+        "x_max": 58,
+        "tick_interval": 2,
+        "label_endpoints": true,
+        "letter_origin": [
+          106,
+          99
+        ],
+        "heading_baseline": 117
+      },
+      {
+        "letter": "B",
+        "field": "calcium",
+        "unit": "mM",
+        "source_frame_950x1240": [
+          302.3,
+          139,
+          465.5,
+          618
+        ],
+        "x_min": 9,
+        "x_max": 12,
+        "tick_interval": 1,
+        "label_endpoints": true,
+        "letter_origin": [
+          302,
+          101
+        ],
+        "heading_baseline": 117
+      },
+      {
+        "letter": "C",
+        "field": "potassium",
+        "unit": "mM",
+        "source_frame_950x1240": [
+          498.9,
+          140,
+          662.4,
+          619
+        ],
+        "x_min": 8,
+        "x_max": 14,
+        "tick_interval": 2,
+        "label_endpoints": true,
+        "letter_origin": [
+          499,
+          101
+        ],
+        "heading_baseline": 123.44
+      },
+      {
+        "letter": "D",
+        "field": "silica",
+        "unit": "µM",
+        "source_frame_950x1240": [
+          695.6,
+          140,
+          859.4,
+          618
+        ],
+        "x_min": 500,
+        "x_max": 900,
+        "tick_interval": 100,
+        "label_endpoints": true,
+        "letter_origin": [
+          693,
+          101
+        ],
+        "heading_baseline": 123.72
+      }
+    ],
+    "caption_geometry": [
+      [
+        53.38,
+        651.51,
+        807.61
+      ],
+      [
+        53.38,
+        665.5,
+        184.46
+      ]
+    ]
+  },
+  {
+    "item_id": "IR17.F27",
+    "site": 852,
+    "caption": [
+      "Figure 27. Interstitial-water geochemical data with sub-bottom depths for",
+      "Holes 852A (open circles), 852B (solid circles), and 852C (open squares).",
+      "A. Lithium. B. Strontium."
+    ],
+    "source_page": 34,
+    "source_sha256": "8de86b3f766ad908d3019173e06ff30b259fca8b763b7f170e0b19e614c037b4",
+    "y_max": 125,
+    "y_step": 25,
+    "symbol_diameter": 5.4,
+    "panels": [
+      {
+        "letter": "A",
+        "field": "lithium",
+        "unit": "µM",
+        "source_frame_950x1240": [
+          132.9,
+          144,
+          298.4,
+          625
+        ],
+        "x_min": 10,
+        "x_max": 40,
+        "tick_interval": 10,
+        "label_endpoints": true,
+        "letter_origin": [
+          134,
+          105
+        ],
+        "heading_baseline": 122
+      },
+      {
+        "letter": "B",
+        "field": "strontium",
+        "unit": "µM",
+        "source_frame_950x1240": [
+          309.7,
+          143,
+          474.8,
+          624
+        ],
+        "x_min": 50,
+        "x_max": 150,
+        "tick_interval": 50,
+        "label_endpoints": true,
+        "letter_origin": [
+          309,
+          105
+        ],
+        "heading_baseline": 123.44
+      }
+    ],
+    "caption_geometry": [
+      [
+        90.82,
+        654.35,
+        390.77
+      ],
+      [
+        90.82,
+        670.07,
+        390.89
+      ],
+      [
+        90.82,
+        685.79,
+        131.37
+      ]
+    ]
+  },
+  {
+    "item_id": "IR18.F22",
+    "site": 853,
+    "caption": [
+      "Figure 22. Interstitial-water geochemical data vs. depths (mbsf) for Holes 853A (open circles) and 853B (solid circles). A. Sodium. B. Chloride. C. Alkalinity. D. Sulfate."
+    ],
+    "source_page": 25,
+    "source_sha256": "fc4d0141abea57e04e33b82a1b0da8a97e4054fb47cc616b236471b4b6d77565",
+    "y_max": 75,
+    "y_step": 25,
+    "symbol_diameter": 9.8,
+    "panels": [
+      {
+        "letter": "A",
+        "field": "sodium",
+        "unit": "mM",
+        "source_frame_950x1240": [
+          105.2,
+          595,
+          277.4,
+          1097
+        ],
+        "x_min": 470,
+        "x_max": 490,
+        "tick_interval": 10,
+        "label_endpoints": true,
+        "letter_origin": [
+          65,
+          551
+        ],
+        "heading_baseline": 570.4
+      },
+      {
+        "letter": "B",
+        "field": "chloride",
+        "unit": "mM",
+        "source_frame_950x1240": [
+          297.8,
+          595,
+          470.1,
+          1098
+        ],
+        "x_min": 540,
+        "x_max": 580,
+        "tick_interval": 20,
+        "label_endpoints": true,
+        "letter_origin": [
+          293,
+          552
+        ],
+        "heading_baseline": 570.4
+      },
+      {
+        "letter": "C",
+        "field": "alkalinity",
+        "unit": "mM",
+        "source_frame_950x1240": [
+          490.2,
+          595,
+          662.0,
+          1098
+        ],
+        "x_min": 2,
+        "x_max": 3,
+        "tick_interval": 0.5,
+        "label_endpoints": true,
+        "letter_origin": [
+          485,
+          552
+        ],
+        "heading_baseline": 570.12
+      },
+      {
+        "letter": "D",
+        "field": "sulfate",
+        "unit": "mM",
+        "source_frame_950x1240": [
+          682.8,
+          594,
+          854.6,
+          1097
+        ],
+        "x_min": 26,
+        "x_max": 30,
+        "tick_interval": 2,
+        "label_endpoints": true,
+        "letter_origin": [
+          678,
+          551
+        ],
+        "heading_baseline": 570.12
+      }
+    ],
+    "caption_geometry": [
+      [
+        60.25,
+        1128.96,
+        796.31
+      ]
+    ]
+  },
+  {
+    "item_id": "IR18.F23",
+    "site": 853,
+    "caption": [
+      "Figure 23. Interstitial-water geochemical data vs. depths (mbsf) for Holes 853A(open circles) and 853B (solid circles). A. Magnesium. B. Calcium. C. Potassium.",
+      "D. Silica."
+    ],
+    "source_page": 26,
+    "source_sha256": "fc4d0141abea57e04e33b82a1b0da8a97e4054fb47cc616b236471b4b6d77565",
+    "y_max": 75,
+    "y_step": 25,
+    "symbol_diameter": 9.8,
+    "panels": [
+      {
+        "letter": "A",
+        "field": "magnesium",
+        "unit": "mM",
+        "source_frame_950x1240": [
+          138.7,
+          147,
+          311.0,
+          650
+        ],
+        "x_min": 50,
+        "x_max": 58,
+        "tick_interval": 4,
+        "label_endpoints": true,
+        "letter_origin": [
+          99,
+          104
+        ],
+        "heading_baseline": 122.6
+      },
+      {
+        "letter": "B",
+        "field": "calcium",
+        "unit": "mM",
+        "source_frame_950x1240": [
+          331.6,
+          147,
+          504.0,
+          650
+        ],
+        "x_min": 9,
+        "x_max": 12,
+        "tick_interval": 1,
+        "label_endpoints": true,
+        "letter_origin": [
+          327,
+          104
+        ],
+        "heading_baseline": 122.6
+      },
+      {
+        "letter": "C",
+        "field": "potassium",
+        "unit": "mM",
+        "source_frame_950x1240": [
+          524.0,
+          147,
+          696.1,
+          650
+        ],
+        "x_min": 8,
+        "x_max": 14,
+        "tick_interval": 2,
+        "label_endpoints": true,
+        "letter_origin": [
+          519,
+          104
+        ],
+        "heading_baseline": 122.04
+      },
+      {
+        "letter": "D",
+        "field": "silica",
+        "unit": "µM",
+        "source_frame_950x1240": [
+          716.8,
+          146,
+          888.6,
+          649
+        ],
+        "x_min": 0,
+        "x_max": 900,
+        "tick_interval": 300,
+        "label_endpoints": true,
+        "letter_origin": [
+          712,
+          103
+        ],
+        "heading_baseline": 121.76
+      }
+    ],
+    "caption_geometry": [
+      [
+        99.85,
+        680.6,
+        803.1
+      ],
+      [
+        99.85,
+        696.58,
+        47.66
+      ]
+    ]
+  },
+  {
+    "item_id": "IR18.F24",
+    "site": 853,
+    "caption": [
+      "Figure 24. Interstitial-water geochemical data vs. depths (mbsf) for Holes",
+      "853A (open circles) and 853B (solid circles). A. Lithium. B. Strontium."
+    ],
+    "source_page": 27,
+    "source_sha256": "fc4d0141abea57e04e33b82a1b0da8a97e4054fb47cc616b236471b4b6d77565",
+    "y_max": 75,
+    "y_step": 25,
+    "symbol_diameter": 9.8,
+    "panels": [
+      {
+        "letter": "A",
+        "field": "lithium",
+        "unit": "µM",
+        "source_frame_950x1240": [
+          301.8,
+          154,
+          464.8,
+          632
+        ],
+        "x_min": 10,
+        "x_max": 40,
+        "tick_interval": 10,
+        "label_endpoints": true,
+        "letter_origin": [
+          261,
+          111
+        ],
+        "heading_baseline": 129.89
+      },
+      {
+        "letter": "B",
+        "field": "strontium",
+        "unit": "µM",
+        "source_frame_950x1240": [
+          482.2,
+          153,
+          645.8,
+          631
+        ],
+        "x_min": 50,
+        "x_max": 150,
+        "tick_interval": 50,
+        "label_endpoints": true,
+        "letter_origin": [
+          477,
+          111
+        ],
+        "heading_baseline": 128.77
+      }
+    ],
+    "caption_geometry": [
+      [
+        264.38,
+        662.65,
+        388.84000000000003
+      ],
+      [
+        264.95,
+        678.35,
+        360.08
+      ]
+    ]
+  },
+  {
+    "item_id": "IR19.F22",
+    "site": 854,
+    "caption": [
+      "Figure 22. Interstitial-water geochemical data vs. depths (mbsf) for Hole 854B. A. Sodium. B. Chloride. C. Alkalinity. D. Sulfate."
+    ],
+    "source_page": 22,
+    "source_sha256": "69bbe00324aefe3eab9eb4467cf92cc3bae0d388676cbc6a318fda260dc2b1dd",
+    "y_max": 50,
+    "y_step": 10,
+    "symbol_diameter": 6.8,
+    "panels": [
+      {
+        "letter": "A",
+        "field": "sodium",
+        "unit": "mM",
+        "source_frame_950x1240": [
+          131.8,
+          156,
+          302.9,
+          665
+        ],
+        "x_min": 470,
+        "x_max": 490,
+        "tick_interval": 10,
+        "label_endpoints": true,
+        "letter_origin": [
+          134,
+          105
+        ],
+        "heading_baseline": 125.97
+      },
+      {
+        "letter": "B",
+        "field": "chloride",
+        "unit": "mM",
+        "source_frame_950x1240": [
+          325.3,
+          156,
+          500.8,
+          665
+        ],
+        "x_min": 540,
+        "x_max": 580,
+        "tick_interval": 10,
+        "label_endpoints": true,
+        "letter_origin": [
+          328,
+          106
+        ],
+        "heading_baseline": 127.09
+      },
+      {
+        "letter": "C",
+        "field": "alkalinity",
+        "unit": "mM",
+        "source_frame_950x1240": [
+          522.9,
+          156,
+          692.8,
+          665
+        ],
+        "x_min": 2,
+        "x_max": 3,
+        "tick_interval": 0.5,
+        "label_endpoints": true,
+        "letter_origin": [
+          526,
+          105
+        ],
+        "heading_baseline": 126.25
+      },
+      {
+        "letter": "D",
+        "field": "sulfate",
+        "unit": "mM",
+        "source_frame_950x1240": [
+          712.1,
+          156,
+          886.6,
+          664
+        ],
+        "x_min": 26,
+        "x_max": 30,
+        "tick_interval": 2,
+        "label_endpoints": true,
+        "letter_origin": [
+          716,
+          105
+        ],
+        "heading_baseline": 125.4
+      }
+    ],
+    "caption_geometry": [
+      [
+        90.09,
+        699.27,
+        657.0699999999999
+      ]
+    ]
+  },
+  {
+    "item_id": "IR19.F23",
+    "site": 854,
+    "caption": [
+      "Figure 23. Interstitial-water geochemical data vs. depths (mbsf) for Hole 854B. A. Magnesium. B. Calcium. C. Potassium. D. Silica."
+    ],
+    "source_page": 23,
+    "source_sha256": "69bbe00324aefe3eab9eb4467cf92cc3bae0d388676cbc6a318fda260dc2b1dd",
+    "y_max": 50,
+    "y_step": 10,
+    "symbol_diameter": 6.8,
+    "panels": [
+      {
+        "letter": "A",
+        "field": "magnesium",
+        "unit": "mM",
+        "source_frame_950x1240": [
+          85.9,
+          171,
+          257.0,
+          679
+        ],
+        "x_min": 50,
+        "x_max": 56,
+        "tick_interval": 2,
+        "label_endpoints": true,
+        "letter_origin": [
+          88,
+          112
+        ],
+        "heading_baseline": 143.65
+      },
+      {
+        "letter": "B",
+        "field": "calcium",
+        "unit": "mM",
+        "source_frame_950x1240": [
+          279.2,
+          171,
+          452.9,
+          680
+        ],
+        "x_min": 0,
+        "x_max": 20,
+        "tick_interval": 5,
+        "label_endpoints": true,
+        "letter_origin": [
+          282,
+          112
+        ],
+        "heading_baseline": 143.65
+      },
+      {
+        "letter": "C",
+        "field": "potassium",
+        "unit": "mM",
+        "source_frame_950x1240": [
+          475.4,
+          171,
+          645.0,
+          680
+        ],
+        "x_min": 8,
+        "x_max": 14,
+        "tick_interval": 2,
+        "label_endpoints": true,
+        "letter_origin": [
+          477,
+          112
+        ],
+        "heading_baseline": 144.21
+      },
+      {
+        "letter": "D",
+        "field": "silica",
+        "unit": "µM",
+        "source_frame_950x1240": [
+          664.0,
+          171,
+          838.2,
+          679
+        ],
+        "x_min": 0,
+        "x_max": 900,
+        "tick_interval": 300,
+        "label_endpoints": true,
+        "letter_origin": [
+          666,
+          112
+        ],
+        "heading_baseline": 143.37
+      }
+    ],
+    "caption_geometry": [
+      [
+        46.9,
+        709.37,
+        668.88
+      ]
+    ]
+  },
+  {
+    "item_id": "IR19.F24",
+    "site": 854,
+    "caption": [
+      "Figure 24. Interstitial-water geochemical data vs. depths (mbsf) for Hole 854B.",
+      "A. Lithium. B. Strontium."
+    ],
+    "source_page": 24,
+    "source_sha256": "69bbe00324aefe3eab9eb4467cf92cc3bae0d388676cbc6a318fda260dc2b1dd",
+    "y_max": 50,
+    "y_step": 10,
+    "symbol_diameter": 6.8,
+    "panels": [
+      {
+        "letter": "A",
+        "field": "lithium",
+        "unit": "µM",
+        "source_frame_950x1240": [
+          117.4,
+          158,
+          288.7,
+          667
+        ],
+        "x_min": 10,
+        "x_max": 40,
+        "tick_interval": 10,
+        "label_endpoints": true,
+        "letter_origin": [
+          118,
+          108
+        ],
+        "heading_baseline": 131.58
+      },
+      {
+        "letter": "B",
+        "field": "strontium",
+        "unit": "µM",
+        "source_frame_950x1240": [
+          296.4,
+          158,
+          471.3,
+          667
+        ],
+        "x_min": 50,
+        "x_max": 150,
+        "tick_interval": 50,
+        "label_endpoints": true,
+        "letter_origin": [
+          298,
+          108
+        ],
+        "heading_baseline": 131.58
+      }
+    ],
+    "caption_geometry": [
+      [
+        88.93,
+        700.11,
+        388.63
+      ],
+      [
+        88.65,
+        715.55,
+        130.71
+      ]
+    ]
+  }
+]

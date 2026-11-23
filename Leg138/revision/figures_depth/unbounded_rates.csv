@@ -1,0 +1,2 @@
+table_id,source_line,age_ma,depth_mcd,rate_m_per_myr,reason
+IR19.T07,37,8.92,49.52,2.58,Table ends here. No second control point for this forward rate.

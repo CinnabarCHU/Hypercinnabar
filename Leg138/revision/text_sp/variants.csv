@@ -1,0 +1,116 @@
+doc_id,source_page,pdf_line,reader_block,publisher_reading,print_reading,decision
+SP,1,21,SP.p001.b07,Kabinowitz,Rabinowitz,printed_reading
+SP,1,25,SP.p001.b08,W/,W.,printed_reading
+SP,1,1,,•,,Speck in upper margin
+SP,1,24,,ù,,Fragment of manuscript signature
+SP,2,13,SP.p002.b05,D I S C L A I M E R,DISCLAIMER,printed_reading
+SP,2,20,SP.p002.b09,Francais,Français,printed_reading
+SP,2,20,SP.p002.b09,1'Exploitation,l'Exploitation,printed_reading
+SP,4,5,SP.p004.b02,El Nino,El Niño,printed_reading
+SP,4,20,SP.p004.b04,todayfs,today's,printed_reading
+SP,5,4,SP.p005.b02,radiation—the,radiation--the,printed_reading
+SP,5,37,SP.p005.b08,O2,O₂,printed_reading
+SP,5,38,SP.p005.b08,NO3,NO₃,printed_reading
+SP,5,38,SP.p005.b08,NO2,NO₂,printed_reading
+SP,5,38,SP.p005.b08,PO4,PO₄,printed_reading
+SP,5,38,SP.p005.b08,Si(OH)4,Si(OH)₄,printed_reading
+SP,5,38,SP.p005.b08,NH4,NH₄,printed_reading
+SP,7,9,SP.p007.b05,0'Brien,O'Brien,printed_reading
+PR,6,5,PR.p006.b02,Oceanographic,oceanographic,printed_reading
+PR,6,34,PR.p006.b11,Oceanographic,oceanographic,printed_reading
+PR,6,37,PR.p006.b13,Oceanographic,oceanographic,printed_reading
+PR,7,6,PR.p007.b03,Oceanographic,oceanographic,printed_reading
+PR,7,8,PR.p007.b04,Oceanographic,oceanographic,printed_reading
+PR,7,31,PR.p007.b10,EEO-2,EEQ-2,printed_reading
+PR,7,40,PR.p007.b12,Oceanographic,oceanographic,printed_reading
+PR,8,36,PR.p008.b05,Oceanographic,oceanographic,printed_reading
+PR,8,43,PR.p008.b06,Oceanographic,oceanographic,printed_reading
+PR,9,17,PR.p009.b04,EEO-D,EEQ-1),printed_reading
+PR,10,8,PR.p010.b02,Oceanographic,oceanographic,printed_reading
+PR,10,44,PR.p010.b05,Oceanographic,oceanographic,printed_reading
+PR,11,11,PR.p011.b03,8.5 Ma),8.5 Ma ),printed_reading
+PR,11,41,PR.p011.b07,EEO-4,EEQ-4,printed_reading
+PR,11,44,PR.p011.b08,Fig.l,Fig.1,printed_reading
+PR,12,4,PR.p012.b02,APCs,APC's,printed_reading
+PR,12,21,PR.p012.b03,Zone~Hey,Zone--Hey,printed_reading
+PR,12,30,PR.p012.b04,m.y.—Fig.,m.y.--Fig.,printed_reading
+PR,13,15,PR.p013.b03,Miocene~a,Miocene--a,printed_reading
+PR,13,24,PR.p013.b04,H2S,H₂S,printed_reading
+PR,13,40,PR.p013.b06,EEO-3,EEQ-3,printed_reading
+PR,13,42,PR.p013.b07,Oceanographic,oceanographic,printed_reading
+PR,13,48,PR.p013.b07,circulation-changes,circulation--changes,printed_reading
+PR,14,4,PR.p014.b02,Oceanographic,oceanographic,printed_reading
+PR,14,12,PR.p014.b02,Oceanographic,oceanographic,printed_reading
+PR,14,25,PR.p014.b02,chert~the,chert--the,printed_reading
+PR,14,43,PR.p014.b05,m.y.—Fig.,m.y.--Fig.,printed_reading
+PR,15,48,PR.p015.b06,Ma.,Ma .,printed_reading
+PR,16,14,PR.p016.b04,WEO-5,WEQ-5,printed_reading
+PR,16,19,PR.p016.b05,APCs,APC's,printed_reading
+PR,17,24,PR.p017.b03,Oceanographic,oceanographic,printed_reading
+PR,17,28,PR.p017.b04,WEO-fr,WEQ-6,printed_reading
+PR,18,39,PR.p018.b06,Oceanographic,oceanographic,printed_reading
+PR,18,47,PR.p018.b08,Oceanographic,oceanographic,printed_reading
+PR,21,4,PR.p021.b02,WEO-fi,WEQ-4),printed_reading
+PR,22,5,PR.p022.b02,transect Sedimentation,transect. Sedimentation,printed_reading
+PR,22,10,PR.p022.b03,WEO-3^,WEQ-3),printed_reading
+PR,23,19,PR.p023.b04,Oceanographic,oceanographic,printed_reading
+PR,23,40,PR.p023.b08,WEO-7,WEQ-7,printed_reading
+PR,25,14,PR.p025.b04,Site 854 (proposed,Site 854 (proposed Site WEQ-2),printed_reading
+PR,27,5,PR.p027.b03,DSDP.,"DSDP,",printed_reading
+PR,27,7,PR.p027.b04,ODP.,"ODP,",printed_reading
+PR,27,7,PR.p027.b04,Results.,"Results,",printed_reading
+PR,27,10,PR.p027.b05,Geology.,"Geology,",printed_reading
+PR,27,13,PR.p027.b06,ODP.,"ODP,",printed_reading
+PR,27,13,PR.p027.b06,Repts..,"Repts.,",printed_reading
+PR,27,15,PR.p027.b07,"Theyer, R, et al,","Theyer, F., et al.,",printed_reading
+PR,27,15,PR.p027.b07,Repts. DSDP.,"Repts. DSDP,",printed_reading
+PR,27,21,PR.p027.b09,Science^,"Science,",printed_reading
+PR,27,22,PR.p027.b10,Bull..,"Bull.,",printed_reading
+PR,27,25,PR.p027.b11,Bull..,"Bull.,",printed_reading
+PR,27,26,PR.p027.b12,Mclntyre,McIntyre,printed_reading
+PR,27,26,PR.p027.b12,"Mix, A. C,","Mix, A. C.,",printed_reading
+PR,27,32,PR.p027.b13,Res..,"Res.,",printed_reading
+PR,27,34,PR.p027.b14,Res..,"Res.,",printed_reading
+PR,27,35,PR.p027.b15,"Moore, T. C,","Moore, T. C.,",printed_reading
+PR,27,37,PR.p027.b15,Ouat. Res..,"Quat. Res.,",printed_reading
+PR,27,41,PR.p027.b17,Oceanographic,oceanographic,printed_reading
+PR,27,41,PR.p027.b17,Science.,"Science,",printed_reading
+PR,27,42,PR.p027.b18,DSDP.,"DSDP,",printed_reading
+PR,27,48,PR.p027.b21,In_,In,printed_reading
+PR,27,49,PR.p027.b21,CO2:,CO₂:,printed_reading
+PR,28,4,PR.p028.b02,America. N.,"America, N,",printed_reading
+PR,28,10,PR.p028.b04,"Moore, T. C,","Moore, T. C.,",printed_reading
+PR,28,10,PR.p028.b04,Tectonics.,"Tectonics,",printed_reading
+PR,28,15,PR.p028.b05,DSDP.,"DSDP,",printed_reading
+PR,81,38,PR.p081.b13,845 A-4H,845A-4H,printed_reading
+PR,83,25,PR.p083.b08,21 May,21May,printed_reading
+PR,85,21,PR.p085.b08,847 A,847A,printed_reading
+PR,85,24,PR.p085.b09,847 A-1H,847A-1H,printed_reading
+PR,88,27,PR.p088.b08,848C-1IX,848C-11X,printed_reading
+PR,90,31,PR.p090.b08,Core UH,Core 11H,printed_reading
+PR,90,32,PR.p090.b08,Core UH,Core 11H,printed_reading
+PR,91,13,PR.p091.b06,"recovered,","recovered ,",printed_reading
+PR,91,18,PR.p091.b08,85OA,850A,printed_reading
+PR,92,39,PR.p092.b12,85 IB,851B,printed_reading
+PR,93,5,PR.p093.b03,85 IB,851B,printed_reading
+PR,93,30,PR.p093.b09,85 ID,851D,printed_reading
+PR,93,34,PR.p093.b10,85 ID,851D,printed_reading
+PR,93,35,PR.p093.b11,85 IE,851E,printed_reading
+PR,93,36,PR.p093.b12,85 IE,851E,printed_reading
+PR,104,7,PR.p104.b03,Ecuador1 s,Ecuador's,printed_reading
+PR,104,15,PR.p104.b04,1 Ith,11th,printed_reading
+PR,104,37,PR.p104.b08,Oceanography's,Oceanography’s,printed_reading
+PR,105,18,PR.p105.b04,DS V,DSV,printed_reading
+PR,105,33,PR.p105.b06,magnetometer's,magnetometer’s,printed_reading
+PR,105,46,PR.p105.b08,DS V,DSV,printed_reading
+PR,106,17,PR.p106.b07,H2S,H₂S,printed_reading
+PR,106,20,PR.p106.b08,leg's,leg’s,printed_reading
+PR,106,31,PR.p106.b11,CO2,CO₂,printed_reading
+PR,107,5,PR.p107.b02,units',units’,printed_reading
+PR,107,16,PR.p107.b08,labs',labs’,printed_reading
+PR,107,25,PR.p107.b09,Co-chiefs,Co-chief’s,printed_reading
+PR,107,32,PR.p107.b12,lab's,lab’s,printed_reading
+PR,107,33,PR.p107.b12,ship's,ship’s,printed_reading
+PR,109,4,PR.p109.b02,H2S,H₂S,printed_reading
+PR,109,16,PR.p109.b05,β,°,printed_reading
+PR,109,23,PR.p109.b08,ship's,ship’s,printed_reading

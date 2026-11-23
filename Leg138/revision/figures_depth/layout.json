@@ -1,0 +1,627 @@
+[
+  {
+    "item_id": "IR09.F28",
+    "table_id": "IR09.T12",
+    "source_page": 40,
+    "printed_page": 158,
+    "table_pdf_page": 38,
+    "table_printed_page": 156,
+    "axis": "age",
+    "frame_pdf_xyxy_pt": [
+      79.444,
+      75.556,
+      291.111,
+      382.222
+    ],
+    "caption_pdf_xy_pt": [
+      51.7,
+      392.3
+    ],
+    "caption_lines": [
+      "Figure 28. Linear sedimentation rate vs. age based on data in Table 12."
+    ],
+    "label": "Age (Ma)",
+    "x_max": 40,
+    "x_major": 5,
+    "y_max": 18,
+    "y_major": 2,
+    "omit_after": null
+  },
+  {
+    "item_id": "IR09.F29",
+    "table_id": "IR09.T12",
+    "source_page": 40,
+    "printed_page": 158,
+    "table_pdf_page": 38,
+    "table_printed_page": 156,
+    "axis": "depth",
+    "frame_pdf_xyxy_pt": [
+      340.556,
+      75.556,
+      552.222,
+      382.222
+    ],
+    "caption_pdf_xy_pt": [
+      315.2,
+      391.1
+    ],
+    "caption_lines": [
+      "Figure 29. Linear sedimentation rate vs. composite depth based on data in",
+      "Table 12."
+    ],
+    "label": "Depth (mbsf)",
+    "x_max": 40,
+    "x_major": 5,
+    "y_max": 350,
+    "y_major": 100,
+    "omit_after": null
+  },
+  {
+    "item_id": "IR10.F36",
+    "table_id": "IR10.T10",
+    "source_page": 42,
+    "printed_page": 230,
+    "table_pdf_page": 41,
+    "table_printed_page": 229,
+    "axis": "age",
+    "frame_pdf_xyxy_pt": [
+      336.667,
+      78.333,
+      557.778,
+      397.778
+    ],
+    "caption_pdf_xy_pt": [
+      315.5,
+      407.1
+    ],
+    "caption_lines": [
+      "Figure 36. Linear sedimentation rate vs. age, based on data in Table 10."
+    ],
+    "label": "Age (Ma)",
+    "x_max": 60,
+    "x_major": 20,
+    "y_max": 20,
+    "y_major": 4,
+    "omit_after": null
+  },
+  {
+    "item_id": "IR10.F37",
+    "table_id": "IR10.T10",
+    "source_page": 43,
+    "printed_page": 231,
+    "table_pdf_page": 41,
+    "table_printed_page": 229,
+    "axis": "depth",
+    "frame_pdf_xyxy_pt": [
+      44.444,
+      287.778,
+      263.889,
+      602.222
+    ],
+    "caption_pdf_xy_pt": [
+      21.4,
+      613.3
+    ],
+    "caption_lines": [
+      "Figure 37. Linear sedimentation rate vs. composite depth, based on data in",
+      "Table 10."
+    ],
+    "label": "Depth (mcd)",
+    "x_max": 60,
+    "x_major": 20,
+    "y_max": 320,
+    "y_major": 80,
+    "omit_after": null
+  },
+  {
+    "item_id": "IR11.F23",
+    "table_id": "IR11.T08",
+    "source_page": 33,
+    "printed_page": 297,
+    "table_pdf_page": 31,
+    "table_printed_page": 295,
+    "axis": "age",
+    "frame_pdf_xyxy_pt": [
+      46.667,
+      76.667,
+      260.556,
+      388.333
+    ],
+    "caption_pdf_xy_pt": [
+      21.2,
+      399.9
+    ],
+    "caption_lines": [
+      "Figure 23. Linear sedimentation rate vs. age, based on data in Table 8."
+    ],
+    "label": "Age (Ma)",
+    "x_max": 60,
+    "x_major": 20,
+    "y_max": 16,
+    "y_major": 2,
+    "omit_after": null
+  },
+  {
+    "item_id": "IR11.F24",
+    "table_id": "IR11.T08",
+    "source_page": 33,
+    "printed_page": 297,
+    "table_pdf_page": 31,
+    "table_printed_page": 295,
+    "axis": "depth",
+    "frame_pdf_xyxy_pt": [
+      310.556,
+      81.667,
+      524.444,
+      393.333
+    ],
+    "caption_pdf_xy_pt": [
+      286.4,
+      402.0
+    ],
+    "caption_lines": [
+      "Figure 24. Linear sedimentation rate vs. composite depth, based on data in",
+      "Table 8."
+    ],
+    "label": "Depth (mcd)",
+    "x_max": 60,
+    "x_major": 20,
+    "y_max": 450,
+    "y_major": 100,
+    "omit_after": null
+  },
+  {
+    "item_id": "IR12.F21",
+    "table_id": "IR12.T08",
+    "source_page": 25,
+    "printed_page": 359,
+    "table_pdf_page": 23,
+    "table_printed_page": 357,
+    "axis": "age",
+    "frame_pdf_xyxy_pt": [
+      53.333,
+      80.556,
+      260.0,
+      381.667
+    ],
+    "caption_pdf_xy_pt": [
+      23.0,
+      390.8
+    ],
+    "caption_lines": [
+      "Figure 21. Linear sedimentation rate vs. age based on the data in Table 8."
+    ],
+    "label": "Age (Ma)",
+    "x_max": 100,
+    "x_major": 20,
+    "y_max": 7,
+    "y_major": 2,
+    "omit_after": null
+  },
+  {
+    "item_id": "IR12.F22",
+    "table_id": "IR12.T08",
+    "source_page": 25,
+    "printed_page": 359,
+    "table_pdf_page": 23,
+    "table_printed_page": 357,
+    "axis": "depth",
+    "frame_pdf_xyxy_pt": [
+      316.111,
+      78.889,
+      523.333,
+      376.667
+    ],
+    "caption_pdf_xy_pt": [
+      284.8,
+      390.6
+    ],
+    "caption_lines": [
+      "Figure 22. Linear sedimentation rate vs. composite depth based on the data in",
+      "Table 8."
+    ],
+    "label": "Depth (mcd)",
+    "x_max": 100,
+    "x_major": 20,
+    "y_max": 280,
+    "y_major": 40,
+    "omit_after": null
+  },
+  {
+    "item_id": "IR13.F26",
+    "table_id": "IR13.T09",
+    "source_page": 33,
+    "printed_page": 709,
+    "table_pdf_page": 39,
+    "table_printed_page": 715,
+    "axis": "age",
+    "frame_pdf_xyxy_pt": [
+      42.222,
+      380.0,
+      268.889,
+      708.889
+    ],
+    "caption_pdf_xy_pt": [
+      25.0,
+      718.3
+    ],
+    "caption_lines": [
+      "Figure 26. Linear sedimentation rate vs. age, based on data in Table 9."
+    ],
+    "label": "Age (Ma)",
+    "x_max": 22,
+    "x_major": 5,
+    "y_max": 11,
+    "y_major": 2,
+    "omit_after": null
+  },
+  {
+    "item_id": "IR13.F27",
+    "table_id": "IR13.T09",
+    "source_page": 33,
+    "printed_page": 709,
+    "table_pdf_page": 39,
+    "table_printed_page": 715,
+    "axis": "depth",
+    "frame_pdf_xyxy_pt": [
+      308.889,
+      381.667,
+      532.778,
+      709.444
+    ],
+    "caption_pdf_xy_pt": [
+      286.7,
+      718.3
+    ],
+    "caption_lines": [
+      "Figure 27. Linear sedimentation rate vs. composite depth, based on data in Table 9."
+    ],
+    "label": "Depth (mcd)",
+    "x_max": 22,
+    "x_major": 5,
+    "y_max": 110,
+    "y_major": 20,
+    "omit_after": null
+  },
+  {
+    "item_id": "IR14.F22",
+    "table_id": "IR14.T08",
+    "source_page": 40,
+    "printed_page": 774,
+    "table_pdf_page": 38,
+    "table_printed_page": 772,
+    "axis": "age",
+    "frame_pdf_xyxy_pt": [
+      81.667,
+      73.889,
+      298.333,
+      390.556
+    ],
+    "caption_pdf_xy_pt": [
+      59.8,
+      403.8
+    ],
+    "caption_lines": [
+      "Figure 22. Linear sedimentation rate vs. age, based on data in Table 8."
+    ],
+    "label": "Age (Ma)",
+    "x_max": 120,
+    "x_major": 20,
+    "y_max": 10,
+    "y_major": 2,
+    "omit_after": 9.94
+  },
+  {
+    "item_id": "IR14.F23",
+    "table_id": "IR14.T08",
+    "source_page": 40,
+    "printed_page": 774,
+    "table_pdf_page": 38,
+    "table_printed_page": 772,
+    "axis": "depth",
+    "frame_pdf_xyxy_pt": [
+      351.667,
+      76.111,
+      563.333,
+      385.556
+    ],
+    "caption_pdf_xy_pt": [
+      321.7,
+      397.7
+    ],
+    "caption_lines": [
+      "Figure 23. Linear sedimentation rate vs. composite depth, based on data in",
+      "Table 8."
+    ],
+    "label": "Depth (mcd)",
+    "x_max": 120,
+    "x_major": 20,
+    "y_max": 400,
+    "y_major": 100,
+    "omit_after": 360.4
+  },
+  {
+    "item_id": "IR15.F27",
+    "table_id": "IR15.T10",
+    "source_page": 40,
+    "printed_page": 848,
+    "table_pdf_page": 31,
+    "table_printed_page": 839,
+    "axis": "age",
+    "frame_pdf_xyxy_pt": [
+      87.778,
+      81.111,
+      294.444,
+      383.333
+    ],
+    "caption_pdf_xy_pt": [
+      56.3,
+      392.0
+    ],
+    "caption_lines": [
+      "Figure 27. Linear sedimentation rate vs. age based on data in Table 10."
+    ],
+    "label": "Age (Ma)",
+    "x_max": 120,
+    "x_major": 20,
+    "y_max": 12,
+    "y_major": 2,
+    "omit_after": null
+  },
+  {
+    "item_id": "IR15.F28",
+    "table_id": "IR15.T10",
+    "source_page": 40,
+    "printed_page": 848,
+    "table_pdf_page": 31,
+    "table_printed_page": 839,
+    "axis": "depth",
+    "frame_pdf_xyxy_pt": [
+      350.556,
+      81.111,
+      557.222,
+      383.333
+    ],
+    "caption_pdf_xy_pt": [
+      318.4,
+      392.5
+    ],
+    "caption_lines": [
+      "Figure 28. Linear sedimentation rate vs. composite depth based on data in Table 10."
+    ],
+    "label": "Depth (mcd)",
+    "x_max": 120,
+    "x_major": 20,
+    "y_max": 450,
+    "y_major": 100,
+    "omit_after": null
+  },
+  {
+    "item_id": "IR16.F27",
+    "table_id": "IR16.T10",
+    "source_page": 45,
+    "printed_page": 935,
+    "table_pdf_page": 41,
+    "table_printed_page": 931,
+    "axis": "age",
+    "frame_pdf_xyxy_pt": [
+      42.778,
+      82.778,
+      255.556,
+      395.0
+    ],
+    "caption_pdf_xy_pt": [
+      13.0,
+      406.5
+    ],
+    "caption_lines": [
+      "Figure 27. Linear sedimentation rate vs. age, based on data in Table 10."
+    ],
+    "label": "Age (Ma)",
+    "x_max": 120,
+    "x_major": 20,
+    "y_max": 11,
+    "y_major": 2,
+    "omit_after": null
+  },
+  {
+    "item_id": "IR16.F28",
+    "table_id": "IR16.T10",
+    "source_page": 45,
+    "printed_page": 935,
+    "table_pdf_page": 41,
+    "table_printed_page": 931,
+    "axis": "depth",
+    "frame_pdf_xyxy_pt": [
+      307.222,
+      81.111,
+      519.444,
+      393.333
+    ],
+    "caption_pdf_xy_pt": [
+      275.4,
+      406.0
+    ],
+    "caption_lines": [
+      "Figure 28. Linear sedimentation rate vs. composite depth, based on data in",
+      "Table 10."
+    ],
+    "label": "Depth (mcd)",
+    "x_max": 120,
+    "x_major": 20,
+    "y_max": 400,
+    "y_major": 100,
+    "omit_after": null
+  },
+  {
+    "item_id": "IR17.F23",
+    "table_id": "IR17.T11",
+    "source_page": 30,
+    "printed_page": 996,
+    "table_pdf_page": 23,
+    "table_printed_page": 989,
+    "axis": "age",
+    "frame_pdf_xyxy_pt": [
+      83.333,
+      80.556,
+      300.0,
+      396.667
+    ],
+    "caption_pdf_xy_pt": [
+      57.1,
+      405.8
+    ],
+    "caption_lines": [
+      "Figure 23. Linear sedimentation rate vs. age, based on data in Table 11."
+    ],
+    "label": "Age (Ma)",
+    "x_max": 40,
+    "x_major": 10,
+    "y_max": 10,
+    "y_major": 2,
+    "omit_after": null
+  },
+  {
+    "item_id": "IR17.F24",
+    "table_id": "IR17.T11",
+    "source_page": 30,
+    "printed_page": 996,
+    "table_pdf_page": 23,
+    "table_printed_page": 989,
+    "axis": "depth",
+    "frame_pdf_xyxy_pt": [
+      346.111,
+      80.0,
+      563.333,
+      396.111
+    ],
+    "caption_pdf_xy_pt": [
+      319.1,
+      405.1
+    ],
+    "caption_lines": [
+      "Figure 24. Linear sedimentation rate vs. composite depth, based on data in",
+      "Table 11."
+    ],
+    "label": "Depth (mcd)",
+    "x_max": 40,
+    "x_major": 10,
+    "y_max": 140,
+    "y_major": 20,
+    "omit_after": null
+  },
+  {
+    "item_id": "IR18.F20",
+    "table_id": "IR18.T08",
+    "source_page": 23,
+    "printed_page": 1045,
+    "table_pdf_page": 22,
+    "table_printed_page": 1044,
+    "axis": "age",
+    "frame_pdf_xyxy_pt": [
+      323.889,
+      81.667,
+      537.778,
+      393.333
+    ],
+    "caption_pdf_xy_pt": [
+      296.6,
+      403.0
+    ],
+    "caption_lines": [
+      "Figure 20. Linear sedimentation rate vs. age, based on the data in Table 8."
+    ],
+    "label": "Age (Ma)",
+    "x_max": 30,
+    "x_major": 4,
+    "y_max": 8,
+    "y_major": 2,
+    "omit_after": null
+  },
+  {
+    "item_id": "IR18.F21",
+    "table_id": "IR18.T08",
+    "source_page": 24,
+    "printed_page": 1046,
+    "table_pdf_page": 22,
+    "table_printed_page": 1044,
+    "axis": "depth",
+    "frame_pdf_xyxy_pt": [
+      85.556,
+      80.0,
+      299.444,
+      391.667
+    ],
+    "caption_pdf_xy_pt": [
+      58.9,
+      403.6
+    ],
+    "caption_lines": [
+      "Figure 21. Linear sedimentation rate vs. composite depth, based on the data in",
+      "Table 8."
+    ],
+    "label": "Depth (mcd)",
+    "x_max": 30,
+    "x_major": 4,
+    "y_max": 80,
+    "y_major": 20,
+    "omit_after": null
+  },
+  {
+    "item_id": "IR19.F20",
+    "table_id": "IR19.T07",
+    "source_page": 20,
+    "printed_page": 1082,
+    "table_pdf_page": 19,
+    "table_printed_page": 1081,
+    "axis": "age",
+    "frame_pdf_xyxy_pt": [
+      338.889,
+      77.222,
+      564.444,
+      391.111
+    ],
+    "caption_pdf_xy_pt": [
+      320.0,
+      401.6
+    ],
+    "caption_lines": [
+      "Figure 20. Linear sedimentation rate vs. age based on data in Table 7."
+    ],
+    "label": "Age (Ma)",
+    "x_max": 30,
+    "x_major": 5,
+    "y_max": 10,
+    "y_major": 2,
+    "omit_after": 8.5
+  },
+  {
+    "item_id": "IR19.F21",
+    "table_id": "IR19.T07",
+    "source_page": 21,
+    "printed_page": 1083,
+    "table_pdf_page": 19,
+    "table_printed_page": 1081,
+    "axis": "depth",
+    "frame_pdf_xyxy_pt": [
+      48.889,
+      80.556,
+      268.333,
+      397.222
+    ],
+    "caption_pdf_xy_pt": [
+      31.3,
+      405.0
+    ],
+    "caption_lines": [
+      "Figure 21. Linear sedimentation rate vs. composite depth based on data in",
+      "Table 7."
+    ],
+    "label": "Depth (mcd)",
+    "x_max": 30,
+    "x_major": 5,
+    "y_max": 50,
+    "y_major": 20,
+    "omit_after": null
+  }
+]

@@ -9,3 +9,7 @@ __pycache__/
 /Leg138/Leg138.sqlite-*
 /Leg138/full_edition/
 /Leg138/Leg138.building-*.sqlite*
+# Per-sample comparison ledgers are reproducible locally and included in the offline research package.
+/Leg138/revision/**/*.gz
+# Regenerated from the official SP/PR distributions for a local research edition.
+/Leg138/revision/text_sp/pages.jsonl
