@@ -520,7 +520,7 @@
       ],
       "depth_unit": "m",
       "output_support": "estimate one characteristic rate for each marked interval in windows.csv",
-      "construction": "Open, fixed positive control inspired by the Acycle 4-to-6 rate-change validation. Independent waveform, noise and input file."
+      "sampling": "The proxy is observed every 0.05 m throughout both intervals."
     },
     "output_fields": {
       "first_cm_per_ka": "Rate in interval 1.",

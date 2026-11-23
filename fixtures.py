@@ -35,8 +35,8 @@ def lr04_data():
 
 def rate_section():
     rng = np.random.Generator(np.random.PCG64(9017))
-    time = np.arange(0, 2000., 1.)
-    depth = .04 * np.minimum(time, 1000) + .06 * np.maximum(time - 1000, 0)
+    depth = .05 * np.arange(2000)
+    time = np.minimum(depth, 40.) / .04 + np.maximum(depth - 40., 0.) / .06
     value = sum(a * np.sin(2 * np.pi * time / p + phi)
                 for p, a, phi in [(23, .8, .4), (41, .9, 1.1), (100, .65, -.7)])
     value += ar_noise(rng, len(time), .65) * .42

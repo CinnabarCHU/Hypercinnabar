@@ -38,6 +38,8 @@ All ten previously prepared uninterpolated XY series from the geological benchma
 
 The earlier multichannel plan also identified ODP 967 and the 1262 isotope cross-phase problem. These require locked channel pairings, uncertainty or gap protocols and an evaluation target. Their roles are prospective. The developing Green River three-well and Terminal-Bench-Science held-out instances retain their separate evaluation protocol. The public detection panel, rate-step test, CIP and ODP 846 controls can be used for known-truth evaluations here.
 
+The two-rate control evaluates the proxy on a fixed 0.05 m grid. Each segment has the same sampling density. The change in orbital wavelength supplies the signal used to estimate its accumulation rate.
+
 ## Numerical and scientific readouts
 
 - The case comparator checks headers, column order, dimensions, finite values and per-element tolerances. Numerical receipts include the largest absolute error and row for each column. A cached reference scoring itself is a scorer test. The candidate runners compute outputs independently.

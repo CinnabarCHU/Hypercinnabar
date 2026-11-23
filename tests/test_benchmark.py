@@ -130,6 +130,12 @@ class BenchmarkTests(unittest.TestCase):
         csv_table(self.dir,"prediction",["record_id","detected"],pred)
         with self.assertRaises(ValueError):score_task(task,self.dir)
 
+    def test_rate_step_sampling_is_independent_of_rate(self):
+        packet = prepare_task("synthetic-rate-step", self.tasks["synthetic-rate-step"], self.dir)
+        section = np.loadtxt(self.dir / "data.csv", delimiter=",", skiprows=1)
+        np.testing.assert_allclose(np.diff(section[:, 0]), .05, atol=2e-14, rtol=0)
+        self.assertNotIn("4-to-6", json.dumps(packet))
+
     def test_nonfinite_duplicate_and_wrong_type_json(self):
         f=self.dir/"result.json"
         for payload in ['{"rate_cm_per_ka":NaN}','{"rate_cm_per_ka":2,"rate_cm_per_ka":3}']:
