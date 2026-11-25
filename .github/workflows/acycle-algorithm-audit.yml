@@ -1,0 +1,45 @@
+name: Acycle scientific algorithm audit
+on:
+  push:
+    branches: [acycle-algorithm-audit]
+    paths:
+      - '.github/workflows/acycle-algorithm-audit.yml'
+      - 'audit/algorithms/*.m'
+      - 'audit/algorithms/*.R'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  comparison:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 50
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          submodules: true
+      - uses: actions/checkout@v4
+        with:
+          repository: CinnabarCHU/Hypercinnabar
+          ref: d6b27b34597637e75fb8a1d4fe40874cf0bc1bcb
+          path: benchmarks
+      - uses: actions/checkout@v4
+        with:
+          repository: cran/astrochron
+          ref: 2c576763d0b54d3ce5d407bffd548efdf351c9d6
+          path: astrochron
+      - uses: r-lib/actions/setup-r@v2
+        with:
+          r-version: '4.5.0'
+      - run: Rscript audit/algorithms/reference.R
+      - uses: matlab-actions/setup-matlab@v2
+        with:
+          release: R2024b
+          products: Signal_Processing_Toolbox Statistics_and_Machine_Learning_Toolbox Optimization_Toolbox
+      - uses: matlab-actions/run-command@37b454c384483087929a3d652be474ba585a9659
+        with:
+          command: addpath(fullfile(pwd,'audit','algorithms')); runAcycleAlgorithmAudit(pwd)
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: algorithm-evidence
+          path: evidence
