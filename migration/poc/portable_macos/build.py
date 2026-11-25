@@ -9,6 +9,7 @@ import subprocess
 import tarfile
 import urllib.request
 import zipfile
+from native_compat import rebuild as rebuild_native, audit as audit_native
 
 HERE = Path(__file__).resolve().parent
 NODE = '24.22.3'
@@ -89,6 +90,7 @@ def build(kit, destination, staging):
     run(node,resources/'node'/'lib'/'node_modules'/'npm'/'bin'/'npm-cli.js',
         'ci','--ignore-scripts','--no-audit','--no-fund',cwd=runtime,env=env)
     run(node,runtime/'node_modules'/'@deepseek-ai'/'dsh-subprocess-local'/'scripts'/'ensure-spawn-helper.mjs',env=env)
+    rebuild_native(resources,staging,env)
     run(python,'-I','-c','import acycle_deepseek; import ssl; print("Bundled Python OK")')
     run(node,'--version')
     # Source and third-party LICENSE files remain in the distribution.
@@ -97,6 +99,7 @@ def build(kit, destination, staging):
     data = plistlib.loads(plist.read_bytes())
     data['LSMinimumSystemVersion'] = '13.5'
     plist.write_bytes(plistlib.dumps(data))
+    audit_native(app)
     # Local ad-hoc signature; this is not Apple Developer ID notarization.
     run('codesign','--force','--deep','--sign','-',app)
     run('codesign','--verify','--deep','--strict',app)

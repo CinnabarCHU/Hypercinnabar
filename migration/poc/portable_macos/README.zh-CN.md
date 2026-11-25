@@ -2,9 +2,11 @@
 
 目标：macOS Ventura 13.5 或更新版本，M1/M2/M3 等 Apple Silicon，已安装并可启动的 MATLAB R2024a。包中包含完整 DeepSeek Harness Web 聊天程序、自有 Electron 窗口、Node、Python、Acycle 插件与 0.7.0 GUI 示例。MATLAB、许可证和 MATLAB 所需 Java 使用已有安装。
 
+MATLAB 示例验收使用 Signal Processing Toolbox、Statistics and Machine Learning Toolbox 和 Image Processing Toolbox。请确认已有 MATLAB 安装包含这些工具箱；本包不替你安装或授权 MATLAB 产品。
+
 1. 解压整个 ZIP，把整个 `Acycle_Harness_Portable_0.7.1_arm64` 文件夹放到桌面或其他可写目录。保持 `.app`、`Workspace`、`portable.json` 在一起。
 2. 双击 `Acycle Harness.app`。首次找不到 MATLAB 时选择 `/Applications/MATLAB_R2024a.app`。程序会启动专用于此次试用的 MATLAB 进程，打开 Acycle 和滤波预览，再打开 Harness 聊天界面。
-3. 在 Harness 的模型设置或首次凭据提示中填入自己的 DeepSeek API key，选择 DeepSeek 官方模型。包中没有 API key；启动和检查窗口无需调用模型，聊天按自己的 API 账户计费。保存的凭据在本包的 `State/harness` 中。
+3. 首次看到 Harness 的 Preview Notice 时点击 Continue，然后在模型设置或首次凭据提示中填入自己的 DeepSeek API key，选择 DeepSeek 官方模型。包中没有 API key；启动和检查窗口无需调用模型，聊天按自己的 API 账户计费。保存的凭据在本包的 `State/harness` 中。
 4. 新建 Acycle MATLAB 会话，输入：**读取当前滤波窗口的频带与单位，然后将频率下限改为 0.04、上限改为 0.06 cycles/m。** 应先看到窗口检查，再看到同一 MATLAB 图窗更新。
 5. 输入：**打开 core.png，我来选择剖线。** 在 MATLAB 图像窗口点选后点击 **Finish profile**，回到聊天输入 **我画好了，请读取完成事件**。这一版由下一条消息查询事件。
 

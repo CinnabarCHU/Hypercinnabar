@@ -5,6 +5,9 @@
     "@deepseek-ai/dsh-web-frontend": "0.2.2-rc.5",
     "dsh-acycle": "file:packages/dsh-acycle-0.7.0.tgz"
   },
+  "overrides": {
+    "node-addon-require-builtin": "0.1.9"
+  },
   "name": "acycle-portable-runtime",
   "version": "0.7.1",
   "private": true
