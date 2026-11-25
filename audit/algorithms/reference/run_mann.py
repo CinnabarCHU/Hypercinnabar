@@ -1,4 +1,4 @@
-"""Run the published program unmodified, using its interactive defaults."""
+"""Run the original numerical code with a declaration-syntax fix for gfortran."""
 import csv
 import hashlib
 import json
@@ -24,6 +24,17 @@ with tempfile.TemporaryDirectory() as tmp:
         (work/name).write_bytes(content)
         hashes[name] = hashlib.sha256(content).hexdigest()
     (out/"mann-source-sha256.json").write_text(json.dumps(hashes, indent=2)+"\n")
+    expected = json.loads(Path(__file__).with_name("mann-original-sha256.json").read_text())
+    if hashes != expected:
+        raise ValueError("Published source or reference tables differ from the pinned archive.")
+    # One historical spelling puts the complex width after the function name.
+    # Reorder only this declaration; fail if the archive ever changes.
+    src = work/"miscsubs.f"
+    old = b"COMPLEX FUNCTION ZDOTC*16("
+    original = src.read_bytes()
+    if original.count(old) != 1:
+        raise ValueError("Unexpected original ZDOTC declaration.")
+    src.write_bytes(original.replace(old,b"COMPLEX*16 FUNCTION ZDOTC("))
     # Fixed-form FORTRAN 77 relied on implicit static storage.
     subprocess.run(["gfortran", "-std=legacy", "-O0", "-fno-automatic",
                     *sources, "-o", "mtm"], cwd=work, check=True)
