@@ -6,7 +6,7 @@ import {fileURLToPath,pathToFileURL} from 'node:url'
 import {readFile,writeFile} from 'node:fs/promises'
 
 const root = dirname(fileURLToPath(import.meta.url))
-const runtime = join(root,'.test-env/harness')
+const runtime = process.env.ACYCLE_HARNESS_RUNTIME || join(root,'.test-env/harness')
 const require = createRequire(join(runtime,'package.json'))
 const load = async name => import(pathToFileURL(require.resolve(name)).href)
 const config = JSON.parse(await readFile(process.argv[2],'utf8'))

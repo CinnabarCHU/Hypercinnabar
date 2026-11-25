@@ -1,0 +1,78 @@
+name: Acycle portable macOS app
+on:
+  push:
+    branches: [acycle-portable-macos-0.7.1]
+  workflow_dispatch:
+permissions:
+  contents: read
+  actions: read
+jobs:
+  mac-arm64:
+    runs-on: macos-15
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24.22.3'
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Check portable path isolation
+        run: node --test migration/poc/portable_macos/test-portable.mjs
+      - uses: actions/download-artifact@v4
+        with:
+          name: Acycle-GUI-Harness
+          run-id: 45193226531
+          github-token: ${{ github.token }}
+          path: ${{ runner.temp }}/verified-gui
+      - name: Assemble verified Acycle payload
+        run: python migration/poc/local_test/assemble.py --artifact "$RUNNER_TEMP/verified-gui" --destination "$RUNNER_TEMP/local-kit"
+      - name: Build portable app with bundled runtimes
+        run: |
+          python migration/poc/portable_macos/build.py --kit "$RUNNER_TEMP/local-kit" --destination "$RUNNER_TEMP/Acycle_Harness_Portable_0.7.1_arm64" --staging "$RUNNER_TEMP/portable-build"
+      - name: Start the packaged app and render the real chat UI
+        timeout-minutes: 4
+        run: |
+          export ACYCLE_PORTABLE_ROOT="$RUNNER_TEMP/Acycle_Harness_Portable_0.7.1_arm64"
+          export ACYCLE_PORTABLE_SMOKE=1
+          "$ACYCLE_PORTABLE_ROOT/Acycle Harness.app/Contents/MacOS/Acycle Harness"
+          python -c 'import json,os,pathlib; p=pathlib.Path(os.environ["ACYCLE_PORTABLE_ROOT"]); r=json.loads((p/"State/logs/app-smoke.json").read_text()); print(r); assert r["status"]=="passed"'
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '11'
+      - uses: matlab-actions/setup-matlab@v2
+        with:
+          release: R2024a
+          products: Signal_Processing_Toolbox Statistics_and_Machine_Learning_Toolbox Image_Processing_Toolbox
+      - name: Prepare the live packaged client
+        run: |
+          python -u migration/poc/portable_macos/ci_client.py "$RUNNER_TEMP/Acycle_Harness_Portable_0.7.1_arm64" > "$RUNNER_TEMP/portable-client.log" 2>&1 &
+      - name: Verify GUI tools and numerical replay under R2024a
+        uses: matlab-actions/run-command@v2
+        env:
+          TMPDIR: ${{ runner.temp }}/Acycle_Harness_Portable_0.7.1_arm64/State/tmp/
+          MATLAB_PREFDIR: ${{ runner.temp }}/Acycle_Harness_Portable_0.7.1_arm64/State/matlab-prefs
+        with:
+          command: addpath(fullfile(pwd,'migration','poc','local_test')); cd(fullfile(getenv('RUNNER_TEMP'),'Acycle_Harness_Portable_0.7.1_arm64','Workspace')); ci_host;
+      - name: Finalize clean deliverable
+        run: |
+          python migration/poc/portable_macos/finalize.py "$RUNNER_TEMP/Acycle_Harness_Portable_0.7.1_arm64"
+          cd "$RUNNER_TEMP"
+          ditto -c -k --sequesterRsrc --keepParent Acycle_Harness_Portable_0.7.1_arm64 Acycle_Harness_Portable_0.7.1_arm64.zip
+          shasum -a 256 Acycle_Harness_Portable_0.7.1_arm64.zip
+      - uses: actions/upload-artifact@v4
+        with:
+          name: Acycle-Harness-Portable-macOS-arm64
+          compression-level: 0
+          path: ${{ runner.temp }}/Acycle_Harness_Portable_0.7.1_arm64.zip
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: Acycle-Portable-macOS-Receipts
+          path: |
+            ${{ runner.temp }}/portable-client.log
+            ${{ runner.temp }}/Acycle_Harness_Portable_0.7.1_arm64/State/logs/*
+            ${{ runner.temp }}/Acycle_Harness_Portable_0.7.1_arm64/Workspace/generated/local-*.json
+            ${{ runner.temp }}/Acycle_Harness_Portable_0.7.1_arm64/Validation/*
