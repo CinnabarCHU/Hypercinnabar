@@ -99,7 +99,7 @@ dat = readmatrix(fullfile(evidence,'odp926b-prepared-m.csv'));
 dat(:,1) = dat(:,1)*100;
 E = [405.6795,130.719,123.839,98.86307,94.87666];
 P = [23.62069,22.31868,19.06768,18.91979];
-evalc('[scan,~,~,~]=timeOptAc(dat,1.3,5,100,0,0,1,.035,.065,1000,E,P,1,1,0);');
+evalc('[scan,~,~,~]=timeOptAc(dat,1.3,5,100,0,2,1,.035,.065,1000,E,P,1,1,0);');
 R = readmatrix(fullfile(evidence,'odp926b-astrochron.csv'));
 assert(size(scan,1)==size(R,1) && max(abs(scan(:,1)-R(:,1)))<1e-8);
 writematrix(scan,fullfile(evidence,'odp926b-acycle.csv'));
@@ -122,6 +122,73 @@ jointFit = joint*(joint\y);
 report.harmonic_control = struct('joint_r2',corr(y,jointFit)^2, ...
     'acycle_r2',separate,'acycle_spearman_option',nominalSpearman);
 saveReport(evidence,report);
+report.other_nulls = compareLegacyAndNative(root,savedPath);
+saveReport(evidence,report);
+for version = ["acycle","master"]
+    path(savedPath);
+    base=fullfile(root,'upstream',char(version),'code');
+    addpath(fullfile(base,'seriesanalysis'),fullfile(base,'package','swa'),'-begin');
+    clear specswa spectralswafdr
+    t=(0:511)';
+    positive=[t,noise+4*sin(2*pi*t/32)];
+    evalc('o=spectralswafdr(positive,''mtm'',2,1,0);');
+    tableResult=any(isfinite(o(:,10)));
+    gammaResult=anyFdr(o(:,2)./o(:,3),6,2);
+    assert(tableResult && gammaResult,'Injected line did not pass both FDR implementations');
+    report.(char(version)).signal_control=struct('lookup',tableResult,'analytic',gammaResult);
+end
+saveReport(evidence,report);
+end
+
+function result = compareLegacyAndNative(root,savedPath)
+path(savedPath);
+base = fullfile(root,'upstream','acycle','code');
+addpath(fullfile(base,'seriesanalysis'),fullfile(base,'package','swa'),'-begin');
+clear specswa specswafdr spectralswafdr
+global unit2fid
+unit2fid = [];
+trials=240;
+nativeTrials=80;
+rhos=[.4 .8];
+pads=[1 5];
+hits=zeros(2,2);
+failures=zeros(2,2);
+nativeHits=zeros(1,2);
+nativeFailures=zeros(1,2);
+messages={};
+rng(3102026,'twister');
+for i=1:trials
+    innovations=randn(704,1);
+    for j=1:numel(rhos)
+        y=filter(1,[1,-rhos(j)],innovations);
+        y=y(193:end);
+        y=y-mean(y);
+        data=[(0:length(y)-1)',y];
+        if i<=nativeTrials
+            try
+                evalc('[~,~,~,~,~,fd]=specswafdr(data,0);');
+                nativeHits(j)=nativeHits(j)+any(isfinite(fd(:,2)));
+            catch err
+                nativeFailures(j)=nativeFailures(j)+1;
+                messages=unique([messages,{err.message}]);
+            end
+        end
+        for k=1:numel(pads)
+            try
+                [power,w]=pmtm(y,2,512*pads(k));
+                freq=w/(2*pi);
+                evalc('b=specswa(freq,log10(power),length(y));');
+                hits(j,k)=hits(j,k)+anyFdr(power./b,6,2);
+            catch err
+                failures(j,k)=failures(j,k)+1;
+                messages=unique([messages,{err.message}]);
+            end
+        end
+    end
+end
+result=struct('trials',trials,'rhos',rhos,'pads',pads,'legacy_hits',hits, ...
+    'legacy_errors',failures,'native_trials',nativeTrials,'native_hits',nativeHits, ...
+    'native_errors',nativeFailures,'error_messages',{messages});
 end
 
 function s = peakReport(f,p,b,level)
