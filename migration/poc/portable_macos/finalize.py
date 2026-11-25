@@ -20,7 +20,7 @@ for source in [root/'State/logs/app-smoke.json',root/'State/logs/harness-window.
 
 - 在 GitHub macOS 15 Apple Silicon runner 上构建，包含 arm64 Electron、Node 与 Python。
 - 实际启动打包后的 `.app`，加载官方 DeepSeek Harness 0.2.2-rc.5 聊天界面；截图和回执在 `Validation`。
-- 内部 Node 加载器固定到上游允许的 0.1.9，从公开的对应源码重新编译为 macOS 13.5；包内全部 arm64 Mach-O 文件通过最低系统版本检查。未启用的实验性离线语音二进制不随包分发。
+- 内部 Node 加载器固定到上游允许的 0.1.9，从公开的对应源码重新编译为 macOS 13.5；包内全部 arm64 Mach-O 文件通过最低系统版本检查。未启用的实验性离线语音与通用电脑操作组件不随包分发；Acycle 使用自己的 MATLAB GUI 协议。
 - MATLAB R2024a 实窗运行：使用包内 Python/Node 调用官方工具执行器，检查 24 个 Acycle 工具，执行窗口读取、同窗频带修改、图像剖面打开与事件查询。
 - MATLAB 检查修改后的数值结果与 replay 一致，并与原始 gaussfilter 结果一致；关闭 GUI 后会话目录消失。
 - 没有在本轮调用付费模型 API。聊天选用工具的先前 PoC 验收不替代本机 API 配置检查。

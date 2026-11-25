@@ -9,6 +9,7 @@ import subprocess
 
 SOURCE = 'https://github.com/deepseek-ai/dsh-node-addon-require-builtin.git'
 COMMIT = 'a58d3599a2e551d7d706d1ff796c9fd4bbaff63c'
+OMITTED = ['sherpa-onnx-darwin-arm64', '@deepseek-ai/dsh-experimental-cua-macos']
 
 
 def run(*args, **kwargs):
@@ -42,10 +43,11 @@ def rebuild(resources, staging, env):
     target=runtime/'node_modules/node-addon-require-builtin-darwin-arm64/prebuilt/darwin-arm64-napi-v9.node'
     assert json.loads((runtime/'node_modules/node-addon-require-builtin/package.json').read_text())['version']=='0.1.9'
     shutil.copy2(binary,target)
-    # This unmounted experimental offline-speech optional binary requires macOS 14.
-    # Acycle's text/image chat preset does not mount the speech bundle.
-    optional=runtime/'node_modules/sherpa-onnx-darwin-arm64'
-    if optional.exists():shutil.rmtree(optional)
+    # These unmounted speech and general computer-use binaries require macOS 14.
+    # Acycle's preset uses its own MATLAB GUI protocol, not those experimental bundles.
+    for package in OMITTED:
+        optional=runtime/'node_modules'/package
+        if optional.exists():shutil.rmtree(optional)
     test="const a=require('node-addon-require-builtin');const s=a.requireBuiltin('internal/modules/esm/loader');const c=a.requireBuiltin('internal/modules/cjs/loader');if(!s||!c)throw Error('Native bridge failed');console.log(JSON.stringify(a.getBindingInfo()));"
     run(node,'-e',test,cwd=runtime,env=dict(env,NARB_DISABLE_NATIVE_CACHE='1'))
     notices=resources/'native-build'
@@ -53,7 +55,7 @@ def rebuild(resources, staging, env):
     shutil.copy2(source/'LICENSE',notices/'node-addon-require-builtin-LICENSE')
     (notices/'provenance.json').write_text(json.dumps({'source':SOURCE,'commit':COMMIT,'version':'0.1.9',
         'deployment_target':'13.5','binary_sha256':hashlib.sha256(target.read_bytes()).hexdigest(),
-        'omitted_optional_packages':['sherpa-onnx-darwin-arm64']},indent=2)+'\n')
+        'omitted_optional_packages':OMITTED},indent=2)+'\n')
 
 
 def minimum_versions(path):
