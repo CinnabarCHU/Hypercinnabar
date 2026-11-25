@@ -1,0 +1,222 @@
+{
+  "acycle": {
+    "weedon": {
+      "bins": 218,
+      "peak_wavelength": 0.82125,
+      "power": 10.876497204899099,
+      "background": 3.0045299754848882,
+      "ratio": 3.6200328482806325,
+      "fdr5_threshold": null,
+      "any_fdr5": false,
+      "peak_above_fdr5": false
+    },
+    "mtm_pad1": {
+      "bins": 220,
+      "peak_wavelength": 0.87800000000000022,
+      "power": 0.000837049031952977,
+      "background": 0.00020555964100250527,
+      "ratio": 4.0720494931336031,
+      "fdr5_threshold": null,
+      "any_fdr5": false,
+      "peak_above_fdr5": false,
+      "direct_gamma_any": false
+    },
+    "mtm_pad5": {
+      "bins": 1098,
+      "peak_wavelength": 0.84423076923076923,
+      "power": 0.00079408993271177055,
+      "background": 0.00021485619890946827,
+      "ratio": 3.6959135307348894,
+      "fdr5_threshold": null,
+      "any_fdr5": false,
+      "peak_above_fdr5": false,
+      "direct_gamma_any": false
+    },
+    "ml96_nw1_f25": {
+      "rho": 0.42344803292354538,
+      "s0": 0.77142844511566289,
+      "f_end": 0.25,
+      "cl95_multiplier": 2.9957322735539904,
+      "rows": 129
+    },
+    "ml96_nw1_f50": {
+      "rho": 0.63371588629777942,
+      "s0": 0.43190436058724535,
+      "f_end": 0.5,
+      "cl95_multiplier": 2.9957322735539904,
+      "rows": 257
+    },
+    "ml96_nw2_f25": {
+      "rho": 0.37902666302281651,
+      "s0": 0.78452658468772207,
+      "f_end": 0.25,
+      "cl95_multiplier": 2.0985978739573294,
+      "rows": 129
+    },
+    "ml96_nw2_f50": {
+      "rho": 0.59639295599151787,
+      "s0": 0.46621558951285946,
+      "f_end": 0.5,
+      "cl95_multiplier": 2.0985978739573294,
+      "rows": 257
+    },
+    "signal_control": {
+      "lookup": true,
+      "analytic": true
+    }
+  },
+  "master": {
+    "weedon": {
+      "bins": 218,
+      "peak_wavelength": 0.82125,
+      "power": 10.876497204899099,
+      "background": 3.0045299754848882,
+      "ratio": 3.6200328482806325,
+      "fdr5_threshold": null,
+      "any_fdr5": false,
+      "peak_above_fdr5": false
+    },
+    "mtm_pad1": {
+      "bins": 220,
+      "peak_wavelength": 0.87800000000000067,
+      "power": 0.000837049031952977,
+      "background": 0.00022133131153142613,
+      "ratio": 3.7818825820951552,
+      "fdr5_threshold": null,
+      "any_fdr5": false,
+      "peak_above_fdr5": false,
+      "direct_gamma_any": false
+    },
+    "mtm_pad5": {
+      "bins": 1098,
+      "peak_wavelength": 0.84423076923076978,
+      "power": 0.00079408993271177055,
+      "background": 0.00021483095342604322,
+      "ratio": 3.6963478495436672,
+      "fdr5_threshold": null,
+      "any_fdr5": false,
+      "peak_above_fdr5": false,
+      "direct_gamma_any": false
+    },
+    "ml96_nw1_f25": {
+      "rho": 0.63371588629777942,
+      "s0": 0.43190436058724535,
+      "f_end": 0.5,
+      "cl95_multiplier": 2.3719322591952885,
+      "rows": 257
+    },
+    "ml96_nw1_f50": {
+      "rho": 0.63371588629777942,
+      "s0": 0.43190436058724535,
+      "f_end": 0.5,
+      "cl95_multiplier": 2.3719322591952885,
+      "rows": 257
+    },
+    "ml96_nw2_f25": {
+      "rho": 0.59639295599151787,
+      "s0": 0.46621558951285946,
+      "f_end": 0.5,
+      "cl95_multiplier": 2.0985978739573294,
+      "rows": 257
+    },
+    "ml96_nw2_f50": {
+      "rho": 0.59639295599151787,
+      "s0": 0.46621558951285946,
+      "f_end": 0.5,
+      "cl95_multiplier": 2.0985978739573294,
+      "rows": 257
+    },
+    "signal_control": {
+      "lookup": true,
+      "analytic": true
+    }
+  },
+  "null_calibration": {
+    "trials": 240,
+    "rhos": [
+      0.4,
+      0.8
+    ],
+    "pads": [
+      1,
+      5
+    ],
+    "production_background_counts": [
+      [
+        37,
+        16
+      ],
+      [
+        49,
+        25
+      ]
+    ],
+    "known_background_counts": [
+      [
+        8,
+        7
+      ],
+      [
+        9,
+        6
+      ]
+    ]
+  },
+  "timeopt": {
+    "acycle_rate": 3.0222033305107026,
+    "acycle_r2": 0.082044340285826758,
+    "astrochron_rate": 3.02220333051096,
+    "astrochron_r2": 0.0994599291111322,
+    "max_abs_curve_difference": [
+      0.085020676727108668,
+      0.044603175101001827,
+      0.018792345357837789
+    ]
+  },
+  "harmonic_control": {
+    "joint_r2": 1,
+    "acycle_r2": 0.77498987812415376,
+    "acycle_spearman_option": 0.77498987812415432
+  },
+  "other_nulls": {
+    "trials": 240,
+    "rhos": [
+      0.4,
+      0.8
+    ],
+    "pads": [
+      1,
+      5
+    ],
+    "legacy_hits": [
+      [
+        42,
+        21
+      ],
+      [
+        59,
+        26
+      ]
+    ],
+    "legacy_errors": [
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ]
+    ],
+    "native_trials": 80,
+    "native_hits": [
+      4,
+      5
+    ],
+    "native_errors": [
+      0,
+      0
+    ],
+    "error_messages": []
+  }
+}

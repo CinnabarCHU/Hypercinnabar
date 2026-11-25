@@ -1,0 +1,49 @@
+{
+  "reference_run": "https://github.com/CinnabarCHU/Hypercinnabar/actions/runs/45578978722",
+  "v28_swa": {
+    "lomb": {
+      "bins": 218,
+      "period_m": 0.82125,
+      "ratio": 3.8720863481069223,
+      "peak_power": 10.8764972048991,
+      "background": 2.8089500664717,
+      "threshold5": null,
+      "any_fdr5": false,
+      "peak_exceeds_fdr5": false
+    },
+    "mtm-pad1": {
+      "bins": 220,
+      "period_m": 0.8780000000000012,
+      "ratio": 4.609872349405511,
+      "peak_power": 0.000837049031952978,
+      "background": 0.000181577485992844,
+      "threshold5": 0.000746600171455095,
+      "any_fdr5": true,
+      "peak_exceeds_fdr5": true
+    },
+    "mtm-pad5": {
+      "bins": 1098,
+      "period_m": 0.8442307692307665,
+      "ratio": 3.7089404071239827,
+      "peak_power": 0.000794089932711771,
+      "background": 0.000214101561509728,
+      "threshold5": null,
+      "any_fdr5": false,
+      "peak_exceeds_fdr5": false
+    }
+  },
+  "ml96": {
+    "v28": {
+      "rho_ml96": 0.7047871648109209,
+      "s0_ml96": 5.211505507009951e-05
+    },
+    "master": {
+      "rho_ml96": 0.7047871648109209,
+      "s0_ml96": 5.211505507009951e-05
+    },
+    "mann_fortran_rho": 0.732994139,
+    "interior_log_power_pearson": 0.9997092553097968,
+    "mann_target_peak_period_m": 0.7877116975187081,
+    "acycle_target_peak_period_m": 0.7876923076923077
+  }
+}
