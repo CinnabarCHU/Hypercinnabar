@@ -1,6 +1,7 @@
 function fig = start_local_demo()
 % Open the packaged synthetic example in the native Acycle desktop.
 root = fileparts(mfilename('fullpath'));
+addpath(root);
 required = {'pmtm','hilbert','norminv','imshow','improfile'};
 missing = required(cellfun(@(name)exist(name,'file')==0,required));
 if ~isempty(missing)

@@ -2,6 +2,7 @@ function ci_host()
 % Keep the user's packaged entry point alive while another process uses Harness.
 root = pwd;
 fig = start_local_demo();
+assert(strcmp(which('start_local_demo'),fullfile(root,'start_local_demo.m')));
 done = fullfile(root,'generated','local-tests-done.json');
 deadline = tic;
 while ~isfile(done) && toc(deadline)<360
