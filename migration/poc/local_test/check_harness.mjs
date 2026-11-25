@@ -15,7 +15,7 @@ const {Context,Service} = await load('@deepseek-ai/cordis')
 const {default:Tools} = await load('@deepseek-ai/dsh-tools')
 const {default:SystemPrompt} = await load('@deepseek-ai/dsh-system-prompt')
 const {default:Skills} = await load('@deepseek-ai/dsh-skill')
-const {default:Executor} = await load('@deepseek-ai/dsh-tool-executor-native')
+const Executor = await load('@deepseek-ai/dsh-tool-executor-native')
 const plugin = await load('dsh-acycle')
 class Workspace extends Service {
   constructor(ctx) { super(ctx,'workingDirectory') }
